@@ -204,7 +204,7 @@ func NewDeploymentManagerDeploymentTargetImportsOutputReference(terraformResourc
 	j := jsiiProxy_DeploymentManagerDeploymentTargetImportsOutputReference{}
 
 	_jsii_.Create(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentManagerDeploymentTargetImportsOutputReference_Override(d Deplo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

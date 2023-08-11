@@ -447,7 +447,7 @@ func NewGoogleApiGatewayApiConfigIamBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleApiGatewayApiConfigIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewGoogleApiGatewayApiConfigIamBinding_Override(g GoogleApiGatewayApiConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -626,7 +626,7 @@ func GoogleApiGatewayApiConfigIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleApiGatewayApiConfigIamBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func GoogleApiGatewayApiConfigIamBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func GoogleApiGatewayApiConfigIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding",
 		"tfResourceType",
 		&returns,
 	)

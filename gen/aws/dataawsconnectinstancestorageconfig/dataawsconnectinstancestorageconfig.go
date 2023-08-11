@@ -348,7 +348,7 @@ func NewDataAwsConnectInstanceStorageConfig(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataAwsConnectInstanceStorageConfig{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataAwsConnectInstanceStorageConfig_Override(d DataAwsConnectInstanceSto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -483,7 +483,7 @@ func DataAwsConnectInstanceStorageConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsConnectInstanceStorageConfig_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func DataAwsConnectInstanceStorageConfig_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataAwsConnectInstanceStorageConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfig",
 		"tfResourceType",
 		&returns,
 	)

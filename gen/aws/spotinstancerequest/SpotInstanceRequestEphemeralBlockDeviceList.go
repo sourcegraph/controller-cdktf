@@ -116,7 +116,7 @@ func NewSpotInstanceRequestEphemeralBlockDeviceList(terraformResource cdktf.IInt
 	j := jsiiProxy_SpotInstanceRequestEphemeralBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSpotInstanceRequestEphemeralBlockDeviceList_Override(s SpotInstanceReque
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

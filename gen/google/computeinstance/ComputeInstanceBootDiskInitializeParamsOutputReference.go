@@ -252,7 +252,7 @@ func NewComputeInstanceBootDiskInitializeParamsOutputReference(terraformResource
 	j := jsiiProxy_ComputeInstanceBootDiskInitializeParamsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceBootDiskInitializeParamsOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewComputeInstanceBootDiskInitializeParamsOutputReference_Override(c Comput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceBootDiskInitializeParamsOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskInitializeParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -226,7 +226,7 @@ func NewDaemonsetSpecTemplateSpecVolumeNfsOutputReference(terraformResource cdkt
 	j := jsiiProxy_DaemonsetSpecTemplateSpecVolumeNfsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeNfsOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeNfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDaemonsetSpecTemplateSpecVolumeNfsOutputReference_Override(d DaemonsetSp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeNfsOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeNfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

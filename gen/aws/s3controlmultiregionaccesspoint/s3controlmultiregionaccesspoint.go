@@ -411,7 +411,7 @@ func NewS3ControlMultiRegionAccessPoint(scope constructs.Construct, id *string, 
 	j := jsiiProxy_S3ControlMultiRegionAccessPoint{}
 
 	_jsii_.Create(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -424,7 +424,7 @@ func NewS3ControlMultiRegionAccessPoint_Override(s S3ControlMultiRegionAccessPoi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -546,7 +546,7 @@ func S3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func S3ControlMultiRegionAccessPoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func S3ControlMultiRegionAccessPoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func S3ControlMultiRegionAccessPoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataKubernetesIngressStatusLoadBalancerIngressList(terraformResource cdk
 	j := jsiiProxy_DataKubernetesIngressStatusLoadBalancerIngressList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngressStatusLoadBalancerIngressList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngressStatusLoadBalancerIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesIngressStatusLoadBalancerIngressList_Override(d DataKubern
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngressStatusLoadBalancerIngressList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngressStatusLoadBalancerIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

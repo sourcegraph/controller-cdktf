@@ -459,7 +459,7 @@ func NewLoggingFolderBucketConfig(scope constructs.Construct, id *string, config
 	j := jsiiProxy_LoggingFolderBucketConfig{}
 
 	_jsii_.Create(
-		"google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
+		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewLoggingFolderBucketConfig_Override(l LoggingFolderBucketConfig, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
+		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -638,7 +638,7 @@ func LoggingFolderBucketConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
+		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func LoggingFolderBucketConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
+		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func LoggingFolderBucketConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
+		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func LoggingFolderBucketConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
+		"@cdktf/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig",
 		"tfResourceType",
 		&returns,
 	)

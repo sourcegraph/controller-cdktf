@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMember",
 		reflect.TypeOf((*Ec2TransitGatewayMulticastGroupMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMemberConfig",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastGroupMember.Ec2TransitGatewayMulticastGroupMemberConfig",
 		reflect.TypeOf((*Ec2TransitGatewayMulticastGroupMemberConfig)(nil)).Elem(),
 	)
 }

@@ -179,7 +179,7 @@ func NewAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReferenc
 	j := jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

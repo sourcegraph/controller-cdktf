@@ -400,7 +400,7 @@ func NewGoogleHealthcareFhirStoreIamMember(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleHealthcareFhirStoreIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleHealthcareFhirStoreIamMember_Override(g GoogleHealthcareFhirStoreI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleHealthcareFhirStoreIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleHealthcareFhirStoreIamMember_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleHealthcareFhirStoreIamMember_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleHealthcareFhirStoreIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
 		"tfResourceType",
 		&returns,
 	)

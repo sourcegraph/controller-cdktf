@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.endpointsService.EndpointsService",
+		"@cdktf/provider-google.endpointsService.EndpointsService",
 		reflect.TypeOf((*EndpointsService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,11 +77,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.endpointsService.EndpointsServiceApis",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApis",
 		reflect.TypeOf((*EndpointsServiceApis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.endpointsService.EndpointsServiceApisList",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisList",
 		reflect.TypeOf((*EndpointsServiceApisList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,11 +101,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.endpointsService.EndpointsServiceApisMethods",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethods",
 		reflect.TypeOf((*EndpointsServiceApisMethods)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.endpointsService.EndpointsServiceApisMethodsList",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsList",
 		reflect.TypeOf((*EndpointsServiceApisMethodsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.endpointsService.EndpointsServiceApisMethodsOutputReference",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsOutputReference",
 		reflect.TypeOf((*EndpointsServiceApisMethodsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,7 +161,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.endpointsService.EndpointsServiceApisOutputReference",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisOutputReference",
 		reflect.TypeOf((*EndpointsServiceApisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,15 +197,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.endpointsService.EndpointsServiceConfig",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceConfig",
 		reflect.TypeOf((*EndpointsServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.endpointsService.EndpointsServiceEndpoints",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceEndpoints",
 		reflect.TypeOf((*EndpointsServiceEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.endpointsService.EndpointsServiceEndpointsList",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceEndpointsList",
 		reflect.TypeOf((*EndpointsServiceEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -225,7 +225,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.endpointsService.EndpointsServiceEndpointsOutputReference",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceEndpointsOutputReference",
 		reflect.TypeOf((*EndpointsServiceEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -259,11 +259,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.endpointsService.EndpointsServiceTimeouts",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceTimeouts",
 		reflect.TypeOf((*EndpointsServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.endpointsService.EndpointsServiceTimeoutsOutputReference",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceTimeoutsOutputReference",
 		reflect.TypeOf((*EndpointsServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

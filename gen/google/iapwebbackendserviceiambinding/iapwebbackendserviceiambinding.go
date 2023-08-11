@@ -424,7 +424,7 @@ func NewIapWebBackendServiceIamBinding(scope constructs.Construct, id *string, c
 	j := jsiiProxy_IapWebBackendServiceIamBinding{}
 
 	_jsii_.Create(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewIapWebBackendServiceIamBinding_Override(i IapWebBackendServiceIamBinding
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -592,7 +592,7 @@ func IapWebBackendServiceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func IapWebBackendServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func IapWebBackendServiceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func IapWebBackendServiceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

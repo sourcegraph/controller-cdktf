@@ -202,7 +202,7 @@ func NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedul
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

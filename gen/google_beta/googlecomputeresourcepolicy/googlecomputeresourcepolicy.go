@@ -522,7 +522,7 @@ func NewGoogleComputeResourcePolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeResourcePolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -535,7 +535,7 @@ func NewGoogleComputeResourcePolicy_Override(g GoogleComputeResourcePolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -690,7 +690,7 @@ func GoogleComputeResourcePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -709,7 +709,7 @@ func GoogleComputeResourcePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func GoogleComputeResourcePolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func GoogleComputeResourcePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy",
 		"tfResourceType",
 		&returns,
 	)

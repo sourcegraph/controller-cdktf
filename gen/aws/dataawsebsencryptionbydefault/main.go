@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefault",
 		reflect.TypeOf((*DataAwsEbsEncryptionByDefault)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,15 +58,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultConfig",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultConfig",
 		reflect.TypeOf((*DataAwsEbsEncryptionByDefaultConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeouts",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeouts",
 		reflect.TypeOf((*DataAwsEbsEncryptionByDefaultTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsEncryptionByDefault.DataAwsEbsEncryptionByDefaultTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsEbsEncryptionByDefaultTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

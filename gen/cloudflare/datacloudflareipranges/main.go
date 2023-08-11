@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
+		"@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRanges",
 		reflect.TypeOf((*DataCloudflareIpRanges)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareIpRanges.DataCloudflareIpRangesConfig",
+		"@cdktf/provider-cloudflare.dataCloudflareIpRanges.DataCloudflareIpRangesConfig",
 		reflect.TypeOf((*DataCloudflareIpRangesConfig)(nil)).Elem(),
 	)
 }

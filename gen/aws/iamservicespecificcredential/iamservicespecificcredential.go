@@ -399,7 +399,7 @@ func NewIamServiceSpecificCredential(scope constructs.Construct, id *string, con
 	j := jsiiProxy_IamServiceSpecificCredential{}
 
 	_jsii_.Create(
-		"aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
+		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -412,7 +412,7 @@ func NewIamServiceSpecificCredential_Override(i IamServiceSpecificCredential, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
+		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -556,7 +556,7 @@ func IamServiceSpecificCredential_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
+		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func IamServiceSpecificCredential_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
+		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func IamServiceSpecificCredential_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
+		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func IamServiceSpecificCredential_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
+		"@cdktf/provider-aws.iamServiceSpecificCredential.IamServiceSpecificCredential",
 		"tfResourceType",
 		&returns,
 	)

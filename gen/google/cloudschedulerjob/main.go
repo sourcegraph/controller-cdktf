@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudSchedulerJob.CloudSchedulerJob",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJob",
 		reflect.TypeOf((*CloudSchedulerJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,15 +99,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTarget",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTarget",
 		reflect.TypeOf((*CloudSchedulerJobAppEngineHttpTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetAppEngineRouting",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetAppEngineRouting",
 		reflect.TypeOf((*CloudSchedulerJobAppEngineHttpTargetAppEngineRouting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOutputReference",
 		reflect.TypeOf((*CloudSchedulerJobAppEngineHttpTargetAppEngineRoutingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,7 +148,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobAppEngineHttpTargetOutputReference",
 		reflect.TypeOf((*CloudSchedulerJobAppEngineHttpTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appEngineRouting", GoGetter: "AppEngineRouting"},
@@ -195,19 +195,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudSchedulerJob.CloudSchedulerJobConfig",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobConfig",
 		reflect.TypeOf((*CloudSchedulerJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudSchedulerJob.CloudSchedulerJobHttpTarget",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTarget",
 		reflect.TypeOf((*CloudSchedulerJobHttpTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthToken",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthToken",
 		reflect.TypeOf((*CloudSchedulerJobHttpTargetOauthToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthTokenOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOauthTokenOutputReference",
 		reflect.TypeOf((*CloudSchedulerJobHttpTargetOauthTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -244,11 +244,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOidcToken",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOidcToken",
 		reflect.TypeOf((*CloudSchedulerJobHttpTargetOidcToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOidcTokenOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOidcTokenOutputReference",
 		reflect.TypeOf((*CloudSchedulerJobHttpTargetOidcTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -285,7 +285,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobHttpTargetOutputReference",
 		reflect.TypeOf((*CloudSchedulerJobHttpTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -336,11 +336,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudSchedulerJob.CloudSchedulerJobPubsubTarget",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobPubsubTarget",
 		reflect.TypeOf((*CloudSchedulerJobPubsubTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudSchedulerJob.CloudSchedulerJobPubsubTargetOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobPubsubTargetOutputReference",
 		reflect.TypeOf((*CloudSchedulerJobPubsubTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributes", GoGetter: "Attributes"},
@@ -380,11 +380,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudSchedulerJob.CloudSchedulerJobRetryConfig",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobRetryConfig",
 		reflect.TypeOf((*CloudSchedulerJobRetryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudSchedulerJob.CloudSchedulerJobRetryConfigOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobRetryConfigOutputReference",
 		reflect.TypeOf((*CloudSchedulerJobRetryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -431,11 +431,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudSchedulerJob.CloudSchedulerJobTimeouts",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobTimeouts",
 		reflect.TypeOf((*CloudSchedulerJobTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudSchedulerJob.CloudSchedulerJobTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobTimeoutsOutputReference",
 		reflect.TypeOf((*CloudSchedulerJobTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

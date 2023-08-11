@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.bookmarkApp.BookmarkApp",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkApp",
 		reflect.TypeOf((*BookmarkApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
@@ -118,15 +118,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.bookmarkApp.BookmarkAppConfig",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkAppConfig",
 		reflect.TypeOf((*BookmarkAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.bookmarkApp.BookmarkAppTimeouts",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkAppTimeouts",
 		reflect.TypeOf((*BookmarkAppTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.bookmarkApp.BookmarkAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkAppTimeoutsOutputReference",
 		reflect.TypeOf((*BookmarkAppTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -167,11 +167,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.bookmarkApp.BookmarkAppUsers",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkAppUsers",
 		reflect.TypeOf((*BookmarkAppUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.bookmarkApp.BookmarkAppUsersList",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkAppUsersList",
 		reflect.TypeOf((*BookmarkAppUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.bookmarkApp.BookmarkAppUsersOutputReference",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkAppUsersOutputReference",
 		reflect.TypeOf((*BookmarkAppUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

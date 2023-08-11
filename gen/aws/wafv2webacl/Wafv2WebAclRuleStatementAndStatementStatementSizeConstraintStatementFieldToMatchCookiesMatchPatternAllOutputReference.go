@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFiel
 	j := jsiiProxy_Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFiel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -390,7 +390,7 @@ func NewS3BucketAnalyticsConfiguration(scope constructs.Construct, id *string, c
 	j := jsiiProxy_S3BucketAnalyticsConfiguration{}
 
 	_jsii_.Create(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewS3BucketAnalyticsConfiguration_Override(s S3BucketAnalyticsConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -536,7 +536,7 @@ func S3BucketAnalyticsConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func S3BucketAnalyticsConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func S3BucketAnalyticsConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func S3BucketAnalyticsConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -361,7 +361,7 @@ func NewDataGoogleCloudTasksQueueIamPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataGoogleCloudTasksQueueIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleCloudTasksQueueIamPolicy_Override(d DataGoogleCloudTasksQueueI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleCloudTasksQueueIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleCloudTasksQueueIamPolicy_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleCloudTasksQueueIamPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleCloudTasksQueueIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleCloudTasksQueueIamPolicy.DataGoogleCloudTasksQueueIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

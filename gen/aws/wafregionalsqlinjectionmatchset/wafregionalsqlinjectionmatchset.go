@@ -343,7 +343,7 @@ func NewWafregionalSqlInjectionMatchSet(scope constructs.Construct, id *string, 
 	j := jsiiProxy_WafregionalSqlInjectionMatchSet{}
 
 	_jsii_.Create(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewWafregionalSqlInjectionMatchSet_Override(w WafregionalSqlInjectionMatchS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -478,7 +478,7 @@ func WafregionalSqlInjectionMatchSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func WafregionalSqlInjectionMatchSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func WafregionalSqlInjectionMatchSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func WafregionalSqlInjectionMatchSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
 		"tfResourceType",
 		&returns,
 	)

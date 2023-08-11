@@ -116,7 +116,7 @@ func NewGoogleDialogflowCxFlowTransitionRoutesList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleDialogflowCxFlowTransitionRoutesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesList",
+		"@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDialogflowCxFlowTransitionRoutesList_Override(g GoogleDialogflowCx
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesList",
+		"@cdktf/provider-google-beta.googleDialogflowCxFlow.GoogleDialogflowCxFlowTransitionRoutesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

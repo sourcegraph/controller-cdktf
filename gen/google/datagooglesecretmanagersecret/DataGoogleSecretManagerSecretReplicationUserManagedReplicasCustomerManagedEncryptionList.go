@@ -104,7 +104,7 @@ func NewDataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManag
 	j := jsiiProxy_DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionList",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionList",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

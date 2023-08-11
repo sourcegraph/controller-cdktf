@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfig",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfig",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,19 +77,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigConfig",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigConfig",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfig",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfig",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigIdpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificates",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificates",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,7 +145,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigIdpConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -187,11 +187,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfig",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfig",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigSpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfigOutputReference",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfigOutputReference",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigSpConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "callbackUri", GoGetter: "CallbackUri"},
@@ -228,11 +228,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificates",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificates",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesList",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesList",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -252,7 +252,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigSpConfigSpCertificatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -285,11 +285,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigTimeouts",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigTimeouts",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigTimeoutsOutputReference",
 		reflect.TypeOf((*IdentityPlatformTenantInboundSamlConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

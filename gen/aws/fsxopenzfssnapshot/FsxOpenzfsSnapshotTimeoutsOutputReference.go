@@ -252,7 +252,7 @@ func NewFsxOpenzfsSnapshotTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_FsxOpenzfsSnapshotTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewFsxOpenzfsSnapshotTimeoutsOutputReference_Override(f FsxOpenzfsSnapshotT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

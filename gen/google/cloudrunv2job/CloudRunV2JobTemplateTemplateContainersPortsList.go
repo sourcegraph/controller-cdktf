@@ -116,7 +116,7 @@ func NewCloudRunV2JobTemplateTemplateContainersPortsList(terraformResource cdktf
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateContainersPortsList{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersPortsList",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudRunV2JobTemplateTemplateContainersPortsList_Override(c CloudRunV2Jo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersPortsList",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

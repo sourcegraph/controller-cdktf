@@ -116,7 +116,7 @@ func NewCognitoResourceServerScopeList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_CognitoResourceServerScopeList{}
 
 	_jsii_.Create(
-		"aws.cognitoResourceServer.CognitoResourceServerScopeList",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCognitoResourceServerScopeList_Override(c CognitoResourceServerScopeList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoResourceServer.CognitoResourceServerScopeList",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServerScopeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

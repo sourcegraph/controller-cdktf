@@ -203,7 +203,7 @@ func NewWafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStat
 	j := jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewWafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementGeoMatchStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

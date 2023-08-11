@@ -204,7 +204,7 @@ func NewOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference(terraformR
 	j := jsiiProxy_OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference_Override(o
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

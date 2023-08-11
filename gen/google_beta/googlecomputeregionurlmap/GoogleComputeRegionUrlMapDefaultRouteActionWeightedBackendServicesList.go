@@ -116,7 +116,7 @@ func NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList(t
 	j := jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

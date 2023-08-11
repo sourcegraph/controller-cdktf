@@ -116,7 +116,7 @@ func NewComputePerInstanceConfigPreservedStateDiskList(terraformResource cdktf.I
 	j := jsiiProxy_ComputePerInstanceConfigPreservedStateDiskList{}
 
 	_jsii_.Create(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskList",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputePerInstanceConfigPreservedStateDiskList_Override(c ComputePerInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskList",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

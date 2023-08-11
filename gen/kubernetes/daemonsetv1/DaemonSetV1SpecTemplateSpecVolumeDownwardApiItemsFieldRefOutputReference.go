@@ -204,7 +204,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

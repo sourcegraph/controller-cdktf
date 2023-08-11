@@ -204,7 +204,7 @@ func NewRulesetRulesActionParametersBrowserTtlOutputReference(terraformResource 
 	j := jsiiProxy_RulesetRulesActionParametersBrowserTtlOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewRulesetRulesActionParametersBrowserTtlOutputReference_Override(r Ruleset
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

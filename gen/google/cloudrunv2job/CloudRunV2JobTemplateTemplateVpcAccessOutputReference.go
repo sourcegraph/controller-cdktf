@@ -204,7 +204,7 @@ func NewCloudRunV2JobTemplateTemplateVpcAccessOutputReference(terraformResource 
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVpcAccessOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVpcAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudRunV2JobTemplateTemplateVpcAccessOutputReference_Override(c CloudRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVpcAccessOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVpcAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

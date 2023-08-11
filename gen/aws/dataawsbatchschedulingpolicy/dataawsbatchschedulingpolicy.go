@@ -337,7 +337,7 @@ func NewDataAwsBatchSchedulingPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsBatchSchedulingPolicy{}
 
 	_jsii_.Create(
-		"aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
+		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataAwsBatchSchedulingPolicy_Override(d DataAwsBatchSchedulingPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
+		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataAwsBatchSchedulingPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
+		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataAwsBatchSchedulingPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
+		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataAwsBatchSchedulingPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
+		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataAwsBatchSchedulingPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
+		"@cdktf/provider-aws.dataAwsBatchSchedulingPolicy.DataAwsBatchSchedulingPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -226,7 +226,7 @@ func NewDnsManagedZoneIamMemberConditionOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DnsManagedZoneIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDnsManagedZoneIamMemberConditionOutputReference_Override(d DnsManagedZon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

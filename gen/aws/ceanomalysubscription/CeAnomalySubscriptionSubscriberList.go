@@ -116,7 +116,7 @@ func NewCeAnomalySubscriptionSubscriberList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_CeAnomalySubscriptionSubscriberList{}
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCeAnomalySubscriptionSubscriberList_Override(c CeAnomalySubscriptionSubs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionSubscriberList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -116,7 +116,7 @@ func NewAddressMapMembershipsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_AddressMapMembershipsList{}
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMapMembershipsList",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAddressMapMembershipsList_Override(a AddressMapMembershipsList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMapMembershipsList",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

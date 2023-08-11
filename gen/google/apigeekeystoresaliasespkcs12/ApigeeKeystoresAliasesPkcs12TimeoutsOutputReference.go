@@ -204,7 +204,7 @@ func NewApigeeKeystoresAliasesPkcs12TimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApigeeKeystoresAliasesPkcs12TimeoutsOutputReference_Override(a ApigeeKey
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

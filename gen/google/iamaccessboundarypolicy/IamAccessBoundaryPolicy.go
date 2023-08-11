@@ -424,7 +424,7 @@ func NewIamAccessBoundaryPolicy(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_IamAccessBoundaryPolicy{}
 
 	_jsii_.Create(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewIamAccessBoundaryPolicy_Override(i IamAccessBoundaryPolicy, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -581,7 +581,7 @@ func IamAccessBoundaryPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func IamAccessBoundaryPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func IamAccessBoundaryPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func IamAccessBoundaryPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		"tfResourceType",
 		&returns,
 	)

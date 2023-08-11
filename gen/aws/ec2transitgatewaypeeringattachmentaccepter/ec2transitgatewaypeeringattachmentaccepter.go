@@ -411,7 +411,7 @@ func NewEc2TransitGatewayPeeringAttachmentAccepter(scope constructs.Construct, i
 	j := jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -424,7 +424,7 @@ func NewEc2TransitGatewayPeeringAttachmentAccepter_Override(e Ec2TransitGatewayP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -568,7 +568,7 @@ func Ec2TransitGatewayPeeringAttachmentAccepter_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func Ec2TransitGatewayPeeringAttachmentAccepter_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func Ec2TransitGatewayPeeringAttachmentAccepter_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func Ec2TransitGatewayPeeringAttachmentAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachmentAccepter.Ec2TransitGatewayPeeringAttachmentAccepter",
 		"tfResourceType",
 		&returns,
 	)

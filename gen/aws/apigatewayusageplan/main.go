@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
 		reflect.TypeOf((*ApiGatewayUsagePlan)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,11 +82,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStages",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStages",
 		reflect.TypeOf((*ApiGatewayUsagePlanApiStages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesList",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesList",
 		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesOutputReference",
 		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiId", GoGetter: "ApiId"},
@@ -147,11 +147,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottle",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottle",
 		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesThrottle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleList",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleList",
 		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesThrottleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -172,7 +172,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleOutputReference",
 		reflect.TypeOf((*ApiGatewayUsagePlanApiStagesThrottleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "burstLimit", GoGetter: "BurstLimit"},
@@ -212,15 +212,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanConfig",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanConfig",
 		reflect.TypeOf((*ApiGatewayUsagePlanConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettings",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettings",
 		reflect.TypeOf((*ApiGatewayUsagePlanQuotaSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanQuotaSettingsOutputReference",
 		reflect.TypeOf((*ApiGatewayUsagePlanQuotaSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -259,11 +259,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettings",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettings",
 		reflect.TypeOf((*ApiGatewayUsagePlanThrottleSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettingsOutputReference",
 		reflect.TypeOf((*ApiGatewayUsagePlanThrottleSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "burstLimit", GoGetter: "BurstLimit"},

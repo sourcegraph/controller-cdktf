@@ -116,7 +116,7 @@ func NewJobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList(terraformReso
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList_Override(j Jo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

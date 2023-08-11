@@ -179,7 +179,7 @@ func NewWafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldT
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementSqliMatchStatementFieldToMatchSingleHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

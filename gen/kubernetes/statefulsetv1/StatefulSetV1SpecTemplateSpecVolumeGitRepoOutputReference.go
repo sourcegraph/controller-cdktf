@@ -228,7 +228,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResou
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference_Override(s Sta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

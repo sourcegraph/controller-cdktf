@@ -116,7 +116,7 @@ func NewComputeRegionPerInstanceConfigPreservedStateDiskList(terraformResource c
 	j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskList{}
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskList",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeRegionPerInstanceConfigPreservedStateDiskList_Override(c ComputeR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskList",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

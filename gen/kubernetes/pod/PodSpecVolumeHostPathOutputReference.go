@@ -204,7 +204,7 @@ func NewPodSpecVolumeHostPathOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_PodSpecVolumeHostPathOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodSpecVolumeHostPathOutputReference_Override(p PodSpecVolumeHostPathOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

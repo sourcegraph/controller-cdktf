@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPaths)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptLanguage", GoGetter: "AcceptLanguage"},
@@ -63,19 +63,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsConfig",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPathsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummaries",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummaries",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPathsSummaries)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummaries",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummaries",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPathsSummariesConstraintSummaries)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,7 +129,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesList",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesList",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPathsSummariesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesOutputReference",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesOutputReference",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPathsSummariesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -185,11 +185,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeouts",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeouts",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPathsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsServicecatalogLaunchPathsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

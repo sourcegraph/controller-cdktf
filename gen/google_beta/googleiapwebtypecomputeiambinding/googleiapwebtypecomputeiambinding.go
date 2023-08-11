@@ -401,7 +401,7 @@ func NewGoogleIapWebTypeComputeIamBinding(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleIapWebTypeComputeIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleIapWebTypeComputeIamBinding_Override(g GoogleIapWebTypeComputeIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -558,7 +558,7 @@ func GoogleIapWebTypeComputeIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleIapWebTypeComputeIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func GoogleIapWebTypeComputeIamBinding_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleIapWebTypeComputeIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamBinding.GoogleIapWebTypeComputeIamBinding",
 		"tfResourceType",
 		&returns,
 	)

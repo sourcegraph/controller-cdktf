@@ -204,7 +204,7 @@ func NewGoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference(terra
 	j := jsiiProxy_GoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

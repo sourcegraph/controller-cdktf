@@ -227,7 +227,7 @@ func NewRedshiftClusterSnapshotCopyOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_RedshiftClusterSnapshotCopyOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
+		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewRedshiftClusterSnapshotCopyOutputReference_Override(r RedshiftClusterSna
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
+		"@cdktf/provider-aws.redshiftCluster.RedshiftClusterSnapshotCopyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

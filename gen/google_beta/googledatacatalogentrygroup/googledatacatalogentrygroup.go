@@ -450,7 +450,7 @@ func NewGoogleDataCatalogEntryGroup(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleDataCatalogEntryGroup{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewGoogleDataCatalogEntryGroup_Override(g GoogleDataCatalogEntryGroup, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -629,7 +629,7 @@ func GoogleDataCatalogEntryGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func GoogleDataCatalogEntryGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GoogleDataCatalogEntryGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GoogleDataCatalogEntryGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroup",
 		"tfResourceType",
 		&returns,
 	)

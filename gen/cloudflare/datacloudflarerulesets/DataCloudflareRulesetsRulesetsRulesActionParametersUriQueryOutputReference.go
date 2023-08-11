@@ -178,7 +178,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReferen
 	j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

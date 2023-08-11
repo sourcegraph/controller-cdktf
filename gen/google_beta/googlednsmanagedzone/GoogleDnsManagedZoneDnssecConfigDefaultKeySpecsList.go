@@ -116,7 +116,7 @@ func NewGoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList(terraformResource cd
 	j := jsiiProxy_GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList_Override(g GoogleDns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

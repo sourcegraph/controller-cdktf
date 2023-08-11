@@ -191,7 +191,7 @@ func NewGoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputRefere
 	j := jsiiProxy_GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewGoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

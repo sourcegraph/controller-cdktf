@@ -450,7 +450,7 @@ func NewSwfDomain(scope constructs.Construct, id *string, config *SwfDomainConfi
 	j := jsiiProxy_SwfDomain{}
 
 	_jsii_.Create(
-		"aws.swfDomain.SwfDomain",
+		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewSwfDomain_Override(s SwfDomain, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.swfDomain.SwfDomain",
+		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -640,7 +640,7 @@ func SwfDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.swfDomain.SwfDomain",
+		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func SwfDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.swfDomain.SwfDomain",
+		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func SwfDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.swfDomain.SwfDomain",
+		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func SwfDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.swfDomain.SwfDomain",
+		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		"tfResourceType",
 		&returns,
 	)

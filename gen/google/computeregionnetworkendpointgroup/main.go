@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroup",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,11 +94,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupAppEngine",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupAppEngine",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupAppEngine)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupAppEngineOutputReference",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupAppEngineOutputReference",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupAppEngineOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,11 +139,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudFunction",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudFunction",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupCloudFunction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupCloudFunctionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,11 +181,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudRun",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudRun",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupCloudRun)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudRunOutputReference",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupCloudRunOutputReference",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupCloudRunOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -226,15 +226,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupConfig",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupConfig",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupTimeouts",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupTimeouts",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionNetworkEndpointGroup.ComputeRegionNetworkEndpointGroupTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRegionNetworkEndpointGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

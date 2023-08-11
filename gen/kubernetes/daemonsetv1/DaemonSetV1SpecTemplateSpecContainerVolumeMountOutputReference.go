@@ -274,7 +274,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference(terraform
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerVolumeMountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

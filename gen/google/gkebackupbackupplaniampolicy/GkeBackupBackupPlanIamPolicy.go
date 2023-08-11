@@ -401,7 +401,7 @@ func NewGkeBackupBackupPlanIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GkeBackupBackupPlanIamPolicy{}
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGkeBackupBackupPlanIamPolicy_Override(g GkeBackupBackupPlanIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GkeBackupBackupPlanIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GkeBackupBackupPlanIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GkeBackupBackupPlanIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GkeBackupBackupPlanIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamPolicy.GkeBackupBackupPlanIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

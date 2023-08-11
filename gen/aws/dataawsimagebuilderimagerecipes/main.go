@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
 		reflect.TypeOf((*DataAwsImagebuilderImageRecipes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesConfig",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesConfig",
 		reflect.TypeOf((*DataAwsImagebuilderImageRecipesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesFilter",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesFilter",
 		reflect.TypeOf((*DataAwsImagebuilderImageRecipesFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesFilterList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesFilterList",
 		reflect.TypeOf((*DataAwsImagebuilderImageRecipesFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipesFilterOutputReference",
 		reflect.TypeOf((*DataAwsImagebuilderImageRecipesFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -228,7 +228,7 @@ func NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeC
 	j := jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchHeadersMatchPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

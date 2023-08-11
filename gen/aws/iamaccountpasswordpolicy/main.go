@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
+		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		reflect.TypeOf((*IamAccountPasswordPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamAccountPasswordPolicy.IamAccountPasswordPolicyConfig",
+		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicyConfig",
 		reflect.TypeOf((*IamAccountPasswordPolicyConfig)(nil)).Elem(),
 	)
 }

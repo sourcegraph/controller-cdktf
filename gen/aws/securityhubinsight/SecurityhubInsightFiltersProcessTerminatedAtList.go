@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersProcessTerminatedAtList(terraformResource cdktf
 	j := jsiiProxy_SecurityhubInsightFiltersProcessTerminatedAtList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersProcessTerminatedAtList_Override(s SecurityhubI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessTerminatedAtList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -228,7 +228,7 @@ func NewJobV1SpecTemplateSpecContainerLifecyclePreStopOutputReference(terraformR
 	j := jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerLifecyclePreStopOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewJobV1SpecTemplateSpecContainerLifecyclePreStopOutputReference_Override(j
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerLifecyclePreStopOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

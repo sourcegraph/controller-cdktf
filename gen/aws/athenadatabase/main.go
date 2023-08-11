@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.athenaDatabase.AthenaDatabase",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabase",
 		reflect.TypeOf((*AthenaDatabase)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclConfiguration", GoGetter: "AclConfiguration"},
@@ -80,11 +80,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaDatabase.AthenaDatabaseAclConfiguration",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfiguration",
 		reflect.TypeOf((*AthenaDatabaseAclConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.athenaDatabase.AthenaDatabaseAclConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabaseAclConfigurationOutputReference",
 		reflect.TypeOf((*AthenaDatabaseAclConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,15 +118,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaDatabase.AthenaDatabaseConfig",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabaseConfig",
 		reflect.TypeOf((*AthenaDatabaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfiguration",
 		reflect.TypeOf((*AthenaDatabaseEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.athenaDatabase.AthenaDatabaseEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabaseEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*AthenaDatabaseEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

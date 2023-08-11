@@ -179,7 +179,7 @@ func NewGoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutp
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfigAuthorizationAdminUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

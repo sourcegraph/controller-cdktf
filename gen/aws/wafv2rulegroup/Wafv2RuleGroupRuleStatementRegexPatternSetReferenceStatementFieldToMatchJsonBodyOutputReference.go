@@ -250,7 +250,7 @@ func NewWafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatch
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewWafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementFieldToMatchJsonBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

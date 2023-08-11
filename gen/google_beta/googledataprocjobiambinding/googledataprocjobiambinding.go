@@ -448,7 +448,7 @@ func NewGoogleDataprocJobIamBinding(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleDataprocJobIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataprocJobIamBinding_Override(g GoogleDataprocJobIamBinding, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataprocJobIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataprocJobIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataprocJobIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataprocJobIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding",
 		"tfResourceType",
 		&returns,
 	)

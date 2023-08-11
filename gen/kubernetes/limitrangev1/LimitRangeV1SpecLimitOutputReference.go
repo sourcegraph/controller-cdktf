@@ -300,7 +300,7 @@ func NewLimitRangeV1SpecLimitOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_LimitRangeV1SpecLimitOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.limitRangeV1.LimitRangeV1SpecLimitOutputReference",
+		"@cdktf/provider-kubernetes.limitRangeV1.LimitRangeV1SpecLimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewLimitRangeV1SpecLimitOutputReference_Override(l LimitRangeV1SpecLimitOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.limitRangeV1.LimitRangeV1SpecLimitOutputReference",
+		"@cdktf/provider-kubernetes.limitRangeV1.LimitRangeV1SpecLimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

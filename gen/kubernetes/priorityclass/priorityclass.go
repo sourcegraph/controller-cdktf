@@ -414,7 +414,7 @@ func NewPriorityClass(scope constructs.Construct, id *string, config *PriorityCl
 	j := jsiiProxy_PriorityClass{}
 
 	_jsii_.Create(
-		"kubernetes.priorityClass.PriorityClass",
+		"@cdktf/provider-kubernetes.priorityClass.PriorityClass",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewPriorityClass_Override(p PriorityClass, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.priorityClass.PriorityClass",
+		"@cdktf/provider-kubernetes.priorityClass.PriorityClass",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -582,7 +582,7 @@ func PriorityClass_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.priorityClass.PriorityClass",
+		"@cdktf/provider-kubernetes.priorityClass.PriorityClass",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func PriorityClass_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.priorityClass.PriorityClass",
+		"@cdktf/provider-kubernetes.priorityClass.PriorityClass",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func PriorityClass_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.priorityClass.PriorityClass",
+		"@cdktf/provider-kubernetes.priorityClass.PriorityClass",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func PriorityClass_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.priorityClass.PriorityClass",
+		"@cdktf/provider-kubernetes.priorityClass.PriorityClass",
 		"tfResourceType",
 		&returns,
 	)

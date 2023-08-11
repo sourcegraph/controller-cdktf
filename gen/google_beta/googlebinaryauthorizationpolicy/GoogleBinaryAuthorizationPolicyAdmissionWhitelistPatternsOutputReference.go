@@ -179,7 +179,7 @@ func NewGoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference
 	j := jsiiProxy_GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

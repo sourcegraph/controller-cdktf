@@ -215,7 +215,7 @@ func NewDataprocClusterClusterConfigLifecycleConfigOutputReference(terraformReso
 	j := jsiiProxy_DataprocClusterClusterConfigLifecycleConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewDataprocClusterClusterConfigLifecycleConfigOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

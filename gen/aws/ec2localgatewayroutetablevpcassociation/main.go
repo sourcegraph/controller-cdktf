@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2LocalGatewayRouteTableVpcAssociation.Ec2LocalGatewayRouteTableVpcAssociation",
+		"@cdktf/provider-aws.ec2LocalGatewayRouteTableVpcAssociation.Ec2LocalGatewayRouteTableVpcAssociation",
 		reflect.TypeOf((*Ec2LocalGatewayRouteTableVpcAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2LocalGatewayRouteTableVpcAssociation.Ec2LocalGatewayRouteTableVpcAssociationConfig",
+		"@cdktf/provider-aws.ec2LocalGatewayRouteTableVpcAssociation.Ec2LocalGatewayRouteTableVpcAssociationConfig",
 		reflect.TypeOf((*Ec2LocalGatewayRouteTableVpcAssociationConfig)(nil)).Elem(),
 	)
 }

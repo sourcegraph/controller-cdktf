@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
+		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		reflect.TypeOf((*LbTargetGroupAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbTargetGroupAttachment.LbTargetGroupAttachmentConfig",
+		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachmentConfig",
 		reflect.TypeOf((*LbTargetGroupAttachmentConfig)(nil)).Elem(),
 	)
 }

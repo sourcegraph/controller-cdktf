@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafregionalRule.WafregionalRule",
+		"@cdktf/provider-aws.wafregionalRule.WafregionalRule",
 		reflect.TypeOf((*WafregionalRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalRule.WafregionalRuleConfig",
+		"@cdktf/provider-aws.wafregionalRule.WafregionalRuleConfig",
 		reflect.TypeOf((*WafregionalRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalRule.WafregionalRulePredicate",
+		"@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicate",
 		reflect.TypeOf((*WafregionalRulePredicate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalRule.WafregionalRulePredicateList",
+		"@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateList",
 		reflect.TypeOf((*WafregionalRulePredicateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalRule.WafregionalRulePredicateOutputReference",
+		"@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateOutputReference",
 		reflect.TypeOf((*WafregionalRulePredicateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

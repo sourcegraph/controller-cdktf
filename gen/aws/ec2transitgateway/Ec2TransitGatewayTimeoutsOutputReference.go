@@ -228,7 +228,7 @@ func NewEc2TransitGatewayTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_Ec2TransitGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGateway.Ec2TransitGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEc2TransitGatewayTimeoutsOutputReference_Override(e Ec2TransitGatewayTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGateway.Ec2TransitGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

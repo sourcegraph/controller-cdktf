@@ -104,7 +104,7 @@ func NewDataGoogleStorageBucketVersioningList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataGoogleStorageBucketVersioningList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketVersioningList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketVersioningList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleStorageBucketVersioningList_Override(d DataGoogleStorageBucket
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketVersioningList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketVersioningList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

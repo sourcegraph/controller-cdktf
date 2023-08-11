@@ -116,7 +116,7 @@ func NewFisExperimentTemplateTargetResourceTagList(terraformResource cdktf.IInte
 	j := jsiiProxy_FisExperimentTemplateTargetResourceTagList{}
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagList",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFisExperimentTemplateTargetResourceTagList_Override(f FisExperimentTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagList",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTargetResourceTagList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

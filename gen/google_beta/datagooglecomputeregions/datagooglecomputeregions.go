@@ -327,7 +327,7 @@ func NewDataGoogleComputeRegions(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataGoogleComputeRegions{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataGoogleComputeRegions_Override(d DataGoogleComputeRegions, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataGoogleComputeRegions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -470,7 +470,7 @@ func DataGoogleComputeRegions_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataGoogleComputeRegions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataGoogleComputeRegions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegions.DataGoogleComputeRegions",
 		"tfResourceType",
 		&returns,
 	)

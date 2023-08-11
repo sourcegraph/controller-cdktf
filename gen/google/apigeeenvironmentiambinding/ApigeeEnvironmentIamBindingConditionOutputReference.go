@@ -226,7 +226,7 @@ func NewApigeeEnvironmentIamBindingConditionOutputReference(terraformResource cd
 	j := jsiiProxy_ApigeeEnvironmentIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingConditionOutputReference",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewApigeeEnvironmentIamBindingConditionOutputReference_Override(a ApigeeEnv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingConditionOutputReference",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

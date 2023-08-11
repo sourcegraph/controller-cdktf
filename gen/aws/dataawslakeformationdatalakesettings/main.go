@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettings",
 		reflect.TypeOf((*DataAwsLakeformationDataLakeSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsConfig",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsConfig",
 		reflect.TypeOf((*DataAwsLakeformationDataLakeSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions",
 		reflect.TypeOf((*DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList",
 		reflect.TypeOf((*DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference",
 		reflect.TypeOf((*DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,11 +122,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions",
 		reflect.TypeOf((*DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList",
 		reflect.TypeOf((*DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference",
 		reflect.TypeOf((*DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

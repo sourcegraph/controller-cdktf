@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appconfigEnvironment.AppconfigEnvironment",
+		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironment",
 		reflect.TypeOf((*AppconfigEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appconfigEnvironment.AppconfigEnvironmentConfig",
+		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentConfig",
 		reflect.TypeOf((*AppconfigEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appconfigEnvironment.AppconfigEnvironmentMonitor",
+		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentMonitor",
 		reflect.TypeOf((*AppconfigEnvironmentMonitor)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigEnvironment.AppconfigEnvironmentMonitorList",
+		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentMonitorList",
 		reflect.TypeOf((*AppconfigEnvironmentMonitorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appconfigEnvironment.AppconfigEnvironmentMonitorOutputReference",
+		"@cdktf/provider-aws.appconfigEnvironment.AppconfigEnvironmentMonitorOutputReference",
 		reflect.TypeOf((*AppconfigEnvironmentMonitorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarmArn", GoGetter: "AlarmArn"},

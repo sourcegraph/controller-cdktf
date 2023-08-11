@@ -116,7 +116,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementList(terraformResource cdkt
 	j := jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementList_Override(w Wafv2WebAcl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

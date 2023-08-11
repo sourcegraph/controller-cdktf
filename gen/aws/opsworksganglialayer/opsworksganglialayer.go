@@ -953,7 +953,7 @@ func NewOpsworksGangliaLayer(scope constructs.Construct, id *string, config *Ops
 	j := jsiiProxy_OpsworksGangliaLayer{}
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayer",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -966,7 +966,7 @@ func NewOpsworksGangliaLayer_Override(o OpsworksGangliaLayer, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayer",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1341,7 +1341,7 @@ func OpsworksGangliaLayer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayer",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1360,7 +1360,7 @@ func OpsworksGangliaLayer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayer",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1379,7 +1379,7 @@ func OpsworksGangliaLayer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayer",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1392,7 +1392,7 @@ func OpsworksGangliaLayer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayer",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer",
 		"tfResourceType",
 		&returns,
 	)

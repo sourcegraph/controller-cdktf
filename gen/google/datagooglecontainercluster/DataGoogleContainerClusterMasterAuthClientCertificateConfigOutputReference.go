@@ -167,7 +167,7 @@ func NewDataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReferen
 	j := jsiiProxy_DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

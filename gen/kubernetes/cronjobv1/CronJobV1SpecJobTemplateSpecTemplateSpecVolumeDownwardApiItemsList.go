@@ -116,7 +116,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList(terra
 	j := jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

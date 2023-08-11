@@ -104,7 +104,7 @@ func NewDataAwsOpensearchDomainAutoTuneOptionsList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOpensearchDomainAutoTuneOptionsList_Override(d DataAwsOpensearchD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

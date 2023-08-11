@@ -116,7 +116,7 @@ func NewStorageClassAllowedTopologiesMatchLabelExpressionsList(terraformResource
 	j := jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.storageClass.StorageClassAllowedTopologiesMatchLabelExpressionsList",
+		"@cdktf/provider-kubernetes.storageClass.StorageClassAllowedTopologiesMatchLabelExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStorageClassAllowedTopologiesMatchLabelExpressionsList_Override(s Storag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.storageClass.StorageClassAllowedTopologiesMatchLabelExpressionsList",
+		"@cdktf/provider-kubernetes.storageClass.StorageClassAllowedTopologiesMatchLabelExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

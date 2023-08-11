@@ -228,7 +228,7 @@ func NewLaunchTemplatePrivateDnsNameOptionsOutputReference(terraformResource cdk
 	j := jsiiProxy_LaunchTemplatePrivateDnsNameOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplatePrivateDnsNameOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLaunchTemplatePrivateDnsNameOptionsOutputReference_Override(l LaunchTemp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplatePrivateDnsNameOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

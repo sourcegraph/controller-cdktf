@@ -226,7 +226,7 @@ func NewLexIntentConclusionStatementMessageOutputReference(terraformResource cdk
 	j := jsiiProxy_LexIntentConclusionStatementMessageOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConclusionStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewLexIntentConclusionStatementMessageOutputReference_Override(l LexIntentC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConclusionStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

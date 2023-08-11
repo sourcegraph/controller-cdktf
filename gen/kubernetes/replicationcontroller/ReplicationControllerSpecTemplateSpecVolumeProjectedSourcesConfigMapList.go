@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

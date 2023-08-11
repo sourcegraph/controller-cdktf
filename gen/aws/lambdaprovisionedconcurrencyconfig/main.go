@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		reflect.TypeOf((*LambdaProvisionedConcurrencyConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigConfig",
 		reflect.TypeOf((*LambdaProvisionedConcurrencyConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeouts",
 		reflect.TypeOf((*LambdaProvisionedConcurrencyConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeoutsOutputReference",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeoutsOutputReference",
 		reflect.TypeOf((*LambdaProvisionedConcurrencyConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

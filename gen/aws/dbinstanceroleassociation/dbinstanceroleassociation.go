@@ -365,7 +365,7 @@ func NewDbInstanceRoleAssociation(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DbInstanceRoleAssociation{}
 
 	_jsii_.Create(
-		"aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
+		"@cdktf/provider-aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewDbInstanceRoleAssociation_Override(d DbInstanceRoleAssociation, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
+		"@cdktf/provider-aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -522,7 +522,7 @@ func DbInstanceRoleAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
+		"@cdktf/provider-aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func DbInstanceRoleAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
+		"@cdktf/provider-aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func DbInstanceRoleAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
+		"@cdktf/provider-aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func DbInstanceRoleAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
+		"@cdktf/provider-aws.dbInstanceRoleAssociation.DbInstanceRoleAssociation",
 		"tfResourceType",
 		&returns,
 	)

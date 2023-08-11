@@ -178,7 +178,7 @@ func NewDataGoogleCloudIdentityGroupMembershipsMembershipsMemberKeyOutputReferen
 	j := jsiiProxy_DataGoogleCloudIdentityGroupMembershipsMembershipsMemberKeyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsMemberKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsMemberKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleCloudIdentityGroupMembershipsMembershipsMemberKeyOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsMemberKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsMemberKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

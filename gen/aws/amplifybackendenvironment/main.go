@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
+		"@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironment",
 		reflect.TypeOf((*AmplifyBackendEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amplifyBackendEnvironment.AmplifyBackendEnvironmentConfig",
+		"@cdktf/provider-aws.amplifyBackendEnvironment.AmplifyBackendEnvironmentConfig",
 		reflect.TypeOf((*AmplifyBackendEnvironmentConfig)(nil)).Elem(),
 	)
 }

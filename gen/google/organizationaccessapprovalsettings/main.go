@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettings",
 		reflect.TypeOf((*OrganizationAccessApprovalSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersion", GoGetter: "ActiveKeyVersion"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsConfig",
 		reflect.TypeOf((*OrganizationAccessApprovalSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServices",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServices",
 		reflect.TypeOf((*OrganizationAccessApprovalSettingsEnrolledServices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesList",
 		reflect.TypeOf((*OrganizationAccessApprovalSettingsEnrolledServicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesOutputReference",
 		reflect.TypeOf((*OrganizationAccessApprovalSettingsEnrolledServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudProduct", GoGetter: "CloudProduct"},
@@ -140,11 +140,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeouts",
 		reflect.TypeOf((*OrganizationAccessApprovalSettingsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeoutsOutputReference",
 		reflect.TypeOf((*OrganizationAccessApprovalSettingsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

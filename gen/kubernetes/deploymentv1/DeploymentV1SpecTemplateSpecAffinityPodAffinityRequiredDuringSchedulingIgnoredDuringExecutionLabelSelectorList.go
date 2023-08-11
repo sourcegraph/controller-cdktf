@@ -116,7 +116,7 @@ func NewDeploymentV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingI
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

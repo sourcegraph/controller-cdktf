@@ -179,7 +179,7 @@ func NewGameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutpu
 	j := jsiiProxy_GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

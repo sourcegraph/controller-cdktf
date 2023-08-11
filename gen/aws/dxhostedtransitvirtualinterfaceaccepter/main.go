@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dxHostedTransitVirtualInterfaceAccepter.DxHostedTransitVirtualInterfaceAccepter",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterfaceAccepter.DxHostedTransitVirtualInterfaceAccepter",
 		reflect.TypeOf((*DxHostedTransitVirtualInterfaceAccepter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxHostedTransitVirtualInterfaceAccepter.DxHostedTransitVirtualInterfaceAccepterConfig",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterfaceAccepter.DxHostedTransitVirtualInterfaceAccepterConfig",
 		reflect.TypeOf((*DxHostedTransitVirtualInterfaceAccepterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxHostedTransitVirtualInterfaceAccepter.DxHostedTransitVirtualInterfaceAccepterTimeouts",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterfaceAccepter.DxHostedTransitVirtualInterfaceAccepterTimeouts",
 		reflect.TypeOf((*DxHostedTransitVirtualInterfaceAccepterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dxHostedTransitVirtualInterfaceAccepter.DxHostedTransitVirtualInterfaceAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterfaceAccepter.DxHostedTransitVirtualInterfaceAccepterTimeoutsOutputReference",
 		reflect.TypeOf((*DxHostedTransitVirtualInterfaceAccepterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

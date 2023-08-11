@@ -437,7 +437,7 @@ func NewApikeysKey(scope constructs.Construct, id *string, config *ApikeysKeyCon
 	j := jsiiProxy_ApikeysKey{}
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKey",
+		"@cdktf/provider-google.apikeysKey.ApikeysKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewApikeysKey_Override(a ApikeysKey, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKey",
+		"@cdktf/provider-google.apikeysKey.ApikeysKey",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -594,7 +594,7 @@ func ApikeysKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apikeysKey.ApikeysKey",
+		"@cdktf/provider-google.apikeysKey.ApikeysKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func ApikeysKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apikeysKey.ApikeysKey",
+		"@cdktf/provider-google.apikeysKey.ApikeysKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func ApikeysKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apikeysKey.ApikeysKey",
+		"@cdktf/provider-google.apikeysKey.ApikeysKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func ApikeysKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apikeysKey.ApikeysKey",
+		"@cdktf/provider-google.apikeysKey.ApikeysKey",
 		"tfResourceType",
 		&returns,
 	)

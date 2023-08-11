@@ -228,7 +228,7 @@ func NewGoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputR
 	j := jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

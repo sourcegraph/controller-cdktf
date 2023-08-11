@@ -104,7 +104,7 @@ func NewDataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig
 	j := jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

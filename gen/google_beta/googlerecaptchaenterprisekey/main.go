@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,11 +85,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyAndroidSettings",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyAndroidSettings",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyAndroidSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllPackageNames", GoGetter: "AllowAllPackageNames"},
@@ -127,15 +127,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyConfig",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyConfig",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyIosSettings",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyIosSettings",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyIosSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllBundleIds", GoGetter: "AllowAllBundleIds"},
@@ -173,11 +173,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTestingOptions",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTestingOptions",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyTestingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyTestingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -215,11 +215,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTimeouts",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTimeouts",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -260,11 +260,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWebSettings",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWebSettings",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyWebSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference",
 		reflect.TypeOf((*GoogleRecaptchaEnterpriseKeyWebSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllDomains", GoGetter: "AllowAllDomains"},

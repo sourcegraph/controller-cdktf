@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace",
+		"@cdktf/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspace",
 		reflect.TypeOf((*DataAwsPrometheusWorkspace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig",
+		"@cdktf/provider-aws.dataAwsPrometheusWorkspace.DataAwsPrometheusWorkspaceConfig",
 		reflect.TypeOf((*DataAwsPrometheusWorkspaceConfig)(nil)).Elem(),
 	)
 }

@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptionsList(terr
 	j := jsiiProxy_DataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptionsList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptionsList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerSecurityContextSeLinuxOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

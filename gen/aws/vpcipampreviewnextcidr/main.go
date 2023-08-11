@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
 		reflect.TypeOf((*VpcIpamPreviewNextCidr)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidrConfig",
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidrConfig",
 		reflect.TypeOf((*VpcIpamPreviewNextCidrConfig)(nil)).Elem(),
 	)
 }

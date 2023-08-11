@@ -204,7 +204,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference(terra
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

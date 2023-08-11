@@ -104,7 +104,7 @@ func NewDataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainLi
 	j := jsiiProxy_DataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainList{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainList",
+		"@cdktf/provider-google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainList",
+		"@cdktf/provider-google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

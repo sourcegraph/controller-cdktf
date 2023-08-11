@@ -227,7 +227,7 @@ func NewGoogleMonitoringUptimeCheckConfigContentMatchersOutputReference(terrafor
 	j := jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleMonitoringUptimeCheckConfigContentMatchersOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

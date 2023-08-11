@@ -275,7 +275,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerPortOutputReference(terraformResourc
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecContainerPortOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerPortOutputReference_Override(d Daemo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

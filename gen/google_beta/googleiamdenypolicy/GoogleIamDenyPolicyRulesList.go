@@ -116,7 +116,7 @@ func NewGoogleIamDenyPolicyRulesList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_GoogleIamDenyPolicyRulesList{}
 
 	_jsii_.Create(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesList",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleIamDenyPolicyRulesList_Override(g GoogleIamDenyPolicyRulesList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesList",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

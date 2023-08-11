@@ -215,7 +215,7 @@ func NewEksClusterKubernetesNetworkConfigOutputReference(terraformResource cdktf
 	j := jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewEksClusterKubernetesNetworkConfigOutputReference_Override(e EksClusterKu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterKubernetesNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

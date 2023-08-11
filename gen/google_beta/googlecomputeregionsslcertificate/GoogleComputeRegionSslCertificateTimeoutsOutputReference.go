@@ -204,7 +204,7 @@ func NewGoogleComputeRegionSslCertificateTimeoutsOutputReference(terraformResour
 	j := jsiiProxy_GoogleComputeRegionSslCertificateTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeRegionSslCertificateTimeoutsOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionSslCertificate.GoogleComputeRegionSslCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

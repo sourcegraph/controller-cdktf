@@ -228,7 +228,7 @@ func NewGoogleBigqueryConnectionTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleBigqueryConnectionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleBigqueryConnectionTimeoutsOutputReference_Override(g GoogleBigquer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -202,7 +202,7 @@ func NewSagemakerModelVpcConfigOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_SagemakerModelVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelVpcConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSagemakerModelVpcConfigOutputReference_Override(s SagemakerModelVpcConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerModel.SagemakerModelVpcConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

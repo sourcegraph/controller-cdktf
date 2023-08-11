@@ -104,7 +104,7 @@ func NewDataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList(terrafor
 	j := jsiiProxy_DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList{}
 
 	_jsii_.Create(
-		"google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

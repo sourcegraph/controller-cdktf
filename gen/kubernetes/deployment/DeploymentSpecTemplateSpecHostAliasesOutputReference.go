@@ -202,7 +202,7 @@ func NewDeploymentSpecTemplateSpecHostAliasesOutputReference(terraformResource c
 	j := jsiiProxy_DeploymentSpecTemplateSpecHostAliasesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDeploymentSpecTemplateSpecHostAliasesOutputReference_Override(d Deployme
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

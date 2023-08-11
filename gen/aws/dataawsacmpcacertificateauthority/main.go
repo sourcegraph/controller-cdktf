@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthority",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthority",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthority)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,19 +68,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityConfig",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfiguration",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfiguration",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,7 +137,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -157,11 +157,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -181,7 +181,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -215,7 +215,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

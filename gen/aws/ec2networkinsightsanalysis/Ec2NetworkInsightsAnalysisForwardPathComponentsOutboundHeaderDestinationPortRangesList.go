@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestination
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestination
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

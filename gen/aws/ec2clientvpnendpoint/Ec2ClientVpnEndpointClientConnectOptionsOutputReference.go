@@ -204,7 +204,7 @@ func NewEc2ClientVpnEndpointClientConnectOptionsOutputReference(terraformResourc
 	j := jsiiProxy_Ec2ClientVpnEndpointClientConnectOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptionsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEc2ClientVpnEndpointClientConnectOptionsOutputReference_Override(e Ec2Cl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptionsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointClientConnectOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

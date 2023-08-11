@@ -178,7 +178,7 @@ func NewDataAwsLbListenerDefaultActionForwardOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsLbListenerDefaultActionForwardOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardOutputReference",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsLbListenerDefaultActionForwardOutputReference_Override(d DataAwsL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardOutputReference",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

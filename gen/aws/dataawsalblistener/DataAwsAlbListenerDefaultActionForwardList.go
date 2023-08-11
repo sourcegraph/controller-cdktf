@@ -104,7 +104,7 @@ func NewDataAwsAlbListenerDefaultActionForwardList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsAlbListenerDefaultActionForwardList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAlbListenerDefaultActionForwardList_Override(d DataAwsAlbListener
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

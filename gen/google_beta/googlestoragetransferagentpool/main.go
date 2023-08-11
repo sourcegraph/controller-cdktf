@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
 		reflect.TypeOf((*GoogleStorageTransferAgentPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolBandwidthLimit",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolBandwidthLimit",
 		reflect.TypeOf((*GoogleStorageTransferAgentPoolBandwidthLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolBandwidthLimitOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolBandwidthLimitOutputReference",
 		reflect.TypeOf((*GoogleStorageTransferAgentPoolBandwidthLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,15 +110,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolConfig",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolConfig",
 		reflect.TypeOf((*GoogleStorageTransferAgentPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolTimeouts",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolTimeouts",
 		reflect.TypeOf((*GoogleStorageTransferAgentPoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPoolTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleStorageTransferAgentPoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

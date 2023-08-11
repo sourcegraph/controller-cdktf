@@ -228,7 +228,7 @@ func NewGoogleComputeRegionTargetHttpsProxyTimeoutsOutputReference(terraformReso
 	j := jsiiProxy_GoogleComputeRegionTargetHttpsProxyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionTargetHttpsProxy.GoogleComputeRegionTargetHttpsProxyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpsProxy.GoogleComputeRegionTargetHttpsProxyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeRegionTargetHttpsProxyTimeoutsOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionTargetHttpsProxy.GoogleComputeRegionTargetHttpsProxyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpsProxy.GoogleComputeRegionTargetHttpsProxyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

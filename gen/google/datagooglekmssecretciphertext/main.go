@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
+		"@cdktf/provider-google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
 		reflect.TypeOf((*DataGoogleKmsSecretCiphertext)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertextConfig",
+		"@cdktf/provider-google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertextConfig",
 		reflect.TypeOf((*DataGoogleKmsSecretCiphertextConfig)(nil)).Elem(),
 	)
 }

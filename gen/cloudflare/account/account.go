@@ -367,7 +367,7 @@ func NewAccount(scope constructs.Construct, id *string, config *AccountConfig) A
 	j := jsiiProxy_Account{}
 
 	_jsii_.Create(
-		"cloudflare.account.Account",
+		"@cdktf/provider-cloudflare.account.Account",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewAccount_Override(a Account, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.account.Account",
+		"@cdktf/provider-cloudflare.account.Account",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -524,7 +524,7 @@ func Account_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.account.Account",
+		"@cdktf/provider-cloudflare.account.Account",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func Account_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.account.Account",
+		"@cdktf/provider-cloudflare.account.Account",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func Account_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.account.Account",
+		"@cdktf/provider-cloudflare.account.Account",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func Account_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.account.Account",
+		"@cdktf/provider-cloudflare.account.Account",
 		"tfResourceType",
 		&returns,
 	)

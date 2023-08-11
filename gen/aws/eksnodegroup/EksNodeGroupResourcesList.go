@@ -104,7 +104,7 @@ func NewEksNodeGroupResourcesList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_EksNodeGroupResourcesList{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupResourcesList",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEksNodeGroupResourcesList_Override(e EksNodeGroupResourcesList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupResourcesList",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

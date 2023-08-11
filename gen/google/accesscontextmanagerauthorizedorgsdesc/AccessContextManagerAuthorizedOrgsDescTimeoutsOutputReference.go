@@ -228,7 +228,7 @@ func NewAccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference(terraformR
 	j := jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAuthorizedOrgsDesc.AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

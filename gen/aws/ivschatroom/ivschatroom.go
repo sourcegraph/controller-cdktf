@@ -499,7 +499,7 @@ func NewIvschatRoom(scope constructs.Construct, id *string, config *IvschatRoomC
 	j := jsiiProxy_IvschatRoom{}
 
 	_jsii_.Create(
-		"aws.ivschatRoom.IvschatRoom",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoom",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -512,7 +512,7 @@ func NewIvschatRoom_Override(i IvschatRoom, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivschatRoom.IvschatRoom",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoom",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -689,7 +689,7 @@ func IvschatRoom_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivschatRoom.IvschatRoom",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoom",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -708,7 +708,7 @@ func IvschatRoom_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivschatRoom.IvschatRoom",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoom",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func IvschatRoom_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivschatRoom.IvschatRoom",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoom",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func IvschatRoom_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ivschatRoom.IvschatRoom",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoom",
 		"tfResourceType",
 		&returns,
 	)

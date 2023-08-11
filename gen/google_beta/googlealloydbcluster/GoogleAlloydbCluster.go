@@ -599,7 +599,7 @@ func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *Goo
 	j := jsiiProxy_GoogleAlloydbCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -612,7 +612,7 @@ func NewGoogleAlloydbCluster_Override(g GoogleAlloydbCluster, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -789,7 +789,7 @@ func GoogleAlloydbCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func GoogleAlloydbCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -827,7 +827,7 @@ func GoogleAlloydbCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func GoogleAlloydbCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbCluster",
 		"tfResourceType",
 		&returns,
 	)

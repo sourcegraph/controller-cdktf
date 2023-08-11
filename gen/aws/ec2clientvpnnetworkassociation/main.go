@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
 		reflect.TypeOf((*Ec2ClientVpnNetworkAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationConfig",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationConfig",
 		reflect.TypeOf((*Ec2ClientVpnNetworkAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationTimeouts",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationTimeouts",
 		reflect.TypeOf((*Ec2ClientVpnNetworkAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*Ec2ClientVpnNetworkAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

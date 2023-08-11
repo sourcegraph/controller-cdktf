@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2ApiMapping.Apigatewayv2ApiMapping",
+		"@cdktf/provider-aws.apigatewayv2ApiMapping.Apigatewayv2ApiMapping",
 		reflect.TypeOf((*Apigatewayv2ApiMapping)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2ApiMapping.Apigatewayv2ApiMappingConfig",
+		"@cdktf/provider-aws.apigatewayv2ApiMapping.Apigatewayv2ApiMappingConfig",
 		reflect.TypeOf((*Apigatewayv2ApiMappingConfig)(nil)).Elem(),
 	)
 }

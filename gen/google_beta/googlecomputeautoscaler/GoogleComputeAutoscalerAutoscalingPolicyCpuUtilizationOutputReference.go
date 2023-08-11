@@ -203,7 +203,7 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference(te
 	j := jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

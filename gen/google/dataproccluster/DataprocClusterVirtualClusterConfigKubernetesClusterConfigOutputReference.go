@@ -226,7 +226,7 @@ func NewDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReferenc
 	j := jsiiProxy_DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

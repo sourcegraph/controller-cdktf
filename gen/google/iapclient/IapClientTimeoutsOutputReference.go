@@ -204,7 +204,7 @@ func NewIapClientTimeoutsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_IapClientTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.iapClient.IapClientTimeoutsOutputReference",
+		"@cdktf/provider-google.iapClient.IapClientTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIapClientTimeoutsOutputReference_Override(i IapClientTimeoutsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapClient.IapClientTimeoutsOutputReference",
+		"@cdktf/provider-google.iapClient.IapClientTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

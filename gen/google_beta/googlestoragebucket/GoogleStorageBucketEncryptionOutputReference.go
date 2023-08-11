@@ -179,7 +179,7 @@ func NewGoogleStorageBucketEncryptionOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleStorageBucketEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketEncryptionOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleStorageBucketEncryptionOutputReference_Override(g GoogleStorageBuc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketEncryptionOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

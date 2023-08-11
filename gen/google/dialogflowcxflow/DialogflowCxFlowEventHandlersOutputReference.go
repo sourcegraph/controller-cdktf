@@ -263,7 +263,7 @@ func NewDialogflowCxFlowEventHandlersOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DialogflowCxFlowEventHandlersOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -275,7 +275,7 @@ func NewDialogflowCxFlowEventHandlersOutputReference_Override(d DialogflowCxFlow
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

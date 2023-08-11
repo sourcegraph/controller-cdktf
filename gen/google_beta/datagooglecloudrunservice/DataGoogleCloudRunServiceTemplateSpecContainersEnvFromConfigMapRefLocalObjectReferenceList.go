@@ -104,7 +104,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalO
 	j := jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewDirectoryServiceRegionVpcSettingsOutputReference(terraformResource cdktf
 	j := jsiiProxy_DirectoryServiceRegionVpcSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.directoryServiceRegion.DirectoryServiceRegionVpcSettingsOutputReference",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionVpcSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDirectoryServiceRegionVpcSettingsOutputReference_Override(d DirectorySer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceRegion.DirectoryServiceRegionVpcSettingsOutputReference",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionVpcSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

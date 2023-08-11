@@ -189,7 +189,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsC
 	j := jsiiProxy_DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -584,7 +584,7 @@ func NewDataAwsAlb(scope constructs.Construct, id *string, config *DataAwsAlbCon
 	j := jsiiProxy_DataAwsAlb{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlb.DataAwsAlb",
+		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -597,7 +597,7 @@ func NewDataAwsAlb_Override(d DataAwsAlb, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlb.DataAwsAlb",
+		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -719,7 +719,7 @@ func DataAwsAlb_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAlb.DataAwsAlb",
+		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func DataAwsAlb_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAlb.DataAwsAlb",
+		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func DataAwsAlb_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAlb.DataAwsAlb",
+		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func DataAwsAlb_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsAlb.DataAwsAlb",
+		"@cdktf/provider-aws.dataAwsAlb.DataAwsAlb",
 		"tfResourceType",
 		&returns,
 	)

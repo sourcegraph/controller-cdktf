@@ -116,7 +116,7 @@ func NewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersPara
 	j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList{}
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersPara
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

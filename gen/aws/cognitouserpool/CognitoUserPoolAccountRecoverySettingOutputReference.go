@@ -179,7 +179,7 @@ func NewCognitoUserPoolAccountRecoverySettingOutputReference(terraformResource c
 	j := jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCognitoUserPoolAccountRecoverySettingOutputReference_Override(c CognitoU
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

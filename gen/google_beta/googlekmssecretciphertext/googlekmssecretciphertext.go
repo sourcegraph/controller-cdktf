@@ -401,7 +401,7 @@ func NewGoogleKmsSecretCiphertext(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleKmsSecretCiphertext{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
+		"@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleKmsSecretCiphertext_Override(g GoogleKmsSecretCiphertext, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
+		"@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -558,7 +558,7 @@ func GoogleKmsSecretCiphertext_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
+		"@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleKmsSecretCiphertext_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
+		"@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func GoogleKmsSecretCiphertext_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
+		"@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleKmsSecretCiphertext_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
+		"@cdktf/provider-google-beta.googleKmsSecretCiphertext.GoogleKmsSecretCiphertext",
 		"tfResourceType",
 		&returns,
 	)

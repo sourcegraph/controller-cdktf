@@ -348,7 +348,7 @@ func NewDlmLifecyclePolicyPolicyDetailsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewDlmLifecyclePolicyPolicyDetailsOutputReference_Override(d DlmLifecyclePo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

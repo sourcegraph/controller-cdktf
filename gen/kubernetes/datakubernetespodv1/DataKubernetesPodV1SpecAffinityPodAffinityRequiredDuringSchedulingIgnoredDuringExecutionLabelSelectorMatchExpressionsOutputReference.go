@@ -189,7 +189,7 @@ func NewDataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnore
 	j := jsiiProxy_DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnore
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

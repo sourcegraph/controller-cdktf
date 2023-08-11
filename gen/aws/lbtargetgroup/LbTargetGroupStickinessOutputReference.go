@@ -251,7 +251,7 @@ func NewLbTargetGroupStickinessOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LbTargetGroupStickinessOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbTargetGroup.LbTargetGroupStickinessOutputReference",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewLbTargetGroupStickinessOutputReference_Override(l LbTargetGroupStickines
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbTargetGroup.LbTargetGroupStickinessOutputReference",
+		"@cdktf/provider-aws.lbTargetGroup.LbTargetGroupStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

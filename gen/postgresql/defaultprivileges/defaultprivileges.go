@@ -459,7 +459,7 @@ func NewDefaultPrivileges(scope constructs.Construct, id *string, config *Defaul
 	j := jsiiProxy_DefaultPrivileges{}
 
 	_jsii_.Create(
-		"postgresql.defaultPrivileges.DefaultPrivileges",
+		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewDefaultPrivileges_Override(d DefaultPrivileges, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.defaultPrivileges.DefaultPrivileges",
+		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -660,7 +660,7 @@ func DefaultPrivileges_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.defaultPrivileges.DefaultPrivileges",
+		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func DefaultPrivileges_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.defaultPrivileges.DefaultPrivileges",
+		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func DefaultPrivileges_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.defaultPrivileges.DefaultPrivileges",
+		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func DefaultPrivileges_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.defaultPrivileges.DefaultPrivileges",
+		"@cdktf/provider-postgresql.defaultPrivileges.DefaultPrivileges",
 		"tfResourceType",
 		&returns,
 	)

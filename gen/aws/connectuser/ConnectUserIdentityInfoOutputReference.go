@@ -228,7 +228,7 @@ func NewConnectUserIdentityInfoOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ConnectUserIdentityInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectUser.ConnectUserIdentityInfoOutputReference",
+		"@cdktf/provider-aws.connectUser.ConnectUserIdentityInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewConnectUserIdentityInfoOutputReference_Override(c ConnectUserIdentityInf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectUser.ConnectUserIdentityInfoOutputReference",
+		"@cdktf/provider-aws.connectUser.ConnectUserIdentityInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

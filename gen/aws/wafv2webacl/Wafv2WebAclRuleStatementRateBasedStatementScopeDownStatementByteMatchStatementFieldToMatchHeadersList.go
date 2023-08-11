@@ -116,7 +116,7 @@ func NewWafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchSta
 	j := jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchSta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementByteMatchStatementFieldToMatchHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

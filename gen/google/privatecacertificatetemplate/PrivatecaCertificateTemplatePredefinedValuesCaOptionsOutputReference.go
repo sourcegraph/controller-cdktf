@@ -204,7 +204,7 @@ func NewPrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference(ter
 	j := jsiiProxy_PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplatePredefinedValuesCaOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

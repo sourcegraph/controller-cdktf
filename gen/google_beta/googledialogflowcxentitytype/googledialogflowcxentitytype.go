@@ -544,7 +544,7 @@ func NewGoogleDialogflowCxEntityType(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleDialogflowCxEntityType{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
+		"@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -557,7 +557,7 @@ func NewGoogleDialogflowCxEntityType_Override(g GoogleDialogflowCxEntityType, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
+		"@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -745,7 +745,7 @@ func GoogleDialogflowCxEntityType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
+		"@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -764,7 +764,7 @@ func GoogleDialogflowCxEntityType_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
+		"@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func GoogleDialogflowCxEntityType_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
+		"@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func GoogleDialogflowCxEntityType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
+		"@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityType",
 		"tfResourceType",
 		&returns,
 	)

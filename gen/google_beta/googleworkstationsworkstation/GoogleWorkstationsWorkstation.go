@@ -563,7 +563,7 @@ func NewGoogleWorkstationsWorkstation(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleWorkstationsWorkstation{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -576,7 +576,7 @@ func NewGoogleWorkstationsWorkstation_Override(g GoogleWorkstationsWorkstation, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -775,7 +775,7 @@ func GoogleWorkstationsWorkstation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func GoogleWorkstationsWorkstation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -813,7 +813,7 @@ func GoogleWorkstationsWorkstation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -826,7 +826,7 @@ func GoogleWorkstationsWorkstation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation",
 		"tfResourceType",
 		&returns,
 	)

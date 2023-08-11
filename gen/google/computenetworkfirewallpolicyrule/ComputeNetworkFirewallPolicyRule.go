@@ -625,7 +625,7 @@ func NewComputeNetworkFirewallPolicyRule(scope constructs.Construct, id *string,
 	j := jsiiProxy_ComputeNetworkFirewallPolicyRule{}
 
 	_jsii_.Create(
-		"google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -638,7 +638,7 @@ func NewComputeNetworkFirewallPolicyRule_Override(c ComputeNetworkFirewallPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -859,7 +859,7 @@ func ComputeNetworkFirewallPolicyRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -878,7 +878,7 @@ func ComputeNetworkFirewallPolicyRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -897,7 +897,7 @@ func ComputeNetworkFirewallPolicyRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -910,7 +910,7 @@ func ComputeNetworkFirewallPolicyRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRule",
 		"tfResourceType",
 		&returns,
 	)

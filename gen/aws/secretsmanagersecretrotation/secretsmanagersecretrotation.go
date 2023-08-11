@@ -376,7 +376,7 @@ func NewSecretsmanagerSecretRotation(scope constructs.Construct, id *string, con
 	j := jsiiProxy_SecretsmanagerSecretRotation{}
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewSecretsmanagerSecretRotation_Override(s SecretsmanagerSecretRotation, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -522,7 +522,7 @@ func SecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func SecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func SecretsmanagerSecretRotation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func SecretsmanagerSecretRotation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
 		"tfResourceType",
 		&returns,
 	)

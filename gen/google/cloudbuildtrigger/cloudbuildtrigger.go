@@ -870,7 +870,7 @@ func NewCloudbuildTrigger(scope constructs.Construct, id *string, config *Cloudb
 	j := jsiiProxy_CloudbuildTrigger{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTrigger",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -883,7 +883,7 @@ func NewCloudbuildTrigger_Override(c CloudbuildTrigger, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTrigger",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1137,7 +1137,7 @@ func CloudbuildTrigger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudbuildTrigger.CloudbuildTrigger",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1156,7 +1156,7 @@ func CloudbuildTrigger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudbuildTrigger.CloudbuildTrigger",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1175,7 +1175,7 @@ func CloudbuildTrigger_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudbuildTrigger.CloudbuildTrigger",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1188,7 +1188,7 @@ func CloudbuildTrigger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudbuildTrigger.CloudbuildTrigger",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		"tfResourceType",
 		&returns,
 	)

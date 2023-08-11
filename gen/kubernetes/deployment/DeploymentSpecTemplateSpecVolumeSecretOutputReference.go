@@ -252,7 +252,7 @@ func NewDeploymentSpecTemplateSpecVolumeSecretOutputReference(terraformResource 
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeSecretOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDeploymentSpecTemplateSpecVolumeSecretOutputReference_Override(d Deploym
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

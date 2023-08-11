@@ -116,7 +116,7 @@ func NewGoogleAccessContextManagerServicePerimeterEgressPolicyEgressToOperations
 	j := jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyEgressToOperationsList{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerServicePerimeterEgressPolicy.GoogleAccessContextManagerServicePerimeterEgressPolicyEgressToOperationsList",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterEgressPolicy.GoogleAccessContextManagerServicePerimeterEgressPolicyEgressToOperationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleAccessContextManagerServicePerimeterEgressPolicyEgressToOperations
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerServicePerimeterEgressPolicy.GoogleAccessContextManagerServicePerimeterEgressPolicyEgressToOperationsList",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeterEgressPolicy.GoogleAccessContextManagerServicePerimeterEgressPolicyEgressToOperationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

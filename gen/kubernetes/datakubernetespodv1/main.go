@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1",
 		reflect.TypeOf((*DataKubernetesPodV1)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,15 +58,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1Config",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1Config",
 		reflect.TypeOf((*DataKubernetesPodV1Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1Metadata",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1Metadata",
 		reflect.TypeOf((*DataKubernetesPodV1Metadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1MetadataOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1MetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -116,15 +116,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1Spec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1Spec",
 		reflect.TypeOf((*DataKubernetesPodV1Spec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinity",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinity",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinity",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinity",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -168,7 +168,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -202,11 +202,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -226,7 +226,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -260,11 +260,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -284,11 +284,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -308,7 +308,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -343,7 +343,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -376,11 +376,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -400,11 +400,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -424,11 +424,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -448,7 +448,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -483,7 +483,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -516,7 +516,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -549,7 +549,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -584,11 +584,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinity",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinity",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -608,7 +608,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -642,11 +642,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -666,7 +666,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -700,15 +700,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -728,11 +728,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -752,7 +752,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -787,7 +787,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -821,7 +821,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -841,7 +841,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -876,15 +876,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -904,11 +904,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -928,7 +928,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -963,7 +963,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -997,7 +997,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1017,7 +1017,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1052,11 +1052,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinity",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinity",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1076,7 +1076,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1110,11 +1110,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1134,7 +1134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1168,15 +1168,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1196,11 +1196,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1220,7 +1220,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1255,7 +1255,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1289,7 +1289,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1309,7 +1309,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1344,15 +1344,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1372,11 +1372,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1396,7 +1396,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1431,7 +1431,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1465,7 +1465,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1485,7 +1485,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1520,23 +1520,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainer",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainer",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnv",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnv",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnv)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFrom",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFrom",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromConfigMapRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromConfigMapRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvFromConfigMapRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromConfigMapRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromConfigMapRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvFromConfigMapRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1556,7 +1556,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromConfigMapRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvFromConfigMapRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1590,7 +1590,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvFromList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1610,7 +1610,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1645,11 +1645,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromSecretRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromSecretRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvFromSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromSecretRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvFromSecretRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1669,7 +1669,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvFromSecretRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvFromSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1703,7 +1703,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1723,7 +1723,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1758,15 +1758,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFrom",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFrom",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromConfigMapKeyRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromConfigMapKeyRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromConfigMapKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromConfigMapKeyRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromConfigMapKeyRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromConfigMapKeyRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1786,7 +1786,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromConfigMapKeyRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromConfigMapKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1821,11 +1821,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromFieldRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromFieldRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromFieldRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromFieldRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1845,7 +1845,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromFieldRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -1879,7 +1879,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1899,7 +1899,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1935,11 +1935,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1959,7 +1959,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1994,11 +1994,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromSecretKeyRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromSecretKeyRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromSecretKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromSecretKeyRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromSecretKeyRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromSecretKeyRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2018,7 +2018,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromSecretKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromSecretKeyRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2053,11 +2053,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecycle",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecycle",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecycle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecycleList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecycleList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecycleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2077,7 +2077,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecycleOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecycleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2111,15 +2111,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStart",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStart",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStart)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2139,7 +2139,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -2172,15 +2172,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2200,7 +2200,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2234,7 +2234,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2254,7 +2254,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2291,7 +2291,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2311,7 +2311,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2346,11 +2346,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2370,7 +2370,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePostStartTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2403,15 +2403,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStop",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStop",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStop)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2431,7 +2431,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -2464,15 +2464,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2492,7 +2492,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2526,7 +2526,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2546,7 +2546,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2583,7 +2583,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2603,7 +2603,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2638,11 +2638,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2662,7 +2662,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLifecyclePreStopTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2695,7 +2695,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2715,15 +2715,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbe",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbe",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2743,7 +2743,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -2776,15 +2776,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2804,7 +2804,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2838,7 +2838,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2858,7 +2858,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2895,7 +2895,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2915,7 +2915,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2955,11 +2955,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2979,7 +2979,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLivenessProbeTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3012,7 +3012,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -3065,11 +3065,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerPort",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerPort",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerPort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerPortList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerPortList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerPortList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3089,7 +3089,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerPortOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerPortOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerPortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3126,15 +3126,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbe",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbe",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3154,7 +3154,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -3187,15 +3187,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3215,7 +3215,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3249,7 +3249,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3269,7 +3269,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3306,7 +3306,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3326,7 +3326,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3366,11 +3366,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3390,7 +3390,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerReadinessProbeTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerReadinessProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3423,11 +3423,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerResources",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerResources",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerResourcesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerResourcesList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3447,7 +3447,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerResourcesOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3481,15 +3481,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContext",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContext",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContext)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextCapabilities",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextCapabilities",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextCapabilities)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextCapabilitiesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextCapabilitiesList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextCapabilitiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3509,7 +3509,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextCapabilitiesOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextCapabilitiesOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextCapabilitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
@@ -3543,7 +3543,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3563,7 +3563,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalation", GoGetter: "AllowPrivilegeEscalation"},
@@ -3604,11 +3604,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeLinuxOptions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeLinuxOptions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextSeLinuxOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeLinuxOptionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextSeLinuxOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3628,7 +3628,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeLinuxOptionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3664,11 +3664,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeccompProfile",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeccompProfile",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextSeccompProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3688,7 +3688,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3722,15 +3722,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbe",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbe",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3750,7 +3750,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -3783,15 +3783,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3811,7 +3811,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3845,7 +3845,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3865,7 +3865,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3902,7 +3902,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3922,7 +3922,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3962,11 +3962,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3986,7 +3986,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerStartupProbeTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerStartupProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4019,11 +4019,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerVolumeMount",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerVolumeMount",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerVolumeMount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerVolumeMountList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerVolumeMountList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerVolumeMountList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4043,7 +4043,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerVolumeMountOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecContainerVolumeMountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4080,11 +4080,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfig",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfig",
 		reflect.TypeOf((*DataKubernetesPodV1SpecDnsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecDnsConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4104,11 +4104,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigOption",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigOption",
 		reflect.TypeOf((*DataKubernetesPodV1SpecDnsConfigOption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigOptionList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecDnsConfigOptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4128,7 +4128,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigOptionOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigOptionOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecDnsConfigOptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4162,7 +4162,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecDnsConfigOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecDnsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4197,11 +4197,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliases",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliases",
 		reflect.TypeOf((*DataKubernetesPodV1SpecHostAliases)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliasesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliasesList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecHostAliasesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4221,7 +4221,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliasesOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliasesOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecHostAliasesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4255,11 +4255,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecrets",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecrets",
 		reflect.TypeOf((*DataKubernetesPodV1SpecImagePullSecrets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecretsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecImagePullSecretsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4279,7 +4279,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecretsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecImagePullSecretsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4312,23 +4312,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainer",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainer",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnv",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnv",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnv)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFrom",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFrom",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromConfigMapRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromConfigMapRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvFromConfigMapRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromConfigMapRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromConfigMapRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvFromConfigMapRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4348,7 +4348,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromConfigMapRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvFromConfigMapRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4382,7 +4382,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvFromList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4402,7 +4402,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4437,11 +4437,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvFromSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvFromSecretRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4461,7 +4461,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvFromSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4495,7 +4495,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4515,7 +4515,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4550,15 +4550,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFrom",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFrom",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromConfigMapKeyRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromConfigMapKeyRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromConfigMapKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromConfigMapKeyRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromConfigMapKeyRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromConfigMapKeyRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4578,7 +4578,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4613,11 +4613,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromFieldRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromFieldRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromFieldRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromFieldRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4637,7 +4637,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromFieldRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -4671,7 +4671,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4691,7 +4691,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4727,11 +4727,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromResourceFieldRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromResourceFieldRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromResourceFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromResourceFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromResourceFieldRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromResourceFieldRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4751,7 +4751,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromResourceFieldRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromResourceFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4786,11 +4786,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromSecretKeyRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromSecretKeyRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromSecretKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromSecretKeyRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromSecretKeyRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromSecretKeyRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4810,7 +4810,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4845,11 +4845,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecycle",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecycle",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecycle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecycleList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecycleList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecycleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4869,7 +4869,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecycleOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecycleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4903,15 +4903,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStart",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStart",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStart)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4931,7 +4931,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -4964,15 +4964,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4992,7 +4992,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5026,7 +5026,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5046,7 +5046,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5083,7 +5083,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5103,7 +5103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5138,11 +5138,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5162,7 +5162,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5195,15 +5195,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStop",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStop",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStop)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5223,7 +5223,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -5256,15 +5256,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5284,7 +5284,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5318,7 +5318,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5338,7 +5338,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5375,7 +5375,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5395,7 +5395,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5430,11 +5430,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5454,7 +5454,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLifecyclePreStopTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5487,7 +5487,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5507,15 +5507,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbe",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbe",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5535,7 +5535,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -5568,15 +5568,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5596,7 +5596,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5630,7 +5630,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5650,7 +5650,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5687,7 +5687,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5707,7 +5707,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5747,11 +5747,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5771,7 +5771,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5804,7 +5804,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -5857,11 +5857,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerPort",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerPort",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerPort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerPortList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerPortList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerPortList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5881,7 +5881,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerPortOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerPortOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerPortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5918,15 +5918,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbe",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbe",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5946,7 +5946,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -5979,15 +5979,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6007,7 +6007,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6041,7 +6041,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6061,7 +6061,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6098,7 +6098,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6118,7 +6118,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6158,11 +6158,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6182,7 +6182,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerReadinessProbeTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerReadinessProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6215,11 +6215,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResources",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResources",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResourcesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResourcesList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6239,7 +6239,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResourcesOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6273,15 +6273,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContext",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContext",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContext)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextCapabilities",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextCapabilities",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextCapabilities)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextCapabilitiesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextCapabilitiesList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextCapabilitiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6301,7 +6301,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextCapabilitiesOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextCapabilitiesOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextCapabilitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
@@ -6335,7 +6335,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6355,7 +6355,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalation", GoGetter: "AllowPrivilegeEscalation"},
@@ -6396,11 +6396,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeLinuxOptions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeLinuxOptions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextSeLinuxOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeLinuxOptionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextSeLinuxOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6420,7 +6420,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeLinuxOptionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6456,11 +6456,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeccompProfile",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeccompProfile",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextSeccompProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeccompProfileList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeccompProfileList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextSeccompProfileList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6480,7 +6480,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerSecurityContextSeccompProfileOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6514,15 +6514,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbe",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbe",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeExec",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeExec",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeExecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeExecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6542,7 +6542,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeExecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -6575,15 +6575,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGet",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGet",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetHttpHeader",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6603,7 +6603,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6637,7 +6637,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6657,7 +6657,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6694,7 +6694,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6714,7 +6714,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6754,11 +6754,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeTcpSocket",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeTcpSocket",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeTcpSocketList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6778,7 +6778,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerStartupProbeTcpSocketOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerStartupProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6811,11 +6811,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerVolumeMount",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerVolumeMount",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerVolumeMount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerVolumeMountList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerVolumeMountList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerVolumeMountList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6835,7 +6835,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerVolumeMountOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecInitContainerVolumeMountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6872,7 +6872,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6892,7 +6892,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDeadlineSeconds", GoGetter: "ActiveDeadlineSeconds"},
@@ -6951,11 +6951,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecReadinessGate",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecReadinessGate",
 		reflect.TypeOf((*DataKubernetesPodV1SpecReadinessGate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecReadinessGateList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecReadinessGateList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecReadinessGateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6975,7 +6975,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecReadinessGateOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecReadinessGateOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecReadinessGateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7008,11 +7008,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContext",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContext",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContext)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7032,7 +7032,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7072,11 +7072,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextSeLinuxOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7096,7 +7096,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7132,11 +7132,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeccompProfile",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeccompProfile",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextSeccompProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeccompProfileList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeccompProfileList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextSeccompProfileList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7156,7 +7156,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeccompProfileOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7190,11 +7190,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSysctl",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSysctl",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextSysctl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSysctlList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextSysctlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7214,7 +7214,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSysctlOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSysctlOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecSecurityContextSysctlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7248,11 +7248,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecToleration",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecToleration",
 		reflect.TypeOf((*DataKubernetesPodV1SpecToleration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTolerationList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTolerationList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTolerationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7272,7 +7272,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTolerationOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTolerationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7309,15 +7309,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraint",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraint",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTopologySpreadConstraint)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelector",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelector",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7337,11 +7337,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressions",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7361,7 +7361,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7396,7 +7396,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTopologySpreadConstraintLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7430,7 +7430,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTopologySpreadConstraintList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7450,7 +7450,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecTopologySpreadConstraintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7486,15 +7486,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolume",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolume",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAwsElasticBlockStore",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAwsElasticBlockStore",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeAwsElasticBlockStore)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAwsElasticBlockStoreList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAwsElasticBlockStoreList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeAwsElasticBlockStoreList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7514,7 +7514,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAwsElasticBlockStoreOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeAwsElasticBlockStoreOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7550,11 +7550,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureDisk",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureDisk",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeAzureDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureDiskList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureDiskList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeAzureDiskList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7574,7 +7574,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureDiskOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeAzureDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cachingMode", GoGetter: "CachingMode"},
@@ -7612,11 +7612,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureFile",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureFile",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeAzureFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureFileList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureFileList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeAzureFileList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7636,7 +7636,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeAzureFileOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeAzureFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7672,11 +7672,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFs",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFs",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCephFs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCephFsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7696,7 +7696,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCephFsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7734,11 +7734,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsSecretRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsSecretRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCephFsSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsSecretRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCephFsSecretRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7758,7 +7758,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCephFsSecretRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCephFsSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7792,11 +7792,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCinder",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCinder",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCinder)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCinderList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCinderList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCinderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7816,7 +7816,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCinderOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCinderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7851,15 +7851,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMap",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMap",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeConfigMap)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapItems",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapItems",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeConfigMapItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapItemsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeConfigMapItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7879,7 +7879,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapItemsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapItemsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeConfigMapItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7914,7 +7914,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeConfigMapList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7934,7 +7934,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeConfigMapOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeConfigMapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7970,11 +7970,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsi",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsi",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCsi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCsiList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7994,11 +7994,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiNodePublishSecretRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiNodePublishSecretRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCsiNodePublishSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiNodePublishSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiNodePublishSecretRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCsiNodePublishSecretRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8018,7 +8018,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiNodePublishSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiNodePublishSecretRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCsiNodePublishSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8051,7 +8051,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeCsiOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeCsiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8088,19 +8088,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApi",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApi",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApi)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItems",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItems",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8120,7 +8120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -8154,7 +8154,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8174,7 +8174,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8210,11 +8210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsResourceFieldRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsResourceFieldRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiItemsResourceFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsResourceFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsResourceFieldRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiItemsResourceFieldRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8234,7 +8234,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiItemsResourceFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8269,7 +8269,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8289,7 +8289,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeDownwardApiOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeDownwardApiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8323,11 +8323,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDir",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDir",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeEmptyDir)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDirList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDirList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeEmptyDirList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8347,7 +8347,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeEmptyDirOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeEmptyDirOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8381,11 +8381,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFc",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFc",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFcList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFcList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8405,7 +8405,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFcOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFcOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8441,11 +8441,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolume",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolume",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFlexVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFlexVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8465,7 +8465,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFlexVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8502,11 +8502,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFlexVolumeSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8526,7 +8526,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8560,11 +8560,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlocker",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlocker",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFlocker)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlockerList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlockerList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFlockerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8584,7 +8584,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlockerOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeFlockerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8618,11 +8618,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGcePersistentDisk",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGcePersistentDisk",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeGcePersistentDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGcePersistentDiskList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGcePersistentDiskList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeGcePersistentDiskList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8642,7 +8642,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGcePersistentDiskOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeGcePersistentDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8678,11 +8678,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepo",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepo",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeGitRepo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepoList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepoList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeGitRepoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8702,7 +8702,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepoOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeGitRepoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8737,11 +8737,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGlusterfs",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGlusterfs",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeGlusterfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGlusterfsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGlusterfsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeGlusterfsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8761,7 +8761,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGlusterfsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeGlusterfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8796,11 +8796,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPath",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPath",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeHostPath)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPathList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPathList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeHostPathList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8820,7 +8820,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeHostPathOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeHostPathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8854,11 +8854,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeIscsi",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeIscsi",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeIscsi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeIscsiList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeIscsiList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeIscsiList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8878,7 +8878,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeIscsiOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeIscsiOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeIscsiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8916,7 +8916,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8936,11 +8936,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeLocal",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeLocal",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeLocal)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeLocalList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeLocalList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeLocalList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8960,7 +8960,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeLocalOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeLocalOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeLocalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8993,11 +8993,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeNfs",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeNfs",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeNfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeNfsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeNfsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeNfsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9017,7 +9017,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeNfsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeNfsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeNfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9052,7 +9052,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsElasticBlockStore", GoGetter: "AwsElasticBlockStore"},
@@ -9111,11 +9111,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePersistentVolumeClaim",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePersistentVolumeClaim",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumePersistentVolumeClaim)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePersistentVolumeClaimList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePersistentVolumeClaimList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumePersistentVolumeClaimList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9135,7 +9135,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePersistentVolumeClaimOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumePersistentVolumeClaimOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claimName", GoGetter: "ClaimName"},
@@ -9169,11 +9169,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDisk",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDisk",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumePhotonPersistentDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDiskList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDiskList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumePhotonPersistentDiskList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9193,7 +9193,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDiskOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumePhotonPersistentDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9227,11 +9227,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjected",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjected",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjected)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9251,7 +9251,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9285,19 +9285,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSources",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSources",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMap",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMap",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMap)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapItems",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapItems",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapItemsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9317,7 +9317,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapItemsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapItemsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9352,7 +9352,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9372,7 +9372,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesConfigMapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9407,19 +9407,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApi",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApi",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApi)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItems",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItems",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9439,7 +9439,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -9473,7 +9473,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9493,7 +9493,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9529,11 +9529,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9553,7 +9553,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9588,7 +9588,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9608,7 +9608,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9641,7 +9641,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9661,7 +9661,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9697,15 +9697,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecret",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecret",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretItems",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretItems",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesSecretItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretItemsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesSecretItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9725,7 +9725,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretItemsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretItemsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesSecretItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9760,7 +9760,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9780,7 +9780,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesSecretOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9815,11 +9815,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesServiceAccountToken",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesServiceAccountToken",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesServiceAccountToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesServiceAccountTokenList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesServiceAccountTokenList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesServiceAccountTokenList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9839,7 +9839,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeProjectedSourcesServiceAccountTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -9874,11 +9874,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeQuobyte",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeQuobyte",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeQuobyte)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeQuobyteList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeQuobyteList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeQuobyteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9898,7 +9898,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeQuobyteOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeQuobyteOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeQuobyteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9935,11 +9935,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbd",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbd",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeRbd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeRbdList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9959,7 +9959,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeRbdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cephMonitors", GoGetter: "CephMonitors"},
@@ -9999,11 +9999,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdSecretRef",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdSecretRef",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeRbdSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdSecretRefList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeRbdSecretRefList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10023,7 +10023,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeRbdSecretRefOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeRbdSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10057,15 +10057,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecret",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecret",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretItems",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretItems",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeSecretItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretItemsList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeSecretItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10085,7 +10085,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretItemsOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretItemsOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeSecretItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10120,7 +10120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10140,7 +10140,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeSecretOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10176,11 +10176,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeVsphereVolume",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeVsphereVolume",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeVsphereVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeVsphereVolumeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeVsphereVolumeList",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeVsphereVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -10200,7 +10200,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeVsphereVolumeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeVsphereVolumeOutputReference",
 		reflect.TypeOf((*DataKubernetesPodV1SpecVolumeVsphereVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

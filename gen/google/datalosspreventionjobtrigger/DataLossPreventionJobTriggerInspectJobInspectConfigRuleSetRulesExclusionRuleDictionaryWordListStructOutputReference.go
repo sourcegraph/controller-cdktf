@@ -179,7 +179,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusion
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusion
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

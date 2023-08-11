@@ -179,7 +179,7 @@ func NewComputeFirewallLogConfigOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ComputeFirewallLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeFirewall.ComputeFirewallLogConfigOutputReference",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewallLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeFirewallLogConfigOutputReference_Override(c ComputeFirewallLogCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeFirewall.ComputeFirewallLogConfigOutputReference",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewallLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

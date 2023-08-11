@@ -396,7 +396,7 @@ func NewWafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementF
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -408,7 +408,7 @@ func NewWafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

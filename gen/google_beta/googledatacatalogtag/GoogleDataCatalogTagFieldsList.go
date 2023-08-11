@@ -116,7 +116,7 @@ func NewGoogleDataCatalogTagFieldsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_GoogleDataCatalogTagFieldsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTagFieldsList",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTagFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDataCatalogTagFieldsList_Override(g GoogleDataCatalogTagFieldsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTagFieldsList",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTagFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

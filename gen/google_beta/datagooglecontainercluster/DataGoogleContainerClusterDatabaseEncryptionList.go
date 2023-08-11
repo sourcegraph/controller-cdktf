@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterDatabaseEncryptionList(terraformResource cdktf
 	j := jsiiProxy_DataGoogleContainerClusterDatabaseEncryptionList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterDatabaseEncryptionList_Override(d DataGoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

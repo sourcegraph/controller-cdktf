@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettings",
 		reflect.TypeOf((*ProjectAccessApprovalSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersion", GoGetter: "ActiveKeyVersion"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsConfig",
 		reflect.TypeOf((*ProjectAccessApprovalSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServices",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServices",
 		reflect.TypeOf((*ProjectAccessApprovalSettingsEnrolledServices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesList",
 		reflect.TypeOf((*ProjectAccessApprovalSettingsEnrolledServicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesOutputReference",
 		reflect.TypeOf((*ProjectAccessApprovalSettingsEnrolledServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudProduct", GoGetter: "CloudProduct"},
@@ -143,11 +143,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeouts",
 		reflect.TypeOf((*ProjectAccessApprovalSettingsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsTimeoutsOutputReference",
 		reflect.TypeOf((*ProjectAccessApprovalSettingsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -534,7 +534,7 @@ func NewGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *Googl
 	j := jsiiProxy_GoogleKmsCryptoKey{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -547,7 +547,7 @@ func NewGoogleKmsCryptoKey_Override(g GoogleKmsCryptoKey, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -746,7 +746,7 @@ func GoogleKmsCryptoKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func GoogleKmsCryptoKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func GoogleKmsCryptoKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func GoogleKmsCryptoKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
 		"tfResourceType",
 		&returns,
 	)

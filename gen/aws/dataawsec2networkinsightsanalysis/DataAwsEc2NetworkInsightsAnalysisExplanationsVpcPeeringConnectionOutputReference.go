@@ -189,7 +189,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputR
 	j := jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

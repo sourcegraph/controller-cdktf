@@ -104,7 +104,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeader
 	j := jsiiProxy_DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersList",
+		"@cdktf/provider-aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeader
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersList",
+		"@cdktf/provider-aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

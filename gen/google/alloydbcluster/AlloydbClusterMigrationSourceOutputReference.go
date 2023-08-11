@@ -189,7 +189,7 @@ func NewAlloydbClusterMigrationSourceOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AlloydbClusterMigrationSourceOutputReference{}
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterMigrationSourceOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterMigrationSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewAlloydbClusterMigrationSourceOutputReference_Override(a AlloydbClusterMi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterMigrationSourceOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterMigrationSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

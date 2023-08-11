@@ -390,7 +390,7 @@ func NewIamUserPolicy(scope constructs.Construct, id *string, config *IamUserPol
 	j := jsiiProxy_IamUserPolicy{}
 
 	_jsii_.Create(
-		"aws.iamUserPolicy.IamUserPolicy",
+		"@cdktf/provider-aws.iamUserPolicy.IamUserPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewIamUserPolicy_Override(i IamUserPolicy, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamUserPolicy.IamUserPolicy",
+		"@cdktf/provider-aws.iamUserPolicy.IamUserPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -558,7 +558,7 @@ func IamUserPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserPolicy.IamUserPolicy",
+		"@cdktf/provider-aws.iamUserPolicy.IamUserPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func IamUserPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserPolicy.IamUserPolicy",
+		"@cdktf/provider-aws.iamUserPolicy.IamUserPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func IamUserPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserPolicy.IamUserPolicy",
+		"@cdktf/provider-aws.iamUserPolicy.IamUserPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func IamUserPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamUserPolicy.IamUserPolicy",
+		"@cdktf/provider-aws.iamUserPolicy.IamUserPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewAppEngineStandardAppVersionLibrariesOutputReference(terraformResource cd
 	j := jsiiProxy_AppEngineStandardAppVersionLibrariesOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppEngineStandardAppVersionLibrariesOutputReference_Override(a AppEngine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

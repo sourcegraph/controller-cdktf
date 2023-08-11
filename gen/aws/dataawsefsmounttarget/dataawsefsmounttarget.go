@@ -450,7 +450,7 @@ func NewDataAwsEfsMountTarget(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsEfsMountTarget{}
 
 	_jsii_.Create(
-		"aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
+		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewDataAwsEfsMountTarget_Override(d DataAwsEfsMountTarget, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
+		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -585,7 +585,7 @@ func DataAwsEfsMountTarget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
+		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -604,7 +604,7 @@ func DataAwsEfsMountTarget_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
+		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataAwsEfsMountTarget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
+		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func DataAwsEfsMountTarget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
+		"@cdktf/provider-aws.dataAwsEfsMountTarget.DataAwsEfsMountTarget",
 		"tfResourceType",
 		&returns,
 	)

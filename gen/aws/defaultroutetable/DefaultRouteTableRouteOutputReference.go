@@ -444,7 +444,7 @@ func NewDefaultRouteTableRouteOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DefaultRouteTableRouteOutputReference{}
 
 	_jsii_.Create(
-		"aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -456,7 +456,7 @@ func NewDefaultRouteTableRouteOutputReference_Override(d DefaultRouteTableRouteO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

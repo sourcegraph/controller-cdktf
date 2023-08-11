@@ -178,7 +178,7 @@ func NewDataGoogleComputeRegionInstanceTemplateServiceAccountOutputReference(ter
 	j := jsiiProxy_DataGoogleComputeRegionInstanceTemplateServiceAccountOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateServiceAccountOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateServiceAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleComputeRegionInstanceTemplateServiceAccountOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateServiceAccountOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateServiceAccountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

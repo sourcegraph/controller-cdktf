@@ -607,7 +607,7 @@ func NewGoogleGkeonpremVmwareNodePool(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleGkeonpremVmwareNodePool{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -620,7 +620,7 @@ func NewGoogleGkeonpremVmwareNodePool_Override(g GoogleGkeonpremVmwareNodePool, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -797,7 +797,7 @@ func GoogleGkeonpremVmwareNodePool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -816,7 +816,7 @@ func GoogleGkeonpremVmwareNodePool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -835,7 +835,7 @@ func GoogleGkeonpremVmwareNodePool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -848,7 +848,7 @@ func GoogleGkeonpremVmwareNodePool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePool",
 		"tfResourceType",
 		&returns,
 	)

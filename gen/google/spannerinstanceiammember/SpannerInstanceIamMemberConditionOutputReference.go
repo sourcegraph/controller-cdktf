@@ -226,7 +226,7 @@ func NewSpannerInstanceIamMemberConditionOutputReference(terraformResource cdktf
 	j := jsiiProxy_SpannerInstanceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.spannerInstanceIamMember.SpannerInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSpannerInstanceIamMemberConditionOutputReference_Override(s SpannerInsta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.spannerInstanceIamMember.SpannerInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

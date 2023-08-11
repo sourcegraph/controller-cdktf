@@ -104,7 +104,7 @@ func NewDataGoogleCloudRunServiceStatusConditionsList(terraformResource cdktf.II
 	j := jsiiProxy_DataGoogleCloudRunServiceStatusConditionsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceStatusConditionsList",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceStatusConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudRunServiceStatusConditionsList_Override(d DataGoogleCloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceStatusConditionsList",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceStatusConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

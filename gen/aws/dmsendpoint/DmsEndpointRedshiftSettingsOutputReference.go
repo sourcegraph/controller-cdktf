@@ -276,7 +276,7 @@ func NewDmsEndpointRedshiftSettingsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DmsEndpointRedshiftSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointRedshiftSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewDmsEndpointRedshiftSettingsOutputReference_Override(d DmsEndpointRedshif
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointRedshiftSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

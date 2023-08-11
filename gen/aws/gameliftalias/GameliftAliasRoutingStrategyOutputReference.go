@@ -227,7 +227,7 @@ func NewGameliftAliasRoutingStrategyOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GameliftAliasRoutingStrategyOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftAlias.GameliftAliasRoutingStrategyOutputReference",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAliasRoutingStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGameliftAliasRoutingStrategyOutputReference_Override(g GameliftAliasRout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftAlias.GameliftAliasRoutingStrategyOutputReference",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAliasRoutingStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

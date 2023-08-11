@@ -321,7 +321,7 @@ func NewOpsworksHaproxyLayerEbsVolumeOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_OpsworksHaproxyLayerEbsVolumeOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewOpsworksHaproxyLayerEbsVolumeOutputReference_Override(o OpsworksHaproxyL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

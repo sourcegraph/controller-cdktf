@@ -179,7 +179,7 @@ func NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOu
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

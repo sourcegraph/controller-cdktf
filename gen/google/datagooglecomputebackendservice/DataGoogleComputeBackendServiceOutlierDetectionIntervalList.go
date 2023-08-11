@@ -104,7 +104,7 @@ func NewDataGoogleComputeBackendServiceOutlierDetectionIntervalList(terraformRes
 	j := jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionIntervalList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceOutlierDetectionIntervalList",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceOutlierDetectionIntervalList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeBackendServiceOutlierDetectionIntervalList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceOutlierDetectionIntervalList",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceOutlierDetectionIntervalList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

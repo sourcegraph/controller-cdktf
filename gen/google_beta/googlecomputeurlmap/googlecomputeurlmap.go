@@ -603,7 +603,7 @@ func NewGoogleComputeUrlMap(scope constructs.Construct, id *string, config *Goog
 	j := jsiiProxy_GoogleComputeUrlMap{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -616,7 +616,7 @@ func NewGoogleComputeUrlMap_Override(g GoogleComputeUrlMap, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -771,7 +771,7 @@ func GoogleComputeUrlMap_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -790,7 +790,7 @@ func GoogleComputeUrlMap_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func GoogleComputeUrlMap_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -822,7 +822,7 @@ func GoogleComputeUrlMap_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMap",
 		"tfResourceType",
 		&returns,
 	)

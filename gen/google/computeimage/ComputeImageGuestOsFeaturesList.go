@@ -116,7 +116,7 @@ func NewComputeImageGuestOsFeaturesList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_ComputeImageGuestOsFeaturesList{}
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImageGuestOsFeaturesList",
+		"@cdktf/provider-google.computeImage.ComputeImageGuestOsFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeImageGuestOsFeaturesList_Override(c ComputeImageGuestOsFeaturesLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImage.ComputeImageGuestOsFeaturesList",
+		"@cdktf/provider-google.computeImage.ComputeImageGuestOsFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

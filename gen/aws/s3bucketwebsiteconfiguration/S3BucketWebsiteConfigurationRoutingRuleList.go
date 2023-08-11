@@ -116,7 +116,7 @@ func NewS3BucketWebsiteConfigurationRoutingRuleList(terraformResource cdktf.IInt
 	j := jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleList{}
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleList",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketWebsiteConfigurationRoutingRuleList_Override(s S3BucketWebsiteCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleList",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

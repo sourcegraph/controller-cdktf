@@ -179,7 +179,7 @@ func NewGoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference(terrafor
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

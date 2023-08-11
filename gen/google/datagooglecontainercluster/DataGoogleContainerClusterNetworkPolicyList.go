@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNetworkPolicyList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataGoogleContainerClusterNetworkPolicyList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNetworkPolicyList_Override(d DataGoogleContain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewBackupSelectionSelectionTagList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_BackupSelectionSelectionTagList{}
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionSelectionTagList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBackupSelectionSelectionTagList_Override(b BackupSelectionSelectionTagLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionSelectionTagList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

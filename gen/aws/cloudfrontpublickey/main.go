@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudfrontPublicKey.CloudfrontPublicKey",
+		"@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey",
 		reflect.TypeOf((*CloudfrontPublicKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig",
+		"@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKeyConfig",
 		reflect.TypeOf((*CloudfrontPublicKeyConfig)(nil)).Elem(),
 	)
 }

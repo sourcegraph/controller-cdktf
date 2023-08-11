@@ -371,7 +371,7 @@ func NewCodebuildProjectSourceOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_CodebuildProjectSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSourceOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewCodebuildProjectSourceOutputReference_Override(c CodebuildProjectSourceO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSourceOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

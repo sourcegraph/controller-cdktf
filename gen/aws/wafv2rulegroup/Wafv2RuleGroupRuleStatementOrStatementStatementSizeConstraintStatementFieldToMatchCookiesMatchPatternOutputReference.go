@@ -228,7 +228,7 @@ func NewWafv2RuleGroupRuleStatementOrStatementStatementSizeConstraintStatementFi
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewWafv2RuleGroupRuleStatementOrStatementStatementSizeConstraintStatementFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

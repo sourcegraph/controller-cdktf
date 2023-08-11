@@ -564,7 +564,7 @@ func NewAppEngineApplication(scope constructs.Construct, id *string, config *App
 	j := jsiiProxy_AppEngineApplication{}
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplication",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -577,7 +577,7 @@ func NewAppEngineApplication_Override(a AppEngineApplication, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplication",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -743,7 +743,7 @@ func AppEngineApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineApplication.AppEngineApplication",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func AppEngineApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineApplication.AppEngineApplication",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func AppEngineApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineApplication.AppEngineApplication",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func AppEngineApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.appEngineApplication.AppEngineApplication",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		"tfResourceType",
 		&returns,
 	)

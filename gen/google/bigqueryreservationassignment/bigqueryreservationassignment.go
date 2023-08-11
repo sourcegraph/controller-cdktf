@@ -459,7 +459,7 @@ func NewBigqueryReservationAssignment(scope constructs.Construct, id *string, co
 	j := jsiiProxy_BigqueryReservationAssignment{}
 
 	_jsii_.Create(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignment",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewBigqueryReservationAssignment_Override(b BigqueryReservationAssignment, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignment",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -638,7 +638,7 @@ func BigqueryReservationAssignment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignment",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func BigqueryReservationAssignment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignment",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func BigqueryReservationAssignment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignment",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func BigqueryReservationAssignment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignment",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment",
 		"tfResourceType",
 		&returns,
 	)

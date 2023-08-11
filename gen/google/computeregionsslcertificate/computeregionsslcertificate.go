@@ -530,7 +530,7 @@ func NewComputeRegionSslCertificate(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeRegionSslCertificate{}
 
 	_jsii_.Create(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificate",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,7 +543,7 @@ func NewComputeRegionSslCertificate_Override(c ComputeRegionSslCertificate, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificate",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -731,7 +731,7 @@ func ComputeRegionSslCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificate",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func ComputeRegionSslCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificate",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func ComputeRegionSslCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificate",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func ComputeRegionSslCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificate",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate",
 		"tfResourceType",
 		&returns,
 	)

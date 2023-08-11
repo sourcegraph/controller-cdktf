@@ -595,7 +595,7 @@ func NewOsConfigOsPolicyAssignment(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_OsConfigOsPolicyAssignment{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -608,7 +608,7 @@ func NewOsConfigOsPolicyAssignment_Override(o OsConfigOsPolicyAssignment, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -774,7 +774,7 @@ func OsConfigOsPolicyAssignment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -793,7 +793,7 @@ func OsConfigOsPolicyAssignment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -812,7 +812,7 @@ func OsConfigOsPolicyAssignment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -825,7 +825,7 @@ func OsConfigOsPolicyAssignment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignment",
 		"tfResourceType",
 		&returns,
 	)

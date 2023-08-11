@@ -104,7 +104,7 @@ func NewDataAwsApiGatewayDomainNameEndpointConfigurationList(terraformResource c
 	j := jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationList",
+		"@cdktf/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsApiGatewayDomainNameEndpointConfigurationList_Override(d DataAwsA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationList",
+		"@cdktf/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

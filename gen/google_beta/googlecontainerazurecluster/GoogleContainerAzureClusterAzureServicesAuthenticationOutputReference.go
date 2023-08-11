@@ -202,7 +202,7 @@ func NewGoogleContainerAzureClusterAzureServicesAuthenticationOutputReference(te
 	j := jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleContainerAzureClusterAzureServicesAuthenticationOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

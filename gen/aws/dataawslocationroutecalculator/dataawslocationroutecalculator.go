@@ -370,7 +370,7 @@ func NewDataAwsLocationRouteCalculator(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsLocationRouteCalculator{}
 
 	_jsii_.Create(
-		"aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
+		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataAwsLocationRouteCalculator_Override(d DataAwsLocationRouteCalculator
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
+		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -494,7 +494,7 @@ func DataAwsLocationRouteCalculator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
+		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataAwsLocationRouteCalculator_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
+		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataAwsLocationRouteCalculator_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
+		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataAwsLocationRouteCalculator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
+		"@cdktf/provider-aws.dataAwsLocationRouteCalculator.DataAwsLocationRouteCalculator",
 		"tfResourceType",
 		&returns,
 	)

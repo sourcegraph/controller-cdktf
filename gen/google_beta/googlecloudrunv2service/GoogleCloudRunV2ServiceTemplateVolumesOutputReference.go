@@ -251,7 +251,7 @@ func NewGoogleCloudRunV2ServiceTemplateVolumesOutputReference(terraformResource 
 	j := jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewGoogleCloudRunV2ServiceTemplateVolumesOutputReference_Override(g GoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList(t
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

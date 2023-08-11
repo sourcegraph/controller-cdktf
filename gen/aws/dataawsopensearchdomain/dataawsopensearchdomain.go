@@ -535,7 +535,7 @@ func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsOpensearchDomain{}
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -548,7 +548,7 @@ func NewDataAwsOpensearchDomain_Override(d DataAwsOpensearchDomain, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -659,7 +659,7 @@ func DataAwsOpensearchDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataAwsOpensearchDomain_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -697,7 +697,7 @@ func DataAwsOpensearchDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func DataAwsOpensearchDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
 		"tfResourceType",
 		&returns,
 	)

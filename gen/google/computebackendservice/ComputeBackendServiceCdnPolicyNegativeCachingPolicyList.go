@@ -116,7 +116,7 @@ func NewComputeBackendServiceCdnPolicyNegativeCachingPolicyList(terraformResourc
 	j := jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyList{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeBackendServiceCdnPolicyNegativeCachingPolicyList_Override(c Compu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

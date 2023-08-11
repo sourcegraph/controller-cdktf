@@ -189,7 +189,7 @@ func NewDataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference(terraformResou
 	j := jsiiProxy_DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGatewayVpnInterfacesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

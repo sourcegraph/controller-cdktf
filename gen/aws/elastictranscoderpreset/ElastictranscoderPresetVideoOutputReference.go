@@ -468,7 +468,7 @@ func NewElastictranscoderPresetVideoOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ElastictranscoderPresetVideoOutputReference{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetVideoOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewElastictranscoderPresetVideoOutputReference_Override(e Elastictranscoder
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetVideoOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

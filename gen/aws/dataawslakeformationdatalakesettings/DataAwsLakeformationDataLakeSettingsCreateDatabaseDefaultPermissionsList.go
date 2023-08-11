@@ -104,7 +104,7 @@ func NewDataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList
 	j := jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList",
+		"@cdktf/provider-aws.dataAwsLakeformationDataLakeSettings.DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

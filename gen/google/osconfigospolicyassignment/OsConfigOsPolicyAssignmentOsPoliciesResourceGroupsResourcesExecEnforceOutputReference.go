@@ -275,7 +275,7 @@ func NewOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecEnforceOu
 	j := jsiiProxy_OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecEnforceOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecEnforceOutputReference",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecEnforceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecEnforceOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecEnforceOutputReference",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecEnforceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

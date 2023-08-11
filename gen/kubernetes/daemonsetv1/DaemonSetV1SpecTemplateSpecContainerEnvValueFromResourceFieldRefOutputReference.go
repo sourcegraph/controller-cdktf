@@ -227,7 +227,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputRe
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

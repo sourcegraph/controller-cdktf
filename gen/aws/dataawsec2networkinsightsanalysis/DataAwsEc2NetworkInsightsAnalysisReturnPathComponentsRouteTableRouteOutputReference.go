@@ -266,7 +266,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutp
 	j := jsiiProxy_DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -278,7 +278,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

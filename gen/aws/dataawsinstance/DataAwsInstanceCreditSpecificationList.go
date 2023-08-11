@@ -104,7 +104,7 @@ func NewDataAwsInstanceCreditSpecificationList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsInstanceCreditSpecificationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceCreditSpecificationList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsInstanceCreditSpecificationList_Override(d DataAwsInstanceCreditS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceCreditSpecificationList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceCreditSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -377,7 +377,7 @@ func NewIamSigningCertificate(scope constructs.Construct, id *string, config *Ia
 	j := jsiiProxy_IamSigningCertificate{}
 
 	_jsii_.Create(
-		"aws.iamSigningCertificate.IamSigningCertificate",
+		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewIamSigningCertificate_Override(i IamSigningCertificate, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamSigningCertificate.IamSigningCertificate",
+		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -534,7 +534,7 @@ func IamSigningCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamSigningCertificate.IamSigningCertificate",
+		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func IamSigningCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamSigningCertificate.IamSigningCertificate",
+		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func IamSigningCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamSigningCertificate.IamSigningCertificate",
+		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func IamSigningCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamSigningCertificate.IamSigningCertificate",
+		"@cdktf/provider-aws.iamSigningCertificate.IamSigningCertificate",
 		"tfResourceType",
 		&returns,
 	)

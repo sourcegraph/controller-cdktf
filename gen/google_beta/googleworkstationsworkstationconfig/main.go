@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -105,15 +105,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigAConfig",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigAConfig",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigConditions",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigConditions",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigConditionsList",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigConditionsList",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigConditionsOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigConditionsOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -168,11 +168,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigContainer",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigContainer",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigContainerOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigContainerOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigEncryptionKey",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigEncryptionKey",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -262,19 +262,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHost",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHost",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigHost)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstance",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstance",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigHostGceInstance)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,7 +309,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskSizeGb", GoGetter: "BootDiskSizeGb"},
@@ -367,11 +367,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -412,7 +412,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigHostOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -448,15 +448,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectories",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectories",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigPersistentDirectories)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -503,7 +503,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesList",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesList",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigPersistentDirectoriesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -524,7 +524,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigPersistentDirectoriesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -563,11 +563,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigTimeouts",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigTimeouts",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleWorkstationsWorkstationConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

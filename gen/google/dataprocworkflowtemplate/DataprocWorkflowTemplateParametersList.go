@@ -116,7 +116,7 @@ func NewDataprocWorkflowTemplateParametersList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataprocWorkflowTemplateParametersList{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataprocWorkflowTemplateParametersList_Override(d DataprocWorkflowTempla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

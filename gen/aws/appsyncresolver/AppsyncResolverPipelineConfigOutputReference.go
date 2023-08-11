@@ -180,7 +180,7 @@ func NewAppsyncResolverPipelineConfigOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AppsyncResolverPipelineConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncResolver.AppsyncResolverPipelineConfigOutputReference",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAppsyncResolverPipelineConfigOutputReference_Override(a AppsyncResolverP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncResolver.AppsyncResolverPipelineConfigOutputReference",
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

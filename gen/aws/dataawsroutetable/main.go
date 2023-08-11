@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsRouteTable.DataAwsRouteTable",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTable",
 		reflect.TypeOf((*DataAwsRouteTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,11 +80,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRouteTable.DataAwsRouteTableAssociations",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociations",
 		reflect.TypeOf((*DataAwsRouteTableAssociations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRouteTable.DataAwsRouteTableAssociationsList",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociationsList",
 		reflect.TypeOf((*DataAwsRouteTableAssociationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRouteTable.DataAwsRouteTableAssociationsOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociationsOutputReference",
 		reflect.TypeOf((*DataAwsRouteTableAssociationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -141,15 +141,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRouteTable.DataAwsRouteTableConfig",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableConfig",
 		reflect.TypeOf((*DataAwsRouteTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRouteTable.DataAwsRouteTableFilter",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableFilter",
 		reflect.TypeOf((*DataAwsRouteTableFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRouteTable.DataAwsRouteTableFilterList",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableFilterList",
 		reflect.TypeOf((*DataAwsRouteTableFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -170,7 +170,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRouteTable.DataAwsRouteTableFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableFilterOutputReference",
 		reflect.TypeOf((*DataAwsRouteTableFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -206,11 +206,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRouteTable.DataAwsRouteTableRoutes",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableRoutes",
 		reflect.TypeOf((*DataAwsRouteTableRoutes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRouteTable.DataAwsRouteTableRoutesList",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableRoutesList",
 		reflect.TypeOf((*DataAwsRouteTableRoutesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -230,7 +230,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRouteTable.DataAwsRouteTableRoutesOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableRoutesOutputReference",
 		reflect.TypeOf((*DataAwsRouteTableRoutesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "carrierGatewayId", GoGetter: "CarrierGatewayId"},
@@ -276,11 +276,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRouteTable.DataAwsRouteTableTimeouts",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableTimeouts",
 		reflect.TypeOf((*DataAwsRouteTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRouteTable.DataAwsRouteTableTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsRouteTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -204,7 +204,7 @@ func NewDeploymentSpecTemplateSpecVolumeEmptyDirOutputReference(terraformResourc
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeEmptyDirOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentSpecTemplateSpecVolumeEmptyDirOutputReference_Override(d Deplo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

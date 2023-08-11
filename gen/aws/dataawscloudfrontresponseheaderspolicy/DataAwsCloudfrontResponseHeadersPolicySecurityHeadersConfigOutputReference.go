@@ -222,7 +222,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReferen
 	j := jsiiProxy_DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

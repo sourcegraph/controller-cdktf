@@ -116,7 +116,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisFilterList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsEc2NetworkInsightsAnalysisFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisFilterList",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisFilterList_Override(d DataAwsEc2Network
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisFilterList",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

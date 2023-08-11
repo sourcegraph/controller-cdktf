@@ -227,7 +227,7 @@ func NewTunnelConfigConfigOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_TunnelConfigConfigOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewTunnelConfigConfigOutputReference_Override(t TunnelConfigConfigOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

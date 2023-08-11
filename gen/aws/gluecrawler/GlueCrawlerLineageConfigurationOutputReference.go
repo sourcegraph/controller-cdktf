@@ -180,7 +180,7 @@ func NewGlueCrawlerLineageConfigurationOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GlueCrawlerLineageConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerLineageConfigurationOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGlueCrawlerLineageConfigurationOutputReference_Override(g GlueCrawlerLin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerLineageConfigurationOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerLineageConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

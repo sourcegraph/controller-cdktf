@@ -116,7 +116,7 @@ func NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCoo
 	j := jsiiProxy_GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

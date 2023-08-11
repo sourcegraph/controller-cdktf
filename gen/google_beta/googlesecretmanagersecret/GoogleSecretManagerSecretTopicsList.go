@@ -116,7 +116,7 @@ func NewGoogleSecretManagerSecretTopicsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_GoogleSecretManagerSecretTopicsList{}
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretTopicsList",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretTopicsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleSecretManagerSecretTopicsList_Override(g GoogleSecretManagerSecret
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretTopicsList",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretTopicsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

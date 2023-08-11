@@ -579,7 +579,7 @@ func NewGoogleNetworkServicesEndpointPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleNetworkServicesEndpointPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -592,7 +592,7 @@ func NewGoogleNetworkServicesEndpointPolicy_Override(g GoogleNetworkServicesEndp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -791,7 +791,7 @@ func GoogleNetworkServicesEndpointPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -810,7 +810,7 @@ func GoogleNetworkServicesEndpointPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func GoogleNetworkServicesEndpointPolicy_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func GoogleNetworkServicesEndpointPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewEcrReplicationConfigurationReplicationConfigurationOutputReference(terra
 	j := jsiiProxy_EcrReplicationConfigurationReplicationConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationOutputReference",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewEcrReplicationConfigurationReplicationConfigurationOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationOutputReference",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

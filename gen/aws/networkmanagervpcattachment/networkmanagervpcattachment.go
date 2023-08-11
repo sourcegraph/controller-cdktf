@@ -560,7 +560,7 @@ func NewNetworkmanagerVpcAttachment(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_NetworkmanagerVpcAttachment{}
 
 	_jsii_.Create(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -573,7 +573,7 @@ func NewNetworkmanagerVpcAttachment_Override(n NetworkmanagerVpcAttachment, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -739,7 +739,7 @@ func NetworkmanagerVpcAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func NetworkmanagerVpcAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -777,7 +777,7 @@ func NetworkmanagerVpcAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -790,7 +790,7 @@ func NetworkmanagerVpcAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
 		"tfResourceType",
 		&returns,
 	)

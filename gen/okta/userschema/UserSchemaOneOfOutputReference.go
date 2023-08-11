@@ -202,7 +202,7 @@ func NewUserSchemaOneOfOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_UserSchemaOneOfOutputReference{}
 
 	_jsii_.Create(
-		"okta.userSchema.UserSchemaOneOfOutputReference",
+		"@cdktf/provider-okta.userSchema.UserSchemaOneOfOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewUserSchemaOneOfOutputReference_Override(u UserSchemaOneOfOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.userSchema.UserSchemaOneOfOutputReference",
+		"@cdktf/provider-okta.userSchema.UserSchemaOneOfOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		u,
 	)

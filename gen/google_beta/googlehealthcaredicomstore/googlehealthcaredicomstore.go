@@ -449,7 +449,7 @@ func NewGoogleHealthcareDicomStore(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleHealthcareDicomStore{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewGoogleHealthcareDicomStore_Override(g GoogleHealthcareDicomStore, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -606,7 +606,7 @@ func GoogleHealthcareDicomStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +625,7 @@ func GoogleHealthcareDicomStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleHealthcareDicomStore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func GoogleHealthcareDicomStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
 		"tfResourceType",
 		&returns,
 	)

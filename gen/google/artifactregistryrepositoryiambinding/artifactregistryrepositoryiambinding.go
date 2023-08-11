@@ -448,7 +448,7 @@ func NewArtifactRegistryRepositoryIamBinding(scope constructs.Construct, id *str
 	j := jsiiProxy_ArtifactRegistryRepositoryIamBinding{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewArtifactRegistryRepositoryIamBinding_Override(a ArtifactRegistryReposito
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -627,7 +627,7 @@ func ArtifactRegistryRepositoryIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ArtifactRegistryRepositoryIamBinding_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ArtifactRegistryRepositoryIamBinding_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ArtifactRegistryRepositoryIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBinding",
 		"tfResourceType",
 		&returns,
 	)

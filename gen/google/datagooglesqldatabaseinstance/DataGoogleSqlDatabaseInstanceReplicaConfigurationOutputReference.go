@@ -277,7 +277,7 @@ func NewDataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference(terrafo
 	j := jsiiProxy_DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -289,7 +289,7 @@ func NewDataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

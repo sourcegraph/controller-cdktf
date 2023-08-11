@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateCpuOptionsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsLaunchTemplateCpuOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateCpuOptionsList_Override(d DataAwsLaunchTemplateCpuO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCpuOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

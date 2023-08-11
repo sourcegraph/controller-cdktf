@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.flowLog.FlowLog",
+		"@cdktf/provider-aws.flowLog.FlowLog",
 		reflect.TypeOf((*FlowLog)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -102,15 +102,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.flowLog.FlowLogConfig",
+		"@cdktf/provider-aws.flowLog.FlowLogConfig",
 		reflect.TypeOf((*FlowLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.flowLog.FlowLogDestinationOptions",
+		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptions",
 		reflect.TypeOf((*FlowLogDestinationOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.flowLog.FlowLogDestinationOptionsOutputReference",
+		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference",
 		reflect.TypeOf((*FlowLogDestinationOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

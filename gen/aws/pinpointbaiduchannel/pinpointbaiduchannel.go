@@ -389,7 +389,7 @@ func NewPinpointBaiduChannel(scope constructs.Construct, id *string, config *Pin
 	j := jsiiProxy_PinpointBaiduChannel{}
 
 	_jsii_.Create(
-		"aws.pinpointBaiduChannel.PinpointBaiduChannel",
+		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewPinpointBaiduChannel_Override(p PinpointBaiduChannel, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointBaiduChannel.PinpointBaiduChannel",
+		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -557,7 +557,7 @@ func PinpointBaiduChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointBaiduChannel.PinpointBaiduChannel",
+		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func PinpointBaiduChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointBaiduChannel.PinpointBaiduChannel",
+		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func PinpointBaiduChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointBaiduChannel.PinpointBaiduChannel",
+		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func PinpointBaiduChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.pinpointBaiduChannel.PinpointBaiduChannel",
+		"@cdktf/provider-aws.pinpointBaiduChannel.PinpointBaiduChannel",
 		"tfResourceType",
 		&returns,
 	)

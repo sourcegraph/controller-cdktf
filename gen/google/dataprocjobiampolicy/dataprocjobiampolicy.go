@@ -401,7 +401,7 @@ func NewDataprocJobIamPolicy(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataprocJobIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataprocJobIamPolicy.DataprocJobIamPolicy",
+		"@cdktf/provider-google.dataprocJobIamPolicy.DataprocJobIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataprocJobIamPolicy_Override(d DataprocJobIamPolicy, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJobIamPolicy.DataprocJobIamPolicy",
+		"@cdktf/provider-google.dataprocJobIamPolicy.DataprocJobIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -569,7 +569,7 @@ func DataprocJobIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocJobIamPolicy.DataprocJobIamPolicy",
+		"@cdktf/provider-google.dataprocJobIamPolicy.DataprocJobIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataprocJobIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocJobIamPolicy.DataprocJobIamPolicy",
+		"@cdktf/provider-google.dataprocJobIamPolicy.DataprocJobIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataprocJobIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocJobIamPolicy.DataprocJobIamPolicy",
+		"@cdktf/provider-google.dataprocJobIamPolicy.DataprocJobIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataprocJobIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocJobIamPolicy.DataprocJobIamPolicy",
+		"@cdktf/provider-google.dataprocJobIamPolicy.DataprocJobIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

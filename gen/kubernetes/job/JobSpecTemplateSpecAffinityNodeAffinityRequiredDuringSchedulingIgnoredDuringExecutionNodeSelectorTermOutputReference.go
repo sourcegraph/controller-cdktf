@@ -180,7 +180,7 @@ func NewJobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDu
 	j := jsiiProxy_JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewJobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

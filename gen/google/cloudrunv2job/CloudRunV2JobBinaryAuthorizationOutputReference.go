@@ -204,7 +204,7 @@ func NewCloudRunV2JobBinaryAuthorizationOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CloudRunV2JobBinaryAuthorizationOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobBinaryAuthorizationOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobBinaryAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudRunV2JobBinaryAuthorizationOutputReference_Override(c CloudRunV2Job
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobBinaryAuthorizationOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobBinaryAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

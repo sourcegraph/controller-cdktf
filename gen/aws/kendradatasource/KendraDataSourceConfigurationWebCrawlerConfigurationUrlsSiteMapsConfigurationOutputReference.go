@@ -179,7 +179,7 @@ func NewKendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigur
 	j := jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewKendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationUrlsSiteMapsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

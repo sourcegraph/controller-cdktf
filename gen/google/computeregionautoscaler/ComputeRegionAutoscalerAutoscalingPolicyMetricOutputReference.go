@@ -227,7 +227,7 @@ func NewComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference(terraformR
 	j := jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference_Override(c
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

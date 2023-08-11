@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataplexLake.DataplexLake",
+		"@cdktf/provider-google.dataplexLake.DataplexLake",
 		reflect.TypeOf((*DataplexLake)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,11 +86,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexLake.DataplexLakeAssetStatus",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeAssetStatus",
 		reflect.TypeOf((*DataplexLakeAssetStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexLake.DataplexLakeAssetStatusList",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeAssetStatusList",
 		reflect.TypeOf((*DataplexLakeAssetStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexLake.DataplexLakeAssetStatusOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeAssetStatusOutputReference",
 		reflect.TypeOf((*DataplexLakeAssetStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeAssets", GoGetter: "ActiveAssets"},
@@ -145,15 +145,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexLake.DataplexLakeConfig",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeConfig",
 		reflect.TypeOf((*DataplexLakeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexLake.DataplexLakeMetastore",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeMetastore",
 		reflect.TypeOf((*DataplexLakeMetastore)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexLake.DataplexLakeMetastoreOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeMetastoreOutputReference",
 		reflect.TypeOf((*DataplexLakeMetastoreOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,11 +188,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexLake.DataplexLakeMetastoreStatus",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeMetastoreStatus",
 		reflect.TypeOf((*DataplexLakeMetastoreStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexLake.DataplexLakeMetastoreStatusList",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeMetastoreStatusList",
 		reflect.TypeOf((*DataplexLakeMetastoreStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -212,7 +212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexLake.DataplexLakeMetastoreStatusOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeMetastoreStatusOutputReference",
 		reflect.TypeOf((*DataplexLakeMetastoreStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -248,11 +248,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexLake.DataplexLakeTimeouts",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeTimeouts",
 		reflect.TypeOf((*DataplexLakeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexLake.DataplexLakeTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeTimeoutsOutputReference",
 		reflect.TypeOf((*DataplexLakeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

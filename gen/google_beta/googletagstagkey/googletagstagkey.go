@@ -482,7 +482,7 @@ func NewGoogleTagsTagKey(scope constructs.Construct, id *string, config *GoogleT
 	j := jsiiProxy_GoogleTagsTagKey{}
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagKey.GoogleTagsTagKey",
+		"@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -495,7 +495,7 @@ func NewGoogleTagsTagKey_Override(g GoogleTagsTagKey, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagKey.GoogleTagsTagKey",
+		"@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -661,7 +661,7 @@ func GoogleTagsTagKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagKey.GoogleTagsTagKey",
+		"@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GoogleTagsTagKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagKey.GoogleTagsTagKey",
+		"@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func GoogleTagsTagKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagKey.GoogleTagsTagKey",
+		"@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GoogleTagsTagKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleTagsTagKey.GoogleTagsTagKey",
+		"@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey",
 		"tfResourceType",
 		&returns,
 	)

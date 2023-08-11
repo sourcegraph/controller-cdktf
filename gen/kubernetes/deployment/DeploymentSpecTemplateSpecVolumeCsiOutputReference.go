@@ -275,7 +275,7 @@ func NewDeploymentSpecTemplateSpecVolumeCsiOutputReference(terraformResource cdk
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeCsiOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCsiOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCsiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewDeploymentSpecTemplateSpecVolumeCsiOutputReference_Override(d Deployment
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCsiOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCsiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

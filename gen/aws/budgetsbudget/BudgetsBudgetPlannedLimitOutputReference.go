@@ -225,7 +225,7 @@ func NewBudgetsBudgetPlannedLimitOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_BudgetsBudgetPlannedLimitOutputReference{}
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewBudgetsBudgetPlannedLimitOutputReference_Override(b BudgetsBudgetPlanned
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetPlannedLimitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

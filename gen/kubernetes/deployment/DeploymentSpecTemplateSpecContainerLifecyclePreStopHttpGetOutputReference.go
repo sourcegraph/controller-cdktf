@@ -276,7 +276,7 @@ func NewDeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReferenc
 	j := jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewDeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

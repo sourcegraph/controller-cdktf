@@ -228,7 +228,7 @@ func NewHorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorMatchExpression
 	j := jsiiProxy_HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewHorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorMatchExpression
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricExternalMetricSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)

@@ -204,7 +204,7 @@ func NewRulesetRulesExposedCredentialCheckOutputReference(terraformResource cdkt
 	j := jsiiProxy_RulesetRulesExposedCredentialCheckOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewRulesetRulesExposedCredentialCheckOutputReference_Override(r RulesetRule
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

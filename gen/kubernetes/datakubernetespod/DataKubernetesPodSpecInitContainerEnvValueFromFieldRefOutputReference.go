@@ -178,7 +178,7 @@ func NewDataKubernetesPodSpecInitContainerEnvValueFromFieldRefOutputReference(te
 	j := jsiiProxy_DataKubernetesPodSpecInitContainerEnvValueFromFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerEnvValueFromFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerEnvValueFromFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataKubernetesPodSpecInitContainerEnvValueFromFieldRefOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerEnvValueFromFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerEnvValueFromFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

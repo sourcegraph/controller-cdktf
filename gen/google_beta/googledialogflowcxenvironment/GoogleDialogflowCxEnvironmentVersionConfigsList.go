@@ -116,7 +116,7 @@ func NewGoogleDialogflowCxEnvironmentVersionConfigsList(terraformResource cdktf.
 	j := jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsList",
+		"@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDialogflowCxEnvironmentVersionConfigsList_Override(g GoogleDialogf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsList",
+		"@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

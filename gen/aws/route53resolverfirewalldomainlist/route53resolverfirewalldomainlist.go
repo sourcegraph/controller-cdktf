@@ -402,7 +402,7 @@ func NewRoute53ResolverFirewallDomainList(scope constructs.Construct, id *string
 	j := jsiiProxy_Route53ResolverFirewallDomainList{}
 
 	_jsii_.Create(
-		"aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewRoute53ResolverFirewallDomainList_Override(r Route53ResolverFirewallDoma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -570,7 +570,7 @@ func Route53ResolverFirewallDomainList_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func Route53ResolverFirewallDomainList_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func Route53ResolverFirewallDomainList_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func Route53ResolverFirewallDomainList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
 		"tfResourceType",
 		&returns,
 	)

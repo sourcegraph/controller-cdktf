@@ -396,7 +396,7 @@ func NewWafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutputReference(
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -408,7 +408,7 @@ func NewWafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfigList
 	j := jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfigList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfigList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfigList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsActiveDirectoryConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

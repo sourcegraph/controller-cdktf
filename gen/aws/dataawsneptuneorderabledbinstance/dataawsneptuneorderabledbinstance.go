@@ -577,7 +577,7 @@ func NewDataAwsNeptuneOrderableDbInstance(scope constructs.Construct, id *string
 	j := jsiiProxy_DataAwsNeptuneOrderableDbInstance{}
 
 	_jsii_.Create(
-		"aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -590,7 +590,7 @@ func NewDataAwsNeptuneOrderableDbInstance_Override(d DataAwsNeptuneOrderableDbIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -745,7 +745,7 @@ func DataAwsNeptuneOrderableDbInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -764,7 +764,7 @@ func DataAwsNeptuneOrderableDbInstance_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func DataAwsNeptuneOrderableDbInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func DataAwsNeptuneOrderableDbInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsNeptuneOrderableDbInstance.DataAwsNeptuneOrderableDbInstance",
 		"tfResourceType",
 		&returns,
 	)

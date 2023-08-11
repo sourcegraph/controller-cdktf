@@ -227,7 +227,7 @@ func NewDaemonsetSpecTemplateSpecContainerEnvOutputReference(terraformResource c
 	j := jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewDaemonsetSpecTemplateSpecContainerEnvOutputReference_Override(d Daemonse
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

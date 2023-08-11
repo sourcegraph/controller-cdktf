@@ -491,7 +491,7 @@ func NewDataGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *st
 	j := jsiiProxy_DataGoogleComputeGlobalForwardingRule{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -504,7 +504,7 @@ func NewDataGoogleComputeGlobalForwardingRule_Override(d DataGoogleComputeGlobal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -615,7 +615,7 @@ func DataGoogleComputeGlobalForwardingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func DataGoogleComputeGlobalForwardingRule_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func DataGoogleComputeGlobalForwardingRule_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func DataGoogleComputeGlobalForwardingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeGlobalForwardingRule.DataGoogleComputeGlobalForwardingRule",
 		"tfResourceType",
 		&returns,
 	)

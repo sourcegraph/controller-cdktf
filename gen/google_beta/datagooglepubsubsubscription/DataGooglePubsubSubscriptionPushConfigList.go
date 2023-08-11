@@ -104,7 +104,7 @@ func NewDataGooglePubsubSubscriptionPushConfigList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataGooglePubsubSubscriptionPushConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePubsubSubscriptionPushConfigList_Override(d DataGooglePubsubSu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

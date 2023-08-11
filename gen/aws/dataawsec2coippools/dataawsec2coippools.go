@@ -351,7 +351,7 @@ func NewDataAwsEc2CoipPools(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataAwsEc2CoipPools{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
+		"@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataAwsEc2CoipPools_Override(d DataAwsEc2CoipPools, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
+		"@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -464,7 +464,7 @@ func DataAwsEc2CoipPools_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
+		"@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -483,7 +483,7 @@ func DataAwsEc2CoipPools_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
+		"@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsEc2CoipPools_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
+		"@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataAwsEc2CoipPools_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
+		"@cdktf/provider-aws.dataAwsEc2CoipPools.DataAwsEc2CoipPools",
 		"tfResourceType",
 		&returns,
 	)

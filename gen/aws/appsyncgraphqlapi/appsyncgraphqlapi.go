@@ -580,7 +580,7 @@ func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *Appsyn
 	j := jsiiProxy_AppsyncGraphqlApi{}
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApi",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -593,7 +593,7 @@ func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApi",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -770,7 +770,7 @@ func AppsyncGraphqlApi_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApi",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -789,7 +789,7 @@ func AppsyncGraphqlApi_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApi",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func AppsyncGraphqlApi_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApi",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func AppsyncGraphqlApi_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApi",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApi",
 		"tfResourceType",
 		&returns,
 	)

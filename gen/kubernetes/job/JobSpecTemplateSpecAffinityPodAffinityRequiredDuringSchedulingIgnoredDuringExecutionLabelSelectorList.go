@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDur
 	j := jsiiProxy_JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

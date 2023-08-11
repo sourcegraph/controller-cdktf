@@ -180,7 +180,7 @@ func NewSyntheticsCanaryArtifactConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SyntheticsCanaryArtifactConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryArtifactConfigOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSyntheticsCanaryArtifactConfigOutputReference_Override(s SyntheticsCanar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryArtifactConfigOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

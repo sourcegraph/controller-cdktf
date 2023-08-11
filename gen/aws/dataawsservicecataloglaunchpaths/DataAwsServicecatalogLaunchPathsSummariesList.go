@@ -104,7 +104,7 @@ func NewDataAwsServicecatalogLaunchPathsSummariesList(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesList",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsServicecatalogLaunchPathsSummariesList_Override(d DataAwsServicec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesList",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

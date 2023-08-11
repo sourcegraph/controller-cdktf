@@ -204,7 +204,7 @@ func NewEmrserverlessApplicationNetworkConfigurationOutputReference(terraformRes
 	j := jsiiProxy_EmrserverlessApplicationNetworkConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEmrserverlessApplicationNetworkConfigurationOutputReference_Override(e E
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

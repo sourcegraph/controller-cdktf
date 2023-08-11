@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
 		reflect.TypeOf((*GoogleBigqueryDatasetIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig",
 		reflect.TypeOf((*GoogleBigqueryDatasetIamPolicyConfig)(nil)).Elem(),
 	)
 }

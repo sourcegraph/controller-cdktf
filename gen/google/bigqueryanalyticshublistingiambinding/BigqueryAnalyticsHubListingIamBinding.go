@@ -471,7 +471,7 @@ func NewBigqueryAnalyticsHubListingIamBinding(scope constructs.Construct, id *st
 	j := jsiiProxy_BigqueryAnalyticsHubListingIamBinding{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewBigqueryAnalyticsHubListingIamBinding_Override(b BigqueryAnalyticsHubLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -661,7 +661,7 @@ func BigqueryAnalyticsHubListingIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func BigqueryAnalyticsHubListingIamBinding_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func BigqueryAnalyticsHubListingIamBinding_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func BigqueryAnalyticsHubListingIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamBinding.BigqueryAnalyticsHubListingIamBinding",
 		"tfResourceType",
 		&returns,
 	)

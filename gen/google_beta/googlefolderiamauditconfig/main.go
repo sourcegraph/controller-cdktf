@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
 		reflect.TypeOf((*GoogleFolderIamAuditConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,11 +63,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigAuditLogConfig",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigAuditLogConfig",
 		reflect.TypeOf((*GoogleFolderIamAuditConfigAuditLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigAuditLogConfigList",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigAuditLogConfigList",
 		reflect.TypeOf((*GoogleFolderIamAuditConfigAuditLogConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigAuditLogConfigOutputReference",
 		reflect.TypeOf((*GoogleFolderIamAuditConfigAuditLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigConfig",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigConfig",
 		reflect.TypeOf((*GoogleFolderIamAuditConfigConfig)(nil)).Elem(),
 	)
 }

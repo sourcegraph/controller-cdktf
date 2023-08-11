@@ -233,7 +233,7 @@ func NewDataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference(te
 	j := jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -245,7 +245,7 @@ func NewDataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

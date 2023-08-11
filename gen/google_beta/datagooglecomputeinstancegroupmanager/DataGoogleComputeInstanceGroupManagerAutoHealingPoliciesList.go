@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList(terraformRe
 	j := jsiiProxy_DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

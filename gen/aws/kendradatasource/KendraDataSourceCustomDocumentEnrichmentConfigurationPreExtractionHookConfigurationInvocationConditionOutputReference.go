@@ -226,7 +226,7 @@ func NewKendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookCo
 	j := jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewKendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationPreExtractionHookConfigurationInvocationConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

@@ -366,7 +366,7 @@ func NewRoleSubscription(scope constructs.Construct, id *string, config *RoleSub
 	j := jsiiProxy_RoleSubscription{}
 
 	_jsii_.Create(
-		"okta.roleSubscription.RoleSubscription",
+		"@cdktf/provider-okta.roleSubscription.RoleSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewRoleSubscription_Override(r RoleSubscription, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.roleSubscription.RoleSubscription",
+		"@cdktf/provider-okta.roleSubscription.RoleSubscription",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -523,7 +523,7 @@ func RoleSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.roleSubscription.RoleSubscription",
+		"@cdktf/provider-okta.roleSubscription.RoleSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func RoleSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.roleSubscription.RoleSubscription",
+		"@cdktf/provider-okta.roleSubscription.RoleSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func RoleSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.roleSubscription.RoleSubscription",
+		"@cdktf/provider-okta.roleSubscription.RoleSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func RoleSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.roleSubscription.RoleSubscription",
+		"@cdktf/provider-okta.roleSubscription.RoleSubscription",
 		"tfResourceType",
 		&returns,
 	)

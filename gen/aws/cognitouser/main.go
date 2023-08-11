@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cognitoUser.CognitoUser",
+		"@cdktf/provider-aws.cognitoUser.CognitoUser",
 		reflect.TypeOf((*CognitoUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUser.CognitoUserConfig",
+		"@cdktf/provider-aws.cognitoUser.CognitoUserConfig",
 		reflect.TypeOf((*CognitoUserConfig)(nil)).Elem(),
 	)
 }

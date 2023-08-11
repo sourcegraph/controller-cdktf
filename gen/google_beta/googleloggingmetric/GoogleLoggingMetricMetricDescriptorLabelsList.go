@@ -116,7 +116,7 @@ func NewGoogleLoggingMetricMetricDescriptorLabelsList(terraformResource cdktf.II
 	j := jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsList",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleLoggingMetricMetricDescriptorLabelsList_Override(g GoogleLoggingMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsList",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

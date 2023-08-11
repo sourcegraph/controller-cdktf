@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificate.CertificateManagerCertificate",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificate",
 		reflect.TypeOf((*CertificateManagerCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,19 +84,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerCertificate.CertificateManagerCertificateConfig",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateConfig",
 		reflect.TypeOf((*CertificateManagerCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManaged",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManaged",
 		reflect.TypeOf((*CertificateManagerCertificateManaged)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManagedAuthorizationAttemptInfo",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedAuthorizationAttemptInfo",
 		reflect.TypeOf((*CertificateManagerCertificateManagedAuthorizationAttemptInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManagedAuthorizationAttemptInfoList",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedAuthorizationAttemptInfoList",
 		reflect.TypeOf((*CertificateManagerCertificateManagedAuthorizationAttemptInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference",
 		reflect.TypeOf((*CertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManagedOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedOutputReference",
 		reflect.TypeOf((*CertificateManagerCertificateManagedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizationAttemptInfo", GoGetter: "AuthorizationAttemptInfo"},
@@ -193,11 +193,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssue",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssue",
 		reflect.TypeOf((*CertificateManagerCertificateManagedProvisioningIssue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueList",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueList",
 		reflect.TypeOf((*CertificateManagerCertificateManagedProvisioningIssueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueOutputReference",
 		reflect.TypeOf((*CertificateManagerCertificateManagedProvisioningIssueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -251,11 +251,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerCertificate.CertificateManagerCertificateSelfManaged",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateSelfManaged",
 		reflect.TypeOf((*CertificateManagerCertificateSelfManaged)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificate.CertificateManagerCertificateSelfManagedOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateSelfManagedOutputReference",
 		reflect.TypeOf((*CertificateManagerCertificateSelfManagedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificatePem", GoGetter: "CertificatePem"},
@@ -299,11 +299,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerCertificate.CertificateManagerCertificateTimeouts",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeouts",
 		reflect.TypeOf((*CertificateManagerCertificateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificate.CertificateManagerCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateTimeoutsOutputReference",
 		reflect.TypeOf((*CertificateManagerCertificateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

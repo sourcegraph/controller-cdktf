@@ -590,7 +590,7 @@ func NewKinesisAnalyticsApplication(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_KinesisAnalyticsApplication{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -603,7 +603,7 @@ func NewKinesisAnalyticsApplication_Override(k KinesisAnalyticsApplication, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -780,7 +780,7 @@ func KinesisAnalyticsApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -799,7 +799,7 @@ func KinesisAnalyticsApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -818,7 +818,7 @@ func KinesisAnalyticsApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -831,7 +831,7 @@ func KinesisAnalyticsApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		"tfResourceType",
 		&returns,
 	)

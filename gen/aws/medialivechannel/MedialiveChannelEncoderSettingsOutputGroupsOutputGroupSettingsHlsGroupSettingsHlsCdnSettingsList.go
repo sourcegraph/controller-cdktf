@@ -116,7 +116,7 @@ func NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSe
 	j := jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsLbSubnetMappingList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_DataAwsLbSubnetMappingList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLb.DataAwsLbSubnetMappingList",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLbSubnetMappingList_Override(d DataAwsLbSubnetMappingList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLb.DataAwsLbSubnetMappingList",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

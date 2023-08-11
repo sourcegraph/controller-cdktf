@@ -204,7 +204,7 @@ func NewKmsSecretCiphertextTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_KmsSecretCiphertextTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.kmsSecretCiphertext.KmsSecretCiphertextTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertextTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKmsSecretCiphertextTimeoutsOutputReference_Override(k KmsSecretCiphertex
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsSecretCiphertext.KmsSecretCiphertextTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertextTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

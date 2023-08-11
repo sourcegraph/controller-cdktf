@@ -179,7 +179,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference(terraf
 	j := jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

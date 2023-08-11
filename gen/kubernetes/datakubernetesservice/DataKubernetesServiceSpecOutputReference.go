@@ -365,7 +365,7 @@ func NewDataKubernetesServiceSpecOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataKubernetesServiceSpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesService.DataKubernetesServiceSpecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesService.DataKubernetesServiceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -377,7 +377,7 @@ func NewDataKubernetesServiceSpecOutputReference_Override(d DataKubernetesServic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesService.DataKubernetesServiceSpecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesService.DataKubernetesServiceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

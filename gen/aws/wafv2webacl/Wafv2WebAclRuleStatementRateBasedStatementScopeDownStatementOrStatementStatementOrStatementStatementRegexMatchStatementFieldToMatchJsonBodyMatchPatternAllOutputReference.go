@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementS
 	j := jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementOrStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementOrStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementOrStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementOrStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementOrStatementStatementRegexMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

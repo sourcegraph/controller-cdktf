@@ -204,7 +204,7 @@ func NewGoogleDataLossPreventionJobTriggerTriggersOutputReference(terraformResou
 	j := jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTriggersOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTriggersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleDataLossPreventionJobTriggerTriggersOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTriggersOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerTriggersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

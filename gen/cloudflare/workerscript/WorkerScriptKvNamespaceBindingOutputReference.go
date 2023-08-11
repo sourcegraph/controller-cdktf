@@ -202,7 +202,7 @@ func NewWorkerScriptKvNamespaceBindingOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_WorkerScriptKvNamespaceBindingOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptKvNamespaceBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWorkerScriptKvNamespaceBindingOutputReference_Override(w WorkerScriptKvN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptKvNamespaceBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

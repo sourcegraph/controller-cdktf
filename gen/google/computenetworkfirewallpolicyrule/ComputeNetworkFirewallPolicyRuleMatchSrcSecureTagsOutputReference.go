@@ -190,7 +190,7 @@ func NewComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference(terraf
 	j := jsiiProxy_ComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference",
+		"@cdktf/provider-google.computeNetworkFirewallPolicyRule.ComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

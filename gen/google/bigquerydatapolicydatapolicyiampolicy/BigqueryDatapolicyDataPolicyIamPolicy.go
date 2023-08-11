@@ -401,7 +401,7 @@ func NewBigqueryDatapolicyDataPolicyIamPolicy(scope constructs.Construct, id *st
 	j := jsiiProxy_BigqueryDatapolicyDataPolicyIamPolicy{}
 
 	_jsii_.Create(
-		"google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewBigqueryDatapolicyDataPolicyIamPolicy_Override(b BigqueryDatapolicyDataP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -569,7 +569,7 @@ func BigqueryDatapolicyDataPolicyIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func BigqueryDatapolicyDataPolicyIamPolicy_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func BigqueryDatapolicyDataPolicyIamPolicy_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func BigqueryDatapolicyDataPolicyIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamPolicy.BigqueryDatapolicyDataPolicyIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

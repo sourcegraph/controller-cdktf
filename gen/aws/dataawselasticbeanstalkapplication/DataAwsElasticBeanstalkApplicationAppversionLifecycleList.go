@@ -104,7 +104,7 @@ func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleList(terraformResou
 	j := jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleList{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleList",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleList_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleList",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

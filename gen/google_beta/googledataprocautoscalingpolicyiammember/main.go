@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMember",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMember",
 		reflect.TypeOf((*GoogleDataprocAutoscalingPolicyIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberCondition",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberCondition",
 		reflect.TypeOf((*GoogleDataprocAutoscalingPolicyIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberConfig",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberConfig",
 		reflect.TypeOf((*GoogleDataprocAutoscalingPolicyIamMemberConfig)(nil)).Elem(),
 	)
 }

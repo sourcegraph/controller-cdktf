@@ -178,7 +178,7 @@ func NewGoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference(ter
 	j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusStatefulOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

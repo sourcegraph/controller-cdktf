@@ -116,7 +116,7 @@ func NewNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRe
 	j := jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveList{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveList",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveList",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

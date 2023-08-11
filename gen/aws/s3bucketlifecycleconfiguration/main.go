@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfiguration",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfiguration",
 		reflect.TypeOf((*S3BucketLifecycleConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,19 +63,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationConfig",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationConfig",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,11 +110,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpiration",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpiration",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleExpiration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpirationOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpirationOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleExpirationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,15 +155,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilter",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilter",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAnd",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAnd",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleFilterAnd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAndOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterAndOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleFilterAndOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,7 +207,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
@@ -256,11 +256,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTag",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTag",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleFilterTag)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTagOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTagOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleFilterTagOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -296,7 +296,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleList",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleList",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -317,11 +317,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -359,11 +359,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleNoncurrentVersionTransition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -384,7 +384,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleNoncurrentVersionTransitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -424,7 +424,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abortIncompleteMultipartUpload", GoGetter: "AbortIncompleteMultipartUpload"},
@@ -487,11 +487,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleTransition",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleTransition",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleTransition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleTransitionList",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleTransitionList",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleTransitionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -512,7 +512,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleTransitionOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleTransitionOutputReference",
 		reflect.TypeOf((*S3BucketLifecycleConfigurationRuleTransitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

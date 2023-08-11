@@ -383,7 +383,7 @@ func NewDataGoogleIapAppEngineVersionIamPolicy(scope constructs.Construct, id *s
 	j := jsiiProxy_DataGoogleIapAppEngineVersionIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -396,7 +396,7 @@ func NewDataGoogleIapAppEngineVersionIamPolicy_Override(d DataGoogleIapAppEngine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -529,7 +529,7 @@ func DataGoogleIapAppEngineVersionIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataGoogleIapAppEngineVersionIamPolicy_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataGoogleIapAppEngineVersionIamPolicy_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func DataGoogleIapAppEngineVersionIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapAppEngineVersionIamPolicy.DataGoogleIapAppEngineVersionIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

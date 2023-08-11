@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMember",
 		reflect.TypeOf((*SourcerepoRepositoryIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberCondition",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberCondition",
 		reflect.TypeOf((*SourcerepoRepositoryIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberConditionOutputReference",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberConditionOutputReference",
 		reflect.TypeOf((*SourcerepoRepositoryIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberConfig",
+		"@cdktf/provider-google.sourcerepoRepositoryIamMember.SourcerepoRepositoryIamMemberConfig",
 		reflect.TypeOf((*SourcerepoRepositoryIamMemberConfig)(nil)).Elem(),
 	)
 }

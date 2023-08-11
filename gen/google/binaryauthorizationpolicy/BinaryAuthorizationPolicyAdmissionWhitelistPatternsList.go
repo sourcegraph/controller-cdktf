@@ -116,7 +116,7 @@ func NewBinaryAuthorizationPolicyAdmissionWhitelistPatternsList(terraformResourc
 	j := jsiiProxy_BinaryAuthorizationPolicyAdmissionWhitelistPatternsList{}
 
 	_jsii_.Create(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsList",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBinaryAuthorizationPolicyAdmissionWhitelistPatternsList_Override(b Binar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsList",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

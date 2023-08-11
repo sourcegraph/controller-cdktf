@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesResource.DataKubernetesResource",
+		"@cdktf/provider-kubernetes.dataKubernetesResource.DataKubernetesResource",
 		reflect.TypeOf((*DataKubernetesResource)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesResource.DataKubernetesResourceConfig",
+		"@cdktf/provider-kubernetes.dataKubernetesResource.DataKubernetesResourceConfig",
 		reflect.TypeOf((*DataKubernetesResourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesResource.DataKubernetesResourceMetadata",
+		"@cdktf/provider-kubernetes.dataKubernetesResource.DataKubernetesResourceMetadata",
 		reflect.TypeOf((*DataKubernetesResourceMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesResource.DataKubernetesResourceMetadataOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesResource.DataKubernetesResourceMetadataOutputReference",
 		reflect.TypeOf((*DataKubernetesResourceMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

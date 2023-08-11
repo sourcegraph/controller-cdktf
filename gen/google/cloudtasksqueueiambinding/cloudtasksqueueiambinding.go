@@ -448,7 +448,7 @@ func NewCloudTasksQueueIamBinding(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CloudTasksQueueIamBinding{}
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudTasksQueueIamBinding_Override(c CloudTasksQueueIamBinding, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func CloudTasksQueueIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func CloudTasksQueueIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func CloudTasksQueueIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func CloudTasksQueueIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		"tfResourceType",
 		&returns,
 	)

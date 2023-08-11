@@ -180,7 +180,7 @@ func NewDataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference(terrafo
 	j := jsiiProxy_DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolioConstraints.DataAwsServicecatalogPortfolioConstraintsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

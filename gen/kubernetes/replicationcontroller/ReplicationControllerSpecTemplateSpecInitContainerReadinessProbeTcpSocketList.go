@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocke
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocke
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

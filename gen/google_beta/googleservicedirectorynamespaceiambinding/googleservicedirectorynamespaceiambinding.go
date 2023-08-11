@@ -400,7 +400,7 @@ func NewGoogleServiceDirectoryNamespaceIamBinding(scope constructs.Construct, id
 	j := jsiiProxy_GoogleServiceDirectoryNamespaceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleServiceDirectoryNamespaceIamBinding_Override(g GoogleServiceDirect
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleServiceDirectoryNamespaceIamBinding_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleServiceDirectoryNamespaceIamBinding_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleServiceDirectoryNamespaceIamBinding_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleServiceDirectoryNamespaceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamBinding.GoogleServiceDirectoryNamespaceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

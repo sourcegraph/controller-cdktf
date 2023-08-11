@@ -178,7 +178,7 @@ func NewGoogleGkeonpremVmwareNodePoolStatusOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleGkeonpremVmwareNodePoolStatusOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolStatusOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGoogleGkeonpremVmwareNodePoolStatusOutputReference_Override(g GoogleGkeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolStatusOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

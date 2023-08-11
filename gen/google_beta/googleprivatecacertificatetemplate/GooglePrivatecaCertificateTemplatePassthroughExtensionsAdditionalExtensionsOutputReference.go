@@ -179,7 +179,7 @@ func NewGooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensi
 	j := jsiiProxy_GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

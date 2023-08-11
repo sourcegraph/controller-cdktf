@@ -104,7 +104,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList(
 	j := jsiiProxy_DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

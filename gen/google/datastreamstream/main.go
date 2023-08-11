@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStream",
+		"@cdktf/provider-google.datastreamStream.DatastreamStream",
 		reflect.TypeOf((*DatastreamStream)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,19 +93,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAll",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAll",
 		reflect.TypeOf((*DatastreamStreamBackfillAll)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjects",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,11 +151,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -176,7 +176,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "collation", GoGetter: "Collation"},
@@ -227,7 +227,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,7 +265,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -303,7 +303,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -338,15 +338,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjects",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -367,11 +367,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -392,11 +392,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -417,7 +417,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -462,7 +462,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -500,7 +500,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -538,7 +538,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -573,7 +573,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -617,11 +617,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjects",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -656,11 +656,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -681,7 +681,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -719,11 +719,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -744,7 +744,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -782,11 +782,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -807,7 +807,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -857,11 +857,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamBackfillNone",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillNone",
 		reflect.TypeOf((*DatastreamStreamBackfillNone)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamBackfillNoneOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference",
 		reflect.TypeOf((*DatastreamStreamBackfillNoneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -893,19 +893,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamConfig",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamConfig",
 		reflect.TypeOf((*DatastreamStreamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamDestinationConfig",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfig",
 		reflect.TypeOf((*DatastreamStreamDestinationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfig",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfig",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -948,11 +948,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -986,15 +986,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1034,7 +1034,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1069,15 +1069,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfig",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfig",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormat",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormat",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1109,11 +1109,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormat",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormat",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1151,7 +1151,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "avroFileFormat", GoGetter: "AvroFileFormat"},
@@ -1200,7 +1200,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamDestinationConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference",
 		reflect.TypeOf((*DatastreamStreamDestinationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryDestinationConfig", GoGetter: "BigqueryDestinationConfig"},
@@ -1242,23 +1242,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfig",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfig",
 		reflect.TypeOf((*DatastreamStreamSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfig",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfig",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1279,11 +1279,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1304,11 +1304,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1329,7 +1329,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "collation", GoGetter: "Collation"},
@@ -1380,7 +1380,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1418,7 +1418,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1456,7 +1456,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1491,15 +1491,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1520,11 +1520,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1545,11 +1545,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1570,7 +1570,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "collation", GoGetter: "Collation"},
@@ -1621,7 +1621,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1659,7 +1659,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1697,7 +1697,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1732,7 +1732,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigMysqlSourceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1778,15 +1778,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfig",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfig",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1818,15 +1818,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1847,11 +1847,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1872,11 +1872,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1897,7 +1897,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -1942,7 +1942,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1980,7 +1980,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2018,7 +2018,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2053,15 +2053,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2082,11 +2082,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2107,11 +2107,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2132,7 +2132,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -2177,7 +2177,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2215,7 +2215,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2253,7 +2253,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2288,7 +2288,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2342,11 +2342,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2378,7 +2378,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2424,15 +2424,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfig",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfig",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2467,11 +2467,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2492,7 +2492,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2530,11 +2530,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2555,7 +2555,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2593,11 +2593,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2618,7 +2618,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -2668,11 +2668,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2707,11 +2707,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2732,7 +2732,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2770,11 +2770,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2795,7 +2795,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2833,11 +2833,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2858,7 +2858,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "column", GoGetter: "Column"},
@@ -2908,7 +2908,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference",
 		reflect.TypeOf((*DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2955,11 +2955,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamStream.DatastreamStreamTimeouts",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamTimeouts",
 		reflect.TypeOf((*DatastreamStreamTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamStream.DatastreamStreamTimeoutsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference",
 		reflect.TypeOf((*DatastreamStreamTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

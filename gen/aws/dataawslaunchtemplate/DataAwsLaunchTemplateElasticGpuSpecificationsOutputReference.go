@@ -167,7 +167,7 @@ func NewDataAwsLaunchTemplateElasticGpuSpecificationsOutputReference(terraformRe
 	j := jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsLaunchTemplateElasticGpuSpecificationsOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateElasticGpuSpecificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

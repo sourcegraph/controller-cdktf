@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
+		"@cdktf/provider-google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRole",
 		reflect.TypeOf((*GoogleProjectIamCustomRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRoleConfig",
+		"@cdktf/provider-google-beta.googleProjectIamCustomRole.GoogleProjectIamCustomRoleConfig",
 		reflect.TypeOf((*GoogleProjectIamCustomRoleConfig)(nil)).Elem(),
 	)
 }

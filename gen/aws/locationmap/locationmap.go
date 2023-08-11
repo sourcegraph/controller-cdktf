@@ -447,7 +447,7 @@ func NewLocationMap(scope constructs.Construct, id *string, config *LocationMapC
 	j := jsiiProxy_LocationMap{}
 
 	_jsii_.Create(
-		"aws.locationMap.LocationMap",
+		"@cdktf/provider-aws.locationMap.LocationMap",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewLocationMap_Override(l LocationMap, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.locationMap.LocationMap",
+		"@cdktf/provider-aws.locationMap.LocationMap",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -615,7 +615,7 @@ func LocationMap_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationMap.LocationMap",
+		"@cdktf/provider-aws.locationMap.LocationMap",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func LocationMap_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationMap.LocationMap",
+		"@cdktf/provider-aws.locationMap.LocationMap",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func LocationMap_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationMap.LocationMap",
+		"@cdktf/provider-aws.locationMap.LocationMap",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func LocationMap_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.locationMap.LocationMap",
+		"@cdktf/provider-aws.locationMap.LocationMap",
 		"tfResourceType",
 		&returns,
 	)

@@ -396,7 +396,7 @@ func NewGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputRe
 	j := jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -408,7 +408,7 @@ func NewGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

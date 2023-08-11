@@ -336,7 +336,7 @@ func NewDataGoogleApigeeEnvironmentIamPolicy(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleApigeeEnvironmentIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
+		"@cdktf/provider-google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataGoogleApigeeEnvironmentIamPolicy_Override(d DataGoogleApigeeEnvironm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
+		"@cdktf/provider-google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +460,7 @@ func DataGoogleApigeeEnvironmentIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
+		"@cdktf/provider-google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataGoogleApigeeEnvironmentIamPolicy_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
+		"@cdktf/provider-google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -498,7 +498,7 @@ func DataGoogleApigeeEnvironmentIamPolicy_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
+		"@cdktf/provider-google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataGoogleApigeeEnvironmentIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
+		"@cdktf/provider-google.dataGoogleApigeeEnvironmentIamPolicy.DataGoogleApigeeEnvironmentIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

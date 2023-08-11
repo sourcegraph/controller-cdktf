@@ -309,7 +309,7 @@ func NewGoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSche
 	j := jsiiProxy_GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewGoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSche
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

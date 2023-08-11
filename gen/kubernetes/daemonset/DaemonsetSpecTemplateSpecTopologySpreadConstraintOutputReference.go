@@ -252,7 +252,7 @@ func NewDaemonsetSpecTemplateSpecTopologySpreadConstraintOutputReference(terrafo
 	j := jsiiProxy_DaemonsetSpecTemplateSpecTopologySpreadConstraintOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDaemonsetSpecTemplateSpecTopologySpreadConstraintOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

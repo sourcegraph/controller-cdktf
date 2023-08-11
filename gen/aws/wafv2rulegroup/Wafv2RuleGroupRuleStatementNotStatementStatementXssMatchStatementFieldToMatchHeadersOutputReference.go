@@ -225,7 +225,7 @@ func NewWafv2RuleGroupRuleStatementNotStatementStatementXssMatchStatementFieldTo
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafv2RuleGroupRuleStatementNotStatementStatementXssMatchStatementFieldTo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementXssMatchStatementFieldToMatchHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

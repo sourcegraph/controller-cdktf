@@ -534,7 +534,7 @@ func NewMacie2CustomDataIdentifier(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_Macie2CustomDataIdentifier{}
 
 	_jsii_.Create(
-		"aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
+		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -547,7 +547,7 @@ func NewMacie2CustomDataIdentifier_Override(m Macie2CustomDataIdentifier, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
+		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -757,7 +757,7 @@ func Macie2CustomDataIdentifier_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
+		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -776,7 +776,7 @@ func Macie2CustomDataIdentifier_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
+		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func Macie2CustomDataIdentifier_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
+		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func Macie2CustomDataIdentifier_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
+		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		"tfResourceType",
 		&returns,
 	)

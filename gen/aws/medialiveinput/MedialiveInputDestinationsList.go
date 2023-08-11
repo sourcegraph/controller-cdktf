@@ -116,7 +116,7 @@ func NewMedialiveInputDestinationsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_MedialiveInputDestinationsList{}
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputDestinationsList",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveInputDestinationsList_Override(m MedialiveInputDestinationsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputDestinationsList",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputDestinationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

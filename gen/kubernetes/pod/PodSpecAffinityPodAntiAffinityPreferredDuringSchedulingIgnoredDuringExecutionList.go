@@ -116,7 +116,7 @@ func NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExec
 	j := jsiiProxy_PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.pod.PodSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1",
 		reflect.TypeOf((*CronJobV1)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1Config",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1Config",
 		reflect.TypeOf((*CronJobV1Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1Metadata",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1Metadata",
 		reflect.TypeOf((*CronJobV1Metadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1MetadataOutputReference",
 		reflect.TypeOf((*CronJobV1MetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -123,19 +123,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1Spec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1Spec",
 		reflect.TypeOf((*CronJobV1Spec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplate",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplate",
 		reflect.TypeOf((*CronJobV1SpecJobTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateMetadata",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateMetadata",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateMetadataOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateMetadataOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -182,7 +182,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -220,11 +220,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDeadlineSeconds", GoGetter: "ActiveDeadlineSeconds"},
@@ -284,15 +284,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelector",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelector",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -313,7 +313,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -354,7 +354,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecSelectorOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -393,15 +393,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplate",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplate",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadata",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadata",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -448,7 +448,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -487,19 +487,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinity",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinity",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinity",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinity",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -539,11 +539,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -564,7 +564,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -601,15 +601,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreference)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -630,7 +630,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -671,7 +671,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityPreferredDuringSchedulingIgnoredDuringExecutionPreferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -707,15 +707,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTerm)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -736,11 +736,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -761,7 +761,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -802,7 +802,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionNodeSelectorTermOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -838,7 +838,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -874,7 +874,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -918,11 +918,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -962,11 +962,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -987,7 +987,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1024,15 +1024,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1053,11 +1053,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1078,7 +1078,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1119,7 +1119,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1158,7 +1158,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1199,15 +1199,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1228,11 +1228,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1253,7 +1253,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1294,7 +1294,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1333,7 +1333,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1354,7 +1354,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1395,11 +1395,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinity",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinity",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1439,11 +1439,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1464,7 +1464,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1501,15 +1501,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTerm)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1530,11 +1530,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1555,7 +1555,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1596,7 +1596,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1635,7 +1635,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityPreferredDuringSchedulingIgnoredDuringExecutionPodAffinityTermOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1676,15 +1676,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1705,11 +1705,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1730,7 +1730,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1771,7 +1771,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1810,7 +1810,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1831,7 +1831,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1872,23 +1872,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainer",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnv",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnv",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnv)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFrom",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFrom",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1925,7 +1925,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1946,7 +1946,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1989,11 +1989,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvFromSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2030,7 +2030,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2051,7 +2051,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2092,15 +2092,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromConfigMapKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2141,11 +2141,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -2183,7 +2183,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2231,11 +2231,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromResourceFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2275,11 +2275,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2320,11 +2320,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecycleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2364,15 +2364,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStart",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStart",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStart)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -2407,15 +2407,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2436,7 +2436,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2474,7 +2474,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2522,7 +2522,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2543,7 +2543,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2587,11 +2587,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2612,7 +2612,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2646,15 +2646,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStop",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStop",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStop)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -2689,15 +2689,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2718,7 +2718,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2756,7 +2756,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2804,7 +2804,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2825,7 +2825,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2869,11 +2869,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2894,7 +2894,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2928,7 +2928,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2949,15 +2949,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbe",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbe",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -2992,15 +2992,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3021,7 +3021,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3059,7 +3059,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3107,7 +3107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3166,11 +3166,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3191,7 +3191,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3225,7 +3225,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -3329,11 +3329,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPort",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPort",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerPort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3354,7 +3354,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerPortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3400,15 +3400,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -3443,15 +3443,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3472,7 +3472,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3510,7 +3510,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3558,7 +3558,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3617,11 +3617,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3642,7 +3642,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerReadinessProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3676,11 +3676,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerResourcesOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3718,15 +3718,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContext)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilities",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilities",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilities)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextCapabilitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
@@ -3764,7 +3764,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalation", GoGetter: "AllowPrivilegeEscalation"},
@@ -3826,11 +3826,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3874,11 +3874,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfile",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfile",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3916,15 +3916,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -3959,15 +3959,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3988,7 +3988,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4026,7 +4026,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4074,7 +4074,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4133,11 +4133,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4158,7 +4158,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerStartupProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4192,11 +4192,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMount",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMount",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4217,7 +4217,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecContainerVolumeMountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4262,15 +4262,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOption",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOption",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4291,7 +4291,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4328,7 +4328,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecDnsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4370,11 +4370,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecHostAliases)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4395,7 +4395,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecHostAliasesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4431,11 +4431,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecrets",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecrets",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecrets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4456,7 +4456,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecImagePullSecretsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4490,23 +4490,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnv",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnv",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnv)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFrom",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFrom",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4543,7 +4543,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4564,7 +4564,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4607,11 +4607,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvFromSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4648,7 +4648,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4669,7 +4669,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4710,15 +4710,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFrom",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFrom",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4759,11 +4759,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -4801,7 +4801,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4849,11 +4849,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromResourceFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4893,11 +4893,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4938,11 +4938,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecycleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4982,15 +4982,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStart)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -5025,15 +5025,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5054,7 +5054,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5092,7 +5092,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5140,7 +5140,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5161,7 +5161,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5205,11 +5205,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5230,7 +5230,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5264,15 +5264,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStop",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStop",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStop)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -5307,15 +5307,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5336,7 +5336,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5374,7 +5374,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5422,7 +5422,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5443,7 +5443,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5487,11 +5487,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5512,7 +5512,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5546,7 +5546,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5567,15 +5567,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -5610,15 +5610,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5639,7 +5639,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5677,7 +5677,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5725,7 +5725,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5784,11 +5784,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5809,7 +5809,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerLivenessProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5843,7 +5843,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -5947,11 +5947,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5972,7 +5972,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerPortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6018,15 +6018,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -6061,15 +6061,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6090,7 +6090,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6128,7 +6128,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6176,7 +6176,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6235,11 +6235,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6260,7 +6260,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6294,11 +6294,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6336,15 +6336,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContext)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilities",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilities",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilities)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextCapabilitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "add", GoGetter: "Add"},
@@ -6382,7 +6382,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPrivilegeEscalation", GoGetter: "AllowPrivilegeEscalation"},
@@ -6444,11 +6444,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6492,11 +6492,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfile",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfile",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6534,15 +6534,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeExecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "command", GoGetter: "Command"},
@@ -6577,15 +6577,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6606,7 +6606,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6644,7 +6644,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6692,7 +6692,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6751,11 +6751,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6776,7 +6776,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6810,11 +6810,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6835,7 +6835,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerVolumeMountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6880,7 +6880,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDeadlineSeconds", GoGetter: "ActiveDeadlineSeconds"},
@@ -7004,11 +7004,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7029,7 +7029,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecReadinessGateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7063,11 +7063,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContext)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7126,11 +7126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7174,11 +7174,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7216,11 +7216,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7241,7 +7241,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSysctlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7277,11 +7277,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecToleration",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecToleration",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecToleration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTolerationList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTolerationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7302,7 +7302,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTolerationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7349,15 +7349,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraint)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7378,11 +7378,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7403,7 +7403,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7444,7 +7444,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7483,7 +7483,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7504,7 +7504,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecTopologySpreadConstraintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7549,15 +7549,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolume",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolume",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStore)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7600,11 +7600,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cachingMode", GoGetter: "CachingMode"},
@@ -7651,11 +7651,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7697,11 +7697,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7751,11 +7751,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCephFsSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7793,11 +7793,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinder)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCinderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7837,15 +7837,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMap)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -7866,7 +7866,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7907,7 +7907,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeConfigMapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7952,15 +7952,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsi)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7995,7 +7995,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeCsiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8042,19 +8042,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApi)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -8092,7 +8092,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8113,7 +8113,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8157,11 +8157,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8200,7 +8200,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeDownwardApiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8239,11 +8239,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDir)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeEmptyDirOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8281,11 +8281,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8327,11 +8327,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8378,11 +8378,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8420,11 +8420,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlocker)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeFlockerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8462,11 +8462,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGcePersistentDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8509,11 +8509,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGitRepoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8554,11 +8554,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeGlusterfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8597,11 +8597,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPath)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeHostPathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8639,11 +8639,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeIscsiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8691,7 +8691,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -8712,11 +8712,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocal)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8751,11 +8751,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeNfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8794,7 +8794,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsElasticBlockStore", GoGetter: "AwsElasticBlockStore"},
@@ -8933,11 +8933,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaim)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claimName", GoGetter: "ClaimName"},
@@ -8975,11 +8975,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDisk",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDisk",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumePhotonPersistentDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9016,11 +9016,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjected)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9041,7 +9041,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9079,19 +9079,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMap)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9112,7 +9112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9153,7 +9153,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9174,7 +9174,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9216,19 +9216,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApi",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApi",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApi)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -9266,7 +9266,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9287,7 +9287,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9332,11 +9332,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiItemsResourceFieldRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9375,7 +9375,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9411,7 +9411,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9432,7 +9432,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9480,15 +9480,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9509,7 +9509,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9550,7 +9550,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9571,7 +9571,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9613,11 +9613,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -9657,11 +9657,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyte)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeQuobyteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9706,11 +9706,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cephMonitors", GoGetter: "CephMonitors"},
@@ -9765,11 +9765,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeRbdSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9807,15 +9807,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsList",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -9836,7 +9836,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9877,7 +9877,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9922,11 +9922,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference",
 		reflect.TypeOf((*CronJobV1SpecJobTemplateSpecTemplateSpecVolumeVsphereVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9963,7 +9963,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecOutputReference",
 		reflect.TypeOf((*CronJobV1SpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -10015,11 +10015,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.cronJobV1.CronJobV1Timeouts",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1Timeouts",
 		reflect.TypeOf((*CronJobV1Timeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.cronJobV1.CronJobV1TimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1TimeoutsOutputReference",
 		reflect.TypeOf((*CronJobV1TimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

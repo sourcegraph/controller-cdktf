@@ -228,7 +228,7 @@ func NewDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputRef
 	j := jsiiProxy_DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -180,7 +180,7 @@ func NewDialogflowCxEntityTypeExcludedPhrasesOutputReference(terraformResource c
 	j := jsiiProxy_DialogflowCxEntityTypeExcludedPhrasesOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesOutputReference",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDialogflowCxEntityTypeExcludedPhrasesOutputReference_Override(d Dialogfl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesOutputReference",
+		"@cdktf/provider-google.dialogflowCxEntityType.DialogflowCxEntityTypeExcludedPhrasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

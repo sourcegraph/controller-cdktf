@@ -635,7 +635,7 @@ func NewGoogleComputeRegionCommitment(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleComputeRegionCommitment{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -648,7 +648,7 @@ func NewGoogleComputeRegionCommitment_Override(g GoogleComputeRegionCommitment, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -847,7 +847,7 @@ func GoogleComputeRegionCommitment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +866,7 @@ func GoogleComputeRegionCommitment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -885,7 +885,7 @@ func GoogleComputeRegionCommitment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -898,7 +898,7 @@ func GoogleComputeRegionCommitment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
 		"tfResourceType",
 		&returns,
 	)

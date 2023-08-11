@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmiIds.DataAwsAmiIds",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIds",
 		reflect.TypeOf((*DataAwsAmiIds)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsConfig",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig",
 		reflect.TypeOf((*DataAwsAmiIdsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsFilter",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilter",
 		reflect.TypeOf((*DataAwsAmiIdsFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsFilterList",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterList",
 		reflect.TypeOf((*DataAwsAmiIdsFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference",
 		reflect.TypeOf((*DataAwsAmiIdsFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,11 +138,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts",
 		reflect.TypeOf((*DataAwsAmiIdsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsAmiIdsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

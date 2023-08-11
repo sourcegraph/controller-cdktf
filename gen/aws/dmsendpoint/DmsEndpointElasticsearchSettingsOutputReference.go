@@ -250,7 +250,7 @@ func NewDmsEndpointElasticsearchSettingsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewDmsEndpointElasticsearchSettingsOutputReference_Override(d DmsEndpointEl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

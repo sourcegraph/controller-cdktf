@@ -178,7 +178,7 @@ func NewDataGoogleContainerClusterAddonsConfigIstioConfigOutputReference(terrafo
 	j := jsiiProxy_DataGoogleContainerClusterAddonsConfigIstioConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigIstioConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigIstioConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleContainerClusterAddonsConfigIstioConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigIstioConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigIstioConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

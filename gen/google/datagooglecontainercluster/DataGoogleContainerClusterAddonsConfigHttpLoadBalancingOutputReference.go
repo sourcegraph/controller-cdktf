@@ -167,7 +167,7 @@ func NewDataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference(t
 	j := jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

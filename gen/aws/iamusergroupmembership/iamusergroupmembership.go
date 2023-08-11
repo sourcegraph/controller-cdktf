@@ -342,7 +342,7 @@ func NewIamUserGroupMembership(scope constructs.Construct, id *string, config *I
 	j := jsiiProxy_IamUserGroupMembership{}
 
 	_jsii_.Create(
-		"aws.iamUserGroupMembership.IamUserGroupMembership",
+		"@cdktf/provider-aws.iamUserGroupMembership.IamUserGroupMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewIamUserGroupMembership_Override(i IamUserGroupMembership, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamUserGroupMembership.IamUserGroupMembership",
+		"@cdktf/provider-aws.iamUserGroupMembership.IamUserGroupMembership",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -488,7 +488,7 @@ func IamUserGroupMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserGroupMembership.IamUserGroupMembership",
+		"@cdktf/provider-aws.iamUserGroupMembership.IamUserGroupMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func IamUserGroupMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserGroupMembership.IamUserGroupMembership",
+		"@cdktf/provider-aws.iamUserGroupMembership.IamUserGroupMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func IamUserGroupMembership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserGroupMembership.IamUserGroupMembership",
+		"@cdktf/provider-aws.iamUserGroupMembership.IamUserGroupMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func IamUserGroupMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamUserGroupMembership.IamUserGroupMembership",
+		"@cdktf/provider-aws.iamUserGroupMembership.IamUserGroupMembership",
 		"tfResourceType",
 		&returns,
 	)

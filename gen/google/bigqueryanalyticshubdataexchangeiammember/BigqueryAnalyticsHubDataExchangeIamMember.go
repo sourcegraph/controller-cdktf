@@ -448,7 +448,7 @@ func NewBigqueryAnalyticsHubDataExchangeIamMember(scope constructs.Construct, id
 	j := jsiiProxy_BigqueryAnalyticsHubDataExchangeIamMember{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewBigqueryAnalyticsHubDataExchangeIamMember_Override(b BigqueryAnalyticsHu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -627,7 +627,7 @@ func BigqueryAnalyticsHubDataExchangeIamMember_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func BigqueryAnalyticsHubDataExchangeIamMember_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func BigqueryAnalyticsHubDataExchangeIamMember_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func BigqueryAnalyticsHubDataExchangeIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchangeIamMember.BigqueryAnalyticsHubDataExchangeIamMember",
 		"tfResourceType",
 		&returns,
 	)

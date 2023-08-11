@@ -116,7 +116,7 @@ func NewDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgres
 	j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgres
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsConnectQueueOutboundCallerConfigList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsConnectQueueOutboundCallerConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigList",
+		"@cdktf/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsConnectQueueOutboundCallerConfigList_Override(d DataAwsConnectQue
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigList",
+		"@cdktf/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

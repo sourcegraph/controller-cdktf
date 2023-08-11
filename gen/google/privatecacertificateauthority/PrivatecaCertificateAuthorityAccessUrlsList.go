@@ -104,7 +104,7 @@ func NewPrivatecaCertificateAuthorityAccessUrlsList(terraformResource cdktf.IInt
 	j := jsiiProxy_PrivatecaCertificateAuthorityAccessUrlsList{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityAccessUrlsList",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityAccessUrlsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewPrivatecaCertificateAuthorityAccessUrlsList_Override(p PrivatecaCertific
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityAccessUrlsList",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityAccessUrlsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

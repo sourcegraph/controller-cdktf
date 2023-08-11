@@ -204,7 +204,7 @@ func NewGoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference(terraf
 	j := jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeKeystoresAliasesSelfSignedCert.GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesSelfSignedCert.GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeKeystoresAliasesSelfSignedCert.GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesSelfSignedCert.GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

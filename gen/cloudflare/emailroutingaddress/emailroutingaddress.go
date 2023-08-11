@@ -386,7 +386,7 @@ func NewEmailRoutingAddress(scope constructs.Construct, id *string, config *Emai
 	j := jsiiProxy_EmailRoutingAddress{}
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingAddress.EmailRoutingAddress",
+		"@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,7 +399,7 @@ func NewEmailRoutingAddress_Override(e EmailRoutingAddress, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingAddress.EmailRoutingAddress",
+		"@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -532,7 +532,7 @@ func EmailRoutingAddress_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.emailRoutingAddress.EmailRoutingAddress",
+		"@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func EmailRoutingAddress_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.emailRoutingAddress.EmailRoutingAddress",
+		"@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func EmailRoutingAddress_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.emailRoutingAddress.EmailRoutingAddress",
+		"@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func EmailRoutingAddress_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.emailRoutingAddress.EmailRoutingAddress",
+		"@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress",
 		"tfResourceType",
 		&returns,
 	)

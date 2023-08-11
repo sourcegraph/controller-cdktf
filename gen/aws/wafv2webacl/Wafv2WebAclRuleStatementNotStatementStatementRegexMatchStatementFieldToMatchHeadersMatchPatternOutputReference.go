@@ -228,7 +228,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementRegexMatchStatementFieldToM
 	j := jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementRegexMatchStatementFieldToM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementRegexMatchStatementFieldToMatchHeadersMatchPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

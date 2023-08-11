@@ -179,7 +179,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOu
 	j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

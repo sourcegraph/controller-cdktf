@@ -116,7 +116,7 @@ func NewKinesisAnalyticsApplicationOutputsList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_KinesisAnalyticsApplicationOutputsList{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsList",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKinesisAnalyticsApplicationOutputsList_Override(k KinesisAnalyticsApplic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsList",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

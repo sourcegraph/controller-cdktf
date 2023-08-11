@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionS
 	j := jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

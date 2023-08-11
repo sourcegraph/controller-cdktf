@@ -222,7 +222,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsAclRuleOutputReference(terraformRe
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsAclRuleOutputReference_Override(e 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

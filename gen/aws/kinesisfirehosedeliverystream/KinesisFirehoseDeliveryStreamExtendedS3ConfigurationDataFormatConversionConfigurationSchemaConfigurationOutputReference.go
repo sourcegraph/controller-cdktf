@@ -297,7 +297,7 @@ func NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversion
 	j := jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewKinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversion
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

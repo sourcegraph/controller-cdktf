@@ -179,7 +179,7 @@ func NewApiGatewayDomainNameEndpointConfigurationOutputReference(terraformResour
 	j := jsiiProxy_ApiGatewayDomainNameEndpointConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewApiGatewayDomainNameEndpointConfigurationOutputReference_Override(a ApiG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

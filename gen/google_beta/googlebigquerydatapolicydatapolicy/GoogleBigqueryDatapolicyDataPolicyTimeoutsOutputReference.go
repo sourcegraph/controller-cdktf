@@ -228,7 +228,7 @@ func NewGoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference(terraformResou
 	j := jsiiProxy_GoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicy.GoogleBigqueryDatapolicyDataPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

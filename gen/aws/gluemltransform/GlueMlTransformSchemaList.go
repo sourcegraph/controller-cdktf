@@ -104,7 +104,7 @@ func NewGlueMlTransformSchemaList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_GlueMlTransformSchemaList{}
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformSchemaList",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGlueMlTransformSchemaList_Override(g GlueMlTransformSchemaList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformSchemaList",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

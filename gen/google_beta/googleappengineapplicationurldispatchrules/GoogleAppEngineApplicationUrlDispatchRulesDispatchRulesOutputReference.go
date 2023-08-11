@@ -226,7 +226,7 @@ func NewGoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference(t
 	j := jsiiProxy_GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

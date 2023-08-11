@@ -204,7 +204,7 @@ func NewDefaultRouteTableTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DefaultRouteTableTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.defaultRouteTable.DefaultRouteTableTimeoutsOutputReference",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDefaultRouteTableTimeoutsOutputReference_Override(d DefaultRouteTableTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultRouteTable.DefaultRouteTableTimeoutsOutputReference",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

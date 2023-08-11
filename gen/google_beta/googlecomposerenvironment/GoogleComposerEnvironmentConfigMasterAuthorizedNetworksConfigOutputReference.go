@@ -203,7 +203,7 @@ func NewGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputRefer
 	j := jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
 		reflect.TypeOf((*ComputeDiskResourcePolicyAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentConfig",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentConfig",
 		reflect.TypeOf((*ComputeDiskResourcePolicyAttachmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentTimeouts",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentTimeouts",
 		reflect.TypeOf((*ComputeDiskResourcePolicyAttachmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeDiskResourcePolicyAttachmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -203,7 +203,7 @@ func NewRoute53DomainsRegisteredDomainNameServerOutputReference(terraformResourc
 	j := jsiiProxy_Route53DomainsRegisteredDomainNameServerOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerOutputReference",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewRoute53DomainsRegisteredDomainNameServerOutputReference_Override(r Route
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerOutputReference",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainNameServerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

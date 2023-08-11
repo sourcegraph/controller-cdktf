@@ -179,7 +179,7 @@ func NewJobV1SpecTemplateSpecReadinessGateOutputReference(terraformResource cdkt
 	j := jsiiProxy_JobV1SpecTemplateSpecReadinessGateOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecReadinessGateOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecReadinessGateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewJobV1SpecTemplateSpecReadinessGateOutputReference_Override(j JobV1SpecTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecReadinessGateOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecReadinessGateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

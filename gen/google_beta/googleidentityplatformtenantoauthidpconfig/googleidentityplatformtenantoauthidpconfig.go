@@ -507,7 +507,7 @@ func NewGoogleIdentityPlatformTenantOauthIdpConfig(scope constructs.Construct, i
 	j := jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewGoogleIdentityPlatformTenantOauthIdpConfig_Override(g GoogleIdentityPlat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -719,7 +719,7 @@ func GoogleIdentityPlatformTenantOauthIdpConfig_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func GoogleIdentityPlatformTenantOauthIdpConfig_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func GoogleIdentityPlatformTenantOauthIdpConfig_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func GoogleIdentityPlatformTenantOauthIdpConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig",
 		"tfResourceType",
 		&returns,
 	)

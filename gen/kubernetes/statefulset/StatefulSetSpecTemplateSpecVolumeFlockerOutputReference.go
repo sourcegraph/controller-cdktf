@@ -204,7 +204,7 @@ func NewStatefulSetSpecTemplateSpecVolumeFlockerOutputReference(terraformResourc
 	j := jsiiProxy_StatefulSetSpecTemplateSpecVolumeFlockerOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlockerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetSpecTemplateSpecVolumeFlockerOutputReference_Override(s State
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeFlockerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

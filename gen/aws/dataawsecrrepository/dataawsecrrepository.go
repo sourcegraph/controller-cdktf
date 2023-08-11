@@ -394,7 +394,7 @@ func NewDataAwsEcrRepository(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataAwsEcrRepository{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepository",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -407,7 +407,7 @@ func NewDataAwsEcrRepository_Override(d DataAwsEcrRepository, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepository",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepository",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -529,7 +529,7 @@ func DataAwsEcrRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepository",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataAwsEcrRepository_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepository",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepository",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataAwsEcrRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepository",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func DataAwsEcrRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepository",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepository",
 		"tfResourceType",
 		&returns,
 	)

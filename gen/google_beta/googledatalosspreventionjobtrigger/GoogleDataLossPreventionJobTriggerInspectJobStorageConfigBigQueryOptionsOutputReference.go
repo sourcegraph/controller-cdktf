@@ -323,7 +323,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions
 	j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -335,7 +335,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

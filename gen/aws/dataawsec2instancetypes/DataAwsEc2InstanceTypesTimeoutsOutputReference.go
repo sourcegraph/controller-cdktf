@@ -180,7 +180,7 @@ func NewDataAwsEc2InstanceTypesTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsEc2InstanceTypesTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEc2InstanceTypesTimeoutsOutputReference_Override(d DataAwsEc2Inst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.project.Project",
+		"@cdktf/provider-tfe.project.Project",
 		reflect.TypeOf((*Project)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.project.ProjectConfig",
+		"@cdktf/provider-tfe.project.ProjectConfig",
 		reflect.TypeOf((*ProjectConfig)(nil)).Elem(),
 	)
 }

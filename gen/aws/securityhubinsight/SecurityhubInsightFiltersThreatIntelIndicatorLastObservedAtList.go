@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList(terrafor
 	j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

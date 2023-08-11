@@ -274,7 +274,7 @@ func NewJobV1SpecTemplateSpecInitContainerVolumeMountOutputReference(terraformRe
 	j := jsiiProxy_JobV1SpecTemplateSpecInitContainerVolumeMountOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerVolumeMountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewJobV1SpecTemplateSpecInitContainerVolumeMountOutputReference_Override(j 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerVolumeMountOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerVolumeMountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

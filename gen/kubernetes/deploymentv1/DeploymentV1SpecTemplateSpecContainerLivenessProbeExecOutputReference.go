@@ -180,7 +180,7 @@ func NewDeploymentV1SpecTemplateSpecContainerLivenessProbeExecOutputReference(te
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecContainerLivenessProbeExecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerLivenessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDeploymentV1SpecTemplateSpecContainerLivenessProbeExecOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerLivenessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -189,7 +189,7 @@ func NewComputeInstanceGroupManagerStatusOutputReference(terraformResource cdktf
 	j := jsiiProxy_ComputeInstanceGroupManagerStatusOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewComputeInstanceGroupManagerStatusOutputReference_Override(c ComputeInsta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

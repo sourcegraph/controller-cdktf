@@ -342,7 +342,7 @@ func NewIngressClassV1(scope constructs.Construct, id *string, config *IngressCl
 	j := jsiiProxy_IngressClassV1{}
 
 	_jsii_.Create(
-		"kubernetes.ingressClassV1.IngressClassV1",
+		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewIngressClassV1_Override(i IngressClassV1, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingressClassV1.IngressClassV1",
+		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -466,7 +466,7 @@ func IngressClassV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.ingressClassV1.IngressClassV1",
+		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func IngressClassV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.ingressClassV1.IngressClassV1",
+		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func IngressClassV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.ingressClassV1.IngressClassV1",
+		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func IngressClassV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.ingressClassV1.IngressClassV1",
+		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1",
 		"tfResourceType",
 		&returns,
 	)

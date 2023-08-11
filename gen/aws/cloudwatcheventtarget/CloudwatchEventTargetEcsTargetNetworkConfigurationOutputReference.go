@@ -227,7 +227,7 @@ func NewCloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference(terraf
 	j := jsiiProxy_CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewCloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -252,7 +252,7 @@ func NewEnvEnvValueFromOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_EnvEnvValueFromOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvValueFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewEnvEnvValueFromOutputReference_Override(e EnvEnvValueFromOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvValueFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

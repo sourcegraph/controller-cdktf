@@ -116,7 +116,7 @@ func NewGoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList(terrafor
 	j := jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

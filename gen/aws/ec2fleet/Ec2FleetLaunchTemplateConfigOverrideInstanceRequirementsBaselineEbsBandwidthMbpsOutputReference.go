@@ -204,7 +204,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandw
 	j := jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

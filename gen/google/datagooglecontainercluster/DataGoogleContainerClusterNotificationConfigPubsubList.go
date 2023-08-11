@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNotificationConfigPubsubList(terraformResource
 	j := jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNotificationConfigPubsubList_Override(d DataGo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -200,7 +200,7 @@ func NewDataTfePolicySetVcsRepoOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataTfePolicySetVcsRepoOutputReference{}
 
 	_jsii_.Create(
-		"tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataTfePolicySetVcsRepoOutputReference_Override(d DataTfePolicySetVcsRep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySetVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

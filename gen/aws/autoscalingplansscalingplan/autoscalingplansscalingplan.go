@@ -376,7 +376,7 @@ func NewAutoscalingplansScalingPlan(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_AutoscalingplansScalingPlan{}
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewAutoscalingplansScalingPlan_Override(a AutoscalingplansScalingPlan, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -511,7 +511,7 @@ func AutoscalingplansScalingPlan_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func AutoscalingplansScalingPlan_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func AutoscalingplansScalingPlan_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func AutoscalingplansScalingPlan_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
 		"tfResourceType",
 		&returns,
 	)

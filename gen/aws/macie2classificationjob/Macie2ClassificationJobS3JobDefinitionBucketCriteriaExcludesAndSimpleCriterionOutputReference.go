@@ -228,7 +228,7 @@ func NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCri
 	j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndSimpleCriterionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

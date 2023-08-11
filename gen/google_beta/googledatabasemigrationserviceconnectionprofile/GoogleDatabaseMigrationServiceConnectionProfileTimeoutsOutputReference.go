@@ -228,7 +228,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference(t
 	j := jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

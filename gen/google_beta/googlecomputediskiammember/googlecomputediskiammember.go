@@ -448,7 +448,7 @@ func NewGoogleComputeDiskIamMember(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleComputeDiskIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleComputeDiskIamMember_Override(g GoogleComputeDiskIamMember, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleComputeDiskIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleComputeDiskIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeDiskIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleComputeDiskIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeDiskIamMember.GoogleComputeDiskIamMember",
 		"tfResourceType",
 		&returns,
 	)

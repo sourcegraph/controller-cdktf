@@ -179,7 +179,7 @@ func NewLaunchTemplateHibernationOptionsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_LaunchTemplateHibernationOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateHibernationOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLaunchTemplateHibernationOptionsOutputReference_Override(l LaunchTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateHibernationOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

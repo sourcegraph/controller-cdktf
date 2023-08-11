@@ -116,7 +116,7 @@ func NewGoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPo
 	j := jsiiProxy_GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

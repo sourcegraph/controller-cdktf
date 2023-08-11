@@ -178,7 +178,7 @@ func NewDataAwsDynamodbTableTtlOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsDynamodbTableTtlOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTableTtlOutputReference",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableTtlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsDynamodbTableTtlOutputReference_Override(d DataAwsDynamodbTableTt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTableTtlOutputReference",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableTtlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

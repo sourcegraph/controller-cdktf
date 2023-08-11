@@ -104,7 +104,7 @@ func NewDataAwsMqBrokerLogsList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_DataAwsMqBrokerLogsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerLogsList",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLogsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMqBrokerLogsList_Override(d DataAwsMqBrokerLogsList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerLogsList",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerLogsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

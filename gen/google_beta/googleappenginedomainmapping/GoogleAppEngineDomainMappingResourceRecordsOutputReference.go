@@ -189,7 +189,7 @@ func NewGoogleAppEngineDomainMappingResourceRecordsOutputReference(terraformReso
 	j := jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingResourceRecordsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingResourceRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewGoogleAppEngineDomainMappingResourceRecordsOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingResourceRecordsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingResourceRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

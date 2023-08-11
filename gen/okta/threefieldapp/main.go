@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.threeFieldApp.ThreeFieldApp",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldApp",
 		reflect.TypeOf((*ThreeFieldApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
@@ -149,15 +149,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.threeFieldApp.ThreeFieldAppConfig",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppConfig",
 		reflect.TypeOf((*ThreeFieldAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.threeFieldApp.ThreeFieldAppTimeouts",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeouts",
 		reflect.TypeOf((*ThreeFieldAppTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.threeFieldApp.ThreeFieldAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppTimeoutsOutputReference",
 		reflect.TypeOf((*ThreeFieldAppTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -198,11 +198,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.threeFieldApp.ThreeFieldAppUsers",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsers",
 		reflect.TypeOf((*ThreeFieldAppUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.threeFieldApp.ThreeFieldAppUsersList",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsersList",
 		reflect.TypeOf((*ThreeFieldAppUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -223,7 +223,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.threeFieldApp.ThreeFieldAppUsersOutputReference",
+		"@cdktf/provider-okta.threeFieldApp.ThreeFieldAppUsersOutputReference",
 		reflect.TypeOf((*ThreeFieldAppUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

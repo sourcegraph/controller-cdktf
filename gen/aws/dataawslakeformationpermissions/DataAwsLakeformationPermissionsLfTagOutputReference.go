@@ -226,7 +226,7 @@ func NewDataAwsLakeformationPermissionsLfTagOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsLakeformationPermissionsLfTagOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagOutputReference",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataAwsLakeformationPermissionsLfTagOutputReference_Override(d DataAwsLa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagOutputReference",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

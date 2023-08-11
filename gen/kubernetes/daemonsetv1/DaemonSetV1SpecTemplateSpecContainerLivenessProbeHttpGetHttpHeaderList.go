@@ -116,7 +116,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList(t
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

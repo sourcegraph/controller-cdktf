@@ -225,7 +225,7 @@ func NewWafv2RuleGroupCustomResponseBodyOutputReference(terraformResource cdktf.
 	j := jsiiProxy_Wafv2RuleGroupCustomResponseBodyOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafv2RuleGroupCustomResponseBodyOutputReference_Override(w Wafv2RuleGrou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupCustomResponseBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

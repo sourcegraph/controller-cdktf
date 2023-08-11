@@ -492,7 +492,7 @@ func NewAuditmanagerAssessment(scope constructs.Construct, id *string, config *A
 	j := jsiiProxy_AuditmanagerAssessment{}
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessment",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -505,7 +505,7 @@ func NewAuditmanagerAssessment_Override(a AuditmanagerAssessment, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessment",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessment",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -649,7 +649,7 @@ func AuditmanagerAssessment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAssessment.AuditmanagerAssessment",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func AuditmanagerAssessment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAssessment.AuditmanagerAssessment",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func AuditmanagerAssessment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAssessment.AuditmanagerAssessment",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func AuditmanagerAssessment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.auditmanagerAssessment.AuditmanagerAssessment",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessment",
 		"tfResourceType",
 		&returns,
 	)

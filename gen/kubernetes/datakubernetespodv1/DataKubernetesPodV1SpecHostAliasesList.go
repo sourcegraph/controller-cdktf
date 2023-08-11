@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecHostAliasesList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataKubernetesPodV1SpecHostAliasesList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliasesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecHostAliasesList_Override(d DataKubernetesPodV1Spe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliasesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

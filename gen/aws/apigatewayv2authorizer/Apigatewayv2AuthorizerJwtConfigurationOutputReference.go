@@ -204,7 +204,7 @@ func NewApigatewayv2AuthorizerJwtConfigurationOutputReference(terraformResource 
 	j := jsiiProxy_Apigatewayv2AuthorizerJwtConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfigurationOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApigatewayv2AuthorizerJwtConfigurationOutputReference_Override(a Apigate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfigurationOutputReference",
+		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2AuthorizerJwtConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

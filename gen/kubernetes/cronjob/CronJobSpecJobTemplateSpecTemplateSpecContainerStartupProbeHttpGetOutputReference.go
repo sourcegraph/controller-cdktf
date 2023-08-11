@@ -276,7 +276,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutput
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

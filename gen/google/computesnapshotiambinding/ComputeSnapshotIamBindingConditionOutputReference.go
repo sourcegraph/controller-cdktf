@@ -226,7 +226,7 @@ func NewComputeSnapshotIamBindingConditionOutputReference(terraformResource cdkt
 	j := jsiiProxy_ComputeSnapshotIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeSnapshotIamBindingConditionOutputReference_Override(c ComputeSnap
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSnapshotIamBinding.ComputeSnapshotIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeSnapshotIamBinding.ComputeSnapshotIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

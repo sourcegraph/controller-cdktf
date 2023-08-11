@@ -498,7 +498,7 @@ func NewEcsCluster(scope constructs.Construct, id *string, config *EcsClusterCon
 	j := jsiiProxy_EcsCluster{}
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsCluster",
+		"@cdktf/provider-aws.ecsCluster.EcsCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -511,7 +511,7 @@ func NewEcsCluster_Override(e EcsCluster, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsCluster",
+		"@cdktf/provider-aws.ecsCluster.EcsCluster",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -666,7 +666,7 @@ func EcsCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsCluster.EcsCluster",
+		"@cdktf/provider-aws.ecsCluster.EcsCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func EcsCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsCluster.EcsCluster",
+		"@cdktf/provider-aws.ecsCluster.EcsCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func EcsCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsCluster.EcsCluster",
+		"@cdktf/provider-aws.ecsCluster.EcsCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func EcsCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecsCluster.EcsCluster",
+		"@cdktf/provider-aws.ecsCluster.EcsCluster",
 		"tfResourceType",
 		&returns,
 	)

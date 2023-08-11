@@ -227,7 +227,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAcco
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAcco
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

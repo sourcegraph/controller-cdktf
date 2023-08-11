@@ -104,7 +104,7 @@ func NewAuditmanagerAssessmentRolesAllList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_AuditmanagerAssessmentRolesAllList{}
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewAuditmanagerAssessmentRolesAllList_Override(a AuditmanagerAssessmentRole
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentRolesAllList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

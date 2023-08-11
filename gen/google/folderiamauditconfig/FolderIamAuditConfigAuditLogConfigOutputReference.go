@@ -203,7 +203,7 @@ func NewFolderIamAuditConfigAuditLogConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_FolderIamAuditConfigAuditLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewFolderIamAuditConfigAuditLogConfigOutputReference_Override(f FolderIamAu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

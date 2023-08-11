@@ -400,7 +400,7 @@ func NewDataCatalogPolicyTagIamBinding(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataCatalogPolicyTagIamBinding{}
 
 	_jsii_.Create(
-		"google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewDataCatalogPolicyTagIamBinding_Override(d DataCatalogPolicyTagIamBinding
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -557,7 +557,7 @@ func DataCatalogPolicyTagIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func DataCatalogPolicyTagIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func DataCatalogPolicyTagIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func DataCatalogPolicyTagIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamBinding.DataCatalogPolicyTagIamBinding",
 		"tfResourceType",
 		&returns,
 	)

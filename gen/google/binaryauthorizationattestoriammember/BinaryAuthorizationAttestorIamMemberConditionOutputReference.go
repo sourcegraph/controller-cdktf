@@ -226,7 +226,7 @@ func NewBinaryAuthorizationAttestorIamMemberConditionOutputReference(terraformRe
 	j := jsiiProxy_BinaryAuthorizationAttestorIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberConditionOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewBinaryAuthorizationAttestorIamMemberConditionOutputReference_Override(b 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberConditionOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

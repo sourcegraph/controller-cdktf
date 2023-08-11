@@ -640,7 +640,7 @@ func NewRoute53Record(scope constructs.Construct, id *string, config *Route53Rec
 	j := jsiiProxy_Route53Record{}
 
 	_jsii_.Create(
-		"aws.route53Record.Route53Record",
+		"@cdktf/provider-aws.route53Record.Route53Record",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -653,7 +653,7 @@ func NewRoute53Record_Override(r Route53Record, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53Record.Route53Record",
+		"@cdktf/provider-aws.route53Record.Route53Record",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -863,7 +863,7 @@ func Route53Record_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53Record.Route53Record",
+		"@cdktf/provider-aws.route53Record.Route53Record",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -882,7 +882,7 @@ func Route53Record_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53Record.Route53Record",
+		"@cdktf/provider-aws.route53Record.Route53Record",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -901,7 +901,7 @@ func Route53Record_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53Record.Route53Record",
+		"@cdktf/provider-aws.route53Record.Route53Record",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -914,7 +914,7 @@ func Route53Record_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53Record.Route53Record",
+		"@cdktf/provider-aws.route53Record.Route53Record",
 		"tfResourceType",
 		&returns,
 	)

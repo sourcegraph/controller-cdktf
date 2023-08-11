@@ -276,7 +276,7 @@ func NewDeploymentV1SpecTemplateSpecTolerationOutputReference(terraformResource 
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecTolerationOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecTolerationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewDeploymentV1SpecTemplateSpecTolerationOutputReference_Override(d Deploym
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecTolerationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

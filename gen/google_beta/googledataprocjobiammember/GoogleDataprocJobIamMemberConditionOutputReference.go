@@ -226,7 +226,7 @@ func NewGoogleDataprocJobIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleDataprocJobIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataprocJobIamMemberConditionOutputReference_Override(g GoogleData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJobIamMember.GoogleDataprocJobIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

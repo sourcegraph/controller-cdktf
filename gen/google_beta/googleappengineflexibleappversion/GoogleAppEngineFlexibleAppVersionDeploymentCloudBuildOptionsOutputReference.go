@@ -203,7 +203,7 @@ func NewGoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputRefere
 	j := jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -104,7 +104,7 @@ func NewDataOktaUsersUsersList(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_DataOktaUsersUsersList{}
 
 	_jsii_.Create(
-		"okta.dataOktaUsers.DataOktaUsersUsersList",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaUsersUsersList_Override(d DataOktaUsersUsersList, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaUsers.DataOktaUsersUsersList",
+		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

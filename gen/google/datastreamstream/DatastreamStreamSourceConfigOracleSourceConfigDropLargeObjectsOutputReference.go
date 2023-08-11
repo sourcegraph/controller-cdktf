@@ -156,7 +156,7 @@ func NewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputRefe
 	j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

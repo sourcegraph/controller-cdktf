@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.guarddutyDetector.GuarddutyDetector",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector",
 		reflect.TypeOf((*GuarddutyDetector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -73,23 +73,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyDetector.GuarddutyDetectorConfig",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorConfig",
 		reflect.TypeOf((*GuarddutyDetectorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasources",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasources",
 		reflect.TypeOf((*GuarddutyDetectorDatasources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetes",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetes",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesKubernetes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogs",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesKubernetesAuditLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesKubernetesAuditLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,7 +123,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesOutputReference",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesKubernetesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditLogs", GoGetter: "AuditLogs"},
@@ -158,11 +158,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtection",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtection",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtection)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionOutputReference",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,15 +197,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsEbsVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -239,7 +239,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesMalwareProtectionScanEc2InstanceWithFindingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -274,7 +274,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesOutputReference",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -318,11 +318,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3Logs",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesS3Logs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3LogsOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3LogsOutputReference",
 		reflect.TypeOf((*GuarddutyDetectorDatasourcesS3LogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

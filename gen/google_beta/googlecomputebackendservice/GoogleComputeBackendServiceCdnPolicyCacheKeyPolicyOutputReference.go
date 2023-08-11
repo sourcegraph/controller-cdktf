@@ -324,7 +324,7 @@ func NewGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference(terraf
 	j := jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

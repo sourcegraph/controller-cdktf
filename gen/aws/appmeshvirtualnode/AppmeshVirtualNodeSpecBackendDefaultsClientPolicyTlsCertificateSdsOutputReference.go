@@ -179,7 +179,7 @@ func NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutput
 	j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

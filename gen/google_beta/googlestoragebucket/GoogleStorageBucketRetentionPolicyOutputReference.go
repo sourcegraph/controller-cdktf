@@ -203,7 +203,7 @@ func NewGoogleStorageBucketRetentionPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleStorageBucketRetentionPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketRetentionPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleStorageBucketRetentionPolicyOutputReference_Override(g GoogleStora
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketRetentionPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

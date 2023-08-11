@@ -252,7 +252,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReferen
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeProjectedSourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

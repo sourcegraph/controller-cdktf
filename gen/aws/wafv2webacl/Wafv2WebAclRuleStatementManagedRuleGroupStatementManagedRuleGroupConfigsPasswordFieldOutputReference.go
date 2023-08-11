@@ -179,7 +179,7 @@ func NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigs
 	j := jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordFieldOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

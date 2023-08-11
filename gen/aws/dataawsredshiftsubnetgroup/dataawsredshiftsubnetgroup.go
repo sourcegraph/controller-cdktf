@@ -348,7 +348,7 @@ func NewDataAwsRedshiftSubnetGroup(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsRedshiftSubnetGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
+		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataAwsRedshiftSubnetGroup_Override(d DataAwsRedshiftSubnetGroup, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
+		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -472,7 +472,7 @@ func DataAwsRedshiftSubnetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
+		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsRedshiftSubnetGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
+		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsRedshiftSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
+		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsRedshiftSubnetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
+		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewS3BucketIntelligentTieringConfigurationFilterOutputReference(terraformRe
 	j := jsiiProxy_S3BucketIntelligentTieringConfigurationFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationFilterOutputReference",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3BucketIntelligentTieringConfigurationFilterOutputReference_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationFilterOutputReference",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfigurationFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

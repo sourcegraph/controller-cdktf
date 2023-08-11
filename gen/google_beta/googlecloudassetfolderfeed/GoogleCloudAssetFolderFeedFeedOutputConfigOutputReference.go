@@ -179,7 +179,7 @@ func NewGoogleCloudAssetFolderFeedFeedOutputConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleCloudAssetFolderFeedFeedOutputConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleCloudAssetFolderFeedFeedOutputConfigOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

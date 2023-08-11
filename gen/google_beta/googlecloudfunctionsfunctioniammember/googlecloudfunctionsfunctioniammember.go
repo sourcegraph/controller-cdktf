@@ -448,7 +448,7 @@ func NewGoogleCloudfunctionsFunctionIamMember(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleCloudfunctionsFunctionIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudfunctionsFunctionIamMember_Override(g GoogleCloudfunctionsFun
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudfunctionsFunctionIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudfunctionsFunctionIamMember_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudfunctionsFunctionIamMember_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudfunctionsFunctionIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember",
 		"tfResourceType",
 		&returns,
 	)

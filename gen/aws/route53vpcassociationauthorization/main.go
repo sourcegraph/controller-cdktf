@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
+		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorization",
 		reflect.TypeOf((*Route53VpcAssociationAuthorization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorizationConfig",
+		"@cdktf/provider-aws.route53VpcAssociationAuthorization.Route53VpcAssociationAuthorizationConfig",
 		reflect.TypeOf((*Route53VpcAssociationAuthorizationConfig)(nil)).Elem(),
 	)
 }

@@ -459,7 +459,7 @@ func NewGoogleStorageNotification(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleStorageNotification{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageNotification.GoogleStorageNotification",
+		"@cdktf/provider-google-beta.googleStorageNotification.GoogleStorageNotification",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewGoogleStorageNotification_Override(g GoogleStorageNotification, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageNotification.GoogleStorageNotification",
+		"@cdktf/provider-google-beta.googleStorageNotification.GoogleStorageNotification",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -649,7 +649,7 @@ func GoogleStorageNotification_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageNotification.GoogleStorageNotification",
+		"@cdktf/provider-google-beta.googleStorageNotification.GoogleStorageNotification",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func GoogleStorageNotification_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageNotification.GoogleStorageNotification",
+		"@cdktf/provider-google-beta.googleStorageNotification.GoogleStorageNotification",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func GoogleStorageNotification_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageNotification.GoogleStorageNotification",
+		"@cdktf/provider-google-beta.googleStorageNotification.GoogleStorageNotification",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GoogleStorageNotification_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageNotification.GoogleStorageNotification",
+		"@cdktf/provider-google-beta.googleStorageNotification.GoogleStorageNotification",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewAddressMapIpsOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AddressMapIpsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMapIpsOutputReference",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapIpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAddressMapIpsOutputReference_Override(a AddressMapIpsOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMapIpsOutputReference",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapIpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

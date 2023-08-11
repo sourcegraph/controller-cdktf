@@ -116,7 +116,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList(te
 	j := jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

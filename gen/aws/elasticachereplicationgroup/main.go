@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		reflect.TypeOf((*ElasticacheReplicationGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -184,11 +184,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterMode",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterMode",
 		reflect.TypeOf((*ElasticacheReplicationGroupClusterMode)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterModeOutputReference",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupClusterModeOutputReference",
 		reflect.TypeOf((*ElasticacheReplicationGroupClusterModeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -226,15 +226,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupConfig",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupConfig",
 		reflect.TypeOf((*ElasticacheReplicationGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfiguration",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfiguration",
 		reflect.TypeOf((*ElasticacheReplicationGroupLogDeliveryConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationList",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationList",
 		reflect.TypeOf((*ElasticacheReplicationGroupLogDeliveryConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -255,7 +255,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference",
 		reflect.TypeOf((*ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,11 +295,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeouts",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeouts",
 		reflect.TypeOf((*ElasticacheReplicationGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupTimeoutsOutputReference",
 		reflect.TypeOf((*ElasticacheReplicationGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -179,7 +179,7 @@ func NewCloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSub
 	j := jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionRealtimeMetricsSubscriptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

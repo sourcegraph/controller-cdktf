@@ -116,7 +116,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapI
 	j := jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

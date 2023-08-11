@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigList(terraformRes
 	j := jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -225,7 +225,7 @@ func NewGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference(ter
 	j := jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

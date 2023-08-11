@@ -274,7 +274,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference(terraformResou
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference_Override(s Sta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeQuobyteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

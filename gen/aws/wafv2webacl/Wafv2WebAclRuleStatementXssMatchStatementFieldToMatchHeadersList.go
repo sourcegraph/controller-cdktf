@@ -116,7 +116,7 @@ func NewWafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersList(terrafo
 	j := jsiiProxy_Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

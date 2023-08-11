@@ -104,7 +104,7 @@ func NewGoogleCloudRunDomainMappingStatusResourceRecordsList(terraformResource c
 	j := jsiiProxy_GoogleCloudRunDomainMappingStatusResourceRecordsList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusResourceRecordsList",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusResourceRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCloudRunDomainMappingStatusResourceRecordsList_Override(g GoogleCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusResourceRecordsList",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingStatusResourceRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

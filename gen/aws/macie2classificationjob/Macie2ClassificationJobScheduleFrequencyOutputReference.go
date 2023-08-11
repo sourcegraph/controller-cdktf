@@ -228,7 +228,7 @@ func NewMacie2ClassificationJobScheduleFrequencyOutputReference(terraformResourc
 	j := jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequencyOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequencyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMacie2ClassificationJobScheduleFrequencyOutputReference_Override(m Macie
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequencyOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobScheduleFrequencyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

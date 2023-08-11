@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.defaultNetworkAcl.DefaultNetworkAcl",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAcl",
 		reflect.TypeOf((*DefaultNetworkAcl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultNetworkAcl.DefaultNetworkAclConfig",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclConfig",
 		reflect.TypeOf((*DefaultNetworkAclConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultNetworkAcl.DefaultNetworkAclEgress",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgress",
 		reflect.TypeOf((*DefaultNetworkAclEgress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultNetworkAcl.DefaultNetworkAclEgressList",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgressList",
 		reflect.TypeOf((*DefaultNetworkAclEgressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultNetworkAcl.DefaultNetworkAclEgressOutputReference",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclEgressOutputReference",
 		reflect.TypeOf((*DefaultNetworkAclEgressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -160,11 +160,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultNetworkAcl.DefaultNetworkAclIngress",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngress",
 		reflect.TypeOf((*DefaultNetworkAclIngress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultNetworkAcl.DefaultNetworkAclIngressList",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngressList",
 		reflect.TypeOf((*DefaultNetworkAclIngressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultNetworkAcl.DefaultNetworkAclIngressOutputReference",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngressOutputReference",
 		reflect.TypeOf((*DefaultNetworkAclIngressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},

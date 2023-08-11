@@ -180,7 +180,7 @@ func NewWafv2RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldT
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchBodyOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchBodyOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewWafv2RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchBodyOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementNotStatementStatementByteMatchStatementFieldToMatchBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -390,7 +390,7 @@ func NewApiGatewayBasePathMapping(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ApiGatewayBasePathMapping{}
 
 	_jsii_.Create(
-		"aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
+		"@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewApiGatewayBasePathMapping_Override(a ApiGatewayBasePathMapping, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
+		"@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -558,7 +558,7 @@ func ApiGatewayBasePathMapping_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
+		"@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func ApiGatewayBasePathMapping_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
+		"@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func ApiGatewayBasePathMapping_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
+		"@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func ApiGatewayBasePathMapping_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
+		"@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
 		"tfResourceType",
 		&returns,
 	)

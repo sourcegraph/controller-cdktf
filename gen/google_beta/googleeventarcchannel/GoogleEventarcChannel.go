@@ -504,7 +504,7 @@ func NewGoogleEventarcChannel(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleEventarcChannel{}
 
 	_jsii_.Create(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannel",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -517,7 +517,7 @@ func NewGoogleEventarcChannel_Override(g GoogleEventarcChannel, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannel",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannel",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -683,7 +683,7 @@ func GoogleEventarcChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannel",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func GoogleEventarcChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannel",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -721,7 +721,7 @@ func GoogleEventarcChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannel",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func GoogleEventarcChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannel",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannel",
 		"tfResourceType",
 		&returns,
 	)

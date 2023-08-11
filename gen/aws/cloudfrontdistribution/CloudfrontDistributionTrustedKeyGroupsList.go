@@ -104,7 +104,7 @@ func NewCloudfrontDistributionTrustedKeyGroupsList(terraformResource cdktf.IInte
 	j := jsiiProxy_CloudfrontDistributionTrustedKeyGroupsList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCloudfrontDistributionTrustedKeyGroupsList_Override(c CloudfrontDistribu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

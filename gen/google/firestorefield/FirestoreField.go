@@ -473,7 +473,7 @@ func NewFirestoreField(scope constructs.Construct, id *string, config *Firestore
 	j := jsiiProxy_FirestoreField{}
 
 	_jsii_.Create(
-		"google.firestoreField.FirestoreField",
+		"@cdktf/provider-google.firestoreField.FirestoreField",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewFirestoreField_Override(f FirestoreField, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firestoreField.FirestoreField",
+		"@cdktf/provider-google.firestoreField.FirestoreField",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -641,7 +641,7 @@ func FirestoreField_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreField.FirestoreField",
+		"@cdktf/provider-google.firestoreField.FirestoreField",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func FirestoreField_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreField.FirestoreField",
+		"@cdktf/provider-google.firestoreField.FirestoreField",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func FirestoreField_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreField.FirestoreField",
+		"@cdktf/provider-google.firestoreField.FirestoreField",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func FirestoreField_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.firestoreField.FirestoreField",
+		"@cdktf/provider-google.firestoreField.FirestoreField",
 		"tfResourceType",
 		&returns,
 	)

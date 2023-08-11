@@ -324,7 +324,7 @@ func NewComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference(terraformRe
 	j := jsiiProxy_ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

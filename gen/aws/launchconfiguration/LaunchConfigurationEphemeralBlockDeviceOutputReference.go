@@ -227,7 +227,7 @@ func NewLaunchConfigurationEphemeralBlockDeviceOutputReference(terraformResource
 	j := jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewLaunchConfigurationEphemeralBlockDeviceOutputReference_Override(l Launch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlock",
+		"@cdktf/provider-aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlock",
 		reflect.TypeOf((*S3BucketPublicAccessBlock)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlockConfig",
+		"@cdktf/provider-aws.s3BucketPublicAccessBlock.S3BucketPublicAccessBlockConfig",
 		reflect.TypeOf((*S3BucketPublicAccessBlockConfig)(nil)).Elem(),
 	)
 }

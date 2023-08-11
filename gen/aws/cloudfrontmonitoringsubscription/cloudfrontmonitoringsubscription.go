@@ -342,7 +342,7 @@ func NewCloudfrontMonitoringSubscription(scope constructs.Construct, id *string,
 	j := jsiiProxy_CloudfrontMonitoringSubscription{}
 
 	_jsii_.Create(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewCloudfrontMonitoringSubscription_Override(c CloudfrontMonitoringSubscrip
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -477,7 +477,7 @@ func CloudfrontMonitoringSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func CloudfrontMonitoringSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func CloudfrontMonitoringSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func CloudfrontMonitoringSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscription",
 		"tfResourceType",
 		&returns,
 	)

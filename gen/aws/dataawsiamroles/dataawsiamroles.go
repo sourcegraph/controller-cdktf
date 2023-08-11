@@ -338,7 +338,7 @@ func NewDataAwsIamRoles(scope constructs.Construct, id *string, config *DataAwsI
 	j := jsiiProxy_DataAwsIamRoles{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamRoles.DataAwsIamRoles",
+		"@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,7 +351,7 @@ func NewDataAwsIamRoles_Override(d DataAwsIamRoles, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamRoles.DataAwsIamRoles",
+		"@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -462,7 +462,7 @@ func DataAwsIamRoles_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamRoles.DataAwsIamRoles",
+		"@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -481,7 +481,7 @@ func DataAwsIamRoles_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamRoles.DataAwsIamRoles",
+		"@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataAwsIamRoles_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamRoles.DataAwsIamRoles",
+		"@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataAwsIamRoles_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIamRoles.DataAwsIamRoles",
+		"@cdktf/provider-aws.dataAwsIamRoles.DataAwsIamRoles",
 		"tfResourceType",
 		&returns,
 	)

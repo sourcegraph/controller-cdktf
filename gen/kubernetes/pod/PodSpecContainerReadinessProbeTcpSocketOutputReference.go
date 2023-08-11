@@ -179,7 +179,7 @@ func NewPodSpecContainerReadinessProbeTcpSocketOutputReference(terraformResource
 	j := jsiiProxy_PodSpecContainerReadinessProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerReadinessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerReadinessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPodSpecContainerReadinessProbeTcpSocketOutputReference_Override(p PodSpe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerReadinessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerReadinessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

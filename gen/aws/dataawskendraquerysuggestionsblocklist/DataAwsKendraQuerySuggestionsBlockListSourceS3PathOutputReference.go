@@ -178,7 +178,7 @@ func NewDataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference(terraf
 	j := jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -448,7 +448,7 @@ func NewNotebooksRuntimeIamMember(scope constructs.Construct, id *string, config
 	j := jsiiProxy_NotebooksRuntimeIamMember{}
 
 	_jsii_.Create(
-		"google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
+		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewNotebooksRuntimeIamMember_Override(n NotebooksRuntimeIamMember, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
+		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -627,7 +627,7 @@ func NotebooksRuntimeIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
+		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func NotebooksRuntimeIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
+		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func NotebooksRuntimeIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
+		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func NotebooksRuntimeIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
+		"@cdktf/provider-google.notebooksRuntimeIamMember.NotebooksRuntimeIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -251,7 +251,7 @@ func NewStorageTransferJobScheduleOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_StorageTransferJobScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobScheduleOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewStorageTransferJobScheduleOutputReference_Override(s StorageTransferJobS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobScheduleOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

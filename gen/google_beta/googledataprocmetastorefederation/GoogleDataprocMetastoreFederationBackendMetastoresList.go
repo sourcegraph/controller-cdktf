@@ -116,7 +116,7 @@ func NewGoogleDataprocMetastoreFederationBackendMetastoresList(terraformResource
 	j := jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederationBackendMetastoresList",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederationBackendMetastoresList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDataprocMetastoreFederationBackendMetastoresList_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederationBackendMetastoresList",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederation.GoogleDataprocMetastoreFederationBackendMetastoresList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

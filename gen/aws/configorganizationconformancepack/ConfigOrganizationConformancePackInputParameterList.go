@@ -116,7 +116,7 @@ func NewConfigOrganizationConformancePackInputParameterList(terraformResource cd
 	j := jsiiProxy_ConfigOrganizationConformancePackInputParameterList{}
 
 	_jsii_.Create(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterList",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewConfigOrganizationConformancePackInputParameterList_Override(c ConfigOrg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterList",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

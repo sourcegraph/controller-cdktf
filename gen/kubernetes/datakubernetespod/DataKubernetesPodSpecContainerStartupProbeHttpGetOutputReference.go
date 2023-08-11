@@ -211,7 +211,7 @@ func NewDataKubernetesPodSpecContainerStartupProbeHttpGetOutputReference(terrafo
 	j := jsiiProxy_DataKubernetesPodSpecContainerStartupProbeHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataKubernetesPodSpecContainerStartupProbeHttpGetOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

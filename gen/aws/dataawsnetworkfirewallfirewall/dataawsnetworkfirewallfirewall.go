@@ -450,7 +450,7 @@ func NewDataAwsNetworkfirewallFirewall(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsNetworkfirewallFirewall{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewDataAwsNetworkfirewallFirewall_Override(d DataAwsNetworkfirewallFirewall
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -585,7 +585,7 @@ func DataAwsNetworkfirewallFirewall_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -604,7 +604,7 @@ func DataAwsNetworkfirewallFirewall_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataAwsNetworkfirewallFirewall_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func DataAwsNetworkfirewallFirewall_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewall",
 		"tfResourceType",
 		&returns,
 	)

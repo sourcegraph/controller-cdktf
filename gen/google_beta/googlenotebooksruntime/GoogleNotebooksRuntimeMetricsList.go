@@ -104,7 +104,7 @@ func NewGoogleNotebooksRuntimeMetricsList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_GoogleNotebooksRuntimeMetricsList{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeMetricsList",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeMetricsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleNotebooksRuntimeMetricsList_Override(g GoogleNotebooksRuntimeMetri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeMetricsList",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeMetricsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

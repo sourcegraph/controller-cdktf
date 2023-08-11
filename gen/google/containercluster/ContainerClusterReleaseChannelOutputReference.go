@@ -179,7 +179,7 @@ func NewContainerClusterReleaseChannelOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ContainerClusterReleaseChannelOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterReleaseChannelOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterReleaseChannelOutputReference_Override(c ContainerCluste
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterReleaseChannelOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

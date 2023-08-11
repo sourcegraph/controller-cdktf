@@ -179,7 +179,7 @@ func NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocke
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocke
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

@@ -227,7 +227,7 @@ func NewPodSpecContainerEnvValueFromResourceFieldRefOutputReference(terraformRes
 	j := jsiiProxy_PodSpecContainerEnvValueFromResourceFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvValueFromResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewPodSpecContainerEnvValueFromResourceFieldRefOutputReference_Override(p P
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvValueFromResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

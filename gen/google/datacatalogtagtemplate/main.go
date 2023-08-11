@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplate",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplate",
 		reflect.TypeOf((*DataCatalogTagTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateConfig",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateConfig",
 		reflect.TypeOf((*DataCatalogTagTemplateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFields",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFields",
 		reflect.TypeOf((*DataCatalogTagTemplateFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsList",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsList",
 		reflect.TypeOf((*DataCatalogTagTemplateFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsOutputReference",
 		reflect.TypeOf((*DataCatalogTagTemplateFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,19 +156,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsType",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsType",
 		reflect.TypeOf((*DataCatalogTagTemplateFieldsType)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumType",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumType",
 		reflect.TypeOf((*DataCatalogTagTemplateFieldsTypeEnumType)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValues",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValues",
 		reflect.TypeOf((*DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList",
 		reflect.TypeOf((*DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -189,7 +189,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference",
 		reflect.TypeOf((*DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -223,7 +223,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference",
 		reflect.TypeOf((*DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedValues", GoGetter: "AllowedValues"},
@@ -258,7 +258,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeOutputReference",
 		reflect.TypeOf((*DataCatalogTagTemplateFieldsTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -297,11 +297,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateTimeouts",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateTimeouts",
 		reflect.TypeOf((*DataCatalogTagTemplateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateTimeoutsOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateTimeoutsOutputReference",
 		reflect.TypeOf((*DataCatalogTagTemplateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

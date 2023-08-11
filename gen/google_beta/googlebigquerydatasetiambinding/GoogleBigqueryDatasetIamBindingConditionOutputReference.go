@@ -226,7 +226,7 @@ func NewGoogleBigqueryDatasetIamBindingConditionOutputReference(terraformResourc
 	j := jsiiProxy_GoogleBigqueryDatasetIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleBigqueryDatasetIamBindingConditionOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamBinding.GoogleBigqueryDatasetIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

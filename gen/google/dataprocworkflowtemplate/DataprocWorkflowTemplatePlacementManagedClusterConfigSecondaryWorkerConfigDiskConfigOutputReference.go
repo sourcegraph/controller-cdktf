@@ -228,7 +228,7 @@ func NewDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConf
 	j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

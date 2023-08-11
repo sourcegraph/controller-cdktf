@@ -519,7 +519,7 @@ func NewGoogleNetworkServicesTcpRoute(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleNetworkServicesTcpRoute{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -532,7 +532,7 @@ func NewGoogleNetworkServicesTcpRoute_Override(g GoogleNetworkServicesTcpRoute, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -709,7 +709,7 @@ func GoogleNetworkServicesTcpRoute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func GoogleNetworkServicesTcpRoute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func GoogleNetworkServicesTcpRoute_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func GoogleNetworkServicesTcpRoute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRoute",
 		"tfResourceType",
 		&returns,
 	)

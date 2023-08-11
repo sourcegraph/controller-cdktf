@@ -372,7 +372,7 @@ func NewGooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputRefe
 	j := jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewGooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

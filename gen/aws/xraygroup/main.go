@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.xrayGroup.XrayGroup",
+		"@cdktf/provider-aws.xrayGroup.XrayGroup",
 		reflect.TypeOf((*XrayGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.xrayGroup.XrayGroupConfig",
+		"@cdktf/provider-aws.xrayGroup.XrayGroupConfig",
 		reflect.TypeOf((*XrayGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.xrayGroup.XrayGroupInsightsConfiguration",
+		"@cdktf/provider-aws.xrayGroup.XrayGroupInsightsConfiguration",
 		reflect.TypeOf((*XrayGroupInsightsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.xrayGroup.XrayGroupInsightsConfigurationOutputReference",
+		"@cdktf/provider-aws.xrayGroup.XrayGroupInsightsConfigurationOutputReference",
 		reflect.TypeOf((*XrayGroupInsightsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

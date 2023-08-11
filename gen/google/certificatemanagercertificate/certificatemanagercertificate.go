@@ -511,7 +511,7 @@ func NewCertificateManagerCertificate(scope constructs.Construct, id *string, co
 	j := jsiiProxy_CertificateManagerCertificate{}
 
 	_jsii_.Create(
-		"google.certificateManagerCertificate.CertificateManagerCertificate",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -524,7 +524,7 @@ func NewCertificateManagerCertificate_Override(c CertificateManagerCertificate, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.certificateManagerCertificate.CertificateManagerCertificate",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificate",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -701,7 +701,7 @@ func CertificateManagerCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerCertificate.CertificateManagerCertificate",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -720,7 +720,7 @@ func CertificateManagerCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerCertificate.CertificateManagerCertificate",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func CertificateManagerCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerCertificate.CertificateManagerCertificate",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func CertificateManagerCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.certificateManagerCertificate.CertificateManagerCertificate",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificate",
 		"tfResourceType",
 		&returns,
 	)

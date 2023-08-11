@@ -424,7 +424,7 @@ func NewGoogleComputeMachineImageIamBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleComputeMachineImageIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleComputeMachineImageIamBinding_Override(g GoogleComputeMachineImage
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleComputeMachineImageIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleComputeMachineImageIamBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleComputeMachineImageIamBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleComputeMachineImageIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
+		"@cdktf/provider-google-beta.googleComputeMachineImageIamBinding.GoogleComputeMachineImageIamBinding",
 		"tfResourceType",
 		&returns,
 	)

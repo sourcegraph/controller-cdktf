@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHt
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

@@ -252,7 +252,7 @@ func NewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutp
 	j := jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

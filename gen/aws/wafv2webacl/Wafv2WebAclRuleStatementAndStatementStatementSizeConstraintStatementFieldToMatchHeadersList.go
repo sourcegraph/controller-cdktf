@@ -116,7 +116,7 @@ func NewWafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFiel
 	j := jsiiProxy_Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFiel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatchHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

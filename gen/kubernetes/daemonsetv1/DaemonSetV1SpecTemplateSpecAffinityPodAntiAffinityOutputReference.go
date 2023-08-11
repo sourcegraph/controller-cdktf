@@ -204,7 +204,7 @@ func NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference(terraf
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityPodAntiAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecImagePullSecretsList(terraformResource cdktf.II
 	j := jsiiProxy_DaemonsetSpecTemplateSpecImagePullSecretsList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecImagePullSecretsList_Override(d DaemonsetSpecTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

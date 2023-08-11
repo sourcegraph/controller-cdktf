@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRule",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRule",
 		reflect.TypeOf((*IotTopicRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -153,11 +153,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchAlarm",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarm",
 		reflect.TypeOf((*IotTopicRuleCloudwatchAlarm)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList",
 		reflect.TypeOf((*IotTopicRuleCloudwatchAlarmList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -178,7 +178,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference",
 		reflect.TypeOf((*IotTopicRuleCloudwatchAlarmOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarmName", GoGetter: "AlarmName"},
@@ -218,11 +218,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchLogs",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogs",
 		reflect.TypeOf((*IotTopicRuleCloudwatchLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchLogsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList",
 		reflect.TypeOf((*IotTopicRuleCloudwatchLogsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -243,7 +243,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference",
 		reflect.TypeOf((*IotTopicRuleCloudwatchLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -279,11 +279,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchMetric",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetric",
 		reflect.TypeOf((*IotTopicRuleCloudwatchMetric)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchMetricList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricList",
 		reflect.TypeOf((*IotTopicRuleCloudwatchMetricList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -304,7 +304,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchMetricOutputReference",
 		reflect.TypeOf((*IotTopicRuleCloudwatchMetricOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -349,15 +349,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleConfig",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleConfig",
 		reflect.TypeOf((*IotTopicRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleDynamodb",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodb",
 		reflect.TypeOf((*IotTopicRuleDynamodb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleDynamodbList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbList",
 		reflect.TypeOf((*IotTopicRuleDynamodbList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -378,7 +378,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleDynamodbOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbOutputReference",
 		reflect.TypeOf((*IotTopicRuleDynamodbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -436,11 +436,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleDynamodbv2",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2",
 		reflect.TypeOf((*IotTopicRuleDynamodbv2)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleDynamodbv2List",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List",
 		reflect.TypeOf((*IotTopicRuleDynamodbv2List)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -461,7 +461,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
 		reflect.TypeOf((*IotTopicRuleDynamodbv2OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -499,11 +499,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItem",
 		reflect.TypeOf((*IotTopicRuleDynamodbv2PutItem)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2PutItemOutputReference",
 		reflect.TypeOf((*IotTopicRuleDynamodbv2PutItemOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -537,11 +537,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleElasticsearch",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearch",
 		reflect.TypeOf((*IotTopicRuleElasticsearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleElasticsearchList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList",
 		reflect.TypeOf((*IotTopicRuleElasticsearchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -562,7 +562,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchOutputReference",
 		reflect.TypeOf((*IotTopicRuleElasticsearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -604,15 +604,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorAction",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorAction",
 		reflect.TypeOf((*IotTopicRuleErrorAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarm",
 		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchAlarm)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchAlarmOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchAlarmOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarmName", GoGetter: "AlarmName"},
@@ -652,11 +652,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogs",
 		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchLogsOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -692,11 +692,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetric",
 		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchMetric)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionCloudwatchMetricOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionCloudwatchMetricOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -741,11 +741,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionDynamodb",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodb",
 		reflect.TypeOf((*IotTopicRuleErrorActionDynamodb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -803,11 +803,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2",
 		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbv2)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbv2OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -845,11 +845,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItem",
 		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbv2PutItem)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2PutItemOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionDynamodbv2PutItemOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -883,11 +883,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearch",
 		reflect.TypeOf((*IotTopicRuleErrorActionElasticsearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionElasticsearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -929,11 +929,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionFirehose",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehose",
 		reflect.TypeOf((*IotTopicRuleErrorActionFirehose)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionFirehoseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -972,15 +972,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionHttp",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttp",
 		reflect.TypeOf((*IotTopicRuleErrorActionHttp)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeader",
 		reflect.TypeOf((*IotTopicRuleErrorActionHttpHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderList",
 		reflect.TypeOf((*IotTopicRuleErrorActionHttpHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1001,7 +1001,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpHttpHeaderOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionHttpHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1037,7 +1037,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionHttpOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionHttpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1078,11 +1078,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalytics",
 		reflect.TypeOf((*IotTopicRuleErrorActionIotAnalytics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionIotAnalyticsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelName", GoGetter: "ChannelName"},
@@ -1118,11 +1118,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionIotEvents",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEvents",
 		reflect.TypeOf((*IotTopicRuleErrorActionIotEvents)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotEventsOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionIotEventsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1161,11 +1161,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionKafka",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafka",
 		reflect.TypeOf((*IotTopicRuleErrorActionKafka)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionKafkaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientProperties", GoGetter: "ClientProperties"},
@@ -1209,11 +1209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionKinesis",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesis",
 		reflect.TypeOf((*IotTopicRuleErrorActionKinesis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKinesisOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionKinesisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1252,11 +1252,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionLambda",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambda",
 		reflect.TypeOf((*IotTopicRuleErrorActionLambda)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionLambdaOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionLambdaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1290,7 +1290,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchAlarm", GoGetter: "CloudwatchAlarm"},
@@ -1398,11 +1398,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionRepublish",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublish",
 		reflect.TypeOf((*IotTopicRuleErrorActionRepublish)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionRepublishOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionRepublishOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1441,11 +1441,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionS3",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3",
 		reflect.TypeOf((*IotTopicRuleErrorActionS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionS3OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionS3OutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -1486,11 +1486,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionSns",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSns",
 		reflect.TypeOf((*IotTopicRuleErrorActionSns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionSnsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSnsOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionSnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1529,11 +1529,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionSqs",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqs",
 		reflect.TypeOf((*IotTopicRuleErrorActionSqs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionSqsOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionSqsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1571,11 +1571,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctions",
 		reflect.TypeOf((*IotTopicRuleErrorActionStepFunctions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionStepFunctionsOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionStepFunctionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1614,15 +1614,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestream",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestream",
 		reflect.TypeOf((*IotTopicRuleErrorActionTimestream)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimension",
 		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList",
 		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamDimensionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1643,7 +1643,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1679,7 +1679,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1724,11 +1724,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestamp",
 		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamTimestamp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamTimestampOutputReference",
 		reflect.TypeOf((*IotTopicRuleErrorActionTimestreamTimestampOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1764,11 +1764,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleFirehose",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehose",
 		reflect.TypeOf((*IotTopicRuleFirehose)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleFirehoseList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseList",
 		reflect.TypeOf((*IotTopicRuleFirehoseList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1789,7 +1789,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleFirehoseOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference",
 		reflect.TypeOf((*IotTopicRuleFirehoseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1828,15 +1828,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleHttp",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttp",
 		reflect.TypeOf((*IotTopicRuleHttp)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleHttpHttpHeader",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeader",
 		reflect.TypeOf((*IotTopicRuleHttpHttpHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderList",
 		reflect.TypeOf((*IotTopicRuleHttpHttpHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1857,7 +1857,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpHttpHeaderOutputReference",
 		reflect.TypeOf((*IotTopicRuleHttpHttpHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1893,7 +1893,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleHttpList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList",
 		reflect.TypeOf((*IotTopicRuleHttpList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1914,7 +1914,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleHttpOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpOutputReference",
 		reflect.TypeOf((*IotTopicRuleHttpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1955,11 +1955,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleIotAnalytics",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalytics",
 		reflect.TypeOf((*IotTopicRuleIotAnalytics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleIotAnalyticsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsList",
 		reflect.TypeOf((*IotTopicRuleIotAnalyticsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1980,7 +1980,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotAnalyticsOutputReference",
 		reflect.TypeOf((*IotTopicRuleIotAnalyticsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelName", GoGetter: "ChannelName"},
@@ -2016,11 +2016,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleIotEvents",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEvents",
 		reflect.TypeOf((*IotTopicRuleIotEvents)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleIotEventsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList",
 		reflect.TypeOf((*IotTopicRuleIotEventsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2041,7 +2041,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleIotEventsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference",
 		reflect.TypeOf((*IotTopicRuleIotEventsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2080,11 +2080,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleKafka",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafka",
 		reflect.TypeOf((*IotTopicRuleKafka)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleKafkaList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaList",
 		reflect.TypeOf((*IotTopicRuleKafkaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2105,7 +2105,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleKafkaOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKafkaOutputReference",
 		reflect.TypeOf((*IotTopicRuleKafkaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientProperties", GoGetter: "ClientProperties"},
@@ -2149,11 +2149,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleKinesis",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesis",
 		reflect.TypeOf((*IotTopicRuleKinesis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleKinesisList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisList",
 		reflect.TypeOf((*IotTopicRuleKinesisList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2174,7 +2174,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleKinesisOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleKinesisOutputReference",
 		reflect.TypeOf((*IotTopicRuleKinesisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2213,11 +2213,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleLambda",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambda",
 		reflect.TypeOf((*IotTopicRuleLambda)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleLambdaList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaList",
 		reflect.TypeOf((*IotTopicRuleLambdaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2238,7 +2238,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleLambdaOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleLambdaOutputReference",
 		reflect.TypeOf((*IotTopicRuleLambdaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2272,11 +2272,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleRepublish",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublish",
 		reflect.TypeOf((*IotTopicRuleRepublish)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleRepublishList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishList",
 		reflect.TypeOf((*IotTopicRuleRepublishList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2297,7 +2297,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleRepublishOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleRepublishOutputReference",
 		reflect.TypeOf((*IotTopicRuleRepublishOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2336,11 +2336,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleS3",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3",
 		reflect.TypeOf((*IotTopicRuleS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleS3List",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3List",
 		reflect.TypeOf((*IotTopicRuleS3List)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2361,7 +2361,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleS3OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleS3OutputReference",
 		reflect.TypeOf((*IotTopicRuleS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -2402,11 +2402,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleSns",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSns",
 		reflect.TypeOf((*IotTopicRuleSns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleSnsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsList",
 		reflect.TypeOf((*IotTopicRuleSnsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2427,7 +2427,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleSnsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSnsOutputReference",
 		reflect.TypeOf((*IotTopicRuleSnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2466,11 +2466,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleSqs",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqs",
 		reflect.TypeOf((*IotTopicRuleSqs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleSqsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsList",
 		reflect.TypeOf((*IotTopicRuleSqsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2491,7 +2491,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleSqsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleSqsOutputReference",
 		reflect.TypeOf((*IotTopicRuleSqsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2529,11 +2529,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleStepFunctions",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctions",
 		reflect.TypeOf((*IotTopicRuleStepFunctions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleStepFunctionsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsList",
 		reflect.TypeOf((*IotTopicRuleStepFunctionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2554,7 +2554,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleStepFunctionsOutputReference",
 		reflect.TypeOf((*IotTopicRuleStepFunctionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2593,15 +2593,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleTimestream",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestream",
 		reflect.TypeOf((*IotTopicRuleTimestream)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleTimestreamDimension",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimension",
 		reflect.TypeOf((*IotTopicRuleTimestreamDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleTimestreamDimensionList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionList",
 		reflect.TypeOf((*IotTopicRuleTimestreamDimensionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2622,7 +2622,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamDimensionOutputReference",
 		reflect.TypeOf((*IotTopicRuleTimestreamDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2658,7 +2658,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleTimestreamList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList",
 		reflect.TypeOf((*IotTopicRuleTimestreamList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2679,7 +2679,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleTimestreamOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamOutputReference",
 		reflect.TypeOf((*IotTopicRuleTimestreamOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2724,11 +2724,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRule.IotTopicRuleTimestreamTimestamp",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestamp",
 		reflect.TypeOf((*IotTopicRuleTimestreamTimestamp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamTimestampOutputReference",
 		reflect.TypeOf((*IotTopicRuleTimestreamTimestampOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

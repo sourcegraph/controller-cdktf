@@ -519,7 +519,7 @@ func NewGoogleCloudAssetOrganizationFeed(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleCloudAssetOrganizationFeed{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -532,7 +532,7 @@ func NewGoogleCloudAssetOrganizationFeed_Override(g GoogleCloudAssetOrganization
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -709,7 +709,7 @@ func GoogleCloudAssetOrganizationFeed_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func GoogleCloudAssetOrganizationFeed_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func GoogleCloudAssetOrganizationFeed_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func GoogleCloudAssetOrganizationFeed_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
+		"@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed.GoogleCloudAssetOrganizationFeed",
 		"tfResourceType",
 		&returns,
 	)

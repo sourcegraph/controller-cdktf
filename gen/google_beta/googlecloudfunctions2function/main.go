@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function",
 		reflect.TypeOf((*GoogleCloudfunctions2Function)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,11 +88,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfig",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfig",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionBuildConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionBuildConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "buildAttribute", GoGetter: "BuildAttribute"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSource",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSource",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionBuildConfigSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionBuildConfigSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,11 +188,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionBuildConfigSourceRepoSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},
@@ -245,11 +245,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceStorageSource",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceStorageSource",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionBuildConfigSourceStorageSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -290,19 +290,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionConfig",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionConfig",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTrigger",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTrigger",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionEventTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFilters",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFilters",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionEventTriggerEventFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersList",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionEventTriggerEventFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -323,7 +323,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
@@ -362,7 +362,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionEventTriggerOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionEventTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -414,11 +414,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfig",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfig",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allTrafficOnLatestRevision", GoGetter: "AllTrafficOnLatestRevision"},
@@ -499,11 +499,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -524,7 +524,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -564,11 +564,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumes",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumes",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigSecretVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -589,7 +589,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigSecretVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -631,11 +631,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersions",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersions",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -656,7 +656,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -692,11 +692,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionTimeouts",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionTimeouts",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2FunctionTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleCloudfunctions2FunctionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

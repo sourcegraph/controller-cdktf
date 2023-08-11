@@ -204,7 +204,7 @@ func NewDbProxyDefaultTargetGroupTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_DbProxyDefaultTargetGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDbProxyDefaultTargetGroupTimeoutsOutputReference_Override(d DbProxyDefau
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

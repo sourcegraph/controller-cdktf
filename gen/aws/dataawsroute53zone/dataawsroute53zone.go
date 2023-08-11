@@ -489,7 +489,7 @@ func NewDataAwsRoute53Zone(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsRoute53Zone{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
+		"@cdktf/provider-aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -502,7 +502,7 @@ func NewDataAwsRoute53Zone_Override(d DataAwsRoute53Zone, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
+		"@cdktf/provider-aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -657,7 +657,7 @@ func DataAwsRoute53Zone_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
+		"@cdktf/provider-aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func DataAwsRoute53Zone_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
+		"@cdktf/provider-aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -695,7 +695,7 @@ func DataAwsRoute53Zone_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
+		"@cdktf/provider-aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -708,7 +708,7 @@ func DataAwsRoute53Zone_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
+		"@cdktf/provider-aws.dataAwsRoute53Zone.DataAwsRoute53Zone",
 		"tfResourceType",
 		&returns,
 	)

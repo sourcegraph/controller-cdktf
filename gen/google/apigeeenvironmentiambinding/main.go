@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		reflect.TypeOf((*ApigeeEnvironmentIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,11 +68,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingCondition",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingCondition",
 		reflect.TypeOf((*ApigeeEnvironmentIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingConditionOutputReference",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingConditionOutputReference",
 		reflect.TypeOf((*ApigeeEnvironmentIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingConfig",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBindingConfig",
 		reflect.TypeOf((*ApigeeEnvironmentIamBindingConfig)(nil)).Elem(),
 	)
 }

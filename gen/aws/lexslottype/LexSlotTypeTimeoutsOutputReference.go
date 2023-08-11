@@ -228,7 +228,7 @@ func NewLexSlotTypeTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_LexSlotTypeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexSlotType.LexSlotTypeTimeoutsOutputReference",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLexSlotTypeTimeoutsOutputReference_Override(l LexSlotTypeTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexSlotType.LexSlotTypeTimeoutsOutputReference",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

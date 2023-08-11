@@ -276,7 +276,7 @@ func NewGoogleCloudbuildTriggerGithubOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleCloudbuildTriggerGithubOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGithubOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGithubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewGoogleCloudbuildTriggerGithubOutputReference_Override(g GoogleCloudbuild
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGithubOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerGithubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

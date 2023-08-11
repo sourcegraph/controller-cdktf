@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.applicationinsightsApplication.ApplicationinsightsApplication",
+		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication",
 		reflect.TypeOf((*ApplicationinsightsApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,7 +82,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.applicationinsightsApplication.ApplicationinsightsApplicationConfig",
+		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplicationConfig",
 		reflect.TypeOf((*ApplicationinsightsApplicationConfig)(nil)).Elem(),
 	)
 }

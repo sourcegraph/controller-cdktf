@@ -202,7 +202,7 @@ func NewLambdaFunctionFileSystemConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_LambdaFunctionFileSystemConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLambdaFunctionFileSystemConfigOutputReference_Override(l LambdaFunctionF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

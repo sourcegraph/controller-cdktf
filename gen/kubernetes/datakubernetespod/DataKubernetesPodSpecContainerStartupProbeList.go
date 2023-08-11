@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecContainerStartupProbeList(terraformResource cdktf.I
 	j := jsiiProxy_DataKubernetesPodSpecContainerStartupProbeList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerStartupProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerStartupProbeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecContainerStartupProbeList_Override(d DataKubernetes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerStartupProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerStartupProbeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

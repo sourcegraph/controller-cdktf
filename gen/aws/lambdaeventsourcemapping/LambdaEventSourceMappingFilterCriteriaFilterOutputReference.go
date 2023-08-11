@@ -180,7 +180,7 @@ func NewLambdaEventSourceMappingFilterCriteriaFilterOutputReference(terraformRes
 	j := jsiiProxy_LambdaEventSourceMappingFilterCriteriaFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaEventSourceMappingFilterCriteriaFilterOutputReference_Override(l L
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

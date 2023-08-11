@@ -424,7 +424,7 @@ func NewDnsManagedZoneIamMember(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DnsManagedZoneIamMember{}
 
 	_jsii_.Create(
-		"google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
+		"@cdktf/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewDnsManagedZoneIamMember_Override(d DnsManagedZoneIamMember, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
+		"@cdktf/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -592,7 +592,7 @@ func DnsManagedZoneIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
+		"@cdktf/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func DnsManagedZoneIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
+		"@cdktf/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func DnsManagedZoneIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
+		"@cdktf/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func DnsManagedZoneIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
+		"@cdktf/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember",
 		"tfResourceType",
 		&returns,
 	)

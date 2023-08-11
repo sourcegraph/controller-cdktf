@@ -179,7 +179,7 @@ func NewPodV1SpecImagePullSecretsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_PodV1SpecImagePullSecretsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecImagePullSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPodV1SpecImagePullSecretsOutputReference_Override(p PodV1SpecImagePullSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecImagePullSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

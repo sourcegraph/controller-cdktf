@@ -104,7 +104,7 @@ func NewDataAwsElasticacheReplicationGroupLogDeliveryConfigurationList(terraform
 	j := jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroupLogDeliveryConfigurationList",
+		"@cdktf/provider-aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroupLogDeliveryConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsElasticacheReplicationGroupLogDeliveryConfigurationList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroupLogDeliveryConfigurationList",
+		"@cdktf/provider-aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroupLogDeliveryConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

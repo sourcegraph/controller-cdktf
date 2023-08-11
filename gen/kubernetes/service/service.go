@@ -401,7 +401,7 @@ func NewService(scope constructs.Construct, id *string, config *ServiceConfig) S
 	j := jsiiProxy_Service{}
 
 	_jsii_.Create(
-		"kubernetes.service.Service",
+		"@cdktf/provider-kubernetes.service.Service",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewService_Override(s Service, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.service.Service",
+		"@cdktf/provider-kubernetes.service.Service",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -536,7 +536,7 @@ func Service_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.service.Service",
+		"@cdktf/provider-kubernetes.service.Service",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func Service_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.service.Service",
+		"@cdktf/provider-kubernetes.service.Service",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func Service_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.service.Service",
+		"@cdktf/provider-kubernetes.service.Service",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func Service_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.service.Service",
+		"@cdktf/provider-kubernetes.service.Service",
 		"tfResourceType",
 		&returns,
 	)

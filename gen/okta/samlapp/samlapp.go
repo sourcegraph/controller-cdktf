@@ -1649,7 +1649,7 @@ func NewSamlApp(scope constructs.Construct, id *string, config *SamlAppConfig) S
 	j := jsiiProxy_SamlApp{}
 
 	_jsii_.Create(
-		"okta.samlApp.SamlApp",
+		"@cdktf/provider-okta.samlApp.SamlApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1662,7 +1662,7 @@ func NewSamlApp_Override(s SamlApp, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.samlApp.SamlApp",
+		"@cdktf/provider-okta.samlApp.SamlApp",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -2290,7 +2290,7 @@ func SamlApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.samlApp.SamlApp",
+		"@cdktf/provider-okta.samlApp.SamlApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -2309,7 +2309,7 @@ func SamlApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.samlApp.SamlApp",
+		"@cdktf/provider-okta.samlApp.SamlApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -2328,7 +2328,7 @@ func SamlApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.samlApp.SamlApp",
+		"@cdktf/provider-okta.samlApp.SamlApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -2341,7 +2341,7 @@ func SamlApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.samlApp.SamlApp",
+		"@cdktf/provider-okta.samlApp.SamlApp",
 		"tfResourceType",
 		&returns,
 	)

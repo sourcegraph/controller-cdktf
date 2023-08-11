@@ -228,7 +228,7 @@ func NewGooglePrivatecaCaPoolTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GooglePrivatecaCaPoolTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGooglePrivatecaCaPoolTimeoutsOutputReference_Override(g GooglePrivatecaC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

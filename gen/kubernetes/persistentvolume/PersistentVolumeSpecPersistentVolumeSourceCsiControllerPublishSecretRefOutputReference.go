@@ -204,7 +204,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceCsiControllerPublishSecretRefO
 	j := jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiControllerPublishSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceCsiControllerPublishSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceCsiControllerPublishSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceCsiControllerPublishSecretRefO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceCsiControllerPublishSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceCsiControllerPublishSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -313,7 +313,7 @@ func NewDataGoogleStorageBucketIamPolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataGoogleStorageBucketIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleStorageBucketIamPolicy_Override(d DataGoogleStorageBucketIamPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleStorageBucketIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleStorageBucketIamPolicy_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleStorageBucketIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleStorageBucketIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketIamPolicy.DataGoogleStorageBucketIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

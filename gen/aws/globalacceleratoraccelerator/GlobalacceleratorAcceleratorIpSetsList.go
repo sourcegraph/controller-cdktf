@@ -104,7 +104,7 @@ func NewGlobalacceleratorAcceleratorIpSetsList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GlobalacceleratorAcceleratorIpSetsList{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsList",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGlobalacceleratorAcceleratorIpSetsList_Override(g GlobalacceleratorAccel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsList",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorIpSetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

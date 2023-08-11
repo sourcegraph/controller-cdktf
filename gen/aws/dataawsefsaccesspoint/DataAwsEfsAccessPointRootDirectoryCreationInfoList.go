@@ -104,7 +104,7 @@ func NewDataAwsEfsAccessPointRootDirectoryCreationInfoList(terraformResource cdk
 	j := jsiiProxy_DataAwsEfsAccessPointRootDirectoryCreationInfoList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfoList",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEfsAccessPointRootDirectoryCreationInfoList_Override(d DataAwsEfs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfoList",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryCreationInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

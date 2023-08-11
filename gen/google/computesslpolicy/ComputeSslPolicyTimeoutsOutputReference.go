@@ -228,7 +228,7 @@ func NewComputeSslPolicyTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ComputeSslPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSslPolicy.ComputeSslPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSslPolicy.ComputeSslPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeSslPolicyTimeoutsOutputReference_Override(c ComputeSslPolicyTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSslPolicy.ComputeSslPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSslPolicy.ComputeSslPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

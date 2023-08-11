@@ -179,7 +179,7 @@ func NewAppEngineFlexibleAppVersionManualScalingOutputReference(terraformResourc
 	j := jsiiProxy_AppEngineFlexibleAppVersionManualScalingOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionManualScalingOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionManualScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppEngineFlexibleAppVersionManualScalingOutputReference_Override(a AppEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionManualScalingOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionManualScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

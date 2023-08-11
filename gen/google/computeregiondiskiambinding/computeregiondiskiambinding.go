@@ -448,7 +448,7 @@ func NewComputeRegionDiskIamBinding(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeRegionDiskIamBinding{}
 
 	_jsii_.Create(
-		"google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
+		"@cdktf/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewComputeRegionDiskIamBinding_Override(c ComputeRegionDiskIamBinding, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
+		"@cdktf/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func ComputeRegionDiskIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
+		"@cdktf/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ComputeRegionDiskIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
+		"@cdktf/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ComputeRegionDiskIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
+		"@cdktf/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ComputeRegionDiskIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
+		"@cdktf/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding",
 		"tfResourceType",
 		&returns,
 	)

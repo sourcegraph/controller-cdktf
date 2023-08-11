@@ -299,7 +299,7 @@ func NewImagebuilderDistributionConfigurationDistributionOutputReference(terrafo
 	j := jsiiProxy_ImagebuilderDistributionConfigurationDistributionOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionOutputReference",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewImagebuilderDistributionConfigurationDistributionOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionOutputReference",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

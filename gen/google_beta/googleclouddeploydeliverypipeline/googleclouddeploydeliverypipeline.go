@@ -565,7 +565,7 @@ func NewGoogleClouddeployDeliveryPipeline(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleClouddeployDeliveryPipeline{}
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
+		"@cdktf/provider-google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -578,7 +578,7 @@ func NewGoogleClouddeployDeliveryPipeline_Override(g GoogleClouddeployDeliveryPi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
+		"@cdktf/provider-google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -766,7 +766,7 @@ func GoogleClouddeployDeliveryPipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
+		"@cdktf/provider-google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func GoogleClouddeployDeliveryPipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
+		"@cdktf/provider-google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -804,7 +804,7 @@ func GoogleClouddeployDeliveryPipeline_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
+		"@cdktf/provider-google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -817,7 +817,7 @@ func GoogleClouddeployDeliveryPipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
+		"@cdktf/provider-google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipeline",
 		"tfResourceType",
 		&returns,
 	)

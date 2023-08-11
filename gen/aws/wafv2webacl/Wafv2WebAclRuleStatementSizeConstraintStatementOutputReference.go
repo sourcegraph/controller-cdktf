@@ -249,7 +249,7 @@ func NewWafv2WebAclRuleStatementSizeConstraintStatementOutputReference(terraform
 	j := jsiiProxy_Wafv2WebAclRuleStatementSizeConstraintStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewWafv2WebAclRuleStatementSizeConstraintStatementOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

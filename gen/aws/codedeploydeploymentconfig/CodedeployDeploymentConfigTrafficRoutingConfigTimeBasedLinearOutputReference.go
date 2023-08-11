@@ -204,7 +204,7 @@ func NewCodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputRefer
 	j := jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigTimeBasedLinearOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

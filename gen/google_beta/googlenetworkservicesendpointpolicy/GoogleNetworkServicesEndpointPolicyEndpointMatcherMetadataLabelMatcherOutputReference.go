@@ -203,7 +203,7 @@ func NewGoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOu
 	j := jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -204,7 +204,7 @@ func NewDeploymentSpecTemplateSpecContainerLifecycleOutputReference(terraformRes
 	j := jsiiProxy_DeploymentSpecTemplateSpecContainerLifecycleOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentSpecTemplateSpecContainerLifecycleOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

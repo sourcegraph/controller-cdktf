@@ -104,7 +104,7 @@ func NewGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManageme
 	j := jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManageme
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

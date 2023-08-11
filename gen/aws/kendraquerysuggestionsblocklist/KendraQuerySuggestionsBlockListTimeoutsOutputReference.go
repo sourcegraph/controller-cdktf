@@ -228,7 +228,7 @@ func NewKendraQuerySuggestionsBlockListTimeoutsOutputReference(terraformResource
 	j := jsiiProxy_KendraQuerySuggestionsBlockListTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewKendraQuerySuggestionsBlockListTimeoutsOutputReference_Override(k Kendra
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

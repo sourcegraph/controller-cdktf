@@ -104,7 +104,7 @@ func NewGoogleDataplexDatascanDataQualityResultRulesRuleRegexExpectationList(ter
 	j := jsiiProxy_GoogleDataplexDatascanDataQualityResultRulesRuleRegexExpectationList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleRegexExpectationList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleRegexExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDataplexDatascanDataQualityResultRulesRuleRegexExpectationList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleRegexExpectationList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleRegexExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -203,7 +203,7 @@ func NewGoogleBigtableAppProfileSingleClusterRoutingOutputReference(terraformRes
 	j := jsiiProxy_GoogleBigtableAppProfileSingleClusterRoutingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileSingleClusterRoutingOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileSingleClusterRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleBigtableAppProfileSingleClusterRoutingOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileSingleClusterRoutingOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileSingleClusterRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -179,7 +179,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputRef
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePostStartTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

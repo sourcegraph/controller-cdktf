@@ -189,7 +189,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference(terrafor
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

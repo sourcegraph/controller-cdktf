@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodeConfigLinuxNodeConfigList(terraformResourc
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodeConfigLinuxNodeConfigList_Override(d DataG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

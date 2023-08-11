@@ -180,7 +180,7 @@ func NewDataAwsInternetGatewayTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsInternetGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsInternetGatewayTimeoutsOutputReference_Override(d DataAwsInternet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

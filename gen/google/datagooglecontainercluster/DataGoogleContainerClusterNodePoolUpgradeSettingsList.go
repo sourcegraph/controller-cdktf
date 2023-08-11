@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodePoolUpgradeSettingsList(terraformResource 
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolUpgradeSettingsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodePoolUpgradeSettingsList_Override(d DataGoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames
 	j := jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

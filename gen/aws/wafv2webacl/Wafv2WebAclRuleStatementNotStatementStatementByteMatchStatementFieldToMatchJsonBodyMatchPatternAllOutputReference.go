@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementByteMatchStatementFieldToMa
 	j := jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementByteMatchStatementFieldToMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBodyMatchPatternAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

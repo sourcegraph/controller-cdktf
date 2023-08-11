@@ -104,7 +104,7 @@ func NewDataGoogleComputeRegionInstanceGroupInstancesList(terraformResource cdkt
 	j := jsiiProxy_DataGoogleComputeRegionInstanceGroupInstancesList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroupInstancesList",
+		"@cdktf/provider-google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroupInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRegionInstanceGroupInstancesList_Override(d DataGoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroupInstancesList",
+		"@cdktf/provider-google.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroupInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

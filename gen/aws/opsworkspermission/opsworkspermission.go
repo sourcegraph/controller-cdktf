@@ -414,7 +414,7 @@ func NewOpsworksPermission(scope constructs.Construct, id *string, config *Opswo
 	j := jsiiProxy_OpsworksPermission{}
 
 	_jsii_.Create(
-		"aws.opsworksPermission.OpsworksPermission",
+		"@cdktf/provider-aws.opsworksPermission.OpsworksPermission",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewOpsworksPermission_Override(o OpsworksPermission, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksPermission.OpsworksPermission",
+		"@cdktf/provider-aws.opsworksPermission.OpsworksPermission",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -593,7 +593,7 @@ func OpsworksPermission_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksPermission.OpsworksPermission",
+		"@cdktf/provider-aws.opsworksPermission.OpsworksPermission",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func OpsworksPermission_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksPermission.OpsworksPermission",
+		"@cdktf/provider-aws.opsworksPermission.OpsworksPermission",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func OpsworksPermission_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksPermission.OpsworksPermission",
+		"@cdktf/provider-aws.opsworksPermission.OpsworksPermission",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func OpsworksPermission_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksPermission.OpsworksPermission",
+		"@cdktf/provider-aws.opsworksPermission.OpsworksPermission",
 		"tfResourceType",
 		&returns,
 	)

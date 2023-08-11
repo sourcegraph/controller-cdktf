@@ -450,7 +450,7 @@ func NewDataLossPreventionInspectTemplate(scope constructs.Construct, id *string
 	j := jsiiProxy_DataLossPreventionInspectTemplate{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewDataLossPreventionInspectTemplate_Override(d DataLossPreventionInspectTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -618,7 +618,7 @@ func DataLossPreventionInspectTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -637,7 +637,7 @@ func DataLossPreventionInspectTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func DataLossPreventionInspectTemplate_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func DataLossPreventionInspectTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplate",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList(terrafor
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

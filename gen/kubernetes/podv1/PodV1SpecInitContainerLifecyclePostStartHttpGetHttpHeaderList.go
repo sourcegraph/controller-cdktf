@@ -116,7 +116,7 @@ func NewPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList(terraformR
 	j := jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList_Override(p
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerLifecyclePostStartHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

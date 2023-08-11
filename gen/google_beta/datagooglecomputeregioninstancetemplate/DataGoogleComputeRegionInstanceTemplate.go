@@ -663,7 +663,7 @@ func NewDataGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *
 	j := jsiiProxy_DataGoogleComputeRegionInstanceTemplate{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -676,7 +676,7 @@ func NewDataGoogleComputeRegionInstanceTemplate_Override(d DataGoogleComputeRegi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -820,7 +820,7 @@ func DataGoogleComputeRegionInstanceTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func DataGoogleComputeRegionInstanceTemplate_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -858,7 +858,7 @@ func DataGoogleComputeRegionInstanceTemplate_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -871,7 +871,7 @@ func DataGoogleComputeRegionInstanceTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplate",
 		"tfResourceType",
 		&returns,
 	)

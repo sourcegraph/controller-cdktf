@@ -1072,7 +1072,7 @@ func NewAppSharedCredentials(scope constructs.Construct, id *string, config *App
 	j := jsiiProxy_AppSharedCredentials{}
 
 	_jsii_.Create(
-		"okta.appSharedCredentials.AppSharedCredentials",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1085,7 +1085,7 @@ func NewAppSharedCredentials_Override(a AppSharedCredentials, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSharedCredentials.AppSharedCredentials",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1515,7 +1515,7 @@ func AppSharedCredentials_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appSharedCredentials.AppSharedCredentials",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1534,7 +1534,7 @@ func AppSharedCredentials_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appSharedCredentials.AppSharedCredentials",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1553,7 +1553,7 @@ func AppSharedCredentials_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appSharedCredentials.AppSharedCredentials",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1566,7 +1566,7 @@ func AppSharedCredentials_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appSharedCredentials.AppSharedCredentials",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentials",
 		"tfResourceType",
 		&returns,
 	)

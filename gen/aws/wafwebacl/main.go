@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAcl",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAcl",
 		reflect.TypeOf((*WafWebAcl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafWebAcl.WafWebAclConfig",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclConfig",
 		reflect.TypeOf((*WafWebAclConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafWebAcl.WafWebAclDefaultAction",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclDefaultAction",
 		reflect.TypeOf((*WafWebAclDefaultAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAclDefaultActionOutputReference",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclDefaultActionOutputReference",
 		reflect.TypeOf((*WafWebAclDefaultActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,11 +119,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafWebAcl.WafWebAclLoggingConfiguration",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfiguration",
 		reflect.TypeOf((*WafWebAclLoggingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAclLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationOutputReference",
 		reflect.TypeOf((*WafWebAclLoggingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,15 +161,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFields",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFields",
 		reflect.TypeOf((*WafWebAclLoggingConfigurationRedactedFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch",
 		reflect.TypeOf((*WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
 		reflect.TypeOf((*WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -190,7 +190,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference",
 		reflect.TypeOf((*WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,7 +227,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsOutputReference",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclLoggingConfigurationRedactedFieldsOutputReference",
 		reflect.TypeOf((*WafWebAclLoggingConfigurationRedactedFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -262,15 +262,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafWebAcl.WafWebAclRules",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRules",
 		reflect.TypeOf((*WafWebAclRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafWebAcl.WafWebAclRulesAction",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesAction",
 		reflect.TypeOf((*WafWebAclRulesAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAclRulesActionOutputReference",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesActionOutputReference",
 		reflect.TypeOf((*WafWebAclRulesActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,7 +304,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAclRulesList",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesList",
 		reflect.TypeOf((*WafWebAclRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -325,7 +325,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAclRulesOutputReference",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesOutputReference",
 		reflect.TypeOf((*WafWebAclRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -372,11 +372,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafWebAcl.WafWebAclRulesOverrideAction",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesOverrideAction",
 		reflect.TypeOf((*WafWebAclRulesOverrideAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafWebAcl.WafWebAclRulesOverrideActionOutputReference",
+		"@cdktf/provider-aws.wafWebAcl.WafWebAclRulesOverrideActionOutputReference",
 		reflect.TypeOf((*WafWebAclRulesOverrideActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

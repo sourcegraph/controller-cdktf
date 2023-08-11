@@ -104,7 +104,7 @@ func NewDataAwsInstanceMetadataOptionsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsInstanceMetadataOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceMetadataOptionsList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsInstanceMetadataOptionsList_Override(d DataAwsInstanceMetadataOpt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceMetadataOptionsList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMetadataOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

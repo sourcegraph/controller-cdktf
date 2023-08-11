@@ -204,7 +204,7 @@ func NewElasticsearchDomainSamlOptionsTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_ElasticsearchDomainSamlOptionsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewElasticsearchDomainSamlOptionsTimeoutsOutputReference_Override(e Elastic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

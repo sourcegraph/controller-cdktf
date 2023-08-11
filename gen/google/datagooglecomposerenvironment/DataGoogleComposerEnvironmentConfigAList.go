@@ -104,7 +104,7 @@ func NewDataGoogleComposerEnvironmentConfigAList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataGoogleComposerEnvironmentConfigAList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigAList",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComposerEnvironmentConfigAList_Override(d DataGoogleComposerEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigAList",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -203,7 +203,7 @@ func NewSagemakerEndpointDeploymentConfigOutputReference(terraformResource cdktf
 	j := jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSagemakerEndpointDeploymentConfigOutputReference_Override(s SagemakerEnd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

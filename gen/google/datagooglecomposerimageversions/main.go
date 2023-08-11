@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
+		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		reflect.TypeOf((*DataGoogleComposerImageVersions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig",
+		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig",
 		reflect.TypeOf((*DataGoogleComposerImageVersionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersions",
+		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersions",
 		reflect.TypeOf((*DataGoogleComposerImageVersionsImageVersions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsList",
+		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsList",
 		reflect.TypeOf((*DataGoogleComposerImageVersionsImageVersionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsOutputReference",
+		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsOutputReference",
 		reflect.TypeOf((*DataGoogleComposerImageVersionsImageVersionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

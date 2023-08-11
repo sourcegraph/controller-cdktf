@@ -401,7 +401,7 @@ func NewGoogleComputeDiskIamPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleComputeDiskIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleComputeDiskIamPolicy_Override(g GoogleComputeDiskIamPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleComputeDiskIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleComputeDiskIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleComputeDiskIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleComputeDiskIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeDiskIamPolicy.GoogleComputeDiskIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

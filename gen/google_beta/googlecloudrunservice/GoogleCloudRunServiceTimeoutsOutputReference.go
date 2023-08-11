@@ -228,7 +228,7 @@ func NewGoogleCloudRunServiceTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleCloudRunServiceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleCloudRunServiceTimeoutsOutputReference_Override(g GoogleCloudRunSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

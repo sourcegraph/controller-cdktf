@@ -473,7 +473,7 @@ func NewGoogleBillingBudget(scope constructs.Construct, id *string, config *Goog
 	j := jsiiProxy_GoogleBillingBudget{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudget",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewGoogleBillingBudget_Override(g GoogleBillingBudget, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudget",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -619,7 +619,7 @@ func GoogleBillingBudget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingBudget.GoogleBillingBudget",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +638,7 @@ func GoogleBillingBudget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingBudget.GoogleBillingBudget",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func GoogleBillingBudget_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBillingBudget.GoogleBillingBudget",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func GoogleBillingBudget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBillingBudget.GoogleBillingBudget",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget",
 		"tfResourceType",
 		&returns,
 	)

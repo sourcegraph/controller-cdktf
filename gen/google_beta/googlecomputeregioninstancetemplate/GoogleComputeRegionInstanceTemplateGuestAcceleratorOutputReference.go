@@ -202,7 +202,7 @@ func NewGoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference(terra
 	j := jsiiProxy_GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateGuestAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

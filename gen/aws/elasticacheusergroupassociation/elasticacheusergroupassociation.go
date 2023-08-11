@@ -342,7 +342,7 @@ func NewElasticacheUserGroupAssociation(scope constructs.Construct, id *string, 
 	j := jsiiProxy_ElasticacheUserGroupAssociation{}
 
 	_jsii_.Create(
-		"aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
+		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewElasticacheUserGroupAssociation_Override(e ElasticacheUserGroupAssociati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
+		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -488,7 +488,7 @@ func ElasticacheUserGroupAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
+		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func ElasticacheUserGroupAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
+		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func ElasticacheUserGroupAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
+		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func ElasticacheUserGroupAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
+		"@cdktf/provider-aws.elasticacheUserGroupAssociation.ElasticacheUserGroupAssociation",
 		"tfResourceType",
 		&returns,
 	)

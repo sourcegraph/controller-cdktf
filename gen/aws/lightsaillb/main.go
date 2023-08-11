@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailLb.LightsailLb",
+		"@cdktf/provider-aws.lightsailLb.LightsailLb",
 		reflect.TypeOf((*LightsailLb)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailLb.LightsailLbConfig",
+		"@cdktf/provider-aws.lightsailLb.LightsailLbConfig",
 		reflect.TypeOf((*LightsailLbConfig)(nil)).Elem(),
 	)
 }

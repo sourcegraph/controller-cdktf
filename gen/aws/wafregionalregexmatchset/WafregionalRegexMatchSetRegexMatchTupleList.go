@@ -116,7 +116,7 @@ func NewWafregionalRegexMatchSetRegexMatchTupleList(terraformResource cdktf.IInt
 	j := jsiiProxy_WafregionalRegexMatchSetRegexMatchTupleList{}
 
 	_jsii_.Create(
-		"aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleList",
+		"@cdktf/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafregionalRegexMatchSetRegexMatchTupleList_Override(w WafregionalRegexM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleList",
+		"@cdktf/provider-aws.wafregionalRegexMatchSet.WafregionalRegexMatchSetRegexMatchTupleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

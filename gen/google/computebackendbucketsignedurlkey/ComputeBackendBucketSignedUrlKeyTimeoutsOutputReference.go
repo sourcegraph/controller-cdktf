@@ -204,7 +204,7 @@ func NewComputeBackendBucketSignedUrlKeyTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeBackendBucketSignedUrlKeyTimeoutsOutputReference_Override(c Compu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

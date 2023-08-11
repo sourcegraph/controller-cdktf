@@ -437,7 +437,7 @@ func NewComputeInstanceGroupNamedPortA(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ComputeInstanceGroupNamedPortA{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewComputeInstanceGroupNamedPortA_Override(c ComputeInstanceGroupNamedPortA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -616,7 +616,7 @@ func ComputeInstanceGroupNamedPortA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func ComputeInstanceGroupNamedPortA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func ComputeInstanceGroupNamedPortA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func ComputeInstanceGroupNamedPortA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
+		"@cdktf/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA",
 		"tfResourceType",
 		&returns,
 	)

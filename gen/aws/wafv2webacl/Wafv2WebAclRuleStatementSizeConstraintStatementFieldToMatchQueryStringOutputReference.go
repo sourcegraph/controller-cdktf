@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryStringOu
 	j := jsiiProxy_Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryStringOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

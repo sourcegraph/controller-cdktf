@@ -116,7 +116,7 @@ func NewApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList(terr
 	j := jsiiProxy_ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList{}
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList",
+		"@cdktf/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList",
+		"@cdktf/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

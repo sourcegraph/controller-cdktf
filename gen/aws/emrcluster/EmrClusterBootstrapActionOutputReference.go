@@ -226,7 +226,7 @@ func NewEmrClusterBootstrapActionOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_EmrClusterBootstrapActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterBootstrapActionOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewEmrClusterBootstrapActionOutputReference_Override(e EmrClusterBootstrapA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterBootstrapActionOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

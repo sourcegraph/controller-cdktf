@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOrigin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -103,11 +103,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4Authentication",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4Authentication",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginAwsV4Authentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -145,19 +145,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginConfig",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginConfig",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideAction",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideAction",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,11 +193,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAdd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -218,7 +218,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,7 +257,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -297,11 +297,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -336,11 +336,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginRedirect",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginRedirect",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginRedirectOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginOriginRedirectOutputReference",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginOriginRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -375,11 +375,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeout",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeout",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeoutOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeoutOutputReference",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -423,11 +423,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeouts",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeouts",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeoutsOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkServicesEdgeCacheOriginTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

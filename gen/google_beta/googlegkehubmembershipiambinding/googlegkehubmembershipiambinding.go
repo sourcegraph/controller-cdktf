@@ -424,7 +424,7 @@ func NewGoogleGkeHubMembershipIamBinding(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleGkeHubMembershipIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleGkeHubMembershipIamBinding_Override(g GoogleGkeHubMembershipIamBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleGkeHubMembershipIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleGkeHubMembershipIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleGkeHubMembershipIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleGkeHubMembershipIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBinding",
 		"tfResourceType",
 		&returns,
 	)

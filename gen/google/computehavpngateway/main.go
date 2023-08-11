@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeHaVpnGateway.ComputeHaVpnGateway",
+		"@cdktf/provider-google.computeHaVpnGateway.ComputeHaVpnGateway",
 		reflect.TypeOf((*ComputeHaVpnGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeHaVpnGateway.ComputeHaVpnGatewayConfig",
+		"@cdktf/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayConfig",
 		reflect.TypeOf((*ComputeHaVpnGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts",
+		"@cdktf/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeouts",
 		reflect.TypeOf((*ComputeHaVpnGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeHaVpnGateway.ComputeHaVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeHaVpnGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfaces",
+		"@cdktf/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfaces",
 		reflect.TypeOf((*ComputeHaVpnGatewayVpnInterfaces)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfacesList",
+		"@cdktf/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfacesList",
 		reflect.TypeOf((*ComputeHaVpnGatewayVpnInterfacesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfacesOutputReference",
+		"@cdktf/provider-google.computeHaVpnGateway.ComputeHaVpnGatewayVpnInterfacesOutputReference",
 		reflect.TypeOf((*ComputeHaVpnGatewayVpnInterfacesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

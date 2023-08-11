@@ -179,7 +179,7 @@ func NewGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOut
 	j := jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -303,7 +303,7 @@ func NewDataAwsLbs(scope constructs.Construct, id *string, config *DataAwsLbsCon
 	j := jsiiProxy_DataAwsLbs{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbs.DataAwsLbs",
+		"@cdktf/provider-aws.dataAwsLbs.DataAwsLbs",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsLbs_Override(d DataAwsLbs, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbs.DataAwsLbs",
+		"@cdktf/provider-aws.dataAwsLbs.DataAwsLbs",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataAwsLbs_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLbs.DataAwsLbs",
+		"@cdktf/provider-aws.dataAwsLbs.DataAwsLbs",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataAwsLbs_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLbs.DataAwsLbs",
+		"@cdktf/provider-aws.dataAwsLbs.DataAwsLbs",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsLbs_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLbs.DataAwsLbs",
+		"@cdktf/provider-aws.dataAwsLbs.DataAwsLbs",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsLbs_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLbs.DataAwsLbs",
+		"@cdktf/provider-aws.dataAwsLbs.DataAwsLbs",
 		"tfResourceType",
 		&returns,
 	)

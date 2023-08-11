@@ -178,7 +178,7 @@ func NewRoute53RecoverycontrolconfigClusterClusterEndpointsOutputReference(terra
 	j := jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewRoute53RecoverycontrolconfigClusterClusterEndpointsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

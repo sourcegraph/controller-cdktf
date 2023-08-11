@@ -204,7 +204,7 @@ func NewGoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputR
 	j := jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

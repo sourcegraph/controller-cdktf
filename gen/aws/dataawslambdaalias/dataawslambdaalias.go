@@ -358,7 +358,7 @@ func NewDataAwsLambdaAlias(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsLambdaAlias{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
+		"@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -371,7 +371,7 @@ func NewDataAwsLambdaAlias_Override(d DataAwsLambdaAlias, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
+		"@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -482,7 +482,7 @@ func DataAwsLambdaAlias_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
+		"@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataAwsLambdaAlias_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
+		"@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -520,7 +520,7 @@ func DataAwsLambdaAlias_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
+		"@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataAwsLambdaAlias_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
+		"@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
 		"tfResourceType",
 		&returns,
 	)

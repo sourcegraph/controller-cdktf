@@ -350,7 +350,7 @@ func NewDataAwsStoragegatewayLocalDisk(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsStoragegatewayLocalDisk{}
 
 	_jsii_.Create(
-		"aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
+		"@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -363,7 +363,7 @@ func NewDataAwsStoragegatewayLocalDisk_Override(d DataAwsStoragegatewayLocalDisk
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
+		"@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -485,7 +485,7 @@ func DataAwsStoragegatewayLocalDisk_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
+		"@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func DataAwsStoragegatewayLocalDisk_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
+		"@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsStoragegatewayLocalDisk_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
+		"@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataAwsStoragegatewayLocalDisk_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
+		"@cdktf/provider-aws.dataAwsStoragegatewayLocalDisk.DataAwsStoragegatewayLocalDisk",
 		"tfResourceType",
 		&returns,
 	)

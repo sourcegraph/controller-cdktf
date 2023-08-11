@@ -116,7 +116,7 @@ func NewGoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracl
 	j := jsiiProxy_GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

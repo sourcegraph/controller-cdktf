@@ -436,7 +436,7 @@ func NewServiceDiscoveryPrivateDnsNamespace(scope constructs.Construct, id *stri
 	j := jsiiProxy_ServiceDiscoveryPrivateDnsNamespace{}
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewServiceDiscoveryPrivateDnsNamespace_Override(s ServiceDiscoveryPrivateDn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -615,7 +615,7 @@ func ServiceDiscoveryPrivateDnsNamespace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func ServiceDiscoveryPrivateDnsNamespace_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func ServiceDiscoveryPrivateDnsNamespace_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func ServiceDiscoveryPrivateDnsNamespace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryPrivateDnsNamespace.ServiceDiscoveryPrivateDnsNamespace",
 		"tfResourceType",
 		&returns,
 	)

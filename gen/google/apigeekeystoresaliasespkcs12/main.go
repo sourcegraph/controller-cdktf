@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfo",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfo",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12CertsInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoCertInfo",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoCertInfo",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12CertsInfoCertInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicConstraints", GoGetter: "BasicConstraints"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoList",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoList",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12CertsInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certInfo", GoGetter: "CertInfo"},
@@ -200,15 +200,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12Config",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12Config",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12Timeouts",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12Timeouts",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12Timeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesPkcs12.ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference",
 		reflect.TypeOf((*ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

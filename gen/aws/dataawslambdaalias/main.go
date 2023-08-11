@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
+		"@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAlias",
 		reflect.TypeOf((*DataAwsLambdaAlias)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig",
+		"@cdktf/provider-aws.dataAwsLambdaAlias.DataAwsLambdaAliasConfig",
 		reflect.TypeOf((*DataAwsLambdaAliasConfig)(nil)).Elem(),
 	)
 }

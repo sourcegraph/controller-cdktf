@@ -116,7 +116,7 @@ func NewJobV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList(terrafo
 	j := jsiiProxy_JobV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

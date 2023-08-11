@@ -228,7 +228,7 @@ func NewElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReferen
 	j := jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

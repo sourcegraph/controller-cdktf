@@ -179,7 +179,7 @@ func NewCloudtrailInsightSelectorOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudtrailInsightSelectorOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudtrail.CloudtrailInsightSelectorOutputReference",
+		"@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudtrailInsightSelectorOutputReference_Override(c CloudtrailInsightSel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudtrail.CloudtrailInsightSelectorOutputReference",
+		"@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

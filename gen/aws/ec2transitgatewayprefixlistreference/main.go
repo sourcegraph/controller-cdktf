@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
+		"@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
 		reflect.TypeOf((*Ec2TransitGatewayPrefixListReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReferenceConfig",
+		"@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReferenceConfig",
 		reflect.TypeOf((*Ec2TransitGatewayPrefixListReferenceConfig)(nil)).Elem(),
 	)
 }

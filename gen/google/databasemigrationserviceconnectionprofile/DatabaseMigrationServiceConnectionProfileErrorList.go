@@ -104,7 +104,7 @@ func NewDatabaseMigrationServiceConnectionProfileErrorList(terraformResource cdk
 	j := jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorList{}
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorList",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDatabaseMigrationServiceConnectionProfileErrorList_Override(d DatabaseMi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorList",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

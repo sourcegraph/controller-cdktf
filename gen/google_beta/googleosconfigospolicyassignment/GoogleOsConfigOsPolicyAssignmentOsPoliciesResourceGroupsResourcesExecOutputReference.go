@@ -203,7 +203,7 @@ func NewGoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecOut
 	j := jsiiProxy_GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

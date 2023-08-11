@@ -535,7 +535,7 @@ func NewDatabase(scope constructs.Construct, id *string, config *DatabaseConfig)
 	j := jsiiProxy_Database{}
 
 	_jsii_.Create(
-		"postgresql.database.Database",
+		"@cdktf/provider-postgresql.database.Database",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -548,7 +548,7 @@ func NewDatabase_Override(d Database, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.database.Database",
+		"@cdktf/provider-postgresql.database.Database",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -769,7 +769,7 @@ func Database_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.database.Database",
+		"@cdktf/provider-postgresql.database.Database",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -788,7 +788,7 @@ func Database_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.database.Database",
+		"@cdktf/provider-postgresql.database.Database",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func Database_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.database.Database",
+		"@cdktf/provider-postgresql.database.Database",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func Database_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.database.Database",
+		"@cdktf/provider-postgresql.database.Database",
 		"tfResourceType",
 		&returns,
 	)

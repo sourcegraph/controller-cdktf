@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
+		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDevice",
 		reflect.TypeOf((*IamVirtualMfaDevice)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamVirtualMfaDevice.IamVirtualMfaDeviceConfig",
+		"@cdktf/provider-aws.iamVirtualMfaDevice.IamVirtualMfaDeviceConfig",
 		reflect.TypeOf((*IamVirtualMfaDeviceConfig)(nil)).Elem(),
 	)
 }

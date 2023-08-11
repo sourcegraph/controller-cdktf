@@ -200,7 +200,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputRefere
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

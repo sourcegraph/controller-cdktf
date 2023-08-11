@@ -400,7 +400,7 @@ func NewTagsTagKeyIamBinding(scope constructs.Construct, id *string, config *Tag
 	j := jsiiProxy_TagsTagKeyIamBinding{}
 
 	_jsii_.Create(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewTagsTagKeyIamBinding_Override(t TagsTagKeyIamBinding, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -557,7 +557,7 @@ func TagsTagKeyIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func TagsTagKeyIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func TagsTagKeyIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func TagsTagKeyIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
+		"@cdktf/provider-google.tagsTagKeyIamBinding.TagsTagKeyIamBinding",
 		"tfResourceType",
 		&returns,
 	)

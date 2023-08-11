@@ -202,7 +202,7 @@ func NewTransferAccessHomeDirectoryMappingsOutputReference(terraformResource cdk
 	j := jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference",
+		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTransferAccessHomeDirectoryMappingsOutputReference_Override(t TransferAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference",
+		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

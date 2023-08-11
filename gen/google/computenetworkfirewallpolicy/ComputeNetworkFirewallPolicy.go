@@ -457,7 +457,7 @@ func NewComputeNetworkFirewallPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ComputeNetworkFirewallPolicy{}
 
 	_jsii_.Create(
-		"google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -470,7 +470,7 @@ func NewComputeNetworkFirewallPolicy_Override(c ComputeNetworkFirewallPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -614,7 +614,7 @@ func ComputeNetworkFirewallPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func ComputeNetworkFirewallPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func ComputeNetworkFirewallPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ComputeNetworkFirewallPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy",
 		"tfResourceType",
 		&returns,
 	)

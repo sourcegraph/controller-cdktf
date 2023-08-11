@@ -178,7 +178,7 @@ func NewFsxOntapFileSystemEndpointsInterclusterOutputReference(terraformResource
 	j := jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterOutputReference",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewFsxOntapFileSystemEndpointsInterclusterOutputReference_Override(f FsxOnt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterOutputReference",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

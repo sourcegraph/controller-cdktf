@@ -116,7 +116,7 @@ func NewGoogleAssuredWorkloadsWorkloadResourceSettingsList(terraformResource cdk
 	j := jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsList{}
 
 	_jsii_.Create(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResourceSettingsList",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResourceSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleAssuredWorkloadsWorkloadResourceSettingsList_Override(g GoogleAssu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResourceSettingsList",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadResourceSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -203,7 +203,7 @@ func NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyD
 	j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

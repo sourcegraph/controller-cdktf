@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethodOutputReferen
 	j := jsiiProxy_Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethodOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethodOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethodOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethodOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

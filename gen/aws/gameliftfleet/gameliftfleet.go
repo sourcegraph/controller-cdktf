@@ -733,7 +733,7 @@ func NewGameliftFleet(scope constructs.Construct, id *string, config *GameliftFl
 	j := jsiiProxy_GameliftFleet{}
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleet",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -746,7 +746,7 @@ func NewGameliftFleet_Override(g GameliftFleet, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleet",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -978,7 +978,7 @@ func GameliftFleet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftFleet.GameliftFleet",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -997,7 +997,7 @@ func GameliftFleet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftFleet.GameliftFleet",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1016,7 +1016,7 @@ func GameliftFleet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftFleet.GameliftFleet",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1029,7 +1029,7 @@ func GameliftFleet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.gameliftFleet.GameliftFleet",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleet",
 		"tfResourceType",
 		&returns,
 	)

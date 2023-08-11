@@ -299,7 +299,7 @@ func NewGoogleContainerAzureNodePoolConfigAOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigAOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewGoogleContainerAzureNodePoolConfigAOutputReference_Override(g GoogleCont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigAOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

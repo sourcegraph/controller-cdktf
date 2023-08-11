@@ -180,7 +180,7 @@ func NewDaemonsetSpecTemplateSpecContainerLivenessProbeExecOutputReference(terra
 	j := jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeExecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerLivenessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDaemonsetSpecTemplateSpecContainerLivenessProbeExecOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerLivenessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

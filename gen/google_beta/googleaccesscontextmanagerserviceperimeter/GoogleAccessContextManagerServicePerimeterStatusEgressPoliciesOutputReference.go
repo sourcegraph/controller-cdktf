@@ -204,7 +204,7 @@ func NewGoogleAccessContextManagerServicePerimeterStatusEgressPoliciesOutputRefe
 	j := jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesOutputReference",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleAccessContextManagerServicePerimeterStatusEgressPoliciesOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesOutputReference",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeterStatusEgressPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

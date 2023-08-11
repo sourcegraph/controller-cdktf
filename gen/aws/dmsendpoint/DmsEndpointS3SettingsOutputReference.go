@@ -1068,7 +1068,7 @@ func NewDmsEndpointS3SettingsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DmsEndpointS3SettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -1080,7 +1080,7 @@ func NewDmsEndpointS3SettingsOutputReference_Override(d DmsEndpointS3SettingsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

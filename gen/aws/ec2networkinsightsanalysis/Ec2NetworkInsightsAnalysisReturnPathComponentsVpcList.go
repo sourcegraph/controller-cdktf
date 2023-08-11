@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsVpcList(terraformResource 
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsVpcList_Override(e Ec2Netw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

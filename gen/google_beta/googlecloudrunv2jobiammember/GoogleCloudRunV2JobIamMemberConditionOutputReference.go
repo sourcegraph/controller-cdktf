@@ -226,7 +226,7 @@ func NewGoogleCloudRunV2JobIamMemberConditionOutputReference(terraformResource c
 	j := jsiiProxy_GoogleCloudRunV2JobIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleCloudRunV2JobIamMemberConditionOutputReference_Override(g GoogleCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

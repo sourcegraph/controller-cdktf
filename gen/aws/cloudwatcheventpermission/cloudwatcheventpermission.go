@@ -414,7 +414,7 @@ func NewCloudwatchEventPermission(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CloudwatchEventPermission{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermission",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewCloudwatchEventPermission_Override(c CloudwatchEventPermission, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermission",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -582,7 +582,7 @@ func CloudwatchEventPermission_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermission",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func CloudwatchEventPermission_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermission",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func CloudwatchEventPermission_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermission",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func CloudwatchEventPermission_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermission",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission",
 		"tfResourceType",
 		&returns,
 	)

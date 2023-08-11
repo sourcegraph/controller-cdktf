@@ -400,7 +400,7 @@ func NewGoogleServiceNetworkingConnection(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleServiceNetworkingConnection{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
+		"@cdktf/provider-google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleServiceNetworkingConnection_Override(g GoogleServiceNetworkingConn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
+		"@cdktf/provider-google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleServiceNetworkingConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
+		"@cdktf/provider-google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleServiceNetworkingConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
+		"@cdktf/provider-google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleServiceNetworkingConnection_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
+		"@cdktf/provider-google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleServiceNetworkingConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
+		"@cdktf/provider-google-beta.googleServiceNetworkingConnection.GoogleServiceNetworkingConnection",
 		"tfResourceType",
 		&returns,
 	)

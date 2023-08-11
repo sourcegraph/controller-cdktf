@@ -316,7 +316,7 @@ func NewDataAwsWafSubscribedRuleGroup(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsWafSubscribedRuleGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -329,7 +329,7 @@ func NewDataAwsWafSubscribedRuleGroup_Override(d DataAwsWafSubscribedRuleGroup, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -440,7 +440,7 @@ func DataAwsWafSubscribedRuleGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -459,7 +459,7 @@ func DataAwsWafSubscribedRuleGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsWafSubscribedRuleGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsWafSubscribedRuleGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
+		"@cdktf/provider-aws.dataAwsWafSubscribedRuleGroup.DataAwsWafSubscribedRuleGroup",
 		"tfResourceType",
 		&returns,
 	)

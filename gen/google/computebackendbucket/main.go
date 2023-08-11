@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeBackendBucket.ComputeBackendBucket",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucket",
 		reflect.TypeOf((*ComputeBackendBucket)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicy",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicy",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -151,11 +151,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicyCacheKeyPolicy",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicyCacheKeyPolicy",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicyCacheKeyPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicyCacheKeyPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,11 +193,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicyNegativeCachingPolicy",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicyNegativeCachingPolicy",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicyNegativeCachingPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicyNegativeCachingPolicyList",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicyNegativeCachingPolicyList",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicyNegativeCachingPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -218,7 +218,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -256,7 +256,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeBackendBucket.ComputeBackendBucketCdnPolicyOutputReference",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketCdnPolicyOutputReference",
 		reflect.TypeOf((*ComputeBackendBucketCdnPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bypassCacheOnRequestHeaders", GoGetter: "BypassCacheOnRequestHeaders"},
@@ -324,15 +324,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeBackendBucket.ComputeBackendBucketConfig",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketConfig",
 		reflect.TypeOf((*ComputeBackendBucketConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeBackendBucket.ComputeBackendBucketTimeouts",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketTimeouts",
 		reflect.TypeOf((*ComputeBackendBucketTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeBackendBucket.ComputeBackendBucketTimeoutsOutputReference",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeBackendBucketTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

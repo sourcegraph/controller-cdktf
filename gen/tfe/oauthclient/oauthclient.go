@@ -544,7 +544,7 @@ func NewOauthClient(scope constructs.Construct, id *string, config *OauthClientC
 	j := jsiiProxy_OauthClient{}
 
 	_jsii_.Create(
-		"tfe.oauthClient.OauthClient",
+		"@cdktf/provider-tfe.oauthClient.OauthClient",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -557,7 +557,7 @@ func NewOauthClient_Override(o OauthClient, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.oauthClient.OauthClient",
+		"@cdktf/provider-tfe.oauthClient.OauthClient",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -778,7 +778,7 @@ func OauthClient_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.oauthClient.OauthClient",
+		"@cdktf/provider-tfe.oauthClient.OauthClient",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func OauthClient_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.oauthClient.OauthClient",
+		"@cdktf/provider-tfe.oauthClient.OauthClient",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -816,7 +816,7 @@ func OauthClient_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.oauthClient.OauthClient",
+		"@cdktf/provider-tfe.oauthClient.OauthClient",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func OauthClient_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.oauthClient.OauthClient",
+		"@cdktf/provider-tfe.oauthClient.OauthClient",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		reflect.TypeOf((*GoogleLoggingOrganizationExclusion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusionConfig",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusionConfig",
 		reflect.TypeOf((*GoogleLoggingOrganizationExclusionConfig)(nil)).Elem(),
 	)
 }

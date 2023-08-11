@@ -179,7 +179,7 @@ func NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerform
 	j := jsiiProxy_GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerform
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -179,7 +179,7 @@ func NewLocationMapConfigurationOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_LocationMapConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.locationMap.LocationMapConfigurationOutputReference",
+		"@cdktf/provider-aws.locationMap.LocationMapConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLocationMapConfigurationOutputReference_Override(l LocationMapConfigurat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.locationMap.LocationMapConfigurationOutputReference",
+		"@cdktf/provider-aws.locationMap.LocationMapConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

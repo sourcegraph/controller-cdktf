@@ -228,7 +228,7 @@ func NewMutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsOutp
 	j := jsiiProxy_MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfiguration.MutatingWebhookConfigurationWebhookNamespaceSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

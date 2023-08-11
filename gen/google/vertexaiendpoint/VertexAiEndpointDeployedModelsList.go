@@ -104,7 +104,7 @@ func NewVertexAiEndpointDeployedModelsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_VertexAiEndpointDeployedModelsList{}
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVertexAiEndpointDeployedModelsList_Override(v VertexAiEndpointDeployedMo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

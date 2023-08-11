@@ -228,7 +228,7 @@ func NewGoogleProjectDefaultServiceAccountsTimeoutsOutputReference(terraformReso
 	j := jsiiProxy_GoogleProjectDefaultServiceAccountsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccountsTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccountsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleProjectDefaultServiceAccountsTimeoutsOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccountsTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleProjectDefaultServiceAccounts.GoogleProjectDefaultServiceAccountsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

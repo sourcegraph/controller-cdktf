@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayer",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayer",
 		reflect.TypeOf((*OpsworksGangliaLayer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -138,15 +138,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfiguration",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfiguration",
 		reflect.TypeOf((*OpsworksGangliaLayerCloudwatchConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreams",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreams",
 		reflect.TypeOf((*OpsworksGangliaLayerCloudwatchConfigurationLogStreams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList",
 		reflect.TypeOf((*OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference",
 		reflect.TypeOf((*OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchCount", GoGetter: "BatchCount"},
@@ -230,7 +230,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationOutputReference",
 		reflect.TypeOf((*OpsworksGangliaLayerCloudwatchConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,15 +269,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerConfig",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerConfig",
 		reflect.TypeOf((*OpsworksGangliaLayerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolume",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolume",
 		reflect.TypeOf((*OpsworksGangliaLayerEbsVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeList",
 		reflect.TypeOf((*OpsworksGangliaLayerEbsVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -298,7 +298,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeOutputReference",
 		reflect.TypeOf((*OpsworksGangliaLayerEbsVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -348,15 +348,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScaling",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScaling",
 		reflect.TypeOf((*OpsworksGangliaLayerLoadBasedAutoScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingDownscaling",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingDownscaling",
 		reflect.TypeOf((*OpsworksGangliaLayerLoadBasedAutoScalingDownscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputReference",
 		reflect.TypeOf((*OpsworksGangliaLayerLoadBasedAutoScalingDownscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
@@ -409,7 +409,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingOutputReference",
 		reflect.TypeOf((*OpsworksGangliaLayerLoadBasedAutoScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -452,11 +452,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingUpscaling",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingUpscaling",
 		reflect.TypeOf((*OpsworksGangliaLayerLoadBasedAutoScalingUpscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingUpscalingOutputReference",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerLoadBasedAutoScalingUpscalingOutputReference",
 		reflect.TypeOf((*OpsworksGangliaLayerLoadBasedAutoScalingUpscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},

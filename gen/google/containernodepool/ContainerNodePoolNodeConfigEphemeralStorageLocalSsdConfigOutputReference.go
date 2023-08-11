@@ -179,7 +179,7 @@ func NewContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 	j := jsiiProxy_ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

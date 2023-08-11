@@ -203,7 +203,7 @@ func NewDeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference(terra
 	j := jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

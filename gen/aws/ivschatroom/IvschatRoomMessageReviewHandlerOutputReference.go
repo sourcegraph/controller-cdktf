@@ -204,7 +204,7 @@ func NewIvschatRoomMessageReviewHandlerOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_IvschatRoomMessageReviewHandlerOutputReference{}
 
 	_jsii_.Create(
-		"aws.ivschatRoom.IvschatRoomMessageReviewHandlerOutputReference",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandlerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIvschatRoomMessageReviewHandlerOutputReference_Override(i IvschatRoomMes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivschatRoom.IvschatRoomMessageReviewHandlerOutputReference",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoomMessageReviewHandlerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

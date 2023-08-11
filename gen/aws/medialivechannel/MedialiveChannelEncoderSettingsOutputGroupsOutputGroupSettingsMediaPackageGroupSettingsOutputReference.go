@@ -179,7 +179,7 @@ func NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPacka
 	j := jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewMedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPacka
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

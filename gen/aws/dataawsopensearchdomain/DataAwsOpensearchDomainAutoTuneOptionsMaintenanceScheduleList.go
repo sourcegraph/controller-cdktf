@@ -104,7 +104,7 @@ func NewDataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList(terraformR
 	j := jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

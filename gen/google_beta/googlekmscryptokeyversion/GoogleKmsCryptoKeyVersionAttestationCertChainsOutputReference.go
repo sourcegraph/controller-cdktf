@@ -189,7 +189,7 @@ func NewGoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference(terraformR
 	j := jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewGoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

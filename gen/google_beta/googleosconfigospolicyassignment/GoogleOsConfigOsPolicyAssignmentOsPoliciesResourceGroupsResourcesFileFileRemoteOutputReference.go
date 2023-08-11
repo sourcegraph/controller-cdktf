@@ -203,7 +203,7 @@ func NewGoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesFileFil
 	j := jsiiProxy_GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesFileFileRemoteOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesFileFileRemoteOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesFileFileRemoteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesFileFil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesFileFileRemoteOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsResourcesFileFileRemoteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

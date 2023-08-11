@@ -314,7 +314,7 @@ func NewDataAwsCloudwatchLogGroups(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsCloudwatchLogGroups{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -327,7 +327,7 @@ func NewDataAwsCloudwatchLogGroups_Override(d DataAwsCloudwatchLogGroups, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -427,7 +427,7 @@ func DataAwsCloudwatchLogGroups_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -446,7 +446,7 @@ func DataAwsCloudwatchLogGroups_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -465,7 +465,7 @@ func DataAwsCloudwatchLogGroups_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsCloudwatchLogGroups_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogGroups.DataAwsCloudwatchLogGroups",
 		"tfResourceType",
 		&returns,
 	)

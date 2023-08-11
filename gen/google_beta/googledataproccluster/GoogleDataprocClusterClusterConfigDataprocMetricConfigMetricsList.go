@@ -116,7 +116,7 @@ func NewGoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList(terraf
 	j := jsiiProxy_GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

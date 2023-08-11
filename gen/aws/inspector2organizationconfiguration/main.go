@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
 		reflect.TypeOf((*Inspector2OrganizationConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,11 +63,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnable",
 		reflect.TypeOf((*Inspector2OrganizationConfigurationAutoEnable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationAutoEnableOutputReference",
 		reflect.TypeOf((*Inspector2OrganizationConfigurationAutoEnableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -103,15 +103,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationConfig",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationConfig",
 		reflect.TypeOf((*Inspector2OrganizationConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeouts",
 		reflect.TypeOf((*Inspector2OrganizationConfigurationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeoutsOutputReference",
 		reflect.TypeOf((*Inspector2OrganizationConfigurationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

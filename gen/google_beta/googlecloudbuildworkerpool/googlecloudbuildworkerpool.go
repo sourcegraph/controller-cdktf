@@ -541,7 +541,7 @@ func NewGoogleCloudbuildWorkerPool(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleCloudbuildWorkerPool{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
+		"@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -554,7 +554,7 @@ func NewGoogleCloudbuildWorkerPool_Override(g GoogleCloudbuildWorkerPool, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
+		"@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -720,7 +720,7 @@ func GoogleCloudbuildWorkerPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
+		"@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func GoogleCloudbuildWorkerPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
+		"@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func GoogleCloudbuildWorkerPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
+		"@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func GoogleCloudbuildWorkerPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
+		"@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPool",
 		"tfResourceType",
 		&returns,
 	)

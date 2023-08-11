@@ -484,7 +484,7 @@ func NewApiGatewayIntegrationResponse(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ApiGatewayIntegrationResponse{}
 
 	_jsii_.Create(
-		"aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
+		"@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewApiGatewayIntegrationResponse_Override(a ApiGatewayIntegrationResponse, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
+		"@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -696,7 +696,7 @@ func ApiGatewayIntegrationResponse_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
+		"@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func ApiGatewayIntegrationResponse_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
+		"@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func ApiGatewayIntegrationResponse_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
+		"@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func ApiGatewayIntegrationResponse_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
+		"@cdktf/provider-aws.apiGatewayIntegrationResponse.ApiGatewayIntegrationResponse",
 		"tfResourceType",
 		&returns,
 	)

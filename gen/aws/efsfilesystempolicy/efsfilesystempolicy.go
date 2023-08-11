@@ -366,7 +366,7 @@ func NewEfsFileSystemPolicy(scope constructs.Construct, id *string, config *EfsF
 	j := jsiiProxy_EfsFileSystemPolicy{}
 
 	_jsii_.Create(
-		"aws.efsFileSystemPolicy.EfsFileSystemPolicy",
+		"@cdktf/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewEfsFileSystemPolicy_Override(e EfsFileSystemPolicy, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsFileSystemPolicy.EfsFileSystemPolicy",
+		"@cdktf/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -523,7 +523,7 @@ func EfsFileSystemPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsFileSystemPolicy.EfsFileSystemPolicy",
+		"@cdktf/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func EfsFileSystemPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsFileSystemPolicy.EfsFileSystemPolicy",
+		"@cdktf/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func EfsFileSystemPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsFileSystemPolicy.EfsFileSystemPolicy",
+		"@cdktf/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func EfsFileSystemPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.efsFileSystemPolicy.EfsFileSystemPolicy",
+		"@cdktf/provider-aws.efsFileSystemPolicy.EfsFileSystemPolicy",
 		"tfResourceType",
 		&returns,
 	)

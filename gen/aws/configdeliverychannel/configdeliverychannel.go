@@ -439,7 +439,7 @@ func NewConfigDeliveryChannel(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ConfigDeliveryChannel{}
 
 	_jsii_.Create(
-		"aws.configDeliveryChannel.ConfigDeliveryChannel",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,7 +452,7 @@ func NewConfigDeliveryChannel_Override(c ConfigDeliveryChannel, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configDeliveryChannel.ConfigDeliveryChannel",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -618,7 +618,7 @@ func ConfigDeliveryChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configDeliveryChannel.ConfigDeliveryChannel",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -637,7 +637,7 @@ func ConfigDeliveryChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configDeliveryChannel.ConfigDeliveryChannel",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func ConfigDeliveryChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configDeliveryChannel.ConfigDeliveryChannel",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func ConfigDeliveryChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configDeliveryChannel.ConfigDeliveryChannel",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannel",
 		"tfResourceType",
 		&returns,
 	)

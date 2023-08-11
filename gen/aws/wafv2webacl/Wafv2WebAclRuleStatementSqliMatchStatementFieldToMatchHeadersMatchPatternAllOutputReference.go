@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPatter
 	j := jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPatter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchHeadersMatchPatternAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

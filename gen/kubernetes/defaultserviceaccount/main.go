@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccount",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount",
 		reflect.TypeOf((*DefaultServiceAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountConfig",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig",
 		reflect.TypeOf((*DefaultServiceAccountConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecret",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecret",
 		reflect.TypeOf((*DefaultServiceAccountImagePullSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretList",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretList",
 		reflect.TypeOf((*DefaultServiceAccountImagePullSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretOutputReference",
 		reflect.TypeOf((*DefaultServiceAccountImagePullSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,11 +138,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountMetadata",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadata",
 		reflect.TypeOf((*DefaultServiceAccountMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference",
 		reflect.TypeOf((*DefaultServiceAccountMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -189,11 +189,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountSecret",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecret",
 		reflect.TypeOf((*DefaultServiceAccountSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountSecretList",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretList",
 		reflect.TypeOf((*DefaultServiceAccountSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -214,7 +214,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
 		reflect.TypeOf((*DefaultServiceAccountSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -249,11 +249,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts",
 		reflect.TypeOf((*DefaultServiceAccountTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference",
 		reflect.TypeOf((*DefaultServiceAccountTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

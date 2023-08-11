@@ -179,7 +179,7 @@ func NewGoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference(t
 	j := jsiiProxy_GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsConnectRoutingProfileMediaConcurrenciesList(terraformResource cdk
 	j := jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfileMediaConcurrenciesList",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfileMediaConcurrenciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsConnectRoutingProfileMediaConcurrenciesList_Override(d DataAwsCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfileMediaConcurrenciesList",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfileMediaConcurrenciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

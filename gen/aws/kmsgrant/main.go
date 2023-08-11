@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kmsGrant.KmsGrant",
+		"@cdktf/provider-aws.kmsGrant.KmsGrant",
 		reflect.TypeOf((*KmsGrant)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kmsGrant.KmsGrantConfig",
+		"@cdktf/provider-aws.kmsGrant.KmsGrantConfig",
 		reflect.TypeOf((*KmsGrantConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kmsGrant.KmsGrantConstraints",
+		"@cdktf/provider-aws.kmsGrant.KmsGrantConstraints",
 		reflect.TypeOf((*KmsGrantConstraints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kmsGrant.KmsGrantConstraintsList",
+		"@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsList",
 		reflect.TypeOf((*KmsGrantConstraintsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.kmsGrant.KmsGrantConstraintsOutputReference",
+		"@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsOutputReference",
 		reflect.TypeOf((*KmsGrantConstraintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

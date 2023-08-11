@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.neptuneEventSubscription.NeptuneEventSubscription",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		reflect.TypeOf((*NeptuneEventSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionConfig",
 		reflect.TypeOf((*NeptuneEventSubscriptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeouts",
 		reflect.TypeOf((*NeptuneEventSubscriptionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscriptionTimeoutsOutputReference",
 		reflect.TypeOf((*NeptuneEventSubscriptionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

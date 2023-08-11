@@ -228,7 +228,7 @@ func NewAccessContextManagerServicePerimeterTimeoutsOutputReference(terraformRes
 	j := jsiiProxy_AccessContextManagerServicePerimeterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccessContextManagerServicePerimeterTimeoutsOutputReference_Override(a A
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

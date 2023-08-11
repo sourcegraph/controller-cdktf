@@ -104,7 +104,7 @@ func NewDataKubernetesIngressV1SpecTlsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataKubernetesIngressV1SpecTlsList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecTlsList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecTlsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesIngressV1SpecTlsList_Override(d DataKubernetesIngressV1Spe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecTlsList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecTlsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

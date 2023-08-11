@@ -104,7 +104,7 @@ func NewDataAwsDynamodbTablePointInTimeRecoveryList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryList{}
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTablePointInTimeRecoveryList",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTablePointInTimeRecoveryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsDynamodbTablePointInTimeRecoveryList_Override(d DataAwsDynamodbTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTablePointInTimeRecoveryList",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTablePointInTimeRecoveryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

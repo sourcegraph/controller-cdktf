@@ -228,7 +228,7 @@ func NewSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference(terraform
 	j := jsiiProxy_SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

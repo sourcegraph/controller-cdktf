@@ -202,7 +202,7 @@ func NewAuditmanagerAssessmentAssessmentReportsDestinationOutputReference(terraf
 	j := jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationOutputReference{}
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAuditmanagerAssessmentAssessmentReportsDestinationOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

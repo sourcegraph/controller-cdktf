@@ -179,7 +179,7 @@ func NewGoogleContainerClusterVerticalPodAutoscalingOutputReference(terraformRes
 	j := jsiiProxy_GoogleContainerClusterVerticalPodAutoscalingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterVerticalPodAutoscalingOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterVerticalPodAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterVerticalPodAutoscalingOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterVerticalPodAutoscalingOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterVerticalPodAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

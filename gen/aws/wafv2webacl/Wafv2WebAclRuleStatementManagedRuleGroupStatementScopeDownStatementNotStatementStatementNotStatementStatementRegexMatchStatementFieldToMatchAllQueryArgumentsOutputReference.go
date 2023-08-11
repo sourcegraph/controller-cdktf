@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotSt
 	j := jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotSt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatementStatementNotStatementStatementRegexMatchStatementFieldToMatchAllQueryArgumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

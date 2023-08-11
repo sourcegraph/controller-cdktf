@@ -348,7 +348,7 @@ func NewGoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference(terrafo
 	j := jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewGoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

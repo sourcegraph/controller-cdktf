@@ -558,7 +558,7 @@ func NewRdsExportTask(scope constructs.Construct, id *string, config *RdsExportT
 	j := jsiiProxy_RdsExportTask{}
 
 	_jsii_.Create(
-		"aws.rdsExportTask.RdsExportTask",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -571,7 +571,7 @@ func NewRdsExportTask_Override(r RdsExportTask, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsExportTask.RdsExportTask",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -748,7 +748,7 @@ func RdsExportTask_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsExportTask.RdsExportTask",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -767,7 +767,7 @@ func RdsExportTask_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsExportTask.RdsExportTask",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -786,7 +786,7 @@ func RdsExportTask_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsExportTask.RdsExportTask",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -799,7 +799,7 @@ func RdsExportTask_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rdsExportTask.RdsExportTask",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		"tfResourceType",
 		&returns,
 	)

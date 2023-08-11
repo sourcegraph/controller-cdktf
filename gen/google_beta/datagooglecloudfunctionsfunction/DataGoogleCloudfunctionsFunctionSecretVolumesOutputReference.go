@@ -200,7 +200,7 @@ func NewDataGoogleCloudfunctionsFunctionSecretVolumesOutputReference(terraformRe
 	j := jsiiProxy_DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleCloudfunctionsFunctionSecretVolumesOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsIdentitystoreUserExternalIdsList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsIdentitystoreUserExternalIdsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsIdentitystoreUserExternalIdsList_Override(d DataAwsIdentitystoreU
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserExternalIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

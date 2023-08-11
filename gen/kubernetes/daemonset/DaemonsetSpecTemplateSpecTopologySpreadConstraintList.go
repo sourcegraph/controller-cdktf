@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecTopologySpreadConstraintList(terraformResource 
 	j := jsiiProxy_DaemonsetSpecTemplateSpecTopologySpreadConstraintList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecTopologySpreadConstraintList_Override(d Daemons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

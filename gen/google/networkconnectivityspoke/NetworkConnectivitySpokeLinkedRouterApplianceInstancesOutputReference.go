@@ -202,7 +202,7 @@ func NewNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference(te
 	j := jsiiProxy_NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference{}
 
 	_jsii_.Create(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

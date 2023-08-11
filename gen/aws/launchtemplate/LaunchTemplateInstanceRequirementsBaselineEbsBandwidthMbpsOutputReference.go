@@ -204,7 +204,7 @@ func NewLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReferenc
 	j := jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

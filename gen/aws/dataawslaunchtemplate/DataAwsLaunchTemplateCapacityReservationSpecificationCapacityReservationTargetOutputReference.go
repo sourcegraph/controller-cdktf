@@ -178,7 +178,7 @@ func NewDataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservation
 	j := jsiiProxy_DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

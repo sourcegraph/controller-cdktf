@@ -225,7 +225,7 @@ func NewWafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatem
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexMatchStatementFieldToMatchCookiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

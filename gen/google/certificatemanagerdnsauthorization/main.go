@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
 		reflect.TypeOf((*CertificateManagerDnsAuthorization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationConfig",
 		reflect.TypeOf((*CertificateManagerDnsAuthorizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationDnsResourceRecord",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationDnsResourceRecord",
 		reflect.TypeOf((*CertificateManagerDnsAuthorizationDnsResourceRecord)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationDnsResourceRecordList",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationDnsResourceRecordList",
 		reflect.TypeOf((*CertificateManagerDnsAuthorizationDnsResourceRecordList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference",
 		reflect.TypeOf((*CertificateManagerDnsAuthorizationDnsResourceRecordOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeouts",
 		reflect.TypeOf((*CertificateManagerDnsAuthorizationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeoutsOutputReference",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorizationTimeoutsOutputReference",
 		reflect.TypeOf((*CertificateManagerDnsAuthorizationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

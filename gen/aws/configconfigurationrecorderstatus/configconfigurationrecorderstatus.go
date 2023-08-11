@@ -342,7 +342,7 @@ func NewConfigConfigurationRecorderStatus(scope constructs.Construct, id *string
 	j := jsiiProxy_ConfigConfigurationRecorderStatus{}
 
 	_jsii_.Create(
-		"aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewConfigConfigurationRecorderStatus_Override(c ConfigConfigurationRecorder
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -488,7 +488,7 @@ func ConfigConfigurationRecorderStatus_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func ConfigConfigurationRecorderStatus_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func ConfigConfigurationRecorderStatus_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func ConfigConfigurationRecorderStatus_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
 		"tfResourceType",
 		&returns,
 	)

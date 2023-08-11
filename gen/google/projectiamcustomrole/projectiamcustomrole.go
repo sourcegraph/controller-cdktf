@@ -459,7 +459,7 @@ func NewProjectIamCustomRole(scope constructs.Construct, id *string, config *Pro
 	j := jsiiProxy_ProjectIamCustomRole{}
 
 	_jsii_.Create(
-		"google.projectIamCustomRole.ProjectIamCustomRole",
+		"@cdktf/provider-google.projectIamCustomRole.ProjectIamCustomRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewProjectIamCustomRole_Override(p ProjectIamCustomRole, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectIamCustomRole.ProjectIamCustomRole",
+		"@cdktf/provider-google.projectIamCustomRole.ProjectIamCustomRole",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -649,7 +649,7 @@ func ProjectIamCustomRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectIamCustomRole.ProjectIamCustomRole",
+		"@cdktf/provider-google.projectIamCustomRole.ProjectIamCustomRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func ProjectIamCustomRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectIamCustomRole.ProjectIamCustomRole",
+		"@cdktf/provider-google.projectIamCustomRole.ProjectIamCustomRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func ProjectIamCustomRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectIamCustomRole.ProjectIamCustomRole",
+		"@cdktf/provider-google.projectIamCustomRole.ProjectIamCustomRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func ProjectIamCustomRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.projectIamCustomRole.ProjectIamCustomRole",
+		"@cdktf/provider-google.projectIamCustomRole.ProjectIamCustomRole",
 		"tfResourceType",
 		&returns,
 	)

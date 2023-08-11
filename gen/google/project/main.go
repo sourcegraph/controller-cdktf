@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.project.Project",
+		"@cdktf/provider-google.project.Project",
 		reflect.TypeOf((*Project)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.project.ProjectConfig",
+		"@cdktf/provider-google.project.ProjectConfig",
 		reflect.TypeOf((*ProjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.project.ProjectTimeouts",
+		"@cdktf/provider-google.project.ProjectTimeouts",
 		reflect.TypeOf((*ProjectTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.project.ProjectTimeoutsOutputReference",
+		"@cdktf/provider-google.project.ProjectTimeoutsOutputReference",
 		reflect.TypeOf((*ProjectTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

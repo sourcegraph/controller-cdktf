@@ -202,7 +202,7 @@ func NewTransferUserHomeDirectoryMappingsOutputReference(terraformResource cdktf
 	j := jsiiProxy_TransferUserHomeDirectoryMappingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference",
+		"@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTransferUserHomeDirectoryMappingsOutputReference_Override(t TransferUser
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference",
+		"@cdktf/provider-aws.transferUser.TransferUserHomeDirectoryMappingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

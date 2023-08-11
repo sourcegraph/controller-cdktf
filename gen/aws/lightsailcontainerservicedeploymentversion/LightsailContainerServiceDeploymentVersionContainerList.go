@@ -116,7 +116,7 @@ func NewLightsailContainerServiceDeploymentVersionContainerList(terraformResourc
 	j := jsiiProxy_LightsailContainerServiceDeploymentVersionContainerList{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLightsailContainerServiceDeploymentVersionContainerList_Override(l Light
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

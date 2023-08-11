@@ -390,7 +390,7 @@ func NewComputeProjectMetadataItem(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_ComputeProjectMetadataItem{}
 
 	_jsii_.Create(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItem",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewComputeProjectMetadataItem_Override(c ComputeProjectMetadataItem, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItem",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -547,7 +547,7 @@ func ComputeProjectMetadataItem_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItem",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func ComputeProjectMetadataItem_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItem",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func ComputeProjectMetadataItem_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItem",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func ComputeProjectMetadataItem_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeProjectMetadataItem.ComputeProjectMetadataItem",
+		"@cdktf/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewComputeNetworkEndpointTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ComputeNetworkEndpointTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNetworkEndpoint.ComputeNetworkEndpointTimeoutsOutputReference",
+		"@cdktf/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeNetworkEndpointTimeoutsOutputReference_Override(c ComputeNetworkE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNetworkEndpoint.ComputeNetworkEndpointTimeoutsOutputReference",
+		"@cdktf/provider-google.computeNetworkEndpoint.ComputeNetworkEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

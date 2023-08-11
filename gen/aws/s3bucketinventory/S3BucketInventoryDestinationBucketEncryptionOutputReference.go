@@ -204,7 +204,7 @@ func NewS3BucketInventoryDestinationBucketEncryptionOutputReference(terraformRes
 	j := jsiiProxy_S3BucketInventoryDestinationBucketEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionOutputReference",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3BucketInventoryDestinationBucketEncryptionOutputReference_Override(s S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionOutputReference",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventoryDestinationBucketEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

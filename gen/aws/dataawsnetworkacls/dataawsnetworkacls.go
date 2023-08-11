@@ -375,7 +375,7 @@ func NewDataAwsNetworkAcls(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsNetworkAcls{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
+		"@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -388,7 +388,7 @@ func NewDataAwsNetworkAcls_Override(d DataAwsNetworkAcls, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
+		"@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -499,7 +499,7 @@ func DataAwsNetworkAcls_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
+		"@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func DataAwsNetworkAcls_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
+		"@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsNetworkAcls_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
+		"@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DataAwsNetworkAcls_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
+		"@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAcls",
 		"tfResourceType",
 		&returns,
 	)

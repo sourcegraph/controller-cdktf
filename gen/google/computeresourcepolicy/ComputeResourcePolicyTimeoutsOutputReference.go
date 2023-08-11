@@ -204,7 +204,7 @@ func NewComputeResourcePolicyTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ComputeResourcePolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeResourcePolicy.ComputeResourcePolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeResourcePolicyTimeoutsOutputReference_Override(c ComputeResourceP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeResourcePolicy.ComputeResourcePolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

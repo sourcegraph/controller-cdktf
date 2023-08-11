@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringScheduli
 	j := jsiiProxy_StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringScheduli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecAffinityPodAntiAffinityRequiredDuringSchedulingIgnoredDuringExecutionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

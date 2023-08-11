@@ -250,7 +250,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeFcOutputReference(terraformR
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeFcOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeFcOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeFcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeFcOutputReference_Override(c
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeFcOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeFcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

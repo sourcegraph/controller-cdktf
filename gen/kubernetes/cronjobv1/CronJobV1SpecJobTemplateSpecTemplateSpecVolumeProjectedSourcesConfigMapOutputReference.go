@@ -228,7 +228,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapO
 	j := jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

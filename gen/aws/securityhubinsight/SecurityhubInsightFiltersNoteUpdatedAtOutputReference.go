@@ -228,7 +228,7 @@ func NewSecurityhubInsightFiltersNoteUpdatedAtOutputReference(terraformResource 
 	j := jsiiProxy_SecurityhubInsightFiltersNoteUpdatedAtOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSecurityhubInsightFiltersNoteUpdatedAtOutputReference_Override(s Securit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNoteUpdatedAtOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

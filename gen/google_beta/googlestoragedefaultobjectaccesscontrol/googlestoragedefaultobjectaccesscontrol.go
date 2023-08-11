@@ -468,7 +468,7 @@ func NewGoogleStorageDefaultObjectAccessControl(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleStorageDefaultObjectAccessControl{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -481,7 +481,7 @@ func NewGoogleStorageDefaultObjectAccessControl_Override(g GoogleStorageDefaultO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -636,7 +636,7 @@ func GoogleStorageDefaultObjectAccessControl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func GoogleStorageDefaultObjectAccessControl_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -674,7 +674,7 @@ func GoogleStorageDefaultObjectAccessControl_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func GoogleStorageDefaultObjectAccessControl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAccessControl.GoogleStorageDefaultObjectAccessControl",
 		"tfResourceType",
 		&returns,
 	)

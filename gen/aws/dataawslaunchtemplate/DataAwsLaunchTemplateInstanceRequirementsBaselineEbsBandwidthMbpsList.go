@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList(te
 	j := jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

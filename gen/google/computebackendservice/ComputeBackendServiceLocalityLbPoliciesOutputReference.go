@@ -204,7 +204,7 @@ func NewComputeBackendServiceLocalityLbPoliciesOutputReference(terraformResource
 	j := jsiiProxy_ComputeBackendServiceLocalityLbPoliciesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeBackendServiceLocalityLbPoliciesOutputReference_Override(c Comput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

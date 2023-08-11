@@ -203,7 +203,7 @@ func NewCloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersOu
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -225,7 +225,7 @@ func NewWafRulePredicatesOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_WafRulePredicatesOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafRule.WafRulePredicatesOutputReference",
+		"@cdktf/provider-aws.wafRule.WafRulePredicatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafRulePredicatesOutputReference_Override(w WafRulePredicatesOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafRule.WafRulePredicatesOutputReference",
+		"@cdktf/provider-aws.wafRule.WafRulePredicatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

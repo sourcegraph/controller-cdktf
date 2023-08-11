@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.healthcareConsentStore.HealthcareConsentStore",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		reflect.TypeOf((*HealthcareConsentStore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareConsentStore.HealthcareConsentStoreConfig",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStoreConfig",
 		reflect.TypeOf((*HealthcareConsentStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareConsentStore.HealthcareConsentStoreTimeouts",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStoreTimeouts",
 		reflect.TypeOf((*HealthcareConsentStoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareConsentStore.HealthcareConsentStoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStoreTimeoutsOutputReference",
 		reflect.TypeOf((*HealthcareConsentStoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

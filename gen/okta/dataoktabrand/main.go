@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaBrand.DataOktaBrand",
+		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		reflect.TypeOf((*DataOktaBrand)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaBrand.DataOktaBrandConfig",
+		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrandConfig",
 		reflect.TypeOf((*DataOktaBrandConfig)(nil)).Elem(),
 	)
 }

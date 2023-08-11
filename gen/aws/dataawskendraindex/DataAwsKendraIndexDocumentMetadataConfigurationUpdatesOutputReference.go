@@ -200,7 +200,7 @@ func NewDataAwsKendraIndexDocumentMetadataConfigurationUpdatesOutputReference(te
 	j := jsiiProxy_DataAwsKendraIndexDocumentMetadataConfigurationUpdatesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexDocumentMetadataConfigurationUpdatesOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexDocumentMetadataConfigurationUpdatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsKendraIndexDocumentMetadataConfigurationUpdatesOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexDocumentMetadataConfigurationUpdatesOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexDocumentMetadataConfigurationUpdatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

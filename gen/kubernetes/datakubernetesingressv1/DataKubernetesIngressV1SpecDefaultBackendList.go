@@ -104,7 +104,7 @@ func NewDataKubernetesIngressV1SpecDefaultBackendList(terraformResource cdktf.II
 	j := jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecDefaultBackendList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecDefaultBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesIngressV1SpecDefaultBackendList_Override(d DataKubernetesI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecDefaultBackendList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecDefaultBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

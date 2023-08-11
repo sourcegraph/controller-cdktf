@@ -471,7 +471,7 @@ func NewDataLossPreventionDeidentifyTemplate(scope constructs.Construct, id *str
 	j := jsiiProxy_DataLossPreventionDeidentifyTemplate{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
+		"@cdktf/provider-google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewDataLossPreventionDeidentifyTemplate_Override(d DataLossPreventionDeiden
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
+		"@cdktf/provider-google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -639,7 +639,7 @@ func DataLossPreventionDeidentifyTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
+		"@cdktf/provider-google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func DataLossPreventionDeidentifyTemplate_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
+		"@cdktf/provider-google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func DataLossPreventionDeidentifyTemplate_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
+		"@cdktf/provider-google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func DataLossPreventionDeidentifyTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
+		"@cdktf/provider-google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplate",
 		"tfResourceType",
 		&returns,
 	)

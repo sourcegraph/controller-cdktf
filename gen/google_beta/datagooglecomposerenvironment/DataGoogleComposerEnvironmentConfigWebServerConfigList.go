@@ -104,7 +104,7 @@ func NewDataGoogleComposerEnvironmentConfigWebServerConfigList(terraformResource
 	j := jsiiProxy_DataGoogleComposerEnvironmentConfigWebServerConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWebServerConfigList",
+		"@cdktf/provider-google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWebServerConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComposerEnvironmentConfigWebServerConfigList_Override(d DataGo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWebServerConfigList",
+		"@cdktf/provider-google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWebServerConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

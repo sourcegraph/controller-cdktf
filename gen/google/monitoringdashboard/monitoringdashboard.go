@@ -367,7 +367,7 @@ func NewMonitoringDashboard(scope constructs.Construct, id *string, config *Moni
 	j := jsiiProxy_MonitoringDashboard{}
 
 	_jsii_.Create(
-		"google.monitoringDashboard.MonitoringDashboard",
+		"@cdktf/provider-google.monitoringDashboard.MonitoringDashboard",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewMonitoringDashboard_Override(m MonitoringDashboard, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringDashboard.MonitoringDashboard",
+		"@cdktf/provider-google.monitoringDashboard.MonitoringDashboard",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -513,7 +513,7 @@ func MonitoringDashboard_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringDashboard.MonitoringDashboard",
+		"@cdktf/provider-google.monitoringDashboard.MonitoringDashboard",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func MonitoringDashboard_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringDashboard.MonitoringDashboard",
+		"@cdktf/provider-google.monitoringDashboard.MonitoringDashboard",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func MonitoringDashboard_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringDashboard.MonitoringDashboard",
+		"@cdktf/provider-google.monitoringDashboard.MonitoringDashboard",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func MonitoringDashboard_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.monitoringDashboard.MonitoringDashboard",
+		"@cdktf/provider-google.monitoringDashboard.MonitoringDashboard",
 		"tfResourceType",
 		&returns,
 	)

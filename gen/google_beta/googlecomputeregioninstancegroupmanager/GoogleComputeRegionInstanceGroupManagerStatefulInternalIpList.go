@@ -116,7 +116,7 @@ func NewGoogleComputeRegionInstanceGroupManagerStatefulInternalIpList(terraformR
 	j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRegionInstanceGroupManagerStatefulInternalIpList_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

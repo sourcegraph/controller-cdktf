@@ -180,7 +180,7 @@ func NewClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputRef
 	j := jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference{}
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

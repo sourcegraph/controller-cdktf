@@ -180,7 +180,7 @@ func NewDialogflowCxAgentSpeechToTextSettingsOutputReference(terraformResource c
 	j := jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference",
+		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDialogflowCxAgentSpeechToTextSettingsOutputReference_Override(d Dialogfl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference",
+		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

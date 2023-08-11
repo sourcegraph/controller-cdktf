@@ -252,7 +252,7 @@ func NewDaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference(
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

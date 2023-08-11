@@ -388,7 +388,7 @@ func NewInteger(scope constructs.Construct, id *string, config *IntegerConfig) I
 	j := jsiiProxy_Integer{}
 
 	_jsii_.Create(
-		"random.integer.Integer",
+		"@cdktf/provider-random.integer.Integer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewInteger_Override(i Integer, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"random.integer.Integer",
+		"@cdktf/provider-random.integer.Integer",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -545,7 +545,7 @@ func Integer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.integer.Integer",
+		"@cdktf/provider-random.integer.Integer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func Integer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.integer.Integer",
+		"@cdktf/provider-random.integer.Integer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func Integer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.integer.Integer",
+		"@cdktf/provider-random.integer.Integer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func Integer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"random.integer.Integer",
+		"@cdktf/provider-random.integer.Integer",
 		"tfResourceType",
 		&returns,
 	)

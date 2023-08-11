@@ -228,7 +228,7 @@ func NewCloudbuildBitbucketServerConfigTimeoutsOutputReference(terraformResource
 	j := jsiiProxy_CloudbuildBitbucketServerConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudbuildBitbucketServerConfigTimeoutsOutputReference_Override(c Cloudb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

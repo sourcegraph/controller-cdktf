@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytype)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,19 +78,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeConfig",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeConfig",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfig",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfig",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,11 +124,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anomalyDetectionBaseline", GoGetter: "AnomalyDetectionBaseline"},
@@ -166,11 +166,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -204,7 +204,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "categoricalThresholdConfig", GoGetter: "CategoricalThresholdConfig"},
@@ -252,11 +252,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -297,11 +297,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeouts",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeouts",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeoutsOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeTimeoutsOutputReference",
 		reflect.TypeOf((*VertexAiFeaturestoreEntitytypeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

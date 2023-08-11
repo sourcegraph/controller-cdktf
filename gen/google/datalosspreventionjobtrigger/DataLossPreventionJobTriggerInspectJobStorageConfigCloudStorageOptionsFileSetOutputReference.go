@@ -204,7 +204,7 @@ func NewDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFi
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

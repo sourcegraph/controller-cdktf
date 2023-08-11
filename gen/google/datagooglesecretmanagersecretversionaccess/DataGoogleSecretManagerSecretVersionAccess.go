@@ -361,7 +361,7 @@ func NewDataGoogleSecretManagerSecretVersionAccess(scope constructs.Construct, i
 	j := jsiiProxy_DataGoogleSecretManagerSecretVersionAccess{}
 
 	_jsii_.Create(
-		"google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleSecretManagerSecretVersionAccess_Override(d DataGoogleSecretMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleSecretManagerSecretVersionAccess_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleSecretManagerSecretVersionAccess_IsTerraformDataSource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleSecretManagerSecretVersionAccess_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleSecretManagerSecretVersionAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersionAccess.DataGoogleSecretManagerSecretVersionAccess",
 		"tfResourceType",
 		&returns,
 	)

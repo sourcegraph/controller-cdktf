@@ -922,7 +922,7 @@ func NewGoogleComputeDisk(scope constructs.Construct, id *string, config *Google
 	j := jsiiProxy_GoogleComputeDisk{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDisk",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -935,7 +935,7 @@ func NewGoogleComputeDisk_Override(g GoogleComputeDisk, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDisk",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1222,7 +1222,7 @@ func GoogleComputeDisk_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDisk.GoogleComputeDisk",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1241,7 +1241,7 @@ func GoogleComputeDisk_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDisk.GoogleComputeDisk",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1260,7 +1260,7 @@ func GoogleComputeDisk_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDisk.GoogleComputeDisk",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1273,7 +1273,7 @@ func GoogleComputeDisk_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeDisk.GoogleComputeDisk",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk",
 		"tfResourceType",
 		&returns,
 	)

@@ -508,7 +508,7 @@ func NewAuthServerClaim(scope constructs.Construct, id *string, config *AuthServ
 	j := jsiiProxy_AuthServerClaim{}
 
 	_jsii_.Create(
-		"okta.authServerClaim.AuthServerClaim",
+		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewAuthServerClaim_Override(a AuthServerClaim, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.authServerClaim.AuthServerClaim",
+		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -731,7 +731,7 @@ func AuthServerClaim_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.authServerClaim.AuthServerClaim",
+		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func AuthServerClaim_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.authServerClaim.AuthServerClaim",
+		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func AuthServerClaim_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.authServerClaim.AuthServerClaim",
+		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func AuthServerClaim_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.authServerClaim.AuthServerClaim",
+		"@cdktf/provider-okta.authServerClaim.AuthServerClaim",
 		"tfResourceType",
 		&returns,
 	)

@@ -365,7 +365,7 @@ func NewDynamodbTag(scope constructs.Construct, id *string, config *DynamodbTagC
 	j := jsiiProxy_DynamodbTag{}
 
 	_jsii_.Create(
-		"aws.dynamodbTag.DynamodbTag",
+		"@cdktf/provider-aws.dynamodbTag.DynamodbTag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewDynamodbTag_Override(d DynamodbTag, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbTag.DynamodbTag",
+		"@cdktf/provider-aws.dynamodbTag.DynamodbTag",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -522,7 +522,7 @@ func DynamodbTag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbTag.DynamodbTag",
+		"@cdktf/provider-aws.dynamodbTag.DynamodbTag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func DynamodbTag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbTag.DynamodbTag",
+		"@cdktf/provider-aws.dynamodbTag.DynamodbTag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func DynamodbTag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbTag.DynamodbTag",
+		"@cdktf/provider-aws.dynamodbTag.DynamodbTag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func DynamodbTag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dynamodbTag.DynamodbTag",
+		"@cdktf/provider-aws.dynamodbTag.DynamodbTag",
 		"tfResourceType",
 		&returns,
 	)

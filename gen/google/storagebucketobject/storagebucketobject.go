@@ -757,7 +757,7 @@ func NewStorageBucketObject(scope constructs.Construct, id *string, config *Stor
 	j := jsiiProxy_StorageBucketObject{}
 
 	_jsii_.Create(
-		"google.storageBucketObject.StorageBucketObject",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -770,7 +770,7 @@ func NewStorageBucketObject_Override(s StorageBucketObject, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucketObject.StorageBucketObject",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObject",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1046,7 +1046,7 @@ func StorageBucketObject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketObject.StorageBucketObject",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1065,7 +1065,7 @@ func StorageBucketObject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketObject.StorageBucketObject",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1084,7 +1084,7 @@ func StorageBucketObject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketObject.StorageBucketObject",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1097,7 +1097,7 @@ func StorageBucketObject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageBucketObject.StorageBucketObject",
+		"@cdktf/provider-google.storageBucketObject.StorageBucketObject",
 		"tfResourceType",
 		&returns,
 	)

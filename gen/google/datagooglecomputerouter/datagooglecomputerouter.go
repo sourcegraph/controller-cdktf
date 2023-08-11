@@ -417,7 +417,7 @@ func NewDataGoogleComputeRouter(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataGoogleComputeRouter{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRouter.DataGoogleComputeRouter",
+		"@cdktf/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewDataGoogleComputeRouter_Override(d DataGoogleComputeRouter, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRouter.DataGoogleComputeRouter",
+		"@cdktf/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -563,7 +563,7 @@ func DataGoogleComputeRouter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeRouter.DataGoogleComputeRouter",
+		"@cdktf/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func DataGoogleComputeRouter_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeRouter.DataGoogleComputeRouter",
+		"@cdktf/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DataGoogleComputeRouter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeRouter.DataGoogleComputeRouter",
+		"@cdktf/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func DataGoogleComputeRouter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeRouter.DataGoogleComputeRouter",
+		"@cdktf/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouter",
 		"tfResourceType",
 		&returns,
 	)

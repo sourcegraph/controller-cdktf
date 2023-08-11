@@ -178,7 +178,7 @@ func NewDataGoogleStorageBucketObjectContentCustomerEncryptionOutputReference(te
 	j := jsiiProxy_DataGoogleStorageBucketObjectContentCustomerEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContentCustomerEncryptionOutputReference",
+		"@cdktf/provider-google.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContentCustomerEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleStorageBucketObjectContentCustomerEncryptionOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContentCustomerEncryptionOutputReference",
+		"@cdktf/provider-google.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContentCustomerEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

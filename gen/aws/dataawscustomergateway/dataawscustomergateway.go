@@ -406,7 +406,7 @@ func NewDataAwsCustomerGateway(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsCustomerGateway{}
 
 	_jsii_.Create(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -419,7 +419,7 @@ func NewDataAwsCustomerGateway_Override(d DataAwsCustomerGateway, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -519,7 +519,7 @@ func DataAwsCustomerGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func DataAwsCustomerGateway_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func DataAwsCustomerGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func DataAwsCustomerGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		"tfResourceType",
 		&returns,
 	)

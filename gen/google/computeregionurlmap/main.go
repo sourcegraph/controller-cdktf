@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMap",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		reflect.TypeOf((*ComputeRegionUrlMap)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,19 +97,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapConfig",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig",
 		reflect.TypeOf((*ComputeRegionUrlMapConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionCorsPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
@@ -165,15 +165,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -211,15 +211,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,7 +257,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -296,7 +296,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abort", GoGetter: "Abort"},
@@ -336,7 +336,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -396,11 +396,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
@@ -435,11 +435,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRetryPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -481,11 +481,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -523,11 +523,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeout",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeout",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionTimeout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -565,11 +565,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewrite",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewrite",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionUrlRewrite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -607,15 +607,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -661,11 +661,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -686,7 +686,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -727,11 +727,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -752,7 +752,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -793,7 +793,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -814,7 +814,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
@@ -856,11 +856,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultUrlRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapDefaultUrlRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -909,11 +909,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapHostRule",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule",
 		reflect.TypeOf((*ComputeRegionUrlMapHostRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList",
 		reflect.TypeOf((*ComputeRegionUrlMapHostRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -934,7 +934,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapHostRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -973,15 +973,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcher)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultUrlRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1030,7 +1030,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1051,7 +1051,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1103,11 +1103,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1128,7 +1128,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1173,15 +1173,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
@@ -1236,15 +1236,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1280,15 +1280,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1325,7 +1325,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1362,7 +1362,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abort", GoGetter: "Abort"},
@@ -1402,7 +1402,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1462,11 +1462,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
@@ -1500,11 +1500,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1546,11 +1546,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1587,11 +1587,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1628,11 +1628,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1670,15 +1670,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1724,11 +1724,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1749,7 +1749,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1787,11 +1787,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1812,7 +1812,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1850,7 +1850,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1871,7 +1871,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
@@ -1911,11 +1911,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1964,15 +1964,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2018,11 +2018,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2043,7 +2043,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2081,11 +2081,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2106,7 +2106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2144,7 +2144,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2165,15 +2165,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2194,7 +2194,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2250,11 +2250,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2290,7 +2290,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2311,15 +2311,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2340,7 +2340,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2376,7 +2376,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2397,7 +2397,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2434,7 +2434,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2490,11 +2490,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2515,7 +2515,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2558,7 +2558,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2611,15 +2611,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},
@@ -2675,15 +2675,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2721,15 +2721,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2766,7 +2766,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2805,7 +2805,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abort", GoGetter: "Abort"},
@@ -2845,7 +2845,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2905,11 +2905,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
@@ -2943,11 +2943,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2988,11 +2988,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3029,11 +3029,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3070,11 +3070,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3112,15 +3112,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3166,11 +3166,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3191,7 +3191,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3229,11 +3229,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3254,7 +3254,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3292,7 +3292,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3313,7 +3313,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
@@ -3353,11 +3353,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3407,11 +3407,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapTest",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest",
 		reflect.TypeOf((*ComputeRegionUrlMapTest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapTestList",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList",
 		reflect.TypeOf((*ComputeRegionUrlMapTestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3432,7 +3432,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapTestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3473,11 +3473,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts",
 		reflect.TypeOf((*ComputeRegionUrlMapTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRegionUrlMapTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

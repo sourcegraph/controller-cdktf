@@ -233,7 +233,7 @@ func NewDataAwsEksClusterVpcConfigOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsEksClusterVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -245,7 +245,7 @@ func NewDataAwsEksClusterVpcConfigOutputReference_Override(d DataAwsEksClusterVp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -189,7 +189,7 @@ func NewGoogleApigeeSharedflowMetaDataOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleApigeeSharedflowMetaDataOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewGoogleApigeeSharedflowMetaDataOutputReference_Override(g GoogleApigeeSha
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

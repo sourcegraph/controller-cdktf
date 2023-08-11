@@ -379,7 +379,7 @@ func NewGoogleIdentityPlatformProjectDefaultConfig(scope constructs.Construct, i
 	j := jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewGoogleIdentityPlatformProjectDefaultConfig_Override(g GoogleIdentityPlat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -514,7 +514,7 @@ func GoogleIdentityPlatformProjectDefaultConfig_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func GoogleIdentityPlatformProjectDefaultConfig_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func GoogleIdentityPlatformProjectDefaultConfig_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func GoogleIdentityPlatformProjectDefaultConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformProjectDefaultConfig.GoogleIdentityPlatformProjectDefaultConfig",
 		"tfResourceType",
 		&returns,
 	)

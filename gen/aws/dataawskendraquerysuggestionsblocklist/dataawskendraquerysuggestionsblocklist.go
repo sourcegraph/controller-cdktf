@@ -459,7 +459,7 @@ func NewDataAwsKendraQuerySuggestionsBlockList(scope constructs.Construct, id *s
 	j := jsiiProxy_DataAwsKendraQuerySuggestionsBlockList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewDataAwsKendraQuerySuggestionsBlockList_Override(d DataAwsKendraQuerySugg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -594,7 +594,7 @@ func DataAwsKendraQuerySuggestionsBlockList_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func DataAwsKendraQuerySuggestionsBlockList_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func DataAwsKendraQuerySuggestionsBlockList_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func DataAwsKendraQuerySuggestionsBlockList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockList",
 		"tfResourceType",
 		&returns,
 	)

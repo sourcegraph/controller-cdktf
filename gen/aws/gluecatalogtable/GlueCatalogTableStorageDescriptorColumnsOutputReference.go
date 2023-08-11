@@ -251,7 +251,7 @@ func NewGlueCatalogTableStorageDescriptorColumnsOutputReference(terraformResourc
 	j := jsiiProxy_GlueCatalogTableStorageDescriptorColumnsOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsOutputReference",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewGlueCatalogTableStorageDescriptorColumnsOutputReference_Override(g GlueC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsOutputReference",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

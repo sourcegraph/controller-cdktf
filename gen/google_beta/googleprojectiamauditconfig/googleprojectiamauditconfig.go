@@ -376,7 +376,7 @@ func NewGoogleProjectIamAuditConfig(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleProjectIamAuditConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
+		"@cdktf/provider-google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewGoogleProjectIamAuditConfig_Override(g GoogleProjectIamAuditConfig, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
+		"@cdktf/provider-google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -522,7 +522,7 @@ func GoogleProjectIamAuditConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
+		"@cdktf/provider-google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func GoogleProjectIamAuditConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
+		"@cdktf/provider-google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func GoogleProjectIamAuditConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
+		"@cdktf/provider-google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func GoogleProjectIamAuditConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
+		"@cdktf/provider-google-beta.googleProjectIamAuditConfig.GoogleProjectIamAuditConfig",
 		"tfResourceType",
 		&returns,
 	)

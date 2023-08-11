@@ -116,7 +116,7 @@ func NewGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList(terrafor
 	j := jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionList{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyMaintenanceExclusionList",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyMaintenanceExclusionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyMaintenanceExclusionList",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyMaintenanceExclusionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

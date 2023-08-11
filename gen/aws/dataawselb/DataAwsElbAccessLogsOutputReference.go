@@ -200,7 +200,7 @@ func NewDataAwsElbAccessLogsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsElbAccessLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsElb.DataAwsElbAccessLogsOutputReference",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbAccessLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsElbAccessLogsOutputReference_Override(d DataAwsElbAccessLogsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElb.DataAwsElbAccessLogsOutputReference",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbAccessLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

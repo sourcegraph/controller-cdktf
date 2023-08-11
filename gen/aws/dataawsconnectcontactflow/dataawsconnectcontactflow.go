@@ -420,7 +420,7 @@ func NewDataAwsConnectContactFlow(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsConnectContactFlow{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
+		"@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -433,7 +433,7 @@ func NewDataAwsConnectContactFlow_Override(d DataAwsConnectContactFlow, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
+		"@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -577,7 +577,7 @@ func DataAwsConnectContactFlow_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
+		"@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func DataAwsConnectContactFlow_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
+		"@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataAwsConnectContactFlow_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
+		"@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -628,7 +628,7 @@ func DataAwsConnectContactFlow_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
+		"@cdktf/provider-aws.dataAwsConnectContactFlow.DataAwsConnectContactFlow",
 		"tfResourceType",
 		&returns,
 	)

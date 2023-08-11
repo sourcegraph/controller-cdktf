@@ -348,7 +348,7 @@ func NewPodSpecContainerStartupProbeOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_PodSpecContainerStartupProbeOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerStartupProbeOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerStartupProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewPodSpecContainerStartupProbeOutputReference_Override(p PodSpecContainerS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerStartupProbeOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerStartupProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

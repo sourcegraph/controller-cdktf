@@ -203,7 +203,7 @@ func NewOpensearchDomainEncryptAtRestOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_OpensearchDomainEncryptAtRestOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainEncryptAtRestOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewOpensearchDomainEncryptAtRestOutputReference_Override(o OpensearchDomain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainEncryptAtRestOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainEncryptAtRestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

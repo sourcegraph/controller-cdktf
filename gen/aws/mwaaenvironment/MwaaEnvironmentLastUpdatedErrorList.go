@@ -104,7 +104,7 @@ func NewMwaaEnvironmentLastUpdatedErrorList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_MwaaEnvironmentLastUpdatedErrorList{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorList",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewMwaaEnvironmentLastUpdatedErrorList_Override(m MwaaEnvironmentLastUpdate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorList",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

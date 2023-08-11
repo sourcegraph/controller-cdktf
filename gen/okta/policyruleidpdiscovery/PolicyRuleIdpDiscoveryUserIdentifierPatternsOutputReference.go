@@ -204,7 +204,7 @@ func NewPolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference(terraformRes
 	j := jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference{}
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference_Override(p P
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

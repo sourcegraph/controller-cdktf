@@ -116,7 +116,7 @@ func NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderL
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

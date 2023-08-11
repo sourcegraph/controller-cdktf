@@ -390,7 +390,7 @@ func NewSesIdentityNotificationTopic(scope constructs.Construct, id *string, con
 	j := jsiiProxy_SesIdentityNotificationTopic{}
 
 	_jsii_.Create(
-		"aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
+		"@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewSesIdentityNotificationTopic_Override(s SesIdentityNotificationTopic, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
+		"@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -558,7 +558,7 @@ func SesIdentityNotificationTopic_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
+		"@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func SesIdentityNotificationTopic_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
+		"@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func SesIdentityNotificationTopic_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
+		"@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func SesIdentityNotificationTopic_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
+		"@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
 		"tfResourceType",
 		&returns,
 	)

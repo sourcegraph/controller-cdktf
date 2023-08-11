@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
 		reflect.TypeOf((*BinaryAuthorizationAttestorIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicyConfig",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicyConfig",
 		reflect.TypeOf((*BinaryAuthorizationAttestorIamPolicyConfig)(nil)).Elem(),
 	)
 }

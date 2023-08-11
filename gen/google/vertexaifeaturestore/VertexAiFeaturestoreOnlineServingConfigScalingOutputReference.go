@@ -202,7 +202,7 @@ func NewVertexAiFeaturestoreOnlineServingConfigScalingOutputReference(terraformR
 	j := jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewVertexAiFeaturestoreOnlineServingConfigScalingOutputReference_Override(v
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

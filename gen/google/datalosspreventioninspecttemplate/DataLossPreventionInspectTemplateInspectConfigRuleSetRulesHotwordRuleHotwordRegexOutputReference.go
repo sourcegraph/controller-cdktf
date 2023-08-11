@@ -203,7 +203,7 @@ func NewDataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleHot
 	j := jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleHot
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

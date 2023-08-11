@@ -226,7 +226,7 @@ func NewLexBotAbortStatementMessageOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_LexBotAbortStatementMessageOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotAbortStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewLexBotAbortStatementMessageOutputReference_Override(l LexBotAbortStateme
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotAbortStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

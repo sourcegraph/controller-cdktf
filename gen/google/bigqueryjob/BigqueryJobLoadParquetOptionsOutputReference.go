@@ -204,7 +204,7 @@ func NewBigqueryJobLoadParquetOptionsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_BigqueryJobLoadParquetOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobLoadParquetOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadParquetOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewBigqueryJobLoadParquetOptionsOutputReference_Override(b BigqueryJobLoadP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobLoadParquetOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadParquetOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

@@ -104,7 +104,7 @@ func NewCloudRunV2JobConditionsList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_CloudRunV2JobConditionsList{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobConditionsList",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCloudRunV2JobConditionsList_Override(c CloudRunV2JobConditionsList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobConditionsList",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

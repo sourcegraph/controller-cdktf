@@ -104,7 +104,7 @@ func NewEfsFileSystemSizeInBytesList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_EfsFileSystemSizeInBytesList{}
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystemSizeInBytesList",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEfsFileSystemSizeInBytesList_Override(e EfsFileSystemSizeInBytesList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystemSizeInBytesList",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

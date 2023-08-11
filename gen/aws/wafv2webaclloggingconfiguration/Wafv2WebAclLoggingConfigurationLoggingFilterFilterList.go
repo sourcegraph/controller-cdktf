@@ -116,7 +116,7 @@ func NewWafv2WebAclLoggingConfigurationLoggingFilterFilterList(terraformResource
 	j := jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterList",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclLoggingConfigurationLoggingFilterFilterList_Override(w Wafv2W
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterList",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

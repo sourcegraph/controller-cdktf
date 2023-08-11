@@ -204,7 +204,7 @@ func NewSagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecasting
 	j := jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecasting
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

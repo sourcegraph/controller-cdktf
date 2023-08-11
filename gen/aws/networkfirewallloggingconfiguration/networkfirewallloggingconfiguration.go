@@ -342,7 +342,7 @@ func NewNetworkfirewallLoggingConfiguration(scope constructs.Construct, id *stri
 	j := jsiiProxy_NetworkfirewallLoggingConfiguration{}
 
 	_jsii_.Create(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewNetworkfirewallLoggingConfiguration_Override(n NetworkfirewallLoggingCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -477,7 +477,7 @@ func NetworkfirewallLoggingConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func NetworkfirewallLoggingConfiguration_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func NetworkfirewallLoggingConfiguration_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func NetworkfirewallLoggingConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewWafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPa
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewWafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementRegexMatchStatementFieldToMatchCookiesMatchPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

@@ -314,7 +314,7 @@ func NewDataAwsImagebuilderDistributionConfigurations(scope constructs.Construct
 	j := jsiiProxy_DataAwsImagebuilderDistributionConfigurations{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -327,7 +327,7 @@ func NewDataAwsImagebuilderDistributionConfigurations_Override(d DataAwsImagebui
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataAwsImagebuilderDistributionConfigurations_IsConstruct(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataAwsImagebuilderDistributionConfigurations_IsTerraformDataSource(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsImagebuilderDistributionConfigurations_IsTerraformElement(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsImagebuilderDistributionConfigurations_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfigurations.DataAwsImagebuilderDistributionConfigurations",
 		"tfResourceType",
 		&returns,
 	)

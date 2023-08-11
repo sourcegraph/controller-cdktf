@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetwork",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetwork",
 		reflect.TypeOf((*GoogleComputeSubnetwork)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,15 +106,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkConfig",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkConfig",
 		reflect.TypeOf((*GoogleComputeSubnetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfig",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfig",
 		reflect.TypeOf((*GoogleComputeSubnetworkLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkLogConfigOutputReference",
 		reflect.TypeOf((*GoogleComputeSubnetworkLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInterval", GoGetter: "AggregationInterval"},
@@ -161,11 +161,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRange",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRange",
 		reflect.TypeOf((*GoogleComputeSubnetworkSecondaryIpRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeList",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeList",
 		reflect.TypeOf((*GoogleComputeSubnetworkSecondaryIpRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,7 +186,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkSecondaryIpRangeOutputReference",
 		reflect.TypeOf((*GoogleComputeSubnetworkSecondaryIpRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,11 +224,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkTimeouts",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkTimeouts",
 		reflect.TypeOf((*GoogleComputeSubnetworkTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetworkTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeSubnetworkTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

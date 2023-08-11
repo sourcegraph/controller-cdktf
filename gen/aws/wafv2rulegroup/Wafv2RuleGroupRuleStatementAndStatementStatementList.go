@@ -116,7 +116,7 @@ func NewWafv2RuleGroupRuleStatementAndStatementStatementList(terraformResource c
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementList{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2RuleGroupRuleStatementAndStatementStatementList_Override(w Wafv2Rul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

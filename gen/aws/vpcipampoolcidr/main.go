@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidr",
 		reflect.TypeOf((*VpcIpamPoolCidr)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContext",
 		reflect.TypeOf((*VpcIpamPoolCidrCidrAuthorizationContext)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContextOutputReference",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContextOutputReference",
 		reflect.TypeOf((*VpcIpamPoolCidrCidrAuthorizationContextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,15 +114,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrConfig",
 		reflect.TypeOf((*VpcIpamPoolCidrConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeouts",
 		reflect.TypeOf((*VpcIpamPoolCidrTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrTimeoutsOutputReference",
 		reflect.TypeOf((*VpcIpamPoolCidrTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -228,7 +228,7 @@ func NewVpcPeeringConnectionRequesterOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_VpcPeeringConnectionRequesterOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcPeeringConnection.VpcPeeringConnectionRequesterOutputReference",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionRequesterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewVpcPeeringConnectionRequesterOutputReference_Override(v VpcPeeringConnec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcPeeringConnection.VpcPeeringConnectionRequesterOutputReference",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionRequesterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

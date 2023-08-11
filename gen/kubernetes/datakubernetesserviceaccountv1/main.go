@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1Config",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1Config",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1ImagePullSecret",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1ImagePullSecret",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1ImagePullSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1ImagePullSecretList",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1ImagePullSecretList",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1ImagePullSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1ImagePullSecretOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1ImagePullSecretOutputReference",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1ImagePullSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,11 +121,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1Metadata",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1Metadata",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1Metadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1MetadataOutputReference",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1MetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -172,11 +172,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1Secret",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1Secret",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1Secret)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretList",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretList",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1SecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -196,7 +196,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretOutputReference",
 		reflect.TypeOf((*DataKubernetesServiceAccountV1SecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -468,7 +468,7 @@ func NewLoadBalancerRulesOverridesOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_LoadBalancerRulesOverridesOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewLoadBalancerRulesOverridesOutputReference_Override(l LoadBalancerRulesOv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

@@ -459,7 +459,7 @@ func NewEnv(scope constructs.Construct, id *string, config *EnvConfig) Env {
 	j := jsiiProxy_Env{}
 
 	_jsii_.Create(
-		"kubernetes.env.Env",
+		"@cdktf/provider-kubernetes.env.Env",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewEnv_Override(e Env, scope constructs.Construct, id *string, config *EnvC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.env.Env",
+		"@cdktf/provider-kubernetes.env.Env",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -638,7 +638,7 @@ func Env_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.env.Env",
+		"@cdktf/provider-kubernetes.env.Env",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func Env_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.env.Env",
+		"@cdktf/provider-kubernetes.env.Env",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func Env_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.env.Env",
+		"@cdktf/provider-kubernetes.env.Env",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func Env_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.env.Env",
+		"@cdktf/provider-kubernetes.env.Env",
 		"tfResourceType",
 		&returns,
 	)

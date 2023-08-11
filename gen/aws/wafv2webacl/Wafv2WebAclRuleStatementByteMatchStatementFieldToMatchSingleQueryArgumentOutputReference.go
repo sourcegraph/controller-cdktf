@@ -179,7 +179,7 @@ func NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumen
 	j := jsiiProxy_Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementByteMatchStatementFieldToMatchSingleQueryArgumentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

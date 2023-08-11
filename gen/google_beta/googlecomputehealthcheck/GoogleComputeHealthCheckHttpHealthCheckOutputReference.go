@@ -324,7 +324,7 @@ func NewGoogleComputeHealthCheckHttpHealthCheckOutputReference(terraformResource
 	j := jsiiProxy_GoogleComputeHealthCheckHttpHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpHealthCheckOutputReference",
+		"@cdktf/provider-google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewGoogleComputeHealthCheckHttpHealthCheckOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpHealthCheckOutputReference",
+		"@cdktf/provider-google-beta.googleComputeHealthCheck.GoogleComputeHealthCheckHttpHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -412,7 +412,7 @@ func NewMskConfiguration(scope constructs.Construct, id *string, config *MskConf
 	j := jsiiProxy_MskConfiguration{}
 
 	_jsii_.Create(
-		"aws.mskConfiguration.MskConfiguration",
+		"@cdktf/provider-aws.mskConfiguration.MskConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewMskConfiguration_Override(m MskConfiguration, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskConfiguration.MskConfiguration",
+		"@cdktf/provider-aws.mskConfiguration.MskConfiguration",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -580,7 +580,7 @@ func MskConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskConfiguration.MskConfiguration",
+		"@cdktf/provider-aws.mskConfiguration.MskConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func MskConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskConfiguration.MskConfiguration",
+		"@cdktf/provider-aws.mskConfiguration.MskConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func MskConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskConfiguration.MskConfiguration",
+		"@cdktf/provider-aws.mskConfiguration.MskConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func MskConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mskConfiguration.MskConfiguration",
+		"@cdktf/provider-aws.mskConfiguration.MskConfiguration",
 		"tfResourceType",
 		&returns,
 	)

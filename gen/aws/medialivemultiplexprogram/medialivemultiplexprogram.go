@@ -353,7 +353,7 @@ func NewMedialiveMultiplexProgram(scope constructs.Construct, id *string, config
 	j := jsiiProxy_MedialiveMultiplexProgram{}
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewMedialiveMultiplexProgram_Override(m MedialiveMultiplexProgram, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -488,7 +488,7 @@ func MedialiveMultiplexProgram_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func MedialiveMultiplexProgram_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func MedialiveMultiplexProgram_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func MedialiveMultiplexProgram_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
 		"tfResourceType",
 		&returns,
 	)

@@ -418,7 +418,7 @@ func NewMutatingWebhookConfigurationV1WebhookOutputReference(terraformResource c
 	j := jsiiProxy_MutatingWebhookConfigurationV1WebhookOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookOutputReference",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewMutatingWebhookConfigurationV1WebhookOutputReference_Override(m Mutating
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookOutputReference",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

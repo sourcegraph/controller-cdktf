@@ -1070,7 +1070,7 @@ func NewElasticacheCluster(scope constructs.Construct, id *string, config *Elast
 	j := jsiiProxy_ElasticacheCluster{}
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheCluster",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1083,7 +1083,7 @@ func NewElasticacheCluster_Override(e ElasticacheCluster, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheCluster",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -1513,7 +1513,7 @@ func ElasticacheCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheCluster.ElasticacheCluster",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1532,7 +1532,7 @@ func ElasticacheCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheCluster.ElasticacheCluster",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1551,7 +1551,7 @@ func ElasticacheCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheCluster.ElasticacheCluster",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1564,7 +1564,7 @@ func ElasticacheCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticacheCluster.ElasticacheCluster",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		"tfResourceType",
 		&returns,
 	)

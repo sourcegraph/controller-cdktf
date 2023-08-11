@@ -376,7 +376,7 @@ func NewTeamsProxyEndpoint(scope constructs.Construct, id *string, config *Teams
 	j := jsiiProxy_TeamsProxyEndpoint{}
 
 	_jsii_.Create(
-		"cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
+		"@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewTeamsProxyEndpoint_Override(t TeamsProxyEndpoint, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
+		"@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -533,7 +533,7 @@ func TeamsProxyEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
+		"@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func TeamsProxyEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
+		"@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func TeamsProxyEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
+		"@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func TeamsProxyEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
+		"@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
 		"tfResourceType",
 		&returns,
 	)

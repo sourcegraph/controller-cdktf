@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabases",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabases",
 		reflect.TypeOf((*DataGoogleSqlDatabases)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,15 +59,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig",
 		reflect.TypeOf((*DataGoogleSqlDatabasesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabases",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabases",
 		reflect.TypeOf((*DataGoogleSqlDatabasesDatabases)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesList",
 		reflect.TypeOf((*DataGoogleSqlDatabasesDatabasesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabasesDatabasesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "charset", GoGetter: "Charset"},

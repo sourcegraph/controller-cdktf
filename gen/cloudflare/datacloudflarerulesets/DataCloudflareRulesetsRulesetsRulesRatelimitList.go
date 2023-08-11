@@ -104,7 +104,7 @@ func NewDataCloudflareRulesetsRulesetsRulesRatelimitList(terraformResource cdktf
 	j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesRatelimitList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimitList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareRulesetsRulesetsRulesRatelimitList_Override(d DataCloudfla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimitList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesRatelimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

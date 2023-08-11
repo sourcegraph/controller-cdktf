@@ -438,7 +438,7 @@ func NewComputeGlobalNetworkEndpoint(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ComputeGlobalNetworkEndpoint{}
 
 	_jsii_.Create(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewComputeGlobalNetworkEndpoint_Override(c ComputeGlobalNetworkEndpoint, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -617,7 +617,7 @@ func ComputeGlobalNetworkEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func ComputeGlobalNetworkEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func ComputeGlobalNetworkEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func ComputeGlobalNetworkEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
 		"tfResourceType",
 		&returns,
 	)

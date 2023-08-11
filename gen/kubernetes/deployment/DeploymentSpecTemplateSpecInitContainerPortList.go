@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecInitContainerPortList(terraformResource cdktf.
 	j := jsiiProxy_DeploymentSpecTemplateSpecInitContainerPortList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerPortList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecInitContainerPortList_Override(d DeploymentSpe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerPortList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

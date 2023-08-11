@@ -204,7 +204,7 @@ func NewDxGatewayTimeoutsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DxGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dxGateway.DxGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxGateway.DxGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDxGatewayTimeoutsOutputReference_Override(d DxGatewayTimeoutsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxGateway.DxGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxGateway.DxGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

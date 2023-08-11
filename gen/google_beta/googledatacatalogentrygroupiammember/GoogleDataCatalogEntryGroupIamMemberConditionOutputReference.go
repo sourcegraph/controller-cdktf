@@ -226,7 +226,7 @@ func NewGoogleDataCatalogEntryGroupIamMemberConditionOutputReference(terraformRe
 	j := jsiiProxy_GoogleDataCatalogEntryGroupIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataCatalogEntryGroupIamMemberConditionOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

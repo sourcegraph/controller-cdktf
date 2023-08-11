@@ -116,7 +116,7 @@ func NewBackupPlanRuleList(terraformResource cdktf.IInterpolatingParent, terrafo
 	j := jsiiProxy_BackupPlanRuleList{}
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanRuleList",
+		"@cdktf/provider-aws.backupPlan.BackupPlanRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBackupPlanRuleList_Override(b BackupPlanRuleList, terraformResource cdkt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanRuleList",
+		"@cdktf/provider-aws.backupPlan.BackupPlanRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

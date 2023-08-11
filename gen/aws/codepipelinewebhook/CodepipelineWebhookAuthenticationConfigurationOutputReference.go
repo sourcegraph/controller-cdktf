@@ -204,7 +204,7 @@ func NewCodepipelineWebhookAuthenticationConfigurationOutputReference(terraformR
 	j := jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.codepipelineWebhook.CodepipelineWebhookAuthenticationConfigurationOutputReference",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookAuthenticationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCodepipelineWebhookAuthenticationConfigurationOutputReference_Override(c
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipelineWebhook.CodepipelineWebhookAuthenticationConfigurationOutputReference",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookAuthenticationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dxBgpPeer.DxBgpPeer",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeer",
 		reflect.TypeOf((*DxBgpPeer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxBgpPeer.DxBgpPeerConfig",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeerConfig",
 		reflect.TypeOf((*DxBgpPeerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxBgpPeer.DxBgpPeerTimeouts",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeerTimeouts",
 		reflect.TypeOf((*DxBgpPeerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dxBgpPeer.DxBgpPeerTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeerTimeoutsOutputReference",
 		reflect.TypeOf((*DxBgpPeerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

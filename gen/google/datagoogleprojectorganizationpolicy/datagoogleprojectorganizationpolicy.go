@@ -380,7 +380,7 @@ func NewDataGoogleProjectOrganizationPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleProjectOrganizationPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -393,7 +393,7 @@ func NewDataGoogleProjectOrganizationPolicy_Override(d DataGoogleProjectOrganiza
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -504,7 +504,7 @@ func DataGoogleProjectOrganizationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataGoogleProjectOrganizationPolicy_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func DataGoogleProjectOrganizationPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func DataGoogleProjectOrganizationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicy",
 		"tfResourceType",
 		&returns,
 	)

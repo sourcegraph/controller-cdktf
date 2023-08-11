@@ -424,7 +424,7 @@ func NewIapWebBackendServiceIamMember(scope constructs.Construct, id *string, co
 	j := jsiiProxy_IapWebBackendServiceIamMember{}
 
 	_jsii_.Create(
-		"google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
+		"@cdktf/provider-google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewIapWebBackendServiceIamMember_Override(i IapWebBackendServiceIamMember, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
+		"@cdktf/provider-google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -592,7 +592,7 @@ func IapWebBackendServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
+		"@cdktf/provider-google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func IapWebBackendServiceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
+		"@cdktf/provider-google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func IapWebBackendServiceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
+		"@cdktf/provider-google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func IapWebBackendServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
+		"@cdktf/provider-google.iapWebBackendServiceIamMember.IapWebBackendServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

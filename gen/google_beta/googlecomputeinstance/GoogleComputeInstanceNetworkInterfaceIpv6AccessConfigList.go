@@ -116,7 +116,7 @@ func NewGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList(terraformResou
 	j := jsiiProxy_GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

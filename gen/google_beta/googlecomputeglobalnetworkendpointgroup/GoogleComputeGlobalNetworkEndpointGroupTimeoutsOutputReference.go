@@ -204,7 +204,7 @@ func NewGoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference(terraform
 	j := jsiiProxy_GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

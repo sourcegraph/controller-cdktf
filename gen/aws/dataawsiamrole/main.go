@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsIamRole.DataAwsIamRole",
+		"@cdktf/provider-aws.dataAwsIamRole.DataAwsIamRole",
 		reflect.TypeOf((*DataAwsIamRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIamRole.DataAwsIamRoleConfig",
+		"@cdktf/provider-aws.dataAwsIamRole.DataAwsIamRoleConfig",
 		reflect.TypeOf((*DataAwsIamRoleConfig)(nil)).Elem(),
 	)
 }

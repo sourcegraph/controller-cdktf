@@ -348,7 +348,7 @@ func NewDataAwsServiceDiscoveryHttpNamespace(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsServiceDiscoveryHttpNamespace{}
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataAwsServiceDiscoveryHttpNamespace_Override(d DataAwsServiceDiscoveryH
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -472,7 +472,7 @@ func DataAwsServiceDiscoveryHttpNamespace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsServiceDiscoveryHttpNamespace_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsServiceDiscoveryHttpNamespace_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsServiceDiscoveryHttpNamespace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryHttpNamespace.DataAwsServiceDiscoveryHttpNamespace",
 		"tfResourceType",
 		&returns,
 	)

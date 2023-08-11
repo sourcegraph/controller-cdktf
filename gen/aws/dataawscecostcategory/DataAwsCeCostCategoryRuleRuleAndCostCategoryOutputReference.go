@@ -189,7 +189,7 @@ func NewDataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference(terraformRes
 	j := jsiiProxy_DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleAndCostCategoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

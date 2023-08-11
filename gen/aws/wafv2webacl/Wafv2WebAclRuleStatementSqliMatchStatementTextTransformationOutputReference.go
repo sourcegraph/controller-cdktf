@@ -202,7 +202,7 @@ func NewWafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputRefere
 	j := jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSqliMatchStatementTextTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

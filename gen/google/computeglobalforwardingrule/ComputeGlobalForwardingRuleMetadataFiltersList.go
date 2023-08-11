@@ -116,7 +116,7 @@ func NewComputeGlobalForwardingRuleMetadataFiltersList(terraformResource cdktf.I
 	j := jsiiProxy_ComputeGlobalForwardingRuleMetadataFiltersList{}
 
 	_jsii_.Create(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeGlobalForwardingRuleMetadataFiltersList_Override(c ComputeGlobalF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

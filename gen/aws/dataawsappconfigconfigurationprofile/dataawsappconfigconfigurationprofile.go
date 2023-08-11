@@ -415,7 +415,7 @@ func NewDataAwsAppconfigConfigurationProfile(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsAppconfigConfigurationProfile{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
+		"@cdktf/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewDataAwsAppconfigConfigurationProfile_Override(d DataAwsAppconfigConfigur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
+		"@cdktf/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -550,7 +550,7 @@ func DataAwsAppconfigConfigurationProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
+		"@cdktf/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataAwsAppconfigConfigurationProfile_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
+		"@cdktf/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataAwsAppconfigConfigurationProfile_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
+		"@cdktf/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DataAwsAppconfigConfigurationProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
+		"@cdktf/provider-aws.dataAwsAppconfigConfigurationProfile.DataAwsAppconfigConfigurationProfile",
 		"tfResourceType",
 		&returns,
 	)

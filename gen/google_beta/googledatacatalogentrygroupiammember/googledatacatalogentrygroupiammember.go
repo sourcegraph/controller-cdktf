@@ -448,7 +448,7 @@ func NewGoogleDataCatalogEntryGroupIamMember(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleDataCatalogEntryGroupIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataCatalogEntryGroupIamMember_Override(g GoogleDataCatalogEntryGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataCatalogEntryGroupIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataCatalogEntryGroupIamMember_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataCatalogEntryGroupIamMember_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataCatalogEntryGroupIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamMember.GoogleDataCatalogEntryGroupIamMember",
 		"tfResourceType",
 		&returns,
 	)

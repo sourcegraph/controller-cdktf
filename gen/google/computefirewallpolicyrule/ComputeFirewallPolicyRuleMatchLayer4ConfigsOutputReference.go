@@ -203,7 +203,7 @@ func NewComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference(terraformReso
 	j := jsiiProxy_ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

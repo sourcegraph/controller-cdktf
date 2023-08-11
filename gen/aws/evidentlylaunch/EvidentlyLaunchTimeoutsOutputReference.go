@@ -228,7 +228,7 @@ func NewEvidentlyLaunchTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EvidentlyLaunchTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchTimeoutsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEvidentlyLaunchTimeoutsOutputReference_Override(e EvidentlyLaunchTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchTimeoutsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

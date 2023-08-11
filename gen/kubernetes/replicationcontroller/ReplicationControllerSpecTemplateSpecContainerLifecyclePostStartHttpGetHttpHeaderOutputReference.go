@@ -204,7 +204,7 @@ func NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetH
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetH
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

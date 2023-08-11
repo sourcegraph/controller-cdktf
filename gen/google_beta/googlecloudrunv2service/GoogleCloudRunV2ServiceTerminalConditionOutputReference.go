@@ -244,7 +244,7 @@ func NewGoogleCloudRunV2ServiceTerminalConditionOutputReference(terraformResourc
 	j := jsiiProxy_GoogleCloudRunV2ServiceTerminalConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTerminalConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTerminalConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewGoogleCloudRunV2ServiceTerminalConditionOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTerminalConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTerminalConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

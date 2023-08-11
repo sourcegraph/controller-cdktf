@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList(te
 	j := jsiiProxy_StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

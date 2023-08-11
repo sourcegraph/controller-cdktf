@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsCriticalityList(terraformR
 	j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsCriticalityList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsCriticalityList_Override(s
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsCriticalityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

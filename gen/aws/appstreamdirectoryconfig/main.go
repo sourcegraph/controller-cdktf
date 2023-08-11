@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appstreamDirectoryConfig.AppstreamDirectoryConfig",
+		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfig",
 		reflect.TypeOf((*AppstreamDirectoryConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig",
+		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigConfig",
 		reflect.TypeOf((*AppstreamDirectoryConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials",
+		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentials",
 		reflect.TypeOf((*AppstreamDirectoryConfigServiceAccountCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentialsOutputReference",
+		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentialsOutputReference",
 		reflect.TypeOf((*AppstreamDirectoryConfigServiceAccountCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountName", GoGetter: "AccountName"},

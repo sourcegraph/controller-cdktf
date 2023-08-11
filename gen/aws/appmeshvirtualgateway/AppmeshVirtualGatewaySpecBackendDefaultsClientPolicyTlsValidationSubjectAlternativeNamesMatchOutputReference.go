@@ -179,7 +179,7 @@ func NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubject
 	j := jsiiProxy_AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubject
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

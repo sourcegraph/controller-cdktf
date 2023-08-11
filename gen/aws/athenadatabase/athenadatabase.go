@@ -487,7 +487,7 @@ func NewAthenaDatabase(scope constructs.Construct, id *string, config *AthenaDat
 	j := jsiiProxy_AthenaDatabase{}
 
 	_jsii_.Create(
-		"aws.athenaDatabase.AthenaDatabase",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabase",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewAthenaDatabase_Override(a AthenaDatabase, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.athenaDatabase.AthenaDatabase",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabase",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -677,7 +677,7 @@ func AthenaDatabase_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaDatabase.AthenaDatabase",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabase",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -696,7 +696,7 @@ func AthenaDatabase_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaDatabase.AthenaDatabase",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabase",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func AthenaDatabase_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaDatabase.AthenaDatabase",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabase",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func AthenaDatabase_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.athenaDatabase.AthenaDatabase",
+		"@cdktf/provider-aws.athenaDatabase.AthenaDatabase",
 		"tfResourceType",
 		&returns,
 	)

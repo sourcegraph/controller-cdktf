@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ami.Ami",
+		"@cdktf/provider-aws.ami.Ami",
 		reflect.TypeOf((*Ami)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -125,15 +125,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ami.AmiConfig",
+		"@cdktf/provider-aws.ami.AmiConfig",
 		reflect.TypeOf((*AmiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ami.AmiEbsBlockDevice",
+		"@cdktf/provider-aws.ami.AmiEbsBlockDevice",
 		reflect.TypeOf((*AmiEbsBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ami.AmiEbsBlockDeviceList",
+		"@cdktf/provider-aws.ami.AmiEbsBlockDeviceList",
 		reflect.TypeOf((*AmiEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -154,7 +154,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ami.AmiEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.ami.AmiEbsBlockDeviceOutputReference",
 		reflect.TypeOf((*AmiEbsBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,11 +212,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ami.AmiEphemeralBlockDevice",
+		"@cdktf/provider-aws.ami.AmiEphemeralBlockDevice",
 		reflect.TypeOf((*AmiEphemeralBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ami.AmiEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList",
 		reflect.TypeOf((*AmiEphemeralBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -237,7 +237,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ami.AmiEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceOutputReference",
 		reflect.TypeOf((*AmiEphemeralBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -273,11 +273,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ami.AmiTimeouts",
+		"@cdktf/provider-aws.ami.AmiTimeouts",
 		reflect.TypeOf((*AmiTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ami.AmiTimeoutsOutputReference",
+		"@cdktf/provider-aws.ami.AmiTimeoutsOutputReference",
 		reflect.TypeOf((*AmiTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -179,7 +179,7 @@ func NewGoogleSccNotificationConfigStreamingConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleSccNotificationConfigStreamingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigStreamingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigStreamingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleSccNotificationConfigStreamingConfigOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigStreamingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigStreamingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

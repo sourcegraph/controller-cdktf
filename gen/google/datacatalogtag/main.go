@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataCatalogTag.DataCatalogTag",
+		"@cdktf/provider-google.dataCatalogTag.DataCatalogTag",
 		reflect.TypeOf((*DataCatalogTag)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTag.DataCatalogTagConfig",
+		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagConfig",
 		reflect.TypeOf((*DataCatalogTagConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTag.DataCatalogTagFields",
+		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagFields",
 		reflect.TypeOf((*DataCatalogTagFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTag.DataCatalogTagFieldsList",
+		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagFieldsList",
 		reflect.TypeOf((*DataCatalogTagFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTag.DataCatalogTagFieldsOutputReference",
+		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference",
 		reflect.TypeOf((*DataCatalogTagFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boolValue", GoGetter: "BoolValue"},
@@ -152,11 +152,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTag.DataCatalogTagTimeouts",
+		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagTimeouts",
 		reflect.TypeOf((*DataCatalogTagTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference",
+		"@cdktf/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference",
 		reflect.TypeOf((*DataCatalogTagTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

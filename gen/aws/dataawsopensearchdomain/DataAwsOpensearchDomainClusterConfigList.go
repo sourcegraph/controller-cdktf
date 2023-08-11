@@ -104,7 +104,7 @@ func NewDataAwsOpensearchDomainClusterConfigList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsOpensearchDomainClusterConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOpensearchDomainClusterConfigList_Override(d DataAwsOpensearchDom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

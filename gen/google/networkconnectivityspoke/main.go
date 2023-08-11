@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpoke",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		reflect.TypeOf((*NetworkConnectivitySpoke)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig",
 		reflect.TypeOf((*NetworkConnectivitySpokeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedInterconnectAttachments",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedInterconnectAttachments",
 		reflect.TypeOf((*NetworkConnectivitySpokeLinkedInterconnectAttachments)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference",
 		reflect.TypeOf((*NetworkConnectivitySpokeLinkedInterconnectAttachmentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,15 +134,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstances",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstances",
 		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstances)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances",
 		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList",
 		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference",
 		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -201,7 +201,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference",
 		reflect.TypeOf((*NetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,11 +238,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpnTunnels",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpnTunnels",
 		reflect.TypeOf((*NetworkConnectivitySpokeLinkedVpnTunnels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference",
 		reflect.TypeOf((*NetworkConnectivitySpokeLinkedVpnTunnelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -278,11 +278,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts",
 		reflect.TypeOf((*NetworkConnectivitySpokeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeoutsOutputReference",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkConnectivitySpokeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

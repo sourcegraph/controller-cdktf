@@ -116,7 +116,7 @@ func NewComputePacketMirroringMirroredResourcesInstancesList(terraformResource c
 	j := jsiiProxy_ComputePacketMirroringMirroredResourcesInstancesList{}
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputePacketMirroringMirroredResourcesInstancesList_Override(c ComputeP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

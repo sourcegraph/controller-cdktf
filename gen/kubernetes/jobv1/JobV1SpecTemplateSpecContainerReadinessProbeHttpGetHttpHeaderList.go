@@ -116,7 +116,7 @@ func NewJobV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList(terraf
 	j := jsiiProxy_JobV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

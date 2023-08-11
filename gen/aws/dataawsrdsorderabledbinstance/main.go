@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
 		reflect.TypeOf((*DataAwsRdsOrderableDbInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstanceConfig",
+		"@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstanceConfig",
 		reflect.TypeOf((*DataAwsRdsOrderableDbInstanceConfig)(nil)).Elem(),
 	)
 }

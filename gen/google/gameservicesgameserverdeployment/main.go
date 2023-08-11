@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
 		reflect.TypeOf((*GameServicesGameServerDeployment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeploymentConfig",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeploymentConfig",
 		reflect.TypeOf((*GameServicesGameServerDeploymentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeploymentTimeouts",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeploymentTimeouts",
 		reflect.TypeOf((*GameServicesGameServerDeploymentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeploymentTimeoutsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeploymentTimeoutsOutputReference",
 		reflect.TypeOf((*GameServicesGameServerDeploymentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

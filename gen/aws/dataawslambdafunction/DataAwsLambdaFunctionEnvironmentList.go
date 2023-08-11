@@ -104,7 +104,7 @@ func NewDataAwsLambdaFunctionEnvironmentList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataAwsLambdaFunctionEnvironmentList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLambdaFunctionEnvironmentList_Override(d DataAwsLambdaFunctionEnv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewGoogleHealthcareDicomStoreStreamConfigsList(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleHealthcareDicomStoreStreamConfigsList{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsList",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleHealthcareDicomStoreStreamConfigsList_Override(g GoogleHealthcareD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsList",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

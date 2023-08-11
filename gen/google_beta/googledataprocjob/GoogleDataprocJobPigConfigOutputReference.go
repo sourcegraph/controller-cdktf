@@ -324,7 +324,7 @@ func NewGoogleDataprocJobPigConfigOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleDataprocJobPigConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPigConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPigConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewGoogleDataprocJobPigConfigOutputReference_Override(g GoogleDataprocJobPi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPigConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPigConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

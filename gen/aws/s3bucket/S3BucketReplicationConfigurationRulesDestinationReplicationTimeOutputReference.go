@@ -204,7 +204,7 @@ func NewS3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputRef
 	j := jsiiProxy_S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketReplicationConfigurationRulesDestinationReplicationTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

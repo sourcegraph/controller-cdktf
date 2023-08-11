@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcs.DataAwsVpcs",
+		"@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcs",
 		reflect.TypeOf((*DataAwsVpcs)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcs.DataAwsVpcsConfig",
+		"@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsConfig",
 		reflect.TypeOf((*DataAwsVpcsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcs.DataAwsVpcsFilter",
+		"@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsFilter",
 		reflect.TypeOf((*DataAwsVpcsFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcs.DataAwsVpcsFilterList",
+		"@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsFilterList",
 		reflect.TypeOf((*DataAwsVpcsFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcs.DataAwsVpcsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsFilterOutputReference",
 		reflect.TypeOf((*DataAwsVpcsFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcs.DataAwsVpcsTimeouts",
+		"@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsTimeouts",
 		reflect.TypeOf((*DataAwsVpcsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcs.DataAwsVpcsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcs.DataAwsVpcsTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsVpcsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

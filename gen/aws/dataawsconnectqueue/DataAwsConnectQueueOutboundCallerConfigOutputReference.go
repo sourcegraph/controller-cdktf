@@ -189,7 +189,7 @@ func NewDataAwsConnectQueueOutboundCallerConfigOutputReference(terraformResource
 	j := jsiiProxy_DataAwsConnectQueueOutboundCallerConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsConnectQueueOutboundCallerConfigOutputReference_Override(d DataAw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

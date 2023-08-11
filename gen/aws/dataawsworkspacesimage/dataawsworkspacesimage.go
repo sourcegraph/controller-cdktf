@@ -346,7 +346,7 @@ func NewDataAwsWorkspacesImage(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsWorkspacesImage{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
+		"@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewDataAwsWorkspacesImage_Override(d DataAwsWorkspacesImage, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
+		"@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -459,7 +459,7 @@ func DataAwsWorkspacesImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
+		"@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsWorkspacesImage_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
+		"@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func DataAwsWorkspacesImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
+		"@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsWorkspacesImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
+		"@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
 		"tfResourceType",
 		&returns,
 	)

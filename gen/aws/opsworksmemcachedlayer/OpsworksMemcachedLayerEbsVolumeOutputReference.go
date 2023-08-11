@@ -321,7 +321,7 @@ func NewOpsworksMemcachedLayerEbsVolumeOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_OpsworksMemcachedLayerEbsVolumeOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewOpsworksMemcachedLayerEbsVolumeOutputReference_Override(o OpsworksMemcac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

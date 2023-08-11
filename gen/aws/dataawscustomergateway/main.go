@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGateway",
 		reflect.TypeOf((*DataAwsCustomerGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayConfig",
 		reflect.TypeOf((*DataAwsCustomerGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilter",
 		reflect.TypeOf((*DataAwsCustomerGatewayFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterList",
 		reflect.TypeOf((*DataAwsCustomerGatewayFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayFilterOutputReference",
 		reflect.TypeOf((*DataAwsCustomerGatewayFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,11 +135,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeouts",
 		reflect.TypeOf((*DataAwsCustomerGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsCustomerGateway.DataAwsCustomerGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsCustomerGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -228,7 +228,7 @@ func NewSecurityhubInsightFiltersNetworkDestinationPortOutputReference(terraform
 	j := jsiiProxy_SecurityhubInsightFiltersNetworkDestinationPortOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSecurityhubInsightFiltersNetworkDestinationPortOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkDestinationPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

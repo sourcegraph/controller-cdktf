@@ -228,7 +228,7 @@ func NewCeAnomalySubscriptionThresholdExpressionAndTagsOutputReference(terraform
 	j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCeAnomalySubscriptionThresholdExpressionAndTagsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

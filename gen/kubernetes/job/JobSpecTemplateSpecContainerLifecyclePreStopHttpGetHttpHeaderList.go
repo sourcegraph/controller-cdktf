@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList(terraf
 	j := jsiiProxy_JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

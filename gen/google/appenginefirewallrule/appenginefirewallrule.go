@@ -438,7 +438,7 @@ func NewAppEngineFirewallRule(scope constructs.Construct, id *string, config *Ap
 	j := jsiiProxy_AppEngineFirewallRule{}
 
 	_jsii_.Create(
-		"google.appEngineFirewallRule.AppEngineFirewallRule",
+		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewAppEngineFirewallRule_Override(a AppEngineFirewallRule, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFirewallRule.AppEngineFirewallRule",
+		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRule",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -617,7 +617,7 @@ func AppEngineFirewallRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineFirewallRule.AppEngineFirewallRule",
+		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func AppEngineFirewallRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineFirewallRule.AppEngineFirewallRule",
+		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func AppEngineFirewallRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineFirewallRule.AppEngineFirewallRule",
+		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func AppEngineFirewallRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.appEngineFirewallRule.AppEngineFirewallRule",
+		"@cdktf/provider-google.appEngineFirewallRule.AppEngineFirewallRule",
 		"tfResourceType",
 		&returns,
 	)

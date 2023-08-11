@@ -413,7 +413,7 @@ func NewServiceDiscoveryHttpNamespace(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ServiceDiscoveryHttpNamespace{}
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewServiceDiscoveryHttpNamespace_Override(s ServiceDiscoveryHttpNamespace, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -581,7 +581,7 @@ func ServiceDiscoveryHttpNamespace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func ServiceDiscoveryHttpNamespace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func ServiceDiscoveryHttpNamespace_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func ServiceDiscoveryHttpNamespace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
+		"@cdktf/provider-aws.serviceDiscoveryHttpNamespace.ServiceDiscoveryHttpNamespace",
 		"tfResourceType",
 		&returns,
 	)

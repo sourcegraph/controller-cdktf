@@ -179,7 +179,7 @@ func NewCognitoUserPoolSoftwareTokenMfaConfigurationOutputReference(terraformRes
 	j := jsiiProxy_CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCognitoUserPoolSoftwareTokenMfaConfigurationOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

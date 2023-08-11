@@ -345,7 +345,7 @@ func NewEksIdentityProviderConfigOidcOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_EksIdentityProviderConfigOidcOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidcOutputReference",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -357,7 +357,7 @@ func NewEksIdentityProviderConfigOidcOutputReference_Override(e EksIdentityProvi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidcOutputReference",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -180,7 +180,7 @@ func NewDataAwsAvailabilityZoneTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsAvailabilityZoneTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsAvailabilityZoneTimeoutsOutputReference_Override(d DataAwsAvailab
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

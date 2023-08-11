@@ -116,7 +116,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcp
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

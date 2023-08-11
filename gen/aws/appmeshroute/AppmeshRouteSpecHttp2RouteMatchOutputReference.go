@@ -275,7 +275,7 @@ func NewAppmeshRouteSpecHttp2RouteMatchOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewAppmeshRouteSpecHttp2RouteMatchOutputReference_Override(a AppmeshRouteSp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

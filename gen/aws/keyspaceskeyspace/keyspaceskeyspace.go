@@ -402,7 +402,7 @@ func NewKeyspacesKeyspace(scope constructs.Construct, id *string, config *Keyspa
 	j := jsiiProxy_KeyspacesKeyspace{}
 
 	_jsii_.Create(
-		"aws.keyspacesKeyspace.KeyspacesKeyspace",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewKeyspacesKeyspace_Override(k KeyspacesKeyspace, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesKeyspace.KeyspacesKeyspace",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -559,7 +559,7 @@ func KeyspacesKeyspace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.keyspacesKeyspace.KeyspacesKeyspace",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func KeyspacesKeyspace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.keyspacesKeyspace.KeyspacesKeyspace",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func KeyspacesKeyspace_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.keyspacesKeyspace.KeyspacesKeyspace",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func KeyspacesKeyspace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.keyspacesKeyspace.KeyspacesKeyspace",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		"tfResourceType",
 		&returns,
 	)

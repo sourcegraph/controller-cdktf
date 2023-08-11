@@ -203,7 +203,7 @@ func NewGoogleContainerClusterNetworkPolicyOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleContainerClusterNetworkPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNetworkPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNetworkPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleContainerClusterNetworkPolicyOutputReference_Override(g GoogleCont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNetworkPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNetworkPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

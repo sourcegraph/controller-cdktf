@@ -448,7 +448,7 @@ func NewGoogleCloudRunV2JobIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleCloudRunV2JobIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudRunV2JobIamBinding_Override(g GoogleCloudRunV2JobIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudRunV2JobIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudRunV2JobIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudRunV2JobIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudRunV2JobIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
 		"tfResourceType",
 		&returns,
 	)

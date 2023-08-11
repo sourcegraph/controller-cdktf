@@ -204,7 +204,7 @@ func NewApiGatewayUsagePlanThrottleSettingsOutputReference(terraformResource cdk
 	j := jsiiProxy_ApiGatewayUsagePlanThrottleSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApiGatewayUsagePlanThrottleSettingsOutputReference_Override(a ApiGateway
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanThrottleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

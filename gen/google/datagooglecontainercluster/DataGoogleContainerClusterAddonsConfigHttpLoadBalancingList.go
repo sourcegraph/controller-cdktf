@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterAddonsConfigHttpLoadBalancingList(terraformRes
 	j := jsiiProxy_DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterAddonsConfigHttpLoadBalancingList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

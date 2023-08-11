@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecVolumeProjectedList(terraformResource cdktf.II
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecVolumeProjectedList_Override(d DeploymentSpecT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

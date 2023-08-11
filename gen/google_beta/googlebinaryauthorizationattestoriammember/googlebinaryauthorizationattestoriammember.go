@@ -424,7 +424,7 @@ func NewGoogleBinaryAuthorizationAttestorIamMember(scope constructs.Construct, i
 	j := jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleBinaryAuthorizationAttestorIamMember_Override(g GoogleBinaryAuthor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleBinaryAuthorizationAttestorIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamMember.GoogleBinaryAuthorizationAttestorIamMember",
 		"tfResourceType",
 		&returns,
 	)

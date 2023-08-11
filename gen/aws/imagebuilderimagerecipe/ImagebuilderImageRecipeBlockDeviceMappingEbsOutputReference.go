@@ -348,7 +348,7 @@ func NewImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference(terraformRes
 	j := jsiiProxy_ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference_Override(i I
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

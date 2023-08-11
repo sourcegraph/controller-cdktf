@@ -116,7 +116,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideList(terraformResource cdktf.IInterp
 	j := jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideList{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideList",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideList_Override(e Ec2FleetLaunchTempla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideList",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

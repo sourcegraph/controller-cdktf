@@ -204,7 +204,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOut
 	j := jsiiProxy_StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

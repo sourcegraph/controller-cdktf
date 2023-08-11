@@ -200,7 +200,7 @@ func NewDataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigO
 	j := jsiiProxy_DataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList(terraformRes
 	j := jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList{}
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

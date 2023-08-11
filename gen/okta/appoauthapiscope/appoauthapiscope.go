@@ -365,7 +365,7 @@ func NewAppOauthApiScope(scope constructs.Construct, id *string, config *AppOaut
 	j := jsiiProxy_AppOauthApiScope{}
 
 	_jsii_.Create(
-		"okta.appOauthApiScope.AppOauthApiScope",
+		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewAppOauthApiScope_Override(a AppOauthApiScope, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appOauthApiScope.AppOauthApiScope",
+		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -522,7 +522,7 @@ func AppOauthApiScope_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appOauthApiScope.AppOauthApiScope",
+		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func AppOauthApiScope_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appOauthApiScope.AppOauthApiScope",
+		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func AppOauthApiScope_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appOauthApiScope.AppOauthApiScope",
+		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func AppOauthApiScope_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appOauthApiScope.AppOauthApiScope",
+		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		"tfResourceType",
 		&returns,
 	)

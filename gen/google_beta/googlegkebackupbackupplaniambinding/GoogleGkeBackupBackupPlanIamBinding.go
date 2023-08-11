@@ -448,7 +448,7 @@ func NewGoogleGkeBackupBackupPlanIamBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleGkeBackupBackupPlanIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleGkeBackupBackupPlanIamBinding_Override(g GoogleGkeBackupBackupPlan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleGkeBackupBackupPlanIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleGkeBackupBackupPlanIamBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleGkeBackupBackupPlanIamBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleGkeBackupBackupPlanIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamBinding.GoogleGkeBackupBackupPlanIamBinding",
 		"tfResourceType",
 		&returns,
 	)

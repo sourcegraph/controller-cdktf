@@ -116,7 +116,7 @@ func NewDeploymentV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList(t
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

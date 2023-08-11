@@ -203,7 +203,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputRefere
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

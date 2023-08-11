@@ -337,7 +337,7 @@ func NewDataGoogleDnsManagedZoneIamPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_DataGoogleDnsManagedZoneIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleDnsManagedZoneIamPolicy_Override(d DataGoogleDnsManagedZoneIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleDnsManagedZoneIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleDnsManagedZoneIamPolicy_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleDnsManagedZoneIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleDnsManagedZoneIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDnsManagedZoneIamPolicy.DataGoogleDnsManagedZoneIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsCloudfrontOriginRequestPolicyQueryStringsConfigList(terraformReso
 	j := jsiiProxy_DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontOriginRequestPolicy.DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigList",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginRequestPolicy.DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudfrontOriginRequestPolicyQueryStringsConfigList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontOriginRequestPolicy.DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigList",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginRequestPolicy.DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

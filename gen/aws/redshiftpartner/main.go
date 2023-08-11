@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftPartner.RedshiftPartner",
+		"@cdktf/provider-aws.redshiftPartner.RedshiftPartner",
 		reflect.TypeOf((*RedshiftPartner)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftPartner.RedshiftPartnerConfig",
+		"@cdktf/provider-aws.redshiftPartner.RedshiftPartnerConfig",
 		reflect.TypeOf((*RedshiftPartnerConfig)(nil)).Elem(),
 	)
 }

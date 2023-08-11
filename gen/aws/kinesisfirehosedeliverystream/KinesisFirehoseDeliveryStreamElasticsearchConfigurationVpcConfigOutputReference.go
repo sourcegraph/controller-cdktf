@@ -236,7 +236,7 @@ func NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputRe
 	j := jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -248,7 +248,7 @@ func NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

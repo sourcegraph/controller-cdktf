@@ -116,7 +116,7 @@ func NewAccessContextManagerAccessLevelsAccessLevelsList(terraformResource cdktf
 	j := jsiiProxy_AccessContextManagerAccessLevelsAccessLevelsList{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevels.AccessContextManagerAccessLevelsAccessLevelsList",
+		"@cdktf/provider-google.accessContextManagerAccessLevels.AccessContextManagerAccessLevelsAccessLevelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessContextManagerAccessLevelsAccessLevelsList_Override(a AccessContex
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevels.AccessContextManagerAccessLevelsAccessLevelsList",
+		"@cdktf/provider-google.accessContextManagerAccessLevels.AccessContextManagerAccessLevelsAccessLevelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

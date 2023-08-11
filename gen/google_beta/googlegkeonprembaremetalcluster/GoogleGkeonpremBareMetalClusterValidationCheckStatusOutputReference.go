@@ -167,7 +167,7 @@ func NewGoogleGkeonpremBareMetalClusterValidationCheckStatusOutputReference(terr
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterValidationCheckStatusOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterValidationCheckStatusOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterValidationCheckStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewGoogleGkeonpremBareMetalClusterValidationCheckStatusOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterValidationCheckStatusOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterValidationCheckStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

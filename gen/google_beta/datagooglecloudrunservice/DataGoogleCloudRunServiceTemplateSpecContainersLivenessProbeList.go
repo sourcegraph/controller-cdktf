@@ -104,7 +104,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList(terrafo
 	j := jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

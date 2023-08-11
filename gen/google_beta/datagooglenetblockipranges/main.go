@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRanges",
 		reflect.TypeOf((*DataGoogleNetblockIpRanges)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRangesConfig",
+		"@cdktf/provider-google-beta.dataGoogleNetblockIpRanges.DataGoogleNetblockIpRangesConfig",
 		reflect.TypeOf((*DataGoogleNetblockIpRangesConfig)(nil)).Elem(),
 	)
 }

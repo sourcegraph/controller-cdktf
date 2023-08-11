@@ -179,7 +179,7 @@ func NewGoogleBigqueryDataTransferConfigEmailPreferencesOutputReference(terrafor
 	j := jsiiProxy_GoogleBigqueryDataTransferConfigEmailPreferencesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigEmailPreferencesOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigEmailPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleBigqueryDataTransferConfigEmailPreferencesOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigEmailPreferencesOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigEmailPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

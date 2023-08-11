@@ -116,7 +116,7 @@ func NewSagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositor
 	j := jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryList{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -461,7 +461,7 @@ func NewIamUser(scope constructs.Construct, id *string, config *IamUserConfig) I
 	j := jsiiProxy_IamUser{}
 
 	_jsii_.Create(
-		"aws.iamUser.IamUser",
+		"@cdktf/provider-aws.iamUser.IamUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewIamUser_Override(i IamUser, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamUser.IamUser",
+		"@cdktf/provider-aws.iamUser.IamUser",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -651,7 +651,7 @@ func IamUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUser.IamUser",
+		"@cdktf/provider-aws.iamUser.IamUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func IamUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUser.IamUser",
+		"@cdktf/provider-aws.iamUser.IamUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func IamUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUser.IamUser",
+		"@cdktf/provider-aws.iamUser.IamUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func IamUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamUser.IamUser",
+		"@cdktf/provider-aws.iamUser.IamUser",
 		"tfResourceType",
 		&returns,
 	)

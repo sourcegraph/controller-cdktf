@@ -180,7 +180,7 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBuc
 	j := jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsOutputReference",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBuc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsOutputReference",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelAdvancedDataProtectionMetricsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

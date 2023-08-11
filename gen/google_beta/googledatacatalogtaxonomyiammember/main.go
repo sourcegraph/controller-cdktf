@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMember",
 		reflect.TypeOf((*GoogleDataCatalogTaxonomyIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMemberCondition",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMemberCondition",
 		reflect.TypeOf((*GoogleDataCatalogTaxonomyIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleDataCatalogTaxonomyIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMemberConfig",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamMember.GoogleDataCatalogTaxonomyIamMemberConfig",
 		reflect.TypeOf((*GoogleDataCatalogTaxonomyIamMemberConfig)(nil)).Elem(),
 	)
 }

@@ -116,7 +116,7 @@ func NewRedshiftserverlessWorkgroupConfigParameterList(terraformResource cdktf.I
 	j := jsiiProxy_RedshiftserverlessWorkgroupConfigParameterList{}
 
 	_jsii_.Create(
-		"aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupConfigParameterList",
+		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupConfigParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRedshiftserverlessWorkgroupConfigParameterList_Override(r Redshiftserver
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupConfigParameterList",
+		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupConfigParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsRdsCluster.DataAwsRdsCluster",
+		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsCluster",
 		reflect.TypeOf((*DataAwsRdsCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,7 +86,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRdsCluster.DataAwsRdsClusterConfig",
+		"@cdktf/provider-aws.dataAwsRdsCluster.DataAwsRdsClusterConfig",
 		reflect.TypeOf((*DataAwsRdsClusterConfig)(nil)).Elem(),
 	)
 }

@@ -228,7 +228,7 @@ func NewComputeBackendBucketTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputeBackendBucketTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendBucket.ComputeBackendBucketTimeoutsOutputReference",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeBackendBucketTimeoutsOutputReference_Override(c ComputeBackendBuc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendBucket.ComputeBackendBucketTimeoutsOutputReference",
+		"@cdktf/provider-google.computeBackendBucket.ComputeBackendBucketTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

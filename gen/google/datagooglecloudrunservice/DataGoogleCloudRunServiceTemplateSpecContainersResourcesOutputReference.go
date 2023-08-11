@@ -178,7 +178,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference(
 	j := jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -506,7 +506,7 @@ func NewComputeSslCertificate(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ComputeSslCertificate{}
 
 	_jsii_.Create(
-		"google.computeSslCertificate.ComputeSslCertificate",
+		"@cdktf/provider-google.computeSslCertificate.ComputeSslCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -519,7 +519,7 @@ func NewComputeSslCertificate_Override(c ComputeSslCertificate, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSslCertificate.ComputeSslCertificate",
+		"@cdktf/provider-google.computeSslCertificate.ComputeSslCertificate",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -696,7 +696,7 @@ func ComputeSslCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSslCertificate.ComputeSslCertificate",
+		"@cdktf/provider-google.computeSslCertificate.ComputeSslCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func ComputeSslCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSslCertificate.ComputeSslCertificate",
+		"@cdktf/provider-google.computeSslCertificate.ComputeSslCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func ComputeSslCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSslCertificate.ComputeSslCertificate",
+		"@cdktf/provider-google.computeSslCertificate.ComputeSslCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func ComputeSslCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeSslCertificate.ComputeSslCertificate",
+		"@cdktf/provider-google.computeSslCertificate.ComputeSslCertificate",
 		"tfResourceType",
 		&returns,
 	)

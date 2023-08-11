@@ -530,7 +530,7 @@ func NewCloudAssetFolderFeed(scope constructs.Construct, id *string, config *Clo
 	j := jsiiProxy_CloudAssetFolderFeed{}
 
 	_jsii_.Create(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeed",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeed",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -543,7 +543,7 @@ func NewCloudAssetFolderFeed_Override(c CloudAssetFolderFeed, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeed",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeed",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -720,7 +720,7 @@ func CloudAssetFolderFeed_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeed",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeed",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func CloudAssetFolderFeed_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeed",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeed",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func CloudAssetFolderFeed_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeed",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeed",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func CloudAssetFolderFeed_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeed",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeed",
 		"tfResourceType",
 		&returns,
 	)

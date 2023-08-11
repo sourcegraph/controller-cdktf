@@ -228,7 +228,7 @@ func NewGoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference(terrafor
 	j := jsiiProxy_GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

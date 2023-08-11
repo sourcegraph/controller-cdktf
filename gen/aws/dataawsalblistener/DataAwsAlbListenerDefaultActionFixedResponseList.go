@@ -104,7 +104,7 @@ func NewDataAwsAlbListenerDefaultActionFixedResponseList(terraformResource cdktf
 	j := jsiiProxy_DataAwsAlbListenerDefaultActionFixedResponseList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionFixedResponseList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionFixedResponseList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAlbListenerDefaultActionFixedResponseList_Override(d DataAwsAlbLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionFixedResponseList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionFixedResponseList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

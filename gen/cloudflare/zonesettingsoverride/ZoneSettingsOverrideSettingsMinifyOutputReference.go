@@ -225,7 +225,7 @@ func NewZoneSettingsOverrideSettingsMinifyOutputReference(terraformResource cdkt
 	j := jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewZoneSettingsOverrideSettingsMinifyOutputReference_Override(z ZoneSetting
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		z,
 	)

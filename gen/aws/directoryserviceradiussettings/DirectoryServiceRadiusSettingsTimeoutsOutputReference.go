@@ -204,7 +204,7 @@ func NewDirectoryServiceRadiusSettingsTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_DirectoryServiceRadiusSettingsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeoutsOutputReference",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDirectoryServiceRadiusSettingsTimeoutsOutputReference_Override(d Directo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeoutsOutputReference",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

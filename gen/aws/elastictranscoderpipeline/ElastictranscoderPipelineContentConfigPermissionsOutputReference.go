@@ -228,7 +228,7 @@ func NewElastictranscoderPipelineContentConfigPermissionsOutputReference(terrafo
 	j := jsiiProxy_ElastictranscoderPipelineContentConfigPermissionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewElastictranscoderPipelineContentConfigPermissionsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineContentConfigPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

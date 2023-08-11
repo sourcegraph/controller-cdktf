@@ -324,7 +324,7 @@ func NewOpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference(terra
 	j := jsiiProxy_OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewOpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

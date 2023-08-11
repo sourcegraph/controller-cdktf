@@ -226,7 +226,7 @@ func NewAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference(terrafo
 	j := jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

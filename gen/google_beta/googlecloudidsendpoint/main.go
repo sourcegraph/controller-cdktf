@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
 		reflect.TypeOf((*GoogleCloudIdsEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointConfig",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointConfig",
 		reflect.TypeOf((*GoogleCloudIdsEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeouts",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeouts",
 		reflect.TypeOf((*GoogleCloudIdsEndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpointTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleCloudIdsEndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

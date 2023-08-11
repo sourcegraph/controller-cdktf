@@ -389,7 +389,7 @@ func NewEc2TransitGatewayMulticastDomainAssociation(scope constructs.Construct, 
 	j := jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewEc2TransitGatewayMulticastDomainAssociation_Override(e Ec2TransitGateway
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -546,7 +546,7 @@ func Ec2TransitGatewayMulticastDomainAssociation_IsConstruct(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func Ec2TransitGatewayMulticastDomainAssociation_IsTerraformElement(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func Ec2TransitGatewayMulticastDomainAssociation_IsTerraformResource(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func Ec2TransitGatewayMulticastDomainAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociation",
 		"tfResourceType",
 		&returns,
 	)

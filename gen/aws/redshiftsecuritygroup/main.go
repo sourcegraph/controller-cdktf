@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroup",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		reflect.TypeOf((*RedshiftSecurityGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroupConfig",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupConfig",
 		reflect.TypeOf((*RedshiftSecurityGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroupIngress",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngress",
 		reflect.TypeOf((*RedshiftSecurityGroupIngress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressList",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressList",
 		reflect.TypeOf((*RedshiftSecurityGroupIngressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroupIngressOutputReference",
 		reflect.TypeOf((*RedshiftSecurityGroupIngressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},

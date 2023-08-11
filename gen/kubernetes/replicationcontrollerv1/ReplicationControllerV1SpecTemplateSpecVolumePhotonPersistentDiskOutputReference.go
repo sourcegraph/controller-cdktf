@@ -203,7 +203,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputR
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

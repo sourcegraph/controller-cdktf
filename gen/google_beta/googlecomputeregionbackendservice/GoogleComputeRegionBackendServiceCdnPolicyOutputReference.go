@@ -372,7 +372,7 @@ func NewGoogleComputeRegionBackendServiceCdnPolicyOutputReference(terraformResou
 	j := jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCdnPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCdnPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewGoogleComputeRegionBackendServiceCdnPolicyOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCdnPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCdnPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

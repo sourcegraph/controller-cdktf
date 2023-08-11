@@ -505,7 +505,7 @@ func NewDataAwsLakeformationPermissions(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsLakeformationPermissions{}
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -518,7 +518,7 @@ func NewDataAwsLakeformationPermissions_Override(d DataAwsLakeformationPermissio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -640,7 +640,7 @@ func DataAwsLakeformationPermissions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func DataAwsLakeformationPermissions_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataAwsLakeformationPermissions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func DataAwsLakeformationPermissions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissions",
 		"tfResourceType",
 		&returns,
 	)

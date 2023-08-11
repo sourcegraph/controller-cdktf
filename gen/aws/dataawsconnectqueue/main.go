@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsConnectQueue.DataAwsConnectQueue",
+		"@cdktf/provider-aws.dataAwsConnectQueue.DataAwsConnectQueue",
 		reflect.TypeOf((*DataAwsConnectQueue)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsConnectQueue.DataAwsConnectQueueConfig",
+		"@cdktf/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueConfig",
 		reflect.TypeOf((*DataAwsConnectQueueConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfig",
+		"@cdktf/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfig",
 		reflect.TypeOf((*DataAwsConnectQueueOutboundCallerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigList",
+		"@cdktf/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigList",
 		reflect.TypeOf((*DataAwsConnectQueueOutboundCallerConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectQueue.DataAwsConnectQueueOutboundCallerConfigOutputReference",
 		reflect.TypeOf((*DataAwsConnectQueueOutboundCallerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

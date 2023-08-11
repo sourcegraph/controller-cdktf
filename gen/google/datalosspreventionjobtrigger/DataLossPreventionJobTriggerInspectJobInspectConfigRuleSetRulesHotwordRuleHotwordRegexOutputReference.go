@@ -204,7 +204,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRu
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

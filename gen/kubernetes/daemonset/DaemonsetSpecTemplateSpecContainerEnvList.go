@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecContainerEnvList(terraformResource cdktf.IInter
 	j := jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecContainerEnvList_Override(d DaemonsetSpecTempla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

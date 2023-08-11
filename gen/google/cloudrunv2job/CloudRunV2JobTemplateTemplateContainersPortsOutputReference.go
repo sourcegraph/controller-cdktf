@@ -204,7 +204,7 @@ func NewCloudRunV2JobTemplateTemplateContainersPortsOutputReference(terraformRes
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateContainersPortsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersPortsOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersPortsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudRunV2JobTemplateTemplateContainersPortsOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersPortsOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersPortsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

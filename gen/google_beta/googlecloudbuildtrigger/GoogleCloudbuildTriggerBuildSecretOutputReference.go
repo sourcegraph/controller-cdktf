@@ -203,7 +203,7 @@ func NewGoogleCloudbuildTriggerBuildSecretOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleCloudbuildTriggerBuildSecretOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildSecretOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleCloudbuildTriggerBuildSecretOutputReference_Override(g GoogleCloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildSecretOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

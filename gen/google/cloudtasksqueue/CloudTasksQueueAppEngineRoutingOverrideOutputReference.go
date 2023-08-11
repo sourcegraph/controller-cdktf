@@ -239,7 +239,7 @@ func NewCloudTasksQueueAppEngineRoutingOverrideOutputReference(terraformResource
 	j := jsiiProxy_CloudTasksQueueAppEngineRoutingOverrideOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverrideOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverrideOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewCloudTasksQueueAppEngineRoutingOverrideOutputReference_Override(c CloudT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverrideOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueAppEngineRoutingOverrideOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

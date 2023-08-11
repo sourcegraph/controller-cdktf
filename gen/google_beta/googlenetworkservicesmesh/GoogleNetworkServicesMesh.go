@@ -472,7 +472,7 @@ func NewGoogleNetworkServicesMesh(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleNetworkServicesMesh{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
+		"@cdktf/provider-google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewGoogleNetworkServicesMesh_Override(g GoogleNetworkServicesMesh, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
+		"@cdktf/provider-google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -651,7 +651,7 @@ func GoogleNetworkServicesMesh_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
+		"@cdktf/provider-google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func GoogleNetworkServicesMesh_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
+		"@cdktf/provider-google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func GoogleNetworkServicesMesh_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
+		"@cdktf/provider-google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func GoogleNetworkServicesMesh_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
+		"@cdktf/provider-google-beta.googleNetworkServicesMesh.GoogleNetworkServicesMesh",
 		"tfResourceType",
 		&returns,
 	)

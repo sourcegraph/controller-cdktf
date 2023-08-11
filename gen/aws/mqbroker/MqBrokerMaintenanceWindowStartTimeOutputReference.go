@@ -225,7 +225,7 @@ func NewMqBrokerMaintenanceWindowStartTimeOutputReference(terraformResource cdkt
 	j := jsiiProxy_MqBrokerMaintenanceWindowStartTimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewMqBrokerMaintenanceWindowStartTimeOutputReference_Override(m MqBrokerMai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerMaintenanceWindowStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

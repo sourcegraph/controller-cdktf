@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevel",
 		reflect.TypeOf((*AccessContextManagerAccessLevel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,23 +76,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasic",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasic",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasic)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditions",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditions",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicy",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicy",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -113,7 +113,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -153,7 +153,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedDeviceManagementLevels", GoGetter: "AllowedDeviceManagementLevels"},
@@ -204,7 +204,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsList",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsList",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -225,7 +225,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasicConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -276,7 +276,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicOutputReference",
 		reflect.TypeOf((*AccessContextManagerAccessLevelBasicOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "combiningFunction", GoGetter: "CombiningFunction"},
@@ -314,19 +314,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelConfig",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelConfig",
 		reflect.TypeOf((*AccessContextManagerAccessLevelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustom",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustom",
 		reflect.TypeOf((*AccessContextManagerAccessLevelCustom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExpr",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExpr",
 		reflect.TypeOf((*AccessContextManagerAccessLevelCustomExpr)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExprOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomExprOutputReference",
 		reflect.TypeOf((*AccessContextManagerAccessLevelCustomExprOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -369,7 +369,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelCustomOutputReference",
 		reflect.TypeOf((*AccessContextManagerAccessLevelCustomOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -404,11 +404,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelTimeouts",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelTimeouts",
 		reflect.TypeOf((*AccessContextManagerAccessLevelTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelTimeoutsOutputReference",
 		reflect.TypeOf((*AccessContextManagerAccessLevelTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

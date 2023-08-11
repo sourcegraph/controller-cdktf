@@ -116,7 +116,7 @@ func NewFsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList(terraf
 	j := jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

@@ -350,7 +350,7 @@ func NewDataGoogleCloudAssetResourcesSearchAll(scope constructs.Construct, id *s
 	j := jsiiProxy_DataGoogleCloudAssetResourcesSearchAll{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -363,7 +363,7 @@ func NewDataGoogleCloudAssetResourcesSearchAll_Override(d DataGoogleCloudAssetRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -485,7 +485,7 @@ func DataGoogleCloudAssetResourcesSearchAll_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func DataGoogleCloudAssetResourcesSearchAll_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataGoogleCloudAssetResourcesSearchAll_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataGoogleCloudAssetResourcesSearchAll_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		"tfResourceType",
 		&returns,
 	)

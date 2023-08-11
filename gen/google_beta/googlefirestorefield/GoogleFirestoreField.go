@@ -473,7 +473,7 @@ func NewGoogleFirestoreField(scope constructs.Construct, id *string, config *Goo
 	j := jsiiProxy_GoogleFirestoreField{}
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreField.GoogleFirestoreField",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreField",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewGoogleFirestoreField_Override(g GoogleFirestoreField, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreField.GoogleFirestoreField",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreField",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -641,7 +641,7 @@ func GoogleFirestoreField_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirestoreField.GoogleFirestoreField",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreField",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func GoogleFirestoreField_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirestoreField.GoogleFirestoreField",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreField",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GoogleFirestoreField_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirestoreField.GoogleFirestoreField",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreField",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func GoogleFirestoreField_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirestoreField.GoogleFirestoreField",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreField",
 		"tfResourceType",
 		&returns,
 	)

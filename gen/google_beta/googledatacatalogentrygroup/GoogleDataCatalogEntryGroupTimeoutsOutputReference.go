@@ -228,7 +228,7 @@ func NewGoogleDataCatalogEntryGroupTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleDataCatalogEntryGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroupTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDataCatalogEntryGroupTimeoutsOutputReference_Override(g GoogleData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroupTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogEntryGroup.GoogleDataCatalogEntryGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

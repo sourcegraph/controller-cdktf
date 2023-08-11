@@ -1295,7 +1295,7 @@ func NewS3ObjectCopy(scope constructs.Construct, id *string, config *S3ObjectCop
 	j := jsiiProxy_S3ObjectCopy{}
 
 	_jsii_.Create(
-		"aws.s3ObjectCopy.S3ObjectCopy",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1308,7 +1308,7 @@ func NewS3ObjectCopy_Override(s S3ObjectCopy, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ObjectCopy.S3ObjectCopy",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1837,7 +1837,7 @@ func S3ObjectCopy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ObjectCopy.S3ObjectCopy",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1856,7 +1856,7 @@ func S3ObjectCopy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ObjectCopy.S3ObjectCopy",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1875,7 +1875,7 @@ func S3ObjectCopy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ObjectCopy.S3ObjectCopy",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1888,7 +1888,7 @@ func S3ObjectCopy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3ObjectCopy.S3ObjectCopy",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		"tfResourceType",
 		&returns,
 	)

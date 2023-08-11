@@ -228,7 +228,7 @@ func NewGoogleContainerClusterNodeConfigTaintOutputReference(terraformResource c
 	j := jsiiProxy_GoogleContainerClusterNodeConfigTaintOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigTaintOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigTaintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleContainerClusterNodeConfigTaintOutputReference_Override(g GoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigTaintOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigTaintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

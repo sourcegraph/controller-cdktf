@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
 		reflect.TypeOf((*DataGoogleComputeRouterStatus)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutes",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutes",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouter",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouter",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesForRouter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterList",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesForRouterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,7 +139,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesList",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -206,7 +206,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusConfig",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusConfig",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusConfig)(nil)).Elem(),
 	)
 }

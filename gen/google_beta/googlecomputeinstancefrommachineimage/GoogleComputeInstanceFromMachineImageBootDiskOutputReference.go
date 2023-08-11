@@ -244,7 +244,7 @@ func NewGoogleComputeInstanceFromMachineImageBootDiskOutputReference(terraformRe
 	j := jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageBootDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageBootDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewGoogleComputeInstanceFromMachineImageBootDiskOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageBootDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageBootDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

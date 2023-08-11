@@ -204,7 +204,7 @@ func NewPinpointAppQuietTimeOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_PinpointAppQuietTimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.pinpointApp.PinpointAppQuietTimeOutputReference",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppQuietTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPinpointAppQuietTimeOutputReference_Override(p PinpointAppQuietTimeOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointApp.PinpointAppQuietTimeOutputReference",
+		"@cdktf/provider-aws.pinpointApp.PinpointAppQuietTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

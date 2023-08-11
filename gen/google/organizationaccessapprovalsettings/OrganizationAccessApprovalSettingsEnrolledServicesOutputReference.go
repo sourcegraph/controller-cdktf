@@ -203,7 +203,7 @@ func NewOrganizationAccessApprovalSettingsEnrolledServicesOutputReference(terraf
 	j := jsiiProxy_OrganizationAccessApprovalSettingsEnrolledServicesOutputReference{}
 
 	_jsii_.Create(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewOrganizationAccessApprovalSettingsEnrolledServicesOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

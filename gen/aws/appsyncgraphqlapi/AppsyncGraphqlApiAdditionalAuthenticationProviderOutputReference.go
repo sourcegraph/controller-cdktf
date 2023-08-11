@@ -251,7 +251,7 @@ func NewAppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference(terrafo
 	j := jsiiProxy_AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewAppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiAdditionalAuthenticationProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

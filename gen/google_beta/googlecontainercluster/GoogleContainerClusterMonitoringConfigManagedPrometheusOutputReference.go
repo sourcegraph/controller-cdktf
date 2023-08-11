@@ -179,7 +179,7 @@ func NewGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference(t
 	j := jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

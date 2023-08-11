@@ -319,7 +319,7 @@ func NewGuarddutyOrganizationAdminAccount(scope constructs.Construct, id *string
 	j := jsiiProxy_GuarddutyOrganizationAdminAccount{}
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
+		"@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewGuarddutyOrganizationAdminAccount_Override(g GuarddutyOrganizationAdminA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
+		"@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -454,7 +454,7 @@ func GuarddutyOrganizationAdminAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
+		"@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func GuarddutyOrganizationAdminAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
+		"@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func GuarddutyOrganizationAdminAccount_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
+		"@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func GuarddutyOrganizationAdminAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
+		"@cdktf/provider-aws.guarddutyOrganizationAdminAccount.GuarddutyOrganizationAdminAccount",
 		"tfResourceType",
 		&returns,
 	)

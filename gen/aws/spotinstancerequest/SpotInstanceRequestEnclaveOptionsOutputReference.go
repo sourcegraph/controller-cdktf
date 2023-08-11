@@ -180,7 +180,7 @@ func NewSpotInstanceRequestEnclaveOptionsOutputReference(terraformResource cdktf
 	j := jsiiProxy_SpotInstanceRequestEnclaveOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEnclaveOptionsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEnclaveOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSpotInstanceRequestEnclaveOptionsOutputReference_Override(s SpotInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEnclaveOptionsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEnclaveOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

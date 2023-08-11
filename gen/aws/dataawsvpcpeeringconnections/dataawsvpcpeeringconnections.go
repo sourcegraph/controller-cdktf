@@ -351,7 +351,7 @@ func NewDataAwsVpcPeeringConnections(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsVpcPeeringConnections{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataAwsVpcPeeringConnections_Override(d DataAwsVpcPeeringConnections, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -464,7 +464,7 @@ func DataAwsVpcPeeringConnections_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -483,7 +483,7 @@ func DataAwsVpcPeeringConnections_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsVpcPeeringConnections_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataAwsVpcPeeringConnections_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnections",
 		"tfResourceType",
 		&returns,
 	)

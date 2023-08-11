@@ -228,7 +228,7 @@ func NewComputePerInstanceConfigTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ComputePerInstanceConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputePerInstanceConfigTimeoutsOutputReference_Override(c ComputePerIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePerInstanceConfig.ComputePerInstanceConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

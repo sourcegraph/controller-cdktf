@@ -200,7 +200,7 @@ func NewDataGoogleCloudRunServiceStatusConditionsOutputReference(terraformResour
 	j := jsiiProxy_DataGoogleCloudRunServiceStatusConditionsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceStatusConditionsOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceStatusConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleCloudRunServiceStatusConditionsOutputReference_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceStatusConditionsOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceStatusConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

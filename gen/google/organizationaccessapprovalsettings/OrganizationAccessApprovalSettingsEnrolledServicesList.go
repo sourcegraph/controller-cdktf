@@ -116,7 +116,7 @@ func NewOrganizationAccessApprovalSettingsEnrolledServicesList(terraformResource
 	j := jsiiProxy_OrganizationAccessApprovalSettingsEnrolledServicesList{}
 
 	_jsii_.Create(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOrganizationAccessApprovalSettingsEnrolledServicesList_Override(o Organi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsEnrolledServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

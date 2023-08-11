@@ -204,7 +204,7 @@ func NewAppsyncDatasourceRelationalDatabaseConfigOutputReference(terraformResour
 	j := jsiiProxy_AppsyncDatasourceRelationalDatabaseConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppsyncDatasourceRelationalDatabaseConfigOutputReference_Override(a Apps
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceRelationalDatabaseConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

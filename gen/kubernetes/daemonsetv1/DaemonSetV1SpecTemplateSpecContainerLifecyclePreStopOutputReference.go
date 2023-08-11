@@ -228,7 +228,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference(terr
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

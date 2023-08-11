@@ -797,7 +797,7 @@ func NewUserSchema(scope constructs.Construct, id *string, config *UserSchemaCon
 	j := jsiiProxy_UserSchema{}
 
 	_jsii_.Create(
-		"okta.userSchema.UserSchema",
+		"@cdktf/provider-okta.userSchema.UserSchema",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -810,7 +810,7 @@ func NewUserSchema_Override(u UserSchema, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.userSchema.UserSchema",
+		"@cdktf/provider-okta.userSchema.UserSchema",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -1119,7 +1119,7 @@ func UserSchema_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.userSchema.UserSchema",
+		"@cdktf/provider-okta.userSchema.UserSchema",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1138,7 +1138,7 @@ func UserSchema_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.userSchema.UserSchema",
+		"@cdktf/provider-okta.userSchema.UserSchema",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1157,7 +1157,7 @@ func UserSchema_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.userSchema.UserSchema",
+		"@cdktf/provider-okta.userSchema.UserSchema",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1170,7 +1170,7 @@ func UserSchema_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.userSchema.UserSchema",
+		"@cdktf/provider-okta.userSchema.UserSchema",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecDnsConfigOptionList(terraformResource cdktf.II
 	j := jsiiProxy_DeploymentSpecTemplateSpecDnsConfigOptionList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecDnsConfigOptionList_Override(d DeploymentSpecT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

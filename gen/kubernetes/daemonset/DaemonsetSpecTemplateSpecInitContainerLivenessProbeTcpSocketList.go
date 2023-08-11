@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList(terrafo
 	j := jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerLivenessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

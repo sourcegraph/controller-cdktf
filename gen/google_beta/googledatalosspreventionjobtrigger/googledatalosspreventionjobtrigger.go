@@ -506,7 +506,7 @@ func NewGoogleDataLossPreventionJobTrigger(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleDataLossPreventionJobTrigger{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -519,7 +519,7 @@ func NewGoogleDataLossPreventionJobTrigger_Override(g GoogleDataLossPreventionJo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -674,7 +674,7 @@ func GoogleDataLossPreventionJobTrigger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func GoogleDataLossPreventionJobTrigger_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GoogleDataLossPreventionJobTrigger_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func GoogleDataLossPreventionJobTrigger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTrigger",
 		"tfResourceType",
 		&returns,
 	)

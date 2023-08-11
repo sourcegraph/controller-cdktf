@@ -180,7 +180,7 @@ func NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputRefere
 	j := jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

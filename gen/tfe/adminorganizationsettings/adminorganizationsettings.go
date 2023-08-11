@@ -427,7 +427,7 @@ func NewAdminOrganizationSettings(scope constructs.Construct, id *string, config
 	j := jsiiProxy_AdminOrganizationSettings{}
 
 	_jsii_.Create(
-		"tfe.adminOrganizationSettings.AdminOrganizationSettings",
+		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -440,7 +440,7 @@ func NewAdminOrganizationSettings_Override(a AdminOrganizationSettings, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.adminOrganizationSettings.AdminOrganizationSettings",
+		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -606,7 +606,7 @@ func AdminOrganizationSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.adminOrganizationSettings.AdminOrganizationSettings",
+		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +625,7 @@ func AdminOrganizationSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.adminOrganizationSettings.AdminOrganizationSettings",
+		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func AdminOrganizationSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.adminOrganizationSettings.AdminOrganizationSettings",
+		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func AdminOrganizationSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.adminOrganizationSettings.AdminOrganizationSettings",
+		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		"tfResourceType",
 		&returns,
 	)

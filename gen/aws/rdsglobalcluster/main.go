@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rdsGlobalCluster.RdsGlobalCluster",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalCluster",
 		reflect.TypeOf((*RdsGlobalCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,15 +86,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsGlobalCluster.RdsGlobalClusterConfig",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterConfig",
 		reflect.TypeOf((*RdsGlobalClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembers",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembers",
 		reflect.TypeOf((*RdsGlobalClusterGlobalClusterMembers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersList",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersList",
 		reflect.TypeOf((*RdsGlobalClusterGlobalClusterMembersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersOutputReference",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersOutputReference",
 		reflect.TypeOf((*RdsGlobalClusterGlobalClusterMembersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,11 +148,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsGlobalCluster.RdsGlobalClusterTimeouts",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterTimeouts",
 		reflect.TypeOf((*RdsGlobalClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsGlobalCluster.RdsGlobalClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterTimeoutsOutputReference",
 		reflect.TypeOf((*RdsGlobalClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

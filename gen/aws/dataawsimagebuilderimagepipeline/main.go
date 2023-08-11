@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipeline",
 		reflect.TypeOf((*DataAwsImagebuilderImagePipeline)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineConfig",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineConfig",
 		reflect.TypeOf((*DataAwsImagebuilderImagePipelineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineImageTestsConfiguration",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineImageTestsConfiguration",
 		reflect.TypeOf((*DataAwsImagebuilderImagePipelineImageTestsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineImageTestsConfigurationList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineImageTestsConfigurationList",
 		reflect.TypeOf((*DataAwsImagebuilderImagePipelineImageTestsConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsImagebuilderImagePipelineImageTestsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,11 +135,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineSchedule",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineSchedule",
 		reflect.TypeOf((*DataAwsImagebuilderImagePipelineSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleList",
 		reflect.TypeOf((*DataAwsImagebuilderImagePipelineScheduleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderImagePipeline.DataAwsImagebuilderImagePipelineScheduleOutputReference",
 		reflect.TypeOf((*DataAwsImagebuilderImagePipelineScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

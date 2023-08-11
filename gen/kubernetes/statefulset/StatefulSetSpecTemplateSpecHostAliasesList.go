@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecHostAliasesList(terraformResource cdktf.IInte
 	j := jsiiProxy_StatefulSetSpecTemplateSpecHostAliasesList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecHostAliasesList_Override(s StatefulSetSpecTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

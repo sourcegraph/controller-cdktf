@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.accessCaCertificate.AccessCaCertificate",
+		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate",
 		reflect.TypeOf((*AccessCaCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessCaCertificate.AccessCaCertificateConfig",
+		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificateConfig",
 		reflect.TypeOf((*AccessCaCertificateConfig)(nil)).Elem(),
 	)
 }

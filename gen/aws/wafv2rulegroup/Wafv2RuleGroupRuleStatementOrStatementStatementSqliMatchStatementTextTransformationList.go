@@ -116,7 +116,7 @@ func NewWafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementTextTra
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementTextTransformationList{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementTextTransformationList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementTextTransformationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementTextTra
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementTextTransformationList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementTextTransformationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

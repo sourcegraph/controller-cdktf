@@ -116,7 +116,7 @@ func NewGoogleIamAccessBoundaryPolicyRulesList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleIamAccessBoundaryPolicyRulesList{}
 
 	_jsii_.Create(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesList",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleIamAccessBoundaryPolicyRulesList_Override(g GoogleIamAccessBoundar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesList",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -203,7 +203,7 @@ func NewGooglePubsubLiteTopicRetentionConfigOutputReference(terraformResource cd
 	j := jsiiProxy_GooglePubsubLiteTopicRetentionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGooglePubsubLiteTopicRetentionConfigOutputReference_Override(g GooglePub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

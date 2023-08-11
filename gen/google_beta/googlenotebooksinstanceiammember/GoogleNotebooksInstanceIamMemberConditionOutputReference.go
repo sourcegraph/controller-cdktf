@@ -226,7 +226,7 @@ func NewGoogleNotebooksInstanceIamMemberConditionOutputReference(terraformResour
 	j := jsiiProxy_GoogleNotebooksInstanceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstanceIamMember.GoogleNotebooksInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamMember.GoogleNotebooksInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleNotebooksInstanceIamMemberConditionOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstanceIamMember.GoogleNotebooksInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstanceIamMember.GoogleNotebooksInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -179,7 +179,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesM
 	j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesMarketoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

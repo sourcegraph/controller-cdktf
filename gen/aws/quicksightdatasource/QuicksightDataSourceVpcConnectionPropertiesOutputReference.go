@@ -179,7 +179,7 @@ func NewQuicksightDataSourceVpcConnectionPropertiesOutputReference(terraformReso
 	j := jsiiProxy_QuicksightDataSourceVpcConnectionPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceVpcConnectionPropertiesOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewQuicksightDataSourceVpcConnectionPropertiesOutputReference_Override(q Qu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceVpcConnectionPropertiesOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceVpcConnectionPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

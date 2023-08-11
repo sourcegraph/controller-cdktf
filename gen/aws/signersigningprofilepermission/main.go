@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.signerSigningProfilePermission.SignerSigningProfilePermission",
+		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermission",
 		reflect.TypeOf((*SignerSigningProfilePermission)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.signerSigningProfilePermission.SignerSigningProfilePermissionConfig",
+		"@cdktf/provider-aws.signerSigningProfilePermission.SignerSigningProfilePermissionConfig",
 		reflect.TypeOf((*SignerSigningProfilePermissionConfig)(nil)).Elem(),
 	)
 }

@@ -244,7 +244,7 @@ func NewDataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference(terrafo
 	j := jsiiProxy_DataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewDataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLivenessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

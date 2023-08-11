@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.spotDatafeedSubscription.SpotDatafeedSubscription",
+		"@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscription",
 		reflect.TypeOf((*SpotDatafeedSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig",
+		"@cdktf/provider-aws.spotDatafeedSubscription.SpotDatafeedSubscriptionConfig",
 		reflect.TypeOf((*SpotDatafeedSubscriptionConfig)(nil)).Elem(),
 	)
 }

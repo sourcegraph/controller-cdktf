@@ -436,7 +436,7 @@ func NewLabels(scope constructs.Construct, id *string, config *LabelsConfig) Lab
 	j := jsiiProxy_Labels{}
 
 	_jsii_.Create(
-		"kubernetes.labels.Labels",
+		"@cdktf/provider-kubernetes.labels.Labels",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewLabels_Override(l Labels, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.labels.Labels",
+		"@cdktf/provider-kubernetes.labels.Labels",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -615,7 +615,7 @@ func Labels_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.labels.Labels",
+		"@cdktf/provider-kubernetes.labels.Labels",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func Labels_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.labels.Labels",
+		"@cdktf/provider-kubernetes.labels.Labels",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func Labels_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.labels.Labels",
+		"@cdktf/provider-kubernetes.labels.Labels",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func Labels_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.labels.Labels",
+		"@cdktf/provider-kubernetes.labels.Labels",
 		"tfResourceType",
 		&returns,
 	)

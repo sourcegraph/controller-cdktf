@@ -203,7 +203,7 @@ func NewGoogleOsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference
 	j := jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleOsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment.GoogleOsConfigOsPolicyAssignmentInstanceFilterInventoriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

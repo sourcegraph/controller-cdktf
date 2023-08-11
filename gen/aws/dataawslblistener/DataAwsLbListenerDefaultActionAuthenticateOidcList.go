@@ -104,7 +104,7 @@ func NewDataAwsLbListenerDefaultActionAuthenticateOidcList(terraformResource cdk
 	j := jsiiProxy_DataAwsLbListenerDefaultActionAuthenticateOidcList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcList",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLbListenerDefaultActionAuthenticateOidcList_Override(d DataAwsLbL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcList",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

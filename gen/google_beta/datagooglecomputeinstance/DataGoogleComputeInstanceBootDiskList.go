@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceBootDiskList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataGoogleComputeInstanceBootDiskList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceBootDiskList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceBootDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceBootDiskList_Override(d DataGoogleComputeInstan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceBootDiskList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceBootDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

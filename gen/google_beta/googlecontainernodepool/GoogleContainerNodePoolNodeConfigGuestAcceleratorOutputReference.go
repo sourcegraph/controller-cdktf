@@ -252,7 +252,7 @@ func NewGoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference(terrafo
 	j := jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference",
+		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference",
+		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

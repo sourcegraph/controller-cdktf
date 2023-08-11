@@ -228,7 +228,7 @@ func NewComputeRegionPerInstanceConfigTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_ComputeRegionPerInstanceConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeRegionPerInstanceConfigTimeoutsOutputReference_Override(c Compute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

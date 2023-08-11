@@ -203,7 +203,7 @@ func NewComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeou
 	j := jsiiProxy_ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

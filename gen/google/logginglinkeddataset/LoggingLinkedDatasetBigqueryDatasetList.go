@@ -116,7 +116,7 @@ func NewLoggingLinkedDatasetBigqueryDatasetList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList{}
 
 	_jsii_.Create(
-		"google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetList",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoggingLinkedDatasetBigqueryDatasetList_Override(l LoggingLinkedDatasetB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetList",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

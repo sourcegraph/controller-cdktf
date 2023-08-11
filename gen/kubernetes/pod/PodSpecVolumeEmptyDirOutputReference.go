@@ -204,7 +204,7 @@ func NewPodSpecVolumeEmptyDirOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_PodSpecVolumeEmptyDirOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodSpecVolumeEmptyDirOutputReference_Override(p PodSpecVolumeEmptyDirOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

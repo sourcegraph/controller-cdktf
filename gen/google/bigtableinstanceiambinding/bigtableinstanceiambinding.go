@@ -424,7 +424,7 @@ func NewBigtableInstanceIamBinding(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_BigtableInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewBigtableInstanceIamBinding_Override(b BigtableInstanceIamBinding, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -592,7 +592,7 @@ func BigtableInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func BigtableInstanceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func BigtableInstanceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func BigtableInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

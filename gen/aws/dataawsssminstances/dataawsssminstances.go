@@ -303,7 +303,7 @@ func NewDataAwsSsmInstances(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataAwsSsmInstances{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmInstances.DataAwsSsmInstances",
+		"@cdktf/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsSsmInstances_Override(d DataAwsSsmInstances, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmInstances.DataAwsSsmInstances",
+		"@cdktf/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -405,7 +405,7 @@ func DataAwsSsmInstances_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmInstances.DataAwsSsmInstances",
+		"@cdktf/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -424,7 +424,7 @@ func DataAwsSsmInstances_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmInstances.DataAwsSsmInstances",
+		"@cdktf/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsSsmInstances_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmInstances.DataAwsSsmInstances",
+		"@cdktf/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsSsmInstances_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSsmInstances.DataAwsSsmInstances",
+		"@cdktf/provider-aws.dataAwsSsmInstances.DataAwsSsmInstances",
 		"tfResourceType",
 		&returns,
 	)

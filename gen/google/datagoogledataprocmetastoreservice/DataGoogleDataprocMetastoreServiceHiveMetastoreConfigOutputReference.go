@@ -189,7 +189,7 @@ func NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference(ter
 	j := jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

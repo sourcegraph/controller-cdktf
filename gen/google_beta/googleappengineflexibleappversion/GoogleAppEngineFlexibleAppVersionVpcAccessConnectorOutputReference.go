@@ -179,7 +179,7 @@ func NewGoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference(terra
 	j := jsiiProxy_GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

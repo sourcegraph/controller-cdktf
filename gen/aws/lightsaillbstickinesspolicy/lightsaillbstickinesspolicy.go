@@ -365,7 +365,7 @@ func NewLightsailLbStickinessPolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_LightsailLbStickinessPolicy{}
 
 	_jsii_.Create(
-		"aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
+		"@cdktf/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewLightsailLbStickinessPolicy_Override(l LightsailLbStickinessPolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
+		"@cdktf/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -522,7 +522,7 @@ func LightsailLbStickinessPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
+		"@cdktf/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func LightsailLbStickinessPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
+		"@cdktf/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func LightsailLbStickinessPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
+		"@cdktf/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func LightsailLbStickinessPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
+		"@cdktf/provider-aws.lightsailLbStickinessPolicy.LightsailLbStickinessPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -379,7 +379,7 @@ func NewIdentityPlatformConfig(scope constructs.Construct, id *string, config *I
 	j := jsiiProxy_IdentityPlatformConfig{}
 
 	_jsii_.Create(
-		"google.identityPlatformConfig.IdentityPlatformConfig",
+		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewIdentityPlatformConfig_Override(i IdentityPlatformConfig, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformConfig.IdentityPlatformConfig",
+		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfig",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -525,7 +525,7 @@ func IdentityPlatformConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformConfig.IdentityPlatformConfig",
+		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func IdentityPlatformConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformConfig.IdentityPlatformConfig",
+		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func IdentityPlatformConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformConfig.IdentityPlatformConfig",
+		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func IdentityPlatformConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.identityPlatformConfig.IdentityPlatformConfig",
+		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfig",
 		"tfResourceType",
 		&returns,
 	)

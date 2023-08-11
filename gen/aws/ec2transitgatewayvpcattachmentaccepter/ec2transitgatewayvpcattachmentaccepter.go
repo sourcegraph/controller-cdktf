@@ -492,7 +492,7 @@ func NewEc2TransitGatewayVpcAttachmentAccepter(scope constructs.Construct, id *s
 	j := jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -505,7 +505,7 @@ func NewEc2TransitGatewayVpcAttachmentAccepter_Override(e Ec2TransitGatewayVpcAt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -671,7 +671,7 @@ func Ec2TransitGatewayVpcAttachmentAccepter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func Ec2TransitGatewayVpcAttachmentAccepter_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -709,7 +709,7 @@ func Ec2TransitGatewayVpcAttachmentAccepter_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func Ec2TransitGatewayVpcAttachmentAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachmentAccepter.Ec2TransitGatewayVpcAttachmentAccepter",
 		"tfResourceType",
 		&returns,
 	)

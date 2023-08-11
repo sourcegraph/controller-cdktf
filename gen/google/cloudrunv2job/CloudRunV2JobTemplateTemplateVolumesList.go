@@ -116,7 +116,7 @@ func NewCloudRunV2JobTemplateTemplateVolumesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateVolumesList{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesList",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudRunV2JobTemplateTemplateVolumesList_Override(c CloudRunV2JobTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesList",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

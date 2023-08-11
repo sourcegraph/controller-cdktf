@@ -179,7 +179,7 @@ func NewOsConfigPatchDeploymentOneTimeScheduleOutputReference(terraformResource 
 	j := jsiiProxy_OsConfigPatchDeploymentOneTimeScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeScheduleOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewOsConfigPatchDeploymentOneTimeScheduleOutputReference_Override(o OsConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeScheduleOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

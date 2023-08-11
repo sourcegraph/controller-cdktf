@@ -225,7 +225,7 @@ func NewQuicksightDataSourceParametersAuroraOutputReference(terraformResource cd
 	j := jsiiProxy_QuicksightDataSourceParametersAuroraOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersAuroraOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewQuicksightDataSourceParametersAuroraOutputReference_Override(q Quicksigh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersAuroraOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAuroraOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

@@ -400,7 +400,7 @@ func NewProjectIamBinding(scope constructs.Construct, id *string, config *Projec
 	j := jsiiProxy_ProjectIamBinding{}
 
 	_jsii_.Create(
-		"google.projectIamBinding.ProjectIamBinding",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewProjectIamBinding_Override(p ProjectIamBinding, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectIamBinding.ProjectIamBinding",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBinding",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -557,7 +557,7 @@ func ProjectIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectIamBinding.ProjectIamBinding",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func ProjectIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectIamBinding.ProjectIamBinding",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func ProjectIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectIamBinding.ProjectIamBinding",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func ProjectIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.projectIamBinding.ProjectIamBinding",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBinding",
 		"tfResourceType",
 		&returns,
 	)

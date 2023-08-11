@@ -104,7 +104,7 @@ func NewDataAwsInstanceEnclaveOptionsList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataAwsInstanceEnclaveOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsInstanceEnclaveOptionsList_Override(d DataAwsInstanceEnclaveOptio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEnclaveOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

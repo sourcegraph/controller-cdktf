@@ -228,7 +228,7 @@ func NewFlowLogDestinationOptionsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_FlowLogDestinationOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.flowLog.FlowLogDestinationOptionsOutputReference",
+		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFlowLogDestinationOptionsOutputReference_Override(f FlowLogDestinationOp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.flowLog.FlowLogDestinationOptionsOutputReference",
+		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

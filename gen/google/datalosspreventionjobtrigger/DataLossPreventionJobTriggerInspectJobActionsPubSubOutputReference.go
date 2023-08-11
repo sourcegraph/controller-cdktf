@@ -179,7 +179,7 @@ func NewDataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference(terra
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -178,7 +178,7 @@ func NewDocdbGlobalClusterGlobalClusterMembersOutputReference(terraformResource 
 	j := jsiiProxy_DocdbGlobalClusterGlobalClusterMembersOutputReference{}
 
 	_jsii_.Create(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersOutputReference",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDocdbGlobalClusterGlobalClusterMembersOutputReference_Override(d DocdbGl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersOutputReference",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

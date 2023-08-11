@@ -104,7 +104,7 @@ func NewDataAwsMemorydbClusterShardsList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataAwsMemorydbClusterShardsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsList",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMemorydbClusterShardsList_Override(d DataAwsMemorydbClusterShards
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsList",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterShardsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

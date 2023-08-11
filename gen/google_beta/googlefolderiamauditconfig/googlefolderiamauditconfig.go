@@ -376,7 +376,7 @@ func NewGoogleFolderIamAuditConfig(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleFolderIamAuditConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewGoogleFolderIamAuditConfig_Override(g GoogleFolderIamAuditConfig, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -522,7 +522,7 @@ func GoogleFolderIamAuditConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func GoogleFolderIamAuditConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func GoogleFolderIamAuditConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func GoogleFolderIamAuditConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
+		"@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig",
 		"tfResourceType",
 		&returns,
 	)

@@ -447,7 +447,7 @@ func NewSpannerDatabaseIamMember(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_SpannerDatabaseIamMember{}
 
 	_jsii_.Create(
-		"google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
+		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewSpannerDatabaseIamMember_Override(s SpannerDatabaseIamMember, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
+		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -626,7 +626,7 @@ func SpannerDatabaseIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
+		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func SpannerDatabaseIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
+		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func SpannerDatabaseIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
+		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func SpannerDatabaseIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
+		"@cdktf/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember",
 		"tfResourceType",
 		&returns,
 	)

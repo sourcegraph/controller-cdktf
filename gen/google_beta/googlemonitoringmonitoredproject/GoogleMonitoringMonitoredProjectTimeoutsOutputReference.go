@@ -204,7 +204,7 @@ func NewGoogleMonitoringMonitoredProjectTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_GoogleMonitoringMonitoredProjectTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProjectTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleMonitoringMonitoredProjectTimeoutsOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProjectTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

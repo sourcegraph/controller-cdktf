@@ -226,7 +226,7 @@ func NewMacie2ClassificationExportConfigurationS3DestinationOutputReference(terr
 	j := jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3DestinationOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3DestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewMacie2ClassificationExportConfigurationS3DestinationOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3DestinationOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationExportConfiguration.Macie2ClassificationExportConfigurationS3DestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

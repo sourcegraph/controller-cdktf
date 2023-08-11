@@ -438,7 +438,7 @@ func NewAccessIdentityProvider(scope constructs.Construct, id *string, config *A
 	j := jsiiProxy_AccessIdentityProvider{}
 
 	_jsii_.Create(
-		"cloudflare.accessIdentityProvider.AccessIdentityProvider",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewAccessIdentityProvider_Override(a AccessIdentityProvider, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessIdentityProvider.AccessIdentityProvider",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -606,7 +606,7 @@ func AccessIdentityProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessIdentityProvider.AccessIdentityProvider",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +625,7 @@ func AccessIdentityProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessIdentityProvider.AccessIdentityProvider",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func AccessIdentityProvider_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessIdentityProvider.AccessIdentityProvider",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func AccessIdentityProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessIdentityProvider.AccessIdentityProvider",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		"tfResourceType",
 		&returns,
 	)

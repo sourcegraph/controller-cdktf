@@ -116,7 +116,7 @@ func NewOpsworksInstanceRootBlockDeviceList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_OpsworksInstanceRootBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDeviceList",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksInstanceRootBlockDeviceList_Override(o OpsworksInstanceRootBlock
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceRootBlockDeviceList",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceRootBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

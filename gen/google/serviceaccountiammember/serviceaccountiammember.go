@@ -400,7 +400,7 @@ func NewServiceAccountIamMember(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ServiceAccountIamMember{}
 
 	_jsii_.Create(
-		"google.serviceAccountIamMember.ServiceAccountIamMember",
+		"@cdktf/provider-google.serviceAccountIamMember.ServiceAccountIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewServiceAccountIamMember_Override(s ServiceAccountIamMember, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceAccountIamMember.ServiceAccountIamMember",
+		"@cdktf/provider-google.serviceAccountIamMember.ServiceAccountIamMember",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -557,7 +557,7 @@ func ServiceAccountIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountIamMember.ServiceAccountIamMember",
+		"@cdktf/provider-google.serviceAccountIamMember.ServiceAccountIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func ServiceAccountIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountIamMember.ServiceAccountIamMember",
+		"@cdktf/provider-google.serviceAccountIamMember.ServiceAccountIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func ServiceAccountIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountIamMember.ServiceAccountIamMember",
+		"@cdktf/provider-google.serviceAccountIamMember.ServiceAccountIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func ServiceAccountIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.serviceAccountIamMember.ServiceAccountIamMember",
+		"@cdktf/provider-google.serviceAccountIamMember.ServiceAccountIamMember",
 		"tfResourceType",
 		&returns,
 	)

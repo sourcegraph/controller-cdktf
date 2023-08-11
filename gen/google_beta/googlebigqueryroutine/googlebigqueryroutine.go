@@ -627,7 +627,7 @@ func NewGoogleBigqueryRoutine(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleBigqueryRoutine{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -640,7 +640,7 @@ func NewGoogleBigqueryRoutine_Override(g GoogleBigqueryRoutine, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -872,7 +872,7 @@ func GoogleBigqueryRoutine_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -891,7 +891,7 @@ func GoogleBigqueryRoutine_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -910,7 +910,7 @@ func GoogleBigqueryRoutine_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -923,7 +923,7 @@ func GoogleBigqueryRoutine_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
 		"tfResourceType",
 		&returns,
 	)

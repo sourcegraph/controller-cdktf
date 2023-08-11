@@ -116,7 +116,7 @@ func NewDataAwsEc2TransitGatewayRouteTablesFilterList(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsEc2TransitGatewayRouteTablesFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTablesFilterList",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTablesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEc2TransitGatewayRouteTablesFilterList_Override(d DataAwsEc2Trans
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTablesFilterList",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTablesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

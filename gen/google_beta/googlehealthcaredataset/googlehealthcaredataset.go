@@ -425,7 +425,7 @@ func NewGoogleHealthcareDataset(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleHealthcareDataset{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewGoogleHealthcareDataset_Override(g GoogleHealthcareDataset, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -593,7 +593,7 @@ func GoogleHealthcareDataset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func GoogleHealthcareDataset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GoogleHealthcareDataset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleHealthcareDataset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDataset",
 		"tfResourceType",
 		&returns,
 	)

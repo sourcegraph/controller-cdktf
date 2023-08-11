@@ -204,7 +204,7 @@ func NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurati
 	j := jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

@@ -116,7 +116,7 @@ func NewGoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgress
 	j := jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerServicePerimeters.GoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeters.GoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgress
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerServicePerimeters.GoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList",
+		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeters.GoogleAccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

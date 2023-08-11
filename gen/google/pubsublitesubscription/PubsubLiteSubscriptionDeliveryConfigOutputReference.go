@@ -179,7 +179,7 @@ func NewPubsubLiteSubscriptionDeliveryConfigOutputReference(terraformResource cd
 	j := jsiiProxy_PubsubLiteSubscriptionDeliveryConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfigOutputReference",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPubsubLiteSubscriptionDeliveryConfigOutputReference_Override(p PubsubLit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfigOutputReference",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

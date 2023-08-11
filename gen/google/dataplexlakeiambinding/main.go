@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBinding",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBinding",
 		reflect.TypeOf((*DataplexLakeIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBindingCondition",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBindingCondition",
 		reflect.TypeOf((*DataplexLakeIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBindingConditionOutputReference",
 		reflect.TypeOf((*DataplexLakeIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBindingConfig",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBindingConfig",
 		reflect.TypeOf((*DataplexLakeIamBindingConfig)(nil)).Elem(),
 	)
 }

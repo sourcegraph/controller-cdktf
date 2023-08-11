@@ -104,7 +104,7 @@ func NewFirebaserulesRulesetMetadataList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_FirebaserulesRulesetMetadataList{}
 
 	_jsii_.Create(
-		"google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewFirebaserulesRulesetMetadataList_Override(f FirebaserulesRulesetMetadata
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

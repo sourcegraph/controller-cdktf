@@ -228,7 +228,7 @@ func NewPodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference(terraform
 	j := jsiiProxy_PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podDisruptionBudget.PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.podDisruptionBudget.PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podDisruptionBudget.PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.podDisruptionBudget.PodDisruptionBudgetSpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

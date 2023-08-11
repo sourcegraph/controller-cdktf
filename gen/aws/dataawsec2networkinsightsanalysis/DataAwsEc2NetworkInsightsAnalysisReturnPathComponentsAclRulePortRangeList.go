@@ -104,7 +104,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeLis
 	j := jsiiProxy_DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

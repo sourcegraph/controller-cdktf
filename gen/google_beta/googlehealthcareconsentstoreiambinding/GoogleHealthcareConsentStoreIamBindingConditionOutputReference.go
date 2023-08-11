@@ -226,7 +226,7 @@ func NewGoogleHealthcareConsentStoreIamBindingConditionOutputReference(terraform
 	j := jsiiProxy_GoogleHealthcareConsentStoreIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleHealthcareConsentStoreIamBindingConditionOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

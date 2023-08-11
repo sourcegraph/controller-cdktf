@@ -516,7 +516,7 @@ func NewDataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerbe
 	j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -528,7 +528,7 @@ func NewDataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerbe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

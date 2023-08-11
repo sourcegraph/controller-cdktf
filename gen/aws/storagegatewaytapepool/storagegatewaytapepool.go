@@ -449,7 +449,7 @@ func NewStoragegatewayTapePool(scope constructs.Construct, id *string, config *S
 	j := jsiiProxy_StoragegatewayTapePool{}
 
 	_jsii_.Create(
-		"aws.storagegatewayTapePool.StoragegatewayTapePool",
+		"@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewStoragegatewayTapePool_Override(s StoragegatewayTapePool, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayTapePool.StoragegatewayTapePool",
+		"@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -639,7 +639,7 @@ func StoragegatewayTapePool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayTapePool.StoragegatewayTapePool",
+		"@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func StoragegatewayTapePool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayTapePool.StoragegatewayTapePool",
+		"@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func StoragegatewayTapePool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayTapePool.StoragegatewayTapePool",
+		"@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func StoragegatewayTapePool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.storagegatewayTapePool.StoragegatewayTapePool",
+		"@cdktf/provider-aws.storagegatewayTapePool.StoragegatewayTapePool",
 		"tfResourceType",
 		&returns,
 	)

@@ -359,7 +359,7 @@ func NewDataAwsMemorydbParameterGroup(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsMemorydbParameterGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -372,7 +372,7 @@ func NewDataAwsMemorydbParameterGroup_Override(d DataAwsMemorydbParameterGroup, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -483,7 +483,7 @@ func DataAwsMemorydbParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsMemorydbParameterGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func DataAwsMemorydbParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataAwsMemorydbParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

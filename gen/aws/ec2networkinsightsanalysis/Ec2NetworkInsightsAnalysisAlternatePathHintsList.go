@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisAlternatePathHintsList(terraformResource cdktf
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisAlternatePathHintsList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisAlternatePathHintsList_Override(e Ec2NetworkIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

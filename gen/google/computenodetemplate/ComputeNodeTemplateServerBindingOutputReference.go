@@ -179,7 +179,7 @@ func NewComputeNodeTemplateServerBindingOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ComputeNodeTemplateServerBindingOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNodeTemplate.ComputeNodeTemplateServerBindingOutputReference",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateServerBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeNodeTemplateServerBindingOutputReference_Override(c ComputeNodeTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNodeTemplate.ComputeNodeTemplateServerBindingOutputReference",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateServerBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

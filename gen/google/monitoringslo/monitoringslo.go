@@ -593,7 +593,7 @@ func NewMonitoringSlo(scope constructs.Construct, id *string, config *Monitoring
 	j := jsiiProxy_MonitoringSlo{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSlo",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSlo",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -606,7 +606,7 @@ func NewMonitoringSlo_Override(m MonitoringSlo, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSlo",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSlo",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -805,7 +805,7 @@ func MonitoringSlo_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringSlo.MonitoringSlo",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSlo",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -824,7 +824,7 @@ func MonitoringSlo_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringSlo.MonitoringSlo",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSlo",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -843,7 +843,7 @@ func MonitoringSlo_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringSlo.MonitoringSlo",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSlo",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -856,7 +856,7 @@ func MonitoringSlo_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.monitoringSlo.MonitoringSlo",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSlo",
 		"tfResourceType",
 		&returns,
 	)

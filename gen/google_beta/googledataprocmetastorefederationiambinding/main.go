@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBinding",
 		reflect.TypeOf((*GoogleDataprocMetastoreFederationIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingCondition",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingCondition",
 		reflect.TypeOf((*GoogleDataprocMetastoreFederationIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleDataprocMetastoreFederationIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingConfig",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreFederationIamBinding.GoogleDataprocMetastoreFederationIamBindingConfig",
 		reflect.TypeOf((*GoogleDataprocMetastoreFederationIamBindingConfig)(nil)).Elem(),
 	)
 }

@@ -414,7 +414,7 @@ func NewServicecatalogProductPortfolioAssociation(scope constructs.Construct, id
 	j := jsiiProxy_ServicecatalogProductPortfolioAssociation{}
 
 	_jsii_.Create(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewServicecatalogProductPortfolioAssociation_Override(s ServicecatalogProdu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -582,7 +582,7 @@ func ServicecatalogProductPortfolioAssociation_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func ServicecatalogProductPortfolioAssociation_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func ServicecatalogProductPortfolioAssociation_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func ServicecatalogProductPortfolioAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
 		"tfResourceType",
 		&returns,
 	)

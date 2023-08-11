@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
 		reflect.TypeOf((*GoogleComputeHaVpnGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayConfig",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayConfig",
 		reflect.TypeOf((*GoogleComputeHaVpnGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeouts",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeouts",
 		reflect.TypeOf((*GoogleComputeHaVpnGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeHaVpnGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfaces",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfaces",
 		reflect.TypeOf((*GoogleComputeHaVpnGatewayVpnInterfaces)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesList",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesList",
 		reflect.TypeOf((*GoogleComputeHaVpnGatewayVpnInterfacesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesOutputReference",
 		reflect.TypeOf((*GoogleComputeHaVpnGatewayVpnInterfacesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

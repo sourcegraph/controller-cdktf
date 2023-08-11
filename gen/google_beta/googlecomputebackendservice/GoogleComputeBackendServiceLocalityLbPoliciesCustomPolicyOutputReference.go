@@ -203,7 +203,7 @@ func NewGoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference
 	j := jsiiProxy_GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

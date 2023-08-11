@@ -104,7 +104,7 @@ func NewDataAwsCognitoUserPoolClientTokenValidityUnitsList(terraformResource cdk
 	j := jsiiProxy_DataAwsCognitoUserPoolClientTokenValidityUnitsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientTokenValidityUnitsList",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientTokenValidityUnitsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCognitoUserPoolClientTokenValidityUnitsList_Override(d DataAwsCog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientTokenValidityUnitsList",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientTokenValidityUnitsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

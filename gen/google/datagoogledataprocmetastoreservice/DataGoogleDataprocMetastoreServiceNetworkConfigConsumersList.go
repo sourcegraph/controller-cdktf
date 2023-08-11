@@ -104,7 +104,7 @@ func NewDataGoogleDataprocMetastoreServiceNetworkConfigConsumersList(terraformRe
 	j := jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersList{}
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfigConsumersList",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfigConsumersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleDataprocMetastoreServiceNetworkConfigConsumersList_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfigConsumersList",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfigConsumersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

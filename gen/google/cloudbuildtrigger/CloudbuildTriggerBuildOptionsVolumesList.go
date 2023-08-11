@@ -116,7 +116,7 @@ func NewCloudbuildTriggerBuildOptionsVolumesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudbuildTriggerBuildOptionsVolumesList{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudbuildTriggerBuildOptionsVolumesList_Override(c CloudbuildTriggerBui
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

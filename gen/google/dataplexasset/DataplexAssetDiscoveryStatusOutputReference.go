@@ -222,7 +222,7 @@ func NewDataplexAssetDiscoveryStatusOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataplexAssetDiscoveryStatusOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetDiscoveryStatusOutputReference",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewDataplexAssetDiscoveryStatusOutputReference_Override(d DataplexAssetDisc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetDiscoveryStatusOutputReference",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewReplicationControllerV1SpecTemplateSpecContainerEnvList(terraformResourc
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerEnvList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerV1SpecTemplateSpecContainerEnvList_Override(r Repli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

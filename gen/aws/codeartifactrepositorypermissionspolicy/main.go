@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		reflect.TypeOf((*CodeartifactRepositoryPermissionsPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicyConfig",
+		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicyConfig",
 		reflect.TypeOf((*CodeartifactRepositoryPermissionsPolicyConfig)(nil)).Elem(),
 	)
 }

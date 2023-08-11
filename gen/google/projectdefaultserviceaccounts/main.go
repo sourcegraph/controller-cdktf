@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccounts",
 		reflect.TypeOf((*ProjectDefaultServiceAccounts)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccountsConfig",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccountsConfig",
 		reflect.TypeOf((*ProjectDefaultServiceAccountsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccountsTimeouts",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccountsTimeouts",
 		reflect.TypeOf((*ProjectDefaultServiceAccountsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.projectDefaultServiceAccounts.ProjectDefaultServiceAccountsTimeoutsOutputReference",
+		"@cdktf/provider-google.projectDefaultServiceAccounts.ProjectDefaultServiceAccountsTimeoutsOutputReference",
 		reflect.TypeOf((*ProjectDefaultServiceAccountsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

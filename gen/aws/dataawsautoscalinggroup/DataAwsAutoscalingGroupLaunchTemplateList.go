@@ -104,7 +104,7 @@ func NewDataAwsAutoscalingGroupLaunchTemplateList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsAutoscalingGroupLaunchTemplateList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateList",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAutoscalingGroupLaunchTemplateList_Override(d DataAwsAutoscalingG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateList",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroupLaunchTemplateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

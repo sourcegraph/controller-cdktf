@@ -116,7 +116,7 @@ func NewWafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHea
 	j := jsiiProxy_Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHea
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementFieldToMatchHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

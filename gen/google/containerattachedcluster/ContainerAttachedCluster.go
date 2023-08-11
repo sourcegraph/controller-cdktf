@@ -725,7 +725,7 @@ func NewContainerAttachedCluster(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ContainerAttachedCluster{}
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedCluster",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -738,7 +738,7 @@ func NewContainerAttachedCluster_Override(c ContainerAttachedCluster, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedCluster",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedCluster",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -937,7 +937,7 @@ func ContainerAttachedCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAttachedCluster.ContainerAttachedCluster",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -956,7 +956,7 @@ func ContainerAttachedCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAttachedCluster.ContainerAttachedCluster",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -975,7 +975,7 @@ func ContainerAttachedCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAttachedCluster.ContainerAttachedCluster",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -988,7 +988,7 @@ func ContainerAttachedCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerAttachedCluster.ContainerAttachedCluster",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedCluster",
 		"tfResourceType",
 		&returns,
 	)

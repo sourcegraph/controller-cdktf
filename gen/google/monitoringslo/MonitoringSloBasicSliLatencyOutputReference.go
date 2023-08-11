@@ -179,7 +179,7 @@ func NewMonitoringSloBasicSliLatencyOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_MonitoringSloBasicSliLatencyOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloBasicSliLatencyOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliLatencyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewMonitoringSloBasicSliLatencyOutputReference_Override(m MonitoringSloBasi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloBasicSliLatencyOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliLatencyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

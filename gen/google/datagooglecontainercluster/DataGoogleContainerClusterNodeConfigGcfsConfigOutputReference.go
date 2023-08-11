@@ -167,7 +167,7 @@ func NewDataGoogleContainerClusterNodeConfigGcfsConfigOutputReference(terraformR
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleContainerClusterNodeConfigGcfsConfigOutputReference_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

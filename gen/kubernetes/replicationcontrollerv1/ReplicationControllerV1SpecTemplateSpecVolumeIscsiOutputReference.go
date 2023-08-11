@@ -298,7 +298,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference(terraf
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -310,7 +310,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeIscsiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

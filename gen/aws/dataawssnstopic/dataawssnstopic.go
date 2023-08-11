@@ -302,7 +302,7 @@ func NewDataAwsSnsTopic(scope constructs.Construct, id *string, config *DataAwsS
 	j := jsiiProxy_DataAwsSnsTopic{}
 
 	_jsii_.Create(
-		"aws.dataAwsSnsTopic.DataAwsSnsTopic",
+		"@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsSnsTopic_Override(d DataAwsSnsTopic, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSnsTopic.DataAwsSnsTopic",
+		"@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsSnsTopic_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSnsTopic.DataAwsSnsTopic",
+		"@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsSnsTopic_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSnsTopic.DataAwsSnsTopic",
+		"@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsSnsTopic_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSnsTopic.DataAwsSnsTopic",
+		"@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsSnsTopic_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSnsTopic.DataAwsSnsTopic",
+		"@cdktf/provider-aws.dataAwsSnsTopic.DataAwsSnsTopic",
 		"tfResourceType",
 		&returns,
 	)

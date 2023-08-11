@@ -202,7 +202,7 @@ func NewUserAgentBlockingRuleConfigurationOutputReference(terraformResource cdkt
 	j := jsiiProxy_UserAgentBlockingRuleConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewUserAgentBlockingRuleConfigurationOutputReference_Override(u UserAgentBl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		u,
 	)

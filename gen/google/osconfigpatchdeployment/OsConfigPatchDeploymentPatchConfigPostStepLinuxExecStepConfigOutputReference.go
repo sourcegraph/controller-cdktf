@@ -252,7 +252,7 @@ func NewOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputRefer
 	j := jsiiProxy_OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

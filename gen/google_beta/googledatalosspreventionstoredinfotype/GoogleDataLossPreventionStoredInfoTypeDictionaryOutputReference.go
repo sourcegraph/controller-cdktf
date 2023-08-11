@@ -204,7 +204,7 @@ func NewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference(terrafor
 	j := jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

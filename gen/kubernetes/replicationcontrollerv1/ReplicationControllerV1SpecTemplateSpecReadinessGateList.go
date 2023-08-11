@@ -116,7 +116,7 @@ func NewReplicationControllerV1SpecTemplateSpecReadinessGateList(terraformResour
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecReadinessGateList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerV1SpecTemplateSpecReadinessGateList_Override(r Repl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

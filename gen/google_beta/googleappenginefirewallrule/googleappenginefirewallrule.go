@@ -438,7 +438,7 @@ func NewGoogleAppEngineFirewallRule(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleAppEngineFirewallRule{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewGoogleAppEngineFirewallRule_Override(g GoogleAppEngineFirewallRule, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -617,7 +617,7 @@ func GoogleAppEngineFirewallRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func GoogleAppEngineFirewallRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func GoogleAppEngineFirewallRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func GoogleAppEngineFirewallRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
+		"@cdktf/provider-google-beta.googleAppEngineFirewallRule.GoogleAppEngineFirewallRule",
 		"tfResourceType",
 		&returns,
 	)

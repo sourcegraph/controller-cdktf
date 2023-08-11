@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kendraFaq.KendraFaq",
+		"@cdktf/provider-aws.kendraFaq.KendraFaq",
 		reflect.TypeOf((*KendraFaq)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,15 +89,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraFaq.KendraFaqConfig",
+		"@cdktf/provider-aws.kendraFaq.KendraFaqConfig",
 		reflect.TypeOf((*KendraFaqConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraFaq.KendraFaqS3Path",
+		"@cdktf/provider-aws.kendraFaq.KendraFaqS3Path",
 		reflect.TypeOf((*KendraFaqS3Path)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraFaq.KendraFaqS3PathOutputReference",
+		"@cdktf/provider-aws.kendraFaq.KendraFaqS3PathOutputReference",
 		reflect.TypeOf((*KendraFaqS3PathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -133,11 +133,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraFaq.KendraFaqTimeouts",
+		"@cdktf/provider-aws.kendraFaq.KendraFaqTimeouts",
 		reflect.TypeOf((*KendraFaqTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraFaq.KendraFaqTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraFaq.KendraFaqTimeoutsOutputReference",
 		reflect.TypeOf((*KendraFaqTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

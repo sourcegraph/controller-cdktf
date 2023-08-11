@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.transferSshKey.TransferSshKey",
+		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
 		reflect.TypeOf((*TransferSshKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transferSshKey.TransferSshKeyConfig",
+		"@cdktf/provider-aws.transferSshKey.TransferSshKeyConfig",
 		reflect.TypeOf((*TransferSshKeyConfig)(nil)).Elem(),
 	)
 }

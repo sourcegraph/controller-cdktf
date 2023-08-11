@@ -116,7 +116,7 @@ func NewAccessGroupExcludeGsuiteList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AccessGroupExcludeGsuiteList{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupExcludeGsuiteList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessGroupExcludeGsuiteList_Override(a AccessGroupExcludeGsuiteList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupExcludeGsuiteList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

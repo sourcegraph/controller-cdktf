@@ -300,7 +300,7 @@ func NewAccessContextManagerAccessLevelBasicConditionsOutputReference(terraformR
 	j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewAccessContextManagerAccessLevelBasicConditionsOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

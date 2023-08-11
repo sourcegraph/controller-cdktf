@@ -252,7 +252,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputRefe
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerEnvValueFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

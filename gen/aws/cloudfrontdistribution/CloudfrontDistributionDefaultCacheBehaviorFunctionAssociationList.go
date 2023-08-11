@@ -116,7 +116,7 @@ func NewCloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList(terraf
 	j := jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

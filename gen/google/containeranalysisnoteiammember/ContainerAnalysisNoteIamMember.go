@@ -424,7 +424,7 @@ func NewContainerAnalysisNoteIamMember(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ContainerAnalysisNoteIamMember{}
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewContainerAnalysisNoteIamMember_Override(c ContainerAnalysisNoteIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -592,7 +592,7 @@ func ContainerAnalysisNoteIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func ContainerAnalysisNoteIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func ContainerAnalysisNoteIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func ContainerAnalysisNoteIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
+		"@cdktf/provider-google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMember",
 		"tfResourceType",
 		&returns,
 	)

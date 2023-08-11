@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
 		reflect.TypeOf((*CodecommitApprovalRuleTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplateConfig",
 		reflect.TypeOf((*CodecommitApprovalRuleTemplateConfig)(nil)).Elem(),
 	)
 }

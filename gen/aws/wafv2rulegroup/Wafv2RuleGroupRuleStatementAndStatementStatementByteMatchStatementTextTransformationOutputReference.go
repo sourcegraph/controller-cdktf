@@ -202,7 +202,7 @@ func NewWafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTr
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementTextTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

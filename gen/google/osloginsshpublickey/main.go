@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.osLoginSshPublicKey.OsLoginSshPublicKey",
+		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKey",
 		reflect.TypeOf((*OsLoginSshPublicKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig",
+		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyConfig",
 		reflect.TypeOf((*OsLoginSshPublicKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts",
+		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeouts",
 		reflect.TypeOf((*OsLoginSshPublicKeyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeoutsOutputReference",
 		reflect.TypeOf((*OsLoginSshPublicKeyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

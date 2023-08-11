@@ -918,7 +918,7 @@ func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig)
 	j := jsiiProxy_SnsTopic{}
 
 	_jsii_.Create(
-		"aws.snsTopic.SnsTopic",
+		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -931,7 +931,7 @@ func NewSnsTopic_Override(s SnsTopic, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.snsTopic.SnsTopic",
+		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1317,7 +1317,7 @@ func SnsTopic_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsTopic.SnsTopic",
+		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1336,7 +1336,7 @@ func SnsTopic_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsTopic.SnsTopic",
+		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1355,7 +1355,7 @@ func SnsTopic_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsTopic.SnsTopic",
+		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1368,7 +1368,7 @@ func SnsTopic_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.snsTopic.SnsTopic",
+		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		"tfResourceType",
 		&returns,
 	)

@@ -324,7 +324,7 @@ func NewDataAwsKmsAlias(scope constructs.Construct, id *string, config *DataAwsK
 	j := jsiiProxy_DataAwsKmsAlias{}
 
 	_jsii_.Create(
-		"aws.dataAwsKmsAlias.DataAwsKmsAlias",
+		"@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -337,7 +337,7 @@ func NewDataAwsKmsAlias_Override(d DataAwsKmsAlias, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKmsAlias.DataAwsKmsAlias",
+		"@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -437,7 +437,7 @@ func DataAwsKmsAlias_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsAlias.DataAwsKmsAlias",
+		"@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsKmsAlias_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsAlias.DataAwsKmsAlias",
+		"@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -475,7 +475,7 @@ func DataAwsKmsAlias_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsAlias.DataAwsKmsAlias",
+		"@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataAwsKmsAlias_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsKmsAlias.DataAwsKmsAlias",
+		"@cdktf/provider-aws.dataAwsKmsAlias.DataAwsKmsAlias",
 		"tfResourceType",
 		&returns,
 	)

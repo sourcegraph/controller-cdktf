@@ -116,7 +116,7 @@ func NewDatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchema
 	j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchema
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

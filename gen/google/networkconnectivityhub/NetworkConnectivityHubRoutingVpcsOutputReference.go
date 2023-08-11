@@ -167,7 +167,7 @@ func NewNetworkConnectivityHubRoutingVpcsOutputReference(terraformResource cdktf
 	j := jsiiProxy_NetworkConnectivityHubRoutingVpcsOutputReference{}
 
 	_jsii_.Create(
-		"google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsOutputReference",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewNetworkConnectivityHubRoutingVpcsOutputReference_Override(n NetworkConne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsOutputReference",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

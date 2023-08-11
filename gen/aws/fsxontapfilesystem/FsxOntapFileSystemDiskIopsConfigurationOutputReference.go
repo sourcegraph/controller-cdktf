@@ -204,7 +204,7 @@ func NewFsxOntapFileSystemDiskIopsConfigurationOutputReference(terraformResource
 	j := jsiiProxy_FsxOntapFileSystemDiskIopsConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewFsxOntapFileSystemDiskIopsConfigurationOutputReference_Override(f FsxOnt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

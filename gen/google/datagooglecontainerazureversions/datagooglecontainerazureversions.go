@@ -338,7 +338,7 @@ func NewDataGoogleContainerAzureVersions(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataGoogleContainerAzureVersions{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
+		"@cdktf/provider-google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,7 +351,7 @@ func NewDataGoogleContainerAzureVersions_Override(d DataGoogleContainerAzureVers
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
+		"@cdktf/provider-google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -462,7 +462,7 @@ func DataGoogleContainerAzureVersions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
+		"@cdktf/provider-google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -481,7 +481,7 @@ func DataGoogleContainerAzureVersions_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
+		"@cdktf/provider-google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataGoogleContainerAzureVersions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
+		"@cdktf/provider-google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataGoogleContainerAzureVersions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
+		"@cdktf/provider-google.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions",
 		"tfResourceType",
 		&returns,
 	)

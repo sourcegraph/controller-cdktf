@@ -204,7 +204,7 @@ func NewDeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutput
 	j := jsiiProxy_DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerReadinessProbeHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream",
+		"@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStream",
 		reflect.TypeOf((*DataAwsKinesisFirehoseDeliveryStream)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig",
+		"@cdktf/provider-aws.dataAwsKinesisFirehoseDeliveryStream.DataAwsKinesisFirehoseDeliveryStreamConfig",
 		reflect.TypeOf((*DataAwsKinesisFirehoseDeliveryStreamConfig)(nil)).Elem(),
 	)
 }

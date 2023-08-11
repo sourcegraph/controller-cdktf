@@ -104,7 +104,7 @@ func NewDataplexDatascanDataQualityResultRulesRuleNonNullExpectationList(terrafo
 	j := jsiiProxy_DataplexDatascanDataQualityResultRulesRuleNonNullExpectationList{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleNonNullExpectationList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleNonNullExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexDatascanDataQualityResultRulesRuleNonNullExpectationList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleNonNullExpectationList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultRulesRuleNonNullExpectationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewEmrClusterBootstrapActionList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_EmrClusterBootstrapActionList{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterBootstrapActionList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrClusterBootstrapActionList_Override(e EmrClusterBootstrapActionList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterBootstrapActionList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterBootstrapActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

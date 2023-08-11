@@ -179,7 +179,7 @@ func NewGoogleContainerClusterClusterTelemetryOutputReference(terraformResource 
 	j := jsiiProxy_GoogleContainerClusterClusterTelemetryOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterClusterTelemetryOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterClusterTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterClusterTelemetryOutputReference_Override(g GoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterClusterTelemetryOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterClusterTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

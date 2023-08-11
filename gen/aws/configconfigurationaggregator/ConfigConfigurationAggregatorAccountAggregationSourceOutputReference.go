@@ -227,7 +227,7 @@ func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference(ter
 	j := jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		reflect.TypeOf((*GoogleDialogflowCxWebhook)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,15 +89,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookConfig",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookConfig",
 		reflect.TypeOf((*GoogleDialogflowCxWebhookConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebService",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebService",
 		reflect.TypeOf((*GoogleDialogflowCxWebhookGenericWebService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebServiceOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookGenericWebServiceOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxWebhookGenericWebServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedCaCerts", GoGetter: "AllowedCaCerts"},
@@ -137,15 +137,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectory",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectory",
 		reflect.TypeOf((*GoogleDialogflowCxWebhookServiceDirectory)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryGenericWebService",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryGenericWebService",
 		reflect.TypeOf((*GoogleDialogflowCxWebhookServiceDirectoryGenericWebService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedCaCerts", GoGetter: "AllowedCaCerts"},
@@ -185,7 +185,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxWebhookServiceDirectoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookTimeouts",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookTimeouts",
 		reflect.TypeOf((*GoogleDialogflowCxWebhookTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxWebhookTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

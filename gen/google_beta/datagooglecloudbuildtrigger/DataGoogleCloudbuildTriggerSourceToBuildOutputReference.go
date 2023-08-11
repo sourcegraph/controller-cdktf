@@ -211,7 +211,7 @@ func NewDataGoogleCloudbuildTriggerSourceToBuildOutputReference(terraformResourc
 	j := jsiiProxy_DataGoogleCloudbuildTriggerSourceToBuildOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerSourceToBuildOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerSourceToBuildOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataGoogleCloudbuildTriggerSourceToBuildOutputReference_Override(d DataG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerSourceToBuildOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerSourceToBuildOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

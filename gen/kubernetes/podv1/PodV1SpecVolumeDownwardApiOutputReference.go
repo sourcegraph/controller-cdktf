@@ -204,7 +204,7 @@ func NewPodV1SpecVolumeDownwardApiOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_PodV1SpecVolumeDownwardApiOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodV1SpecVolumeDownwardApiOutputReference_Override(p PodV1SpecVolumeDown
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

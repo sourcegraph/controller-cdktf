@@ -180,7 +180,7 @@ func NewApiTokenConditionOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_ApiTokenConditionOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.apiToken.ApiTokenConditionOutputReference",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewApiTokenConditionOutputReference_Override(a ApiTokenConditionOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.apiToken.ApiTokenConditionOutputReference",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

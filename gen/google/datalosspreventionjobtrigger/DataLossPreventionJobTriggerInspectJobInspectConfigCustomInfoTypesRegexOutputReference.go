@@ -203,7 +203,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexO
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

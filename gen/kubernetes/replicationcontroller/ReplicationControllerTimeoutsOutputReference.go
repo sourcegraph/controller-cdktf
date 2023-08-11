@@ -228,7 +228,7 @@ func NewReplicationControllerTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ReplicationControllerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewReplicationControllerTimeoutsOutputReference_Override(r ReplicationContr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

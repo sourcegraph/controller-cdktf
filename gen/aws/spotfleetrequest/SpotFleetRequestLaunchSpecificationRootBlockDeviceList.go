@@ -116,7 +116,7 @@ func NewSpotFleetRequestLaunchSpecificationRootBlockDeviceList(terraformResource
 	j := jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceList",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSpotFleetRequestLaunchSpecificationRootBlockDeviceList_Override(s SpotFl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceList",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

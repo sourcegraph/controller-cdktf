@@ -178,7 +178,7 @@ func NewDataOktaEmailTemplatesEmailTemplatesOutputReference(terraformResource cd
 	j := jsiiProxy_DataOktaEmailTemplatesEmailTemplatesOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesOutputReference",
+		"@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataOktaEmailTemplatesEmailTemplatesOutputReference_Override(d DataOktaE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesOutputReference",
+		"@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

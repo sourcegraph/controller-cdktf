@@ -200,7 +200,7 @@ func NewDataGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference(terrafor
 	j := jsiiProxy_DataGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeDisk.DataGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

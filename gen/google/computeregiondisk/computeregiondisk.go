@@ -766,7 +766,7 @@ func NewComputeRegionDisk(scope constructs.Construct, id *string, config *Comput
 	j := jsiiProxy_ComputeRegionDisk{}
 
 	_jsii_.Create(
-		"google.computeRegionDisk.ComputeRegionDisk",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDisk",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -779,7 +779,7 @@ func NewComputeRegionDisk_Override(c ComputeRegionDisk, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionDisk.ComputeRegionDisk",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDisk",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1022,7 +1022,7 @@ func ComputeRegionDisk_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionDisk.ComputeRegionDisk",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDisk",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1041,7 +1041,7 @@ func ComputeRegionDisk_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionDisk.ComputeRegionDisk",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDisk",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1060,7 +1060,7 @@ func ComputeRegionDisk_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionDisk.ComputeRegionDisk",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDisk",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1073,7 +1073,7 @@ func ComputeRegionDisk_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionDisk.ComputeRegionDisk",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDisk",
 		"tfResourceType",
 		&returns,
 	)

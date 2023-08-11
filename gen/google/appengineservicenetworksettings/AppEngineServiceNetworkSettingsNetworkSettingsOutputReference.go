@@ -180,7 +180,7 @@ func NewAppEngineServiceNetworkSettingsNetworkSettingsOutputReference(terraformR
 	j := jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAppEngineServiceNetworkSettingsNetworkSettingsOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

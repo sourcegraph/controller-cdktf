@@ -364,7 +364,7 @@ func NewEc2TransitGatewayPolicyTableAssociation(scope constructs.Construct, id *
 	j := jsiiProxy_Ec2TransitGatewayPolicyTableAssociation{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -377,7 +377,7 @@ func NewEc2TransitGatewayPolicyTableAssociation_Override(e Ec2TransitGatewayPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -510,7 +510,7 @@ func Ec2TransitGatewayPolicyTableAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func Ec2TransitGatewayPolicyTableAssociation_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func Ec2TransitGatewayPolicyTableAssociation_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func Ec2TransitGatewayPolicyTableAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTableAssociation.Ec2TransitGatewayPolicyTableAssociation",
 		"tfResourceType",
 		&returns,
 	)

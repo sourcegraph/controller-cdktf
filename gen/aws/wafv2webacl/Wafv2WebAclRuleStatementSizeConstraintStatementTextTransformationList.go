@@ -116,7 +116,7 @@ func NewWafv2WebAclRuleStatementSizeConstraintStatementTextTransformationList(te
 	j := jsiiProxy_Wafv2WebAclRuleStatementSizeConstraintStatementTextTransformationList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementTextTransformationList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementTextTransformationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclRuleStatementSizeConstraintStatementTextTransformationList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementTextTransformationList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementSizeConstraintStatementTextTransformationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

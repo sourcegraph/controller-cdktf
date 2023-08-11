@@ -116,7 +116,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList(terrafor
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

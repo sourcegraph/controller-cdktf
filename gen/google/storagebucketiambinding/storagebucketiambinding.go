@@ -400,7 +400,7 @@ func NewStorageBucketIamBinding(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_StorageBucketIamBinding{}
 
 	_jsii_.Create(
-		"google.storageBucketIamBinding.StorageBucketIamBinding",
+		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewStorageBucketIamBinding_Override(s StorageBucketIamBinding, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucketIamBinding.StorageBucketIamBinding",
+		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBinding",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -557,7 +557,7 @@ func StorageBucketIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketIamBinding.StorageBucketIamBinding",
+		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func StorageBucketIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketIamBinding.StorageBucketIamBinding",
+		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func StorageBucketIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketIamBinding.StorageBucketIamBinding",
+		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func StorageBucketIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageBucketIamBinding.StorageBucketIamBinding",
+		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBinding",
 		"tfResourceType",
 		&returns,
 	)

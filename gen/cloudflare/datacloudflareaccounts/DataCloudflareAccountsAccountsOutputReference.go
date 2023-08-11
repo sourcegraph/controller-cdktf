@@ -200,7 +200,7 @@ func NewDataCloudflareAccountsAccountsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataCloudflareAccountsAccountsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataCloudflareAccountsAccountsOutputReference_Override(d DataCloudflareA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

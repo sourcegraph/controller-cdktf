@@ -116,7 +116,7 @@ func NewGoogleDialogflowCxEntityTypeEntitiesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleDialogflowCxEntityTypeEntitiesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntitiesList",
+		"@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntitiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDialogflowCxEntityTypeEntitiesList_Override(g GoogleDialogflowCxEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntitiesList",
+		"@cdktf/provider-google-beta.googleDialogflowCxEntityType.GoogleDialogflowCxEntityTypeEntitiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

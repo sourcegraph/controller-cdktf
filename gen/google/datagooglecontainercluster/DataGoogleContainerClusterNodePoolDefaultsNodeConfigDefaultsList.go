@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList(terrafo
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

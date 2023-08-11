@@ -401,7 +401,7 @@ func NewDataCloudflareZoneDnssec(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataCloudflareZoneDnssec{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataCloudflareZoneDnssec_Override(d DataCloudflareZoneDnssec, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -514,7 +514,7 @@ func DataCloudflareZoneDnssec_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataCloudflareZoneDnssec_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func DataCloudflareZoneDnssec_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func DataCloudflareZoneDnssec_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
+		"@cdktf/provider-cloudflare.dataCloudflareZoneDnssec.DataCloudflareZoneDnssec",
 		"tfResourceType",
 		&returns,
 	)

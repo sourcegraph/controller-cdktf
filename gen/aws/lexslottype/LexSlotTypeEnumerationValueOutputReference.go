@@ -203,7 +203,7 @@ func NewLexSlotTypeEnumerationValueOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_LexSlotTypeEnumerationValueOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexSlotType.LexSlotTypeEnumerationValueOutputReference",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLexSlotTypeEnumerationValueOutputReference_Override(l LexSlotTypeEnumera
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexSlotType.LexSlotTypeEnumerationValueOutputReference",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

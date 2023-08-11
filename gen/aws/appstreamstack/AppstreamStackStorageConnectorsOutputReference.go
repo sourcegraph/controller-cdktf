@@ -227,7 +227,7 @@ func NewAppstreamStackStorageConnectorsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_AppstreamStackStorageConnectorsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAppstreamStackStorageConnectorsOutputReference_Override(a AppstreamStack
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackStorageConnectorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

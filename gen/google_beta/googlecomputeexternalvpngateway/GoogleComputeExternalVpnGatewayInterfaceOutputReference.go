@@ -204,7 +204,7 @@ func NewGoogleComputeExternalVpnGatewayInterfaceOutputReference(terraformResourc
 	j := jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGatewayInterfaceOutputReference",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGatewayInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeExternalVpnGatewayInterfaceOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGatewayInterfaceOutputReference",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGatewayInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

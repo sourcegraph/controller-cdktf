@@ -116,7 +116,7 @@ func NewFallbackDomainDomainsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_FallbackDomainDomainsList{}
 
 	_jsii_.Create(
-		"cloudflare.fallbackDomain.FallbackDomainDomainsList",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFallbackDomainDomainsList_Override(f FallbackDomainDomainsList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.fallbackDomain.FallbackDomainDomainsList",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

@@ -226,7 +226,7 @@ func NewGoogleCloudRunV2ServiceIamMemberConditionOutputReference(terraformResour
 	j := jsiiProxy_GoogleCloudRunV2ServiceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleCloudRunV2ServiceIamMemberConditionOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

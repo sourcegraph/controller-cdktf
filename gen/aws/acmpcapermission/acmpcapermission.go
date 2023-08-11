@@ -400,7 +400,7 @@ func NewAcmpcaPermission(scope constructs.Construct, id *string, config *AcmpcaP
 	j := jsiiProxy_AcmpcaPermission{}
 
 	_jsii_.Create(
-		"aws.acmpcaPermission.AcmpcaPermission",
+		"@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewAcmpcaPermission_Override(a AcmpcaPermission, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmpcaPermission.AcmpcaPermission",
+		"@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -568,7 +568,7 @@ func AcmpcaPermission_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaPermission.AcmpcaPermission",
+		"@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func AcmpcaPermission_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaPermission.AcmpcaPermission",
+		"@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func AcmpcaPermission_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaPermission.AcmpcaPermission",
+		"@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func AcmpcaPermission_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.acmpcaPermission.AcmpcaPermission",
+		"@cdktf/provider-aws.acmpcaPermission.AcmpcaPermission",
 		"tfResourceType",
 		&returns,
 	)

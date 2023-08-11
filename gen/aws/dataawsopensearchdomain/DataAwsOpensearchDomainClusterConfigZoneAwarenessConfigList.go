@@ -104,7 +104,7 @@ func NewDataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList(terraformRes
 	j := jsiiProxy_DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -324,7 +324,7 @@ func NewDataGoogleIamRole(scope constructs.Construct, id *string, config *DataGo
 	j := jsiiProxy_DataGoogleIamRole{}
 
 	_jsii_.Create(
-		"google.dataGoogleIamRole.DataGoogleIamRole",
+		"@cdktf/provider-google.dataGoogleIamRole.DataGoogleIamRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -337,7 +337,7 @@ func NewDataGoogleIamRole_Override(d DataGoogleIamRole, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleIamRole.DataGoogleIamRole",
+		"@cdktf/provider-google.dataGoogleIamRole.DataGoogleIamRole",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -437,7 +437,7 @@ func DataGoogleIamRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleIamRole.DataGoogleIamRole",
+		"@cdktf/provider-google.dataGoogleIamRole.DataGoogleIamRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataGoogleIamRole_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleIamRole.DataGoogleIamRole",
+		"@cdktf/provider-google.dataGoogleIamRole.DataGoogleIamRole",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -475,7 +475,7 @@ func DataGoogleIamRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleIamRole.DataGoogleIamRole",
+		"@cdktf/provider-google.dataGoogleIamRole.DataGoogleIamRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataGoogleIamRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleIamRole.DataGoogleIamRole",
+		"@cdktf/provider-google.dataGoogleIamRole.DataGoogleIamRole",
 		"tfResourceType",
 		&returns,
 	)

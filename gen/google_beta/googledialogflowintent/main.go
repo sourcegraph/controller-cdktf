@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntent",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntent",
 		reflect.TypeOf((*GoogleDialogflowIntent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -97,15 +97,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentConfig",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentConfig",
 		reflect.TypeOf((*GoogleDialogflowIntentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfo",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfo",
 		reflect.TypeOf((*GoogleDialogflowIntentFollowupIntentInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoList",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoList",
 		reflect.TypeOf((*GoogleDialogflowIntentFollowupIntentInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoOutputReference",
 		reflect.TypeOf((*GoogleDialogflowIntentFollowupIntentInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,11 +159,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentTimeouts",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentTimeouts",
 		reflect.TypeOf((*GoogleDialogflowIntentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDialogflowIntentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

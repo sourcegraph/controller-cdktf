@@ -426,7 +426,7 @@ func NewElasticBeanstalkApplication(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ElasticBeanstalkApplication{}
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
+		"@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewElasticBeanstalkApplication_Override(e ElasticBeanstalkApplication, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
+		"@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -594,7 +594,7 @@ func ElasticBeanstalkApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
+		"@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func ElasticBeanstalkApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
+		"@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func ElasticBeanstalkApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
+		"@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func ElasticBeanstalkApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
+		"@cdktf/provider-aws.elasticBeanstalkApplication.ElasticBeanstalkApplication",
 		"tfResourceType",
 		&returns,
 	)

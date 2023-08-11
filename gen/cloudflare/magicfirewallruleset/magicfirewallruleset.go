@@ -390,7 +390,7 @@ func NewMagicFirewallRuleset(scope constructs.Construct, id *string, config *Mag
 	j := jsiiProxy_MagicFirewallRuleset{}
 
 	_jsii_.Create(
-		"cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
+		"@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewMagicFirewallRuleset_Override(m MagicFirewallRuleset, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
+		"@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -558,7 +558,7 @@ func MagicFirewallRuleset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
+		"@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func MagicFirewallRuleset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
+		"@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func MagicFirewallRuleset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
+		"@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func MagicFirewallRuleset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
+		"@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
 		"tfResourceType",
 		&returns,
 	)

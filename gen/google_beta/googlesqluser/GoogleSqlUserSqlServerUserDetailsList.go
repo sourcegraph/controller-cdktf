@@ -104,7 +104,7 @@ func NewGoogleSqlUserSqlServerUserDetailsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleSqlUserSqlServerUserDetailsList{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsList",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleSqlUserSqlServerUserDetailsList_Override(g GoogleSqlUserSqlServerU
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsList",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

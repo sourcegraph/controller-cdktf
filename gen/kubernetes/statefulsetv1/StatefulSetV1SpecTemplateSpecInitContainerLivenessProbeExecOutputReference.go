@@ -180,7 +180,7 @@ func NewStatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReferen
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewStatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

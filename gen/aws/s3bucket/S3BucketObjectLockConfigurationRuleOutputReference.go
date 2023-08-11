@@ -179,7 +179,7 @@ func NewS3BucketObjectLockConfigurationRuleOutputReference(terraformResource cdk
 	j := jsiiProxy_S3BucketObjectLockConfigurationRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketObjectLockConfigurationRuleOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3BucketObjectLockConfigurationRuleOutputReference_Override(s S3BucketOb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketObjectLockConfigurationRuleOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -228,7 +228,7 @@ func NewCeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference(t
 	j := jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference{}
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceAnomalySubscription.CeAnomalySubscriptionThresholdExpressionAndCostCategoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

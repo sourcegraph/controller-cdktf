@@ -228,7 +228,7 @@ func NewStatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference(terraformRe
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerEnvFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

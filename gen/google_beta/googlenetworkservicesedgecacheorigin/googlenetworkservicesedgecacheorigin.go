@@ -654,7 +654,7 @@ func NewGoogleNetworkServicesEdgeCacheOrigin(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -667,7 +667,7 @@ func NewGoogleNetworkServicesEdgeCacheOrigin_Override(g GoogleNetworkServicesEdg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -888,7 +888,7 @@ func GoogleNetworkServicesEdgeCacheOrigin_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -907,7 +907,7 @@ func GoogleNetworkServicesEdgeCacheOrigin_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -926,7 +926,7 @@ func GoogleNetworkServicesEdgeCacheOrigin_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -939,7 +939,7 @@ func GoogleNetworkServicesEdgeCacheOrigin_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOrigin",
 		"tfResourceType",
 		&returns,
 	)

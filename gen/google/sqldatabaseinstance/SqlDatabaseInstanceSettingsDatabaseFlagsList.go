@@ -116,7 +116,7 @@ func NewSqlDatabaseInstanceSettingsDatabaseFlagsList(terraformResource cdktf.IIn
 	j := jsiiProxy_SqlDatabaseInstanceSettingsDatabaseFlagsList{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSqlDatabaseInstanceSettingsDatabaseFlagsList_Override(s SqlDatabaseInsta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

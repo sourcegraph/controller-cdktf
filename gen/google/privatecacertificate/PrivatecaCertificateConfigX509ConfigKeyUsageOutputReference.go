@@ -226,7 +226,7 @@ func NewPrivatecaCertificateConfigX509ConfigKeyUsageOutputReference(terraformRes
 	j := jsiiProxy_PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPrivatecaCertificateConfigX509ConfigKeyUsageOutputReference_Override(p P
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

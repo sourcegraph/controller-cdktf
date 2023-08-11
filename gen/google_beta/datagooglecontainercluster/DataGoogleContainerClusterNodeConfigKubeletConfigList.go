@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodeConfigKubeletConfigList(terraformResource 
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigKubeletConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodeConfigKubeletConfigList_Override(d DataGoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

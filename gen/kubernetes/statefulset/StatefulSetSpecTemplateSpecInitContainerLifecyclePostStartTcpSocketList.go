@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList(
 	j := jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLifecyclePostStartTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

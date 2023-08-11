@@ -276,7 +276,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference
 	j := jsiiProxy_DaemonsetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleComputeRouterNatRulesList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataGoogleComputeRouterNatRulesList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatRulesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRouterNatRulesList_Override(d DataGoogleComputeRouterNa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatRulesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

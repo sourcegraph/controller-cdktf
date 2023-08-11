@@ -179,7 +179,7 @@ func NewAppmeshVirtualRouterSpecListenerOutputReference(terraformResource cdktf.
 	j := jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppmeshVirtualRouterSpecListenerOutputReference_Override(a AppmeshVirtua
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

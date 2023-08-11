@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		reflect.TypeOf((*DataGooglePubsubSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ackDeadlineSeconds", GoGetter: "AckDeadlineSeconds"},
@@ -71,11 +71,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfig",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfig",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionBigqueryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigList",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionBigqueryConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigOutputReference",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionBigqueryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,15 +131,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicy",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicy",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionDeadLetterPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyList",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionDeadLetterPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyOutputReference",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionDeadLetterPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,11 +193,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicy",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicy",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionExpirationPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyList",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionExpirationPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -217,7 +217,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyOutputReference",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionExpirationPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -250,11 +250,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfig",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfig",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionPushConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigList",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionPushConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -274,11 +274,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcToken",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcToken",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionPushConfigOidcToken)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenList",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionPushConfigOidcTokenList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -298,7 +298,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -332,7 +332,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOutputReference",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionPushConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributes", GoGetter: "Attributes"},
@@ -367,11 +367,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicy",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicy",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionRetryPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyList",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionRetryPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -391,7 +391,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyOutputReference",
 		reflect.TypeOf((*DataGooglePubsubSubscriptionRetryPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

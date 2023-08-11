@@ -275,7 +275,7 @@ func NewOpensearchDomainEbsOptionsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_OpensearchDomainEbsOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainEbsOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainEbsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewOpensearchDomainEbsOptionsOutputReference_Override(o OpensearchDomainEbs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainEbsOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainEbsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

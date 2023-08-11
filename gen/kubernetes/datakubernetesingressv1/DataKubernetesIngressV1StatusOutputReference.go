@@ -167,7 +167,7 @@ func NewDataKubernetesIngressV1StatusOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataKubernetesIngressV1StatusOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1StatusOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1StatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataKubernetesIngressV1StatusOutputReference_Override(d DataKubernetesIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1StatusOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1StatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

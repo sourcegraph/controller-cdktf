@@ -1054,7 +1054,7 @@ func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataGoogleContainerCluster{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1067,7 +1067,7 @@ func NewDataGoogleContainerCluster_Override(d DataGoogleContainerCluster, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1189,7 +1189,7 @@ func DataGoogleContainerCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1208,7 +1208,7 @@ func DataGoogleContainerCluster_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -1227,7 +1227,7 @@ func DataGoogleContainerCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1240,7 +1240,7 @@ func DataGoogleContainerCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerCluster",
 		"tfResourceType",
 		&returns,
 	)

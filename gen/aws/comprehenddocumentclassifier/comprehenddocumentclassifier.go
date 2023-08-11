@@ -639,7 +639,7 @@ func NewComprehendDocumentClassifier(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ComprehendDocumentClassifier{}
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -652,7 +652,7 @@ func NewComprehendDocumentClassifier_Override(c ComprehendDocumentClassifier, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -873,7 +873,7 @@ func ComprehendDocumentClassifier_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -892,7 +892,7 @@ func ComprehendDocumentClassifier_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -911,7 +911,7 @@ func ComprehendDocumentClassifier_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -924,7 +924,7 @@ func ComprehendDocumentClassifier_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
 		"tfResourceType",
 		&returns,
 	)

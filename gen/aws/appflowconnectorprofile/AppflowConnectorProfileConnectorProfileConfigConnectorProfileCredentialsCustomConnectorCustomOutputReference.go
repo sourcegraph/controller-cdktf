@@ -203,7 +203,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 	j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsCustomConnectorCustomOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

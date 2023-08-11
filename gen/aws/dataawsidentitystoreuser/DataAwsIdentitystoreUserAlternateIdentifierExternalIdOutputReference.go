@@ -202,7 +202,7 @@ func NewDataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference(ter
 	j := jsiiProxy_DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAlternateIdentifierExternalIdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

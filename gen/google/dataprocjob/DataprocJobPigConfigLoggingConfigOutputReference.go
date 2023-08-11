@@ -179,7 +179,7 @@ func NewDataprocJobPigConfigLoggingConfigOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataprocJobPigConfigLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobPigConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfigLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataprocJobPigConfigLoggingConfigOutputReference_Override(d DataprocJobP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobPigConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobPigConfigLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

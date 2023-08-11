@@ -552,7 +552,7 @@ func NewApigeeKeystoresAliasesSelfSignedCert(scope constructs.Construct, id *str
 	j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCert{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -565,7 +565,7 @@ func NewApigeeKeystoresAliasesSelfSignedCert_Override(a ApigeeKeystoresAliasesSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -753,7 +753,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -791,7 +791,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -804,7 +804,7 @@ func ApigeeKeystoresAliasesSelfSignedCert_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterClusterTelemetryList(terraformResource cdktf.I
 	j := jsiiProxy_DataGoogleContainerClusterClusterTelemetryList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterClusterTelemetryList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterClusterTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterClusterTelemetryList_Override(d DataGoogleCont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterClusterTelemetryList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterClusterTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

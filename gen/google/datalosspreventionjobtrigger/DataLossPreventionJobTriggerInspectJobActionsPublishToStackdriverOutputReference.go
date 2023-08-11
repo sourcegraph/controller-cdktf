@@ -156,7 +156,7 @@ func NewDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputR
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

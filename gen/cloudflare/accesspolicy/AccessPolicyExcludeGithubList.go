@@ -116,7 +116,7 @@ func NewAccessPolicyExcludeGithubList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_AccessPolicyExcludeGithubList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeGithubList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyExcludeGithubList_Override(a AccessPolicyExcludeGithubList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeGithubList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

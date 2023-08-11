@@ -250,7 +250,7 @@ func NewWafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementField
 	j := jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewWafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementField
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
+		"@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
 		reflect.TypeOf((*Ec2SerialConsoleAccess)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig",
+		"@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccessConfig",
 		reflect.TypeOf((*Ec2SerialConsoleAccessConfig)(nil)).Elem(),
 	)
 }

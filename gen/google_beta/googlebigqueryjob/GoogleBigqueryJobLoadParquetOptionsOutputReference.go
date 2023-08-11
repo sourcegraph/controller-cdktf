@@ -204,7 +204,7 @@ func NewGoogleBigqueryJobLoadParquetOptionsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleBigqueryJobLoadParquetOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobLoadParquetOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobLoadParquetOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleBigqueryJobLoadParquetOptionsOutputReference_Override(g GoogleBigq
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobLoadParquetOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobLoadParquetOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

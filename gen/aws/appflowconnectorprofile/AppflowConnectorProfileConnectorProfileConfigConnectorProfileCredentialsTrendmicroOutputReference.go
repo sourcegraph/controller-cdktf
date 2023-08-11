@@ -179,7 +179,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 	j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsTrendmicroOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

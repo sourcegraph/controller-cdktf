@@ -202,7 +202,7 @@ func NewGrafanaWorkspaceVpcConfigurationOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GrafanaWorkspaceVpcConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.grafanaWorkspace.GrafanaWorkspaceVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceVpcConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGrafanaWorkspaceVpcConfigurationOutputReference_Override(g GrafanaWorksp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaWorkspace.GrafanaWorkspaceVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceVpcConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

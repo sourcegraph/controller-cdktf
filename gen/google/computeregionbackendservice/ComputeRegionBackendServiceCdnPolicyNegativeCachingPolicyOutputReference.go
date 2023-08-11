@@ -180,7 +180,7 @@ func NewComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference
 	j := jsiiProxy_ComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

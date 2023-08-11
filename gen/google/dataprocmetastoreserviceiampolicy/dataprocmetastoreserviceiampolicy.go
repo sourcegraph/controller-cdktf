@@ -401,7 +401,7 @@ func NewDataprocMetastoreServiceIamPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_DataprocMetastoreServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataprocMetastoreServiceIamPolicy_Override(d DataprocMetastoreServiceIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -569,7 +569,7 @@ func DataprocMetastoreServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataprocMetastoreServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataprocMetastoreServiceIamPolicy_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataprocMetastoreServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamPolicy.DataprocMetastoreServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

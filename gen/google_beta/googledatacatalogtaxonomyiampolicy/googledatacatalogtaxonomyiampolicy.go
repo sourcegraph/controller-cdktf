@@ -401,7 +401,7 @@ func NewGoogleDataCatalogTaxonomyIamPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleDataCatalogTaxonomyIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleDataCatalogTaxonomyIamPolicy_Override(g GoogleDataCatalogTaxonomyI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleDataCatalogTaxonomyIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleDataCatalogTaxonomyIamPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleDataCatalogTaxonomyIamPolicy_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleDataCatalogTaxonomyIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamPolicy.GoogleDataCatalogTaxonomyIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

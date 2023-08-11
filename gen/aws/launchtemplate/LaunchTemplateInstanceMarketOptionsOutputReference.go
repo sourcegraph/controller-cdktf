@@ -204,7 +204,7 @@ func NewLaunchTemplateInstanceMarketOptionsOutputReference(terraformResource cdk
 	j := jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceMarketOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateInstanceMarketOptionsOutputReference_Override(l LaunchTemp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceMarketOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

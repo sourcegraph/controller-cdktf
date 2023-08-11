@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.billingSubaccount.BillingSubaccount",
+		"@cdktf/provider-google.billingSubaccount.BillingSubaccount",
 		reflect.TypeOf((*BillingSubaccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.billingSubaccount.BillingSubaccountConfig",
+		"@cdktf/provider-google.billingSubaccount.BillingSubaccountConfig",
 		reflect.TypeOf((*BillingSubaccountConfig)(nil)).Elem(),
 	)
 }

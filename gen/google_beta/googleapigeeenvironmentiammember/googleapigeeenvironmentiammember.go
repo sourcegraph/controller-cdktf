@@ -423,7 +423,7 @@ func NewGoogleApigeeEnvironmentIamMember(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleApigeeEnvironmentIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
+		"@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewGoogleApigeeEnvironmentIamMember_Override(g GoogleApigeeEnvironmentIamMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
+		"@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -591,7 +591,7 @@ func GoogleApigeeEnvironmentIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
+		"@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func GoogleApigeeEnvironmentIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
+		"@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func GoogleApigeeEnvironmentIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
+		"@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func GoogleApigeeEnvironmentIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
+		"@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember",
 		"tfResourceType",
 		&returns,
 	)

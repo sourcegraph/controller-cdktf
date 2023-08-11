@@ -228,7 +228,7 @@ func NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutp
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

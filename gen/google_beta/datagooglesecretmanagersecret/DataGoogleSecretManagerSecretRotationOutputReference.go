@@ -178,7 +178,7 @@ func NewDataGoogleSecretManagerSecretRotationOutputReference(terraformResource c
 	j := jsiiProxy_DataGoogleSecretManagerSecretRotationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleSecretManagerSecretRotationOutputReference_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

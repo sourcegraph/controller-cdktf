@@ -167,7 +167,7 @@ func NewServiceStatusLoadBalancerOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ServiceStatusLoadBalancerOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceStatusLoadBalancerOutputReference",
+		"@cdktf/provider-kubernetes.service.ServiceStatusLoadBalancerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewServiceStatusLoadBalancerOutputReference_Override(s ServiceStatusLoadBal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceStatusLoadBalancerOutputReference",
+		"@cdktf/provider-kubernetes.service.ServiceStatusLoadBalancerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

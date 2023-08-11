@@ -178,7 +178,7 @@ func NewDataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReference(te
 	j := jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

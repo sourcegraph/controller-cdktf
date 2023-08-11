@@ -104,7 +104,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList(terraformRe
 	j := jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList",
+		"@cdktf/provider-aws.dataAwsEc2NetworkInsightsAnalysis.DataAwsEc2NetworkInsightsAnalysisExplanationsDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -324,7 +324,7 @@ func NewGoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference(terrafo
 	j := jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewGoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

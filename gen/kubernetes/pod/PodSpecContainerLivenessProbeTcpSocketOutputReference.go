@@ -179,7 +179,7 @@ func NewPodSpecContainerLivenessProbeTcpSocketOutputReference(terraformResource 
 	j := jsiiProxy_PodSpecContainerLivenessProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPodSpecContainerLivenessProbeTcpSocketOutputReference_Override(p PodSpec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLivenessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

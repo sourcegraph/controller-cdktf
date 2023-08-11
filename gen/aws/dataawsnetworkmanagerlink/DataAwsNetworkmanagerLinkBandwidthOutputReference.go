@@ -178,7 +178,7 @@ func NewDataAwsNetworkmanagerLinkBandwidthOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsNetworkmanagerLinkBandwidthOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsNetworkmanagerLinkBandwidthOutputReference_Override(d DataAwsNetw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

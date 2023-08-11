@@ -226,7 +226,7 @@ func NewHealthcareDatasetIamBindingConditionOutputReference(terraformResource cd
 	j := jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConditionOutputReference",
+		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewHealthcareDatasetIamBindingConditionOutputReference_Override(h Healthcar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConditionOutputReference",
+		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

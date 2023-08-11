@@ -104,7 +104,7 @@ func NewGoogleContainerAttachedClusterErrorsList(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleContainerAttachedClusterErrorsList{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterErrorsList",
+		"@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterErrorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleContainerAttachedClusterErrorsList_Override(g GoogleContainerAttac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterErrorsList",
+		"@cdktf/provider-google-beta.googleContainerAttachedCluster.GoogleContainerAttachedClusterErrorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

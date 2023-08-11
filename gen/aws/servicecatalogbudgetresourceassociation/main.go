@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
 		reflect.TypeOf((*ServicecatalogBudgetResourceAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationConfig",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationConfig",
 		reflect.TypeOf((*ServicecatalogBudgetResourceAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationTimeouts",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationTimeouts",
 		reflect.TypeOf((*ServicecatalogBudgetResourceAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*ServicecatalogBudgetResourceAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

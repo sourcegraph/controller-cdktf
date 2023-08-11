@@ -179,7 +179,7 @@ func NewJobV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference
 	j := jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewJobV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

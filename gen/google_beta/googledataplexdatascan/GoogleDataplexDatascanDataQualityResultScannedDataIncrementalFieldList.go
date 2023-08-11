@@ -104,7 +104,7 @@ func NewGoogleDataplexDatascanDataQualityResultScannedDataIncrementalFieldList(t
 	j := jsiiProxy_GoogleDataplexDatascanDataQualityResultScannedDataIncrementalFieldList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultScannedDataIncrementalFieldList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultScannedDataIncrementalFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDataplexDatascanDataQualityResultScannedDataIncrementalFieldList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultScannedDataIncrementalFieldList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultScannedDataIncrementalFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

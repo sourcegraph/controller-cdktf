@@ -204,7 +204,7 @@ func NewStatefulSetSpecUpdateStrategyOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_StatefulSetSpecUpdateStrategyOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecUpdateStrategyOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetSpecUpdateStrategyOutputReference_Override(s StatefulSetSpecU
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecUpdateStrategyOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecUpdateStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

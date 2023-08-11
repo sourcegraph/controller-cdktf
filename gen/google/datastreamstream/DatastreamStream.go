@@ -601,7 +601,7 @@ func NewDatastreamStream(scope constructs.Construct, id *string, config *Datastr
 	j := jsiiProxy_DatastreamStream{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStream",
+		"@cdktf/provider-google.datastreamStream.DatastreamStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -614,7 +614,7 @@ func NewDatastreamStream_Override(d DatastreamStream, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStream",
+		"@cdktf/provider-google.datastreamStream.DatastreamStream",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -802,7 +802,7 @@ func DatastreamStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.datastreamStream.DatastreamStream",
+		"@cdktf/provider-google.datastreamStream.DatastreamStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func DatastreamStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.datastreamStream.DatastreamStream",
+		"@cdktf/provider-google.datastreamStream.DatastreamStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func DatastreamStream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.datastreamStream.DatastreamStream",
+		"@cdktf/provider-google.datastreamStream.DatastreamStream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -853,7 +853,7 @@ func DatastreamStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.datastreamStream.DatastreamStream",
+		"@cdktf/provider-google.datastreamStream.DatastreamStream",
 		"tfResourceType",
 		&returns,
 	)

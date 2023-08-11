@@ -104,7 +104,7 @@ func NewPrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList(terra
 	j := jsiiProxy_PrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewPrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

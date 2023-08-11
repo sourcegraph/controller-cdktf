@@ -204,7 +204,7 @@ func NewBatchJobDefinitionRetryStrategyOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_BatchJobDefinitionRetryStrategyOutputReference{}
 
 	_jsii_.Create(
-		"aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewBatchJobDefinitionRetryStrategyOutputReference_Override(b BatchJobDefini
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

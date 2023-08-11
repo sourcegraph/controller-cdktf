@@ -228,7 +228,7 @@ func NewGoogleBigqueryDataTransferConfigScheduleOptionsOutputReference(terraform
 	j := jsiiProxy_GoogleBigqueryDataTransferConfigScheduleOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigScheduleOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigScheduleOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleBigqueryDataTransferConfigScheduleOptionsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigScheduleOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigScheduleOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

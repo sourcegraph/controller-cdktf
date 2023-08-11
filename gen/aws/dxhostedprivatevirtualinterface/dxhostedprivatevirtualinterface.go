@@ -598,7 +598,7 @@ func NewDxHostedPrivateVirtualInterface(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DxHostedPrivateVirtualInterface{}
 
 	_jsii_.Create(
-		"aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -611,7 +611,7 @@ func NewDxHostedPrivateVirtualInterface_Override(d DxHostedPrivateVirtualInterfa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -832,7 +832,7 @@ func DxHostedPrivateVirtualInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -851,7 +851,7 @@ func DxHostedPrivateVirtualInterface_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -870,7 +870,7 @@ func DxHostedPrivateVirtualInterface_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -883,7 +883,7 @@ func DxHostedPrivateVirtualInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPrivateVirtualInterface.DxHostedPrivateVirtualInterface",
 		"tfResourceType",
 		&returns,
 	)

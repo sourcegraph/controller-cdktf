@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tls.provider.TlsProvider",
+		"@cdktf/provider-tls.provider.TlsProvider",
 		reflect.TypeOf((*TlsProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -42,11 +42,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tls.provider.TlsProviderConfig",
+		"@cdktf/provider-tls.provider.TlsProviderConfig",
 		reflect.TypeOf((*TlsProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tls.provider.TlsProviderProxy",
+		"@cdktf/provider-tls.provider.TlsProviderProxy",
 		reflect.TypeOf((*TlsProviderProxy)(nil)).Elem(),
 	)
 }

@@ -418,7 +418,7 @@ func NewDataAwsApiGatewayExport(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsApiGatewayExport{}
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
+		"@cdktf/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -431,7 +431,7 @@ func NewDataAwsApiGatewayExport_Override(d DataAwsApiGatewayExport, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
+		"@cdktf/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -575,7 +575,7 @@ func DataAwsApiGatewayExport_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
+		"@cdktf/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func DataAwsApiGatewayExport_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
+		"@cdktf/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func DataAwsApiGatewayExport_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
+		"@cdktf/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -626,7 +626,7 @@ func DataAwsApiGatewayExport_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
+		"@cdktf/provider-aws.dataAwsApiGatewayExport.DataAwsApiGatewayExport",
 		"tfResourceType",
 		&returns,
 	)

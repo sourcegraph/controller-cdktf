@@ -226,7 +226,7 @@ func NewTranscribeLanguageModelInputDataConfigOutputReference(terraformResource 
 	j := jsiiProxy_TranscribeLanguageModelInputDataConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfigOutputReference",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewTranscribeLanguageModelInputDataConfigOutputReference_Override(t Transcr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfigOutputReference",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

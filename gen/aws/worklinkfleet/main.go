@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.worklinkFleet.WorklinkFleet",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleet",
 		reflect.TypeOf((*WorklinkFleet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.worklinkFleet.WorklinkFleetConfig",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetConfig",
 		reflect.TypeOf((*WorklinkFleetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.worklinkFleet.WorklinkFleetIdentityProvider",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProvider",
 		reflect.TypeOf((*WorklinkFleetIdentityProvider)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.worklinkFleet.WorklinkFleetIdentityProviderOutputReference",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProviderOutputReference",
 		reflect.TypeOf((*WorklinkFleetIdentityProviderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,11 +125,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.worklinkFleet.WorklinkFleetNetwork",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetwork",
 		reflect.TypeOf((*WorklinkFleetNetwork)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.worklinkFleet.WorklinkFleetNetworkOutputReference",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetworkOutputReference",
 		reflect.TypeOf((*WorklinkFleetNetworkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

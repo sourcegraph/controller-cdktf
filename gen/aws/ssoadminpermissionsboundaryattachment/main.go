@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachment",
 		reflect.TypeOf((*SsoadminPermissionsBoundaryAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,19 +62,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentConfig",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentConfig",
 		reflect.TypeOf((*SsoadminPermissionsBoundaryAttachmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundary",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundary",
 		reflect.TypeOf((*SsoadminPermissionsBoundaryAttachmentPermissionsBoundary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReference",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReference",
 		reflect.TypeOf((*SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference",
 		reflect.TypeOf((*SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryCustomerManagedPolicyReferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference",
 		reflect.TypeOf((*SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewGoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigLis
 	j := jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigList",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigList",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

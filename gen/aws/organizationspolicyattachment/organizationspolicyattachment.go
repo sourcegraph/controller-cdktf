@@ -342,7 +342,7 @@ func NewOrganizationsPolicyAttachment(scope constructs.Construct, id *string, co
 	j := jsiiProxy_OrganizationsPolicyAttachment{}
 
 	_jsii_.Create(
-		"aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
+		"@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewOrganizationsPolicyAttachment_Override(o OrganizationsPolicyAttachment, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
+		"@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -488,7 +488,7 @@ func OrganizationsPolicyAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
+		"@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func OrganizationsPolicyAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
+		"@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func OrganizationsPolicyAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
+		"@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func OrganizationsPolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
+		"@cdktf/provider-aws.organizationsPolicyAttachment.OrganizationsPolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

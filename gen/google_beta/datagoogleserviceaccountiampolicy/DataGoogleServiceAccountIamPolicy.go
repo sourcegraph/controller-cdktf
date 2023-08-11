@@ -313,7 +313,7 @@ func NewDataGoogleServiceAccountIamPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_DataGoogleServiceAccountIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleServiceAccountIamPolicy_Override(d DataGoogleServiceAccountIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleServiceAccountIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleServiceAccountIamPolicy_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleServiceAccountIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleServiceAccountIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIamPolicy.DataGoogleServiceAccountIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

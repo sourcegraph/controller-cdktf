@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList(terraf
 	j := jsiiProxy_DaemonsetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerReadinessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

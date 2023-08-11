@@ -178,7 +178,7 @@ func NewDataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference
 	j := jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

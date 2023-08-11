@@ -374,7 +374,7 @@ func NewDataAwsVpcIpamPreviewNextCidr(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsVpcIpamPreviewNextCidr{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -387,7 +387,7 @@ func NewDataAwsVpcIpamPreviewNextCidr_Override(d DataAwsVpcIpamPreviewNextCidr, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -509,7 +509,7 @@ func DataAwsVpcIpamPreviewNextCidr_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func DataAwsVpcIpamPreviewNextCidr_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataAwsVpcIpamPreviewNextCidr_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func DataAwsVpcIpamPreviewNextCidr_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidr",
 		"tfResourceType",
 		&returns,
 	)

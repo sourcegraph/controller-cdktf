@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfi
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -443,7 +443,7 @@ func NewGoogleCloudRunServiceTemplateSpecContainersOutputReference(terraformReso
 	j := jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -455,7 +455,7 @@ func NewGoogleCloudRunServiceTemplateSpecContainersOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

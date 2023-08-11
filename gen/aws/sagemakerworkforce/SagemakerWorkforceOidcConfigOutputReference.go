@@ -340,7 +340,7 @@ func NewSagemakerWorkforceOidcConfigOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_SagemakerWorkforceOidcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -352,7 +352,7 @@ func NewSagemakerWorkforceOidcConfigOutputReference_Override(s SagemakerWorkforc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

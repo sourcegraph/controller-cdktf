@@ -460,7 +460,7 @@ func NewNetworkfirewallFirewallPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_NetworkfirewallFirewallPolicy{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewNetworkfirewallFirewallPolicy_Override(n NetworkfirewallFirewallPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -628,7 +628,7 @@ func NetworkfirewallFirewallPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func NetworkfirewallFirewallPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func NetworkfirewallFirewallPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func NetworkfirewallFirewallPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicy",
 		"tfResourceType",
 		&returns,
 	)

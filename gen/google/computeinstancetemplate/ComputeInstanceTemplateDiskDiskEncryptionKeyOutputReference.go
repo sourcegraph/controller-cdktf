@@ -179,7 +179,7 @@ func NewComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference(terraformRes
 	j := jsiiProxy_ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskDiskEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

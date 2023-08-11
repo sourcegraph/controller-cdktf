@@ -389,7 +389,7 @@ func NewTrustedOrigin(scope constructs.Construct, id *string, config *TrustedOri
 	j := jsiiProxy_TrustedOrigin{}
 
 	_jsii_.Create(
-		"okta.trustedOrigin.TrustedOrigin",
+		"@cdktf/provider-okta.trustedOrigin.TrustedOrigin",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewTrustedOrigin_Override(t TrustedOrigin, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.trustedOrigin.TrustedOrigin",
+		"@cdktf/provider-okta.trustedOrigin.TrustedOrigin",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -557,7 +557,7 @@ func TrustedOrigin_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.trustedOrigin.TrustedOrigin",
+		"@cdktf/provider-okta.trustedOrigin.TrustedOrigin",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func TrustedOrigin_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.trustedOrigin.TrustedOrigin",
+		"@cdktf/provider-okta.trustedOrigin.TrustedOrigin",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func TrustedOrigin_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.trustedOrigin.TrustedOrigin",
+		"@cdktf/provider-okta.trustedOrigin.TrustedOrigin",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func TrustedOrigin_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.trustedOrigin.TrustedOrigin",
+		"@cdktf/provider-okta.trustedOrigin.TrustedOrigin",
 		"tfResourceType",
 		&returns,
 	)

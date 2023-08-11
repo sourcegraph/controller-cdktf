@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.passwordPolicyRule.PasswordPolicyRule",
+		"@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRule",
 		reflect.TypeOf((*PasswordPolicyRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.passwordPolicyRule.PasswordPolicyRuleConfig",
+		"@cdktf/provider-okta.passwordPolicyRule.PasswordPolicyRuleConfig",
 		reflect.TypeOf((*PasswordPolicyRuleConfig)(nil)).Elem(),
 	)
 }

@@ -204,7 +204,7 @@ func NewIvsRecordingConfigurationThumbnailConfigurationOutputReference(terraform
 	j := jsiiProxy_IvsRecordingConfigurationThumbnailConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfigurationOutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIvsRecordingConfigurationThumbnailConfigurationOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfigurationOutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationThumbnailConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

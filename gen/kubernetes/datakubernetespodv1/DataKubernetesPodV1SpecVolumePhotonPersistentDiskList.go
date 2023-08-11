@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecVolumePhotonPersistentDiskList(terraformResource 
 	j := jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDiskList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecVolumePhotonPersistentDiskList_Override(d DataKub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDiskList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumePhotonPersistentDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

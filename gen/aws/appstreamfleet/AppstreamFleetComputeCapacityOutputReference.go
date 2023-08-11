@@ -212,7 +212,7 @@ func NewAppstreamFleetComputeCapacityOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AppstreamFleetComputeCapacityOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamFleet.AppstreamFleetComputeCapacityOutputReference",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -224,7 +224,7 @@ func NewAppstreamFleetComputeCapacityOutputReference_Override(a AppstreamFleetCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamFleet.AppstreamFleetComputeCapacityOutputReference",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetComputeCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

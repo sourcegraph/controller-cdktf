@@ -226,7 +226,7 @@ func NewKinesisAnalyticsApplicationInputsSchemaOutputReference(terraformResource
 	j := jsiiProxy_KinesisAnalyticsApplicationInputsSchemaOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewKinesisAnalyticsApplicationInputsSchemaOutputReference_Override(k Kinesi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

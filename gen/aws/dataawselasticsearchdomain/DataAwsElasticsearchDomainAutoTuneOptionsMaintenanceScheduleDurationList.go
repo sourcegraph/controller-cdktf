@@ -104,7 +104,7 @@ func NewDataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList
 	j := jsiiProxy_DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

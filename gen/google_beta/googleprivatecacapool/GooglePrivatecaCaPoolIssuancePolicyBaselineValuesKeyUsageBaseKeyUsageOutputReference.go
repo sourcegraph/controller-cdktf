@@ -372,7 +372,7 @@ func NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOut
 	j := jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewGooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -252,7 +252,7 @@ func NewDaemonsetSpecTemplateSpecVolumeConfigMapOutputReference(terraformResourc
 	j := jsiiProxy_DaemonsetSpecTemplateSpecVolumeConfigMapOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDaemonsetSpecTemplateSpecVolumeConfigMapOutputReference_Override(d Daemo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

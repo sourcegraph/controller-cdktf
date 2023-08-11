@@ -277,7 +277,7 @@ func NewDataTlsCertificateCertificatesOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataTlsCertificateCertificatesOutputReference{}
 
 	_jsii_.Create(
-		"tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -289,7 +289,7 @@ func NewDataTlsCertificateCertificatesOutputReference_Override(d DataTlsCertific
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -179,7 +179,7 @@ func NewGoogleCloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputRefere
 	j := jsiiProxy_GoogleCloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleCloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeedFeedOutputConfigPubsubDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

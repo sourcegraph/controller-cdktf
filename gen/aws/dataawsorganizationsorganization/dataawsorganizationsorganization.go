@@ -378,7 +378,7 @@ func NewDataAwsOrganizationsOrganization(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsOrganizationsOrganization{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -391,7 +391,7 @@ func NewDataAwsOrganizationsOrganization_Override(d DataAwsOrganizationsOrganiza
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -480,7 +480,7 @@ func DataAwsOrganizationsOrganization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataAwsOrganizationsOrganization_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func DataAwsOrganizationsOrganization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func DataAwsOrganizationsOrganization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganization",
 		"tfResourceType",
 		&returns,
 	)

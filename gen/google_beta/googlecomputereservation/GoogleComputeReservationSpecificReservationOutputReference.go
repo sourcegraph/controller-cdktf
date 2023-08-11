@@ -213,7 +213,7 @@ func NewGoogleComputeReservationSpecificReservationOutputReference(terraformReso
 	j := jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewGoogleComputeReservationSpecificReservationOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

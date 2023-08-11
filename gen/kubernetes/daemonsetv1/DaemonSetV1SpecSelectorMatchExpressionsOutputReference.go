@@ -228,7 +228,7 @@ func NewDaemonSetV1SpecSelectorMatchExpressionsOutputReference(terraformResource
 	j := jsiiProxy_DaemonSetV1SpecSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDaemonSetV1SpecSelectorMatchExpressionsOutputReference_Override(d Daemon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

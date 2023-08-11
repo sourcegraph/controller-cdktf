@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainName",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
 		reflect.TypeOf((*Apigatewayv2DomainName)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameConfig",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameConfig",
 		reflect.TypeOf((*Apigatewayv2DomainNameConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfiguration",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfiguration",
 		reflect.TypeOf((*Apigatewayv2DomainNameDomainNameConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameDomainNameConfigurationOutputReference",
 		reflect.TypeOf((*Apigatewayv2DomainNameDomainNameConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateArn", GoGetter: "CertificateArn"},
@@ -127,11 +127,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameMutualTlsAuthentication",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameMutualTlsAuthentication",
 		reflect.TypeOf((*Apigatewayv2DomainNameMutualTlsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference",
 		reflect.TypeOf((*Apigatewayv2DomainNameMutualTlsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -168,11 +168,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeouts",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeouts",
 		reflect.TypeOf((*Apigatewayv2DomainNameTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeoutsOutputReference",
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainNameTimeoutsOutputReference",
 		reflect.TypeOf((*Apigatewayv2DomainNameTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

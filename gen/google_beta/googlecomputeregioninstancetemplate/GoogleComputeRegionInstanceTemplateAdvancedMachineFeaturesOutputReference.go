@@ -228,7 +228,7 @@ func NewGoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReferenc
 	j := jsiiProxy_GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

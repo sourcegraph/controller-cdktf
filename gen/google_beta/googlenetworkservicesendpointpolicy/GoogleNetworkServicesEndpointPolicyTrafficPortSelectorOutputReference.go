@@ -179,7 +179,7 @@ func NewGoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference(te
 	j := jsiiProxy_GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesEndpointPolicy.GoogleNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

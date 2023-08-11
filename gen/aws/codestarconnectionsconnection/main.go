@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codestarconnectionsConnection.CodestarconnectionsConnection",
+		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		reflect.TypeOf((*CodestarconnectionsConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig",
+		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnectionConfig",
 		reflect.TypeOf((*CodestarconnectionsConnectionConfig)(nil)).Elem(),
 	)
 }

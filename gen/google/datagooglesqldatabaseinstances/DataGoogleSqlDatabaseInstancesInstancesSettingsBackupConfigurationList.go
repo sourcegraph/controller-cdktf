@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationList(t
 	j := jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsBackupConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

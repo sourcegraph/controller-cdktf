@@ -370,7 +370,7 @@ func NewDataGoogleDnsRecordSet(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataGoogleDnsRecordSet{}
 
 	_jsii_.Create(
-		"google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
+		"@cdktf/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataGoogleDnsRecordSet_Override(d DataGoogleDnsRecordSet, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
+		"@cdktf/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -505,7 +505,7 @@ func DataGoogleDnsRecordSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
+		"@cdktf/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataGoogleDnsRecordSet_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
+		"@cdktf/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataGoogleDnsRecordSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
+		"@cdktf/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataGoogleDnsRecordSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
+		"@cdktf/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
 		"tfResourceType",
 		&returns,
 	)

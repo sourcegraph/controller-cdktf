@@ -202,7 +202,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementXssMatchStatementTextTransf
 	j := jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatementTextTransformationOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatementTextTransformationOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatementTextTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementXssMatchStatementTextTransf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatementTextTransformationOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatementTextTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

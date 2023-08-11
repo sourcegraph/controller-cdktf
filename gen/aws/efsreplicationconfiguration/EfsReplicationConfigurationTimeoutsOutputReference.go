@@ -204,7 +204,7 @@ func NewEfsReplicationConfigurationTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_EfsReplicationConfigurationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEfsReplicationConfigurationTimeoutsOutputReference_Override(e EfsReplica
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

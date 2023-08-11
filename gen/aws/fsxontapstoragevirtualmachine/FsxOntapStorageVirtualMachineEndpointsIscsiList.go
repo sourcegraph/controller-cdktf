@@ -104,7 +104,7 @@ func NewFsxOntapStorageVirtualMachineEndpointsIscsiList(terraformResource cdktf.
 	j := jsiiProxy_FsxOntapStorageVirtualMachineEndpointsIscsiList{}
 
 	_jsii_.Create(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiList",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewFsxOntapStorageVirtualMachineEndpointsIscsiList_Override(f FsxOntapStora
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiList",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

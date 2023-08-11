@@ -302,7 +302,7 @@ func NewDataAwsS3BucketPolicy(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsS3BucketPolicy{}
 
 	_jsii_.Create(
-		"aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
+		"@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsS3BucketPolicy_Override(d DataAwsS3BucketPolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
+		"@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsS3BucketPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
+		"@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsS3BucketPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
+		"@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsS3BucketPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
+		"@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsS3BucketPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
+		"@cdktf/provider-aws.dataAwsS3BucketPolicy.DataAwsS3BucketPolicy",
 		"tfResourceType",
 		&returns,
 	)

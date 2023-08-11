@@ -202,7 +202,7 @@ func NewDataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference(terraformR
 	j := jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

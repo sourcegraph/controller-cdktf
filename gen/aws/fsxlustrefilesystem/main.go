@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystem",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		reflect.TypeOf((*FsxLustreFileSystem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -131,15 +131,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystemConfig",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemConfig",
 		reflect.TypeOf((*FsxLustreFileSystemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfiguration",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfiguration",
 		reflect.TypeOf((*FsxLustreFileSystemLogConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfigurationOutputReference",
 		reflect.TypeOf((*FsxLustreFileSystemLogConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -177,11 +177,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystemTimeouts",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemTimeouts",
 		reflect.TypeOf((*FsxLustreFileSystemTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystemTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemTimeoutsOutputReference",
 		reflect.TypeOf((*FsxLustreFileSystemTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

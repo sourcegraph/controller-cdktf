@@ -225,7 +225,7 @@ func NewDataAwsIamPolicyDocumentStatementConditionOutputReference(terraformResou
 	j := jsiiProxy_DataAwsIamPolicyDocumentStatementConditionOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementConditionOutputReference",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewDataAwsIamPolicyDocumentStatementConditionOutputReference_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementConditionOutputReference",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocumentStatementConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

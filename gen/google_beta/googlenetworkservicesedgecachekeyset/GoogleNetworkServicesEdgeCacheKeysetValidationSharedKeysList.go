@@ -116,7 +116,7 @@ func NewGoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList(terraformRe
 	j := jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

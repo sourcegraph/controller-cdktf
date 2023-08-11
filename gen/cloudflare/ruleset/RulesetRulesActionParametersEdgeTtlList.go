@@ -116,7 +116,7 @@ func NewRulesetRulesActionParametersEdgeTtlList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_RulesetRulesActionParametersEdgeTtlList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesActionParametersEdgeTtlList_Override(r RulesetRulesActionPar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

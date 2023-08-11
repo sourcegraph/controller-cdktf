@@ -252,7 +252,7 @@ func NewAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReferenc
 	j := jsiiProxy_AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

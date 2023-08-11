@@ -180,7 +180,7 @@ func NewReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputRefe
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerStartupProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

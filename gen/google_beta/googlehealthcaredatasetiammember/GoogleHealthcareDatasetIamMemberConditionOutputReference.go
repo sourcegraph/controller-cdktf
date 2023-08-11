@@ -226,7 +226,7 @@ func NewGoogleHealthcareDatasetIamMemberConditionOutputReference(terraformResour
 	j := jsiiProxy_GoogleHealthcareDatasetIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleHealthcareDatasetIamMemberConditionOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

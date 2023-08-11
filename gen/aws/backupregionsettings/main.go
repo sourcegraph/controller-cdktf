@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.backupRegionSettings.BackupRegionSettings",
+		"@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings",
 		reflect.TypeOf((*BackupRegionSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupRegionSettings.BackupRegionSettingsConfig",
+		"@cdktf/provider-aws.backupRegionSettings.BackupRegionSettingsConfig",
 		reflect.TypeOf((*BackupRegionSettingsConfig)(nil)).Elem(),
 	)
 }

@@ -226,7 +226,7 @@ func NewGoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference(terrafo
 	j := jsiiProxy_GoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamMember.GoogleDataprocAutoscalingPolicyIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

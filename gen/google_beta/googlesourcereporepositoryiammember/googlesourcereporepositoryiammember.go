@@ -424,7 +424,7 @@ func NewGoogleSourcerepoRepositoryIamMember(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleSourcerepoRepositoryIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleSourcerepoRepositoryIamMember_Override(g GoogleSourcerepoRepositor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleSourcerepoRepositoryIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleSourcerepoRepositoryIamMember_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleSourcerepoRepositoryIamMember_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleSourcerepoRepositoryIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
+		"@cdktf/provider-google-beta.googleSourcerepoRepositoryIamMember.GoogleSourcerepoRepositoryIamMember",
 		"tfResourceType",
 		&returns,
 	)

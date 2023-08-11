@@ -116,7 +116,7 @@ func NewNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQuery
 	j := jsiiProxy_NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchList{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchList",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQuery
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchList",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList(terrafor
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

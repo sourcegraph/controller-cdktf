@@ -401,7 +401,7 @@ func NewGoogleComputeSubnetworkIamPolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleComputeSubnetworkIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleComputeSubnetworkIamPolicy_Override(g GoogleComputeSubnetworkIamPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleComputeSubnetworkIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleComputeSubnetworkIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleComputeSubnetworkIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleComputeSubnetworkIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

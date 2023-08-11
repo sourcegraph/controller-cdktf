@@ -521,7 +521,7 @@ func NewVertexAiFeaturestore(scope constructs.Construct, id *string, config *Ver
 	j := jsiiProxy_VertexAiFeaturestore{}
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestore.VertexAiFeaturestore",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewVertexAiFeaturestore_Override(v VertexAiFeaturestore, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestore.VertexAiFeaturestore",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -700,7 +700,7 @@ func VertexAiFeaturestore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiFeaturestore.VertexAiFeaturestore",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -719,7 +719,7 @@ func VertexAiFeaturestore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiFeaturestore.VertexAiFeaturestore",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func VertexAiFeaturestore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiFeaturestore.VertexAiFeaturestore",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -751,7 +751,7 @@ func VertexAiFeaturestore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.vertexAiFeaturestore.VertexAiFeaturestore",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestore",
 		"tfResourceType",
 		&returns,
 	)

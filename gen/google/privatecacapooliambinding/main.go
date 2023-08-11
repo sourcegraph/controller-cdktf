@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
 		reflect.TypeOf((*PrivatecaCaPoolIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingCondition",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingCondition",
 		reflect.TypeOf((*PrivatecaCaPoolIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConditionOutputReference",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConditionOutputReference",
 		reflect.TypeOf((*PrivatecaCaPoolIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConfig",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConfig",
 		reflect.TypeOf((*PrivatecaCaPoolIamBindingConfig)(nil)).Elem(),
 	)
 }

@@ -116,7 +116,7 @@ func NewPolicyRuleSignonFactorSequenceList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_PolicyRuleSignonFactorSequenceList{}
 
 	_jsii_.Create(
-		"okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList",
+		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPolicyRuleSignonFactorSequenceList_Override(p PolicyRuleSignonFactorSequ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList",
+		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -179,7 +179,7 @@ func NewCodebuildProjectSourceGitSubmodulesConfigOutputReference(terraformResour
 	j := jsiiProxy_CodebuildProjectSourceGitSubmodulesConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCodebuildProjectSourceGitSubmodulesConfigOutputReference_Override(c Code
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

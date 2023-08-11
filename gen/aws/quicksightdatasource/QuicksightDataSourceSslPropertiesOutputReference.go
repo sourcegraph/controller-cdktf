@@ -179,7 +179,7 @@ func NewQuicksightDataSourceSslPropertiesOutputReference(terraformResource cdktf
 	j := jsiiProxy_QuicksightDataSourceSslPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceSslPropertiesOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceSslPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewQuicksightDataSourceSslPropertiesOutputReference_Override(q QuicksightDa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceSslPropertiesOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceSslPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

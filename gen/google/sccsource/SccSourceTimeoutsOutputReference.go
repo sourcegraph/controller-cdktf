@@ -228,7 +228,7 @@ func NewSccSourceTimeoutsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_SccSourceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.sccSource.SccSourceTimeoutsOutputReference",
+		"@cdktf/provider-google.sccSource.SccSourceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSccSourceTimeoutsOutputReference_Override(s SccSourceTimeoutsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccSource.SccSourceTimeoutsOutputReference",
+		"@cdktf/provider-google.sccSource.SccSourceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -180,7 +180,7 @@ func NewWafv2WebAclDefaultActionBlockOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_Wafv2WebAclDefaultActionBlockOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewWafv2WebAclDefaultActionBlockOutputReference_Override(w Wafv2WebAclDefau
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

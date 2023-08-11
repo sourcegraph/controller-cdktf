@@ -1024,7 +1024,7 @@ func NewAutoLoginApp(scope constructs.Construct, id *string, config *AutoLoginAp
 	j := jsiiProxy_AutoLoginApp{}
 
 	_jsii_.Create(
-		"okta.autoLoginApp.AutoLoginApp",
+		"@cdktf/provider-okta.autoLoginApp.AutoLoginApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1037,7 +1037,7 @@ func NewAutoLoginApp_Override(a AutoLoginApp, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.autoLoginApp.AutoLoginApp",
+		"@cdktf/provider-okta.autoLoginApp.AutoLoginApp",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1445,7 +1445,7 @@ func AutoLoginApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.autoLoginApp.AutoLoginApp",
+		"@cdktf/provider-okta.autoLoginApp.AutoLoginApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1464,7 +1464,7 @@ func AutoLoginApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.autoLoginApp.AutoLoginApp",
+		"@cdktf/provider-okta.autoLoginApp.AutoLoginApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1483,7 +1483,7 @@ func AutoLoginApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.autoLoginApp.AutoLoginApp",
+		"@cdktf/provider-okta.autoLoginApp.AutoLoginApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1496,7 +1496,7 @@ func AutoLoginApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.autoLoginApp.AutoLoginApp",
+		"@cdktf/provider-okta.autoLoginApp.AutoLoginApp",
 		"tfResourceType",
 		&returns,
 	)

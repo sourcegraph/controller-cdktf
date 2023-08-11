@@ -180,7 +180,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference(
 	j := jsiiProxy_DaemonsetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerReadinessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

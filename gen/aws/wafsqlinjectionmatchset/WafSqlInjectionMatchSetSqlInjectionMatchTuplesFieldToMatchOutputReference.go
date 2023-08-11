@@ -203,7 +203,7 @@ func NewWafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReferenc
 	j := jsiiProxy_WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewWafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

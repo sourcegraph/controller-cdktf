@@ -400,7 +400,7 @@ func NewLambdaCodeSigningConfig(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_LambdaCodeSigningConfig{}
 
 	_jsii_.Create(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewLambdaCodeSigningConfig_Override(l LambdaCodeSigningConfig, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -535,7 +535,7 @@ func LambdaCodeSigningConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func LambdaCodeSigningConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func LambdaCodeSigningConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func LambdaCodeSigningConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfig",
 		"tfResourceType",
 		&returns,
 	)

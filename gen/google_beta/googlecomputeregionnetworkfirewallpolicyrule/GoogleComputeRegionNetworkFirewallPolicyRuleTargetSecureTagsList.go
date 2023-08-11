@@ -116,7 +116,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList(terrafo
 	j := jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

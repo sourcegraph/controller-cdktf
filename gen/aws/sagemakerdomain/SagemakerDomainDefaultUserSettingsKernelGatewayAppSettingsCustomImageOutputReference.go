@@ -226,7 +226,7 @@ func NewSagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOut
 	j := jsiiProxy_SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsCustomImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

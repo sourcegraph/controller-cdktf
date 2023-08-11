@@ -367,7 +367,7 @@ func NewSagemakerFlowDefinitionHumanLoopConfigOutputReference(terraformResource 
 	j := jsiiProxy_SagemakerFlowDefinitionHumanLoopConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewSagemakerFlowDefinitionHumanLoopConfigOutputReference_Override(s Sagemak
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

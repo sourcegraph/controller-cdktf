@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
 		reflect.TypeOf((*GoogleContainerAzureClient)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClientConfig",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClientConfig",
 		reflect.TypeOf((*GoogleContainerAzureClientConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClientTimeouts",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClientTimeouts",
 		reflect.TypeOf((*GoogleContainerAzureClientTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClientTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClientTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleContainerAzureClientTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -414,7 +414,7 @@ func NewSentinelPolicy(scope constructs.Construct, id *string, config *SentinelP
 	j := jsiiProxy_SentinelPolicy{}
 
 	_jsii_.Create(
-		"tfe.sentinelPolicy.SentinelPolicy",
+		"@cdktf/provider-tfe.sentinelPolicy.SentinelPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewSentinelPolicy_Override(s SentinelPolicy, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.sentinelPolicy.SentinelPolicy",
+		"@cdktf/provider-tfe.sentinelPolicy.SentinelPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -593,7 +593,7 @@ func SentinelPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.sentinelPolicy.SentinelPolicy",
+		"@cdktf/provider-tfe.sentinelPolicy.SentinelPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func SentinelPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.sentinelPolicy.SentinelPolicy",
+		"@cdktf/provider-tfe.sentinelPolicy.SentinelPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func SentinelPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.sentinelPolicy.SentinelPolicy",
+		"@cdktf/provider-tfe.sentinelPolicy.SentinelPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func SentinelPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.sentinelPolicy.SentinelPolicy",
+		"@cdktf/provider-tfe.sentinelPolicy.SentinelPolicy",
 		"tfResourceType",
 		&returns,
 	)

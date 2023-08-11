@@ -414,7 +414,7 @@ func NewDataGoogleComputeBackendBucket(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGoogleComputeBackendBucket{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewDataGoogleComputeBackendBucket_Override(d DataGoogleComputeBackendBucket
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -538,7 +538,7 @@ func DataGoogleComputeBackendBucket_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func DataGoogleComputeBackendBucket_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func DataGoogleComputeBackendBucket_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func DataGoogleComputeBackendBucket_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucket",
 		"tfResourceType",
 		&returns,
 	)

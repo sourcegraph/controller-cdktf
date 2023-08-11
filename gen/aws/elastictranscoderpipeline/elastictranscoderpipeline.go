@@ -545,7 +545,7 @@ func NewElastictranscoderPipeline(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ElastictranscoderPipeline{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -558,7 +558,7 @@ func NewElastictranscoderPipeline_Override(e ElastictranscoderPipeline, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -724,7 +724,7 @@ func ElastictranscoderPipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -743,7 +743,7 @@ func ElastictranscoderPipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func ElastictranscoderPipeline_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -775,7 +775,7 @@ func ElastictranscoderPipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipeline",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipeline",
 		"tfResourceType",
 		&returns,
 	)

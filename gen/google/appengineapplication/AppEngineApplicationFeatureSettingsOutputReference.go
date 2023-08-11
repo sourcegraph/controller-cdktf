@@ -179,7 +179,7 @@ func NewAppEngineApplicationFeatureSettingsOutputReference(terraformResource cdk
 	j := jsiiProxy_AppEngineApplicationFeatureSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppEngineApplicationFeatureSettingsOutputReference_Override(a AppEngineA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

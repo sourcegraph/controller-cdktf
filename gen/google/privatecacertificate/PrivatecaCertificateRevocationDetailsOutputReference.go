@@ -178,7 +178,7 @@ func NewPrivatecaCertificateRevocationDetailsOutputReference(terraformResource c
 	j := jsiiProxy_PrivatecaCertificateRevocationDetailsOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewPrivatecaCertificateRevocationDetailsOutputReference_Override(p Privatec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

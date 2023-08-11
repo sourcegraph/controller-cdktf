@@ -377,7 +377,7 @@ func NewNetworkmanagerCoreNetworkPolicyAttachment(scope constructs.Construct, id
 	j := jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment{}
 
 	_jsii_.Create(
-		"aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
+		"@cdktf/provider-aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewNetworkmanagerCoreNetworkPolicyAttachment_Override(n NetworkmanagerCoreN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
+		"@cdktf/provider-aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -523,7 +523,7 @@ func NetworkmanagerCoreNetworkPolicyAttachment_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
+		"@cdktf/provider-aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func NetworkmanagerCoreNetworkPolicyAttachment_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
+		"@cdktf/provider-aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func NetworkmanagerCoreNetworkPolicyAttachment_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
+		"@cdktf/provider-aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func NetworkmanagerCoreNetworkPolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
+		"@cdktf/provider-aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

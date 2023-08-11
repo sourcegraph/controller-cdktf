@@ -353,7 +353,7 @@ func NewCeCostAllocationTag(scope constructs.Construct, id *string, config *CeCo
 	j := jsiiProxy_CeCostAllocationTag{}
 
 	_jsii_.Create(
-		"aws.ceCostAllocationTag.CeCostAllocationTag",
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewCeCostAllocationTag_Override(c CeCostAllocationTag, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceCostAllocationTag.CeCostAllocationTag",
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -499,7 +499,7 @@ func CeCostAllocationTag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceCostAllocationTag.CeCostAllocationTag",
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func CeCostAllocationTag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceCostAllocationTag.CeCostAllocationTag",
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func CeCostAllocationTag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ceCostAllocationTag.CeCostAllocationTag",
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func CeCostAllocationTag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ceCostAllocationTag.CeCostAllocationTag",
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		"tfResourceType",
 		&returns,
 	)

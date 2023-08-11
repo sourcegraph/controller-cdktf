@@ -178,7 +178,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputRefere
 	j := jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

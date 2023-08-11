@@ -180,7 +180,7 @@ func NewPodSpecVolumeProjectedSourcesDownwardApiOutputReference(terraformResourc
 	j := jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewPodSpecVolumeProjectedSourcesDownwardApiOutputReference_Override(p PodSp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

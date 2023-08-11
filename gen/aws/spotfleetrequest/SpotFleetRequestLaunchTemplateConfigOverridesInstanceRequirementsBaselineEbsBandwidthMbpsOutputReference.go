@@ -204,7 +204,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselin
 	j := jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

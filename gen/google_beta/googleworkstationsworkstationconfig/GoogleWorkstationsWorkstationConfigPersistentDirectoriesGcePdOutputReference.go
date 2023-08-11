@@ -276,7 +276,7 @@ func NewGoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputRefer
 	j := jsiiProxy_GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewGoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

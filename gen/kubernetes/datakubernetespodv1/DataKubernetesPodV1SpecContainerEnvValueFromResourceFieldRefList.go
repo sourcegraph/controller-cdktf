@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList(terrafo
 	j := jsiiProxy_DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerEnvValueFromResourceFieldRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

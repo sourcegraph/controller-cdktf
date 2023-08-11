@@ -204,7 +204,7 @@ func NewDeploymentV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputR
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

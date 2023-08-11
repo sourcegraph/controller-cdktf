@@ -485,7 +485,7 @@ func NewDataAwsEc2TransitGatewayMulticastDomain(scope constructs.Construct, id *
 	j := jsiiProxy_DataAwsEc2TransitGatewayMulticastDomain{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewDataAwsEc2TransitGatewayMulticastDomain_Override(d DataAwsEc2TransitGate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -609,7 +609,7 @@ func DataAwsEc2TransitGatewayMulticastDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -628,7 +628,7 @@ func DataAwsEc2TransitGatewayMulticastDomain_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func DataAwsEc2TransitGatewayMulticastDomain_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func DataAwsEc2TransitGatewayMulticastDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomain",
 		"tfResourceType",
 		&returns,
 	)

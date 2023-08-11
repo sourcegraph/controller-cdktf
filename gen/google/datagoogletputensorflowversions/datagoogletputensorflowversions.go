@@ -327,7 +327,7 @@ func NewDataGoogleTpuTensorflowVersions(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleTpuTensorflowVersions{}
 
 	_jsii_.Create(
-		"google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
+		"@cdktf/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataGoogleTpuTensorflowVersions_Override(d DataGoogleTpuTensorflowVersio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
+		"@cdktf/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataGoogleTpuTensorflowVersions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
+		"@cdktf/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -470,7 +470,7 @@ func DataGoogleTpuTensorflowVersions_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
+		"@cdktf/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataGoogleTpuTensorflowVersions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
+		"@cdktf/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataGoogleTpuTensorflowVersions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
+		"@cdktf/provider-google.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions",
 		"tfResourceType",
 		&returns,
 	)

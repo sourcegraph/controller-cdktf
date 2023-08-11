@@ -226,7 +226,7 @@ func NewDbParameterGroupParameterOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DbParameterGroupParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbParameterGroup.DbParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDbParameterGroupParameterOutputReference_Override(d DbParameterGroupPara
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbParameterGroup.DbParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

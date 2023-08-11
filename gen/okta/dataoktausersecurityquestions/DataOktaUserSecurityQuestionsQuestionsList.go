@@ -104,7 +104,7 @@ func NewDataOktaUserSecurityQuestionsQuestionsList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList{}
 
 	_jsii_.Create(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsList",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaUserSecurityQuestionsQuestionsList_Override(d DataOktaUserSecuri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsList",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

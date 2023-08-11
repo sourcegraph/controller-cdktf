@@ -228,7 +228,7 @@ func NewContainerAzureNodePoolTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ContainerAzureNodePoolTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAzureNodePool.ContainerAzureNodePoolTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewContainerAzureNodePoolTimeoutsOutputReference_Override(c ContainerAzureN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureNodePool.ContainerAzureNodePoolTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

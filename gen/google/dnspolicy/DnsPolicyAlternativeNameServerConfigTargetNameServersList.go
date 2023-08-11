@@ -116,7 +116,7 @@ func NewDnsPolicyAlternativeNameServerConfigTargetNameServersList(terraformResou
 	j := jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersList{}
 
 	_jsii_.Create(
-		"google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList",
+		"@cdktf/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDnsPolicyAlternativeNameServerConfigTargetNameServersList_Override(d Dns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList",
+		"@cdktf/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

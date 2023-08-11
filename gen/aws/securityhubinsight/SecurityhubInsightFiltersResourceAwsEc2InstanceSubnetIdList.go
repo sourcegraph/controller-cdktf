@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList(terraformRes
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList_Override(s S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

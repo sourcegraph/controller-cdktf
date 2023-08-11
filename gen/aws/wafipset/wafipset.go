@@ -354,7 +354,7 @@ func NewWafIpset(scope constructs.Construct, id *string, config *WafIpsetConfig)
 	j := jsiiProxy_WafIpset{}
 
 	_jsii_.Create(
-		"aws.wafIpset.WafIpset",
+		"@cdktf/provider-aws.wafIpset.WafIpset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewWafIpset_Override(w WafIpset, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafIpset.WafIpset",
+		"@cdktf/provider-aws.wafIpset.WafIpset",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -489,7 +489,7 @@ func WafIpset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafIpset.WafIpset",
+		"@cdktf/provider-aws.wafIpset.WafIpset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func WafIpset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafIpset.WafIpset",
+		"@cdktf/provider-aws.wafIpset.WafIpset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func WafIpset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafIpset.WafIpset",
+		"@cdktf/provider-aws.wafIpset.WafIpset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func WafIpset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafIpset.WafIpset",
+		"@cdktf/provider-aws.wafIpset.WafIpset",
 		"tfResourceType",
 		&returns,
 	)

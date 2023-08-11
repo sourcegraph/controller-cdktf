@@ -228,7 +228,7 @@ func NewFsxLustreFileSystemTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_FsxLustreFileSystemTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystemTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFsxLustreFileSystemTimeoutsOutputReference_Override(f FsxLustreFileSyste
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystemTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

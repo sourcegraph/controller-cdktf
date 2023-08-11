@@ -189,7 +189,7 @@ func NewDataAwsRedshiftClusterClusterNodesOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsRedshiftClusterClusterNodesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftCluster.DataAwsRedshiftClusterClusterNodesOutputReference",
+		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftClusterClusterNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsRedshiftClusterClusterNodesOutputReference_Override(d DataAwsReds
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftCluster.DataAwsRedshiftClusterClusterNodesOutputReference",
+		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftClusterClusterNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

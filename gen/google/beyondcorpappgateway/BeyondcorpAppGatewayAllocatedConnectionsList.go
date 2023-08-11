@@ -104,7 +104,7 @@ func NewBeyondcorpAppGatewayAllocatedConnectionsList(terraformResource cdktf.IIn
 	j := jsiiProxy_BeyondcorpAppGatewayAllocatedConnectionsList{}
 
 	_jsii_.Create(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsList",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewBeyondcorpAppGatewayAllocatedConnectionsList_Override(b BeyondcorpAppGat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsList",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

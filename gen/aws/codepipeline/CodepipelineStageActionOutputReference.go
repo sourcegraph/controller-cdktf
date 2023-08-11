@@ -439,7 +439,7 @@ func NewCodepipelineStageActionOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_CodepipelineStageActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineStageActionOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStageActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewCodepipelineStageActionOutputReference_Override(c CodepipelineStageActio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineStageActionOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStageActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

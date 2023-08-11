@@ -104,7 +104,7 @@ func NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList(terraformRes
 	j := jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

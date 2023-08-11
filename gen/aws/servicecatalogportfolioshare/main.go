@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShare",
 		reflect.TypeOf((*ServicecatalogPortfolioShare)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accepted", GoGetter: "Accepted"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareConfig",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareConfig",
 		reflect.TypeOf((*ServicecatalogPortfolioShareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeouts",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeouts",
 		reflect.TypeOf((*ServicecatalogPortfolioShareTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeoutsOutputReference",
 		reflect.TypeOf((*ServicecatalogPortfolioShareTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

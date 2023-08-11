@@ -556,7 +556,7 @@ func NewNetworkAclRule(scope constructs.Construct, id *string, config *NetworkAc
 	j := jsiiProxy_NetworkAclRule{}
 
 	_jsii_.Create(
-		"aws.networkAclRule.NetworkAclRule",
+		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -569,7 +569,7 @@ func NewNetworkAclRule_Override(n NetworkAclRule, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkAclRule.NetworkAclRule",
+		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -801,7 +801,7 @@ func NetworkAclRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkAclRule.NetworkAclRule",
+		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func NetworkAclRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkAclRule.NetworkAclRule",
+		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func NetworkAclRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkAclRule.NetworkAclRule",
+		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -852,7 +852,7 @@ func NetworkAclRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkAclRule.NetworkAclRule",
+		"@cdktf/provider-aws.networkAclRule.NetworkAclRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewGoogleIamAccessBoundaryPolicyRulesOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleIamAccessBoundaryPolicyRulesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesOutputReference",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleIamAccessBoundaryPolicyRulesOutputReference_Override(g GoogleIamAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesOutputReference",
+		"@cdktf/provider-google-beta.googleIamAccessBoundaryPolicy.GoogleIamAccessBoundaryPolicyRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

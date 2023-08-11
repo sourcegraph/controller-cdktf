@@ -202,7 +202,7 @@ func NewGoogleDataprocJobSchedulingOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleDataprocJobSchedulingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSchedulingOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleDataprocJobSchedulingOutputReference_Override(g GoogleDataprocJobS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSchedulingOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

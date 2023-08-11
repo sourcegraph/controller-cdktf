@@ -252,7 +252,7 @@ func NewDatastreamStreamSourceConfigMysqlSourceConfigOutputReference(terraformRe
 	j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDatastreamStreamSourceConfigMysqlSourceConfigOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

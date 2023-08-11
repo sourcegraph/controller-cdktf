@@ -204,7 +204,7 @@ func NewDaemonsetSpecTemplateSpecVolumeDownwardApiOutputReference(terraformResou
 	j := jsiiProxy_DaemonsetSpecTemplateSpecVolumeDownwardApiOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonsetSpecTemplateSpecVolumeDownwardApiOutputReference_Override(d Dae
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

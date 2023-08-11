@@ -180,7 +180,7 @@ func NewSagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputRefer
 	j := jsiiProxy_SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference",
+		"@cdktf/provider-aws.sagemakerNotebookInstance.SagemakerNotebookInstanceInstanceMetadataServiceConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -203,7 +203,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference
 	j := jsiiProxy_DaemonsetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

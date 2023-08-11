@@ -508,7 +508,7 @@ func NewRateLimit(scope constructs.Construct, id *string, config *RateLimitConfi
 	j := jsiiProxy_RateLimit{}
 
 	_jsii_.Create(
-		"cloudflare.rateLimit.RateLimit",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewRateLimit_Override(r RateLimit, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.rateLimit.RateLimit",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -698,7 +698,7 @@ func RateLimit_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.rateLimit.RateLimit",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func RateLimit_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.rateLimit.RateLimit",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func RateLimit_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.rateLimit.RateLimit",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func RateLimit_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.rateLimit.RateLimit",
+		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
 		"tfResourceType",
 		&returns,
 	)

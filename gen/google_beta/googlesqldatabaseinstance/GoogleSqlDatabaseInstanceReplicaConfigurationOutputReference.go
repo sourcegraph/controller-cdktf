@@ -420,7 +420,7 @@ func NewGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference(terraformRe
 	j := jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

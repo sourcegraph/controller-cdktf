@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.backupFramework.BackupFramework",
+		"@cdktf/provider-aws.backupFramework.BackupFramework",
 		reflect.TypeOf((*BackupFramework)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,19 +77,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupFramework.BackupFrameworkConfig",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkConfig",
 		reflect.TypeOf((*BackupFrameworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupFramework.BackupFrameworkControl",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControl",
 		reflect.TypeOf((*BackupFrameworkControl)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupFramework.BackupFrameworkControlInputParameter",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameter",
 		reflect.TypeOf((*BackupFrameworkControlInputParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupFramework.BackupFrameworkControlInputParameterList",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameterList",
 		reflect.TypeOf((*BackupFrameworkControlInputParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.backupFramework.BackupFrameworkControlInputParameterOutputReference",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlInputParameterOutputReference",
 		reflect.TypeOf((*BackupFrameworkControlInputParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -148,7 +148,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.backupFramework.BackupFrameworkControlList",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlList",
 		reflect.TypeOf((*BackupFrameworkControlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -169,7 +169,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.backupFramework.BackupFrameworkControlOutputReference",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlOutputReference",
 		reflect.TypeOf((*BackupFrameworkControlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -211,11 +211,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupFramework.BackupFrameworkControlScope",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlScope",
 		reflect.TypeOf((*BackupFrameworkControlScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupFramework.BackupFrameworkControlScopeOutputReference",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlScopeOutputReference",
 		reflect.TypeOf((*BackupFrameworkControlScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -256,11 +256,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupFramework.BackupFrameworkTimeouts",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkTimeouts",
 		reflect.TypeOf((*BackupFrameworkTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.backupFramework.BackupFrameworkTimeoutsOutputReference",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkTimeoutsOutputReference",
 		reflect.TypeOf((*BackupFrameworkTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

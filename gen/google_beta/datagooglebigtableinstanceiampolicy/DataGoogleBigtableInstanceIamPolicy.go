@@ -337,7 +337,7 @@ func NewDataGoogleBigtableInstanceIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleBigtableInstanceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleBigtableInstanceIamPolicy_Override(d DataGoogleBigtableInstanc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleBigtableInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleBigtableInstanceIamPolicy_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleBigtableInstanceIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleBigtableInstanceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigtableInstanceIamPolicy.DataGoogleBigtableInstanceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

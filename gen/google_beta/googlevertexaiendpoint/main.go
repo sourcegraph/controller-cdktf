@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpoint",
 		reflect.TypeOf((*GoogleVertexAiEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,19 +89,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointConfig",
 		reflect.TypeOf((*GoogleVertexAiEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModels",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModels",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModels)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResources",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResources",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsAutomaticResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResourcesList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResourcesList",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsAutomaticResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResourcesOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsAutomaticResourcesOutputReference",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsAutomaticResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,15 +155,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResources",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResources",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsDedicatedResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecs",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecs",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsOutputReference",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -217,7 +217,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -237,11 +237,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpec",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpec",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -261,7 +261,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
@@ -296,7 +296,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingMetricSpecs", GoGetter: "AutoscalingMetricSpecs"},
@@ -332,7 +332,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsList",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -352,7 +352,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsOutputReference",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticResources", GoGetter: "AutomaticResources"},
@@ -396,11 +396,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpoints",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpoints",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsPrivateEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -420,7 +420,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsOutputReference",
 		reflect.TypeOf((*GoogleVertexAiEndpointDeployedModelsPrivateEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -456,11 +456,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointEncryptionSpec",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointEncryptionSpec",
 		reflect.TypeOf((*GoogleVertexAiEndpointEncryptionSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointEncryptionSpecOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointEncryptionSpecOutputReference",
 		reflect.TypeOf((*GoogleVertexAiEndpointEncryptionSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -494,11 +494,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeouts",
 		reflect.TypeOf((*GoogleVertexAiEndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleVertexAiEndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

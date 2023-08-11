@@ -116,7 +116,7 @@ func NewCodepipelineCustomActionTypeConfigurationPropertyList(terraformResource 
 	j := jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList{}
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyList",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodepipelineCustomActionTypeConfigurationPropertyList_Override(c Codepip
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyList",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -418,7 +418,7 @@ func NewGoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference(terra
 	j := jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewGoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

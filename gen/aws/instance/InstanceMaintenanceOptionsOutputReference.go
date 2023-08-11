@@ -180,7 +180,7 @@ func NewInstanceMaintenanceOptionsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_InstanceMaintenanceOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.instance.InstanceMaintenanceOptionsOutputReference",
+		"@cdktf/provider-aws.instance.InstanceMaintenanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewInstanceMaintenanceOptionsOutputReference_Override(i InstanceMaintenance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.InstanceMaintenanceOptionsOutputReference",
+		"@cdktf/provider-aws.instance.InstanceMaintenanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

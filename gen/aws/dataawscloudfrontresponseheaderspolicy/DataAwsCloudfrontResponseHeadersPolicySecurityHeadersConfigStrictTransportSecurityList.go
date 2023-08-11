@@ -104,7 +104,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTranspo
 	j := jsiiProxy_DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityList",
+		"@cdktf/provider-aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTranspo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityList",
+		"@cdktf/provider-aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigStrictTransportSecurityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

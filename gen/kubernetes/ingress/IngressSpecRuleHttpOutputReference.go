@@ -179,7 +179,7 @@ func NewIngressSpecRuleHttpOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_IngressSpecRuleHttpOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.ingress.IngressSpecRuleHttpOutputReference",
+		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewIngressSpecRuleHttpOutputReference_Override(i IngressSpecRuleHttpOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingress.IngressSpecRuleHttpOutputReference",
+		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

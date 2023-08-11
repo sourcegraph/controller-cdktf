@@ -252,7 +252,7 @@ func NewSagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResour
 	j := jsiiProxy_SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewSagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResour
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -189,7 +189,7 @@ func NewGoogleCloudiotDeviceLastErrorStatusOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleCloudiotDeviceLastErrorStatusOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewGoogleCloudiotDeviceLastErrorStatusOutputReference_Override(g GoogleClou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

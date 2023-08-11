@@ -608,7 +608,7 @@ func NewCloudfrontDistributionDefaultCacheBehaviorOutputReference(terraformResou
 	j := jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -620,7 +620,7 @@ func NewCloudfrontDistributionDefaultCacheBehaviorOutputReference_Override(c Clo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

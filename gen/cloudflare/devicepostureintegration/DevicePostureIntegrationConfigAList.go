@@ -116,7 +116,7 @@ func NewDevicePostureIntegrationConfigAList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DevicePostureIntegrationConfigAList{}
 
 	_jsii_.Create(
-		"cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAList",
+		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDevicePostureIntegrationConfigAList_Override(d DevicePostureIntegrationC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAList",
+		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

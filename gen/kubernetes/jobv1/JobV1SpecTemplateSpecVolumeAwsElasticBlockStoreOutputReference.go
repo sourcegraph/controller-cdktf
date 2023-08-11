@@ -251,7 +251,7 @@ func NewJobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference(terraform
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewJobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

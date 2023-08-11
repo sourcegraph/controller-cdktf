@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecsCapacityProvider.EcsCapacityProvider",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		reflect.TypeOf((*EcsCapacityProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProvider",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProvider",
 		reflect.TypeOf((*EcsCapacityProviderAutoScalingGroupProvider)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScaling",
 		reflect.TypeOf((*EcsCapacityProviderAutoScalingGroupProviderManagedScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference",
 		reflect.TypeOf((*EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,7 +122,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderOutputReference",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderOutputReference",
 		reflect.TypeOf((*EcsCapacityProviderAutoScalingGroupProviderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoScalingGroupArn", GoGetter: "AutoScalingGroupArn"},
@@ -163,7 +163,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecsCapacityProvider.EcsCapacityProviderConfig",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderConfig",
 		reflect.TypeOf((*EcsCapacityProviderConfig)(nil)).Elem(),
 	)
 }

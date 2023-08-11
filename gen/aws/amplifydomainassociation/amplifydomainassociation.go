@@ -411,7 +411,7 @@ func NewAmplifyDomainAssociation(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_AmplifyDomainAssociation{}
 
 	_jsii_.Create(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociation",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -424,7 +424,7 @@ func NewAmplifyDomainAssociation_Override(a AmplifyDomainAssociation, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociation",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -568,7 +568,7 @@ func AmplifyDomainAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociation",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func AmplifyDomainAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociation",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func AmplifyDomainAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociation",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func AmplifyDomainAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.amplifyDomainAssociation.AmplifyDomainAssociation",
+		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		"tfResourceType",
 		&returns,
 	)

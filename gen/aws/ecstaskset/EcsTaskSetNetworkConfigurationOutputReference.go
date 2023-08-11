@@ -227,7 +227,7 @@ func NewEcsTaskSetNetworkConfigurationOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_EcsTaskSetNetworkConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewEcsTaskSetNetworkConfigurationOutputReference_Override(e EcsTaskSetNetwo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

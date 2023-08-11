@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReferen
 	j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityLabelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

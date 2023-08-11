@@ -544,7 +544,7 @@ func NewEc2TransitGatewayVpcAttachment(scope constructs.Construct, id *string, c
 	j := jsiiProxy_Ec2TransitGatewayVpcAttachment{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -557,7 +557,7 @@ func NewEc2TransitGatewayVpcAttachment_Override(e Ec2TransitGatewayVpcAttachment
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -778,7 +778,7 @@ func Ec2TransitGatewayVpcAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func Ec2TransitGatewayVpcAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -816,7 +816,7 @@ func Ec2TransitGatewayVpcAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func Ec2TransitGatewayVpcAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
 		"tfResourceType",
 		&returns,
 	)

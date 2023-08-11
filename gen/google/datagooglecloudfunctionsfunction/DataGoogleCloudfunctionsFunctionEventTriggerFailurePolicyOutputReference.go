@@ -167,7 +167,7 @@ func NewDataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference
 	j := jsiiProxy_DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -445,7 +445,7 @@ func NewApigeeEndpointAttachment(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ApigeeEndpointAttachment{}
 
 	_jsii_.Create(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -458,7 +458,7 @@ func NewApigeeEndpointAttachment_Override(a ApigeeEndpointAttachment, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -613,7 +613,7 @@ func ApigeeEndpointAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func ApigeeEndpointAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func ApigeeEndpointAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func ApigeeEndpointAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
+		"@cdktf/provider-google.apigeeEndpointAttachment.ApigeeEndpointAttachment",
 		"tfResourceType",
 		&returns,
 	)

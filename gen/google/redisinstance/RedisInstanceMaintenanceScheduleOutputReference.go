@@ -189,7 +189,7 @@ func NewRedisInstanceMaintenanceScheduleOutputReference(terraformResource cdktf.
 	j := jsiiProxy_RedisInstanceMaintenanceScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceMaintenanceScheduleOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceMaintenanceScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewRedisInstanceMaintenanceScheduleOutputReference_Override(r RedisInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceMaintenanceScheduleOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceMaintenanceScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

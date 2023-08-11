@@ -203,7 +203,7 @@ func NewAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputR
 	j := jsiiProxy_AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

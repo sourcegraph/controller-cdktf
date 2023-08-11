@@ -389,7 +389,7 @@ func NewWorkspaceRunTask(scope constructs.Construct, id *string, config *Workspa
 	j := jsiiProxy_WorkspaceRunTask{}
 
 	_jsii_.Create(
-		"tfe.workspaceRunTask.WorkspaceRunTask",
+		"@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewWorkspaceRunTask_Override(w WorkspaceRunTask, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.workspaceRunTask.WorkspaceRunTask",
+		"@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -557,7 +557,7 @@ func WorkspaceRunTask_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.workspaceRunTask.WorkspaceRunTask",
+		"@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func WorkspaceRunTask_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.workspaceRunTask.WorkspaceRunTask",
+		"@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func WorkspaceRunTask_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.workspaceRunTask.WorkspaceRunTask",
+		"@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func WorkspaceRunTask_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.workspaceRunTask.WorkspaceRunTask",
+		"@cdktf/provider-tfe.workspaceRunTask.WorkspaceRunTask",
 		"tfResourceType",
 		&returns,
 	)

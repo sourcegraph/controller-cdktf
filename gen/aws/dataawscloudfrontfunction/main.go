@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction",
+		"@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunction",
 		reflect.TypeOf((*DataAwsCloudfrontFunction)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig",
+		"@cdktf/provider-aws.dataAwsCloudfrontFunction.DataAwsCloudfrontFunctionConfig",
 		reflect.TypeOf((*DataAwsCloudfrontFunctionConfig)(nil)).Elem(),
 	)
 }

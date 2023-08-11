@@ -204,7 +204,7 @@ func NewGoogleFirebaseProjectLocationTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_GoogleFirebaseProjectLocationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleFirebaseProjectLocationTimeoutsOutputReference_Override(g GoogleFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

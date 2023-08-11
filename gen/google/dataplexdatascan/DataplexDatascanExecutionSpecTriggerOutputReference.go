@@ -204,7 +204,7 @@ func NewDataplexDatascanExecutionSpecTriggerOutputReference(terraformResource cd
 	j := jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataplexDatascanExecutionSpecTriggerOutputReference_Override(d DataplexD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

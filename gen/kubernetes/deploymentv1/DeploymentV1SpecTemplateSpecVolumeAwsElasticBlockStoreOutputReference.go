@@ -251,7 +251,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference(te
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

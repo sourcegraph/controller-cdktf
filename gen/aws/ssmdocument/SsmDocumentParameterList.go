@@ -104,7 +104,7 @@ func NewSsmDocumentParameterList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_SsmDocumentParameterList{}
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocumentParameterList",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewSsmDocumentParameterList_Override(s SsmDocumentParameterList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmDocument.SsmDocumentParameterList",
+		"@cdktf/provider-aws.ssmDocument.SsmDocumentParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

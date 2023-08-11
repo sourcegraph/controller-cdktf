@@ -377,7 +377,7 @@ func NewGoogleRuntimeconfigConfigIamPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleRuntimeconfigConfigIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleRuntimeconfigConfigIamPolicy_Override(g GoogleRuntimeconfigConfigI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleRuntimeconfigConfigIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleRuntimeconfigConfigIamPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleRuntimeconfigConfigIamPolicy_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleRuntimeconfigConfigIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamPolicy.GoogleRuntimeconfigConfigIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

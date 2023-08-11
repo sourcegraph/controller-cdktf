@@ -167,7 +167,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutpu
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

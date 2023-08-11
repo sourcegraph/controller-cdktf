@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainName",
+		"@cdktf/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainName",
 		reflect.TypeOf((*DataAwsApiGatewayDomainName)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameConfig",
+		"@cdktf/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameConfig",
 		reflect.TypeOf((*DataAwsApiGatewayDomainNameConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfiguration",
+		"@cdktf/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfiguration",
 		reflect.TypeOf((*DataAwsApiGatewayDomainNameEndpointConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationList",
+		"@cdktf/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationList",
 		reflect.TypeOf((*DataAwsApiGatewayDomainNameEndpointConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

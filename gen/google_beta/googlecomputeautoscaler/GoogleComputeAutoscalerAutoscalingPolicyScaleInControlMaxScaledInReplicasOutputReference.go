@@ -204,7 +204,7 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplica
 	j := jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplica
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

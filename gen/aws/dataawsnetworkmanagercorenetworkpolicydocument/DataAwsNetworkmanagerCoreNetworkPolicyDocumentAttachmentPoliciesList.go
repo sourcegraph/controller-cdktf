@@ -116,7 +116,7 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList(ter
 	j := jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

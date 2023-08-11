@@ -448,7 +448,7 @@ func NewGoogleComputeDiskIamBinding(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeDiskIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleComputeDiskIamBinding_Override(g GoogleComputeDiskIamBinding, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleComputeDiskIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleComputeDiskIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeDiskIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleComputeDiskIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
+		"@cdktf/provider-google-beta.googleComputeDiskIamBinding.GoogleComputeDiskIamBinding",
 		"tfResourceType",
 		&returns,
 	)

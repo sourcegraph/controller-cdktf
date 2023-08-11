@@ -314,7 +314,7 @@ func NewDataAwsConnectLambdaFunctionAssociation(scope constructs.Construct, id *
 	j := jsiiProxy_DataAwsConnectLambdaFunctionAssociation{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -327,7 +327,7 @@ func NewDataAwsConnectLambdaFunctionAssociation_Override(d DataAwsConnectLambdaF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -438,7 +438,7 @@ func DataAwsConnectLambdaFunctionAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -457,7 +457,7 @@ func DataAwsConnectLambdaFunctionAssociation_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -476,7 +476,7 @@ func DataAwsConnectLambdaFunctionAssociation_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataAwsConnectLambdaFunctionAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.dataAwsConnectLambdaFunctionAssociation.DataAwsConnectLambdaFunctionAssociation",
 		"tfResourceType",
 		&returns,
 	)

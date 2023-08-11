@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicy",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicy",
 		reflect.TypeOf((*VpcEndpointPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicyConfig",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicyConfig",
 		reflect.TypeOf((*VpcEndpointPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicyTimeouts",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicyTimeouts",
 		reflect.TypeOf((*VpcEndpointPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcEndpointPolicy.VpcEndpointPolicyTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcEndpointPolicy.VpcEndpointPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*VpcEndpointPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

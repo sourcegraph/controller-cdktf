@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
+		"@cdktf/provider-google.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
 		reflect.TypeOf((*DataGoogleServiceAccountJwt)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwtConfig",
+		"@cdktf/provider-google.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwtConfig",
 		reflect.TypeOf((*DataGoogleServiceAccountJwtConfig)(nil)).Elem(),
 	)
 }

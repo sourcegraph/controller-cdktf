@@ -204,7 +204,7 @@ func NewLoggingLinkedDatasetTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_LoggingLinkedDatasetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingLinkedDataset.LoggingLinkedDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLoggingLinkedDatasetTimeoutsOutputReference_Override(l LoggingLinkedData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingLinkedDataset.LoggingLinkedDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

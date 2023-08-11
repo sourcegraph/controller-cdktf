@@ -228,7 +228,7 @@ func NewEmrClusterStepOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_EmrClusterStepOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterStepOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEmrClusterStepOutputReference_Override(e EmrClusterStepOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterStepOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

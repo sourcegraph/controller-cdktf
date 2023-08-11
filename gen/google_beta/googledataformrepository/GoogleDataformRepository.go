@@ -415,7 +415,7 @@ func NewGoogleDataformRepository(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleDataformRepository{}
 
 	_jsii_.Create(
-		"google-beta.googleDataformRepository.GoogleDataformRepository",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewGoogleDataformRepository_Override(g GoogleDataformRepository, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataformRepository.GoogleDataformRepository",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepository",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -572,7 +572,7 @@ func GoogleDataformRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataformRepository.GoogleDataformRepository",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -591,7 +591,7 @@ func GoogleDataformRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataformRepository.GoogleDataformRepository",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func GoogleDataformRepository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataformRepository.GoogleDataformRepository",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func GoogleDataformRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataformRepository.GoogleDataformRepository",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepository",
 		"tfResourceType",
 		&returns,
 	)

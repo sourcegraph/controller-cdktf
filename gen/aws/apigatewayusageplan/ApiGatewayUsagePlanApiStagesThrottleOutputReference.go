@@ -227,7 +227,7 @@ func NewApiGatewayUsagePlanApiStagesThrottleOutputReference(terraformResource cd
 	j := jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewApiGatewayUsagePlanApiStagesThrottleOutputReference_Override(a ApiGatewa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleOutputReference",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

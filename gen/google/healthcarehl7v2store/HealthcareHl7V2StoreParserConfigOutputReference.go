@@ -252,7 +252,7 @@ func NewHealthcareHl7V2StoreParserConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_HealthcareHl7V2StoreParserConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference",
+		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewHealthcareHl7V2StoreParserConfigOutputReference_Override(h HealthcareHl7
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference",
+		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

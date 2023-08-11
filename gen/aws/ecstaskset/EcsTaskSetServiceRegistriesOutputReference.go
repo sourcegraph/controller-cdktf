@@ -251,7 +251,7 @@ func NewEcsTaskSetServiceRegistriesOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_EcsTaskSetServiceRegistriesOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetServiceRegistriesOutputReference",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewEcsTaskSetServiceRegistriesOutputReference_Override(e EcsTaskSetServiceR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetServiceRegistriesOutputReference",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetServiceRegistriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

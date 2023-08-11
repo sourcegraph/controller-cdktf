@@ -418,7 +418,7 @@ func NewDataAwsConnectContactFlowModule(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsConnectContactFlowModule{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
+		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -431,7 +431,7 @@ func NewDataAwsConnectContactFlowModule_Override(d DataAwsConnectContactFlowModu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
+		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -564,7 +564,7 @@ func DataAwsConnectContactFlowModule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
+		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func DataAwsConnectContactFlowModule_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
+		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func DataAwsConnectContactFlowModule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
+		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataAwsConnectContactFlowModule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
+		"@cdktf/provider-aws.dataAwsConnectContactFlowModule.DataAwsConnectContactFlowModule",
 		"tfResourceType",
 		&returns,
 	)

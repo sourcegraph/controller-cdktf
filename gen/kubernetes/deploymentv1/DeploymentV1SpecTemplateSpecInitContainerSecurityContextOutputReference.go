@@ -372,7 +372,7 @@ func NewDeploymentV1SpecTemplateSpecInitContainerSecurityContextOutputReference(
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerSecurityContextOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewDeploymentV1SpecTemplateSpecInitContainerSecurityContextOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

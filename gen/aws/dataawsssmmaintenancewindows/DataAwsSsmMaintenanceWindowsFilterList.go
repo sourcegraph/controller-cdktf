@@ -116,7 +116,7 @@ func NewDataAwsSsmMaintenanceWindowsFilterList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsSsmMaintenanceWindowsFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterList",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsSsmMaintenanceWindowsFilterList_Override(d DataAwsSsmMaintenanceW
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterList",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewWafv2WebAclRuleStatementAndStatementStatementList(terraformResource cdkt
 	j := jsiiProxy_Wafv2WebAclRuleStatementAndStatementStatementList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclRuleStatementAndStatementStatementList_Override(w Wafv2WebAcl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementAndStatementStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

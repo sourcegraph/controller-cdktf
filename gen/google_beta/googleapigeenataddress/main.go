@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
 		reflect.TypeOf((*GoogleApigeeNatAddress)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressConfig",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressConfig",
 		reflect.TypeOf((*GoogleApigeeNatAddressConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeouts",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeouts",
 		reflect.TypeOf((*GoogleApigeeNatAddressTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApigeeNatAddressTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

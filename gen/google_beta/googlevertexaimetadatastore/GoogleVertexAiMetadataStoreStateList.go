@@ -104,7 +104,7 @@ func NewGoogleVertexAiMetadataStoreStateList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GoogleVertexAiMetadataStoreStateList{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateList",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleVertexAiMetadataStoreStateList_Override(g GoogleVertexAiMetadataSt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateList",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

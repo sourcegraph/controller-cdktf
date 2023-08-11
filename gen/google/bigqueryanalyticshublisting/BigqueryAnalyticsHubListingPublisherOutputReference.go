@@ -203,7 +203,7 @@ func NewBigqueryAnalyticsHubListingPublisherOutputReference(terraformResource cd
 	j := jsiiProxy_BigqueryAnalyticsHubListingPublisherOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPublisherOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPublisherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewBigqueryAnalyticsHubListingPublisherOutputReference_Override(b BigqueryA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPublisherOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPublisherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

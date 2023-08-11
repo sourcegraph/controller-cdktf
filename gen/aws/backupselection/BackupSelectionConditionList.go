@@ -116,7 +116,7 @@ func NewBackupSelectionConditionList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_BackupSelectionConditionList{}
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionConditionList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBackupSelectionConditionList_Override(b BackupSelectionConditionList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionConditionList",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

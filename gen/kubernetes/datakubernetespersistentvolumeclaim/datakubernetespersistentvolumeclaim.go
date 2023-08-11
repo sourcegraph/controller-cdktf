@@ -315,7 +315,7 @@ func NewDataKubernetesPersistentVolumeClaim(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataKubernetesPersistentVolumeClaim{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -328,7 +328,7 @@ func NewDataKubernetesPersistentVolumeClaim_Override(d DataKubernetesPersistentV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -417,7 +417,7 @@ func DataKubernetesPersistentVolumeClaim_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -436,7 +436,7 @@ func DataKubernetesPersistentVolumeClaim_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -455,7 +455,7 @@ func DataKubernetesPersistentVolumeClaim_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataKubernetesPersistentVolumeClaim_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaim",
 		"tfResourceType",
 		&returns,
 	)

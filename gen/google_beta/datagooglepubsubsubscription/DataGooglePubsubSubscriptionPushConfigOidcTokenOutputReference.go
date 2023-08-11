@@ -178,7 +178,7 @@ func NewDataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference(terraform
 	j := jsiiProxy_DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

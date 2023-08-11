@@ -116,7 +116,7 @@ func NewHorizontalPodAutoscalerV2SpecMetricPodsMetricSelectorMatchExpressionsLis
 	j := jsiiProxy_HorizontalPodAutoscalerV2SpecMetricPodsMetricSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricPodsMetricSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricPodsMetricSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewHorizontalPodAutoscalerV2SpecMetricPodsMetricSelectorMatchExpressionsLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricPodsMetricSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricPodsMetricSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)

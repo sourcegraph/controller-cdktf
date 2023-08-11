@@ -276,7 +276,7 @@ func NewAutoscalingGroupInstanceRefreshPreferencesOutputReference(terraformResou
 	j := jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupInstanceRefreshPreferencesOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupInstanceRefreshPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewAutoscalingGroupInstanceRefreshPreferencesOutputReference_Override(a Aut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupInstanceRefreshPreferencesOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupInstanceRefreshPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

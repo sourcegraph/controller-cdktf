@@ -116,7 +116,7 @@ func NewLaunchConfigurationEbsBlockDeviceList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_LaunchConfigurationEbsBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLaunchConfigurationEbsBlockDeviceList_Override(l LaunchConfigurationEbsB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

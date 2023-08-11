@@ -342,7 +342,7 @@ func NewVpnConnectionRoute(scope constructs.Construct, id *string, config *VpnCo
 	j := jsiiProxy_VpnConnectionRoute{}
 
 	_jsii_.Create(
-		"aws.vpnConnectionRoute.VpnConnectionRoute",
+		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewVpnConnectionRoute_Override(v VpnConnectionRoute, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpnConnectionRoute.VpnConnectionRoute",
+		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -488,7 +488,7 @@ func VpnConnectionRoute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpnConnectionRoute.VpnConnectionRoute",
+		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func VpnConnectionRoute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpnConnectionRoute.VpnConnectionRoute",
+		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func VpnConnectionRoute_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpnConnectionRoute.VpnConnectionRoute",
+		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func VpnConnectionRoute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpnConnectionRoute.VpnConnectionRoute",
+		"@cdktf/provider-aws.vpnConnectionRoute.VpnConnectionRoute",
 		"tfResourceType",
 		&returns,
 	)

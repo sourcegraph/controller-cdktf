@@ -104,7 +104,7 @@ func NewDataAwsOpensearchDomainCognitoOptionsList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsOpensearchDomainCognitoOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOpensearchDomainCognitoOptionsList_Override(d DataAwsOpensearchDo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

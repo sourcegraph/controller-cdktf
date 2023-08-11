@@ -204,7 +204,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference(terrafo
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

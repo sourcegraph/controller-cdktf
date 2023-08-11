@@ -202,7 +202,7 @@ func NewDataAwsRoute53ResolverEndpointFilterOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsRoute53ResolverEndpointFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsRoute53ResolverEndpointFilterOutputReference_Override(d DataAwsRo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

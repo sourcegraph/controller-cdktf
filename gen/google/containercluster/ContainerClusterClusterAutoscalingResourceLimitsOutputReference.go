@@ -227,7 +227,7 @@ func NewContainerClusterClusterAutoscalingResourceLimitsOutputReference(terrafor
 	j := jsiiProxy_ContainerClusterClusterAutoscalingResourceLimitsOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewContainerClusterClusterAutoscalingResourceLimitsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

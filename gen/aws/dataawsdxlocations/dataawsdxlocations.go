@@ -279,7 +279,7 @@ func NewDataAwsDxLocations(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsDxLocations{}
 
 	_jsii_.Create(
-		"aws.dataAwsDxLocations.DataAwsDxLocations",
+		"@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocations",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -292,7 +292,7 @@ func NewDataAwsDxLocations_Override(d DataAwsDxLocations, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDxLocations.DataAwsDxLocations",
+		"@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocations",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -381,7 +381,7 @@ func DataAwsDxLocations_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDxLocations.DataAwsDxLocations",
+		"@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocations",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -400,7 +400,7 @@ func DataAwsDxLocations_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDxLocations.DataAwsDxLocations",
+		"@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocations",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -419,7 +419,7 @@ func DataAwsDxLocations_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDxLocations.DataAwsDxLocations",
+		"@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocations",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -432,7 +432,7 @@ func DataAwsDxLocations_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDxLocations.DataAwsDxLocations",
+		"@cdktf/provider-aws.dataAwsDxLocations.DataAwsDxLocations",
 		"tfResourceType",
 		&returns,
 	)

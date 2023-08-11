@@ -116,7 +116,7 @@ func NewPodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList(terraformResourc
 	j := jsiiProxy_PodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList_Override(p PodV1
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

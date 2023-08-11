@@ -500,7 +500,7 @@ func NewDataAwsElasticacheReplicationGroup(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsElasticacheReplicationGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -513,7 +513,7 @@ func NewDataAwsElasticacheReplicationGroup_Override(d DataAwsElasticacheReplicat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -613,7 +613,7 @@ func DataAwsElasticacheReplicationGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func DataAwsElasticacheReplicationGroup_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func DataAwsElasticacheReplicationGroup_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func DataAwsElasticacheReplicationGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
+		"@cdktf/provider-aws.dataAwsElasticacheReplicationGroup.DataAwsElasticacheReplicationGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewKendraIndexUserTokenConfigurationsOutputReference(terraformResource cdkt
 	j := jsiiProxy_KendraIndexUserTokenConfigurationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurationsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKendraIndexUserTokenConfigurationsOutputReference_Override(k KendraIndex
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurationsOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

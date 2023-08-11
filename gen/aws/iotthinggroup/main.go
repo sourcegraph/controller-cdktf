@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotThingGroup.IotThingGroup",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroup",
 		reflect.TypeOf((*IotThingGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotThingGroup.IotThingGroupConfig",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupConfig",
 		reflect.TypeOf((*IotThingGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotThingGroup.IotThingGroupMetadata",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadata",
 		reflect.TypeOf((*IotThingGroupMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotThingGroup.IotThingGroupMetadataList",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataList",
 		reflect.TypeOf((*IotThingGroupMetadataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotThingGroup.IotThingGroupMetadataOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataOutputReference",
 		reflect.TypeOf((*IotThingGroupMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotThingGroup.IotThingGroupMetadataRootToParentGroups",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroups",
 		reflect.TypeOf((*IotThingGroupMetadataRootToParentGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList",
 		reflect.TypeOf((*IotThingGroupMetadataRootToParentGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,7 +160,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsOutputReference",
 		reflect.TypeOf((*IotThingGroupMetadataRootToParentGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,15 +194,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotThingGroup.IotThingGroupProperties",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupProperties",
 		reflect.TypeOf((*IotThingGroupProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotThingGroup.IotThingGroupPropertiesAttributePayload",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesAttributePayload",
 		reflect.TypeOf((*IotThingGroupPropertiesAttributePayload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotThingGroup.IotThingGroupPropertiesAttributePayloadOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesAttributePayloadOutputReference",
 		reflect.TypeOf((*IotThingGroupPropertiesAttributePayloadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributes", GoGetter: "Attributes"},
@@ -237,7 +237,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupPropertiesOutputReference",
 		reflect.TypeOf((*IotThingGroupPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributePayload", GoGetter: "AttributePayload"},

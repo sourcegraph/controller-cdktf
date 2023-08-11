@@ -167,7 +167,7 @@ func NewEksClusterIdentityOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_EksClusterIdentityOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterIdentityOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterIdentityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewEksClusterIdentityOutputReference_Override(e EksClusterIdentityOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterIdentityOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterIdentityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

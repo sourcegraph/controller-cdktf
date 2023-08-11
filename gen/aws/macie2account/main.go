@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.macie2Account.Macie2Account",
+		"@cdktf/provider-aws.macie2Account.Macie2Account",
 		reflect.TypeOf((*Macie2Account)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.macie2Account.Macie2AccountConfig",
+		"@cdktf/provider-aws.macie2Account.Macie2AccountConfig",
 		reflect.TypeOf((*Macie2AccountConfig)(nil)).Elem(),
 	)
 }

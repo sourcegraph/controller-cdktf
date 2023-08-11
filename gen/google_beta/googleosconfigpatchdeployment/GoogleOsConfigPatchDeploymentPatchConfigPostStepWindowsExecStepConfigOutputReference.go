@@ -252,7 +252,7 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOut
 	j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

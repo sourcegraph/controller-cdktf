@@ -116,7 +116,7 @@ func NewDataAwsEc2LocalGatewayRouteTablesFilterList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsEc2LocalGatewayRouteTablesFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesFilterList",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEc2LocalGatewayRouteTablesFilterList_Override(d DataAwsEc2LocalGa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesFilterList",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTables.DataAwsEc2LocalGatewayRouteTablesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

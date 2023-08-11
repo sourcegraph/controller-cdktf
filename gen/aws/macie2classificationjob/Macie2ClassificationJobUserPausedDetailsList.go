@@ -104,7 +104,7 @@ func NewMacie2ClassificationJobUserPausedDetailsList(terraformResource cdktf.IIn
 	j := jsiiProxy_Macie2ClassificationJobUserPausedDetailsList{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsList",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewMacie2ClassificationJobUserPausedDetailsList_Override(m Macie2Classifica
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsList",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

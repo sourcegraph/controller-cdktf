@@ -178,7 +178,7 @@ func NewDataAwsEfsAccessPointRootDirectoryOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryOutputReference",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsEfsAccessPointRootDirectoryOutputReference_Override(d DataAwsEfsA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryOutputReference",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoint.DataAwsEfsAccessPointRootDirectoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

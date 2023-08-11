@@ -116,7 +116,7 @@ func NewEnvEnvList(terraformResource cdktf.IInterpolatingParent, terraformAttrib
 	j := jsiiProxy_EnvEnvList{}
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvList",
+		"@cdktf/provider-kubernetes.env.EnvEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEnvEnvList_Override(e EnvEnvList, terraformResource cdktf.IInterpolating
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvList",
+		"@cdktf/provider-kubernetes.env.EnvEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

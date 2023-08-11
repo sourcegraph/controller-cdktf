@@ -228,7 +228,7 @@ func NewGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference
 	j := jsiiProxy_GoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

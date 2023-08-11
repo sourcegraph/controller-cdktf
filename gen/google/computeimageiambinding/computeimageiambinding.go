@@ -424,7 +424,7 @@ func NewComputeImageIamBinding(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_ComputeImageIamBinding{}
 
 	_jsii_.Create(
-		"google.computeImageIamBinding.ComputeImageIamBinding",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewComputeImageIamBinding_Override(c ComputeImageIamBinding, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImageIamBinding.ComputeImageIamBinding",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -592,7 +592,7 @@ func ComputeImageIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImageIamBinding.ComputeImageIamBinding",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func ComputeImageIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImageIamBinding.ComputeImageIamBinding",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func ComputeImageIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImageIamBinding.ComputeImageIamBinding",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func ComputeImageIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeImageIamBinding.ComputeImageIamBinding",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBinding",
 		"tfResourceType",
 		&returns,
 	)

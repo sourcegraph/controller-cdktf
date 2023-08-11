@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.firebaserulesRuleset.FirebaserulesRuleset",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		reflect.TypeOf((*FirebaserulesRuleset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.firebaserulesRuleset.FirebaserulesRulesetConfig",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig",
 		reflect.TypeOf((*FirebaserulesRulesetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.firebaserulesRuleset.FirebaserulesRulesetMetadata",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadata",
 		reflect.TypeOf((*FirebaserulesRulesetMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
 		reflect.TypeOf((*FirebaserulesRulesetMetadataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference",
 		reflect.TypeOf((*FirebaserulesRulesetMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,15 +129,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.firebaserulesRuleset.FirebaserulesRulesetSource",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource",
 		reflect.TypeOf((*FirebaserulesRulesetSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles",
 		reflect.TypeOf((*FirebaserulesRulesetSourceFiles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList",
 		reflect.TypeOf((*FirebaserulesRulesetSourceFilesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -158,7 +158,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference",
 		reflect.TypeOf((*FirebaserulesRulesetSourceFilesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,7 +197,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
 		reflect.TypeOf((*FirebaserulesRulesetSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -235,11 +235,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.firebaserulesRuleset.FirebaserulesRulesetTimeouts",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts",
 		reflect.TypeOf((*FirebaserulesRulesetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference",
 		reflect.TypeOf((*FirebaserulesRulesetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -204,7 +204,7 @@ func NewLakeformationResourceLfTagsTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_LakeformationResourceLfTagsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeoutsOutputReference",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLakeformationResourceLfTagsTimeoutsOutputReference_Override(l Lakeformat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeoutsOutputReference",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -423,7 +423,7 @@ func NewDataGoogleSqlDatabaseInstances(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGoogleSqlDatabaseInstances{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewDataGoogleSqlDatabaseInstances_Override(d DataGoogleSqlDatabaseInstances
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -591,7 +591,7 @@ func DataGoogleSqlDatabaseInstances_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func DataGoogleSqlDatabaseInstances_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func DataGoogleSqlDatabaseInstances_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func DataGoogleSqlDatabaseInstances_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstances",
 		"tfResourceType",
 		&returns,
 	)

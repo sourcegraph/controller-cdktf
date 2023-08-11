@@ -367,7 +367,7 @@ func NewEcsClusterCapacityProviders(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_EcsClusterCapacityProviders{}
 
 	_jsii_.Create(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewEcsClusterCapacityProviders_Override(e EcsClusterCapacityProviders, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -513,7 +513,7 @@ func EcsClusterCapacityProviders_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func EcsClusterCapacityProviders_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func EcsClusterCapacityProviders_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func EcsClusterCapacityProviders_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
+		"@cdktf/provider-aws.ecsClusterCapacityProviders.EcsClusterCapacityProviders",
 		"tfResourceType",
 		&returns,
 	)

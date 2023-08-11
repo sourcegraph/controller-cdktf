@@ -116,7 +116,7 @@ func NewStatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList(terraf
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerReadinessProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

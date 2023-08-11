@@ -104,7 +104,7 @@ func NewRoute53RecoverycontrolconfigClusterClusterEndpointsList(terraformResourc
 	j := jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsList{}
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsList",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewRoute53RecoverycontrolconfigClusterClusterEndpointsList_Override(r Route
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsList",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.locationRouteCalculator.LocationRouteCalculator",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculator",
 		reflect.TypeOf((*LocationRouteCalculator)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.locationRouteCalculator.LocationRouteCalculatorConfig",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorConfig",
 		reflect.TypeOf((*LocationRouteCalculatorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.locationRouteCalculator.LocationRouteCalculatorTimeouts",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeouts",
 		reflect.TypeOf((*LocationRouteCalculatorTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
+		"@cdktf/provider-aws.locationRouteCalculator.LocationRouteCalculatorTimeoutsOutputReference",
 		reflect.TypeOf((*LocationRouteCalculatorTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

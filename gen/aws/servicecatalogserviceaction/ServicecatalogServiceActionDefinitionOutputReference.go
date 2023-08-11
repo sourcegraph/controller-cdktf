@@ -274,7 +274,7 @@ func NewServicecatalogServiceActionDefinitionOutputReference(terraformResource c
 	j := jsiiProxy_ServicecatalogServiceActionDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinitionOutputReference",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewServicecatalogServiceActionDefinitionOutputReference_Override(s Servicec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinitionOutputReference",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

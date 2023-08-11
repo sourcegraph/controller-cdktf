@@ -178,7 +178,7 @@ func NewDataKubernetesServiceV1StatusLoadBalancerIngressOutputReference(terrafor
 	j := jsiiProxy_DataKubernetesServiceV1StatusLoadBalancerIngressOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1StatusLoadBalancerIngressOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1StatusLoadBalancerIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataKubernetesServiceV1StatusLoadBalancerIngressOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1StatusLoadBalancerIngressOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1StatusLoadBalancerIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

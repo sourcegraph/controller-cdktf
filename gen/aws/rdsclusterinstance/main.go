@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rdsClusterInstance.RdsClusterInstance",
+		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance",
 		reflect.TypeOf((*RdsClusterInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -138,15 +138,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsClusterInstance.RdsClusterInstanceConfig",
+		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceConfig",
 		reflect.TypeOf((*RdsClusterInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsClusterInstance.RdsClusterInstanceTimeouts",
+		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceTimeouts",
 		reflect.TypeOf((*RdsClusterInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsClusterInstance.RdsClusterInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*RdsClusterInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

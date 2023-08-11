@@ -116,7 +116,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecContainerList(terraformResource cd
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecContainerList_Override(c CronJobSp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

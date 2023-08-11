@@ -116,7 +116,7 @@ func NewOsConfigOsPolicyAssignmentOsPoliciesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_OsConfigOsPolicyAssignmentOsPoliciesList{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOsConfigOsPolicyAssignmentOsPoliciesList_Override(o OsConfigOsPolicyAssi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

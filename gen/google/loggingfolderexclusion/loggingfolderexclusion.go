@@ -413,7 +413,7 @@ func NewLoggingFolderExclusion(scope constructs.Construct, id *string, config *L
 	j := jsiiProxy_LoggingFolderExclusion{}
 
 	_jsii_.Create(
-		"google.loggingFolderExclusion.LoggingFolderExclusion",
+		"@cdktf/provider-google.loggingFolderExclusion.LoggingFolderExclusion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewLoggingFolderExclusion_Override(l LoggingFolderExclusion, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingFolderExclusion.LoggingFolderExclusion",
+		"@cdktf/provider-google.loggingFolderExclusion.LoggingFolderExclusion",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -592,7 +592,7 @@ func LoggingFolderExclusion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingFolderExclusion.LoggingFolderExclusion",
+		"@cdktf/provider-google.loggingFolderExclusion.LoggingFolderExclusion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func LoggingFolderExclusion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingFolderExclusion.LoggingFolderExclusion",
+		"@cdktf/provider-google.loggingFolderExclusion.LoggingFolderExclusion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func LoggingFolderExclusion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingFolderExclusion.LoggingFolderExclusion",
+		"@cdktf/provider-google.loggingFolderExclusion.LoggingFolderExclusion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func LoggingFolderExclusion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingFolderExclusion.LoggingFolderExclusion",
+		"@cdktf/provider-google.loggingFolderExclusion.LoggingFolderExclusion",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.registryModule.RegistryModule",
+		"@cdktf/provider-tfe.registryModule.RegistryModule",
 		reflect.TypeOf((*RegistryModule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.registryModule.RegistryModuleConfig",
+		"@cdktf/provider-tfe.registryModule.RegistryModuleConfig",
 		reflect.TypeOf((*RegistryModuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tfe.registryModule.RegistryModuleVcsRepo",
+		"@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepo",
 		reflect.TypeOf((*RegistryModuleVcsRepo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.registryModule.RegistryModuleVcsRepoOutputReference",
+		"@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference",
 		reflect.TypeOf((*RegistryModuleVcsRepoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

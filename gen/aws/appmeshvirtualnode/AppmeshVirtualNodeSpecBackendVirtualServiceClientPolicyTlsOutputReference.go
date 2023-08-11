@@ -251,7 +251,7 @@ func NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReferenc
 	j := jsiiProxy_AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewAppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendVirtualServiceClientPolicyTlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

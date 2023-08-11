@@ -250,7 +250,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeFcOutputReference(terraformResource c
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeFcOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFcOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeFcOutputReference_Override(s Stateful
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFcOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeFcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

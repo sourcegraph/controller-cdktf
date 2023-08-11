@@ -116,7 +116,7 @@ func NewGlueCatalogTablePartitionIndexList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_GlueCatalogTablePartitionIndexList{}
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTablePartitionIndexList",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionIndexList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueCatalogTablePartitionIndexList_Override(g GlueCatalogTablePartitionI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTablePartitionIndexList",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionIndexList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

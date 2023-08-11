@@ -204,7 +204,7 @@ func NewHorizontalPodAutoscalerV2SpecBehaviorOutputReference(terraformResource c
 	j := jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorOutputReference",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewHorizontalPodAutoscalerV2SpecBehaviorOutputReference_Override(h Horizont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorOutputReference",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

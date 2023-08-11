@@ -448,7 +448,7 @@ func NewGoogleCloudRunV2ServiceIamBinding(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleCloudRunV2ServiceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudRunV2ServiceIamBinding_Override(g GoogleCloudRunV2ServiceIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudRunV2ServiceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudRunV2ServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudRunV2ServiceIamBinding_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudRunV2ServiceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamBinding.GoogleCloudRunV2ServiceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

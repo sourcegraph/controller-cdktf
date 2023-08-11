@@ -204,7 +204,7 @@ func NewStatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference(terraformResour
 	j := jsiiProxy_StatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference_Override(s Stat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
 		reflect.TypeOf((*LambdaEventSourceMapping)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -133,11 +133,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig",
 		reflect.TypeOf((*LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference",
 		reflect.TypeOf((*LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -172,19 +172,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingConfig",
 		reflect.TypeOf((*LambdaEventSourceMappingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfig",
 		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailure",
 		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfigOnFailure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOnFailureOutputReference",
 		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfigOnFailureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -218,7 +218,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingDestinationConfigOutputReference",
 		reflect.TypeOf((*LambdaEventSourceMappingDestinationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -254,15 +254,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteria",
 		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteria)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilter",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilter",
 		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterList",
 		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -283,7 +283,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaFilterOutputReference",
 		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -318,7 +318,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingFilterCriteriaOutputReference",
 		reflect.TypeOf((*LambdaEventSourceMappingFilterCriteriaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -354,11 +354,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfig",
 		reflect.TypeOf((*LambdaEventSourceMappingScalingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingScalingConfigOutputReference",
 		reflect.TypeOf((*LambdaEventSourceMappingScalingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -393,11 +393,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSource",
 		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedEventSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedEventSourceOutputReference",
 		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedEventSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -431,11 +431,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig",
 		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference",
 		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -470,11 +470,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfiguration",
 		reflect.TypeOf((*LambdaEventSourceMappingSourceAccessConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationList",
 		reflect.TypeOf((*LambdaEventSourceMappingSourceAccessConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -495,7 +495,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference",
 		reflect.TypeOf((*LambdaEventSourceMappingSourceAccessConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

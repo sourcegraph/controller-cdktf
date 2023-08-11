@@ -179,7 +179,7 @@ func NewPodSpecReadinessGateOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_PodSpecReadinessGateOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecReadinessGateOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecReadinessGateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPodSpecReadinessGateOutputReference_Override(p PodSpecReadinessGateOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecReadinessGateOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecReadinessGateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

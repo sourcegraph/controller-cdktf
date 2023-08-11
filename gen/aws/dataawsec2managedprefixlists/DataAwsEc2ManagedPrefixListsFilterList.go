@@ -116,7 +116,7 @@ func NewDataAwsEc2ManagedPrefixListsFilterList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsEc2ManagedPrefixListsFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixListsFilterList",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixListsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEc2ManagedPrefixListsFilterList_Override(d DataAwsEc2ManagedPrefi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixListsFilterList",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixLists.DataAwsEc2ManagedPrefixListsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

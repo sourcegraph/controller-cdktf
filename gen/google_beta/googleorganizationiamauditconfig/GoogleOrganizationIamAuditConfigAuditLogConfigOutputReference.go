@@ -203,7 +203,7 @@ func NewGoogleOrganizationIamAuditConfigAuditLogConfigOutputReference(terraformR
 	j := jsiiProxy_GoogleOrganizationIamAuditConfigAuditLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfigAuditLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleOrganizationIamAuditConfigAuditLogConfigOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleOrganizationIamAuditConfig.GoogleOrganizationIamAuditConfigAuditLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

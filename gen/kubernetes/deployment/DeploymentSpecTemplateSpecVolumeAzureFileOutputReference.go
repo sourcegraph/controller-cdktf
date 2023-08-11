@@ -250,7 +250,7 @@ func NewDeploymentSpecTemplateSpecVolumeAzureFileOutputReference(terraformResour
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeAzureFileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewDeploymentSpecTemplateSpecVolumeAzureFileOutputReference_Override(d Depl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

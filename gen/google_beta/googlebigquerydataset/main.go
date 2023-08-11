@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDataset",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset",
 		reflect.TypeOf((*GoogleBigqueryDataset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
@@ -106,19 +106,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccess",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccess",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDataset",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDataset",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessDataset)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDatasetDataset",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDatasetDataset",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetDataset)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDatasetDatasetOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDatasetDatasetOutputReference",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetDatasetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,7 +154,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDatasetOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessDatasetOutputReference",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessDatasetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,7 +191,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessList",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessList",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -212,7 +212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -271,11 +271,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessRoutine",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessRoutine",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessRoutine)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessRoutineOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessRoutineOutputReference",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessRoutineOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -313,11 +313,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessView",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessView",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessView)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessViewOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessViewOutputReference",
 		reflect.TypeOf((*GoogleBigqueryDatasetAccessViewOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -355,15 +355,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig",
 		reflect.TypeOf((*GoogleBigqueryDatasetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetDefaultEncryptionConfiguration",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetDefaultEncryptionConfiguration",
 		reflect.TypeOf((*GoogleBigqueryDatasetDefaultEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -397,11 +397,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetTimeouts",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetTimeouts",
 		reflect.TypeOf((*GoogleBigqueryDatasetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryDataset.GoogleBigqueryDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryDatasetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

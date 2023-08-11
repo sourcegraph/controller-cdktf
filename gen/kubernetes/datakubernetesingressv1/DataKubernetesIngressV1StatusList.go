@@ -104,7 +104,7 @@ func NewDataKubernetesIngressV1StatusList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataKubernetesIngressV1StatusList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1StatusList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1StatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesIngressV1StatusList_Override(d DataKubernetesIngressV1Stat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1StatusList",
+		"@cdktf/provider-kubernetes.dataKubernetesIngressV1.DataKubernetesIngressV1StatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

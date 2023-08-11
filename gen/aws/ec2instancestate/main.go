@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2InstanceState.Ec2InstanceState",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceState",
 		reflect.TypeOf((*Ec2InstanceState)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2InstanceState.Ec2InstanceStateConfig",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceStateConfig",
 		reflect.TypeOf((*Ec2InstanceStateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2InstanceState.Ec2InstanceStateTimeouts",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceStateTimeouts",
 		reflect.TypeOf((*Ec2InstanceStateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2InstanceState.Ec2InstanceStateTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceStateTimeoutsOutputReference",
 		reflect.TypeOf((*Ec2InstanceStateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

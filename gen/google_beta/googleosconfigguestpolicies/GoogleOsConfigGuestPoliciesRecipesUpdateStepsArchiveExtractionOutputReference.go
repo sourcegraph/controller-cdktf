@@ -226,7 +226,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputRefe
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

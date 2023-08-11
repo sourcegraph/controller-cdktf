@@ -179,7 +179,7 @@ func NewDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference(te
 	j := jsiiProxy_DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

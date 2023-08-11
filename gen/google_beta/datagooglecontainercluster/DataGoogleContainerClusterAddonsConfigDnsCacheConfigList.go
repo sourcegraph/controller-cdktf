@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterAddonsConfigDnsCacheConfigList(terraformResour
 	j := jsiiProxy_DataGoogleContainerClusterAddonsConfigDnsCacheConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterAddonsConfigDnsCacheConfigList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

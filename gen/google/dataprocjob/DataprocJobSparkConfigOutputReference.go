@@ -348,7 +348,7 @@ func NewDataprocJobSparkConfigOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataprocJobSparkConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobSparkConfigOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewDataprocJobSparkConfigOutputReference_Override(d DataprocJobSparkConfigO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobSparkConfigOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobSparkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

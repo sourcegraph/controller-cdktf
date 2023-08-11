@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
+		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRule",
 		reflect.TypeOf((*EcrPullThroughCacheRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrPullThroughCacheRule.EcrPullThroughCacheRuleConfig",
+		"@cdktf/provider-aws.ecrPullThroughCacheRule.EcrPullThroughCacheRuleConfig",
 		reflect.TypeOf((*EcrPullThroughCacheRuleConfig)(nil)).Elem(),
 	)
 }

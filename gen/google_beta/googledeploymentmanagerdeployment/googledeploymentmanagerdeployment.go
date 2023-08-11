@@ -543,7 +543,7 @@ func NewGoogleDeploymentManagerDeployment(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleDeploymentManagerDeployment{}
 
 	_jsii_.Create(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -556,7 +556,7 @@ func NewGoogleDeploymentManagerDeployment_Override(g GoogleDeploymentManagerDepl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -733,7 +733,7 @@ func GoogleDeploymentManagerDeployment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func GoogleDeploymentManagerDeployment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func GoogleDeploymentManagerDeployment_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func GoogleDeploymentManagerDeployment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeployment",
 		"tfResourceType",
 		&returns,
 	)

@@ -446,7 +446,7 @@ func NewApprunnerVpcConnector(scope constructs.Construct, id *string, config *Ap
 	j := jsiiProxy_ApprunnerVpcConnector{}
 
 	_jsii_.Create(
-		"aws.apprunnerVpcConnector.ApprunnerVpcConnector",
+		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -459,7 +459,7 @@ func NewApprunnerVpcConnector_Override(a ApprunnerVpcConnector, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerVpcConnector.ApprunnerVpcConnector",
+		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -625,7 +625,7 @@ func ApprunnerVpcConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerVpcConnector.ApprunnerVpcConnector",
+		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func ApprunnerVpcConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerVpcConnector.ApprunnerVpcConnector",
+		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func ApprunnerVpcConnector_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerVpcConnector.ApprunnerVpcConnector",
+		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func ApprunnerVpcConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apprunnerVpcConnector.ApprunnerVpcConnector",
+		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector",
 		"tfResourceType",
 		&returns,
 	)

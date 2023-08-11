@@ -179,7 +179,7 @@ func NewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficR
 	j := jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoTargetGroupPairInfoProdTrafficRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

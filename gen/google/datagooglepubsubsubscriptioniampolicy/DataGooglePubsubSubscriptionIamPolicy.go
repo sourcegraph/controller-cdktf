@@ -337,7 +337,7 @@ func NewDataGooglePubsubSubscriptionIamPolicy(scope constructs.Construct, id *st
 	j := jsiiProxy_DataGooglePubsubSubscriptionIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGooglePubsubSubscriptionIamPolicy_Override(d DataGooglePubsubSubscri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGooglePubsubSubscriptionIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGooglePubsubSubscriptionIamPolicy_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGooglePubsubSubscriptionIamPolicy_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGooglePubsubSubscriptionIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubSubscriptionIamPolicy.DataGooglePubsubSubscriptionIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

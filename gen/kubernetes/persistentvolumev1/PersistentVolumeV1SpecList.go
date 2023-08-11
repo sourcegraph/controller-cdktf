@@ -116,7 +116,7 @@ func NewPersistentVolumeV1SpecList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_PersistentVolumeV1SpecList{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1SpecList",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPersistentVolumeV1SpecList_Override(p PersistentVolumeV1SpecList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeV1.PersistentVolumeV1SpecList",
+		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

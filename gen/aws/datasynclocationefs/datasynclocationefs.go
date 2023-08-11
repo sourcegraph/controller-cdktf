@@ -508,7 +508,7 @@ func NewDatasyncLocationEfs(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DatasyncLocationEfs{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationEfs.DatasyncLocationEfs",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewDatasyncLocationEfs_Override(d DatasyncLocationEfs, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationEfs.DatasyncLocationEfs",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -709,7 +709,7 @@ func DatasyncLocationEfs_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationEfs.DatasyncLocationEfs",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func DatasyncLocationEfs_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationEfs.DatasyncLocationEfs",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func DatasyncLocationEfs_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationEfs.DatasyncLocationEfs",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func DatasyncLocationEfs_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.datasyncLocationEfs.DatasyncLocationEfs",
+		"@cdktf/provider-aws.datasyncLocationEfs.DatasyncLocationEfs",
 		"tfResourceType",
 		&returns,
 	)

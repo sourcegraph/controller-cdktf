@@ -415,7 +415,7 @@ func NewAmiLaunchPermission(scope constructs.Construct, id *string, config *AmiL
 	j := jsiiProxy_AmiLaunchPermission{}
 
 	_jsii_.Create(
-		"aws.amiLaunchPermission.AmiLaunchPermission",
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewAmiLaunchPermission_Override(a AmiLaunchPermission, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiLaunchPermission.AmiLaunchPermission",
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -594,7 +594,7 @@ func AmiLaunchPermission_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amiLaunchPermission.AmiLaunchPermission",
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func AmiLaunchPermission_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amiLaunchPermission.AmiLaunchPermission",
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func AmiLaunchPermission_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.amiLaunchPermission.AmiLaunchPermission",
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func AmiLaunchPermission_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.amiLaunchPermission.AmiLaunchPermission",
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
 		"tfResourceType",
 		&returns,
 	)

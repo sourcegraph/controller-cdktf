@@ -599,7 +599,7 @@ func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleWorkstationsWorkstationCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -612,7 +612,7 @@ func NewGoogleWorkstationsWorkstationCluster_Override(g GoogleWorkstationsWorkst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -811,7 +811,7 @@ func GoogleWorkstationsWorkstationCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -830,7 +830,7 @@ func GoogleWorkstationsWorkstationCluster_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -849,7 +849,7 @@ func GoogleWorkstationsWorkstationCluster_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -862,7 +862,7 @@ func GoogleWorkstationsWorkstationCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationCluster",
 		"tfResourceType",
 		&returns,
 	)

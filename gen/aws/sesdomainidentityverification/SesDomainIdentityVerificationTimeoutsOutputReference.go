@@ -180,7 +180,7 @@ func NewSesDomainIdentityVerificationTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_SesDomainIdentityVerificationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeoutsOutputReference",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSesDomainIdentityVerificationTimeoutsOutputReference_Override(s SesDomai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeoutsOutputReference",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

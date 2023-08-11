@@ -225,7 +225,7 @@ func NewQuicksightDataSourceParametersTeradataOutputReference(terraformResource 
 	j := jsiiProxy_QuicksightDataSourceParametersTeradataOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersTeradataOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewQuicksightDataSourceParametersTeradataOutputReference_Override(q Quicksi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersTeradataOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersTeradataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

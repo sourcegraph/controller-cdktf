@@ -438,7 +438,7 @@ func NewGuarddutyDetector(scope constructs.Construct, id *string, config *Guardd
 	j := jsiiProxy_GuarddutyDetector{}
 
 	_jsii_.Create(
-		"aws.guarddutyDetector.GuarddutyDetector",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewGuarddutyDetector_Override(g GuarddutyDetector, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyDetector.GuarddutyDetector",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -606,7 +606,7 @@ func GuarddutyDetector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyDetector.GuarddutyDetector",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +625,7 @@ func GuarddutyDetector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyDetector.GuarddutyDetector",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GuarddutyDetector_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyDetector.GuarddutyDetector",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func GuarddutyDetector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.guarddutyDetector.GuarddutyDetector",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetector",
 		"tfResourceType",
 		&returns,
 	)

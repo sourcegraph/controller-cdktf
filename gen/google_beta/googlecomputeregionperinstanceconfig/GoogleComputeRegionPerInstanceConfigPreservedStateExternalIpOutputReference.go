@@ -227,7 +227,7 @@ func NewGoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputRefere
 	j := jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

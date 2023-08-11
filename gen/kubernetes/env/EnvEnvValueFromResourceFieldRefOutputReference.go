@@ -227,7 +227,7 @@ func NewEnvEnvValueFromResourceFieldRefOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_EnvEnvValueFromResourceFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvValueFromResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewEnvEnvValueFromResourceFieldRefOutputReference_Override(e EnvEnvValueFro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.env.EnvEnvValueFromResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvEnvValueFromResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

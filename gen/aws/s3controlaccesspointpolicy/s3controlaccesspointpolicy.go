@@ -353,7 +353,7 @@ func NewS3ControlAccessPointPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_S3ControlAccessPointPolicy{}
 
 	_jsii_.Create(
-		"aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewS3ControlAccessPointPolicy_Override(s S3ControlAccessPointPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -499,7 +499,7 @@ func S3ControlAccessPointPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func S3ControlAccessPointPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func S3ControlAccessPointPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func S3ControlAccessPointPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlAccessPointPolicy.S3ControlAccessPointPolicy",
 		"tfResourceType",
 		&returns,
 	)

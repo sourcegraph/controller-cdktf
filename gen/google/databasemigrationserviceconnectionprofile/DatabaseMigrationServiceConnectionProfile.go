@@ -590,7 +590,7 @@ func NewDatabaseMigrationServiceConnectionProfile(scope constructs.Construct, id
 	j := jsiiProxy_DatabaseMigrationServiceConnectionProfile{}
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -603,7 +603,7 @@ func NewDatabaseMigrationServiceConnectionProfile_Override(d DatabaseMigrationSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -769,7 +769,7 @@ func DatabaseMigrationServiceConnectionProfile_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -788,7 +788,7 @@ func DatabaseMigrationServiceConnectionProfile_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func DatabaseMigrationServiceConnectionProfile_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func DatabaseMigrationServiceConnectionProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		"tfResourceType",
 		&returns,
 	)

@@ -434,7 +434,7 @@ func NewNotificationPolicyWebhooks(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_NotificationPolicyWebhooks{}
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
+		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,7 +447,7 @@ func NewNotificationPolicyWebhooks_Override(n NotificationPolicyWebhooks, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
+		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -602,7 +602,7 @@ func NotificationPolicyWebhooks_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
+		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func NotificationPolicyWebhooks_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
+		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func NotificationPolicyWebhooks_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
+		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func NotificationPolicyWebhooks_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
+		"@cdktf/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks",
 		"tfResourceType",
 		&returns,
 	)

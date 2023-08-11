@@ -599,7 +599,7 @@ func NewEvidentlyFeature(scope constructs.Construct, id *string, config *Evident
 	j := jsiiProxy_EvidentlyFeature{}
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeature",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -612,7 +612,7 @@ func NewEvidentlyFeature_Override(e EvidentlyFeature, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeature",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -811,7 +811,7 @@ func EvidentlyFeature_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlyFeature.EvidentlyFeature",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -830,7 +830,7 @@ func EvidentlyFeature_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlyFeature.EvidentlyFeature",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -849,7 +849,7 @@ func EvidentlyFeature_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlyFeature.EvidentlyFeature",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -862,7 +862,7 @@ func EvidentlyFeature_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.evidentlyFeature.EvidentlyFeature",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeature",
 		"tfResourceType",
 		&returns,
 	)

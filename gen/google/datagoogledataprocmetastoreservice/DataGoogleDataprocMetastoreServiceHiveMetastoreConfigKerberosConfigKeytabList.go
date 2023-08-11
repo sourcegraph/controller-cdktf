@@ -104,7 +104,7 @@ func NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeyta
 	j := jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabList{}
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabList",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeyta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabList",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

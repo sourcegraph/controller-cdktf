@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderLis
 	j := jsiiProxy_StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -104,7 +104,7 @@ func NewGoogleVertexAiEndpointDeployedModelsPrivateEndpointsList(terraformResour
 	j := jsiiProxy_GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleVertexAiEndpointDeployedModelsPrivateEndpointsList_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsPrivateEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

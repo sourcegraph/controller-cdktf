@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRoute",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRoute",
 		reflect.TypeOf((*AppmeshGatewayRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,23 +77,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteConfig",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteConfig",
 		reflect.TypeOf((*AppmeshGatewayRouteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpec",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpec",
 		reflect.TypeOf((*AppmeshGatewayRouteSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRoute",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRoute",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteAction",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteAction",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRouteAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRouteActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,11 +128,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTarget",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTarget",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRouteActionTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -167,11 +167,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -205,11 +205,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteMatch",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteMatch",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRouteMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -246,7 +246,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecGrpcRouteOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecGrpcRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -284,15 +284,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2Route",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2Route",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2Route)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteAction",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteAction",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -331,15 +331,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewrite",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewrite",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionRewrite)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -373,7 +373,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -413,11 +413,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -455,11 +455,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTarget",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTarget",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -494,11 +494,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -532,15 +532,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatch",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatch",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHostname",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHostname",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteMatchHostname)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteMatchHostnameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -578,7 +578,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -620,7 +620,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttp2RouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -658,15 +658,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRoute",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRoute",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteAction",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteAction",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -705,15 +705,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewrite",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewrite",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionRewrite)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionRewriteHostnameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -747,7 +747,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -787,11 +787,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionRewritePrefixOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -829,11 +829,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTarget",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTarget",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -868,11 +868,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteActionTargetVirtualServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -906,15 +906,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatch",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatch",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostname",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostname",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteMatchHostname)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -952,7 +952,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -994,7 +994,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecHttpRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -1032,7 +1032,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecOutputReference",
 		reflect.TypeOf((*AppmeshGatewayRouteSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

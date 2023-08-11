@@ -104,7 +104,7 @@ func NewDataKubernetesServiceV1SpecList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataKubernetesServiceV1SpecList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1SpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1SpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesServiceV1SpecList_Override(d DataKubernetesServiceV1SpecLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1SpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1SpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

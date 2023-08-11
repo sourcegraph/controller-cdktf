@@ -228,7 +228,7 @@ func NewOpsworksCustomLayerLoadBasedAutoScalingOutputReference(terraformResource
 	j := jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewOpsworksCustomLayerLoadBasedAutoScalingOutputReference_Override(o Opswor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

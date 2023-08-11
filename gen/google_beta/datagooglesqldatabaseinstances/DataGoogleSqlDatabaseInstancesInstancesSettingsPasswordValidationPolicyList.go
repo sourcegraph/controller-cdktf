@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyL
 	j := jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsPasswordValidationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

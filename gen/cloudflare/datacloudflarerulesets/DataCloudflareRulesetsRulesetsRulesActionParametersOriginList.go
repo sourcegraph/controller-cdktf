@@ -104,7 +104,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersOriginList(terraformR
 	j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOriginList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOriginList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOriginList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersOriginList_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOriginList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOriginList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

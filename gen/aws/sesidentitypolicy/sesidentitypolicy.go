@@ -365,7 +365,7 @@ func NewSesIdentityPolicy(scope constructs.Construct, id *string, config *SesIde
 	j := jsiiProxy_SesIdentityPolicy{}
 
 	_jsii_.Create(
-		"aws.sesIdentityPolicy.SesIdentityPolicy",
+		"@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewSesIdentityPolicy_Override(s SesIdentityPolicy, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesIdentityPolicy.SesIdentityPolicy",
+		"@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -522,7 +522,7 @@ func SesIdentityPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesIdentityPolicy.SesIdentityPolicy",
+		"@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func SesIdentityPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesIdentityPolicy.SesIdentityPolicy",
+		"@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func SesIdentityPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesIdentityPolicy.SesIdentityPolicy",
+		"@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func SesIdentityPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesIdentityPolicy.SesIdentityPolicy",
+		"@cdktf/provider-aws.sesIdentityPolicy.SesIdentityPolicy",
 		"tfResourceType",
 		&returns,
 	)

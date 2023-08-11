@@ -190,7 +190,7 @@ func NewGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference(terr
 	j := jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

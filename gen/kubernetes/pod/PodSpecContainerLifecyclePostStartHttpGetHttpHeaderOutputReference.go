@@ -204,7 +204,7 @@ func NewPodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terra
 	j := jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

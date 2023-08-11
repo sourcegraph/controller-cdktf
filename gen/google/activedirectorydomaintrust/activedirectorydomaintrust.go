@@ -506,7 +506,7 @@ func NewActiveDirectoryDomainTrust(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_ActiveDirectoryDomainTrust{}
 
 	_jsii_.Create(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -519,7 +519,7 @@ func NewActiveDirectoryDomainTrust_Override(a ActiveDirectoryDomainTrust, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -718,7 +718,7 @@ func ActiveDirectoryDomainTrust_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func ActiveDirectoryDomainTrust_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func ActiveDirectoryDomainTrust_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func ActiveDirectoryDomainTrust_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
 		"tfResourceType",
 		&returns,
 	)

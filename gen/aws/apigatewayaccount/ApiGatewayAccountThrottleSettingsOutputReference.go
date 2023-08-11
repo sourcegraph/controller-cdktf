@@ -178,7 +178,7 @@ func NewApiGatewayAccountThrottleSettingsOutputReference(terraformResource cdktf
 	j := jsiiProxy_ApiGatewayAccountThrottleSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewApiGatewayAccountThrottleSettingsOutputReference_Override(a ApiGatewayAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsOutputReference",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

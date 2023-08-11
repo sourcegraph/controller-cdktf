@@ -104,7 +104,7 @@ func NewApprunnerCustomDomainAssociationCertificateValidationRecordsList(terrafo
 	j := jsiiProxy_ApprunnerCustomDomainAssociationCertificateValidationRecordsList{}
 
 	_jsii_.Create(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsList",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewApprunnerCustomDomainAssociationCertificateValidationRecordsList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsList",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

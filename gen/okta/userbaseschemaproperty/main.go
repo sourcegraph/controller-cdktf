@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.userBaseSchemaProperty.UserBaseSchemaProperty",
+		"@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaProperty",
 		reflect.TypeOf((*UserBaseSchemaProperty)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig",
+		"@cdktf/provider-okta.userBaseSchemaProperty.UserBaseSchemaPropertyConfig",
 		reflect.TypeOf((*UserBaseSchemaPropertyConfig)(nil)).Elem(),
 	)
 }

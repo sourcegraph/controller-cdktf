@@ -202,7 +202,7 @@ func NewComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputR
 	j := jsiiProxy_ComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

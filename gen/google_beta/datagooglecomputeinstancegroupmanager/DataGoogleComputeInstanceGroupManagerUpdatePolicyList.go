@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceGroupManagerUpdatePolicyList(terraformResource 
 	j := jsiiProxy_DataGoogleComputeInstanceGroupManagerUpdatePolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerUpdatePolicyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerUpdatePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceGroupManagerUpdatePolicyList_Override(d DataGoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerUpdatePolicyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerUpdatePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

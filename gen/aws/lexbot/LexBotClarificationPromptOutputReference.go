@@ -226,7 +226,7 @@ func NewLexBotClarificationPromptOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_LexBotClarificationPromptOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotClarificationPromptOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewLexBotClarificationPromptOutputReference_Override(l LexBotClarificationP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotClarificationPromptOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

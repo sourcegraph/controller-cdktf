@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList(terrafor
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

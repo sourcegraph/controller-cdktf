@@ -252,7 +252,7 @@ func NewComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference(terrafo
 	j := jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

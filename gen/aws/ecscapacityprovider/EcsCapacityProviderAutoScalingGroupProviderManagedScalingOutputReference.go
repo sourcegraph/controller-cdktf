@@ -276,7 +276,7 @@ func NewEcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference
 	j := jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewEcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

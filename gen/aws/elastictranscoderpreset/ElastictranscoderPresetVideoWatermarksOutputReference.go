@@ -396,7 +396,7 @@ func NewElastictranscoderPresetVideoWatermarksOutputReference(terraformResource 
 	j := jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -408,7 +408,7 @@ func NewElastictranscoderPresetVideoWatermarksOutputReference_Override(e Elastic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

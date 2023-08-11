@@ -255,7 +255,7 @@ func NewDataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUs
 	j := jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUsageOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -267,7 +267,7 @@ func NewDataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

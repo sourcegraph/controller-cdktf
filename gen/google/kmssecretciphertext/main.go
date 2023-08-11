@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.kmsSecretCiphertext.KmsSecretCiphertext",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertext",
 		reflect.TypeOf((*KmsSecretCiphertext)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalAuthenticatedData", GoGetter: "AdditionalAuthenticatedData"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsSecretCiphertext.KmsSecretCiphertextConfig",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertextConfig",
 		reflect.TypeOf((*KmsSecretCiphertextConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsSecretCiphertext.KmsSecretCiphertextTimeouts",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertextTimeouts",
 		reflect.TypeOf((*KmsSecretCiphertextTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.kmsSecretCiphertext.KmsSecretCiphertextTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsSecretCiphertext.KmsSecretCiphertextTimeoutsOutputReference",
 		reflect.TypeOf((*KmsSecretCiphertextTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -204,7 +204,7 @@ func NewCodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionO
 	j := jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigDeploymentReadyOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

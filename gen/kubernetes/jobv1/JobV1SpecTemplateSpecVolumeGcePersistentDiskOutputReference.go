@@ -251,7 +251,7 @@ func NewJobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraformRes
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewJobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference_Override(j J
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

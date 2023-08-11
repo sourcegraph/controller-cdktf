@@ -251,7 +251,7 @@ func NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference(t
 	j := jsiiProxy_AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

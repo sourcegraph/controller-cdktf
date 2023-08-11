@@ -203,7 +203,7 @@ func NewS3BucketAclAccessControlPolicyGrantOutputReference(terraformResource cdk
 	j := jsiiProxy_S3BucketAclAccessControlPolicyGrantOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewS3BucketAclAccessControlPolicyGrantOutputReference_Override(s S3BucketAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyGrantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

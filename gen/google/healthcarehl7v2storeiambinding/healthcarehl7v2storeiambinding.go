@@ -400,7 +400,7 @@ func NewHealthcareHl7V2StoreIamBinding(scope constructs.Construct, id *string, c
 	j := jsiiProxy_HealthcareHl7V2StoreIamBinding{}
 
 	_jsii_.Create(
-		"google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewHealthcareHl7V2StoreIamBinding_Override(h HealthcareHl7V2StoreIamBinding
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -557,7 +557,7 @@ func HealthcareHl7V2StoreIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func HealthcareHl7V2StoreIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func HealthcareHl7V2StoreIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func HealthcareHl7V2StoreIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamBinding.HealthcareHl7V2StoreIamBinding",
 		"tfResourceType",
 		&returns,
 	)

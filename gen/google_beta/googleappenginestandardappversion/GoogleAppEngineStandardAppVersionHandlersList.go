@@ -116,7 +116,7 @@ func NewGoogleAppEngineStandardAppVersionHandlersList(terraformResource cdktf.II
 	j := jsiiProxy_GoogleAppEngineStandardAppVersionHandlersList{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersList",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleAppEngineStandardAppVersionHandlersList_Override(g GoogleAppEngine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersList",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

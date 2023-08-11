@@ -1230,7 +1230,7 @@ func NewLaunchTemplate(scope constructs.Construct, id *string, config *LaunchTem
 	j := jsiiProxy_LaunchTemplate{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplate",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1243,7 +1243,7 @@ func NewLaunchTemplate_Override(l LaunchTemplate, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplate",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -1563,7 +1563,7 @@ func LaunchTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.launchTemplate.LaunchTemplate",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1582,7 +1582,7 @@ func LaunchTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.launchTemplate.LaunchTemplate",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1601,7 +1601,7 @@ func LaunchTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.launchTemplate.LaunchTemplate",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1614,7 +1614,7 @@ func LaunchTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.launchTemplate.LaunchTemplate",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
 		"tfResourceType",
 		&returns,
 	)

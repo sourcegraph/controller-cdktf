@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificate",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate",
 		reflect.TypeOf((*ComputeManagedSslCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificateConfig",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateConfig",
 		reflect.TypeOf((*ComputeManagedSslCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificateManaged",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManaged",
 		reflect.TypeOf((*ComputeManagedSslCertificateManaged)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificateManagedOutputReference",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManagedOutputReference",
 		reflect.TypeOf((*ComputeManagedSslCertificateManagedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,11 +124,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeouts",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeouts",
 		reflect.TypeOf((*ComputeManagedSslCertificateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeManagedSslCertificateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

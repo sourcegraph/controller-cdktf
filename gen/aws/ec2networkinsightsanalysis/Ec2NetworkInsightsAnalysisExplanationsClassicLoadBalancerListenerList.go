@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList(te
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

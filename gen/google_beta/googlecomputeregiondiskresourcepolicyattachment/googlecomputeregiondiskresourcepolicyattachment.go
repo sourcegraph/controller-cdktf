@@ -414,7 +414,7 @@ func NewGoogleComputeRegionDiskResourcePolicyAttachment(scope constructs.Constru
 	j := jsiiProxy_GoogleComputeRegionDiskResourcePolicyAttachment{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewGoogleComputeRegionDiskResourcePolicyAttachment_Override(g GoogleCompute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -582,7 +582,7 @@ func GoogleComputeRegionDiskResourcePolicyAttachment_IsConstruct(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func GoogleComputeRegionDiskResourcePolicyAttachment_IsTerraformElement(x interf
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleComputeRegionDiskResourcePolicyAttachment_IsTerraformResource(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func GoogleComputeRegionDiskResourcePolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

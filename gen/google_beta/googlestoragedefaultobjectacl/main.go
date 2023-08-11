@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
 		reflect.TypeOf((*GoogleStorageDefaultObjectAcl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAclConfig",
 		reflect.TypeOf((*GoogleStorageDefaultObjectAclConfig)(nil)).Elem(),
 	)
 }

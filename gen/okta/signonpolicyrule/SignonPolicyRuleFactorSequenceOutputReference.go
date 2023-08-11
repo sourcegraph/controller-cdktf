@@ -226,7 +226,7 @@ func NewSignonPolicyRuleFactorSequenceOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SignonPolicyRuleFactorSequenceOutputReference{}
 
 	_jsii_.Create(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceOutputReference",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSignonPolicyRuleFactorSequenceOutputReference_Override(s SignonPolicyRul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceOutputReference",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

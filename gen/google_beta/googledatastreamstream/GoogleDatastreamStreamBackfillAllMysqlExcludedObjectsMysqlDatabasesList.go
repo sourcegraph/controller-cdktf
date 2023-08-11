@@ -116,7 +116,7 @@ func NewGoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList(
 	j := jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

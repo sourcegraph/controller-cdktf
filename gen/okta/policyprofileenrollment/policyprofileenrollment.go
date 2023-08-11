@@ -343,7 +343,7 @@ func NewPolicyProfileEnrollment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_PolicyProfileEnrollment{}
 
 	_jsii_.Create(
-		"okta.policyProfileEnrollment.PolicyProfileEnrollment",
+		"@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewPolicyProfileEnrollment_Override(p PolicyProfileEnrollment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyProfileEnrollment.PolicyProfileEnrollment",
+		"@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -489,7 +489,7 @@ func PolicyProfileEnrollment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyProfileEnrollment.PolicyProfileEnrollment",
+		"@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func PolicyProfileEnrollment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyProfileEnrollment.PolicyProfileEnrollment",
+		"@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func PolicyProfileEnrollment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyProfileEnrollment.PolicyProfileEnrollment",
+		"@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func PolicyProfileEnrollment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.policyProfileEnrollment.PolicyProfileEnrollment",
+		"@cdktf/provider-okta.policyProfileEnrollment.PolicyProfileEnrollment",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocket
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocket
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecContainerLifecyclePreStopTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

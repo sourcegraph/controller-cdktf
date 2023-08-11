@@ -846,7 +846,7 @@ func NewAppSignonPolicyRule(scope constructs.Construct, id *string, config *AppS
 	j := jsiiProxy_AppSignonPolicyRule{}
 
 	_jsii_.Create(
-		"okta.appSignonPolicyRule.AppSignonPolicyRule",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -859,7 +859,7 @@ func NewAppSignonPolicyRule_Override(a AppSignonPolicyRule, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSignonPolicyRule.AppSignonPolicyRule",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1212,7 +1212,7 @@ func AppSignonPolicyRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appSignonPolicyRule.AppSignonPolicyRule",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1231,7 +1231,7 @@ func AppSignonPolicyRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appSignonPolicyRule.AppSignonPolicyRule",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1250,7 +1250,7 @@ func AppSignonPolicyRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appSignonPolicyRule.AppSignonPolicyRule",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1263,7 +1263,7 @@ func AppSignonPolicyRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appSignonPolicyRule.AppSignonPolicyRule",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRule",
 		"tfResourceType",
 		&returns,
 	)

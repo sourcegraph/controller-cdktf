@@ -116,7 +116,7 @@ func NewInspectorAssessmentTemplateEventSubscriptionList(terraformResource cdktf
 	j := jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList{}
 
 	_jsii_.Create(
-		"aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionList",
+		"@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewInspectorAssessmentTemplateEventSubscriptionList_Override(i InspectorAss
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionList",
+		"@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

@@ -416,7 +416,7 @@ func NewS3AccountPublicAccessBlock(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_S3AccountPublicAccessBlock{}
 
 	_jsii_.Create(
-		"aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -429,7 +429,7 @@ func NewS3AccountPublicAccessBlock_Override(s S3AccountPublicAccessBlock, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -595,7 +595,7 @@ func S3AccountPublicAccessBlock_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func S3AccountPublicAccessBlock_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func S3AccountPublicAccessBlock_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func S3AccountPublicAccessBlock_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewSpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference(t
 	j := jsiiProxy_SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

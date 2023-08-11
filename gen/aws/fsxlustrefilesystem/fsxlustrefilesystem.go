@@ -913,7 +913,7 @@ func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxL
 	j := jsiiProxy_FsxLustreFileSystem{}
 
 	_jsii_.Create(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystem",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -926,7 +926,7 @@ func NewFsxLustreFileSystem_Override(f FsxLustreFileSystem, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystem",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -1268,7 +1268,7 @@ func FsxLustreFileSystem_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystem",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1287,7 +1287,7 @@ func FsxLustreFileSystem_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystem",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1306,7 +1306,7 @@ func FsxLustreFileSystem_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystem",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1319,7 +1319,7 @@ func FsxLustreFileSystem_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystem",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		"tfResourceType",
 		&returns,
 	)

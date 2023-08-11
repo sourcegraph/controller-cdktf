@@ -104,7 +104,7 @@ func NewDataAwsSignerSigningProfileRevocationRecordList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsSignerSigningProfileRevocationRecordList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordList",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsSignerSigningProfileRevocationRecordList_Override(d DataAwsSigner
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordList",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileRevocationRecordList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

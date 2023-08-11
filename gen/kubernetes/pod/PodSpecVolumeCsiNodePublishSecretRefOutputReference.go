@@ -180,7 +180,7 @@ func NewPodSpecVolumeCsiNodePublishSecretRefOutputReference(terraformResource cd
 	j := jsiiProxy_PodSpecVolumeCsiNodePublishSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeCsiNodePublishSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeCsiNodePublishSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewPodSpecVolumeCsiNodePublishSecretRefOutputReference_Override(p PodSpecVo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeCsiNodePublishSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeCsiNodePublishSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

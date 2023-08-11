@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroup",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup",
 		reflect.TypeOf((*SchedulerScheduleGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupConfig",
 		reflect.TypeOf((*SchedulerScheduleGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeouts",
 		reflect.TypeOf((*SchedulerScheduleGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeoutsOutputReference",
 		reflect.TypeOf((*SchedulerScheduleGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

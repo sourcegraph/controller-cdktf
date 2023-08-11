@@ -373,7 +373,7 @@ func NewDataAwsCloudcontrolapiResource(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsCloudcontrolapiResource{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
+		"@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataAwsCloudcontrolapiResource_Override(d DataAwsCloudcontrolapiResource
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
+		"@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -519,7 +519,7 @@ func DataAwsCloudcontrolapiResource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
+		"@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func DataAwsCloudcontrolapiResource_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
+		"@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func DataAwsCloudcontrolapiResource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
+		"@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func DataAwsCloudcontrolapiResource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
+		"@cdktf/provider-aws.dataAwsCloudcontrolapiResource.DataAwsCloudcontrolapiResource",
 		"tfResourceType",
 		&returns,
 	)

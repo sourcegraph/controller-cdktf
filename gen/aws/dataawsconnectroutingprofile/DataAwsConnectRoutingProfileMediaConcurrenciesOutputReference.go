@@ -178,7 +178,7 @@ func NewDataAwsConnectRoutingProfileMediaConcurrenciesOutputReference(terraformR
 	j := jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsConnectRoutingProfileMediaConcurrenciesOutputReference_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -179,7 +179,7 @@ func NewFsxFileCacheLustreConfigurationMetadataConfigurationOutputReference(terr
 	j := jsiiProxy_FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewFsxFileCacheLustreConfigurationMetadataConfigurationOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCacheLustreConfigurationMetadataConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

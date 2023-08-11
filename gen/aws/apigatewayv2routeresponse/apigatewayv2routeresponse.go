@@ -413,7 +413,7 @@ func NewApigatewayv2RouteResponse(scope constructs.Construct, id *string, config
 	j := jsiiProxy_Apigatewayv2RouteResponse{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
+		"@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewApigatewayv2RouteResponse_Override(a Apigatewayv2RouteResponse, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
+		"@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -592,7 +592,7 @@ func Apigatewayv2RouteResponse_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
+		"@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func Apigatewayv2RouteResponse_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
+		"@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func Apigatewayv2RouteResponse_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
+		"@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func Apigatewayv2RouteResponse_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
+		"@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
 		"tfResourceType",
 		&returns,
 	)

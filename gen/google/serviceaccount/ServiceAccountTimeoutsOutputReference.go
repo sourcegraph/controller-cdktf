@@ -180,7 +180,7 @@ func NewServiceAccountTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ServiceAccountTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.serviceAccount.ServiceAccountTimeoutsOutputReference",
+		"@cdktf/provider-google.serviceAccount.ServiceAccountTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewServiceAccountTimeoutsOutputReference_Override(s ServiceAccountTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceAccount.ServiceAccountTimeoutsOutputReference",
+		"@cdktf/provider-google.serviceAccount.ServiceAccountTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

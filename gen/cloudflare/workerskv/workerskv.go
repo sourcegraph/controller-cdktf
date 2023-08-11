@@ -388,7 +388,7 @@ func NewWorkersKv(scope constructs.Construct, id *string, config *WorkersKvConfi
 	j := jsiiProxy_WorkersKv{}
 
 	_jsii_.Create(
-		"cloudflare.workersKv.WorkersKv",
+		"@cdktf/provider-cloudflare.workersKv.WorkersKv",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewWorkersKv_Override(w WorkersKv, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workersKv.WorkersKv",
+		"@cdktf/provider-cloudflare.workersKv.WorkersKv",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -556,7 +556,7 @@ func WorkersKv_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workersKv.WorkersKv",
+		"@cdktf/provider-cloudflare.workersKv.WorkersKv",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func WorkersKv_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workersKv.WorkersKv",
+		"@cdktf/provider-cloudflare.workersKv.WorkersKv",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func WorkersKv_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workersKv.WorkersKv",
+		"@cdktf/provider-cloudflare.workersKv.WorkersKv",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func WorkersKv_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.workersKv.WorkersKv",
+		"@cdktf/provider-cloudflare.workersKv.WorkersKv",
 		"tfResourceType",
 		&returns,
 	)

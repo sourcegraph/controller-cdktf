@@ -180,7 +180,7 @@ func NewRoute53RecoveryreadinessResourceSetTimeoutsOutputReference(terraformReso
 	j := jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewRoute53RecoveryreadinessResourceSetTimeoutsOutputReference_Override(r Ro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

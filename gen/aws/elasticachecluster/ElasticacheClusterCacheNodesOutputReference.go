@@ -211,7 +211,7 @@ func NewElasticacheClusterCacheNodesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ElasticacheClusterCacheNodesOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheClusterCacheNodesOutputReference",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewElasticacheClusterCacheNodesOutputReference_Override(e ElasticacheCluste
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheClusterCacheNodesOutputReference",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterCacheNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

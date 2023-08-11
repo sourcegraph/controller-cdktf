@@ -180,7 +180,7 @@ func NewJobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference(te
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewJobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

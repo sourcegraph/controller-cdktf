@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.defaultSecurityGroup.DefaultSecurityGroup",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		reflect.TypeOf((*DefaultSecurityGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultSecurityGroup.DefaultSecurityGroupConfig",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupConfig",
 		reflect.TypeOf((*DefaultSecurityGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultSecurityGroup.DefaultSecurityGroupEgress",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgress",
 		reflect.TypeOf((*DefaultSecurityGroupEgress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultSecurityGroup.DefaultSecurityGroupEgressList",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressList",
 		reflect.TypeOf((*DefaultSecurityGroupEgressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupEgressOutputReference",
 		reflect.TypeOf((*DefaultSecurityGroupEgressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocks", GoGetter: "CidrBlocks"},
@@ -168,11 +168,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.defaultSecurityGroup.DefaultSecurityGroupIngress",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngress",
 		reflect.TypeOf((*DefaultSecurityGroupIngress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultSecurityGroup.DefaultSecurityGroupIngressList",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressList",
 		reflect.TypeOf((*DefaultSecurityGroupIngressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -193,7 +193,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroupIngressOutputReference",
 		reflect.TypeOf((*DefaultSecurityGroupIngressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocks", GoGetter: "CidrBlocks"},

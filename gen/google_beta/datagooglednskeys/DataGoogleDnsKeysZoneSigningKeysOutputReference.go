@@ -255,7 +255,7 @@ func NewDataGoogleDnsKeysZoneSigningKeysOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -267,7 +267,7 @@ func NewDataGoogleDnsKeysZoneSigningKeysOutputReference_Override(d DataGoogleDns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

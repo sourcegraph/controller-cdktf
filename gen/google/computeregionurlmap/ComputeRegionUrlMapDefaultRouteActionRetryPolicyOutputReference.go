@@ -228,7 +228,7 @@ func NewComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference(terrafor
 	j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

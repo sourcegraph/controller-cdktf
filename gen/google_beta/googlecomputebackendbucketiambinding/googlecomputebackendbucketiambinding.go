@@ -424,7 +424,7 @@ func NewGoogleComputeBackendBucketIamBinding(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleComputeBackendBucketIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleComputeBackendBucketIamBinding_Override(g GoogleComputeBackendBuck
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleComputeBackendBucketIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleComputeBackendBucketIamBinding_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleComputeBackendBucketIamBinding_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleComputeBackendBucketIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBinding",
 		"tfResourceType",
 		&returns,
 	)

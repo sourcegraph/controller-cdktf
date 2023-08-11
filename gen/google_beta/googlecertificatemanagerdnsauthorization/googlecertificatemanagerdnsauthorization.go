@@ -449,7 +449,7 @@ func NewGoogleCertificateManagerDnsAuthorization(scope constructs.Construct, id 
 	j := jsiiProxy_GoogleCertificateManagerDnsAuthorization{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewGoogleCertificateManagerDnsAuthorization_Override(g GoogleCertificateMan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -628,7 +628,7 @@ func GoogleCertificateManagerDnsAuthorization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func GoogleCertificateManagerDnsAuthorization_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func GoogleCertificateManagerDnsAuthorization_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GoogleCertificateManagerDnsAuthorization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorization",
 		"tfResourceType",
 		&returns,
 	)

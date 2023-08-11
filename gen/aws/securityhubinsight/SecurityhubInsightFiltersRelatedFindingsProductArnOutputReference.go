@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersRelatedFindingsProductArnOutputReference(terraf
 	j := jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersRelatedFindingsProductArnOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

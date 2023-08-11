@@ -261,7 +261,7 @@ func NewDatastreamConnectionProfileMysqlProfileSslConfigOutputReference(terrafor
 	j := jsiiProxy_DatastreamConnectionProfileMysqlProfileSslConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfigOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -273,7 +273,7 @@ func NewDatastreamConnectionProfileMysqlProfileSslConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfigOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -276,7 +276,7 @@ func NewWorkspacesDirectorySelfServicePermissionsOutputReference(terraformResour
 	j := jsiiProxy_WorkspacesDirectorySelfServicePermissionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissionsOutputReference",
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewWorkspacesDirectorySelfServicePermissionsOutputReference_Override(w Work
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissionsOutputReference",
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectorySelfServicePermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

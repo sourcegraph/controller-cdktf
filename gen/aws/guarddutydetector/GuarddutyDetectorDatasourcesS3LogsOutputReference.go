@@ -179,7 +179,7 @@ func NewGuarddutyDetectorDatasourcesS3LogsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GuarddutyDetectorDatasourcesS3LogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3LogsOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3LogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGuarddutyDetectorDatasourcesS3LogsOutputReference_Override(g GuarddutyDe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3LogsOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesS3LogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

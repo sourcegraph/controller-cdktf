@@ -599,7 +599,7 @@ func NewAcmpcaCertificateAuthority(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_AcmpcaCertificateAuthority{}
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -612,7 +612,7 @@ func NewAcmpcaCertificateAuthority_Override(a AcmpcaCertificateAuthority, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -789,7 +789,7 @@ func AcmpcaCertificateAuthority_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func AcmpcaCertificateAuthority_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -827,7 +827,7 @@ func AcmpcaCertificateAuthority_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func AcmpcaCertificateAuthority_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthority",
 		"tfResourceType",
 		&returns,
 	)

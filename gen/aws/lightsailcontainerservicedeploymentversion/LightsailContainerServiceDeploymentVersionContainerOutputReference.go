@@ -274,7 +274,7 @@ func NewLightsailContainerServiceDeploymentVersionContainerOutputReference(terra
 	j := jsiiProxy_LightsailContainerServiceDeploymentVersionContainerOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerOutputReference",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewLightsailContainerServiceDeploymentVersionContainerOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerOutputReference",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

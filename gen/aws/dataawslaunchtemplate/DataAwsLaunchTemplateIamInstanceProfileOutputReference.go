@@ -178,7 +178,7 @@ func NewDataAwsLaunchTemplateIamInstanceProfileOutputReference(terraformResource
 	j := jsiiProxy_DataAwsLaunchTemplateIamInstanceProfileOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateIamInstanceProfileOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateIamInstanceProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsLaunchTemplateIamInstanceProfileOutputReference_Override(d DataAw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateIamInstanceProfileOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateIamInstanceProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

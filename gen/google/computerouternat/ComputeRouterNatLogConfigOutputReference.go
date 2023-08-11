@@ -202,7 +202,7 @@ func NewComputeRouterNatLogConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ComputeRouterNatLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRouterNat.ComputeRouterNatLogConfigOutputReference",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeRouterNatLogConfigOutputReference_Override(c ComputeRouterNatLogC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouterNat.ComputeRouterNatLogConfigOutputReference",
+		"@cdktf/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

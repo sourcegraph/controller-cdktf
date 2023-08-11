@@ -252,7 +252,7 @@ func NewGameServicesGameServerConfigScalingConfigsSchedulesOutputReference(terra
 	j := jsiiProxy_GameServicesGameServerConfigScalingConfigsSchedulesOutputReference{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGameServicesGameServerConfigScalingConfigsSchedulesOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

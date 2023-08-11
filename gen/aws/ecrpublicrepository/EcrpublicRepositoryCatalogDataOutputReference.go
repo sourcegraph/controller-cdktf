@@ -300,7 +300,7 @@ func NewEcrpublicRepositoryCatalogDataOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewEcrpublicRepositoryCatalogDataOutputReference_Override(e EcrpublicReposi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
+		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

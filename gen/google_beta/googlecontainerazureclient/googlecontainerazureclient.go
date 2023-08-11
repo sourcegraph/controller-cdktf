@@ -469,7 +469,7 @@ func NewGoogleContainerAzureClient(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleContainerAzureClient{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -482,7 +482,7 @@ func NewGoogleContainerAzureClient_Override(g GoogleContainerAzureClient, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -648,7 +648,7 @@ func GoogleContainerAzureClient_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GoogleContainerAzureClient_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func GoogleContainerAzureClient_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func GoogleContainerAzureClient_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
+		"@cdktf/provider-google-beta.googleContainerAzureClient.GoogleContainerAzureClient",
 		"tfResourceType",
 		&returns,
 	)

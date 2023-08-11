@@ -104,7 +104,7 @@ func NewDataAwsWorkspacesBundleComputeTypeList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsWorkspacesBundleComputeTypeList{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeList",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsWorkspacesBundleComputeTypeList_Override(d DataAwsWorkspacesBundl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeList",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

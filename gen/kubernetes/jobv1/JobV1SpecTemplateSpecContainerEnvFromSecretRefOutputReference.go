@@ -203,7 +203,7 @@ func NewJobV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference(terraformR
 	j := jsiiProxy_JobV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewJobV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference_Override(j
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

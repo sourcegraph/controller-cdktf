@@ -568,7 +568,7 @@ func NewGoogleBigqueryJob(scope constructs.Construct, id *string, config *Google
 	j := jsiiProxy_GoogleBigqueryJob{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJob",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -581,7 +581,7 @@ func NewGoogleBigqueryJob_Override(g GoogleBigqueryJob, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJob",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJob",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -747,7 +747,7 @@ func GoogleBigqueryJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJob",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -766,7 +766,7 @@ func GoogleBigqueryJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJob",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func GoogleBigqueryJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJob",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -798,7 +798,7 @@ func GoogleBigqueryJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJob",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJob",
 		"tfResourceType",
 		&returns,
 	)

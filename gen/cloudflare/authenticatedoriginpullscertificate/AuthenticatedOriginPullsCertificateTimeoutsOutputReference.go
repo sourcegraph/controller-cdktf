@@ -180,7 +180,7 @@ func NewAuthenticatedOriginPullsCertificateTimeoutsOutputReference(terraformReso
 	j := jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAuthenticatedOriginPullsCertificateTimeoutsOutputReference_Override(a Au
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

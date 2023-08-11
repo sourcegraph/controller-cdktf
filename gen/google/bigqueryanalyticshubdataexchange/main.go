@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
 		reflect.TypeOf((*BigqueryAnalyticsHubDataExchange)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeConfig",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeConfig",
 		reflect.TypeOf((*BigqueryAnalyticsHubDataExchangeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeouts",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeouts",
 		reflect.TypeOf((*BigqueryAnalyticsHubDataExchangeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference",
 		reflect.TypeOf((*BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

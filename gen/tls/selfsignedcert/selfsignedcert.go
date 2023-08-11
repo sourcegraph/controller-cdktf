@@ -599,7 +599,7 @@ func NewSelfSignedCert(scope constructs.Construct, id *string, config *SelfSigne
 	j := jsiiProxy_SelfSignedCert{}
 
 	_jsii_.Create(
-		"tls.selfSignedCert.SelfSignedCert",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -612,7 +612,7 @@ func NewSelfSignedCert_Override(s SelfSignedCert, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.selfSignedCert.SelfSignedCert",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -822,7 +822,7 @@ func SelfSignedCert_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.selfSignedCert.SelfSignedCert",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -841,7 +841,7 @@ func SelfSignedCert_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.selfSignedCert.SelfSignedCert",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -860,7 +860,7 @@ func SelfSignedCert_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.selfSignedCert.SelfSignedCert",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -873,7 +873,7 @@ func SelfSignedCert_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tls.selfSignedCert.SelfSignedCert",
+		"@cdktf/provider-tls.selfSignedCert.SelfSignedCert",
 		"tfResourceType",
 		&returns,
 	)

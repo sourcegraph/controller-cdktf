@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettings",
 		reflect.TypeOf((*DirectoryServiceRadiusSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsConfig",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsConfig",
 		reflect.TypeOf((*DirectoryServiceRadiusSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeouts",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeouts",
 		reflect.TypeOf((*DirectoryServiceRadiusSettingsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeoutsOutputReference",
+		"@cdktf/provider-aws.directoryServiceRadiusSettings.DirectoryServiceRadiusSettingsTimeoutsOutputReference",
 		reflect.TypeOf((*DirectoryServiceRadiusSettingsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

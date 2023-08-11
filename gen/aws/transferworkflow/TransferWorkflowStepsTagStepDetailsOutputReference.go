@@ -228,7 +228,7 @@ func NewTransferWorkflowStepsTagStepDetailsOutputReference(terraformResource cdk
 	j := jsiiProxy_TransferWorkflowStepsTagStepDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewTransferWorkflowStepsTagStepDetailsOutputReference_Override(t TransferWo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

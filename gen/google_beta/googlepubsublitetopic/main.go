@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		reflect.TypeOf((*GooglePubsubLiteTopic)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,19 +82,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicConfig",
 		reflect.TypeOf((*GooglePubsubLiteTopicConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfig",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfig",
 		reflect.TypeOf((*GooglePubsubLiteTopicPartitionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacity",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacity",
 		reflect.TypeOf((*GooglePubsubLiteTopicPartitionConfigCapacity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacityOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigCapacityOutputReference",
 		reflect.TypeOf((*GooglePubsubLiteTopicPartitionConfigCapacityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,7 +130,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigOutputReference",
 		reflect.TypeOf((*GooglePubsubLiteTopicPartitionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacity", GoGetter: "Capacity"},
@@ -168,11 +168,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfig",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfig",
 		reflect.TypeOf((*GooglePubsubLiteTopicReservationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicReservationConfigOutputReference",
 		reflect.TypeOf((*GooglePubsubLiteTopicReservationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,11 +207,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfig",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfig",
 		reflect.TypeOf((*GooglePubsubLiteTopicRetentionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicRetentionConfigOutputReference",
 		reflect.TypeOf((*GooglePubsubLiteTopicRetentionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -248,11 +248,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeouts",
 		reflect.TypeOf((*GooglePubsubLiteTopicTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicTimeoutsOutputReference",
 		reflect.TypeOf((*GooglePubsubLiteTopicTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

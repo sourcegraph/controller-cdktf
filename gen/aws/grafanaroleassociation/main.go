@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociation",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		reflect.TypeOf((*GrafanaRoleAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociationConfig",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociationConfig",
 		reflect.TypeOf((*GrafanaRoleAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeouts",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeouts",
 		reflect.TypeOf((*GrafanaRoleAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*GrafanaRoleAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

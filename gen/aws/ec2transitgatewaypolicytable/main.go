@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTable",
 		reflect.TypeOf((*Ec2TransitGatewayPolicyTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig",
+		"@cdktf/provider-aws.ec2TransitGatewayPolicyTable.Ec2TransitGatewayPolicyTableConfig",
 		reflect.TypeOf((*Ec2TransitGatewayPolicyTableConfig)(nil)).Elem(),
 	)
 }

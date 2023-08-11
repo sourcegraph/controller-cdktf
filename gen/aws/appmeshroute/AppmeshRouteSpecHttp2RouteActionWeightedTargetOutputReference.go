@@ -226,7 +226,7 @@ func NewAppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference(terraformR
 	j := jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewAppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttp2RouteActionWeightedTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

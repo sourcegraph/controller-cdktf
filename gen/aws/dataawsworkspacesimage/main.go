@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
+		"@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImage",
 		reflect.TypeOf((*DataAwsWorkspacesImage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig",
+		"@cdktf/provider-aws.dataAwsWorkspacesImage.DataAwsWorkspacesImageConfig",
 		reflect.TypeOf((*DataAwsWorkspacesImageConfig)(nil)).Elem(),
 	)
 }

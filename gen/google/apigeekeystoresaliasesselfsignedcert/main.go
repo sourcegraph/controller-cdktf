@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCert",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCert)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfo",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfo",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoCertInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicConstraints", GoGetter: "BasicConstraints"},
@@ -155,7 +155,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoList",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoList",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -175,7 +175,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certInfo", GoGetter: "CertInfo"},
@@ -208,19 +208,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertConfig",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertConfig",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubject",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubject",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertSubject)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNames)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -255,7 +255,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
@@ -308,11 +308,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeouts",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeouts",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference",
 		reflect.TypeOf((*ApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList(terraformResourc
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList_Override(s State
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

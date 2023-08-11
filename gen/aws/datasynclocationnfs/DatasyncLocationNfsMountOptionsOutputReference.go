@@ -180,7 +180,7 @@ func NewDatasyncLocationNfsMountOptionsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationNfs.DatasyncLocationNfsMountOptionsOutputReference",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDatasyncLocationNfsMountOptionsOutputReference_Override(d DatasyncLocati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationNfs.DatasyncLocationNfsMountOptionsOutputReference",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

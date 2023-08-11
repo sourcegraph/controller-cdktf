@@ -204,7 +204,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference(terraformResourc
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference_Override(d Daemo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFlockerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

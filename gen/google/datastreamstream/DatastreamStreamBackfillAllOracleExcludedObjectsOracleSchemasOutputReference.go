@@ -203,7 +203,7 @@ func NewDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputRefer
 	j := jsiiProxy_DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

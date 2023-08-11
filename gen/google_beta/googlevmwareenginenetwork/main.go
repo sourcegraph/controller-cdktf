@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
 		reflect.TypeOf((*GoogleVmwareengineNetwork)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkConfig",
 		reflect.TypeOf((*GoogleVmwareengineNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeouts",
 		reflect.TypeOf((*GoogleVmwareengineNetworkTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleVmwareengineNetworkTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworks",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworks",
 		reflect.TypeOf((*GoogleVmwareengineNetworkVpcNetworks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksList",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksList",
 		reflect.TypeOf((*GoogleVmwareengineNetworkVpcNetworksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksOutputReference",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksOutputReference",
 		reflect.TypeOf((*GoogleVmwareengineNetworkVpcNetworksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

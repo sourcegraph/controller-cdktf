@@ -211,7 +211,7 @@ func NewCloudhsmV2ClusterClusterCertificatesOutputReference(terraformResource cd
 	j := jsiiProxy_CloudhsmV2ClusterClusterCertificatesOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesOutputReference",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewCloudhsmV2ClusterClusterCertificatesOutputReference_Override(c CloudhsmV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesOutputReference",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

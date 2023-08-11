@@ -179,7 +179,7 @@ func NewWafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference(terra
 	j := jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -203,7 +203,7 @@ func NewGoogleKmsCryptoKeyVersionTemplateOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleKmsCryptoKeyVersionTemplateOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKey.GoogleKmsCryptoKeyVersionTemplateOutputReference",
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKeyVersionTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleKmsCryptoKeyVersionTemplateOutputReference_Override(g GoogleKmsCry
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKey.GoogleKmsCryptoKeyVersionTemplateOutputReference",
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKeyVersionTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

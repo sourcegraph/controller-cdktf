@@ -461,7 +461,7 @@ func NewGoogleAccessContextManagerAccessLevel(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleAccessContextManagerAccessLevel{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewGoogleAccessContextManagerAccessLevel_Override(g GoogleAccessContextMana
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -629,7 +629,7 @@ func GoogleAccessContextManagerAccessLevel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func GoogleAccessContextManagerAccessLevel_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GoogleAccessContextManagerAccessLevel_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GoogleAccessContextManagerAccessLevel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevel",
 		"tfResourceType",
 		&returns,
 	)

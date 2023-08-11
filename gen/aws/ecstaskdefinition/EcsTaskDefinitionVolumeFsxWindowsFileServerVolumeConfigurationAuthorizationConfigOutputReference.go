@@ -202,7 +202,7 @@ func NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizat
 	j := jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationAuthorizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

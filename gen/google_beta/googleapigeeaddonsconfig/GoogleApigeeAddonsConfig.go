@@ -367,7 +367,7 @@ func NewGoogleApigeeAddonsConfig(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleApigeeAddonsConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
+		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewGoogleApigeeAddonsConfig_Override(g GoogleApigeeAddonsConfig, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
+		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -502,7 +502,7 @@ func GoogleApigeeAddonsConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
+		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func GoogleApigeeAddonsConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
+		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func GoogleApigeeAddonsConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
+		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleApigeeAddonsConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
+		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfig",
 		"tfResourceType",
 		&returns,
 	)

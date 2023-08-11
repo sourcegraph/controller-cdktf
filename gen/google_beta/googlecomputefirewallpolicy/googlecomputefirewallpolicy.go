@@ -467,7 +467,7 @@ func NewGoogleComputeFirewallPolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeFirewallPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewGoogleComputeFirewallPolicy_Override(g GoogleComputeFirewallPolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -624,7 +624,7 @@ func GoogleComputeFirewallPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleComputeFirewallPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -662,7 +662,7 @@ func GoogleComputeFirewallPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func GoogleComputeFirewallPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicy.GoogleComputeFirewallPolicy",
 		"tfResourceType",
 		&returns,
 	)

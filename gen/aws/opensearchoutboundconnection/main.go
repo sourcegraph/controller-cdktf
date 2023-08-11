@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnection",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection",
 		reflect.TypeOf((*OpensearchOutboundConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionConfig",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionConfig",
 		reflect.TypeOf((*OpensearchOutboundConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfo",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfo",
 		reflect.TypeOf((*OpensearchOutboundConnectionLocalDomainInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfoOutputReference",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfoOutputReference",
 		reflect.TypeOf((*OpensearchOutboundConnectionLocalDomainInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,11 +114,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfo",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfo",
 		reflect.TypeOf((*OpensearchOutboundConnectionRemoteDomainInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfoOutputReference",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionRemoteDomainInfoOutputReference",
 		reflect.TypeOf((*OpensearchOutboundConnectionRemoteDomainInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,11 +156,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeouts",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeouts",
 		reflect.TypeOf((*OpensearchOutboundConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*OpensearchOutboundConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

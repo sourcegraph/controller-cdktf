@@ -228,7 +228,7 @@ func NewComprehendEntityRecognizerTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_ComprehendEntityRecognizerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeoutsOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComprehendEntityRecognizerTimeoutsOutputReference_Override(c ComprehendE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeoutsOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

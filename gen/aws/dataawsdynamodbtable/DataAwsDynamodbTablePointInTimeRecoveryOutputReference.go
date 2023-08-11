@@ -167,7 +167,7 @@ func NewDataAwsDynamodbTablePointInTimeRecoveryOutputReference(terraformResource
 	j := jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTablePointInTimeRecoveryOutputReference",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTablePointInTimeRecoveryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsDynamodbTablePointInTimeRecoveryOutputReference_Override(d DataAw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTablePointInTimeRecoveryOutputReference",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTablePointInTimeRecoveryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

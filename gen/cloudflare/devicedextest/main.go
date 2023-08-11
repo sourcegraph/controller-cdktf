@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.deviceDexTest.DeviceDexTest",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTest",
 		reflect.TypeOf((*DeviceDexTest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.deviceDexTest.DeviceDexTestConfig",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestConfig",
 		reflect.TypeOf((*DeviceDexTestConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.deviceDexTest.DeviceDexTestData",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestData",
 		reflect.TypeOf((*DeviceDexTestData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.deviceDexTest.DeviceDexTestDataOutputReference",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestDataOutputReference",
 		reflect.TypeOf((*DeviceDexTestDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

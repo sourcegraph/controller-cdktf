@@ -226,7 +226,7 @@ func NewPersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressions
 	j := jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

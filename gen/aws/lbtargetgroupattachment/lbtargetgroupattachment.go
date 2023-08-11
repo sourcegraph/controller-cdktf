@@ -390,7 +390,7 @@ func NewLbTargetGroupAttachment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_LbTargetGroupAttachment{}
 
 	_jsii_.Create(
-		"aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
+		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewLbTargetGroupAttachment_Override(l LbTargetGroupAttachment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
+		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -558,7 +558,7 @@ func LbTargetGroupAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
+		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func LbTargetGroupAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
+		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func LbTargetGroupAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
+		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func LbTargetGroupAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
+		"@cdktf/provider-aws.lbTargetGroupAttachment.LbTargetGroupAttachment",
 		"tfResourceType",
 		&returns,
 	)

@@ -212,7 +212,7 @@ func NewGoogleContainerClusterMasterAuthOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleContainerClusterMasterAuthOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -224,7 +224,7 @@ func NewGoogleContainerClusterMasterAuthOutputReference_Override(g GoogleContain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

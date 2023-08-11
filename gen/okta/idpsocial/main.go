@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.idpSocial.IdpSocial",
+		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		reflect.TypeOf((*IdpSocial)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountLinkAction", GoGetter: "AccountLinkAction"},
@@ -137,7 +137,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.idpSocial.IdpSocialConfig",
+		"@cdktf/provider-okta.idpSocial.IdpSocialConfig",
 		reflect.TypeOf((*IdpSocialConfig)(nil)).Elem(),
 	)
 }

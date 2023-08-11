@@ -353,7 +353,7 @@ func NewVpcEndpointConnectionAccepter(scope constructs.Construct, id *string, co
 	j := jsiiProxy_VpcEndpointConnectionAccepter{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
+		"@cdktf/provider-aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewVpcEndpointConnectionAccepter_Override(v VpcEndpointConnectionAccepter, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
+		"@cdktf/provider-aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -499,7 +499,7 @@ func VpcEndpointConnectionAccepter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
+		"@cdktf/provider-aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func VpcEndpointConnectionAccepter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
+		"@cdktf/provider-aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func VpcEndpointConnectionAccepter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
+		"@cdktf/provider-aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func VpcEndpointConnectionAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
+		"@cdktf/provider-aws.vpcEndpointConnectionAccepter.VpcEndpointConnectionAccepter",
 		"tfResourceType",
 		&returns,
 	)

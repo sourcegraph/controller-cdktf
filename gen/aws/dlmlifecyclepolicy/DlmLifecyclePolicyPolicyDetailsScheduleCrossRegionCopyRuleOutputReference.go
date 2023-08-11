@@ -298,7 +298,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReferenc
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -310,7 +310,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

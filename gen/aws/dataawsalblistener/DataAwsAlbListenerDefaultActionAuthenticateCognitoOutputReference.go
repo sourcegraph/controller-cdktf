@@ -244,7 +244,7 @@ func NewDataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference(terraf
 	j := jsiiProxy_DataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewDataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

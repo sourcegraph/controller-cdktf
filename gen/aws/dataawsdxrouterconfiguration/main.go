@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration",
+		"@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfiguration",
 		reflect.TypeOf((*DataAwsDxRouterConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationConfig",
+		"@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationConfig",
 		reflect.TypeOf((*DataAwsDxRouterConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouter",
+		"@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouter",
 		reflect.TypeOf((*DataAwsDxRouterConfigurationRouter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterList",
+		"@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterList",
 		reflect.TypeOf((*DataAwsDxRouterConfigurationRouterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference",
+		"@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterOutputReference",
 		reflect.TypeOf((*DataAwsDxRouterConfigurationRouterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

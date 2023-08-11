@@ -494,7 +494,7 @@ func NewDxBgpPeer(scope constructs.Construct, id *string, config *DxBgpPeerConfi
 	j := jsiiProxy_DxBgpPeer{}
 
 	_jsii_.Create(
-		"aws.dxBgpPeer.DxBgpPeer",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewDxBgpPeer_Override(d DxBgpPeer, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxBgpPeer.DxBgpPeer",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeer",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -684,7 +684,7 @@ func DxBgpPeer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxBgpPeer.DxBgpPeer",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func DxBgpPeer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxBgpPeer.DxBgpPeer",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func DxBgpPeer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxBgpPeer.DxBgpPeer",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func DxBgpPeer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxBgpPeer.DxBgpPeer",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeer",
 		"tfResourceType",
 		&returns,
 	)

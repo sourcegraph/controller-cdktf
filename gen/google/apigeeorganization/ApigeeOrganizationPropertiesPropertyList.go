@@ -116,7 +116,7 @@ func NewApigeeOrganizationPropertiesPropertyList(terraformResource cdktf.IInterp
 	j := jsiiProxy_ApigeeOrganizationPropertiesPropertyList{}
 
 	_jsii_.Create(
-		"google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList",
+		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApigeeOrganizationPropertiesPropertyList_Override(a ApigeeOrganizationPr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList",
+		"@cdktf/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

@@ -202,7 +202,7 @@ func NewDataAwsRegionsFilterOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsRegionsFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRegions.DataAwsRegionsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsRegionsFilterOutputReference_Override(d DataAwsRegionsFilterOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRegions.DataAwsRegionsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

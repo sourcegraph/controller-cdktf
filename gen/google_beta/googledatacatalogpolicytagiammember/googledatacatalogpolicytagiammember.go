@@ -400,7 +400,7 @@ func NewGoogleDataCatalogPolicyTagIamMember(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleDataCatalogPolicyTagIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleDataCatalogPolicyTagIamMember_Override(g GoogleDataCatalogPolicyTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleDataCatalogPolicyTagIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleDataCatalogPolicyTagIamMember_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleDataCatalogPolicyTagIamMember_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleDataCatalogPolicyTagIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTagIamMember.GoogleDataCatalogPolicyTagIamMember",
 		"tfResourceType",
 		&returns,
 	)

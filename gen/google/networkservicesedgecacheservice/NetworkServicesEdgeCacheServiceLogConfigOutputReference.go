@@ -204,7 +204,7 @@ func NewNetworkServicesEdgeCacheServiceLogConfigOutputReference(terraformResourc
 	j := jsiiProxy_NetworkServicesEdgeCacheServiceLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceLogConfigOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkServicesEdgeCacheServiceLogConfigOutputReference_Override(n Netwo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceLogConfigOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheService.NetworkServicesEdgeCacheServiceLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

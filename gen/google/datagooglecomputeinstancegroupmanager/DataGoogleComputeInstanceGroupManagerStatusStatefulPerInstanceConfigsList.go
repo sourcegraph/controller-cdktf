@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsLis
 	j := jsiiProxy_DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

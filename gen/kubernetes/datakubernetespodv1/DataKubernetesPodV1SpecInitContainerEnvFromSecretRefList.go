@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecInitContainerEnvFromSecretRefList(terraformResour
 	j := jsiiProxy_DataKubernetesPodV1SpecInitContainerEnvFromSecretRefList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecInitContainerEnvFromSecretRefList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerEnvFromSecretRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

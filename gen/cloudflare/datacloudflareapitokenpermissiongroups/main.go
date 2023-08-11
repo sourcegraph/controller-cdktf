@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
+		"@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
 		reflect.TypeOf((*DataCloudflareApiTokenPermissionGroups)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroupsConfig",
+		"@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroupsConfig",
 		reflect.TypeOf((*DataCloudflareApiTokenPermissionGroupsConfig)(nil)).Elem(),
 	)
 }

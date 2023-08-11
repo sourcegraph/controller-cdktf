@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerPool.LoadBalancerPool",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		reflect.TypeOf((*LoadBalancerPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -96,15 +96,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolConfig",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig",
 		reflect.TypeOf((*LoadBalancerPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolLoadShedding",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadShedding",
 		reflect.TypeOf((*LoadBalancerPoolLoadShedding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingList",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingList",
 		reflect.TypeOf((*LoadBalancerPoolLoadSheddingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingOutputReference",
 		reflect.TypeOf((*LoadBalancerPoolLoadSheddingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -169,11 +169,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteering",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteering",
 		reflect.TypeOf((*LoadBalancerPoolOriginSteering)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringList",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringList",
 		reflect.TypeOf((*LoadBalancerPoolOriginSteeringList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -194,7 +194,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringOutputReference",
 		reflect.TypeOf((*LoadBalancerPoolOriginSteeringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -229,15 +229,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOrigins",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOrigins",
 		reflect.TypeOf((*LoadBalancerPoolOrigins)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeader",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeader",
 		reflect.TypeOf((*LoadBalancerPoolOriginsHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderList",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderList",
 		reflect.TypeOf((*LoadBalancerPoolOriginsHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -258,7 +258,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderOutputReference",
 		reflect.TypeOf((*LoadBalancerPoolOriginsHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,7 +294,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginsList",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsList",
 		reflect.TypeOf((*LoadBalancerPoolOriginsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -315,7 +315,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
 		reflect.TypeOf((*LoadBalancerPoolOriginsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},

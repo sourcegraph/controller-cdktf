@@ -178,7 +178,7 @@ func NewFsxOntapStorageVirtualMachineEndpointsIscsiOutputReference(terraformReso
 	j := jsiiProxy_FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewFsxOntapStorageVirtualMachineEndpointsIscsiOutputReference_Override(f Fs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

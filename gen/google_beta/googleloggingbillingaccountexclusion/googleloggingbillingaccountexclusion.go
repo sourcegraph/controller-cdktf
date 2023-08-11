@@ -413,7 +413,7 @@ func NewGoogleLoggingBillingAccountExclusion(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleLoggingBillingAccountExclusion{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewGoogleLoggingBillingAccountExclusion_Override(g GoogleLoggingBillingAcco
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleLoggingBillingAccountExclusion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleLoggingBillingAccountExclusion_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleLoggingBillingAccountExclusion_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleLoggingBillingAccountExclusion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion.GoogleLoggingBillingAccountExclusion",
 		"tfResourceType",
 		&returns,
 	)

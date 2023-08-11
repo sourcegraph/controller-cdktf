@@ -204,7 +204,7 @@ func NewAccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleS
 	j := jsiiProxy_AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference",
+		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference",
+		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -735,7 +735,7 @@ func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DmsReplicationInstance{}
 
 	_jsii_.Create(
-		"aws.dmsReplicationInstance.DmsReplicationInstance",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -748,7 +748,7 @@ func NewDmsReplicationInstance_Override(d DmsReplicationInstance, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsReplicationInstance.DmsReplicationInstance",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1035,7 +1035,7 @@ func DmsReplicationInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsReplicationInstance.DmsReplicationInstance",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1054,7 +1054,7 @@ func DmsReplicationInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsReplicationInstance.DmsReplicationInstance",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1073,7 +1073,7 @@ func DmsReplicationInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsReplicationInstance.DmsReplicationInstance",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1086,7 +1086,7 @@ func DmsReplicationInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dmsReplicationInstance.DmsReplicationInstance",
+		"@cdktf/provider-aws.dmsReplicationInstance.DmsReplicationInstance",
 		"tfResourceType",
 		&returns,
 	)

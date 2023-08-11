@@ -116,7 +116,7 @@ func NewCustomSslCustomSslPriorityList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_CustomSslCustomSslPriorityList{}
 
 	_jsii_.Create(
-		"cloudflare.customSsl.CustomSslCustomSslPriorityList",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCustomSslCustomSslPriorityList_Override(c CustomSslCustomSslPriorityList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customSsl.CustomSslCustomSslPriorityList",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

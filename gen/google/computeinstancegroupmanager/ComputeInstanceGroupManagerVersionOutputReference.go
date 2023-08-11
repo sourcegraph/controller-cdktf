@@ -227,7 +227,7 @@ func NewComputeInstanceGroupManagerVersionOutputReference(terraformResource cdkt
 	j := jsiiProxy_ComputeInstanceGroupManagerVersionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewComputeInstanceGroupManagerVersionOutputReference_Override(c ComputeInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

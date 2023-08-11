@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.transcribeLanguageModel.TranscribeLanguageModel",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModel",
 		reflect.TypeOf((*TranscribeLanguageModel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transcribeLanguageModel.TranscribeLanguageModelConfig",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelConfig",
 		reflect.TypeOf((*TranscribeLanguageModelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfig",
 		reflect.TypeOf((*TranscribeLanguageModelInputDataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfigOutputReference",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelInputDataConfigOutputReference",
 		reflect.TypeOf((*TranscribeLanguageModelInputDataConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,11 +122,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transcribeLanguageModel.TranscribeLanguageModelTimeouts",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeouts",
 		reflect.TypeOf((*TranscribeLanguageModelTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.transcribeLanguageModel.TranscribeLanguageModelTimeoutsOutputReference",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModelTimeoutsOutputReference",
 		reflect.TypeOf((*TranscribeLanguageModelTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -400,7 +400,7 @@ func NewGoogleOrganizationIamMember(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleOrganizationIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
+		"@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleOrganizationIamMember_Override(g GoogleOrganizationIamMember, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
+		"@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleOrganizationIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
+		"@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleOrganizationIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
+		"@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleOrganizationIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
+		"@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleOrganizationIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
+		"@cdktf/provider-google-beta.googleOrganizationIamMember.GoogleOrganizationIamMember",
 		"tfResourceType",
 		&returns,
 	)

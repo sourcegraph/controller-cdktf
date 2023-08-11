@@ -116,7 +116,7 @@ func NewOpsworksGangliaLayerEbsVolumeList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_OpsworksGangliaLayerEbsVolumeList{}
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksGangliaLayerEbsVolumeList_Override(o OpsworksGangliaLayerEbsVolu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

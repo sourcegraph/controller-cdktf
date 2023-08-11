@@ -401,7 +401,7 @@ func NewGoogleCloudbuildv2ConnectionIamPolicy(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleCloudbuildv2ConnectionIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleCloudbuildv2ConnectionIamPolicy_Override(g GoogleCloudbuildv2Conne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleCloudbuildv2ConnectionIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleCloudbuildv2ConnectionIamPolicy_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleCloudbuildv2ConnectionIamPolicy_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleCloudbuildv2ConnectionIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

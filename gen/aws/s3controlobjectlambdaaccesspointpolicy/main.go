@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicy",
 		reflect.TypeOf((*S3ControlObjectLambdaAccessPointPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig",
+		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPointPolicy.S3ControlObjectLambdaAccessPointPolicyConfig",
 		reflect.TypeOf((*S3ControlObjectLambdaAccessPointPolicyConfig)(nil)).Elem(),
 	)
 }

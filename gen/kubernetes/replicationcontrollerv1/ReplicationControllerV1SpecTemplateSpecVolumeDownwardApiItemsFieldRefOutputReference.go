@@ -204,7 +204,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOut
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

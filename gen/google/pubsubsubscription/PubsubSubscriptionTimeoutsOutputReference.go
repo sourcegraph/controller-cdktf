@@ -228,7 +228,7 @@ func NewPubsubSubscriptionTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_PubsubSubscriptionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPubsubSubscriptionTimeoutsOutputReference_Override(p PubsubSubscriptionT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

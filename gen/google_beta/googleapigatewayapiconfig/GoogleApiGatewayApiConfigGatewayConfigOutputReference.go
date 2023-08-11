@@ -179,7 +179,7 @@ func NewGoogleApiGatewayApiConfigGatewayConfigOutputReference(terraformResource 
 	j := jsiiProxy_GoogleApiGatewayApiConfigGatewayConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleApiGatewayApiConfigGatewayConfigOutputReference_Override(g GoogleA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGatewayConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

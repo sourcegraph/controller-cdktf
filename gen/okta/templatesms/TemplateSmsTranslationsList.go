@@ -116,7 +116,7 @@ func NewTemplateSmsTranslationsList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_TemplateSmsTranslationsList{}
 
 	_jsii_.Create(
-		"okta.templateSms.TemplateSmsTranslationsList",
+		"@cdktf/provider-okta.templateSms.TemplateSmsTranslationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTemplateSmsTranslationsList_Override(t TemplateSmsTranslationsList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.templateSms.TemplateSmsTranslationsList",
+		"@cdktf/provider-okta.templateSms.TemplateSmsTranslationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

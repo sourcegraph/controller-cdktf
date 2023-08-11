@@ -204,7 +204,7 @@ func NewSagemakerSpaceSpaceSettingsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSagemakerSpaceSpaceSettingsOutputReference_Override(s SagemakerSpaceSpac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -228,7 +228,7 @@ func NewAppAutoLoginTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_AppAutoLoginTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"okta.appAutoLogin.AppAutoLoginTimeoutsOutputReference",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAppAutoLoginTimeoutsOutputReference_Override(a AppAutoLoginTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appAutoLogin.AppAutoLoginTimeoutsOutputReference",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -237,7 +237,7 @@ func NewAppEngineApplicationIapOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_AppEngineApplicationIapOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationIapOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationIapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -249,7 +249,7 @@ func NewAppEngineApplicationIapOutputReference_Override(a AppEngineApplicationIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationIapOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationIapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -179,7 +179,7 @@ func NewDaemonsetSpecTemplateSpecImagePullSecretsOutputReference(terraformResour
 	j := jsiiProxy_DaemonsetSpecTemplateSpecImagePullSecretsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecImagePullSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDaemonsetSpecTemplateSpecImagePullSecretsOutputReference_Override(d Daem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecImagePullSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

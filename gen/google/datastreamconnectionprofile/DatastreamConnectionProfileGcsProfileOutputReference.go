@@ -203,7 +203,7 @@ func NewDatastreamConnectionProfileGcsProfileOutputReference(terraformResource c
 	j := jsiiProxy_DatastreamConnectionProfileGcsProfileOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDatastreamConnectionProfileGcsProfileOutputReference_Override(d Datastre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

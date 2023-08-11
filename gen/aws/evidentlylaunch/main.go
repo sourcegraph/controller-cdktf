@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunch",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunch",
 		reflect.TypeOf((*EvidentlyLaunch)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -93,15 +93,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.evidentlyLaunch.EvidentlyLaunchConfig",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchConfig",
 		reflect.TypeOf((*EvidentlyLaunchConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.evidentlyLaunch.EvidentlyLaunchExecution",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecution",
 		reflect.TypeOf((*EvidentlyLaunchExecution)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchExecutionList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList",
 		reflect.TypeOf((*EvidentlyLaunchExecutionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchExecutionOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionOutputReference",
 		reflect.TypeOf((*EvidentlyLaunchExecutionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,11 +155,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.evidentlyLaunch.EvidentlyLaunchGroups",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroups",
 		reflect.TypeOf((*EvidentlyLaunchGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchGroupsList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsList",
 		reflect.TypeOf((*EvidentlyLaunchGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -180,7 +180,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchGroupsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchGroupsOutputReference",
 		reflect.TypeOf((*EvidentlyLaunchGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,11 +221,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.evidentlyLaunch.EvidentlyLaunchMetricMonitors",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitors",
 		reflect.TypeOf((*EvidentlyLaunchMetricMonitors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsList",
 		reflect.TypeOf((*EvidentlyLaunchMetricMonitorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -246,11 +246,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinition",
 		reflect.TypeOf((*EvidentlyLaunchMetricMonitorsMetricDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
 		reflect.TypeOf((*EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,7 +294,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsOutputReference",
 		reflect.TypeOf((*EvidentlyLaunchMetricMonitorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -329,11 +329,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfig",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfig",
 		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigOutputReference",
 		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -368,11 +368,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigSteps",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigSteps",
 		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigSteps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsList",
 		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -393,7 +393,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsOutputReference",
 		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -433,11 +433,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides",
 		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverrides)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList",
 		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -458,7 +458,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference",
 		reflect.TypeOf((*EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -496,11 +496,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.evidentlyLaunch.EvidentlyLaunchTimeouts",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeouts",
 		reflect.TypeOf((*EvidentlyLaunchTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.evidentlyLaunch.EvidentlyLaunchTimeoutsOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchTimeoutsOutputReference",
 		reflect.TypeOf((*EvidentlyLaunchTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

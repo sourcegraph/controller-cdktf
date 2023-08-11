@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroup",
 		reflect.TypeOf((*MedialiveInputSecurityGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupConfig",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupConfig",
 		reflect.TypeOf((*MedialiveInputSecurityGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeouts",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeouts",
 		reflect.TypeOf((*MedialiveInputSecurityGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupTimeoutsOutputReference",
 		reflect.TypeOf((*MedialiveInputSecurityGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,11 +119,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRules",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRules",
 		reflect.TypeOf((*MedialiveInputSecurityGroupWhitelistRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesList",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesList",
 		reflect.TypeOf((*MedialiveInputSecurityGroupWhitelistRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,7 +144,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesOutputReference",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesOutputReference",
 		reflect.TypeOf((*MedialiveInputSecurityGroupWhitelistRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},

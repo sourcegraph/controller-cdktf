@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ramResourceAssociation.RamResourceAssociation",
+		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociation",
 		reflect.TypeOf((*RamResourceAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ramResourceAssociation.RamResourceAssociationConfig",
+		"@cdktf/provider-aws.ramResourceAssociation.RamResourceAssociationConfig",
 		reflect.TypeOf((*RamResourceAssociationConfig)(nil)).Elem(),
 	)
 }

@@ -167,7 +167,7 @@ func NewDataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference
 	j := jsiiProxy_DataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateNetworkPerformanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

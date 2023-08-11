@@ -116,7 +116,7 @@ func NewGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList(terraformR
 	j := jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList(terrafo
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

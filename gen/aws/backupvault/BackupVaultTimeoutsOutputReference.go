@@ -180,7 +180,7 @@ func NewBackupVaultTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_BackupVaultTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.backupVault.BackupVaultTimeoutsOutputReference",
+		"@cdktf/provider-aws.backupVault.BackupVaultTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewBackupVaultTimeoutsOutputReference_Override(b BackupVaultTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupVault.BackupVaultTimeoutsOutputReference",
+		"@cdktf/provider-aws.backupVault.BackupVaultTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

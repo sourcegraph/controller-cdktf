@@ -204,7 +204,7 @@ func NewMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThrough
 	j := jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThrough
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoEbsStorageInfoProvisionedThroughputOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

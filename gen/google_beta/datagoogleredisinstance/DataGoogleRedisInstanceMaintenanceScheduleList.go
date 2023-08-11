@@ -104,7 +104,7 @@ func NewDataGoogleRedisInstanceMaintenanceScheduleList(terraformResource cdktf.I
 	j := jsiiProxy_DataGoogleRedisInstanceMaintenanceScheduleList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleList",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleRedisInstanceMaintenanceScheduleList_Override(d DataGoogleRedi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleList",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

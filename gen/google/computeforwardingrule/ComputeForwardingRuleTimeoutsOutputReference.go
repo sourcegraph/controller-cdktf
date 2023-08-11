@@ -228,7 +228,7 @@ func NewComputeForwardingRuleTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ComputeForwardingRuleTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeForwardingRuleTimeoutsOutputReference_Override(c ComputeForwardin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

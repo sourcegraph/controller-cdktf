@@ -420,7 +420,7 @@ func NewGoogleComputeBackendBucketCdnPolicyOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleComputeBackendBucketCdnPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucket.GoogleComputeBackendBucketCdnPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendBucket.GoogleComputeBackendBucketCdnPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewGoogleComputeBackendBucketCdnPolicyOutputReference_Override(g GoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucket.GoogleComputeBackendBucketCdnPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendBucket.GoogleComputeBackendBucketCdnPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

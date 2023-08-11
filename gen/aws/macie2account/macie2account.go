@@ -377,7 +377,7 @@ func NewMacie2Account(scope constructs.Construct, id *string, config *Macie2Acco
 	j := jsiiProxy_Macie2Account{}
 
 	_jsii_.Create(
-		"aws.macie2Account.Macie2Account",
+		"@cdktf/provider-aws.macie2Account.Macie2Account",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewMacie2Account_Override(m Macie2Account, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2Account.Macie2Account",
+		"@cdktf/provider-aws.macie2Account.Macie2Account",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -523,7 +523,7 @@ func Macie2Account_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2Account.Macie2Account",
+		"@cdktf/provider-aws.macie2Account.Macie2Account",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func Macie2Account_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2Account.Macie2Account",
+		"@cdktf/provider-aws.macie2Account.Macie2Account",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func Macie2Account_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2Account.Macie2Account",
+		"@cdktf/provider-aws.macie2Account.Macie2Account",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func Macie2Account_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macie2Account.Macie2Account",
+		"@cdktf/provider-aws.macie2Account.Macie2Account",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rdsExportTask.RdsExportTask",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTask",
 		reflect.TypeOf((*RdsExportTask)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsExportTask.RdsExportTaskConfig",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTaskConfig",
 		reflect.TypeOf((*RdsExportTaskConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsExportTask.RdsExportTaskTimeouts",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTaskTimeouts",
 		reflect.TypeOf((*RdsExportTaskTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsExportTask.RdsExportTaskTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTaskTimeoutsOutputReference",
 		reflect.TypeOf((*RdsExportTaskTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

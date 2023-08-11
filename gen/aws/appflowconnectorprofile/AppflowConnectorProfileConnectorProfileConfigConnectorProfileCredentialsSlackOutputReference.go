@@ -250,7 +250,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 	j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

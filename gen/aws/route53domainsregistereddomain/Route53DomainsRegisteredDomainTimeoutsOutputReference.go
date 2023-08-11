@@ -204,7 +204,7 @@ func NewRoute53DomainsRegisteredDomainTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewRoute53DomainsRegisteredDomainTimeoutsOutputReference_Override(r Route53
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

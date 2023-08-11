@@ -228,7 +228,7 @@ func NewGoogleNetworkServicesTlsRouteTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_GoogleNetworkServicesTlsRouteTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleNetworkServicesTlsRouteTimeoutsOutputReference_Override(g GoogleNe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

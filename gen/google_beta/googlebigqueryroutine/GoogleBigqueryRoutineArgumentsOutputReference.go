@@ -252,7 +252,7 @@ func NewGoogleBigqueryRoutineArgumentsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleBigqueryRoutineArgumentsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArgumentsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArgumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleBigqueryRoutineArgumentsOutputReference_Override(g GoogleBigqueryR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArgumentsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArgumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

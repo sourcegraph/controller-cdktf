@@ -202,7 +202,7 @@ func NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutio
 	j := jsiiProxy_PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewPodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecAffinityPodAffinityPreferredDuringSchedulingIgnoredDuringExecutionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

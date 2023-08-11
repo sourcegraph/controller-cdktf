@@ -424,7 +424,7 @@ func NewPubsubSubscriptionIamBinding(scope constructs.Construct, id *string, con
 	j := jsiiProxy_PubsubSubscriptionIamBinding{}
 
 	_jsii_.Create(
-		"google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
+		"@cdktf/provider-google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewPubsubSubscriptionIamBinding_Override(p PubsubSubscriptionIamBinding, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
+		"@cdktf/provider-google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -592,7 +592,7 @@ func PubsubSubscriptionIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
+		"@cdktf/provider-google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func PubsubSubscriptionIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
+		"@cdktf/provider-google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func PubsubSubscriptionIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
+		"@cdktf/provider-google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func PubsubSubscriptionIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
+		"@cdktf/provider-google.pubsubSubscriptionIamBinding.PubsubSubscriptionIamBinding",
 		"tfResourceType",
 		&returns,
 	)

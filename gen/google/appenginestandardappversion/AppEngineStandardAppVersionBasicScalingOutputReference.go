@@ -203,7 +203,7 @@ func NewAppEngineStandardAppVersionBasicScalingOutputReference(terraformResource
 	j := jsiiProxy_AppEngineStandardAppVersionBasicScalingOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppEngineStandardAppVersionBasicScalingOutputReference_Override(a AppEng
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

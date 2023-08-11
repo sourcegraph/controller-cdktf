@@ -104,7 +104,7 @@ func NewDataGoogleCloudbuildTriggerGithubList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataGoogleCloudbuildTriggerGithubList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerGithubList",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudbuildTriggerGithubList_Override(d DataGoogleCloudbuildTri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerGithubList",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

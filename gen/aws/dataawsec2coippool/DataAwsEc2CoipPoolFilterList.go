@@ -116,7 +116,7 @@ func NewDataAwsEc2CoipPoolFilterList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataAwsEc2CoipPoolFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolFilterList",
+		"@cdktf/provider-aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEc2CoipPoolFilterList_Override(d DataAwsEc2CoipPoolFilterList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolFilterList",
+		"@cdktf/provider-aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

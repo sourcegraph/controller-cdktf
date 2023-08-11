@@ -226,7 +226,7 @@ func NewDataGoogleIamPolicyBindingConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataGoogleIamPolicyBindingConditionOutputReference_Override(d DataGoogle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

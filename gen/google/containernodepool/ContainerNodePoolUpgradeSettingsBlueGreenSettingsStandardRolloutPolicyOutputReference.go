@@ -228,7 +228,7 @@ func NewContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOu
 	j := jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -251,7 +251,7 @@ func NewBigqueryTableTimePartitioningOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_BigqueryTableTimePartitioningOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableTimePartitioningOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewBigqueryTableTimePartitioningOutputReference_Override(b BigqueryTableTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableTimePartitioningOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

@@ -179,7 +179,7 @@ func NewGoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference(terraformRes
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

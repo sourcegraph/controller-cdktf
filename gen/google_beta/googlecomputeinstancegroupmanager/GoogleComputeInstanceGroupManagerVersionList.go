@@ -116,7 +116,7 @@ func NewGoogleComputeInstanceGroupManagerVersionList(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleComputeInstanceGroupManagerVersionList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerVersionList",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeInstanceGroupManagerVersionList_Override(g GoogleComputeIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerVersionList",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

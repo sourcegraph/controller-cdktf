@@ -204,7 +204,7 @@ func NewResourcegroupsGroupTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ResourcegroupsGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewResourcegroupsGroupTimeoutsOutputReference_Override(r ResourcegroupsGrou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

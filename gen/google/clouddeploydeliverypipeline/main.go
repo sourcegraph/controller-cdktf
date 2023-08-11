@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
 		reflect.TypeOf((*ClouddeployDeliveryPipeline)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,11 +87,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineCondition",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineCondition",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionList",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionList",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionOutputReference",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,11 +146,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionPipelineReadyCondition",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionPipelineReadyCondition",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionPipelineReadyCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionPipelineReadyConditionList",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionPipelineReadyConditionList",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionPipelineReadyConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -170,7 +170,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionPipelineReadyConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -204,11 +204,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsPresentCondition",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsPresentCondition",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionTargetsPresentCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsPresentConditionList",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsPresentConditionList",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionTargetsPresentConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -228,7 +228,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsPresentConditionOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsPresentConditionOutputReference",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionTargetsPresentConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -263,11 +263,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsTypeCondition",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsTypeCondition",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionTargetsTypeCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsTypeConditionList",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsTypeConditionList",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionTargetsTypeConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -287,7 +287,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsTypeConditionOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionTargetsTypeConditionOutputReference",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConditionTargetsTypeConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -321,15 +321,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConfig",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConfig",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipeline",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipeline",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipeline)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineOutputReference",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -365,11 +365,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStages",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStages",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineStages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesList",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesList",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineStagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -390,7 +390,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineStagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -432,11 +432,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategy",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategy",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineStagesStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -472,11 +472,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandardOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -511,11 +511,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineTimeouts",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineTimeouts",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineTimeoutsOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineTimeoutsOutputReference",
 		reflect.TypeOf((*ClouddeployDeliveryPipelineTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

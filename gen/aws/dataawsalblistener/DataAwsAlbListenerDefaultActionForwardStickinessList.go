@@ -104,7 +104,7 @@ func NewDataAwsAlbListenerDefaultActionForwardStickinessList(terraformResource c
 	j := jsiiProxy_DataAwsAlbListenerDefaultActionForwardStickinessList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardStickinessList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardStickinessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAlbListenerDefaultActionForwardStickinessList_Override(d DataAwsA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardStickinessList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionForwardStickinessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

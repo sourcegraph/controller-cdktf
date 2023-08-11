@@ -116,7 +116,7 @@ func NewGoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList(terrafor
 	j := jsiiProxy_GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList",
+		"@cdktf/provider-google-beta.googleDataCatalogTagTemplate.GoogleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

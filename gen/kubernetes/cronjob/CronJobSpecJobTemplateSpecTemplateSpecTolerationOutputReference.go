@@ -276,7 +276,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecTolerationOutputReference(terrafor
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecTolerationOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecTolerationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecTolerationOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecTolerationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -178,7 +178,7 @@ func NewDataAwsMemorydbUserAuthenticationModeOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeOutputReference",
+		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsMemorydbUserAuthenticationModeOutputReference_Override(d DataAwsM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeOutputReference",
+		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -313,7 +313,7 @@ func NewDataGoogleKmsCryptoKeyIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleKmsCryptoKeyIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleKmsCryptoKeyIamPolicy_Override(d DataGoogleKmsCryptoKeyIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleKmsCryptoKeyIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleKmsCryptoKeyIamPolicy_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleKmsCryptoKeyIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleKmsCryptoKeyIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

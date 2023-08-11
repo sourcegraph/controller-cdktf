@@ -104,7 +104,7 @@ func NewDataTlsCertificateCertificatesList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataTlsCertificateCertificatesList{}
 
 	_jsii_.Create(
-		"tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataTlsCertificateCertificatesList_Override(d DataTlsCertificateCertific
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
+		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

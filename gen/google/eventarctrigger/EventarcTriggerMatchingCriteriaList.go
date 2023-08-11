@@ -116,7 +116,7 @@ func NewEventarcTriggerMatchingCriteriaList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_EventarcTriggerMatchingCriteriaList{}
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTriggerMatchingCriteriaList",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEventarcTriggerMatchingCriteriaList_Override(e EventarcTriggerMatchingCr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.eventarcTrigger.EventarcTriggerMatchingCriteriaList",
+		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

@@ -622,7 +622,7 @@ func NewKubernetesProvider(scope constructs.Construct, id *string, config *Kuber
 	j := jsiiProxy_KubernetesProvider{}
 
 	_jsii_.Create(
-		"kubernetes.provider.KubernetesProvider",
+		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -635,7 +635,7 @@ func NewKubernetesProvider_Override(k KubernetesProvider, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.provider.KubernetesProvider",
+		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -828,7 +828,7 @@ func KubernetesProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.provider.KubernetesProvider",
+		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -847,7 +847,7 @@ func KubernetesProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.provider.KubernetesProvider",
+		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +866,7 @@ func KubernetesProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.provider.KubernetesProvider",
+		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -879,7 +879,7 @@ func KubernetesProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.provider.KubernetesProvider",
+		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
 		"tfResourceType",
 		&returns,
 	)

@@ -660,7 +660,7 @@ func NewEbsSnapshotImport(scope constructs.Construct, id *string, config *EbsSna
 	j := jsiiProxy_EbsSnapshotImport{}
 
 	_jsii_.Create(
-		"aws.ebsSnapshotImport.EbsSnapshotImport",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -673,7 +673,7 @@ func NewEbsSnapshotImport_Override(e EbsSnapshotImport, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ebsSnapshotImport.EbsSnapshotImport",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -883,7 +883,7 @@ func EbsSnapshotImport_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ebsSnapshotImport.EbsSnapshotImport",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -902,7 +902,7 @@ func EbsSnapshotImport_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ebsSnapshotImport.EbsSnapshotImport",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -921,7 +921,7 @@ func EbsSnapshotImport_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ebsSnapshotImport.EbsSnapshotImport",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -934,7 +934,7 @@ func EbsSnapshotImport_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ebsSnapshotImport.EbsSnapshotImport",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		"tfResourceType",
 		&returns,
 	)

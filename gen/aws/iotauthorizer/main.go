@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotAuthorizer.IotAuthorizer",
+		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizer",
 		reflect.TypeOf((*IotAuthorizer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotAuthorizer.IotAuthorizerConfig",
+		"@cdktf/provider-aws.iotAuthorizer.IotAuthorizerConfig",
 		reflect.TypeOf((*IotAuthorizerConfig)(nil)).Elem(),
 	)
 }

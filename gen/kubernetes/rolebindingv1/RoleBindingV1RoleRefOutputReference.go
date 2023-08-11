@@ -225,7 +225,7 @@ func NewRoleBindingV1RoleRefOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_RoleBindingV1RoleRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference",
+		"@cdktf/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewRoleBindingV1RoleRefOutputReference_Override(r RoleBindingV1RoleRefOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference",
+		"@cdktf/provider-kubernetes.roleBindingV1.RoleBindingV1RoleRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

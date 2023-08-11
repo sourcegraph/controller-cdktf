@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.signonPolicyRule.SignonPolicyRule",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRule",
 		reflect.TypeOf((*SignonPolicyRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
@@ -127,15 +127,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.signonPolicyRule.SignonPolicyRuleConfig",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleConfig",
 		reflect.TypeOf((*SignonPolicyRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequence",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequence",
 		reflect.TypeOf((*SignonPolicyRuleFactorSequence)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceList",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceList",
 		reflect.TypeOf((*SignonPolicyRuleFactorSequenceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -156,7 +156,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceOutputReference",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceOutputReference",
 		reflect.TypeOf((*SignonPolicyRuleFactorSequenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,11 +196,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteria",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteria",
 		reflect.TypeOf((*SignonPolicyRuleFactorSequenceSecondaryCriteria)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaList",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaList",
 		reflect.TypeOf((*SignonPolicyRuleFactorSequenceSecondaryCriteriaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -221,7 +221,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference",
+		"@cdktf/provider-okta.signonPolicyRule.SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference",
 		reflect.TypeOf((*SignonPolicyRuleFactorSequenceSecondaryCriteriaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

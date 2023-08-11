@@ -178,7 +178,7 @@ func NewDataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference(terrafor
 	j := jsiiProxy_DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsPolicyTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

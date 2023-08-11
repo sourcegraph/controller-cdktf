@@ -204,7 +204,7 @@ func NewAccessPolicyIncludeAzureOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AccessPolicyIncludeAzureOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeAzureOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessPolicyIncludeAzureOutputReference_Override(a AccessPolicyIncludeAz
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeAzureOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

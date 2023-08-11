@@ -274,7 +274,7 @@ func NewGoogleDatastreamConnectionProfileForwardSshConnectivityOutputReference(t
 	j := jsiiProxy_GoogleDatastreamConnectionProfileForwardSshConnectivityOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileForwardSshConnectivityOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileForwardSshConnectivityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewGoogleDatastreamConnectionProfileForwardSshConnectivityOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileForwardSshConnectivityOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileForwardSshConnectivityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

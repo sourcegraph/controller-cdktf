@@ -204,7 +204,7 @@ func NewListItemValueOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_ListItemValueOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.list.ListItemValueOutputReference",
+		"@cdktf/provider-cloudflare.list.ListItemValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewListItemValueOutputReference_Override(l ListItemValueOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.list.ListItemValueOutputReference",
+		"@cdktf/provider-cloudflare.list.ListItemValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

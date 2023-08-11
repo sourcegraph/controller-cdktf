@@ -116,7 +116,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerPortList(terraformResource cdktf.IIn
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecContainerPortList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerPortList_Override(d DaemonSetV1SpecT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -313,7 +313,7 @@ func NewDataAwsLakeformationResource(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsLakeformationResource{}
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
+		"@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataAwsLakeformationResource_Override(d DataAwsLakeformationResource, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
+		"@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataAwsLakeformationResource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
+		"@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataAwsLakeformationResource_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
+		"@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataAwsLakeformationResource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
+		"@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataAwsLakeformationResource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
+		"@cdktf/provider-aws.dataAwsLakeformationResource.DataAwsLakeformationResource",
 		"tfResourceType",
 		&returns,
 	)

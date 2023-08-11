@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailDisk.LightsailDisk",
+		"@cdktf/provider-aws.lightsailDisk.LightsailDisk",
 		reflect.TypeOf((*LightsailDisk)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailDisk.LightsailDiskConfig",
+		"@cdktf/provider-aws.lightsailDisk.LightsailDiskConfig",
 		reflect.TypeOf((*LightsailDiskConfig)(nil)).Elem(),
 	)
 }

@@ -228,7 +228,7 @@ func NewGoogleDialogflowCxWebhookTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleDialogflowCxWebhookTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDialogflowCxWebhookTimeoutsOutputReference_Override(g GoogleDialog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

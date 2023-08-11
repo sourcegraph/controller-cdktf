@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
+		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroup",
 		reflect.TypeOf((*DataAwsRedshiftSubnetGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroupConfig",
+		"@cdktf/provider-aws.dataAwsRedshiftSubnetGroup.DataAwsRedshiftSubnetGroupConfig",
 		reflect.TypeOf((*DataAwsRedshiftSubnetGroupConfig)(nil)).Elem(),
 	)
 }

@@ -403,7 +403,7 @@ func NewDataGoogleComputeSslCertificate(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleComputeSslCertificate{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
+		"@cdktf/provider-google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -416,7 +416,7 @@ func NewDataGoogleComputeSslCertificate_Override(d DataGoogleComputeSslCertifica
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
+		"@cdktf/provider-google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -527,7 +527,7 @@ func DataGoogleComputeSslCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
+		"@cdktf/provider-google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataGoogleComputeSslCertificate_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
+		"@cdktf/provider-google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func DataGoogleComputeSslCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
+		"@cdktf/provider-google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func DataGoogleComputeSslCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
+		"@cdktf/provider-google.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate",
 		"tfResourceType",
 		&returns,
 	)

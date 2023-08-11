@@ -116,7 +116,7 @@ func NewOpsworksStaticWebLayerEbsVolumeList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_OpsworksStaticWebLayerEbsVolumeList{}
 
 	_jsii_.Create(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksStaticWebLayerEbsVolumeList_Override(o OpsworksStaticWebLayerEbs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

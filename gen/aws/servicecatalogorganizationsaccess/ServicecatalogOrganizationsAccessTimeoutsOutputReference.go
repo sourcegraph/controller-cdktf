@@ -180,7 +180,7 @@ func NewServicecatalogOrganizationsAccessTimeoutsOutputReference(terraformResour
 	j := jsiiProxy_ServicecatalogOrganizationsAccessTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewServicecatalogOrganizationsAccessTimeoutsOutputReference_Override(s Serv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccessTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

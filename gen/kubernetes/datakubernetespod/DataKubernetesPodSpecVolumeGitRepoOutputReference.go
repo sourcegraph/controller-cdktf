@@ -189,7 +189,7 @@ func NewDataKubernetesPodSpecVolumeGitRepoOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataKubernetesPodSpecVolumeGitRepoOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataKubernetesPodSpecVolumeGitRepoOutputReference_Override(d DataKuberne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecContainerEnvValueFromSecretKeyRefList(terraformReso
 	j := jsiiProxy_DataKubernetesPodSpecContainerEnvValueFromSecretKeyRefList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerEnvValueFromSecretKeyRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerEnvValueFromSecretKeyRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecContainerEnvValueFromSecretKeyRefList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerEnvValueFromSecretKeyRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerEnvValueFromSecretKeyRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

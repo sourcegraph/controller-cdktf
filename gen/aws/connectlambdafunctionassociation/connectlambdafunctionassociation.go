@@ -342,7 +342,7 @@ func NewConnectLambdaFunctionAssociation(scope constructs.Construct, id *string,
 	j := jsiiProxy_ConnectLambdaFunctionAssociation{}
 
 	_jsii_.Create(
-		"aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewConnectLambdaFunctionAssociation_Override(c ConnectLambdaFunctionAssocia
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -488,7 +488,7 @@ func ConnectLambdaFunctionAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func ConnectLambdaFunctionAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func ConnectLambdaFunctionAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func ConnectLambdaFunctionAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
+		"@cdktf/provider-aws.connectLambdaFunctionAssociation.ConnectLambdaFunctionAssociation",
 		"tfResourceType",
 		&returns,
 	)

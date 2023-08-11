@@ -228,7 +228,7 @@ func NewSamlAppTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_SamlAppTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"okta.samlApp.SamlAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSamlAppTimeoutsOutputReference_Override(s SamlAppTimeoutsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.samlApp.SamlAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

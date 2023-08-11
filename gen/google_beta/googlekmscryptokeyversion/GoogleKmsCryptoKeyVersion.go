@@ -422,7 +422,7 @@ func NewGoogleKmsCryptoKeyVersion(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleKmsCryptoKeyVersion{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -435,7 +435,7 @@ func NewGoogleKmsCryptoKeyVersion_Override(g GoogleKmsCryptoKeyVersion, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -568,7 +568,7 @@ func GoogleKmsCryptoKeyVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func GoogleKmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func GoogleKmsCryptoKeyVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func GoogleKmsCryptoKeyVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyVersion.GoogleKmsCryptoKeyVersion",
 		"tfResourceType",
 		&returns,
 	)

@@ -273,7 +273,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionTargetTrackingConfiguration
 	j := jsiiProxy_AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionTargetTrackingConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionTargetTrackingConfigurationCustomizedScalingMetricSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

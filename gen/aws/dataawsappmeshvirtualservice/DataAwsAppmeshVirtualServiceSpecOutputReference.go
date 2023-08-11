@@ -167,7 +167,7 @@ func NewDataAwsAppmeshVirtualServiceSpecOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataAwsAppmeshVirtualServiceSpecOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecOutputReference",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsAppmeshVirtualServiceSpecOutputReference_Override(d DataAwsAppmes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecOutputReference",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

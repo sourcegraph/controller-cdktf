@@ -323,7 +323,7 @@ func NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutput
 	j := jsiiProxy_AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -335,7 +335,7 @@ func NewAutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicyPredictiveScalingConfigurationMetricSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

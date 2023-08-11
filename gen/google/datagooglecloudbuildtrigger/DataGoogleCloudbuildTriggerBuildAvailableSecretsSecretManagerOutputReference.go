@@ -178,7 +178,7 @@ func NewDataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputRefer
 	j := jsiiProxy_DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

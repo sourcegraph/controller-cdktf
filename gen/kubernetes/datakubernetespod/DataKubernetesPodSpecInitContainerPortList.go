@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecInitContainerPortList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataKubernetesPodSpecInitContainerPortList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerPortList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecInitContainerPortList_Override(d DataKubernetesPodS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerPortList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

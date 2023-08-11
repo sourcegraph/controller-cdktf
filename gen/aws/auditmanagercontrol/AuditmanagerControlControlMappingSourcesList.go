@@ -116,7 +116,7 @@ func NewAuditmanagerControlControlMappingSourcesList(terraformResource cdktf.IIn
 	j := jsiiProxy_AuditmanagerControlControlMappingSourcesList{}
 
 	_jsii_.Create(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesList",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAuditmanagerControlControlMappingSourcesList_Override(a AuditmanagerCont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesList",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

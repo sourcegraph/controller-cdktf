@@ -104,7 +104,7 @@ func NewContainerAttachedClusterWorkloadIdentityConfigList(terraformResource cdk
 	j := jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList{}
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewContainerAttachedClusterWorkloadIdentityConfigList_Override(c ContainerA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

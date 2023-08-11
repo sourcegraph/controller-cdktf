@@ -400,7 +400,7 @@ func NewEc2TransitGatewayRouteTable(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_Ec2TransitGatewayRouteTable{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewEc2TransitGatewayRouteTable_Override(e Ec2TransitGatewayRouteTable, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -557,7 +557,7 @@ func Ec2TransitGatewayRouteTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func Ec2TransitGatewayRouteTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func Ec2TransitGatewayRouteTable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func Ec2TransitGatewayRouteTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
 		"tfResourceType",
 		&returns,
 	)

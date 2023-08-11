@@ -116,7 +116,7 @@ func NewAutoscalingplansScalingPlanApplicationSourceTagFilterList(terraformResou
 	j := jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList{}
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceTagFilterList",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceTagFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAutoscalingplansScalingPlanApplicationSourceTagFilterList_Override(a Aut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceTagFilterList",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceTagFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

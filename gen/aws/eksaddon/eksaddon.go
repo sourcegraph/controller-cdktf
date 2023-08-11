@@ -567,7 +567,7 @@ func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig)
 	j := jsiiProxy_EksAddon{}
 
 	_jsii_.Create(
-		"aws.eksAddon.EksAddon",
+		"@cdktf/provider-aws.eksAddon.EksAddon",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -580,7 +580,7 @@ func NewEksAddon_Override(e EksAddon, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksAddon.EksAddon",
+		"@cdktf/provider-aws.eksAddon.EksAddon",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -790,7 +790,7 @@ func EksAddon_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksAddon.EksAddon",
+		"@cdktf/provider-aws.eksAddon.EksAddon",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func EksAddon_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksAddon.EksAddon",
+		"@cdktf/provider-aws.eksAddon.EksAddon",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -828,7 +828,7 @@ func EksAddon_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksAddon.EksAddon",
+		"@cdktf/provider-aws.eksAddon.EksAddon",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -841,7 +841,7 @@ func EksAddon_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.eksAddon.EksAddon",
+		"@cdktf/provider-aws.eksAddon.EksAddon",
 		"tfResourceType",
 		&returns,
 	)

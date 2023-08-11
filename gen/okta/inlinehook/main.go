@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.inlineHook.InlineHook",
+		"@cdktf/provider-okta.inlineHook.InlineHook",
 		reflect.TypeOf((*InlineHook)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.inlineHook.InlineHookConfig",
+		"@cdktf/provider-okta.inlineHook.InlineHookConfig",
 		reflect.TypeOf((*InlineHookConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.inlineHook.InlineHookHeaders",
+		"@cdktf/provider-okta.inlineHook.InlineHookHeaders",
 		reflect.TypeOf((*InlineHookHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.inlineHook.InlineHookHeadersList",
+		"@cdktf/provider-okta.inlineHook.InlineHookHeadersList",
 		reflect.TypeOf((*InlineHookHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.inlineHook.InlineHookHeadersOutputReference",
+		"@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference",
 		reflect.TypeOf((*InlineHookHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

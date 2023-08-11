@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBinding",
 		reflect.TypeOf((*GoogleServiceDirectoryServiceIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBindingCondition",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBindingCondition",
 		reflect.TypeOf((*GoogleServiceDirectoryServiceIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleServiceDirectoryServiceIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBindingConfig",
+		"@cdktf/provider-google-beta.googleServiceDirectoryServiceIamBinding.GoogleServiceDirectoryServiceIamBindingConfig",
 		reflect.TypeOf((*GoogleServiceDirectoryServiceIamBindingConfig)(nil)).Elem(),
 	)
 }

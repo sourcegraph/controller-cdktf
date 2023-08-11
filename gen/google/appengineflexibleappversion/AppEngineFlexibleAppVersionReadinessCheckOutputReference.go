@@ -323,7 +323,7 @@ func NewAppEngineFlexibleAppVersionReadinessCheckOutputReference(terraformResour
 	j := jsiiProxy_AppEngineFlexibleAppVersionReadinessCheckOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionReadinessCheckOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionReadinessCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -335,7 +335,7 @@ func NewAppEngineFlexibleAppVersionReadinessCheckOutputReference_Override(a AppE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionReadinessCheckOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionReadinessCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

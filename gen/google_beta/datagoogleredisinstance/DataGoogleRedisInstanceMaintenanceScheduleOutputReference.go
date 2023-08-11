@@ -189,7 +189,7 @@ func NewDataGoogleRedisInstanceMaintenanceScheduleOutputReference(terraformResou
 	j := jsiiProxy_DataGoogleRedisInstanceMaintenanceScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataGoogleRedisInstanceMaintenanceScheduleOutputReference_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

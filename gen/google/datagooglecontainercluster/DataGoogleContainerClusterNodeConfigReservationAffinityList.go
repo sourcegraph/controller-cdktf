@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodeConfigReservationAffinityList(terraformRes
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigReservationAffinityList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodeConfigReservationAffinityList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

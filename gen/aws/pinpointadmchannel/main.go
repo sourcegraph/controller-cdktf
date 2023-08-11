@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.pinpointAdmChannel.PinpointAdmChannel",
+		"@cdktf/provider-aws.pinpointAdmChannel.PinpointAdmChannel",
 		reflect.TypeOf((*PinpointAdmChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.pinpointAdmChannel.PinpointAdmChannelConfig",
+		"@cdktf/provider-aws.pinpointAdmChannel.PinpointAdmChannelConfig",
 		reflect.TypeOf((*PinpointAdmChannelConfig)(nil)).Elem(),
 	)
 }

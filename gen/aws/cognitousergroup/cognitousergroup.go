@@ -414,7 +414,7 @@ func NewCognitoUserGroup(scope constructs.Construct, id *string, config *Cognito
 	j := jsiiProxy_CognitoUserGroup{}
 
 	_jsii_.Create(
-		"aws.cognitoUserGroup.CognitoUserGroup",
+		"@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewCognitoUserGroup_Override(c CognitoUserGroup, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserGroup.CognitoUserGroup",
+		"@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -593,7 +593,7 @@ func CognitoUserGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserGroup.CognitoUserGroup",
+		"@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func CognitoUserGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserGroup.CognitoUserGroup",
+		"@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func CognitoUserGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserGroup.CognitoUserGroup",
+		"@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func CognitoUserGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cognitoUserGroup.CognitoUserGroup",
+		"@cdktf/provider-aws.cognitoUserGroup.CognitoUserGroup",
 		"tfResourceType",
 		&returns,
 	)

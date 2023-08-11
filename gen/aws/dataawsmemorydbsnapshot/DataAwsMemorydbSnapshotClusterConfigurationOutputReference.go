@@ -299,7 +299,7 @@ func NewDataAwsMemorydbSnapshotClusterConfigurationOutputReference(terraformReso
 	j := jsiiProxy_DataAwsMemorydbSnapshotClusterConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewDataAwsMemorydbSnapshotClusterConfigurationOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsMemorydbSnapshot.DataAwsMemorydbSnapshotClusterConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -228,7 +228,7 @@ func NewGoogleComputePacketMirroringTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleComputePacketMirroringTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputePacketMirroringTimeoutsOutputReference_Override(g GoogleCom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

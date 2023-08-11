@@ -602,7 +602,7 @@ func NewGoogleDataCatalogEntry(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleDataCatalogEntry{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
+		"@cdktf/provider-google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -615,7 +615,7 @@ func NewGoogleDataCatalogEntry_Override(g GoogleDataCatalogEntry, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
+		"@cdktf/provider-google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -825,7 +825,7 @@ func GoogleDataCatalogEntry_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
+		"@cdktf/provider-google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -844,7 +844,7 @@ func GoogleDataCatalogEntry_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
+		"@cdktf/provider-google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -863,7 +863,7 @@ func GoogleDataCatalogEntry_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
+		"@cdktf/provider-google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -876,7 +876,7 @@ func GoogleDataCatalogEntry_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
+		"@cdktf/provider-google-beta.googleDataCatalogEntry.GoogleDataCatalogEntry",
 		"tfResourceType",
 		&returns,
 	)

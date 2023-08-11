@@ -191,7 +191,7 @@ func NewGoogleContainerAwsClusterFleetOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleContainerAwsClusterFleetOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterFleetOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterFleetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewGoogleContainerAwsClusterFleetOutputReference_Override(g GoogleContainer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterFleetOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterFleetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

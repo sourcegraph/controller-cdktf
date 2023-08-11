@@ -276,7 +276,7 @@ func NewRulesetRulesActionParametersCacheKeyCustomKeyOutputReference(terraformRe
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewRulesetRulesActionParametersCacheKeyCustomKeyOutputReference_Override(r 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

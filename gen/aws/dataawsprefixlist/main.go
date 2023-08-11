@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsPrefixList.DataAwsPrefixList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixList",
 		reflect.TypeOf((*DataAwsPrefixList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsPrefixList.DataAwsPrefixListConfig",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListConfig",
 		reflect.TypeOf((*DataAwsPrefixListConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsPrefixList.DataAwsPrefixListFilter",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilter",
 		reflect.TypeOf((*DataAwsPrefixListFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsPrefixList.DataAwsPrefixListFilterList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterList",
 		reflect.TypeOf((*DataAwsPrefixListFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterOutputReference",
 		reflect.TypeOf((*DataAwsPrefixListFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,11 +133,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsPrefixList.DataAwsPrefixListTimeouts",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeouts",
 		reflect.TypeOf((*DataAwsPrefixListTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsPrefixListTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigLi
 	j := jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

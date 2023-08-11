@@ -203,7 +203,7 @@ func NewPubsubSubscriptionPushConfigOidcTokenOutputReference(terraformResource c
 	j := jsiiProxy_PubsubSubscriptionPushConfigOidcTokenOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPubsubSubscriptionPushConfigOidcTokenOutputReference_Override(p PubsubSu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

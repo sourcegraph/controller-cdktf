@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBinding",
 		reflect.TypeOf((*HealthcareConsentStoreIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,11 +68,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBindingCondition",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBindingCondition",
 		reflect.TypeOf((*HealthcareConsentStoreIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBindingConditionOutputReference",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBindingConditionOutputReference",
 		reflect.TypeOf((*HealthcareConsentStoreIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBindingConfig",
+		"@cdktf/provider-google.healthcareConsentStoreIamBinding.HealthcareConsentStoreIamBindingConfig",
 		reflect.TypeOf((*HealthcareConsentStoreIamBindingConfig)(nil)).Elem(),
 	)
 }

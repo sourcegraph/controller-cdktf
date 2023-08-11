@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.projectIamBinding.ProjectIamBinding",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBinding",
 		reflect.TypeOf((*ProjectIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.projectIamBinding.ProjectIamBindingCondition",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBindingCondition",
 		reflect.TypeOf((*ProjectIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.projectIamBinding.ProjectIamBindingConditionOutputReference",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBindingConditionOutputReference",
 		reflect.TypeOf((*ProjectIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.projectIamBinding.ProjectIamBindingConfig",
+		"@cdktf/provider-google.projectIamBinding.ProjectIamBindingConfig",
 		reflect.TypeOf((*ProjectIamBindingConfig)(nil)).Elem(),
 	)
 }

@@ -228,7 +228,7 @@ func NewCodebuildProjectCacheOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_CodebuildProjectCacheOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectCacheOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectCacheOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCodebuildProjectCacheOutputReference_Override(c CodebuildProjectCacheOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectCacheOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectCacheOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

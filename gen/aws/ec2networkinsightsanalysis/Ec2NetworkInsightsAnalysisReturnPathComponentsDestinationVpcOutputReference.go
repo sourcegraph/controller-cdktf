@@ -189,7 +189,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputRefere
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

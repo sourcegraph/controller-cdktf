@@ -202,7 +202,7 @@ func NewCloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputRe
 	j := jsiiProxy_CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

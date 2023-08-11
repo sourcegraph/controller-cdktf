@@ -104,7 +104,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersUriPathList(terraform
 	j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersUriPathList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersUriPathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

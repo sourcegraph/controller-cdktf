@@ -228,7 +228,7 @@ func NewMedialiveMultiplexTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_MedialiveMultiplexTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveMultiplex.MedialiveMultiplexTimeoutsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMedialiveMultiplexTimeoutsOutputReference_Override(m MedialiveMultiplexT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveMultiplex.MedialiveMultiplexTimeoutsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplex.MedialiveMultiplexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

@@ -204,7 +204,7 @@ func NewGoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOut
 	j := jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

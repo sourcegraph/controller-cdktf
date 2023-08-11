@@ -203,7 +203,7 @@ func NewCloudIdentityGroupGroupKeyOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_CloudIdentityGroupGroupKeyOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudIdentityGroup.CloudIdentityGroupGroupKeyOutputReference",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroupGroupKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudIdentityGroupGroupKeyOutputReference_Override(c CloudIdentityGroupG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudIdentityGroup.CloudIdentityGroupGroupKeyOutputReference",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroupGroupKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

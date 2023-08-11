@@ -309,7 +309,7 @@ func NewPodV1MetadataOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_PodV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewPodV1MetadataOutputReference_Override(p PodV1MetadataOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

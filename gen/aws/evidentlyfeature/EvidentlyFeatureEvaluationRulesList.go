@@ -104,7 +104,7 @@ func NewEvidentlyFeatureEvaluationRulesList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_EvidentlyFeatureEvaluationRulesList{}
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesList",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEvidentlyFeatureEvaluationRulesList_Override(e EvidentlyFeatureEvaluatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesList",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

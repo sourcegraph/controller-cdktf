@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		reflect.TypeOf((*GoogleWorkflowsWorkflow)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowConfig",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowConfig",
 		reflect.TypeOf((*GoogleWorkflowsWorkflowConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeouts",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeouts",
 		reflect.TypeOf((*GoogleWorkflowsWorkflowTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleWorkflowsWorkflowTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

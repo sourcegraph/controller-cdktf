@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociation",
 		reflect.TypeOf((*Route53ResolverQueryLogConfigAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociationConfig",
+		"@cdktf/provider-aws.route53ResolverQueryLogConfigAssociation.Route53ResolverQueryLogConfigAssociationConfig",
 		reflect.TypeOf((*Route53ResolverQueryLogConfigAssociationConfig)(nil)).Elem(),
 	)
 }

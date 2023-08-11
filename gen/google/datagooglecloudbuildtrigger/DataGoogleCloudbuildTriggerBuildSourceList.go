@@ -104,7 +104,7 @@ func NewDataGoogleCloudbuildTriggerBuildSourceList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataGoogleCloudbuildTriggerBuildSourceList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildSourceList",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudbuildTriggerBuildSourceList_Override(d DataGoogleCloudbui
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildSourceList",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -366,7 +366,7 @@ func NewGoogleComputeDiskAsyncReplication(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeDiskAsyncReplication{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
+		"@cdktf/provider-google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewGoogleComputeDiskAsyncReplication_Override(g GoogleComputeDiskAsyncRepli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
+		"@cdktf/provider-google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -501,7 +501,7 @@ func GoogleComputeDiskAsyncReplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
+		"@cdktf/provider-google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -520,7 +520,7 @@ func GoogleComputeDiskAsyncReplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
+		"@cdktf/provider-google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func GoogleComputeDiskAsyncReplication_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
+		"@cdktf/provider-google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func GoogleComputeDiskAsyncReplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
+		"@cdktf/provider-google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplication",
 		"tfResourceType",
 		&returns,
 	)

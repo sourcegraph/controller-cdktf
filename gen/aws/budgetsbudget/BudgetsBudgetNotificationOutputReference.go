@@ -296,7 +296,7 @@ func NewBudgetsBudgetNotificationOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_BudgetsBudgetNotificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetNotificationOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -308,7 +308,7 @@ func NewBudgetsBudgetNotificationOutputReference_Override(b BudgetsBudgetNotific
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetNotificationOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetNotificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

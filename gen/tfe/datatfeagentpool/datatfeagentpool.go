@@ -315,7 +315,7 @@ func NewDataTfeAgentPool(scope constructs.Construct, id *string, config *DataTfe
 	j := jsiiProxy_DataTfeAgentPool{}
 
 	_jsii_.Create(
-		"tfe.dataTfeAgentPool.DataTfeAgentPool",
+		"@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -328,7 +328,7 @@ func NewDataTfeAgentPool_Override(d DataTfeAgentPool, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeAgentPool.DataTfeAgentPool",
+		"@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -439,7 +439,7 @@ func DataTfeAgentPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeAgentPool.DataTfeAgentPool",
+		"@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -458,7 +458,7 @@ func DataTfeAgentPool_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeAgentPool.DataTfeAgentPool",
+		"@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataTfeAgentPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeAgentPool.DataTfeAgentPool",
+		"@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -490,7 +490,7 @@ func DataTfeAgentPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeAgentPool.DataTfeAgentPool",
+		"@cdktf/provider-tfe.dataTfeAgentPool.DataTfeAgentPool",
 		"tfResourceType",
 		&returns,
 	)

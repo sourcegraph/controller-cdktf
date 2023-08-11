@@ -226,7 +226,7 @@ func NewBillingAccountIamMemberConditionOutputReference(terraformResource cdktf.
 	j := jsiiProxy_BillingAccountIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.billingAccountIamMember.BillingAccountIamMemberConditionOutputReference",
+		"@cdktf/provider-google.billingAccountIamMember.BillingAccountIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewBillingAccountIamMemberConditionOutputReference_Override(b BillingAccoun
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.billingAccountIamMember.BillingAccountIamMemberConditionOutputReference",
+		"@cdktf/provider-google.billingAccountIamMember.BillingAccountIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

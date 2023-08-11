@@ -104,7 +104,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList(terrafor
 	j := jsiiProxy_DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList",
+		"@cdktf/provider-aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList",
+		"@cdktf/provider-aws.dataAwsCloudfrontResponseHeadersPolicy.DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

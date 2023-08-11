@@ -116,7 +116,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecReadinessGateList(terraformResourc
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecReadinessGateList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecReadinessGateList_Override(c CronJ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

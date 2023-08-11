@@ -228,7 +228,7 @@ func NewOpsworksJavaAppLayerLoadBasedAutoScalingOutputReference(terraformResourc
 	j := jsiiProxy_OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewOpsworksJavaAppLayerLoadBasedAutoScalingOutputReference_Override(o Opswo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

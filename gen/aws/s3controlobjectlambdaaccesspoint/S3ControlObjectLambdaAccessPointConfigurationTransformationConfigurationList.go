@@ -116,7 +116,7 @@ func NewS3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration
 	j := jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList{}
 
 	_jsii_.Create(
-		"aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList",
+		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList",
+		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

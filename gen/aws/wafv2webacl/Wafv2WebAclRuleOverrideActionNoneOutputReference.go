@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleOverrideActionNoneOutputReference(terraformResource cdktf
 	j := jsiiProxy_Wafv2WebAclRuleOverrideActionNoneOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNoneOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNoneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleOverrideActionNoneOutputReference_Override(w Wafv2WebAclR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNoneOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNoneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

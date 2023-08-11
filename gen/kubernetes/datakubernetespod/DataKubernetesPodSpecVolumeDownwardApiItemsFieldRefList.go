@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecVolumeDownwardApiItemsFieldRefList(terraformResourc
 	j := jsiiProxy_DataKubernetesPodSpecVolumeDownwardApiItemsFieldRefList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeDownwardApiItemsFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeDownwardApiItemsFieldRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecVolumeDownwardApiItemsFieldRefList_Override(d DataK
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeDownwardApiItemsFieldRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeDownwardApiItemsFieldRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

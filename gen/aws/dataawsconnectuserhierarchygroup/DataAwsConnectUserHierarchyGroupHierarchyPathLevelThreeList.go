@@ -104,7 +104,7 @@ func NewDataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeList(terraformRes
 	j := jsiiProxy_DataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeList{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeList",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeList",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathLevelThreeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

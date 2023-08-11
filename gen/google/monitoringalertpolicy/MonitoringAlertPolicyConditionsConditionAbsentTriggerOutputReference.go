@@ -204,7 +204,7 @@ func NewMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference(ter
 	j := jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

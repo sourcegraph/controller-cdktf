@@ -472,7 +472,7 @@ func NewApiGatewayApiKey(scope constructs.Construct, id *string, config *ApiGate
 	j := jsiiProxy_ApiGatewayApiKey{}
 
 	_jsii_.Create(
-		"aws.apiGatewayApiKey.ApiGatewayApiKey",
+		"@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewApiGatewayApiKey_Override(a ApiGatewayApiKey, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayApiKey.ApiGatewayApiKey",
+		"@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -662,7 +662,7 @@ func ApiGatewayApiKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayApiKey.ApiGatewayApiKey",
+		"@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func ApiGatewayApiKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayApiKey.ApiGatewayApiKey",
+		"@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func ApiGatewayApiKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayApiKey.ApiGatewayApiKey",
+		"@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func ApiGatewayApiKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayApiKey.ApiGatewayApiKey",
+		"@cdktf/provider-aws.apiGatewayApiKey.ApiGatewayApiKey",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewCognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference(te
 	j := jsiiProxy_CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

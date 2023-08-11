@@ -636,7 +636,7 @@ func NewLambdaLayerVersion(scope constructs.Construct, id *string, config *Lambd
 	j := jsiiProxy_LambdaLayerVersion{}
 
 	_jsii_.Create(
-		"aws.lambdaLayerVersion.LambdaLayerVersion",
+		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -649,7 +649,7 @@ func NewLambdaLayerVersion_Override(l LambdaLayerVersion, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaLayerVersion.LambdaLayerVersion",
+		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -881,7 +881,7 @@ func LambdaLayerVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaLayerVersion.LambdaLayerVersion",
+		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -900,7 +900,7 @@ func LambdaLayerVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaLayerVersion.LambdaLayerVersion",
+		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -919,7 +919,7 @@ func LambdaLayerVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaLayerVersion.LambdaLayerVersion",
+		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -932,7 +932,7 @@ func LambdaLayerVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lambdaLayerVersion.LambdaLayerVersion",
+		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		"tfResourceType",
 		&returns,
 	)

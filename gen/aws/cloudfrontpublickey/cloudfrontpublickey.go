@@ -413,7 +413,7 @@ func NewCloudfrontPublicKey(scope constructs.Construct, id *string, config *Clou
 	j := jsiiProxy_CloudfrontPublicKey{}
 
 	_jsii_.Create(
-		"aws.cloudfrontPublicKey.CloudfrontPublicKey",
+		"@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewCloudfrontPublicKey_Override(c CloudfrontPublicKey, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontPublicKey.CloudfrontPublicKey",
+		"@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -581,7 +581,7 @@ func CloudfrontPublicKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontPublicKey.CloudfrontPublicKey",
+		"@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func CloudfrontPublicKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontPublicKey.CloudfrontPublicKey",
+		"@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func CloudfrontPublicKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontPublicKey.CloudfrontPublicKey",
+		"@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func CloudfrontPublicKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontPublicKey.CloudfrontPublicKey",
+		"@cdktf/provider-aws.cloudfrontPublicKey.CloudfrontPublicKey",
 		"tfResourceType",
 		&returns,
 	)

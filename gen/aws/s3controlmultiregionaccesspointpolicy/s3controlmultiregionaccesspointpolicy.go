@@ -389,7 +389,7 @@ func NewS3ControlMultiRegionAccessPointPolicy(scope constructs.Construct, id *st
 	j := jsiiProxy_S3ControlMultiRegionAccessPointPolicy{}
 
 	_jsii_.Create(
-		"aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewS3ControlMultiRegionAccessPointPolicy_Override(s S3ControlMultiRegionAcc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -524,7 +524,7 @@ func S3ControlMultiRegionAccessPointPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func S3ControlMultiRegionAccessPointPolicy_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func S3ControlMultiRegionAccessPointPolicy_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func S3ControlMultiRegionAccessPointPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPointPolicy.S3ControlMultiRegionAccessPointPolicy",
 		"tfResourceType",
 		&returns,
 	)

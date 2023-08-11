@@ -226,7 +226,7 @@ func NewStatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference(terraformResou
 	j := jsiiProxy_StatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewStatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference_Override(s Sta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeGlusterfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

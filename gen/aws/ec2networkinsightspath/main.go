@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
+		"@cdktf/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
 		reflect.TypeOf((*Ec2NetworkInsightsPath)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig",
+		"@cdktf/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPathConfig",
 		reflect.TypeOf((*Ec2NetworkInsightsPathConfig)(nil)).Elem(),
 	)
 }

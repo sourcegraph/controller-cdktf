@@ -116,7 +116,7 @@ func NewTransferWorkflowOnExceptionStepsTagStepDetailsTagsList(terraformResource
 	j := jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsTagsList{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTagsList",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTransferWorkflowOnExceptionStepsTagStepDetailsTagsList_Override(t Transf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTagsList",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

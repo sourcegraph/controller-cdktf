@@ -322,7 +322,7 @@ func NewListItemRedirectOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_ListItemRedirectOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.listItem.ListItemRedirectOutputReference",
+		"@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -334,7 +334,7 @@ func NewListItemRedirectOutputReference_Override(l ListItemRedirectOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.listItem.ListItemRedirectOutputReference",
+		"@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

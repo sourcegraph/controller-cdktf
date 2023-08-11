@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.neptuneCluster.NeptuneCluster",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneCluster",
 		reflect.TypeOf((*NeptuneCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -153,15 +153,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneCluster.NeptuneClusterConfig",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterConfig",
 		reflect.TypeOf((*NeptuneClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfiguration",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfiguration",
 		reflect.TypeOf((*NeptuneClusterServerlessV2ScalingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
 		reflect.TypeOf((*NeptuneClusterServerlessV2ScalingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,11 +199,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneCluster.NeptuneClusterTimeouts",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterTimeouts",
 		reflect.TypeOf((*NeptuneClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneCluster.NeptuneClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterTimeoutsOutputReference",
 		reflect.TypeOf((*NeptuneClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

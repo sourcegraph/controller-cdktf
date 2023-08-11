@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRule",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRule",
 		reflect.TypeOf((*Ec2TrafficMirrorFilterRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleConfig",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleConfig",
 		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRange",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRange",
 		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleDestinationPortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference",
 		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,11 +128,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRange",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRange",
 		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleSourcePortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference",
 		reflect.TypeOf((*Ec2TrafficMirrorFilterRuleSourcePortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

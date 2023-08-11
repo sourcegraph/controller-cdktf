@@ -204,7 +204,7 @@ func NewGoogleNetworkServicesGrpcRouteRulesOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleNetworkServicesGrpcRouteRulesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleNetworkServicesGrpcRouteRulesOutputReference_Override(g GoogleNetw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

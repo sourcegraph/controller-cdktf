@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFiel
 	j := jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFiel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

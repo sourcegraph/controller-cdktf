@@ -300,7 +300,7 @@ func NewFsxOpenzfsFileSystemRootVolumeConfigurationOutputReference(terraformReso
 	j := jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewFsxOpenzfsFileSystemRootVolumeConfigurationOutputReference_Override(f Fs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

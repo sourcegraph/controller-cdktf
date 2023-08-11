@@ -439,7 +439,7 @@ func NewComposerEnvironment(scope constructs.Construct, id *string, config *Comp
 	j := jsiiProxy_ComposerEnvironment{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironment",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,7 +452,7 @@ func NewComposerEnvironment_Override(c ComposerEnvironment, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironment",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironment",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -607,7 +607,7 @@ func ComposerEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.composerEnvironment.ComposerEnvironment",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -626,7 +626,7 @@ func ComposerEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.composerEnvironment.ComposerEnvironment",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func ComposerEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.composerEnvironment.ComposerEnvironment",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func ComposerEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.composerEnvironment.ComposerEnvironment",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironment",
 		"tfResourceType",
 		&returns,
 	)

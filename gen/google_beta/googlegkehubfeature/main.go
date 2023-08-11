@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeature",
 		reflect.TypeOf((*GoogleGkeHubFeature)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureConfig",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureConfig",
 		reflect.TypeOf((*GoogleGkeHubFeatureConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureResourceState",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureResourceState",
 		reflect.TypeOf((*GoogleGkeHubFeatureResourceState)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureResourceStateList",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureResourceStateList",
 		reflect.TypeOf((*GoogleGkeHubFeatureResourceStateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureResourceStateOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureResourceStateOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureResourceStateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -141,23 +141,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpec",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpec",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservability",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservability",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecFleetobservability)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -192,11 +192,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -231,7 +231,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -271,7 +271,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecFleetobservabilityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -307,11 +307,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecMulticlusteringress",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecMulticlusteringress",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecMulticlusteringress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecMulticlusteringressOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecMulticlusteringressOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecMulticlusteringressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,7 +345,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -385,11 +385,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureState",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureState",
 		reflect.TypeOf((*GoogleGkeHubFeatureState)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateList",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateList",
 		reflect.TypeOf((*GoogleGkeHubFeatureStateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -409,7 +409,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureStateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -442,11 +442,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateState",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateState",
 		reflect.TypeOf((*GoogleGkeHubFeatureStateState)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateStateList",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateStateList",
 		reflect.TypeOf((*GoogleGkeHubFeatureStateStateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -466,7 +466,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateStateOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateStateOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureStateStateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -501,11 +501,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureTimeouts",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureTimeouts",
 		reflect.TypeOf((*GoogleGkeHubFeatureTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -204,7 +204,7 @@ func NewDaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputRefe
 	j := jsiiProxy_DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

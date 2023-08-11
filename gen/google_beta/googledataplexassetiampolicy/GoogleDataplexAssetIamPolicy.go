@@ -447,7 +447,7 @@ func NewGoogleDataplexAssetIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleDataplexAssetIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewGoogleDataplexAssetIamPolicy_Override(g GoogleDataplexAssetIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -637,7 +637,7 @@ func GoogleDataplexAssetIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func GoogleDataplexAssetIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func GoogleDataplexAssetIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func GoogleDataplexAssetIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamPolicy.GoogleDataplexAssetIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -518,7 +518,7 @@ func NewGoogleVertexAiTensorboard(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleVertexAiTensorboard{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
+		"@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -531,7 +531,7 @@ func NewGoogleVertexAiTensorboard_Override(g GoogleVertexAiTensorboard, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
+		"@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -697,7 +697,7 @@ func GoogleVertexAiTensorboard_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
+		"@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func GoogleVertexAiTensorboard_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
+		"@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func GoogleVertexAiTensorboard_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
+		"@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func GoogleVertexAiTensorboard_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
+		"@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard",
 		"tfResourceType",
 		&returns,
 	)

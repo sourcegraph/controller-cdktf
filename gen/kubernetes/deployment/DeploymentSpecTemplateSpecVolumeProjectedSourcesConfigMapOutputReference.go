@@ -228,7 +228,7 @@ func NewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -494,7 +494,7 @@ func NewGoogleWorkstationsWorkstationIamBinding(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleWorkstationsWorkstationIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewGoogleWorkstationsWorkstationIamBinding_Override(g GoogleWorkstationsWor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -695,7 +695,7 @@ func GoogleWorkstationsWorkstationIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GoogleWorkstationsWorkstationIamBinding_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func GoogleWorkstationsWorkstationIamBinding_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func GoogleWorkstationsWorkstationIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationIamBinding.GoogleWorkstationsWorkstationIamBinding",
 		"tfResourceType",
 		&returns,
 	)

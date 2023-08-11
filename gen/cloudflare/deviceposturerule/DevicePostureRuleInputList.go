@@ -116,7 +116,7 @@ func NewDevicePostureRuleInputList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_DevicePostureRuleInputList{}
 
 	_jsii_.Create(
-		"cloudflare.devicePostureRule.DevicePostureRuleInputList",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDevicePostureRuleInputList_Override(d DevicePostureRuleInputList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.devicePostureRule.DevicePostureRuleInputList",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleInputList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

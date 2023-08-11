@@ -179,7 +179,7 @@ func NewContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference(terraf
 	j := jsiiProxy_ContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

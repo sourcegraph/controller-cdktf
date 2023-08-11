@@ -104,7 +104,7 @@ func NewDataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList(terrafor
 	j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

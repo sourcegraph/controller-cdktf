@@ -276,7 +276,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputRefere
 	j := jsiiProxy_StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerLivenessProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

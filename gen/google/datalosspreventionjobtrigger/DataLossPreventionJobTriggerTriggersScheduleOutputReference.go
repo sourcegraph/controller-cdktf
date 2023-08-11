@@ -180,7 +180,7 @@ func NewDataLossPreventionJobTriggerTriggersScheduleOutputReference(terraformRes
 	j := jsiiProxy_DataLossPreventionJobTriggerTriggersScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersScheduleOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataLossPreventionJobTriggerTriggersScheduleOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersScheduleOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

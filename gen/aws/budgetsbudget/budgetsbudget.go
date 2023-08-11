@@ -665,7 +665,7 @@ func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBud
 	j := jsiiProxy_BudgetsBudget{}
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudget",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -678,7 +678,7 @@ func NewBudgetsBudget_Override(b BudgetsBudget, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudget",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -899,7 +899,7 @@ func BudgetsBudget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.budgetsBudget.BudgetsBudget",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -918,7 +918,7 @@ func BudgetsBudget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.budgetsBudget.BudgetsBudget",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -937,7 +937,7 @@ func BudgetsBudget_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.budgetsBudget.BudgetsBudget",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -950,7 +950,7 @@ func BudgetsBudget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.budgetsBudget.BudgetsBudget",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		"tfResourceType",
 		&returns,
 	)

@@ -437,7 +437,7 @@ func NewZoneLockdown(scope constructs.Construct, id *string, config *ZoneLockdow
 	j := jsiiProxy_ZoneLockdown{}
 
 	_jsii_.Create(
-		"cloudflare.zoneLockdown.ZoneLockdown",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewZoneLockdown_Override(z ZoneLockdown, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneLockdown.ZoneLockdown",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -616,7 +616,7 @@ func ZoneLockdown_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneLockdown.ZoneLockdown",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func ZoneLockdown_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneLockdown.ZoneLockdown",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func ZoneLockdown_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneLockdown.ZoneLockdown",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func ZoneLockdown_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.zoneLockdown.ZoneLockdown",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdown",
 		"tfResourceType",
 		&returns,
 	)

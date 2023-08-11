@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.gameliftAlias.GameliftAlias",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAlias",
 		reflect.TypeOf((*GameliftAlias)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.gameliftAlias.GameliftAliasConfig",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAliasConfig",
 		reflect.TypeOf((*GameliftAliasConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.gameliftAlias.GameliftAliasRoutingStrategy",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAliasRoutingStrategy",
 		reflect.TypeOf((*GameliftAliasRoutingStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.gameliftAlias.GameliftAliasRoutingStrategyOutputReference",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAliasRoutingStrategyOutputReference",
 		reflect.TypeOf((*GameliftAliasRoutingStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

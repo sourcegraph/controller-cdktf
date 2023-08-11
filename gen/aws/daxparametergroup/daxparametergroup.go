@@ -367,7 +367,7 @@ func NewDaxParameterGroup(scope constructs.Construct, id *string, config *DaxPar
 	j := jsiiProxy_DaxParameterGroup{}
 
 	_jsii_.Create(
-		"aws.daxParameterGroup.DaxParameterGroup",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewDaxParameterGroup_Override(d DaxParameterGroup, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.daxParameterGroup.DaxParameterGroup",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -513,7 +513,7 @@ func DaxParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.daxParameterGroup.DaxParameterGroup",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DaxParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.daxParameterGroup.DaxParameterGroup",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func DaxParameterGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.daxParameterGroup.DaxParameterGroup",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func DaxParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.daxParameterGroup.DaxParameterGroup",
+		"@cdktf/provider-aws.daxParameterGroup.DaxParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -546,7 +546,7 @@ func NewComputeTargetPool(scope constructs.Construct, id *string, config *Comput
 	j := jsiiProxy_ComputeTargetPool{}
 
 	_jsii_.Create(
-		"google.computeTargetPool.ComputeTargetPool",
+		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -559,7 +559,7 @@ func NewComputeTargetPool_Override(c ComputeTargetPool, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeTargetPool.ComputeTargetPool",
+		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -769,7 +769,7 @@ func ComputeTargetPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeTargetPool.ComputeTargetPool",
+		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -788,7 +788,7 @@ func ComputeTargetPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeTargetPool.ComputeTargetPool",
+		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func ComputeTargetPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeTargetPool.ComputeTargetPool",
+		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func ComputeTargetPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeTargetPool.ComputeTargetPool",
+		"@cdktf/provider-google.computeTargetPool.ComputeTargetPool",
 		"tfResourceType",
 		&returns,
 	)

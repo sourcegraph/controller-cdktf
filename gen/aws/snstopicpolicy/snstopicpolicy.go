@@ -353,7 +353,7 @@ func NewSnsTopicPolicy(scope constructs.Construct, id *string, config *SnsTopicP
 	j := jsiiProxy_SnsTopicPolicy{}
 
 	_jsii_.Create(
-		"aws.snsTopicPolicy.SnsTopicPolicy",
+		"@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewSnsTopicPolicy_Override(s SnsTopicPolicy, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.snsTopicPolicy.SnsTopicPolicy",
+		"@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -499,7 +499,7 @@ func SnsTopicPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsTopicPolicy.SnsTopicPolicy",
+		"@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func SnsTopicPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsTopicPolicy.SnsTopicPolicy",
+		"@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func SnsTopicPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.snsTopicPolicy.SnsTopicPolicy",
+		"@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func SnsTopicPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.snsTopicPolicy.SnsTopicPolicy",
+		"@cdktf/provider-aws.snsTopicPolicy.SnsTopicPolicy",
 		"tfResourceType",
 		&returns,
 	)

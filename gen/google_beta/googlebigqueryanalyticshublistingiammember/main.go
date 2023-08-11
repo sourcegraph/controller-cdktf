@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryAnalyticsHubListingIamMember.GoogleBigqueryAnalyticsHubListingIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamMember.GoogleBigqueryAnalyticsHubListingIamMember",
 		reflect.TypeOf((*GoogleBigqueryAnalyticsHubListingIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,11 +74,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryAnalyticsHubListingIamMember.GoogleBigqueryAnalyticsHubListingIamMemberCondition",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamMember.GoogleBigqueryAnalyticsHubListingIamMemberCondition",
 		reflect.TypeOf((*GoogleBigqueryAnalyticsHubListingIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryAnalyticsHubListingIamMember.GoogleBigqueryAnalyticsHubListingIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamMember.GoogleBigqueryAnalyticsHubListingIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleBigqueryAnalyticsHubListingIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -117,7 +117,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryAnalyticsHubListingIamMember.GoogleBigqueryAnalyticsHubListingIamMemberConfig",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamMember.GoogleBigqueryAnalyticsHubListingIamMemberConfig",
 		reflect.TypeOf((*GoogleBigqueryAnalyticsHubListingIamMemberConfig)(nil)).Elem(),
 	)
 }

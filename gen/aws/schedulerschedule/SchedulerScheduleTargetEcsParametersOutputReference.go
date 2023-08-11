@@ -491,7 +491,7 @@ func NewSchedulerScheduleTargetEcsParametersOutputReference(terraformResource cd
 	j := jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -503,7 +503,7 @@ func NewSchedulerScheduleTargetEcsParametersOutputReference_Override(s Scheduler
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -343,7 +343,7 @@ func NewBackupRegionSettings(scope constructs.Construct, id *string, config *Bac
 	j := jsiiProxy_BackupRegionSettings{}
 
 	_jsii_.Create(
-		"aws.backupRegionSettings.BackupRegionSettings",
+		"@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewBackupRegionSettings_Override(b BackupRegionSettings, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupRegionSettings.BackupRegionSettings",
+		"@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -489,7 +489,7 @@ func BackupRegionSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupRegionSettings.BackupRegionSettings",
+		"@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func BackupRegionSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupRegionSettings.BackupRegionSettings",
+		"@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func BackupRegionSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupRegionSettings.BackupRegionSettings",
+		"@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func BackupRegionSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.backupRegionSettings.BackupRegionSettings",
+		"@cdktf/provider-aws.backupRegionSettings.BackupRegionSettings",
 		"tfResourceType",
 		&returns,
 	)

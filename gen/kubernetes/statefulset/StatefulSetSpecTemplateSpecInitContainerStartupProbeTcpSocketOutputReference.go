@@ -179,7 +179,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputRefer
 	j := jsiiProxy_StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerStartupProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

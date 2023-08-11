@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sourcerepoRepository.SourcerepoRepository",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepository",
 		reflect.TypeOf((*SourcerepoRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sourcerepoRepository.SourcerepoRepositoryConfig",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig",
 		reflect.TypeOf((*SourcerepoRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs",
 		reflect.TypeOf((*SourcerepoRepositoryPubsubConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList",
 		reflect.TypeOf((*SourcerepoRepositoryPubsubConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference",
 		reflect.TypeOf((*SourcerepoRepositoryPubsubConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,11 +138,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sourcerepoRepository.SourcerepoRepositoryTimeouts",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts",
 		reflect.TypeOf((*SourcerepoRepositoryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference",
 		reflect.TypeOf((*SourcerepoRepositoryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

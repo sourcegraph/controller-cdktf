@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntent",
+		"@cdktf/provider-aws.lexIntent.LexIntent",
 		reflect.TypeOf((*LexIntent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -105,15 +105,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentConclusionStatement",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatement",
 		reflect.TypeOf((*LexIntentConclusionStatement)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentConclusionStatementMessage",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessage",
 		reflect.TypeOf((*LexIntentConclusionStatementMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentConclusionStatementMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageList",
 		reflect.TypeOf((*LexIntentConclusionStatementMessageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -134,7 +134,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentConclusionStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementMessageOutputReference",
 		reflect.TypeOf((*LexIntentConclusionStatementMessageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -173,7 +173,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentConclusionStatementOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConclusionStatementOutputReference",
 		reflect.TypeOf((*LexIntentConclusionStatementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -211,19 +211,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentConfig",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfig",
 		reflect.TypeOf((*LexIntentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentConfirmationPrompt",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPrompt",
 		reflect.TypeOf((*LexIntentConfirmationPrompt)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentConfirmationPromptMessage",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessage",
 		reflect.TypeOf((*LexIntentConfirmationPromptMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentConfirmationPromptMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList",
 		reflect.TypeOf((*LexIntentConfirmationPromptMessageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -244,7 +244,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference",
 		reflect.TypeOf((*LexIntentConfirmationPromptMessageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -283,7 +283,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentConfirmationPromptOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptOutputReference",
 		reflect.TypeOf((*LexIntentConfirmationPromptOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -323,11 +323,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentDialogCodeHook",
+		"@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHook",
 		reflect.TypeOf((*LexIntentDialogCodeHook)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentDialogCodeHookOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentDialogCodeHookOutputReference",
 		reflect.TypeOf((*LexIntentDialogCodeHookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -363,11 +363,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentFollowUpPrompt",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPrompt",
 		reflect.TypeOf((*LexIntentFollowUpPrompt)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentFollowUpPromptOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptOutputReference",
 		reflect.TypeOf((*LexIntentFollowUpPromptOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -405,15 +405,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentFollowUpPromptPrompt",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPrompt",
 		reflect.TypeOf((*LexIntentFollowUpPromptPrompt)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentFollowUpPromptPromptMessage",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessage",
 		reflect.TypeOf((*LexIntentFollowUpPromptPromptMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentFollowUpPromptPromptMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageList",
 		reflect.TypeOf((*LexIntentFollowUpPromptPromptMessageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -434,7 +434,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference",
 		reflect.TypeOf((*LexIntentFollowUpPromptPromptMessageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -473,7 +473,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptOutputReference",
 		reflect.TypeOf((*LexIntentFollowUpPromptPromptOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -513,15 +513,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatement",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatement",
 		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatement)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessage",
 		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatementMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageList",
 		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatementMessageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -542,7 +542,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference",
 		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatementMessageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -581,7 +581,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementOutputReference",
 		reflect.TypeOf((*LexIntentFollowUpPromptRejectionStatementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -619,15 +619,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentFulfillmentActivity",
+		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivity",
 		reflect.TypeOf((*LexIntentFulfillmentActivity)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentFulfillmentActivityCodeHook",
+		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHook",
 		reflect.TypeOf((*LexIntentFulfillmentActivityCodeHook)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
 		reflect.TypeOf((*LexIntentFulfillmentActivityCodeHookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -663,7 +663,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentFulfillmentActivityOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityOutputReference",
 		reflect.TypeOf((*LexIntentFulfillmentActivityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codeHook", GoGetter: "CodeHook"},
@@ -701,15 +701,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentRejectionStatement",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatement",
 		reflect.TypeOf((*LexIntentRejectionStatement)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentRejectionStatementMessage",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessage",
 		reflect.TypeOf((*LexIntentRejectionStatementMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentRejectionStatementMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageList",
 		reflect.TypeOf((*LexIntentRejectionStatementMessageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -730,7 +730,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentRejectionStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementMessageOutputReference",
 		reflect.TypeOf((*LexIntentRejectionStatementMessageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -769,7 +769,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentRejectionStatementOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentRejectionStatementOutputReference",
 		reflect.TypeOf((*LexIntentRejectionStatementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -807,11 +807,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentSlot",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlot",
 		reflect.TypeOf((*LexIntentSlot)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentSlotList",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotList",
 		reflect.TypeOf((*LexIntentSlotList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -832,7 +832,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentSlotOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotOutputReference",
 		reflect.TypeOf((*LexIntentSlotOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -889,15 +889,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentSlotValueElicitationPrompt",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPrompt",
 		reflect.TypeOf((*LexIntentSlotValueElicitationPrompt)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentSlotValueElicitationPromptMessage",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessage",
 		reflect.TypeOf((*LexIntentSlotValueElicitationPromptMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList",
 		reflect.TypeOf((*LexIntentSlotValueElicitationPromptMessageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -918,7 +918,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageOutputReference",
 		reflect.TypeOf((*LexIntentSlotValueElicitationPromptMessageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -957,7 +957,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptOutputReference",
 		reflect.TypeOf((*LexIntentSlotValueElicitationPromptOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -997,11 +997,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexIntent.LexIntentTimeouts",
+		"@cdktf/provider-aws.lexIntent.LexIntentTimeouts",
 		reflect.TypeOf((*LexIntentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexIntent.LexIntentTimeoutsOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentTimeoutsOutputReference",
 		reflect.TypeOf((*LexIntentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

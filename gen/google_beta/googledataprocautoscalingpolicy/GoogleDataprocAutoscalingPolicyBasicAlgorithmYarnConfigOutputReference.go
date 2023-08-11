@@ -273,7 +273,7 @@ func NewGoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference(t
 	j := jsiiProxy_GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewGoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -204,7 +204,7 @@ func NewGoogleProjectUsageExportBucketTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_GoogleProjectUsageExportBucketTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleProjectUsageExportBucketTimeoutsOutputReference_Override(g GoogleP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

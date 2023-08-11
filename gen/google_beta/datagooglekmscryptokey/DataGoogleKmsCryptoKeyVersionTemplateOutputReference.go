@@ -178,7 +178,7 @@ func NewDataGoogleKmsCryptoKeyVersionTemplateOutputReference(terraformResource c
 	j := jsiiProxy_DataGoogleKmsCryptoKeyVersionTemplateOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleKmsCryptoKey.DataGoogleKmsCryptoKeyVersionTemplateOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleKmsCryptoKey.DataGoogleKmsCryptoKeyVersionTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleKmsCryptoKeyVersionTemplateOutputReference_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleKmsCryptoKey.DataGoogleKmsCryptoKeyVersionTemplateOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleKmsCryptoKey.DataGoogleKmsCryptoKeyVersionTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

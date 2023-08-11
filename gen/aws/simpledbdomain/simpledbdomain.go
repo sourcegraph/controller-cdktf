@@ -306,7 +306,7 @@ func NewSimpledbDomain(scope constructs.Construct, id *string, config *SimpledbD
 	j := jsiiProxy_SimpledbDomain{}
 
 	_jsii_.Create(
-		"aws.simpledbDomain.SimpledbDomain",
+		"@cdktf/provider-aws.simpledbDomain.SimpledbDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -319,7 +319,7 @@ func NewSimpledbDomain_Override(s SimpledbDomain, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.simpledbDomain.SimpledbDomain",
+		"@cdktf/provider-aws.simpledbDomain.SimpledbDomain",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -430,7 +430,7 @@ func SimpledbDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.simpledbDomain.SimpledbDomain",
+		"@cdktf/provider-aws.simpledbDomain.SimpledbDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -449,7 +449,7 @@ func SimpledbDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.simpledbDomain.SimpledbDomain",
+		"@cdktf/provider-aws.simpledbDomain.SimpledbDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func SimpledbDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.simpledbDomain.SimpledbDomain",
+		"@cdktf/provider-aws.simpledbDomain.SimpledbDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -481,7 +481,7 @@ func SimpledbDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.simpledbDomain.SimpledbDomain",
+		"@cdktf/provider-aws.simpledbDomain.SimpledbDomain",
 		"tfResourceType",
 		&returns,
 	)

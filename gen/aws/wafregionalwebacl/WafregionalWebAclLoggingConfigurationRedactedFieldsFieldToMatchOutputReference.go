@@ -203,7 +203,7 @@ func NewWafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputRef
 	j := jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewWafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

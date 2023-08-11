@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.kmsKeyRingIamMember.KmsKeyRingIamMember",
+		"@cdktf/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMember",
 		reflect.TypeOf((*KmsKeyRingIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition",
+		"@cdktf/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberCondition",
 		reflect.TypeOf((*KmsKeyRingIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.kmsKeyRingIamMember.KmsKeyRingIamMemberConditionOutputReference",
+		"@cdktf/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConditionOutputReference",
 		reflect.TypeOf((*KmsKeyRingIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig",
+		"@cdktf/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConfig",
 		reflect.TypeOf((*KmsKeyRingIamMemberConfig)(nil)).Elem(),
 	)
 }

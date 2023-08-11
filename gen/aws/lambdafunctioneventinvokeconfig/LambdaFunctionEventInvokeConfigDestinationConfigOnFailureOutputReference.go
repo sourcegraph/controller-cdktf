@@ -179,7 +179,7 @@ func NewLambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference
 	j := jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

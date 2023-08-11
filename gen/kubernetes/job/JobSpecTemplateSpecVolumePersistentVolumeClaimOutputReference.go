@@ -204,7 +204,7 @@ func NewJobSpecTemplateSpecVolumePersistentVolumeClaimOutputReference(terraformR
 	j := jsiiProxy_JobSpecTemplateSpecVolumePersistentVolumeClaimOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewJobSpecTemplateSpecVolumePersistentVolumeClaimOutputReference_Override(j
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

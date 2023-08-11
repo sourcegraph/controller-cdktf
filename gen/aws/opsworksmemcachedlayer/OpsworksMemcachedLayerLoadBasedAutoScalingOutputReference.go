@@ -228,7 +228,7 @@ func NewOpsworksMemcachedLayerLoadBasedAutoScalingOutputReference(terraformResou
 	j := jsiiProxy_OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewOpsworksMemcachedLayerLoadBasedAutoScalingOutputReference_Override(o Ops
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

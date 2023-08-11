@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.mediaConvertQueue.MediaConvertQueue",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue",
 		reflect.TypeOf((*MediaConvertQueue)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mediaConvertQueue.MediaConvertQueueConfig",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueConfig",
 		reflect.TypeOf((*MediaConvertQueueConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettings",
 		reflect.TypeOf((*MediaConvertQueueReservationPlanSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference",
 		reflect.TypeOf((*MediaConvertQueueReservationPlanSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commitment", GoGetter: "Commitment"},

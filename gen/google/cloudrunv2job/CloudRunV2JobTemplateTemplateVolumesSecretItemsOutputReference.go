@@ -225,7 +225,7 @@ func NewCloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference(terraform
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewCloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateVolumesSecretItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

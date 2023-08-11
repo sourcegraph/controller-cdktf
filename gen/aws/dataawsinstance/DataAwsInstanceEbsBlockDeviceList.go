@@ -104,7 +104,7 @@ func NewDataAwsInstanceEbsBlockDeviceList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataAwsInstanceEbsBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsInstanceEbsBlockDeviceList_Override(d DataAwsInstanceEbsBlockDevi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

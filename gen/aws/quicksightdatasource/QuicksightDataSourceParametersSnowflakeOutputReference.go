@@ -225,7 +225,7 @@ func NewQuicksightDataSourceParametersSnowflakeOutputReference(terraformResource
 	j := jsiiProxy_QuicksightDataSourceParametersSnowflakeOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersSnowflakeOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflakeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewQuicksightDataSourceParametersSnowflakeOutputReference_Override(q Quicks
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersSnowflakeOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSnowflakeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

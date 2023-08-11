@@ -335,7 +335,7 @@ func NewComputeInstanceBootDiskOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ComputeInstanceBootDiskOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceBootDiskOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -347,7 +347,7 @@ func NewComputeInstanceBootDiskOutputReference_Override(c ComputeInstanceBootDis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceBootDiskOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceBootDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleIamWorkloadIdentityPoolProviderAwsList(terraformResource cdktf
 	j := jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderAwsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamWorkloadIdentityPoolProvider.DataGoogleIamWorkloadIdentityPoolProviderAwsList",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPoolProvider.DataGoogleIamWorkloadIdentityPoolProviderAwsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleIamWorkloadIdentityPoolProviderAwsList_Override(d DataGoogleIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamWorkloadIdentityPoolProvider.DataGoogleIamWorkloadIdentityPoolProviderAwsList",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPoolProvider.DataGoogleIamWorkloadIdentityPoolProviderAwsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

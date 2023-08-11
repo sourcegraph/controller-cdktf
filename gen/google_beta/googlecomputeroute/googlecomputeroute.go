@@ -651,7 +651,7 @@ func NewGoogleComputeRoute(scope constructs.Construct, id *string, config *Googl
 	j := jsiiProxy_GoogleComputeRoute{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRoute.GoogleComputeRoute",
+		"@cdktf/provider-google-beta.googleComputeRoute.GoogleComputeRoute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -664,7 +664,7 @@ func NewGoogleComputeRoute_Override(g GoogleComputeRoute, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRoute.GoogleComputeRoute",
+		"@cdktf/provider-google-beta.googleComputeRoute.GoogleComputeRoute",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -918,7 +918,7 @@ func GoogleComputeRoute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRoute.GoogleComputeRoute",
+		"@cdktf/provider-google-beta.googleComputeRoute.GoogleComputeRoute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -937,7 +937,7 @@ func GoogleComputeRoute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRoute.GoogleComputeRoute",
+		"@cdktf/provider-google-beta.googleComputeRoute.GoogleComputeRoute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -956,7 +956,7 @@ func GoogleComputeRoute_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRoute.GoogleComputeRoute",
+		"@cdktf/provider-google-beta.googleComputeRoute.GoogleComputeRoute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -969,7 +969,7 @@ func GoogleComputeRoute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRoute.GoogleComputeRoute",
+		"@cdktf/provider-google-beta.googleComputeRoute.GoogleComputeRoute",
 		"tfResourceType",
 		&returns,
 	)

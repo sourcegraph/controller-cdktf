@@ -214,7 +214,7 @@ func NewComprehendDocumentClassifierOutputDataConfigOutputReference(terraformRes
 	j := jsiiProxy_ComprehendDocumentClassifierOutputDataConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -226,7 +226,7 @@ func NewComprehendDocumentClassifierOutputDataConfigOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
+		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProvider",
 		reflect.TypeOf((*IamOpenidConnectProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig",
+		"@cdktf/provider-aws.iamOpenidConnectProvider.IamOpenidConnectProviderConfig",
 		reflect.TypeOf((*IamOpenidConnectProviderConfig)(nil)).Elem(),
 	)
 }

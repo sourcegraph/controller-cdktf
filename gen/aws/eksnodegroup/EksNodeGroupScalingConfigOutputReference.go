@@ -225,7 +225,7 @@ func NewEksNodeGroupScalingConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_EksNodeGroupScalingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupScalingConfigOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewEksNodeGroupScalingConfigOutputReference_Override(e EksNodeGroupScalingC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupScalingConfigOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupScalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

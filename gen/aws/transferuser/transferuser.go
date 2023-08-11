@@ -544,7 +544,7 @@ func NewTransferUser(scope constructs.Construct, id *string, config *TransferUse
 	j := jsiiProxy_TransferUser{}
 
 	_jsii_.Create(
-		"aws.transferUser.TransferUser",
+		"@cdktf/provider-aws.transferUser.TransferUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -557,7 +557,7 @@ func NewTransferUser_Override(t TransferUser, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferUser.TransferUser",
+		"@cdktf/provider-aws.transferUser.TransferUser",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -756,7 +756,7 @@ func TransferUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferUser.TransferUser",
+		"@cdktf/provider-aws.transferUser.TransferUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -775,7 +775,7 @@ func TransferUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferUser.TransferUser",
+		"@cdktf/provider-aws.transferUser.TransferUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func TransferUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferUser.TransferUser",
+		"@cdktf/provider-aws.transferUser.TransferUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func TransferUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.transferUser.TransferUser",
+		"@cdktf/provider-aws.transferUser.TransferUser",
 		"tfResourceType",
 		&returns,
 	)

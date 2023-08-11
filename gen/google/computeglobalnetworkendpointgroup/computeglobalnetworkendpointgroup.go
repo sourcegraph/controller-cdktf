@@ -449,7 +449,7 @@ func NewComputeGlobalNetworkEndpointGroup(scope constructs.Construct, id *string
 	j := jsiiProxy_ComputeGlobalNetworkEndpointGroup{}
 
 	_jsii_.Create(
-		"google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
+		"@cdktf/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewComputeGlobalNetworkEndpointGroup_Override(c ComputeGlobalNetworkEndpoin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
+		"@cdktf/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -628,7 +628,7 @@ func ComputeGlobalNetworkEndpointGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
+		"@cdktf/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func ComputeGlobalNetworkEndpointGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
+		"@cdktf/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func ComputeGlobalNetworkEndpointGroup_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
+		"@cdktf/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func ComputeGlobalNetworkEndpointGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
+		"@cdktf/provider-google.computeGlobalNetworkEndpointGroup.ComputeGlobalNetworkEndpointGroup",
 		"tfResourceType",
 		&returns,
 	)

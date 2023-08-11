@@ -104,7 +104,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList(ter
 	j := jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

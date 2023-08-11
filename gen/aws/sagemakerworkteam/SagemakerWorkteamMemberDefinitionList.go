@@ -116,7 +116,7 @@ func NewSagemakerWorkteamMemberDefinitionList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_SagemakerWorkteamMemberDefinitionList{}
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionList",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerWorkteamMemberDefinitionList_Override(s SagemakerWorkteamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionList",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

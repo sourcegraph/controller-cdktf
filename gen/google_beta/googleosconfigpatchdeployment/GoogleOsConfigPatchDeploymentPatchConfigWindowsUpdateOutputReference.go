@@ -228,7 +228,7 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference(ter
 	j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

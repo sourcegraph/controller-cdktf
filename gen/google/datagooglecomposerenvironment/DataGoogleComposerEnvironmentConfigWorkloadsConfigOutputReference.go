@@ -189,7 +189,7 @@ func NewDataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference(terraf
 	j := jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

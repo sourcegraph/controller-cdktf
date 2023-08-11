@@ -449,7 +449,7 @@ func NewMonitoringGroup(scope constructs.Construct, id *string, config *Monitori
 	j := jsiiProxy_MonitoringGroup{}
 
 	_jsii_.Create(
-		"google.monitoringGroup.MonitoringGroup",
+		"@cdktf/provider-google.monitoringGroup.MonitoringGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewMonitoringGroup_Override(m MonitoringGroup, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringGroup.MonitoringGroup",
+		"@cdktf/provider-google.monitoringGroup.MonitoringGroup",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -628,7 +628,7 @@ func MonitoringGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringGroup.MonitoringGroup",
+		"@cdktf/provider-google.monitoringGroup.MonitoringGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func MonitoringGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringGroup.MonitoringGroup",
+		"@cdktf/provider-google.monitoringGroup.MonitoringGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func MonitoringGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringGroup.MonitoringGroup",
+		"@cdktf/provider-google.monitoringGroup.MonitoringGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func MonitoringGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.monitoringGroup.MonitoringGroup",
+		"@cdktf/provider-google.monitoringGroup.MonitoringGroup",
 		"tfResourceType",
 		&returns,
 	)

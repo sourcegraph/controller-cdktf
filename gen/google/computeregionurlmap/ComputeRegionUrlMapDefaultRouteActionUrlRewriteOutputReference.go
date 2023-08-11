@@ -204,7 +204,7 @@ func NewComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference(terraform
 	j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

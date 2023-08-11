@@ -252,7 +252,7 @@ func NewS3AccessPointPublicAccessBlockConfigurationOutputReference(terraformReso
 	j := jsiiProxy_S3AccessPointPublicAccessBlockConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfigurationOutputReference",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewS3AccessPointPublicAccessBlockConfigurationOutputReference_Override(s S3
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfigurationOutputReference",
+		"@cdktf/provider-aws.s3AccessPoint.S3AccessPointPublicAccessBlockConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

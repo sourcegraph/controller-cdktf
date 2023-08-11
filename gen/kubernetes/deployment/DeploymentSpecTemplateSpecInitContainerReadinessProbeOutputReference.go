@@ -348,7 +348,7 @@ func NewDeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference(ter
 	j := jsiiProxy_DeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewDeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerReadinessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

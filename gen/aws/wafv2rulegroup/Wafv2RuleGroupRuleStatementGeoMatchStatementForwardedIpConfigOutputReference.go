@@ -202,7 +202,7 @@ func NewWafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigOutputRefer
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementGeoMatchStatementForwardedIpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

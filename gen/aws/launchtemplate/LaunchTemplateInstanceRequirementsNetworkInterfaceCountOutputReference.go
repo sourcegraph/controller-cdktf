@@ -204,7 +204,7 @@ func NewLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference(t
 	j := jsiiProxy_LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

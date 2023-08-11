@@ -204,7 +204,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryM
 	j := jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

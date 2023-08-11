@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicy",
 		reflect.TypeOf((*DataGoogleIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsList",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsList",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,7 +128,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditLogConfigs", GoGetter: "AuditLogConfigs"},
@@ -186,15 +186,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBinding",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBinding",
 		reflect.TypeOf((*DataGoogleIamPolicyBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -233,7 +233,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -254,7 +254,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,7 +294,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyConfig",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyConfig",
 		reflect.TypeOf((*DataGoogleIamPolicyConfig)(nil)).Elem(),
 	)
 }

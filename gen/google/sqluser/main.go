@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sqlUser.SqlUser",
+		"@cdktf/provider-google.sqlUser.SqlUser",
 		reflect.TypeOf((*SqlUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlUser.SqlUserConfig",
+		"@cdktf/provider-google.sqlUser.SqlUserConfig",
 		reflect.TypeOf((*SqlUserConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlUser.SqlUserPasswordPolicy",
+		"@cdktf/provider-google.sqlUser.SqlUserPasswordPolicy",
 		reflect.TypeOf((*SqlUserPasswordPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sqlUser.SqlUserPasswordPolicyOutputReference",
+		"@cdktf/provider-google.sqlUser.SqlUserPasswordPolicyOutputReference",
 		reflect.TypeOf((*SqlUserPasswordPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedFailedAttempts", GoGetter: "AllowedFailedAttempts"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlUser.SqlUserPasswordPolicyStatus",
+		"@cdktf/provider-google.sqlUser.SqlUserPasswordPolicyStatus",
 		reflect.TypeOf((*SqlUserPasswordPolicyStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sqlUser.SqlUserPasswordPolicyStatusList",
+		"@cdktf/provider-google.sqlUser.SqlUserPasswordPolicyStatusList",
 		reflect.TypeOf((*SqlUserPasswordPolicyStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,7 +160,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.sqlUser.SqlUserPasswordPolicyStatusOutputReference",
+		"@cdktf/provider-google.sqlUser.SqlUserPasswordPolicyStatusOutputReference",
 		reflect.TypeOf((*SqlUserPasswordPolicyStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,11 +194,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlUser.SqlUserSqlServerUserDetails",
+		"@cdktf/provider-google.sqlUser.SqlUserSqlServerUserDetails",
 		reflect.TypeOf((*SqlUserSqlServerUserDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sqlUser.SqlUserSqlServerUserDetailsList",
+		"@cdktf/provider-google.sqlUser.SqlUserSqlServerUserDetailsList",
 		reflect.TypeOf((*SqlUserSqlServerUserDetailsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -218,7 +218,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.sqlUser.SqlUserSqlServerUserDetailsOutputReference",
+		"@cdktf/provider-google.sqlUser.SqlUserSqlServerUserDetailsOutputReference",
 		reflect.TypeOf((*SqlUserSqlServerUserDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -252,11 +252,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sqlUser.SqlUserTimeouts",
+		"@cdktf/provider-google.sqlUser.SqlUserTimeouts",
 		reflect.TypeOf((*SqlUserTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sqlUser.SqlUserTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlUser.SqlUserTimeoutsOutputReference",
 		reflect.TypeOf((*SqlUserTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -228,7 +228,7 @@ func NewSpannerInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_SpannerInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.spannerInstance.SpannerInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.spannerInstance.SpannerInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSpannerInstanceTimeoutsOutputReference_Override(s SpannerInstanceTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.spannerInstance.SpannerInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.spannerInstance.SpannerInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

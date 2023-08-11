@@ -178,7 +178,7 @@ func NewDataGoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference(terraf
 	j := jsiiProxy_DataGoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGatewayAllocatedConnectionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

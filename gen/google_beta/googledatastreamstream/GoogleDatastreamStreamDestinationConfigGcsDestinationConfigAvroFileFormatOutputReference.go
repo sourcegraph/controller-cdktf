@@ -156,7 +156,7 @@ func NewGoogleDatastreamStreamDestinationConfigGcsDestinationConfigAvroFileForma
 	j := jsiiProxy_GoogleDatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewGoogleDatastreamStreamDestinationConfigGcsDestinationConfigAvroFileForma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

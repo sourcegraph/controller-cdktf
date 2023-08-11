@@ -275,7 +275,7 @@ func NewElasticsearchDomainEbsOptionsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainEbsOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewElasticsearchDomainEbsOptionsOutputReference_Override(e ElasticsearchDom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainEbsOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -189,7 +189,7 @@ func NewServicecatalogProvisionedProductOutputsOutputReference(terraformResource
 	j := jsiiProxy_ServicecatalogProvisionedProductOutputsOutputReference{}
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsOutputReference",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewServicecatalogProvisionedProductOutputsOutputReference_Override(s Servic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsOutputReference",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

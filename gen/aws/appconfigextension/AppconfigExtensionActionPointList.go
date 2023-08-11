@@ -116,7 +116,7 @@ func NewAppconfigExtensionActionPointList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_AppconfigExtensionActionPointList{}
 
 	_jsii_.Create(
-		"aws.appconfigExtension.AppconfigExtensionActionPointList",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppconfigExtensionActionPointList_Override(a AppconfigExtensionActionPoi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigExtension.AppconfigExtensionActionPointList",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionActionPointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

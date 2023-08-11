@@ -228,7 +228,7 @@ func NewDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputRefer
 	j := jsiiProxy_DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

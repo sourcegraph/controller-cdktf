@@ -237,7 +237,7 @@ func NewFilestoreInstanceFileSharesOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_FilestoreInstanceFileSharesOutputReference{}
 
 	_jsii_.Create(
-		"google.filestoreInstance.FilestoreInstanceFileSharesOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -249,7 +249,7 @@ func NewFilestoreInstanceFileSharesOutputReference_Override(f FilestoreInstanceF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.filestoreInstance.FilestoreInstanceFileSharesOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

@@ -366,7 +366,7 @@ func NewReplicationSlot(scope constructs.Construct, id *string, config *Replicat
 	j := jsiiProxy_ReplicationSlot{}
 
 	_jsii_.Create(
-		"postgresql.replicationSlot.ReplicationSlot",
+		"@cdktf/provider-postgresql.replicationSlot.ReplicationSlot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewReplicationSlot_Override(r ReplicationSlot, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.replicationSlot.ReplicationSlot",
+		"@cdktf/provider-postgresql.replicationSlot.ReplicationSlot",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -523,7 +523,7 @@ func ReplicationSlot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.replicationSlot.ReplicationSlot",
+		"@cdktf/provider-postgresql.replicationSlot.ReplicationSlot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func ReplicationSlot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.replicationSlot.ReplicationSlot",
+		"@cdktf/provider-postgresql.replicationSlot.ReplicationSlot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func ReplicationSlot_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.replicationSlot.ReplicationSlot",
+		"@cdktf/provider-postgresql.replicationSlot.ReplicationSlot",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func ReplicationSlot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.replicationSlot.ReplicationSlot",
+		"@cdktf/provider-postgresql.replicationSlot.ReplicationSlot",
 		"tfResourceType",
 		&returns,
 	)

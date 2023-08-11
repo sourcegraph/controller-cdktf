@@ -179,7 +179,7 @@ func NewS3BucketReplicationConfigurationRuleExistingObjectReplicationOutputRefer
 	j := jsiiProxy_S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference",
+		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3BucketReplicationConfigurationRuleExistingObjectReplicationOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference",
+		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleExistingObjectReplicationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		reflect.TypeOf((*DataGoogleMonitoringIstioCanonicalService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceConfig",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceConfig",
 		reflect.TypeOf((*DataGoogleMonitoringIstioCanonicalServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetry",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetry",
 		reflect.TypeOf((*DataGoogleMonitoringIstioCanonicalServiceTelemetry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetryList",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetryList",
 		reflect.TypeOf((*DataGoogleMonitoringIstioCanonicalServiceTelemetryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetryOutputReference",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetryOutputReference",
 		reflect.TypeOf((*DataGoogleMonitoringIstioCanonicalServiceTelemetryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

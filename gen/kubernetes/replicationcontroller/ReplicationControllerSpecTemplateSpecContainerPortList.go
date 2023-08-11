@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecContainerPortList(terraformResource
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerPortList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPortList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecContainerPortList_Override(r Replic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPortList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

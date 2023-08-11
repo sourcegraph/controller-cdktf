@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.agentToken.AgentToken",
+		"@cdktf/provider-tfe.agentToken.AgentToken",
 		reflect.TypeOf((*AgentToken)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.agentToken.AgentTokenConfig",
+		"@cdktf/provider-tfe.agentToken.AgentTokenConfig",
 		reflect.TypeOf((*AgentTokenConfig)(nil)).Elem(),
 	)
 }

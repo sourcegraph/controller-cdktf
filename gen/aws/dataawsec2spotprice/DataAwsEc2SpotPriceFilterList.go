@@ -116,7 +116,7 @@ func NewDataAwsEc2SpotPriceFilterList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_DataAwsEc2SpotPriceFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterList",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEc2SpotPriceFilterList_Override(d DataAwsEc2SpotPriceFilterList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterList",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

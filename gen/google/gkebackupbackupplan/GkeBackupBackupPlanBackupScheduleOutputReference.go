@@ -204,7 +204,7 @@ func NewGkeBackupBackupPlanBackupScheduleOutputReference(terraformResource cdktf
 	j := jsiiProxy_GkeBackupBackupPlanBackupScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupScheduleOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGkeBackupBackupPlanBackupScheduleOutputReference_Override(g GkeBackupBac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupScheduleOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlanBackupScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

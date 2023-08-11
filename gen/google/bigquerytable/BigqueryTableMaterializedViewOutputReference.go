@@ -227,7 +227,7 @@ func NewBigqueryTableMaterializedViewOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_BigqueryTableMaterializedViewOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableMaterializedViewOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewBigqueryTableMaterializedViewOutputReference_Override(b BigqueryTableMat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableMaterializedViewOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

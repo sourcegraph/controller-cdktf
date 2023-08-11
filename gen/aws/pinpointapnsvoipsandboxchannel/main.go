@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
+		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannel",
 		reflect.TypeOf((*PinpointApnsVoipSandboxChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannelConfig",
+		"@cdktf/provider-aws.pinpointApnsVoipSandboxChannel.PinpointApnsVoipSandboxChannelConfig",
 		reflect.TypeOf((*PinpointApnsVoipSandboxChannelConfig)(nil)).Elem(),
 	)
 }

@@ -211,7 +211,7 @@ func NewDataAwsElbListenerOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataAwsElbListenerOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsElb.DataAwsElbListenerOutputReference",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbListenerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsElbListenerOutputReference_Override(d DataAwsElbListenerOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElb.DataAwsElbListenerOutputReference",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbListenerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

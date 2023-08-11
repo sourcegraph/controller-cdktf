@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.tieredCache.TieredCache",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCache",
 		reflect.TypeOf((*TieredCache)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.tieredCache.TieredCacheConfig",
+		"@cdktf/provider-cloudflare.tieredCache.TieredCacheConfig",
 		reflect.TypeOf((*TieredCacheConfig)(nil)).Elem(),
 	)
 }

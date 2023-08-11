@@ -278,7 +278,7 @@ func NewDataOktaAppUserAssignments(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataOktaAppUserAssignments{}
 
 	_jsii_.Create(
-		"okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
+		"@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -291,7 +291,7 @@ func NewDataOktaAppUserAssignments_Override(d DataOktaAppUserAssignments, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
+		"@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -380,7 +380,7 @@ func DataOktaAppUserAssignments_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
+		"@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -399,7 +399,7 @@ func DataOktaAppUserAssignments_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
+		"@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -418,7 +418,7 @@ func DataOktaAppUserAssignments_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
+		"@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -431,7 +431,7 @@ func DataOktaAppUserAssignments_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
+		"@cdktf/provider-okta.dataOktaAppUserAssignments.DataOktaAppUserAssignments",
 		"tfResourceType",
 		&returns,
 	)

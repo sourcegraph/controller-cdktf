@@ -104,7 +104,7 @@ func NewDataGoogleCloudfunctions2FunctionServiceConfigList(terraformResource cdk
 	j := jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigList",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudfunctions2FunctionServiceConfigList_Override(d DataGoogle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigList",
+		"@cdktf/provider-google.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionServiceConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

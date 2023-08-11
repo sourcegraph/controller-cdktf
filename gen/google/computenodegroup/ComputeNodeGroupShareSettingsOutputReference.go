@@ -203,7 +203,7 @@ func NewComputeNodeGroupShareSettingsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ComputeNodeGroupShareSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeNodeGroupShareSettingsOutputReference_Override(c ComputeNodeGroup
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

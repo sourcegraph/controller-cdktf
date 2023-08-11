@@ -299,7 +299,7 @@ func NewSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference(terra
 	j := jsiiProxy_SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

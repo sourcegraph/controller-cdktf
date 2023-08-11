@@ -104,7 +104,7 @@ func NewDataAwsLbListenerDefaultActionAuthenticateCognitoList(terraformResource 
 	j := jsiiProxy_DataAwsLbListenerDefaultActionAuthenticateCognitoList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoList",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLbListenerDefaultActionAuthenticateCognitoList_Override(d DataAws
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoList",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

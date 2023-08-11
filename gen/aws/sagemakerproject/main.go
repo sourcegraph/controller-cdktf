@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerProject.SagemakerProject",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProject",
 		reflect.TypeOf((*SagemakerProject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerProject.SagemakerProjectConfig",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectConfig",
 		reflect.TypeOf((*SagemakerProjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetails",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetails",
 		reflect.TypeOf((*SagemakerProjectServiceCatalogProvisioningDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsOutputReference",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsOutputReference",
 		reflect.TypeOf((*SagemakerProjectServiceCatalogProvisioningDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameter",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameter",
 		reflect.TypeOf((*SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList",
 		reflect.TypeOf((*SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -148,7 +148,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference",
 		reflect.TypeOf((*SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

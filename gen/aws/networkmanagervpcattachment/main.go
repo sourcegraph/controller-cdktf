@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachment",
 		reflect.TypeOf((*NetworkmanagerVpcAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentConfig",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentConfig",
 		reflect.TypeOf((*NetworkmanagerVpcAttachmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptions",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptions",
 		reflect.TypeOf((*NetworkmanagerVpcAttachmentOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
 		reflect.TypeOf((*NetworkmanagerVpcAttachmentOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applianceModeSupport", GoGetter: "ApplianceModeSupport"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentTimeouts",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentTimeouts",
 		reflect.TypeOf((*NetworkmanagerVpcAttachmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkmanagerVpcAttachmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

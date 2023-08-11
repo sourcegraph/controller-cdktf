@@ -189,7 +189,7 @@ func NewGoogleCertificateManagerDnsAuthorizationDnsResourceRecordOutputReference
 	j := jsiiProxy_GoogleCertificateManagerDnsAuthorizationDnsResourceRecordOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationDnsResourceRecordOutputReference",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationDnsResourceRecordOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewGoogleCertificateManagerDnsAuthorizationDnsResourceRecordOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationDnsResourceRecordOutputReference",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationDnsResourceRecordOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

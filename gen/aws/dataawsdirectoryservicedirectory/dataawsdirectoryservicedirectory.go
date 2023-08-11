@@ -469,7 +469,7 @@ func NewDataAwsDirectoryServiceDirectory(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsDirectoryServiceDirectory{}
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -482,7 +482,7 @@ func NewDataAwsDirectoryServiceDirectory_Override(d DataAwsDirectoryServiceDirec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -593,7 +593,7 @@ func DataAwsDirectoryServiceDirectory_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func DataAwsDirectoryServiceDirectory_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func DataAwsDirectoryServiceDirectory_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func DataAwsDirectoryServiceDirectory_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectory",
 		"tfResourceType",
 		&returns,
 	)

@@ -180,7 +180,7 @@ func NewDataAwsEbsVolumeTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsEbsVolumeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEbsVolumeTimeoutsOutputReference_Override(d DataAwsEbsVolumeTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

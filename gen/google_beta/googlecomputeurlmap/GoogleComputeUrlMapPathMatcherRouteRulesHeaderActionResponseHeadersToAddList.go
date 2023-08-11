@@ -116,7 +116,7 @@ func NewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd
 	j := jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

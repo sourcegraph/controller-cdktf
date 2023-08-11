@@ -252,7 +252,7 @@ func NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutput
 	j := jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

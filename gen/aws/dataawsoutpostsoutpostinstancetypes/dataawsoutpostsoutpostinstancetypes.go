@@ -302,7 +302,7 @@ func NewDataAwsOutpostsOutpostInstanceTypes(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataAwsOutpostsOutpostInstanceTypes{}
 
 	_jsii_.Create(
-		"aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsOutpostsOutpostInstanceTypes_Override(d DataAwsOutpostsOutpostIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsOutpostsOutpostInstanceTypes_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsOutpostsOutpostInstanceTypes_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsOutpostsOutpostInstanceTypes_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsOutpostsOutpostInstanceTypes_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
+		"@cdktf/provider-aws.dataAwsOutpostsOutpostInstanceTypes.DataAwsOutpostsOutpostInstanceTypes",
 		"tfResourceType",
 		&returns,
 	)

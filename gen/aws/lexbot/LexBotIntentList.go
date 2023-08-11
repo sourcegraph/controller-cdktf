@@ -116,7 +116,7 @@ func NewLexBotIntentList(terraformResource cdktf.IInterpolatingParent, terraform
 	j := jsiiProxy_LexBotIntentList{}
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotIntentList",
+		"@cdktf/provider-aws.lexBot.LexBotIntentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexBotIntentList_Override(l LexBotIntentList, terraformResource cdktf.II
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotIntentList",
+		"@cdktf/provider-aws.lexBot.LexBotIntentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

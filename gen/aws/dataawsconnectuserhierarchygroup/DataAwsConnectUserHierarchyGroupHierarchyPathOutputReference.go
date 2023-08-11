@@ -211,7 +211,7 @@ func NewDataAwsConnectUserHierarchyGroupHierarchyPathOutputReference(terraformRe
 	j := jsiiProxy_DataAwsConnectUserHierarchyGroupHierarchyPathOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsConnectUserHierarchyGroupHierarchyPathOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

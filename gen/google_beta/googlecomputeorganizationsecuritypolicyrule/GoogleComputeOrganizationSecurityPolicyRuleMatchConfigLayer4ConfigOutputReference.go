@@ -203,7 +203,7 @@ func NewGoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutput
 	j := jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

@@ -275,7 +275,7 @@ func NewClouddeployTargetExecutionConfigsOutputReference(terraformResource cdktf
 	j := jsiiProxy_ClouddeployTargetExecutionConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewClouddeployTargetExecutionConfigsOutputReference_Override(c ClouddeployT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

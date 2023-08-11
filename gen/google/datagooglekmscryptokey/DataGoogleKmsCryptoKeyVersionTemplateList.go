@@ -104,7 +104,7 @@ func NewDataGoogleKmsCryptoKeyVersionTemplateList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataGoogleKmsCryptoKeyVersionTemplateList{}
 
 	_jsii_.Create(
-		"google.dataGoogleKmsCryptoKey.DataGoogleKmsCryptoKeyVersionTemplateList",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKey.DataGoogleKmsCryptoKeyVersionTemplateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleKmsCryptoKeyVersionTemplateList_Override(d DataGoogleKmsCrypto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleKmsCryptoKey.DataGoogleKmsCryptoKeyVersionTemplateList",
+		"@cdktf/provider-google.dataGoogleKmsCryptoKey.DataGoogleKmsCryptoKeyVersionTemplateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

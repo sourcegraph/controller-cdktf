@@ -226,7 +226,7 @@ func NewPrivatecaCaPoolIamBindingConditionOutputReference(terraformResource cdkt
 	j := jsiiProxy_PrivatecaCaPoolIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConditionOutputReference",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPrivatecaCaPoolIamBindingConditionOutputReference_Override(p PrivatecaCa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConditionOutputReference",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

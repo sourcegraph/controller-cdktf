@@ -471,7 +471,7 @@ func NewComputeTargetHttpProxy(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_ComputeTargetHttpProxy{}
 
 	_jsii_.Create(
-		"google.computeTargetHttpProxy.ComputeTargetHttpProxy",
+		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewComputeTargetHttpProxy_Override(c ComputeTargetHttpProxy, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeTargetHttpProxy.ComputeTargetHttpProxy",
+		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -650,7 +650,7 @@ func ComputeTargetHttpProxy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeTargetHttpProxy.ComputeTargetHttpProxy",
+		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func ComputeTargetHttpProxy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeTargetHttpProxy.ComputeTargetHttpProxy",
+		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func ComputeTargetHttpProxy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeTargetHttpProxy.ComputeTargetHttpProxy",
+		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func ComputeTargetHttpProxy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeTargetHttpProxy.ComputeTargetHttpProxy",
+		"@cdktf/provider-google.computeTargetHttpProxy.ComputeTargetHttpProxy",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewDataAwsCeTagsTimePeriodOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsCeTagsTimePeriodOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsTimePeriodOutputReference",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsCeTagsTimePeriodOutputReference_Override(d DataAwsCeTagsTimePerio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsTimePeriodOutputReference",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsTimePeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

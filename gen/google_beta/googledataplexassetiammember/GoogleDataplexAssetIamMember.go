@@ -494,7 +494,7 @@ func NewGoogleDataplexAssetIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleDataplexAssetIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewGoogleDataplexAssetIamMember_Override(g GoogleDataplexAssetIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -695,7 +695,7 @@ func GoogleDataplexAssetIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GoogleDataplexAssetIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func GoogleDataplexAssetIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func GoogleDataplexAssetIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
+		"@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember",
 		"tfResourceType",
 		&returns,
 	)

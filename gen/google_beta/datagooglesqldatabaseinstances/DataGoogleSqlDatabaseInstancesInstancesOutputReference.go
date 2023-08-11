@@ -409,7 +409,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesOutputReference(terraformResource
 	j := jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -421,7 +421,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesOutputReference_Override(d DataGo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewBigqueryJobQueryUserDefinedFunctionResourcesList(terraformResource cdktf
 	j := jsiiProxy_BigqueryJobQueryUserDefinedFunctionResourcesList{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesList",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBigqueryJobQueryUserDefinedFunctionResourcesList_Override(b BigqueryJobQ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesList",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

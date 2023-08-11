@@ -116,7 +116,7 @@ func NewEndpointsV1SubsetAddressList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_EndpointsV1SubsetAddressList{}
 
 	_jsii_.Create(
-		"kubernetes.endpointsV1.EndpointsV1SubsetAddressList",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetAddressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEndpointsV1SubsetAddressList_Override(e EndpointsV1SubsetAddressList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.endpointsV1.EndpointsV1SubsetAddressList",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetAddressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

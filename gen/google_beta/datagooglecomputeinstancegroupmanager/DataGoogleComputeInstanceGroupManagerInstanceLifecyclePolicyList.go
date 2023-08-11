@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList(terrafo
 	j := jsiiProxy_DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

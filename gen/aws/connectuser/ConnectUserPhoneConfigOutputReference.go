@@ -251,7 +251,7 @@ func NewConnectUserPhoneConfigOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ConnectUserPhoneConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectUser.ConnectUserPhoneConfigOutputReference",
+		"@cdktf/provider-aws.connectUser.ConnectUserPhoneConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewConnectUserPhoneConfigOutputReference_Override(c ConnectUserPhoneConfigO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectUser.ConnectUserPhoneConfigOutputReference",
+		"@cdktf/provider-aws.connectUser.ConnectUserPhoneConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -180,7 +180,7 @@ func NewCodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference(terrafor
 	j := jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoElbInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

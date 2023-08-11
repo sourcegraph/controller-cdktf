@@ -104,7 +104,7 @@ func NewDataGoogleFolderOrganizationPolicyListPolicyList(terraformResource cdktf
 	j := jsiiProxy_DataGoogleFolderOrganizationPolicyListPolicyList{}
 
 	_jsii_.Create(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyList",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleFolderOrganizationPolicyListPolicyList_Override(d DataGoogleFo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyList",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyListPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

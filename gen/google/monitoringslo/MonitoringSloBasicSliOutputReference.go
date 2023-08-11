@@ -276,7 +276,7 @@ func NewMonitoringSloBasicSliOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_MonitoringSloBasicSliOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloBasicSliOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewMonitoringSloBasicSliOutputReference_Override(m MonitoringSloBasicSliOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloBasicSliOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

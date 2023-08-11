@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironment",
+		"@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironment",
 		reflect.TypeOf((*GoogleDialogflowCxEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentConfig",
+		"@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentConfig",
 		reflect.TypeOf((*GoogleDialogflowCxEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentTimeouts",
+		"@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentTimeouts",
 		reflect.TypeOf((*GoogleDialogflowCxEnvironmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxEnvironmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,11 +121,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigs",
+		"@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigs",
 		reflect.TypeOf((*GoogleDialogflowCxEnvironmentVersionConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsList",
+		"@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsList",
 		reflect.TypeOf((*GoogleDialogflowCxEnvironmentVersionConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxEnvironment.GoogleDialogflowCxEnvironmentVersionConfigsOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxEnvironmentVersionConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
 		reflect.TypeOf((*DataGoogleMonitoringMeshIstioService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceConfig",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceConfig",
 		reflect.TypeOf((*DataGoogleMonitoringMeshIstioServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetry",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetry",
 		reflect.TypeOf((*DataGoogleMonitoringMeshIstioServiceTelemetry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryList",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryList",
 		reflect.TypeOf((*DataGoogleMonitoringMeshIstioServiceTelemetryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference",
 		reflect.TypeOf((*DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

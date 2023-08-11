@@ -116,7 +116,7 @@ func NewDbSecurityGroupIngressList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_DbSecurityGroupIngressList{}
 
 	_jsii_.Create(
-		"aws.dbSecurityGroup.DbSecurityGroupIngressList",
+		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDbSecurityGroupIngressList_Override(d DbSecurityGroupIngressList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbSecurityGroup.DbSecurityGroupIngressList",
+		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

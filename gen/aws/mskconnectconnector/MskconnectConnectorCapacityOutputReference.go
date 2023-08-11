@@ -204,7 +204,7 @@ func NewMskconnectConnectorCapacityOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_MskconnectConnectorCapacityOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorCapacityOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMskconnectConnectorCapacityOutputReference_Override(m MskconnectConnecto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorCapacityOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

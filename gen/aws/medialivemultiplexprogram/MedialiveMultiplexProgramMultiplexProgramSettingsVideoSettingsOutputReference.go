@@ -228,7 +228,7 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputRefe
 	j := jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

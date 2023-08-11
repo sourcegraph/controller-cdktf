@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannel",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		reflect.TypeOf((*MedialiveChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -104,11 +104,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelCdiInputSpecification",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelCdiInputSpecification",
 		reflect.TypeOf((*MedialiveChannelCdiInputSpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelCdiInputSpecificationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelCdiInputSpecificationOutputReference",
 		reflect.TypeOf((*MedialiveChannelCdiInputSpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,15 +142,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelConfig",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelConfig",
 		reflect.TypeOf((*MedialiveChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelDestinations",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinations",
 		reflect.TypeOf((*MedialiveChannelDestinations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelDestinationsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsList",
 		reflect.TypeOf((*MedialiveChannelDestinationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -171,11 +171,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettings",
 		reflect.TypeOf((*MedialiveChannelDestinationsMediaPackageSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsList",
 		reflect.TypeOf((*MedialiveChannelDestinationsMediaPackageSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -196,7 +196,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMediaPackageSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelDestinationsMediaPackageSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelId", GoGetter: "ChannelId"},
@@ -230,11 +230,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettings",
 		reflect.TypeOf((*MedialiveChannelDestinationsMultiplexSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsMultiplexSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelDestinationsMultiplexSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,7 +270,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelDestinationsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsOutputReference",
 		reflect.TypeOf((*MedialiveChannelDestinationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -316,11 +316,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelDestinationsSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettings",
 		reflect.TypeOf((*MedialiveChannelDestinationsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelDestinationsSettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettingsList",
 		reflect.TypeOf((*MedialiveChannelDestinationsSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -341,7 +341,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelDestinationsSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelDestinationsSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelDestinationsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -385,19 +385,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptions",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioNormalizationSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -438,19 +438,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenCbetSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cbetCheckDigitString", GoGetter: "CbetCheckDigitString"},
@@ -488,11 +488,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -513,7 +513,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsNielsenNaesIiNwSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkDigitString", GoGetter: "CheckDigitString"},
@@ -549,7 +549,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsNielsenWatermarksSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -592,7 +592,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsAudioWatermarkSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -628,15 +628,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitrate", GoGetter: "Bitrate"},
@@ -695,11 +695,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3SettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3SettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitrate", GoGetter: "Bitrate"},
@@ -752,11 +752,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitrate", GoGetter: "Bitrate"},
@@ -809,11 +809,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attenuationControl", GoGetter: "AttenuationControl"},
@@ -905,11 +905,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2SettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2SettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitrate", GoGetter: "Bitrate"},
@@ -950,7 +950,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aacSettings", GoGetter: "AacSettings"},
@@ -1010,11 +1010,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1046,11 +1046,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitDepth", GoGetter: "BitDepth"},
@@ -1091,7 +1091,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1112,7 +1112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioNormalizationSettings", GoGetter: "AudioNormalizationSettings"},
@@ -1179,19 +1179,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1212,7 +1212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1248,7 +1248,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1269,7 +1269,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1306,7 +1306,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelMappings", GoGetter: "ChannelMappings"},
@@ -1347,15 +1347,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlanking",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlanking",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAvailBlanking)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1395,7 +1395,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsAvailBlankingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availBlankingImage", GoGetter: "AvailBlankingImage"},
@@ -1434,11 +1434,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroups",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroups",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1459,23 +1459,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3SettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3SettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsArchiveS3SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -1510,7 +1510,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsArchiveCdnSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveS3Settings", GoGetter: "ArchiveS3Settings"},
@@ -1546,11 +1546,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestinationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestinationOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1584,7 +1584,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1605,7 +1605,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsArchiveGroupSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveCdnSettings", GoGetter: "ArchiveCdnSettings"},
@@ -1647,15 +1647,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestinationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestinationOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1689,15 +1689,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3SettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3SettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsFrameCaptureS3SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -1732,7 +1732,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsFrameCaptureCdnSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1768,7 +1768,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsFrameCaptureGroupSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1807,15 +1807,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1836,7 +1836,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsCaptionLanguageMappingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "captionChannel", GoGetter: "CaptionChannel"},
@@ -1874,11 +1874,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestinationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestinationOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1912,15 +1912,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsAkamaiSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1973,11 +1973,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsBasicPutSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2021,11 +2021,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsMediaStoreSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2072,11 +2072,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3SettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3SettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsS3SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cannedAcl", GoGetter: "CannedAcl"},
@@ -2111,11 +2111,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsHlsWebdavSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2162,7 +2162,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2183,7 +2183,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsHlsCdnSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2235,11 +2235,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2275,15 +2275,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsKeyProviderServerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2323,7 +2323,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2344,7 +2344,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsStaticKeySettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2382,7 +2382,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adMarkers", GoGetter: "AdMarkers"},
@@ -2543,15 +2543,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestinationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestinationOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2585,7 +2585,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMediaPackageGroupSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2620,15 +2620,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestinationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestinationOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2662,7 +2662,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acquisitionPointId", GoGetter: "AcquisitionPointId"},
@@ -2751,11 +2751,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMultiplexGroupSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2787,7 +2787,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveGroupSettings", GoGetter: "ArchiveGroupSettings"},
@@ -2851,11 +2851,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsRtmpGroupSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adMarkers", GoGetter: "AdMarkers"},
@@ -2908,11 +2908,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsUdpGroupSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2953,7 +2953,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2994,11 +2994,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputs",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3019,7 +3019,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioDescriptionNames", GoGetter: "AudioDescriptionNames"},
@@ -3066,27 +3066,27 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3125,11 +3125,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3173,11 +3173,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3212,7 +3212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsM2TsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "absentInputAudioBehavior", GoGetter: "AbsentInputAudioBehavior"},
@@ -3388,7 +3388,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3428,11 +3428,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsContainerSettingsRawSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3464,7 +3464,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsArchiveOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3506,11 +3506,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsFrameCaptureOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3545,23 +3545,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImageOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImageOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsAudioOnlyImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3601,7 +3601,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsAudioOnlyHlsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioGroupId", GoGetter: "AudioGroupId"},
@@ -3646,11 +3646,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFmp4HlsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioRenditionSets", GoGetter: "AudioRenditionSets"},
@@ -3691,11 +3691,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsFrameCaptureHlsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3727,7 +3727,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioOnlyHlsSettings", GoGetter: "AudioOnlyHlsSettings"},
@@ -3775,15 +3775,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8SettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8SettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsM3U8SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioFramesPerPes", GoGetter: "AudioFramesPerPes"},
@@ -3866,7 +3866,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsHlsSettingsStandardHlsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioRenditionSets", GoGetter: "AudioRenditionSets"},
@@ -3904,7 +3904,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsHlsOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3948,11 +3948,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMediaPackageOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3984,11 +3984,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMsSmoothOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4026,15 +4026,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestinationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestinationOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4068,7 +4068,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsMultiplexOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4103,7 +4103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveOutputSettings", GoGetter: "ArchiveOutputSettings"},
@@ -4167,15 +4167,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestinationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestinationOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4209,7 +4209,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certficateMode", GoGetter: "CertficateMode"},
@@ -4253,23 +4253,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbNitSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4308,11 +4308,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbSdtSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4356,11 +4356,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4395,7 +4395,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "absentInputAudioBehavior", GoGetter: "AbsentInputAudioBehavior"},
@@ -4571,7 +4571,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4607,11 +4607,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestinationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestinationOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4645,11 +4645,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsFecOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columnDepth", GoGetter: "ColumnDepth"},
@@ -4690,7 +4690,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bufferMsec", GoGetter: "BufferMsec"},
@@ -4735,7 +4735,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioDescriptions", GoGetter: "AudioDescriptions"},
@@ -4785,11 +4785,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfig",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfig",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsTimecodeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfigOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfigOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsTimecodeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4826,19 +4826,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptions",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "captureInterval", GoGetter: "CaptureInterval"},
@@ -4876,15 +4876,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4920,11 +4920,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsFilterSettingsTemporalFilterSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4962,7 +4962,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adaptiveQuantization", GoGetter: "AdaptiveQuantization"},
@@ -5115,7 +5115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5155,7 +5155,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsList",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5176,7 +5176,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsVideoDescriptionsOutputReference",
 		reflect.TypeOf((*MedialiveChannelEncoderSettingsVideoDescriptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codecSettings", GoGetter: "CodecSettings"},
@@ -5229,27 +5229,27 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachments",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachments",
 		reflect.TypeOf((*MedialiveChannelInputAttachments)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsAudioSilenceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioSelectorName", GoGetter: "AudioSelectorName"},
@@ -5286,11 +5286,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsInputLossSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5325,7 +5325,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioSilenceSettings", GoGetter: "AudioSilenceSettings"},
@@ -5369,11 +5369,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionFailoverConditionSettingsVideoBlackSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blackDetectThreshold", GoGetter: "BlackDetectThreshold"},
@@ -5411,7 +5411,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5432,7 +5432,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5468,7 +5468,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5512,15 +5512,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelector",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelector",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5541,7 +5541,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5579,15 +5579,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelection)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioHlsRenditionSelectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5623,11 +5623,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelection)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioLanguageSelectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5664,11 +5664,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5702,11 +5702,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelection)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5741,11 +5741,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrack)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5766,7 +5766,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5800,7 +5800,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioHlsRenditionSelection", GoGetter: "AudioHlsRenditionSelection"},
@@ -5848,11 +5848,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelector",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelector",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -5873,7 +5873,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5914,15 +5914,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5957,11 +5957,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5999,11 +5999,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6047,7 +6047,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ancillarySourceSettings", GoGetter: "AncillarySourceSettings"},
@@ -6103,11 +6103,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6145,11 +6145,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6187,15 +6187,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangle)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputRectangleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6235,7 +6235,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6274,15 +6274,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsHlsInputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bandwidth", GoGetter: "Bandwidth"},
@@ -6329,7 +6329,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6368,7 +6368,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioSelector", GoGetter: "AudioSelector"},
@@ -6437,11 +6437,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelector",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsVideoSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "colorSpace", GoGetter: "ColorSpace"},
@@ -6479,7 +6479,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsList",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -6500,7 +6500,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputAttachmentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticInputFailoverSettings", GoGetter: "AutomaticInputFailoverSettings"},
@@ -6544,11 +6544,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelInputSpecification",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecification",
 		reflect.TypeOf((*MedialiveChannelInputSpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelInputSpecificationOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputSpecificationOutputReference",
 		reflect.TypeOf((*MedialiveChannelInputSpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codec", GoGetter: "Codec"},
@@ -6586,11 +6586,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelMaintenance",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenance",
 		reflect.TypeOf((*MedialiveChannelMaintenance)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelMaintenanceOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelMaintenanceOutputReference",
 		reflect.TypeOf((*MedialiveChannelMaintenanceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6626,11 +6626,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelTimeouts",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeouts",
 		reflect.TypeOf((*MedialiveChannelTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelTimeoutsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelTimeoutsOutputReference",
 		reflect.TypeOf((*MedialiveChannelTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6671,11 +6671,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveChannel.MedialiveChannelVpc",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpc",
 		reflect.TypeOf((*MedialiveChannelVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveChannel.MedialiveChannelVpcOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelVpcOutputReference",
 		reflect.TypeOf((*MedialiveChannelVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},

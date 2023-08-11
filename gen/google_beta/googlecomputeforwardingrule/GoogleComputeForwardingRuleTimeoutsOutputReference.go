@@ -228,7 +228,7 @@ func NewGoogleComputeForwardingRuleTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleComputeForwardingRuleTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeForwardingRuleTimeoutsOutputReference_Override(g GoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -211,7 +211,7 @@ func NewDataAwsElasticsearchDomainEbsOptionsOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsElasticsearchDomainEbsOptionsOutputReference_Override(d DataAwsEl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

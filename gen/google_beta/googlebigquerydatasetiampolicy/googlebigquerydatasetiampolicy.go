@@ -377,7 +377,7 @@ func NewGoogleBigqueryDatasetIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleBigqueryDatasetIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleBigqueryDatasetIamPolicy_Override(g GoogleBigqueryDatasetIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleBigqueryDatasetIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleBigqueryDatasetIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleBigqueryDatasetIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleBigqueryDatasetIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

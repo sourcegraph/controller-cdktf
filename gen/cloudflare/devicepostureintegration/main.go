@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.devicePostureIntegration.DevicePostureIntegration",
+		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegration",
 		reflect.TypeOf((*DevicePostureIntegration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig",
+		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfig",
 		reflect.TypeOf((*DevicePostureIntegrationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA",
+		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigA",
 		reflect.TypeOf((*DevicePostureIntegrationConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAList",
+		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAList",
 		reflect.TypeOf((*DevicePostureIntegrationConfigAList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference",
+		"@cdktf/provider-cloudflare.devicePostureIntegration.DevicePostureIntegrationConfigAOutputReference",
 		reflect.TypeOf((*DevicePostureIntegrationConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiUrl", GoGetter: "ApiUrl"},

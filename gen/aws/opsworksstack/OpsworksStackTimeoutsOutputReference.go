@@ -180,7 +180,7 @@ func NewOpsworksStackTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_OpsworksStackTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksStack.OpsworksStackTimeoutsOutputReference",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStackTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewOpsworksStackTimeoutsOutputReference_Override(o OpsworksStackTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksStack.OpsworksStackTimeoutsOutputReference",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStackTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

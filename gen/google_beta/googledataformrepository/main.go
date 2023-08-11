@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataformRepository.GoogleDataformRepository",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepository",
 		reflect.TypeOf((*GoogleDataformRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataformRepository.GoogleDataformRepositoryConfig",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepositoryConfig",
 		reflect.TypeOf((*GoogleDataformRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettings",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettings",
 		reflect.TypeOf((*GoogleDataformRepositoryGitRemoteSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepositoryGitRemoteSettingsOutputReference",
 		reflect.TypeOf((*GoogleDataformRepositoryGitRemoteSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationTokenSecretVersion", GoGetter: "AuthenticationTokenSecretVersion"},
@@ -118,11 +118,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataformRepository.GoogleDataformRepositoryTimeouts",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepositoryTimeouts",
 		reflect.TypeOf((*GoogleDataformRepositoryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataformRepository.GoogleDataformRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepositoryTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDataformRepositoryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

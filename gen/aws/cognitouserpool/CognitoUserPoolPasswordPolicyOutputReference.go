@@ -300,7 +300,7 @@ func NewCognitoUserPoolPasswordPolicyOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolPasswordPolicyOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolPasswordPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewCognitoUserPoolPasswordPolicyOutputReference_Override(c CognitoUserPoolP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolPasswordPolicyOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolPasswordPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -179,7 +179,7 @@ func NewEcsTaskDefinitionEphemeralStorageOutputReference(terraformResource cdktf
 	j := jsiiProxy_EcsTaskDefinitionEphemeralStorageOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewEcsTaskDefinitionEphemeralStorageOutputReference_Override(e EcsTaskDefin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionEphemeralStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

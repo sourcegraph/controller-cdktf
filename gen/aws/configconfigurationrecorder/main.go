@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorder",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorder",
 		reflect.TypeOf((*ConfigConfigurationRecorder)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderConfig",
 		reflect.TypeOf((*ConfigConfigurationRecorderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroup",
 		reflect.TypeOf((*ConfigConfigurationRecorderRecordingGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference",
+		"@cdktf/provider-aws.configConfigurationRecorder.ConfigConfigurationRecorderRecordingGroupOutputReference",
 		reflect.TypeOf((*ConfigConfigurationRecorderRecordingGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allSupported", GoGetter: "AllSupported"},

@@ -116,7 +116,7 @@ func NewHorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyList(terraformResource
 	j := jsiiProxy_HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyList{}
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyList",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewHorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyList_Override(h Horizo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyList",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecBehaviorScaleUpPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)

@@ -204,7 +204,7 @@ func NewReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompPr
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompPr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

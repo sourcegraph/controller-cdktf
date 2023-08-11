@@ -203,7 +203,7 @@ func NewMskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference(terraformRe
 	j := jsiiProxy_MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewMskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference_Override(m 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterLoggingInfoBrokerLogsCloudwatchLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

@@ -203,7 +203,7 @@ func NewIotProvisioningTemplatePreProvisioningHookOutputReference(terraformResou
 	j := jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHookOutputReference",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewIotProvisioningTemplatePreProvisioningHookOutputReference_Override(i Iot
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHookOutputReference",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

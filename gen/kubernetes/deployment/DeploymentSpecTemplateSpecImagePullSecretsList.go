@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecImagePullSecretsList(terraformResource cdktf.I
 	j := jsiiProxy_DeploymentSpecTemplateSpecImagePullSecretsList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecImagePullSecretsList_Override(d DeploymentSpec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -180,7 +180,7 @@ func NewGlueCrawlerRecrawlPolicyOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GlueCrawlerRecrawlPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerRecrawlPolicyOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGlueCrawlerRecrawlPolicyOutputReference_Override(g GlueCrawlerRecrawlPol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerRecrawlPolicyOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerRecrawlPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

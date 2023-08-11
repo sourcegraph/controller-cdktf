@@ -203,7 +203,7 @@ func NewJobV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference(ter
 	j := jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewJobV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

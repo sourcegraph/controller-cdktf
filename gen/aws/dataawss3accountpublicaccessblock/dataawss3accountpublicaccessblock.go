@@ -336,7 +336,7 @@ func NewDataAwsS3AccountPublicAccessBlock(scope constructs.Construct, id *string
 	j := jsiiProxy_DataAwsS3AccountPublicAccessBlock{}
 
 	_jsii_.Create(
-		"aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataAwsS3AccountPublicAccessBlock_Override(d DataAwsS3AccountPublicAcces
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataAwsS3AccountPublicAccessBlock_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataAwsS3AccountPublicAccessBlock_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataAwsS3AccountPublicAccessBlock_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataAwsS3AccountPublicAccessBlock_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
 		"tfResourceType",
 		&returns,
 	)

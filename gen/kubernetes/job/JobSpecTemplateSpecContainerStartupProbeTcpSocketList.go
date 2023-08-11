@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecContainerStartupProbeTcpSocketList(terraformResource 
 	j := jsiiProxy_JobSpecTemplateSpecContainerStartupProbeTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerStartupProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerStartupProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecContainerStartupProbeTcpSocketList_Override(j JobSpec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerStartupProbeTcpSocketList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerStartupProbeTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

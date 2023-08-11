@@ -204,7 +204,7 @@ func NewGoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutput
 	j := jsiiProxy_GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

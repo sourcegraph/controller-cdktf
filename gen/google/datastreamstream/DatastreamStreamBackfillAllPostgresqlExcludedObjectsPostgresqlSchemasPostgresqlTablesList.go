@@ -116,7 +116,7 @@ func NewDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPos
 	j := jsiiProxy_DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPos
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

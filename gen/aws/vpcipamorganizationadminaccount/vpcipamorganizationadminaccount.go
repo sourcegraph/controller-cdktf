@@ -363,7 +363,7 @@ func NewVpcIpamOrganizationAdminAccount(scope constructs.Construct, id *string, 
 	j := jsiiProxy_VpcIpamOrganizationAdminAccount{}
 
 	_jsii_.Create(
-		"aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
+		"@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -376,7 +376,7 @@ func NewVpcIpamOrganizationAdminAccount_Override(v VpcIpamOrganizationAdminAccou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
+		"@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -498,7 +498,7 @@ func VpcIpamOrganizationAdminAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
+		"@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func VpcIpamOrganizationAdminAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
+		"@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func VpcIpamOrganizationAdminAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
+		"@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func VpcIpamOrganizationAdminAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
+		"@cdktf/provider-aws.vpcIpamOrganizationAdminAccount.VpcIpamOrganizationAdminAccount",
 		"tfResourceType",
 		&returns,
 	)

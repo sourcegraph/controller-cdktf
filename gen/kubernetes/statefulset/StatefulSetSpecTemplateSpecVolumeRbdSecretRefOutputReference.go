@@ -204,7 +204,7 @@ func NewStatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference(terraformRe
 	j := jsiiProxy_StatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeRbdSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

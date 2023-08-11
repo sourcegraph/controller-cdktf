@@ -228,7 +228,7 @@ func NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOut
 	j := jsiiProxy_CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

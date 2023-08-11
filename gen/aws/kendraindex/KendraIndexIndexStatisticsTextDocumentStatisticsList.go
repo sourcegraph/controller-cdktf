@@ -104,7 +104,7 @@ func NewKendraIndexIndexStatisticsTextDocumentStatisticsList(terraformResource c
 	j := jsiiProxy_KendraIndexIndexStatisticsTextDocumentStatisticsList{}
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsList",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewKendraIndexIndexStatisticsTextDocumentStatisticsList_Override(k KendraIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsList",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexIndexStatisticsTextDocumentStatisticsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

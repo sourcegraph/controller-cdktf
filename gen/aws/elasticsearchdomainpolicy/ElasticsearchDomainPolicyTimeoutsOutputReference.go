@@ -204,7 +204,7 @@ func NewElasticsearchDomainPolicyTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_ElasticsearchDomainPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewElasticsearchDomainPolicyTimeoutsOutputReference_Override(e Elasticsearc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomainPolicy.ElasticsearchDomainPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

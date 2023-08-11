@@ -202,7 +202,7 @@ func NewPodSecurityPolicySpecHostPortsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_PodSecurityPolicySpecHostPortsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewPodSecurityPolicySpecHostPortsOutputReference_Override(p PodSecurityPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

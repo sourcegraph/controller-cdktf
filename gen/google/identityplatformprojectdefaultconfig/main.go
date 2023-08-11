@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfig",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,19 +67,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigConfig",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigConfig",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignIn",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignIn",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignIn)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInAnonymous",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInAnonymous",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInAnonymous)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInAnonymousOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -113,11 +113,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInEmail",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInEmail",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInEmail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInEmailOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInEmailOutputReference",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInEmailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,11 +155,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfig",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfig",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInHashConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigList",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigList",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInHashConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -179,7 +179,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInHashConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -216,7 +216,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInOutputReference",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowDuplicateEmails", GoGetter: "AllowDuplicateEmails"},
@@ -264,11 +264,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInPhoneNumber",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInPhoneNumber",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInPhoneNumber)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -306,11 +306,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigTimeouts",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigTimeouts",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigTimeoutsOutputReference",
 		reflect.TypeOf((*IdentityPlatformProjectDefaultConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		reflect.TypeOf((*ServiceNetworkingPeeredDnsDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig",
 		reflect.TypeOf((*ServiceNetworkingPeeredDnsDomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts",
 		reflect.TypeOf((*ServiceNetworkingPeeredDnsDomainTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference",
 		reflect.TypeOf((*ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

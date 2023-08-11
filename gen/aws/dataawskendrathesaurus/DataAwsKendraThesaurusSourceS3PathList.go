@@ -104,7 +104,7 @@ func NewDataAwsKendraThesaurusSourceS3PathList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsKendraThesaurusSourceS3PathList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathList",
+		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraThesaurusSourceS3PathList_Override(d DataAwsKendraThesaurus
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathList",
+		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

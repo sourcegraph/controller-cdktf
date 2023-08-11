@@ -228,7 +228,7 @@ func NewGoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference(terraf
 	j := jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

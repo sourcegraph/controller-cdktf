@@ -179,7 +179,7 @@ func NewProjectOrganizationPolicyRestorePolicyOutputReference(terraformResource 
 	j := jsiiProxy_ProjectOrganizationPolicyRestorePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicyRestorePolicyOutputReference",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyRestorePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewProjectOrganizationPolicyRestorePolicyOutputReference_Override(p Project
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicyRestorePolicyOutputReference",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyRestorePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -116,7 +116,7 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEd
 	j := jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -261,7 +261,7 @@ func NewFilestoreInstanceNetworksOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_FilestoreInstanceNetworksOutputReference{}
 
 	_jsii_.Create(
-		"google.filestoreInstance.FilestoreInstanceNetworksOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -273,7 +273,7 @@ func NewFilestoreInstanceNetworksOutputReference_Override(f FilestoreInstanceNet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.filestoreInstance.FilestoreInstanceNetworksOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

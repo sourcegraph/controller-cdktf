@@ -226,7 +226,7 @@ func NewWafv2WebAclRuleStatementOrStatementStatementRegexPatternSetReferenceStat
 	j := jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementRegexPatternSetReferenceStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementOrStatementStatementRegexPatternSetReferenceStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementOrStatementStatementRegexPatternSetReferenceStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewWafv2WebAclRuleStatementOrStatementStatementRegexPatternSetReferenceStat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementOrStatementStatementRegexPatternSetReferenceStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementOrStatementStatementRegexPatternSetReferenceStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

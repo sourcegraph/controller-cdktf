@@ -179,7 +179,7 @@ func NewGoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig
 	j := jsiiProxy_GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

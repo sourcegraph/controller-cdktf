@@ -388,7 +388,7 @@ func NewDataAwsEc2TransitGatewayVpnAttachment(scope constructs.Construct, id *st
 	j := jsiiProxy_DataAwsEc2TransitGatewayVpnAttachment{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewDataAwsEc2TransitGatewayVpnAttachment_Override(d DataAwsEc2TransitGatewa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -523,7 +523,7 @@ func DataAwsEc2TransitGatewayVpnAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func DataAwsEc2TransitGatewayVpnAttachment_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func DataAwsEc2TransitGatewayVpnAttachment_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func DataAwsEc2TransitGatewayVpnAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpnAttachment.DataAwsEc2TransitGatewayVpnAttachment",
 		"tfResourceType",
 		&returns,
 	)

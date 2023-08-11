@@ -261,7 +261,7 @@ func NewDataKubernetesStorageClassMetadataOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataKubernetesStorageClassMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassMetadataOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -273,7 +273,7 @@ func NewDataKubernetesStorageClassMetadataOutputReference_Override(d DataKuberne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassMetadataOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

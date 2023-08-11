@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.vertexAiTensorboard.VertexAiTensorboard",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboard",
 		reflect.TypeOf((*VertexAiTensorboard)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiTensorboard.VertexAiTensorboardConfig",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardConfig",
 		reflect.TypeOf((*VertexAiTensorboardConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiTensorboard.VertexAiTensorboardEncryptionSpec",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardEncryptionSpec",
 		reflect.TypeOf((*VertexAiTensorboardEncryptionSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiTensorboard.VertexAiTensorboardEncryptionSpecOutputReference",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardEncryptionSpecOutputReference",
 		reflect.TypeOf((*VertexAiTensorboardEncryptionSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,11 +124,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vertexAiTensorboard.VertexAiTensorboardTimeouts",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeouts",
 		reflect.TypeOf((*VertexAiTensorboardTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vertexAiTensorboard.VertexAiTensorboardTimeoutsOutputReference",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboardTimeoutsOutputReference",
 		reflect.TypeOf((*VertexAiTensorboardTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

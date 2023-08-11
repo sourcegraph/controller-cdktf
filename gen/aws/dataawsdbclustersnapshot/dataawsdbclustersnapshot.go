@@ -579,7 +579,7 @@ func NewDataAwsDbClusterSnapshot(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsDbClusterSnapshot{}
 
 	_jsii_.Create(
-		"aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
+		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -592,7 +592,7 @@ func NewDataAwsDbClusterSnapshot_Override(d DataAwsDbClusterSnapshot, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
+		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -758,7 +758,7 @@ func DataAwsDbClusterSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
+		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -777,7 +777,7 @@ func DataAwsDbClusterSnapshot_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
+		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func DataAwsDbClusterSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
+		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func DataAwsDbClusterSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
+		"@cdktf/provider-aws.dataAwsDbClusterSnapshot.DataAwsDbClusterSnapshot",
 		"tfResourceType",
 		&returns,
 	)

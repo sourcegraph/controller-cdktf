@@ -104,7 +104,7 @@ func NewGoogleComputeServiceAttachmentConnectedEndpointsList(terraformResource c
 	j := jsiiProxy_GoogleComputeServiceAttachmentConnectedEndpointsList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentConnectedEndpointsList",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentConnectedEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleComputeServiceAttachmentConnectedEndpointsList_Override(g GoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentConnectedEndpointsList",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentConnectedEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

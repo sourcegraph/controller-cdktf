@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecContainerEnvList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_JobSpecTemplateSpecContainerEnvList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerEnvList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecContainerEnvList_Override(j JobSpecTemplateSpecContai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerEnvList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

@@ -179,7 +179,7 @@ func NewComputeNodeGroupMaintenanceWindowOutputReference(terraformResource cdktf
 	j := jsiiProxy_ComputeNodeGroupMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeNodeGroupMaintenanceWindowOutputReference_Override(c ComputeNodeG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

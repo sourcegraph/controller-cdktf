@@ -203,7 +203,7 @@ func NewGameliftGameServerGroupAutoScalingPolicyOutputReference(terraformResourc
 	j := jsiiProxy_GameliftGameServerGroupAutoScalingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGameliftGameServerGroupAutoScalingPolicyOutputReference_Override(g Gamel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupAutoScalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

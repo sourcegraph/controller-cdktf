@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.vpcAccessConnector.VpcAccessConnector",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		reflect.TypeOf((*VpcAccessConnector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,15 +94,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vpcAccessConnector.VpcAccessConnectorConfig",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorConfig",
 		reflect.TypeOf((*VpcAccessConnectorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.vpcAccessConnector.VpcAccessConnectorSubnet",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorSubnet",
 		reflect.TypeOf((*VpcAccessConnectorSubnet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorSubnetOutputReference",
 		reflect.TypeOf((*VpcAccessConnectorSubnetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,11 +140,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.vpcAccessConnector.VpcAccessConnectorTimeouts",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorTimeouts",
 		reflect.TypeOf((*VpcAccessConnectorTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.vpcAccessConnector.VpcAccessConnectorTimeoutsOutputReference",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnectorTimeoutsOutputReference",
 		reflect.TypeOf((*VpcAccessConnectorTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

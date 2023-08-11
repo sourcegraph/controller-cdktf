@@ -200,7 +200,7 @@ func NewDataAwsIamGroupUsersOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsIamGroupUsersOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamGroup.DataAwsIamGroupUsersOutputReference",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsIamGroupUsersOutputReference_Override(d DataAwsIamGroupUsersOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamGroup.DataAwsIamGroupUsersOutputReference",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroupUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

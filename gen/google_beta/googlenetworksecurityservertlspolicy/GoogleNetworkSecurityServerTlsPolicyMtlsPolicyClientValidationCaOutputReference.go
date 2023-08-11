@@ -204,7 +204,7 @@ func NewGoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputRe
 	j := jsiiProxy_GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

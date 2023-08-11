@@ -179,7 +179,7 @@ func NewGoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndp
 	j := jsiiProxy_GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

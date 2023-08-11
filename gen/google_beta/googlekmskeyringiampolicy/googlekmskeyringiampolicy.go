@@ -353,7 +353,7 @@ func NewGoogleKmsKeyRingIamPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleKmsKeyRingIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleKmsKeyRingIamPolicy_Override(g GoogleKmsKeyRingIamPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleKmsKeyRingIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleKmsKeyRingIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleKmsKeyRingIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleKmsKeyRingIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

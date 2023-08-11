@@ -520,7 +520,7 @@ func NewNetworkmanagerLink(scope constructs.Construct, id *string, config *Netwo
 	j := jsiiProxy_NetworkmanagerLink{}
 
 	_jsii_.Create(
-		"aws.networkmanagerLink.NetworkmanagerLink",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewNetworkmanagerLink_Override(n NetworkmanagerLink, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerLink.NetworkmanagerLink",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLink",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -721,7 +721,7 @@ func NetworkmanagerLink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerLink.NetworkmanagerLink",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func NetworkmanagerLink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerLink.NetworkmanagerLink",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func NetworkmanagerLink_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerLink.NetworkmanagerLink",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLink",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func NetworkmanagerLink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerLink.NetworkmanagerLink",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLink",
 		"tfResourceType",
 		&returns,
 	)

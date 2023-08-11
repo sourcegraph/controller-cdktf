@@ -228,7 +228,7 @@ func NewGoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputRef
 	j := jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

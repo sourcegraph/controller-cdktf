@@ -179,7 +179,7 @@ func NewStorageBucketCustomPlacementConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_StorageBucketCustomPlacementConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketCustomPlacementConfigOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewStorageBucketCustomPlacementConfigOutputReference_Override(s StorageBuck
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketCustomPlacementConfigOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

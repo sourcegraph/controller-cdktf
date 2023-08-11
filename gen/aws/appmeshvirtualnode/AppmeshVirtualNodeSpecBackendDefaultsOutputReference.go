@@ -180,7 +180,7 @@ func NewAppmeshVirtualNodeSpecBackendDefaultsOutputReference(terraformResource c
 	j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAppmeshVirtualNodeSpecBackendDefaultsOutputReference_Override(a AppmeshV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

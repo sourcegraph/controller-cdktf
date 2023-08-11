@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicy",
 		reflect.TypeOf((*CloudwatchLogDataProtectionPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicyConfig",
+		"@cdktf/provider-aws.cloudwatchLogDataProtectionPolicy.CloudwatchLogDataProtectionPolicyConfig",
 		reflect.TypeOf((*CloudwatchLogDataProtectionPolicyConfig)(nil)).Elem(),
 	)
 }

@@ -251,7 +251,7 @@ func NewWafv2WebAclRuleStatementRateBasedStatementOutputReference(terraformResou
 	j := jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewWafv2WebAclRuleStatementRateBasedStatementOutputReference_Override(w Waf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRateBasedStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

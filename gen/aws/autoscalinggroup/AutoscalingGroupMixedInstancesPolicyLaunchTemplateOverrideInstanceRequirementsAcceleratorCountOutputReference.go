@@ -204,7 +204,7 @@ func NewAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequir
 	j := jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequir
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsAcceleratorCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

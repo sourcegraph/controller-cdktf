@@ -225,7 +225,7 @@ func NewGoogleComposerEnvironmentConfigMaintenanceWindowOutputReference(terrafor
 	j := jsiiProxy_GoogleComposerEnvironmentConfigMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMaintenanceWindowOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleComposerEnvironmentConfigMaintenanceWindowOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMaintenanceWindowOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

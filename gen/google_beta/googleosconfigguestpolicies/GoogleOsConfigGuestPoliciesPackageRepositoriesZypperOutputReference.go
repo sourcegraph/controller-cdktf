@@ -250,7 +250,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference(terr
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

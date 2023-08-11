@@ -204,7 +204,7 @@ func NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference(terr
 	j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

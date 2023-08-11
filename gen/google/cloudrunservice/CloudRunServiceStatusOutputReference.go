@@ -211,7 +211,7 @@ func NewCloudRunServiceStatusOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_CloudRunServiceStatusOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceStatusOutputReference",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewCloudRunServiceStatusOutputReference_Override(c CloudRunServiceStatusOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceStatusOutputReference",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

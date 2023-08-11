@@ -461,7 +461,7 @@ func NewEmrInstanceFleet(scope constructs.Construct, id *string, config *EmrInst
 	j := jsiiProxy_EmrInstanceFleet{}
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleet",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewEmrInstanceFleet_Override(e EmrInstanceFleet, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleet",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -629,7 +629,7 @@ func EmrInstanceFleet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrInstanceFleet.EmrInstanceFleet",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func EmrInstanceFleet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrInstanceFleet.EmrInstanceFleet",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func EmrInstanceFleet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrInstanceFleet.EmrInstanceFleet",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func EmrInstanceFleet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.emrInstanceFleet.EmrInstanceFleet",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleet",
 		"tfResourceType",
 		&returns,
 	)

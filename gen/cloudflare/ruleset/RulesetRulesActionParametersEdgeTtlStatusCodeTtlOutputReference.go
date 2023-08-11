@@ -228,7 +228,7 @@ func NewRulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference(terrafor
 	j := jsiiProxy_RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtlStatusCodeTtlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

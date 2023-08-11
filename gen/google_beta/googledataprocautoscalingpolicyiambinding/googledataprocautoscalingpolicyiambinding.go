@@ -448,7 +448,7 @@ func NewGoogleDataprocAutoscalingPolicyIamBinding(scope constructs.Construct, id
 	j := jsiiProxy_GoogleDataprocAutoscalingPolicyIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataprocAutoscalingPolicyIamBinding_Override(g GoogleDataprocAutos
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataprocAutoscalingPolicyIamBinding_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataprocAutoscalingPolicyIamBinding_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataprocAutoscalingPolicyIamBinding_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataprocAutoscalingPolicyIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamBinding.GoogleDataprocAutoscalingPolicyIamBinding",
 		"tfResourceType",
 		&returns,
 	)

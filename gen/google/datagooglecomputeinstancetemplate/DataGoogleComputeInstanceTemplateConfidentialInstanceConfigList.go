@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceTemplateConfidentialInstanceConfigList(terrafor
 	j := jsiiProxy_DataGoogleComputeInstanceTemplateConfidentialInstanceConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateConfidentialInstanceConfigList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateConfidentialInstanceConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceTemplateConfidentialInstanceConfigList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateConfidentialInstanceConfigList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateConfidentialInstanceConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

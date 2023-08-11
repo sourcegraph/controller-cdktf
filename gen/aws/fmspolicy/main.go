@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.fmsPolicy.FmsPolicy",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		reflect.TypeOf((*FmsPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,15 +96,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fmsPolicy.FmsPolicyConfig",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicyConfig",
 		reflect.TypeOf((*FmsPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fmsPolicy.FmsPolicyExcludeMap",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMap",
 		reflect.TypeOf((*FmsPolicyExcludeMap)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicyExcludeMapOutputReference",
 		reflect.TypeOf((*FmsPolicyExcludeMapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
@@ -142,11 +142,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fmsPolicy.FmsPolicyIncludeMap",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicyIncludeMap",
 		reflect.TypeOf((*FmsPolicyIncludeMap)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fmsPolicy.FmsPolicyIncludeMapOutputReference",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicyIncludeMapOutputReference",
 		reflect.TypeOf((*FmsPolicyIncludeMapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
@@ -184,11 +184,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fmsPolicy.FmsPolicySecurityServicePolicyData",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyData",
 		reflect.TypeOf((*FmsPolicySecurityServicePolicyData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicySecurityServicePolicyDataOutputReference",
 		reflect.TypeOf((*FmsPolicySecurityServicePolicyDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

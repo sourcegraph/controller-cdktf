@@ -104,7 +104,7 @@ func NewDataAwsApiGatewayRestApiEndpointConfigurationList(terraformResource cdkt
 	j := jsiiProxy_DataAwsApiGatewayRestApiEndpointConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationList",
+		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsApiGatewayRestApiEndpointConfigurationList_Override(d DataAwsApiG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationList",
+		"@cdktf/provider-aws.dataAwsApiGatewayRestApi.DataAwsApiGatewayRestApiEndpointConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

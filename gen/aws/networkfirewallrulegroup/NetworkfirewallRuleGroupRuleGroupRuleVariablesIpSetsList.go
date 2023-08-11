@@ -116,7 +116,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList(terraformResour
 	j := jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList{}
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList_Override(n Netw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesIpSetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

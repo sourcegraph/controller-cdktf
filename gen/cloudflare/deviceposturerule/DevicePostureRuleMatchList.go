@@ -116,7 +116,7 @@ func NewDevicePostureRuleMatchList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_DevicePostureRuleMatchList{}
 
 	_jsii_.Create(
-		"cloudflare.devicePostureRule.DevicePostureRuleMatchList",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDevicePostureRuleMatchList_Override(d DevicePostureRuleMatchList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.devicePostureRule.DevicePostureRuleMatchList",
+		"@cdktf/provider-cloudflare.devicePostureRule.DevicePostureRuleMatchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

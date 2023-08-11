@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.logpushJob.LogpushJob",
+		"@cdktf/provider-cloudflare.logpushJob.LogpushJob",
 		reflect.TypeOf((*LogpushJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -86,7 +86,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.logpushJob.LogpushJobConfig",
+		"@cdktf/provider-cloudflare.logpushJob.LogpushJobConfig",
 		reflect.TypeOf((*LogpushJobConfig)(nil)).Elem(),
 	)
 }

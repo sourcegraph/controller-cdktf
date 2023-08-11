@@ -529,7 +529,7 @@ func NewCodepipelineCustomActionType(scope constructs.Construct, id *string, con
 	j := jsiiProxy_CodepipelineCustomActionType{}
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionType",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -542,7 +542,7 @@ func NewCodepipelineCustomActionType_Override(c CodepipelineCustomActionType, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionType",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -708,7 +708,7 @@ func CodepipelineCustomActionType_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionType",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func CodepipelineCustomActionType_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionType",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func CodepipelineCustomActionType_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionType",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func CodepipelineCustomActionType_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionType",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		"tfResourceType",
 		&returns,
 	)

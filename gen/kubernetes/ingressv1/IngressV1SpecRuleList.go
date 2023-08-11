@@ -116,7 +116,7 @@ func NewIngressV1SpecRuleList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_IngressV1SpecRuleList{}
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecRuleList",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIngressV1SpecRuleList_Override(i IngressV1SpecRuleList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingressV1.IngressV1SpecRuleList",
+		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

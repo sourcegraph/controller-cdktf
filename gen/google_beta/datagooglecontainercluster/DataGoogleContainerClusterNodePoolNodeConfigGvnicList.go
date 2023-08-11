@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigGvnicList(terraformResource 
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigGvnicList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigGvnicList_Override(d DataGoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

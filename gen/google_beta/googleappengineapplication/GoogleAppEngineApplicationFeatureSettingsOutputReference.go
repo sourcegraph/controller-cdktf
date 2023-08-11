@@ -179,7 +179,7 @@ func NewGoogleAppEngineApplicationFeatureSettingsOutputReference(terraformResour
 	j := jsiiProxy_GoogleAppEngineApplicationFeatureSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleAppEngineApplicationFeatureSettingsOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

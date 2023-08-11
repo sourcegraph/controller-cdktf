@@ -225,7 +225,7 @@ func NewWafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfig
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementIpSetReferenceStatementIpSetForwardedIpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -390,7 +390,7 @@ func NewGoogleComputeProjectMetadataItem(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleComputeProjectMetadataItem{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewGoogleComputeProjectMetadataItem_Override(g GoogleComputeProjectMetadata
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -547,7 +547,7 @@ func GoogleComputeProjectMetadataItem_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func GoogleComputeProjectMetadataItem_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleComputeProjectMetadataItem_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func GoogleComputeProjectMetadataItem_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
 		"tfResourceType",
 		&returns,
 	)

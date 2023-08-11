@@ -364,7 +364,7 @@ func NewSsoadminInstanceAccessControlAttributes(scope constructs.Construct, id *
 	j := jsiiProxy_SsoadminInstanceAccessControlAttributes{}
 
 	_jsii_.Create(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -377,7 +377,7 @@ func NewSsoadminInstanceAccessControlAttributes_Override(s SsoadminInstanceAcces
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -499,7 +499,7 @@ func SsoadminInstanceAccessControlAttributes_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func SsoadminInstanceAccessControlAttributes_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func SsoadminInstanceAccessControlAttributes_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func SsoadminInstanceAccessControlAttributes_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
 		"tfResourceType",
 		&returns,
 	)

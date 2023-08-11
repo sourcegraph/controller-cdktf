@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.datasyncLocationNfs.DatasyncLocationNfs",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfs",
 		reflect.TypeOf((*DatasyncLocationNfs)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncLocationNfs.DatasyncLocationNfsConfig",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsConfig",
 		reflect.TypeOf((*DatasyncLocationNfsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncLocationNfs.DatasyncLocationNfsMountOptions",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptions",
 		reflect.TypeOf((*DatasyncLocationNfsMountOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.datasyncLocationNfs.DatasyncLocationNfsMountOptionsOutputReference",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsMountOptionsOutputReference",
 		reflect.TypeOf((*DatasyncLocationNfsMountOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -117,11 +117,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfig",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfig",
 		reflect.TypeOf((*DatasyncLocationNfsOnPremConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfigOutputReference",
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfsOnPremConfigOutputReference",
 		reflect.TypeOf((*DatasyncLocationNfsOnPremConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentArns", GoGetter: "AgentArns"},

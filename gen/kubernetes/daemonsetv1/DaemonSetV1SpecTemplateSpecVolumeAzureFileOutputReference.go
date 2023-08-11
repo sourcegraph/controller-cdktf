@@ -250,7 +250,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference(terraformResou
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference_Override(d Dae
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

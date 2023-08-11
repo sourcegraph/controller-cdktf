@@ -370,7 +370,7 @@ func NewDataGoogleMonitoringAppEngineService(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleMonitoringAppEngineService{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataGoogleMonitoringAppEngineService_Override(d DataGoogleMonitoringAppE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -494,7 +494,7 @@ func DataGoogleMonitoringAppEngineService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataGoogleMonitoringAppEngineService_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataGoogleMonitoringAppEngineService_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataGoogleMonitoringAppEngineService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineService",
 		"tfResourceType",
 		&returns,
 	)

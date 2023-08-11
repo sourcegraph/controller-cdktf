@@ -213,7 +213,7 @@ func NewRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference(ter
 	j := jsiiProxy_RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.redisInstance.RedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

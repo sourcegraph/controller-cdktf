@@ -116,7 +116,7 @@ func NewGoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigA
 	j := jsiiProxy_GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -104,7 +104,7 @@ func NewGoogleCertificateManagerDnsAuthorizationDnsResourceRecordList(terraformR
 	j := jsiiProxy_GoogleCertificateManagerDnsAuthorizationDnsResourceRecordList{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationDnsResourceRecordList",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationDnsResourceRecordList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCertificateManagerDnsAuthorizationDnsResourceRecordList_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationDnsResourceRecordList",
+		"@cdktf/provider-google-beta.googleCertificateManagerDnsAuthorization.GoogleCertificateManagerDnsAuthorizationDnsResourceRecordList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

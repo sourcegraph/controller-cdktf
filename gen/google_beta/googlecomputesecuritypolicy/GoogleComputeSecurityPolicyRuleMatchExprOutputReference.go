@@ -179,7 +179,7 @@ func NewGoogleComputeSecurityPolicyRuleMatchExprOutputReference(terraformResourc
 	j := jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchExprOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchExprOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeSecurityPolicyRuleMatchExprOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchExprOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleMatchExprOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

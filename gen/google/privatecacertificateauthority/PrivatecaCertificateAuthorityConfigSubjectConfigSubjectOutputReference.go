@@ -346,7 +346,7 @@ func NewPrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference(t
 	j := jsiiProxy_PrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -358,7 +358,7 @@ func NewPrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

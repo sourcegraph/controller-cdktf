@@ -424,7 +424,7 @@ func NewBigqueryAnalyticsHubListingIamPolicy(scope constructs.Construct, id *str
 	j := jsiiProxy_BigqueryAnalyticsHubListingIamPolicy{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewBigqueryAnalyticsHubListingIamPolicy_Override(b BigqueryAnalyticsHubList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -603,7 +603,7 @@ func BigqueryAnalyticsHubListingIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func BigqueryAnalyticsHubListingIamPolicy_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func BigqueryAnalyticsHubListingIamPolicy_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func BigqueryAnalyticsHubListingIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google.bigqueryAnalyticsHubListingIamPolicy.BigqueryAnalyticsHubListingIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

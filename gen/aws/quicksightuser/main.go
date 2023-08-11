@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.quicksightUser.QuicksightUser",
+		"@cdktf/provider-aws.quicksightUser.QuicksightUser",
 		reflect.TypeOf((*QuicksightUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.quicksightUser.QuicksightUserConfig",
+		"@cdktf/provider-aws.quicksightUser.QuicksightUserConfig",
 		reflect.TypeOf((*QuicksightUserConfig)(nil)).Elem(),
 	)
 }

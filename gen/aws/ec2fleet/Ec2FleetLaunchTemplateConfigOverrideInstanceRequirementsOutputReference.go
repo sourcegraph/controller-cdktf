@@ -658,7 +658,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference(
 	j := jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -670,7 +670,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

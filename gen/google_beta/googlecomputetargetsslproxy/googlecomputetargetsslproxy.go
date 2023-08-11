@@ -543,7 +543,7 @@ func NewGoogleComputeTargetSslProxy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeTargetSslProxy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -556,7 +556,7 @@ func NewGoogleComputeTargetSslProxy_Override(g GoogleComputeTargetSslProxy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -755,7 +755,7 @@ func GoogleComputeTargetSslProxy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func GoogleComputeTargetSslProxy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -793,7 +793,7 @@ func GoogleComputeTargetSslProxy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -806,7 +806,7 @@ func GoogleComputeTargetSslProxy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetSslProxy.GoogleComputeTargetSslProxy",
 		"tfResourceType",
 		&returns,
 	)

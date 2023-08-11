@@ -288,7 +288,7 @@ func NewGoogleDataplexDatascanDataQualityResultRulesRuleOutputReference(terrafor
 	j := jsiiProxy_GoogleDataplexDatascanDataQualityResultRulesRuleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -300,7 +300,7 @@ func NewGoogleDataplexDatascanDataQualityResultRulesRuleOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

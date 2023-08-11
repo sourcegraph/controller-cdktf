@@ -178,7 +178,7 @@ func NewDataOktaUserSecurityQuestionsQuestionsOutputReference(terraformResource 
 	j := jsiiProxy_DataOktaUserSecurityQuestionsQuestionsOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsOutputReference",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataOktaUserSecurityQuestionsQuestionsOutputReference_Override(d DataOkt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsOutputReference",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

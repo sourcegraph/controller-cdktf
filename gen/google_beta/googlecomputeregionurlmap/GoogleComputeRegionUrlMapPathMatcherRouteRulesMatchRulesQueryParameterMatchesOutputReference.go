@@ -251,7 +251,7 @@ func NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMa
 	j := jsiiProxy_GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewGoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

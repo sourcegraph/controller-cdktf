@@ -389,7 +389,7 @@ func NewLambdaProvisionedConcurrencyConfig(scope constructs.Construct, id *strin
 	j := jsiiProxy_LambdaProvisionedConcurrencyConfig{}
 
 	_jsii_.Create(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewLambdaProvisionedConcurrencyConfig_Override(l LambdaProvisionedConcurren
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -546,7 +546,7 @@ func LambdaProvisionedConcurrencyConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func LambdaProvisionedConcurrencyConfig_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func LambdaProvisionedConcurrencyConfig_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func LambdaProvisionedConcurrencyConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfig",
 		"tfResourceType",
 		&returns,
 	)

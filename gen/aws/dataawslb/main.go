@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLb.DataAwsLb",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLb",
 		reflect.TypeOf((*DataAwsLb)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogs", GoGetter: "AccessLogs"},
@@ -86,11 +86,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLb.DataAwsLbAccessLogs",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbAccessLogs",
 		reflect.TypeOf((*DataAwsLbAccessLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLb.DataAwsLbAccessLogsList",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbAccessLogsList",
 		reflect.TypeOf((*DataAwsLbAccessLogsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLb.DataAwsLbAccessLogsOutputReference",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbAccessLogsOutputReference",
 		reflect.TypeOf((*DataAwsLbAccessLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -145,15 +145,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLb.DataAwsLbConfig",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbConfig",
 		reflect.TypeOf((*DataAwsLbConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLb.DataAwsLbSubnetMapping",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMapping",
 		reflect.TypeOf((*DataAwsLbSubnetMapping)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLb.DataAwsLbSubnetMappingList",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMappingList",
 		reflect.TypeOf((*DataAwsLbSubnetMappingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -173,7 +173,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLb.DataAwsLbSubnetMappingOutputReference",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbSubnetMappingOutputReference",
 		reflect.TypeOf((*DataAwsLbSubnetMappingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationId", GoGetter: "AllocationId"},
@@ -210,11 +210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLb.DataAwsLbTimeouts",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbTimeouts",
 		reflect.TypeOf((*DataAwsLbTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLb.DataAwsLbTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsLb.DataAwsLbTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsLbTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -379,7 +379,7 @@ func NewPet(scope constructs.Construct, id *string, config *PetConfig) Pet {
 	j := jsiiProxy_Pet{}
 
 	_jsii_.Create(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewPet_Override(p Pet, scope constructs.Construct, id *string, config *PetC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -536,7 +536,7 @@ func Pet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func Pet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func Pet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func Pet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"random.pet.Pet",
+		"@cdktf/provider-random.pet.Pet",
 		"tfResourceType",
 		&returns,
 	)

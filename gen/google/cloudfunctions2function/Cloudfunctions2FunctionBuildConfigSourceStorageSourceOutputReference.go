@@ -228,7 +228,7 @@ func NewCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference(ter
 	j := jsiiProxy_Cloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfigSourceStorageSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

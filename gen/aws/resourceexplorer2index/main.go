@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.resourceexplorer2Index.Resourceexplorer2Index",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2Index",
 		reflect.TypeOf((*Resourceexplorer2Index)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourceexplorer2Index.Resourceexplorer2IndexConfig",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexConfig",
 		reflect.TypeOf((*Resourceexplorer2IndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeouts",
 		reflect.TypeOf((*Resourceexplorer2IndexTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference",
+		"@cdktf/provider-aws.resourceexplorer2Index.Resourceexplorer2IndexTimeoutsOutputReference",
 		reflect.TypeOf((*Resourceexplorer2IndexTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

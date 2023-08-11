@@ -366,7 +366,7 @@ func NewVpcEndpointSubnetAssociation(scope constructs.Construct, id *string, con
 	j := jsiiProxy_VpcEndpointSubnetAssociation{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
+		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewVpcEndpointSubnetAssociation_Override(v VpcEndpointSubnetAssociation, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
+		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -512,7 +512,7 @@ func VpcEndpointSubnetAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
+		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func VpcEndpointSubnetAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
+		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func VpcEndpointSubnetAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
+		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func VpcEndpointSubnetAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
+		"@cdktf/provider-aws.vpcEndpointSubnetAssociation.VpcEndpointSubnetAssociation",
 		"tfResourceType",
 		&returns,
 	)

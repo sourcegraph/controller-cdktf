@@ -302,7 +302,7 @@ func NewDataAwsKmsSecrets(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsKmsSecrets{}
 
 	_jsii_.Create(
-		"aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
+		"@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsKmsSecrets_Override(d DataAwsKmsSecrets, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
+		"@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -404,7 +404,7 @@ func DataAwsKmsSecrets_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
+		"@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -423,7 +423,7 @@ func DataAwsKmsSecrets_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
+		"@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -442,7 +442,7 @@ func DataAwsKmsSecrets_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
+		"@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -455,7 +455,7 @@ func DataAwsKmsSecrets_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
+		"@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecrets",
 		"tfResourceType",
 		&returns,
 	)

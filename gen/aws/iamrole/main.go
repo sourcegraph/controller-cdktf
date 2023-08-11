@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamRole.IamRole",
+		"@cdktf/provider-aws.iamRole.IamRole",
 		reflect.TypeOf((*IamRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,15 +94,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamRole.IamRoleConfig",
+		"@cdktf/provider-aws.iamRole.IamRoleConfig",
 		reflect.TypeOf((*IamRoleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamRole.IamRoleInlinePolicy",
+		"@cdktf/provider-aws.iamRole.IamRoleInlinePolicy",
 		reflect.TypeOf((*IamRoleInlinePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iamRole.IamRoleInlinePolicyList",
+		"@cdktf/provider-aws.iamRole.IamRoleInlinePolicyList",
 		reflect.TypeOf((*IamRoleInlinePolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iamRole.IamRoleInlinePolicyOutputReference",
+		"@cdktf/provider-aws.iamRole.IamRoleInlinePolicyOutputReference",
 		reflect.TypeOf((*IamRoleInlinePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

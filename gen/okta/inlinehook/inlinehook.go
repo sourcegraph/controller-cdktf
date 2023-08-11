@@ -460,7 +460,7 @@ func NewInlineHook(scope constructs.Construct, id *string, config *InlineHookCon
 	j := jsiiProxy_InlineHook{}
 
 	_jsii_.Create(
-		"okta.inlineHook.InlineHook",
+		"@cdktf/provider-okta.inlineHook.InlineHook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewInlineHook_Override(i InlineHook, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.inlineHook.InlineHook",
+		"@cdktf/provider-okta.inlineHook.InlineHook",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -650,7 +650,7 @@ func InlineHook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.inlineHook.InlineHook",
+		"@cdktf/provider-okta.inlineHook.InlineHook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func InlineHook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.inlineHook.InlineHook",
+		"@cdktf/provider-okta.inlineHook.InlineHook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func InlineHook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.inlineHook.InlineHook",
+		"@cdktf/provider-okta.inlineHook.InlineHook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func InlineHook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.inlineHook.InlineHook",
+		"@cdktf/provider-okta.inlineHook.InlineHook",
 		"tfResourceType",
 		&returns,
 	)

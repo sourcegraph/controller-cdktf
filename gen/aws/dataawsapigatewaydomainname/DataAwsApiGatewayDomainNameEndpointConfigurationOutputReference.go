@@ -167,7 +167,7 @@ func NewDataAwsApiGatewayDomainNameEndpointConfigurationOutputReference(terrafor
 	j := jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsApiGatewayDomainNameEndpointConfigurationOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsApiGatewayDomainName.DataAwsApiGatewayDomainNameEndpointConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

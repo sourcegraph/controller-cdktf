@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appSamlAppSettings.AppSamlAppSettings",
+		"@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettings",
 		reflect.TypeOf((*AppSamlAppSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appSamlAppSettings.AppSamlAppSettingsConfig",
+		"@cdktf/provider-okta.appSamlAppSettings.AppSamlAppSettingsConfig",
 		reflect.TypeOf((*AppSamlAppSettingsConfig)(nil)).Elem(),
 	)
 }

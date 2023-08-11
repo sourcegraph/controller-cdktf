@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.loggingMetric.LoggingMetric",
+		"@cdktf/provider-google.loggingMetric.LoggingMetric",
 		reflect.TypeOf((*LoggingMetric)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,15 +89,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingMetric.LoggingMetricBucketOptions",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptions",
 		reflect.TypeOf((*LoggingMetricBucketOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingMetric.LoggingMetricBucketOptionsExplicitBuckets",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExplicitBuckets",
 		reflect.TypeOf((*LoggingMetricBucketOptionsExplicitBuckets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingMetric.LoggingMetricBucketOptionsExplicitBucketsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExplicitBucketsOutputReference",
 		reflect.TypeOf((*LoggingMetricBucketOptionsExplicitBucketsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bounds", GoGetter: "Bounds"},
@@ -131,11 +131,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingMetric.LoggingMetricBucketOptionsExponentialBuckets",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExponentialBuckets",
 		reflect.TypeOf((*LoggingMetricBucketOptionsExponentialBuckets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingMetric.LoggingMetricBucketOptionsExponentialBucketsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsExponentialBucketsOutputReference",
 		reflect.TypeOf((*LoggingMetricBucketOptionsExponentialBucketsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,11 +176,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingMetric.LoggingMetricBucketOptionsLinearBuckets",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsLinearBuckets",
 		reflect.TypeOf((*LoggingMetricBucketOptionsLinearBuckets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingMetric.LoggingMetricBucketOptionsLinearBucketsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsLinearBucketsOutputReference",
 		reflect.TypeOf((*LoggingMetricBucketOptionsLinearBucketsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,7 +221,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.loggingMetric.LoggingMetricBucketOptionsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsOutputReference",
 		reflect.TypeOf((*LoggingMetricBucketOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,19 +265,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingMetric.LoggingMetricConfig",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricConfig",
 		reflect.TypeOf((*LoggingMetricConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingMetric.LoggingMetricMetricDescriptor",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptor",
 		reflect.TypeOf((*LoggingMetricMetricDescriptor)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingMetric.LoggingMetricMetricDescriptorLabels",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabels",
 		reflect.TypeOf((*LoggingMetricMetricDescriptorLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingMetric.LoggingMetricMetricDescriptorLabelsList",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabelsList",
 		reflect.TypeOf((*LoggingMetricMetricDescriptorLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -298,7 +298,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.loggingMetric.LoggingMetricMetricDescriptorLabelsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorLabelsOutputReference",
 		reflect.TypeOf((*LoggingMetricMetricDescriptorLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -338,7 +338,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.loggingMetric.LoggingMetricMetricDescriptorOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricMetricDescriptorOutputReference",
 		reflect.TypeOf((*LoggingMetricMetricDescriptorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -384,11 +384,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingMetric.LoggingMetricTimeouts",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricTimeouts",
 		reflect.TypeOf((*LoggingMetricTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingMetric.LoggingMetricTimeoutsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricTimeoutsOutputReference",
 		reflect.TypeOf((*LoggingMetricTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

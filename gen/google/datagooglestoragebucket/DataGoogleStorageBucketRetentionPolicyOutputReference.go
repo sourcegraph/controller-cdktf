@@ -178,7 +178,7 @@ func NewDataGoogleStorageBucketRetentionPolicyOutputReference(terraformResource 
 	j := jsiiProxy_DataGoogleStorageBucketRetentionPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketRetentionPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleStorageBucketRetentionPolicyOutputReference_Override(d DataGoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketRetentionPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

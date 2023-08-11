@@ -313,7 +313,7 @@ func NewDataAwsCognitoUserPools(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsCognitoUserPools{}
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
+		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataAwsCognitoUserPools_Override(d DataAwsCognitoUserPools, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
+		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataAwsCognitoUserPools_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
+		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataAwsCognitoUserPools_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
+		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataAwsCognitoUserPools_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
+		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataAwsCognitoUserPools_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
+		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
 		"tfResourceType",
 		&returns,
 	)

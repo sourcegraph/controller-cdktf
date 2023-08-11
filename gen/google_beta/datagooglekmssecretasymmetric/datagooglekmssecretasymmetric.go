@@ -349,7 +349,7 @@ func NewDataGoogleKmsSecretAsymmetric(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleKmsSecretAsymmetric{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -362,7 +362,7 @@ func NewDataGoogleKmsSecretAsymmetric_Override(d DataGoogleKmsSecretAsymmetric, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -484,7 +484,7 @@ func DataGoogleKmsSecretAsymmetric_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func DataGoogleKmsSecretAsymmetric_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataGoogleKmsSecretAsymmetric_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataGoogleKmsSecretAsymmetric_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecretAsymmetric.DataGoogleKmsSecretAsymmetric",
 		"tfResourceType",
 		&returns,
 	)

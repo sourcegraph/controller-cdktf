@@ -448,7 +448,7 @@ func NewCloudRunServiceIamBinding(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CloudRunServiceIamBinding{}
 
 	_jsii_.Create(
-		"google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
+		"@cdktf/provider-google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudRunServiceIamBinding_Override(c CloudRunServiceIamBinding, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
+		"@cdktf/provider-google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func CloudRunServiceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
+		"@cdktf/provider-google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func CloudRunServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
+		"@cdktf/provider-google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func CloudRunServiceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
+		"@cdktf/provider-google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func CloudRunServiceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
+		"@cdktf/provider-google.cloudRunServiceIamBinding.CloudRunServiceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

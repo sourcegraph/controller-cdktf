@@ -104,7 +104,7 @@ func NewDataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList(terraformRes
 	j := jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList{}
 
 	_jsii_.Create(
-		"aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList",
+		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList",
+		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

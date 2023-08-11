@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersAwsAccountIdOutputReference(terraformResource c
 	j := jsiiProxy_SecurityhubInsightFiltersAwsAccountIdOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersAwsAccountIdOutputReference_Override(s Security
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersAwsAccountIdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

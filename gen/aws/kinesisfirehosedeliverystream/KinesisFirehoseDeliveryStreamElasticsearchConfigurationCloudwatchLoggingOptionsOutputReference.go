@@ -228,7 +228,7 @@ func NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLogging
 	j := jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewKinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLogging
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

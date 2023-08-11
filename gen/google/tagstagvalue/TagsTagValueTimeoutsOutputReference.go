@@ -228,7 +228,7 @@ func NewTagsTagValueTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_TagsTagValueTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.tagsTagValue.TagsTagValueTimeoutsOutputReference",
+		"@cdktf/provider-google.tagsTagValue.TagsTagValueTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewTagsTagValueTimeoutsOutputReference_Override(t TagsTagValueTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tagsTagValue.TagsTagValueTimeoutsOutputReference",
+		"@cdktf/provider-google.tagsTagValue.TagsTagValueTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTable",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable",
 		reflect.TypeOf((*GoogleBigqueryTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -116,15 +116,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableConfig",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig",
 		reflect.TypeOf((*GoogleBigqueryTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableEncryptionConfiguration",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableEncryptionConfiguration",
 		reflect.TypeOf((*GoogleBigqueryTableEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,15 +159,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfiguration",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfiguration",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptions",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptions",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationAvroOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -201,11 +201,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptions",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptions",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationCsvOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowJaggedRows", GoGetter: "AllowJaggedRows"},
@@ -254,11 +254,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -296,11 +296,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -341,7 +341,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableExternalDataConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autodetect", GoGetter: "Autodetect"},
@@ -413,11 +413,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableMaterializedView",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableMaterializedView",
 		reflect.TypeOf((*GoogleBigqueryTableMaterializedView)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableMaterializedViewOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableMaterializedViewOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableMaterializedViewOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -457,11 +457,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioning",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioning",
 		reflect.TypeOf((*GoogleBigqueryTableRangePartitioning)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableRangePartitioningOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -498,11 +498,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRange",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRange",
 		reflect.TypeOf((*GoogleBigqueryTableRangePartitioningRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRangeOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRangeOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableRangePartitioningRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -540,11 +540,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableTimePartitioning",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableTimePartitioning",
 		reflect.TypeOf((*GoogleBigqueryTableTimePartitioning)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableTimePartitioningOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableTimePartitioningOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableTimePartitioningOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -587,11 +587,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableView",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableView",
 		reflect.TypeOf((*GoogleBigqueryTableView)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference",
 		reflect.TypeOf((*GoogleBigqueryTableViewOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

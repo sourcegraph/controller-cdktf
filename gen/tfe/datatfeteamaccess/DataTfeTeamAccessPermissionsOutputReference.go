@@ -222,7 +222,7 @@ func NewDataTfeTeamAccessPermissionsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataTfeTeamAccessPermissionsOutputReference{}
 
 	_jsii_.Create(
-		"tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsOutputReference",
+		"@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewDataTfeTeamAccessPermissionsOutputReference_Override(d DataTfeTeamAccess
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsOutputReference",
+		"@cdktf/provider-tfe.dataTfeTeamAccess.DataTfeTeamAccessPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

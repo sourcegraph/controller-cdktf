@@ -520,7 +520,7 @@ func NewGoogleGameServicesGameServerConfig(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleGameServicesGameServerConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewGoogleGameServicesGameServerConfig_Override(g GoogleGameServicesGameServ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -710,7 +710,7 @@ func GoogleGameServicesGameServerConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -729,7 +729,7 @@ func GoogleGameServicesGameServerConfig_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func GoogleGameServicesGameServerConfig_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func GoogleGameServicesGameServerConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerConfig.GoogleGameServicesGameServerConfig",
 		"tfResourceType",
 		&returns,
 	)

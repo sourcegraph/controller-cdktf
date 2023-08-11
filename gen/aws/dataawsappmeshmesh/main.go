@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMesh",
 		reflect.TypeOf((*DataAwsAppmeshMesh)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,19 +66,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshConfig",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshConfig",
 		reflect.TypeOf((*DataAwsAppmeshMeshConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpec",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpec",
 		reflect.TypeOf((*DataAwsAppmeshMeshSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilter",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilter",
 		reflect.TypeOf((*DataAwsAppmeshMeshSpecEgressFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterList",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterList",
 		reflect.TypeOf((*DataAwsAppmeshMeshSpecEgressFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterOutputReference",
 		reflect.TypeOf((*DataAwsAppmeshMeshSpecEgressFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,7 +131,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecList",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecList",
 		reflect.TypeOf((*DataAwsAppmeshMeshSpecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecOutputReference",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecOutputReference",
 		reflect.TypeOf((*DataAwsAppmeshMeshSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -180,7 +180,7 @@ func NewPodSpecVolumeLocalOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_PodSpecVolumeLocalOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeLocalOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeLocalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewPodSpecVolumeLocalOutputReference_Override(p PodSpecVolumeLocalOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeLocalOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeLocalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

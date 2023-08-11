@@ -203,7 +203,7 @@ func NewS3BucketLoggingOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_S3BucketLoggingOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketLoggingOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewS3BucketLoggingOutputReference_Override(s S3BucketLoggingOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketLoggingOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

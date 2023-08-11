@@ -377,7 +377,7 @@ func NewSourcerepoRepositoryIamPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_SourcerepoRepositoryIamPolicy{}
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
+		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewSourcerepoRepositoryIamPolicy_Override(s SourcerepoRepositoryIamPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
+		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -534,7 +534,7 @@ func SourcerepoRepositoryIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
+		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func SourcerepoRepositoryIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
+		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func SourcerepoRepositoryIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
+		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func SourcerepoRepositoryIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
+		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

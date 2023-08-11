@@ -104,7 +104,7 @@ func NewDataGooglePubsubSubscriptionBigqueryConfigList(terraformResource cdktf.I
 	j := jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigList{}
 
 	_jsii_.Create(
-		"google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigList",
+		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePubsubSubscriptionBigqueryConfigList_Override(d DataGooglePubs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigList",
+		"@cdktf/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

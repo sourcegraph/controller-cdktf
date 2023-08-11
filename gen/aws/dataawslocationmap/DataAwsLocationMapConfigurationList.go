@@ -104,7 +104,7 @@ func NewDataAwsLocationMapConfigurationList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsLocationMapConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLocationMap.DataAwsLocationMapConfigurationList",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLocationMapConfigurationList_Override(d DataAwsLocationMapConfigu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLocationMap.DataAwsLocationMapConfigurationList",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMapConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

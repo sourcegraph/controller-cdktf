@@ -366,7 +366,7 @@ func NewLoadBalancerBackendServerPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_LoadBalancerBackendServerPolicy{}
 
 	_jsii_.Create(
-		"aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
+		"@cdktf/provider-aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewLoadBalancerBackendServerPolicy_Override(l LoadBalancerBackendServerPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
+		"@cdktf/provider-aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -523,7 +523,7 @@ func LoadBalancerBackendServerPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
+		"@cdktf/provider-aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func LoadBalancerBackendServerPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
+		"@cdktf/provider-aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func LoadBalancerBackendServerPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
+		"@cdktf/provider-aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func LoadBalancerBackendServerPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
+		"@cdktf/provider-aws.loadBalancerBackendServerPolicy.LoadBalancerBackendServerPolicy",
 		"tfResourceType",
 		&returns,
 	)

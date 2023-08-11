@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstance",
+		"@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstance",
 		reflect.TypeOf((*GoogleFirebaseDatabaseInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceConfig",
+		"@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceConfig",
 		reflect.TypeOf((*GoogleFirebaseDatabaseInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeouts",
+		"@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeouts",
 		reflect.TypeOf((*GoogleFirebaseDatabaseInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFirebaseDatabaseInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

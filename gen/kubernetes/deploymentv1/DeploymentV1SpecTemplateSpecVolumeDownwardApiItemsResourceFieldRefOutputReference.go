@@ -226,7 +226,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutput
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

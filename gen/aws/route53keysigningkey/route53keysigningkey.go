@@ -499,7 +499,7 @@ func NewRoute53KeySigningKey(scope constructs.Construct, id *string, config *Rou
 	j := jsiiProxy_Route53KeySigningKey{}
 
 	_jsii_.Create(
-		"aws.route53KeySigningKey.Route53KeySigningKey",
+		"@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -512,7 +512,7 @@ func NewRoute53KeySigningKey_Override(r Route53KeySigningKey, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53KeySigningKey.Route53KeySigningKey",
+		"@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -667,7 +667,7 @@ func Route53KeySigningKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53KeySigningKey.Route53KeySigningKey",
+		"@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func Route53KeySigningKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53KeySigningKey.Route53KeySigningKey",
+		"@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func Route53KeySigningKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53KeySigningKey.Route53KeySigningKey",
+		"@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -718,7 +718,7 @@ func Route53KeySigningKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53KeySigningKey.Route53KeySigningKey",
+		"@cdktf/provider-aws.route53KeySigningKey.Route53KeySigningKey",
 		"tfResourceType",
 		&returns,
 	)

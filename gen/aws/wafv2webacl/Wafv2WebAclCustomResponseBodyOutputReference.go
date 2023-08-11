@@ -225,7 +225,7 @@ func NewWafv2WebAclCustomResponseBodyOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_Wafv2WebAclCustomResponseBodyOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafv2WebAclCustomResponseBodyOutputReference_Override(w Wafv2WebAclCusto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

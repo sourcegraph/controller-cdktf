@@ -275,7 +275,7 @@ func NewEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference(terraformRe
 	j := jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewEcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference_Override(e 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

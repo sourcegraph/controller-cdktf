@@ -189,7 +189,7 @@ func NewRedshiftEndpointAccessVpcEndpointOutputReference(terraformResource cdktf
 	j := jsiiProxy_RedshiftEndpointAccessVpcEndpointOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointOutputReference",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewRedshiftEndpointAccessVpcEndpointOutputReference_Override(r RedshiftEndp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointOutputReference",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

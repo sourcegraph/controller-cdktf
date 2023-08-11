@@ -1141,7 +1141,7 @@ func NewSecurePasswordStoreApp(scope constructs.Construct, id *string, config *S
 	j := jsiiProxy_SecurePasswordStoreApp{}
 
 	_jsii_.Create(
-		"okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1154,7 +1154,7 @@ func NewSecurePasswordStoreApp_Override(s SecurePasswordStoreApp, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1617,7 +1617,7 @@ func SecurePasswordStoreApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1636,7 +1636,7 @@ func SecurePasswordStoreApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1655,7 +1655,7 @@ func SecurePasswordStoreApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1668,7 +1668,7 @@ func SecurePasswordStoreApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.securePasswordStoreApp.SecurePasswordStoreApp",
+		"@cdktf/provider-okta.securePasswordStoreApp.SecurePasswordStoreApp",
 		"tfResourceType",
 		&returns,
 	)

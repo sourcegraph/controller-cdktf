@@ -116,7 +116,7 @@ func NewWaitingRoomRulesRulesList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_WaitingRoomRulesRulesList{}
 
 	_jsii_.Create(
-		"cloudflare.waitingRoomRules.WaitingRoomRulesRulesList",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWaitingRoomRulesRulesList_Override(w WaitingRoomRulesRulesList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.waitingRoomRules.WaitingRoomRulesRulesList",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

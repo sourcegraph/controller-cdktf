@@ -116,7 +116,7 @@ func NewPodDisruptionBudgetV1SpecSelectorMatchExpressionsList(terraformResource 
 	j := jsiiProxy_PodDisruptionBudgetV1SpecSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1SpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1SpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodDisruptionBudgetV1SpecSelectorMatchExpressionsList_Override(p PodDisr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1SpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1SpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -298,7 +298,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference(terraformResource 
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -310,7 +310,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference_Override(d DaemonS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeIscsiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

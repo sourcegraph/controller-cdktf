@@ -178,7 +178,7 @@ func NewSignerSigningJobSignedObjectS3OutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SignerSigningJobSignedObjectS3OutputReference{}
 
 	_jsii_.Create(
-		"aws.signerSigningJob.SignerSigningJobSignedObjectS3OutputReference",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObjectS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewSignerSigningJobSignedObjectS3OutputReference_Override(s SignerSigningJo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.signerSigningJob.SignerSigningJobSignedObjectS3OutputReference",
+		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSignedObjectS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

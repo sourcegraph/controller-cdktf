@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeSnapshot.ComputeSnapshot",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshot",
 		reflect.TypeOf((*ComputeSnapshot)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,15 +96,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSnapshot.ComputeSnapshotConfig",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotConfig",
 		reflect.TypeOf((*ComputeSnapshotConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKey",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKey",
 		reflect.TypeOf((*ComputeSnapshotSnapshotEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKeyOutputReference",
 		reflect.TypeOf((*ComputeSnapshotSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,11 +146,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSnapshot.ComputeSnapshotSourceDiskEncryptionKey",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSourceDiskEncryptionKey",
 		reflect.TypeOf((*ComputeSnapshotSourceDiskEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSnapshot.ComputeSnapshotSourceDiskEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotSourceDiskEncryptionKeyOutputReference",
 		reflect.TypeOf((*ComputeSnapshotSourceDiskEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,11 +188,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSnapshot.ComputeSnapshotTimeouts",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotTimeouts",
 		reflect.TypeOf((*ComputeSnapshotTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSnapshot.ComputeSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSnapshot.ComputeSnapshotTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeSnapshotTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -299,7 +299,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference(terrafo
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeCephFsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

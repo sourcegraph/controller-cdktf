@@ -228,7 +228,7 @@ func NewHealthcareDicomStoreTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_HealthcareDicomStoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareDicomStore.HealthcareDicomStoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewHealthcareDicomStoreTimeoutsOutputReference_Override(h HealthcareDicomSt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareDicomStore.HealthcareDicomStoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverride",
 		reflect.TypeOf((*ZoneSettingsOverride)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideConfig",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideConfig",
 		reflect.TypeOf((*ZoneSettingsOverrideConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettings",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettings",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,11 +94,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinify",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinify",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMinify)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyList",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMinifyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMinifyOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMinifyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -153,11 +153,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirect",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirect",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMobileRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectList",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMobileRedirectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -177,7 +177,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsMobileRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,7 +212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alwaysOnline", GoGetter: "AlwaysOnline"},
@@ -299,11 +299,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeader",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeader",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsSecurityHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderList",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsSecurityHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -323,7 +323,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -360,15 +360,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettings",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettings",
 		reflect.TypeOf((*ZoneSettingsOverrideSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinify",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinify",
 		reflect.TypeOf((*ZoneSettingsOverrideSettingsMinify)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMinifyOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideSettingsMinifyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -406,11 +406,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirect",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirect",
 		reflect.TypeOf((*ZoneSettingsOverrideSettingsMobileRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirectOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsMobileRedirectOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideSettingsMobileRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -448,7 +448,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alwaysOnline", GoGetter: "AlwaysOnline"},
@@ -648,11 +648,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeader",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeader",
 		reflect.TypeOf((*ZoneSettingsOverrideSettingsSecurityHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeaderOutputReference",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideSettingsSecurityHeaderOutputReference",
 		reflect.TypeOf((*ZoneSettingsOverrideSettingsSecurityHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsList(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsList_Override(d DataAwsLaunchTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

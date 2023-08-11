@@ -323,7 +323,7 @@ func NewGoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutpu
 	j := jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -335,7 +335,7 @@ func NewGoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

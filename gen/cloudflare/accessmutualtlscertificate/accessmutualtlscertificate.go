@@ -426,7 +426,7 @@ func NewAccessMutualTlsCertificate(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_AccessMutualTlsCertificate{}
 
 	_jsii_.Create(
-		"cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
+		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewAccessMutualTlsCertificate_Override(a AccessMutualTlsCertificate, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
+		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -605,7 +605,7 @@ func AccessMutualTlsCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
+		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func AccessMutualTlsCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
+		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func AccessMutualTlsCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
+		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func AccessMutualTlsCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
+		"@cdktf/provider-cloudflare.accessMutualTlsCertificate.AccessMutualTlsCertificate",
 		"tfResourceType",
 		&returns,
 	)

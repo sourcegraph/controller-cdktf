@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisForwardPathComponentsList(terraformResource cd
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisForwardPathComponentsList_Override(e Ec2Networ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

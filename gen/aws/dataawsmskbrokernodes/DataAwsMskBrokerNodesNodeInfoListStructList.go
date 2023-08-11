@@ -104,7 +104,7 @@ func NewDataAwsMskBrokerNodesNodeInfoListStructList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMskBrokerNodesNodeInfoListStructList_Override(d DataAwsMskBrokerN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

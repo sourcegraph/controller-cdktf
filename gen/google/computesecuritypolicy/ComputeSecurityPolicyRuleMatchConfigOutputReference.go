@@ -179,7 +179,7 @@ func NewComputeSecurityPolicyRuleMatchConfigOutputReference(terraformResource cd
 	j := jsiiProxy_ComputeSecurityPolicyRuleMatchConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeSecurityPolicyRuleMatchConfigOutputReference_Override(c ComputeSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleMatchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

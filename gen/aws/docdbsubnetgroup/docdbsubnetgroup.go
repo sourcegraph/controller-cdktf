@@ -450,7 +450,7 @@ func NewDocdbSubnetGroup(scope constructs.Construct, id *string, config *DocdbSu
 	j := jsiiProxy_DocdbSubnetGroup{}
 
 	_jsii_.Create(
-		"aws.docdbSubnetGroup.DocdbSubnetGroup",
+		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewDocdbSubnetGroup_Override(d DocdbSubnetGroup, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbSubnetGroup.DocdbSubnetGroup",
+		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -640,7 +640,7 @@ func DocdbSubnetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbSubnetGroup.DocdbSubnetGroup",
+		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func DocdbSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbSubnetGroup.DocdbSubnetGroup",
+		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DocdbSubnetGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbSubnetGroup.DocdbSubnetGroup",
+		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func DocdbSubnetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.docdbSubnetGroup.DocdbSubnetGroup",
+		"@cdktf/provider-aws.docdbSubnetGroup.DocdbSubnetGroup",
 		"tfResourceType",
 		&returns,
 	)

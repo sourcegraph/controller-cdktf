@@ -371,7 +371,7 @@ func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference(terrafo
 	j := jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
 		reflect.TypeOf((*GoogleNetworkServicesGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -103,15 +103,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig",
 		reflect.TypeOf((*GoogleNetworkServicesGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts",
 		reflect.TypeOf((*GoogleNetworkServicesGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleNetworkServicesGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironment",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
 		reflect.TypeOf((*MwaaEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -125,19 +125,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentConfig",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentConfig",
 		reflect.TypeOf((*MwaaEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdated",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdated",
 		reflect.TypeOf((*MwaaEnvironmentLastUpdated)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedError",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedError",
 		reflect.TypeOf((*MwaaEnvironmentLastUpdatedError)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorList",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorList",
 		reflect.TypeOf((*MwaaEnvironmentLastUpdatedErrorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -157,7 +157,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentLastUpdatedErrorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,7 +191,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
 		reflect.TypeOf((*MwaaEnvironmentLastUpdatedList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -211,7 +211,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentLastUpdatedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -246,15 +246,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfiguration",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfiguration",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogs",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogs",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationDagProcessingLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationDagProcessingLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
@@ -293,7 +293,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,11 +345,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogs",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogs",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationSchedulerLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationSchedulerLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
@@ -388,11 +388,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogs",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogs",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationTaskLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationTaskLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
@@ -431,11 +431,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogs",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogs",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationWebserverLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
@@ -474,11 +474,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogs",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogs",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationWorkerLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentLoggingConfigurationWorkerLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchLogGroupArn", GoGetter: "CloudWatchLogGroupArn"},
@@ -517,11 +517,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentNetworkConfiguration",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentNetworkConfiguration",
 		reflect.TypeOf((*MwaaEnvironmentNetworkConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentNetworkConfigurationOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentNetworkConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -557,11 +557,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mwaaEnvironment.MwaaEnvironmentTimeouts",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeouts",
 		reflect.TypeOf((*MwaaEnvironmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.mwaaEnvironment.MwaaEnvironmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentTimeoutsOutputReference",
 		reflect.TypeOf((*MwaaEnvironmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

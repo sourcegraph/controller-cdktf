@@ -104,7 +104,7 @@ func NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerReposito
 	j := jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList",
+		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerReposito
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList",
+		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

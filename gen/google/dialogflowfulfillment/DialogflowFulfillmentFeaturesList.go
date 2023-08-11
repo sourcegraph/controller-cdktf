@@ -116,7 +116,7 @@ func NewDialogflowFulfillmentFeaturesList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DialogflowFulfillmentFeaturesList{}
 
 	_jsii_.Create(
-		"google.dialogflowFulfillment.DialogflowFulfillmentFeaturesList",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDialogflowFulfillmentFeaturesList_Override(d DialogflowFulfillmentFeatur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowFulfillment.DialogflowFulfillmentFeaturesList",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

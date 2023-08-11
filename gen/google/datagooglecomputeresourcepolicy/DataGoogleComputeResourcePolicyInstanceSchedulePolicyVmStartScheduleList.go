@@ -104,7 +104,7 @@ func NewDataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleList
 	j := jsiiProxy_DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleList",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleList",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

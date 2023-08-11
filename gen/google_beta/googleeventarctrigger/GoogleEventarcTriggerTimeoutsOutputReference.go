@@ -228,7 +228,7 @@ func NewGoogleEventarcTriggerTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleEventarcTriggerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleEventarcTrigger.GoogleEventarcTriggerTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleEventarcTriggerTimeoutsOutputReference_Override(g GoogleEventarcTr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEventarcTrigger.GoogleEventarcTriggerTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTriggerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

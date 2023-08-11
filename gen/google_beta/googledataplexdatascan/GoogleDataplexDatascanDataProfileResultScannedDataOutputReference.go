@@ -167,7 +167,7 @@ func NewGoogleDataplexDatascanDataProfileResultScannedDataOutputReference(terraf
 	j := jsiiProxy_GoogleDataplexDatascanDataProfileResultScannedDataOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultScannedDataOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultScannedDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewGoogleDataplexDatascanDataProfileResultScannedDataOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultScannedDataOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultScannedDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

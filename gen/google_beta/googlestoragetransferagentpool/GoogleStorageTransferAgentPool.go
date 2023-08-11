@@ -426,7 +426,7 @@ func NewGoogleStorageTransferAgentPool(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleStorageTransferAgentPool{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewGoogleStorageTransferAgentPool_Override(g GoogleStorageTransferAgentPool
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -583,7 +583,7 @@ func GoogleStorageTransferAgentPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func GoogleStorageTransferAgentPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func GoogleStorageTransferAgentPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func GoogleStorageTransferAgentPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
+		"@cdktf/provider-google-beta.googleStorageTransferAgentPool.GoogleStorageTransferAgentPool",
 		"tfResourceType",
 		&returns,
 	)

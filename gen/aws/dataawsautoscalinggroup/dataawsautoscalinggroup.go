@@ -511,7 +511,7 @@ func NewDataAwsAutoscalingGroup(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsAutoscalingGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -524,7 +524,7 @@ func NewDataAwsAutoscalingGroup_Override(d DataAwsAutoscalingGroup, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -624,7 +624,7 @@ func DataAwsAutoscalingGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func DataAwsAutoscalingGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -662,7 +662,7 @@ func DataAwsAutoscalingGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func DataAwsAutoscalingGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroup.DataAwsAutoscalingGroup",
 		"tfResourceType",
 		&returns,
 	)

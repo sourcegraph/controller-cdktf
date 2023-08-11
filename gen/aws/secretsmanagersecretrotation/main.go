@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
 		reflect.TypeOf((*SecretsmanagerSecretRotation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationConfig",
 		reflect.TypeOf((*SecretsmanagerSecretRotationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRules",
 		reflect.TypeOf((*SecretsmanagerSecretRotationRotationRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference",
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotationRotationRulesOutputReference",
 		reflect.TypeOf((*SecretsmanagerSecretRotationRotationRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticallyAfterDays", GoGetter: "AutomaticallyAfterDays"},

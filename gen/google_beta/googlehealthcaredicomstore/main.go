@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStore",
 		reflect.TypeOf((*GoogleHealthcareDicomStore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreConfig",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfig",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfig",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreNotificationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreNotificationConfigOutputReference",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreNotificationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -117,15 +117,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigs",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigs",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreStreamConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsBigqueryDestination",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsBigqueryDestination",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreStreamConfigsBigqueryDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsList",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsList",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreStreamConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -180,7 +180,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreStreamConfigsOutputReference",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreStreamConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryDestination", GoGetter: "BigqueryDestination"},
@@ -215,11 +215,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeouts",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeouts",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStore.GoogleHealthcareDicomStoreTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleHealthcareDicomStoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

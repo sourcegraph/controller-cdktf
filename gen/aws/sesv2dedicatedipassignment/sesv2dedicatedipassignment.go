@@ -366,7 +366,7 @@ func NewSesv2DedicatedIpAssignment(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_Sesv2DedicatedIpAssignment{}
 
 	_jsii_.Create(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewSesv2DedicatedIpAssignment_Override(s Sesv2DedicatedIpAssignment, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -512,7 +512,7 @@ func Sesv2DedicatedIpAssignment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func Sesv2DedicatedIpAssignment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func Sesv2DedicatedIpAssignment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func Sesv2DedicatedIpAssignment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignment",
 		"tfResourceType",
 		&returns,
 	)

@@ -189,7 +189,7 @@ func NewDataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference(terra
 	j := jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference",
+		"@cdktf/provider-aws.dataAwsGlueConnection.DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

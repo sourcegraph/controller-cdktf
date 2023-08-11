@@ -227,7 +227,7 @@ func NewGoogleBigqueryJobLoadTimePartitioningOutputReference(terraformResource c
 	j := jsiiProxy_GoogleBigqueryJobLoadTimePartitioningOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobLoadTimePartitioningOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobLoadTimePartitioningOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleBigqueryJobLoadTimePartitioningOutputReference_Override(g GoogleBi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobLoadTimePartitioningOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobLoadTimePartitioningOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

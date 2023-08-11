@@ -178,7 +178,7 @@ func NewDataGoogleVertexAiIndexIndexStatsOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataGoogleVertexAiIndexIndexStatsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexIndexStatsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexIndexStatsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleVertexAiIndexIndexStatsOutputReference_Override(d DataGoogleVe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexIndexStatsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexIndexStatsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

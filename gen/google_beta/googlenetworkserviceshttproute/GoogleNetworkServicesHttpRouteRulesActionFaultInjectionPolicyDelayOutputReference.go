@@ -204,7 +204,7 @@ func NewGoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutput
 	j := jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewGlueCatalogTableStorageDescriptorColumnsList(terraformResource cdktf.IIn
 	j := jsiiProxy_GlueCatalogTableStorageDescriptorColumnsList{}
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsList",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueCatalogTableStorageDescriptorColumnsList_Override(g GlueCatalogTable
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsList",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorColumnsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

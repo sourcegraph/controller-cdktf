@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecReadinessGateList(terraformResource cdktf.IIn
 	j := jsiiProxy_StatefulSetSpecTemplateSpecReadinessGateList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecReadinessGateList_Override(s StatefulSetSpecT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -226,7 +226,7 @@ func NewKmsCryptoKeyIamBindingConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_KmsCryptoKeyIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBindingConditionOutputReference",
+		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewKmsCryptoKeyIamBindingConditionOutputReference_Override(k KmsCryptoKeyIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBindingConditionOutputReference",
+		"@cdktf/provider-google.kmsCryptoKeyIamBinding.KmsCryptoKeyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

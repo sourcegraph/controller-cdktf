@@ -600,7 +600,7 @@ func NewDmsReplicationTask(scope constructs.Construct, id *string, config *DmsRe
 	j := jsiiProxy_DmsReplicationTask{}
 
 	_jsii_.Create(
-		"aws.dmsReplicationTask.DmsReplicationTask",
+		"@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -613,7 +613,7 @@ func NewDmsReplicationTask_Override(d DmsReplicationTask, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsReplicationTask.DmsReplicationTask",
+		"@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -856,7 +856,7 @@ func DmsReplicationTask_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsReplicationTask.DmsReplicationTask",
+		"@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -875,7 +875,7 @@ func DmsReplicationTask_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsReplicationTask.DmsReplicationTask",
+		"@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -894,7 +894,7 @@ func DmsReplicationTask_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsReplicationTask.DmsReplicationTask",
+		"@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -907,7 +907,7 @@ func DmsReplicationTask_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dmsReplicationTask.DmsReplicationTask",
+		"@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask",
 		"tfResourceType",
 		&returns,
 	)

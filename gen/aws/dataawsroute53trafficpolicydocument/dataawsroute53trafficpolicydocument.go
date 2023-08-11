@@ -423,7 +423,7 @@ func NewDataAwsRoute53TrafficPolicyDocument(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataAwsRoute53TrafficPolicyDocument{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewDataAwsRoute53TrafficPolicyDocument_Override(d DataAwsRoute53TrafficPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -569,7 +569,7 @@ func DataAwsRoute53TrafficPolicyDocument_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataAwsRoute53TrafficPolicyDocument_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataAwsRoute53TrafficPolicyDocument_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataAwsRoute53TrafficPolicyDocument_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocument",
 		"tfResourceType",
 		&returns,
 	)

@@ -297,7 +297,7 @@ func NewJobV1SpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource cd
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeAzureDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewJobV1SpecTemplateSpecVolumeAzureDiskOutputReference_Override(j JobV1Spec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

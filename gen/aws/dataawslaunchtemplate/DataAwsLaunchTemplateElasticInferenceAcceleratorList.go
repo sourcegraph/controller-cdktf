@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateElasticInferenceAcceleratorList(terraformResource c
 	j := jsiiProxy_DataAwsLaunchTemplateElasticInferenceAcceleratorList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateElasticInferenceAcceleratorList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateElasticInferenceAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateElasticInferenceAcceleratorList_Override(d DataAwsL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateElasticInferenceAcceleratorList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateElasticInferenceAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

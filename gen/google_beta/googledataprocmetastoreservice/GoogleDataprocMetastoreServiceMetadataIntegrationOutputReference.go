@@ -179,7 +179,7 @@ func NewGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference(terrafo
 	j := jsiiProxy_GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

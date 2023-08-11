@@ -180,7 +180,7 @@ func NewDaxClusterServerSideEncryptionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DaxClusterServerSideEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxClusterServerSideEncryptionOutputReference",
+		"@cdktf/provider-aws.daxCluster.DaxClusterServerSideEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDaxClusterServerSideEncryptionOutputReference_Override(d DaxClusterServe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxClusterServerSideEncryptionOutputReference",
+		"@cdktf/provider-aws.daxCluster.DaxClusterServerSideEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

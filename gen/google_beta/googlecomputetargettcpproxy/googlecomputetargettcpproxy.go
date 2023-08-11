@@ -495,7 +495,7 @@ func NewGoogleComputeTargetTcpProxy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeTargetTcpProxy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewGoogleComputeTargetTcpProxy_Override(g GoogleComputeTargetTcpProxy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -685,7 +685,7 @@ func GoogleComputeTargetTcpProxy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func GoogleComputeTargetTcpProxy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func GoogleComputeTargetTcpProxy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func GoogleComputeTargetTcpProxy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
+		"@cdktf/provider-google-beta.googleComputeTargetTcpProxy.GoogleComputeTargetTcpProxy",
 		"tfResourceType",
 		&returns,
 	)

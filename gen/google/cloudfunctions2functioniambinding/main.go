@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBinding",
 		reflect.TypeOf((*Cloudfunctions2FunctionIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBindingCondition",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBindingCondition",
 		reflect.TypeOf((*Cloudfunctions2FunctionIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBindingConditionOutputReference",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBindingConditionOutputReference",
 		reflect.TypeOf((*Cloudfunctions2FunctionIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBindingConfig",
+		"@cdktf/provider-google.cloudfunctions2FunctionIamBinding.Cloudfunctions2FunctionIamBindingConfig",
 		reflect.TypeOf((*Cloudfunctions2FunctionIamBindingConfig)(nil)).Elem(),
 	)
 }

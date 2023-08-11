@@ -116,7 +116,7 @@ func NewDataAwsVpcDhcpOptionsFilterList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataAwsVpcDhcpOptionsFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterList",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsVpcDhcpOptionsFilterList_Override(d DataAwsVpcDhcpOptionsFilterLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterList",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

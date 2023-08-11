@@ -202,7 +202,7 @@ func NewAppmeshRouteSpecTcpRouteTimeoutIdleOutputReference(terraformResource cdk
 	j := jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppmeshRouteSpecTcpRouteTimeoutIdleOutputReference_Override(a AppmeshRou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutIdleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -179,7 +179,7 @@ func NewGoogleComputeInstanceFromMachineImageConfidentialInstanceConfigOutputRef
 	j := jsiiProxy_GoogleComputeInstanceFromMachineImageConfidentialInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageConfidentialInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageConfidentialInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeInstanceFromMachineImageConfidentialInstanceConfigOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageConfidentialInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromMachineImage.GoogleComputeInstanceFromMachineImageConfidentialInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

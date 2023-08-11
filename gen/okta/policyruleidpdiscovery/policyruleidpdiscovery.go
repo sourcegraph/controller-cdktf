@@ -679,7 +679,7 @@ func NewPolicyRuleIdpDiscovery(scope constructs.Construct, id *string, config *P
 	j := jsiiProxy_PolicyRuleIdpDiscovery{}
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -692,7 +692,7 @@ func NewPolicyRuleIdpDiscovery_Override(p PolicyRuleIdpDiscovery, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -935,7 +935,7 @@ func PolicyRuleIdpDiscovery_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -954,7 +954,7 @@ func PolicyRuleIdpDiscovery_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -973,7 +973,7 @@ func PolicyRuleIdpDiscovery_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -986,7 +986,7 @@ func PolicyRuleIdpDiscovery_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		"tfResourceType",
 		&returns,
 	)

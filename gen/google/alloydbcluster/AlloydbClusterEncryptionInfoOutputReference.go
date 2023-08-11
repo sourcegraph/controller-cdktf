@@ -178,7 +178,7 @@ func NewAlloydbClusterEncryptionInfoOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AlloydbClusterEncryptionInfoOutputReference{}
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterEncryptionInfoOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterEncryptionInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewAlloydbClusterEncryptionInfoOutputReference_Override(a AlloydbClusterEnc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterEncryptionInfoOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterEncryptionInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsVpcIpamPoolsIpamPoolsList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataAwsVpcIpamPoolsIpamPoolsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPoolsList",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsVpcIpamPoolsIpamPoolsList_Override(d DataAwsVpcIpamPoolsIpamPools
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPoolsList",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

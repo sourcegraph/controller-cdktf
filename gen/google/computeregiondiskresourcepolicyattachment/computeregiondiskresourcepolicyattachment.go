@@ -414,7 +414,7 @@ func NewComputeRegionDiskResourcePolicyAttachment(scope constructs.Construct, id
 	j := jsiiProxy_ComputeRegionDiskResourcePolicyAttachment{}
 
 	_jsii_.Create(
-		"google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewComputeRegionDiskResourcePolicyAttachment_Override(c ComputeRegionDiskRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -582,7 +582,7 @@ func ComputeRegionDiskResourcePolicyAttachment_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func ComputeRegionDiskResourcePolicyAttachment_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func ComputeRegionDiskResourcePolicyAttachment_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func ComputeRegionDiskResourcePolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeRegionDiskResourcePolicyAttachment.ComputeRegionDiskResourcePolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

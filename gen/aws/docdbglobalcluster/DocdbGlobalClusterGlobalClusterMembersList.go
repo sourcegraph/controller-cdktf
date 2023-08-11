@@ -104,7 +104,7 @@ func NewDocdbGlobalClusterGlobalClusterMembersList(terraformResource cdktf.IInte
 	j := jsiiProxy_DocdbGlobalClusterGlobalClusterMembersList{}
 
 	_jsii_.Create(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersList",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDocdbGlobalClusterGlobalClusterMembersList_Override(d DocdbGlobalCluster
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersList",
+		"@cdktf/provider-aws.docdbGlobalCluster.DocdbGlobalClusterGlobalClusterMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

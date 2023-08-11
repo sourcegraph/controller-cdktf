@@ -543,7 +543,7 @@ func NewGoogleOsConfigGuestPolicies(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleOsConfigGuestPolicies{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -556,7 +556,7 @@ func NewGoogleOsConfigGuestPolicies_Override(g GoogleOsConfigGuestPolicies, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -711,7 +711,7 @@ func GoogleOsConfigGuestPolicies_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func GoogleOsConfigGuestPolicies_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func GoogleOsConfigGuestPolicies_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleOsConfigGuestPolicies_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPolicies",
 		"tfResourceType",
 		&returns,
 	)

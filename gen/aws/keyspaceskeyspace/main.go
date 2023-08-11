@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.keyspacesKeyspace.KeyspacesKeyspace",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
 		reflect.TypeOf((*KeyspacesKeyspace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.keyspacesKeyspace.KeyspacesKeyspaceConfig",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceConfig",
 		reflect.TypeOf((*KeyspacesKeyspaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.keyspacesKeyspace.KeyspacesKeyspaceTimeouts",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceTimeouts",
 		reflect.TypeOf((*KeyspacesKeyspaceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.keyspacesKeyspace.KeyspacesKeyspaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspaceTimeoutsOutputReference",
 		reflect.TypeOf((*KeyspacesKeyspaceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

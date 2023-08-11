@@ -228,7 +228,7 @@ func NewMacie2ClassificationJobS3JobDefinitionOutputReference(terraformResource 
 	j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMacie2ClassificationJobS3JobDefinitionOutputReference_Override(m Macie2C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

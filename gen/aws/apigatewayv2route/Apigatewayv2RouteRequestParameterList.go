@@ -116,7 +116,7 @@ func NewApigatewayv2RouteRequestParameterList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_Apigatewayv2RouteRequestParameterList{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterList",
+		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApigatewayv2RouteRequestParameterList_Override(a Apigatewayv2RouteReques
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterList",
+		"@cdktf/provider-aws.apigatewayv2Route.Apigatewayv2RouteRequestParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

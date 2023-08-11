@@ -116,7 +116,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeList_Override(d DaemonSetV1SpecTemplate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

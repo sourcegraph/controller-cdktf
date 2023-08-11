@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.snsPlatformApplication.SnsPlatformApplication",
+		"@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplication",
 		reflect.TypeOf((*SnsPlatformApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.snsPlatformApplication.SnsPlatformApplicationConfig",
+		"@cdktf/provider-aws.snsPlatformApplication.SnsPlatformApplicationConfig",
 		reflect.TypeOf((*SnsPlatformApplicationConfig)(nil)).Elem(),
 	)
 }

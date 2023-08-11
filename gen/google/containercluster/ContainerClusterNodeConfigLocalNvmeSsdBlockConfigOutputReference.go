@@ -179,7 +179,7 @@ func NewContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference(terrafo
 	j := jsiiProxy_ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

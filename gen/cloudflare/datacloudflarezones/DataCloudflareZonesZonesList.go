@@ -104,7 +104,7 @@ func NewDataCloudflareZonesZonesList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DataCloudflareZonesZonesList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesZonesList",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareZonesZonesList_Override(d DataCloudflareZonesZonesList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareZones.DataCloudflareZonesZonesList",
+		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

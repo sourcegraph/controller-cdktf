@@ -250,7 +250,7 @@ func NewGoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsOutp
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewGoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigAddressPoolsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

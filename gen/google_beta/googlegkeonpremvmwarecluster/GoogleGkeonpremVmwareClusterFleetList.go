@@ -104,7 +104,7 @@ func NewGoogleGkeonpremVmwareClusterFleetList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterFleetList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterFleetList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterFleetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleGkeonpremVmwareClusterFleetList_Override(g GoogleGkeonpremVmwareCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterFleetList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterFleetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

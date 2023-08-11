@@ -204,7 +204,7 @@ func NewOrganizationPolicyListPolicyDenyOutputReference(terraformResource cdktf.
 	j := jsiiProxy_OrganizationPolicyListPolicyDenyOutputReference{}
 
 	_jsii_.Create(
-		"google.organizationPolicy.OrganizationPolicyListPolicyDenyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyListPolicyDenyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOrganizationPolicyListPolicyDenyOutputReference_Override(o OrganizationP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationPolicy.OrganizationPolicyListPolicyDenyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyListPolicyDenyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

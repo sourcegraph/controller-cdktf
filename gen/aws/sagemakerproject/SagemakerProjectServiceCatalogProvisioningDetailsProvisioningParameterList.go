@@ -116,7 +116,7 @@ func NewSagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterLi
 	j := jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList{}
 
 	_jsii_.Create(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList",
+		"@cdktf/provider-aws.sagemakerProject.SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

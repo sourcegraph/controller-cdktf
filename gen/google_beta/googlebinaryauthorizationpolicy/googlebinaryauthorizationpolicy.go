@@ -463,7 +463,7 @@ func NewGoogleBinaryAuthorizationPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleBinaryAuthorizationPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -476,7 +476,7 @@ func NewGoogleBinaryAuthorizationPolicy_Override(g GoogleBinaryAuthorizationPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -620,7 +620,7 @@ func GoogleBinaryAuthorizationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -639,7 +639,7 @@ func GoogleBinaryAuthorizationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func GoogleBinaryAuthorizationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func GoogleBinaryAuthorizationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicy",
 		"tfResourceType",
 		&returns,
 	)

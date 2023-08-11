@@ -648,7 +648,7 @@ func NewServicecatalogProduct(scope constructs.Construct, id *string, config *Se
 	j := jsiiProxy_ServicecatalogProduct{}
 
 	_jsii_.Create(
-		"aws.servicecatalogProduct.ServicecatalogProduct",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -661,7 +661,7 @@ func NewServicecatalogProduct_Override(s ServicecatalogProduct, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogProduct.ServicecatalogProduct",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -893,7 +893,7 @@ func ServicecatalogProduct_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogProduct.ServicecatalogProduct",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -912,7 +912,7 @@ func ServicecatalogProduct_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogProduct.ServicecatalogProduct",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -931,7 +931,7 @@ func ServicecatalogProduct_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogProduct.ServicecatalogProduct",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -944,7 +944,7 @@ func ServicecatalogProduct_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogProduct.ServicecatalogProduct",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
 		"tfResourceType",
 		&returns,
 	)

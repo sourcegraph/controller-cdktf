@@ -413,7 +413,7 @@ func NewGoogleLoggingOrganizationExclusion(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleLoggingOrganizationExclusion{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewGoogleLoggingOrganizationExclusion_Override(g GoogleLoggingOrganizationE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleLoggingOrganizationExclusion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleLoggingOrganizationExclusion_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleLoggingOrganizationExclusion_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleLoggingOrganizationExclusion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion",
 		"tfResourceType",
 		&returns,
 	)

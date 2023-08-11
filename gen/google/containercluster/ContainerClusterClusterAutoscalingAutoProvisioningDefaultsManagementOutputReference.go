@@ -215,7 +215,7 @@ func NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutp
 	j := jsiiProxy_ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

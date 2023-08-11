@@ -228,7 +228,7 @@ func NewDeploymentSpecTemplateSpecVolumeGitRepoOutputReference(terraformResource
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeGitRepoOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDeploymentSpecTemplateSpecVolumeGitRepoOutputReference_Override(d Deploy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

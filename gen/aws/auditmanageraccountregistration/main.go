@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		reflect.TypeOf((*AuditmanagerAccountRegistration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistrationConfig",
+		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistrationConfig",
 		reflect.TypeOf((*AuditmanagerAccountRegistrationConfig)(nil)).Elem(),
 	)
 }

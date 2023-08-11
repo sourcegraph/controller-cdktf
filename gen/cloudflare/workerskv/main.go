@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.workersKv.WorkersKv",
+		"@cdktf/provider-cloudflare.workersKv.WorkersKv",
 		reflect.TypeOf((*WorkersKv)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workersKv.WorkersKvConfig",
+		"@cdktf/provider-cloudflare.workersKv.WorkersKvConfig",
 		reflect.TypeOf((*WorkersKvConfig)(nil)).Elem(),
 	)
 }

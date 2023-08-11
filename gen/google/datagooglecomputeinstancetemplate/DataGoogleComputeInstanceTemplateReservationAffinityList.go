@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceTemplateReservationAffinityList(terraformResour
 	j := jsiiProxy_DataGoogleComputeInstanceTemplateReservationAffinityList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinityList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceTemplateReservationAffinityList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinityList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateReservationAffinityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

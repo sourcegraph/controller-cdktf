@@ -116,7 +116,7 @@ func NewAddressMapIpsList(terraformResource cdktf.IInterpolatingParent, terrafor
 	j := jsiiProxy_AddressMapIpsList{}
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMapIpsList",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapIpsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAddressMapIpsList_Override(a AddressMapIpsList, terraformResource cdktf.
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.addressMap.AddressMapIpsList",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapIpsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

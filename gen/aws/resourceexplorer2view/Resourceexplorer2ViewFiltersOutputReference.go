@@ -179,7 +179,7 @@ func NewResourceexplorer2ViewFiltersOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_Resourceexplorer2ViewFiltersOutputReference{}
 
 	_jsii_.Create(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewFiltersOutputReference",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewResourceexplorer2ViewFiltersOutputReference_Override(r Resourceexplorer2
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewFiltersOutputReference",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

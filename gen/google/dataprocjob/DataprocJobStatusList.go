@@ -104,7 +104,7 @@ func NewDataprocJobStatusList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_DataprocJobStatusList{}
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobStatusList",
+		"@cdktf/provider-google.dataprocJob.DataprocJobStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataprocJobStatusList_Override(d DataprocJobStatusList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobStatusList",
+		"@cdktf/provider-google.dataprocJob.DataprocJobStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

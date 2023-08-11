@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList(terraf
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

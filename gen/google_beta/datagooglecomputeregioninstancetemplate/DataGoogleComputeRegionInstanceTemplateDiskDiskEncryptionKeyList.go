@@ -104,7 +104,7 @@ func NewDataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyList(terrafo
 	j := jsiiProxy_DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceTemplate.DataGoogleComputeRegionInstanceTemplateDiskDiskEncryptionKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

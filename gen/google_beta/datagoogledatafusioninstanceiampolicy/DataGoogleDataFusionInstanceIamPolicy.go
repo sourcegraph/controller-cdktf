@@ -361,7 +361,7 @@ func NewDataGoogleDataFusionInstanceIamPolicy(scope constructs.Construct, id *st
 	j := jsiiProxy_DataGoogleDataFusionInstanceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleDataFusionInstanceIamPolicy_Override(d DataGoogleDataFusionIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleDataFusionInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleDataFusionInstanceIamPolicy_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleDataFusionInstanceIamPolicy_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleDataFusionInstanceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataFusionInstanceIamPolicy.DataGoogleDataFusionInstanceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

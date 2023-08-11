@@ -537,7 +537,7 @@ func NewBudgetsBudgetAction(scope constructs.Construct, id *string, config *Budg
 	j := jsiiProxy_BudgetsBudgetAction{}
 
 	_jsii_.Create(
-		"aws.budgetsBudgetAction.BudgetsBudgetAction",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -550,7 +550,7 @@ func NewBudgetsBudgetAction_Override(b BudgetsBudgetAction, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudgetAction.BudgetsBudgetAction",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -727,7 +727,7 @@ func BudgetsBudgetAction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.budgetsBudgetAction.BudgetsBudgetAction",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func BudgetsBudgetAction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.budgetsBudgetAction.BudgetsBudgetAction",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func BudgetsBudgetAction_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.budgetsBudgetAction.BudgetsBudgetAction",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -778,7 +778,7 @@ func BudgetsBudgetAction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.budgetsBudgetAction.BudgetsBudgetAction",
+		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction",
 		"tfResourceType",
 		&returns,
 	)

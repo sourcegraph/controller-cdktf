@@ -178,7 +178,7 @@ func NewDataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputR
 	j := jsiiProxy_DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

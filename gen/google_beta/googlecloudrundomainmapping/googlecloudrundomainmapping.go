@@ -447,7 +447,7 @@ func NewGoogleCloudRunDomainMapping(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleCloudRunDomainMapping{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewGoogleCloudRunDomainMapping_Override(g GoogleCloudRunDomainMapping, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -604,7 +604,7 @@ func GoogleCloudRunDomainMapping_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func GoogleCloudRunDomainMapping_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func GoogleCloudRunDomainMapping_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func GoogleCloudRunDomainMapping_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMapping",
 		"tfResourceType",
 		&returns,
 	)

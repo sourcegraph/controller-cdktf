@@ -179,7 +179,7 @@ func NewComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference(terr
 	j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference{}
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

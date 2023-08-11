@@ -985,7 +985,7 @@ func NewIdpSocial(scope constructs.Construct, id *string, config *IdpSocialConfi
 	j := jsiiProxy_IdpSocial{}
 
 	_jsii_.Create(
-		"okta.idpSocial.IdpSocial",
+		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -998,7 +998,7 @@ func NewIdpSocial_Override(i IdpSocial, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.idpSocial.IdpSocial",
+		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -1406,7 +1406,7 @@ func IdpSocial_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.idpSocial.IdpSocial",
+		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1425,7 +1425,7 @@ func IdpSocial_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.idpSocial.IdpSocial",
+		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1444,7 +1444,7 @@ func IdpSocial_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.idpSocial.IdpSocial",
+		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1457,7 +1457,7 @@ func IdpSocial_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.idpSocial.IdpSocial",
+		"@cdktf/provider-okta.idpSocial.IdpSocial",
 		"tfResourceType",
 		&returns,
 	)

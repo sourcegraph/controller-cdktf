@@ -228,7 +228,7 @@ func NewReplicationControllerV1SpecTemplateSpecAffinityOutputReference(terraform
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecAffinityOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewReplicationControllerV1SpecTemplateSpecAffinityOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

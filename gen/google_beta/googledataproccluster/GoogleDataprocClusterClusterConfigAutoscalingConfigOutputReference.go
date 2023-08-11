@@ -179,7 +179,7 @@ func NewGoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference(terra
 	j := jsiiProxy_GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

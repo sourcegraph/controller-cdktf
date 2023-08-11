@@ -202,7 +202,7 @@ func NewSignerSigningProfileSignatureValidityPeriodOutputReference(terraformReso
 	j := jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference{}
 
 	_jsii_.Create(
-		"aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriodOutputReference",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSignerSigningProfileSignatureValidityPeriodOutputReference_Override(s Si
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriodOutputReference",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileSignatureValidityPeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

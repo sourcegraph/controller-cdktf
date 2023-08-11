@@ -227,7 +227,7 @@ func NewSagemakerFeatureGroupOfflineStoreConfigOutputReference(terraformResource
 	j := jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSagemakerFeatureGroupOfflineStoreConfigOutputReference_Override(s Sagema
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

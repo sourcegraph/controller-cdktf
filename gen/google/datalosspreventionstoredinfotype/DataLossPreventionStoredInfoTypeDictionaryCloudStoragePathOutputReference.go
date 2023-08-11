@@ -179,7 +179,7 @@ func NewDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReferenc
 	j := jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

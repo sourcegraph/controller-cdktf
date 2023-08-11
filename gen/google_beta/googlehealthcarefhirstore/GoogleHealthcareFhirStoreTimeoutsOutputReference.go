@@ -228,7 +228,7 @@ func NewGoogleHealthcareFhirStoreTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleHealthcareFhirStoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleHealthcareFhirStoreTimeoutsOutputReference_Override(g GoogleHealth
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

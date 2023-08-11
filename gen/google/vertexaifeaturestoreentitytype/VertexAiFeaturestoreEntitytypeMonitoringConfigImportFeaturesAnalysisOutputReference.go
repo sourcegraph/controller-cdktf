@@ -204,7 +204,7 @@ func NewVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutp
 	j := jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

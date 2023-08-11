@@ -386,7 +386,7 @@ func NewSagemakerImageVersion(scope constructs.Construct, id *string, config *Sa
 	j := jsiiProxy_SagemakerImageVersion{}
 
 	_jsii_.Create(
-		"aws.sagemakerImageVersion.SagemakerImageVersion",
+		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,7 +399,7 @@ func NewSagemakerImageVersion_Override(s SagemakerImageVersion, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerImageVersion.SagemakerImageVersion",
+		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -532,7 +532,7 @@ func SagemakerImageVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerImageVersion.SagemakerImageVersion",
+		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func SagemakerImageVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerImageVersion.SagemakerImageVersion",
+		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func SagemakerImageVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerImageVersion.SagemakerImageVersion",
+		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func SagemakerImageVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerImageVersion.SagemakerImageVersion",
+		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
 		"tfResourceType",
 		&returns,
 	)

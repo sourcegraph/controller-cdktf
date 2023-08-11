@@ -179,7 +179,7 @@ func NewAppEngineStandardAppVersionHandlersScriptOutputReference(terraformResour
 	j := jsiiProxy_AppEngineStandardAppVersionHandlersScriptOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppEngineStandardAppVersionHandlersScriptOutputReference_Override(a AppE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

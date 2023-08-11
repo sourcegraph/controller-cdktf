@@ -200,7 +200,7 @@ func NewDataGoogleProjectOrganizationPolicyListPolicyOutputReference(terraformRe
 	j := jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleProjectOrganizationPolicyListPolicyOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

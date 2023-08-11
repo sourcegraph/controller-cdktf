@@ -413,7 +413,7 @@ func NewMediaPackageChannel(scope constructs.Construct, id *string, config *Medi
 	j := jsiiProxy_MediaPackageChannel{}
 
 	_jsii_.Create(
-		"aws.mediaPackageChannel.MediaPackageChannel",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewMediaPackageChannel_Override(m MediaPackageChannel, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mediaPackageChannel.MediaPackageChannel",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -581,7 +581,7 @@ func MediaPackageChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaPackageChannel.MediaPackageChannel",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func MediaPackageChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaPackageChannel.MediaPackageChannel",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func MediaPackageChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaPackageChannel.MediaPackageChannel",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func MediaPackageChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mediaPackageChannel.MediaPackageChannel",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannel",
 		"tfResourceType",
 		&returns,
 	)

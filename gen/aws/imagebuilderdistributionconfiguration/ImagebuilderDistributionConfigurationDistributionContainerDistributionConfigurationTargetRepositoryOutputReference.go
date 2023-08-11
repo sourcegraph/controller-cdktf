@@ -202,7 +202,7 @@ func NewImagebuilderDistributionConfigurationDistributionContainerDistributionCo
 	j := jsiiProxy_ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewImagebuilderDistributionConfigurationDistributionContainerDistributionCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

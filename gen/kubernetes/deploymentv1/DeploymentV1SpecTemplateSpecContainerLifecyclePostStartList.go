@@ -116,7 +116,7 @@ func NewDeploymentV1SpecTemplateSpecContainerLifecyclePostStartList(terraformRes
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartList{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerLifecyclePostStartList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentV1SpecTemplateSpecContainerLifecyclePostStartList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecContainerLifecyclePostStartList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

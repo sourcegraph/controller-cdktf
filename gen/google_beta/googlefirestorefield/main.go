@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreField.GoogleFirestoreField",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreField",
 		reflect.TypeOf((*GoogleFirestoreField)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,19 +78,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldConfig",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldConfig",
 		reflect.TypeOf((*GoogleFirestoreFieldConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfig",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfig",
 		reflect.TypeOf((*GoogleFirestoreFieldIndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexes",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexes",
 		reflect.TypeOf((*GoogleFirestoreFieldIndexConfigIndexes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexesList",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexesList",
 		reflect.TypeOf((*GoogleFirestoreFieldIndexConfigIndexesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexesOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigIndexesOutputReference",
 		reflect.TypeOf((*GoogleFirestoreFieldIndexConfigIndexesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayConfig", GoGetter: "ArrayConfig"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldIndexConfigOutputReference",
 		reflect.TypeOf((*GoogleFirestoreFieldIndexConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,11 +188,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldTimeouts",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldTimeouts",
 		reflect.TypeOf((*GoogleFirestoreFieldTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFirestoreFieldTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -233,11 +233,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldTtlConfig",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldTtlConfig",
 		reflect.TypeOf((*GoogleFirestoreFieldTtlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirestoreField.GoogleFirestoreFieldTtlConfigOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreField.GoogleFirestoreFieldTtlConfigOutputReference",
 		reflect.TypeOf((*GoogleFirestoreFieldTtlConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

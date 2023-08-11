@@ -361,7 +361,7 @@ func NewDataGoogleDataprocMetastoreServiceIamPolicy(scope constructs.Construct, 
 	j := jsiiProxy_DataGoogleDataprocMetastoreServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleDataprocMetastoreServiceIamPolicy_Override(d DataGoogleDatapro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleDataprocMetastoreServiceIamPolicy_IsConstruct(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleDataprocMetastoreServiceIamPolicy_IsTerraformDataSource(x interfa
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleDataprocMetastoreServiceIamPolicy_IsTerraformElement(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleDataprocMetastoreServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreServiceIamPolicy.DataGoogleDataprocMetastoreServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

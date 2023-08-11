@@ -277,7 +277,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyOutputReference(terraformResource
 	j := jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -289,7 +289,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyOutputReference_Override(d DataGo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -300,7 +300,7 @@ func NewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutpu
 	j := jsiiProxy_LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewLightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersionPublicEndpointHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -252,7 +252,7 @@ func NewEc2FleetSpotOptionsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_Ec2FleetSpotOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetSpotOptionsOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewEc2FleetSpotOptionsOutputReference_Override(e Ec2FleetSpotOptionsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetSpotOptionsOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetSpotOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

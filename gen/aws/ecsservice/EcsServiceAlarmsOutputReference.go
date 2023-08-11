@@ -225,7 +225,7 @@ func NewEcsServiceAlarmsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_EcsServiceAlarmsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceAlarmsOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewEcsServiceAlarmsOutputReference_Override(e EcsServiceAlarmsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceAlarmsOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceAlarmsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

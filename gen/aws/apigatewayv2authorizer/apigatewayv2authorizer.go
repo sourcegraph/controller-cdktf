@@ -533,7 +533,7 @@ func NewApigatewayv2Authorizer(scope constructs.Construct, id *string, config *A
 	j := jsiiProxy_Apigatewayv2Authorizer{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
+		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -546,7 +546,7 @@ func NewApigatewayv2Authorizer_Override(a Apigatewayv2Authorizer, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
+		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -756,7 +756,7 @@ func Apigatewayv2Authorizer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
+		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -775,7 +775,7 @@ func Apigatewayv2Authorizer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
+		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func Apigatewayv2Authorizer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
+		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func Apigatewayv2Authorizer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
+		"@cdktf/provider-aws.apigatewayv2Authorizer.Apigatewayv2Authorizer",
 		"tfResourceType",
 		&returns,
 	)

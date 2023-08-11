@@ -104,7 +104,7 @@ func NewDataGooglePubsubSubscriptionExpirationPolicyList(terraformResource cdktf
 	j := jsiiProxy_DataGooglePubsubSubscriptionExpirationPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePubsubSubscriptionExpirationPolicyList_Override(d DataGooglePu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

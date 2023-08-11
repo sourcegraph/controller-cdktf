@@ -228,7 +228,7 @@ func NewElastictranscoderPipelineThumbnailConfigPermissionsOutputReference(terra
 	j := jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewElastictranscoderPipelineThumbnailConfigPermissionsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

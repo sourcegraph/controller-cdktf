@@ -681,7 +681,7 @@ func NewImagebuilderContainerRecipe(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ImagebuilderContainerRecipe{}
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -694,7 +694,7 @@ func NewImagebuilderContainerRecipe_Override(i ImagebuilderContainerRecipe, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -926,7 +926,7 @@ func ImagebuilderContainerRecipe_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -945,7 +945,7 @@ func ImagebuilderContainerRecipe_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -964,7 +964,7 @@ func ImagebuilderContainerRecipe_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -977,7 +977,7 @@ func ImagebuilderContainerRecipe_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipe",
 		"tfResourceType",
 		&returns,
 	)

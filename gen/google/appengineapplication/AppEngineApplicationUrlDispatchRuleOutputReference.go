@@ -189,7 +189,7 @@ func NewAppEngineApplicationUrlDispatchRuleOutputReference(terraformResource cdk
 	j := jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationUrlDispatchRuleOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewAppEngineApplicationUrlDispatchRuleOutputReference_Override(a AppEngineA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineApplication.AppEngineApplicationUrlDispatchRuleOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

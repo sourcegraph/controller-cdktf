@@ -393,7 +393,7 @@ func NewDataAwsSecretsmanagerSecret(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsSecretsmanagerSecret{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -406,7 +406,7 @@ func NewDataAwsSecretsmanagerSecret_Override(d DataAwsSecretsmanagerSecret, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -517,7 +517,7 @@ func DataAwsSecretsmanagerSecret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataAwsSecretsmanagerSecret_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func DataAwsSecretsmanagerSecret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataAwsSecretsmanagerSecret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
 		"tfResourceType",
 		&returns,
 	)

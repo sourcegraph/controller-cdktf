@@ -204,7 +204,7 @@ func NewVpcIpamPoolCidrCidrAuthorizationContextOutputReference(terraformResource
 	j := jsiiProxy_VpcIpamPoolCidrCidrAuthorizationContextOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContextOutputReference",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVpcIpamPoolCidrCidrAuthorizationContextOutputReference_Override(v VpcIpa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContextOutputReference",
+		"@cdktf/provider-aws.vpcIpamPoolCidr.VpcIpamPoolCidrCidrAuthorizationContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

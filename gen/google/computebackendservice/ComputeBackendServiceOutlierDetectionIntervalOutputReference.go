@@ -203,7 +203,7 @@ func NewComputeBackendServiceOutlierDetectionIntervalOutputReference(terraformRe
 	j := jsiiProxy_ComputeBackendServiceOutlierDetectionIntervalOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeBackendServiceOutlierDetectionIntervalOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -180,7 +180,7 @@ func NewGoogleContainerAzureClusterControlPlaneRootVolumeOutputReference(terrafo
 	j := jsiiProxy_GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleContainerAzureClusterControlPlaneRootVolumeOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterControlPlaneRootVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -204,7 +204,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerLifecycleOutputReference(terraform
 	j := jsiiProxy_DaemonsetSpecTemplateSpecInitContainerLifecycleOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerLifecycleOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

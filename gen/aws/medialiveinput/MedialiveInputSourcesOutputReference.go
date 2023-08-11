@@ -225,7 +225,7 @@ func NewMedialiveInputSourcesOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_MedialiveInputSourcesOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputSourcesOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewMedialiveInputSourcesOutputReference_Override(m MedialiveInputSourcesOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputSourcesOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputSourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

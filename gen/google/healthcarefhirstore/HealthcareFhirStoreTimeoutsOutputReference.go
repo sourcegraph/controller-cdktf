@@ -228,7 +228,7 @@ func NewHealthcareFhirStoreTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_HealthcareFhirStoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewHealthcareFhirStoreTimeoutsOutputReference_Override(h HealthcareFhirStor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

@@ -116,7 +116,7 @@ func NewGoogleNetworkServicesTlsRouteRulesList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleNetworkServicesTlsRouteRulesList{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteRulesList",
+		"@cdktf/provider-google-beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleNetworkServicesTlsRouteRulesList_Override(g GoogleNetworkServicesT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteRulesList",
+		"@cdktf/provider-google-beta.googleNetworkServicesTlsRoute.GoogleNetworkServicesTlsRouteRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

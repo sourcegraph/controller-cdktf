@@ -178,7 +178,7 @@ func NewDataAwsConnectHoursOfOperationConfigStartTimeOutputReference(terraformRe
 	j := jsiiProxy_DataAwsConnectHoursOfOperationConfigStartTimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigStartTimeOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsConnectHoursOfOperationConfigStartTimeOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigStartTimeOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

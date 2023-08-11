@@ -204,7 +204,7 @@ func NewContainerAzureClientTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ContainerAzureClientTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAzureClient.ContainerAzureClientTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAzureClient.ContainerAzureClientTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewContainerAzureClientTimeoutsOutputReference_Override(c ContainerAzureCli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureClient.ContainerAzureClientTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAzureClient.ContainerAzureClientTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

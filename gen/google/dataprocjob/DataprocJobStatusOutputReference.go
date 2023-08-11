@@ -200,7 +200,7 @@ func NewDataprocJobStatusOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataprocJobStatusOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobStatusOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataprocJobStatusOutputReference_Override(d DataprocJobStatusOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobStatusOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstanceServerCaCertList(terraformResource cdktf.II
 	j := jsiiProxy_DataGoogleSqlDatabaseInstanceServerCaCertList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCertList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCertList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstanceServerCaCertList_Override(d DataGoogleSqlDa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCertList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCertList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

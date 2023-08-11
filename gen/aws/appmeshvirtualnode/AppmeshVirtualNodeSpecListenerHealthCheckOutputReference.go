@@ -319,7 +319,7 @@ func NewAppmeshVirtualNodeSpecListenerHealthCheckOutputReference(terraformResour
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheckOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -331,7 +331,7 @@ func NewAppmeshVirtualNodeSpecListenerHealthCheckOutputReference_Override(a Appm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheckOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

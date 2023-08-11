@@ -180,7 +180,7 @@ func NewServiceV1SpecSessionAffinityConfigClientIpOutputReference(terraformResou
 	j := jsiiProxy_ServiceV1SpecSessionAffinityConfigClientIpOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIpOutputReference",
+		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewServiceV1SpecSessionAffinityConfigClientIpOutputReference_Override(s Ser
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIpOutputReference",
+		"@cdktf/provider-kubernetes.serviceV1.ServiceV1SpecSessionAffinityConfigClientIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

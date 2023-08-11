@@ -249,7 +249,7 @@ func NewGoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference(terr
 	j := jsiiProxy_GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewGoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationPolicy.GoogleBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

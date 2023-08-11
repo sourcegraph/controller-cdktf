@@ -366,7 +366,7 @@ func NewVpnGatewayRoutePropagation(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_VpnGatewayRoutePropagation{}
 
 	_jsii_.Create(
-		"aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
+		"@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewVpnGatewayRoutePropagation_Override(v VpnGatewayRoutePropagation, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
+		"@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -512,7 +512,7 @@ func VpnGatewayRoutePropagation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
+		"@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func VpnGatewayRoutePropagation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
+		"@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func VpnGatewayRoutePropagation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
+		"@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func VpnGatewayRoutePropagation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
+		"@cdktf/provider-aws.vpnGatewayRoutePropagation.VpnGatewayRoutePropagation",
 		"tfResourceType",
 		&returns,
 	)

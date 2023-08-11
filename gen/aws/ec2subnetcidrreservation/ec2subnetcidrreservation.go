@@ -400,7 +400,7 @@ func NewEc2SubnetCidrReservation(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_Ec2SubnetCidrReservation{}
 
 	_jsii_.Create(
-		"aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewEc2SubnetCidrReservation_Override(e Ec2SubnetCidrReservation, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -568,7 +568,7 @@ func Ec2SubnetCidrReservation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func Ec2SubnetCidrReservation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func Ec2SubnetCidrReservation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func Ec2SubnetCidrReservation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
 		"tfResourceType",
 		&returns,
 	)

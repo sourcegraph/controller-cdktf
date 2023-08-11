@@ -625,7 +625,7 @@ func NewDataGoogleComputeForwardingRule(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleComputeForwardingRule{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -638,7 +638,7 @@ func NewDataGoogleComputeForwardingRule_Override(d DataGoogleComputeForwardingRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -760,7 +760,7 @@ func DataGoogleComputeForwardingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -779,7 +779,7 @@ func DataGoogleComputeForwardingRule_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -798,7 +798,7 @@ func DataGoogleComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -811,7 +811,7 @@ func DataGoogleComputeForwardingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule",
 		"tfResourceType",
 		&returns,
 	)

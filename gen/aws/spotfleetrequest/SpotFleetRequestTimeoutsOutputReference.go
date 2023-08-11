@@ -228,7 +228,7 @@ func NewSpotFleetRequestTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SpotFleetRequestTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestTimeoutsOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSpotFleetRequestTimeoutsOutputReference_Override(s SpotFleetRequestTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestTimeoutsOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appstreamUser.AppstreamUser",
+		"@cdktf/provider-aws.appstreamUser.AppstreamUser",
 		reflect.TypeOf((*AppstreamUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamUser.AppstreamUserConfig",
+		"@cdktf/provider-aws.appstreamUser.AppstreamUserConfig",
 		reflect.TypeOf((*AppstreamUserConfig)(nil)).Elem(),
 	)
 }

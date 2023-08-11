@@ -204,7 +204,7 @@ func NewGoogleFirebaseStorageBucketTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleFirebaseStorageBucketTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleFirebaseStorageBucketTimeoutsOutputReference_Override(g GoogleFire
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

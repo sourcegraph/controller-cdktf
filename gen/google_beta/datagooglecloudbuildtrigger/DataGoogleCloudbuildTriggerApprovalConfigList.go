@@ -104,7 +104,7 @@ func NewDataGoogleCloudbuildTriggerApprovalConfigList(terraformResource cdktf.II
 	j := jsiiProxy_DataGoogleCloudbuildTriggerApprovalConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerApprovalConfigList",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerApprovalConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudbuildTriggerApprovalConfigList_Override(d DataGoogleCloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerApprovalConfigList",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerApprovalConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

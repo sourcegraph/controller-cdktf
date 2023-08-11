@@ -179,7 +179,7 @@ func NewGoogleDatastreamConnectionProfilePrivateConnectivityOutputReference(terr
 	j := jsiiProxy_GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDatastreamConnectionProfilePrivateConnectivityOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

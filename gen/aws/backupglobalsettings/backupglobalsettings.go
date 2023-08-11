@@ -319,7 +319,7 @@ func NewBackupGlobalSettings(scope constructs.Construct, id *string, config *Bac
 	j := jsiiProxy_BackupGlobalSettings{}
 
 	_jsii_.Create(
-		"aws.backupGlobalSettings.BackupGlobalSettings",
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewBackupGlobalSettings_Override(b BackupGlobalSettings, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupGlobalSettings.BackupGlobalSettings",
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -454,7 +454,7 @@ func BackupGlobalSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupGlobalSettings.BackupGlobalSettings",
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func BackupGlobalSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupGlobalSettings.BackupGlobalSettings",
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func BackupGlobalSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupGlobalSettings.BackupGlobalSettings",
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func BackupGlobalSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.backupGlobalSettings.BackupGlobalSettings",
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsSecret.DataAwsKmsSecret",
+		"@cdktf/provider-aws.dataAwsKmsSecret.DataAwsKmsSecret",
 		reflect.TypeOf((*DataAwsKmsSecret)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,15 +56,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKmsSecret.DataAwsKmsSecretConfig",
+		"@cdktf/provider-aws.dataAwsKmsSecret.DataAwsKmsSecretConfig",
 		reflect.TypeOf((*DataAwsKmsSecretConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKmsSecret.DataAwsKmsSecretSecret",
+		"@cdktf/provider-aws.dataAwsKmsSecret.DataAwsKmsSecretSecret",
 		reflect.TypeOf((*DataAwsKmsSecretSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsSecret.DataAwsKmsSecretSecretList",
+		"@cdktf/provider-aws.dataAwsKmsSecret.DataAwsKmsSecretSecretList",
 		reflect.TypeOf((*DataAwsKmsSecretSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -85,7 +85,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsSecret.DataAwsKmsSecretSecretOutputReference",
+		"@cdktf/provider-aws.dataAwsKmsSecret.DataAwsKmsSecretSecretOutputReference",
 		reflect.TypeOf((*DataAwsKmsSecretSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewGoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList(terraformResour
 	j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

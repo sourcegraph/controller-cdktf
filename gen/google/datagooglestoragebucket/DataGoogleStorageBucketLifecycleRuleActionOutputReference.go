@@ -178,7 +178,7 @@ func NewDataGoogleStorageBucketLifecycleRuleActionOutputReference(terraformResou
 	j := jsiiProxy_DataGoogleStorageBucketLifecycleRuleActionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleActionOutputReference",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleStorageBucketLifecycleRuleActionOutputReference_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleActionOutputReference",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

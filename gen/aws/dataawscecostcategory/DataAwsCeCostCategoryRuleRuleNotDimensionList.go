@@ -104,7 +104,7 @@ func NewDataAwsCeCostCategoryRuleRuleNotDimensionList(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsCeCostCategoryRuleRuleNotDimensionList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotDimensionList",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotDimensionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCeCostCategoryRuleRuleNotDimensionList_Override(d DataAwsCeCostCa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotDimensionList",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleRuleNotDimensionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

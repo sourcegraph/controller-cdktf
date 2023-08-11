@@ -423,7 +423,7 @@ func NewEmailRoutingCatchAll(scope constructs.Construct, id *string, config *Ema
 	j := jsiiProxy_EmailRoutingCatchAll{}
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewEmailRoutingCatchAll_Override(e EmailRoutingCatchAll, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -580,7 +580,7 @@ func EmailRoutingCatchAll_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func EmailRoutingCatchAll_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func EmailRoutingCatchAll_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func EmailRoutingCatchAll_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAll",
 		"tfResourceType",
 		&returns,
 	)

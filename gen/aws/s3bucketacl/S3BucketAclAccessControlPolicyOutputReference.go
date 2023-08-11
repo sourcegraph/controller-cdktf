@@ -203,7 +203,7 @@ func NewS3BucketAclAccessControlPolicyOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_S3BucketAclAccessControlPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewS3BucketAclAccessControlPolicyOutputReference_Override(s S3BucketAclAcce
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAclAccessControlPolicyOutputReference",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAclAccessControlPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

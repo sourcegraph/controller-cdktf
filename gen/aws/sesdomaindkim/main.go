@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesDomainDkim.SesDomainDkim",
+		"@cdktf/provider-aws.sesDomainDkim.SesDomainDkim",
 		reflect.TypeOf((*SesDomainDkim)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesDomainDkim.SesDomainDkimConfig",
+		"@cdktf/provider-aws.sesDomainDkim.SesDomainDkimConfig",
 		reflect.TypeOf((*SesDomainDkimConfig)(nil)).Elem(),
 	)
 }

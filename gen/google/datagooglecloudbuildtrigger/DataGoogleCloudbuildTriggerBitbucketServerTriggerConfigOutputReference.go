@@ -211,7 +211,7 @@ func NewDataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference(t
 	j := jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

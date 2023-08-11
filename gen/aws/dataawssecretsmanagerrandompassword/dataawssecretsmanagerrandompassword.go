@@ -484,7 +484,7 @@ func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataAwsSecretsmanagerRandomPassword{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewDataAwsSecretsmanagerRandomPassword_Override(d DataAwsSecretsmanagerRand
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -685,7 +685,7 @@ func DataAwsSecretsmanagerRandomPassword_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func DataAwsSecretsmanagerRandomPassword_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func DataAwsSecretsmanagerRandomPassword_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func DataAwsSecretsmanagerRandomPassword_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerRandomPassword.DataAwsSecretsmanagerRandomPassword",
 		"tfResourceType",
 		&returns,
 	)

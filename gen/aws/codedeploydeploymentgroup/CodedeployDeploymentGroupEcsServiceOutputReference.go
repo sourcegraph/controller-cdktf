@@ -202,7 +202,7 @@ func NewCodedeployDeploymentGroupEcsServiceOutputReference(terraformResource cdk
 	j := jsiiProxy_CodedeployDeploymentGroupEcsServiceOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsServiceOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCodedeployDeploymentGroupEcsServiceOutputReference_Override(c Codedeploy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsServiceOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEcsServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

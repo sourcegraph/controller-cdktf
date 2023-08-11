@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
 		reflect.TypeOf((*PubsubSubscriptionIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberCondition",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberCondition",
 		reflect.TypeOf((*PubsubSubscriptionIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConditionOutputReference",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConditionOutputReference",
 		reflect.TypeOf((*PubsubSubscriptionIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig",
 		reflect.TypeOf((*PubsubSubscriptionIamMemberConfig)(nil)).Elem(),
 	)
 }

@@ -228,7 +228,7 @@ func NewVpcIpamScopeTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_VpcIpamScopeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcIpamScope.VpcIpamScopeTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcIpamScope.VpcIpamScopeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewVpcIpamScopeTimeoutsOutputReference_Override(v VpcIpamScopeTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpamScope.VpcIpamScopeTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcIpamScope.VpcIpamScopeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

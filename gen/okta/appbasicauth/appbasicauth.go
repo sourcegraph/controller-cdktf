@@ -782,7 +782,7 @@ func NewAppBasicAuth(scope constructs.Construct, id *string, config *AppBasicAut
 	j := jsiiProxy_AppBasicAuth{}
 
 	_jsii_.Create(
-		"okta.appBasicAuth.AppBasicAuth",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuth",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -795,7 +795,7 @@ func NewAppBasicAuth_Override(a AppBasicAuth, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appBasicAuth.AppBasicAuth",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuth",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1093,7 +1093,7 @@ func AppBasicAuth_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appBasicAuth.AppBasicAuth",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuth",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1112,7 +1112,7 @@ func AppBasicAuth_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appBasicAuth.AppBasicAuth",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuth",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1131,7 +1131,7 @@ func AppBasicAuth_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appBasicAuth.AppBasicAuth",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuth",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1144,7 +1144,7 @@ func AppBasicAuth_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appBasicAuth.AppBasicAuth",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuth",
 		"tfResourceType",
 		&returns,
 	)

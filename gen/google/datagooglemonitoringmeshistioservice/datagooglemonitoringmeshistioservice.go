@@ -416,7 +416,7 @@ func NewDataGoogleMonitoringMeshIstioService(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleMonitoringMeshIstioService{}
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -429,7 +429,7 @@ func NewDataGoogleMonitoringMeshIstioService_Override(d DataGoogleMonitoringMesh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -562,7 +562,7 @@ func DataGoogleMonitoringMeshIstioService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func DataGoogleMonitoringMeshIstioService_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func DataGoogleMonitoringMeshIstioService_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func DataGoogleMonitoringMeshIstioService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
+		"@cdktf/provider-google.dataGoogleMonitoringMeshIstioService.DataGoogleMonitoringMeshIstioService",
 		"tfResourceType",
 		&returns,
 	)

@@ -318,7 +318,7 @@ func NewGoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalanc
 	j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
+		"@cdktf/provider-google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -330,7 +330,7 @@ func NewGoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalanc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
+		"@cdktf/provider-google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

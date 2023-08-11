@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
 		reflect.TypeOf((*DataAwsNetworkInterface)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,11 +81,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociation",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociation",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAssociation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationList",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationList",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAssociationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAssociationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationId", GoGetter: "AllocationId"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachment",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachment",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAttachment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentList",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentList",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAttachmentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -168,7 +168,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAttachmentOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfaceAttachmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachmentId", GoGetter: "AttachmentId"},
@@ -204,15 +204,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceConfig",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceConfig",
 		reflect.TypeOf((*DataAwsNetworkInterfaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilter",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilter",
 		reflect.TypeOf((*DataAwsNetworkInterfaceFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterList",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterList",
 		reflect.TypeOf((*DataAwsNetworkInterfaceFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -233,7 +233,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceFilterOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfaceFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,11 +269,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeouts",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeouts",
 		reflect.TypeOf((*DataAwsNetworkInterfaceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfaceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

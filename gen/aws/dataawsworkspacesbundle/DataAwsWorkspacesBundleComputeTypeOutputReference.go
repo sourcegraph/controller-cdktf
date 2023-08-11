@@ -167,7 +167,7 @@ func NewDataAwsWorkspacesBundleComputeTypeOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsWorkspacesBundleComputeTypeOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeOutputReference",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsWorkspacesBundleComputeTypeOutputReference_Override(d DataAwsWork
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeOutputReference",
+		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

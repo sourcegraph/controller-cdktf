@@ -228,7 +228,7 @@ func NewGlueConnectionPhysicalConnectionRequirementsOutputReference(terraformRes
 	j := jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference",
+		"@cdktf/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGlueConnectionPhysicalConnectionRequirementsOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference",
+		"@cdktf/provider-aws.glueConnection.GlueConnectionPhysicalConnectionRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

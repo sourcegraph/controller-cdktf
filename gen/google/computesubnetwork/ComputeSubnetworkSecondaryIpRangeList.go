@@ -116,7 +116,7 @@ func NewComputeSubnetworkSecondaryIpRangeList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ComputeSubnetworkSecondaryIpRangeList{}
 
 	_jsii_.Create(
-		"google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeSubnetworkSecondaryIpRangeList_Override(c ComputeSubnetworkSecond
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

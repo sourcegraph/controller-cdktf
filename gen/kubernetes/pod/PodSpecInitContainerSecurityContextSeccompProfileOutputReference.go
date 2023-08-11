@@ -204,7 +204,7 @@ func NewPodSpecInitContainerSecurityContextSeccompProfileOutputReference(terrafo
 	j := jsiiProxy_PodSpecInitContainerSecurityContextSeccompProfileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodSpecInitContainerSecurityContextSeccompProfileOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

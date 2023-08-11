@@ -423,7 +423,7 @@ func NewSccSourceIamBinding(scope constructs.Construct, id *string, config *SccS
 	j := jsiiProxy_SccSourceIamBinding{}
 
 	_jsii_.Create(
-		"google.sccSourceIamBinding.SccSourceIamBinding",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewSccSourceIamBinding_Override(s SccSourceIamBinding, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccSourceIamBinding.SccSourceIamBinding",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBinding",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -591,7 +591,7 @@ func SccSourceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSourceIamBinding.SccSourceIamBinding",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func SccSourceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSourceIamBinding.SccSourceIamBinding",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func SccSourceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSourceIamBinding.SccSourceIamBinding",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func SccSourceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sccSourceIamBinding.SccSourceIamBinding",
+		"@cdktf/provider-google.sccSourceIamBinding.SccSourceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

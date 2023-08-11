@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstance",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance",
 		reflect.TypeOf((*GoogleBigtableInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceCluster",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceCluster",
 		reflect.TypeOf((*GoogleBigtableInstanceCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfig",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfig",
 		reflect.TypeOf((*GoogleBigtableInstanceClusterAutoscalingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfigOutputReference",
 		reflect.TypeOf((*GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterList",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterList",
 		reflect.TypeOf((*GoogleBigtableInstanceClusterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterOutputReference",
 		reflect.TypeOf((*GoogleBigtableInstanceClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfig", GoGetter: "AutoscalingConfig"},
@@ -196,7 +196,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig",
 		reflect.TypeOf((*GoogleBigtableInstanceConfig)(nil)).Elem(),
 	)
 }

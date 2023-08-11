@@ -418,7 +418,7 @@ func NewDataAwsConnectHoursOfOperation(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsConnectHoursOfOperation{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -431,7 +431,7 @@ func NewDataAwsConnectHoursOfOperation_Override(d DataAwsConnectHoursOfOperation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -564,7 +564,7 @@ func DataAwsConnectHoursOfOperation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func DataAwsConnectHoursOfOperation_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func DataAwsConnectHoursOfOperation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataAwsConnectHoursOfOperation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperation",
 		"tfResourceType",
 		&returns,
 	)

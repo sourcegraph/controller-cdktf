@@ -116,7 +116,7 @@ func NewResourcegroupsGroupConfigurationList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ResourcegroupsGroupConfigurationList{}
 
 	_jsii_.Create(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationList",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewResourcegroupsGroupConfigurationList_Override(r ResourcegroupsGroupConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationList",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

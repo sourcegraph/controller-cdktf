@@ -179,7 +179,7 @@ func NewGoogleHealthcareFhirStoreNotificationConfigOutputReference(terraformReso
 	j := jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreNotificationConfigOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreNotificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleHealthcareFhirStoreNotificationConfigOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreNotificationConfigOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreNotificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

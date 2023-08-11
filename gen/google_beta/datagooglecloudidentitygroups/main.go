@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroups",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroups",
 		reflect.TypeOf((*DataGoogleCloudIdentityGroups)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,19 +56,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsConfig",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsConfig",
 		reflect.TypeOf((*DataGoogleCloudIdentityGroupsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroups",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroups",
 		reflect.TypeOf((*DataGoogleCloudIdentityGroupsGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKey",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKey",
 		reflect.TypeOf((*DataGoogleCloudIdentityGroupsGroupsGroupKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyList",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyList",
 		reflect.TypeOf((*DataGoogleCloudIdentityGroupsGroupsGroupKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference",
 		reflect.TypeOf((*DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,7 +122,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsList",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsList",
 		reflect.TypeOf((*DataGoogleCloudIdentityGroupsGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -142,7 +142,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsOutputReference",
 		reflect.TypeOf((*DataGoogleCloudIdentityGroupsGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

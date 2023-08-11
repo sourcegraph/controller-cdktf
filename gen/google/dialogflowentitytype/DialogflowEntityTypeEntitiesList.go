@@ -116,7 +116,7 @@ func NewDialogflowEntityTypeEntitiesList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DialogflowEntityTypeEntitiesList{}
 
 	_jsii_.Create(
-		"google.dialogflowEntityType.DialogflowEntityTypeEntitiesList",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeEntitiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDialogflowEntityTypeEntitiesList_Override(d DialogflowEntityTypeEntities
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowEntityType.DialogflowEntityTypeEntitiesList",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeEntitiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

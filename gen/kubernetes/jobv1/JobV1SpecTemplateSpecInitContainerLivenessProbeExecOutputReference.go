@@ -180,7 +180,7 @@ func NewJobV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference(terra
 	j := jsiiProxy_JobV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewJobV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerLivenessProbeExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

@@ -202,7 +202,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutp
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCrossRegionCopyRuleRetainRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

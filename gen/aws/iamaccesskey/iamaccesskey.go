@@ -433,7 +433,7 @@ func NewIamAccessKey(scope constructs.Construct, id *string, config *IamAccessKe
 	j := jsiiProxy_IamAccessKey{}
 
 	_jsii_.Create(
-		"aws.iamAccessKey.IamAccessKey",
+		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -446,7 +446,7 @@ func NewIamAccessKey_Override(i IamAccessKey, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamAccessKey.IamAccessKey",
+		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -590,7 +590,7 @@ func IamAccessKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamAccessKey.IamAccessKey",
+		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func IamAccessKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamAccessKey.IamAccessKey",
+		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -628,7 +628,7 @@ func IamAccessKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamAccessKey.IamAccessKey",
+		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func IamAccessKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamAccessKey.IamAccessKey",
+		"@cdktf/provider-aws.iamAccessKey.IamAccessKey",
 		"tfResourceType",
 		&returns,
 	)

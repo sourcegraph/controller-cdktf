@@ -631,7 +631,7 @@ func NewGoogleDataplexAsset(scope constructs.Construct, id *string, config *Goog
 	j := jsiiProxy_GoogleDataplexAsset{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAsset",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -644,7 +644,7 @@ func NewGoogleDataplexAsset_Override(g GoogleDataplexAsset, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAsset",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -843,7 +843,7 @@ func GoogleDataplexAsset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAsset.GoogleDataplexAsset",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -862,7 +862,7 @@ func GoogleDataplexAsset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAsset.GoogleDataplexAsset",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -881,7 +881,7 @@ func GoogleDataplexAsset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexAsset.GoogleDataplexAsset",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -894,7 +894,7 @@ func GoogleDataplexAsset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataplexAsset.GoogleDataplexAsset",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAsset",
 		"tfResourceType",
 		&returns,
 	)

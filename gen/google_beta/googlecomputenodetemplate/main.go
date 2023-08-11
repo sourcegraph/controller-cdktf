@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplate",
 		reflect.TypeOf((*GoogleComputeNodeTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateConfig",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateConfig",
 		reflect.TypeOf((*GoogleComputeNodeTemplateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateNodeTypeFlexibility",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateNodeTypeFlexibility",
 		reflect.TypeOf((*GoogleComputeNodeTemplateNodeTypeFlexibility)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateNodeTypeFlexibilityOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateNodeTypeFlexibilityOutputReference",
 		reflect.TypeOf((*GoogleComputeNodeTemplateNodeTypeFlexibilityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,11 +137,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateServerBinding",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateServerBinding",
 		reflect.TypeOf((*GoogleComputeNodeTemplateServerBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateServerBindingOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateServerBindingOutputReference",
 		reflect.TypeOf((*GoogleComputeNodeTemplateServerBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,11 +175,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateTimeouts",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateTimeouts",
 		reflect.TypeOf((*GoogleComputeNodeTemplateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeTemplate.GoogleComputeNodeTemplateTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeNodeTemplateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

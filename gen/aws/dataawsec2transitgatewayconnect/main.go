@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnect",
 		reflect.TypeOf((*DataAwsEc2TransitGatewayConnect)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectConfig",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectConfig",
 		reflect.TypeOf((*DataAwsEc2TransitGatewayConnectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectFilter",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectFilter",
 		reflect.TypeOf((*DataAwsEc2TransitGatewayConnectFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectFilterList",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectFilterList",
 		reflect.TypeOf((*DataAwsEc2TransitGatewayConnectFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectFilterOutputReference",
 		reflect.TypeOf((*DataAwsEc2TransitGatewayConnectFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,11 +135,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectTimeouts",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectTimeouts",
 		reflect.TypeOf((*DataAwsEc2TransitGatewayConnectTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayConnect.DataAwsEc2TransitGatewayConnectTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsEc2TransitGatewayConnectTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

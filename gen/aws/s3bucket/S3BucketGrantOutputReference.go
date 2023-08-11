@@ -250,7 +250,7 @@ func NewS3BucketGrantOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_S3BucketGrantOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketGrantOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketGrantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewS3BucketGrantOutputReference_Override(s S3BucketGrantOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketGrantOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketGrantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

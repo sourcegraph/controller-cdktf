@@ -227,7 +227,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeCinderOutputReference(terraformResour
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCinderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeCinderOutputReference_Override(s Stat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

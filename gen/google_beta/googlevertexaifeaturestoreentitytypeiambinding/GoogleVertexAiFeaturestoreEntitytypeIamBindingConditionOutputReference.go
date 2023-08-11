@@ -226,7 +226,7 @@ func NewGoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference(t
 	j := jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamBinding.GoogleVertexAiFeaturestoreEntitytypeIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

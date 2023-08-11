@@ -116,7 +116,7 @@ func NewTransferWorkflowOnExceptionStepsList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_TransferWorkflowOnExceptionStepsList{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowOnExceptionStepsList",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTransferWorkflowOnExceptionStepsList_Override(t TransferWorkflowOnExcept
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowOnExceptionStepsList",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

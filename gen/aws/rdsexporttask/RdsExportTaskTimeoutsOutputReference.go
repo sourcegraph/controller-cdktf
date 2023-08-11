@@ -204,7 +204,7 @@ func NewRdsExportTaskTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_RdsExportTaskTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.rdsExportTask.RdsExportTaskTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTaskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewRdsExportTaskTimeoutsOutputReference_Override(r RdsExportTaskTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsExportTask.RdsExportTaskTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsExportTask.RdsExportTaskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

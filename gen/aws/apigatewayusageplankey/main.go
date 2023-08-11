@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKey",
+		"@cdktf/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKey",
 		reflect.TypeOf((*ApiGatewayUsagePlanKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKeyConfig",
+		"@cdktf/provider-aws.apiGatewayUsagePlanKey.ApiGatewayUsagePlanKeyConfig",
 		reflect.TypeOf((*ApiGatewayUsagePlanKeyConfig)(nil)).Elem(),
 	)
 }

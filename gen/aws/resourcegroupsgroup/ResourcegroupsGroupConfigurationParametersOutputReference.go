@@ -202,7 +202,7 @@ func NewResourcegroupsGroupConfigurationParametersOutputReference(terraformResou
 	j := jsiiProxy_ResourcegroupsGroupConfigurationParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParametersOutputReference",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewResourcegroupsGroupConfigurationParametersOutputReference_Override(r Res
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParametersOutputReference",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

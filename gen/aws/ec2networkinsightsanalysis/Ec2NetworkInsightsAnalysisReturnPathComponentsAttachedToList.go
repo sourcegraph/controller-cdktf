@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsAttachedToList(terraformRe
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsAttachedToList_Override(e 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

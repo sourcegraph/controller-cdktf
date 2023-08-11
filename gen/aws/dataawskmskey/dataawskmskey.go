@@ -480,7 +480,7 @@ func NewDataAwsKmsKey(scope constructs.Construct, id *string, config *DataAwsKms
 	j := jsiiProxy_DataAwsKmsKey{}
 
 	_jsii_.Create(
-		"aws.dataAwsKmsKey.DataAwsKmsKey",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -493,7 +493,7 @@ func NewDataAwsKmsKey_Override(d DataAwsKmsKey, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKmsKey.DataAwsKmsKey",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKey",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -604,7 +604,7 @@ func DataAwsKmsKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsKey.DataAwsKmsKey",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataAwsKmsKey_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsKey.DataAwsKmsKey",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKey",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func DataAwsKmsKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsKey.DataAwsKmsKey",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func DataAwsKmsKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsKmsKey.DataAwsKmsKey",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKey",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewAccessGroupIncludeAzureOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_AccessGroupIncludeAzureOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessGroupIncludeAzureOutputReference_Override(a AccessGroupIncludeAzur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

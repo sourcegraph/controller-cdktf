@@ -104,7 +104,7 @@ func NewDataAwsAlbTargetGroupHealthCheckList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataAwsAlbTargetGroupHealthCheckList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckList",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAlbTargetGroupHealthCheckList_Override(d DataAwsAlbTargetGroupHea
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckList",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

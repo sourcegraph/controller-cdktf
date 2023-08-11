@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
 		reflect.TypeOf((*ComputeRegionNetworkFirewallPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicyConfig",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicyConfig",
 		reflect.TypeOf((*ComputeRegionNetworkFirewallPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicyTimeouts",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicyTimeouts",
 		reflect.TypeOf((*ComputeRegionNetworkFirewallPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRegionNetworkFirewallPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

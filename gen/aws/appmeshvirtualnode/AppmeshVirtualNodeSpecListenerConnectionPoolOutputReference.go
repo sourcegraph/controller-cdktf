@@ -252,7 +252,7 @@ func NewAppmeshVirtualNodeSpecListenerConnectionPoolOutputReference(terraformRes
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewAppmeshVirtualNodeSpecListenerConnectionPoolOutputReference_Override(a A
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -202,7 +202,7 @@ func NewDataAwsEc2ClientVpnEndpointFilterOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataAwsEc2ClientVpnEndpointFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEc2ClientVpnEndpointFilterOutputReference_Override(d DataAwsEc2Cl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

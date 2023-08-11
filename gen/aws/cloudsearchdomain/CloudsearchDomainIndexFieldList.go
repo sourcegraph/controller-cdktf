@@ -116,7 +116,7 @@ func NewCloudsearchDomainIndexFieldList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_CloudsearchDomainIndexFieldList{}
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainIndexFieldList",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudsearchDomainIndexFieldList_Override(c CloudsearchDomainIndexFieldLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainIndexFieldList",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

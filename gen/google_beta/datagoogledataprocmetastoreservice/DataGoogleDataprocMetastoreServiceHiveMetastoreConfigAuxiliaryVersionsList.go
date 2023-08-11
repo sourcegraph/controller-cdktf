@@ -104,7 +104,7 @@ func NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsLi
 	j := jsiiProxy_DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

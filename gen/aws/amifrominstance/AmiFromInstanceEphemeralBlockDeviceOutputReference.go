@@ -178,7 +178,7 @@ func NewAmiFromInstanceEphemeralBlockDeviceOutputReference(terraformResource cdk
 	j := jsiiProxy_AmiFromInstanceEphemeralBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.amiFromInstance.AmiFromInstanceEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewAmiFromInstanceEphemeralBlockDeviceOutputReference_Override(a AmiFromIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiFromInstance.AmiFromInstanceEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstanceEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

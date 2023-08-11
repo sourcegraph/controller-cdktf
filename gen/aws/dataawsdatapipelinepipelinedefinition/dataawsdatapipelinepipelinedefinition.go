@@ -337,7 +337,7 @@ func NewDataAwsDatapipelinePipelineDefinition(scope constructs.Construct, id *st
 	j := jsiiProxy_DataAwsDatapipelinePipelineDefinition{}
 
 	_jsii_.Create(
-		"aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataAwsDatapipelinePipelineDefinition_Override(d DataAwsDatapipelinePipe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -450,7 +450,7 @@ func DataAwsDatapipelinePipelineDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -469,7 +469,7 @@ func DataAwsDatapipelinePipelineDefinition_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataAwsDatapipelinePipelineDefinition_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataAwsDatapipelinePipelineDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipelineDefinition.DataAwsDatapipelinePipelineDefinition",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference
 	j := jsiiProxy_CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

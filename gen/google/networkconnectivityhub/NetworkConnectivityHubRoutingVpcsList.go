@@ -104,7 +104,7 @@ func NewNetworkConnectivityHubRoutingVpcsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_NetworkConnectivityHubRoutingVpcsList{}
 
 	_jsii_.Create(
-		"google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsList",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewNetworkConnectivityHubRoutingVpcsList_Override(n NetworkConnectivityHubR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsList",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

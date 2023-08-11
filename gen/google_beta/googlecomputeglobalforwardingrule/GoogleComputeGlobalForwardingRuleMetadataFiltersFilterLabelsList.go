@@ -116,7 +116,7 @@ func NewGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList(terrafo
 	j := jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList",
+		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList",
+		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

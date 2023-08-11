@@ -179,7 +179,7 @@ func NewJobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference(terraf
 	j := jsiiProxy_JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewJobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLivenessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

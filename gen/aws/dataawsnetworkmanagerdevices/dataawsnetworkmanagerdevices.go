@@ -350,7 +350,7 @@ func NewDataAwsNetworkmanagerDevices(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsNetworkmanagerDevices{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -363,7 +363,7 @@ func NewDataAwsNetworkmanagerDevices_Override(d DataAwsNetworkmanagerDevices, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -485,7 +485,7 @@ func DataAwsNetworkmanagerDevices_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func DataAwsNetworkmanagerDevices_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsNetworkmanagerDevices_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataAwsNetworkmanagerDevices_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevices.DataAwsNetworkmanagerDevices",
 		"tfResourceType",
 		&returns,
 	)

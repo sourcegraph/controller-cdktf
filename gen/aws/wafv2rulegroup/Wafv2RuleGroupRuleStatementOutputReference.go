@@ -468,7 +468,7 @@ func NewWafv2RuleGroupRuleStatementOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewWafv2RuleGroupRuleStatementOutputReference_Override(w Wafv2RuleGroupRule
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleStatementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

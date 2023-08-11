@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecSecurityContextSeccompProfileList(terraformResource
 	j := jsiiProxy_DataKubernetesPodSpecSecurityContextSeccompProfileList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecSecurityContextSeccompProfileList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecSecurityContextSeccompProfileList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecSecurityContextSeccompProfileList_Override(d DataKu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecSecurityContextSeccompProfileList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecSecurityContextSeccompProfileList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

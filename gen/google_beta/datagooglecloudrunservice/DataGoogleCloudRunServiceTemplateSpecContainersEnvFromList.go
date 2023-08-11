@@ -104,7 +104,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersEnvFromList(terraformReso
 	j := jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersEnvFromList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersEnvFromList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersEnvFromList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersEnvFromList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersEnvFromList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersEnvFromList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

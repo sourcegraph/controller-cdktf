@@ -228,7 +228,7 @@ func NewGoogleComputeTargetGrpcProxyTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleComputeTargetGrpcProxyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetGrpcProxy.GoogleComputeTargetGrpcProxyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeTargetGrpcProxy.GoogleComputeTargetGrpcProxyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeTargetGrpcProxyTimeoutsOutputReference_Override(g GoogleCom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeTargetGrpcProxy.GoogleComputeTargetGrpcProxyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeTargetGrpcProxy.GoogleComputeTargetGrpcProxyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

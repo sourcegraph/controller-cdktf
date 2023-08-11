@@ -348,7 +348,7 @@ func NewDataGoogleLoggingProjectCmekSettings(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleLoggingProjectCmekSettings{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
+		"@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataGoogleLoggingProjectCmekSettings_Override(d DataGoogleLoggingProject
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
+		"@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -472,7 +472,7 @@ func DataGoogleLoggingProjectCmekSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
+		"@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataGoogleLoggingProjectCmekSettings_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
+		"@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataGoogleLoggingProjectCmekSettings_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
+		"@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataGoogleLoggingProjectCmekSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
+		"@cdktf/provider-google-beta.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings",
 		"tfResourceType",
 		&returns,
 	)

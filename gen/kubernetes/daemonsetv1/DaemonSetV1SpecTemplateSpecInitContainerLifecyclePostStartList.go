@@ -116,7 +116,7 @@ func NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList(terraform
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePostStartList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

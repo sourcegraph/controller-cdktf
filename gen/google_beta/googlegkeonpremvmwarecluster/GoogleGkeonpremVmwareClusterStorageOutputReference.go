@@ -179,7 +179,7 @@ func NewGoogleGkeonpremVmwareClusterStorageOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterStorageOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterStorageOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleGkeonpremVmwareClusterStorageOutputReference_Override(g GoogleGkeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterStorageOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

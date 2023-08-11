@@ -479,7 +479,7 @@ func NewDetectiveMember(scope constructs.Construct, id *string, config *Detectiv
 	j := jsiiProxy_DetectiveMember{}
 
 	_jsii_.Create(
-		"aws.detectiveMember.DetectiveMember",
+		"@cdktf/provider-aws.detectiveMember.DetectiveMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -492,7 +492,7 @@ func NewDetectiveMember_Override(d DetectiveMember, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.detectiveMember.DetectiveMember",
+		"@cdktf/provider-aws.detectiveMember.DetectiveMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -658,7 +658,7 @@ func DetectiveMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.detectiveMember.DetectiveMember",
+		"@cdktf/provider-aws.detectiveMember.DetectiveMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func DetectiveMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.detectiveMember.DetectiveMember",
+		"@cdktf/provider-aws.detectiveMember.DetectiveMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -696,7 +696,7 @@ func DetectiveMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.detectiveMember.DetectiveMember",
+		"@cdktf/provider-aws.detectiveMember.DetectiveMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -709,7 +709,7 @@ func DetectiveMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.detectiveMember.DetectiveMember",
+		"@cdktf/provider-aws.detectiveMember.DetectiveMember",
 		"tfResourceType",
 		&returns,
 	)

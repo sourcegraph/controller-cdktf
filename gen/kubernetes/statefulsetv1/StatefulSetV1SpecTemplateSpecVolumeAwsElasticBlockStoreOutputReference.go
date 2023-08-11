@@ -251,7 +251,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference(t
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

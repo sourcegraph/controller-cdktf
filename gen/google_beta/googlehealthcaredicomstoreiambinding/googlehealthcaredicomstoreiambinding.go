@@ -400,7 +400,7 @@ func NewGoogleHealthcareDicomStoreIamBinding(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleHealthcareDicomStoreIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleHealthcareDicomStoreIamBinding_Override(g GoogleHealthcareDicomSto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleHealthcareDicomStoreIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleHealthcareDicomStoreIamBinding_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleHealthcareDicomStoreIamBinding_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleHealthcareDicomStoreIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamBinding.GoogleHealthcareDicomStoreIamBinding",
 		"tfResourceType",
 		&returns,
 	)

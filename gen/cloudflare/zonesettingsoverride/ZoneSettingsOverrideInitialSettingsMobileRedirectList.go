@@ -104,7 +104,7 @@ func NewZoneSettingsOverrideInitialSettingsMobileRedirectList(terraformResource 
 	j := jsiiProxy_ZoneSettingsOverrideInitialSettingsMobileRedirectList{}
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewZoneSettingsOverrideInitialSettingsMobileRedirectList_Override(z ZoneSet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsMobileRedirectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)

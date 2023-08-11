@@ -204,7 +204,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference(terraf
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeCephFsSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -398,7 +398,7 @@ func NewId(scope constructs.Construct, id *string, config *IdConfig) Id {
 	j := jsiiProxy_Id{}
 
 	_jsii_.Create(
-		"random.id.Id",
+		"@cdktf/provider-random.id.Id",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -411,7 +411,7 @@ func NewId_Override(i Id, scope constructs.Construct, id *string, config *IdConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"random.id.Id",
+		"@cdktf/provider-random.id.Id",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -544,7 +544,7 @@ func Id_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.id.Id",
+		"@cdktf/provider-random.id.Id",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func Id_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.id.Id",
+		"@cdktf/provider-random.id.Id",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func Id_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.id.Id",
+		"@cdktf/provider-random.id.Id",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func Id_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"random.id.Id",
+		"@cdktf/provider-random.id.Id",
 		"tfResourceType",
 		&returns,
 	)

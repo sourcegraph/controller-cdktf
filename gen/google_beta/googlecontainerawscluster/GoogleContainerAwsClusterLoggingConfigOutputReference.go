@@ -180,7 +180,7 @@ func NewGoogleContainerAwsClusterLoggingConfigOutputReference(terraformResource 
 	j := jsiiProxy_GoogleContainerAwsClusterLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleContainerAwsClusterLoggingConfigOutputReference_Override(g GoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -401,7 +401,7 @@ func NewGoogleTagsLocationTagBinding(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleTagsLocationTagBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleTagsLocationTagBinding_Override(g GoogleTagsLocationTagBinding, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -558,7 +558,7 @@ func GoogleTagsLocationTagBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleTagsLocationTagBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func GoogleTagsLocationTagBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleTagsLocationTagBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		"tfResourceType",
 		&returns,
 	)

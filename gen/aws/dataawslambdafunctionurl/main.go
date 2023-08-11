@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl",
+		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrl",
 		reflect.TypeOf((*DataAwsLambdaFunctionUrl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig",
+		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlConfig",
 		reflect.TypeOf((*DataAwsLambdaFunctionUrlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCors",
+		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCors",
 		reflect.TypeOf((*DataAwsLambdaFunctionUrlCors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsList",
+		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsList",
 		reflect.TypeOf((*DataAwsLambdaFunctionUrlCorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -93,7 +93,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsOutputReference",
 		reflect.TypeOf((*DataAwsLambdaFunctionUrlCorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},

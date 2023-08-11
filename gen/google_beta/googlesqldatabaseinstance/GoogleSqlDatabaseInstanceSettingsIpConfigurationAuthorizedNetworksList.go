@@ -116,7 +116,7 @@ func NewGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList(t
 	j := jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

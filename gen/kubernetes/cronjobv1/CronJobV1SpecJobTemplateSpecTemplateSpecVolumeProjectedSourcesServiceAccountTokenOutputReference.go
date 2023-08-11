@@ -227,7 +227,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAcc
 	j := jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAcc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

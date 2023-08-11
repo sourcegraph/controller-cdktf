@@ -104,7 +104,7 @@ func NewDataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceLi
 	j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList",
+		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList",
+		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigServiceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

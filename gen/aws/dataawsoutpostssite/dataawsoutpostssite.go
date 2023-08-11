@@ -314,7 +314,7 @@ func NewDataAwsOutpostsSite(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataAwsOutpostsSite{}
 
 	_jsii_.Create(
-		"aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
+		"@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -327,7 +327,7 @@ func NewDataAwsOutpostsSite_Override(d DataAwsOutpostsSite, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
+		"@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -427,7 +427,7 @@ func DataAwsOutpostsSite_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
+		"@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -446,7 +446,7 @@ func DataAwsOutpostsSite_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
+		"@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -465,7 +465,7 @@ func DataAwsOutpostsSite_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
+		"@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsOutpostsSite_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
+		"@cdktf/provider-aws.dataAwsOutpostsSite.DataAwsOutpostsSite",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputRef
 	j := jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

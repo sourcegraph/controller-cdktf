@@ -179,7 +179,7 @@ func NewIvschatLoggingConfigurationDestinationConfigurationS3OutputReference(ter
 	j := jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationS3OutputReference{}
 
 	_jsii_.Create(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3OutputReference",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewIvschatLoggingConfigurationDestinationConfigurationS3OutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3OutputReference",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

@@ -116,7 +116,7 @@ func NewComputeReservationSpecificReservationInstancePropertiesGuestAccelerators
 	j := jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList{}
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList",
+		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeReservationSpecificReservationInstancePropertiesGuestAccelerators
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList",
+		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

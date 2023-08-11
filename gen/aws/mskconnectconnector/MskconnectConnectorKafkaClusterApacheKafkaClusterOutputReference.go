@@ -202,7 +202,7 @@ func NewMskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference(terrafo
 	j := jsiiProxy_MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewMskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterApacheKafkaClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

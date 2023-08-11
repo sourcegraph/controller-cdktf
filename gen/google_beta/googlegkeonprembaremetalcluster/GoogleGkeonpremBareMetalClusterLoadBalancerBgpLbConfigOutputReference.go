@@ -249,7 +249,7 @@ func NewGoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigOutputReference(te
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewGoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

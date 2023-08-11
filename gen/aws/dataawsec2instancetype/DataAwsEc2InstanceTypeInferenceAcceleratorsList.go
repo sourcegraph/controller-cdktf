@@ -104,7 +104,7 @@ func NewDataAwsEc2InstanceTypeInferenceAcceleratorsList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsEc2InstanceTypeInferenceAcceleratorsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEc2InstanceTypeInferenceAcceleratorsList_Override(d DataAwsEc2Ins
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

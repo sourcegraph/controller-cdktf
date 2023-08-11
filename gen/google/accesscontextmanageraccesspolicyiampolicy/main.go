@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicy",
 		reflect.TypeOf((*AccessContextManagerAccessPolicyIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicyConfig",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamPolicy.AccessContextManagerAccessPolicyIamPolicyConfig",
 		reflect.TypeOf((*AccessContextManagerAccessPolicyIamPolicyConfig)(nil)).Elem(),
 	)
 }

@@ -180,7 +180,7 @@ func NewPrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainOutputRefere
 	j := jsiiProxy_PrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainOutputReference",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewPrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainOutputReference",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthoritySubordinateConfigPemIssuerChainOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

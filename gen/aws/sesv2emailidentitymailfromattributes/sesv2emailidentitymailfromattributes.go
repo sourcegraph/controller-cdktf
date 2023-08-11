@@ -367,7 +367,7 @@ func NewSesv2EmailIdentityMailFromAttributes(scope constructs.Construct, id *str
 	j := jsiiProxy_Sesv2EmailIdentityMailFromAttributes{}
 
 	_jsii_.Create(
-		"aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
+		"@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewSesv2EmailIdentityMailFromAttributes_Override(s Sesv2EmailIdentityMailFr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
+		"@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -524,7 +524,7 @@ func Sesv2EmailIdentityMailFromAttributes_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
+		"@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func Sesv2EmailIdentityMailFromAttributes_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
+		"@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func Sesv2EmailIdentityMailFromAttributes_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
+		"@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func Sesv2EmailIdentityMailFromAttributes_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
+		"@cdktf/provider-aws.sesv2EmailIdentityMailFromAttributes.Sesv2EmailIdentityMailFromAttributes",
 		"tfResourceType",
 		&returns,
 	)

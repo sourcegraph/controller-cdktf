@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigLi
 	j := jsiiProxy_DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

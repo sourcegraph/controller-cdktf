@@ -226,7 +226,7 @@ func NewGoogleBillingAccountIamBindingConditionOutputReference(terraformResource
 	j := jsiiProxy_GoogleBillingAccountIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleBillingAccountIamBindingConditionOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBillingAccountIamBinding.GoogleBillingAccountIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

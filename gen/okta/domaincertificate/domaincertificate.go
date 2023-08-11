@@ -412,7 +412,7 @@ func NewDomainCertificate(scope constructs.Construct, id *string, config *Domain
 	j := jsiiProxy_DomainCertificate{}
 
 	_jsii_.Create(
-		"okta.domainCertificate.DomainCertificate",
+		"@cdktf/provider-okta.domainCertificate.DomainCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewDomainCertificate_Override(d DomainCertificate, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.domainCertificate.DomainCertificate",
+		"@cdktf/provider-okta.domainCertificate.DomainCertificate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -591,7 +591,7 @@ func DomainCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.domainCertificate.DomainCertificate",
+		"@cdktf/provider-okta.domainCertificate.DomainCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func DomainCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.domainCertificate.DomainCertificate",
+		"@cdktf/provider-okta.domainCertificate.DomainCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func DomainCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.domainCertificate.DomainCertificate",
+		"@cdktf/provider-okta.domainCertificate.DomainCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func DomainCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.domainCertificate.DomainCertificate",
+		"@cdktf/provider-okta.domainCertificate.DomainCertificate",
 		"tfResourceType",
 		&returns,
 	)

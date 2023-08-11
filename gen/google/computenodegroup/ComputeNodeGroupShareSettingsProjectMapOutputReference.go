@@ -202,7 +202,7 @@ func NewComputeNodeGroupShareSettingsProjectMapOutputReference(terraformResource
 	j := jsiiProxy_ComputeNodeGroupShareSettingsProjectMapOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeNodeGroupShareSettingsProjectMapOutputReference_Override(c Comput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapOutputReference",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

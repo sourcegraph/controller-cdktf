@@ -377,7 +377,7 @@ func NewGoogleDnsManagedZoneIamPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleDnsManagedZoneIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleDnsManagedZoneIamPolicy_Override(g GoogleDnsManagedZoneIamPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleDnsManagedZoneIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleDnsManagedZoneIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleDnsManagedZoneIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleDnsManagedZoneIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamPolicy.GoogleDnsManagedZoneIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -227,7 +227,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputRe
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

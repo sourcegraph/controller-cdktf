@@ -504,7 +504,7 @@ func NewGoogleApigeeKeystoresAliasesPkcs12(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -517,7 +517,7 @@ func NewGoogleApigeeKeystoresAliasesPkcs12_Override(g GoogleApigeeKeystoresAlias
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -705,7 +705,7 @@ func GoogleApigeeKeystoresAliasesPkcs12_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func GoogleApigeeKeystoresAliasesPkcs12_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -743,7 +743,7 @@ func GoogleApigeeKeystoresAliasesPkcs12_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func GoogleApigeeKeystoresAliasesPkcs12_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12",
 		"tfResourceType",
 		&returns,
 	)

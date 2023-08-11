@@ -104,7 +104,7 @@ func NewStoragegatewayGatewayGatewayNetworkInterfaceList(terraformResource cdktf
 	j := jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList{}
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewStoragegatewayGatewayGatewayNetworkInterfaceList_Override(s Storagegatew
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

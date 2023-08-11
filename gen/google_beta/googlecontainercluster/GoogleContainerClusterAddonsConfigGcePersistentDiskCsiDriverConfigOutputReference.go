@@ -179,7 +179,7 @@ func NewGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutput
 	j := jsiiProxy_GoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

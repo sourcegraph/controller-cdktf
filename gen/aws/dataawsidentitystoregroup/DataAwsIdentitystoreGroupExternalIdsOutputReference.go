@@ -178,7 +178,7 @@ func NewDataAwsIdentitystoreGroupExternalIdsOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsIdentitystoreGroupExternalIdsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsIdentitystoreGroupExternalIdsOutputReference_Override(d DataAwsId
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupExternalIdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

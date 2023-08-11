@@ -300,7 +300,7 @@ func NewGoogleNetworkManagementConnectivityTestSourceOutputReference(terraformRe
 	j := jsiiProxy_GoogleNetworkManagementConnectivityTestSourceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleNetworkManagementConnectivityTestSourceOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkManagementConnectivityTest.GoogleNetworkManagementConnectivityTestSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

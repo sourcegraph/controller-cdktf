@@ -879,7 +879,7 @@ func NewPolicyMfaDefault(scope constructs.Construct, id *string, config *PolicyM
 	j := jsiiProxy_PolicyMfaDefault{}
 
 	_jsii_.Create(
-		"okta.policyMfaDefault.PolicyMfaDefault",
+		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -892,7 +892,7 @@ func NewPolicyMfaDefault_Override(p PolicyMfaDefault, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyMfaDefault.PolicyMfaDefault",
+		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -1245,7 +1245,7 @@ func PolicyMfaDefault_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyMfaDefault.PolicyMfaDefault",
+		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1264,7 +1264,7 @@ func PolicyMfaDefault_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyMfaDefault.PolicyMfaDefault",
+		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1283,7 +1283,7 @@ func PolicyMfaDefault_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.policyMfaDefault.PolicyMfaDefault",
+		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1296,7 +1296,7 @@ func PolicyMfaDefault_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.policyMfaDefault.PolicyMfaDefault",
+		"@cdktf/provider-okta.policyMfaDefault.PolicyMfaDefault",
 		"tfResourceType",
 		&returns,
 	)

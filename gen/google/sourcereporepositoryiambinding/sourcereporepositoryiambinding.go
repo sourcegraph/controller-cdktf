@@ -424,7 +424,7 @@ func NewSourcerepoRepositoryIamBinding(scope constructs.Construct, id *string, c
 	j := jsiiProxy_SourcerepoRepositoryIamBinding{}
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewSourcerepoRepositoryIamBinding_Override(s SourcerepoRepositoryIamBinding
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -592,7 +592,7 @@ func SourcerepoRepositoryIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func SourcerepoRepositoryIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func SourcerepoRepositoryIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func SourcerepoRepositoryIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
+		"@cdktf/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBinding",
 		"tfResourceType",
 		&returns,
 	)

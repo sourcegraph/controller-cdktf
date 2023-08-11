@@ -116,7 +116,7 @@ func NewStorageBucketLifecycleRuleList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_StorageBucketLifecycleRuleList{}
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketLifecycleRuleList",
+		"@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStorageBucketLifecycleRuleList_Override(s StorageBucketLifecycleRuleList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketLifecycleRuleList",
+		"@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

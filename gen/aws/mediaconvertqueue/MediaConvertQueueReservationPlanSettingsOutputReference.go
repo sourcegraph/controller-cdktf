@@ -225,7 +225,7 @@ func NewMediaConvertQueueReservationPlanSettingsOutputReference(terraformResourc
 	j := jsiiProxy_MediaConvertQueueReservationPlanSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewMediaConvertQueueReservationPlanSettingsOutputReference_Override(m Media
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueueReservationPlanSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

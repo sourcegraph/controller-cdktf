@@ -203,7 +203,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference(ter
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecDnsConfigOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -225,7 +225,7 @@ func NewTemplateEmailTranslationsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_TemplateEmailTranslationsOutputReference{}
 
 	_jsii_.Create(
-		"okta.templateEmail.TemplateEmailTranslationsOutputReference",
+		"@cdktf/provider-okta.templateEmail.TemplateEmailTranslationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewTemplateEmailTranslationsOutputReference_Override(t TemplateEmailTransla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.templateEmail.TemplateEmailTranslationsOutputReference",
+		"@cdktf/provider-okta.templateEmail.TemplateEmailTranslationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

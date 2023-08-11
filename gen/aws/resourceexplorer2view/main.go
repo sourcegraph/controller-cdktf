@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.resourceexplorer2View.Resourceexplorer2View",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2View",
 		reflect.TypeOf((*Resourceexplorer2View)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewConfig",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewConfig",
 		reflect.TypeOf((*Resourceexplorer2ViewConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewFilters",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFilters",
 		reflect.TypeOf((*Resourceexplorer2ViewFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewFiltersList",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersList",
 		reflect.TypeOf((*Resourceexplorer2ViewFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewFiltersOutputReference",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewFiltersOutputReference",
 		reflect.TypeOf((*Resourceexplorer2ViewFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewIncludedProperty",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedProperty",
 		reflect.TypeOf((*Resourceexplorer2ViewIncludedProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyList",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyList",
 		reflect.TypeOf((*Resourceexplorer2ViewIncludedPropertyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyOutputReference",
+		"@cdktf/provider-aws.resourceexplorer2View.Resourceexplorer2ViewIncludedPropertyOutputReference",
 		reflect.TypeOf((*Resourceexplorer2ViewIncludedPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

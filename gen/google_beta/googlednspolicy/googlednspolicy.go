@@ -487,7 +487,7 @@ func NewGoogleDnsPolicy(scope constructs.Construct, id *string, config *GoogleDn
 	j := jsiiProxy_GoogleDnsPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsPolicy.GoogleDnsPolicy",
+		"@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewGoogleDnsPolicy_Override(g GoogleDnsPolicy, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsPolicy.GoogleDnsPolicy",
+		"@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -666,7 +666,7 @@ func GoogleDnsPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsPolicy.GoogleDnsPolicy",
+		"@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func GoogleDnsPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsPolicy.GoogleDnsPolicy",
+		"@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func GoogleDnsPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsPolicy.GoogleDnsPolicy",
+		"@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func GoogleDnsPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDnsPolicy.GoogleDnsPolicy",
+		"@cdktf/provider-google-beta.googleDnsPolicy.GoogleDnsPolicy",
 		"tfResourceType",
 		&returns,
 	)

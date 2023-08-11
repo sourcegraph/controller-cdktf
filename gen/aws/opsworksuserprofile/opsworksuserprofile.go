@@ -390,7 +390,7 @@ func NewOpsworksUserProfile(scope constructs.Construct, id *string, config *Opsw
 	j := jsiiProxy_OpsworksUserProfile{}
 
 	_jsii_.Create(
-		"aws.opsworksUserProfile.OpsworksUserProfile",
+		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewOpsworksUserProfile_Override(o OpsworksUserProfile, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksUserProfile.OpsworksUserProfile",
+		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -558,7 +558,7 @@ func OpsworksUserProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksUserProfile.OpsworksUserProfile",
+		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func OpsworksUserProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksUserProfile.OpsworksUserProfile",
+		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func OpsworksUserProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksUserProfile.OpsworksUserProfile",
+		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func OpsworksUserProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksUserProfile.OpsworksUserProfile",
+		"@cdktf/provider-aws.opsworksUserProfile.OpsworksUserProfile",
 		"tfResourceType",
 		&returns,
 	)

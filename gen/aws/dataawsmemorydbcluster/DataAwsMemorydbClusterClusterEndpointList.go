@@ -104,7 +104,7 @@ func NewDataAwsMemorydbClusterClusterEndpointList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsMemorydbClusterClusterEndpointList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterClusterEndpointList",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterClusterEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMemorydbClusterClusterEndpointList_Override(d DataAwsMemorydbClus
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterClusterEndpointList",
+		"@cdktf/provider-aws.dataAwsMemorydbCluster.DataAwsMemorydbClusterClusterEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

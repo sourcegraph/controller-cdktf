@@ -468,7 +468,7 @@ func NewMtlsCertificate(scope constructs.Construct, id *string, config *MtlsCert
 	j := jsiiProxy_MtlsCertificate{}
 
 	_jsii_.Create(
-		"cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -481,7 +481,7 @@ func NewMtlsCertificate_Override(m MtlsCertificate, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -647,7 +647,7 @@ func MtlsCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func MtlsCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func MtlsCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func MtlsCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.mtlsCertificate.MtlsCertificate",
+		"@cdktf/provider-cloudflare.mtlsCertificate.MtlsCertificate",
 		"tfResourceType",
 		&returns,
 	)

@@ -390,7 +390,7 @@ func NewRoute53ResolverRuleAssociation(scope constructs.Construct, id *string, c
 	j := jsiiProxy_Route53ResolverRuleAssociation{}
 
 	_jsii_.Create(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewRoute53ResolverRuleAssociation_Override(r Route53ResolverRuleAssociation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -547,7 +547,7 @@ func Route53ResolverRuleAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func Route53ResolverRuleAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func Route53ResolverRuleAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func Route53ResolverRuleAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
+		"@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
 		reflect.TypeOf((*SqsQueueRedriveAllowPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicyConfig",
+		"@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicyConfig",
 		reflect.TypeOf((*SqsQueueRedriveAllowPolicyConfig)(nil)).Elem(),
 	)
 }

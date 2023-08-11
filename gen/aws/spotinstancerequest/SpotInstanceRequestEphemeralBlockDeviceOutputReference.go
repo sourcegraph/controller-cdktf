@@ -227,7 +227,7 @@ func NewSpotInstanceRequestEphemeralBlockDeviceOutputReference(terraformResource
 	j := jsiiProxy_SpotInstanceRequestEphemeralBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSpotInstanceRequestEphemeralBlockDeviceOutputReference_Override(s SpotIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

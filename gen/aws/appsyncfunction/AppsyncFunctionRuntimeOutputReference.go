@@ -202,7 +202,7 @@ func NewAppsyncFunctionRuntimeOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_AppsyncFunctionRuntimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncFunction.AppsyncFunctionRuntimeOutputReference",
+		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppsyncFunctionRuntimeOutputReference_Override(a AppsyncFunctionRuntimeO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncFunction.AppsyncFunctionRuntimeOutputReference",
+		"@cdktf/provider-aws.appsyncFunction.AppsyncFunctionRuntimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

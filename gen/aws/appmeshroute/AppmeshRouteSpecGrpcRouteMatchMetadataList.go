@@ -116,7 +116,7 @@ func NewAppmeshRouteSpecGrpcRouteMatchMetadataList(terraformResource cdktf.IInte
 	j := jsiiProxy_AppmeshRouteSpecGrpcRouteMatchMetadataList{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataList",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppmeshRouteSpecGrpcRouteMatchMetadataList_Override(a AppmeshRouteSpecGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataList",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteMatchMetadataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

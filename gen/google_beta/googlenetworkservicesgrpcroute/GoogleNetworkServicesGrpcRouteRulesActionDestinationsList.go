@@ -116,7 +116,7 @@ func NewGoogleNetworkServicesGrpcRouteRulesActionDestinationsList(terraformResou
 	j := jsiiProxy_GoogleNetworkServicesGrpcRouteRulesActionDestinationsList{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionDestinationsList",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionDestinationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleNetworkServicesGrpcRouteRulesActionDestinationsList_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionDestinationsList",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRouteRulesActionDestinationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

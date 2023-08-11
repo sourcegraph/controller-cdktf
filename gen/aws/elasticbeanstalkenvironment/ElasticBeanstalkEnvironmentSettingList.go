@@ -116,7 +116,7 @@ func NewElasticBeanstalkEnvironmentSettingList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ElasticBeanstalkEnvironmentSettingList{}
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentSettingList",
+		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentSettingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewElasticBeanstalkEnvironmentSettingList_Override(e ElasticBeanstalkEnviro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentSettingList",
+		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentSettingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

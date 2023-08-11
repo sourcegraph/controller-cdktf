@@ -322,7 +322,7 @@ func NewCronJobSpecOutputReference(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_CronJobSpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -334,7 +334,7 @@ func NewCronJobSpecOutputReference_Override(c CronJobSpecOutputReference, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

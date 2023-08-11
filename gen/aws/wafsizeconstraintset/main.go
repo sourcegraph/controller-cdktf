@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSet",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet",
 		reflect.TypeOf((*WafSizeConstraintSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,19 +62,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetConfig",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetConfig",
 		reflect.TypeOf((*WafSizeConstraintSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraints",
 		reflect.TypeOf((*WafSizeConstraintSetSizeConstraints)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatch",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatch",
 		reflect.TypeOf((*WafSizeConstraintSetSizeConstraintsFieldToMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference",
 		reflect.TypeOf((*WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsList",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsList",
 		reflect.TypeOf((*WafSizeConstraintSetSizeConstraintsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -132,7 +132,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsOutputReference",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsOutputReference",
 		reflect.TypeOf((*WafSizeConstraintSetSizeConstraintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparisonOperator", GoGetter: "ComparisonOperator"},

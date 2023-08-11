@@ -251,7 +251,7 @@ func NewCloudfrontDistributionCustomErrorResponseOutputReference(terraformResour
 	j := jsiiProxy_CloudfrontDistributionCustomErrorResponseOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewCloudfrontDistributionCustomErrorResponseOutputReference_Override(c Clou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionCustomErrorResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

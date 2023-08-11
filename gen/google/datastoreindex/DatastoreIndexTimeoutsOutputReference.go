@@ -204,7 +204,7 @@ func NewDatastoreIndexTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DatastoreIndexTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.datastoreIndex.DatastoreIndexTimeoutsOutputReference",
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDatastoreIndexTimeoutsOutputReference_Override(d DatastoreIndexTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastoreIndex.DatastoreIndexTimeoutsOutputReference",
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

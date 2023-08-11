@@ -566,7 +566,7 @@ func NewConnectQueue(scope constructs.Construct, id *string, config *ConnectQueu
 	j := jsiiProxy_ConnectQueue{}
 
 	_jsii_.Create(
-		"aws.connectQueue.ConnectQueue",
+		"@cdktf/provider-aws.connectQueue.ConnectQueue",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -579,7 +579,7 @@ func NewConnectQueue_Override(c ConnectQueue, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectQueue.ConnectQueue",
+		"@cdktf/provider-aws.connectQueue.ConnectQueue",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -789,7 +789,7 @@ func ConnectQueue_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectQueue.ConnectQueue",
+		"@cdktf/provider-aws.connectQueue.ConnectQueue",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func ConnectQueue_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectQueue.ConnectQueue",
+		"@cdktf/provider-aws.connectQueue.ConnectQueue",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -827,7 +827,7 @@ func ConnectQueue_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectQueue.ConnectQueue",
+		"@cdktf/provider-aws.connectQueue.ConnectQueue",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func ConnectQueue_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectQueue.ConnectQueue",
+		"@cdktf/provider-aws.connectQueue.ConnectQueue",
 		"tfResourceType",
 		&returns,
 	)

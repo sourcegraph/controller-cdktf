@@ -116,7 +116,7 @@ func NewDeploymentV1SpecTemplateSpecInitContainerEnvList(terraformResource cdktf
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerEnvList{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerEnvList",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentV1SpecTemplateSpecInitContainerEnvList_Override(d DeploymentV1
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerEnvList",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

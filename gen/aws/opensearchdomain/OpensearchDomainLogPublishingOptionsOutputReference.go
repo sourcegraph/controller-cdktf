@@ -226,7 +226,7 @@ func NewOpensearchDomainLogPublishingOptionsOutputReference(terraformResource cd
 	j := jsiiProxy_OpensearchDomainLogPublishingOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainLogPublishingOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewOpensearchDomainLogPublishingOptionsOutputReference_Override(o Opensearc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainLogPublishingOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainLogPublishingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

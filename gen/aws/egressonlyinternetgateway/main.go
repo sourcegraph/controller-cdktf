@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
+		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGateway",
 		reflect.TypeOf((*EgressOnlyInternetGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig",
+		"@cdktf/provider-aws.egressOnlyInternetGateway.EgressOnlyInternetGatewayConfig",
 		reflect.TypeOf((*EgressOnlyInternetGatewayConfig)(nil)).Elem(),
 	)
 }

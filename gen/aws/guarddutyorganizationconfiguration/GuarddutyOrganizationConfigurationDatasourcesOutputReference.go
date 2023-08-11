@@ -228,7 +228,7 @@ func NewGuarddutyOrganizationConfigurationDatasourcesOutputReference(terraformRe
 	j := jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesOutputReference{}
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesOutputReference",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGuarddutyOrganizationConfigurationDatasourcesOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesOutputReference",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

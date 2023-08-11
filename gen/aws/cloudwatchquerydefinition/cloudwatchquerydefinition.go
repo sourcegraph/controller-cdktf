@@ -377,7 +377,7 @@ func NewCloudwatchQueryDefinition(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CloudwatchQueryDefinition{}
 
 	_jsii_.Create(
-		"aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
+		"@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewCloudwatchQueryDefinition_Override(c CloudwatchQueryDefinition, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
+		"@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -534,7 +534,7 @@ func CloudwatchQueryDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
+		"@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func CloudwatchQueryDefinition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
+		"@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func CloudwatchQueryDefinition_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
+		"@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func CloudwatchQueryDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
+		"@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
 		"tfResourceType",
 		&returns,
 	)

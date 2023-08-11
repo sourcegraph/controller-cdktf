@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecReadinessGateList(terraformResource cdktf.IInte
 	j := jsiiProxy_DaemonsetSpecTemplateSpecReadinessGateList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecReadinessGateList_Override(d DaemonsetSpecTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecReadinessGateList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecReadinessGateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

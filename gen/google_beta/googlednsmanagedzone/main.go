@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZone",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZone",
 		reflect.TypeOf((*GoogleDnsManagedZone)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -108,11 +108,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneCloudLoggingConfig",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneCloudLoggingConfig",
 		reflect.TypeOf((*GoogleDnsManagedZoneCloudLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneCloudLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneCloudLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZoneCloudLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,19 +146,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneConfig",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneConfig",
 		reflect.TypeOf((*GoogleDnsManagedZoneConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfig",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfig",
 		reflect.TypeOf((*GoogleDnsManagedZoneDnssecConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs",
 		reflect.TypeOf((*GoogleDnsManagedZoneDnssecConfigDefaultKeySpecs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList",
 		reflect.TypeOf((*GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -179,7 +179,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -223,7 +223,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneDnssecConfigOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZoneDnssecConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,11 +268,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfig",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfig",
 		reflect.TypeOf((*GoogleDnsManagedZoneForwardingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZoneForwardingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -307,11 +307,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigTargetNameServers",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigTargetNameServers",
 		reflect.TypeOf((*GoogleDnsManagedZoneForwardingConfigTargetNameServers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigTargetNameServersList",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigTargetNameServersList",
 		reflect.TypeOf((*GoogleDnsManagedZoneForwardingConfigTargetNameServersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -332,7 +332,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZoneForwardingConfigTargetNameServersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -369,11 +369,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfig",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfig",
 		reflect.TypeOf((*GoogleDnsManagedZonePeeringConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZonePeeringConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -408,11 +408,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigTargetNetwork",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigTargetNetwork",
 		reflect.TypeOf((*GoogleDnsManagedZonePeeringConfigTargetNetwork)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZonePeeringConfigTargetNetworkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -446,15 +446,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfig",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfig",
 		reflect.TypeOf((*GoogleDnsManagedZonePrivateVisibilityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters",
 		reflect.TypeOf((*GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList",
 		reflect.TypeOf((*GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -475,7 +475,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -509,11 +509,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigNetworks",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigNetworks",
 		reflect.TypeOf((*GoogleDnsManagedZonePrivateVisibilityConfigNetworks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigNetworksList",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigNetworksList",
 		reflect.TypeOf((*GoogleDnsManagedZonePrivateVisibilityConfigNetworksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -534,7 +534,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigNetworksOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigNetworksOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZonePrivateVisibilityConfigNetworksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -568,7 +568,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZonePrivateVisibilityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -607,15 +607,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfig",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfig",
 		reflect.TypeOf((*GoogleDnsManagedZoneServiceDirectoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespace",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespace",
 		reflect.TypeOf((*GoogleDnsManagedZoneServiceDirectoryConfigNamespace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZoneServiceDirectoryConfigNamespaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -649,7 +649,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneServiceDirectoryConfigOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZoneServiceDirectoryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -684,11 +684,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneTimeouts",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneTimeouts",
 		reflect.TypeOf((*GoogleDnsManagedZoneTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDnsManagedZone.GoogleDnsManagedZoneTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZoneTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDnsManagedZoneTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

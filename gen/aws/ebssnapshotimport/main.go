@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ebsSnapshotImport.EbsSnapshotImport",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		reflect.TypeOf((*EbsSnapshotImport)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,11 +100,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ebsSnapshotImport.EbsSnapshotImportClientData",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientData",
 		reflect.TypeOf((*EbsSnapshotImportClientData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportClientDataOutputReference",
 		reflect.TypeOf((*EbsSnapshotImportClientDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
@@ -148,15 +148,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ebsSnapshotImport.EbsSnapshotImportConfig",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportConfig",
 		reflect.TypeOf((*EbsSnapshotImportConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ebsSnapshotImport.EbsSnapshotImportDiskContainer",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainer",
 		reflect.TypeOf((*EbsSnapshotImportDiskContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference",
 		reflect.TypeOf((*EbsSnapshotImportDiskContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -200,11 +200,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucket",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucket",
 		reflect.TypeOf((*EbsSnapshotImportDiskContainerUserBucket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucketOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerUserBucketOutputReference",
 		reflect.TypeOf((*EbsSnapshotImportDiskContainerUserBucketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -240,11 +240,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ebsSnapshotImport.EbsSnapshotImportTimeouts",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportTimeouts",
 		reflect.TypeOf((*EbsSnapshotImportTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ebsSnapshotImport.EbsSnapshotImportTimeoutsOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportTimeoutsOutputReference",
 		reflect.TypeOf((*EbsSnapshotImportTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

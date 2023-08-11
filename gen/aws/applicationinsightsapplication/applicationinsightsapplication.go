@@ -522,7 +522,7 @@ func NewApplicationinsightsApplication(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ApplicationinsightsApplication{}
 
 	_jsii_.Create(
-		"aws.applicationinsightsApplication.ApplicationinsightsApplication",
+		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -535,7 +535,7 @@ func NewApplicationinsightsApplication_Override(a ApplicationinsightsApplication
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.applicationinsightsApplication.ApplicationinsightsApplication",
+		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -745,7 +745,7 @@ func ApplicationinsightsApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.applicationinsightsApplication.ApplicationinsightsApplication",
+		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -764,7 +764,7 @@ func ApplicationinsightsApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.applicationinsightsApplication.ApplicationinsightsApplication",
+		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func ApplicationinsightsApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.applicationinsightsApplication.ApplicationinsightsApplication",
+		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func ApplicationinsightsApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.applicationinsightsApplication.ApplicationinsightsApplication",
+		"@cdktf/provider-aws.applicationinsightsApplication.ApplicationinsightsApplication",
 		"tfResourceType",
 		&returns,
 	)

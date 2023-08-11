@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.zoneCacheVariants.ZoneCacheVariants",
+		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
 		reflect.TypeOf((*ZoneCacheVariants)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.zoneCacheVariants.ZoneCacheVariantsConfig",
+		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsConfig",
 		reflect.TypeOf((*ZoneCacheVariantsConfig)(nil)).Elem(),
 	)
 }

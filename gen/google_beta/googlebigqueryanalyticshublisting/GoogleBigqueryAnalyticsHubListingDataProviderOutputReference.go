@@ -203,7 +203,7 @@ func NewGoogleBigqueryAnalyticsHubListingDataProviderOutputReference(terraformRe
 	j := jsiiProxy_GoogleBigqueryAnalyticsHubListingDataProviderOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListingDataProviderOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListingDataProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleBigqueryAnalyticsHubListingDataProviderOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListingDataProviderOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListingDataProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

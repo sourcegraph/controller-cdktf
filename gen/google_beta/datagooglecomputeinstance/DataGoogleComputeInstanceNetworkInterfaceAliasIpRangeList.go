@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceNetworkInterfaceAliasIpRangeList(terraformResou
 	j := jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceAliasIpRangeList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceNetworkInterfaceAliasIpRangeList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceNetworkInterfaceAliasIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceNetworkInterfaceAliasIpRangeList_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceNetworkInterfaceAliasIpRangeList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceNetworkInterfaceAliasIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

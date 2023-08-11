@@ -712,7 +712,7 @@ func NewGoogleComputeRegionHealthCheck(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleComputeRegionHealthCheck{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -725,7 +725,7 @@ func NewGoogleComputeRegionHealthCheck_Override(g GoogleComputeRegionHealthCheck
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -924,7 +924,7 @@ func GoogleComputeRegionHealthCheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -943,7 +943,7 @@ func GoogleComputeRegionHealthCheck_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -962,7 +962,7 @@ func GoogleComputeRegionHealthCheck_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -975,7 +975,7 @@ func GoogleComputeRegionHealthCheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
+		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheck",
 		"tfResourceType",
 		&returns,
 	)

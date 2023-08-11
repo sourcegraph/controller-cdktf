@@ -228,7 +228,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputR
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesConfigMapItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

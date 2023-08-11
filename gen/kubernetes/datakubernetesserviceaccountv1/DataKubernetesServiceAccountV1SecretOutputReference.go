@@ -167,7 +167,7 @@ func NewDataKubernetesServiceAccountV1SecretOutputReference(terraformResource cd
 	j := jsiiProxy_DataKubernetesServiceAccountV1SecretOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataKubernetesServiceAccountV1SecretOutputReference_Override(d DataKuber
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceAccountV1.DataKubernetesServiceAccountV1SecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsResourcegroupstaggingapiResourcesResourceTagMappingListCompliance
 	j := jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsList",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsResourcegroupstaggingapiResourcesResourceTagMappingListCompliance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsList",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

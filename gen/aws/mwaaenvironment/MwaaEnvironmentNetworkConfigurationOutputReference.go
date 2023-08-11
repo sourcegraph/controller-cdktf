@@ -202,7 +202,7 @@ func NewMwaaEnvironmentNetworkConfigurationOutputReference(terraformResource cdk
 	j := jsiiProxy_MwaaEnvironmentNetworkConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewMwaaEnvironmentNetworkConfigurationOutputReference_Override(m MwaaEnviro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

@@ -179,7 +179,7 @@ func NewGoogleDataprocWorkflowTemplateParametersValidationValuesOutputReference(
 	j := jsiiProxy_GoogleDataprocWorkflowTemplateParametersValidationValuesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateParametersValidationValuesOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateParametersValidationValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDataprocWorkflowTemplateParametersValidationValuesOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateParametersValidationValuesOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateParametersValidationValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

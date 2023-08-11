@@ -576,7 +576,7 @@ func NewCloudbuildBitbucketServerConfig(scope constructs.Construct, id *string, 
 	j := jsiiProxy_CloudbuildBitbucketServerConfig{}
 
 	_jsii_.Create(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -589,7 +589,7 @@ func NewCloudbuildBitbucketServerConfig_Override(c CloudbuildBitbucketServerConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -788,7 +788,7 @@ func CloudbuildBitbucketServerConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func CloudbuildBitbucketServerConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -826,7 +826,7 @@ func CloudbuildBitbucketServerConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func CloudbuildBitbucketServerConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		"tfResourceType",
 		&returns,
 	)

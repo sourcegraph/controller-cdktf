@@ -390,7 +390,7 @@ func NewGoogleStorageObjectAcl(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleStorageObjectAcl{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewGoogleStorageObjectAcl_Override(g GoogleStorageObjectAcl, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -558,7 +558,7 @@ func GoogleStorageObjectAcl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleStorageObjectAcl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func GoogleStorageObjectAcl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleStorageObjectAcl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageObjectAcl.GoogleStorageObjectAcl",
 		"tfResourceType",
 		&returns,
 	)

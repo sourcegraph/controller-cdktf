@@ -179,7 +179,7 @@ func NewGoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration
 	j := jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

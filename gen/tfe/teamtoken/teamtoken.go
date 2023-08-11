@@ -354,7 +354,7 @@ func NewTeamToken(scope constructs.Construct, id *string, config *TeamTokenConfi
 	j := jsiiProxy_TeamToken{}
 
 	_jsii_.Create(
-		"tfe.teamToken.TeamToken",
+		"@cdktf/provider-tfe.teamToken.TeamToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewTeamToken_Override(t TeamToken, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.teamToken.TeamToken",
+		"@cdktf/provider-tfe.teamToken.TeamToken",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -500,7 +500,7 @@ func TeamToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamToken.TeamToken",
+		"@cdktf/provider-tfe.teamToken.TeamToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -519,7 +519,7 @@ func TeamToken_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamToken.TeamToken",
+		"@cdktf/provider-tfe.teamToken.TeamToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func TeamToken_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamToken.TeamToken",
+		"@cdktf/provider-tfe.teamToken.TeamToken",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func TeamToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.teamToken.TeamToken",
+		"@cdktf/provider-tfe.teamToken.TeamToken",
 		"tfResourceType",
 		&returns,
 	)

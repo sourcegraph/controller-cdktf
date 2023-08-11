@@ -104,7 +104,7 @@ func NewDataAwsEksNodeGroupResourcesAutoscalingGroupsList(terraformResource cdkt
 	j := jsiiProxy_DataAwsEksNodeGroupResourcesAutoscalingGroupsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEksNodeGroupResourcesAutoscalingGroupsList_Override(d DataAwsEksN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

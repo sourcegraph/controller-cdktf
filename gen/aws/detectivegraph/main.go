@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.detectiveGraph.DetectiveGraph",
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
 		reflect.TypeOf((*DetectiveGraph)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.detectiveGraph.DetectiveGraphConfig",
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraphConfig",
 		reflect.TypeOf((*DetectiveGraphConfig)(nil)).Elem(),
 	)
 }

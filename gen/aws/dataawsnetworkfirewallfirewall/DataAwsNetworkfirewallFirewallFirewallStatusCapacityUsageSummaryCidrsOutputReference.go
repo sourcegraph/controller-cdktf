@@ -189,7 +189,7 @@ func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOut
 	j := jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

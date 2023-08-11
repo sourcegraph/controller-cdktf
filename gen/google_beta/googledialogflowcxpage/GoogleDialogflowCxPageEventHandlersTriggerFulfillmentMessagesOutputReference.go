@@ -180,7 +180,7 @@ func NewGoogleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputRefer
 	j := jsiiProxy_GoogleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

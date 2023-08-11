@@ -309,7 +309,7 @@ func NewHorizontalPodAutoscalerV1MetadataOutputReference(terraformResource cdktf
 	j := jsiiProxy_HorizontalPodAutoscalerV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewHorizontalPodAutoscalerV1MetadataOutputReference_Override(h HorizontalPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

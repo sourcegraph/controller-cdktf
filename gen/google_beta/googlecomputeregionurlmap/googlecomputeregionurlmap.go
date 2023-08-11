@@ -603,7 +603,7 @@ func NewGoogleComputeRegionUrlMap(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleComputeRegionUrlMap{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -616,7 +616,7 @@ func NewGoogleComputeRegionUrlMap_Override(g GoogleComputeRegionUrlMap, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -782,7 +782,7 @@ func GoogleComputeRegionUrlMap_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -801,7 +801,7 @@ func GoogleComputeRegionUrlMap_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func GoogleComputeRegionUrlMap_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -833,7 +833,7 @@ func GoogleComputeRegionUrlMap_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMap",
 		"tfResourceType",
 		&returns,
 	)

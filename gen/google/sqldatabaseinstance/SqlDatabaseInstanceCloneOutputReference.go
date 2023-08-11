@@ -251,7 +251,7 @@ func NewSqlDatabaseInstanceCloneOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SqlDatabaseInstanceCloneOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewSqlDatabaseInstanceCloneOutputReference_Override(s SqlDatabaseInstanceCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

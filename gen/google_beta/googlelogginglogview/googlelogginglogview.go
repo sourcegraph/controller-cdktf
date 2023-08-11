@@ -484,7 +484,7 @@ func NewGoogleLoggingLogView(scope constructs.Construct, id *string, config *Goo
 	j := jsiiProxy_GoogleLoggingLogView{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingLogView.GoogleLoggingLogView",
+		"@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogView",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewGoogleLoggingLogView_Override(g GoogleLoggingLogView, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingLogView.GoogleLoggingLogView",
+		"@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogView",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -674,7 +674,7 @@ func GoogleLoggingLogView_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingLogView.GoogleLoggingLogView",
+		"@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogView",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func GoogleLoggingLogView_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingLogView.GoogleLoggingLogView",
+		"@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogView",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GoogleLoggingLogView_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingLogView.GoogleLoggingLogView",
+		"@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogView",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func GoogleLoggingLogView_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingLogView.GoogleLoggingLogView",
+		"@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogView",
 		"tfResourceType",
 		&returns,
 	)

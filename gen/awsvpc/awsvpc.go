@@ -3616,7 +3616,7 @@ func NewAwsvpc(scope constructs.Construct, id *string, config *AwsvpcConfig) Aws
 	j := jsiiProxy_Awsvpc{}
 
 	_jsii_.Create(
-		"awsvpc.Awsvpc",
+		"@cdktf/provider-awsvpc.Awsvpc",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -3628,7 +3628,7 @@ func NewAwsvpc_Override(a Awsvpc, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"awsvpc.Awsvpc",
+		"@cdktf/provider-awsvpc.Awsvpc",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -5156,7 +5156,7 @@ func Awsvpc_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awsvpc.Awsvpc",
+		"@cdktf/provider-awsvpc.Awsvpc",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -5175,7 +5175,7 @@ func Awsvpc_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"awsvpc.Awsvpc",
+		"@cdktf/provider-awsvpc.Awsvpc",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,

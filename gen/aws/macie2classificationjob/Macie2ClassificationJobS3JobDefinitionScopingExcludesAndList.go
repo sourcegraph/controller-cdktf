@@ -116,7 +116,7 @@ func NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndList(terraformRe
 	j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndList_Override(m 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

@@ -252,7 +252,7 @@ func NewPodSpecSecurityContextSeLinuxOptionsOutputReference(terraformResource cd
 	j := jsiiProxy_PodSpecSecurityContextSeLinuxOptionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecSecurityContextSeLinuxOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewPodSpecSecurityContextSeLinuxOptionsOutputReference_Override(p PodSpecSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecSecurityContextSeLinuxOptionsOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecSecurityContextSeLinuxOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

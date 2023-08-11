@@ -203,7 +203,7 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputR
 	j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

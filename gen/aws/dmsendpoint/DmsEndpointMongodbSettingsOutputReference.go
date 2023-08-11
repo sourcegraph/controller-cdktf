@@ -300,7 +300,7 @@ func NewDmsEndpointMongodbSettingsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DmsEndpointMongodbSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewDmsEndpointMongodbSettingsOutputReference_Override(d DmsEndpointMongodbS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

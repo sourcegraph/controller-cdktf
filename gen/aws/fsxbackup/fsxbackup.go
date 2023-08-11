@@ -460,7 +460,7 @@ func NewFsxBackup(scope constructs.Construct, id *string, config *FsxBackupConfi
 	j := jsiiProxy_FsxBackup{}
 
 	_jsii_.Create(
-		"aws.fsxBackup.FsxBackup",
+		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewFsxBackup_Override(f FsxBackup, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxBackup.FsxBackup",
+		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -628,7 +628,7 @@ func FsxBackup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxBackup.FsxBackup",
+		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func FsxBackup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxBackup.FsxBackup",
+		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func FsxBackup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxBackup.FsxBackup",
+		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func FsxBackup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxBackup.FsxBackup",
+		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		"tfResourceType",
 		&returns,
 	)

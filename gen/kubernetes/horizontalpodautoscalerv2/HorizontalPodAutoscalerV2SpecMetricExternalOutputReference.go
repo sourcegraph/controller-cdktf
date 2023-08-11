@@ -203,7 +203,7 @@ func NewHorizontalPodAutoscalerV2SpecMetricExternalOutputReference(terraformReso
 	j := jsiiProxy_HorizontalPodAutoscalerV2SpecMetricExternalOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricExternalOutputReference",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricExternalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewHorizontalPodAutoscalerV2SpecMetricExternalOutputReference_Override(h Ho
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricExternalOutputReference",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricExternalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

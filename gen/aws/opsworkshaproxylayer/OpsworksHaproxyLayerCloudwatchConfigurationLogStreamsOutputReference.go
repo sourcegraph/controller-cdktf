@@ -418,7 +418,7 @@ func NewOpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference(ter
 	j := jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewOpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

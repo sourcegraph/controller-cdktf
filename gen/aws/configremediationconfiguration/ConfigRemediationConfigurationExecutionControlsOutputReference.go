@@ -180,7 +180,7 @@ func NewConfigRemediationConfigurationExecutionControlsOutputReference(terraform
 	j := jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference{}
 
 	_jsii_.Create(
-		"aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsOutputReference",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewConfigRemediationConfigurationExecutionControlsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsOutputReference",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

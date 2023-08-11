@@ -104,7 +104,7 @@ func NewDataKubernetesServiceStatusList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataKubernetesServiceStatusList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesService.DataKubernetesServiceStatusList",
+		"@cdktf/provider-kubernetes.dataKubernetesService.DataKubernetesServiceStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesServiceStatusList_Override(d DataKubernetesServiceStatusLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesService.DataKubernetesServiceStatusList",
+		"@cdktf/provider-kubernetes.dataKubernetesService.DataKubernetesServiceStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

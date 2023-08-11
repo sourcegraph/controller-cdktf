@@ -449,7 +449,7 @@ func NewElasticacheParameterGroup(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ElasticacheParameterGroup{}
 
 	_jsii_.Create(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroup",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewElasticacheParameterGroup_Override(e ElasticacheParameterGroup, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroup",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -628,7 +628,7 @@ func ElasticacheParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroup",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func ElasticacheParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroup",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func ElasticacheParameterGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroup",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func ElasticacheParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroup",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

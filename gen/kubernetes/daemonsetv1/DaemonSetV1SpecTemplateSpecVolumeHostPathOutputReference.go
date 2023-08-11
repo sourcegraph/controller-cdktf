@@ -204,7 +204,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference(terraformResour
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference_Override(d Daem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

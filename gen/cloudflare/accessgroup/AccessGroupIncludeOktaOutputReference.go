@@ -204,7 +204,7 @@ func NewAccessGroupIncludeOktaOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_AccessGroupIncludeOktaOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessGroupIncludeOktaOutputReference_Override(a AccessGroupIncludeOktaO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

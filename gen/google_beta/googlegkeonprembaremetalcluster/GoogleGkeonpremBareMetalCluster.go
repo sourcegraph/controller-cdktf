@@ -876,7 +876,7 @@ func NewGoogleGkeonpremBareMetalCluster(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleGkeonpremBareMetalCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -889,7 +889,7 @@ func NewGoogleGkeonpremBareMetalCluster_Override(g GoogleGkeonpremBareMetalClust
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1077,7 +1077,7 @@ func GoogleGkeonpremBareMetalCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1096,7 +1096,7 @@ func GoogleGkeonpremBareMetalCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1115,7 +1115,7 @@ func GoogleGkeonpremBareMetalCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1128,7 +1128,7 @@ func GoogleGkeonpremBareMetalCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster",
 		"tfResourceType",
 		&returns,
 	)

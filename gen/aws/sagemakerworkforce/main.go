@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkforce.SagemakerWorkforce",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforce",
 		reflect.TypeOf((*SagemakerWorkforce)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,11 +75,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfig",
 		reflect.TypeOf((*SagemakerWorkforceCognitoConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceCognitoConfigOutputReference",
 		reflect.TypeOf((*SagemakerWorkforceCognitoConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -115,15 +115,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkforce.SagemakerWorkforceConfig",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceConfig",
 		reflect.TypeOf((*SagemakerWorkforceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfig",
 		reflect.TypeOf((*SagemakerWorkforceOidcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference",
 		reflect.TypeOf((*SagemakerWorkforceOidcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizationEndpoint", GoGetter: "AuthorizationEndpoint"},
@@ -171,11 +171,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfig",
 		reflect.TypeOf((*SagemakerWorkforceSourceIpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceSourceIpConfigOutputReference",
 		reflect.TypeOf((*SagemakerWorkforceSourceIpConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrs", GoGetter: "Cidrs"},
@@ -209,11 +209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig",
 		reflect.TypeOf((*SagemakerWorkforceWorkforceVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference",
 		reflect.TypeOf((*SagemakerWorkforceWorkforceVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

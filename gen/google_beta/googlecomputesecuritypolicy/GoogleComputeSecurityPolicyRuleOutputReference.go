@@ -369,7 +369,7 @@ func NewGoogleComputeSecurityPolicyRuleOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -381,7 +381,7 @@ func NewGoogleComputeSecurityPolicyRuleOutputReference_Override(g GoogleComputeS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

@@ -204,7 +204,7 @@ func NewComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference(terrafor
 	j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference{}
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

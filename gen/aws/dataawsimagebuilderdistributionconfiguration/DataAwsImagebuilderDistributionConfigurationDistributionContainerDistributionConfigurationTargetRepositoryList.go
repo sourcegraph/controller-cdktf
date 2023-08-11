@@ -104,7 +104,7 @@ func NewDataAwsImagebuilderDistributionConfigurationDistributionContainerDistrib
 	j := jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryList{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryList",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsImagebuilderDistributionConfigurationDistributionContainerDistrib
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryList",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionContainerDistributionConfigurationTargetRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

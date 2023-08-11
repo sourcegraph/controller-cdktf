@@ -413,7 +413,7 @@ func NewLoggingBillingAccountExclusion(scope constructs.Construct, id *string, c
 	j := jsiiProxy_LoggingBillingAccountExclusion{}
 
 	_jsii_.Create(
-		"google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
+		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewLoggingBillingAccountExclusion_Override(l LoggingBillingAccountExclusion
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
+		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -592,7 +592,7 @@ func LoggingBillingAccountExclusion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
+		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func LoggingBillingAccountExclusion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
+		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func LoggingBillingAccountExclusion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
+		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func LoggingBillingAccountExclusion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
+		"@cdktf/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion",
 		"tfResourceType",
 		&returns,
 	)

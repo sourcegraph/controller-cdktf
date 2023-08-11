@@ -252,7 +252,7 @@ func NewDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference(terraformResour
 	j := jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference_Override(d DnsM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

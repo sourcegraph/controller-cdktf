@@ -104,7 +104,7 @@ func NewDataGoogleComputeBackendServiceOutlierDetectionList(terraformResource cd
 	j := jsiiProxy_DataGoogleComputeBackendServiceOutlierDetectionList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceOutlierDetectionList",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceOutlierDetectionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeBackendServiceOutlierDetectionList_Override(d DataGoogl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceOutlierDetectionList",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceOutlierDetectionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

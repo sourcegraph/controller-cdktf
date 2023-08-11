@@ -167,7 +167,7 @@ func NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositor
 	j := jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -324,7 +324,7 @@ func NewComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference(terrafo
 	j := jsiiProxy_ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

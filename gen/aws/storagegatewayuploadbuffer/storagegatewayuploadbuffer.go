@@ -367,7 +367,7 @@ func NewStoragegatewayUploadBuffer(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_StoragegatewayUploadBuffer{}
 
 	_jsii_.Create(
-		"aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
+		"@cdktf/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewStoragegatewayUploadBuffer_Override(s StoragegatewayUploadBuffer, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
+		"@cdktf/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -524,7 +524,7 @@ func StoragegatewayUploadBuffer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
+		"@cdktf/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func StoragegatewayUploadBuffer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
+		"@cdktf/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func StoragegatewayUploadBuffer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
+		"@cdktf/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func StoragegatewayUploadBuffer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
+		"@cdktf/provider-aws.storagegatewayUploadBuffer.StoragegatewayUploadBuffer",
 		"tfResourceType",
 		&returns,
 	)

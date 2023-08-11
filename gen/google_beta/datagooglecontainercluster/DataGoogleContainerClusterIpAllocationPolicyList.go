@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterIpAllocationPolicyList(terraformResource cdktf
 	j := jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterIpAllocationPolicyList_Override(d DataGoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

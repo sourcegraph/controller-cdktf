@@ -373,7 +373,7 @@ func NewDataGoogleServiceAccountAccessToken(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleServiceAccountAccessToken{}
 
 	_jsii_.Create(
-		"google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
+		"@cdktf/provider-google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataGoogleServiceAccountAccessToken_Override(d DataGoogleServiceAccountA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
+		"@cdktf/provider-google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -519,7 +519,7 @@ func DataGoogleServiceAccountAccessToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
+		"@cdktf/provider-google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func DataGoogleServiceAccountAccessToken_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
+		"@cdktf/provider-google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -557,7 +557,7 @@ func DataGoogleServiceAccountAccessToken_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
+		"@cdktf/provider-google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func DataGoogleServiceAccountAccessToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
+		"@cdktf/provider-google.dataGoogleServiceAccountAccessToken.DataGoogleServiceAccountAccessToken",
 		"tfResourceType",
 		&returns,
 	)

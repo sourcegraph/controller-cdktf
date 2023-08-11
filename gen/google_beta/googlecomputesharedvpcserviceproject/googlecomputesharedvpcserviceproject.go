@@ -390,7 +390,7 @@ func NewGoogleComputeSharedVpcServiceProject(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleComputeSharedVpcServiceProject{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewGoogleComputeSharedVpcServiceProject_Override(g GoogleComputeSharedVpcSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -547,7 +547,7 @@ func GoogleComputeSharedVpcServiceProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func GoogleComputeSharedVpcServiceProject_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleComputeSharedVpcServiceProject_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func GoogleComputeSharedVpcServiceProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject",
 		"tfResourceType",
 		&returns,
 	)

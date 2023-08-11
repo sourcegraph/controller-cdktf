@@ -202,7 +202,7 @@ func NewPodSecurityPolicySpecRunAsGroupRangeOutputReference(terraformResource cd
 	j := jsiiProxy_PodSecurityPolicySpecRunAsGroupRangeOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRangeOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewPodSecurityPolicySpecRunAsGroupRangeOutputReference_Override(p PodSecuri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRangeOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsGroupRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

@@ -577,7 +577,7 @@ func NewGoogleMonitoringMetricDescriptor(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleMonitoringMetricDescriptor{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
+		"@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -590,7 +590,7 @@ func NewGoogleMonitoringMetricDescriptor_Override(g GoogleMonitoringMetricDescri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
+		"@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -789,7 +789,7 @@ func GoogleMonitoringMetricDescriptor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
+		"@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func GoogleMonitoringMetricDescriptor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
+		"@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -827,7 +827,7 @@ func GoogleMonitoringMetricDescriptor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
+		"@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func GoogleMonitoringMetricDescriptor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
+		"@cdktf/provider-google-beta.googleMonitoringMetricDescriptor.GoogleMonitoringMetricDescriptor",
 		"tfResourceType",
 		&returns,
 	)

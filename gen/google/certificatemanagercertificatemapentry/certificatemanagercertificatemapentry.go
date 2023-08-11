@@ -542,7 +542,7 @@ func NewCertificateManagerCertificateMapEntry(scope constructs.Construct, id *st
 	j := jsiiProxy_CertificateManagerCertificateMapEntry{}
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -555,7 +555,7 @@ func NewCertificateManagerCertificateMapEntry_Override(c CertificateManagerCerti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -754,7 +754,7 @@ func CertificateManagerCertificateMapEntry_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func CertificateManagerCertificateMapEntry_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -792,7 +792,7 @@ func CertificateManagerCertificateMapEntry_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -805,7 +805,7 @@ func CertificateManagerCertificateMapEntry_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
 		"tfResourceType",
 		&returns,
 	)

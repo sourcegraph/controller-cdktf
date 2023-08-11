@@ -167,7 +167,7 @@ func NewDataKubernetesServiceV1SpecSessionAffinityConfigOutputReference(terrafor
 	j := jsiiProxy_DataKubernetesServiceV1SpecSessionAffinityConfigOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1SpecSessionAffinityConfigOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1SpecSessionAffinityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataKubernetesServiceV1SpecSessionAffinityConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1SpecSessionAffinityConfigOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesServiceV1.DataKubernetesServiceV1SpecSessionAffinityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

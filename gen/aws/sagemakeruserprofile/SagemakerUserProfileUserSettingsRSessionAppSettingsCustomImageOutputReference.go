@@ -226,7 +226,7 @@ func NewSagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputRefe
 	j := jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

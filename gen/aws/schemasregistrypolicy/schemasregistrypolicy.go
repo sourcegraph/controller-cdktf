@@ -342,7 +342,7 @@ func NewSchemasRegistryPolicy(scope constructs.Construct, id *string, config *Sc
 	j := jsiiProxy_SchemasRegistryPolicy{}
 
 	_jsii_.Create(
-		"aws.schemasRegistryPolicy.SchemasRegistryPolicy",
+		"@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewSchemasRegistryPolicy_Override(s SchemasRegistryPolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schemasRegistryPolicy.SchemasRegistryPolicy",
+		"@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -488,7 +488,7 @@ func SchemasRegistryPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schemasRegistryPolicy.SchemasRegistryPolicy",
+		"@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func SchemasRegistryPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schemasRegistryPolicy.SchemasRegistryPolicy",
+		"@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func SchemasRegistryPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schemasRegistryPolicy.SchemasRegistryPolicy",
+		"@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func SchemasRegistryPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.schemasRegistryPolicy.SchemasRegistryPolicy",
+		"@cdktf/provider-aws.schemasRegistryPolicy.SchemasRegistryPolicy",
 		"tfResourceType",
 		&returns,
 	)

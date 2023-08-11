@@ -178,7 +178,7 @@ func NewGoogleKmsKeyRingImportJobAttestationOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleKmsKeyRingImportJobAttestationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobAttestationOutputReference",
+		"@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobAttestationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGoogleKmsKeyRingImportJobAttestationOutputReference_Override(g GoogleKms
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobAttestationOutputReference",
+		"@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJobAttestationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

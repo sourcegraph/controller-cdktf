@@ -460,7 +460,7 @@ func NewAppstreamUser(scope constructs.Construct, id *string, config *AppstreamU
 	j := jsiiProxy_AppstreamUser{}
 
 	_jsii_.Create(
-		"aws.appstreamUser.AppstreamUser",
+		"@cdktf/provider-aws.appstreamUser.AppstreamUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewAppstreamUser_Override(a AppstreamUser, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamUser.AppstreamUser",
+		"@cdktf/provider-aws.appstreamUser.AppstreamUser",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -650,7 +650,7 @@ func AppstreamUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamUser.AppstreamUser",
+		"@cdktf/provider-aws.appstreamUser.AppstreamUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func AppstreamUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamUser.AppstreamUser",
+		"@cdktf/provider-aws.appstreamUser.AppstreamUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func AppstreamUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamUser.AppstreamUser",
+		"@cdktf/provider-aws.appstreamUser.AppstreamUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func AppstreamUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appstreamUser.AppstreamUser",
+		"@cdktf/provider-aws.appstreamUser.AppstreamUser",
 		"tfResourceType",
 		&returns,
 	)

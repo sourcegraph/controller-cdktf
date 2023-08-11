@@ -424,7 +424,7 @@ func NewGoogleWorkstationsWorkstationConfigIamPolicy(scope constructs.Construct,
 	j := jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleWorkstationsWorkstationConfigIamPolicy_Override(g GoogleWorkstatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -603,7 +603,7 @@ func GoogleWorkstationsWorkstationConfigIamPolicy_IsConstruct(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func GoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformElement(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func GoogleWorkstationsWorkstationConfigIamPolicy_IsTerraformResource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func GoogleWorkstationsWorkstationConfigIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

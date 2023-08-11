@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepository",
 		reflect.TypeOf((*ArtifactRegistryRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -100,15 +100,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryConfig",
 		reflect.TypeOf((*ArtifactRegistryRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfig",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfig",
 		reflect.TypeOf((*ArtifactRegistryRepositoryDockerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfigOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryDockerConfigOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryDockerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,11 +143,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfig",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfig",
 		reflect.TypeOf((*ArtifactRegistryRepositoryMavenConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfigOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryMavenConfigOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryMavenConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowSnapshotOverwrites", GoGetter: "AllowSnapshotOverwrites"},
@@ -185,15 +185,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfig",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfig",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -228,11 +228,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -267,11 +267,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -306,7 +306,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -357,11 +357,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -396,11 +396,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeouts",
 		reflect.TypeOf((*ArtifactRegistryRepositoryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryTimeoutsOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -441,11 +441,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfig",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfig",
 		reflect.TypeOf((*ArtifactRegistryRepositoryVirtualRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -481,11 +481,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies",
 		reflect.TypeOf((*ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList",
 		reflect.TypeOf((*ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -506,7 +506,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference",
 		reflect.TypeOf((*ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -204,7 +204,7 @@ func NewAppautoscalingScheduledActionScalableTargetActionOutputReference(terrafo
 	j := jsiiProxy_AppautoscalingScheduledActionScalableTargetActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetActionOutputReference",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppautoscalingScheduledActionScalableTargetActionOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetActionOutputReference",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

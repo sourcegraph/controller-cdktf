@@ -204,7 +204,7 @@ func NewPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference(t
 	j := jsiiProxy_PodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerLifecyclePreStopHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

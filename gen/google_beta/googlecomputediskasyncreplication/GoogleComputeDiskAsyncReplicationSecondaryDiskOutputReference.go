@@ -190,7 +190,7 @@ func NewGoogleComputeDiskAsyncReplicationSecondaryDiskOutputReference(terraformR
 	j := jsiiProxy_GoogleComputeDiskAsyncReplicationSecondaryDiskOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplicationSecondaryDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplicationSecondaryDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewGoogleComputeDiskAsyncReplicationSecondaryDiskOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplicationSecondaryDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDiskAsyncReplication.GoogleComputeDiskAsyncReplicationSecondaryDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

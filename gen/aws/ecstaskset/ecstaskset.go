@@ -721,7 +721,7 @@ func NewEcsTaskSet(scope constructs.Construct, id *string, config *EcsTaskSetCon
 	j := jsiiProxy_EcsTaskSet{}
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSet",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -734,7 +734,7 @@ func NewEcsTaskSet_Override(e EcsTaskSet, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSet",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSet",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -966,7 +966,7 @@ func EcsTaskSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsTaskSet.EcsTaskSet",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -985,7 +985,7 @@ func EcsTaskSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsTaskSet.EcsTaskSet",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1004,7 +1004,7 @@ func EcsTaskSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsTaskSet.EcsTaskSet",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1017,7 +1017,7 @@ func EcsTaskSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecsTaskSet.EcsTaskSet",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSet",
 		"tfResourceType",
 		&returns,
 	)

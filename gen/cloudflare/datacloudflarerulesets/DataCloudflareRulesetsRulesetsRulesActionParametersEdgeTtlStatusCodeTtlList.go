@@ -104,7 +104,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlL
 	j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersEdgeTtlStatusCodeTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

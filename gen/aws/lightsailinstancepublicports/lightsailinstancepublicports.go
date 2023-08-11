@@ -342,7 +342,7 @@ func NewLightsailInstancePublicPorts(scope constructs.Construct, id *string, con
 	j := jsiiProxy_LightsailInstancePublicPorts{}
 
 	_jsii_.Create(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewLightsailInstancePublicPorts_Override(l LightsailInstancePublicPorts, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -477,7 +477,7 @@ func LightsailInstancePublicPorts_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func LightsailInstancePublicPorts_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func LightsailInstancePublicPorts_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func LightsailInstancePublicPorts_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
 		"tfResourceType",
 		&returns,
 	)

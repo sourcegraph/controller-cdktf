@@ -204,7 +204,7 @@ func NewOpensearchDomainSamlOptionsTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_OpensearchDomainSamlOptionsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOpensearchDomainSamlOptionsTimeoutsOutputReference_Override(o Opensearch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.opensearchDomainSamlOptions.OpensearchDomainSamlOptionsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

@@ -179,7 +179,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputRef
 	j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

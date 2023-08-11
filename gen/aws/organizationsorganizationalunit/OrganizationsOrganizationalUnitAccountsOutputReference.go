@@ -200,7 +200,7 @@ func NewOrganizationsOrganizationalUnitAccountsOutputReference(terraformResource
 	j := jsiiProxy_OrganizationsOrganizationalUnitAccountsOutputReference{}
 
 	_jsii_.Create(
-		"aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitAccountsOutputReference",
+		"@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitAccountsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewOrganizationsOrganizationalUnitAccountsOutputReference_Override(o Organi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitAccountsOutputReference",
+		"@cdktf/provider-aws.organizationsOrganizationalUnit.OrganizationsOrganizationalUnitAccountsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

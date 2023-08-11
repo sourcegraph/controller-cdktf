@@ -228,7 +228,7 @@ func NewComputeRouterPeerTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ComputeRouterPeerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeRouterPeerTimeoutsOutputReference_Override(c ComputeRouterPeerTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

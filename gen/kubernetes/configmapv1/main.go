@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.configMapV1.ConfigMapV1",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1",
 		reflect.TypeOf((*ConfigMapV1)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.configMapV1.ConfigMapV1Config",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1Config",
 		reflect.TypeOf((*ConfigMapV1Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.configMapV1.ConfigMapV1Metadata",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1Metadata",
 		reflect.TypeOf((*ConfigMapV1Metadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.configMapV1.ConfigMapV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.configMapV1.ConfigMapV1MetadataOutputReference",
 		reflect.TypeOf((*ConfigMapV1MetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},

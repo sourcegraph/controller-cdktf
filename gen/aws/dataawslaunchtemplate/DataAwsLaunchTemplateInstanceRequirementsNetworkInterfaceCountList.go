@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList(terra
 	j := jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

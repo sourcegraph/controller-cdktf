@@ -228,7 +228,7 @@ func NewStatefulSetV1SpecSelectorMatchExpressionsOutputReference(terraformResour
 	j := jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStatefulSetV1SpecSelectorMatchExpressionsOutputReference_Override(s Stat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

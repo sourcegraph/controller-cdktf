@@ -320,7 +320,7 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference(
 	j := jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewGoogleComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

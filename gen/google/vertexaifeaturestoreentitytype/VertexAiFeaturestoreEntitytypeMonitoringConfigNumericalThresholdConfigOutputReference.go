@@ -179,7 +179,7 @@ func NewVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOu
 	j := jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

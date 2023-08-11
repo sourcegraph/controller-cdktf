@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstance",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstance",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,11 +79,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceClone",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceClone",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceClone)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceCloneList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceCloneList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceCloneList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceCloneOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceCloneOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceCloneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRange", GoGetter: "AllocatedIpRange"},
@@ -139,15 +139,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceConfig",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceConfig",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceIpAddress",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceIpAddress",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceIpAddress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceIpAddressList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceIpAddressList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceIpAddressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -167,7 +167,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceIpAddressOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceIpAddressOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceIpAddressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -202,11 +202,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfiguration",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfiguration",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceReplicaConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfigurationList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfigurationList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceReplicaConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -226,7 +226,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
@@ -269,11 +269,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContext",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContext",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceRestoreBackupContext)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceRestoreBackupContextList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -293,7 +293,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupRunId", GoGetter: "BackupRunId"},
@@ -328,11 +328,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCert",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCert",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceServerCaCert)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCertList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCertList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceServerCaCertList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -352,7 +352,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCertOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceServerCaCertOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceServerCaCertOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
@@ -389,15 +389,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettings",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettings",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -417,7 +417,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -450,11 +450,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -474,7 +474,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -507,15 +507,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfiguration",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfiguration",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsBackupConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -535,7 +535,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -569,7 +569,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -589,7 +589,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupRetentionSettings", GoGetter: "BackupRetentionSettings"},
@@ -628,11 +628,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlags",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlags",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsDatabaseFlags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -652,7 +652,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -686,11 +686,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -710,7 +710,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -745,11 +745,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsInsightsConfig",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsInsightsConfig",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsInsightsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsInsightsConfigList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsInsightsConfigList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsInsightsConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -769,7 +769,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -806,15 +806,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfiguration",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfiguration",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsIpConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -834,7 +834,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -869,7 +869,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsIpConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -889,7 +889,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRange", GoGetter: "AllocatedIpRange"},
@@ -927,7 +927,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -947,11 +947,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsLocationPreference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsLocationPreference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsLocationPreference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsLocationPreferenceList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsLocationPreferenceList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsLocationPreferenceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -971,7 +971,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1006,11 +1006,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindow",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindow",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1030,7 +1030,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1065,7 +1065,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationPolicy", GoGetter: "ActivationPolicy"},
@@ -1122,11 +1122,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1146,7 +1146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexity", GoGetter: "Complexity"},
@@ -1184,11 +1184,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigList",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1208,7 +1208,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference",
 		reflect.TypeOf((*DataGoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},

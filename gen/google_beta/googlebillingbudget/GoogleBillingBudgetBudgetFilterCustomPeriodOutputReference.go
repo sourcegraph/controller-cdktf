@@ -203,7 +203,7 @@ func NewGoogleBillingBudgetBudgetFilterCustomPeriodOutputReference(terraformReso
 	j := jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodOutputReference",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleBillingBudgetBudgetFilterCustomPeriodOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodOutputReference",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

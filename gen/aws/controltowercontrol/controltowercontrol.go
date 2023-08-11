@@ -366,7 +366,7 @@ func NewControltowerControl(scope constructs.Construct, id *string, config *Cont
 	j := jsiiProxy_ControltowerControl{}
 
 	_jsii_.Create(
-		"aws.controltowerControl.ControltowerControl",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewControltowerControl_Override(c ControltowerControl, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.controltowerControl.ControltowerControl",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -512,7 +512,7 @@ func ControltowerControl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.controltowerControl.ControltowerControl",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func ControltowerControl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.controltowerControl.ControltowerControl",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func ControltowerControl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.controltowerControl.ControltowerControl",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func ControltowerControl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.controltowerControl.ControltowerControl",
+		"@cdktf/provider-aws.controltowerControl.ControltowerControl",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewDeploymentV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOu
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

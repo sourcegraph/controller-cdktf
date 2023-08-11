@@ -448,7 +448,7 @@ func NewComputeSubnetworkIamBinding(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeSubnetworkIamBinding{}
 
 	_jsii_.Create(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewComputeSubnetworkIamBinding_Override(c ComputeSubnetworkIamBinding, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func ComputeSubnetworkIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ComputeSubnetworkIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ComputeSubnetworkIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ComputeSubnetworkIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
+		"@cdktf/provider-google.computeSubnetworkIamBinding.ComputeSubnetworkIamBinding",
 		"tfResourceType",
 		&returns,
 	)

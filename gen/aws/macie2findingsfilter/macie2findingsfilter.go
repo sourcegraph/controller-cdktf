@@ -497,7 +497,7 @@ func NewMacie2FindingsFilter(scope constructs.Construct, id *string, config *Mac
 	j := jsiiProxy_Macie2FindingsFilter{}
 
 	_jsii_.Create(
-		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -510,7 +510,7 @@ func NewMacie2FindingsFilter_Override(m Macie2FindingsFilter, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -698,7 +698,7 @@ func Macie2FindingsFilter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func Macie2FindingsFilter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func Macie2FindingsFilter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func Macie2FindingsFilter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
 		"tfResourceType",
 		&returns,
 	)

@@ -1217,7 +1217,7 @@ func NewAutoscalingGroup(scope constructs.Construct, id *string, config *Autosca
 	j := jsiiProxy_AutoscalingGroup{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroup",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1230,7 +1230,7 @@ func NewAutoscalingGroup_Override(a AutoscalingGroup, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroup",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroup",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1682,7 +1682,7 @@ func AutoscalingGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingGroup.AutoscalingGroup",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1701,7 +1701,7 @@ func AutoscalingGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingGroup.AutoscalingGroup",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1720,7 +1720,7 @@ func AutoscalingGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingGroup.AutoscalingGroup",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1733,7 +1733,7 @@ func AutoscalingGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.autoscalingGroup.AutoscalingGroup",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroup",
 		"tfResourceType",
 		&returns,
 	)

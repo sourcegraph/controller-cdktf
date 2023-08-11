@@ -180,7 +180,7 @@ func NewAutoscalingGroupWarmPoolInstanceReusePolicyOutputReference(terraformReso
 	j := jsiiProxy_AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAutoscalingGroupWarmPoolInstanceReusePolicyOutputReference_Override(a Au
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupWarmPoolInstanceReusePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

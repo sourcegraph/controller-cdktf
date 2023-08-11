@@ -228,7 +228,7 @@ func NewLoggingMetricTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_LoggingMetricTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingMetric.LoggingMetricTimeoutsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLoggingMetricTimeoutsOutputReference_Override(l LoggingMetricTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingMetric.LoggingMetricTimeoutsOutputReference",
+		"@cdktf/provider-google.loggingMetric.LoggingMetricTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

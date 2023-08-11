@@ -275,7 +275,7 @@ func NewApiGatewayDocumentationPartLocationOutputReference(terraformResource cdk
 	j := jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocationOutputReference",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewApiGatewayDocumentationPartLocationOutputReference_Override(a ApiGateway
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocationOutputReference",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -116,7 +116,7 @@ func NewPodV1SpecVolumeProjectedSourcesConfigMapList(terraformResource cdktf.IIn
 	j := jsiiProxy_PodV1SpecVolumeProjectedSourcesConfigMapList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeProjectedSourcesConfigMapList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesConfigMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecVolumeProjectedSourcesConfigMapList_Override(p PodV1SpecVolumeP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeProjectedSourcesConfigMapList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesConfigMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

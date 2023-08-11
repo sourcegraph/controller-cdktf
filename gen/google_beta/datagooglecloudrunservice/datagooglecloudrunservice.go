@@ -393,7 +393,7 @@ func NewDataGoogleCloudRunService(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataGoogleCloudRunService{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -406,7 +406,7 @@ func NewDataGoogleCloudRunService_Override(d DataGoogleCloudRunService, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -528,7 +528,7 @@ func DataGoogleCloudRunService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleCloudRunService_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func DataGoogleCloudRunService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func DataGoogleCloudRunService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunService",
 		"tfResourceType",
 		&returns,
 	)

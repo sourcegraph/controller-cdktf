@@ -300,7 +300,7 @@ func NewServicecatalogProductProvisioningArtifactParametersOutputReference(terra
 	j := jsiiProxy_ServicecatalogProductProvisioningArtifactParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParametersOutputReference",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewServicecatalogProductProvisioningArtifactParametersOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParametersOutputReference",
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProductProvisioningArtifactParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

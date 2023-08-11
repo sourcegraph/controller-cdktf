@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.daxSubnetGroup.DaxSubnetGroup",
+		"@cdktf/provider-aws.daxSubnetGroup.DaxSubnetGroup",
 		reflect.TypeOf((*DaxSubnetGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.daxSubnetGroup.DaxSubnetGroupConfig",
+		"@cdktf/provider-aws.daxSubnetGroup.DaxSubnetGroupConfig",
 		reflect.TypeOf((*DaxSubnetGroupConfig)(nil)).Elem(),
 	)
 }

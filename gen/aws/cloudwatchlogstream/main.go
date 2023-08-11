@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchLogStream.CloudwatchLogStream",
+		"@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStream",
 		reflect.TypeOf((*CloudwatchLogStream)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchLogStream.CloudwatchLogStreamConfig",
+		"@cdktf/provider-aws.cloudwatchLogStream.CloudwatchLogStreamConfig",
 		reflect.TypeOf((*CloudwatchLogStreamConfig)(nil)).Elem(),
 	)
 }

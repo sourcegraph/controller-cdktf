@@ -204,7 +204,7 @@ func NewApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference(t
 	j := jsiiProxy_ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceNetworkConfigurationEgressConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

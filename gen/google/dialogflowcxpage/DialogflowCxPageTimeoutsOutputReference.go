@@ -228,7 +228,7 @@ func NewDialogflowCxPageTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DialogflowCxPageTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDialogflowCxPageTimeoutsOutputReference_Override(d DialogflowCxPageTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

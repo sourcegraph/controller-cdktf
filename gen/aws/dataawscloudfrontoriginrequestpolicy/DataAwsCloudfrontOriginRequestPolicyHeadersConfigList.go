@@ -104,7 +104,7 @@ func NewDataAwsCloudfrontOriginRequestPolicyHeadersConfigList(terraformResource 
 	j := jsiiProxy_DataAwsCloudfrontOriginRequestPolicyHeadersConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontOriginRequestPolicy.DataAwsCloudfrontOriginRequestPolicyHeadersConfigList",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginRequestPolicy.DataAwsCloudfrontOriginRequestPolicyHeadersConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudfrontOriginRequestPolicyHeadersConfigList_Override(d DataAws
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontOriginRequestPolicy.DataAwsCloudfrontOriginRequestPolicyHeadersConfigList",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginRequestPolicy.DataAwsCloudfrontOriginRequestPolicyHeadersConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

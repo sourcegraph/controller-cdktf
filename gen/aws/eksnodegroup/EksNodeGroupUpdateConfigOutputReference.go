@@ -204,7 +204,7 @@ func NewEksNodeGroupUpdateConfigOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_EksNodeGroupUpdateConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupUpdateConfigOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEksNodeGroupUpdateConfigOutputReference_Override(e EksNodeGroupUpdateCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupUpdateConfigOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupUpdateConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

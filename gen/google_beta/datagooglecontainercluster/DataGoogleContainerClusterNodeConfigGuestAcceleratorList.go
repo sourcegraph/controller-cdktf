@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodeConfigGuestAcceleratorList(terraformResour
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigGuestAcceleratorList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodeConfigGuestAcceleratorList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataGooglePubsubSubscriptionRetryPolicyList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePubsubSubscriptionRetryPolicyList_Override(d DataGooglePubsubS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -228,7 +228,7 @@ func NewGoogleFilestoreInstanceTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleFilestoreInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleFilestoreInstanceTimeoutsOutputReference_Override(g GoogleFilestor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

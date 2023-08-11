@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
+		"@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
 		reflect.TypeOf((*CaptchaOrgWideSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.captchaOrgWideSettings.CaptchaOrgWideSettingsConfig",
+		"@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettingsConfig",
 		reflect.TypeOf((*CaptchaOrgWideSettingsConfig)(nil)).Elem(),
 	)
 }

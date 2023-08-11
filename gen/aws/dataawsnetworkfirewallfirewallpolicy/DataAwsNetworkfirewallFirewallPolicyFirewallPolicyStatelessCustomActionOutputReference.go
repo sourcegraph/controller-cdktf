@@ -178,7 +178,7 @@ func NewDataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionO
 	j := jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

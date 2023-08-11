@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesDomainIdentity.SesDomainIdentity",
+		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentity",
 		reflect.TypeOf((*SesDomainIdentity)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesDomainIdentity.SesDomainIdentityConfig",
+		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentityConfig",
 		reflect.TypeOf((*SesDomainIdentityConfig)(nil)).Elem(),
 	)
 }

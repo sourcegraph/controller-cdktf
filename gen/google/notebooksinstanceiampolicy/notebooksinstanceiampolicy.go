@@ -401,7 +401,7 @@ func NewNotebooksInstanceIamPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_NotebooksInstanceIamPolicy{}
 
 	_jsii_.Create(
-		"google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
+		"@cdktf/provider-google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewNotebooksInstanceIamPolicy_Override(n NotebooksInstanceIamPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
+		"@cdktf/provider-google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -569,7 +569,7 @@ func NotebooksInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
+		"@cdktf/provider-google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func NotebooksInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
+		"@cdktf/provider-google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func NotebooksInstanceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
+		"@cdktf/provider-google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func NotebooksInstanceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
+		"@cdktf/provider-google.notebooksInstanceIamPolicy.NotebooksInstanceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

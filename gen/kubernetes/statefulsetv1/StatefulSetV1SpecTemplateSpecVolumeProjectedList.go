@@ -116,7 +116,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeProjectedList(terraformResource cdktf
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeProjectedList_Override(s StatefulSetV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

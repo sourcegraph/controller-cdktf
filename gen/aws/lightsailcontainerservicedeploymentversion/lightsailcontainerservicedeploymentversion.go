@@ -423,7 +423,7 @@ func NewLightsailContainerServiceDeploymentVersion(scope constructs.Construct, i
 	j := jsiiProxy_LightsailContainerServiceDeploymentVersion{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewLightsailContainerServiceDeploymentVersion_Override(l LightsailContainer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -558,7 +558,7 @@ func LightsailContainerServiceDeploymentVersion_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func LightsailContainerServiceDeploymentVersion_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func LightsailContainerServiceDeploymentVersion_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func LightsailContainerServiceDeploymentVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
+		"@cdktf/provider-aws.lightsailContainerServiceDeploymentVersion.LightsailContainerServiceDeploymentVersion",
 		"tfResourceType",
 		&returns,
 	)

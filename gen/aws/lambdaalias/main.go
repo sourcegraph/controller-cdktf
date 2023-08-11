@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lambdaAlias.LambdaAlias",
+		"@cdktf/provider-aws.lambdaAlias.LambdaAlias",
 		reflect.TypeOf((*LambdaAlias)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaAlias.LambdaAliasConfig",
+		"@cdktf/provider-aws.lambdaAlias.LambdaAliasConfig",
 		reflect.TypeOf((*LambdaAliasConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaAlias.LambdaAliasRoutingConfig",
+		"@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfig",
 		reflect.TypeOf((*LambdaAliasRoutingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference",
+		"@cdktf/provider-aws.lambdaAlias.LambdaAliasRoutingConfigOutputReference",
 		reflect.TypeOf((*LambdaAliasRoutingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalVersionWeights", GoGetter: "AdditionalVersionWeights"},

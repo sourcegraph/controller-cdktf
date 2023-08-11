@@ -104,7 +104,7 @@ func NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationList(terraformRe
 	j := jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationList_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

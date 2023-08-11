@@ -204,7 +204,7 @@ func NewAppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference(terraformRe
 	j := jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference_Override(a 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

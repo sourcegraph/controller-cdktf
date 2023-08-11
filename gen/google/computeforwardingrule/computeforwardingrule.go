@@ -924,7 +924,7 @@ func NewComputeForwardingRule(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ComputeForwardingRule{}
 
 	_jsii_.Create(
-		"google.computeForwardingRule.ComputeForwardingRule",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -937,7 +937,7 @@ func NewComputeForwardingRule_Override(c ComputeForwardingRule, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeForwardingRule.ComputeForwardingRule",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1279,7 +1279,7 @@ func ComputeForwardingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeForwardingRule.ComputeForwardingRule",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1298,7 +1298,7 @@ func ComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeForwardingRule.ComputeForwardingRule",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1317,7 +1317,7 @@ func ComputeForwardingRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeForwardingRule.ComputeForwardingRule",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1330,7 +1330,7 @@ func ComputeForwardingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeForwardingRule.ComputeForwardingRule",
+		"@cdktf/provider-google.computeForwardingRule.ComputeForwardingRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -387,7 +387,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsOutputReference(terraformResour
 	j := jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -399,7 +399,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsOutputReference_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

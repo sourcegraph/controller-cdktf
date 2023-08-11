@@ -204,7 +204,7 @@ func NewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputRefe
 	j := jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -250,7 +250,7 @@ func NewInstanceNetworkInterfaceOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_InstanceNetworkInterfaceOutputReference{}
 
 	_jsii_.Create(
-		"aws.instance.InstanceNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.instance.InstanceNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewInstanceNetworkInterfaceOutputReference_Override(i InstanceNetworkInterf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.InstanceNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.instance.InstanceNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

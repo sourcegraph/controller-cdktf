@@ -447,7 +447,7 @@ func NewEmailRoutingRule(scope constructs.Construct, id *string, config *EmailRo
 	j := jsiiProxy_EmailRoutingRule{}
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingRule.EmailRoutingRule",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewEmailRoutingRule_Override(e EmailRoutingRule, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingRule.EmailRoutingRule",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -615,7 +615,7 @@ func EmailRoutingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.emailRoutingRule.EmailRoutingRule",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func EmailRoutingRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.emailRoutingRule.EmailRoutingRule",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func EmailRoutingRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.emailRoutingRule.EmailRoutingRule",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func EmailRoutingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.emailRoutingRule.EmailRoutingRule",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		"tfResourceType",
 		&returns,
 	)

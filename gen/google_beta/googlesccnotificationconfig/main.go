@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
 		reflect.TypeOf((*GoogleSccNotificationConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigConfig",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigConfig",
 		reflect.TypeOf((*GoogleSccNotificationConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigStreamingConfig",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigStreamingConfig",
 		reflect.TypeOf((*GoogleSccNotificationConfigStreamingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigStreamingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigStreamingConfigOutputReference",
 		reflect.TypeOf((*GoogleSccNotificationConfigStreamingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,11 +115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigTimeouts",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigTimeouts",
 		reflect.TypeOf((*GoogleSccNotificationConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfigTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleSccNotificationConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -228,7 +228,7 @@ func NewGoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference(
 	j := jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

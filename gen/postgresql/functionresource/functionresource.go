@@ -462,7 +462,7 @@ func NewFunctionResource(scope constructs.Construct, id *string, config *Functio
 	j := jsiiProxy_FunctionResource{}
 
 	_jsii_.Create(
-		"postgresql.functionResource.FunctionResource",
+		"@cdktf/provider-postgresql.functionResource.FunctionResource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,7 +475,7 @@ func NewFunctionResource_Override(f FunctionResource, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.functionResource.FunctionResource",
+		"@cdktf/provider-postgresql.functionResource.FunctionResource",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -652,7 +652,7 @@ func FunctionResource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.functionResource.FunctionResource",
+		"@cdktf/provider-postgresql.functionResource.FunctionResource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func FunctionResource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.functionResource.FunctionResource",
+		"@cdktf/provider-postgresql.functionResource.FunctionResource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func FunctionResource_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.functionResource.FunctionResource",
+		"@cdktf/provider-postgresql.functionResource.FunctionResource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func FunctionResource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.functionResource.FunctionResource",
+		"@cdktf/provider-postgresql.functionResource.FunctionResource",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeSubnetwork.ComputeSubnetwork",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork",
 		reflect.TypeOf((*ComputeSubnetwork)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,15 +106,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSubnetwork.ComputeSubnetworkConfig",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig",
 		reflect.TypeOf((*ComputeSubnetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSubnetwork.ComputeSubnetworkLogConfig",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig",
 		reflect.TypeOf((*ComputeSubnetworkLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference",
 		reflect.TypeOf((*ComputeSubnetworkLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregationInterval", GoGetter: "AggregationInterval"},
@@ -161,11 +161,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange",
 		reflect.TypeOf((*ComputeSubnetworkSecondaryIpRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList",
 		reflect.TypeOf((*ComputeSubnetworkSecondaryIpRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,7 +186,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference",
 		reflect.TypeOf((*ComputeSubnetworkSecondaryIpRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,11 +224,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSubnetwork.ComputeSubnetworkTimeouts",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts",
 		reflect.TypeOf((*ComputeSubnetworkTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference",
+		"@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeSubnetworkTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewComputeNodeGroupShareSettingsProjectMapList(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputeNodeGroupShareSettingsProjectMapList{}
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapList",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeNodeGroupShareSettingsProjectMapList_Override(c ComputeNodeGroupS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapList",
+		"@cdktf/provider-google.computeNodeGroup.ComputeNodeGroupShareSettingsProjectMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

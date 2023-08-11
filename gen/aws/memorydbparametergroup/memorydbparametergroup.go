@@ -474,7 +474,7 @@ func NewMemorydbParameterGroup(scope constructs.Construct, id *string, config *M
 	j := jsiiProxy_MemorydbParameterGroup{}
 
 	_jsii_.Create(
-		"aws.memorydbParameterGroup.MemorydbParameterGroup",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewMemorydbParameterGroup_Override(m MemorydbParameterGroup, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.memorydbParameterGroup.MemorydbParameterGroup",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -664,7 +664,7 @@ func MemorydbParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbParameterGroup.MemorydbParameterGroup",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func MemorydbParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbParameterGroup.MemorydbParameterGroup",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func MemorydbParameterGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbParameterGroup.MemorydbParameterGroup",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func MemorydbParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.memorydbParameterGroup.MemorydbParameterGroup",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

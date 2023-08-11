@@ -116,7 +116,7 @@ func NewDataAwsAmiFilterList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_DataAwsAmiFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiFilterList",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsAmiFilterList_Override(d DataAwsAmiFilterList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiFilterList",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

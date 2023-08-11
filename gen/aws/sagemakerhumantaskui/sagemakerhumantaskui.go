@@ -401,7 +401,7 @@ func NewSagemakerHumanTaskUi(scope constructs.Construct, id *string, config *Sag
 	j := jsiiProxy_SagemakerHumanTaskUi{}
 
 	_jsii_.Create(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewSagemakerHumanTaskUi_Override(s SagemakerHumanTaskUi, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -558,7 +558,7 @@ func SagemakerHumanTaskUi_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func SagemakerHumanTaskUi_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func SagemakerHumanTaskUi_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func SagemakerHumanTaskUi_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		"tfResourceType",
 		&returns,
 	)

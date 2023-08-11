@@ -251,7 +251,7 @@ func NewCodebuildProjectBuildBatchConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CodebuildProjectBuildBatchConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewCodebuildProjectBuildBatchConfigOutputReference_Override(c CodebuildProj
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

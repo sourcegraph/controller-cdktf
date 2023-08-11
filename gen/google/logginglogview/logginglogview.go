@@ -484,7 +484,7 @@ func NewLoggingLogView(scope constructs.Construct, id *string, config *LoggingLo
 	j := jsiiProxy_LoggingLogView{}
 
 	_jsii_.Create(
-		"google.loggingLogView.LoggingLogView",
+		"@cdktf/provider-google.loggingLogView.LoggingLogView",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewLoggingLogView_Override(l LoggingLogView, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingLogView.LoggingLogView",
+		"@cdktf/provider-google.loggingLogView.LoggingLogView",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -674,7 +674,7 @@ func LoggingLogView_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingLogView.LoggingLogView",
+		"@cdktf/provider-google.loggingLogView.LoggingLogView",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func LoggingLogView_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingLogView.LoggingLogView",
+		"@cdktf/provider-google.loggingLogView.LoggingLogView",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func LoggingLogView_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingLogView.LoggingLogView",
+		"@cdktf/provider-google.loggingLogView.LoggingLogView",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func LoggingLogView_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingLogView.LoggingLogView",
+		"@cdktf/provider-google.loggingLogView.LoggingLogView",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
 		reflect.TypeOf((*DataAwsLaunchConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationConfig",
 		reflect.TypeOf((*DataAwsLaunchConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDevice",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDevice",
 		reflect.TypeOf((*DataAwsLaunchConfigurationEbsBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDeviceList",
 		reflect.TypeOf((*DataAwsLaunchConfigurationEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEbsBlockDeviceOutputReference",
 		reflect.TypeOf((*DataAwsLaunchConfigurationEbsBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,11 +142,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDevice",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDevice",
 		reflect.TypeOf((*DataAwsLaunchConfigurationEphemeralBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceList",
 		reflect.TypeOf((*DataAwsLaunchConfigurationEphemeralBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -166,7 +166,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference",
 		reflect.TypeOf((*DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -200,11 +200,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptions",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptions",
 		reflect.TypeOf((*DataAwsLaunchConfigurationMetadataOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptionsList",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptionsList",
 		reflect.TypeOf((*DataAwsLaunchConfigurationMetadataOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -224,7 +224,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationMetadataOptionsOutputReference",
 		reflect.TypeOf((*DataAwsLaunchConfigurationMetadataOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -259,11 +259,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDevice",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDevice",
 		reflect.TypeOf((*DataAwsLaunchConfigurationRootBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceList",
 		reflect.TypeOf((*DataAwsLaunchConfigurationRootBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -283,7 +283,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceOutputReference",
 		reflect.TypeOf((*DataAwsLaunchConfigurationRootBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

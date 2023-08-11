@@ -179,7 +179,7 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReferen
 	j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesZendeskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

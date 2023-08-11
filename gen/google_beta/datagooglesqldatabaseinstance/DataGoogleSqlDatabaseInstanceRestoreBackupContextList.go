@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstanceRestoreBackupContextList(terraformResource 
 	j := jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstanceRestoreBackupContextList_Override(d DataGoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

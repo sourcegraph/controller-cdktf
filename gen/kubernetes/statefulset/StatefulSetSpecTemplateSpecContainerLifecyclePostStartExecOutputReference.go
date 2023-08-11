@@ -180,7 +180,7 @@ func NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReferenc
 	j := jsiiProxy_StatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewStatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerLifecyclePostStartExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

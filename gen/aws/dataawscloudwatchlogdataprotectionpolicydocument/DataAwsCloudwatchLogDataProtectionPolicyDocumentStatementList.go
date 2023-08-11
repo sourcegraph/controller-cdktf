@@ -116,7 +116,7 @@ func NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList(terraformR
 	j := jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

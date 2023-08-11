@@ -116,7 +116,7 @@ func NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettin
 	j := jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioTrackSelectionTrackList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList(terra
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

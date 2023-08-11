@@ -712,7 +712,7 @@ func NewRoute(scope constructs.Construct, id *string, config *RouteConfig) Route
 	j := jsiiProxy_Route{}
 
 	_jsii_.Create(
-		"aws.route.Route",
+		"@cdktf/provider-aws.route.Route",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -725,7 +725,7 @@ func NewRoute_Override(r Route, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route.Route",
+		"@cdktf/provider-aws.route.Route",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -1001,7 +1001,7 @@ func Route_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route.Route",
+		"@cdktf/provider-aws.route.Route",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1020,7 +1020,7 @@ func Route_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route.Route",
+		"@cdktf/provider-aws.route.Route",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1039,7 +1039,7 @@ func Route_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route.Route",
+		"@cdktf/provider-aws.route.Route",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1052,7 +1052,7 @@ func Route_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route.Route",
+		"@cdktf/provider-aws.route.Route",
 		"tfResourceType",
 		&returns,
 	)

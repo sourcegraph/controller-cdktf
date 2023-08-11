@@ -179,7 +179,7 @@ func NewAuditmanagerAssessmentScopeAwsAccountsOutputReference(terraformResource 
 	j := jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsOutputReference{}
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAuditmanagerAssessmentScopeAwsAccountsOutputReference_Override(a Auditma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsOutputReference",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentScopeAwsAccountsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

@@ -202,7 +202,7 @@ func NewRolesanywhereTrustAnchorSourceOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_RolesanywhereTrustAnchorSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceOutputReference",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewRolesanywhereTrustAnchorSourceOutputReference_Override(r RolesanywhereTr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceOutputReference",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchorSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

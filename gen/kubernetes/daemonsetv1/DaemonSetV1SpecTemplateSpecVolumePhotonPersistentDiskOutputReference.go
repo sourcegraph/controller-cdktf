@@ -203,7 +203,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference(ter
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

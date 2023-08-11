@@ -250,7 +250,7 @@ func NewPodV1SpecVolumeAzureFileOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_PodV1SpecVolumeAzureFileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewPodV1SpecVolumeAzureFileOutputReference_Override(p PodV1SpecVolumeAzureF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

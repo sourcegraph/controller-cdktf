@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsDefaultTags.DataAwsDefaultTags",
+		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags",
 		reflect.TypeOf((*DataAwsDefaultTags)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -54,7 +54,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig",
+		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTagsConfig",
 		reflect.TypeOf((*DataAwsDefaultTagsConfig)(nil)).Elem(),
 	)
 }

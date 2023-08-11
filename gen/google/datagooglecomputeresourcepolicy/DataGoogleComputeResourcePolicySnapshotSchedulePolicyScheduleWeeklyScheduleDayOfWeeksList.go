@@ -104,7 +104,7 @@ func NewDataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySched
 	j := jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySched
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

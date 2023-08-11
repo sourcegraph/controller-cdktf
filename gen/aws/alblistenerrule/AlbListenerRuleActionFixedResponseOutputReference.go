@@ -227,7 +227,7 @@ func NewAlbListenerRuleActionFixedResponseOutputReference(terraformResource cdkt
 	j := jsiiProxy_AlbListenerRuleActionFixedResponseOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionFixedResponseOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAlbListenerRuleActionFixedResponseOutputReference_Override(a AlbListener
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionFixedResponseOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionFixedResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

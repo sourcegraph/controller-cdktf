@@ -116,7 +116,7 @@ func NewDataFusionInstanceAcceleratorsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataFusionInstanceAcceleratorsList{}
 
 	_jsii_.Create(
-		"google.dataFusionInstance.DataFusionInstanceAcceleratorsList",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataFusionInstanceAcceleratorsList_Override(d DataFusionInstanceAccelera
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataFusionInstance.DataFusionInstanceAcceleratorsList",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

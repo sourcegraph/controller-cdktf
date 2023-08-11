@@ -202,7 +202,7 @@ func NewDataAwsEc2SpotPriceFilterOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsEc2SpotPriceFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEc2SpotPriceFilterOutputReference_Override(d DataAwsEc2SpotPriceF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPriceFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

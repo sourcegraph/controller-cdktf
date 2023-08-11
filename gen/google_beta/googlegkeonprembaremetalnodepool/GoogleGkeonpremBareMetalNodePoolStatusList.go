@@ -104,7 +104,7 @@ func NewGoogleGkeonpremBareMetalNodePoolStatusList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleGkeonpremBareMetalNodePoolStatusList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleGkeonpremBareMetalNodePoolStatusList_Override(g GoogleGkeonpremBar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalNodePool.GoogleGkeonpremBareMetalNodePoolStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

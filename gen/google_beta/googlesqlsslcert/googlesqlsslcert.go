@@ -467,7 +467,7 @@ func NewGoogleSqlSslCert(scope constructs.Construct, id *string, config *GoogleS
 	j := jsiiProxy_GoogleSqlSslCert{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlSslCert.GoogleSqlSslCert",
+		"@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewGoogleSqlSslCert_Override(g GoogleSqlSslCert, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlSslCert.GoogleSqlSslCert",
+		"@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -624,7 +624,7 @@ func GoogleSqlSslCert_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlSslCert.GoogleSqlSslCert",
+		"@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleSqlSslCert_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlSslCert.GoogleSqlSslCert",
+		"@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -662,7 +662,7 @@ func GoogleSqlSslCert_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlSslCert.GoogleSqlSslCert",
+		"@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func GoogleSqlSslCert_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSqlSslCert.GoogleSqlSslCert",
+		"@cdktf/provider-google-beta.googleSqlSslCert.GoogleSqlSslCert",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.accessRule.AccessRule",
+		"@cdktf/provider-cloudflare.accessRule.AccessRule",
 		reflect.TypeOf((*AccessRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessRule.AccessRuleConfig",
+		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfig",
 		reflect.TypeOf((*AccessRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessRule.AccessRuleConfiguration",
+		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfiguration",
 		reflect.TypeOf((*AccessRuleConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessRule.AccessRuleConfigurationOutputReference",
+		"@cdktf/provider-cloudflare.accessRule.AccessRuleConfigurationOutputReference",
 		reflect.TypeOf((*AccessRuleConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

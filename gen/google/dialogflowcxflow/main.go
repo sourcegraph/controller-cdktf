@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlow",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlow",
 		reflect.TypeOf((*DialogflowCxFlow)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,15 +86,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowConfig",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowConfig",
 		reflect.TypeOf((*DialogflowCxFlowConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlers",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlers",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersList",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersList",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,15 +161,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillment",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillment",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlersTriggerFulfillment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessages",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessages",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlersTriggerFulfillmentMessages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -190,7 +190,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -226,11 +226,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPlaybackInterruption", GoGetter: "AllowPlaybackInterruption"},
@@ -266,7 +266,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -311,11 +311,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowNluSettings",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowNluSettings",
 		reflect.TypeOf((*DialogflowCxFlowNluSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowNluSettingsOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowNluSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowNluSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classificationThreshold", GoGetter: "ClassificationThreshold"},
@@ -356,11 +356,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowTimeouts",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTimeouts",
 		reflect.TypeOf((*DialogflowCxFlowTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -401,11 +401,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutes",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutes",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesList",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesList",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -426,7 +426,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -475,15 +475,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillment",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillment",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutesTriggerFulfillment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -504,7 +504,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -540,11 +540,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPlaybackInterruption", GoGetter: "AllowPlaybackInterruption"},
@@ -580,7 +580,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference",
 		reflect.TypeOf((*DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

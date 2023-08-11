@@ -348,7 +348,7 @@ func NewLaunchTemplatePlacementOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LaunchTemplatePlacementOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplatePlacementOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewLaunchTemplatePlacementOutputReference_Override(l LaunchTemplatePlacemen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplatePlacementOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacementOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

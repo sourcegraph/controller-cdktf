@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroup",
 		reflect.TypeOf((*SagemakerFeatureGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupConfig",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupConfig",
 		reflect.TypeOf((*SagemakerFeatureGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinition",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinition",
 		reflect.TypeOf((*SagemakerFeatureGroupFeatureDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionList",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionList",
 		reflect.TypeOf((*SagemakerFeatureGroupFeatureDefinitionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -113,7 +113,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupFeatureDefinitionOutputReference",
 		reflect.TypeOf((*SagemakerFeatureGroupFeatureDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -151,15 +151,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfig",
 		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig",
 		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference",
 		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalog", GoGetter: "Catalog"},
@@ -200,7 +200,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigOutputReference",
 		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -242,11 +242,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig",
 		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference",
 		reflect.TypeOf((*SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -283,11 +283,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfig",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfig",
 		reflect.TypeOf((*SagemakerFeatureGroupOnlineStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigOutputReference",
 		reflect.TypeOf((*SagemakerFeatureGroupOnlineStoreConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -326,11 +326,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfig",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfig",
 		reflect.TypeOf((*SagemakerFeatureGroupOnlineStoreConfigSecurityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference",
 		reflect.TypeOf((*SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -211,7 +211,7 @@ func NewDataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference(terraformReso
 	j := jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsOriginsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

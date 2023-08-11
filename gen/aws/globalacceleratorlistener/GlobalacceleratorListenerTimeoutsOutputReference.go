@@ -228,7 +228,7 @@ func NewGlobalacceleratorListenerTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GlobalacceleratorListenerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerTimeoutsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGlobalacceleratorListenerTimeoutsOutputReference_Override(g Globalaccele
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorListener.GlobalacceleratorListenerTimeoutsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListenerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

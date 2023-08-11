@@ -180,7 +180,7 @@ func NewServiceDiscoveryServiceHealthCheckCustomConfigOutputReference(terraformR
 	j := jsiiProxy_ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewServiceDiscoveryServiceHealthCheckCustomConfigOutputReference_Override(s
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceHealthCheckCustomConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

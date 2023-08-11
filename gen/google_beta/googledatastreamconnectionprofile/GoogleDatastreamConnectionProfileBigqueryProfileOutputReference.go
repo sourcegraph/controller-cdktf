@@ -156,7 +156,7 @@ func NewGoogleDatastreamConnectionProfileBigqueryProfileOutputReference(terrafor
 	j := jsiiProxy_GoogleDatastreamConnectionProfileBigqueryProfileOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileBigqueryProfileOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileBigqueryProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewGoogleDatastreamConnectionProfileBigqueryProfileOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileBigqueryProfileOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamConnectionProfile.GoogleDatastreamConnectionProfileBigqueryProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

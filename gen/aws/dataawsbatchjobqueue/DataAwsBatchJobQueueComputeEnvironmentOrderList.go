@@ -104,7 +104,7 @@ func NewDataAwsBatchJobQueueComputeEnvironmentOrderList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsBatchJobQueueComputeEnvironmentOrderList{}
 
 	_jsii_.Create(
-		"aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderList",
+		"@cdktf/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsBatchJobQueueComputeEnvironmentOrderList_Override(d DataAwsBatchJ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderList",
+		"@cdktf/provider-aws.dataAwsBatchJobQueue.DataAwsBatchJobQueueComputeEnvironmentOrderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

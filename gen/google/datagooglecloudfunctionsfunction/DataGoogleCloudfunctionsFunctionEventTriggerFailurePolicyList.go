@@ -104,7 +104,7 @@ func NewDataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList(terraformR
 	j := jsiiProxy_DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList",
+		"@cdktf/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList",
+		"@cdktf/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

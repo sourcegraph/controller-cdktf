@@ -104,7 +104,7 @@ func NewRedshiftEndpointAccessVpcEndpointList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_RedshiftEndpointAccessVpcEndpointList{}
 
 	_jsii_.Create(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointList",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewRedshiftEndpointAccessVpcEndpointList_Override(r RedshiftEndpointAccessV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointList",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccessVpcEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

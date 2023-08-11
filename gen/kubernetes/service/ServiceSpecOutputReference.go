@@ -612,7 +612,7 @@ func NewServiceSpecOutputReference(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_ServiceSpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceSpecOutputReference",
+		"@cdktf/provider-kubernetes.service.ServiceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -624,7 +624,7 @@ func NewServiceSpecOutputReference_Override(s ServiceSpecOutputReference, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceSpecOutputReference",
+		"@cdktf/provider-kubernetes.service.ServiceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -400,7 +400,7 @@ func NewGoogleHealthcareDatasetIamMember(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleHealthcareDatasetIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleHealthcareDatasetIamMember_Override(g GoogleHealthcareDatasetIamMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleHealthcareDatasetIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleHealthcareDatasetIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleHealthcareDatasetIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleHealthcareDatasetIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember",
 		"tfResourceType",
 		&returns,
 	)

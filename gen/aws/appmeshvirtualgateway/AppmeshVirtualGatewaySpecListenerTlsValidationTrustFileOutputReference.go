@@ -179,7 +179,7 @@ func NewAppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference(t
 	j := jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

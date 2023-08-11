@@ -116,7 +116,7 @@ func NewGoogleDialogflowCxPageEntryFulfillmentMessagesList(terraformResource cdk
 	j := jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentMessagesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEntryFulfillmentMessagesList",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEntryFulfillmentMessagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDialogflowCxPageEntryFulfillmentMessagesList_Override(g GoogleDial
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEntryFulfillmentMessagesList",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEntryFulfillmentMessagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

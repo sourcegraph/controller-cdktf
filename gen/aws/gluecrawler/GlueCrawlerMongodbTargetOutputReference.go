@@ -226,7 +226,7 @@ func NewGlueCrawlerMongodbTargetOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GlueCrawlerMongodbTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerMongodbTargetOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGlueCrawlerMongodbTargetOutputReference_Override(g GlueCrawlerMongodbTar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCrawler.GlueCrawlerMongodbTargetOutputReference",
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerMongodbTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

@@ -227,7 +227,7 @@ func NewEcsClusterDefaultCapacityProviderStrategyOutputReference(terraformResour
 	j := jsiiProxy_EcsClusterDefaultCapacityProviderStrategyOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyOutputReference",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewEcsClusterDefaultCapacityProviderStrategyOutputReference_Override(e EcsC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyOutputReference",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterDefaultCapacityProviderStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

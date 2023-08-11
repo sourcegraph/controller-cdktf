@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
 		reflect.TypeOf((*GoogleTagsTagKeyIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig",
 		reflect.TypeOf((*GoogleTagsTagKeyIamPolicyConfig)(nil)).Elem(),
 	)
 }

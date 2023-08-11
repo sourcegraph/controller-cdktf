@@ -522,7 +522,7 @@ func NewBigtableAppProfile(scope constructs.Construct, id *string, config *Bigta
 	j := jsiiProxy_BigtableAppProfile{}
 
 	_jsii_.Create(
-		"google.bigtableAppProfile.BigtableAppProfile",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -535,7 +535,7 @@ func NewBigtableAppProfile_Override(b BigtableAppProfile, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigtableAppProfile.BigtableAppProfile",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -723,7 +723,7 @@ func BigtableAppProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigtableAppProfile.BigtableAppProfile",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -742,7 +742,7 @@ func BigtableAppProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigtableAppProfile.BigtableAppProfile",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func BigtableAppProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigtableAppProfile.BigtableAppProfile",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func BigtableAppProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigtableAppProfile.BigtableAppProfile",
+		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
 		"tfResourceType",
 		&returns,
 	)

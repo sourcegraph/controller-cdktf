@@ -498,7 +498,7 @@ func NewSesv2ConfigurationSet(scope constructs.Construct, id *string, config *Se
 	j := jsiiProxy_Sesv2ConfigurationSet{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -511,7 +511,7 @@ func NewSesv2ConfigurationSet_Override(s Sesv2ConfigurationSet, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -655,7 +655,7 @@ func Sesv2ConfigurationSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -674,7 +674,7 @@ func Sesv2ConfigurationSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func Sesv2ConfigurationSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -706,7 +706,7 @@ func Sesv2ConfigurationSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		"tfResourceType",
 		&returns,
 	)

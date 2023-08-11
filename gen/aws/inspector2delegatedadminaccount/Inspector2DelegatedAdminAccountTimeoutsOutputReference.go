@@ -204,7 +204,7 @@ func NewInspector2DelegatedAdminAccountTimeoutsOutputReference(terraformResource
 	j := jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeoutsOutputReference",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewInspector2DelegatedAdminAccountTimeoutsOutputReference_Override(i Inspec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeoutsOutputReference",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccountTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

@@ -228,7 +228,7 @@ func NewGoogleComputeRegionSslPolicyTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleComputeRegionSslPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeRegionSslPolicyTimeoutsOutputReference_Override(g GoogleCom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

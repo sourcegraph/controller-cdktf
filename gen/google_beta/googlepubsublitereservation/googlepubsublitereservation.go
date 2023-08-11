@@ -414,7 +414,7 @@ func NewGooglePubsubLiteReservation(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GooglePubsubLiteReservation{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
+		"@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewGooglePubsubLiteReservation_Override(g GooglePubsubLiteReservation, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
+		"@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -582,7 +582,7 @@ func GooglePubsubLiteReservation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
+		"@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func GooglePubsubLiteReservation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
+		"@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GooglePubsubLiteReservation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
+		"@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func GooglePubsubLiteReservation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
+		"@cdktf/provider-google-beta.googlePubsubLiteReservation.GooglePubsubLiteReservation",
 		"tfResourceType",
 		&returns,
 	)

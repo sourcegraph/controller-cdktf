@@ -179,7 +179,7 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputRefer
 	j := jsiiProxy_AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigSourceConnectorPropertiesAmplitudeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

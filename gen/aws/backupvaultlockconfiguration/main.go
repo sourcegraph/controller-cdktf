@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
+		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		reflect.TypeOf((*BackupVaultLockConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupVaultLockConfiguration.BackupVaultLockConfigurationConfig",
+		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfigurationConfig",
 		reflect.TypeOf((*BackupVaultLockConfigurationConfig)(nil)).Elem(),
 	)
 }

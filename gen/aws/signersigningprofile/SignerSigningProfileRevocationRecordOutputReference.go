@@ -189,7 +189,7 @@ func NewSignerSigningProfileRevocationRecordOutputReference(terraformResource cd
 	j := jsiiProxy_SignerSigningProfileRevocationRecordOutputReference{}
 
 	_jsii_.Create(
-		"aws.signerSigningProfile.SignerSigningProfileRevocationRecordOutputReference",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecordOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewSignerSigningProfileRevocationRecordOutputReference_Override(s SignerSig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.signerSigningProfile.SignerSigningProfileRevocationRecordOutputReference",
+		"@cdktf/provider-aws.signerSigningProfile.SignerSigningProfileRevocationRecordOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyList
 	j := jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

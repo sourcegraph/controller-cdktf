@@ -204,7 +204,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference(terraformR
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeRbdSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -360,7 +360,7 @@ func NewDataGoogleSpannerDatabaseIamPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataGoogleSpannerDatabaseIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -373,7 +373,7 @@ func NewDataGoogleSpannerDatabaseIamPolicy_Override(d DataGoogleSpannerDatabaseI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -495,7 +495,7 @@ func DataGoogleSpannerDatabaseIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -514,7 +514,7 @@ func DataGoogleSpannerDatabaseIamPolicy_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataGoogleSpannerDatabaseIamPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataGoogleSpannerDatabaseIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleSpannerDatabaseIamPolicy.DataGoogleSpannerDatabaseIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappin
 	j := jsiiProxy_DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList",
+		"@cdktf/provider-aws.dataAwsImagebuilderContainerRecipe.DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

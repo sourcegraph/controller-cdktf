@@ -104,7 +104,7 @@ func NewEvidentlyLaunchExecutionList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_EvidentlyLaunchExecutionList{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchExecutionList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEvidentlyLaunchExecutionList_Override(e EvidentlyLaunchExecutionList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchExecutionList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchExecutionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

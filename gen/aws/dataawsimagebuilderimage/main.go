@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
 		reflect.TypeOf((*DataAwsImagebuilderImage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageConfig",
 		reflect.TypeOf((*DataAwsImagebuilderImageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfiguration",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfiguration",
 		reflect.TypeOf((*DataAwsImagebuilderImageImageTestsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationList",
 		reflect.TypeOf((*DataAwsImagebuilderImageImageTestsConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageImageTestsConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsImagebuilderImageImageTestsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,15 +133,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResources",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResources",
 		reflect.TypeOf((*DataAwsImagebuilderImageOutputResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesAmis",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesAmis",
 		reflect.TypeOf((*DataAwsImagebuilderImageOutputResourcesAmis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesAmisList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesAmisList",
 		reflect.TypeOf((*DataAwsImagebuilderImageOutputResourcesAmisList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -161,7 +161,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesAmisOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesAmisOutputReference",
 		reflect.TypeOf((*DataAwsImagebuilderImageOutputResourcesAmisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -198,7 +198,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesList",
 		reflect.TypeOf((*DataAwsImagebuilderImageOutputResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -218,7 +218,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImageOutputResourcesOutputReference",
 		reflect.TypeOf((*DataAwsImagebuilderImageOutputResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amis", GoGetter: "Amis"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.athenaDataCatalog.AthenaDataCatalog",
+		"@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog",
 		reflect.TypeOf((*AthenaDataCatalog)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaDataCatalog.AthenaDataCatalogConfig",
+		"@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalogConfig",
 		reflect.TypeOf((*AthenaDataCatalogConfig)(nil)).Elem(),
 	)
 }

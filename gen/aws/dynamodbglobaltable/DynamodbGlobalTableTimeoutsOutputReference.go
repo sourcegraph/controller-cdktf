@@ -228,7 +228,7 @@ func NewDynamodbGlobalTableTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DynamodbGlobalTableTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDynamodbGlobalTableTimeoutsOutputReference_Override(d DynamodbGlobalTabl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

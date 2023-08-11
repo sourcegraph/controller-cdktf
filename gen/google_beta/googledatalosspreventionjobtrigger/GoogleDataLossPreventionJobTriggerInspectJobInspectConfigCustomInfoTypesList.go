@@ -116,7 +116,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes
 	j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesList",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesList",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

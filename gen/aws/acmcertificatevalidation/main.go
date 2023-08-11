@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.acmCertificateValidation.AcmCertificateValidation",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation",
 		reflect.TypeOf((*AcmCertificateValidation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.acmCertificateValidation.AcmCertificateValidationConfig",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationConfig",
 		reflect.TypeOf((*AcmCertificateValidationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.acmCertificateValidation.AcmCertificateValidationTimeouts",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeouts",
 		reflect.TypeOf((*AcmCertificateValidationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.acmCertificateValidation.AcmCertificateValidationTimeoutsOutputReference",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeoutsOutputReference",
 		reflect.TypeOf((*AcmCertificateValidationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -370,7 +370,7 @@ func NewDataAwsEmrcontainersVirtualCluster(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsEmrcontainersVirtualCluster{}
 
 	_jsii_.Create(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataAwsEmrcontainersVirtualCluster_Override(d DataAwsEmrcontainersVirtua
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -494,7 +494,7 @@ func DataAwsEmrcontainersVirtualCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataAwsEmrcontainersVirtualCluster_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataAwsEmrcontainersVirtualCluster_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataAwsEmrcontainersVirtualCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualCluster",
 		"tfResourceType",
 		&returns,
 	)

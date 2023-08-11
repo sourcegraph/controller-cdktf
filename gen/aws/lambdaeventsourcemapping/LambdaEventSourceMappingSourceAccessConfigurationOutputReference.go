@@ -202,7 +202,7 @@ func NewLambdaEventSourceMappingSourceAccessConfigurationOutputReference(terrafo
 	j := jsiiProxy_LambdaEventSourceMappingSourceAccessConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLambdaEventSourceMappingSourceAccessConfigurationOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMappingSourceAccessConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

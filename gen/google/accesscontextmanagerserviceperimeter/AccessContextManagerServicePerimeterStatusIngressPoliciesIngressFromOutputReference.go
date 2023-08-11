@@ -228,7 +228,7 @@ func NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutp
 	j := jsiiProxy_AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutputReference",
+		"@cdktf/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutputReference",
+		"@cdktf/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterStatusIngressPoliciesIngressFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

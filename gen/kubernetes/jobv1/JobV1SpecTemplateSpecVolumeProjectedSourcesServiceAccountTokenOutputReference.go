@@ -227,7 +227,7 @@ func NewJobV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputRefe
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewJobV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

@@ -225,7 +225,7 @@ func NewCodebuildProjectVpcConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CodebuildProjectVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewCodebuildProjectVpcConfigOutputReference_Override(c CodebuildProjectVpcC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

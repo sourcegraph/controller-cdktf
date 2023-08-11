@@ -116,7 +116,7 @@ func NewGoogleBillingBudgetThresholdRulesList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleBillingBudgetThresholdRulesList{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesList",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleBillingBudgetThresholdRulesList_Override(g GoogleBillingBudgetThre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesList",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

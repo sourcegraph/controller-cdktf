@@ -342,7 +342,7 @@ func NewQueue(scope constructs.Construct, id *string, config *QueueConfig) Queue
 	j := jsiiProxy_Queue{}
 
 	_jsii_.Create(
-		"cloudflare.queue.Queue",
+		"@cdktf/provider-cloudflare.queue.Queue",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewQueue_Override(q Queue, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.queue.Queue",
+		"@cdktf/provider-cloudflare.queue.Queue",
 		[]interface{}{scope, id, config},
 		q,
 	)
@@ -488,7 +488,7 @@ func Queue_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.queue.Queue",
+		"@cdktf/provider-cloudflare.queue.Queue",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func Queue_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.queue.Queue",
+		"@cdktf/provider-cloudflare.queue.Queue",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func Queue_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.queue.Queue",
+		"@cdktf/provider-cloudflare.queue.Queue",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func Queue_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.queue.Queue",
+		"@cdktf/provider-cloudflare.queue.Queue",
 		"tfResourceType",
 		&returns,
 	)

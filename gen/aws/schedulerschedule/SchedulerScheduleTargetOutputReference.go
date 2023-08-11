@@ -394,7 +394,7 @@ func NewSchedulerScheduleTargetOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_SchedulerScheduleTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -406,7 +406,7 @@ func NewSchedulerScheduleTargetOutputReference_Override(s SchedulerScheduleTarge
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

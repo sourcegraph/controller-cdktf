@@ -446,7 +446,7 @@ func NewWeb3Hostname(scope constructs.Construct, id *string, config *Web3Hostnam
 	j := jsiiProxy_Web3Hostname{}
 
 	_jsii_.Create(
-		"cloudflare.web3Hostname.Web3Hostname",
+		"@cdktf/provider-cloudflare.web3Hostname.Web3Hostname",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -459,7 +459,7 @@ func NewWeb3Hostname_Override(w Web3Hostname, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.web3Hostname.Web3Hostname",
+		"@cdktf/provider-cloudflare.web3Hostname.Web3Hostname",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -625,7 +625,7 @@ func Web3Hostname_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.web3Hostname.Web3Hostname",
+		"@cdktf/provider-cloudflare.web3Hostname.Web3Hostname",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func Web3Hostname_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.web3Hostname.Web3Hostname",
+		"@cdktf/provider-cloudflare.web3Hostname.Web3Hostname",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func Web3Hostname_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.web3Hostname.Web3Hostname",
+		"@cdktf/provider-cloudflare.web3Hostname.Web3Hostname",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func Web3Hostname_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.web3Hostname.Web3Hostname",
+		"@cdktf/provider-cloudflare.web3Hostname.Web3Hostname",
 		"tfResourceType",
 		&returns,
 	)

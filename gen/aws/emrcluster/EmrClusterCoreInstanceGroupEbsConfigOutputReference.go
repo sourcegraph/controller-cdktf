@@ -274,7 +274,7 @@ func NewEmrClusterCoreInstanceGroupEbsConfigOutputReference(terraformResource cd
 	j := jsiiProxy_EmrClusterCoreInstanceGroupEbsConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewEmrClusterCoreInstanceGroupEbsConfigOutputReference_Override(e EmrCluste
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceGroupEbsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

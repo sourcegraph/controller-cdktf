@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList(terrafor
 	j := jsiiProxy_DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerLifecyclePreStopHttpGetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

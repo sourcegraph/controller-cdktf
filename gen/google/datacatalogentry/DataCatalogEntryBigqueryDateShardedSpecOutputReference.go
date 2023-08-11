@@ -189,7 +189,7 @@ func NewDataCatalogEntryBigqueryDateShardedSpecOutputReference(terraformResource
 	j := jsiiProxy_DataCatalogEntryBigqueryDateShardedSpecOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataCatalogEntryBigqueryDateShardedSpecOutputReference_Override(d DataCa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

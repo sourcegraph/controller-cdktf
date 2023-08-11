@@ -116,7 +116,7 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3Buc
 	j := jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List{}
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3Buc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -250,7 +250,7 @@ func NewEfsReplicationConfigurationDestinationOutputReference(terraformResource 
 	j := jsiiProxy_EfsReplicationConfigurationDestinationOutputReference{}
 
 	_jsii_.Create(
-		"aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewEfsReplicationConfigurationDestinationOutputReference_Override(e EfsRepl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -203,7 +203,7 @@ func NewDaemonsetSpecTemplateSpecContainerEnvFromSecretRefOutputReference(terraf
 	j := jsiiProxy_DaemonsetSpecTemplateSpecContainerEnvFromSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDaemonsetSpecTemplateSpecContainerEnvFromSecretRefOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerEnvFromSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

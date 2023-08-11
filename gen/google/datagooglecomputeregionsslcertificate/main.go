@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
+		"@cdktf/provider-google.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificate",
 		reflect.TypeOf((*DataGoogleComputeRegionSslCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificateConfig",
+		"@cdktf/provider-google.dataGoogleComputeRegionSslCertificate.DataGoogleComputeRegionSslCertificateConfig",
 		reflect.TypeOf((*DataGoogleComputeRegionSslCertificateConfig)(nil)).Elem(),
 	)
 }

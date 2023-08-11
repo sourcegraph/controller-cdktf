@@ -226,7 +226,7 @@ func NewRdsClusterParameterGroupParameterOutputReference(terraformResource cdktf
 	j := jsiiProxy_RdsClusterParameterGroupParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewRdsClusterParameterGroupParameterOutputReference_Override(r RdsClusterPa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

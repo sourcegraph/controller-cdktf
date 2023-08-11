@@ -116,7 +116,7 @@ func NewEvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList(terraformR
 	j := jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList_Override(e
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchScheduledSplitsConfigStepsSegmentOverridesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

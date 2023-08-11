@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecVolumeSecretItemsList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataKubernetesPodSpecVolumeSecretItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecVolumeSecretItemsList_Override(d DataKubernetesPodS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

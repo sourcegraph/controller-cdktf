@@ -104,7 +104,7 @@ func NewVertexAiIndexDeployedIndexesList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_VertexAiIndexDeployedIndexesList{}
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexDeployedIndexesList",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVertexAiIndexDeployedIndexesList_Override(v VertexAiIndexDeployedIndexes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexDeployedIndexesList",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

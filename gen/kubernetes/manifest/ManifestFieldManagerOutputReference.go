@@ -204,7 +204,7 @@ func NewManifestFieldManagerOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ManifestFieldManagerOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestFieldManagerOutputReference",
+		"@cdktf/provider-kubernetes.manifest.ManifestFieldManagerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewManifestFieldManagerOutputReference_Override(m ManifestFieldManagerOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestFieldManagerOutputReference",
+		"@cdktf/provider-kubernetes.manifest.ManifestFieldManagerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

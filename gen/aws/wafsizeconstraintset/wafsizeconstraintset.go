@@ -354,7 +354,7 @@ func NewWafSizeConstraintSet(scope constructs.Construct, id *string, config *Waf
 	j := jsiiProxy_WafSizeConstraintSet{}
 
 	_jsii_.Create(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSet",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewWafSizeConstraintSet_Override(w WafSizeConstraintSet, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSet",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -489,7 +489,7 @@ func WafSizeConstraintSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSet",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func WafSizeConstraintSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSet",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func WafSizeConstraintSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSet",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func WafSizeConstraintSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSet",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSet",
 		"tfResourceType",
 		&returns,
 	)

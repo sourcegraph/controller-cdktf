@@ -204,7 +204,7 @@ func NewPodSpecVolumeRbdSecretRefOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_PodSpecVolumeRbdSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeRbdSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodSpecVolumeRbdSecretRefOutputReference_Override(p PodSpecVolumeRbdSecr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeRbdSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

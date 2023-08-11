@@ -204,7 +204,7 @@ func NewGrafanaWorkspaceTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GrafanaWorkspaceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.grafanaWorkspace.GrafanaWorkspaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGrafanaWorkspaceTimeoutsOutputReference_Override(g GrafanaWorkspaceTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaWorkspace.GrafanaWorkspaceTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

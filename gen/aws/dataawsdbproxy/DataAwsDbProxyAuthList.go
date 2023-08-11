@@ -104,7 +104,7 @@ func NewDataAwsDbProxyAuthList(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_DataAwsDbProxyAuthList{}
 
 	_jsii_.Create(
-		"aws.dataAwsDbProxy.DataAwsDbProxyAuthList",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsDbProxyAuthList_Override(d DataAwsDbProxyAuthList, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDbProxy.DataAwsDbProxyAuthList",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

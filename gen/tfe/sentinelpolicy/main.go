@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.sentinelPolicy.SentinelPolicy",
+		"@cdktf/provider-tfe.sentinelPolicy.SentinelPolicy",
 		reflect.TypeOf((*SentinelPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.sentinelPolicy.SentinelPolicyConfig",
+		"@cdktf/provider-tfe.sentinelPolicy.SentinelPolicyConfig",
 		reflect.TypeOf((*SentinelPolicyConfig)(nil)).Elem(),
 	)
 }

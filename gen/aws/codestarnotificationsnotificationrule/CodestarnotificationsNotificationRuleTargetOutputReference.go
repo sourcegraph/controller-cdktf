@@ -214,7 +214,7 @@ func NewCodestarnotificationsNotificationRuleTargetOutputReference(terraformReso
 	j := jsiiProxy_CodestarnotificationsNotificationRuleTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetOutputReference",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -226,7 +226,7 @@ func NewCodestarnotificationsNotificationRuleTargetOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetOutputReference",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRuleTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

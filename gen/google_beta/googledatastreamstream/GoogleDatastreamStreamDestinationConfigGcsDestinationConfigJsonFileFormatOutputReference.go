@@ -204,7 +204,7 @@ func NewGoogleDatastreamStreamDestinationConfigGcsDestinationConfigJsonFileForma
 	j := jsiiProxy_GoogleDatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleDatastreamStreamDestinationConfigGcsDestinationConfigJsonFileForma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

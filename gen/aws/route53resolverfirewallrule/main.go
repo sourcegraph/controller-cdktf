@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
+		"@cdktf/provider-aws.route53ResolverFirewallRule.Route53ResolverFirewallRule",
 		reflect.TypeOf((*Route53ResolverFirewallRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -77,7 +77,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverFirewallRule.Route53ResolverFirewallRuleConfig",
+		"@cdktf/provider-aws.route53ResolverFirewallRule.Route53ResolverFirewallRuleConfig",
 		reflect.TypeOf((*Route53ResolverFirewallRuleConfig)(nil)).Elem(),
 	)
 }

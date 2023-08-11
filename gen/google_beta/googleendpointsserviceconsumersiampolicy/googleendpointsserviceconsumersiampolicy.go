@@ -376,7 +376,7 @@ func NewGoogleEndpointsServiceConsumersIamPolicy(scope constructs.Construct, id 
 	j := jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewGoogleEndpointsServiceConsumersIamPolicy_Override(g GoogleEndpointsServi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -533,7 +533,7 @@ func GoogleEndpointsServiceConsumersIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func GoogleEndpointsServiceConsumersIamPolicy_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func GoogleEndpointsServiceConsumersIamPolicy_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func GoogleEndpointsServiceConsumersIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

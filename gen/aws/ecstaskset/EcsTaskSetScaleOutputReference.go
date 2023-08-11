@@ -204,7 +204,7 @@ func NewEcsTaskSetScaleOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_EcsTaskSetScaleOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetScaleOutputReference",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetScaleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEcsTaskSetScaleOutputReference_Override(e EcsTaskSetScaleOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskSet.EcsTaskSetScaleOutputReference",
+		"@cdktf/provider-aws.ecsTaskSet.EcsTaskSetScaleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -202,7 +202,7 @@ func NewCloudformationTypeLoggingConfigOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_CloudformationTypeLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudformationType.CloudformationTypeLoggingConfigOutputReference",
+		"@cdktf/provider-aws.cloudformationType.CloudformationTypeLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCloudformationTypeLoggingConfigOutputReference_Override(c Cloudformation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudformationType.CloudformationTypeLoggingConfigOutputReference",
+		"@cdktf/provider-aws.cloudformationType.CloudformationTypeLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

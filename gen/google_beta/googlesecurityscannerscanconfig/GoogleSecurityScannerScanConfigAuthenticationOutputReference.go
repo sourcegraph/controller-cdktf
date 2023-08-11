@@ -204,7 +204,7 @@ func NewGoogleSecurityScannerScanConfigAuthenticationOutputReference(terraformRe
 	j := jsiiProxy_GoogleSecurityScannerScanConfigAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationOutputReference",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleSecurityScannerScanConfigAuthenticationOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationOutputReference",
+		"@cdktf/provider-google-beta.googleSecurityScannerScanConfig.GoogleSecurityScannerScanConfigAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

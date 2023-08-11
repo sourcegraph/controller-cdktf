@@ -380,7 +380,7 @@ func NewDataGoogleProject(scope constructs.Construct, id *string, config *DataGo
 	j := jsiiProxy_DataGoogleProject{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProject.DataGoogleProject",
+		"@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -393,7 +393,7 @@ func NewDataGoogleProject_Override(d DataGoogleProject, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProject.DataGoogleProject",
+		"@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -493,7 +493,7 @@ func DataGoogleProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleProject.DataGoogleProject",
+		"@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleProject_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleProject.DataGoogleProject",
+		"@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func DataGoogleProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleProject.DataGoogleProject",
+		"@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func DataGoogleProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleProject.DataGoogleProject",
+		"@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
+		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepter",
 		reflect.TypeOf((*DetectiveInvitationAccepter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig",
+		"@cdktf/provider-aws.detectiveInvitationAccepter.DetectiveInvitationAccepterConfig",
 		reflect.TypeOf((*DetectiveInvitationAccepterConfig)(nil)).Elem(),
 	)
 }

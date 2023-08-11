@@ -116,7 +116,7 @@ func NewComputeInstanceNetworkInterfaceAccessConfigList(terraformResource cdktf.
 	j := jsiiProxy_ComputeInstanceNetworkInterfaceAccessConfigList{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigList",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceNetworkInterfaceAccessConfigList_Override(c ComputeInstan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigList",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAccessConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

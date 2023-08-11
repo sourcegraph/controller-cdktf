@@ -434,7 +434,7 @@ func NewAuthServerClaimDefault(scope constructs.Construct, id *string, config *A
 	j := jsiiProxy_AuthServerClaimDefault{}
 
 	_jsii_.Create(
-		"okta.authServerClaimDefault.AuthServerClaimDefault",
+		"@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,7 +447,7 @@ func NewAuthServerClaimDefault_Override(a AuthServerClaimDefault, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.authServerClaimDefault.AuthServerClaimDefault",
+		"@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -602,7 +602,7 @@ func AuthServerClaimDefault_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.authServerClaimDefault.AuthServerClaimDefault",
+		"@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func AuthServerClaimDefault_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.authServerClaimDefault.AuthServerClaimDefault",
+		"@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func AuthServerClaimDefault_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.authServerClaimDefault.AuthServerClaimDefault",
+		"@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func AuthServerClaimDefault_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.authServerClaimDefault.AuthServerClaimDefault",
+		"@cdktf/provider-okta.authServerClaimDefault.AuthServerClaimDefault",
 		"tfResourceType",
 		&returns,
 	)

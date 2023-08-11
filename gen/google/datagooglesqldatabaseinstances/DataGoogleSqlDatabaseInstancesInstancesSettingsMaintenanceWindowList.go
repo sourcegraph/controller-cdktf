@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList(ter
 	j := jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesSettingsMaintenanceWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

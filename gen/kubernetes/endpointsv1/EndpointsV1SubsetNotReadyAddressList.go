@@ -116,7 +116,7 @@ func NewEndpointsV1SubsetNotReadyAddressList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_EndpointsV1SubsetNotReadyAddressList{}
 
 	_jsii_.Create(
-		"kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressList",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEndpointsV1SubsetNotReadyAddressList_Override(e EndpointsV1SubsetNotRead
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressList",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

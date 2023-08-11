@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMember",
 		reflect.TypeOf((*IapWebTypeAppEngineIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberCondition",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberCondition",
 		reflect.TypeOf((*IapWebTypeAppEngineIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberConditionOutputReference",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberConditionOutputReference",
 		reflect.TypeOf((*IapWebTypeAppEngineIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberConfig",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamMember.IapWebTypeAppEngineIamMemberConfig",
 		reflect.TypeOf((*IapWebTypeAppEngineIamMemberConfig)(nil)).Elem(),
 	)
 }

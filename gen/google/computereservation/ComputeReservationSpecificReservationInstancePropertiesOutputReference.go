@@ -251,7 +251,7 @@ func NewComputeReservationSpecificReservationInstancePropertiesOutputReference(t
 	j := jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesOutputReference",
+		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewComputeReservationSpecificReservationInstancePropertiesOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesOutputReference",
+		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

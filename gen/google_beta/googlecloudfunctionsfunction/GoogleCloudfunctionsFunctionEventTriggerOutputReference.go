@@ -226,7 +226,7 @@ func NewGoogleCloudfunctionsFunctionEventTriggerOutputReference(terraformResourc
 	j := jsiiProxy_GoogleCloudfunctionsFunctionEventTriggerOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionEventTriggerOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionEventTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleCloudfunctionsFunctionEventTriggerOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionEventTriggerOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionEventTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

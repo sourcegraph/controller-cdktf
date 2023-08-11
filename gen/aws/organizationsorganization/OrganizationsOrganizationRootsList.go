@@ -104,7 +104,7 @@ func NewOrganizationsOrganizationRootsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_OrganizationsOrganizationRootsList{}
 
 	_jsii_.Create(
-		"aws.organizationsOrganization.OrganizationsOrganizationRootsList",
+		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewOrganizationsOrganizationRootsList_Override(o OrganizationsOrganizationR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.organizationsOrganization.OrganizationsOrganizationRootsList",
+		"@cdktf/provider-aws.organizationsOrganization.OrganizationsOrganizationRootsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

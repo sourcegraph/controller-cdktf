@@ -228,7 +228,7 @@ func NewGoogleMonitoringDashboardTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleMonitoringDashboardTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleMonitoringDashboardTimeoutsOutputReference_Override(g GoogleMonito
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

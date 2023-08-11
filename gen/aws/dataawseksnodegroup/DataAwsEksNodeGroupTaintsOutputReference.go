@@ -189,7 +189,7 @@ func NewDataAwsEksNodeGroupTaintsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsEksNodeGroupTaintsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsEksNodeGroupTaintsOutputReference_Override(d DataAwsEksNodeGroupT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -436,7 +436,7 @@ func NewOriginCaCertificate(scope constructs.Construct, id *string, config *Orig
 	j := jsiiProxy_OriginCaCertificate{}
 
 	_jsii_.Create(
-		"cloudflare.originCaCertificate.OriginCaCertificate",
+		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewOriginCaCertificate_Override(o OriginCaCertificate, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.originCaCertificate.OriginCaCertificate",
+		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -615,7 +615,7 @@ func OriginCaCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.originCaCertificate.OriginCaCertificate",
+		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func OriginCaCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.originCaCertificate.OriginCaCertificate",
+		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func OriginCaCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.originCaCertificate.OriginCaCertificate",
+		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func OriginCaCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.originCaCertificate.OriginCaCertificate",
+		"@cdktf/provider-cloudflare.originCaCertificate.OriginCaCertificate",
 		"tfResourceType",
 		&returns,
 	)

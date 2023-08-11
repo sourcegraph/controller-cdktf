@@ -348,7 +348,7 @@ func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference(terraform
 	j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

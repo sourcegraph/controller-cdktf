@@ -390,7 +390,7 @@ func NewJobV1(scope constructs.Construct, id *string, config *JobV1Config) JobV1
 	j := jsiiProxy_JobV1{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1",
+		"@cdktf/provider-kubernetes.jobV1.JobV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewJobV1_Override(j JobV1, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1",
+		"@cdktf/provider-kubernetes.jobV1.JobV1",
 		[]interface{}{scope, id, config},
 		j,
 	)
@@ -525,7 +525,7 @@ func JobV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.jobV1.JobV1",
+		"@cdktf/provider-kubernetes.jobV1.JobV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func JobV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.jobV1.JobV1",
+		"@cdktf/provider-kubernetes.jobV1.JobV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func JobV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.jobV1.JobV1",
+		"@cdktf/provider-kubernetes.jobV1.JobV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func JobV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.jobV1.JobV1",
+		"@cdktf/provider-kubernetes.jobV1.JobV1",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference(terraform
 	j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

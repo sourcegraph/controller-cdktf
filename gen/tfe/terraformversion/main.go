@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.terraformVersion.TerraformVersion",
+		"@cdktf/provider-tfe.terraformVersion.TerraformVersion",
 		reflect.TypeOf((*TerraformVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.terraformVersion.TerraformVersionConfig",
+		"@cdktf/provider-tfe.terraformVersion.TerraformVersionConfig",
 		reflect.TypeOf((*TerraformVersionConfig)(nil)).Elem(),
 	)
 }

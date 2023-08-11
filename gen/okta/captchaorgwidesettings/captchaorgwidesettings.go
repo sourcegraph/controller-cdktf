@@ -344,7 +344,7 @@ func NewCaptchaOrgWideSettings(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_CaptchaOrgWideSettings{}
 
 	_jsii_.Create(
-		"okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
+		"@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -357,7 +357,7 @@ func NewCaptchaOrgWideSettings_Override(c CaptchaOrgWideSettings, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
+		"@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -490,7 +490,7 @@ func CaptchaOrgWideSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
+		"@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -509,7 +509,7 @@ func CaptchaOrgWideSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
+		"@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func CaptchaOrgWideSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
+		"@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func CaptchaOrgWideSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
+		"@cdktf/provider-okta.captchaOrgWideSettings.CaptchaOrgWideSettings",
 		"tfResourceType",
 		&returns,
 	)

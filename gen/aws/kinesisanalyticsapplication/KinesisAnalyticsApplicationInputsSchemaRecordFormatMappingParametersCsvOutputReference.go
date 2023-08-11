@@ -202,7 +202,7 @@ func NewKinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvO
 	j := jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewKinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersCsvOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

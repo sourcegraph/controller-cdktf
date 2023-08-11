@@ -276,7 +276,7 @@ func NewComputeRegionBackendServiceCircuitBreakersOutputReference(terraformResou
 	j := jsiiProxy_ComputeRegionBackendServiceCircuitBreakersOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceCircuitBreakersOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCircuitBreakersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewComputeRegionBackendServiceCircuitBreakersOutputReference_Override(c Com
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceCircuitBreakersOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCircuitBreakersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

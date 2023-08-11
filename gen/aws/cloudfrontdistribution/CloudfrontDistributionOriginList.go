@@ -116,7 +116,7 @@ func NewCloudfrontDistributionOriginList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_CloudfrontDistributionOriginList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfrontDistributionOriginList_Override(c CloudfrontDistributionOrigin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -330,7 +330,7 @@ func NewEcrRegistryPolicy(scope constructs.Construct, id *string, config *EcrReg
 	j := jsiiProxy_EcrRegistryPolicy{}
 
 	_jsii_.Create(
-		"aws.ecrRegistryPolicy.EcrRegistryPolicy",
+		"@cdktf/provider-aws.ecrRegistryPolicy.EcrRegistryPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -343,7 +343,7 @@ func NewEcrRegistryPolicy_Override(e EcrRegistryPolicy, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrRegistryPolicy.EcrRegistryPolicy",
+		"@cdktf/provider-aws.ecrRegistryPolicy.EcrRegistryPolicy",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -465,7 +465,7 @@ func EcrRegistryPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrRegistryPolicy.EcrRegistryPolicy",
+		"@cdktf/provider-aws.ecrRegistryPolicy.EcrRegistryPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -484,7 +484,7 @@ func EcrRegistryPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrRegistryPolicy.EcrRegistryPolicy",
+		"@cdktf/provider-aws.ecrRegistryPolicy.EcrRegistryPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func EcrRegistryPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrRegistryPolicy.EcrRegistryPolicy",
+		"@cdktf/provider-aws.ecrRegistryPolicy.EcrRegistryPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func EcrRegistryPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecrRegistryPolicy.EcrRegistryPolicy",
+		"@cdktf/provider-aws.ecrRegistryPolicy.EcrRegistryPolicy",
 		"tfResourceType",
 		&returns,
 	)

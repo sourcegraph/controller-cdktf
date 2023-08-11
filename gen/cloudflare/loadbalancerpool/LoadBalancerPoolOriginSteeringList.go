@@ -116,7 +116,7 @@ func NewLoadBalancerPoolOriginSteeringList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_LoadBalancerPoolOriginSteeringList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringList",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerPoolOriginSteeringList_Override(l LoadBalancerPoolOriginStee
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringList",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

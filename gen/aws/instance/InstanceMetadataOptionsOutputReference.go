@@ -252,7 +252,7 @@ func NewInstanceMetadataOptionsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_InstanceMetadataOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.instance.InstanceMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.instance.InstanceMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewInstanceMetadataOptionsOutputReference_Override(i InstanceMetadataOption
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.InstanceMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.instance.InstanceMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

@@ -204,7 +204,7 @@ func NewApigeeInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ApigeeInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeInstance.ApigeeInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeInstance.ApigeeInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApigeeInstanceTimeoutsOutputReference_Override(a ApigeeInstanceTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeInstance.ApigeeInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeInstance.ApigeeInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

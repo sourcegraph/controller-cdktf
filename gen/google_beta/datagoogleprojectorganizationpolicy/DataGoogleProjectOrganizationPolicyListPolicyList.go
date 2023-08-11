@@ -104,7 +104,7 @@ func NewDataGoogleProjectOrganizationPolicyListPolicyList(terraformResource cdkt
 	j := jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleProjectOrganizationPolicyListPolicyList_Override(d DataGoogleP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleProjectOrganizationPolicy.DataGoogleProjectOrganizationPolicyListPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

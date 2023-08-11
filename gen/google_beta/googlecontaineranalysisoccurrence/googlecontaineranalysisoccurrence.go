@@ -481,7 +481,7 @@ func NewGoogleContainerAnalysisOccurrence(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleContainerAnalysisOccurrence{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
+		"@cdktf/provider-google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewGoogleContainerAnalysisOccurrence_Override(g GoogleContainerAnalysisOccu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
+		"@cdktf/provider-google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -649,7 +649,7 @@ func GoogleContainerAnalysisOccurrence_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
+		"@cdktf/provider-google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func GoogleContainerAnalysisOccurrence_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
+		"@cdktf/provider-google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func GoogleContainerAnalysisOccurrence_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
+		"@cdktf/provider-google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GoogleContainerAnalysisOccurrence_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
+		"@cdktf/provider-google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrence",
 		"tfResourceType",
 		&returns,
 	)

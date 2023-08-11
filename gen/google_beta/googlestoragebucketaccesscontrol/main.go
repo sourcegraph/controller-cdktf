@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageBucketAccessControl.GoogleStorageBucketAccessControl",
+		"@cdktf/provider-google-beta.googleStorageBucketAccessControl.GoogleStorageBucketAccessControl",
 		reflect.TypeOf((*GoogleStorageBucketAccessControl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageBucketAccessControl.GoogleStorageBucketAccessControlConfig",
+		"@cdktf/provider-google-beta.googleStorageBucketAccessControl.GoogleStorageBucketAccessControlConfig",
 		reflect.TypeOf((*GoogleStorageBucketAccessControlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleStorageBucketAccessControl.GoogleStorageBucketAccessControlTimeouts",
+		"@cdktf/provider-google-beta.googleStorageBucketAccessControl.GoogleStorageBucketAccessControlTimeouts",
 		reflect.TypeOf((*GoogleStorageBucketAccessControlTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleStorageBucketAccessControl.GoogleStorageBucketAccessControlTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucketAccessControl.GoogleStorageBucketAccessControlTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketAccessControlTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

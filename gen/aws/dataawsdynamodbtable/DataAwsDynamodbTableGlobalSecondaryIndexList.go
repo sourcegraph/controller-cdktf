@@ -104,7 +104,7 @@ func NewDataAwsDynamodbTableGlobalSecondaryIndexList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsDynamodbTableGlobalSecondaryIndexList{}
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexList",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsDynamodbTableGlobalSecondaryIndexList_Override(d DataAwsDynamodbT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexList",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableGlobalSecondaryIndexList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

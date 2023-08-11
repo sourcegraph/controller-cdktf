@@ -228,7 +228,7 @@ func NewGameliftFleetRuntimeConfigurationOutputReference(terraformResource cdktf
 	j := jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetRuntimeConfigurationOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGameliftFleetRuntimeConfigurationOutputReference_Override(g GameliftFlee
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetRuntimeConfigurationOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

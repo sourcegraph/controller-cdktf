@@ -179,7 +179,7 @@ func NewAthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputRef
 	j := jsiiProxy_AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

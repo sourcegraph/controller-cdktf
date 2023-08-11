@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamUserSshKey.IamUserSshKey",
+		"@cdktf/provider-aws.iamUserSshKey.IamUserSshKey",
 		reflect.TypeOf((*IamUserSshKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamUserSshKey.IamUserSshKeyConfig",
+		"@cdktf/provider-aws.iamUserSshKey.IamUserSshKeyConfig",
 		reflect.TypeOf((*IamUserSshKeyConfig)(nil)).Elem(),
 	)
 }

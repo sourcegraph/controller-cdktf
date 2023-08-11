@@ -228,7 +228,7 @@ func NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermO
 	j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMacie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesAndSimpleScopeTermOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

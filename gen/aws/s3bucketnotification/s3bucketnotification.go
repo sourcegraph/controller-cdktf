@@ -415,7 +415,7 @@ func NewS3BucketNotification(scope constructs.Construct, id *string, config *S3B
 	j := jsiiProxy_S3BucketNotification{}
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotification",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewS3BucketNotification_Override(s S3BucketNotification, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotification",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -561,7 +561,7 @@ func S3BucketNotification_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketNotification.S3BucketNotification",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func S3BucketNotification_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketNotification.S3BucketNotification",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func S3BucketNotification_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketNotification.S3BucketNotification",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func S3BucketNotification_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketNotification.S3BucketNotification",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotification",
 		"tfResourceType",
 		&returns,
 	)

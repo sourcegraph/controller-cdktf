@@ -379,7 +379,7 @@ func NewGoogleFirebaseStorageBucket(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleFirebaseStorageBucket{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewGoogleFirebaseStorageBucket_Override(g GoogleFirebaseStorageBucket, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -525,7 +525,7 @@ func GoogleFirebaseStorageBucket_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func GoogleFirebaseStorageBucket_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func GoogleFirebaseStorageBucket_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleFirebaseStorageBucket_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
+		"@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewAccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsL
 	j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

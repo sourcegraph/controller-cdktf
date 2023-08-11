@@ -418,7 +418,7 @@ func NewGoogleComputeInstanceNetworkInterfaceOutputReference(terraformResource c
 	j := jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewGoogleComputeInstanceNetworkInterfaceOutputReference_Override(g GoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

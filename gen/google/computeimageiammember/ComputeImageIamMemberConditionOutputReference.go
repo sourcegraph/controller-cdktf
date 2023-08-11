@@ -226,7 +226,7 @@ func NewComputeImageIamMemberConditionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ComputeImageIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeImageIamMember.ComputeImageIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeImageIamMember.ComputeImageIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeImageIamMemberConditionOutputReference_Override(c ComputeImageIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImageIamMember.ComputeImageIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeImageIamMember.ComputeImageIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

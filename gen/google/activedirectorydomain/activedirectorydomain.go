@@ -507,7 +507,7 @@ func NewActiveDirectoryDomain(scope constructs.Construct, id *string, config *Ac
 	j := jsiiProxy_ActiveDirectoryDomain{}
 
 	_jsii_.Create(
-		"google.activeDirectoryDomain.ActiveDirectoryDomain",
+		"@cdktf/provider-google.activeDirectoryDomain.ActiveDirectoryDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -520,7 +520,7 @@ func NewActiveDirectoryDomain_Override(a ActiveDirectoryDomain, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.activeDirectoryDomain.ActiveDirectoryDomain",
+		"@cdktf/provider-google.activeDirectoryDomain.ActiveDirectoryDomain",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -708,7 +708,7 @@ func ActiveDirectoryDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.activeDirectoryDomain.ActiveDirectoryDomain",
+		"@cdktf/provider-google.activeDirectoryDomain.ActiveDirectoryDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func ActiveDirectoryDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.activeDirectoryDomain.ActiveDirectoryDomain",
+		"@cdktf/provider-google.activeDirectoryDomain.ActiveDirectoryDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func ActiveDirectoryDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.activeDirectoryDomain.ActiveDirectoryDomain",
+		"@cdktf/provider-google.activeDirectoryDomain.ActiveDirectoryDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func ActiveDirectoryDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.activeDirectoryDomain.ActiveDirectoryDomain",
+		"@cdktf/provider-google.activeDirectoryDomain.ActiveDirectoryDomain",
 		"tfResourceType",
 		&returns,
 	)

@@ -226,7 +226,7 @@ func NewDataplexLakeIamBindingConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataplexLakeIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataplexLakeIamBindingConditionOutputReference_Override(d DataplexLakeIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexLakeIamBinding.DataplexLakeIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataplexLakeIamBinding.DataplexLakeIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

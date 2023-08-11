@@ -228,7 +228,7 @@ func NewDaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpre
 	j := jsiiProxy_DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -598,7 +598,7 @@ func NewDxHostedTransitVirtualInterface(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DxHostedTransitVirtualInterface{}
 
 	_jsii_.Create(
-		"aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -611,7 +611,7 @@ func NewDxHostedTransitVirtualInterface_Override(d DxHostedTransitVirtualInterfa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -832,7 +832,7 @@ func DxHostedTransitVirtualInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -851,7 +851,7 @@ func DxHostedTransitVirtualInterface_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -870,7 +870,7 @@ func DxHostedTransitVirtualInterface_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -883,7 +883,7 @@ func DxHostedTransitVirtualInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
+		"@cdktf/provider-aws.dxHostedTransitVirtualInterface.DxHostedTransitVirtualInterface",
 		"tfResourceType",
 		&returns,
 	)

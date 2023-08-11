@@ -724,7 +724,7 @@ func NewCloudtrail(scope constructs.Construct, id *string, config *CloudtrailCon
 	j := jsiiProxy_Cloudtrail{}
 
 	_jsii_.Create(
-		"aws.cloudtrail.Cloudtrail",
+		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -737,7 +737,7 @@ func NewCloudtrail_Override(c Cloudtrail, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudtrail.Cloudtrail",
+		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1002,7 +1002,7 @@ func Cloudtrail_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudtrail.Cloudtrail",
+		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1021,7 +1021,7 @@ func Cloudtrail_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudtrail.Cloudtrail",
+		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1040,7 +1040,7 @@ func Cloudtrail_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudtrail.Cloudtrail",
+		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1053,7 +1053,7 @@ func Cloudtrail_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudtrail.Cloudtrail",
+		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
 		"tfResourceType",
 		&returns,
 	)

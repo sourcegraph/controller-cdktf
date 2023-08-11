@@ -561,7 +561,7 @@ func NewFilestoreBackup(scope constructs.Construct, id *string, config *Filestor
 	j := jsiiProxy_FilestoreBackup{}
 
 	_jsii_.Create(
-		"google.filestoreBackup.FilestoreBackup",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -574,7 +574,7 @@ func NewFilestoreBackup_Override(f FilestoreBackup, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.filestoreBackup.FilestoreBackup",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackup",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -762,7 +762,7 @@ func FilestoreBackup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.filestoreBackup.FilestoreBackup",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func FilestoreBackup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.filestoreBackup.FilestoreBackup",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -800,7 +800,7 @@ func FilestoreBackup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.filestoreBackup.FilestoreBackup",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -813,7 +813,7 @@ func FilestoreBackup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.filestoreBackup.FilestoreBackup",
+		"@cdktf/provider-google.filestoreBackup.FilestoreBackup",
 		"tfResourceType",
 		&returns,
 	)

@@ -403,7 +403,7 @@ func NewDataAwsSignerSigningProfile(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsSignerSigningProfile{}
 
 	_jsii_.Create(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -416,7 +416,7 @@ func NewDataAwsSignerSigningProfile_Override(d DataAwsSignerSigningProfile, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -527,7 +527,7 @@ func DataAwsSignerSigningProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataAwsSignerSigningProfile_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func DataAwsSignerSigningProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func DataAwsSignerSigningProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfile",
 		"tfResourceType",
 		&returns,
 	)

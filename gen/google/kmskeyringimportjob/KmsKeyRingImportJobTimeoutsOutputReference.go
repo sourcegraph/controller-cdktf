@@ -204,7 +204,7 @@ func NewKmsKeyRingImportJobTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_KmsKeyRingImportJobTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJobTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKmsKeyRingImportJobTimeoutsOutputReference_Override(k KmsKeyRingImportJo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJobTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

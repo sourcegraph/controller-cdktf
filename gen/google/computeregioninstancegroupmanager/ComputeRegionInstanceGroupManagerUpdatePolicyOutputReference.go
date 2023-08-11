@@ -370,7 +370,7 @@ func NewComputeRegionInstanceGroupManagerUpdatePolicyOutputReference(terraformRe
 	j := jsiiProxy_ComputeRegionInstanceGroupManagerUpdatePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerUpdatePolicyOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerUpdatePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewComputeRegionInstanceGroupManagerUpdatePolicyOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerUpdatePolicyOutputReference",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerUpdatePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -484,7 +484,7 @@ func NewGoogleOrganizationPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleOrganizationPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewGoogleOrganizationPolicy_Override(g GoogleOrganizationPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -641,7 +641,7 @@ func GoogleOrganizationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func GoogleOrganizationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GoogleOrganizationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func GoogleOrganizationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicy",
 		"tfResourceType",
 		&returns,
 	)

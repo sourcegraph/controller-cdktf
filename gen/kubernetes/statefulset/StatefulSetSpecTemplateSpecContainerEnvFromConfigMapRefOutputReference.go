@@ -203,7 +203,7 @@ func NewStatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference(t
 	j := jsiiProxy_StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewStatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvFromConfigMapRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

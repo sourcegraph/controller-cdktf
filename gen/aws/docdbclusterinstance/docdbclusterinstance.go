@@ -799,7 +799,7 @@ func NewDocdbClusterInstance(scope constructs.Construct, id *string, config *Doc
 	j := jsiiProxy_DocdbClusterInstance{}
 
 	_jsii_.Create(
-		"aws.docdbClusterInstance.DocdbClusterInstance",
+		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -812,7 +812,7 @@ func NewDocdbClusterInstance_Override(d DocdbClusterInstance, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbClusterInstance.DocdbClusterInstance",
+		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1088,7 +1088,7 @@ func DocdbClusterInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbClusterInstance.DocdbClusterInstance",
+		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1107,7 +1107,7 @@ func DocdbClusterInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbClusterInstance.DocdbClusterInstance",
+		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1126,7 +1126,7 @@ func DocdbClusterInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.docdbClusterInstance.DocdbClusterInstance",
+		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1139,7 +1139,7 @@ func DocdbClusterInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.docdbClusterInstance.DocdbClusterInstance",
+		"@cdktf/provider-aws.docdbClusterInstance.DocdbClusterInstance",
 		"tfResourceType",
 		&returns,
 	)

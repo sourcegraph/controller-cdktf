@@ -459,7 +459,7 @@ func NewConnectQuickConnect(scope constructs.Construct, id *string, config *Conn
 	j := jsiiProxy_ConnectQuickConnect{}
 
 	_jsii_.Create(
-		"aws.connectQuickConnect.ConnectQuickConnect",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnect",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewConnectQuickConnect_Override(c ConnectQuickConnect, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectQuickConnect.ConnectQuickConnect",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnect",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -638,7 +638,7 @@ func ConnectQuickConnect_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectQuickConnect.ConnectQuickConnect",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnect",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func ConnectQuickConnect_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectQuickConnect.ConnectQuickConnect",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnect",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func ConnectQuickConnect_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectQuickConnect.ConnectQuickConnect",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnect",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func ConnectQuickConnect_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectQuickConnect.ConnectQuickConnect",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnect",
 		"tfResourceType",
 		&returns,
 	)

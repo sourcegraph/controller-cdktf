@@ -204,7 +204,7 @@ func NewGoogleApigeeFlowhookTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleApigeeFlowhookTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeFlowhook.GoogleApigeeFlowhookTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeFlowhook.GoogleApigeeFlowhookTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleApigeeFlowhookTimeoutsOutputReference_Override(g GoogleApigeeFlowh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeFlowhook.GoogleApigeeFlowhookTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeFlowhook.GoogleApigeeFlowhookTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

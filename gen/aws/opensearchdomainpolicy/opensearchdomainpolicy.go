@@ -366,7 +366,7 @@ func NewOpensearchDomainPolicy(scope constructs.Construct, id *string, config *O
 	j := jsiiProxy_OpensearchDomainPolicy{}
 
 	_jsii_.Create(
-		"aws.opensearchDomainPolicy.OpensearchDomainPolicy",
+		"@cdktf/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewOpensearchDomainPolicy_Override(o OpensearchDomainPolicy, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomainPolicy.OpensearchDomainPolicy",
+		"@cdktf/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -512,7 +512,7 @@ func OpensearchDomainPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchDomainPolicy.OpensearchDomainPolicy",
+		"@cdktf/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func OpensearchDomainPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchDomainPolicy.OpensearchDomainPolicy",
+		"@cdktf/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func OpensearchDomainPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchDomainPolicy.OpensearchDomainPolicy",
+		"@cdktf/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func OpensearchDomainPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opensearchDomainPolicy.OpensearchDomainPolicy",
+		"@cdktf/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicy",
 		"tfResourceType",
 		&returns,
 	)

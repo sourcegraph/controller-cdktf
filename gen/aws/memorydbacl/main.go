@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.memorydbAcl.MemorydbAcl",
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
 		reflect.TypeOf((*MemorydbAcl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.memorydbAcl.MemorydbAclConfig",
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAclConfig",
 		reflect.TypeOf((*MemorydbAclConfig)(nil)).Elem(),
 	)
 }

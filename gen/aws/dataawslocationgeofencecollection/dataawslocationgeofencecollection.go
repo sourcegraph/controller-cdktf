@@ -383,7 +383,7 @@ func NewDataAwsLocationGeofenceCollection(scope constructs.Construct, id *string
 	j := jsiiProxy_DataAwsLocationGeofenceCollection{}
 
 	_jsii_.Create(
-		"aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
+		"@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -396,7 +396,7 @@ func NewDataAwsLocationGeofenceCollection_Override(d DataAwsLocationGeofenceColl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
+		"@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -518,7 +518,7 @@ func DataAwsLocationGeofenceCollection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
+		"@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsLocationGeofenceCollection_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
+		"@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsLocationGeofenceCollection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
+		"@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataAwsLocationGeofenceCollection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
+		"@cdktf/provider-aws.dataAwsLocationGeofenceCollection.DataAwsLocationGeofenceCollection",
 		"tfResourceType",
 		&returns,
 	)

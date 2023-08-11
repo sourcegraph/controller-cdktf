@@ -211,7 +211,7 @@ func NewGoogleDataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectatio
 	j := jsiiProxy_GoogleDataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewGoogleDataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleStatisticRangeExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

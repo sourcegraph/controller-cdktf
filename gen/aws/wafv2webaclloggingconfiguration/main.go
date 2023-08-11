@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfiguration",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfiguration",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,27 +67,27 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationConfig",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilter",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilter",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionActionConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -121,11 +121,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -180,7 +180,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionCondition", GoGetter: "ActionCondition"},
@@ -220,7 +220,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterList",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterList",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -241,7 +241,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "behavior", GoGetter: "Behavior"},
@@ -280,7 +280,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationLoggingFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -317,15 +317,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFields",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFields",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -357,11 +357,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBody",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBody",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsBody)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -393,7 +393,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsList",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsList",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -414,11 +414,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethod",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethod",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsMethod)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsMethodOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -450,7 +450,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allQueryArguments", GoGetter: "AllQueryArguments"},
@@ -510,11 +510,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsQueryStringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -546,11 +546,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -584,11 +584,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -622,11 +622,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference",
 		reflect.TypeOf((*Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

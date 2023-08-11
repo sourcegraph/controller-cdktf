@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
+		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicy",
 		reflect.TypeOf((*SourcerepoRepositoryIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicyConfig",
+		"@cdktf/provider-google.sourcerepoRepositoryIamPolicy.SourcerepoRepositoryIamPolicyConfig",
 		reflect.TypeOf((*SourcerepoRepositoryIamPolicyConfig)(nil)).Elem(),
 	)
 }

@@ -200,7 +200,7 @@ func NewDataGoogleComputeRouterNatRulesOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataGoogleComputeRouterNatRulesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatRulesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleComputeRouterNatRulesOutputReference_Override(d DataGoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatRulesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

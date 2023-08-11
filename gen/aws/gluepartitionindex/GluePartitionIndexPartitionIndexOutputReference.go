@@ -215,7 +215,7 @@ func NewGluePartitionIndexPartitionIndexOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GluePartitionIndexPartitionIndexOutputReference{}
 
 	_jsii_.Create(
-		"aws.gluePartitionIndex.GluePartitionIndexPartitionIndexOutputReference",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexPartitionIndexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewGluePartitionIndexPartitionIndexOutputReference_Override(g GluePartition
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gluePartitionIndex.GluePartitionIndexPartitionIndexOutputReference",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexPartitionIndexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

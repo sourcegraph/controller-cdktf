@@ -228,7 +228,7 @@ func NewStoragegatewayNfsFileShareTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_StoragegatewayNfsFileShareTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStoragegatewayNfsFileShareTimeoutsOutputReference_Override(s Storagegate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

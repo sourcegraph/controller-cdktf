@@ -116,7 +116,7 @@ func NewGoogleComputeUrlMapTestList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_GoogleComputeUrlMapTestList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeUrlMapTestList_Override(g GoogleComputeUrlMapTestList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapTestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

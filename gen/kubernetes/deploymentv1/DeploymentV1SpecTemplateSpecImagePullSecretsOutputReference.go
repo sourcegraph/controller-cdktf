@@ -179,7 +179,7 @@ func NewDeploymentV1SpecTemplateSpecImagePullSecretsOutputReference(terraformRes
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDeploymentV1SpecTemplateSpecImagePullSecretsOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

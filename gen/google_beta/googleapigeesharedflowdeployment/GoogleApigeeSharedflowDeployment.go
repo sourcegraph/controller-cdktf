@@ -436,7 +436,7 @@ func NewGoogleApigeeSharedflowDeployment(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleApigeeSharedflowDeployment{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
+		"@cdktf/provider-google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewGoogleApigeeSharedflowDeployment_Override(g GoogleApigeeSharedflowDeploy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
+		"@cdktf/provider-google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -615,7 +615,7 @@ func GoogleApigeeSharedflowDeployment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
+		"@cdktf/provider-google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func GoogleApigeeSharedflowDeployment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
+		"@cdktf/provider-google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func GoogleApigeeSharedflowDeployment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
+		"@cdktf/provider-google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func GoogleApigeeSharedflowDeployment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
+		"@cdktf/provider-google-beta.googleApigeeSharedflowDeployment.GoogleApigeeSharedflowDeployment",
 		"tfResourceType",
 		&returns,
 	)

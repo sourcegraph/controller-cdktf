@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecSecurityContextSysctlList(terraformResource c
 	j := jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextSysctlList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecSecurityContextSysctlList_Override(s Stateful
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

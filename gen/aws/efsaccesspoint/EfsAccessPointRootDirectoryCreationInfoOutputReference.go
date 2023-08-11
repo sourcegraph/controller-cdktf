@@ -225,7 +225,7 @@ func NewEfsAccessPointRootDirectoryCreationInfoOutputReference(terraformResource
 	j := jsiiProxy_EfsAccessPointRootDirectoryCreationInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfoOutputReference",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewEfsAccessPointRootDirectoryCreationInfoOutputReference_Override(e EfsAcc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfoOutputReference",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPointRootDirectoryCreationInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

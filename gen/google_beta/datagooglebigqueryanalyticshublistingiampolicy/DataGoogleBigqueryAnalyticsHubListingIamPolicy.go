@@ -384,7 +384,7 @@ func NewDataGoogleBigqueryAnalyticsHubListingIamPolicy(scope constructs.Construc
 	j := jsiiProxy_DataGoogleBigqueryAnalyticsHubListingIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -397,7 +397,7 @@ func NewDataGoogleBigqueryAnalyticsHubListingIamPolicy_Override(d DataGoogleBigq
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -530,7 +530,7 @@ func DataGoogleBigqueryAnalyticsHubListingIamPolicy_IsConstruct(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func DataGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformDataSource(x inte
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformElement(x interfa
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func DataGoogleBigqueryAnalyticsHubListingIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryAnalyticsHubListingIamPolicy.DataGoogleBigqueryAnalyticsHubListingIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

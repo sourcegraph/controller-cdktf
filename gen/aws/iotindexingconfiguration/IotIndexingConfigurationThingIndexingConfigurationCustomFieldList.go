@@ -116,7 +116,7 @@ func NewIotIndexingConfigurationThingIndexingConfigurationCustomFieldList(terraf
 	j := jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldList{}
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldList",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotIndexingConfigurationThingIndexingConfigurationCustomFieldList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldList",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

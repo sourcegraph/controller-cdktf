@@ -204,7 +204,7 @@ func NewFsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference
 	j := jsiiProxy_FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewFsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

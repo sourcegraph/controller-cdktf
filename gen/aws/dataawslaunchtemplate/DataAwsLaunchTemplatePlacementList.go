@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplatePlacementList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsLaunchTemplatePlacementList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacementList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplatePlacementList_Override(d DataAwsLaunchTemplatePlace
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacementList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePlacementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

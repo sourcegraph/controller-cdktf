@@ -228,7 +228,7 @@ func NewIotTopicRuleDestinationTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIotTopicRuleDestinationTimeoutsOutputReference_Override(i IotTopicRuleDe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

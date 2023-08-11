@@ -336,7 +336,7 @@ func NewDataGoogleSccSourceIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataGoogleSccSourceIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
+		"@cdktf/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataGoogleSccSourceIamPolicy_Override(d DataGoogleSccSourceIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
+		"@cdktf/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +460,7 @@ func DataGoogleSccSourceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
+		"@cdktf/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataGoogleSccSourceIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
+		"@cdktf/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -498,7 +498,7 @@ func DataGoogleSccSourceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
+		"@cdktf/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataGoogleSccSourceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
+		"@cdktf/provider-google.dataGoogleSccSourceIamPolicy.DataGoogleSccSourceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

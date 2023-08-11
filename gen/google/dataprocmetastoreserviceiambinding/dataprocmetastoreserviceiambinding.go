@@ -448,7 +448,7 @@ func NewDataprocMetastoreServiceIamBinding(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataprocMetastoreServiceIamBinding{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataprocMetastoreServiceIamBinding_Override(d DataprocMetastoreServiceIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataprocMetastoreServiceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataprocMetastoreServiceIamBinding_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataprocMetastoreServiceIamBinding_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataprocMetastoreServiceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google.dataprocMetastoreServiceIamBinding.DataprocMetastoreServiceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

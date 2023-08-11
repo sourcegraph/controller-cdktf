@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		reflect.TypeOf((*FsxOpenzfsSnapshot)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotConfig",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotConfig",
 		reflect.TypeOf((*FsxOpenzfsSnapshotConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeouts",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeouts",
 		reflect.TypeOf((*FsxOpenzfsSnapshotTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshotTimeoutsOutputReference",
 		reflect.TypeOf((*FsxOpenzfsSnapshotTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

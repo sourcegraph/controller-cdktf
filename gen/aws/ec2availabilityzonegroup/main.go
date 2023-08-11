@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
+		"@cdktf/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
 		reflect.TypeOf((*Ec2AvailabilityZoneGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig",
+		"@cdktf/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroupConfig",
 		reflect.TypeOf((*Ec2AvailabilityZoneGroupConfig)(nil)).Elem(),
 	)
 }

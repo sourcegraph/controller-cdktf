@@ -179,7 +179,7 @@ func NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditO
 	j := jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationAuditOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

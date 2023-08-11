@@ -342,7 +342,7 @@ func NewPodSecurityPolicyV1Beta1(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_PodSecurityPolicyV1Beta1{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewPodSecurityPolicyV1Beta1_Override(p PodSecurityPolicyV1Beta1, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -466,7 +466,7 @@ func PodSecurityPolicyV1Beta1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func PodSecurityPolicyV1Beta1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func PodSecurityPolicyV1Beta1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func PodSecurityPolicyV1Beta1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewIdentitystoreUserPhoneNumbersOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference{}
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUserPhoneNumbersOutputReference",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIdentitystoreUserPhoneNumbersOutputReference_Override(i IdentitystoreUse
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUserPhoneNumbersOutputReference",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

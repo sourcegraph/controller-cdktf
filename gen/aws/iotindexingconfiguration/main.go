@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfiguration",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfiguration",
 		reflect.TypeOf((*IotIndexingConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,19 +63,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationConfig",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationConfig",
 		reflect.TypeOf((*IotIndexingConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfiguration",
 		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomField",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomField",
 		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationCustomField)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList",
 		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,7 +96,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference",
 		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedField",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedField",
 		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationManagedField)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList",
 		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference",
 		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,7 +197,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference",
 		reflect.TypeOf((*IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -239,15 +239,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfiguration",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfiguration",
 		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomField",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomField",
 		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationCustomField)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldList",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldList",
 		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationCustomFieldList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -268,7 +268,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference",
 		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -306,11 +306,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedField",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedField",
 		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationManagedField)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldList",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldList",
 		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationManagedFieldList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -331,7 +331,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference",
 		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationManagedFieldOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -369,7 +369,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationOutputReference",
 		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

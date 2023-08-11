@@ -116,7 +116,7 @@ func NewApiGatewayUsagePlanApiStagesThrottleList(terraformResource cdktf.IInterp
 	j := jsiiProxy_ApiGatewayUsagePlanApiStagesThrottleList{}
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleList",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApiGatewayUsagePlanApiStagesThrottleList_Override(a ApiGatewayUsagePlanA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleList",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlanApiStagesThrottleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

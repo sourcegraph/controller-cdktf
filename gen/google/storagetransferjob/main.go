@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJob",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		reflect.TypeOf((*StorageTransferJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobConfig",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobConfig",
 		reflect.TypeOf((*StorageTransferJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobNotificationConfig",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobNotificationConfig",
 		reflect.TypeOf((*StorageTransferJobNotificationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobNotificationConfigOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobNotificationConfigOutputReference",
 		reflect.TypeOf((*StorageTransferJobNotificationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,11 +125,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobSchedule",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobSchedule",
 		reflect.TypeOf((*StorageTransferJobSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobScheduleOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleOutputReference",
 		reflect.TypeOf((*StorageTransferJobScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,11 +175,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobScheduleScheduleEndDate",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleEndDate",
 		reflect.TypeOf((*StorageTransferJobScheduleScheduleEndDate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobScheduleScheduleEndDateOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleEndDateOutputReference",
 		reflect.TypeOf((*StorageTransferJobScheduleScheduleEndDateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -217,11 +217,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobScheduleScheduleStartDate",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleStartDate",
 		reflect.TypeOf((*StorageTransferJobScheduleScheduleStartDate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobScheduleScheduleStartDateOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleStartDateOutputReference",
 		reflect.TypeOf((*StorageTransferJobScheduleScheduleStartDateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -259,11 +259,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDay",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDay",
 		reflect.TypeOf((*StorageTransferJobScheduleStartTimeOfDay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDayOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDayOutputReference",
 		reflect.TypeOf((*StorageTransferJobScheduleStartTimeOfDayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -303,19 +303,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpec",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpec",
 		reflect.TypeOf((*StorageTransferJobTransferSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource",
 		reflect.TypeOf((*StorageTransferJobTransferSpecAwsS3DataSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey",
 		reflect.TypeOf((*StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -351,7 +351,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecAwsS3DataSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsAccessKey", GoGetter: "AwsAccessKey"},
@@ -395,15 +395,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSource",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSource",
 		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials",
 		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -437,7 +437,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azureCredentials", GoGetter: "AzureCredentials"},
@@ -479,11 +479,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSink",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSink",
 		reflect.TypeOf((*StorageTransferJobTransferSpecGcsDataSink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSinkOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSinkOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecGcsDataSinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -520,11 +520,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSource",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSource",
 		reflect.TypeOf((*StorageTransferJobTransferSpecGcsDataSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSourceOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSourceOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecGcsDataSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -561,11 +561,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecHttpDataSource",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecHttpDataSource",
 		reflect.TypeOf((*StorageTransferJobTransferSpecHttpDataSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecHttpDataSourceOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecHttpDataSourceOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecHttpDataSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -599,11 +599,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecObjectConditions",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecObjectConditions",
 		reflect.TypeOf((*StorageTransferJobTransferSpecObjectConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecObjectConditionsOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecObjectConditionsOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecObjectConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -653,7 +653,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsS3DataSource", GoGetter: "AwsS3DataSource"},
@@ -727,11 +727,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSink",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSink",
 		reflect.TypeOf((*StorageTransferJobTransferSpecPosixDataSink)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSinkOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSinkOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecPosixDataSinkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -765,11 +765,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSource",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSource",
 		reflect.TypeOf((*StorageTransferJobTransferSpecPosixDataSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSourceOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSourceOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecPosixDataSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -803,11 +803,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageTransferJob.StorageTransferJobTransferSpecTransferOptions",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptions",
 		reflect.TypeOf((*StorageTransferJobTransferSpecTransferOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsOutputReference",
 		reflect.TypeOf((*StorageTransferJobTransferSpecTransferOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

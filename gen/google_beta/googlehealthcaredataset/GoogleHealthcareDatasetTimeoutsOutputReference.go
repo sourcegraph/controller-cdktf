@@ -228,7 +228,7 @@ func NewGoogleHealthcareDatasetTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleHealthcareDatasetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDatasetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleHealthcareDatasetTimeoutsOutputReference_Override(g GoogleHealthca
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDataset.GoogleHealthcareDatasetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareDataset.GoogleHealthcareDatasetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

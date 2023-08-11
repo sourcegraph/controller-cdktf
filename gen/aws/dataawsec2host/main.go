@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2Host.DataAwsEc2Host",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2Host",
 		reflect.TypeOf((*DataAwsEc2Host)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2Host.DataAwsEc2HostConfig",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostConfig",
 		reflect.TypeOf((*DataAwsEc2HostConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2Host.DataAwsEc2HostFilter",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilter",
 		reflect.TypeOf((*DataAwsEc2HostFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2Host.DataAwsEc2HostFilterList",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterList",
 		reflect.TypeOf((*DataAwsEc2HostFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2Host.DataAwsEc2HostFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterOutputReference",
 		reflect.TypeOf((*DataAwsEc2HostFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,11 +143,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2Host.DataAwsEc2HostTimeouts",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostTimeouts",
 		reflect.TypeOf((*DataAwsEc2HostTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2Host.DataAwsEc2HostTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsEc2HostTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

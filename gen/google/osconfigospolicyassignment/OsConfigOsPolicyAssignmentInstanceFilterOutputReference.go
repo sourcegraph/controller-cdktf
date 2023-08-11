@@ -252,7 +252,7 @@ func NewOsConfigOsPolicyAssignmentInstanceFilterOutputReference(terraformResourc
 	j := jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterOutputReference",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewOsConfigOsPolicyAssignmentInstanceFilterOutputReference_Override(o OsCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterOutputReference",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

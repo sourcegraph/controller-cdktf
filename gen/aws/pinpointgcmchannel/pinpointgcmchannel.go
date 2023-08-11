@@ -366,7 +366,7 @@ func NewPinpointGcmChannel(scope constructs.Construct, id *string, config *Pinpo
 	j := jsiiProxy_PinpointGcmChannel{}
 
 	_jsii_.Create(
-		"aws.pinpointGcmChannel.PinpointGcmChannel",
+		"@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewPinpointGcmChannel_Override(p PinpointGcmChannel, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointGcmChannel.PinpointGcmChannel",
+		"@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -523,7 +523,7 @@ func PinpointGcmChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointGcmChannel.PinpointGcmChannel",
+		"@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func PinpointGcmChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointGcmChannel.PinpointGcmChannel",
+		"@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func PinpointGcmChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointGcmChannel.PinpointGcmChannel",
+		"@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func PinpointGcmChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.pinpointGcmChannel.PinpointGcmChannel",
+		"@cdktf/provider-aws.pinpointGcmChannel.PinpointGcmChannel",
 		"tfResourceType",
 		&returns,
 	)

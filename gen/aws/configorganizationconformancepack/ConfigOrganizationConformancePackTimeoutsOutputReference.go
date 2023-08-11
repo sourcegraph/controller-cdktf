@@ -228,7 +228,7 @@ func NewConfigOrganizationConformancePackTimeoutsOutputReference(terraformResour
 	j := jsiiProxy_ConfigOrganizationConformancePackTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeoutsOutputReference",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewConfigOrganizationConformancePackTimeoutsOutputReference_Override(c Conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeoutsOutputReference",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

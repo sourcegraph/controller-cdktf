@@ -116,7 +116,7 @@ func NewGoogleApiGatewayApiConfigGrpcServicesList(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesList{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesList",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleApiGatewayApiConfigGrpcServicesList_Override(g GoogleApiGatewayApi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesList",
+		"@cdktf/provider-google-beta.googleApiGatewayApiConfig.GoogleApiGatewayApiConfigGrpcServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

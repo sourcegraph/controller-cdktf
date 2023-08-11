@@ -104,7 +104,7 @@ func NewDataCloudflareAccountRolesRolesList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataCloudflareAccountRolesRolesList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesList",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareAccountRolesRolesList_Override(d DataCloudflareAccountRole
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesList",
+		"@cdktf/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesRolesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

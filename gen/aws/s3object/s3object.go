@@ -905,7 +905,7 @@ func NewS3Object(scope constructs.Construct, id *string, config *S3ObjectConfig)
 	j := jsiiProxy_S3Object{}
 
 	_jsii_.Create(
-		"aws.s3Object.S3Object",
+		"@cdktf/provider-aws.s3Object.S3Object",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -918,7 +918,7 @@ func NewS3Object_Override(s S3Object, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Object.S3Object",
+		"@cdktf/provider-aws.s3Object.S3Object",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -1304,7 +1304,7 @@ func S3Object_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3Object.S3Object",
+		"@cdktf/provider-aws.s3Object.S3Object",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1323,7 +1323,7 @@ func S3Object_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3Object.S3Object",
+		"@cdktf/provider-aws.s3Object.S3Object",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1342,7 +1342,7 @@ func S3Object_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3Object.S3Object",
+		"@cdktf/provider-aws.s3Object.S3Object",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1355,7 +1355,7 @@ func S3Object_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3Object.S3Object",
+		"@cdktf/provider-aws.s3Object.S3Object",
 		"tfResourceType",
 		&returns,
 	)

@@ -180,7 +180,7 @@ func NewSecurityGroupRuleTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_SecurityGroupRuleTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityGroupRule.SecurityGroupRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSecurityGroupRuleTimeoutsOutputReference_Override(s SecurityGroupRuleTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityGroupRule.SecurityGroupRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.securityGroupRule.SecurityGroupRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

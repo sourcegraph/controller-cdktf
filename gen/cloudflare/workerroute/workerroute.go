@@ -366,7 +366,7 @@ func NewWorkerRoute(scope constructs.Construct, id *string, config *WorkerRouteC
 	j := jsiiProxy_WorkerRoute{}
 
 	_jsii_.Create(
-		"cloudflare.workerRoute.WorkerRoute",
+		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewWorkerRoute_Override(w WorkerRoute, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerRoute.WorkerRoute",
+		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -523,7 +523,7 @@ func WorkerRoute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerRoute.WorkerRoute",
+		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func WorkerRoute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerRoute.WorkerRoute",
+		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func WorkerRoute_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.workerRoute.WorkerRoute",
+		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func WorkerRoute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.workerRoute.WorkerRoute",
+		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		"tfResourceType",
 		&returns,
 	)

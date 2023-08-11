@@ -116,7 +116,7 @@ func NewOauthAppUsersList(terraformResource cdktf.IInterpolatingParent, terrafor
 	j := jsiiProxy_OauthAppUsersList{}
 
 	_jsii_.Create(
-		"okta.oauthApp.OauthAppUsersList",
+		"@cdktf/provider-okta.oauthApp.OauthAppUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOauthAppUsersList_Override(o OauthAppUsersList, terraformResource cdktf.
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.oauthApp.OauthAppUsersList",
+		"@cdktf/provider-okta.oauthApp.OauthAppUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

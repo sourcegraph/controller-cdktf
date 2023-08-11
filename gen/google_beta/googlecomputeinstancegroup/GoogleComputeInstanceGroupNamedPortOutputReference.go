@@ -202,7 +202,7 @@ func NewGoogleComputeInstanceGroupNamedPortOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroupNamedPortOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroupNamedPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleComputeInstanceGroupNamedPortOutputReference_Override(g GoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroupNamedPortOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroup.GoogleComputeInstanceGroupNamedPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewGameServicesGameServerConfigScalingConfigsSchedulesList(terraformResourc
 	j := jsiiProxy_GameServicesGameServerConfigScalingConfigsSchedulesList{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGameServicesGameServerConfigScalingConfigsSchedulesList_Override(g GameS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

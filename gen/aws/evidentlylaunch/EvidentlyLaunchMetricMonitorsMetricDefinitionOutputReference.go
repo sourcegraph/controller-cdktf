@@ -273,7 +273,7 @@ func NewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference(terraformRe
 	j := jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference_Override(e 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
+		"@cdktf/provider-aws.evidentlyLaunch.EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -342,7 +342,7 @@ func NewEmrManagedScalingPolicy(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_EmrManagedScalingPolicy{}
 
 	_jsii_.Create(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewEmrManagedScalingPolicy_Override(e EmrManagedScalingPolicy, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -477,7 +477,7 @@ func EmrManagedScalingPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func EmrManagedScalingPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func EmrManagedScalingPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func EmrManagedScalingPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
+		"@cdktf/provider-aws.emrManagedScalingPolicy.EmrManagedScalingPolicy",
 		"tfResourceType",
 		&returns,
 	)

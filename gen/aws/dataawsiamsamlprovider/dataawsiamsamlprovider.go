@@ -359,7 +359,7 @@ func NewDataAwsIamSamlProvider(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsIamSamlProvider{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
+		"@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -372,7 +372,7 @@ func NewDataAwsIamSamlProvider_Override(d DataAwsIamSamlProvider, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
+		"@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -483,7 +483,7 @@ func DataAwsIamSamlProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
+		"@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsIamSamlProvider_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
+		"@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func DataAwsIamSamlProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
+		"@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataAwsIamSamlProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
+		"@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
 		"tfResourceType",
 		&returns,
 	)

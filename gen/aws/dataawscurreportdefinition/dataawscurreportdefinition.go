@@ -401,7 +401,7 @@ func NewDataAwsCurReportDefinition(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsCurReportDefinition{}
 
 	_jsii_.Create(
-		"aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
+		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataAwsCurReportDefinition_Override(d DataAwsCurReportDefinition, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
+		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -514,7 +514,7 @@ func DataAwsCurReportDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
+		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataAwsCurReportDefinition_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
+		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func DataAwsCurReportDefinition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
+		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func DataAwsCurReportDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
+		"@cdktf/provider-aws.dataAwsCurReportDefinition.DataAwsCurReportDefinition",
 		"tfResourceType",
 		&returns,
 	)

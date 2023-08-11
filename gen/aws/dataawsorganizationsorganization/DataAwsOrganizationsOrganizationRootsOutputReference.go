@@ -200,7 +200,7 @@ func NewDataAwsOrganizationsOrganizationRootsOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsOrganizationsOrganizationRootsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsOutputReference",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsOrganizationsOrganizationRootsOutputReference_Override(d DataAwsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsOutputReference",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationRootsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

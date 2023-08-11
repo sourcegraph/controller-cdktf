@@ -252,7 +252,7 @@ func NewDataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference(terrafor
 	j := jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleSecondaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

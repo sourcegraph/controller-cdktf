@@ -228,7 +228,7 @@ func NewDeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutput
 	j := jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecInitContainerEnvValueFromConfigMapKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

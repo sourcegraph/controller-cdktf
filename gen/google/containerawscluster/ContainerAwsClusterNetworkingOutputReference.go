@@ -225,7 +225,7 @@ func NewContainerAwsClusterNetworkingOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ContainerAwsClusterNetworkingOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAwsCluster.ContainerAwsClusterNetworkingOutputReference",
+		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterNetworkingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewContainerAwsClusterNetworkingOutputReference_Override(c ContainerAwsClus
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAwsCluster.ContainerAwsClusterNetworkingOutputReference",
+		"@cdktf/provider-google.containerAwsCluster.ContainerAwsClusterNetworkingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

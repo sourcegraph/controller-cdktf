@@ -116,7 +116,7 @@ func NewKeyspacesTableSchemaDefinitionStaticColumnList(terraformResource cdktf.I
 	j := jsiiProxy_KeyspacesTableSchemaDefinitionStaticColumnList{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnList",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKeyspacesTableSchemaDefinitionStaticColumnList_Override(k KeyspacesTable
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnList",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionStaticColumnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

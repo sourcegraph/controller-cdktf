@@ -924,7 +924,7 @@ func NewGoogleComputeForwardingRule(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeForwardingRule{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -937,7 +937,7 @@ func NewGoogleComputeForwardingRule_Override(g GoogleComputeForwardingRule, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1279,7 +1279,7 @@ func GoogleComputeForwardingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1298,7 +1298,7 @@ func GoogleComputeForwardingRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1317,7 +1317,7 @@ func GoogleComputeForwardingRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1330,7 +1330,7 @@ func GoogleComputeForwardingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
+		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRule",
 		"tfResourceType",
 		&returns,
 	)

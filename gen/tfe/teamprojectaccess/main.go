@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.teamProjectAccess.TeamProjectAccess",
+		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccess",
 		reflect.TypeOf((*TeamProjectAccess)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.teamProjectAccess.TeamProjectAccessConfig",
+		"@cdktf/provider-tfe.teamProjectAccess.TeamProjectAccessConfig",
 		reflect.TypeOf((*TeamProjectAccessConfig)(nil)).Elem(),
 	)
 }

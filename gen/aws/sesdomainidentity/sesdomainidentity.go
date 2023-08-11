@@ -341,7 +341,7 @@ func NewSesDomainIdentity(scope constructs.Construct, id *string, config *SesDom
 	j := jsiiProxy_SesDomainIdentity{}
 
 	_jsii_.Create(
-		"aws.sesDomainIdentity.SesDomainIdentity",
+		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentity",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -354,7 +354,7 @@ func NewSesDomainIdentity_Override(s SesDomainIdentity, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesDomainIdentity.SesDomainIdentity",
+		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentity",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -476,7 +476,7 @@ func SesDomainIdentity_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainIdentity.SesDomainIdentity",
+		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentity",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -495,7 +495,7 @@ func SesDomainIdentity_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainIdentity.SesDomainIdentity",
+		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentity",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -514,7 +514,7 @@ func SesDomainIdentity_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainIdentity.SesDomainIdentity",
+		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentity",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func SesDomainIdentity_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesDomainIdentity.SesDomainIdentity",
+		"@cdktf/provider-aws.sesDomainIdentity.SesDomainIdentity",
 		"tfResourceType",
 		&returns,
 	)

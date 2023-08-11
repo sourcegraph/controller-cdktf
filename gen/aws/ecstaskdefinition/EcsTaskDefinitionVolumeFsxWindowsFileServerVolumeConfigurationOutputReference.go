@@ -225,7 +225,7 @@ func NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputRefe
 	j := jsiiProxy_EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewEcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

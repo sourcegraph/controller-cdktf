@@ -116,7 +116,7 @@ func NewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList(terrafor
 	j := jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList{}
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -1015,7 +1015,7 @@ func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceCon
 	j := jsiiProxy_EcsService{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsService",
+		"@cdktf/provider-aws.ecsService.EcsService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1028,7 +1028,7 @@ func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsService",
+		"@cdktf/provider-aws.ecsService.EcsService",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -1348,7 +1348,7 @@ func EcsService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsService.EcsService",
+		"@cdktf/provider-aws.ecsService.EcsService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1367,7 +1367,7 @@ func EcsService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsService.EcsService",
+		"@cdktf/provider-aws.ecsService.EcsService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1386,7 +1386,7 @@ func EcsService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsService.EcsService",
+		"@cdktf/provider-aws.ecsService.EcsService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1399,7 +1399,7 @@ func EcsService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecsService.EcsService",
+		"@cdktf/provider-aws.ecsService.EcsService",
 		"tfResourceType",
 		&returns,
 	)

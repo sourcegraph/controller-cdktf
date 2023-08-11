@@ -342,7 +342,7 @@ func NewEc2AvailabilityZoneGroup(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_Ec2AvailabilityZoneGroup{}
 
 	_jsii_.Create(
-		"aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
+		"@cdktf/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewEc2AvailabilityZoneGroup_Override(e Ec2AvailabilityZoneGroup, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
+		"@cdktf/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -488,7 +488,7 @@ func Ec2AvailabilityZoneGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
+		"@cdktf/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func Ec2AvailabilityZoneGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
+		"@cdktf/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func Ec2AvailabilityZoneGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
+		"@cdktf/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func Ec2AvailabilityZoneGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
+		"@cdktf/provider-aws.ec2AvailabilityZoneGroup.Ec2AvailabilityZoneGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -189,7 +189,7 @@ func NewDataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference(ter
 	j := jsiiProxy_DataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyGroup.DataAwsConnectUserHierarchyGroupHierarchyPathLevelTwoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

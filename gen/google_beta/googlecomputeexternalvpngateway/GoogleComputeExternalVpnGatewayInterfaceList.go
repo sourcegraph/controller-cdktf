@@ -116,7 +116,7 @@ func NewGoogleComputeExternalVpnGatewayInterfaceList(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleComputeExternalVpnGatewayInterfaceList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGatewayInterfaceList",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGatewayInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeExternalVpnGatewayInterfaceList_Override(g GoogleComputeExt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGatewayInterfaceList",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGatewayInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

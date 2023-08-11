@@ -189,7 +189,7 @@ func NewDataAwsElasticsearchDomainAutoTuneOptionsOutputReference(terraformResour
 	j := jsiiProxy_DataAwsElasticsearchDomainAutoTuneOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsElasticsearchDomainAutoTuneOptionsOutputReference_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainAutoTuneOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

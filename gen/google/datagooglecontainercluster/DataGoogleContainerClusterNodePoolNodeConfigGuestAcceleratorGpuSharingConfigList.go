@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingCo
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

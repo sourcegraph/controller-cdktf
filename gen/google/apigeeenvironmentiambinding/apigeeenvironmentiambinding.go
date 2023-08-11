@@ -423,7 +423,7 @@ func NewApigeeEnvironmentIamBinding(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ApigeeEnvironmentIamBinding{}
 
 	_jsii_.Create(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewApigeeEnvironmentIamBinding_Override(a ApigeeEnvironmentIamBinding, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -591,7 +591,7 @@ func ApigeeEnvironmentIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func ApigeeEnvironmentIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func ApigeeEnvironmentIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func ApigeeEnvironmentIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
+		"@cdktf/provider-google.apigeeEnvironmentIamBinding.ApigeeEnvironmentIamBinding",
 		"tfResourceType",
 		&returns,
 	)

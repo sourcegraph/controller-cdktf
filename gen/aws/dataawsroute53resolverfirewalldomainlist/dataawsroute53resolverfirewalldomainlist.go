@@ -390,7 +390,7 @@ func NewDataAwsRoute53ResolverFirewallDomainList(scope constructs.Construct, id 
 	j := jsiiProxy_DataAwsRoute53ResolverFirewallDomainList{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewDataAwsRoute53ResolverFirewallDomainList_Override(d DataAwsRoute53Resolv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -503,7 +503,7 @@ func DataAwsRoute53ResolverFirewallDomainList_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataAwsRoute53ResolverFirewallDomainList_IsTerraformDataSource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func DataAwsRoute53ResolverFirewallDomainList_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func DataAwsRoute53ResolverFirewallDomainList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallDomainList.DataAwsRoute53ResolverFirewallDomainList",
 		"tfResourceType",
 		&returns,
 	)

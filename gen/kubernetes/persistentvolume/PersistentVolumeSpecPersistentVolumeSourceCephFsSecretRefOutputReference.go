@@ -204,7 +204,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceCephFsSecretRefOutputReference
 	j := jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCephFsSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceCephFsSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceCephFsSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceCephFsSecretRefOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceCephFsSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceCephFsSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

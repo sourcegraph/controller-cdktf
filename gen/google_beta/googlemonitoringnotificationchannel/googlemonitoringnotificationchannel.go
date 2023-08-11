@@ -557,7 +557,7 @@ func NewGoogleMonitoringNotificationChannel(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleMonitoringNotificationChannel{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -570,7 +570,7 @@ func NewGoogleMonitoringNotificationChannel_Override(g GoogleMonitoringNotificat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -769,7 +769,7 @@ func GoogleMonitoringNotificationChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -788,7 +788,7 @@ func GoogleMonitoringNotificationChannel_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func GoogleMonitoringNotificationChannel_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func GoogleMonitoringNotificationChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.googleMonitoringNotificationChannel.GoogleMonitoringNotificationChannel",
 		"tfResourceType",
 		&returns,
 	)

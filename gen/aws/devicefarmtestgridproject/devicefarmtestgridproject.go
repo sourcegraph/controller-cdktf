@@ -426,7 +426,7 @@ func NewDevicefarmTestGridProject(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DevicefarmTestGridProject{}
 
 	_jsii_.Create(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProject",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewDevicefarmTestGridProject_Override(d DevicefarmTestGridProject, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProject",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -594,7 +594,7 @@ func DevicefarmTestGridProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProject",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func DevicefarmTestGridProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProject",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func DevicefarmTestGridProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProject",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func DevicefarmTestGridProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProject",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProject",
 		"tfResourceType",
 		&returns,
 	)

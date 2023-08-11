@@ -116,7 +116,7 @@ func NewEcsServiceServiceConnectConfigurationServiceClientAliasList(terraformRes
 	j := jsiiProxy_EcsServiceServiceConnectConfigurationServiceClientAliasList{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasList",
+		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsServiceServiceConnectConfigurationServiceClientAliasList_Override(e E
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasList",
+		"@cdktf/provider-aws.ecsService.EcsServiceServiceConnectConfigurationServiceClientAliasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

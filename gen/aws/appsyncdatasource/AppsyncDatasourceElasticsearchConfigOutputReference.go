@@ -203,7 +203,7 @@ func NewAppsyncDatasourceElasticsearchConfigOutputReference(terraformResource cd
 	j := jsiiProxy_AppsyncDatasourceElasticsearchConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppsyncDatasourceElasticsearchConfigOutputReference_Override(a AppsyncDa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceElasticsearchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

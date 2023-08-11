@@ -450,7 +450,7 @@ func NewDialogflowFulfillment(scope constructs.Construct, id *string, config *Di
 	j := jsiiProxy_DialogflowFulfillment{}
 
 	_jsii_.Create(
-		"google.dialogflowFulfillment.DialogflowFulfillment",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewDialogflowFulfillment_Override(d DialogflowFulfillment, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowFulfillment.DialogflowFulfillment",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillment",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -607,7 +607,7 @@ func DialogflowFulfillment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowFulfillment.DialogflowFulfillment",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -626,7 +626,7 @@ func DialogflowFulfillment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowFulfillment.DialogflowFulfillment",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func DialogflowFulfillment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowFulfillment.DialogflowFulfillment",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func DialogflowFulfillment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dialogflowFulfillment.DialogflowFulfillment",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillment",
 		"tfResourceType",
 		&returns,
 	)

@@ -423,7 +423,7 @@ func NewDataAwsDocdbOrderableDbInstance(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsDocdbOrderableDbInstance{}
 
 	_jsii_.Create(
-		"aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewDataAwsDocdbOrderableDbInstance_Override(d DataAwsDocdbOrderableDbInstan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -591,7 +591,7 @@ func DataAwsDocdbOrderableDbInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func DataAwsDocdbOrderableDbInstance_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func DataAwsDocdbOrderableDbInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func DataAwsDocdbOrderableDbInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsDocdbOrderableDbInstance.DataAwsDocdbOrderableDbInstance",
 		"tfResourceType",
 		&returns,
 	)

@@ -400,7 +400,7 @@ func NewGoogleEndpointsServiceIamBinding(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleEndpointsServiceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleEndpointsServiceIamBinding_Override(g GoogleEndpointsServiceIamBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleEndpointsServiceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleEndpointsServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleEndpointsServiceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleEndpointsServiceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamBinding.GoogleEndpointsServiceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

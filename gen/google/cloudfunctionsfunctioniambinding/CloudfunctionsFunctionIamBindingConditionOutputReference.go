@@ -226,7 +226,7 @@ func NewCloudfunctionsFunctionIamBindingConditionOutputReference(terraformResour
 	j := jsiiProxy_CloudfunctionsFunctionIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunctionIamBinding.CloudfunctionsFunctionIamBindingConditionOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamBinding.CloudfunctionsFunctionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCloudfunctionsFunctionIamBindingConditionOutputReference_Override(c Clou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunctionIamBinding.CloudfunctionsFunctionIamBindingConditionOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamBinding.CloudfunctionsFunctionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

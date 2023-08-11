@@ -378,7 +378,7 @@ func NewAppsyncApiKey(scope constructs.Construct, id *string, config *AppsyncApi
 	j := jsiiProxy_AppsyncApiKey{}
 
 	_jsii_.Create(
-		"aws.appsyncApiKey.AppsyncApiKey",
+		"@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -391,7 +391,7 @@ func NewAppsyncApiKey_Override(a AppsyncApiKey, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncApiKey.AppsyncApiKey",
+		"@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -535,7 +535,7 @@ func AppsyncApiKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncApiKey.AppsyncApiKey",
+		"@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func AppsyncApiKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncApiKey.AppsyncApiKey",
+		"@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func AppsyncApiKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncApiKey.AppsyncApiKey",
+		"@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func AppsyncApiKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appsyncApiKey.AppsyncApiKey",
+		"@cdktf/provider-aws.appsyncApiKey.AppsyncApiKey",
 		"tfResourceType",
 		&returns,
 	)

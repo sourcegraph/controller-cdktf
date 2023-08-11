@@ -422,7 +422,7 @@ func NewKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *KmsC
 	j := jsiiProxy_KmsCryptoKeyVersion{}
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -435,7 +435,7 @@ func NewKmsCryptoKeyVersion_Override(k KmsCryptoKeyVersion, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -568,7 +568,7 @@ func KmsCryptoKeyVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func KmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func KmsCryptoKeyVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func KmsCryptoKeyVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion",
 		"tfResourceType",
 		&returns,
 	)

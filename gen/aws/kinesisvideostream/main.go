@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kinesisVideoStream.KinesisVideoStream",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStream",
 		reflect.TypeOf((*KinesisVideoStream)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kinesisVideoStream.KinesisVideoStreamConfig",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStreamConfig",
 		reflect.TypeOf((*KinesisVideoStreamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kinesisVideoStream.KinesisVideoStreamTimeouts",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStreamTimeouts",
 		reflect.TypeOf((*KinesisVideoStreamTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
+		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
 		reflect.TypeOf((*KinesisVideoStreamTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

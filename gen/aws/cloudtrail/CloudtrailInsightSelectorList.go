@@ -116,7 +116,7 @@ func NewCloudtrailInsightSelectorList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_CloudtrailInsightSelectorList{}
 
 	_jsii_.Create(
-		"aws.cloudtrail.CloudtrailInsightSelectorList",
+		"@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudtrailInsightSelectorList_Override(c CloudtrailInsightSelectorList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudtrail.CloudtrailInsightSelectorList",
+		"@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

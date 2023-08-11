@@ -365,7 +365,7 @@ func NewAccessanalyzerArchiveRule(scope constructs.Construct, id *string, config
 	j := jsiiProxy_AccessanalyzerArchiveRule{}
 
 	_jsii_.Create(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewAccessanalyzerArchiveRule_Override(a AccessanalyzerArchiveRule, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -511,7 +511,7 @@ func AccessanalyzerArchiveRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func AccessanalyzerArchiveRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func AccessanalyzerArchiveRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func AccessanalyzerArchiveRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
 		"tfResourceType",
 		&returns,
 	)

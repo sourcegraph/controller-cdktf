@@ -116,7 +116,7 @@ func NewSsmAssociationTargetsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_SsmAssociationTargetsList{}
 
 	_jsii_.Create(
-		"aws.ssmAssociation.SsmAssociationTargetsList",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSsmAssociationTargetsList_Override(s SsmAssociationTargetsList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmAssociation.SsmAssociationTargetsList",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

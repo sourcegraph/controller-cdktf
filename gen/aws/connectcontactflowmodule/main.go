@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.connectContactFlowModule.ConnectContactFlowModule",
+		"@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModule",
 		reflect.TypeOf((*ConnectContactFlowModule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectContactFlowModule.ConnectContactFlowModuleConfig",
+		"@cdktf/provider-aws.connectContactFlowModule.ConnectContactFlowModuleConfig",
 		reflect.TypeOf((*ConnectContactFlowModuleConfig)(nil)).Elem(),
 	)
 }

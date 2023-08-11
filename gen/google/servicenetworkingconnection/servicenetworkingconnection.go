@@ -400,7 +400,7 @@ func NewServiceNetworkingConnection(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ServiceNetworkingConnection{}
 
 	_jsii_.Create(
-		"google.serviceNetworkingConnection.ServiceNetworkingConnection",
+		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewServiceNetworkingConnection_Override(s ServiceNetworkingConnection, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceNetworkingConnection.ServiceNetworkingConnection",
+		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnection",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -557,7 +557,7 @@ func ServiceNetworkingConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceNetworkingConnection.ServiceNetworkingConnection",
+		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func ServiceNetworkingConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceNetworkingConnection.ServiceNetworkingConnection",
+		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func ServiceNetworkingConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceNetworkingConnection.ServiceNetworkingConnection",
+		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func ServiceNetworkingConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.serviceNetworkingConnection.ServiceNetworkingConnection",
+		"@cdktf/provider-google.serviceNetworkingConnection.ServiceNetworkingConnection",
 		"tfResourceType",
 		&returns,
 	)

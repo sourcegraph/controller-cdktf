@@ -180,7 +180,7 @@ func NewLaunchTemplateMaintenanceOptionsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_LaunchTemplateMaintenanceOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateMaintenanceOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLaunchTemplateMaintenanceOptionsOutputReference_Override(l LaunchTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateMaintenanceOptionsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList(terraf
 	j := jsiiProxy_DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

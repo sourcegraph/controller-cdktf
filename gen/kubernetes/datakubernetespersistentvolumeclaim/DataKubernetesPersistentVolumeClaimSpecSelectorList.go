@@ -116,7 +116,7 @@ func NewDataKubernetesPersistentVolumeClaimSpecSelectorList(terraformResource cd
 	j := jsiiProxy_DataKubernetesPersistentVolumeClaimSpecSelectorList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorList",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataKubernetesPersistentVolumeClaimSpecSelectorList_Override(d DataKuber
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorList",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimSpecSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

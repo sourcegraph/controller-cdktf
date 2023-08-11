@@ -179,7 +179,7 @@ func NewSagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference(te
 	j := jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

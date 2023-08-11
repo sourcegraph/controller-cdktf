@@ -567,7 +567,7 @@ func NewQuicksightDataSource(scope constructs.Construct, id *string, config *Qui
 	j := jsiiProxy_QuicksightDataSource{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSource",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -580,7 +580,7 @@ func NewQuicksightDataSource_Override(q QuicksightDataSource, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSource",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
 		[]interface{}{scope, id, config},
 		q,
 	)
@@ -757,7 +757,7 @@ func QuicksightDataSource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightDataSource.QuicksightDataSource",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -776,7 +776,7 @@ func QuicksightDataSource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightDataSource.QuicksightDataSource",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func QuicksightDataSource_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightDataSource.QuicksightDataSource",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func QuicksightDataSource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.quicksightDataSource.QuicksightDataSource",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
 		"tfResourceType",
 		&returns,
 	)

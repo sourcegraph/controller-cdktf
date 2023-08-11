@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSoc
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSoc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

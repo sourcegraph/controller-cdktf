@@ -116,7 +116,7 @@ func NewWafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList(terraformResou
 	j := jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList{}
 
 	_jsii_.Create(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList_Override(w Waf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

@@ -202,7 +202,7 @@ func NewWafregionalXssMatchSetXssMatchTupleOutputReference(terraformResource cdk
 	j := jsiiProxy_WafregionalXssMatchSetXssMatchTupleOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleOutputReference",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWafregionalXssMatchSetXssMatchTupleOutputReference_Override(w Wafregiona
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleOutputReference",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

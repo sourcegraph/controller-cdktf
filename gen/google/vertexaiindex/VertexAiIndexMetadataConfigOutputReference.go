@@ -275,7 +275,7 @@ func NewVertexAiIndexMetadataConfigOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_VertexAiIndexMetadataConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewVertexAiIndexMetadataConfigOutputReference_Override(v VertexAiIndexMetad
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

@@ -179,7 +179,7 @@ func NewDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet
 	j := jsiiProxy_DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

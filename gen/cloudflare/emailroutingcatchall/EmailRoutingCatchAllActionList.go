@@ -116,7 +116,7 @@ func NewEmailRoutingCatchAllActionList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_EmailRoutingCatchAllActionList{}
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionList",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmailRoutingCatchAllActionList_Override(e EmailRoutingCatchAllActionList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionList",
+		"@cdktf/provider-cloudflare.emailRoutingCatchAll.EmailRoutingCatchAllActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

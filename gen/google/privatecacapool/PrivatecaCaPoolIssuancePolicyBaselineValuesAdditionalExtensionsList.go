@@ -116,7 +116,7 @@ func NewPrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList(terr
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList{}
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

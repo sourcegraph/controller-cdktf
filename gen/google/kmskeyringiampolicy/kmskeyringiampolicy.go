@@ -353,7 +353,7 @@ func NewKmsKeyRingIamPolicy(scope constructs.Construct, id *string, config *KmsK
 	j := jsiiProxy_KmsKeyRingIamPolicy{}
 
 	_jsii_.Create(
-		"google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
+		"@cdktf/provider-google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewKmsKeyRingIamPolicy_Override(k KmsKeyRingIamPolicy, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
+		"@cdktf/provider-google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -499,7 +499,7 @@ func KmsKeyRingIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
+		"@cdktf/provider-google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func KmsKeyRingIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
+		"@cdktf/provider-google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func KmsKeyRingIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
+		"@cdktf/provider-google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func KmsKeyRingIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
+		"@cdktf/provider-google.kmsKeyRingIamPolicy.KmsKeyRingIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

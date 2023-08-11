@@ -228,7 +228,7 @@ func NewDataprocMetastoreServiceTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataprocMetastoreServiceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceTimeoutsOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataprocMetastoreServiceTimeoutsOutputReference_Override(d DataprocMetas
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceTimeoutsOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

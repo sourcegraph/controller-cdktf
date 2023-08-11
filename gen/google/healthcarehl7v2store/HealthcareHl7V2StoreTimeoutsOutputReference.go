@@ -228,7 +228,7 @@ func NewHealthcareHl7V2StoreTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_HealthcareHl7V2StoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewHealthcareHl7V2StoreTimeoutsOutputReference_Override(h HealthcareHl7V2St
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

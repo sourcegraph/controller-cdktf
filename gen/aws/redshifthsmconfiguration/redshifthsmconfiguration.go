@@ -493,7 +493,7 @@ func NewRedshiftHsmConfiguration(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_RedshiftHsmConfiguration{}
 
 	_jsii_.Create(
-		"aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
+		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -506,7 +506,7 @@ func NewRedshiftHsmConfiguration_Override(r RedshiftHsmConfiguration, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
+		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -705,7 +705,7 @@ func RedshiftHsmConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
+		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func RedshiftHsmConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
+		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -743,7 +743,7 @@ func RedshiftHsmConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
+		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -756,7 +756,7 @@ func RedshiftHsmConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
+		"@cdktf/provider-aws.redshiftHsmConfiguration.RedshiftHsmConfiguration",
 		"tfResourceType",
 		&returns,
 	)

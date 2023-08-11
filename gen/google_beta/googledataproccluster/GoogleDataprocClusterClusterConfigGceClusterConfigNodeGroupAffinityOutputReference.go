@@ -179,7 +179,7 @@ func NewGoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutpu
 	j := jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

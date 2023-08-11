@@ -178,7 +178,7 @@ func NewDataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference(terr
 	j := jsiiProxy_DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

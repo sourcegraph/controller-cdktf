@@ -227,7 +227,7 @@ func NewAppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference(terraformR
 	j := jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

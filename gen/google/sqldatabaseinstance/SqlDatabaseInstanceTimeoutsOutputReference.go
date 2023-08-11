@@ -228,7 +228,7 @@ func NewSqlDatabaseInstanceTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_SqlDatabaseInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSqlDatabaseInstanceTimeoutsOutputReference_Override(s SqlDatabaseInstanc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

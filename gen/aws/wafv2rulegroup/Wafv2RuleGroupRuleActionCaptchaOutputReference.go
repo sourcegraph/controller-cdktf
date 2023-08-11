@@ -180,7 +180,7 @@ func NewWafv2RuleGroupRuleActionCaptchaOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_Wafv2RuleGroupRuleActionCaptchaOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewWafv2RuleGroupRuleActionCaptchaOutputReference_Override(w Wafv2RuleGroup
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCaptchaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

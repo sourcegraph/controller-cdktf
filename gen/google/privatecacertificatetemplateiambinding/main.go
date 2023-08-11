@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBinding",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBinding",
 		reflect.TypeOf((*PrivatecaCertificateTemplateIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingCondition",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingCondition",
 		reflect.TypeOf((*PrivatecaCertificateTemplateIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingConditionOutputReference",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingConditionOutputReference",
 		reflect.TypeOf((*PrivatecaCertificateTemplateIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingConfig",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamBinding.PrivatecaCertificateTemplateIamBindingConfig",
 		reflect.TypeOf((*PrivatecaCertificateTemplateIamBindingConfig)(nil)).Elem(),
 	)
 }

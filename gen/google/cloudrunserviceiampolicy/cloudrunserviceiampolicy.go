@@ -401,7 +401,7 @@ func NewCloudRunServiceIamPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_CloudRunServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewCloudRunServiceIamPolicy_Override(c CloudRunServiceIamPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func CloudRunServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func CloudRunServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func CloudRunServiceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func CloudRunServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunServiceIamPolicy.CloudRunServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

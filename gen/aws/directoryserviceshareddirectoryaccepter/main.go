@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepter",
 		reflect.TypeOf((*DirectoryServiceSharedDirectoryAccepter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterConfig",
 		reflect.TypeOf((*DirectoryServiceSharedDirectoryAccepterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeouts",
 		reflect.TypeOf((*DirectoryServiceSharedDirectoryAccepterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.directoryServiceSharedDirectoryAccepter.DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference",
 		reflect.TypeOf((*DirectoryServiceSharedDirectoryAccepterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

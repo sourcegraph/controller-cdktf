@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
 		reflect.TypeOf((*DataGoogleComputeRouterStatus)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutes",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutes",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouter",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouter",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesForRouter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterList",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterList",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesForRouterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesForRouterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,7 +139,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesList",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesList",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusBestRoutesOutputReference",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusBestRoutesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -206,7 +206,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusConfig",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatusConfig",
 		reflect.TypeOf((*DataGoogleComputeRouterStatusConfig)(nil)).Elem(),
 	)
 }

@@ -104,7 +104,7 @@ func NewIdentityPlatformInboundSamlConfigSpConfigSpCertificatesList(terraformRes
 	j := jsiiProxy_IdentityPlatformInboundSamlConfigSpConfigSpCertificatesList{}
 
 	_jsii_.Create(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigSpConfigSpCertificatesList",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigSpConfigSpCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewIdentityPlatformInboundSamlConfigSpConfigSpCertificatesList_Override(i I
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigSpConfigSpCertificatesList",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfigSpConfigSpCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

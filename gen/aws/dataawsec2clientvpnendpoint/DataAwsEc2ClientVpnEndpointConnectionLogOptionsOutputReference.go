@@ -189,7 +189,7 @@ func NewDataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference(terraform
 	j := jsiiProxy_DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

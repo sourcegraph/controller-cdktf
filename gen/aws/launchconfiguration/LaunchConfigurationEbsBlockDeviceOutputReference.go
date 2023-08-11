@@ -371,7 +371,7 @@ func NewLaunchConfigurationEbsBlockDeviceOutputReference(terraformResource cdktf
 	j := jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewLaunchConfigurationEbsBlockDeviceOutputReference_Override(l LaunchConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

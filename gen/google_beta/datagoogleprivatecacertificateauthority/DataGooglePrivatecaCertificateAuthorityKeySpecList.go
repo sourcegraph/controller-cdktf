@@ -104,7 +104,7 @@ func NewDataGooglePrivatecaCertificateAuthorityKeySpecList(terraformResource cdk
 	j := jsiiProxy_DataGooglePrivatecaCertificateAuthorityKeySpecList{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityKeySpecList",
+		"@cdktf/provider-google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityKeySpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePrivatecaCertificateAuthorityKeySpecList_Override(d DataGoogle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityKeySpecList",
+		"@cdktf/provider-google-beta.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityKeySpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

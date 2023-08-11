@@ -214,7 +214,7 @@ func NewAppEngineDomainMappingSslSettingsOutputReference(terraformResource cdktf
 	j := jsiiProxy_AppEngineDomainMappingSslSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineDomainMapping.AppEngineDomainMappingSslSettingsOutputReference",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMappingSslSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -226,7 +226,7 @@ func NewAppEngineDomainMappingSslSettingsOutputReference_Override(a AppEngineDom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineDomainMapping.AppEngineDomainMappingSslSettingsOutputReference",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMappingSslSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

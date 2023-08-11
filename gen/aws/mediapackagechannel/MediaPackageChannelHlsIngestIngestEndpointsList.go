@@ -104,7 +104,7 @@ func NewMediaPackageChannelHlsIngestIngestEndpointsList(terraformResource cdktf.
 	j := jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList{}
 
 	_jsii_.Create(
-		"aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsList",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewMediaPackageChannelHlsIngestIngestEndpointsList_Override(m MediaPackageC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsList",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

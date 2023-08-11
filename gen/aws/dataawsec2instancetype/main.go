@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceType",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceType",
 		reflect.TypeOf((*DataAwsEc2InstanceType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -104,15 +104,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeConfig",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgas",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgas",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeFpgas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasList",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeFpgasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -132,7 +132,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasOutputReference",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeFpgasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -168,11 +168,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpus",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpus",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeGpus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusList",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeGpusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusOutputReference",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeGpusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -228,11 +228,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAccelerators",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAccelerators",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeInferenceAccelerators)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsList",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeInferenceAcceleratorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -252,7 +252,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeInferenceAcceleratorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -287,11 +287,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisks",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisks",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeInstanceDisks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksList",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeInstanceDisksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -311,7 +311,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeInstanceDisksOutputReference",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeInstanceDisksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -346,11 +346,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeouts",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeouts",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsEc2InstanceTypeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

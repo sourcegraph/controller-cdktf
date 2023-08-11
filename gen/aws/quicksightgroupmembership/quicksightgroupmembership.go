@@ -401,7 +401,7 @@ func NewQuicksightGroupMembership(scope constructs.Construct, id *string, config
 	j := jsiiProxy_QuicksightGroupMembership{}
 
 	_jsii_.Create(
-		"aws.quicksightGroupMembership.QuicksightGroupMembership",
+		"@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewQuicksightGroupMembership_Override(q QuicksightGroupMembership, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightGroupMembership.QuicksightGroupMembership",
+		"@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership",
 		[]interface{}{scope, id, config},
 		q,
 	)
@@ -569,7 +569,7 @@ func QuicksightGroupMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightGroupMembership.QuicksightGroupMembership",
+		"@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func QuicksightGroupMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightGroupMembership.QuicksightGroupMembership",
+		"@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func QuicksightGroupMembership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightGroupMembership.QuicksightGroupMembership",
+		"@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func QuicksightGroupMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.quicksightGroupMembership.QuicksightGroupMembership",
+		"@cdktf/provider-aws.quicksightGroupMembership.QuicksightGroupMembership",
 		"tfResourceType",
 		&returns,
 	)

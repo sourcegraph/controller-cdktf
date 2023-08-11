@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appOauth.AppOauth",
+		"@cdktf/provider-okta.appOauth.AppOauth",
 		reflect.TypeOf((*AppOauth)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
@@ -214,15 +214,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appOauth.AppOauthConfig",
+		"@cdktf/provider-okta.appOauth.AppOauthConfig",
 		reflect.TypeOf((*AppOauthConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.appOauth.AppOauthGroupsClaim",
+		"@cdktf/provider-okta.appOauth.AppOauthGroupsClaim",
 		reflect.TypeOf((*AppOauthGroupsClaim)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appOauth.AppOauthGroupsClaimOutputReference",
+		"@cdktf/provider-okta.appOauth.AppOauthGroupsClaimOutputReference",
 		reflect.TypeOf((*AppOauthGroupsClaimOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,11 +264,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appOauth.AppOauthJwks",
+		"@cdktf/provider-okta.appOauth.AppOauthJwks",
 		reflect.TypeOf((*AppOauthJwks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appOauth.AppOauthJwksList",
+		"@cdktf/provider-okta.appOauth.AppOauthJwksList",
 		reflect.TypeOf((*AppOauthJwksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -289,7 +289,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.appOauth.AppOauthJwksOutputReference",
+		"@cdktf/provider-okta.appOauth.AppOauthJwksOutputReference",
 		reflect.TypeOf((*AppOauthJwksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -331,11 +331,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appOauth.AppOauthTimeouts",
+		"@cdktf/provider-okta.appOauth.AppOauthTimeouts",
 		reflect.TypeOf((*AppOauthTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appOauth.AppOauthTimeoutsOutputReference",
+		"@cdktf/provider-okta.appOauth.AppOauthTimeoutsOutputReference",
 		reflect.TypeOf((*AppOauthTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -376,11 +376,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appOauth.AppOauthUsers",
+		"@cdktf/provider-okta.appOauth.AppOauthUsers",
 		reflect.TypeOf((*AppOauthUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appOauth.AppOauthUsersList",
+		"@cdktf/provider-okta.appOauth.AppOauthUsersList",
 		reflect.TypeOf((*AppOauthUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -401,7 +401,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.appOauth.AppOauthUsersOutputReference",
+		"@cdktf/provider-okta.appOauth.AppOauthUsersOutputReference",
 		reflect.TypeOf((*AppOauthUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
+		"@cdktf/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
 		reflect.TypeOf((*SsoadminPermissionSetInlinePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicyConfig",
+		"@cdktf/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicyConfig",
 		reflect.TypeOf((*SsoadminPermissionSetInlinePolicyConfig)(nil)).Elem(),
 	)
 }

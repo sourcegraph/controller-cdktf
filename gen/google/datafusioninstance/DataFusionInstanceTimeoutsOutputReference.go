@@ -228,7 +228,7 @@ func NewDataFusionInstanceTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataFusionInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataFusionInstanceTimeoutsOutputReference_Override(d DataFusionInstanceT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

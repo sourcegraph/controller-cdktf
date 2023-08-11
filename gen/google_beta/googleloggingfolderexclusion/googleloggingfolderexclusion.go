@@ -413,7 +413,7 @@ func NewGoogleLoggingFolderExclusion(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleLoggingFolderExclusion{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
+		"@cdktf/provider-google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewGoogleLoggingFolderExclusion_Override(g GoogleLoggingFolderExclusion, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
+		"@cdktf/provider-google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleLoggingFolderExclusion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
+		"@cdktf/provider-google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleLoggingFolderExclusion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
+		"@cdktf/provider-google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleLoggingFolderExclusion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
+		"@cdktf/provider-google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleLoggingFolderExclusion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
+		"@cdktf/provider-google-beta.googleLoggingFolderExclusion.GoogleLoggingFolderExclusion",
 		"tfResourceType",
 		&returns,
 	)

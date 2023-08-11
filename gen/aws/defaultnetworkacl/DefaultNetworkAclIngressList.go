@@ -116,7 +116,7 @@ func NewDefaultNetworkAclIngressList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_DefaultNetworkAclIngressList{}
 
 	_jsii_.Create(
-		"aws.defaultNetworkAcl.DefaultNetworkAclIngressList",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDefaultNetworkAclIngressList_Override(d DefaultNetworkAclIngressList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultNetworkAcl.DefaultNetworkAclIngressList",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

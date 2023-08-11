@@ -116,7 +116,7 @@ func NewPodSpecContainerPortList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_PodSpecContainerPortList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerPortList",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecContainerPortList_Override(p PodSpecContainerPortList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerPortList",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -179,7 +179,7 @@ func NewS3BucketOwnershipControlsRuleOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_S3BucketOwnershipControlsRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRuleOutputReference",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3BucketOwnershipControlsRuleOutputReference_Override(s S3BucketOwnershi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRuleOutputReference",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControlsRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

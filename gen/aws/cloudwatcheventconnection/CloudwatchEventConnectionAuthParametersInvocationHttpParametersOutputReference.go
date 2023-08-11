@@ -228,7 +228,7 @@ func NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputRef
 	j := jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

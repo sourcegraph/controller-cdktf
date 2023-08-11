@@ -179,7 +179,7 @@ func NewAppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference(terraf
 	j := jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -261,7 +261,7 @@ func NewPodSecurityPolicyMetadataOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_PodSecurityPolicyMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicyMetadataOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicyMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -273,7 +273,7 @@ func NewPodSecurityPolicyMetadataOutputReference_Override(p PodSecurityPolicyMet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicyMetadataOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicyMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -557,7 +557,7 @@ func NewRedshiftserverlessNamespace(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_RedshiftserverlessNamespace{}
 
 	_jsii_.Create(
-		"aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
+		"@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -570,7 +570,7 @@ func NewRedshiftserverlessNamespace_Override(r RedshiftserverlessNamespace, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
+		"@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -791,7 +791,7 @@ func RedshiftserverlessNamespace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
+		"@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -810,7 +810,7 @@ func RedshiftserverlessNamespace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
+		"@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func RedshiftserverlessNamespace_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
+		"@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func RedshiftserverlessNamespace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
+		"@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
 		"tfResourceType",
 		&returns,
 	)

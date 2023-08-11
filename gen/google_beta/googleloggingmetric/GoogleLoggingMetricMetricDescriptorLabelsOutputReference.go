@@ -227,7 +227,7 @@ func NewGoogleLoggingMetricMetricDescriptorLabelsOutputReference(terraformResour
 	j := jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleLoggingMetricMetricDescriptorLabelsOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

@@ -180,7 +180,7 @@ func NewSecretTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_SecretTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.secret.SecretTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSecretTimeoutsOutputReference_Override(s SecretTimeoutsOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.secret.SecretTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.secret.SecretTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

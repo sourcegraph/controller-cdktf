@@ -116,7 +116,7 @@ func NewGoogleHealthcareFhirStoreNotificationConfigsList(terraformResource cdktf
 	j := jsiiProxy_GoogleHealthcareFhirStoreNotificationConfigsList{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreNotificationConfigsList",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleHealthcareFhirStoreNotificationConfigsList_Override(g GoogleHealth
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreNotificationConfigsList",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

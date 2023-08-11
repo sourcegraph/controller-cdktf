@@ -204,7 +204,7 @@ func NewJobV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference(terra
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewJobV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeDownwardApiItemsFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

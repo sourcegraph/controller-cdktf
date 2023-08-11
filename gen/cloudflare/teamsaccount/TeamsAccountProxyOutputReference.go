@@ -202,7 +202,7 @@ func NewTeamsAccountProxyOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_TeamsAccountProxyOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTeamsAccountProxyOutputReference_Override(t TeamsAccountProxyOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

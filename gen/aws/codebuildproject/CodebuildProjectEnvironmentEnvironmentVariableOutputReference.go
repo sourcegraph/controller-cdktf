@@ -226,7 +226,7 @@ func NewCodebuildProjectEnvironmentEnvironmentVariableOutputReference(terraformR
 	j := jsiiProxy_CodebuildProjectEnvironmentEnvironmentVariableOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCodebuildProjectEnvironmentEnvironmentVariableOutputReference_Override(c
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

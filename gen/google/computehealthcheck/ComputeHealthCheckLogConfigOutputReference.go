@@ -180,7 +180,7 @@ func NewComputeHealthCheckLogConfigOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeHealthCheckLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeHealthCheck.ComputeHealthCheckLogConfigOutputReference",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewComputeHealthCheckLogConfigOutputReference_Override(c ComputeHealthCheck
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeHealthCheck.ComputeHealthCheckLogConfigOutputReference",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

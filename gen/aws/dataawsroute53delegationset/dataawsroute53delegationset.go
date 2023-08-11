@@ -300,7 +300,7 @@ func NewDataAwsRoute53DelegationSet(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsRoute53DelegationSet{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
+		"@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -313,7 +313,7 @@ func NewDataAwsRoute53DelegationSet_Override(d DataAwsRoute53DelegationSet, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
+		"@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -402,7 +402,7 @@ func DataAwsRoute53DelegationSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
+		"@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -421,7 +421,7 @@ func DataAwsRoute53DelegationSet_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
+		"@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -440,7 +440,7 @@ func DataAwsRoute53DelegationSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
+		"@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsRoute53DelegationSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
+		"@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
 		"tfResourceType",
 		&returns,
 	)

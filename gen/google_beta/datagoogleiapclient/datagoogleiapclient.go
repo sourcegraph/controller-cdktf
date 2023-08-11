@@ -336,7 +336,7 @@ func NewDataGoogleIapClient(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataGoogleIapClient{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIapClient.DataGoogleIapClient",
+		"@cdktf/provider-google-beta.dataGoogleIapClient.DataGoogleIapClient",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataGoogleIapClient_Override(d DataGoogleIapClient, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIapClient.DataGoogleIapClient",
+		"@cdktf/provider-google-beta.dataGoogleIapClient.DataGoogleIapClient",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +460,7 @@ func DataGoogleIapClient_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIapClient.DataGoogleIapClient",
+		"@cdktf/provider-google-beta.dataGoogleIapClient.DataGoogleIapClient",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataGoogleIapClient_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIapClient.DataGoogleIapClient",
+		"@cdktf/provider-google-beta.dataGoogleIapClient.DataGoogleIapClient",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -498,7 +498,7 @@ func DataGoogleIapClient_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIapClient.DataGoogleIapClient",
+		"@cdktf/provider-google-beta.dataGoogleIapClient.DataGoogleIapClient",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataGoogleIapClient_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleIapClient.DataGoogleIapClient",
+		"@cdktf/provider-google-beta.dataGoogleIapClient.DataGoogleIapClient",
 		"tfResourceType",
 		&returns,
 	)

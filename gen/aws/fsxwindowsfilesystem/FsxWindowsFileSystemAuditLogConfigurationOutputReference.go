@@ -228,7 +228,7 @@ func NewFsxWindowsFileSystemAuditLogConfigurationOutputReference(terraformResour
 	j := jsiiProxy_FsxWindowsFileSystemAuditLogConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFsxWindowsFileSystemAuditLogConfigurationOutputReference_Override(f FsxW
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemAuditLogConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

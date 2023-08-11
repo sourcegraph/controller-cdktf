@@ -400,7 +400,7 @@ func NewAccessContextManagerGcpUserAccessBinding(scope constructs.Construct, id 
 	j := jsiiProxy_AccessContextManagerGcpUserAccessBinding{}
 
 	_jsii_.Create(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewAccessContextManagerGcpUserAccessBinding_Override(a AccessContextManager
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -557,7 +557,7 @@ func AccessContextManagerGcpUserAccessBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func AccessContextManagerGcpUserAccessBinding_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func AccessContextManagerGcpUserAccessBinding_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func AccessContextManagerGcpUserAccessBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
 		"tfResourceType",
 		&returns,
 	)

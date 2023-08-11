@@ -189,7 +189,7 @@ func NewMediaPackageChannelHlsIngestIngestEndpointsOutputReference(terraformReso
 	j := jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsOutputReference",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewMediaPackageChannelHlsIngestIngestEndpointsOutputReference_Override(m Me
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsOutputReference",
+		"@cdktf/provider-aws.mediaPackageChannel.MediaPackageChannelHlsIngestIngestEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

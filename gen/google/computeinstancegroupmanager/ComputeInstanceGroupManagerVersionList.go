@@ -116,7 +116,7 @@ func NewComputeInstanceGroupManagerVersionList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ComputeInstanceGroupManagerVersionList{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceGroupManagerVersionList_Override(c ComputeInstanceGroupMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -448,7 +448,7 @@ func NewGoogleCloudRunV2JobIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleCloudRunV2JobIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudRunV2JobIamMember_Override(g GoogleCloudRunV2JobIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudRunV2JobIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudRunV2JobIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudRunV2JobIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudRunV2JobIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.memorydbParameterGroup.MemorydbParameterGroup",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroup",
 		reflect.TypeOf((*MemorydbParameterGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.memorydbParameterGroup.MemorydbParameterGroupConfig",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupConfig",
 		reflect.TypeOf((*MemorydbParameterGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.memorydbParameterGroup.MemorydbParameterGroupParameter",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameter",
 		reflect.TypeOf((*MemorydbParameterGroupParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.memorydbParameterGroup.MemorydbParameterGroupParameterList",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameterList",
 		reflect.TypeOf((*MemorydbParameterGroupParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.memorydbParameterGroup.MemorydbParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.memorydbParameterGroup.MemorydbParameterGroupParameterOutputReference",
 		reflect.TypeOf((*MemorydbParameterGroupParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

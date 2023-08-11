@@ -486,7 +486,7 @@ func NewGoogleApigeeEnvironment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleApigeeEnvironment{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -499,7 +499,7 @@ func NewGoogleApigeeEnvironment_Override(g GoogleApigeeEnvironment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -676,7 +676,7 @@ func GoogleApigeeEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -695,7 +695,7 @@ func GoogleApigeeEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GoogleApigeeEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func GoogleApigeeEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
+		"@cdktf/provider-google-beta.googleApigeeEnvironment.GoogleApigeeEnvironment",
 		"tfResourceType",
 		&returns,
 	)

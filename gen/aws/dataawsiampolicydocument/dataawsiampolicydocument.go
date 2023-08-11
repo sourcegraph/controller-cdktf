@@ -447,7 +447,7 @@ func NewDataAwsIamPolicyDocument(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsIamPolicyDocument{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewDataAwsIamPolicyDocument_Override(d DataAwsIamPolicyDocument, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -615,7 +615,7 @@ func DataAwsIamPolicyDocument_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func DataAwsIamPolicyDocument_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func DataAwsIamPolicyDocument_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func DataAwsIamPolicyDocument_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
+		"@cdktf/provider-aws.dataAwsIamPolicyDocument.DataAwsIamPolicyDocument",
 		"tfResourceType",
 		&returns,
 	)

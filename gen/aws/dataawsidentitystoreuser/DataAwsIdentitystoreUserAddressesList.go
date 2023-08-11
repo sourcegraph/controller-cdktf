@@ -104,7 +104,7 @@ func NewDataAwsIdentitystoreUserAddressesList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsIdentitystoreUserAddressesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsIdentitystoreUserAddressesList_Override(d DataAwsIdentitystoreUse
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserAddressesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

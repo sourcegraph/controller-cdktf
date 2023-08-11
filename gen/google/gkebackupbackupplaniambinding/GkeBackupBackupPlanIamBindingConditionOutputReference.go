@@ -226,7 +226,7 @@ func NewGkeBackupBackupPlanIamBindingConditionOutputReference(terraformResource 
 	j := jsiiProxy_GkeBackupBackupPlanIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingConditionOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGkeBackupBackupPlanIamBindingConditionOutputReference_Override(g GkeBack
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingConditionOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -180,7 +180,7 @@ func NewElasticsearchDomainClusterConfigColdStorageOptionsOutputReference(terraf
 	j := jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewElasticsearchDomainClusterConfigColdStorageOptionsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

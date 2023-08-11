@@ -483,7 +483,7 @@ func NewCloudsearchDomain(scope constructs.Construct, id *string, config *Clouds
 	j := jsiiProxy_CloudsearchDomain{}
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomain",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewCloudsearchDomain_Override(c CloudsearchDomain, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomain",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomain",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -629,7 +629,7 @@ func CloudsearchDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudsearchDomain.CloudsearchDomain",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func CloudsearchDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudsearchDomain.CloudsearchDomain",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func CloudsearchDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudsearchDomain.CloudsearchDomain",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func CloudsearchDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudsearchDomain.CloudsearchDomain",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomain",
 		"tfResourceType",
 		&returns,
 	)

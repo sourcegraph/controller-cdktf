@@ -495,7 +495,7 @@ func NewElasticBeanstalkApplicationVersion(scope constructs.Construct, id *strin
 	j := jsiiProxy_ElasticBeanstalkApplicationVersion{}
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
+		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewElasticBeanstalkApplicationVersion_Override(e ElasticBeanstalkApplicatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
+		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -707,7 +707,7 @@ func ElasticBeanstalkApplicationVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
+		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func ElasticBeanstalkApplicationVersion_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
+		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +745,7 @@ func ElasticBeanstalkApplicationVersion_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
+		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func ElasticBeanstalkApplicationVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
+		"@cdktf/provider-aws.elasticBeanstalkApplicationVersion.ElasticBeanstalkApplicationVersion",
 		"tfResourceType",
 		&returns,
 	)

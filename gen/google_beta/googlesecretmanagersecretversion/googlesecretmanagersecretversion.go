@@ -434,7 +434,7 @@ func NewGoogleSecretManagerSecretVersion(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleSecretManagerSecretVersion{}
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,7 +447,7 @@ func NewGoogleSecretManagerSecretVersion_Override(g GoogleSecretManagerSecretVer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -591,7 +591,7 @@ func GoogleSecretManagerSecretVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func GoogleSecretManagerSecretVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func GoogleSecretManagerSecretVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func GoogleSecretManagerSecretVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretVersion.GoogleSecretManagerSecretVersion",
 		"tfResourceType",
 		&returns,
 	)

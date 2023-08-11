@@ -446,7 +446,7 @@ func NewRedshiftEndpointAccess(scope constructs.Construct, id *string, config *R
 	j := jsiiProxy_RedshiftEndpointAccess{}
 
 	_jsii_.Create(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccess",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -459,7 +459,7 @@ func NewRedshiftEndpointAccess_Override(r RedshiftEndpointAccess, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccess",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -625,7 +625,7 @@ func RedshiftEndpointAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccess",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func RedshiftEndpointAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccess",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func RedshiftEndpointAccess_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccess",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func RedshiftEndpointAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftEndpointAccess.RedshiftEndpointAccess",
+		"@cdktf/provider-aws.redshiftEndpointAccess.RedshiftEndpointAccess",
 		"tfResourceType",
 		&returns,
 	)

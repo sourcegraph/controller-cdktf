@@ -104,7 +104,7 @@ func NewDataAwsIdentitystoreUserPhoneNumbersList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersList{}
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsIdentitystoreUserPhoneNumbersList_Override(d DataAwsIdentitystore
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersList",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserPhoneNumbersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

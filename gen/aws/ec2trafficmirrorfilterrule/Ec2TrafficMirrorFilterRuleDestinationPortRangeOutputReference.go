@@ -204,7 +204,7 @@ func NewEc2TrafficMirrorFilterRuleDestinationPortRangeOutputReference(terraformR
 	j := jsiiProxy_Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEc2TrafficMirrorFilterRuleDestinationPortRangeOutputReference_Override(e
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilterRule.Ec2TrafficMirrorFilterRuleDestinationPortRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

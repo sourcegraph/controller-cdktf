@@ -214,7 +214,7 @@ func NewGoogleContainerClusterTpuConfigOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleContainerClusterTpuConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterTpuConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterTpuConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -226,7 +226,7 @@ func NewGoogleContainerClusterTpuConfigOutputReference_Override(g GoogleContaine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterTpuConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterTpuConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

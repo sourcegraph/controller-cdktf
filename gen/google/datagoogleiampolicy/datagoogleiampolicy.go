@@ -327,7 +327,7 @@ func NewDataGoogleIamPolicy(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataGoogleIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicy",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataGoogleIamPolicy_Override(d DataGoogleIamPolicy, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicy",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -429,7 +429,7 @@ func DataGoogleIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicy",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -448,7 +448,7 @@ func DataGoogleIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicy",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataGoogleIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicy",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicy",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

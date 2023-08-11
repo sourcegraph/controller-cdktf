@@ -203,7 +203,7 @@ func NewComputeRouterPeerAdvertisedIpRangesOutputReference(terraformResource cdk
 	j := jsiiProxy_ComputeRouterPeerAdvertisedIpRangesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeRouterPeerAdvertisedIpRangesOutputReference_Override(c ComputeRou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

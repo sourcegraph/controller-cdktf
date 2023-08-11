@@ -440,7 +440,7 @@ func NewEipAssociation(scope constructs.Construct, id *string, config *EipAssoci
 	j := jsiiProxy_EipAssociation{}
 
 	_jsii_.Create(
-		"aws.eipAssociation.EipAssociation",
+		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -453,7 +453,7 @@ func NewEipAssociation_Override(e EipAssociation, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eipAssociation.EipAssociation",
+		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -630,7 +630,7 @@ func EipAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eipAssociation.EipAssociation",
+		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -649,7 +649,7 @@ func EipAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eipAssociation.EipAssociation",
+		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func EipAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eipAssociation.EipAssociation",
+		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func EipAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.eipAssociation.EipAssociation",
+		"@cdktf/provider-aws.eipAssociation.EipAssociation",
 		"tfResourceType",
 		&returns,
 	)

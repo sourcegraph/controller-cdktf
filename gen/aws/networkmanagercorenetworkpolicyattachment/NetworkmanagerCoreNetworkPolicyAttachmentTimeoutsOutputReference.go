@@ -180,7 +180,7 @@ func NewNetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference(terrafo
 	j := jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewNetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerCoreNetworkPolicyAttachment.NetworkmanagerCoreNetworkPolicyAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

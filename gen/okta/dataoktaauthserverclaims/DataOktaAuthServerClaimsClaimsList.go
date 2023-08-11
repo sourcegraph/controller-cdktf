@@ -104,7 +104,7 @@ func NewDataOktaAuthServerClaimsClaimsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataOktaAuthServerClaimsClaimsList{}
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsList",
+		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaAuthServerClaimsClaimsList_Override(d DataOktaAuthServerClaimsCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsList",
+		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

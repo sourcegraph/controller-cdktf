@@ -178,7 +178,7 @@ func NewDataAwsMemorydbParameterGroupParameterOutputReference(terraformResource 
 	j := jsiiProxy_DataAwsMemorydbParameterGroupParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsMemorydbParameterGroupParameterOutputReference_Override(d DataAws
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

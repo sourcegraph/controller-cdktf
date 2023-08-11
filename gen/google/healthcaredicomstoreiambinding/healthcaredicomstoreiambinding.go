@@ -400,7 +400,7 @@ func NewHealthcareDicomStoreIamBinding(scope constructs.Construct, id *string, c
 	j := jsiiProxy_HealthcareDicomStoreIamBinding{}
 
 	_jsii_.Create(
-		"google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewHealthcareDicomStoreIamBinding_Override(h HealthcareDicomStoreIamBinding
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -557,7 +557,7 @@ func HealthcareDicomStoreIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func HealthcareDicomStoreIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func HealthcareDicomStoreIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func HealthcareDicomStoreIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
+		"@cdktf/provider-google.healthcareDicomStoreIamBinding.HealthcareDicomStoreIamBinding",
 		"tfResourceType",
 		&returns,
 	)

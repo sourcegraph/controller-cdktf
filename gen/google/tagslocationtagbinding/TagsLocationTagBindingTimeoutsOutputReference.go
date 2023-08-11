@@ -204,7 +204,7 @@ func NewTagsLocationTagBindingTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_TagsLocationTagBindingTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.tagsLocationTagBinding.TagsLocationTagBindingTimeoutsOutputReference",
+		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewTagsLocationTagBindingTimeoutsOutputReference_Override(t TagsLocationTag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tagsLocationTagBinding.TagsLocationTagBindingTimeoutsOutputReference",
+		"@cdktf/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

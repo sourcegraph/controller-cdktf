@@ -204,7 +204,7 @@ func NewGoogleCloudRunDomainMappingTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleCloudRunDomainMappingTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleCloudRunDomainMappingTimeoutsOutputReference_Override(g GoogleClou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

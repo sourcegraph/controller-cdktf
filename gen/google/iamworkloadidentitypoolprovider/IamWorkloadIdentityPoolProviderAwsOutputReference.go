@@ -179,7 +179,7 @@ func NewIamWorkloadIdentityPoolProviderAwsOutputReference(terraformResource cdkt
 	j := jsiiProxy_IamWorkloadIdentityPoolProviderAwsOutputReference{}
 
 	_jsii_.Create(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAwsOutputReference",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAwsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewIamWorkloadIdentityPoolProviderAwsOutputReference_Override(i IamWorkload
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAwsOutputReference",
+		"@cdktf/provider-google.iamWorkloadIdentityPoolProvider.IamWorkloadIdentityPoolProviderAwsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

@@ -203,7 +203,7 @@ func NewAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutput
 	j := jsiiProxy_AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
+		"@cdktf/provider-aws.acmpcaCertificateAuthority.AcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

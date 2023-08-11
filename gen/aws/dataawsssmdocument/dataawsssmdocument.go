@@ -372,7 +372,7 @@ func NewDataAwsSsmDocument(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsSsmDocument{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmDocument.DataAwsSsmDocument",
+		"@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -385,7 +385,7 @@ func NewDataAwsSsmDocument_Override(d DataAwsSsmDocument, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmDocument.DataAwsSsmDocument",
+		"@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -507,7 +507,7 @@ func DataAwsSsmDocument_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmDocument.DataAwsSsmDocument",
+		"@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DataAwsSsmDocument_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmDocument.DataAwsSsmDocument",
+		"@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataAwsSsmDocument_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmDocument.DataAwsSsmDocument",
+		"@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func DataAwsSsmDocument_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSsmDocument.DataAwsSsmDocument",
+		"@cdktf/provider-aws.dataAwsSsmDocument.DataAwsSsmDocument",
 		"tfResourceType",
 		&returns,
 	)

@@ -521,7 +521,7 @@ func NewIvsChannel(scope constructs.Construct, id *string, config *IvsChannelCon
 	j := jsiiProxy_IvsChannel{}
 
 	_jsii_.Create(
-		"aws.ivsChannel.IvsChannel",
+		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewIvsChannel_Override(i IvsChannel, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivsChannel.IvsChannel",
+		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -722,7 +722,7 @@ func IvsChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivsChannel.IvsChannel",
+		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func IvsChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivsChannel.IvsChannel",
+		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func IvsChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivsChannel.IvsChannel",
+		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func IvsChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ivsChannel.IvsChannel",
+		"@cdktf/provider-aws.ivsChannel.IvsChannel",
 		"tfResourceType",
 		&returns,
 	)

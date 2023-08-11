@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
+		"@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinition",
 		reflect.TypeOf((*DataAwsEcsContainerDefinition)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig",
+		"@cdktf/provider-aws.dataAwsEcsContainerDefinition.DataAwsEcsContainerDefinitionConfig",
 		reflect.TypeOf((*DataAwsEcsContainerDefinitionConfig)(nil)).Elem(),
 	)
 }

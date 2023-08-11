@@ -228,7 +228,7 @@ func NewCloudbuildTriggerTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudbuildTriggerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudbuildTriggerTimeoutsOutputReference_Override(c CloudbuildTriggerTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

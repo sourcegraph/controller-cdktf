@@ -116,7 +116,7 @@ func NewCodedeployDeploymentGroupTriggerConfigurationList(terraformResource cdkt
 	j := jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodedeployDeploymentGroupTriggerConfigurationList_Override(c CodedeployD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupTriggerConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

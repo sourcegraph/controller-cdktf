@@ -616,7 +616,7 @@ func NewIamRole(scope constructs.Construct, id *string, config *IamRoleConfig) I
 	j := jsiiProxy_IamRole{}
 
 	_jsii_.Create(
-		"aws.iamRole.IamRole",
+		"@cdktf/provider-aws.iamRole.IamRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -629,7 +629,7 @@ func NewIamRole_Override(i IamRole, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamRole.IamRole",
+		"@cdktf/provider-aws.iamRole.IamRole",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -861,7 +861,7 @@ func IamRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamRole.IamRole",
+		"@cdktf/provider-aws.iamRole.IamRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -880,7 +880,7 @@ func IamRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamRole.IamRole",
+		"@cdktf/provider-aws.iamRole.IamRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -899,7 +899,7 @@ func IamRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamRole.IamRole",
+		"@cdktf/provider-aws.iamRole.IamRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -912,7 +912,7 @@ func IamRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamRole.IamRole",
+		"@cdktf/provider-aws.iamRole.IamRole",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewEc2ClientVpnAuthorizationRuleTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEc2ClientVpnAuthorizationRuleTimeoutsOutputReference_Override(e Ec2Clien
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnAuthorizationRule.Ec2ClientVpnAuthorizationRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

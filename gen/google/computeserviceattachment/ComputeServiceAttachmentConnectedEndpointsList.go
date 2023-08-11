@@ -104,7 +104,7 @@ func NewComputeServiceAttachmentConnectedEndpointsList(terraformResource cdktf.I
 	j := jsiiProxy_ComputeServiceAttachmentConnectedEndpointsList{}
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsList",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewComputeServiceAttachmentConnectedEndpointsList_Override(c ComputeService
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsList",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

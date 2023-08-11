@@ -204,7 +204,7 @@ func NewInlineHookHeadersOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_InlineHookHeadersOutputReference{}
 
 	_jsii_.Create(
-		"okta.inlineHook.InlineHookHeadersOutputReference",
+		"@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewInlineHookHeadersOutputReference_Override(i InlineHookHeadersOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.inlineHook.InlineHookHeadersOutputReference",
+		"@cdktf/provider-okta.inlineHook.InlineHookHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

@@ -225,7 +225,7 @@ func NewWorklinkFleetNetworkOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_WorklinkFleetNetworkOutputReference{}
 
 	_jsii_.Create(
-		"aws.worklinkFleet.WorklinkFleetNetworkOutputReference",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWorklinkFleetNetworkOutputReference_Override(w WorklinkFleetNetworkOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.worklinkFleet.WorklinkFleetNetworkOutputReference",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

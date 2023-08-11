@@ -342,7 +342,7 @@ func NewWorkspaceVariableSet(scope constructs.Construct, id *string, config *Wor
 	j := jsiiProxy_WorkspaceVariableSet{}
 
 	_jsii_.Create(
-		"tfe.workspaceVariableSet.WorkspaceVariableSet",
+		"@cdktf/provider-tfe.workspaceVariableSet.WorkspaceVariableSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewWorkspaceVariableSet_Override(w WorkspaceVariableSet, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.workspaceVariableSet.WorkspaceVariableSet",
+		"@cdktf/provider-tfe.workspaceVariableSet.WorkspaceVariableSet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -488,7 +488,7 @@ func WorkspaceVariableSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.workspaceVariableSet.WorkspaceVariableSet",
+		"@cdktf/provider-tfe.workspaceVariableSet.WorkspaceVariableSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func WorkspaceVariableSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.workspaceVariableSet.WorkspaceVariableSet",
+		"@cdktf/provider-tfe.workspaceVariableSet.WorkspaceVariableSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func WorkspaceVariableSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.workspaceVariableSet.WorkspaceVariableSet",
+		"@cdktf/provider-tfe.workspaceVariableSet.WorkspaceVariableSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func WorkspaceVariableSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.workspaceVariableSet.WorkspaceVariableSet",
+		"@cdktf/provider-tfe.workspaceVariableSet.WorkspaceVariableSet",
 		"tfResourceType",
 		&returns,
 	)

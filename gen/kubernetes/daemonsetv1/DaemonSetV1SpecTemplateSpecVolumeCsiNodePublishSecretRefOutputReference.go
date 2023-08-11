@@ -180,7 +180,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference(
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

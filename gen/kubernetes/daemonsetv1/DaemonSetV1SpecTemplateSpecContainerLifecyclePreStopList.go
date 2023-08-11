@@ -116,7 +116,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList(terraformResour
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList_Override(d Daem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecContainerLifecyclePreStopList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -414,7 +414,7 @@ func NewInternetGateway(scope constructs.Construct, id *string, config *Internet
 	j := jsiiProxy_InternetGateway{}
 
 	_jsii_.Create(
-		"aws.internetGateway.InternetGateway",
+		"@cdktf/provider-aws.internetGateway.InternetGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewInternetGateway_Override(i InternetGateway, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.internetGateway.InternetGateway",
+		"@cdktf/provider-aws.internetGateway.InternetGateway",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -571,7 +571,7 @@ func InternetGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.internetGateway.InternetGateway",
+		"@cdktf/provider-aws.internetGateway.InternetGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func InternetGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.internetGateway.InternetGateway",
+		"@cdktf/provider-aws.internetGateway.InternetGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func InternetGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.internetGateway.InternetGateway",
+		"@cdktf/provider-aws.internetGateway.InternetGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func InternetGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.internetGateway.InternetGateway",
+		"@cdktf/provider-aws.internetGateway.InternetGateway",
 		"tfResourceType",
 		&returns,
 	)

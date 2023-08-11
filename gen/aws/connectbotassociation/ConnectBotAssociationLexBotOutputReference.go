@@ -203,7 +203,7 @@ func NewConnectBotAssociationLexBotOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ConnectBotAssociationLexBotOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectBotAssociation.ConnectBotAssociationLexBotOutputReference",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewConnectBotAssociationLexBotOutputReference_Override(c ConnectBotAssociat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectBotAssociation.ConnectBotAssociationLexBotOutputReference",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

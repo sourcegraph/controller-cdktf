@@ -203,7 +203,7 @@ func NewAlbListenerRuleActionForwardStickinessOutputReference(terraformResource 
 	j := jsiiProxy_AlbListenerRuleActionForwardStickinessOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionForwardStickinessOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAlbListenerRuleActionForwardStickinessOutputReference_Override(a AlbList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionForwardStickinessOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardStickinessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

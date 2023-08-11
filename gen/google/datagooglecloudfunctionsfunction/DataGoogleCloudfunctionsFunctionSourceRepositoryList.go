@@ -104,7 +104,7 @@ func NewDataGoogleCloudfunctionsFunctionSourceRepositoryList(terraformResource c
 	j := jsiiProxy_DataGoogleCloudfunctionsFunctionSourceRepositoryList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSourceRepositoryList",
+		"@cdktf/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSourceRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudfunctionsFunctionSourceRepositoryList_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSourceRepositoryList",
+		"@cdktf/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSourceRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

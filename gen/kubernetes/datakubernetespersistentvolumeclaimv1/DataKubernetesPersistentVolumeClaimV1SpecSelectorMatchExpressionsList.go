@@ -116,7 +116,7 @@ func NewDataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList(te
 	j := jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPersistentVolumeClaimV1.DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaimV1.DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPersistentVolumeClaimV1.DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaimV1.DataKubernetesPersistentVolumeClaimV1SpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -204,7 +204,7 @@ func NewRecaptchaEnterpriseKeyAndroidSettingsOutputReference(terraformResource c
 	j := jsiiProxy_RecaptchaEnterpriseKeyAndroidSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettingsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewRecaptchaEnterpriseKeyAndroidSettingsOutputReference_Override(r Recaptch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettingsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyAndroidSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

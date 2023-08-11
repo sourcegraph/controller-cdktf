@@ -179,7 +179,7 @@ func NewGoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference(terrafor
 	j := jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

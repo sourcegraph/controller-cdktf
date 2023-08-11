@@ -418,7 +418,7 @@ func NewDataAwsConnectRoutingProfile(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsConnectRoutingProfile{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -431,7 +431,7 @@ func NewDataAwsConnectRoutingProfile_Override(d DataAwsConnectRoutingProfile, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -564,7 +564,7 @@ func DataAwsConnectRoutingProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func DataAwsConnectRoutingProfile_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func DataAwsConnectRoutingProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataAwsConnectRoutingProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
+		"@cdktf/provider-aws.dataAwsConnectRoutingProfile.DataAwsConnectRoutingProfile",
 		"tfResourceType",
 		&returns,
 	)

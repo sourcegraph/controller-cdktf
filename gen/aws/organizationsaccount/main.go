@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.organizationsAccount.OrganizationsAccount",
+		"@cdktf/provider-aws.organizationsAccount.OrganizationsAccount",
 		reflect.TypeOf((*OrganizationsAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,7 +85,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.organizationsAccount.OrganizationsAccountConfig",
+		"@cdktf/provider-aws.organizationsAccount.OrganizationsAccountConfig",
 		reflect.TypeOf((*OrganizationsAccountConfig)(nil)).Elem(),
 	)
 }

@@ -583,7 +583,7 @@ func NewZoneCacheVariants(scope constructs.Construct, id *string, config *ZoneCa
 	j := jsiiProxy_ZoneCacheVariants{}
 
 	_jsii_.Create(
-		"cloudflare.zoneCacheVariants.ZoneCacheVariants",
+		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -596,7 +596,7 @@ func NewZoneCacheVariants_Override(z ZoneCacheVariants, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneCacheVariants.ZoneCacheVariants",
+		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -839,7 +839,7 @@ func ZoneCacheVariants_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneCacheVariants.ZoneCacheVariants",
+		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -858,7 +858,7 @@ func ZoneCacheVariants_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneCacheVariants.ZoneCacheVariants",
+		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -877,7 +877,7 @@ func ZoneCacheVariants_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneCacheVariants.ZoneCacheVariants",
+		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -890,7 +890,7 @@ func ZoneCacheVariants_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.zoneCacheVariants.ZoneCacheVariants",
+		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
 		"tfResourceType",
 		&returns,
 	)

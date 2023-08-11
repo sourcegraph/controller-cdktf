@@ -116,7 +116,7 @@ func NewOpsworksApplicationSslConfigurationList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_OpsworksApplicationSslConfigurationList{}
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationSslConfigurationList",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksApplicationSslConfigurationList_Override(o OpsworksApplicationSs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationSslConfigurationList",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationSslConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

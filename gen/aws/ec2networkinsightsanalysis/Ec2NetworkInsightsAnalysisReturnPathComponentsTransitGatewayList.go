@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList(terrafo
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

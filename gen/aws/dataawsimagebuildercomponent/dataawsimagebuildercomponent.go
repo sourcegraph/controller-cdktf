@@ -447,7 +447,7 @@ func NewDataAwsImagebuilderComponent(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsImagebuilderComponent{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewDataAwsImagebuilderComponent_Override(d DataAwsImagebuilderComponent, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -571,7 +571,7 @@ func DataAwsImagebuilderComponent_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func DataAwsImagebuilderComponent_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func DataAwsImagebuilderComponent_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func DataAwsImagebuilderComponent_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponent.DataAwsImagebuilderComponent",
 		"tfResourceType",
 		&returns,
 	)

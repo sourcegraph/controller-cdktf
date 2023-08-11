@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList(terrafo
 	j := jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

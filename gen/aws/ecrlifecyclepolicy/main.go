@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
+		"@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicy",
 		reflect.TypeOf((*EcrLifecyclePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig",
+		"@cdktf/provider-aws.ecrLifecyclePolicy.EcrLifecyclePolicyConfig",
 		reflect.TypeOf((*EcrLifecyclePolicyConfig)(nil)).Elem(),
 	)
 }

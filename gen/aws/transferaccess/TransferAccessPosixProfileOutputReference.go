@@ -226,7 +226,7 @@ func NewTransferAccessPosixProfileOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_TransferAccessPosixProfileOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferAccess.TransferAccessPosixProfileOutputReference",
+		"@cdktf/provider-aws.transferAccess.TransferAccessPosixProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewTransferAccessPosixProfileOutputReference_Override(t TransferAccessPosix
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferAccess.TransferAccessPosixProfileOutputReference",
+		"@cdktf/provider-aws.transferAccess.TransferAccessPosixProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

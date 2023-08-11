@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
+		"@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnector",
 		reflect.TypeOf((*DataAwsMskconnectConnector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig",
+		"@cdktf/provider-aws.dataAwsMskconnectConnector.DataAwsMskconnectConnectorConfig",
 		reflect.TypeOf((*DataAwsMskconnectConnectorConfig)(nil)).Elem(),
 	)
 }

@@ -313,7 +313,7 @@ func NewDataAwsEfsAccessPoints(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsEfsAccessPoints{}
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataAwsEfsAccessPoints_Override(d DataAwsEfsAccessPoints, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataAwsEfsAccessPoints_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataAwsEfsAccessPoints_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataAwsEfsAccessPoints_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataAwsEfsAccessPoints_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
+		"@cdktf/provider-aws.dataAwsEfsAccessPoints.DataAwsEfsAccessPoints",
 		"tfResourceType",
 		&returns,
 	)

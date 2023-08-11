@@ -272,7 +272,7 @@ func NewValidatingWebhookConfigurationV1WebhookRuleOutputReference(terraformReso
 	j := jsiiProxy_ValidatingWebhookConfigurationV1WebhookRuleOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -284,7 +284,7 @@ func NewValidatingWebhookConfigurationV1WebhookRuleOutputReference_Override(v Va
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)

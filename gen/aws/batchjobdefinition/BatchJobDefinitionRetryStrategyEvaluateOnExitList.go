@@ -116,7 +116,7 @@ func NewBatchJobDefinitionRetryStrategyEvaluateOnExitList(terraformResource cdkt
 	j := jsiiProxy_BatchJobDefinitionRetryStrategyEvaluateOnExitList{}
 
 	_jsii_.Create(
-		"aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitList",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBatchJobDefinitionRetryStrategyEvaluateOnExitList_Override(b BatchJobDef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitList",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinitionRetryStrategyEvaluateOnExitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

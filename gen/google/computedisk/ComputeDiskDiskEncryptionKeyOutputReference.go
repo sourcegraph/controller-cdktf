@@ -263,7 +263,7 @@ func NewComputeDiskDiskEncryptionKeyOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputeDiskDiskEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -275,7 +275,7 @@ func NewComputeDiskDiskEncryptionKeyOutputReference_Override(c ComputeDiskDiskEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

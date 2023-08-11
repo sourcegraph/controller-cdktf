@@ -361,7 +361,7 @@ func NewDataGoogleDataplexLakeIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleDataplexLakeIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleDataplexLakeIamPolicy_Override(d DataGoogleDataplexLakeIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleDataplexLakeIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleDataplexLakeIamPolicy_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleDataplexLakeIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleDataplexLakeIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataplexLakeIamPolicy.DataGoogleDataplexLakeIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

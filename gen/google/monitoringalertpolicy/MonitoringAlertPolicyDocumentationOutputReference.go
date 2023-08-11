@@ -204,7 +204,7 @@ func NewMonitoringAlertPolicyDocumentationOutputReference(terraformResource cdkt
 	j := jsiiProxy_MonitoringAlertPolicyDocumentationOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMonitoringAlertPolicyDocumentationOutputReference_Override(m MonitoringA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

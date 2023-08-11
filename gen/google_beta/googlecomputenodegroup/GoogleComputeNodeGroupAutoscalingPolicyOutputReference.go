@@ -228,7 +228,7 @@ func NewGoogleComputeNodeGroupAutoscalingPolicyOutputReference(terraformResource
 	j := jsiiProxy_GoogleComputeNodeGroupAutoscalingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupAutoscalingPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupAutoscalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeNodeGroupAutoscalingPolicyOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupAutoscalingPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupAutoscalingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -366,7 +366,7 @@ func NewResourceSet(scope constructs.Construct, id *string, config *ResourceSetC
 	j := jsiiProxy_ResourceSet{}
 
 	_jsii_.Create(
-		"okta.resourceSet.ResourceSet",
+		"@cdktf/provider-okta.resourceSet.ResourceSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewResourceSet_Override(r ResourceSet, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.resourceSet.ResourceSet",
+		"@cdktf/provider-okta.resourceSet.ResourceSet",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -523,7 +523,7 @@ func ResourceSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.resourceSet.ResourceSet",
+		"@cdktf/provider-okta.resourceSet.ResourceSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func ResourceSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.resourceSet.ResourceSet",
+		"@cdktf/provider-okta.resourceSet.ResourceSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func ResourceSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.resourceSet.ResourceSet",
+		"@cdktf/provider-okta.resourceSet.ResourceSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func ResourceSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.resourceSet.ResourceSet",
+		"@cdktf/provider-okta.resourceSet.ResourceSet",
 		"tfResourceType",
 		&returns,
 	)

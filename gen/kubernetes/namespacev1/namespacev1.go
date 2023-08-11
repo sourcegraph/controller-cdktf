@@ -343,7 +343,7 @@ func NewNamespaceV1(scope constructs.Construct, id *string, config *NamespaceV1C
 	j := jsiiProxy_NamespaceV1{}
 
 	_jsii_.Create(
-		"kubernetes.namespaceV1.NamespaceV1",
+		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewNamespaceV1_Override(n NamespaceV1, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.namespaceV1.NamespaceV1",
+		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -467,7 +467,7 @@ func NamespaceV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.namespaceV1.NamespaceV1",
+		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -486,7 +486,7 @@ func NamespaceV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.namespaceV1.NamespaceV1",
+		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func NamespaceV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.namespaceV1.NamespaceV1",
+		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func NamespaceV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.namespaceV1.NamespaceV1",
+		"@cdktf/provider-kubernetes.namespaceV1.NamespaceV1",
 		"tfResourceType",
 		&returns,
 	)

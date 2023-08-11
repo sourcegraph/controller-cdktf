@@ -449,7 +449,7 @@ func NewCloudfrontCachePolicy(scope constructs.Construct, id *string, config *Cl
 	j := jsiiProxy_CloudfrontCachePolicy{}
 
 	_jsii_.Create(
-		"aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
+		"@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewCloudfrontCachePolicy_Override(c CloudfrontCachePolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
+		"@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -628,7 +628,7 @@ func CloudfrontCachePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
+		"@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func CloudfrontCachePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
+		"@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func CloudfrontCachePolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
+		"@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func CloudfrontCachePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
+		"@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -226,7 +226,7 @@ func NewMskconnectCustomPluginLocationS3OutputReference(terraformResource cdktf.
 	j := jsiiProxy_MskconnectCustomPluginLocationS3OutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewMskconnectCustomPluginLocationS3OutputReference_Override(m MskconnectCus
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference",
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPluginLocationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

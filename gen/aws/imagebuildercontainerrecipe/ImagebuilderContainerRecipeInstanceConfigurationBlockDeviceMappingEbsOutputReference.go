@@ -348,7 +348,7 @@ func NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOut
 	j := jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

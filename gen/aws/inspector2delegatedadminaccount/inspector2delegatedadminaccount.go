@@ -354,7 +354,7 @@ func NewInspector2DelegatedAdminAccount(scope constructs.Construct, id *string, 
 	j := jsiiProxy_Inspector2DelegatedAdminAccount{}
 
 	_jsii_.Create(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewInspector2DelegatedAdminAccount_Override(i Inspector2DelegatedAdminAccou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -489,7 +489,7 @@ func Inspector2DelegatedAdminAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func Inspector2DelegatedAdminAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func Inspector2DelegatedAdminAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func Inspector2DelegatedAdminAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
 		"tfResourceType",
 		&returns,
 	)

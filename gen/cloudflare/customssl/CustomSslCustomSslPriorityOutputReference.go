@@ -204,7 +204,7 @@ func NewCustomSslCustomSslPriorityOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_CustomSslCustomSslPriorityOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCustomSslCustomSslPriorityOutputReference_Override(c CustomSslCustomSslP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -270,7 +270,7 @@ func NewDirectoryServiceDirectoryConnectSettingsOutputReference(terraformResourc
 	j := jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettingsOutputReference",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -282,7 +282,7 @@ func NewDirectoryServiceDirectoryConnectSettingsOutputReference_Override(d Direc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettingsOutputReference",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

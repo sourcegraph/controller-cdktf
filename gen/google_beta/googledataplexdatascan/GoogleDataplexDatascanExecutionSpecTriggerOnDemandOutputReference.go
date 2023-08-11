@@ -156,7 +156,7 @@ func NewGoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference(terraf
 	j := jsiiProxy_GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewGoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecTriggerOnDemandOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

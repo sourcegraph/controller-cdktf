@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList(terra
 	j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsSeverityOriginalList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

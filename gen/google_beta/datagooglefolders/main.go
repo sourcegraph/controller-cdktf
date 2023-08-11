@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleFolders.DataGoogleFolders",
+		"@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFolders",
 		reflect.TypeOf((*DataGoogleFolders)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,15 +56,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleFolders.DataGoogleFoldersConfig",
+		"@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersConfig",
 		reflect.TypeOf((*DataGoogleFoldersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleFolders.DataGoogleFoldersFolders",
+		"@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersFolders",
 		reflect.TypeOf((*DataGoogleFoldersFolders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleFolders.DataGoogleFoldersFoldersList",
+		"@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersFoldersList",
 		reflect.TypeOf((*DataGoogleFoldersFoldersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleFolders.DataGoogleFoldersFoldersOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersFoldersOutputReference",
 		reflect.TypeOf((*DataGoogleFoldersFoldersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

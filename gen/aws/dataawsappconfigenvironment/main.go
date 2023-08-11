@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironment",
 		reflect.TypeOf((*DataAwsAppconfigEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentConfig",
 		reflect.TypeOf((*DataAwsAppconfigEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitor",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitor",
 		reflect.TypeOf((*DataAwsAppconfigEnvironmentMonitor)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorList",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorList",
 		reflect.TypeOf((*DataAwsAppconfigEnvironmentMonitorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -93,7 +93,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorOutputReference",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironment.DataAwsAppconfigEnvironmentMonitorOutputReference",
 		reflect.TypeOf((*DataAwsAppconfigEnvironmentMonitorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarmArn", GoGetter: "AlarmArn"},

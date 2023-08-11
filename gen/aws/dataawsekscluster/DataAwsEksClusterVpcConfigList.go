@@ -104,7 +104,7 @@ func NewDataAwsEksClusterVpcConfigList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_DataAwsEksClusterVpcConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigList",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEksClusterVpcConfigList_Override(d DataAwsEksClusterVpcConfigList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigList",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterVpcConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

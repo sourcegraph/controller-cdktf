@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShare",
 		reflect.TypeOf((*StoragegatewaySmbFileShare)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessBasedEnumeration", GoGetter: "AccessBasedEnumeration"},
@@ -138,11 +138,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributes",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributes",
 		reflect.TypeOf((*StoragegatewaySmbFileShareCacheAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributesOutputReference",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributesOutputReference",
 		reflect.TypeOf((*StoragegatewaySmbFileShareCacheAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSeconds", GoGetter: "CacheStaleTimeoutInSeconds"},
@@ -177,15 +177,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareConfig",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareConfig",
 		reflect.TypeOf((*StoragegatewaySmbFileShareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeouts",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeouts",
 		reflect.TypeOf((*StoragegatewaySmbFileShareTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeoutsOutputReference",
 		reflect.TypeOf((*StoragegatewaySmbFileShareTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

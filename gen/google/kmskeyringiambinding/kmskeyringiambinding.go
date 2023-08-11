@@ -400,7 +400,7 @@ func NewKmsKeyRingIamBinding(scope constructs.Construct, id *string, config *Kms
 	j := jsiiProxy_KmsKeyRingIamBinding{}
 
 	_jsii_.Create(
-		"google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
+		"@cdktf/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewKmsKeyRingIamBinding_Override(k KmsKeyRingIamBinding, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
+		"@cdktf/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -557,7 +557,7 @@ func KmsKeyRingIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
+		"@cdktf/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func KmsKeyRingIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
+		"@cdktf/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func KmsKeyRingIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
+		"@cdktf/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func KmsKeyRingIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
+		"@cdktf/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBinding",
 		"tfResourceType",
 		&returns,
 	)

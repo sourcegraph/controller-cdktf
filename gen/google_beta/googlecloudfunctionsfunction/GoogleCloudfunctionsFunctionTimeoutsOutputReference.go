@@ -252,7 +252,7 @@ func NewGoogleCloudfunctionsFunctionTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleCloudfunctionsFunctionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleCloudfunctionsFunctionTimeoutsOutputReference_Override(g GoogleClo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudfunctionsFunction.GoogleCloudfunctionsFunctionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

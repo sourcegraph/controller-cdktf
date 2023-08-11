@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRouter.ComputeRouter",
+		"@cdktf/provider-google.computeRouter.ComputeRouter",
 		reflect.TypeOf((*ComputeRouter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRouter.ComputeRouterBgp",
+		"@cdktf/provider-google.computeRouter.ComputeRouterBgp",
 		reflect.TypeOf((*ComputeRouterBgp)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRouter.ComputeRouterBgpAdvertisedIpRanges",
+		"@cdktf/provider-google.computeRouter.ComputeRouterBgpAdvertisedIpRanges",
 		reflect.TypeOf((*ComputeRouterBgpAdvertisedIpRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRouter.ComputeRouterBgpAdvertisedIpRangesList",
+		"@cdktf/provider-google.computeRouter.ComputeRouterBgpAdvertisedIpRangesList",
 		reflect.TypeOf((*ComputeRouterBgpAdvertisedIpRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRouter.ComputeRouterBgpAdvertisedIpRangesOutputReference",
+		"@cdktf/provider-google.computeRouter.ComputeRouterBgpAdvertisedIpRangesOutputReference",
 		reflect.TypeOf((*ComputeRouterBgpAdvertisedIpRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRouter.ComputeRouterBgpOutputReference",
+		"@cdktf/provider-google.computeRouter.ComputeRouterBgpOutputReference",
 		reflect.TypeOf((*ComputeRouterBgpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advertisedGroups", GoGetter: "AdvertisedGroups"},
@@ -194,15 +194,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRouter.ComputeRouterConfig",
+		"@cdktf/provider-google.computeRouter.ComputeRouterConfig",
 		reflect.TypeOf((*ComputeRouterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRouter.ComputeRouterTimeouts",
+		"@cdktf/provider-google.computeRouter.ComputeRouterTimeouts",
 		reflect.TypeOf((*ComputeRouterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRouter.ComputeRouterTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRouter.ComputeRouterTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRouterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

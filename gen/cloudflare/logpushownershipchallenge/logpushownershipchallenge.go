@@ -378,7 +378,7 @@ func NewLogpushOwnershipChallenge(scope constructs.Construct, id *string, config
 	j := jsiiProxy_LogpushOwnershipChallenge{}
 
 	_jsii_.Create(
-		"cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -391,7 +391,7 @@ func NewLogpushOwnershipChallenge_Override(l LogpushOwnershipChallenge, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -535,7 +535,7 @@ func LogpushOwnershipChallenge_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func LogpushOwnershipChallenge_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func LogpushOwnershipChallenge_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func LogpushOwnershipChallenge_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
+		"@cdktf/provider-cloudflare.logpushOwnershipChallenge.LogpushOwnershipChallenge",
 		"tfResourceType",
 		&returns,
 	)

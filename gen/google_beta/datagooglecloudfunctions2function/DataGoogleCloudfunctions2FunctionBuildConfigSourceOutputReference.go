@@ -178,7 +178,7 @@ func NewDataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference(terraf
 	j := jsiiProxy_DataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionBuildConfigSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

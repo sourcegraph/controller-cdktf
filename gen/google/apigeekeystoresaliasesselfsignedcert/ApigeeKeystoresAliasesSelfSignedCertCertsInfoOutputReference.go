@@ -167,7 +167,7 @@ func NewApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference(terraformRe
 	j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference_Override(a 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertCertsInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

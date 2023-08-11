@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.appEngineApplication.AppEngineApplication",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplication",
 		reflect.TypeOf((*AppEngineApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,15 +88,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineApplication.AppEngineApplicationConfig",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationConfig",
 		reflect.TypeOf((*AppEngineApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineApplication.AppEngineApplicationFeatureSettings",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationFeatureSettings",
 		reflect.TypeOf((*AppEngineApplicationFeatureSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationFeatureSettingsOutputReference",
 		reflect.TypeOf((*AppEngineApplicationFeatureSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineApplication.AppEngineApplicationIap",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationIap",
 		reflect.TypeOf((*AppEngineApplicationIap)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineApplication.AppEngineApplicationIapOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationIapOutputReference",
 		reflect.TypeOf((*AppEngineApplicationIapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -174,11 +174,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineApplication.AppEngineApplicationTimeouts",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationTimeouts",
 		reflect.TypeOf((*AppEngineApplicationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineApplication.AppEngineApplicationTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationTimeoutsOutputReference",
 		reflect.TypeOf((*AppEngineApplicationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -216,11 +216,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineApplication.AppEngineApplicationUrlDispatchRule",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRule",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleList",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -240,7 +240,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineApplication.AppEngineApplicationUrlDispatchRuleOutputReference",
+		"@cdktf/provider-google.appEngineApplication.AppEngineApplicationUrlDispatchRuleOutputReference",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -389,7 +389,7 @@ func NewShuffle(scope constructs.Construct, id *string, config *ShuffleConfig) S
 	j := jsiiProxy_Shuffle{}
 
 	_jsii_.Create(
-		"random.shuffle.Shuffle",
+		"@cdktf/provider-random.shuffle.Shuffle",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewShuffle_Override(s Shuffle, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"random.shuffle.Shuffle",
+		"@cdktf/provider-random.shuffle.Shuffle",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -546,7 +546,7 @@ func Shuffle_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.shuffle.Shuffle",
+		"@cdktf/provider-random.shuffle.Shuffle",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func Shuffle_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.shuffle.Shuffle",
+		"@cdktf/provider-random.shuffle.Shuffle",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func Shuffle_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.shuffle.Shuffle",
+		"@cdktf/provider-random.shuffle.Shuffle",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func Shuffle_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"random.shuffle.Shuffle",
+		"@cdktf/provider-random.shuffle.Shuffle",
 		"tfResourceType",
 		&returns,
 	)

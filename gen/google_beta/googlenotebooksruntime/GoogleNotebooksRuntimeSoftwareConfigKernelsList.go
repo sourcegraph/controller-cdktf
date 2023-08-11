@@ -116,7 +116,7 @@ func NewGoogleNotebooksRuntimeSoftwareConfigKernelsList(terraformResource cdktf.
 	j := jsiiProxy_GoogleNotebooksRuntimeSoftwareConfigKernelsList{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigKernelsList",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigKernelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleNotebooksRuntimeSoftwareConfigKernelsList_Override(g GoogleNoteboo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigKernelsList",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeSoftwareConfigKernelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

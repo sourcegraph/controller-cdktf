@@ -180,7 +180,7 @@ func NewKendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurati
 	j := jsiiProxy_KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewKendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceConfigurationS3ConfigurationDocumentsMetadataConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

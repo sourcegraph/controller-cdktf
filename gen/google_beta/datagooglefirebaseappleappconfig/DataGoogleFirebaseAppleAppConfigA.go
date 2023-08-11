@@ -324,7 +324,7 @@ func NewDataGoogleFirebaseAppleAppConfigA(scope constructs.Construct, id *string
 	j := jsiiProxy_DataGoogleFirebaseAppleAppConfigA{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -337,7 +337,7 @@ func NewDataGoogleFirebaseAppleAppConfigA_Override(d DataGoogleFirebaseAppleAppC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -437,7 +437,7 @@ func DataGoogleFirebaseAppleAppConfigA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataGoogleFirebaseAppleAppConfigA_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -475,7 +475,7 @@ func DataGoogleFirebaseAppleAppConfigA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataGoogleFirebaseAppleAppConfigA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA",
 		"tfResourceType",
 		&returns,
 	)

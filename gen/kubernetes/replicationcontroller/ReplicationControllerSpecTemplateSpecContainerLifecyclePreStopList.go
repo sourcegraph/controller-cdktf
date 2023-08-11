@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList(terra
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecContainerLifecyclePreStopList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

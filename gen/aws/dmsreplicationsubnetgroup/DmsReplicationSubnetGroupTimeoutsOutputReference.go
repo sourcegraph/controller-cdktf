@@ -228,7 +228,7 @@ func NewDmsReplicationSubnetGroupTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDmsReplicationSubnetGroupTimeoutsOutputReference_Override(d DmsReplicati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsReplicationSubnetGroup.DmsReplicationSubnetGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

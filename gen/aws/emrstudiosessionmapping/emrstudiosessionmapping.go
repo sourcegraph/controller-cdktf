@@ -413,7 +413,7 @@ func NewEmrStudioSessionMapping(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_EmrStudioSessionMapping{}
 
 	_jsii_.Create(
-		"aws.emrStudioSessionMapping.EmrStudioSessionMapping",
+		"@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewEmrStudioSessionMapping_Override(e EmrStudioSessionMapping, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrStudioSessionMapping.EmrStudioSessionMapping",
+		"@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -592,7 +592,7 @@ func EmrStudioSessionMapping_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrStudioSessionMapping.EmrStudioSessionMapping",
+		"@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func EmrStudioSessionMapping_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrStudioSessionMapping.EmrStudioSessionMapping",
+		"@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func EmrStudioSessionMapping_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrStudioSessionMapping.EmrStudioSessionMapping",
+		"@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func EmrStudioSessionMapping_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.emrStudioSessionMapping.EmrStudioSessionMapping",
+		"@cdktf/provider-aws.emrStudioSessionMapping.EmrStudioSessionMapping",
 		"tfResourceType",
 		&returns,
 	)

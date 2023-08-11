@@ -228,7 +228,7 @@ func NewGoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference(terra
 	j := jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

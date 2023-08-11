@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecHostAliasesList(terraformResource c
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecHostAliasesList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecHostAliasesList_Override(r Replicat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

@@ -275,7 +275,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOu
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesSapoDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -204,7 +204,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeHostPathOutputReference(terraformResou
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumeHostPathOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeHostPathOutputReference_Override(d Dep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

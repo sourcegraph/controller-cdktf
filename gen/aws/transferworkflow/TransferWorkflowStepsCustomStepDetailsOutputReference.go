@@ -252,7 +252,7 @@ func NewTransferWorkflowStepsCustomStepDetailsOutputReference(terraformResource 
 	j := jsiiProxy_TransferWorkflowStepsCustomStepDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsCustomStepDetailsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCustomStepDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewTransferWorkflowStepsCustomStepDetailsOutputReference_Override(t Transfe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsCustomStepDetailsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCustomStepDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

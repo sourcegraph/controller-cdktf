@@ -276,7 +276,7 @@ func NewJobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference
 	j := jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewJobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecInitContainerLifecyclePostStartHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

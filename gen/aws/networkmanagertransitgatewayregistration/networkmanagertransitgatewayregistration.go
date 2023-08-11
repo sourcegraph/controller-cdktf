@@ -366,7 +366,7 @@ func NewNetworkmanagerTransitGatewayRegistration(scope constructs.Construct, id 
 	j := jsiiProxy_NetworkmanagerTransitGatewayRegistration{}
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewNetworkmanagerTransitGatewayRegistration_Override(n NetworkmanagerTransi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -512,7 +512,7 @@ func NetworkmanagerTransitGatewayRegistration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func NetworkmanagerTransitGatewayRegistration_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func NetworkmanagerTransitGatewayRegistration_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func NetworkmanagerTransitGatewayRegistration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
 		"tfResourceType",
 		&returns,
 	)

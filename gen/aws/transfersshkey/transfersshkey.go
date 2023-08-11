@@ -365,7 +365,7 @@ func NewTransferSshKey(scope constructs.Construct, id *string, config *TransferS
 	j := jsiiProxy_TransferSshKey{}
 
 	_jsii_.Create(
-		"aws.transferSshKey.TransferSshKey",
+		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewTransferSshKey_Override(t TransferSshKey, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferSshKey.TransferSshKey",
+		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -522,7 +522,7 @@ func TransferSshKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferSshKey.TransferSshKey",
+		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func TransferSshKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferSshKey.TransferSshKey",
+		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func TransferSshKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferSshKey.TransferSshKey",
+		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func TransferSshKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.transferSshKey.TransferSshKey",
+		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
 		"tfResourceType",
 		&returns,
 	)

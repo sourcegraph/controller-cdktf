@@ -227,7 +227,7 @@ func NewSchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference(
 	j := jsiiProxy_SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

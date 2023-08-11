@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaApp.DataOktaApp",
+		"@cdktf/provider-okta.dataOktaApp.DataOktaApp",
 		reflect.TypeOf((*DataOktaApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeOnly", GoGetter: "ActiveOnly"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaApp.DataOktaAppConfig",
+		"@cdktf/provider-okta.dataOktaApp.DataOktaAppConfig",
 		reflect.TypeOf((*DataOktaAppConfig)(nil)).Elem(),
 	)
 }

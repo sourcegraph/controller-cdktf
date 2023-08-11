@@ -400,7 +400,7 @@ func NewStorageBucketIamMember(scope constructs.Construct, id *string, config *S
 	j := jsiiProxy_StorageBucketIamMember{}
 
 	_jsii_.Create(
-		"google.storageBucketIamMember.StorageBucketIamMember",
+		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewStorageBucketIamMember_Override(s StorageBucketIamMember, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucketIamMember.StorageBucketIamMember",
+		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMember",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -557,7 +557,7 @@ func StorageBucketIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketIamMember.StorageBucketIamMember",
+		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func StorageBucketIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketIamMember.StorageBucketIamMember",
+		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func StorageBucketIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageBucketIamMember.StorageBucketIamMember",
+		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func StorageBucketIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageBucketIamMember.StorageBucketIamMember",
+		"@cdktf/provider-google.storageBucketIamMember.StorageBucketIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
 		reflect.TypeOf((*GoogleFolderAccessApprovalSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeKeyVersion", GoGetter: "ActiveKeyVersion"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsConfig",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsConfig",
 		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServices",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServices",
 		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsEnrolledServices)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesList",
 		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsEnrolledServicesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference",
 		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsEnrolledServicesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudProduct", GoGetter: "CloudProduct"},
@@ -140,11 +140,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeouts",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeouts",
 		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFolderAccessApprovalSettingsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

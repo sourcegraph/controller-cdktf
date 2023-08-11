@@ -203,7 +203,7 @@ func NewDirectoryServiceSharedDirectoryTargetOutputReference(terraformResource c
 	j := jsiiProxy_DirectoryServiceSharedDirectoryTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTargetOutputReference",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDirectoryServiceSharedDirectoryTargetOutputReference_Override(d Director
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTargetOutputReference",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

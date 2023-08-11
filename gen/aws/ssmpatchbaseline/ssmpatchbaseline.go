@@ -618,7 +618,7 @@ func NewSsmPatchBaseline(scope constructs.Construct, id *string, config *SsmPatc
 	j := jsiiProxy_SsmPatchBaseline{}
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaseline",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -631,7 +631,7 @@ func NewSsmPatchBaseline_Override(s SsmPatchBaseline, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaseline",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -852,7 +852,7 @@ func SsmPatchBaseline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmPatchBaseline.SsmPatchBaseline",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -871,7 +871,7 @@ func SsmPatchBaseline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmPatchBaseline.SsmPatchBaseline",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -890,7 +890,7 @@ func SsmPatchBaseline_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmPatchBaseline.SsmPatchBaseline",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -903,7 +903,7 @@ func SsmPatchBaseline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmPatchBaseline.SsmPatchBaseline",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaseline",
 		"tfResourceType",
 		&returns,
 	)

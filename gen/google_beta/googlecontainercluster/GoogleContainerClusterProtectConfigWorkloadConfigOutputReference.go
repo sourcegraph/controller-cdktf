@@ -179,7 +179,7 @@ func NewGoogleContainerClusterProtectConfigWorkloadConfigOutputReference(terrafo
 	j := jsiiProxy_GoogleContainerClusterProtectConfigWorkloadConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterProtectConfigWorkloadConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -313,7 +313,7 @@ func NewDataGoogleTagsTagValueIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleTagsTagValueIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleTagsTagValueIamPolicy_Override(d DataGoogleTagsTagValueIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleTagsTagValueIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleTagsTagValueIamPolicy_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleTagsTagValueIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleTagsTagValueIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google.dataGoogleTagsTagValueIamPolicy.DataGoogleTagsTagValueIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

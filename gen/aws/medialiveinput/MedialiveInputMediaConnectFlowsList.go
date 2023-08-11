@@ -116,7 +116,7 @@ func NewMedialiveInputMediaConnectFlowsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_MedialiveInputMediaConnectFlowsList{}
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputMediaConnectFlowsList",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveInputMediaConnectFlowsList_Override(m MedialiveInputMediaConnec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputMediaConnectFlowsList",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

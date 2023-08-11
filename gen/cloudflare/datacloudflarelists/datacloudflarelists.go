@@ -302,7 +302,7 @@ func NewDataCloudflareLists(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataCloudflareLists{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLists.DataCloudflareLists",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataCloudflareLists_Override(d DataCloudflareLists, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLists.DataCloudflareLists",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataCloudflareLists_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareLists.DataCloudflareLists",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataCloudflareLists_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareLists.DataCloudflareLists",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataCloudflareLists_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareLists.DataCloudflareLists",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataCloudflareLists_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareLists.DataCloudflareLists",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareLists",
 		"tfResourceType",
 		&returns,
 	)

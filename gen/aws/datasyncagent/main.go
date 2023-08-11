@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.datasyncAgent.DatasyncAgent",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgent",
 		reflect.TypeOf((*DatasyncAgent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationKey", GoGetter: "ActivationKey"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncAgent.DatasyncAgentConfig",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgentConfig",
 		reflect.TypeOf((*DatasyncAgentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncAgent.DatasyncAgentTimeouts",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgentTimeouts",
 		reflect.TypeOf((*DatasyncAgentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.datasyncAgent.DatasyncAgentTimeoutsOutputReference",
+		"@cdktf/provider-aws.datasyncAgent.DatasyncAgentTimeoutsOutputReference",
 		reflect.TypeOf((*DatasyncAgentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

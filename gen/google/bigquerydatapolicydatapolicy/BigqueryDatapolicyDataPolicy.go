@@ -471,7 +471,7 @@ func NewBigqueryDatapolicyDataPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_BigqueryDatapolicyDataPolicy{}
 
 	_jsii_.Create(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewBigqueryDatapolicyDataPolicy_Override(b BigqueryDatapolicyDataPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -650,7 +650,7 @@ func BigqueryDatapolicyDataPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func BigqueryDatapolicyDataPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func BigqueryDatapolicyDataPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func BigqueryDatapolicyDataPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicy",
 		"tfResourceType",
 		&returns,
 	)

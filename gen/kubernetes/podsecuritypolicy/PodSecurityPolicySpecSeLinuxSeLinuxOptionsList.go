@@ -116,7 +116,7 @@ func NewPodSecurityPolicySpecSeLinuxSeLinuxOptionsList(terraformResource cdktf.I
 	j := jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSecurityPolicySpecSeLinuxSeLinuxOptionsList_Override(p PodSecurityPol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecSeLinuxSeLinuxOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

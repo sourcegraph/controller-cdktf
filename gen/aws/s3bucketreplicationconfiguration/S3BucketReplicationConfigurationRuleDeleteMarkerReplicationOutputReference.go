@@ -179,7 +179,7 @@ func NewS3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReferen
 	j := jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference",
+		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference",
+		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

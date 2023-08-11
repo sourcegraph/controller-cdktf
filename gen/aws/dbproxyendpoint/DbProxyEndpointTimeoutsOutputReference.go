@@ -228,7 +228,7 @@ func NewDbProxyEndpointTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DbProxyEndpointTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbProxyEndpoint.DbProxyEndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDbProxyEndpointTimeoutsOutputReference_Override(d DbProxyEndpointTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbProxyEndpoint.DbProxyEndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

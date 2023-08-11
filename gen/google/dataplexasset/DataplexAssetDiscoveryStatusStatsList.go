@@ -104,7 +104,7 @@ func NewDataplexAssetDiscoveryStatusStatsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataplexAssetDiscoveryStatusStatsList{}
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetDiscoveryStatusStatsList",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusStatsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexAssetDiscoveryStatusStatsList_Override(d DataplexAssetDiscoveryS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetDiscoveryStatusStatsList",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoveryStatusStatsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

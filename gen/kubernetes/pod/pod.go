@@ -366,7 +366,7 @@ func NewPod(scope constructs.Construct, id *string, config *PodConfig) Pod {
 	j := jsiiProxy_Pod{}
 
 	_jsii_.Create(
-		"kubernetes.pod.Pod",
+		"@cdktf/provider-kubernetes.pod.Pod",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewPod_Override(p Pod, scope constructs.Construct, id *string, config *PodC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.Pod",
+		"@cdktf/provider-kubernetes.pod.Pod",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -490,7 +490,7 @@ func Pod_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.pod.Pod",
+		"@cdktf/provider-kubernetes.pod.Pod",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -509,7 +509,7 @@ func Pod_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.pod.Pod",
+		"@cdktf/provider-kubernetes.pod.Pod",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func Pod_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.pod.Pod",
+		"@cdktf/provider-kubernetes.pod.Pod",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func Pod_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.pod.Pod",
+		"@cdktf/provider-kubernetes.pod.Pod",
 		"tfResourceType",
 		&returns,
 	)

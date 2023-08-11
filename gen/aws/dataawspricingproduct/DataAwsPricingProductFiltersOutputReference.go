@@ -202,7 +202,7 @@ func NewDataAwsPricingProductFiltersOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsPricingProductFiltersOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsPricingProduct.DataAwsPricingProductFiltersOutputReference",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsPricingProductFiltersOutputReference_Override(d DataAwsPricingPro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsPricingProduct.DataAwsPricingProductFiltersOutputReference",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

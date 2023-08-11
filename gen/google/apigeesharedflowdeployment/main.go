@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment",
+		"@cdktf/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeployment",
 		reflect.TypeOf((*ApigeeSharedflowDeployment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig",
+		"@cdktf/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentConfig",
 		reflect.TypeOf((*ApigeeSharedflowDeploymentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts",
+		"@cdktf/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeouts",
 		reflect.TypeOf((*ApigeeSharedflowDeploymentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeSharedflowDeployment.ApigeeSharedflowDeploymentTimeoutsOutputReference",
 		reflect.TypeOf((*ApigeeSharedflowDeploymentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

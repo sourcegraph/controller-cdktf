@@ -204,7 +204,7 @@ func NewSyntheticsCanaryArtifactConfigS3EncryptionOutputReference(terraformResou
 	j := jsiiProxy_SyntheticsCanaryArtifactConfigS3EncryptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3EncryptionOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3EncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSyntheticsCanaryArtifactConfigS3EncryptionOutputReference_Override(s Syn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3EncryptionOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryArtifactConfigS3EncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

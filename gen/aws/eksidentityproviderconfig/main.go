@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
 		reflect.TypeOf((*EksIdentityProviderConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfigConfig",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigConfig",
 		reflect.TypeOf((*EksIdentityProviderConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidc",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidc",
 		reflect.TypeOf((*EksIdentityProviderConfigOidc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidcOutputReference",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigOidcOutputReference",
 		reflect.TypeOf((*EksIdentityProviderConfigOidcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -133,11 +133,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeouts",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeouts",
 		reflect.TypeOf((*EksIdentityProviderConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeoutsOutputReference",
 		reflect.TypeOf((*EksIdentityProviderConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

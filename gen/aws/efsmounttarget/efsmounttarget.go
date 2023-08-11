@@ -491,7 +491,7 @@ func NewEfsMountTarget(scope constructs.Construct, id *string, config *EfsMountT
 	j := jsiiProxy_EfsMountTarget{}
 
 	_jsii_.Create(
-		"aws.efsMountTarget.EfsMountTarget",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -504,7 +504,7 @@ func NewEfsMountTarget_Override(e EfsMountTarget, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsMountTarget.EfsMountTarget",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -659,7 +659,7 @@ func EfsMountTarget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsMountTarget.EfsMountTarget",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func EfsMountTarget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsMountTarget.EfsMountTarget",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -697,7 +697,7 @@ func EfsMountTarget_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsMountTarget.EfsMountTarget",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func EfsMountTarget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.efsMountTarget.EfsMountTarget",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
 		"tfResourceType",
 		&returns,
 	)

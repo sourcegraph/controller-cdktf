@@ -104,7 +104,7 @@ func NewGoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList(te
 	j := jsiiProxy_GoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList{}
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList",
+		"@cdktf/provider-google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList",
+		"@cdktf/provider-google-beta.googleClouddeployDeliveryPipeline.GoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

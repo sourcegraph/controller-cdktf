@@ -227,7 +227,7 @@ func NewOpensearchDomainAutoTuneOptionsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewOpensearchDomainAutoTuneOptionsOutputReference_Override(o OpensearchDoma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainAutoTuneOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainAutoTuneOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

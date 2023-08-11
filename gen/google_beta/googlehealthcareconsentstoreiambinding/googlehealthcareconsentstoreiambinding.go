@@ -423,7 +423,7 @@ func NewGoogleHealthcareConsentStoreIamBinding(scope constructs.Construct, id *s
 	j := jsiiProxy_GoogleHealthcareConsentStoreIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewGoogleHealthcareConsentStoreIamBinding_Override(g GoogleHealthcareConsen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -591,7 +591,7 @@ func GoogleHealthcareConsentStoreIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func GoogleHealthcareConsentStoreIamBinding_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func GoogleHealthcareConsentStoreIamBinding_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func GoogleHealthcareConsentStoreIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding",
 		"tfResourceType",
 		&returns,
 	)

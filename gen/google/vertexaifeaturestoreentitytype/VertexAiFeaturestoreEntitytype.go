@@ -483,7 +483,7 @@ func NewVertexAiFeaturestoreEntitytype(scope constructs.Construct, id *string, c
 	j := jsiiProxy_VertexAiFeaturestoreEntitytype{}
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewVertexAiFeaturestoreEntitytype_Override(v VertexAiFeaturestoreEntitytype
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -651,7 +651,7 @@ func VertexAiFeaturestoreEntitytype_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func VertexAiFeaturestoreEntitytype_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func VertexAiFeaturestoreEntitytype_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func VertexAiFeaturestoreEntitytype_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytype",
 		"tfResourceType",
 		&returns,
 	)

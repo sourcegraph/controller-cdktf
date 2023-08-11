@@ -351,7 +351,7 @@ func NewDataTfeOrganizationMembership(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataTfeOrganizationMembership{}
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataTfeOrganizationMembership_Override(d DataTfeOrganizationMembership, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -486,7 +486,7 @@ func DataTfeOrganizationMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DataTfeOrganizationMembership_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataTfeOrganizationMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataTfeOrganizationMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembership.DataTfeOrganizationMembership",
 		"tfResourceType",
 		&returns,
 	)

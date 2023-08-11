@@ -775,7 +775,7 @@ func NewRole(scope constructs.Construct, id *string, config *RoleConfig) Role {
 	j := jsiiProxy_Role{}
 
 	_jsii_.Create(
-		"postgresql.role.Role",
+		"@cdktf/provider-postgresql.role.Role",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -788,7 +788,7 @@ func NewRole_Override(r Role, scope constructs.Construct, id *string, config *Ro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.role.Role",
+		"@cdktf/provider-postgresql.role.Role",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -1119,7 +1119,7 @@ func Role_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.role.Role",
+		"@cdktf/provider-postgresql.role.Role",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1138,7 +1138,7 @@ func Role_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.role.Role",
+		"@cdktf/provider-postgresql.role.Role",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1157,7 +1157,7 @@ func Role_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.role.Role",
+		"@cdktf/provider-postgresql.role.Role",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1170,7 +1170,7 @@ func Role_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.role.Role",
+		"@cdktf/provider-postgresql.role.Role",
 		"tfResourceType",
 		&returns,
 	)

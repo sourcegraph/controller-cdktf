@@ -204,7 +204,7 @@ func NewCloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference(ter
 	j := jsiiProxy_CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

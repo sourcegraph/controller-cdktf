@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecInitContainerReadinessProbeHttpGetList(terraformRes
 	j := jsiiProxy_DataKubernetesPodSpecInitContainerReadinessProbeHttpGetList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerReadinessProbeHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerReadinessProbeHttpGetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecInitContainerReadinessProbeHttpGetList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerReadinessProbeHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerReadinessProbeHttpGetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

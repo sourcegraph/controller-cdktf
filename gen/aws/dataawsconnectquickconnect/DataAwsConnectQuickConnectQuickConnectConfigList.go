@@ -104,7 +104,7 @@ func NewDataAwsConnectQuickConnectQuickConnectConfigList(terraformResource cdktf
 	j := jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigList",
+		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsConnectQuickConnectQuickConnectConfigList_Override(d DataAwsConne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigList",
+		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

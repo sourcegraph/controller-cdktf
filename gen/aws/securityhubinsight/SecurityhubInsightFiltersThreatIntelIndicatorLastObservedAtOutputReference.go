@@ -228,7 +228,7 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReferen
 	j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

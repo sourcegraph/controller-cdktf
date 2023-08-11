@@ -228,7 +228,7 @@ func NewPodSpecVolumeProjectedSourcesSecretOutputReference(terraformResource cdk
 	j := jsiiProxy_PodSpecVolumeProjectedSourcesSecretOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedSourcesSecretOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPodSpecVolumeProjectedSourcesSecretOutputReference_Override(p PodSpecVol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedSourcesSecretOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

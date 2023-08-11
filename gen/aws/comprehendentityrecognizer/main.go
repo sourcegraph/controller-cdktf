@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		reflect.TypeOf((*ComprehendEntityRecognizer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,19 +91,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerConfig",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerConfig",
 		reflect.TypeOf((*ComprehendEntityRecognizerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfig",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfig",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotations",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotations",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAnnotations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAnnotationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,11 +140,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifests",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifests",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAugmentedManifests)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -165,7 +165,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigAugmentedManifestsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotationDataS3Uri", GoGetter: "AnnotationDataS3Uri"},
@@ -213,11 +213,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocuments",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocuments",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigDocuments)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,11 +257,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStruct",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStruct",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,11 +295,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypes",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypes",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityTypes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesList",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesList",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityTypesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -320,7 +320,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigEntityTypesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -354,7 +354,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigOutputReference",
 		reflect.TypeOf((*ComprehendEntityRecognizerInputDataConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -408,11 +408,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeouts",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeouts",
 		reflect.TypeOf((*ComprehendEntityRecognizerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeoutsOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerTimeoutsOutputReference",
 		reflect.TypeOf((*ComprehendEntityRecognizerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -453,11 +453,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfig",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfig",
 		reflect.TypeOf((*ComprehendEntityRecognizerVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfigOutputReference",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerVpcConfigOutputReference",
 		reflect.TypeOf((*ComprehendEntityRecognizerVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

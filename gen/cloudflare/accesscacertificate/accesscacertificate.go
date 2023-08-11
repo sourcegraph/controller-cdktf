@@ -389,7 +389,7 @@ func NewAccessCaCertificate(scope constructs.Construct, id *string, config *Acce
 	j := jsiiProxy_AccessCaCertificate{}
 
 	_jsii_.Create(
-		"cloudflare.accessCaCertificate.AccessCaCertificate",
+		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewAccessCaCertificate_Override(a AccessCaCertificate, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessCaCertificate.AccessCaCertificate",
+		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -546,7 +546,7 @@ func AccessCaCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessCaCertificate.AccessCaCertificate",
+		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func AccessCaCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessCaCertificate.AccessCaCertificate",
+		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func AccessCaCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessCaCertificate.AccessCaCertificate",
+		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func AccessCaCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessCaCertificate.AccessCaCertificate",
+		"@cdktf/provider-cloudflare.accessCaCertificate.AccessCaCertificate",
 		"tfResourceType",
 		&returns,
 	)

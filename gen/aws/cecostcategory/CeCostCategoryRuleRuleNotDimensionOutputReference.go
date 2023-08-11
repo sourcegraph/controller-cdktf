@@ -228,7 +228,7 @@ func NewCeCostCategoryRuleRuleNotDimensionOutputReference(terraformResource cdkt
 	j := jsiiProxy_CeCostCategoryRuleRuleNotDimensionOutputReference{}
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCeCostCategoryRuleRuleNotDimensionOutputReference_Override(c CeCostCateg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

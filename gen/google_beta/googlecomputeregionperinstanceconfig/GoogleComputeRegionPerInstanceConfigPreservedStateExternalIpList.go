@@ -116,7 +116,7 @@ func NewGoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList(terrafo
 	j := jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList",
+		"@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList",
+		"@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

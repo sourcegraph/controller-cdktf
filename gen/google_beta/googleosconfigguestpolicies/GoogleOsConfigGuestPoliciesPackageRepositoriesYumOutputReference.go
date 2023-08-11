@@ -250,7 +250,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference(terrafo
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

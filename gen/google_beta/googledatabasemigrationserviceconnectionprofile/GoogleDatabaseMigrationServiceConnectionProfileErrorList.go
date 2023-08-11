@@ -104,7 +104,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileErrorList(terraformResour
 	j := jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileErrorList{}
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileErrorList",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileErrorList_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileErrorList",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

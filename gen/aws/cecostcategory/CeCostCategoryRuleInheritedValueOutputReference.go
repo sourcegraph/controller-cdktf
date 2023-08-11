@@ -204,7 +204,7 @@ func NewCeCostCategoryRuleInheritedValueOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CeCostCategoryRuleInheritedValueOutputReference{}
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCeCostCategoryRuleInheritedValueOutputReference_Override(c CeCostCategor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

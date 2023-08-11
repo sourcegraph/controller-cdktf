@@ -372,7 +372,7 @@ func NewPodV1SpecInitContainerSecurityContextOutputReference(terraformResource c
 	j := jsiiProxy_PodV1SpecInitContainerSecurityContextOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewPodV1SpecInitContainerSecurityContextOutputReference_Override(p PodV1Spe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

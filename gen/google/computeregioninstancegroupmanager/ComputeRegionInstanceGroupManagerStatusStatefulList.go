@@ -104,7 +104,7 @@ func NewComputeRegionInstanceGroupManagerStatusStatefulList(terraformResource cd
 	j := jsiiProxy_ComputeRegionInstanceGroupManagerStatusStatefulList{}
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewComputeRegionInstanceGroupManagerStatusStatefulList_Override(c ComputeRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerStatusStatefulList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

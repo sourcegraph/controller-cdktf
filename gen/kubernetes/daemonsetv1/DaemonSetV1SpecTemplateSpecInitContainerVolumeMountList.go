@@ -116,7 +116,7 @@ func NewDaemonSetV1SpecTemplateSpecInitContainerVolumeMountList(terraformResourc
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerVolumeMountList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeMountList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeMountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonSetV1SpecTemplateSpecInitContainerVolumeMountList_Override(d Daemo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeMountList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerVolumeMountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -401,7 +401,7 @@ func NewIapWebIamBinding(scope constructs.Construct, id *string, config *IapWebI
 	j := jsiiProxy_IapWebIamBinding{}
 
 	_jsii_.Create(
-		"google.iapWebIamBinding.IapWebIamBinding",
+		"@cdktf/provider-google.iapWebIamBinding.IapWebIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewIapWebIamBinding_Override(i IapWebIamBinding, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebIamBinding.IapWebIamBinding",
+		"@cdktf/provider-google.iapWebIamBinding.IapWebIamBinding",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -558,7 +558,7 @@ func IapWebIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebIamBinding.IapWebIamBinding",
+		"@cdktf/provider-google.iapWebIamBinding.IapWebIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func IapWebIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebIamBinding.IapWebIamBinding",
+		"@cdktf/provider-google.iapWebIamBinding.IapWebIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func IapWebIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebIamBinding.IapWebIamBinding",
+		"@cdktf/provider-google.iapWebIamBinding.IapWebIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func IapWebIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapWebIamBinding.IapWebIamBinding",
+		"@cdktf/provider-google.iapWebIamBinding.IapWebIamBinding",
 		"tfResourceType",
 		&returns,
 	)

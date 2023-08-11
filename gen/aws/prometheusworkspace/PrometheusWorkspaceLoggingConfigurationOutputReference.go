@@ -179,7 +179,7 @@ func NewPrometheusWorkspaceLoggingConfigurationOutputReference(terraformResource
 	j := jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPrometheusWorkspaceLoggingConfigurationOutputReference_Override(p Promet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspaceLoggingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

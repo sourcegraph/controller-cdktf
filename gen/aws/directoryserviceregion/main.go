@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.directoryServiceRegion.DirectoryServiceRegion",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegion",
 		reflect.TypeOf((*DirectoryServiceRegion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceRegion.DirectoryServiceRegionConfig",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionConfig",
 		reflect.TypeOf((*DirectoryServiceRegionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceRegion.DirectoryServiceRegionTimeouts",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionTimeouts",
 		reflect.TypeOf((*DirectoryServiceRegionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.directoryServiceRegion.DirectoryServiceRegionTimeoutsOutputReference",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionTimeoutsOutputReference",
 		reflect.TypeOf((*DirectoryServiceRegionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,11 +124,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceRegion.DirectoryServiceRegionVpcSettings",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionVpcSettings",
 		reflect.TypeOf((*DirectoryServiceRegionVpcSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.directoryServiceRegion.DirectoryServiceRegionVpcSettingsOutputReference",
+		"@cdktf/provider-aws.directoryServiceRegion.DirectoryServiceRegionVpcSettingsOutputReference",
 		reflect.TypeOf((*DirectoryServiceRegionVpcSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

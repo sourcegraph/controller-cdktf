@@ -204,7 +204,7 @@ func NewComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputRefe
 	j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

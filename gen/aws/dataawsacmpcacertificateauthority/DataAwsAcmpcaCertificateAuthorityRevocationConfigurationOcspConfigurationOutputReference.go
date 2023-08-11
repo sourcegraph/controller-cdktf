@@ -178,7 +178,7 @@ func NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguratio
 	j := jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguratio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsAcmpcaCertificateAuthority.DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

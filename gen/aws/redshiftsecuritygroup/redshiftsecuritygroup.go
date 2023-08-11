@@ -366,7 +366,7 @@ func NewRedshiftSecurityGroup(scope constructs.Construct, id *string, config *Re
 	j := jsiiProxy_RedshiftSecurityGroup{}
 
 	_jsii_.Create(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroup",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewRedshiftSecurityGroup_Override(r RedshiftSecurityGroup, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroup",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -512,7 +512,7 @@ func RedshiftSecurityGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroup",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func RedshiftSecurityGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroup",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func RedshiftSecurityGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroup",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func RedshiftSecurityGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftSecurityGroup.RedshiftSecurityGroup",
+		"@cdktf/provider-aws.redshiftSecurityGroup.RedshiftSecurityGroup",
 		"tfResourceType",
 		&returns,
 	)

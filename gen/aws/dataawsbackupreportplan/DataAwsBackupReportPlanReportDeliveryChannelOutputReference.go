@@ -189,7 +189,7 @@ func NewDataAwsBackupReportPlanReportDeliveryChannelOutputReference(terraformRes
 	j := jsiiProxy_DataAwsBackupReportPlanReportDeliveryChannelOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsBackupReportPlanReportDeliveryChannelOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

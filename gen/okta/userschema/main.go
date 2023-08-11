@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.userSchema.UserSchema",
+		"@cdktf/provider-okta.userSchema.UserSchema",
 		reflect.TypeOf((*UserSchema)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -118,11 +118,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.userSchema.UserSchemaArrayOneOf",
+		"@cdktf/provider-okta.userSchema.UserSchemaArrayOneOf",
 		reflect.TypeOf((*UserSchemaArrayOneOf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchema.UserSchemaArrayOneOfList",
+		"@cdktf/provider-okta.userSchema.UserSchemaArrayOneOfList",
 		reflect.TypeOf((*UserSchemaArrayOneOfList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -143,7 +143,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchema.UserSchemaArrayOneOfOutputReference",
+		"@cdktf/provider-okta.userSchema.UserSchemaArrayOneOfOutputReference",
 		reflect.TypeOf((*UserSchemaArrayOneOfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -179,15 +179,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.userSchema.UserSchemaConfig",
+		"@cdktf/provider-okta.userSchema.UserSchemaConfig",
 		reflect.TypeOf((*UserSchemaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.userSchema.UserSchemaMasterOverridePriority",
+		"@cdktf/provider-okta.userSchema.UserSchemaMasterOverridePriority",
 		reflect.TypeOf((*UserSchemaMasterOverridePriority)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchema.UserSchemaMasterOverridePriorityList",
+		"@cdktf/provider-okta.userSchema.UserSchemaMasterOverridePriorityList",
 		reflect.TypeOf((*UserSchemaMasterOverridePriorityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -208,7 +208,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchema.UserSchemaMasterOverridePriorityOutputReference",
+		"@cdktf/provider-okta.userSchema.UserSchemaMasterOverridePriorityOutputReference",
 		reflect.TypeOf((*UserSchemaMasterOverridePriorityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -245,11 +245,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.userSchema.UserSchemaOneOf",
+		"@cdktf/provider-okta.userSchema.UserSchemaOneOf",
 		reflect.TypeOf((*UserSchemaOneOf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchema.UserSchemaOneOfList",
+		"@cdktf/provider-okta.userSchema.UserSchemaOneOfList",
 		reflect.TypeOf((*UserSchemaOneOfList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -270,7 +270,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.userSchema.UserSchemaOneOfOutputReference",
+		"@cdktf/provider-okta.userSchema.UserSchemaOneOfOutputReference",
 		reflect.TypeOf((*UserSchemaOneOfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

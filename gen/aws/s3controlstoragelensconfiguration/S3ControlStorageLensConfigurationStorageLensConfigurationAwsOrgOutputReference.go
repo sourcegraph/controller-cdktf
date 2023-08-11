@@ -179,7 +179,7 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputRef
 	j := jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputReference",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputReference",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfigurationStorageLensConfigurationAwsOrgOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

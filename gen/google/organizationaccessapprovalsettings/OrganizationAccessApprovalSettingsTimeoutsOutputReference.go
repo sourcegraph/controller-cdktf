@@ -228,7 +228,7 @@ func NewOrganizationAccessApprovalSettingsTimeoutsOutputReference(terraformResou
 	j := jsiiProxy_OrganizationAccessApprovalSettingsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewOrganizationAccessApprovalSettingsTimeoutsOutputReference_Override(o Org
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.organizationAccessApprovalSettings.OrganizationAccessApprovalSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

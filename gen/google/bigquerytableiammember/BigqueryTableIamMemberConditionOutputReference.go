@@ -226,7 +226,7 @@ func NewBigqueryTableIamMemberConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_BigqueryTableIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryTableIamMember.BigqueryTableIamMemberConditionOutputReference",
+		"@cdktf/provider-google.bigqueryTableIamMember.BigqueryTableIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewBigqueryTableIamMemberConditionOutputReference_Override(b BigqueryTableI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryTableIamMember.BigqueryTableIamMemberConditionOutputReference",
+		"@cdktf/provider-google.bigqueryTableIamMember.BigqueryTableIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

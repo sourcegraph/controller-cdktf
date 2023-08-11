@@ -104,7 +104,7 @@ func NewGoogleGkeHubFeatureStateList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_GoogleGkeHubFeatureStateList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateList",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleGkeHubFeatureStateList_Override(g GoogleGkeHubFeatureStateList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateList",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

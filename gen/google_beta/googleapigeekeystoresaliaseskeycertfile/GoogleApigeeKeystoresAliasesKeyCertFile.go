@@ -518,7 +518,7 @@ func NewGoogleApigeeKeystoresAliasesKeyCertFile(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFile{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -531,7 +531,7 @@ func NewGoogleApigeeKeystoresAliasesKeyCertFile_Override(g GoogleApigeeKeystores
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -719,7 +719,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func GoogleApigeeKeystoresAliasesKeyCertFile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile.GoogleApigeeKeystoresAliasesKeyCertFile",
 		"tfResourceType",
 		&returns,
 	)

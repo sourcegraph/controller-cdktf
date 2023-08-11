@@ -228,7 +228,7 @@ func NewGoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig
 	j := jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

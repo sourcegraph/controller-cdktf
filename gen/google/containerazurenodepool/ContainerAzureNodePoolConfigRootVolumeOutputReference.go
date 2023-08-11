@@ -180,7 +180,7 @@ func NewContainerAzureNodePoolConfigRootVolumeOutputReference(terraformResource 
 	j := jsiiProxy_ContainerAzureNodePoolConfigRootVolumeOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigRootVolumeOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigRootVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewContainerAzureNodePoolConfigRootVolumeOutputReference_Override(c Contain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureNodePool.ContainerAzureNodePoolConfigRootVolumeOutputReference",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolConfigRootVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

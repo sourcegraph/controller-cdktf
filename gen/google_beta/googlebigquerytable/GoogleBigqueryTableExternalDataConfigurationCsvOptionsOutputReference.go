@@ -299,7 +299,7 @@ func NewGoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference(te
 	j := jsiiProxy_GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewGoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

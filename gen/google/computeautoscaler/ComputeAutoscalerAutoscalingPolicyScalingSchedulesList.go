@@ -116,7 +116,7 @@ func NewComputeAutoscalerAutoscalingPolicyScalingSchedulesList(terraformResource
 	j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyScalingSchedulesList{}
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesList",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeAutoscalerAutoscalingPolicyScalingSchedulesList_Override(c Comput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesList",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

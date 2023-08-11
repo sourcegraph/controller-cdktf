@@ -204,7 +204,7 @@ func NewGoogleGkeHubFeatureMembershipMeshOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipMeshOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipMeshOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleGkeHubFeatureMembershipMeshOutputReference_Override(g GoogleGkeHub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipMeshOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipMeshOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

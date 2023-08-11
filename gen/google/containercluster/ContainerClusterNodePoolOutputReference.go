@@ -490,7 +490,7 @@ func NewContainerClusterNodePoolOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ContainerClusterNodePoolOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -502,7 +502,7 @@ func NewContainerClusterNodePoolOutputReference_Override(c ContainerClusterNodeP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

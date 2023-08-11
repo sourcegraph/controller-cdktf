@@ -239,7 +239,7 @@ func NewComputeDiskSourceImageEncryptionKeyOutputReference(terraformResource cdk
 	j := jsiiProxy_ComputeDiskSourceImageEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeDisk.ComputeDiskSourceImageEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeDisk.ComputeDiskSourceImageEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewComputeDiskSourceImageEncryptionKeyOutputReference_Override(c ComputeDis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeDisk.ComputeDiskSourceImageEncryptionKeyOutputReference",
+		"@cdktf/provider-google.computeDisk.ComputeDiskSourceImageEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

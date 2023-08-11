@@ -366,7 +366,7 @@ func NewSshKey(scope constructs.Construct, id *string, config *SshKeyConfig) Ssh
 	j := jsiiProxy_SshKey{}
 
 	_jsii_.Create(
-		"tfe.sshKey.SshKey",
+		"@cdktf/provider-tfe.sshKey.SshKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewSshKey_Override(s SshKey, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.sshKey.SshKey",
+		"@cdktf/provider-tfe.sshKey.SshKey",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -523,7 +523,7 @@ func SshKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.sshKey.SshKey",
+		"@cdktf/provider-tfe.sshKey.SshKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func SshKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.sshKey.SshKey",
+		"@cdktf/provider-tfe.sshKey.SshKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func SshKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.sshKey.SshKey",
+		"@cdktf/provider-tfe.sshKey.SshKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func SshKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.sshKey.SshKey",
+		"@cdktf/provider-tfe.sshKey.SshKey",
 		"tfResourceType",
 		&returns,
 	)

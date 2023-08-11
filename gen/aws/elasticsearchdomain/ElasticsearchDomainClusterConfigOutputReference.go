@@ -420,7 +420,7 @@ func NewElasticsearchDomainClusterConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ElasticsearchDomainClusterConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainClusterConfigOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewElasticsearchDomainClusterConfigOutputReference_Override(e Elasticsearch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainClusterConfigOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

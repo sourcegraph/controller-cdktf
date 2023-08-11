@@ -180,7 +180,7 @@ func NewPersistentVolumeClaimTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PersistentVolumeClaimTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewPersistentVolumeClaimTimeoutsOutputReference_Override(p PersistentVolume
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecInitContainerResourcesList(terraformResource cdkt
 	j := jsiiProxy_DataKubernetesPodV1SpecInitContainerResourcesList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResourcesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecInitContainerResourcesList_Override(d DataKuberne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResourcesList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecInitContainerResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

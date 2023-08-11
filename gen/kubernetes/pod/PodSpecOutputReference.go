@@ -804,7 +804,7 @@ func NewPodSpecOutputReference(terraformResource cdktf.IInterpolatingParent, ter
 	j := jsiiProxy_PodSpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -816,7 +816,7 @@ func NewPodSpecOutputReference_Override(p PodSpecOutputReference, terraformResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

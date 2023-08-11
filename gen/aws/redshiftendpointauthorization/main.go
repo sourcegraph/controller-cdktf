@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
 		reflect.TypeOf((*RedshiftEndpointAuthorization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorizationConfig",
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorizationConfig",
 		reflect.TypeOf((*RedshiftEndpointAuthorizationConfig)(nil)).Elem(),
 	)
 }

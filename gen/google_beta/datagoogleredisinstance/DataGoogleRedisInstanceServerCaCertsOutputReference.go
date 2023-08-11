@@ -211,7 +211,7 @@ func NewDataGoogleRedisInstanceServerCaCertsOutputReference(terraformResource cd
 	j := jsiiProxy_DataGoogleRedisInstanceServerCaCertsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataGoogleRedisInstanceServerCaCertsOutputReference_Override(d DataGoogl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

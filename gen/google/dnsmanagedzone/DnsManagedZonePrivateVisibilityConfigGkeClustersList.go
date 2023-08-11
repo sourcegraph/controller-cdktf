@@ -116,7 +116,7 @@ func NewDnsManagedZonePrivateVisibilityConfigGkeClustersList(terraformResource c
 	j := jsiiProxy_DnsManagedZonePrivateVisibilityConfigGkeClustersList{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDnsManagedZonePrivateVisibilityConfigGkeClustersList_Override(d DnsManag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

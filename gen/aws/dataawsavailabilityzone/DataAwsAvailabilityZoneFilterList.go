@@ -116,7 +116,7 @@ func NewDataAwsAvailabilityZoneFilterList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataAwsAvailabilityZoneFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilterList",
+		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsAvailabilityZoneFilterList_Override(d DataAwsAvailabilityZoneFilt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilterList",
+		"@cdktf/provider-aws.dataAwsAvailabilityZone.DataAwsAvailabilityZoneFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

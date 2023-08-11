@@ -204,7 +204,7 @@ func NewGoogleComputeBackendServiceLogConfigOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleComputeBackendServiceLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeBackendServiceLogConfigOutputReference_Override(g GoogleCom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

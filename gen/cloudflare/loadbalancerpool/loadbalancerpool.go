@@ -627,7 +627,7 @@ func NewLoadBalancerPool(scope constructs.Construct, id *string, config *LoadBal
 	j := jsiiProxy_LoadBalancerPool{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerPool.LoadBalancerPool",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -640,7 +640,7 @@ func NewLoadBalancerPool_Override(l LoadBalancerPool, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerPool.LoadBalancerPool",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -861,7 +861,7 @@ func LoadBalancerPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.loadBalancerPool.LoadBalancerPool",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -880,7 +880,7 @@ func LoadBalancerPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.loadBalancerPool.LoadBalancerPool",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -899,7 +899,7 @@ func LoadBalancerPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.loadBalancerPool.LoadBalancerPool",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -912,7 +912,7 @@ func LoadBalancerPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.loadBalancerPool.LoadBalancerPool",
+		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		"tfResourceType",
 		&returns,
 	)

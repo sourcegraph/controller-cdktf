@@ -204,7 +204,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputRef
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

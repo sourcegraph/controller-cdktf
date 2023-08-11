@@ -116,7 +116,7 @@ func NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigur
 	j := jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList{}
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

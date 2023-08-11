@@ -116,7 +116,7 @@ func NewGoogleBigtableGcPolicyMaxVersionList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GoogleBigtableGcPolicyMaxVersionList{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionList",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleBigtableGcPolicyMaxVersionList_Override(g GoogleBigtableGcPolicyMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionList",
+		"@cdktf/provider-google-beta.googleBigtableGcPolicy.GoogleBigtableGcPolicyMaxVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

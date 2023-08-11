@@ -252,7 +252,7 @@ func NewGoogleContainerClusterTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleContainerClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleContainerClusterTimeoutsOutputReference_Override(g GoogleContainer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

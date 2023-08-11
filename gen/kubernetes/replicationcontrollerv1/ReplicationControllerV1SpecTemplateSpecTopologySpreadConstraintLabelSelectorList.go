@@ -116,7 +116,7 @@ func NewReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSele
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSele
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

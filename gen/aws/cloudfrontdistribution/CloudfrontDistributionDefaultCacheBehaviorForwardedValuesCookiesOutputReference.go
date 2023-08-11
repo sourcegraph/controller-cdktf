@@ -203,7 +203,7 @@ func NewCloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputRe
 	j := jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionDefaultCacheBehaviorForwardedValuesCookiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

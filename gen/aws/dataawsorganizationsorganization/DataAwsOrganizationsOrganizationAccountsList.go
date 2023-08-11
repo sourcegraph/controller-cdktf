@@ -104,7 +104,7 @@ func NewDataAwsOrganizationsOrganizationAccountsList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsOrganizationsOrganizationAccountsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationAccountsList",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationAccountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOrganizationsOrganizationAccountsList_Override(d DataAwsOrganizat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationAccountsList",
+		"@cdktf/provider-aws.dataAwsOrganizationsOrganization.DataAwsOrganizationsOrganizationAccountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

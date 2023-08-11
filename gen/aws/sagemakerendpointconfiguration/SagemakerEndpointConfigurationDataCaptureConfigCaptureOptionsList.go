@@ -116,7 +116,7 @@ func NewSagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList(terraf
 	j := jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigCaptureOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

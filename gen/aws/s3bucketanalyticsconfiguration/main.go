@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfiguration",
 		reflect.TypeOf((*S3BucketAnalyticsConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationConfig",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationConfig",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationFilter",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationFilter",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationFilterOutputReference",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationFilterOutputReference",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -113,19 +113,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysis",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysis",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationStorageClassAnalysis)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,11 +160,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestinationS3BucketDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketAccountId", GoGetter: "BucketAccountId"},
@@ -207,7 +207,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -245,7 +245,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference",
+		"@cdktf/provider-aws.s3BucketAnalyticsConfiguration.S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference",
 		reflect.TypeOf((*S3BucketAnalyticsConfigurationStorageClassAnalysisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

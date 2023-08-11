@@ -228,7 +228,7 @@ func NewStatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputRefere
 	j := jsiiProxy_StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerEnvValueFromSecretKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

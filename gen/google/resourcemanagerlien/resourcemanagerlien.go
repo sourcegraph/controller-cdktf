@@ -434,7 +434,7 @@ func NewResourceManagerLien(scope constructs.Construct, id *string, config *Reso
 	j := jsiiProxy_ResourceManagerLien{}
 
 	_jsii_.Create(
-		"google.resourceManagerLien.ResourceManagerLien",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLien",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,7 +447,7 @@ func NewResourceManagerLien_Override(r ResourceManagerLien, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.resourceManagerLien.ResourceManagerLien",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLien",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -602,7 +602,7 @@ func ResourceManagerLien_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.resourceManagerLien.ResourceManagerLien",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLien",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func ResourceManagerLien_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.resourceManagerLien.ResourceManagerLien",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLien",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func ResourceManagerLien_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.resourceManagerLien.ResourceManagerLien",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLien",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func ResourceManagerLien_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.resourceManagerLien.ResourceManagerLien",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLien",
 		"tfResourceType",
 		&returns,
 	)

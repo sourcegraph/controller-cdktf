@@ -228,7 +228,7 @@ func NewVertexAiFeaturestoreTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_VertexAiFeaturestoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreTimeoutsOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewVertexAiFeaturestoreTimeoutsOutputReference_Override(v VertexAiFeaturest
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreTimeoutsOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

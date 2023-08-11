@@ -250,7 +250,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference(t
 	j := jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

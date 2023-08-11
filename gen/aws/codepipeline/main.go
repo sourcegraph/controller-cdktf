@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codepipeline.Codepipeline",
+		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		reflect.TypeOf((*Codepipeline)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipeline.CodepipelineArtifactStore",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStore",
 		reflect.TypeOf((*CodepipelineArtifactStore)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipeline.CodepipelineArtifactStoreEncryptionKey",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKey",
 		reflect.TypeOf((*CodepipelineArtifactStoreEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipeline.CodepipelineArtifactStoreEncryptionKeyOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKeyOutputReference",
 		reflect.TypeOf((*CodepipelineArtifactStoreEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -116,7 +116,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipeline.CodepipelineArtifactStoreList",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreList",
 		reflect.TypeOf((*CodepipelineArtifactStoreList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -137,7 +137,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipeline.CodepipelineArtifactStoreOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreOutputReference",
 		reflect.TypeOf((*CodepipelineArtifactStoreOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -180,19 +180,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipeline.CodepipelineConfig",
+		"@cdktf/provider-aws.codepipeline.CodepipelineConfig",
 		reflect.TypeOf((*CodepipelineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipeline.CodepipelineStage",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStage",
 		reflect.TypeOf((*CodepipelineStage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipeline.CodepipelineStageAction",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStageAction",
 		reflect.TypeOf((*CodepipelineStageAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipeline.CodepipelineStageActionList",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStageActionList",
 		reflect.TypeOf((*CodepipelineStageActionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -213,7 +213,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipeline.CodepipelineStageActionOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStageActionOutputReference",
 		reflect.TypeOf((*CodepipelineStageActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "category", GoGetter: "Category"},
@@ -276,7 +276,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipeline.CodepipelineStageList",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStageList",
 		reflect.TypeOf((*CodepipelineStageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -297,7 +297,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipeline.CodepipelineStageOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineStageOutputReference",
 		reflect.TypeOf((*CodepipelineStageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},

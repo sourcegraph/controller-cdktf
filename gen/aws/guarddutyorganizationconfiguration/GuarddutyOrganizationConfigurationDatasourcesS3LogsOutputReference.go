@@ -179,7 +179,7 @@ func NewGuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference(terra
 	j := jsiiProxy_GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference",
+		"@cdktf/provider-aws.guarddutyOrganizationConfiguration.GuarddutyOrganizationConfigurationDatasourcesS3LogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

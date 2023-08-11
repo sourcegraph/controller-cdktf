@@ -179,7 +179,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesI
 	j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesInforNexusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

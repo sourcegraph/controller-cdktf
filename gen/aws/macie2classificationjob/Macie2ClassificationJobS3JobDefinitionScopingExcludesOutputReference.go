@@ -180,7 +180,7 @@ func NewMacie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference(ter
 	j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewMacie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionScopingExcludesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

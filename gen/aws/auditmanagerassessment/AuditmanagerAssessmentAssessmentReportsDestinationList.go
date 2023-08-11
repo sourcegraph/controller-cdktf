@@ -116,7 +116,7 @@ func NewAuditmanagerAssessmentAssessmentReportsDestinationList(terraformResource
 	j := jsiiProxy_AuditmanagerAssessmentAssessmentReportsDestinationList{}
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAuditmanagerAssessmentAssessmentReportsDestinationList_Override(a Auditm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationList",
+		"@cdktf/provider-aws.auditmanagerAssessment.AuditmanagerAssessmentAssessmentReportsDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

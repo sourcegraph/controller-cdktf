@@ -395,7 +395,7 @@ func NewCodebuildProjectArtifactsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CodebuildProjectArtifactsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectArtifactsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectArtifactsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -407,7 +407,7 @@ func NewCodebuildProjectArtifactsOutputReference_Override(c CodebuildProjectArti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectArtifactsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectArtifactsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

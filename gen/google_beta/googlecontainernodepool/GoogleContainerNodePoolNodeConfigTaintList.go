@@ -116,7 +116,7 @@ func NewGoogleContainerNodePoolNodeConfigTaintList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleContainerNodePoolNodeConfigTaintList{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigTaintList",
+		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigTaintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleContainerNodePoolNodeConfigTaintList_Override(g GoogleContainerNod
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigTaintList",
+		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigTaintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

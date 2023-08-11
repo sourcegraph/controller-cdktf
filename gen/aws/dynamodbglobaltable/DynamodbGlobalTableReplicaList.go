@@ -116,7 +116,7 @@ func NewDynamodbGlobalTableReplicaList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_DynamodbGlobalTableReplicaList{}
 
 	_jsii_.Create(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDynamodbGlobalTableReplicaList_Override(d DynamodbGlobalTableReplicaList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTableReplicaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

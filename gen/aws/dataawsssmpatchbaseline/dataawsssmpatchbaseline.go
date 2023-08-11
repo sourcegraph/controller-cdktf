@@ -473,7 +473,7 @@ func NewDataAwsSsmPatchBaseline(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsSsmPatchBaseline{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewDataAwsSsmPatchBaseline_Override(d DataAwsSsmPatchBaseline, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -619,7 +619,7 @@ func DataAwsSsmPatchBaseline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +638,7 @@ func DataAwsSsmPatchBaseline_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func DataAwsSsmPatchBaseline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func DataAwsSsmPatchBaseline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaseline",
 		"tfResourceType",
 		&returns,
 	)

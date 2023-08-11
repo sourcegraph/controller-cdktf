@@ -200,7 +200,7 @@ func NewVpcEndpointServicePrivateDnsNameConfigurationOutputReference(terraformRe
 	j := jsiiProxy_VpcEndpointServicePrivateDnsNameConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationOutputReference",
+		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewVpcEndpointServicePrivateDnsNameConfigurationOutputReference_Override(v 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationOutputReference",
+		"@cdktf/provider-aws.vpcEndpointService.VpcEndpointServicePrivateDnsNameConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)

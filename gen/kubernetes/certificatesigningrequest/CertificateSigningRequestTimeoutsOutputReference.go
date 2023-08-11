@@ -180,7 +180,7 @@ func NewCertificateSigningRequestTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_CertificateSigningRequestTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.certificateSigningRequest.CertificateSigningRequestTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCertificateSigningRequestTimeoutsOutputReference_Override(c CertificateS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.certificateSigningRequest.CertificateSigningRequestTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

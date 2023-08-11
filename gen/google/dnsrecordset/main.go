@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSet",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSet",
 		reflect.TypeOf((*DnsRecordSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,27 +74,27 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetConfig",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetConfig",
 		reflect.TypeOf((*DnsRecordSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicy",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicy",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyGeo",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyGeo",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyGeo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargets",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargets",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyGeoHealthCheckedTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -162,7 +162,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,7 +197,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoList",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyGeoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -218,7 +218,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyGeoOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyGeoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -259,7 +259,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -306,23 +306,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackup",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackup",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackup)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -343,7 +343,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -390,7 +390,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -425,7 +425,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -446,7 +446,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -487,7 +487,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupGeo", GoGetter: "BackupGeo"},
@@ -531,15 +531,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimary",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimary",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupPrimary)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -560,7 +560,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -607,7 +607,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -642,19 +642,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrr",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrr",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyWrr)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargets",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargets",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyWrrHealthCheckedTargets)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -675,7 +675,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -722,7 +722,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -757,7 +757,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrList",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyWrrList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -778,7 +778,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrOutputReference",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrOutputReference",
 		reflect.TypeOf((*DnsRecordSetRoutingPolicyWrrOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

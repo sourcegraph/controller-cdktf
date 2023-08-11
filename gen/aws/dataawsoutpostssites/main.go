@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsOutpostsSites.DataAwsOutpostsSites",
+		"@cdktf/provider-aws.dataAwsOutpostsSites.DataAwsOutpostsSites",
 		reflect.TypeOf((*DataAwsOutpostsSites)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -54,7 +54,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOutpostsSites.DataAwsOutpostsSitesConfig",
+		"@cdktf/provider-aws.dataAwsOutpostsSites.DataAwsOutpostsSitesConfig",
 		reflect.TypeOf((*DataAwsOutpostsSitesConfig)(nil)).Elem(),
 	)
 }

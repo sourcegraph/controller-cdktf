@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecVolumeDownwardApiItemsList(terraformResource cdktf.II
 	j := jsiiProxy_JobSpecTemplateSpecVolumeDownwardApiItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecVolumeDownwardApiItemsList_Override(j JobSpecTemplate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

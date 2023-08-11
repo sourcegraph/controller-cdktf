@@ -228,7 +228,7 @@ func NewGoogleServiceDirectoryServiceTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_GoogleServiceDirectoryServiceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleServiceDirectoryServiceTimeoutsOutputReference_Override(g GoogleSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleServiceDirectoryService.GoogleServiceDirectoryServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

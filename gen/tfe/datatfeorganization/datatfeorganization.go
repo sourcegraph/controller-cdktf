@@ -390,7 +390,7 @@ func NewDataTfeOrganization(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataTfeOrganization{}
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganization.DataTfeOrganization",
+		"@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewDataTfeOrganization_Override(d DataTfeOrganization, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganization.DataTfeOrganization",
+		"@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -503,7 +503,7 @@ func DataTfeOrganization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeOrganization.DataTfeOrganization",
+		"@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataTfeOrganization_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeOrganization.DataTfeOrganization",
+		"@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func DataTfeOrganization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeOrganization.DataTfeOrganization",
+		"@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func DataTfeOrganization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeOrganization.DataTfeOrganization",
+		"@cdktf/provider-tfe.dataTfeOrganization.DataTfeOrganization",
 		"tfResourceType",
 		&returns,
 	)

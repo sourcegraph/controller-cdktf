@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
 		reflect.TypeOf((*StoragegatewayFileSystemAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,11 +77,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributes",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributes",
 		reflect.TypeOf((*StoragegatewayFileSystemAssociationCacheAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributesOutputReference",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributesOutputReference",
 		reflect.TypeOf((*StoragegatewayFileSystemAssociationCacheAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSeconds", GoGetter: "CacheStaleTimeoutInSeconds"},
@@ -116,7 +116,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationConfig",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationConfig",
 		reflect.TypeOf((*StoragegatewayFileSystemAssociationConfig)(nil)).Elem(),
 	)
 }

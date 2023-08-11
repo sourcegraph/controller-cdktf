@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystem",
+		"@cdktf/provider-aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystem",
 		reflect.TypeOf((*DatasyncLocationFsxWindowsFileSystem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystemConfig",
+		"@cdktf/provider-aws.datasyncLocationFsxWindowsFileSystem.DatasyncLocationFsxWindowsFileSystemConfig",
 		reflect.TypeOf((*DatasyncLocationFsxWindowsFileSystemConfig)(nil)).Elem(),
 	)
 }

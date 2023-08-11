@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleIapWebIamBinding.GoogleIapWebIamBinding",
+		"@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBinding",
 		reflect.TypeOf((*GoogleIapWebIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,11 +67,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingCondition",
+		"@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingCondition",
 		reflect.TypeOf((*GoogleIapWebIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleIapWebIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig",
+		"@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig",
 		reflect.TypeOf((*GoogleIapWebIamBindingConfig)(nil)).Elem(),
 	)
 }

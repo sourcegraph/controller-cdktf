@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabasesDatabasesList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataGoogleSqlDatabasesDatabasesList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesList",
+		"@cdktf/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabasesDatabasesList_Override(d DataGoogleSqlDatabasesDat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesList",
+		"@cdktf/provider-google.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

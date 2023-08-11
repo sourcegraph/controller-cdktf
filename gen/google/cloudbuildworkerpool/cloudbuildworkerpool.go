@@ -541,7 +541,7 @@ func NewCloudbuildWorkerPool(scope constructs.Construct, id *string, config *Clo
 	j := jsiiProxy_CloudbuildWorkerPool{}
 
 	_jsii_.Create(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -554,7 +554,7 @@ func NewCloudbuildWorkerPool_Override(c CloudbuildWorkerPool, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -720,7 +720,7 @@ func CloudbuildWorkerPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func CloudbuildWorkerPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func CloudbuildWorkerPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func CloudbuildWorkerPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		"tfResourceType",
 		&returns,
 	)

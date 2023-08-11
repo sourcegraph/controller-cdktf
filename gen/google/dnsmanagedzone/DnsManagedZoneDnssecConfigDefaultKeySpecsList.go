@@ -116,7 +116,7 @@ func NewDnsManagedZoneDnssecConfigDefaultKeySpecsList(terraformResource cdktf.II
 	j := jsiiProxy_DnsManagedZoneDnssecConfigDefaultKeySpecsList{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDnsManagedZoneDnssecConfigDefaultKeySpecsList_Override(d DnsManagedZoneD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53HealthCheck.Route53HealthCheck",
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		reflect.TypeOf((*Route53HealthCheck)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -121,7 +121,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53HealthCheck.Route53HealthCheckConfig",
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheckConfig",
 		reflect.TypeOf((*Route53HealthCheckConfig)(nil)).Elem(),
 	)
 }

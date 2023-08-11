@@ -116,7 +116,7 @@ func NewCloudRunV2ServiceTemplateContainersPortsList(terraformResource cdktf.IIn
 	j := jsiiProxy_CloudRunV2ServiceTemplateContainersPortsList{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsList",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudRunV2ServiceTemplateContainersPortsList_Override(c CloudRunV2Servic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsList",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

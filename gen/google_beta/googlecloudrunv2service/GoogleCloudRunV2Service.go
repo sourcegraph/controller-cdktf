@@ -751,7 +751,7 @@ func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleCloudRunV2Service{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -764,7 +764,7 @@ func NewGoogleCloudRunV2Service_Override(g GoogleCloudRunV2Service, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -985,7 +985,7 @@ func GoogleCloudRunV2Service_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1004,7 +1004,7 @@ func GoogleCloudRunV2Service_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1023,7 +1023,7 @@ func GoogleCloudRunV2Service_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1036,7 +1036,7 @@ func GoogleCloudRunV2Service_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service",
 		"tfResourceType",
 		&returns,
 	)

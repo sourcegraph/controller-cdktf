@@ -116,7 +116,7 @@ func NewAccessGroupIncludeSamlList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_AccessGroupIncludeSamlList{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeSamlList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessGroupIncludeSamlList_Override(a AccessGroupIncludeSamlList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupIncludeSamlList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

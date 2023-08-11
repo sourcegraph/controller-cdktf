@@ -474,7 +474,7 @@ func NewDynamodbTableReplicaA(scope constructs.Construct, id *string, config *Dy
 	j := jsiiProxy_DynamodbTableReplicaA{}
 
 	_jsii_.Create(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaA",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewDynamodbTableReplicaA_Override(d DynamodbTableReplicaA, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaA",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -664,7 +664,7 @@ func DynamodbTableReplicaA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaA",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func DynamodbTableReplicaA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaA",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func DynamodbTableReplicaA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaA",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func DynamodbTableReplicaA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dynamodbTableReplica.DynamodbTableReplicaA",
+		"@cdktf/provider-aws.dynamodbTableReplica.DynamodbTableReplicaA",
 		"tfResourceType",
 		&returns,
 	)

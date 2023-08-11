@@ -249,7 +249,7 @@ func NewWafByteMatchSetByteMatchTuplesOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_WafByteMatchSetByteMatchTuplesOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesOutputReference",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewWafByteMatchSetByteMatchTuplesOutputReference_Override(w WafByteMatchSet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesOutputReference",
+		"@cdktf/provider-aws.wafByteMatchSet.WafByteMatchSetByteMatchTuplesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

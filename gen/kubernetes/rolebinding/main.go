@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.roleBinding.RoleBinding",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBinding",
 		reflect.TypeOf((*RoleBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.roleBinding.RoleBindingConfig",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingConfig",
 		reflect.TypeOf((*RoleBindingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.roleBinding.RoleBindingMetadata",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingMetadata",
 		reflect.TypeOf((*RoleBindingMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.roleBinding.RoleBindingMetadataOutputReference",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingMetadataOutputReference",
 		reflect.TypeOf((*RoleBindingMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -119,11 +119,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.roleBinding.RoleBindingRoleRef",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingRoleRef",
 		reflect.TypeOf((*RoleBindingRoleRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.roleBinding.RoleBindingRoleRefOutputReference",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingRoleRefOutputReference",
 		reflect.TypeOf((*RoleBindingRoleRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroup", GoGetter: "ApiGroup"},
@@ -161,11 +161,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.roleBinding.RoleBindingSubject",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingSubject",
 		reflect.TypeOf((*RoleBindingSubject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.roleBinding.RoleBindingSubjectList",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingSubjectList",
 		reflect.TypeOf((*RoleBindingSubjectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,7 +186,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.roleBinding.RoleBindingSubjectOutputReference",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingSubjectOutputReference",
 		reflect.TypeOf((*RoleBindingSubjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroup", GoGetter: "ApiGroup"},

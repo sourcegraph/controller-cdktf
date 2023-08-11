@@ -104,7 +104,7 @@ func NewDataAwsDirectoryServiceDirectoryConnectSettingsList(terraformResource cd
 	j := jsiiProxy_DataAwsDirectoryServiceDirectoryConnectSettingsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsList",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsDirectoryServiceDirectoryConnectSettingsList_Override(d DataAwsDi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsList",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

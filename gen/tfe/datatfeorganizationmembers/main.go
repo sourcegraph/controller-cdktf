@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembers",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembers",
 		reflect.TypeOf((*DataTfeOrganizationMembers)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,15 +58,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersConfig",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersConfig",
 		reflect.TypeOf((*DataTfeOrganizationMembersConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembers",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembers",
 		reflect.TypeOf((*DataTfeOrganizationMembersMembers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersList",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersList",
 		reflect.TypeOf((*DataTfeOrganizationMembersMembersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -86,7 +86,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersOutputReference",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersOutputReference",
 		reflect.TypeOf((*DataTfeOrganizationMembersMembersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,11 +120,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaiting",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaiting",
 		reflect.TypeOf((*DataTfeOrganizationMembersMembersWaiting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingList",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingList",
 		reflect.TypeOf((*DataTfeOrganizationMembersMembersWaitingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,7 +144,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingOutputReference",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersWaitingOutputReference",
 		reflect.TypeOf((*DataTfeOrganizationMembersMembersWaitingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

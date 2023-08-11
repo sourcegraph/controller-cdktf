@@ -116,7 +116,7 @@ func NewAccessContextManagerAccessLevelBasicConditionsList(terraformResource cdk
 	j := jsiiProxy_AccessContextManagerAccessLevelBasicConditionsList{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsList",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessContextManagerAccessLevelBasicConditionsList_Override(a AccessCont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsList",
+		"@cdktf/provider-google.accessContextManagerAccessLevel.AccessContextManagerAccessLevelBasicConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

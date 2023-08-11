@@ -180,7 +180,7 @@ func NewDbSnapshotTimeoutsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DbSnapshotTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbSnapshot.DbSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbSnapshot.DbSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDbSnapshotTimeoutsOutputReference_Override(d DbSnapshotTimeoutsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbSnapshot.DbSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbSnapshot.DbSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

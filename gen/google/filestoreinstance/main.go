@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.filestoreInstance.FilestoreInstance",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstance",
 		reflect.TypeOf((*FilestoreInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,19 +89,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.filestoreInstance.FilestoreInstanceConfig",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceConfig",
 		reflect.TypeOf((*FilestoreInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.filestoreInstance.FilestoreInstanceFileShares",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileShares",
 		reflect.TypeOf((*FilestoreInstanceFileShares)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions",
 		reflect.TypeOf((*FilestoreInstanceFileSharesNfsExportOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsList",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsList",
 		reflect.TypeOf((*FilestoreInstanceFileSharesNfsExportOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -122,7 +122,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference",
 		reflect.TypeOf((*FilestoreInstanceFileSharesNfsExportOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessMode", GoGetter: "AccessMode"},
@@ -169,7 +169,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.filestoreInstance.FilestoreInstanceFileSharesOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference",
 		reflect.TypeOf((*FilestoreInstanceFileSharesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityGb", GoGetter: "CapacityGb"},
@@ -210,11 +210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.filestoreInstance.FilestoreInstanceNetworks",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworks",
 		reflect.TypeOf((*FilestoreInstanceNetworks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.filestoreInstance.FilestoreInstanceNetworksList",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksList",
 		reflect.TypeOf((*FilestoreInstanceNetworksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -235,7 +235,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.filestoreInstance.FilestoreInstanceNetworksOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference",
 		reflect.TypeOf((*FilestoreInstanceNetworksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -278,11 +278,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.filestoreInstance.FilestoreInstanceTimeouts",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceTimeouts",
 		reflect.TypeOf((*FilestoreInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.filestoreInstance.FilestoreInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*FilestoreInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

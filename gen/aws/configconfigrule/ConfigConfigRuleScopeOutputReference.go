@@ -252,7 +252,7 @@ func NewConfigConfigRuleScopeOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ConfigConfigRuleScopeOutputReference{}
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRuleScopeOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewConfigConfigRuleScopeOutputReference_Override(c ConfigConfigRuleScopeOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRuleScopeOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -496,7 +496,7 @@ func NewGameServicesGameServerCluster(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GameServicesGameServerCluster{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerCluster.GameServicesGameServerCluster",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewGameServicesGameServerCluster_Override(g GameServicesGameServerCluster, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerCluster.GameServicesGameServerCluster",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -686,7 +686,7 @@ func GameServicesGameServerCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerCluster.GameServicesGameServerCluster",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func GameServicesGameServerCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerCluster.GameServicesGameServerCluster",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func GameServicesGameServerCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerCluster.GameServicesGameServerCluster",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func GameServicesGameServerCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gameServicesGameServerCluster.GameServicesGameServerCluster",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerCluster",
 		"tfResourceType",
 		&returns,
 	)

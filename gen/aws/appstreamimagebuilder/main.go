@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appstreamImageBuilder.AppstreamImageBuilder",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		reflect.TypeOf((*AppstreamImageBuilder)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessEndpoint", GoGetter: "AccessEndpoint"},
@@ -101,11 +101,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpoint",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpoint",
 		reflect.TypeOf((*AppstreamImageBuilderAccessEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointList",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointList",
 		reflect.TypeOf((*AppstreamImageBuilderAccessEndpointList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -126,7 +126,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointOutputReference",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointOutputReference",
 		reflect.TypeOf((*AppstreamImageBuilderAccessEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -163,15 +163,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderConfig",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderConfig",
 		reflect.TypeOf((*AppstreamImageBuilderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfo",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfo",
 		reflect.TypeOf((*AppstreamImageBuilderDomainJoinInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfoOutputReference",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfoOutputReference",
 		reflect.TypeOf((*AppstreamImageBuilderDomainJoinInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -209,11 +209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderVpcConfig",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderVpcConfig",
 		reflect.TypeOf((*AppstreamImageBuilderVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderVpcConfigOutputReference",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderVpcConfigOutputReference",
 		reflect.TypeOf((*AppstreamImageBuilderVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

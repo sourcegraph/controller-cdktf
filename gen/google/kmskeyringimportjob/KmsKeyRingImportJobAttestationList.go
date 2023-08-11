@@ -104,7 +104,7 @@ func NewKmsKeyRingImportJobAttestationList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_KmsKeyRingImportJobAttestationList{}
 
 	_jsii_.Create(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJobAttestationList",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobAttestationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewKmsKeyRingImportJobAttestationList_Override(k KmsKeyRingImportJobAttesta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsKeyRingImportJob.KmsKeyRingImportJobAttestationList",
+		"@cdktf/provider-google.kmsKeyRingImportJob.KmsKeyRingImportJobAttestationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

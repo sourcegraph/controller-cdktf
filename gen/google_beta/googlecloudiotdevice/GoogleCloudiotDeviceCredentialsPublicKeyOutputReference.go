@@ -202,7 +202,7 @@ func NewGoogleCloudiotDeviceCredentialsPublicKeyOutputReference(terraformResourc
 	j := jsiiProxy_GoogleCloudiotDeviceCredentialsPublicKeyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKeyOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleCloudiotDeviceCredentialsPublicKeyOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKeyOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

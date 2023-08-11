@@ -202,7 +202,7 @@ func NewDataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference(terraform
 	j := jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayPeeringAttachment.DataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayPeeringAttachment.DataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayPeeringAttachment.DataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayPeeringAttachment.DataAwsEc2TransitGatewayPeeringAttachmentFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

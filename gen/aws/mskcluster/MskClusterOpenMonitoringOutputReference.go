@@ -179,7 +179,7 @@ func NewMskClusterOpenMonitoringOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_MskClusterOpenMonitoringOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterOpenMonitoringOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewMskClusterOpenMonitoringOutputReference_Override(m MskClusterOpenMonitor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterOpenMonitoringOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterOpenMonitoringOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

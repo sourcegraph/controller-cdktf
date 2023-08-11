@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.placementGroup.PlacementGroup",
+		"@cdktf/provider-aws.placementGroup.PlacementGroup",
 		reflect.TypeOf((*PlacementGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.placementGroup.PlacementGroupConfig",
+		"@cdktf/provider-aws.placementGroup.PlacementGroupConfig",
 		reflect.TypeOf((*PlacementGroupConfig)(nil)).Elem(),
 	)
 }

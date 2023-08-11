@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
 		reflect.TypeOf((*GoogleCloudiotDevice)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig",
 		reflect.TypeOf((*GoogleCloudiotDeviceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigA",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigA",
 		reflect.TypeOf((*GoogleCloudiotDeviceConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigAList",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigAList",
 		reflect.TypeOf((*GoogleCloudiotDeviceConfigAList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -118,7 +118,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigAOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigAOutputReference",
 		reflect.TypeOf((*GoogleCloudiotDeviceConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "binaryData", GoGetter: "BinaryData"},
@@ -154,11 +154,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentials",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentials",
 		reflect.TypeOf((*GoogleCloudiotDeviceCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsList",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsList",
 		reflect.TypeOf((*GoogleCloudiotDeviceCredentialsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -179,7 +179,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsOutputReference",
 		reflect.TypeOf((*GoogleCloudiotDeviceCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -217,11 +217,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKey",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKey",
 		reflect.TypeOf((*GoogleCloudiotDeviceCredentialsPublicKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKeyOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKeyOutputReference",
 		reflect.TypeOf((*GoogleCloudiotDeviceCredentialsPublicKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,11 +257,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfig",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfig",
 		reflect.TypeOf((*GoogleCloudiotDeviceGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfigOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfigOutputReference",
 		reflect.TypeOf((*GoogleCloudiotDeviceGatewayConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -301,11 +301,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatus",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatus",
 		reflect.TypeOf((*GoogleCloudiotDeviceLastErrorStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusList",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusList",
 		reflect.TypeOf((*GoogleCloudiotDeviceLastErrorStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -325,7 +325,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusOutputReference",
 		reflect.TypeOf((*GoogleCloudiotDeviceLastErrorStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -360,11 +360,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceState",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceState",
 		reflect.TypeOf((*GoogleCloudiotDeviceState)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateList",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateList",
 		reflect.TypeOf((*GoogleCloudiotDeviceStateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -384,7 +384,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateOutputReference",
 		reflect.TypeOf((*GoogleCloudiotDeviceStateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "binaryData", GoGetter: "BinaryData"},
@@ -418,11 +418,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts",
 		reflect.TypeOf((*GoogleCloudiotDeviceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleCloudiotDeviceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

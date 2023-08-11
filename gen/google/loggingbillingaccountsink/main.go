@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSink",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink",
 		reflect.TypeOf((*LoggingBillingAccountSink)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,11 +79,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptions",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptions",
 		reflect.TypeOf((*LoggingBillingAccountSinkBigqueryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkBigqueryOptionsOutputReference",
 		reflect.TypeOf((*LoggingBillingAccountSinkBigqueryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -117,15 +117,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig",
 		reflect.TypeOf((*LoggingBillingAccountSinkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusions",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusions",
 		reflect.TypeOf((*LoggingBillingAccountSinkExclusions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsList",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsList",
 		reflect.TypeOf((*LoggingBillingAccountSinkExclusionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsOutputReference",
+		"@cdktf/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusionsOutputReference",
 		reflect.TypeOf((*LoggingBillingAccountSinkExclusionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

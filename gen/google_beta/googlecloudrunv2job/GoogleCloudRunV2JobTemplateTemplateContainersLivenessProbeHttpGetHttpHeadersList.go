@@ -116,7 +116,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHea
 	j := jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHea
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersLivenessProbeHttpGetHttpHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

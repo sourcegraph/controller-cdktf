@@ -239,7 +239,7 @@ func NewAppAutoLoginUsersOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_AppAutoLoginUsersOutputReference{}
 
 	_jsii_.Create(
-		"okta.appAutoLogin.AppAutoLoginUsersOutputReference",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewAppAutoLoginUsersOutputReference_Override(a AppAutoLoginUsersOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appAutoLogin.AppAutoLoginUsersOutputReference",
+		"@cdktf/provider-okta.appAutoLogin.AppAutoLoginUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

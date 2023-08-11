@@ -556,7 +556,7 @@ func NewGoogleComputeOrganizationSecurityPolicyRule(scope constructs.Construct, 
 	j := jsiiProxy_GoogleComputeOrganizationSecurityPolicyRule{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -569,7 +569,7 @@ func NewGoogleComputeOrganizationSecurityPolicyRule_Override(g GoogleComputeOrga
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -779,7 +779,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_IsConstruct(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -798,7 +798,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_IsTerraformElement(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -817,7 +817,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_IsTerraformResource(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -830,7 +830,7 @@ func GoogleComputeOrganizationSecurityPolicyRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRule",
 		"tfResourceType",
 		&returns,
 	)

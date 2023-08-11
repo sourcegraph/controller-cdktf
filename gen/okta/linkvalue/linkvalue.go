@@ -366,7 +366,7 @@ func NewLinkValue(scope constructs.Construct, id *string, config *LinkValueConfi
 	j := jsiiProxy_LinkValue{}
 
 	_jsii_.Create(
-		"okta.linkValue.LinkValue",
+		"@cdktf/provider-okta.linkValue.LinkValue",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewLinkValue_Override(l LinkValue, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.linkValue.LinkValue",
+		"@cdktf/provider-okta.linkValue.LinkValue",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -523,7 +523,7 @@ func LinkValue_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.linkValue.LinkValue",
+		"@cdktf/provider-okta.linkValue.LinkValue",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func LinkValue_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.linkValue.LinkValue",
+		"@cdktf/provider-okta.linkValue.LinkValue",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func LinkValue_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.linkValue.LinkValue",
+		"@cdktf/provider-okta.linkValue.LinkValue",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func LinkValue_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.linkValue.LinkValue",
+		"@cdktf/provider-okta.linkValue.LinkValue",
 		"tfResourceType",
 		&returns,
 	)

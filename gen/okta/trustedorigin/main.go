@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.trustedOrigin.TrustedOrigin",
+		"@cdktf/provider-okta.trustedOrigin.TrustedOrigin",
 		reflect.TypeOf((*TrustedOrigin)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.trustedOrigin.TrustedOriginConfig",
+		"@cdktf/provider-okta.trustedOrigin.TrustedOriginConfig",
 		reflect.TypeOf((*TrustedOriginConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitment",
 		reflect.TypeOf((*GoogleComputeRegionCommitment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,15 +96,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentConfig",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentConfig",
 		reflect.TypeOf((*GoogleComputeRegionCommitmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentLicenseResource",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentLicenseResource",
 		reflect.TypeOf((*GoogleComputeRegionCommitmentLicenseResource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentLicenseResourceOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentLicenseResourceOutputReference",
 		reflect.TypeOf((*GoogleComputeRegionCommitmentLicenseResourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amount", GoGetter: "Amount"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResources",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResources",
 		reflect.TypeOf((*GoogleComputeRegionCommitmentResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesList",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesList",
 		reflect.TypeOf((*GoogleComputeRegionCommitmentResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -169,7 +169,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesOutputReference",
 		reflect.TypeOf((*GoogleComputeRegionCommitmentResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
@@ -210,11 +210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentTimeouts",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentTimeouts",
 		reflect.TypeOf((*GoogleComputeRegionCommitmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeRegionCommitmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

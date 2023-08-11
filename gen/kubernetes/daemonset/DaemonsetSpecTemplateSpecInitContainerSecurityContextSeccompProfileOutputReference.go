@@ -204,7 +204,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutpu
 	j := jsiiProxy_DaemonsetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonsetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecInitContainerSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

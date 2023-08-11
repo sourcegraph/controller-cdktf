@@ -226,7 +226,7 @@ func NewLexIntentFollowUpPromptPromptMessageOutputReference(terraformResource cd
 	j := jsiiProxy_LexIntentFollowUpPromptPromptMessageOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewLexIntentFollowUpPromptPromptMessageOutputReference_Override(l LexIntent
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptPromptMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

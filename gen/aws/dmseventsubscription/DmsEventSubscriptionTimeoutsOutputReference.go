@@ -228,7 +228,7 @@ func NewDmsEventSubscriptionTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DmsEventSubscriptionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsEventSubscription.DmsEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDmsEventSubscriptionTimeoutsOutputReference_Override(d DmsEventSubscript
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEventSubscription.DmsEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsEventSubscription.DmsEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

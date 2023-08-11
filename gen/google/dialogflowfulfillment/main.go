@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowFulfillment.DialogflowFulfillment",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillment",
 		reflect.TypeOf((*DialogflowFulfillment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowFulfillment.DialogflowFulfillmentConfig",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentConfig",
 		reflect.TypeOf((*DialogflowFulfillmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowFulfillment.DialogflowFulfillmentFeatures",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeatures",
 		reflect.TypeOf((*DialogflowFulfillmentFeatures)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowFulfillment.DialogflowFulfillmentFeaturesList",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeaturesList",
 		reflect.TypeOf((*DialogflowFulfillmentFeaturesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowFulfillment.DialogflowFulfillmentFeaturesOutputReference",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentFeaturesOutputReference",
 		reflect.TypeOf((*DialogflowFulfillmentFeaturesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,11 +139,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowFulfillment.DialogflowFulfillmentGenericWebService",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentGenericWebService",
 		reflect.TypeOf((*DialogflowFulfillmentGenericWebService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowFulfillment.DialogflowFulfillmentGenericWebServiceOutputReference",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentGenericWebServiceOutputReference",
 		reflect.TypeOf((*DialogflowFulfillmentGenericWebServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -186,11 +186,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowFulfillment.DialogflowFulfillmentTimeouts",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeouts",
 		reflect.TypeOf((*DialogflowFulfillmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowFulfillment.DialogflowFulfillmentTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowFulfillment.DialogflowFulfillmentTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowFulfillmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

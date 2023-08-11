@@ -189,7 +189,7 @@ func NewDataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference
 	j := jsiiProxy_DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

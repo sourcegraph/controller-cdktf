@@ -104,7 +104,7 @@ func NewCloudhsmV2ClusterClusterCertificatesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudhsmV2ClusterClusterCertificatesList{}
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesList",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCloudhsmV2ClusterClusterCertificatesList_Override(c CloudhsmV2ClusterClu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesList",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

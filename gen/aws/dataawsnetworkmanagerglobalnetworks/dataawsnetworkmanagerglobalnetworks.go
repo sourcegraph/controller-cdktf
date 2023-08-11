@@ -303,7 +303,7 @@ func NewDataAwsNetworkmanagerGlobalNetworks(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataAwsNetworkmanagerGlobalNetworks{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsNetworkmanagerGlobalNetworks_Override(d DataAwsNetworkmanagerGlob
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataAwsNetworkmanagerGlobalNetworks_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataAwsNetworkmanagerGlobalNetworks_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsNetworkmanagerGlobalNetworks_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsNetworkmanagerGlobalNetworks_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerGlobalNetworks.DataAwsNetworkmanagerGlobalNetworks",
 		"tfResourceType",
 		&returns,
 	)

@@ -276,7 +276,7 @@ func NewGoogleIamDenyPolicyRulesDenyRuleOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleIamDenyPolicyRulesDenyRuleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleOutputReference",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewGoogleIamDenyPolicyRulesDenyRuleOutputReference_Override(g GoogleIamDeny
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleOutputReference",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

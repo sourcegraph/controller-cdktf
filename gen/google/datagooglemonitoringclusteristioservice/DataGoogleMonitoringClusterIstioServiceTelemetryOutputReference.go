@@ -167,7 +167,7 @@ func NewDataGoogleMonitoringClusterIstioServiceTelemetryOutputReference(terrafor
 	j := jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference",
+		"@cdktf/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleMonitoringClusterIstioServiceTelemetryOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference",
+		"@cdktf/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

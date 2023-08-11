@@ -338,7 +338,7 @@ func NewDataGoogleKmsKeyRing(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataGoogleKmsKeyRing{}
 
 	_jsii_.Create(
-		"google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
+		"@cdktf/provider-google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,7 +351,7 @@ func NewDataGoogleKmsKeyRing_Override(d DataGoogleKmsKeyRing, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
+		"@cdktf/provider-google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -473,7 +473,7 @@ func DataGoogleKmsKeyRing_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
+		"@cdktf/provider-google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func DataGoogleKmsKeyRing_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
+		"@cdktf/provider-google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataGoogleKmsKeyRing_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
+		"@cdktf/provider-google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataGoogleKmsKeyRing_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
+		"@cdktf/provider-google.dataGoogleKmsKeyRing.DataGoogleKmsKeyRing",
 		"tfResourceType",
 		&returns,
 	)

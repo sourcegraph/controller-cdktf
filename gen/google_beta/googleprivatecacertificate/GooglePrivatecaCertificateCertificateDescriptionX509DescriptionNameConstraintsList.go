@@ -104,7 +104,7 @@ func NewGooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConst
 	j := jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -104,7 +104,7 @@ func NewDataGooglePubsubSubscriptionDeadLetterPolicyList(terraformResource cdktf
 	j := jsiiProxy_DataGooglePubsubSubscriptionDeadLetterPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePubsubSubscriptionDeadLetterPolicyList_Override(d DataGooglePu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyList",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

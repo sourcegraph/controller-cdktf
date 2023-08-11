@@ -335,7 +335,7 @@ func NewDataAwsMskconnectCustomPlugin(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsMskconnectCustomPlugin{}
 
 	_jsii_.Create(
-		"aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
+		"@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -348,7 +348,7 @@ func NewDataAwsMskconnectCustomPlugin_Override(d DataAwsMskconnectCustomPlugin, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
+		"@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -448,7 +448,7 @@ func DataAwsMskconnectCustomPlugin_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
+		"@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsMskconnectCustomPlugin_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
+		"@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -486,7 +486,7 @@ func DataAwsMskconnectCustomPlugin_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
+		"@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataAwsMskconnectCustomPlugin_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
+		"@cdktf/provider-aws.dataAwsMskconnectCustomPlugin.DataAwsMskconnectCustomPlugin",
 		"tfResourceType",
 		&returns,
 	)

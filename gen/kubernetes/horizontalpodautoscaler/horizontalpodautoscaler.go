@@ -342,7 +342,7 @@ func NewHorizontalPodAutoscaler(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_HorizontalPodAutoscaler{}
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewHorizontalPodAutoscaler_Override(h HorizontalPodAutoscaler, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -466,7 +466,7 @@ func HorizontalPodAutoscaler_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func HorizontalPodAutoscaler_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func HorizontalPodAutoscaler_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func HorizontalPodAutoscaler_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscaler.HorizontalPodAutoscaler",
 		"tfResourceType",
 		&returns,
 	)

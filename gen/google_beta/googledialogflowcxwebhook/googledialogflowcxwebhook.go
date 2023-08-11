@@ -557,7 +557,7 @@ func NewGoogleDialogflowCxWebhook(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleDialogflowCxWebhook{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -570,7 +570,7 @@ func NewGoogleDialogflowCxWebhook_Override(g GoogleDialogflowCxWebhook, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -758,7 +758,7 @@ func GoogleDialogflowCxWebhook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -777,7 +777,7 @@ func GoogleDialogflowCxWebhook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func GoogleDialogflowCxWebhook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func GoogleDialogflowCxWebhook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
+		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhook",
 		"tfResourceType",
 		&returns,
 	)

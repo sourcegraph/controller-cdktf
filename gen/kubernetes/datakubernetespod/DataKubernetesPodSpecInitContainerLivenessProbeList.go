@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecInitContainerLivenessProbeList(terraformResource cd
 	j := jsiiProxy_DataKubernetesPodSpecInitContainerLivenessProbeList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLivenessProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLivenessProbeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecInitContainerLivenessProbeList_Override(d DataKuber
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLivenessProbeList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLivenessProbeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

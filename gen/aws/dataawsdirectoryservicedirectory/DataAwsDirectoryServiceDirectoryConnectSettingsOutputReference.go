@@ -222,7 +222,7 @@ func NewDataAwsDirectoryServiceDirectoryConnectSettingsOutputReference(terraform
 	j := jsiiProxy_DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewDataAwsDirectoryServiceDirectoryConnectSettingsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryConnectSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

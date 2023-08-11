@@ -116,7 +116,7 @@ func NewWafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList(terra
 	j := jsiiProxy_Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionCountCustomRequestHandlingInsertHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

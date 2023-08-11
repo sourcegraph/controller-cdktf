@@ -178,7 +178,7 @@ func NewDataGooglePubsubTopicSchemaSettingsOutputReference(terraformResource cdk
 	j := jsiiProxy_DataGooglePubsubTopicSchemaSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGooglePubsubTopicSchemaSettingsOutputReference_Override(d DataGoogle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicSchemaSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

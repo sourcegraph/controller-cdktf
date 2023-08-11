@@ -494,7 +494,7 @@ func NewGoogleCloudbuildv2Repository(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleCloudbuildv2Repository{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewGoogleCloudbuildv2Repository_Override(g GoogleCloudbuildv2Repository, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -684,7 +684,7 @@ func GoogleCloudbuildv2Repository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func GoogleCloudbuildv2Repository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func GoogleCloudbuildv2Repository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func GoogleCloudbuildv2Repository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository",
 		"tfResourceType",
 		&returns,
 	)

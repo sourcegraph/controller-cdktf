@@ -458,7 +458,7 @@ func NewDataGooglePubsubSubscription(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataGooglePubsubSubscription{}
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewDataGooglePubsubSubscription_Override(d DataGooglePubsubSubscription, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -582,7 +582,7 @@ func DataGooglePubsubSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DataGooglePubsubSubscription_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataGooglePubsubSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func DataGooglePubsubSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
+		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscription",
 		"tfResourceType",
 		&returns,
 	)

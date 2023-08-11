@@ -228,7 +228,7 @@ func NewIamAccessBoundaryPolicyTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_IamAccessBoundaryPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIamAccessBoundaryPolicyTimeoutsOutputReference_Override(i IamAccessBound
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

@@ -302,7 +302,7 @@ func NewDataGoogleCloudIdentityGroupMemberships(scope constructs.Construct, id *
 	j := jsiiProxy_DataGoogleCloudIdentityGroupMemberships{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
+		"@cdktf/provider-google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataGoogleCloudIdentityGroupMemberships_Override(d DataGoogleCloudIdenti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
+		"@cdktf/provider-google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataGoogleCloudIdentityGroupMemberships_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
+		"@cdktf/provider-google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataGoogleCloudIdentityGroupMemberships_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
+		"@cdktf/provider-google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataGoogleCloudIdentityGroupMemberships_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
+		"@cdktf/provider-google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataGoogleCloudIdentityGroupMemberships_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
+		"@cdktf/provider-google.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMemberships",
 		"tfResourceType",
 		&returns,
 	)

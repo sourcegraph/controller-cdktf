@@ -104,7 +104,7 @@ func NewEksClusterCertificateAuthorityList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_EksClusterCertificateAuthorityList{}
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterCertificateAuthorityList",
+		"@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEksClusterCertificateAuthorityList_Override(e EksClusterCertificateAutho
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterCertificateAuthorityList",
+		"@cdktf/provider-aws.eksCluster.EksClusterCertificateAuthorityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

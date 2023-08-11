@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList(terraformR
 	j := jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorCountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

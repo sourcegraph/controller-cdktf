@@ -434,7 +434,7 @@ func NewSecretManagerSecretVersion(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_SecretManagerSecretVersion{}
 
 	_jsii_.Create(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersion",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,7 +447,7 @@ func NewSecretManagerSecretVersion_Override(s SecretManagerSecretVersion, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersion",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -591,7 +591,7 @@ func SecretManagerSecretVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersion",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func SecretManagerSecretVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersion",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func SecretManagerSecretVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersion",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func SecretManagerSecretVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersion",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersion",
 		"tfResourceType",
 		&returns,
 	)

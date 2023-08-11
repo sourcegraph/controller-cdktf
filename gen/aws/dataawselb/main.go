@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsElb.DataAwsElb",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElb",
 		reflect.TypeOf((*DataAwsElb)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogs", GoGetter: "AccessLogs"},
@@ -76,11 +76,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsElb.DataAwsElbAccessLogs",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbAccessLogs",
 		reflect.TypeOf((*DataAwsElbAccessLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElb.DataAwsElbAccessLogsList",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbAccessLogsList",
 		reflect.TypeOf((*DataAwsElbAccessLogsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElb.DataAwsElbAccessLogsOutputReference",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbAccessLogsOutputReference",
 		reflect.TypeOf((*DataAwsElbAccessLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -136,15 +136,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsElb.DataAwsElbConfig",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbConfig",
 		reflect.TypeOf((*DataAwsElbConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsElb.DataAwsElbHealthCheck",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbHealthCheck",
 		reflect.TypeOf((*DataAwsElbHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElb.DataAwsElbHealthCheckList",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbHealthCheckList",
 		reflect.TypeOf((*DataAwsElbHealthCheckList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -164,7 +164,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElb.DataAwsElbHealthCheckOutputReference",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbHealthCheckOutputReference",
 		reflect.TypeOf((*DataAwsElbHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -201,11 +201,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsElb.DataAwsElbListener",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbListener",
 		reflect.TypeOf((*DataAwsElbListener)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElb.DataAwsElbListenerList",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbListenerList",
 		reflect.TypeOf((*DataAwsElbListenerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -225,7 +225,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsElb.DataAwsElbListenerOutputReference",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbListenerOutputReference",
 		reflect.TypeOf((*DataAwsElbListenerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

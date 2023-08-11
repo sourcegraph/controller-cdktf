@@ -400,7 +400,7 @@ func NewGoogleServiceDirectoryNamespaceIamMember(scope constructs.Construct, id 
 	j := jsiiProxy_GoogleServiceDirectoryNamespaceIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleServiceDirectoryNamespaceIamMember_Override(g GoogleServiceDirecto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleServiceDirectoryNamespaceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleServiceDirectoryNamespaceIamMember_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleServiceDirectoryNamespaceIamMember_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleServiceDirectoryNamespaceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember",
 		"tfResourceType",
 		&returns,
 	)

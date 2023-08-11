@@ -189,7 +189,7 @@ func NewDataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateCo
 	j := jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionLaunchTemplateConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

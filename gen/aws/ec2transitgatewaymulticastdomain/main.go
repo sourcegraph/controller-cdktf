@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomain",
 		reflect.TypeOf((*Ec2TransitGatewayMulticastDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomainConfig",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomainConfig",
 		reflect.TypeOf((*Ec2TransitGatewayMulticastDomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomainTimeouts",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomainTimeouts",
 		reflect.TypeOf((*Ec2TransitGatewayMulticastDomainTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomainTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomain.Ec2TransitGatewayMulticastDomainTimeoutsOutputReference",
 		reflect.TypeOf((*Ec2TransitGatewayMulticastDomainTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

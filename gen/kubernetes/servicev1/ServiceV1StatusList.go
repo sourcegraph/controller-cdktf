@@ -104,7 +104,7 @@ func NewServiceV1StatusList(terraformResource cdktf.IInterpolatingParent, terraf
 	j := jsiiProxy_ServiceV1StatusList{}
 
 	_jsii_.Create(
-		"kubernetes.serviceV1.ServiceV1StatusList",
+		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewServiceV1StatusList_Override(s ServiceV1StatusList, terraformResource cd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.serviceV1.ServiceV1StatusList",
+		"@cdktf/provider-kubernetes.serviceV1.ServiceV1StatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

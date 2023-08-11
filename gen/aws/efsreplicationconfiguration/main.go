@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.efsReplicationConfiguration.EfsReplicationConfiguration",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfiguration",
 		reflect.TypeOf((*EfsReplicationConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,15 +68,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsReplicationConfiguration.EfsReplicationConfigurationConfig",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationConfig",
 		reflect.TypeOf((*EfsReplicationConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsReplicationConfiguration.EfsReplicationConfigurationDestination",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestination",
 		reflect.TypeOf((*EfsReplicationConfigurationDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationDestinationOutputReference",
 		reflect.TypeOf((*EfsReplicationConfigurationDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneName", GoGetter: "AvailabilityZoneName"},
@@ -119,11 +119,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeouts",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeouts",
 		reflect.TypeOf((*EfsReplicationConfigurationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.efsReplicationConfiguration.EfsReplicationConfigurationTimeoutsOutputReference",
 		reflect.TypeOf((*EfsReplicationConfigurationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -248,7 +248,7 @@ func NewStorageTransferJobScheduleStartTimeOfDayOutputReference(terraformResourc
 	j := jsiiProxy_StorageTransferJobScheduleStartTimeOfDayOutputReference{}
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDayOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,7 +260,7 @@ func NewStorageTransferJobScheduleStartTimeOfDayOutputReference_Override(s Stora
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDayOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

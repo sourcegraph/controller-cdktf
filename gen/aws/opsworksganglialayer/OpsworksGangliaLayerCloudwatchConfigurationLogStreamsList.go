@@ -116,7 +116,7 @@ func NewOpsworksGangliaLayerCloudwatchConfigurationLogStreamsList(terraformResou
 	j := jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList{}
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksGangliaLayerCloudwatchConfigurationLogStreamsList_Override(o Ops
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksGangliaLayer.OpsworksGangliaLayerCloudwatchConfigurationLogStreamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

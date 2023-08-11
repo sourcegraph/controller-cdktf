@@ -204,7 +204,7 @@ func NewS3BucketObjectLockConfigurationOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_S3BucketObjectLockConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketObjectLockConfigurationOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3BucketObjectLockConfigurationOutputReference_Override(s S3BucketObject
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketObjectLockConfigurationOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

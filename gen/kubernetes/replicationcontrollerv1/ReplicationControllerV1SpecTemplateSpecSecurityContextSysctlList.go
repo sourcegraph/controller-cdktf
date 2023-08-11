@@ -116,7 +116,7 @@ func NewReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList(terrafo
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

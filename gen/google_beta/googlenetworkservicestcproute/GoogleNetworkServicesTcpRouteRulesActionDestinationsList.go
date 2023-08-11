@@ -116,7 +116,7 @@ func NewGoogleNetworkServicesTcpRouteRulesActionDestinationsList(terraformResour
 	j := jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionDestinationsList{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRouteRulesActionDestinationsList",
+		"@cdktf/provider-google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRouteRulesActionDestinationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleNetworkServicesTcpRouteRulesActionDestinationsList_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRouteRulesActionDestinationsList",
+		"@cdktf/provider-google-beta.googleNetworkServicesTcpRoute.GoogleNetworkServicesTcpRouteRulesActionDestinationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

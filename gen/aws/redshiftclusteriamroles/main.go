@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRoles",
 		reflect.TypeOf((*RedshiftClusterIamRoles)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRolesConfig",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesConfig",
 		reflect.TypeOf((*RedshiftClusterIamRolesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeouts",
 		reflect.TypeOf((*RedshiftClusterIamRolesTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftClusterIamRoles.RedshiftClusterIamRolesTimeoutsOutputReference",
 		reflect.TypeOf((*RedshiftClusterIamRolesTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

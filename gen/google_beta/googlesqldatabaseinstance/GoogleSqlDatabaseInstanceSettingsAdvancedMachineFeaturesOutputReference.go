@@ -180,7 +180,7 @@ func NewGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference(
 	j := jsiiProxy_GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

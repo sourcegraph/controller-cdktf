@@ -228,7 +228,7 @@ func NewOauthAppTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_OauthAppTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"okta.oauthApp.OauthAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.oauthApp.OauthAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewOauthAppTimeoutsOutputReference_Override(o OauthAppTimeoutsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.oauthApp.OauthAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.oauthApp.OauthAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

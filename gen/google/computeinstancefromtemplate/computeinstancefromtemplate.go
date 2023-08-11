@@ -1115,7 +1115,7 @@ func NewComputeInstanceFromTemplate(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ComputeInstanceFromTemplate{}
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1128,7 +1128,7 @@ func NewComputeInstanceFromTemplate_Override(c ComputeInstanceFromTemplate, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1437,7 +1437,7 @@ func ComputeInstanceFromTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1456,7 +1456,7 @@ func ComputeInstanceFromTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1475,7 +1475,7 @@ func ComputeInstanceFromTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1488,7 +1488,7 @@ func ComputeInstanceFromTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplate",
 		"tfResourceType",
 		&returns,
 	)

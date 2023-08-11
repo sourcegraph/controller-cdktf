@@ -104,7 +104,7 @@ func NewGoogleCloudiotDeviceLastErrorStatusList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GoogleCloudiotDeviceLastErrorStatusList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusList",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCloudiotDeviceLastErrorStatusList_Override(g GoogleCloudiotDeviceL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusList",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -297,7 +297,7 @@ func NewSagemakerEndpointConfigurationDataCaptureConfigOutputReference(terraform
 	j := jsiiProxy_SagemakerEndpointConfigurationDataCaptureConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewSagemakerEndpointConfigurationDataCaptureConfigOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationDataCaptureConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

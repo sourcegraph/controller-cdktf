@@ -302,7 +302,7 @@ func NewDataAwsSesEmailIdentity(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsSesEmailIdentity{}
 
 	_jsii_.Create(
-		"aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
+		"@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsSesEmailIdentity_Override(d DataAwsSesEmailIdentity, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
+		"@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsSesEmailIdentity_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
+		"@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsSesEmailIdentity_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
+		"@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsSesEmailIdentity_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
+		"@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsSesEmailIdentity_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
+		"@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
 		"tfResourceType",
 		&returns,
 	)

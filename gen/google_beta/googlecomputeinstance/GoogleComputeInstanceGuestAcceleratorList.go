@@ -116,7 +116,7 @@ func NewGoogleComputeInstanceGuestAcceleratorList(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleComputeInstanceGuestAcceleratorList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceGuestAcceleratorList",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceGuestAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeInstanceGuestAcceleratorList_Override(g GoogleComputeInstan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceGuestAcceleratorList",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceGuestAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

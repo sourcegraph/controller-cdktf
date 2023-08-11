@@ -178,7 +178,7 @@ func NewDataGoogleComposerImageVersionsImageVersionsOutputReference(terraformRes
 	j := jsiiProxy_DataGoogleComposerImageVersionsImageVersionsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsOutputReference",
+		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleComposerImageVersionsImageVersionsOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsOutputReference",
+		"@cdktf/provider-google.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

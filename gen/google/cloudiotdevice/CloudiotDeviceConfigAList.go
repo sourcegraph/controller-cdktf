@@ -104,7 +104,7 @@ func NewCloudiotDeviceConfigAList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_CloudiotDeviceConfigAList{}
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceConfigAList",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCloudiotDeviceConfigAList_Override(c CloudiotDeviceConfigAList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceConfigAList",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

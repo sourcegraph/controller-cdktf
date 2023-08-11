@@ -179,7 +179,7 @@ func NewJobSpecTemplateSpecImagePullSecretsOutputReference(terraformResource cdk
 	j := jsiiProxy_JobSpecTemplateSpecImagePullSecretsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecImagePullSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewJobSpecTemplateSpecImagePullSecretsOutputReference_Override(j JobSpecTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecImagePullSecretsOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecImagePullSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

@@ -252,7 +252,7 @@ func NewGlueMlTransformParametersFindMatchesParametersOutputReference(terraformR
 	j := jsiiProxy_GlueMlTransformParametersFindMatchesParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformParametersFindMatchesParametersOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGlueMlTransformParametersFindMatchesParametersOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformParametersFindMatchesParametersOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersFindMatchesParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

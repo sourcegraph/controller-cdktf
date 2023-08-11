@@ -314,7 +314,7 @@ func NewDataGoogleBigqueryDefaultServiceAccount(scope constructs.Construct, id *
 	j := jsiiProxy_DataGoogleBigqueryDefaultServiceAccount{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -327,7 +327,7 @@ func NewDataGoogleBigqueryDefaultServiceAccount_Override(d DataGoogleBigqueryDef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -427,7 +427,7 @@ func DataGoogleBigqueryDefaultServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -446,7 +446,7 @@ func DataGoogleBigqueryDefaultServiceAccount_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -465,7 +465,7 @@ func DataGoogleBigqueryDefaultServiceAccount_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataGoogleBigqueryDefaultServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

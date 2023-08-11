@@ -179,7 +179,7 @@ func NewGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference(te
 	j := jsiiProxy_GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

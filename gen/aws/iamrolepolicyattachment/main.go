@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
+		"@cdktf/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachment",
 		reflect.TypeOf((*IamRolePolicyAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig",
+		"@cdktf/provider-aws.iamRolePolicyAttachment.IamRolePolicyAttachmentConfig",
 		reflect.TypeOf((*IamRolePolicyAttachmentConfig)(nil)).Elem(),
 	)
 }

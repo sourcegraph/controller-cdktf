@@ -180,7 +180,7 @@ func NewGoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingCo
 	j := jsiiProxy_GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

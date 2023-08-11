@@ -212,7 +212,7 @@ func NewGoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference(terrafo
 	j := jsiiProxy_GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -224,7 +224,7 @@ func NewGoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationBucketConfig.GoogleLoggingOrganizationBucketConfigCmekSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnector",
 		reflect.TypeOf((*GoogleBeyondcorpAppConnector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorConfig",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorConfig",
 		reflect.TypeOf((*GoogleBeyondcorpAppConnectorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfo",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfo",
 		reflect.TypeOf((*GoogleBeyondcorpAppConnectorPrincipalInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoOutputReference",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoOutputReference",
 		reflect.TypeOf((*GoogleBeyondcorpAppConnectorPrincipalInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,11 +120,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount",
 		reflect.TypeOf((*GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference",
 		reflect.TypeOf((*GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,11 +158,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeouts",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeouts",
 		reflect.TypeOf((*GoogleBeyondcorpAppConnectorTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppConnector.GoogleBeyondcorpAppConnectorTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleBeyondcorpAppConnectorTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

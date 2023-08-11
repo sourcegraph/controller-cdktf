@@ -180,7 +180,7 @@ func NewGoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig
 	j := jsiiProxy_GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksRuntime.GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

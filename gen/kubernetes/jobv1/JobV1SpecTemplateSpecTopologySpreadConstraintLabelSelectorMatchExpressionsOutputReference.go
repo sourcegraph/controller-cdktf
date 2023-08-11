@@ -228,7 +228,7 @@ func NewJobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressio
 	j := jsiiProxy_JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewJobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

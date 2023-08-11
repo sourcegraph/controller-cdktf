@@ -481,7 +481,7 @@ func NewComputeRegionNetworkFirewallPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_ComputeRegionNetworkFirewallPolicy{}
 
 	_jsii_.Create(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewComputeRegionNetworkFirewallPolicy_Override(c ComputeRegionNetworkFirewa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -649,7 +649,7 @@ func ComputeRegionNetworkFirewallPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func ComputeRegionNetworkFirewallPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func ComputeRegionNetworkFirewallPolicy_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func ComputeRegionNetworkFirewallPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicy.ComputeRegionNetworkFirewallPolicy",
 		"tfResourceType",
 		&returns,
 	)

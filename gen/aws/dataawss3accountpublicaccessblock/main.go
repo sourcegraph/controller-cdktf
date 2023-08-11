@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
+		"@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlock",
 		reflect.TypeOf((*DataAwsS3AccountPublicAccessBlock)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig",
+		"@cdktf/provider-aws.dataAwsS3AccountPublicAccessBlock.DataAwsS3AccountPublicAccessBlockConfig",
 		reflect.TypeOf((*DataAwsS3AccountPublicAccessBlockConfig)(nil)).Elem(),
 	)
 }

@@ -309,7 +309,7 @@ func NewPersistentVolumeClaimMetadataOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PersistentVolumeClaimMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimMetadataOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewPersistentVolumeClaimMetadataOutputReference_Override(p PersistentVolume
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolumeClaim.PersistentVolumeClaimMetadataOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolumeClaim.PersistentVolumeClaimMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

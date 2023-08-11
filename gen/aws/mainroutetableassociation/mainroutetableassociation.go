@@ -353,7 +353,7 @@ func NewMainRouteTableAssociation(scope constructs.Construct, id *string, config
 	j := jsiiProxy_MainRouteTableAssociation{}
 
 	_jsii_.Create(
-		"aws.mainRouteTableAssociation.MainRouteTableAssociation",
+		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewMainRouteTableAssociation_Override(m MainRouteTableAssociation, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mainRouteTableAssociation.MainRouteTableAssociation",
+		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -499,7 +499,7 @@ func MainRouteTableAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mainRouteTableAssociation.MainRouteTableAssociation",
+		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func MainRouteTableAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mainRouteTableAssociation.MainRouteTableAssociation",
+		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func MainRouteTableAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mainRouteTableAssociation.MainRouteTableAssociation",
+		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func MainRouteTableAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mainRouteTableAssociation.MainRouteTableAssociation",
+		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		"tfResourceType",
 		&returns,
 	)

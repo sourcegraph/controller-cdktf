@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfig",
 		reflect.TypeOf((*SagemakerAppImageConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,19 +68,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfigConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigConfig",
 		reflect.TypeOf((*SagemakerAppImageConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfig",
 		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig",
 		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference",
 		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,11 +121,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec",
 		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference",
 		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -162,7 +162,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigOutputReference",
 		reflect.TypeOf((*SagemakerAppImageConfigKernelGatewayImageConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

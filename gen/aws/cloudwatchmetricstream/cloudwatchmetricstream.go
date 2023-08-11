@@ -601,7 +601,7 @@ func NewCloudwatchMetricStream(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_CloudwatchMetricStream{}
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStream",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -614,7 +614,7 @@ func NewCloudwatchMetricStream_Override(c CloudwatchMetricStream, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStream",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -802,7 +802,7 @@ func CloudwatchMetricStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStream",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func CloudwatchMetricStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStream",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func CloudwatchMetricStream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStream",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -853,7 +853,7 @@ func CloudwatchMetricStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStream",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream",
 		"tfResourceType",
 		&returns,
 	)

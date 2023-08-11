@@ -1025,7 +1025,7 @@ func NewOpsworksHaproxyLayer(scope constructs.Construct, id *string, config *Ops
 	j := jsiiProxy_OpsworksHaproxyLayer{}
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1038,7 +1038,7 @@ func NewOpsworksHaproxyLayer_Override(o OpsworksHaproxyLayer, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1446,7 +1446,7 @@ func OpsworksHaproxyLayer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1465,7 +1465,7 @@ func OpsworksHaproxyLayer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1484,7 +1484,7 @@ func OpsworksHaproxyLayer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1497,7 +1497,7 @@ func OpsworksHaproxyLayer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
 		"tfResourceType",
 		&returns,
 	)

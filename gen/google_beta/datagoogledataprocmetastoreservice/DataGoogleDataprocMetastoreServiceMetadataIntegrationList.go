@@ -104,7 +104,7 @@ func NewDataGoogleDataprocMetastoreServiceMetadataIntegrationList(terraformResou
 	j := jsiiProxy_DataGoogleDataprocMetastoreServiceMetadataIntegrationList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegrationList",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegrationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleDataprocMetastoreServiceMetadataIntegrationList_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegrationList",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegrationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

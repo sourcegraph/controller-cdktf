@@ -204,7 +204,7 @@ func NewS3ControlMultiRegionAccessPointTimeoutsOutputReference(terraformResource
 	j := jsiiProxy_S3ControlMultiRegionAccessPointTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeoutsOutputReference",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3ControlMultiRegionAccessPointTimeoutsOutputReference_Override(s S3Cont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeoutsOutputReference",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

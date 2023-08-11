@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociation",
 		reflect.TypeOf((*ServicecatalogProductPortfolioAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptLanguage", GoGetter: "AcceptLanguage"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationConfig",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationConfig",
 		reflect.TypeOf((*ServicecatalogProductPortfolioAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationTimeouts",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationTimeouts",
 		reflect.TypeOf((*ServicecatalogProductPortfolioAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogProductPortfolioAssociation.ServicecatalogProductPortfolioAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*ServicecatalogProductPortfolioAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -615,7 +615,7 @@ func NewAuthenticator(scope constructs.Construct, id *string, config *Authentica
 	j := jsiiProxy_Authenticator{}
 
 	_jsii_.Create(
-		"okta.authenticator.Authenticator",
+		"@cdktf/provider-okta.authenticator.Authenticator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -628,7 +628,7 @@ func NewAuthenticator_Override(a Authenticator, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.authenticator.Authenticator",
+		"@cdktf/provider-okta.authenticator.Authenticator",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -871,7 +871,7 @@ func Authenticator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.authenticator.Authenticator",
+		"@cdktf/provider-okta.authenticator.Authenticator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -890,7 +890,7 @@ func Authenticator_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.authenticator.Authenticator",
+		"@cdktf/provider-okta.authenticator.Authenticator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -909,7 +909,7 @@ func Authenticator_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.authenticator.Authenticator",
+		"@cdktf/provider-okta.authenticator.Authenticator",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -922,7 +922,7 @@ func Authenticator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.authenticator.Authenticator",
+		"@cdktf/provider-okta.authenticator.Authenticator",
 		"tfResourceType",
 		&returns,
 	)

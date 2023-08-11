@@ -228,7 +228,7 @@ func NewGoogleDialogflowFulfillmentTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleDialogflowFulfillmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDialogflowFulfillmentTimeoutsOutputReference_Override(g GoogleDial
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

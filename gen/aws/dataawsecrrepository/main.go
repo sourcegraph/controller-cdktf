@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepository",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepository",
 		reflect.TypeOf((*DataAwsEcrRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryConfig",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryConfig",
 		reflect.TypeOf((*DataAwsEcrRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfiguration",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfiguration",
 		reflect.TypeOf((*DataAwsEcrRepositoryEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationList",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationList",
 		reflect.TypeOf((*DataAwsEcrRepositoryEncryptionConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsEcrRepositoryEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,11 +128,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfiguration",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfiguration",
 		reflect.TypeOf((*DataAwsEcrRepositoryImageScanningConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationList",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationList",
 		reflect.TypeOf((*DataAwsEcrRepositoryImageScanningConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsEcrRepositoryImageScanningConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

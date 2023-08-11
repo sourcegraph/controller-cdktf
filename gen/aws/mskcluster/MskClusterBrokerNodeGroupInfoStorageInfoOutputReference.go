@@ -180,7 +180,7 @@ func NewMskClusterBrokerNodeGroupInfoStorageInfoOutputReference(terraformResourc
 	j := jsiiProxy_MskClusterBrokerNodeGroupInfoStorageInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewMskClusterBrokerNodeGroupInfoStorageInfoOutputReference_Override(m MskCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterBrokerNodeGroupInfoStorageInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

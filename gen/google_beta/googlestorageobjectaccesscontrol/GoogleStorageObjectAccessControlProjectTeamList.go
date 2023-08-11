@@ -104,7 +104,7 @@ func NewGoogleStorageObjectAccessControlProjectTeamList(terraformResource cdktf.
 	j := jsiiProxy_GoogleStorageObjectAccessControlProjectTeamList{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControlProjectTeamList",
+		"@cdktf/provider-google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControlProjectTeamList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleStorageObjectAccessControlProjectTeamList_Override(g GoogleStorage
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControlProjectTeamList",
+		"@cdktf/provider-google-beta.googleStorageObjectAccessControl.GoogleStorageObjectAccessControlProjectTeamList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificate",
 		reflect.TypeOf((*DataAwsCognitoUserPoolSigningCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificateConfig",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolSigningCertificate.DataAwsCognitoUserPoolSigningCertificateConfig",
 		reflect.TypeOf((*DataAwsCognitoUserPoolSigningCertificateConfig)(nil)).Elem(),
 	)
 }

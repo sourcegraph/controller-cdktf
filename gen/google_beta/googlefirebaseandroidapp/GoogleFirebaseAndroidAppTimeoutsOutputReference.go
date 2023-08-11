@@ -228,7 +228,7 @@ func NewGoogleFirebaseAndroidAppTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleFirebaseAndroidAppTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleFirebaseAndroidAppTimeoutsOutputReference_Override(g GoogleFirebas
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

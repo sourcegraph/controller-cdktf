@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
+		"@cdktf/provider-google-beta.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
 		reflect.TypeOf((*DataGoogleSqlBackupRun)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleSqlBackupRun.DataGoogleSqlBackupRunConfig",
+		"@cdktf/provider-google-beta.dataGoogleSqlBackupRun.DataGoogleSqlBackupRunConfig",
 		reflect.TypeOf((*DataGoogleSqlBackupRunConfig)(nil)).Elem(),
 	)
 }

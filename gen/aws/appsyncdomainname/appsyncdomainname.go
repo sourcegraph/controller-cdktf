@@ -388,7 +388,7 @@ func NewAppsyncDomainName(scope constructs.Construct, id *string, config *Appsyn
 	j := jsiiProxy_AppsyncDomainName{}
 
 	_jsii_.Create(
-		"aws.appsyncDomainName.AppsyncDomainName",
+		"@cdktf/provider-aws.appsyncDomainName.AppsyncDomainName",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewAppsyncDomainName_Override(a AppsyncDomainName, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncDomainName.AppsyncDomainName",
+		"@cdktf/provider-aws.appsyncDomainName.AppsyncDomainName",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -545,7 +545,7 @@ func AppsyncDomainName_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncDomainName.AppsyncDomainName",
+		"@cdktf/provider-aws.appsyncDomainName.AppsyncDomainName",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func AppsyncDomainName_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncDomainName.AppsyncDomainName",
+		"@cdktf/provider-aws.appsyncDomainName.AppsyncDomainName",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func AppsyncDomainName_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncDomainName.AppsyncDomainName",
+		"@cdktf/provider-aws.appsyncDomainName.AppsyncDomainName",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func AppsyncDomainName_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appsyncDomainName.AppsyncDomainName",
+		"@cdktf/provider-aws.appsyncDomainName.AppsyncDomainName",
 		"tfResourceType",
 		&returns,
 	)

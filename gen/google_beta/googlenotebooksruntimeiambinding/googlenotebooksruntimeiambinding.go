@@ -448,7 +448,7 @@ func NewGoogleNotebooksRuntimeIamBinding(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleNotebooksRuntimeIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleNotebooksRuntimeIamBinding_Override(g GoogleNotebooksRuntimeIamBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleNotebooksRuntimeIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleNotebooksRuntimeIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleNotebooksRuntimeIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleNotebooksRuntimeIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
+		"@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding",
 		"tfResourceType",
 		&returns,
 	)

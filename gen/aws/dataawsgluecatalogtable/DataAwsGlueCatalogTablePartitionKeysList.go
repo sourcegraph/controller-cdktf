@@ -104,7 +104,7 @@ func NewDataAwsGlueCatalogTablePartitionKeysList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsGlueCatalogTablePartitionKeysList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionKeysList",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsGlueCatalogTablePartitionKeysList_Override(d DataAwsGlueCatalogTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionKeysList",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTablePartitionKeysList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

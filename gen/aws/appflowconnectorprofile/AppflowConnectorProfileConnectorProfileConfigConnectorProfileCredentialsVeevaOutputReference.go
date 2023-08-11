@@ -202,7 +202,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 	j := jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentials
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference",
+		"@cdktf/provider-aws.appflowConnectorProfile.AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsVeevaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -179,7 +179,7 @@ func NewGoogleCloudbuildTriggerBuildAvailableSecretsOutputReference(terraformRes
 	j := jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleCloudbuildTriggerBuildAvailableSecretsOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

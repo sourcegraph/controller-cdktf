@@ -116,7 +116,7 @@ func NewCodepipelineWebhookFilterList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_CodepipelineWebhookFilterList{}
 
 	_jsii_.Create(
-		"aws.codepipelineWebhook.CodepipelineWebhookFilterList",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodepipelineWebhookFilterList_Override(c CodepipelineWebhookFilterList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipelineWebhook.CodepipelineWebhookFilterList",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhookFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

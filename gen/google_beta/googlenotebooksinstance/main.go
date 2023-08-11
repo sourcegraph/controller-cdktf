@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
 		reflect.TypeOf((*GoogleNotebooksInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfig", GoGetter: "AcceleratorConfig"},
@@ -159,11 +159,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfig",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfig",
 		reflect.TypeOf((*GoogleNotebooksInstanceAcceleratorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfigOutputReference",
 		reflect.TypeOf((*GoogleNotebooksInstanceAcceleratorConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,15 +199,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig",
 		reflect.TypeOf((*GoogleNotebooksInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImage",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImage",
 		reflect.TypeOf((*GoogleNotebooksInstanceContainerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImageOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImageOutputReference",
 		reflect.TypeOf((*GoogleNotebooksInstanceContainerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -244,11 +244,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinity",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinity",
 		reflect.TypeOf((*GoogleNotebooksInstanceReservationAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinityOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinityOutputReference",
 		reflect.TypeOf((*GoogleNotebooksInstanceReservationAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -288,11 +288,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfig",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfig",
 		reflect.TypeOf((*GoogleNotebooksInstanceShieldedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfigOutputReference",
 		reflect.TypeOf((*GoogleNotebooksInstanceShieldedInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -333,11 +333,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts",
 		reflect.TypeOf((*GoogleNotebooksInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleNotebooksInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -378,11 +378,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceVmImage",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceVmImage",
 		reflect.TypeOf((*GoogleNotebooksInstanceVmImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceVmImageOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceVmImageOutputReference",
 		reflect.TypeOf((*GoogleNotebooksInstanceVmImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

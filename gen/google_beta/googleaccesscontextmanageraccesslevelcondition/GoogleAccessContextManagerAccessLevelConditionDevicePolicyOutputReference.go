@@ -300,7 +300,7 @@ func NewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReferenc
 	j := jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevelCondition.GoogleAccessContextManagerAccessLevelConditionDevicePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

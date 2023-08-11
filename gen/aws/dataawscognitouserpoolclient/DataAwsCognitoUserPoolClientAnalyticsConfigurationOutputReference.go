@@ -211,7 +211,7 @@ func NewDataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference(terraf
 	j := jsiiProxy_DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsCognitoUserPoolClient.DataAwsCognitoUserPoolClientAnalyticsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -226,7 +226,7 @@ func NewSccSourceIamMemberConditionOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_SccSourceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.sccSourceIamMember.SccSourceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.sccSourceIamMember.SccSourceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSccSourceIamMemberConditionOutputReference_Override(s SccSourceIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccSourceIamMember.SccSourceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.sccSourceIamMember.SccSourceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

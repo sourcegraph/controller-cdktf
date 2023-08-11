@@ -390,7 +390,7 @@ func NewOrgPolicyPolicy(scope constructs.Construct, id *string, config *OrgPolic
 	j := jsiiProxy_OrgPolicyPolicy{}
 
 	_jsii_.Create(
-		"google.orgPolicyPolicy.OrgPolicyPolicy",
+		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewOrgPolicyPolicy_Override(o OrgPolicyPolicy, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.orgPolicyPolicy.OrgPolicyPolicy",
+		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -536,7 +536,7 @@ func OrgPolicyPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.orgPolicyPolicy.OrgPolicyPolicy",
+		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func OrgPolicyPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.orgPolicyPolicy.OrgPolicyPolicy",
+		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func OrgPolicyPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.orgPolicyPolicy.OrgPolicyPolicy",
+		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func OrgPolicyPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.orgPolicyPolicy.OrgPolicyPolicy",
+		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicy",
 		"tfResourceType",
 		&returns,
 	)

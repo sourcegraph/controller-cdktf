@@ -347,7 +347,7 @@ func NewGoogleDataprocWorkflowTemplateJobsPysparkJobOutputReference(terraformRes
 	j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsPysparkJobOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPysparkJobOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPysparkJobOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewGoogleDataprocWorkflowTemplateJobsPysparkJobOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPysparkJobOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPysparkJobOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

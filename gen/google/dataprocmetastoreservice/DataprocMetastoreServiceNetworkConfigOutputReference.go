@@ -179,7 +179,7 @@ func NewDataprocMetastoreServiceNetworkConfigOutputReference(terraformResource c
 	j := jsiiProxy_DataprocMetastoreServiceNetworkConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataprocMetastoreServiceNetworkConfigOutputReference_Override(d Dataproc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

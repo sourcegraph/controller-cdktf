@@ -204,7 +204,7 @@ func NewSecretManagerSecretVersionTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_SecretManagerSecretVersionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSecretManagerSecretVersionTimeoutsOutputReference_Override(s SecretManag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecretVersion.SecretManagerSecretVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.secretManagerSecretVersion.SecretManagerSecretVersionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

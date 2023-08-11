@@ -179,7 +179,7 @@ func NewElasticsearchDomainNodeToNodeEncryptionOutputReference(terraformResource
 	j := jsiiProxy_ElasticsearchDomainNodeToNodeEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryptionOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewElasticsearchDomainNodeToNodeEncryptionOutputReference_Override(e Elasti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryptionOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

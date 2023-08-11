@@ -211,7 +211,7 @@ func NewDataGoogleIamTestablePermissionsPermissionsOutputReference(terraformReso
 	j := jsiiProxy_DataGoogleIamTestablePermissionsPermissionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataGoogleIamTestablePermissionsPermissionsOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

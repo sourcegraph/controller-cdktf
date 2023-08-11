@@ -180,7 +180,7 @@ func NewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputRe
 	j := jsiiProxy_S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewS3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

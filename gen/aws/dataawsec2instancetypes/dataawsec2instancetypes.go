@@ -327,7 +327,7 @@ func NewDataAwsEc2InstanceTypes(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsEc2InstanceTypes{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataAwsEc2InstanceTypes_Override(d DataAwsEc2InstanceTypes, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -429,7 +429,7 @@ func DataAwsEc2InstanceTypes_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -448,7 +448,7 @@ func DataAwsEc2InstanceTypes_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsEc2InstanceTypes_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataAwsEc2InstanceTypes_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypes.DataAwsEc2InstanceTypes",
 		"tfResourceType",
 		&returns,
 	)

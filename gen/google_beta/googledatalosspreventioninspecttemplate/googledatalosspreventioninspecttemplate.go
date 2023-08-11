@@ -450,7 +450,7 @@ func NewGoogleDataLossPreventionInspectTemplate(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleDataLossPreventionInspectTemplate{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewGoogleDataLossPreventionInspectTemplate_Override(g GoogleDataLossPrevent
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -618,7 +618,7 @@ func GoogleDataLossPreventionInspectTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -637,7 +637,7 @@ func GoogleDataLossPreventionInspectTemplate_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func GoogleDataLossPreventionInspectTemplate_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func GoogleDataLossPreventionInspectTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
+		"@cdktf/provider-google-beta.googleDataLossPreventionInspectTemplate.GoogleDataLossPreventionInspectTemplate",
 		"tfResourceType",
 		&returns,
 	)

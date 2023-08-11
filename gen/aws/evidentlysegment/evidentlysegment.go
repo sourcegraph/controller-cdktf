@@ -469,7 +469,7 @@ func NewEvidentlySegment(scope constructs.Construct, id *string, config *Evident
 	j := jsiiProxy_EvidentlySegment{}
 
 	_jsii_.Create(
-		"aws.evidentlySegment.EvidentlySegment",
+		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -482,7 +482,7 @@ func NewEvidentlySegment_Override(e EvidentlySegment, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlySegment.EvidentlySegment",
+		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -648,7 +648,7 @@ func EvidentlySegment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlySegment.EvidentlySegment",
+		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func EvidentlySegment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlySegment.EvidentlySegment",
+		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func EvidentlySegment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlySegment.EvidentlySegment",
+		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func EvidentlySegment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.evidentlySegment.EvidentlySegment",
+		"@cdktf/provider-aws.evidentlySegment.EvidentlySegment",
 		"tfResourceType",
 		&returns,
 	)

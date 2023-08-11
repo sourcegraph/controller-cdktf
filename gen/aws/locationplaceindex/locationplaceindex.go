@@ -471,7 +471,7 @@ func NewLocationPlaceIndex(scope constructs.Construct, id *string, config *Locat
 	j := jsiiProxy_LocationPlaceIndex{}
 
 	_jsii_.Create(
-		"aws.locationPlaceIndex.LocationPlaceIndex",
+		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewLocationPlaceIndex_Override(l LocationPlaceIndex, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.locationPlaceIndex.LocationPlaceIndex",
+		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -650,7 +650,7 @@ func LocationPlaceIndex_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationPlaceIndex.LocationPlaceIndex",
+		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func LocationPlaceIndex_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationPlaceIndex.LocationPlaceIndex",
+		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func LocationPlaceIndex_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.locationPlaceIndex.LocationPlaceIndex",
+		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func LocationPlaceIndex_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.locationPlaceIndex.LocationPlaceIndex",
+		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		"tfResourceType",
 		&returns,
 	)

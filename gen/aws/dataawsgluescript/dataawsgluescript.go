@@ -360,7 +360,7 @@ func NewDataAwsGlueScript(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsGlueScript{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScript",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -373,7 +373,7 @@ func NewDataAwsGlueScript_Override(d DataAwsGlueScript, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScript",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -473,7 +473,7 @@ func DataAwsGlueScript_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGlueScript.DataAwsGlueScript",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func DataAwsGlueScript_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGlueScript.DataAwsGlueScript",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataAwsGlueScript_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGlueScript.DataAwsGlueScript",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsGlueScript_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsGlueScript.DataAwsGlueScript",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScript",
 		"tfResourceType",
 		&returns,
 	)

@@ -227,7 +227,7 @@ func NewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReferen
 	j := jsiiProxy_GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

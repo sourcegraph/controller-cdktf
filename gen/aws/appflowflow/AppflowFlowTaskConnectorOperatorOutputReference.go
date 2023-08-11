@@ -540,7 +540,7 @@ func NewAppflowFlowTaskConnectorOperatorOutputReference(terraformResource cdktf.
 	j := jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -552,7 +552,7 @@ func NewAppflowFlowTaskConnectorOperatorOutputReference_Override(a AppflowFlowTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTaskConnectorOperatorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

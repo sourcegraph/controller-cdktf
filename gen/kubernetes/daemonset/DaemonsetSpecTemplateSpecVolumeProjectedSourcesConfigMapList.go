@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecVolumeProjectedSourcesConfigMapList(terraformRe
 	j := jsiiProxy_DaemonsetSpecTemplateSpecVolumeProjectedSourcesConfigMapList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecVolumeProjectedSourcesConfigMapList_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeProjectedSourcesConfigMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

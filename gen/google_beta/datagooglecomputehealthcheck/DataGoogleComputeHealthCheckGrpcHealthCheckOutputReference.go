@@ -200,7 +200,7 @@ func NewDataGoogleComputeHealthCheckGrpcHealthCheckOutputReference(terraformReso
 	j := jsiiProxy_DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleComputeHealthCheckGrpcHealthCheckOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

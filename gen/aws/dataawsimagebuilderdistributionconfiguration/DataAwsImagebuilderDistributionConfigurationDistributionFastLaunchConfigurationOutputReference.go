@@ -211,7 +211,7 @@ func NewDataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfig
 	j := jsiiProxy_DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderDistributionConfiguration.DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

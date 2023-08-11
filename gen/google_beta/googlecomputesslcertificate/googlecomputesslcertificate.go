@@ -506,7 +506,7 @@ func NewGoogleComputeSslCertificate(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeSslCertificate{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -519,7 +519,7 @@ func NewGoogleComputeSslCertificate_Override(g GoogleComputeSslCertificate, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -696,7 +696,7 @@ func GoogleComputeSslCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func GoogleComputeSslCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func GoogleComputeSslCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func GoogleComputeSslCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeSslCertificate.GoogleComputeSslCertificate",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.customSsl.CustomSsl",
+		"@cdktf/provider-cloudflare.customSsl.CustomSsl",
 		reflect.TypeOf((*CustomSsl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.customSsl.CustomSslConfig",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslConfig",
 		reflect.TypeOf((*CustomSslConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.customSsl.CustomSslCustomSslOptions",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslOptions",
 		reflect.TypeOf((*CustomSslCustomSslOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customSsl.CustomSslCustomSslOptionsOutputReference",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslOptionsOutputReference",
 		reflect.TypeOf((*CustomSslCustomSslOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bundleMethod", GoGetter: "BundleMethod"},
@@ -128,11 +128,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.customSsl.CustomSslCustomSslPriority",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriority",
 		reflect.TypeOf((*CustomSslCustomSslPriority)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customSsl.CustomSslCustomSslPriorityList",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityList",
 		reflect.TypeOf((*CustomSslCustomSslPriorityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -153,7 +153,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
 		reflect.TypeOf((*CustomSslCustomSslPriorityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

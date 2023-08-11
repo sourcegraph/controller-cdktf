@@ -521,7 +521,7 @@ func NewDbOptionGroup(scope constructs.Construct, id *string, config *DbOptionGr
 	j := jsiiProxy_DbOptionGroup{}
 
 	_jsii_.Create(
-		"aws.dbOptionGroup.DbOptionGroup",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewDbOptionGroup_Override(d DbOptionGroup, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbOptionGroup.DbOptionGroup",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -722,7 +722,7 @@ func DbOptionGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbOptionGroup.DbOptionGroup",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func DbOptionGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbOptionGroup.DbOptionGroup",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func DbOptionGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbOptionGroup.DbOptionGroup",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func DbOptionGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dbOptionGroup.DbOptionGroup",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroup",
 		"tfResourceType",
 		&returns,
 	)

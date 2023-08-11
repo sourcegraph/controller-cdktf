@@ -252,7 +252,7 @@ func NewFolderOrganizationPolicyListPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_FolderOrganizationPolicyListPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewFolderOrganizationPolicyListPolicyOutputReference_Override(f FolderOrgan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

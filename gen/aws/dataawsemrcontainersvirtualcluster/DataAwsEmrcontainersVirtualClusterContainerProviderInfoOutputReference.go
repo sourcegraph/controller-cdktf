@@ -167,7 +167,7 @@ func NewDataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference(t
 	j := jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

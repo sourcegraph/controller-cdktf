@@ -116,7 +116,7 @@ func NewCloudfunctionsFunctionSecretVolumesList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_CloudfunctionsFunctionSecretVolumesList{}
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesList",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfunctionsFunctionSecretVolumesList_Override(c CloudfunctionsFunctio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesList",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

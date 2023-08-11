@@ -228,7 +228,7 @@ func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference(terraformReso
 	j := jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

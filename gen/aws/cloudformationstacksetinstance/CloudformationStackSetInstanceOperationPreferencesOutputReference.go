@@ -300,7 +300,7 @@ func NewCloudformationStackSetInstanceOperationPreferencesOutputReference(terraf
 	j := jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstanceOperationPreferencesOutputReference",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstanceOperationPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewCloudformationStackSetInstanceOperationPreferencesOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudformationStackSetInstance.CloudformationStackSetInstanceOperationPreferencesOutputReference",
+		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstanceOperationPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

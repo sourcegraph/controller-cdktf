@@ -252,7 +252,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputR
 	j := jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecInitContainerEnvValueFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

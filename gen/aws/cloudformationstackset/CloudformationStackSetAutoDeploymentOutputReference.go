@@ -204,7 +204,7 @@ func NewCloudformationStackSetAutoDeploymentOutputReference(terraformResource cd
 	j := jsiiProxy_CloudformationStackSetAutoDeploymentOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudformationStackSetAutoDeploymentOutputReference_Override(c Cloudform
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference",
+		"@cdktf/provider-aws.cloudformationStackSet.CloudformationStackSetAutoDeploymentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

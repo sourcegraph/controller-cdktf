@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.roleSubscription.RoleSubscription",
+		"@cdktf/provider-okta.roleSubscription.RoleSubscription",
 		reflect.TypeOf((*RoleSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.roleSubscription.RoleSubscriptionConfig",
+		"@cdktf/provider-okta.roleSubscription.RoleSubscriptionConfig",
 		reflect.TypeOf((*RoleSubscriptionConfig)(nil)).Elem(),
 	)
 }

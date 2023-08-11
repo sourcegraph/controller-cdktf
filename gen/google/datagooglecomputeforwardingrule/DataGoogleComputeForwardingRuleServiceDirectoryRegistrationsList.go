@@ -104,7 +104,7 @@ func NewDataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList(terrafo
 	j := jsiiProxy_DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

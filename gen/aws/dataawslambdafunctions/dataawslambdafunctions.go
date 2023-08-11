@@ -290,7 +290,7 @@ func NewDataAwsLambdaFunctions(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsLambdaFunctions{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
+		"@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -303,7 +303,7 @@ func NewDataAwsLambdaFunctions_Override(d DataAwsLambdaFunctions, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
+		"@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -392,7 +392,7 @@ func DataAwsLambdaFunctions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
+		"@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -411,7 +411,7 @@ func DataAwsLambdaFunctions_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
+		"@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -430,7 +430,7 @@ func DataAwsLambdaFunctions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
+		"@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsLambdaFunctions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
+		"@cdktf/provider-aws.dataAwsLambdaFunctions.DataAwsLambdaFunctions",
 		"tfResourceType",
 		&returns,
 	)

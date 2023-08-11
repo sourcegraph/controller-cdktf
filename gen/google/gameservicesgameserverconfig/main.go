@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfig",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfig",
 		reflect.TypeOf((*GameServicesGameServerConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigConfig",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigConfig",
 		reflect.TypeOf((*GameServicesGameServerConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigs",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigs",
 		reflect.TypeOf((*GameServicesGameServerConfigFleetConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsList",
 		reflect.TypeOf((*GameServicesGameServerConfigFleetConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigFleetConfigsOutputReference",
 		reflect.TypeOf((*GameServicesGameServerConfigFleetConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -149,11 +149,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigs",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigs",
 		reflect.TypeOf((*GameServicesGameServerConfigScalingConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsList",
 		reflect.TypeOf((*GameServicesGameServerConfigScalingConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -174,7 +174,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsOutputReference",
 		reflect.TypeOf((*GameServicesGameServerConfigScalingConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -218,11 +218,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedules",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedules",
 		reflect.TypeOf((*GameServicesGameServerConfigScalingConfigsSchedules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesList",
 		reflect.TypeOf((*GameServicesGameServerConfigScalingConfigsSchedulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -243,7 +243,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSchedulesOutputReference",
 		reflect.TypeOf((*GameServicesGameServerConfigScalingConfigsSchedulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -287,11 +287,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSelectors",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSelectors",
 		reflect.TypeOf((*GameServicesGameServerConfigScalingConfigsSelectors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSelectorsList",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSelectorsList",
 		reflect.TypeOf((*GameServicesGameServerConfigScalingConfigsSelectorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -312,7 +312,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSelectorsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigScalingConfigsSelectorsOutputReference",
 		reflect.TypeOf((*GameServicesGameServerConfigScalingConfigsSelectorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -347,11 +347,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigTimeouts",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigTimeouts",
 		reflect.TypeOf((*GameServicesGameServerConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigTimeoutsOutputReference",
 		reflect.TypeOf((*GameServicesGameServerConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

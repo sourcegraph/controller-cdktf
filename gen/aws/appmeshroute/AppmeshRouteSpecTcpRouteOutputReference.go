@@ -227,7 +227,7 @@ func NewAppmeshRouteSpecTcpRouteOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecTcpRouteOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAppmeshRouteSpecTcpRouteOutputReference_Override(a AppmeshRouteSpecTcpRo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecTcpRouteOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

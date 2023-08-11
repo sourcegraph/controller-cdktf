@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointConfig",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointConfig",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetails",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetails",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsOutputReference",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsOutputReference",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,11 +118,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlock",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlock",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsPublicAccessBlock)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsPublicAccessBlockOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blockPublicAcls", GoGetter: "BlockPublicAcls"},
@@ -166,11 +166,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegion",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegion",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsRegion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionList",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsRegionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -191,7 +191,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionOutputReference",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointDetailsRegionOutputReference",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointDetailsRegionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -225,11 +225,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeouts",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeouts",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeoutsOutputReference",
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPointTimeoutsOutputReference",
 		reflect.TypeOf((*S3ControlMultiRegionAccessPointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

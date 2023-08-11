@@ -252,7 +252,7 @@ func NewStoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference(terraformR
 	j := jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference{}
 
 	_jsii_.Create(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewStoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference_Override(s
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

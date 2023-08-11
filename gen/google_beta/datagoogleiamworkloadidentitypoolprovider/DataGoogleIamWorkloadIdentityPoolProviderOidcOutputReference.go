@@ -178,7 +178,7 @@ func NewDataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference(terraformRe
 	j := jsiiProxy_DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamWorkloadIdentityPoolProvider.DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPoolProvider.DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamWorkloadIdentityPoolProvider.DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPoolProvider.DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

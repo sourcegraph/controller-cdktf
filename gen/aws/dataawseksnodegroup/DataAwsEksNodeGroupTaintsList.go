@@ -104,7 +104,7 @@ func NewDataAwsEksNodeGroupTaintsList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_DataAwsEksNodeGroupTaintsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEksNodeGroupTaintsList_Override(d DataAwsEksNodeGroupTaintsList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

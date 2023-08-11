@@ -297,7 +297,7 @@ func NewCloudwatchLogMetricFilterMetricTransformationOutputReference(terraformRe
 	j := jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformationOutputReference",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewCloudwatchLogMetricFilterMetricTransformationOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformationOutputReference",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilterMetricTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -228,7 +228,7 @@ func NewAccessContextManagerGcpUserAccessBindingTimeoutsOutputReference(terrafor
 	j := jsiiProxy_AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccessContextManagerGcpUserAccessBindingTimeoutsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

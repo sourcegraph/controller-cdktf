@@ -104,7 +104,7 @@ func NewDataAwsDxRouterConfigurationRouterList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsDxRouterConfigurationRouterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterList",
+		"@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsDxRouterConfigurationRouterList_Override(d DataAwsDxRouterConfigu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterList",
+		"@cdktf/provider-aws.dataAwsDxRouterConfiguration.DataAwsDxRouterConfigurationRouterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList(terraformResource c
 	j := jsiiProxy_DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList_Override(d DataKube
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeFlexVolumeSecretRefList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

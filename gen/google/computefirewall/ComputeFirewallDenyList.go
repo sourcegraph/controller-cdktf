@@ -116,7 +116,7 @@ func NewComputeFirewallDenyList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_ComputeFirewallDenyList{}
 
 	_jsii_.Create(
-		"google.computeFirewall.ComputeFirewallDenyList",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewallDenyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeFirewallDenyList_Override(c ComputeFirewallDenyList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeFirewall.ComputeFirewallDenyList",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewallDenyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

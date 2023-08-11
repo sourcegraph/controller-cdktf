@@ -116,7 +116,7 @@ func NewGoogleComputeRegionUrlMapHostRuleList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleComputeRegionUrlMapHostRuleList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapHostRuleList",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapHostRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRegionUrlMapHostRuleList_Override(g GoogleComputeRegionUrlM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapHostRuleList",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapHostRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

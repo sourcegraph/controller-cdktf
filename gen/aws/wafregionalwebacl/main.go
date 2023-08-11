@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAcl",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAcl",
 		reflect.TypeOf((*WafregionalWebAcl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalWebAcl.WafregionalWebAclConfig",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclConfig",
 		reflect.TypeOf((*WafregionalWebAclConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalWebAcl.WafregionalWebAclDefaultAction",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultAction",
 		reflect.TypeOf((*WafregionalWebAclDefaultAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAclDefaultActionOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultActionOutputReference",
 		reflect.TypeOf((*WafregionalWebAclDefaultActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,11 +119,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfiguration",
 		reflect.TypeOf((*WafregionalWebAclLoggingConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationOutputReference",
 		reflect.TypeOf((*WafregionalWebAclLoggingConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,15 +161,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFields",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFields",
 		reflect.TypeOf((*WafregionalWebAclLoggingConfigurationRedactedFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch",
 		reflect.TypeOf((*WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
 		reflect.TypeOf((*WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -190,7 +190,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference",
 		reflect.TypeOf((*WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,7 +227,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference",
 		reflect.TypeOf((*WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -262,15 +262,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalWebAcl.WafregionalWebAclRule",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRule",
 		reflect.TypeOf((*WafregionalWebAclRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalWebAcl.WafregionalWebAclRuleAction",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleAction",
 		reflect.TypeOf((*WafregionalWebAclRuleAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAclRuleActionOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleActionOutputReference",
 		reflect.TypeOf((*WafregionalWebAclRuleActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,7 +304,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAclRuleList",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleList",
 		reflect.TypeOf((*WafregionalWebAclRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -325,7 +325,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAclRuleOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleOutputReference",
 		reflect.TypeOf((*WafregionalWebAclRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -372,11 +372,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideAction",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideAction",
 		reflect.TypeOf((*WafregionalWebAclRuleOverrideAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideActionOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclRuleOverrideActionOutputReference",
 		reflect.TypeOf((*WafregionalWebAclRuleOverrideActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -226,7 +226,7 @@ func NewIapWebTypeComputeIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_IapWebTypeComputeIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConditionOutputReference",
+		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewIapWebTypeComputeIamMemberConditionOutputReference_Override(i IapWebType
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConditionOutputReference",
+		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

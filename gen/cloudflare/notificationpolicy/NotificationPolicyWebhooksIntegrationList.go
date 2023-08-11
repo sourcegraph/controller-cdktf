@@ -116,7 +116,7 @@ func NewNotificationPolicyWebhooksIntegrationList(terraformResource cdktf.IInter
 	j := jsiiProxy_NotificationPolicyWebhooksIntegrationList{}
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationList",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNotificationPolicyWebhooksIntegrationList_Override(n NotificationPolicyW
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationList",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

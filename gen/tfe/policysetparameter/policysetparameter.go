@@ -390,7 +390,7 @@ func NewPolicySetParameter(scope constructs.Construct, id *string, config *Polic
 	j := jsiiProxy_PolicySetParameter{}
 
 	_jsii_.Create(
-		"tfe.policySetParameter.PolicySetParameter",
+		"@cdktf/provider-tfe.policySetParameter.PolicySetParameter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewPolicySetParameter_Override(p PolicySetParameter, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.policySetParameter.PolicySetParameter",
+		"@cdktf/provider-tfe.policySetParameter.PolicySetParameter",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -558,7 +558,7 @@ func PolicySetParameter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.policySetParameter.PolicySetParameter",
+		"@cdktf/provider-tfe.policySetParameter.PolicySetParameter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func PolicySetParameter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.policySetParameter.PolicySetParameter",
+		"@cdktf/provider-tfe.policySetParameter.PolicySetParameter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func PolicySetParameter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.policySetParameter.PolicySetParameter",
+		"@cdktf/provider-tfe.policySetParameter.PolicySetParameter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func PolicySetParameter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.policySetParameter.PolicySetParameter",
+		"@cdktf/provider-tfe.policySetParameter.PolicySetParameter",
 		"tfResourceType",
 		&returns,
 	)

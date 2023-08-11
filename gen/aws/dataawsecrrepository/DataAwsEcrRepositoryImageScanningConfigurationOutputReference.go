@@ -167,7 +167,7 @@ func NewDataAwsEcrRepositoryImageScanningConfigurationOutputReference(terraformR
 	j := jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsEcrRepositoryImageScanningConfigurationOutputReference_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsEcrRepository.DataAwsEcrRepositoryImageScanningConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

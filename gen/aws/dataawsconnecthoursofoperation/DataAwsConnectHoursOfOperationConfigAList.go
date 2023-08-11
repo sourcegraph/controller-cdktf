@@ -104,7 +104,7 @@ func NewDataAwsConnectHoursOfOperationConfigAList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsConnectHoursOfOperationConfigAList{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigAList",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsConnectHoursOfOperationConfigAList_Override(d DataAwsConnectHours
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigAList",
+		"@cdktf/provider-aws.dataAwsConnectHoursOfOperation.DataAwsConnectHoursOfOperationConfigAList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

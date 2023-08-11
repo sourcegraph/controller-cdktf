@@ -167,7 +167,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutput
 	j := jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyBypassCacheOnRequestHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

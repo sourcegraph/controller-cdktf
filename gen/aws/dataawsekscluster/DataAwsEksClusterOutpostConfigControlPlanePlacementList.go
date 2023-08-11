@@ -104,7 +104,7 @@ func NewDataAwsEksClusterOutpostConfigControlPlanePlacementList(terraformResourc
 	j := jsiiProxy_DataAwsEksClusterOutpostConfigControlPlanePlacementList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacementList",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEksClusterOutpostConfigControlPlanePlacementList_Override(d DataA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacementList",
+		"@cdktf/provider-aws.dataAwsEksCluster.DataAwsEksClusterOutpostConfigControlPlanePlacementList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -226,7 +226,7 @@ func NewSpannerInstanceIamBindingConditionOutputReference(terraformResource cdkt
 	j := jsiiProxy_SpannerInstanceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.spannerInstanceIamBinding.SpannerInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.spannerInstanceIamBinding.SpannerInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSpannerInstanceIamBindingConditionOutputReference_Override(s SpannerInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.spannerInstanceIamBinding.SpannerInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.spannerInstanceIamBinding.SpannerInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

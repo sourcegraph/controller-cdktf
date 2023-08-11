@@ -596,7 +596,7 @@ func NewGoogleCloudiotDevice(scope constructs.Construct, id *string, config *Goo
 	j := jsiiProxy_GoogleCloudiotDevice{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -609,7 +609,7 @@ func NewGoogleCloudiotDevice_Override(g GoogleCloudiotDevice, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -775,7 +775,7 @@ func GoogleCloudiotDevice_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func GoogleCloudiotDevice_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -813,7 +813,7 @@ func GoogleCloudiotDevice_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -826,7 +826,7 @@ func GoogleCloudiotDevice_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice",
 		"tfResourceType",
 		&returns,
 	)

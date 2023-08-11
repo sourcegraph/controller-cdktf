@@ -180,7 +180,7 @@ func NewAlbListenerTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_AlbListenerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerTimeoutsOutputReference",
+		"@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAlbListenerTimeoutsOutputReference_Override(a AlbListenerTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerTimeoutsOutputReference",
+		"@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroup",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroup",
 		reflect.TypeOf((*AccessGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -74,19 +74,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupConfig",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig",
 		reflect.TypeOf((*AccessGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupExclude",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude",
 		reflect.TypeOf((*AccessGroupExclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupExcludeAzure",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzure",
 		reflect.TypeOf((*AccessGroupExcludeAzure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeAzureList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureList",
 		reflect.TypeOf((*AccessGroupExcludeAzureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeAzureOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeAzureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,11 +145,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation",
 		reflect.TypeOf((*AccessGroupExcludeExternalEvaluation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeExternalEvaluationOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluationOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeExternalEvaluationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -187,11 +187,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupExcludeGithub",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub",
 		reflect.TypeOf((*AccessGroupExcludeGithub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeGithubList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubList",
 		reflect.TypeOf((*AccessGroupExcludeGithubList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -212,7 +212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeGithubOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeGithubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -253,11 +253,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupExcludeGsuite",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite",
 		reflect.TypeOf((*AccessGroupExcludeGsuite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeGsuiteList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteList",
 		reflect.TypeOf((*AccessGroupExcludeGsuiteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -278,7 +278,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeGsuiteOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeGsuiteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -316,7 +316,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeList",
 		reflect.TypeOf((*AccessGroupExcludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -337,11 +337,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupExcludeOkta",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta",
 		reflect.TypeOf((*AccessGroupExcludeOkta)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeOktaList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaList",
 		reflect.TypeOf((*AccessGroupExcludeOktaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -362,7 +362,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeOktaOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeOktaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -400,7 +400,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
@@ -498,11 +498,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupExcludeSaml",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml",
 		reflect.TypeOf((*AccessGroupExcludeSaml)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeSamlList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlList",
 		reflect.TypeOf((*AccessGroupExcludeSamlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -523,7 +523,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeSamlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
@@ -564,15 +564,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupInclude",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude",
 		reflect.TypeOf((*AccessGroupInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupIncludeAzure",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzure",
 		reflect.TypeOf((*AccessGroupIncludeAzure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeAzureList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureList",
 		reflect.TypeOf((*AccessGroupIncludeAzureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -593,7 +593,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeAzureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -631,11 +631,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation",
 		reflect.TypeOf((*AccessGroupIncludeExternalEvaluation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeExternalEvaluationOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluationOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeExternalEvaluationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -673,11 +673,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupIncludeGithub",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub",
 		reflect.TypeOf((*AccessGroupIncludeGithub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeGithubList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubList",
 		reflect.TypeOf((*AccessGroupIncludeGithubList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -698,7 +698,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeGithubOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeGithubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -739,11 +739,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupIncludeGsuite",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite",
 		reflect.TypeOf((*AccessGroupIncludeGsuite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeGsuiteList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteList",
 		reflect.TypeOf((*AccessGroupIncludeGsuiteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -764,7 +764,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeGsuiteOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeGsuiteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -802,7 +802,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeList",
 		reflect.TypeOf((*AccessGroupIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -823,11 +823,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupIncludeOkta",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta",
 		reflect.TypeOf((*AccessGroupIncludeOkta)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeOktaList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaList",
 		reflect.TypeOf((*AccessGroupIncludeOktaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -848,7 +848,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeOktaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -886,7 +886,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
@@ -984,11 +984,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupIncludeSaml",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml",
 		reflect.TypeOf((*AccessGroupIncludeSaml)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeSamlList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlList",
 		reflect.TypeOf((*AccessGroupIncludeSamlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1009,7 +1009,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupIncludeSamlOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeSamlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
@@ -1050,15 +1050,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupRequire",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire",
 		reflect.TypeOf((*AccessGroupRequire)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupRequireAzure",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzure",
 		reflect.TypeOf((*AccessGroupRequireAzure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireAzureList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzureList",
 		reflect.TypeOf((*AccessGroupRequireAzureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1079,7 +1079,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireAzureOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzureOutputReference",
 		reflect.TypeOf((*AccessGroupRequireAzureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1117,11 +1117,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupRequireExternalEvaluation",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation",
 		reflect.TypeOf((*AccessGroupRequireExternalEvaluation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference",
 		reflect.TypeOf((*AccessGroupRequireExternalEvaluationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1159,11 +1159,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupRequireGithub",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub",
 		reflect.TypeOf((*AccessGroupRequireGithub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireGithubList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubList",
 		reflect.TypeOf((*AccessGroupRequireGithubList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1184,7 +1184,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireGithubOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubOutputReference",
 		reflect.TypeOf((*AccessGroupRequireGithubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1225,11 +1225,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupRequireGsuite",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite",
 		reflect.TypeOf((*AccessGroupRequireGsuite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireGsuiteList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteList",
 		reflect.TypeOf((*AccessGroupRequireGsuiteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1250,7 +1250,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference",
 		reflect.TypeOf((*AccessGroupRequireGsuiteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1288,7 +1288,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireList",
 		reflect.TypeOf((*AccessGroupRequireList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1309,11 +1309,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupRequireOkta",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta",
 		reflect.TypeOf((*AccessGroupRequireOkta)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireOktaList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaList",
 		reflect.TypeOf((*AccessGroupRequireOktaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1334,7 +1334,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireOktaOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaOutputReference",
 		reflect.TypeOf((*AccessGroupRequireOktaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1372,7 +1372,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference",
 		reflect.TypeOf((*AccessGroupRequireOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
@@ -1470,11 +1470,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessGroup.AccessGroupRequireSaml",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml",
 		reflect.TypeOf((*AccessGroupRequireSaml)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireSamlList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSamlList",
 		reflect.TypeOf((*AccessGroupRequireSamlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1495,7 +1495,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessGroup.AccessGroupRequireSamlOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSamlOutputReference",
 		reflect.TypeOf((*AccessGroupRequireSamlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},

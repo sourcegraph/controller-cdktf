@@ -252,7 +252,7 @@ func NewSagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOu
 	j := jsiiProxy_SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewSagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

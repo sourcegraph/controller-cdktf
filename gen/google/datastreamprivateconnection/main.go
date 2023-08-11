@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnection",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnection",
 		reflect.TypeOf((*DatastreamPrivateConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionConfig",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionConfig",
 		reflect.TypeOf((*DatastreamPrivateConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionError",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionError",
 		reflect.TypeOf((*DatastreamPrivateConnectionError)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorList",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorList",
 		reflect.TypeOf((*DatastreamPrivateConnectionErrorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorOutputReference",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionErrorOutputReference",
 		reflect.TypeOf((*DatastreamPrivateConnectionErrorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,11 +139,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeouts",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeouts",
 		reflect.TypeOf((*DatastreamPrivateConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*DatastreamPrivateConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,11 +181,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfig",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfig",
 		reflect.TypeOf((*DatastreamPrivateConnectionVpcPeeringConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfigOutputReference",
+		"@cdktf/provider-google.datastreamPrivateConnection.DatastreamPrivateConnectionVpcPeeringConfigOutputReference",
 		reflect.TypeOf((*DatastreamPrivateConnectionVpcPeeringConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

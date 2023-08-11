@@ -203,7 +203,7 @@ func NewJobV1SpecTemplateOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_JobV1SpecTemplateOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewJobV1SpecTemplateOutputReference_Override(j JobV1SpecTemplateOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

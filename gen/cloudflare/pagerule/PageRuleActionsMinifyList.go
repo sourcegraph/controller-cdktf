@@ -116,7 +116,7 @@ func NewPageRuleActionsMinifyList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_PageRuleActionsMinifyList{}
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsMinifyList",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinifyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPageRuleActionsMinifyList_Override(p PageRuleActionsMinifyList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsMinifyList",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinifyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList(terrafo
 	j := jsiiProxy_StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeProjectedSourcesSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

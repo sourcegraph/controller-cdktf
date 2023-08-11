@@ -226,7 +226,7 @@ func NewGoogleComputeRegionDiskIamMemberConditionOutputReference(terraformResour
 	j := jsiiProxy_GoogleComputeRegionDiskIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeRegionDiskIamMemberConditionOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -228,7 +228,7 @@ func NewServiceNetworkingPeeredDnsDomainTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewServiceNetworkingPeeredDnsDomainTimeoutsOutputReference_Override(s Servi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

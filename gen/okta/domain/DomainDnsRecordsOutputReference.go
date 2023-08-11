@@ -200,7 +200,7 @@ func NewDomainDnsRecordsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DomainDnsRecordsOutputReference{}
 
 	_jsii_.Create(
-		"okta.domain.DomainDnsRecordsOutputReference",
+		"@cdktf/provider-okta.domain.DomainDnsRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDomainDnsRecordsOutputReference_Override(d DomainDnsRecordsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.domain.DomainDnsRecordsOutputReference",
+		"@cdktf/provider-okta.domain.DomainDnsRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

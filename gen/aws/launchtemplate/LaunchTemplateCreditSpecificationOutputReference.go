@@ -180,7 +180,7 @@ func NewLaunchTemplateCreditSpecificationOutputReference(terraformResource cdktf
 	j := jsiiProxy_LaunchTemplateCreditSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateCreditSpecificationOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLaunchTemplateCreditSpecificationOutputReference_Override(l LaunchTempla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateCreditSpecificationOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

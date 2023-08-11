@@ -211,7 +211,7 @@ func NewDataTfeWorkspaceVcsRepoOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference{}
 
 	_jsii_.Create(
-		"tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoOutputReference",
+		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataTfeWorkspaceVcsRepoOutputReference_Override(d DataTfeWorkspaceVcsRep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoOutputReference",
+		"@cdktf/provider-tfe.dataTfeWorkspace.DataTfeWorkspaceVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

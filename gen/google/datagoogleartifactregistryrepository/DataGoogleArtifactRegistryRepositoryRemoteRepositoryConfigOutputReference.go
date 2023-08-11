@@ -211,7 +211,7 @@ func NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferenc
 	j := jsiiProxy_DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

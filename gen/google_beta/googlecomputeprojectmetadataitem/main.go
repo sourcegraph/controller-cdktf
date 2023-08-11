@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem",
 		reflect.TypeOf((*GoogleComputeProjectMetadataItem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig",
 		reflect.TypeOf((*GoogleComputeProjectMetadataItemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts",
 		reflect.TypeOf((*GoogleComputeProjectMetadataItemTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeProjectMetadataItemTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

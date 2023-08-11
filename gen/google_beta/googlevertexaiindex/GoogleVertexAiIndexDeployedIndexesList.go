@@ -104,7 +104,7 @@ func NewGoogleVertexAiIndexDeployedIndexesList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleVertexAiIndexDeployedIndexesList{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiIndex.GoogleVertexAiIndexDeployedIndexesList",
+		"@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexDeployedIndexesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleVertexAiIndexDeployedIndexesList_Override(g GoogleVertexAiIndexDep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiIndex.GoogleVertexAiIndexDeployedIndexesList",
+		"@cdktf/provider-google-beta.googleVertexAiIndex.GoogleVertexAiIndexDeployedIndexesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

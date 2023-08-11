@@ -509,7 +509,7 @@ func NewEc2Host(scope constructs.Construct, id *string, config *Ec2HostConfig) E
 	j := jsiiProxy_Ec2Host{}
 
 	_jsii_.Create(
-		"aws.ec2Host.Ec2Host",
+		"@cdktf/provider-aws.ec2Host.Ec2Host",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -522,7 +522,7 @@ func NewEc2Host_Override(e Ec2Host, scope constructs.Construct, id *string, conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Host.Ec2Host",
+		"@cdktf/provider-aws.ec2Host.Ec2Host",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -721,7 +721,7 @@ func Ec2Host_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2Host.Ec2Host",
+		"@cdktf/provider-aws.ec2Host.Ec2Host",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func Ec2Host_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2Host.Ec2Host",
+		"@cdktf/provider-aws.ec2Host.Ec2Host",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func Ec2Host_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2Host.Ec2Host",
+		"@cdktf/provider-aws.ec2Host.Ec2Host",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func Ec2Host_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2Host.Ec2Host",
+		"@cdktf/provider-aws.ec2Host.Ec2Host",
 		"tfResourceType",
 		&returns,
 	)

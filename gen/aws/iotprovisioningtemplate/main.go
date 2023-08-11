@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplate",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplate",
 		reflect.TypeOf((*IotProvisioningTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplateConfig",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplateConfig",
 		reflect.TypeOf((*IotProvisioningTemplateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHook",
 		reflect.TypeOf((*IotProvisioningTemplatePreProvisioningHook)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHookOutputReference",
+		"@cdktf/provider-aws.iotProvisioningTemplate.IotProvisioningTemplatePreProvisioningHookOutputReference",
 		reflect.TypeOf((*IotProvisioningTemplatePreProvisioningHookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

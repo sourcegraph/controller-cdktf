@@ -300,7 +300,7 @@ func NewDataprocWorkflowTemplateJobsHiveJobOutputReference(terraformResource cdk
 	j := jsiiProxy_DataprocWorkflowTemplateJobsHiveJobOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewDataprocWorkflowTemplateJobsHiveJobOutputReference_Override(d DataprocWo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

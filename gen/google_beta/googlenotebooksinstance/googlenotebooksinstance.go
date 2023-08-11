@@ -1107,7 +1107,7 @@ func NewGoogleNotebooksInstance(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleNotebooksInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1120,7 +1120,7 @@ func NewGoogleNotebooksInstance_Override(g GoogleNotebooksInstance, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1528,7 +1528,7 @@ func GoogleNotebooksInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1547,7 +1547,7 @@ func GoogleNotebooksInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1566,7 +1566,7 @@ func GoogleNotebooksInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1579,7 +1579,7 @@ func GoogleNotebooksInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance",
 		"tfResourceType",
 		&returns,
 	)

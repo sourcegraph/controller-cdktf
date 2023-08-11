@@ -180,7 +180,7 @@ func NewDataAwsEc2LocalGatewayTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsEc2LocalGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEc2LocalGatewayTimeoutsOutputReference_Override(d DataAwsEc2Local
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2LocalGateway.DataAwsEc2LocalGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

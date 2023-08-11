@@ -239,7 +239,7 @@ func NewGoogleComputeMachineImageMachineImageEncryptionKeyOutputReference(terraf
 	j := jsiiProxy_GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewGoogleComputeMachineImageMachineImageEncryptionKeyOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeMachineImage.GoogleComputeMachineImageMachineImageEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecContainerLifecyclePostStartExecList(terraformReso
 	j := jsiiProxy_DataKubernetesPodV1SpecContainerLifecyclePostStartExecList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecContainerLifecyclePostStartExecList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecContainerLifecyclePostStartExecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

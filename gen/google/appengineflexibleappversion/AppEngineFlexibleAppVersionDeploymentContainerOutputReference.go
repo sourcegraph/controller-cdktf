@@ -179,7 +179,7 @@ func NewAppEngineFlexibleAppVersionDeploymentContainerOutputReference(terraformR
 	j := jsiiProxy_AppEngineFlexibleAppVersionDeploymentContainerOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentContainerOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppEngineFlexibleAppVersionDeploymentContainerOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentContainerOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionDeploymentContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

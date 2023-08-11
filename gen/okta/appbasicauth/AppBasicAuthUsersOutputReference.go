@@ -239,7 +239,7 @@ func NewAppBasicAuthUsersOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_AppBasicAuthUsersOutputReference{}
 
 	_jsii_.Create(
-		"okta.appBasicAuth.AppBasicAuthUsersOutputReference",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewAppBasicAuthUsersOutputReference_Override(a AppBasicAuthUsersOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appBasicAuth.AppBasicAuthUsersOutputReference",
+		"@cdktf/provider-okta.appBasicAuth.AppBasicAuthUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

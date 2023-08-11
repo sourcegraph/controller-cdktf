@@ -104,7 +104,7 @@ func NewDataAwsAppmeshVirtualServiceSpecProviderList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsAppmeshVirtualServiceSpecProviderList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderList",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAppmeshVirtualServiceSpecProviderList_Override(d DataAwsAppmeshVi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderList",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualServiceSpecProviderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

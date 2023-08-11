@@ -116,7 +116,7 @@ func NewIotTopicRuleTimestreamList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_IotTopicRuleTimestreamList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleTimestreamList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleTimestreamList_Override(i IotTopicRuleTimestreamList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleTimestreamList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleTimestreamList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

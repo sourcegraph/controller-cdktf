@@ -225,7 +225,7 @@ func NewCloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference(t
 	j := jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewCloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

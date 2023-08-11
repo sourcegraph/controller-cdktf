@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference(
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyUserNameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

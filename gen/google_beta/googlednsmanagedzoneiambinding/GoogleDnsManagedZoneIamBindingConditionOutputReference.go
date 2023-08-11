@@ -226,7 +226,7 @@ func NewGoogleDnsManagedZoneIamBindingConditionOutputReference(terraformResource
 	j := jsiiProxy_GoogleDnsManagedZoneIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDnsManagedZoneIamBindingConditionOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDnsManagedZoneIamBinding.GoogleDnsManagedZoneIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

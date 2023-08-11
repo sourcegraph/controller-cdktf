@@ -116,7 +116,7 @@ func NewIotTopicRuleDynamodbv2List(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_IotTopicRuleDynamodbv2List{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleDynamodbv2List",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleDynamodbv2List_Override(i IotTopicRuleDynamodbv2List, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleDynamodbv2List",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2List",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

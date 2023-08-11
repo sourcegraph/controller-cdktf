@@ -260,7 +260,7 @@ func NewAppOauthGroupsClaimOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_AppOauthGroupsClaimOutputReference{}
 
 	_jsii_.Create(
-		"okta.appOauth.AppOauthGroupsClaimOutputReference",
+		"@cdktf/provider-okta.appOauth.AppOauthGroupsClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -272,7 +272,7 @@ func NewAppOauthGroupsClaimOutputReference_Override(a AppOauthGroupsClaimOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appOauth.AppOauthGroupsClaimOutputReference",
+		"@cdktf/provider-okta.appOauth.AppOauthGroupsClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

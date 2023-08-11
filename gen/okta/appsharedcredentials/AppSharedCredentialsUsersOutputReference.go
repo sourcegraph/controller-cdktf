@@ -239,7 +239,7 @@ func NewAppSharedCredentialsUsersOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_AppSharedCredentialsUsersOutputReference{}
 
 	_jsii_.Create(
-		"okta.appSharedCredentials.AppSharedCredentialsUsersOutputReference",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewAppSharedCredentialsUsersOutputReference_Override(a AppSharedCredentials
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSharedCredentials.AppSharedCredentialsUsersOutputReference",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

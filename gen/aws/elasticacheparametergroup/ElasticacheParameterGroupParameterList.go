@@ -116,7 +116,7 @@ func NewElasticacheParameterGroupParameterList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ElasticacheParameterGroupParameterList{}
 
 	_jsii_.Create(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterList",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewElasticacheParameterGroupParameterList_Override(e ElasticacheParameterGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterList",
+		"@cdktf/provider-aws.elasticacheParameterGroup.ElasticacheParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

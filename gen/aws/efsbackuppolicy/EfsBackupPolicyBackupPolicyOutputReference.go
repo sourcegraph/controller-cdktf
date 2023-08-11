@@ -179,7 +179,7 @@ func NewEfsBackupPolicyBackupPolicyOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_EfsBackupPolicyBackupPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.efsBackupPolicy.EfsBackupPolicyBackupPolicyOutputReference",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewEfsBackupPolicyBackupPolicyOutputReference_Override(e EfsBackupPolicyBac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsBackupPolicy.EfsBackupPolicyBackupPolicyOutputReference",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicyBackupPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

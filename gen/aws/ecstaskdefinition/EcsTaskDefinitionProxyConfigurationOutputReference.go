@@ -227,7 +227,7 @@ func NewEcsTaskDefinitionProxyConfigurationOutputReference(terraformResource cdk
 	j := jsiiProxy_EcsTaskDefinitionProxyConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewEcsTaskDefinitionProxyConfigurationOutputReference_Override(e EcsTaskDef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionProxyConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		reflect.TypeOf((*DataOktaTrustedOrigins)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,15 +57,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsConfig",
 		reflect.TypeOf((*DataOktaTrustedOriginsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOrigins",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOrigins",
 		reflect.TypeOf((*DataOktaTrustedOriginsTrustedOrigins)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsList",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsList",
 		reflect.TypeOf((*DataOktaTrustedOriginsTrustedOriginsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -85,7 +85,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsOutputReference",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsOutputReference",
 		reflect.TypeOf((*DataOktaTrustedOriginsTrustedOriginsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},

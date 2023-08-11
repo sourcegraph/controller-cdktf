@@ -474,7 +474,7 @@ func NewDataprocAutoscalingPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataprocAutoscalingPolicy{}
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewDataprocAutoscalingPolicy_Override(d DataprocAutoscalingPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -631,7 +631,7 @@ func DataprocAutoscalingPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -650,7 +650,7 @@ func DataprocAutoscalingPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func DataprocAutoscalingPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func DataprocAutoscalingPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
+		"@cdktf/provider-google.dataprocAutoscalingPolicy.DataprocAutoscalingPolicy",
 		"tfResourceType",
 		&returns,
 	)

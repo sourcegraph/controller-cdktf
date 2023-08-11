@@ -388,7 +388,7 @@ func NewRoute53TrafficPolicy(scope constructs.Construct, id *string, config *Rou
 	j := jsiiProxy_Route53TrafficPolicy{}
 
 	_jsii_.Create(
-		"aws.route53TrafficPolicy.Route53TrafficPolicy",
+		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewRoute53TrafficPolicy_Override(r Route53TrafficPolicy, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53TrafficPolicy.Route53TrafficPolicy",
+		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -545,7 +545,7 @@ func Route53TrafficPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53TrafficPolicy.Route53TrafficPolicy",
+		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func Route53TrafficPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53TrafficPolicy.Route53TrafficPolicy",
+		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func Route53TrafficPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53TrafficPolicy.Route53TrafficPolicy",
+		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func Route53TrafficPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53TrafficPolicy.Route53TrafficPolicy",
+		"@cdktf/provider-aws.route53TrafficPolicy.Route53TrafficPolicy",
 		"tfResourceType",
 		&returns,
 	)

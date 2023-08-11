@@ -116,7 +116,7 @@ func NewMonitoringAlertPolicyConditionsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_MonitoringAlertPolicyConditionsList{}
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMonitoringAlertPolicyConditionsList_Override(m MonitoringAlertPolicyCond
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

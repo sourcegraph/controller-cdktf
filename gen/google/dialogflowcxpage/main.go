@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPage",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPage",
 		reflect.TypeOf((*DialogflowCxPage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,19 +87,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageConfig",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageConfig",
 		reflect.TypeOf((*DialogflowCxPageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillment",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillment",
 		reflect.TypeOf((*DialogflowCxPageEntryFulfillment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessages",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessages",
 		reflect.TypeOf((*DialogflowCxPageEntryFulfillmentMessages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesList",
 		reflect.TypeOf((*DialogflowCxPageEntryFulfillmentMessagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesOutputReference",
 		reflect.TypeOf((*DialogflowCxPageEntryFulfillmentMessagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,11 +156,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesText",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesText",
 		reflect.TypeOf((*DialogflowCxPageEntryFulfillmentMessagesText)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesTextOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesTextOutputReference",
 		reflect.TypeOf((*DialogflowCxPageEntryFulfillmentMessagesTextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPlaybackInterruption", GoGetter: "AllowPlaybackInterruption"},
@@ -196,7 +196,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentOutputReference",
 		reflect.TypeOf((*DialogflowCxPageEntryFulfillmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -241,11 +241,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlers",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlers",
 		reflect.TypeOf((*DialogflowCxPageEventHandlers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersList",
 		reflect.TypeOf((*DialogflowCxPageEventHandlersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -266,7 +266,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersOutputReference",
 		reflect.TypeOf((*DialogflowCxPageEventHandlersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -312,15 +312,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillment",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillment",
 		reflect.TypeOf((*DialogflowCxPageEventHandlersTriggerFulfillment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessages",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessages",
 		reflect.TypeOf((*DialogflowCxPageEventHandlersTriggerFulfillmentMessages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesList",
 		reflect.TypeOf((*DialogflowCxPageEventHandlersTriggerFulfillmentMessagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -341,7 +341,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference",
 		reflect.TypeOf((*DialogflowCxPageEventHandlersTriggerFulfillmentMessagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -377,11 +377,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText",
 		reflect.TypeOf((*DialogflowCxPageEventHandlersTriggerFulfillmentMessagesText)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOutputReference",
 		reflect.TypeOf((*DialogflowCxPageEventHandlersTriggerFulfillmentMessagesTextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPlaybackInterruption", GoGetter: "AllowPlaybackInterruption"},
@@ -417,7 +417,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEventHandlersTriggerFulfillmentOutputReference",
 		reflect.TypeOf((*DialogflowCxPageEventHandlersTriggerFulfillmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -462,11 +462,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageForm",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageForm",
 		reflect.TypeOf((*DialogflowCxPageForm)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageFormOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormOutputReference",
 		reflect.TypeOf((*DialogflowCxPageFormOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -502,23 +502,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageFormParameters",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParameters",
 		reflect.TypeOf((*DialogflowCxPageFormParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehavior",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehavior",
 		reflect.TypeOf((*DialogflowCxPageFormParametersFillBehavior)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillment",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillment",
 		reflect.TypeOf((*DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessages",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessages",
 		reflect.TypeOf((*DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesList",
 		reflect.TypeOf((*DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -539,7 +539,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference",
 		reflect.TypeOf((*DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -575,11 +575,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText",
 		reflect.TypeOf((*DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTextOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTextOutputReference",
 		reflect.TypeOf((*DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesTextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPlaybackInterruption", GoGetter: "AllowPlaybackInterruption"},
@@ -615,7 +615,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference",
 		reflect.TypeOf((*DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -660,7 +660,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorOutputReference",
 		reflect.TypeOf((*DialogflowCxPageFormParametersFillBehaviorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -696,7 +696,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersList",
 		reflect.TypeOf((*DialogflowCxPageFormParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -717,7 +717,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersOutputReference",
 		reflect.TypeOf((*DialogflowCxPageFormParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -768,11 +768,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageTimeouts",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTimeouts",
 		reflect.TypeOf((*DialogflowCxPageTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowCxPageTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -813,11 +813,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutes",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutes",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutesList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesList",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -838,7 +838,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutesOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesOutputReference",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -887,15 +887,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillment",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillment",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutesTriggerFulfillment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessages",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessages",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutesTriggerFulfillmentMessages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -916,7 +916,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -952,11 +952,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesText)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowPlaybackInterruption", GoGetter: "AllowPlaybackInterruption"},
@@ -992,7 +992,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference",
 		reflect.TypeOf((*DialogflowCxPageTransitionRoutesTriggerFulfillmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

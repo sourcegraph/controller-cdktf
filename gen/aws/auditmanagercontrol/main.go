@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.auditmanagerControl.AuditmanagerControl",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControl",
 		reflect.TypeOf((*AuditmanagerControl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionPlanInstructions", GoGetter: "ActionPlanInstructions"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerControl.AuditmanagerControlConfig",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlConfig",
 		reflect.TypeOf((*AuditmanagerControlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSources",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSources",
 		reflect.TypeOf((*AuditmanagerControlControlMappingSources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesList",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesList",
 		reflect.TypeOf((*AuditmanagerControlControlMappingSourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesOutputReference",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesOutputReference",
 		reflect.TypeOf((*AuditmanagerControlControlMappingSourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,11 +158,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesSourceKeyword",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesSourceKeyword",
 		reflect.TypeOf((*AuditmanagerControlControlMappingSourcesSourceKeyword)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesSourceKeywordList",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesSourceKeywordList",
 		reflect.TypeOf((*AuditmanagerControlControlMappingSourcesSourceKeywordList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference",
+		"@cdktf/provider-aws.auditmanagerControl.AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference",
 		reflect.TypeOf((*AuditmanagerControlControlMappingSourcesSourceKeywordOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

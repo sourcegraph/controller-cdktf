@@ -104,7 +104,7 @@ func NewDataCatalogEntryBigqueryTableSpecTableSpecList(terraformResource cdktf.I
 	j := jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecList{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpecList",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCatalogEntryBigqueryTableSpecTableSpecList_Override(d DataCatalogEnt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpecList",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

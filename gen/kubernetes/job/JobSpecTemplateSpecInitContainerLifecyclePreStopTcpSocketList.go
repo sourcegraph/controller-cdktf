@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList(terraformR
 	j := jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList_Override(j
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecInitContainerLifecyclePreStopTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

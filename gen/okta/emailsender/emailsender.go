@@ -387,7 +387,7 @@ func NewEmailSender(scope constructs.Construct, id *string, config *EmailSenderC
 	j := jsiiProxy_EmailSender{}
 
 	_jsii_.Create(
-		"okta.emailSender.EmailSender",
+		"@cdktf/provider-okta.emailSender.EmailSender",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -400,7 +400,7 @@ func NewEmailSender_Override(e EmailSender, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.emailSender.EmailSender",
+		"@cdktf/provider-okta.emailSender.EmailSender",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -544,7 +544,7 @@ func EmailSender_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.emailSender.EmailSender",
+		"@cdktf/provider-okta.emailSender.EmailSender",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func EmailSender_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.emailSender.EmailSender",
+		"@cdktf/provider-okta.emailSender.EmailSender",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func EmailSender_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.emailSender.EmailSender",
+		"@cdktf/provider-okta.emailSender.EmailSender",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func EmailSender_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.emailSender.EmailSender",
+		"@cdktf/provider-okta.emailSender.EmailSender",
 		"tfResourceType",
 		&returns,
 	)

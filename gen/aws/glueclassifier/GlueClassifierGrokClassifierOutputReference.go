@@ -226,7 +226,7 @@ func NewGlueClassifierGrokClassifierOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GlueClassifierGrokClassifierOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueClassifier.GlueClassifierGrokClassifierOutputReference",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGlueClassifierGrokClassifierOutputReference_Override(g GlueClassifierGro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueClassifier.GlueClassifierGrokClassifierOutputReference",
+		"@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

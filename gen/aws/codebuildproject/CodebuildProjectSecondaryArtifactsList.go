@@ -116,7 +116,7 @@ func NewCodebuildProjectSecondaryArtifactsList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_CodebuildProjectSecondaryArtifactsList{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondaryArtifactsList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodebuildProjectSecondaryArtifactsList_Override(c CodebuildProjectSecond
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondaryArtifactsList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

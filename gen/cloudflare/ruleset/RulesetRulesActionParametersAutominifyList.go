@@ -116,7 +116,7 @@ func NewRulesetRulesActionParametersAutominifyList(terraformResource cdktf.IInte
 	j := jsiiProxy_RulesetRulesActionParametersAutominifyList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersAutominifyList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesActionParametersAutominifyList_Override(r RulesetRulesAction
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersAutominifyList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersAutominifyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

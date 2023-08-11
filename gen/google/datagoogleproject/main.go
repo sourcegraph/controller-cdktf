@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleProject.DataGoogleProject",
+		"@cdktf/provider-google.dataGoogleProject.DataGoogleProject",
 		reflect.TypeOf((*DataGoogleProject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleProject.DataGoogleProjectConfig",
+		"@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig",
 		reflect.TypeOf((*DataGoogleProjectConfig)(nil)).Elem(),
 	)
 }

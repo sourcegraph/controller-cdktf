@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfaces",
+		"@cdktf/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfaces",
 		reflect.TypeOf((*DataAwsNetworkInterfaces)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig",
+		"@cdktf/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesConfig",
 		reflect.TypeOf((*DataAwsNetworkInterfacesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilter",
+		"@cdktf/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilter",
 		reflect.TypeOf((*DataAwsNetworkInterfacesFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterList",
+		"@cdktf/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterList",
 		reflect.TypeOf((*DataAwsNetworkInterfacesFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesFilterOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfacesFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeouts",
+		"@cdktf/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeouts",
 		reflect.TypeOf((*DataAwsNetworkInterfacesTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterfaces.DataAwsNetworkInterfacesTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsNetworkInterfacesTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

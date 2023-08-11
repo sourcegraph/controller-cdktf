@@ -228,7 +228,7 @@ func NewComputeReservationTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ComputeReservationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationTimeoutsOutputReference",
+		"@cdktf/provider-google.computeReservation.ComputeReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeReservationTimeoutsOutputReference_Override(c ComputeReservationT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationTimeoutsOutputReference",
+		"@cdktf/provider-google.computeReservation.ComputeReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

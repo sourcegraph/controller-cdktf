@@ -180,7 +180,7 @@ func NewCronJobV1TimeoutsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_CronJobV1TimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1TimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1TimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCronJobV1TimeoutsOutputReference_Override(c CronJobV1TimeoutsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1TimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1TimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

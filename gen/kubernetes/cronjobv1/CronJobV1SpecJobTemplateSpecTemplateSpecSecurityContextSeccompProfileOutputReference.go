@@ -204,7 +204,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOut
 	j := jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateSpecSecurityContextSeccompProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

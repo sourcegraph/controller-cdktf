@@ -116,7 +116,7 @@ func NewPodSpecTopologySpreadConstraintList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_PodSpecTopologySpreadConstraintList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.pod.PodSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecTopologySpreadConstraintList_Override(p PodSpecTopologySpreadCons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.pod.PodSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

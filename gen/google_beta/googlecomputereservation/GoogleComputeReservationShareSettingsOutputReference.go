@@ -204,7 +204,7 @@ func NewGoogleComputeReservationShareSettingsOutputReference(terraformResource c
 	j := jsiiProxy_GoogleComputeReservationShareSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeReservationShareSettingsOutputReference_Override(g GoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

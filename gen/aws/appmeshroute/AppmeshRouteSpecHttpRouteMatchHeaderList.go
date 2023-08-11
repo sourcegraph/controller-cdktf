@@ -116,7 +116,7 @@ func NewAppmeshRouteSpecHttpRouteMatchHeaderList(terraformResource cdktf.IInterp
 	j := jsiiProxy_AppmeshRouteSpecHttpRouteMatchHeaderList{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderList",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppmeshRouteSpecHttpRouteMatchHeaderList_Override(a AppmeshRouteSpecHttp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderList",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecHttpRouteMatchHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

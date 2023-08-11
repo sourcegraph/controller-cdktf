@@ -116,7 +116,7 @@ func NewGoogleDeploymentManagerDeploymentLabelsList(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentLabelsList",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDeploymentManagerDeploymentLabelsList_Override(g GoogleDeploymentM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentLabelsList",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

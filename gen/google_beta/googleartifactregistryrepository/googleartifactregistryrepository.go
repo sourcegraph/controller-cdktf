@@ -639,7 +639,7 @@ func NewGoogleArtifactRegistryRepository(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleArtifactRegistryRepository{}
 
 	_jsii_.Create(
-		"google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -652,7 +652,7 @@ func NewGoogleArtifactRegistryRepository_Override(g GoogleArtifactRegistryReposi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -851,7 +851,7 @@ func GoogleArtifactRegistryRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -870,7 +870,7 @@ func GoogleArtifactRegistryRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -889,7 +889,7 @@ func GoogleArtifactRegistryRepository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -902,7 +902,7 @@ func GoogleArtifactRegistryRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
 		"tfResourceType",
 		&returns,
 	)

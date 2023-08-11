@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust",
 		reflect.TypeOf((*ActiveDirectoryDomainTrust)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig",
 		reflect.TypeOf((*ActiveDirectoryDomainTrustConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts",
 		reflect.TypeOf((*ActiveDirectoryDomainTrustTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeoutsOutputReference",
+		"@cdktf/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeoutsOutputReference",
 		reflect.TypeOf((*ActiveDirectoryDomainTrustTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

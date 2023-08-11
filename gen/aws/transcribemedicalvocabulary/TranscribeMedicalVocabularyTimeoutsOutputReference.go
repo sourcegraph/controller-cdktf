@@ -228,7 +228,7 @@ func NewTranscribeMedicalVocabularyTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_TranscribeMedicalVocabularyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeoutsOutputReference",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewTranscribeMedicalVocabularyTimeoutsOutputReference_Override(t Transcribe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeoutsOutputReference",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabularyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

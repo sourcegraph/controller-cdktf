@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettings",
 		reflect.TypeOf((*AppEngineServiceNetworkSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsConfig",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsConfig",
 		reflect.TypeOf((*AppEngineServiceNetworkSettingsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsNetworkSettings",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsNetworkSettings",
 		reflect.TypeOf((*AppEngineServiceNetworkSettingsNetworkSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsNetworkSettingsOutputReference",
 		reflect.TypeOf((*AppEngineServiceNetworkSettingsNetworkSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,11 +110,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsTimeouts",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsTimeouts",
 		reflect.TypeOf((*AppEngineServiceNetworkSettingsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineServiceNetworkSettings.AppEngineServiceNetworkSettingsTimeoutsOutputReference",
 		reflect.TypeOf((*AppEngineServiceNetworkSettingsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

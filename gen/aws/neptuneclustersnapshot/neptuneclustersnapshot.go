@@ -509,7 +509,7 @@ func NewNeptuneClusterSnapshot(scope constructs.Construct, id *string, config *N
 	j := jsiiProxy_NeptuneClusterSnapshot{}
 
 	_jsii_.Create(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -522,7 +522,7 @@ func NewNeptuneClusterSnapshot_Override(n NeptuneClusterSnapshot, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -655,7 +655,7 @@ func NeptuneClusterSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -674,7 +674,7 @@ func NeptuneClusterSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func NeptuneClusterSnapshot_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -706,7 +706,7 @@ func NeptuneClusterSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
+		"@cdktf/provider-aws.neptuneClusterSnapshot.NeptuneClusterSnapshot",
 		"tfResourceType",
 		&returns,
 	)

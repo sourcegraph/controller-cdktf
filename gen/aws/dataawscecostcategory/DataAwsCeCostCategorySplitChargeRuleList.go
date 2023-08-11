@@ -104,7 +104,7 @@ func NewDataAwsCeCostCategorySplitChargeRuleList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsCeCostCategorySplitChargeRuleList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRuleList",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCeCostCategorySplitChargeRuleList_Override(d DataAwsCeCostCategor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRuleList",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategorySplitChargeRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

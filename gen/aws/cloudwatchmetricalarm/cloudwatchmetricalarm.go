@@ -856,7 +856,7 @@ func NewCloudwatchMetricAlarm(scope constructs.Construct, id *string, config *Cl
 	j := jsiiProxy_CloudwatchMetricAlarm{}
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -869,7 +869,7 @@ func NewCloudwatchMetricAlarm_Override(c CloudwatchMetricAlarm, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1222,7 +1222,7 @@ func CloudwatchMetricAlarm_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1241,7 +1241,7 @@ func CloudwatchMetricAlarm_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1260,7 +1260,7 @@ func CloudwatchMetricAlarm_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1273,7 +1273,7 @@ func CloudwatchMetricAlarm_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarm",
 		"tfResourceType",
 		&returns,
 	)

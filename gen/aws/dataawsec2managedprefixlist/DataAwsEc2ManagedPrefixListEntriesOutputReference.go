@@ -178,7 +178,7 @@ func NewDataAwsEc2ManagedPrefixListEntriesOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsEc2ManagedPrefixListEntriesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListEntriesOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListEntriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsEc2ManagedPrefixListEntriesOutputReference_Override(d DataAwsEc2M
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListEntriesOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixListEntriesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

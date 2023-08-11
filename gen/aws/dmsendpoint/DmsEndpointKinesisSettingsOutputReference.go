@@ -372,7 +372,7 @@ func NewDmsEndpointKinesisSettingsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DmsEndpointKinesisSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewDmsEndpointKinesisSettingsOutputReference_Override(d DmsEndpointKinesisS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
+		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

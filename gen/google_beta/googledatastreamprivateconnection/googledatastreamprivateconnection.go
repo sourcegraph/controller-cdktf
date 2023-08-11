@@ -493,7 +493,7 @@ func NewGoogleDatastreamPrivateConnection(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleDatastreamPrivateConnection{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
+		"@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -506,7 +506,7 @@ func NewGoogleDatastreamPrivateConnection_Override(g GoogleDatastreamPrivateConn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
+		"@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -672,7 +672,7 @@ func GoogleDatastreamPrivateConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
+		"@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func GoogleDatastreamPrivateConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
+		"@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func GoogleDatastreamPrivateConnection_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
+		"@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func GoogleDatastreamPrivateConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
+		"@cdktf/provider-google-beta.googleDatastreamPrivateConnection.GoogleDatastreamPrivateConnection",
 		"tfResourceType",
 		&returns,
 	)

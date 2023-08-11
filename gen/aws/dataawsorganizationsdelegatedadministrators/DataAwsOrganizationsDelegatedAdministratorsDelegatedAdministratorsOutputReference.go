@@ -244,7 +244,7 @@ func NewDataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutput
 	j := jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewDataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedAdministrators.DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

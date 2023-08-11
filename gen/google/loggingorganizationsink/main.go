@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.loggingOrganizationSink.LoggingOrganizationSink",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		reflect.TypeOf((*LoggingOrganizationSink)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,11 +82,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkBigqueryOptions",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkBigqueryOptions",
 		reflect.TypeOf((*LoggingOrganizationSinkBigqueryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkBigqueryOptionsOutputReference",
 		reflect.TypeOf((*LoggingOrganizationSinkBigqueryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,15 +120,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkConfig",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkConfig",
 		reflect.TypeOf((*LoggingOrganizationSinkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkExclusions",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusions",
 		reflect.TypeOf((*LoggingOrganizationSinkExclusions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsList",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsList",
 		reflect.TypeOf((*LoggingOrganizationSinkExclusionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsOutputReference",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsOutputReference",
 		reflect.TypeOf((*LoggingOrganizationSinkExclusionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -366,7 +366,7 @@ func NewGuarddutyInviteAccepter(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GuarddutyInviteAccepter{}
 
 	_jsii_.Create(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewGuarddutyInviteAccepter_Override(g GuarddutyInviteAccepter, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -512,7 +512,7 @@ func GuarddutyInviteAccepter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func GuarddutyInviteAccepter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GuarddutyInviteAccepter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func GuarddutyInviteAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		"tfResourceType",
 		&returns,
 	)

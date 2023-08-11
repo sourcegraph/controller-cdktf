@@ -314,7 +314,7 @@ func NewDataAwsSecretsmanagerSecrets(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsSecretsmanagerSecrets{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -327,7 +327,7 @@ func NewDataAwsSecretsmanagerSecrets_Override(d DataAwsSecretsmanagerSecrets, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataAwsSecretsmanagerSecrets_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataAwsSecretsmanagerSecrets_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsSecretsmanagerSecrets_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsSecretsmanagerSecrets_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecrets.DataAwsSecretsmanagerSecrets",
 		"tfResourceType",
 		&returns,
 	)

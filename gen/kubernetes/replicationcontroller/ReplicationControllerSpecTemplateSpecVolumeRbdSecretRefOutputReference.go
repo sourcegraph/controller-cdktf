@@ -204,7 +204,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference(t
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeRbdSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -458,7 +458,7 @@ func NewSccNotificationConfig(scope constructs.Construct, id *string, config *Sc
 	j := jsiiProxy_SccNotificationConfig{}
 
 	_jsii_.Create(
-		"google.sccNotificationConfig.SccNotificationConfig",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewSccNotificationConfig_Override(s SccNotificationConfig, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccNotificationConfig.SccNotificationConfig",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -626,7 +626,7 @@ func SccNotificationConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccNotificationConfig.SccNotificationConfig",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func SccNotificationConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccNotificationConfig.SccNotificationConfig",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func SccNotificationConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccNotificationConfig.SccNotificationConfig",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func SccNotificationConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sccNotificationConfig.SccNotificationConfig",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfig",
 		"tfResourceType",
 		&returns,
 	)

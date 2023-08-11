@@ -361,7 +361,7 @@ func NewDataGoogleComputeRegionDiskIamPolicy(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleComputeRegionDiskIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleComputeRegionDiskIamPolicy_Override(d DataGoogleComputeRegionD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleComputeRegionDiskIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleComputeRegionDiskIamPolicy_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleComputeRegionDiskIamPolicy_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleComputeRegionDiskIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionDiskIamPolicy.DataGoogleComputeRegionDiskIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

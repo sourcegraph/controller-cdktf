@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestor",
 		reflect.TypeOf((*BinaryAuthorizationAttestor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,11 +70,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNote",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNote",
 		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNote)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference",
 		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNoteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -113,11 +113,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys",
 		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList",
 		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -138,7 +138,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference",
 		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "asciiArmoredPgpPublicKey", GoGetter: "AsciiArmoredPgpPublicKey"},
@@ -183,11 +183,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey",
 		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference",
 		reflect.TypeOf((*BinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,15 +225,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorConfig",
 		reflect.TypeOf((*BinaryAuthorizationAttestorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeouts",
 		reflect.TypeOf((*BinaryAuthorizationAttestorTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeoutsOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestor.BinaryAuthorizationAttestorTimeoutsOutputReference",
 		reflect.TypeOf((*BinaryAuthorizationAttestorTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

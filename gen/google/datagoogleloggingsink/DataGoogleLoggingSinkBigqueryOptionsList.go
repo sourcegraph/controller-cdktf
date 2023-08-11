@@ -104,7 +104,7 @@ func NewDataGoogleLoggingSinkBigqueryOptionsList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataGoogleLoggingSinkBigqueryOptionsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsList",
+		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleLoggingSinkBigqueryOptionsList_Override(d DataGoogleLoggingSin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsList",
+		"@cdktf/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

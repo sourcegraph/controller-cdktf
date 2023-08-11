@@ -276,7 +276,7 @@ func NewElasticsearchDomainDomainEndpointOptionsOutputReference(terraformResourc
 	j := jsiiProxy_ElasticsearchDomainDomainEndpointOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewElasticsearchDomainDomainEndpointOptionsOutputReference_Override(e Elast
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

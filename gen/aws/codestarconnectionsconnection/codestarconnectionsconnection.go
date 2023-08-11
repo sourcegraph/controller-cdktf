@@ -437,7 +437,7 @@ func NewCodestarconnectionsConnection(scope constructs.Construct, id *string, co
 	j := jsiiProxy_CodestarconnectionsConnection{}
 
 	_jsii_.Create(
-		"aws.codestarconnectionsConnection.CodestarconnectionsConnection",
+		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewCodestarconnectionsConnection_Override(c CodestarconnectionsConnection, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codestarconnectionsConnection.CodestarconnectionsConnection",
+		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -616,7 +616,7 @@ func CodestarconnectionsConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codestarconnectionsConnection.CodestarconnectionsConnection",
+		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func CodestarconnectionsConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codestarconnectionsConnection.CodestarconnectionsConnection",
+		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func CodestarconnectionsConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codestarconnectionsConnection.CodestarconnectionsConnection",
+		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func CodestarconnectionsConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codestarconnectionsConnection.CodestarconnectionsConnection",
+		"@cdktf/provider-aws.codestarconnectionsConnection.CodestarconnectionsConnection",
 		"tfResourceType",
 		&returns,
 	)

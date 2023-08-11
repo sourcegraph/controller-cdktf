@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomain",
 		reflect.TypeOf((*DataAwsOpensearchDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicies", GoGetter: "AccessPolicies"},
@@ -78,11 +78,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptions",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptions",
 		reflect.TypeOf((*DataAwsOpensearchDomainAdvancedSecurityOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptionsList",
 		reflect.TypeOf((*DataAwsOpensearchDomainAdvancedSecurityOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptions",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptions",
 		reflect.TypeOf((*DataAwsOpensearchDomainAutoTuneOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsList",
 		reflect.TypeOf((*DataAwsOpensearchDomainAutoTuneOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,15 +160,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule",
 		reflect.TypeOf((*DataAwsOpensearchDomainAutoTuneOptionsMaintenanceSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration",
 		reflect.TypeOf((*DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationList",
 		reflect.TypeOf((*DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -188,7 +188,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,7 +222,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList",
 		reflect.TypeOf((*DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -242,7 +242,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -277,7 +277,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAutoTuneOptionsOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainAutoTuneOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -312,15 +312,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfig",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfig",
 		reflect.TypeOf((*DataAwsOpensearchDomainClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigColdStorageOptions",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigColdStorageOptions",
 		reflect.TypeOf((*DataAwsOpensearchDomainClusterConfigColdStorageOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigColdStorageOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigColdStorageOptionsList",
 		reflect.TypeOf((*DataAwsOpensearchDomainClusterConfigColdStorageOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -340,7 +340,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainClusterConfigColdStorageOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -373,7 +373,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigList",
 		reflect.TypeOf((*DataAwsOpensearchDomainClusterConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -393,7 +393,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainClusterConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "coldStorageOptions", GoGetter: "ColdStorageOptions"},
@@ -436,11 +436,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig",
 		reflect.TypeOf((*DataAwsOpensearchDomainClusterConfigZoneAwarenessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList",
 		reflect.TypeOf((*DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -460,7 +460,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneCount", GoGetter: "AvailabilityZoneCount"},
@@ -493,11 +493,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptions",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptions",
 		reflect.TypeOf((*DataAwsOpensearchDomainCognitoOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsList",
 		reflect.TypeOf((*DataAwsOpensearchDomainCognitoOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -517,7 +517,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainCognitoOptionsOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainCognitoOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -553,15 +553,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainConfig",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainConfig",
 		reflect.TypeOf((*DataAwsOpensearchDomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEbsOptions",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEbsOptions",
 		reflect.TypeOf((*DataAwsOpensearchDomainEbsOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEbsOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEbsOptionsList",
 		reflect.TypeOf((*DataAwsOpensearchDomainEbsOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -581,7 +581,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEbsOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEbsOptionsOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainEbsOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -618,11 +618,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRest",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRest",
 		reflect.TypeOf((*DataAwsOpensearchDomainEncryptionAtRest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestList",
 		reflect.TypeOf((*DataAwsOpensearchDomainEncryptionAtRestList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -642,7 +642,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainEncryptionAtRestOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainEncryptionAtRestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -676,11 +676,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainLogPublishingOptions",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainLogPublishingOptions",
 		reflect.TypeOf((*DataAwsOpensearchDomainLogPublishingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainLogPublishingOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainLogPublishingOptionsList",
 		reflect.TypeOf((*DataAwsOpensearchDomainLogPublishingOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -700,7 +700,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainLogPublishingOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainLogPublishingOptionsOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainLogPublishingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroupArn", GoGetter: "CloudwatchLogGroupArn"},
@@ -735,11 +735,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainNodeToNodeEncryption",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainNodeToNodeEncryption",
 		reflect.TypeOf((*DataAwsOpensearchDomainNodeToNodeEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainNodeToNodeEncryptionList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainNodeToNodeEncryptionList",
 		reflect.TypeOf((*DataAwsOpensearchDomainNodeToNodeEncryptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -759,7 +759,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainNodeToNodeEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -792,11 +792,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainSnapshotOptions",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainSnapshotOptions",
 		reflect.TypeOf((*DataAwsOpensearchDomainSnapshotOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainSnapshotOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainSnapshotOptionsList",
 		reflect.TypeOf((*DataAwsOpensearchDomainSnapshotOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -816,7 +816,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainSnapshotOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainSnapshotOptionsOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainSnapshotOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automatedSnapshotStartHour", GoGetter: "AutomatedSnapshotStartHour"},
@@ -849,11 +849,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptions",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptions",
 		reflect.TypeOf((*DataAwsOpensearchDomainVpcOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsList",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsList",
 		reflect.TypeOf((*DataAwsOpensearchDomainVpcOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -873,7 +873,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainVpcOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},

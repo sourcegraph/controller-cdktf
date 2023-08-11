@@ -248,7 +248,7 @@ func NewGameliftFleetEc2InboundPermissionOutputReference(terraformResource cdktf
 	j := jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -260,7 +260,7 @@ func NewGameliftFleetEc2InboundPermissionOutputReference_Override(g GameliftFlee
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

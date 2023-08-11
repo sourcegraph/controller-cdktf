@@ -366,7 +366,7 @@ func NewLakeformationLfTag(scope constructs.Construct, id *string, config *Lakef
 	j := jsiiProxy_LakeformationLfTag{}
 
 	_jsii_.Create(
-		"aws.lakeformationLfTag.LakeformationLfTag",
+		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewLakeformationLfTag_Override(l LakeformationLfTag, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationLfTag.LakeformationLfTag",
+		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -523,7 +523,7 @@ func LakeformationLfTag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationLfTag.LakeformationLfTag",
+		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func LakeformationLfTag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationLfTag.LakeformationLfTag",
+		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func LakeformationLfTag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationLfTag.LakeformationLfTag",
+		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func LakeformationLfTag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lakeformationLfTag.LakeformationLfTag",
+		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
 		"tfResourceType",
 		&returns,
 	)

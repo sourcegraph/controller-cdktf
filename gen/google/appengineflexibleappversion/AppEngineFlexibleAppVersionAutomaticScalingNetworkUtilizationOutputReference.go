@@ -252,7 +252,7 @@ func NewAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputRefer
 	j := jsiiProxy_AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

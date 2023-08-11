@@ -204,7 +204,7 @@ func NewJobSpecTemplateSpecVolumeHostPathOutputReference(terraformResource cdktf
 	j := jsiiProxy_JobSpecTemplateSpecVolumeHostPathOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewJobSpecTemplateSpecVolumeHostPathOutputReference_Override(j JobSpecTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

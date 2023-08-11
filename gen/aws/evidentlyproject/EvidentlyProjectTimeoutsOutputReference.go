@@ -228,7 +228,7 @@ func NewEvidentlyProjectTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_EvidentlyProjectTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyProject.EvidentlyProjectTimeoutsOutputReference",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEvidentlyProjectTimeoutsOutputReference_Override(e EvidentlyProjectTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyProject.EvidentlyProjectTimeoutsOutputReference",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

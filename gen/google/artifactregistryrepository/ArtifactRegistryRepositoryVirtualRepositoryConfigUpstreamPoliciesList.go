@@ -116,7 +116,7 @@ func NewArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList(te
 	j := jsiiProxy_ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

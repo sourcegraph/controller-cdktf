@@ -204,7 +204,7 @@ func NewReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputRe
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

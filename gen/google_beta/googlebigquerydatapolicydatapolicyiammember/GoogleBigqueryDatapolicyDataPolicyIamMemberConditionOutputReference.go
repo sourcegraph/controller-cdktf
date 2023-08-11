@@ -226,7 +226,7 @@ func NewGoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference(terr
 	j := jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamMember.GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

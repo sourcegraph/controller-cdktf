@@ -180,7 +180,7 @@ func NewDialogflowCxPageEntryFulfillmentMessagesOutputReference(terraformResourc
 	j := jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDialogflowCxPageEntryFulfillmentMessagesOutputReference_Override(d Dialo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

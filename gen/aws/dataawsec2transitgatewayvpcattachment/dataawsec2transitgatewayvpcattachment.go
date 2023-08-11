@@ -417,7 +417,7 @@ func NewDataAwsEc2TransitGatewayVpcAttachment(scope constructs.Construct, id *st
 	j := jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewDataAwsEc2TransitGatewayVpcAttachment_Override(d DataAwsEc2TransitGatewa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -530,7 +530,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_IsTerraformDataSource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func DataAwsEc2TransitGatewayVpcAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachment",
 		"tfResourceType",
 		&returns,
 	)

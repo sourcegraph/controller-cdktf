@@ -556,7 +556,7 @@ func NewBatchJobDefinition(scope constructs.Construct, id *string, config *Batch
 	j := jsiiProxy_BatchJobDefinition{}
 
 	_jsii_.Create(
-		"aws.batchJobDefinition.BatchJobDefinition",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -569,7 +569,7 @@ func NewBatchJobDefinition_Override(b BatchJobDefinition, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchJobDefinition.BatchJobDefinition",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -768,7 +768,7 @@ func BatchJobDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.batchJobDefinition.BatchJobDefinition",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -787,7 +787,7 @@ func BatchJobDefinition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.batchJobDefinition.BatchJobDefinition",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -806,7 +806,7 @@ func BatchJobDefinition_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.batchJobDefinition.BatchJobDefinition",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func BatchJobDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.batchJobDefinition.BatchJobDefinition",
+		"@cdktf/provider-aws.batchJobDefinition.BatchJobDefinition",
 		"tfResourceType",
 		&returns,
 	)

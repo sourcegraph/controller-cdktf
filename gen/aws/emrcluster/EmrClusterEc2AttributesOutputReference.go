@@ -371,7 +371,7 @@ func NewEmrClusterEc2AttributesOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EmrClusterEc2AttributesOutputReference{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterEc2AttributesOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterEc2AttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewEmrClusterEc2AttributesOutputReference_Override(e EmrClusterEc2Attribute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterEc2AttributesOutputReference",
+		"@cdktf/provider-aws.emrCluster.EmrClusterEc2AttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

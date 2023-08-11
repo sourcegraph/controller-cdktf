@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.organizationModuleSharing.OrganizationModuleSharing",
+		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		reflect.TypeOf((*OrganizationModuleSharing)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.organizationModuleSharing.OrganizationModuleSharingConfig",
+		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharingConfig",
 		reflect.TypeOf((*OrganizationModuleSharingConfig)(nil)).Elem(),
 	)
 }

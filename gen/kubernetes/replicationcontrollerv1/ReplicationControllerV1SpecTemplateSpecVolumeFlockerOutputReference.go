@@ -204,7 +204,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference(terr
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeFlockerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

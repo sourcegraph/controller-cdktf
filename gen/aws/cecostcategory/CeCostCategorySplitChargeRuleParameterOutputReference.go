@@ -204,7 +204,7 @@ func NewCeCostCategorySplitChargeRuleParameterOutputReference(terraformResource 
 	j := jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCeCostCategorySplitChargeRuleParameterOutputReference_Override(c CeCostC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -180,7 +180,7 @@ func NewLoadBalancerRulesOverridesAdaptiveRoutingOutputReference(terraformResour
 	j := jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLoadBalancerRulesOverridesAdaptiveRoutingOutputReference_Override(l Load
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesAdaptiveRoutingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

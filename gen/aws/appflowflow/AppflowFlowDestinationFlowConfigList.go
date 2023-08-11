@@ -116,7 +116,7 @@ func NewAppflowFlowDestinationFlowConfigList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigList{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigList",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppflowFlowDestinationFlowConfigList_Override(a AppflowFlowDestinationFl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigList",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

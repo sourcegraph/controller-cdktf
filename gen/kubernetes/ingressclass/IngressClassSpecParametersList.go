@@ -116,7 +116,7 @@ func NewIngressClassSpecParametersList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_IngressClassSpecParametersList{}
 
 	_jsii_.Create(
-		"kubernetes.ingressClass.IngressClassSpecParametersList",
+		"@cdktf/provider-kubernetes.ingressClass.IngressClassSpecParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIngressClassSpecParametersList_Override(i IngressClassSpecParametersList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingressClass.IngressClassSpecParametersList",
+		"@cdktf/provider-kubernetes.ingressClass.IngressClassSpecParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

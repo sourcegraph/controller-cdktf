@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.userGroupMemberships.UserGroupMemberships",
+		"@cdktf/provider-okta.userGroupMemberships.UserGroupMemberships",
 		reflect.TypeOf((*UserGroupMemberships)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.userGroupMemberships.UserGroupMembershipsConfig",
+		"@cdktf/provider-okta.userGroupMemberships.UserGroupMembershipsConfig",
 		reflect.TypeOf((*UserGroupMembershipsConfig)(nil)).Elem(),
 	)
 }

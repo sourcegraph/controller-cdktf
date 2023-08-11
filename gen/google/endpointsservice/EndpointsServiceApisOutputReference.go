@@ -200,7 +200,7 @@ func NewEndpointsServiceApisOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_EndpointsServiceApisOutputReference{}
 
 	_jsii_.Create(
-		"google.endpointsService.EndpointsServiceApisOutputReference",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewEndpointsServiceApisOutputReference_Override(e EndpointsServiceApisOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsService.EndpointsServiceApisOutputReference",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

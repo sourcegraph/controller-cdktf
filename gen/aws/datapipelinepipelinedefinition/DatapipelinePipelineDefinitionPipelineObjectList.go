@@ -116,7 +116,7 @@ func NewDatapipelinePipelineDefinitionPipelineObjectList(terraformResource cdktf
 	j := jsiiProxy_DatapipelinePipelineDefinitionPipelineObjectList{}
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectList",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDatapipelinePipelineDefinitionPipelineObjectList_Override(d Datapipeline
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectList",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

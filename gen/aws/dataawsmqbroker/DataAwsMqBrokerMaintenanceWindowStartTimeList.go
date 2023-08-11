@@ -104,7 +104,7 @@ func NewDataAwsMqBrokerMaintenanceWindowStartTimeList(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsMqBrokerMaintenanceWindowStartTimeList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeList",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMqBrokerMaintenanceWindowStartTimeList_Override(d DataAwsMqBroker
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeList",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

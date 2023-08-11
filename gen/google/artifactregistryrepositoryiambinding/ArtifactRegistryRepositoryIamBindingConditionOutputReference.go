@@ -226,7 +226,7 @@ func NewArtifactRegistryRepositoryIamBindingConditionOutputReference(terraformRe
 	j := jsiiProxy_ArtifactRegistryRepositoryIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingConditionOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewArtifactRegistryRepositoryIamBindingConditionOutputReference_Override(a 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingConditionOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamBinding.ArtifactRegistryRepositoryIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

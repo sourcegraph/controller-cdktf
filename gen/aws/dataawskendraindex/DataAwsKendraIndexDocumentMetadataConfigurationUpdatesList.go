@@ -104,7 +104,7 @@ func NewDataAwsKendraIndexDocumentMetadataConfigurationUpdatesList(terraformReso
 	j := jsiiProxy_DataAwsKendraIndexDocumentMetadataConfigurationUpdatesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexDocumentMetadataConfigurationUpdatesList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexDocumentMetadataConfigurationUpdatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraIndexDocumentMetadataConfigurationUpdatesList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexDocumentMetadataConfigurationUpdatesList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexDocumentMetadataConfigurationUpdatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

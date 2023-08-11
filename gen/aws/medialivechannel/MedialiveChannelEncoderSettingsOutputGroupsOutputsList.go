@@ -116,7 +116,7 @@ func NewMedialiveChannelEncoderSettingsOutputGroupsOutputsList(terraformResource
 	j := jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsList{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveChannelEncoderSettingsOutputGroupsOutputsList_Override(m Medial
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsOutputGroupsOutputsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

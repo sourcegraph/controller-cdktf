@@ -104,7 +104,7 @@ func NewDataGoogleProjectsProjectsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_DataGoogleProjectsProjectsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProjects.DataGoogleProjectsProjectsList",
+		"@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsProjectsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleProjectsProjectsList_Override(d DataGoogleProjectsProjectsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProjects.DataGoogleProjectsProjectsList",
+		"@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsProjectsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

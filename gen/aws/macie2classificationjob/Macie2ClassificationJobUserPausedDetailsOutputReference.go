@@ -189,7 +189,7 @@ func NewMacie2ClassificationJobUserPausedDetailsOutputReference(terraformResourc
 	j := jsiiProxy_Macie2ClassificationJobUserPausedDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewMacie2ClassificationJobUserPausedDetailsOutputReference_Override(m Macie
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsOutputReference",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobUserPausedDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

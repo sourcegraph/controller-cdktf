@@ -343,7 +343,7 @@ func NewOrganizationModuleSharing(scope constructs.Construct, id *string, config
 	j := jsiiProxy_OrganizationModuleSharing{}
 
 	_jsii_.Create(
-		"tfe.organizationModuleSharing.OrganizationModuleSharing",
+		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewOrganizationModuleSharing_Override(o OrganizationModuleSharing, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.organizationModuleSharing.OrganizationModuleSharing",
+		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -489,7 +489,7 @@ func OrganizationModuleSharing_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationModuleSharing.OrganizationModuleSharing",
+		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func OrganizationModuleSharing_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationModuleSharing.OrganizationModuleSharing",
+		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func OrganizationModuleSharing_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationModuleSharing.OrganizationModuleSharing",
+		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func OrganizationModuleSharing_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.organizationModuleSharing.OrganizationModuleSharing",
+		"@cdktf/provider-tfe.organizationModuleSharing.OrganizationModuleSharing",
 		"tfResourceType",
 		&returns,
 	)

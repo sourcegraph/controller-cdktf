@@ -401,7 +401,7 @@ func NewGoogleCloudTasksQueueIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleCloudTasksQueueIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleCloudTasksQueueIamPolicy_Override(g GoogleCloudTasksQueueIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleCloudTasksQueueIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleCloudTasksQueueIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleCloudTasksQueueIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleCloudTasksQueueIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
+		"@cdktf/provider-google-beta.googleCloudTasksQueueIamPolicy.GoogleCloudTasksQueueIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

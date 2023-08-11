@@ -487,7 +487,7 @@ func NewGoogleCloudTasksQueue(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleCloudTasksQueue{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewGoogleCloudTasksQueue_Override(g GoogleCloudTasksQueue, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -644,7 +644,7 @@ func GoogleCloudTasksQueue_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func GoogleCloudTasksQueue_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func GoogleCloudTasksQueue_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -695,7 +695,7 @@ func GoogleCloudTasksQueue_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
+		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueue",
 		"tfResourceType",
 		&returns,
 	)

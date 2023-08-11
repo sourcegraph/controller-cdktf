@@ -424,7 +424,7 @@ func NewCodebuildWebhook(scope constructs.Construct, id *string, config *Codebui
 	j := jsiiProxy_CodebuildWebhook{}
 
 	_jsii_.Create(
-		"aws.codebuildWebhook.CodebuildWebhook",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewCodebuildWebhook_Override(c CodebuildWebhook, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildWebhook.CodebuildWebhook",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -581,7 +581,7 @@ func CodebuildWebhook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildWebhook.CodebuildWebhook",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func CodebuildWebhook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildWebhook.CodebuildWebhook",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func CodebuildWebhook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codebuildWebhook.CodebuildWebhook",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func CodebuildWebhook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codebuildWebhook.CodebuildWebhook",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhook",
 		"tfResourceType",
 		&returns,
 	)

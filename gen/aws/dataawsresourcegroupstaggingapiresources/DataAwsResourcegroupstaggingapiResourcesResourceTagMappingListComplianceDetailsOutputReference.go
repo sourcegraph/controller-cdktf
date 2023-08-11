@@ -189,7 +189,7 @@ func NewDataAwsResourcegroupstaggingapiResourcesResourceTagMappingListCompliance
 	j := jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsOutputReference",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsResourcegroupstaggingapiResourcesResourceTagMappingListCompliance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsOutputReference",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

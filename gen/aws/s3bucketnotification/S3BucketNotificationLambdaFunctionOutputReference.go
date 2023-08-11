@@ -275,7 +275,7 @@ func NewS3BucketNotificationLambdaFunctionOutputReference(terraformResource cdkt
 	j := jsiiProxy_S3BucketNotificationLambdaFunctionOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotificationLambdaFunctionOutputReference",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationLambdaFunctionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewS3BucketNotificationLambdaFunctionOutputReference_Override(s S3BucketNot
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketNotification.S3BucketNotificationLambdaFunctionOutputReference",
+		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationLambdaFunctionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

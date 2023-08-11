@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepter",
 		reflect.TypeOf((*NetworkmanagerAttachmentAccepter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterConfig",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterConfig",
 		reflect.TypeOf((*NetworkmanagerAttachmentAccepterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeouts",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeouts",
 		reflect.TypeOf((*NetworkmanagerAttachmentAccepterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerAttachmentAccepter.NetworkmanagerAttachmentAccepterTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkmanagerAttachmentAccepterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

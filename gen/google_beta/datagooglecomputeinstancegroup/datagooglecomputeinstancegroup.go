@@ -419,7 +419,7 @@ func NewDataGoogleComputeInstanceGroup(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGoogleComputeInstanceGroup{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewDataGoogleComputeInstanceGroup_Override(d DataGoogleComputeInstanceGroup
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -565,7 +565,7 @@ func DataGoogleComputeInstanceGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func DataGoogleComputeInstanceGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -603,7 +603,7 @@ func DataGoogleComputeInstanceGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +616,7 @@ func DataGoogleComputeInstanceGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
 		"tfResourceType",
 		&returns,
 	)

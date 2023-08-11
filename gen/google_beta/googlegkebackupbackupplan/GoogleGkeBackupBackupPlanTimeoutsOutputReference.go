@@ -228,7 +228,7 @@ func NewGoogleGkeBackupBackupPlanTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleGkeBackupBackupPlanTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleGkeBackupBackupPlanTimeoutsOutputReference_Override(g GoogleGkeBac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

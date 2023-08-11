@@ -342,7 +342,7 @@ func NewDxConnectionAssociation(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DxConnectionAssociation{}
 
 	_jsii_.Create(
-		"aws.dxConnectionAssociation.DxConnectionAssociation",
+		"@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewDxConnectionAssociation_Override(d DxConnectionAssociation, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxConnectionAssociation.DxConnectionAssociation",
+		"@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -488,7 +488,7 @@ func DxConnectionAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxConnectionAssociation.DxConnectionAssociation",
+		"@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func DxConnectionAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxConnectionAssociation.DxConnectionAssociation",
+		"@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DxConnectionAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxConnectionAssociation.DxConnectionAssociation",
+		"@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func DxConnectionAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxConnectionAssociation.DxConnectionAssociation",
+		"@cdktf/provider-aws.dxConnectionAssociation.DxConnectionAssociation",
 		"tfResourceType",
 		&returns,
 	)

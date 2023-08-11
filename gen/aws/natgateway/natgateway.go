@@ -461,7 +461,7 @@ func NewNatGateway(scope constructs.Construct, id *string, config *NatGatewayCon
 	j := jsiiProxy_NatGateway{}
 
 	_jsii_.Create(
-		"aws.natGateway.NatGateway",
+		"@cdktf/provider-aws.natGateway.NatGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewNatGateway_Override(n NatGateway, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.natGateway.NatGateway",
+		"@cdktf/provider-aws.natGateway.NatGateway",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -651,7 +651,7 @@ func NatGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.natGateway.NatGateway",
+		"@cdktf/provider-aws.natGateway.NatGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func NatGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.natGateway.NatGateway",
+		"@cdktf/provider-aws.natGateway.NatGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func NatGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.natGateway.NatGateway",
+		"@cdktf/provider-aws.natGateway.NatGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func NatGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.natGateway.NatGateway",
+		"@cdktf/provider-aws.natGateway.NatGateway",
 		"tfResourceType",
 		&returns,
 	)

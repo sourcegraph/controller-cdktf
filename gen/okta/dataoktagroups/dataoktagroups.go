@@ -351,7 +351,7 @@ func NewDataOktaGroups(scope constructs.Construct, id *string, config *DataOktaG
 	j := jsiiProxy_DataOktaGroups{}
 
 	_jsii_.Create(
-		"okta.dataOktaGroups.DataOktaGroups",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroups",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataOktaGroups_Override(d DataOktaGroups, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaGroups.DataOktaGroups",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroups",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -486,7 +486,7 @@ func DataOktaGroups_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaGroups.DataOktaGroups",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroups",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DataOktaGroups_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaGroups.DataOktaGroups",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroups",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataOktaGroups_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaGroups.DataOktaGroups",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroups",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataOktaGroups_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaGroups.DataOktaGroups",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroups",
 		"tfResourceType",
 		&returns,
 	)

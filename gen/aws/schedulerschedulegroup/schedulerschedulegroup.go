@@ -460,7 +460,7 @@ func NewSchedulerScheduleGroup(scope constructs.Construct, id *string, config *S
 	j := jsiiProxy_SchedulerScheduleGroup{}
 
 	_jsii_.Create(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroup",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewSchedulerScheduleGroup_Override(s SchedulerScheduleGroup, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroup",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -628,7 +628,7 @@ func SchedulerScheduleGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroup",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func SchedulerScheduleGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroup",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func SchedulerScheduleGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroup",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func SchedulerScheduleGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroup",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroup",
 		"tfResourceType",
 		&returns,
 	)

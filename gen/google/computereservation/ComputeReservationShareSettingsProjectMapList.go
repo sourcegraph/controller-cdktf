@@ -116,7 +116,7 @@ func NewComputeReservationShareSettingsProjectMapList(terraformResource cdktf.II
 	j := jsiiProxy_ComputeReservationShareSettingsProjectMapList{}
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationShareSettingsProjectMapList",
+		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeReservationShareSettingsProjectMapList_Override(c ComputeReservat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationShareSettingsProjectMapList",
+		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

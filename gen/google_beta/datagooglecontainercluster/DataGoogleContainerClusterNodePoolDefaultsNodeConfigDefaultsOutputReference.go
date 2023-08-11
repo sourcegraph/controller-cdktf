@@ -178,7 +178,7 @@ func NewDataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefere
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

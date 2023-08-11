@@ -376,7 +376,7 @@ func NewProjectIamAuditConfig(scope constructs.Construct, id *string, config *Pr
 	j := jsiiProxy_ProjectIamAuditConfig{}
 
 	_jsii_.Create(
-		"google.projectIamAuditConfig.ProjectIamAuditConfig",
+		"@cdktf/provider-google.projectIamAuditConfig.ProjectIamAuditConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewProjectIamAuditConfig_Override(p ProjectIamAuditConfig, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectIamAuditConfig.ProjectIamAuditConfig",
+		"@cdktf/provider-google.projectIamAuditConfig.ProjectIamAuditConfig",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -522,7 +522,7 @@ func ProjectIamAuditConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectIamAuditConfig.ProjectIamAuditConfig",
+		"@cdktf/provider-google.projectIamAuditConfig.ProjectIamAuditConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func ProjectIamAuditConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectIamAuditConfig.ProjectIamAuditConfig",
+		"@cdktf/provider-google.projectIamAuditConfig.ProjectIamAuditConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func ProjectIamAuditConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectIamAuditConfig.ProjectIamAuditConfig",
+		"@cdktf/provider-google.projectIamAuditConfig.ProjectIamAuditConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func ProjectIamAuditConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.projectIamAuditConfig.ProjectIamAuditConfig",
+		"@cdktf/provider-google.projectIamAuditConfig.ProjectIamAuditConfig",
 		"tfResourceType",
 		&returns,
 	)

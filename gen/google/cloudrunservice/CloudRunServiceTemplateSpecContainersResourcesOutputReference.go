@@ -204,7 +204,7 @@ func NewCloudRunServiceTemplateSpecContainersResourcesOutputReference(terraformR
 	j := jsiiProxy_CloudRunServiceTemplateSpecContainersResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReference",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudRunServiceTemplateSpecContainersResourcesOutputReference_Override(c
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReference",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

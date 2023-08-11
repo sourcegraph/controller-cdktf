@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tls.dataTlsPublicKey.DataTlsPublicKey",
+		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKey",
 		reflect.TypeOf((*DataTlsPublicKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tls.dataTlsPublicKey.DataTlsPublicKeyConfig",
+		"@cdktf/provider-tls.dataTlsPublicKey.DataTlsPublicKeyConfig",
 		reflect.TypeOf((*DataTlsPublicKeyConfig)(nil)).Elem(),
 	)
 }

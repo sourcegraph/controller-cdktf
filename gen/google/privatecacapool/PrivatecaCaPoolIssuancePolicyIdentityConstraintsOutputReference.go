@@ -226,7 +226,7 @@ func NewPrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference(terrafor
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

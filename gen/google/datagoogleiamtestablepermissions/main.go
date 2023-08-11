@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
+		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		reflect.TypeOf((*DataGoogleIamTestablePermissions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig",
+		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsConfig",
 		reflect.TypeOf((*DataGoogleIamTestablePermissionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissions",
+		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissions",
 		reflect.TypeOf((*DataGoogleIamTestablePermissionsPermissions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsList",
+		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsList",
 		reflect.TypeOf((*DataGoogleIamTestablePermissionsPermissionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsOutputReference",
+		"@cdktf/provider-google.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissionsPermissionsOutputReference",
 		reflect.TypeOf((*DataGoogleIamTestablePermissionsPermissionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiDisabled", GoGetter: "ApiDisabled"},

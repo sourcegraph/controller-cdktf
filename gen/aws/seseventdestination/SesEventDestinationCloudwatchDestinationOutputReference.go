@@ -225,7 +225,7 @@ func NewSesEventDestinationCloudwatchDestinationOutputReference(terraformResourc
 	j := jsiiProxy_SesEventDestinationCloudwatchDestinationOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesEventDestination.SesEventDestinationCloudwatchDestinationOutputReference",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewSesEventDestinationCloudwatchDestinationOutputReference_Override(s SesEv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesEventDestination.SesEventDestinationCloudwatchDestinationOutputReference",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

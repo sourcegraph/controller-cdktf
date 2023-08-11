@@ -377,7 +377,7 @@ func NewIapWebTypeAppEngineIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_IapWebTypeAppEngineIamPolicy{}
 
 	_jsii_.Create(
-		"google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewIapWebTypeAppEngineIamPolicy_Override(i IapWebTypeAppEngineIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -534,7 +534,7 @@ func IapWebTypeAppEngineIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func IapWebTypeAppEngineIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func IapWebTypeAppEngineIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func IapWebTypeAppEngineIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
+		"@cdktf/provider-google.iapWebTypeAppEngineIamPolicy.IapWebTypeAppEngineIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

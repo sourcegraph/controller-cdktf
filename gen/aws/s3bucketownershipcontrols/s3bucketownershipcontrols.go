@@ -342,7 +342,7 @@ func NewS3BucketOwnershipControls(scope constructs.Construct, id *string, config
 	j := jsiiProxy_S3BucketOwnershipControls{}
 
 	_jsii_.Create(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewS3BucketOwnershipControls_Override(s S3BucketOwnershipControls, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -477,7 +477,7 @@ func S3BucketOwnershipControls_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func S3BucketOwnershipControls_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func S3BucketOwnershipControls_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func S3BucketOwnershipControls_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
+		"@cdktf/provider-aws.s3BucketOwnershipControls.S3BucketOwnershipControls",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewGoogleApigeeKeystoresAliasesSelfSignedCertCertsInfoList(terraformResourc
 	j := jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertCertsInfoList{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeKeystoresAliasesSelfSignedCert.GoogleApigeeKeystoresAliasesSelfSignedCertCertsInfoList",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesSelfSignedCert.GoogleApigeeKeystoresAliasesSelfSignedCertCertsInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleApigeeKeystoresAliasesSelfSignedCertCertsInfoList_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeKeystoresAliasesSelfSignedCert.GoogleApigeeKeystoresAliasesSelfSignedCertCertsInfoList",
+		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesSelfSignedCert.GoogleApigeeKeystoresAliasesSelfSignedCertCertsInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

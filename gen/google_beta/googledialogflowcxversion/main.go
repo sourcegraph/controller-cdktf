@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
 		reflect.TypeOf((*GoogleDialogflowCxVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionConfig",
 		reflect.TypeOf((*GoogleDialogflowCxVersionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettings",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettings",
 		reflect.TypeOf((*GoogleDialogflowCxVersionNluSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettingsList",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettingsList",
 		reflect.TypeOf((*GoogleDialogflowCxVersionNluSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionNluSettingsOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxVersionNluSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classificationThreshold", GoGetter: "ClassificationThreshold"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeouts",
 		reflect.TypeOf((*GoogleDialogflowCxVersionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersionTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDialogflowCxVersionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

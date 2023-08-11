@@ -179,7 +179,7 @@ func NewGoogleMonitoringSloBasicSliLatencyOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleMonitoringSloBasicSliLatencyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatencyOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatencyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleMonitoringSloBasicSliLatencyOutputReference_Override(g GoogleMonit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatencyOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatencyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

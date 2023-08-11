@@ -559,7 +559,7 @@ func NewNetworkmanagerConnectAttachment(scope constructs.Construct, id *string, 
 	j := jsiiProxy_NetworkmanagerConnectAttachment{}
 
 	_jsii_.Create(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -572,7 +572,7 @@ func NewNetworkmanagerConnectAttachment_Override(n NetworkmanagerConnectAttachme
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -738,7 +738,7 @@ func NetworkmanagerConnectAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func NetworkmanagerConnectAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -776,7 +776,7 @@ func NetworkmanagerConnectAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -789,7 +789,7 @@ func NetworkmanagerConnectAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
 		"tfResourceType",
 		&returns,
 	)

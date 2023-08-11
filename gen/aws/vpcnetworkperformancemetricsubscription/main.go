@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
+		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscription",
 		reflect.TypeOf((*VpcNetworkPerformanceMetricSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscriptionConfig",
+		"@cdktf/provider-aws.vpcNetworkPerformanceMetricSubscription.VpcNetworkPerformanceMetricSubscriptionConfig",
 		reflect.TypeOf((*VpcNetworkPerformanceMetricSubscriptionConfig)(nil)).Elem(),
 	)
 }

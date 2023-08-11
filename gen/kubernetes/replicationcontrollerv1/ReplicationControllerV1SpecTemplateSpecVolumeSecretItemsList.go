@@ -116,7 +116,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList(terraformRe
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList_Override(r 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

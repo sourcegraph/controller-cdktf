@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersRecommendationTextOutputReference(terraformReso
 	j := jsiiProxy_SecurityhubInsightFiltersRecommendationTextOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersRecommendationTextOutputReference_Override(s Se
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecommendationTextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

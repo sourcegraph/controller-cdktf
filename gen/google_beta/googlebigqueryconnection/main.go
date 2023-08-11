@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnection",
 		reflect.TypeOf((*GoogleBigqueryConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,15 +96,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAws",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAws",
 		reflect.TypeOf((*GoogleBigqueryConnectionAws)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsAccessRole",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsAccessRole",
 		reflect.TypeOf((*GoogleBigqueryConnectionAwsAccessRole)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsAccessRoleOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsAccessRoleOutputReference",
 		reflect.TypeOf((*GoogleBigqueryConnectionAwsAccessRoleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,7 +139,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAwsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryConnectionAwsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRole", GoGetter: "AccessRole"},
@@ -174,11 +174,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAzure",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAzure",
 		reflect.TypeOf((*GoogleBigqueryConnectionAzure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAzureOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionAzureOutputReference",
 		reflect.TypeOf((*GoogleBigqueryConnectionAzureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "application", GoGetter: "Application"},
@@ -220,11 +220,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudResource",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudResource",
 		reflect.TypeOf((*GoogleBigqueryConnectionCloudResource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudResourceOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudResourceOutputReference",
 		reflect.TypeOf((*GoogleBigqueryConnectionCloudResourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,11 +257,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpanner",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpanner",
 		reflect.TypeOf((*GoogleBigqueryConnectionCloudSpanner)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpannerOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpannerOutputReference",
 		reflect.TypeOf((*GoogleBigqueryConnectionCloudSpannerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -301,15 +301,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSql",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSql",
 		reflect.TypeOf((*GoogleBigqueryConnectionCloudSql)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlCredential",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlCredential",
 		reflect.TypeOf((*GoogleBigqueryConnectionCloudSqlCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlCredentialOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlCredentialOutputReference",
 		reflect.TypeOf((*GoogleBigqueryConnectionCloudSqlCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,7 +345,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlOutputReference",
 		reflect.TypeOf((*GoogleBigqueryConnectionCloudSqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -387,15 +387,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionConfig",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionConfig",
 		reflect.TypeOf((*GoogleBigqueryConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionTimeouts",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionTimeouts",
 		reflect.TypeOf((*GoogleBigqueryConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

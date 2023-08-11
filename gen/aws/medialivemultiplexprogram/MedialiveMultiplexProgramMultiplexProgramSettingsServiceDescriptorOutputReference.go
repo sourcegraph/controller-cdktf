@@ -202,7 +202,7 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutput
 	j := jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

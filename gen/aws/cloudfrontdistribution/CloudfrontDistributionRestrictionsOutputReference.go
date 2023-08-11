@@ -179,7 +179,7 @@ func NewCloudfrontDistributionRestrictionsOutputReference(terraformResource cdkt
 	j := jsiiProxy_CloudfrontDistributionRestrictionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudfrontDistributionRestrictionsOutputReference_Override(c CloudfrontD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionRestrictionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

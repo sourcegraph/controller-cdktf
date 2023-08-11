@@ -315,7 +315,7 @@ func NewDataAwsOrganizationsResourceTags(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsOrganizationsResourceTags{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
+		"@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -328,7 +328,7 @@ func NewDataAwsOrganizationsResourceTags_Override(d DataAwsOrganizationsResource
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
+		"@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -439,7 +439,7 @@ func DataAwsOrganizationsResourceTags_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
+		"@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -458,7 +458,7 @@ func DataAwsOrganizationsResourceTags_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
+		"@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataAwsOrganizationsResourceTags_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
+		"@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -490,7 +490,7 @@ func DataAwsOrganizationsResourceTags_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
+		"@cdktf/provider-aws.dataAwsOrganizationsResourceTags.DataAwsOrganizationsResourceTags",
 		"tfResourceType",
 		&returns,
 	)

@@ -299,7 +299,7 @@ func NewDataOktaThemesThemesOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataOktaThemesThemesOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaThemes.DataOktaThemesThemesOutputReference",
+		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewDataOktaThemesThemesOutputReference_Override(d DataOktaThemesThemesOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaThemes.DataOktaThemesThemesOutputReference",
+		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

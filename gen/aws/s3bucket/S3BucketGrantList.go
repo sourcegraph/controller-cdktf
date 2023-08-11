@@ -116,7 +116,7 @@ func NewS3BucketGrantList(terraformResource cdktf.IInterpolatingParent, terrafor
 	j := jsiiProxy_S3BucketGrantList{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketGrantList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketGrantList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewS3BucketGrantList_Override(s S3BucketGrantList, terraformResource cdktf.
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketGrantList",
+		"@cdktf/provider-aws.s3Bucket.S3BucketGrantList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -582,7 +582,7 @@ func NewBigqueryConnection(scope constructs.Construct, id *string, config *Bigqu
 	j := jsiiProxy_BigqueryConnection{}
 
 	_jsii_.Create(
-		"google.bigqueryConnection.BigqueryConnection",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -595,7 +595,7 @@ func NewBigqueryConnection_Override(b BigqueryConnection, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryConnection.BigqueryConnection",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -761,7 +761,7 @@ func BigqueryConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnection.BigqueryConnection",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func BigqueryConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnection.BigqueryConnection",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -799,7 +799,7 @@ func BigqueryConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnection.BigqueryConnection",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -812,7 +812,7 @@ func BigqueryConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryConnection.BigqueryConnection",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnection",
 		"tfResourceType",
 		&returns,
 	)

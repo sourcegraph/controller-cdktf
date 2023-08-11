@@ -179,7 +179,7 @@ func NewOrganizationPolicyRestorePolicyOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_OrganizationPolicyRestorePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.organizationPolicy.OrganizationPolicyRestorePolicyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyRestorePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewOrganizationPolicyRestorePolicyOutputReference_Override(o OrganizationPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationPolicy.OrganizationPolicyRestorePolicyOutputReference",
+		"@cdktf/provider-google.organizationPolicy.OrganizationPolicyRestorePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleMonitoringClusterIstioServiceTelemetryList(terraformResource c
 	j := jsiiProxy_DataGoogleMonitoringClusterIstioServiceTelemetryList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryList",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleMonitoringClusterIstioServiceTelemetryList_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryList",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

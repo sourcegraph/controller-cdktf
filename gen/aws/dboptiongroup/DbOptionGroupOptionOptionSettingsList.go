@@ -116,7 +116,7 @@ func NewDbOptionGroupOptionOptionSettingsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DbOptionGroupOptionOptionSettingsList{}
 
 	_jsii_.Create(
-		"aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsList",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDbOptionGroupOptionOptionSettingsList_Override(d DbOptionGroupOptionOpti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsList",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOptionSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

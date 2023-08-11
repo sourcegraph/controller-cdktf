@@ -401,7 +401,7 @@ func NewCloudfunctionsFunctionIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_CloudfunctionsFunctionIamPolicy{}
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewCloudfunctionsFunctionIamPolicy_Override(c CloudfunctionsFunctionIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func CloudfunctionsFunctionIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func CloudfunctionsFunctionIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func CloudfunctionsFunctionIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func CloudfunctionsFunctionIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamPolicy.CloudfunctionsFunctionIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

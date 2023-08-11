@@ -116,7 +116,7 @@ func NewGoogleAppEngineStandardAppVersionDeploymentFilesList(terraformResource c
 	j := jsiiProxy_GoogleAppEngineStandardAppVersionDeploymentFilesList{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesList",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleAppEngineStandardAppVersionDeploymentFilesList_Override(g GoogleAp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesList",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

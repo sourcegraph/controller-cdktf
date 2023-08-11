@@ -179,7 +179,7 @@ func NewGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleO
 	j := jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference",
+		"@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

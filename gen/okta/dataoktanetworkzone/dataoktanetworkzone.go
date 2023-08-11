@@ -369,7 +369,7 @@ func NewDataOktaNetworkZone(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataOktaNetworkZone{}
 
 	_jsii_.Create(
-		"okta.dataOktaNetworkZone.DataOktaNetworkZone",
+		"@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewDataOktaNetworkZone_Override(d DataOktaNetworkZone, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaNetworkZone.DataOktaNetworkZone",
+		"@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -482,7 +482,7 @@ func DataOktaNetworkZone_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaNetworkZone.DataOktaNetworkZone",
+		"@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataOktaNetworkZone_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaNetworkZone.DataOktaNetworkZone",
+		"@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -520,7 +520,7 @@ func DataOktaNetworkZone_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaNetworkZone.DataOktaNetworkZone",
+		"@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataOktaNetworkZone_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaNetworkZone.DataOktaNetworkZone",
+		"@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone",
 		"tfResourceType",
 		&returns,
 	)

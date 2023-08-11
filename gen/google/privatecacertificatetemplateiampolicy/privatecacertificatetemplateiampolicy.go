@@ -401,7 +401,7 @@ func NewPrivatecaCertificateTemplateIamPolicy(scope constructs.Construct, id *st
 	j := jsiiProxy_PrivatecaCertificateTemplateIamPolicy{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewPrivatecaCertificateTemplateIamPolicy_Override(p PrivatecaCertificateTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -569,7 +569,7 @@ func PrivatecaCertificateTemplateIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func PrivatecaCertificateTemplateIamPolicy_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func PrivatecaCertificateTemplateIamPolicy_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func PrivatecaCertificateTemplateIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google.privatecaCertificateTemplateIamPolicy.PrivatecaCertificateTemplateIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

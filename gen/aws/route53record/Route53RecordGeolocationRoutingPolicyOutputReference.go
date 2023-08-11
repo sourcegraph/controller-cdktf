@@ -228,7 +228,7 @@ func NewRoute53RecordGeolocationRoutingPolicyOutputReference(terraformResource c
 	j := jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRoute53RecordGeolocationRoutingPolicyOutputReference_Override(r Route53R
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

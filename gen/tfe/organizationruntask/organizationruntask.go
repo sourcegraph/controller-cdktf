@@ -462,7 +462,7 @@ func NewOrganizationRunTask(scope constructs.Construct, id *string, config *Orga
 	j := jsiiProxy_OrganizationRunTask{}
 
 	_jsii_.Create(
-		"tfe.organizationRunTask.OrganizationRunTask",
+		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,7 +475,7 @@ func NewOrganizationRunTask_Override(o OrganizationRunTask, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.organizationRunTask.OrganizationRunTask",
+		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -663,7 +663,7 @@ func OrganizationRunTask_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationRunTask.OrganizationRunTask",
+		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func OrganizationRunTask_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationRunTask.OrganizationRunTask",
+		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func OrganizationRunTask_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationRunTask.OrganizationRunTask",
+		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func OrganizationRunTask_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.organizationRunTask.OrganizationRunTask",
+		"@cdktf/provider-tfe.organizationRunTask.OrganizationRunTask",
 		"tfResourceType",
 		&returns,
 	)

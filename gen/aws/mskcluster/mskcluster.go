@@ -749,7 +749,7 @@ func NewMskCluster(scope constructs.Construct, id *string, config *MskClusterCon
 	j := jsiiProxy_MskCluster{}
 
 	_jsii_.Create(
-		"aws.mskCluster.MskCluster",
+		"@cdktf/provider-aws.mskCluster.MskCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -762,7 +762,7 @@ func NewMskCluster_Override(m MskCluster, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskCluster.MskCluster",
+		"@cdktf/provider-aws.mskCluster.MskCluster",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -950,7 +950,7 @@ func MskCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskCluster.MskCluster",
+		"@cdktf/provider-aws.mskCluster.MskCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -969,7 +969,7 @@ func MskCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskCluster.MskCluster",
+		"@cdktf/provider-aws.mskCluster.MskCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -988,7 +988,7 @@ func MskCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mskCluster.MskCluster",
+		"@cdktf/provider-aws.mskCluster.MskCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1001,7 +1001,7 @@ func MskCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mskCluster.MskCluster",
+		"@cdktf/provider-aws.mskCluster.MskCluster",
 		"tfResourceType",
 		&returns,
 	)

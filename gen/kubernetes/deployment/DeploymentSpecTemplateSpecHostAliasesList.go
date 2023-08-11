@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecHostAliasesList(terraformResource cdktf.IInter
 	j := jsiiProxy_DeploymentSpecTemplateSpecHostAliasesList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecHostAliasesList_Override(d DeploymentSpecTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

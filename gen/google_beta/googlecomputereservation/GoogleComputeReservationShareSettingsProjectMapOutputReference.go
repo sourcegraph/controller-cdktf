@@ -203,7 +203,7 @@ func NewGoogleComputeReservationShareSettingsProjectMapOutputReference(terraform
 	j := jsiiProxy_GoogleComputeReservationShareSettingsProjectMapOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMapOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeReservationShareSettingsProjectMapOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMapOutputReference",
+		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationShareSettingsProjectMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

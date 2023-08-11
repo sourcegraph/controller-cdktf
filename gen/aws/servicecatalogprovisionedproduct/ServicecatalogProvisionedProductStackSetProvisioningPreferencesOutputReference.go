@@ -300,7 +300,7 @@ func NewServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputRef
 	j := jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference{}
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

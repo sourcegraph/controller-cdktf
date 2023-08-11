@@ -409,7 +409,7 @@ func NewS3OutpostsEndpoint(scope constructs.Construct, id *string, config *S3Out
 	j := jsiiProxy_S3OutpostsEndpoint{}
 
 	_jsii_.Create(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -422,7 +422,7 @@ func NewS3OutpostsEndpoint_Override(s S3OutpostsEndpoint, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -566,7 +566,7 @@ func S3OutpostsEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func S3OutpostsEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -604,7 +604,7 @@ func S3OutpostsEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func S3OutpostsEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
+		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
 		"tfResourceType",
 		&returns,
 	)

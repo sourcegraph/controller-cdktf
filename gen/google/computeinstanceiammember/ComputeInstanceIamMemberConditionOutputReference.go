@@ -226,7 +226,7 @@ func NewComputeInstanceIamMemberConditionOutputReference(terraformResource cdktf
 	j := jsiiProxy_ComputeInstanceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceIamMember.ComputeInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeInstanceIamMemberConditionOutputReference_Override(c ComputeInsta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceIamMember.ComputeInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

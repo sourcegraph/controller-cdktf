@@ -203,7 +203,7 @@ func NewNetworkfirewallFirewallSubnetMappingOutputReference(terraformResource cd
 	j := jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewNetworkfirewallFirewallSubnetMappingOutputReference_Override(n Networkfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallSubnetMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

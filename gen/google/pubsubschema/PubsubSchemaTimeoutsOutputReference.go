@@ -204,7 +204,7 @@ func NewPubsubSchemaTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_PubsubSchemaTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubSchema.PubsubSchemaTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubSchema.PubsubSchemaTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPubsubSchemaTimeoutsOutputReference_Override(p PubsubSchemaTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSchema.PubsubSchemaTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubSchema.PubsubSchemaTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

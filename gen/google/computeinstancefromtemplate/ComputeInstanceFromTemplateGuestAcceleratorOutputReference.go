@@ -204,7 +204,7 @@ func NewComputeInstanceFromTemplateGuestAcceleratorOutputReference(terraformReso
 	j := jsiiProxy_ComputeInstanceFromTemplateGuestAcceleratorOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateGuestAcceleratorOutputReference",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateGuestAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeInstanceFromTemplateGuestAcceleratorOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateGuestAcceleratorOutputReference",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateGuestAcceleratorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

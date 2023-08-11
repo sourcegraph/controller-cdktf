@@ -300,7 +300,7 @@ func NewAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference
 	j := jsiiProxy_AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewAutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyInstancesDistributionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

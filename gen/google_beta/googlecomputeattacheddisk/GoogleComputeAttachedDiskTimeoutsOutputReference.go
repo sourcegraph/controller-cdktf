@@ -204,7 +204,7 @@ func NewGoogleComputeAttachedDiskTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleComputeAttachedDiskTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeAttachedDiskTimeoutsOutputReference_Override(g GoogleComput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

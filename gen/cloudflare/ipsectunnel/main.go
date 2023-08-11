@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.ipsecTunnel.IpsecTunnel",
+		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnel",
 		reflect.TypeOf((*IpsecTunnel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -96,7 +96,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.ipsecTunnel.IpsecTunnelConfig",
+		"@cdktf/provider-cloudflare.ipsecTunnel.IpsecTunnelConfig",
 		reflect.TypeOf((*IpsecTunnelConfig)(nil)).Elem(),
 	)
 }

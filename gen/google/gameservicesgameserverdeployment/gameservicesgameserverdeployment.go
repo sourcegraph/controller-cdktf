@@ -450,7 +450,7 @@ func NewGameServicesGameServerDeployment(scope constructs.Construct, id *string,
 	j := jsiiProxy_GameServicesGameServerDeployment{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewGameServicesGameServerDeployment_Override(g GameServicesGameServerDeploy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -629,7 +629,7 @@ func GameServicesGameServerDeployment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func GameServicesGameServerDeployment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GameServicesGameServerDeployment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GameServicesGameServerDeployment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
+		"@cdktf/provider-google.gameServicesGameServerDeployment.GameServicesGameServerDeployment",
 		"tfResourceType",
 		&returns,
 	)

@@ -343,7 +343,7 @@ func NewEndpoints(scope constructs.Construct, id *string, config *EndpointsConfi
 	j := jsiiProxy_Endpoints{}
 
 	_jsii_.Create(
-		"kubernetes.endpoints.Endpoints",
+		"@cdktf/provider-kubernetes.endpoints.Endpoints",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewEndpoints_Override(e Endpoints, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.endpoints.Endpoints",
+		"@cdktf/provider-kubernetes.endpoints.Endpoints",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -467,7 +467,7 @@ func Endpoints_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.endpoints.Endpoints",
+		"@cdktf/provider-kubernetes.endpoints.Endpoints",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -486,7 +486,7 @@ func Endpoints_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.endpoints.Endpoints",
+		"@cdktf/provider-kubernetes.endpoints.Endpoints",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func Endpoints_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.endpoints.Endpoints",
+		"@cdktf/provider-kubernetes.endpoints.Endpoints",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func Endpoints_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.endpoints.Endpoints",
+		"@cdktf/provider-kubernetes.endpoints.Endpoints",
 		"tfResourceType",
 		&returns,
 	)

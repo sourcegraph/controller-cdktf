@@ -226,7 +226,7 @@ func NewGoogleDataprocMetastoreServiceIamBindingConditionOutputReference(terrafo
 	j := jsiiProxy_GoogleDataprocMetastoreServiceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataprocMetastoreServiceIamBindingConditionOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

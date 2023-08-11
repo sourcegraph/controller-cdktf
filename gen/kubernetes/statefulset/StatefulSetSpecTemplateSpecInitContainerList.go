@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerList(terraformResource cdktf.IIn
 	j := jsiiProxy_StatefulSetSpecTemplateSpecInitContainerList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerList_Override(s StatefulSetSpecT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

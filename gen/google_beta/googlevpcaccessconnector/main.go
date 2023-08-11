@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
 		reflect.TypeOf((*GoogleVpcAccessConnector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,15 +94,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig",
 		reflect.TypeOf((*GoogleVpcAccessConnectorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnet",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnet",
 		reflect.TypeOf((*GoogleVpcAccessConnectorSubnet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnetOutputReference",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnetOutputReference",
 		reflect.TypeOf((*GoogleVpcAccessConnectorSubnetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,11 +140,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts",
 		reflect.TypeOf((*GoogleVpcAccessConnectorTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleVpcAccessConnectorTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

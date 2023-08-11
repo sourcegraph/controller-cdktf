@@ -448,7 +448,7 @@ func NewGoogleDataprocMetastoreServiceIamMember(scope constructs.Construct, id *
 	j := jsiiProxy_GoogleDataprocMetastoreServiceIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataprocMetastoreServiceIamMember_Override(g GoogleDataprocMetasto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataprocMetastoreServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataprocMetastoreServiceIamMember_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataprocMetastoreServiceIamMember_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataprocMetastoreServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamMember.GoogleDataprocMetastoreServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -400,7 +400,7 @@ func NewOpensearchOutboundConnection(scope constructs.Construct, id *string, con
 	j := jsiiProxy_OpensearchOutboundConnection{}
 
 	_jsii_.Create(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnection",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewOpensearchOutboundConnection_Override(o OpensearchOutboundConnection, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnection",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -535,7 +535,7 @@ func OpensearchOutboundConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnection",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func OpensearchOutboundConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnection",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func OpensearchOutboundConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnection",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func OpensearchOutboundConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnection",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection",
 		"tfResourceType",
 		&returns,
 	)

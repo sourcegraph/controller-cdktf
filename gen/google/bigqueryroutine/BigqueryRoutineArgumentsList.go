@@ -116,7 +116,7 @@ func NewBigqueryRoutineArgumentsList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_BigqueryRoutineArgumentsList{}
 
 	_jsii_.Create(
-		"google.bigqueryRoutine.BigqueryRoutineArgumentsList",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBigqueryRoutineArgumentsList_Override(b BigqueryRoutineArgumentsList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryRoutine.BigqueryRoutineArgumentsList",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

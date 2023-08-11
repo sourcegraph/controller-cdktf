@@ -104,7 +104,7 @@ func NewGoogleEndpointsServiceApisMethodsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleEndpointsServiceApisMethodsList{}
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsList",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleEndpointsServiceApisMethodsList_Override(g GoogleEndpointsServiceA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsList",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceApisMethodsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

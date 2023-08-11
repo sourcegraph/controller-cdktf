@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsTypesList(terraformResourc
 	j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsTypesList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsTypesList_Override(s Secur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

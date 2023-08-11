@@ -104,7 +104,7 @@ func NewDataAwsImagebuilderImageRecipeComponentParameterList(terraformResource c
 	j := jsiiProxy_DataAwsImagebuilderImageRecipeComponentParameterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeComponentParameterList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeComponentParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsImagebuilderImageRecipeComponentParameterList_Override(d DataAwsI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeComponentParameterList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeComponentParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

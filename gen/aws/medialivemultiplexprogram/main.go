@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgram",
 		reflect.TypeOf((*MedialiveMultiplexProgram)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramConfig",
 		reflect.TypeOf((*MedialiveMultiplexProgramConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettings",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsList",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsList",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,11 +195,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -220,7 +220,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -263,11 +263,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -288,7 +288,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -329,11 +329,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -354,7 +354,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference",
 		reflect.TypeOf((*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

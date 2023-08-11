@@ -283,7 +283,7 @@ func NewSesv2EmailIdentityDkimSigningAttributesOutputReference(terraformResource
 	j := jsiiProxy_Sesv2EmailIdentityDkimSigningAttributesOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2EmailIdentity.Sesv2EmailIdentityDkimSigningAttributesOutputReference",
+		"@cdktf/provider-aws.sesv2EmailIdentity.Sesv2EmailIdentityDkimSigningAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -295,7 +295,7 @@ func NewSesv2EmailIdentityDkimSigningAttributesOutputReference_Override(s Sesv2E
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2EmailIdentity.Sesv2EmailIdentityDkimSigningAttributesOutputReference",
+		"@cdktf/provider-aws.sesv2EmailIdentity.Sesv2EmailIdentityDkimSigningAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

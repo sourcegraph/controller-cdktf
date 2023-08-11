@@ -226,7 +226,7 @@ func NewLexIntentFollowUpPromptRejectionStatementMessageOutputReference(terrafor
 	j := jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewLexIntentFollowUpPromptRejectionStatementMessageOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFollowUpPromptRejectionStatementMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

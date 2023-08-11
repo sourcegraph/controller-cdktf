@@ -116,7 +116,7 @@ func NewWorkerScriptKvNamespaceBindingList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_WorkerScriptKvNamespaceBindingList{}
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptKvNamespaceBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWorkerScriptKvNamespaceBindingList_Override(w WorkerScriptKvNamespaceBin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptKvNamespaceBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

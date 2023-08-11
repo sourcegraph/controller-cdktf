@@ -116,7 +116,7 @@ func NewAppstreamImageBuilderAccessEndpointList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AppstreamImageBuilderAccessEndpointList{}
 
 	_jsii_.Create(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointList",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppstreamImageBuilderAccessEndpointList_Override(a AppstreamImageBuilder
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointList",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderAccessEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

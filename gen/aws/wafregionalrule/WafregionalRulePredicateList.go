@@ -116,7 +116,7 @@ func NewWafregionalRulePredicateList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_WafregionalRulePredicateList{}
 
 	_jsii_.Create(
-		"aws.wafregionalRule.WafregionalRulePredicateList",
+		"@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafregionalRulePredicateList_Override(w WafregionalRulePredicateList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalRule.WafregionalRulePredicateList",
+		"@cdktf/provider-aws.wafregionalRule.WafregionalRulePredicateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

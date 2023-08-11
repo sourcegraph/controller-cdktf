@@ -450,7 +450,7 @@ func NewGoogleGameServicesGameServerDeployment(scope constructs.Construct, id *s
 	j := jsiiProxy_GoogleGameServicesGameServerDeployment{}
 
 	_jsii_.Create(
-		"google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewGoogleGameServicesGameServerDeployment_Override(g GoogleGameServicesGame
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -629,7 +629,7 @@ func GoogleGameServicesGameServerDeployment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func GoogleGameServicesGameServerDeployment_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GoogleGameServicesGameServerDeployment_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GoogleGameServicesGameServerDeployment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerDeployment.GoogleGameServicesGameServerDeployment",
 		"tfResourceType",
 		&returns,
 	)

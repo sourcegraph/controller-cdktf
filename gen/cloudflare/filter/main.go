@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.filter.Filter",
+		"@cdktf/provider-cloudflare.filter.Filter",
 		reflect.TypeOf((*Filter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.filter.FilterConfig",
+		"@cdktf/provider-cloudflare.filter.FilterConfig",
 		reflect.TypeOf((*FilterConfig)(nil)).Elem(),
 	)
 }

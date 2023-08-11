@@ -104,7 +104,7 @@ func NewGoogleNetworkConnectivityHubRoutingVpcsList(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsList{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubRoutingVpcsList",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubRoutingVpcsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleNetworkConnectivityHubRoutingVpcsList_Override(g GoogleNetworkConn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubRoutingVpcsList",
+		"@cdktf/provider-google-beta.googleNetworkConnectivityHub.GoogleNetworkConnectivityHubRoutingVpcsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

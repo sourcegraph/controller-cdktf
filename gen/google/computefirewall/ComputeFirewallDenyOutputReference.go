@@ -203,7 +203,7 @@ func NewComputeFirewallDenyOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_ComputeFirewallDenyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeFirewall.ComputeFirewallDenyOutputReference",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewallDenyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeFirewallDenyOutputReference_Override(c ComputeFirewallDenyOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeFirewall.ComputeFirewallDenyOutputReference",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewallDenyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

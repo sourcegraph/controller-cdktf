@@ -116,7 +116,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelec
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecTopologySpreadConstraintLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

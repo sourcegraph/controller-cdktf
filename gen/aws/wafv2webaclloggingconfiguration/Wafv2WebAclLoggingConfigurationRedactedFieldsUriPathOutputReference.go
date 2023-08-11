@@ -156,7 +156,7 @@ func NewWafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference(terr
 	j := jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewWafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationRedactedFieldsUriPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

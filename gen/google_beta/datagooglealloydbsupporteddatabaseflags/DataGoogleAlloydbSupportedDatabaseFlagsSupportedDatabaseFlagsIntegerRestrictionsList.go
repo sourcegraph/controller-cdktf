@@ -104,7 +104,7 @@ func NewDataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsIntegerRest
 	j := jsiiProxy_DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsIntegerRestrictionsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsIntegerRestrictionsList",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsIntegerRestrictionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsIntegerRest
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsIntegerRestrictionsList",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsIntegerRestrictionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

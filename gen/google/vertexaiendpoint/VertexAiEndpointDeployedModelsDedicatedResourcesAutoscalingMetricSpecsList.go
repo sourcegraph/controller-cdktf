@@ -104,7 +104,7 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsLi
 	j := jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList{}
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesAutoscalingMetricSpecsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

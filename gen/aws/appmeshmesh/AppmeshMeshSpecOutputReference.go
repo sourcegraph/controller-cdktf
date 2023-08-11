@@ -180,7 +180,7 @@ func NewAppmeshMeshSpecOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_AppmeshMeshSpecOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshMesh.AppmeshMeshSpecOutputReference",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAppmeshMeshSpecOutputReference_Override(a AppmeshMeshSpecOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshMesh.AppmeshMeshSpecOutputReference",
+		"@cdktf/provider-aws.appmeshMesh.AppmeshMeshSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

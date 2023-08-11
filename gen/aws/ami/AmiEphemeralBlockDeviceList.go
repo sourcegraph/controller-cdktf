@@ -116,7 +116,7 @@ func NewAmiEphemeralBlockDeviceList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_AmiEphemeralBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.ami.AmiEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAmiEphemeralBlockDeviceList_Override(a AmiEphemeralBlockDeviceList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ami.AmiEphemeralBlockDeviceList",
+		"@cdktf/provider-aws.ami.AmiEphemeralBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

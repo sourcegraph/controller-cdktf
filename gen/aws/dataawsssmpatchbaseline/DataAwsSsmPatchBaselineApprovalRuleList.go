@@ -104,7 +104,7 @@ func NewDataAwsSsmPatchBaselineApprovalRuleList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsSsmPatchBaselineApprovalRuleList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRuleList",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsSsmPatchBaselineApprovalRuleList_Override(d DataAwsSsmPatchBaseli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRuleList",
+		"@cdktf/provider-aws.dataAwsSsmPatchBaseline.DataAwsSsmPatchBaselineApprovalRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

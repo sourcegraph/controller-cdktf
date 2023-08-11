@@ -116,7 +116,7 @@ func NewFisExperimentTemplateActionParameterList(terraformResource cdktf.IInterp
 	j := jsiiProxy_FisExperimentTemplateActionParameterList{}
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateActionParameterList",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFisExperimentTemplateActionParameterList_Override(f FisExperimentTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateActionParameterList",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateActionParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

@@ -659,7 +659,7 @@ func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	j := jsiiProxy_Eip{}
 
 	_jsii_.Create(
-		"aws.eip.Eip",
+		"@cdktf/provider-aws.eip.Eip",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -672,7 +672,7 @@ func NewEip_Override(e Eip, scope constructs.Construct, id *string, config *EipC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eip.Eip",
+		"@cdktf/provider-aws.eip.Eip",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -893,7 +893,7 @@ func Eip_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eip.Eip",
+		"@cdktf/provider-aws.eip.Eip",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -912,7 +912,7 @@ func Eip_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eip.Eip",
+		"@cdktf/provider-aws.eip.Eip",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -931,7 +931,7 @@ func Eip_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eip.Eip",
+		"@cdktf/provider-aws.eip.Eip",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -944,7 +944,7 @@ func Eip_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.eip.Eip",
+		"@cdktf/provider-aws.eip.Eip",
 		"tfResourceType",
 		&returns,
 	)

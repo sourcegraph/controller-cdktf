@@ -447,7 +447,7 @@ func NewDataAwsVpnGateway(scope constructs.Construct, id *string, config *DataAw
 	j := jsiiProxy_DataAwsVpnGateway{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpnGateway.DataAwsVpnGateway",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewDataAwsVpnGateway_Override(d DataAwsVpnGateway, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpnGateway.DataAwsVpnGateway",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -604,7 +604,7 @@ func DataAwsVpnGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpnGateway.DataAwsVpnGateway",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataAwsVpnGateway_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpnGateway.DataAwsVpnGateway",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func DataAwsVpnGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpnGateway.DataAwsVpnGateway",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func DataAwsVpnGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsVpnGateway.DataAwsVpnGateway",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGateway",
 		"tfResourceType",
 		&returns,
 	)

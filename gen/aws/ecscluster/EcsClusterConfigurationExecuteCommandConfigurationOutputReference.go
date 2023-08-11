@@ -228,7 +228,7 @@ func NewEcsClusterConfigurationExecuteCommandConfigurationOutputReference(terraf
 	j := jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEcsClusterConfigurationExecuteCommandConfigurationOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationOutputReference",
+		"@cdktf/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

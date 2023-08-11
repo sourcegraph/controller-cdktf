@@ -104,7 +104,7 @@ func NewDataplexZoneAssetStatusList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_DataplexZoneAssetStatusList{}
 
 	_jsii_.Create(
-		"google.dataplexZone.DataplexZoneAssetStatusList",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneAssetStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexZoneAssetStatusList_Override(d DataplexZoneAssetStatusList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexZone.DataplexZoneAssetStatusList",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneAssetStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

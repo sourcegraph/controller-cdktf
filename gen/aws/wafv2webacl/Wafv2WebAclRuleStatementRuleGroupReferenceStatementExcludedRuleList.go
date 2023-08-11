@@ -116,7 +116,7 @@ func NewWafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList(terr
 	j := jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

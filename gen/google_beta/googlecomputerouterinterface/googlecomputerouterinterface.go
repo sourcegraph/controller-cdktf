@@ -558,7 +558,7 @@ func NewGoogleComputeRouterInterface(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleComputeRouterInterface{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -571,7 +571,7 @@ func NewGoogleComputeRouterInterface_Override(g GoogleComputeRouterInterface, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -792,7 +792,7 @@ func GoogleComputeRouterInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -811,7 +811,7 @@ func GoogleComputeRouterInterface_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -830,7 +830,7 @@ func GoogleComputeRouterInterface_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -843,7 +843,7 @@ func GoogleComputeRouterInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
 		"tfResourceType",
 		&returns,
 	)

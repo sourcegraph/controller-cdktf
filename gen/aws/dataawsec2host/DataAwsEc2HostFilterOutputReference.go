@@ -202,7 +202,7 @@ func NewDataAwsEc2HostFilterOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsEc2HostFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2Host.DataAwsEc2HostFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEc2HostFilterOutputReference_Override(d DataAwsEc2HostFilterOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2Host.DataAwsEc2HostFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2Host.DataAwsEc2HostFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

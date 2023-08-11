@@ -116,7 +116,7 @@ func NewDynamodbTableLocalSecondaryIndexList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DynamodbTableLocalSecondaryIndexList{}
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableLocalSecondaryIndexList",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndexList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDynamodbTableLocalSecondaryIndexList_Override(d DynamodbTableLocalSecond
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableLocalSecondaryIndexList",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableLocalSecondaryIndexList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

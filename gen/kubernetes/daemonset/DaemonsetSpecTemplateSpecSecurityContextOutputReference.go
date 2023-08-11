@@ -348,7 +348,7 @@ func NewDaemonsetSpecTemplateSpecSecurityContextOutputReference(terraformResourc
 	j := jsiiProxy_DaemonsetSpecTemplateSpecSecurityContextOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewDaemonsetSpecTemplateSpecSecurityContextOutputReference_Override(d Daemo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

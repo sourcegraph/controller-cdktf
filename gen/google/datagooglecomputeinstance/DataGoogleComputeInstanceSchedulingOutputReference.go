@@ -233,7 +233,7 @@ func NewDataGoogleComputeInstanceSchedulingOutputReference(terraformResource cdk
 	j := jsiiProxy_DataGoogleComputeInstanceSchedulingOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstance.DataGoogleComputeInstanceSchedulingOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeInstance.DataGoogleComputeInstanceSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -245,7 +245,7 @@ func NewDataGoogleComputeInstanceSchedulingOutputReference_Override(d DataGoogle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstance.DataGoogleComputeInstanceSchedulingOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeInstance.DataGoogleComputeInstanceSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

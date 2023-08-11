@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecTopologySpreadConstraintList(terraformResource cd
 	j := jsiiProxy_DataKubernetesPodV1SpecTopologySpreadConstraintList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecTopologySpreadConstraintList_Override(d DataKuber
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

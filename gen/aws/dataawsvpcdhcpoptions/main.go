@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptions",
 		reflect.TypeOf((*DataAwsVpcDhcpOptions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsConfig",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsConfig",
 		reflect.TypeOf((*DataAwsVpcDhcpOptionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilter",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilter",
 		reflect.TypeOf((*DataAwsVpcDhcpOptionsFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterList",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterList",
 		reflect.TypeOf((*DataAwsVpcDhcpOptionsFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterOutputReference",
 		reflect.TypeOf((*DataAwsVpcDhcpOptionsFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,11 +139,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeouts",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeouts",
 		reflect.TypeOf((*DataAwsVpcDhcpOptionsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsVpcDhcpOptionsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

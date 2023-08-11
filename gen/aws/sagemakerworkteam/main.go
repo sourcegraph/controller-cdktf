@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkteam.SagemakerWorkteam",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteam",
 		reflect.TypeOf((*SagemakerWorkteam)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,19 +76,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkteam.SagemakerWorkteamConfig",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamConfig",
 		reflect.TypeOf((*SagemakerWorkteamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinition",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinition",
 		reflect.TypeOf((*SagemakerWorkteamMemberDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinition",
 		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionCognitoMemberDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference",
 		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionCognitoMemberDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -126,7 +126,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionList",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionList",
 		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,11 +147,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinition",
 		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionOidcMemberDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference",
 		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionOidcMemberDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -185,7 +185,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamMemberDefinitionOutputReference",
 		reflect.TypeOf((*SagemakerWorkteamMemberDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cognitoMemberDefinition", GoGetter: "CognitoMemberDefinition"},
@@ -225,11 +225,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfiguration",
 		reflect.TypeOf((*SagemakerWorkteamNotificationConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfigurationOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfigurationOutputReference",
 		reflect.TypeOf((*SagemakerWorkteamNotificationConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

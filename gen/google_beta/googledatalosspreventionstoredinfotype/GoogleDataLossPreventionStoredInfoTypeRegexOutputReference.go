@@ -203,7 +203,7 @@ func NewGoogleDataLossPreventionStoredInfoTypeRegexOutputReference(terraformReso
 	j := jsiiProxy_GoogleDataLossPreventionStoredInfoTypeRegexOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeRegexOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeRegexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleDataLossPreventionStoredInfoTypeRegexOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeRegexOutputReference",
+		"@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeRegexOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

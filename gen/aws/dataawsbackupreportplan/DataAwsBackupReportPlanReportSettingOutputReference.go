@@ -189,7 +189,7 @@ func NewDataAwsBackupReportPlanReportSettingOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsBackupReportPlanReportSettingOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsBackupReportPlanReportSettingOutputReference_Override(d DataAwsBa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -401,7 +401,7 @@ func NewSagemakerCodeRepository(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_SagemakerCodeRepository{}
 
 	_jsii_.Create(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepository",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewSagemakerCodeRepository_Override(s SagemakerCodeRepository, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepository",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -558,7 +558,7 @@ func SagemakerCodeRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepository",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func SagemakerCodeRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepository",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func SagemakerCodeRepository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepository",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func SagemakerCodeRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepository",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepository",
 		"tfResourceType",
 		&returns,
 	)

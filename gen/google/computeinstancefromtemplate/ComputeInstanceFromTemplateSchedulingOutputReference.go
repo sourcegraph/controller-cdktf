@@ -324,7 +324,7 @@ func NewComputeInstanceFromTemplateSchedulingOutputReference(terraformResource c
 	j := jsiiProxy_ComputeInstanceFromTemplateSchedulingOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateSchedulingOutputReference",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewComputeInstanceFromTemplateSchedulingOutputReference_Override(c ComputeI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateSchedulingOutputReference",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

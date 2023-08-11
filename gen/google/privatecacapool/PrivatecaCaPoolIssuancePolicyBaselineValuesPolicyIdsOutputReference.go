@@ -179,7 +179,7 @@ func NewPrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference(terr
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

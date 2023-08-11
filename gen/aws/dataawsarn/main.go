@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsArn.DataAwsArn",
+		"@cdktf/provider-aws.dataAwsArn.DataAwsArn",
 		reflect.TypeOf((*DataAwsArn)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsArn.DataAwsArnConfig",
+		"@cdktf/provider-aws.dataAwsArn.DataAwsArnConfig",
 		reflect.TypeOf((*DataAwsArnConfig)(nil)).Elem(),
 	)
 }

@@ -204,7 +204,7 @@ func NewCloudsearchDomainEndpointOptionsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainEndpointOptionsOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudsearchDomainEndpointOptionsOutputReference_Override(c CloudsearchDo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainEndpointOptionsOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainEndpointOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

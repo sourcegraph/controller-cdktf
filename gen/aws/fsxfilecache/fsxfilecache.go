@@ -657,7 +657,7 @@ func NewFsxFileCache(scope constructs.Construct, id *string, config *FsxFileCach
 	j := jsiiProxy_FsxFileCache{}
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCache",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -670,7 +670,7 @@ func NewFsxFileCache_Override(f FsxFileCache, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxFileCache.FsxFileCache",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -880,7 +880,7 @@ func FsxFileCache_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxFileCache.FsxFileCache",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -899,7 +899,7 @@ func FsxFileCache_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxFileCache.FsxFileCache",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -918,7 +918,7 @@ func FsxFileCache_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxFileCache.FsxFileCache",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -931,7 +931,7 @@ func FsxFileCache_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxFileCache.FsxFileCache",
+		"@cdktf/provider-aws.fsxFileCache.FsxFileCache",
 		"tfResourceType",
 		&returns,
 	)

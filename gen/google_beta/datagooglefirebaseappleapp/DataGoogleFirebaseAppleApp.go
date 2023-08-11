@@ -381,7 +381,7 @@ func NewDataGoogleFirebaseAppleApp(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataGoogleFirebaseAppleApp{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -394,7 +394,7 @@ func NewDataGoogleFirebaseAppleApp_Override(d DataGoogleFirebaseAppleApp, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -505,7 +505,7 @@ func DataGoogleFirebaseAppleApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataGoogleFirebaseAppleApp_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataGoogleFirebaseAppleApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataGoogleFirebaseAppleApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp",
 		"tfResourceType",
 		&returns,
 	)

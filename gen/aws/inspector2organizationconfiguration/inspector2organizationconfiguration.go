@@ -354,7 +354,7 @@ func NewInspector2OrganizationConfiguration(scope constructs.Construct, id *stri
 	j := jsiiProxy_Inspector2OrganizationConfiguration{}
 
 	_jsii_.Create(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewInspector2OrganizationConfiguration_Override(i Inspector2OrganizationCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -478,7 +478,7 @@ func Inspector2OrganizationConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func Inspector2OrganizationConfiguration_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func Inspector2OrganizationConfiguration_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func Inspector2OrganizationConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfiguration",
 		"tfResourceType",
 		&returns,
 	)

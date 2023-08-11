@@ -116,7 +116,7 @@ func NewRedshiftParameterGroupParameterList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_RedshiftParameterGroupParameterList{}
 
 	_jsii_.Create(
-		"aws.redshiftParameterGroup.RedshiftParameterGroupParameterList",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRedshiftParameterGroupParameterList_Override(r RedshiftParameterGroupPar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftParameterGroup.RedshiftParameterGroupParameterList",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

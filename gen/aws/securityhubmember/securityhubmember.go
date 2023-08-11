@@ -388,7 +388,7 @@ func NewSecurityhubMember(scope constructs.Construct, id *string, config *Securi
 	j := jsiiProxy_SecurityhubMember{}
 
 	_jsii_.Create(
-		"aws.securityhubMember.SecurityhubMember",
+		"@cdktf/provider-aws.securityhubMember.SecurityhubMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewSecurityhubMember_Override(s SecurityhubMember, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubMember.SecurityhubMember",
+		"@cdktf/provider-aws.securityhubMember.SecurityhubMember",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -545,7 +545,7 @@ func SecurityhubMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubMember.SecurityhubMember",
+		"@cdktf/provider-aws.securityhubMember.SecurityhubMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func SecurityhubMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubMember.SecurityhubMember",
+		"@cdktf/provider-aws.securityhubMember.SecurityhubMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func SecurityhubMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubMember.SecurityhubMember",
+		"@cdktf/provider-aws.securityhubMember.SecurityhubMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func SecurityhubMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityhubMember.SecurityhubMember",
+		"@cdktf/provider-aws.securityhubMember.SecurityhubMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -349,7 +349,7 @@ func NewDataAwsKmsCiphertext(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataAwsKmsCiphertext{}
 
 	_jsii_.Create(
-		"aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
+		"@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -362,7 +362,7 @@ func NewDataAwsKmsCiphertext_Override(d DataAwsKmsCiphertext, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
+		"@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -484,7 +484,7 @@ func DataAwsKmsCiphertext_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
+		"@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func DataAwsKmsCiphertext_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
+		"@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataAwsKmsCiphertext_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
+		"@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataAwsKmsCiphertext_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
+		"@cdktf/provider-aws.dataAwsKmsCiphertext.DataAwsKmsCiphertext",
 		"tfResourceType",
 		&returns,
 	)

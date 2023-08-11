@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation",
 		reflect.TypeOf((*ComputeFirewallPolicyAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationConfig",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationConfig",
 		reflect.TypeOf((*ComputeFirewallPolicyAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts",
 		reflect.TypeOf((*ComputeFirewallPolicyAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeoutsOutputReference",
+		"@cdktf/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeFirewallPolicyAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

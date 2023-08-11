@@ -722,7 +722,7 @@ func NewDataAwsRedshiftCluster(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsRedshiftCluster{}
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -735,7 +735,7 @@ func NewDataAwsRedshiftCluster_Override(d DataAwsRedshiftCluster, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -846,7 +846,7 @@ func DataAwsRedshiftCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -865,7 +865,7 @@ func DataAwsRedshiftCluster_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -884,7 +884,7 @@ func DataAwsRedshiftCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -897,7 +897,7 @@ func DataAwsRedshiftCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftCluster.DataAwsRedshiftCluster",
 		"tfResourceType",
 		&returns,
 	)

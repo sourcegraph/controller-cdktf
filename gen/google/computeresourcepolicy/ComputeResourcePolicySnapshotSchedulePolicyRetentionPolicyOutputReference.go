@@ -203,7 +203,7 @@ func NewComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReferenc
 	j := jsiiProxy_ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

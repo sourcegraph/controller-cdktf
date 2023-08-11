@@ -226,7 +226,7 @@ func NewGoogleEndpointsServiceIamMemberConditionOutputReference(terraformResourc
 	j := jsiiProxy_GoogleEndpointsServiceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleEndpointsServiceIamMemberConditionOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

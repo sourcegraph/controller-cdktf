@@ -180,7 +180,7 @@ func NewTimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDat
 	j := jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference{}
 
 	_jsii_.Create(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewTimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesMagneticStoreRejectedDataLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

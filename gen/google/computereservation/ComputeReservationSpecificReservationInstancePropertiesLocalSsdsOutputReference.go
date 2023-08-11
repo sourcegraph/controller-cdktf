@@ -203,7 +203,7 @@ func NewComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputRe
 	j := jsiiProxy_ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference",
+		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference",
+		"@cdktf/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

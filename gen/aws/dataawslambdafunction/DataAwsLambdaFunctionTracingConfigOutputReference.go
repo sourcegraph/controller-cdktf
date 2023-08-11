@@ -167,7 +167,7 @@ func NewDataAwsLambdaFunctionTracingConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsLambdaFunctionTracingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsLambdaFunctionTracingConfigOutputReference_Override(d DataAwsLamb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

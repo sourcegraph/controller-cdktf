@@ -104,7 +104,7 @@ func NewDataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList(terraformRe
 	j := jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList",
+		"@cdktf/provider-aws.dataAwsConnectInstanceStorageConfig.DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

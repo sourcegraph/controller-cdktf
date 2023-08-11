@@ -116,7 +116,7 @@ func NewPolicyRuleProfileEnrollmentProfileAttributesList(terraformResource cdktf
 	j := jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesList{}
 
 	_jsii_.Create(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesList",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPolicyRuleProfileEnrollmentProfileAttributesList_Override(p PolicyRulePr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesList",
+		"@cdktf/provider-okta.policyRuleProfileEnrollment.PolicyRuleProfileEnrollmentProfileAttributesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

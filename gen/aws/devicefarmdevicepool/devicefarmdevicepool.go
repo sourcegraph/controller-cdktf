@@ -483,7 +483,7 @@ func NewDevicefarmDevicePool(scope constructs.Construct, id *string, config *Dev
 	j := jsiiProxy_DevicefarmDevicePool{}
 
 	_jsii_.Create(
-		"aws.devicefarmDevicePool.DevicefarmDevicePool",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewDevicefarmDevicePool_Override(d DevicefarmDevicePool, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.devicefarmDevicePool.DevicefarmDevicePool",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -673,7 +673,7 @@ func DevicefarmDevicePool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmDevicePool.DevicefarmDevicePool",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func DevicefarmDevicePool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmDevicePool.DevicefarmDevicePool",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func DevicefarmDevicePool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.devicefarmDevicePool.DevicefarmDevicePool",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func DevicefarmDevicePool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.devicefarmDevicePool.DevicefarmDevicePool",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
 		"tfResourceType",
 		&returns,
 	)

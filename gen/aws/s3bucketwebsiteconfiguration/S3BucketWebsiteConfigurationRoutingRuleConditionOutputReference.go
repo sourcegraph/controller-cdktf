@@ -204,7 +204,7 @@ func NewS3BucketWebsiteConfigurationRoutingRuleConditionOutputReference(terrafor
 	j := jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3BucketWebsiteConfigurationRoutingRuleConditionOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

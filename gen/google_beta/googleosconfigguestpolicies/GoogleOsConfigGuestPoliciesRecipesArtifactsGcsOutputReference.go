@@ -228,7 +228,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference(terraformR
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -179,7 +179,7 @@ func NewContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputRefere
 	j := jsiiProxy_ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

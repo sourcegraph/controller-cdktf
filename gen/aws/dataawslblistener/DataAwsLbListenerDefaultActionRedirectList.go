@@ -104,7 +104,7 @@ func NewDataAwsLbListenerDefaultActionRedirectList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsLbListenerDefaultActionRedirectList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectList",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLbListenerDefaultActionRedirectList_Override(d DataAwsLbListenerD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectList",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

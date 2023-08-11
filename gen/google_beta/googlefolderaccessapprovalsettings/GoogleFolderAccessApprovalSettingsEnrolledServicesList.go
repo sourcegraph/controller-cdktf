@@ -116,7 +116,7 @@ func NewGoogleFolderAccessApprovalSettingsEnrolledServicesList(terraformResource
 	j := jsiiProxy_GoogleFolderAccessApprovalSettingsEnrolledServicesList{}
 
 	_jsii_.Create(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleFolderAccessApprovalSettingsEnrolledServicesList_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettingsEnrolledServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

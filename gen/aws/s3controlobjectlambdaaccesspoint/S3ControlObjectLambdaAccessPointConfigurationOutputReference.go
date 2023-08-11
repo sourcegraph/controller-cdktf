@@ -250,7 +250,7 @@ func NewS3ControlObjectLambdaAccessPointConfigurationOutputReference(terraformRe
 	j := jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationOutputReference",
+		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewS3ControlObjectLambdaAccessPointConfigurationOutputReference_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationOutputReference",
+		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

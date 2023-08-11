@@ -225,7 +225,7 @@ func NewWafv2RuleGroupRuleVisibilityConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_Wafv2RuleGroupRuleVisibilityConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfigOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafv2RuleGroupRuleVisibilityConfigOutputReference_Override(w Wafv2RuleGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfigOutputReference",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleVisibilityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

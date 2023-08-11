@@ -203,7 +203,7 @@ func NewAlbListenerRuleActionForwardOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AlbListenerRuleActionForwardOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionForwardOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAlbListenerRuleActionForwardOutputReference_Override(a AlbListenerRuleAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionForwardOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

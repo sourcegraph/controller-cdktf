@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.locationMap.LocationMap",
+		"@cdktf/provider-aws.locationMap.LocationMap",
 		reflect.TypeOf((*LocationMap)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.locationMap.LocationMapConfig",
+		"@cdktf/provider-aws.locationMap.LocationMapConfig",
 		reflect.TypeOf((*LocationMapConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.locationMap.LocationMapConfiguration",
+		"@cdktf/provider-aws.locationMap.LocationMapConfiguration",
 		reflect.TypeOf((*LocationMapConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.locationMap.LocationMapConfigurationOutputReference",
+		"@cdktf/provider-aws.locationMap.LocationMapConfigurationOutputReference",
 		reflect.TypeOf((*LocationMapConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

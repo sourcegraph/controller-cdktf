@@ -228,7 +228,7 @@ func NewPodSpecContainerEnvValueFromConfigMapKeyRefOutputReference(terraformReso
 	j := jsiiProxy_PodSpecContainerEnvValueFromConfigMapKeyRefOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvValueFromConfigMapKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPodSpecContainerEnvValueFromConfigMapKeyRefOutputReference_Override(p Po
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerEnvValueFromConfigMapKeyRefOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvValueFromConfigMapKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

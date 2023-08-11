@@ -179,7 +179,7 @@ func NewDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformations
 	j := jsiiProxy_DataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsOutputReference",
+		"@cdktf/provider-google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformations
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsOutputReference",
+		"@cdktf/provider-google.dataLossPreventionDeidentifyTemplate.DataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

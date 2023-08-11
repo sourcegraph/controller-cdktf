@@ -104,7 +104,7 @@ func NewDataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsLi
 	j := jsiiProxy_DataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsList{}
 
 	_jsii_.Create(
-		"google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsList",
+		"@cdktf/provider-google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsList",
+		"@cdktf/provider-google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

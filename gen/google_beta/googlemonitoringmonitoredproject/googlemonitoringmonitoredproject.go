@@ -377,7 +377,7 @@ func NewGoogleMonitoringMonitoredProject(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleMonitoringMonitoredProject{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
+		"@cdktf/provider-google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleMonitoringMonitoredProject_Override(g GoogleMonitoringMonitoredPro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
+		"@cdktf/provider-google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -523,7 +523,7 @@ func GoogleMonitoringMonitoredProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
+		"@cdktf/provider-google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func GoogleMonitoringMonitoredProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
+		"@cdktf/provider-google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func GoogleMonitoringMonitoredProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
+		"@cdktf/provider-google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func GoogleMonitoringMonitoredProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
+		"@cdktf/provider-google-beta.googleMonitoringMonitoredProject.GoogleMonitoringMonitoredProject",
 		"tfResourceType",
 		&returns,
 	)

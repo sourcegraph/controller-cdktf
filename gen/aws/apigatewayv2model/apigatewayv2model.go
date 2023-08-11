@@ -412,7 +412,7 @@ func NewApigatewayv2Model(scope constructs.Construct, id *string, config *Apigat
 	j := jsiiProxy_Apigatewayv2Model{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Model.Apigatewayv2Model",
+		"@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewApigatewayv2Model_Override(a Apigatewayv2Model, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Model.Apigatewayv2Model",
+		"@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -591,7 +591,7 @@ func Apigatewayv2Model_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2Model.Apigatewayv2Model",
+		"@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func Apigatewayv2Model_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2Model.Apigatewayv2Model",
+		"@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func Apigatewayv2Model_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2Model.Apigatewayv2Model",
+		"@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func Apigatewayv2Model_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apigatewayv2Model.Apigatewayv2Model",
+		"@cdktf/provider-aws.apigatewayv2Model.Apigatewayv2Model",
 		"tfResourceType",
 		&returns,
 	)

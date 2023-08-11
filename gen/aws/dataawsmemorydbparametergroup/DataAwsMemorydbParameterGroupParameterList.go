@@ -104,7 +104,7 @@ func NewDataAwsMemorydbParameterGroupParameterList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsMemorydbParameterGroupParameterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterList",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMemorydbParameterGroupParameterList_Override(d DataAwsMemorydbPar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterList",
+		"@cdktf/provider-aws.dataAwsMemorydbParameterGroup.DataAwsMemorydbParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

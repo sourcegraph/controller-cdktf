@@ -179,7 +179,7 @@ func NewWafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCond
 	j := jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameCond
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference",
+		"@cdktf/provider-aws.wafv2WebAclLoggingConfiguration.Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLabelNameConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

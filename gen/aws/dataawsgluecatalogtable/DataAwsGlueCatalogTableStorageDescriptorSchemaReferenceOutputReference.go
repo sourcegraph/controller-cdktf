@@ -189,7 +189,7 @@ func NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference(t
 	j := jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

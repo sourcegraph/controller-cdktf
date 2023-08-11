@@ -377,7 +377,7 @@ func NewRoute53ZoneAssociation(scope constructs.Construct, id *string, config *R
 	j := jsiiProxy_Route53ZoneAssociation{}
 
 	_jsii_.Create(
-		"aws.route53ZoneAssociation.Route53ZoneAssociation",
+		"@cdktf/provider-aws.route53ZoneAssociation.Route53ZoneAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewRoute53ZoneAssociation_Override(r Route53ZoneAssociation, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ZoneAssociation.Route53ZoneAssociation",
+		"@cdktf/provider-aws.route53ZoneAssociation.Route53ZoneAssociation",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -534,7 +534,7 @@ func Route53ZoneAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ZoneAssociation.Route53ZoneAssociation",
+		"@cdktf/provider-aws.route53ZoneAssociation.Route53ZoneAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func Route53ZoneAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ZoneAssociation.Route53ZoneAssociation",
+		"@cdktf/provider-aws.route53ZoneAssociation.Route53ZoneAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func Route53ZoneAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ZoneAssociation.Route53ZoneAssociation",
+		"@cdktf/provider-aws.route53ZoneAssociation.Route53ZoneAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func Route53ZoneAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ZoneAssociation.Route53ZoneAssociation",
+		"@cdktf/provider-aws.route53ZoneAssociation.Route53ZoneAssociation",
 		"tfResourceType",
 		&returns,
 	)

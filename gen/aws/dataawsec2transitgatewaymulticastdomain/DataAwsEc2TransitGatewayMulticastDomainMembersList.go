@@ -104,7 +104,7 @@ func NewDataAwsEc2TransitGatewayMulticastDomainMembersList(terraformResource cdk
 	j := jsiiProxy_DataAwsEc2TransitGatewayMulticastDomainMembersList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainMembersList",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEc2TransitGatewayMulticastDomainMembersList_Override(d DataAwsEc2
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainMembersList",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayMulticastDomain.DataAwsEc2TransitGatewayMulticastDomainMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

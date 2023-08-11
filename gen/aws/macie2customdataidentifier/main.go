@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
+		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifier",
 		reflect.TypeOf((*Macie2CustomDataIdentifier)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifierConfig",
+		"@cdktf/provider-aws.macie2CustomDataIdentifier.Macie2CustomDataIdentifierConfig",
 		reflect.TypeOf((*Macie2CustomDataIdentifierConfig)(nil)).Elem(),
 	)
 }

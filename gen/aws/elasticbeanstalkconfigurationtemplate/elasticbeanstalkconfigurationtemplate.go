@@ -438,7 +438,7 @@ func NewElasticBeanstalkConfigurationTemplate(scope constructs.Construct, id *st
 	j := jsiiProxy_ElasticBeanstalkConfigurationTemplate{}
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewElasticBeanstalkConfigurationTemplate_Override(e ElasticBeanstalkConfigu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -617,7 +617,7 @@ func ElasticBeanstalkConfigurationTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func ElasticBeanstalkConfigurationTemplate_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func ElasticBeanstalkConfigurationTemplate_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func ElasticBeanstalkConfigurationTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
 		"tfResourceType",
 		&returns,
 	)

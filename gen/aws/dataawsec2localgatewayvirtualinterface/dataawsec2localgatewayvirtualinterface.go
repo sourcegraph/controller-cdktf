@@ -417,7 +417,7 @@ func NewDataAwsEc2LocalGatewayVirtualInterface(scope constructs.Construct, id *s
 	j := jsiiProxy_DataAwsEc2LocalGatewayVirtualInterface{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewDataAwsEc2LocalGatewayVirtualInterface_Override(d DataAwsEc2LocalGateway
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -530,7 +530,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func DataAwsEc2LocalGatewayVirtualInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayVirtualInterface.DataAwsEc2LocalGatewayVirtualInterface",
 		"tfResourceType",
 		&returns,
 	)

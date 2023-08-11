@@ -389,7 +389,7 @@ func NewDbProxyDefaultTargetGroup(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DbProxyDefaultTargetGroup{}
 
 	_jsii_.Create(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewDbProxyDefaultTargetGroup_Override(d DbProxyDefaultTargetGroup, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -524,7 +524,7 @@ func DbProxyDefaultTargetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DbProxyDefaultTargetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func DbProxyDefaultTargetGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func DbProxyDefaultTargetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
 		"tfResourceType",
 		&returns,
 	)

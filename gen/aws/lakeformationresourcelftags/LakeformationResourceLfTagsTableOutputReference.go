@@ -251,7 +251,7 @@ func NewLakeformationResourceLfTagsTableOutputReference(terraformResource cdktf.
 	j := jsiiProxy_LakeformationResourceLfTagsTableOutputReference{}
 
 	_jsii_.Create(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableOutputReference",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewLakeformationResourceLfTagsTableOutputReference_Override(l Lakeformation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableOutputReference",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

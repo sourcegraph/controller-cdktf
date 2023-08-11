@@ -211,7 +211,7 @@ func NewDataAwsConnectUserHierarchyStructureHierarchyStructureOutputReference(te
 	j := jsiiProxy_DataAwsConnectUserHierarchyStructureHierarchyStructureOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureHierarchyStructureOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureHierarchyStructureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsConnectUserHierarchyStructureHierarchyStructureOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureHierarchyStructureOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructureHierarchyStructureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

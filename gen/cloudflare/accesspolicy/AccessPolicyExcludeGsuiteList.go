@@ -116,7 +116,7 @@ func NewAccessPolicyExcludeGsuiteList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_AccessPolicyExcludeGsuiteList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeGsuiteList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGsuiteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyExcludeGsuiteList_Override(a AccessPolicyExcludeGsuiteList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeGsuiteList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeGsuiteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

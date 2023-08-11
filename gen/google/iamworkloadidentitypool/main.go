@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPool",
 		reflect.TypeOf((*IamWorkloadIdentityPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolConfig",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolConfig",
 		reflect.TypeOf((*IamWorkloadIdentityPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolTimeouts",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolTimeouts",
 		reflect.TypeOf((*IamWorkloadIdentityPoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolTimeoutsOutputReference",
+		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolTimeoutsOutputReference",
 		reflect.TypeOf((*IamWorkloadIdentityPoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

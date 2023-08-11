@@ -156,7 +156,7 @@ func NewDatastreamStreamBackfillNoneOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DatastreamStreamBackfillNoneOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillNoneOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDatastreamStreamBackfillNoneOutputReference_Override(d DatastreamStreamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamBackfillNoneOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

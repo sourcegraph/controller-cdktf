@@ -228,7 +228,7 @@ func NewGoogleAlloydbBackupTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleAlloydbBackupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleAlloydbBackupTimeoutsOutputReference_Override(g GoogleAlloydbBacku
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

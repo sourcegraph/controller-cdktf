@@ -179,7 +179,7 @@ func NewGoogleComposerEnvironmentConfigEncryptionConfigOutputReference(terraform
 	j := jsiiProxy_GoogleComposerEnvironmentConfigEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComposerEnvironmentConfigEncryptionConfigOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

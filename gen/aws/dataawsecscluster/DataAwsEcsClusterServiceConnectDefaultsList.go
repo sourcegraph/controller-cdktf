@@ -104,7 +104,7 @@ func NewDataAwsEcsClusterServiceConnectDefaultsList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsEcsClusterServiceConnectDefaultsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsList",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEcsClusterServiceConnectDefaultsList_Override(d DataAwsEcsCluster
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsList",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

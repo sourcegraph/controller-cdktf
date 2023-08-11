@@ -226,7 +226,7 @@ func NewGoogleComputeRegionDiskIamBindingConditionOutputReference(terraformResou
 	j := jsiiProxy_GoogleComputeRegionDiskIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeRegionDiskIamBindingConditionOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamBinding.GoogleComputeRegionDiskIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

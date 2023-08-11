@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowCxIntent.DialogflowCxIntent",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntent",
 		reflect.TypeOf((*DialogflowCxIntent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,15 +88,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxIntent.DialogflowCxIntentConfig",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig",
 		reflect.TypeOf((*DialogflowCxIntentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxIntent.DialogflowCxIntentParameters",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters",
 		reflect.TypeOf((*DialogflowCxIntentParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxIntent.DialogflowCxIntentParametersList",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList",
 		reflect.TypeOf((*DialogflowCxIntentParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference",
 		reflect.TypeOf((*DialogflowCxIntentParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,11 +159,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxIntent.DialogflowCxIntentTimeouts",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts",
 		reflect.TypeOf((*DialogflowCxIntentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowCxIntentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -204,11 +204,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases",
 		reflect.TypeOf((*DialogflowCxIntentTrainingPhrases)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList",
 		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -229,7 +229,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference",
 		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,11 +268,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts",
 		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesParts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList",
 		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesPartsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -293,7 +293,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference",
 		reflect.TypeOf((*DialogflowCxIntentTrainingPhrasesPartsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -415,7 +415,7 @@ func NewSignonPolicy(scope constructs.Construct, id *string, config *SignonPolic
 	j := jsiiProxy_SignonPolicy{}
 
 	_jsii_.Create(
-		"okta.signonPolicy.SignonPolicy",
+		"@cdktf/provider-okta.signonPolicy.SignonPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewSignonPolicy_Override(s SignonPolicy, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.signonPolicy.SignonPolicy",
+		"@cdktf/provider-okta.signonPolicy.SignonPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -594,7 +594,7 @@ func SignonPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.signonPolicy.SignonPolicy",
+		"@cdktf/provider-okta.signonPolicy.SignonPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func SignonPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.signonPolicy.SignonPolicy",
+		"@cdktf/provider-okta.signonPolicy.SignonPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func SignonPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.signonPolicy.SignonPolicy",
+		"@cdktf/provider-okta.signonPolicy.SignonPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func SignonPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.signonPolicy.SignonPolicy",
+		"@cdktf/provider-okta.signonPolicy.SignonPolicy",
 		"tfResourceType",
 		&returns,
 	)

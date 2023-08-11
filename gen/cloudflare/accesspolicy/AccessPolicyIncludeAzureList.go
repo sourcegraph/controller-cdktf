@@ -116,7 +116,7 @@ func NewAccessPolicyIncludeAzureList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AccessPolicyIncludeAzureList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeAzureList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzureList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyIncludeAzureList_Override(a AccessPolicyIncludeAzureList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeAzureList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeAzureList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

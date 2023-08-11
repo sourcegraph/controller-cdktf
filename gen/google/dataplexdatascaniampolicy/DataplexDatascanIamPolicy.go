@@ -401,7 +401,7 @@ func NewDataplexDatascanIamPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataplexDatascanIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataplexDatascanIamPolicy_Override(d DataplexDatascanIamPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -569,7 +569,7 @@ func DataplexDatascanIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataplexDatascanIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataplexDatascanIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataplexDatascanIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataplexDatascanIamPolicy.DataplexDatascanIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

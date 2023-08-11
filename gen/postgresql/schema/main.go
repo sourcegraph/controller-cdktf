@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"postgresql.schema.Schema",
+		"@cdktf/provider-postgresql.schema.Schema",
 		reflect.TypeOf((*Schema)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.schema.SchemaConfig",
+		"@cdktf/provider-postgresql.schema.SchemaConfig",
 		reflect.TypeOf((*SchemaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.schema.SchemaPolicy",
+		"@cdktf/provider-postgresql.schema.SchemaPolicy",
 		reflect.TypeOf((*SchemaPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"postgresql.schema.SchemaPolicyList",
+		"@cdktf/provider-postgresql.schema.SchemaPolicyList",
 		reflect.TypeOf((*SchemaPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"postgresql.schema.SchemaPolicyOutputReference",
+		"@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference",
 		reflect.TypeOf((*SchemaPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

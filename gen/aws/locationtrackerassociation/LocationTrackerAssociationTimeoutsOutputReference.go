@@ -204,7 +204,7 @@ func NewLocationTrackerAssociationTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_LocationTrackerAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLocationTrackerAssociationTimeoutsOutputReference_Override(l LocationTra
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.locationTrackerAssociation.LocationTrackerAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

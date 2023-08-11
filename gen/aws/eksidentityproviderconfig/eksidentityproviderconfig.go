@@ -436,7 +436,7 @@ func NewEksIdentityProviderConfig(scope constructs.Construct, id *string, config
 	j := jsiiProxy_EksIdentityProviderConfig{}
 
 	_jsii_.Create(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewEksIdentityProviderConfig_Override(e EksIdentityProviderConfig, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -593,7 +593,7 @@ func EksIdentityProviderConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func EksIdentityProviderConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func EksIdentityProviderConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func EksIdentityProviderConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfig",
 		"tfResourceType",
 		&returns,
 	)

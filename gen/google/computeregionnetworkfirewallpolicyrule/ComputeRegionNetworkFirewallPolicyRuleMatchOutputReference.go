@@ -443,7 +443,7 @@ func NewComputeRegionNetworkFirewallPolicyRuleMatchOutputReference(terraformReso
 	j := jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionNetworkFirewallPolicyRule.ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicyRule.ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -455,7 +455,7 @@ func NewComputeRegionNetworkFirewallPolicyRuleMatchOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionNetworkFirewallPolicyRule.ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference",
+		"@cdktf/provider-google.computeRegionNetworkFirewallPolicyRule.ComputeRegionNetworkFirewallPolicyRuleMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

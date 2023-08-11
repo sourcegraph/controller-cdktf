@@ -203,7 +203,7 @@ func NewGoogleCloudIdentityGroupMembershipMemberKeyOutputReference(terraformReso
 	j := jsiiProxy_GoogleCloudIdentityGroupMembershipMemberKeyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembershipMemberKeyOutputReference",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembershipMemberKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleCloudIdentityGroupMembershipMemberKeyOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembershipMemberKeyOutputReference",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembershipMemberKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -399,7 +399,7 @@ func NewApprunnerCustomDomainAssociation(scope constructs.Construct, id *string,
 	j := jsiiProxy_ApprunnerCustomDomainAssociation{}
 
 	_jsii_.Create(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -412,7 +412,7 @@ func NewApprunnerCustomDomainAssociation_Override(a ApprunnerCustomDomainAssocia
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -556,7 +556,7 @@ func ApprunnerCustomDomainAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func ApprunnerCustomDomainAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func ApprunnerCustomDomainAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func ApprunnerCustomDomainAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		"tfResourceType",
 		&returns,
 	)

@@ -930,7 +930,7 @@ func NewOpsworksMysqlLayer(scope constructs.Construct, id *string, config *Opswo
 	j := jsiiProxy_OpsworksMysqlLayer{}
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayer",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -943,7 +943,7 @@ func NewOpsworksMysqlLayer_Override(o OpsworksMysqlLayer, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayer",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -1307,7 +1307,7 @@ func OpsworksMysqlLayer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayer",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1326,7 +1326,7 @@ func OpsworksMysqlLayer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayer",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1345,7 +1345,7 @@ func OpsworksMysqlLayer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayer",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1358,7 +1358,7 @@ func OpsworksMysqlLayer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayer",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayer",
 		"tfResourceType",
 		&returns,
 	)

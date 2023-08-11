@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.swfDomain.SwfDomain",
+		"@cdktf/provider-aws.swfDomain.SwfDomain",
 		reflect.TypeOf((*SwfDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.swfDomain.SwfDomainConfig",
+		"@cdktf/provider-aws.swfDomain.SwfDomainConfig",
 		reflect.TypeOf((*SwfDomainConfig)(nil)).Elem(),
 	)
 }

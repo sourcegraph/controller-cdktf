@@ -532,7 +532,7 @@ func NewComputePacketMirroring(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_ComputePacketMirroring{}
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroring",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroring",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -545,7 +545,7 @@ func NewComputePacketMirroring_Override(c ComputePacketMirroring, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePacketMirroring.ComputePacketMirroring",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroring",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -711,7 +711,7 @@ func ComputePacketMirroring_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePacketMirroring.ComputePacketMirroring",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroring",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func ComputePacketMirroring_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePacketMirroring.ComputePacketMirroring",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroring",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func ComputePacketMirroring_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computePacketMirroring.ComputePacketMirroring",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroring",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func ComputePacketMirroring_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computePacketMirroring.ComputePacketMirroring",
+		"@cdktf/provider-google.computePacketMirroring.ComputePacketMirroring",
 		"tfResourceType",
 		&returns,
 	)

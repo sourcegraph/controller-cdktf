@@ -116,7 +116,7 @@ func NewAccessContextManagerServicePerimeterSpecIngressPoliciesList(terraformRes
 	j := jsiiProxy_AccessContextManagerServicePerimeterSpecIngressPoliciesList{}
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesList",
+		"@cdktf/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessContextManagerServicePerimeterSpecIngressPoliciesList_Override(a A
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesList",
+		"@cdktf/provider-google.accessContextManagerServicePerimeter.AccessContextManagerServicePerimeterSpecIngressPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

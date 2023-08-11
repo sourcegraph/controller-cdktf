@@ -510,7 +510,7 @@ func NewGoogleComputePerInstanceConfig(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleComputePerInstanceConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
+		"@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -523,7 +523,7 @@ func NewGoogleComputePerInstanceConfig_Override(g GoogleComputePerInstanceConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
+		"@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -711,7 +711,7 @@ func GoogleComputePerInstanceConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
+		"@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func GoogleComputePerInstanceConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
+		"@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func GoogleComputePerInstanceConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
+		"@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleComputePerInstanceConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
+		"@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfig",
 		"tfResourceType",
 		&returns,
 	)

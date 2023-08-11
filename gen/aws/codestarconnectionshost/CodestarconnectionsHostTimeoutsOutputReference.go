@@ -228,7 +228,7 @@ func NewCodestarconnectionsHostTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_CodestarconnectionsHostTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCodestarconnectionsHostTimeoutsOutputReference_Override(c Codestarconnec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

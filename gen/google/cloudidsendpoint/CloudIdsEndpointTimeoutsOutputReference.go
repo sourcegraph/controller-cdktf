@@ -228,7 +228,7 @@ func NewCloudIdsEndpointTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_CloudIdsEndpointTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudIdsEndpoint.CloudIdsEndpointTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudIdsEndpoint.CloudIdsEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudIdsEndpointTimeoutsOutputReference_Override(c CloudIdsEndpointTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudIdsEndpoint.CloudIdsEndpointTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudIdsEndpoint.CloudIdsEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

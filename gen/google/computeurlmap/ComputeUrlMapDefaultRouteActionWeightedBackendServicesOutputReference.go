@@ -228,7 +228,7 @@ func NewComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference(te
 	j := jsiiProxy_ComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

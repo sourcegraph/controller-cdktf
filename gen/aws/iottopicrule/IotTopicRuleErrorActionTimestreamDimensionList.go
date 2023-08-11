@@ -116,7 +116,7 @@ func NewIotTopicRuleErrorActionTimestreamDimensionList(terraformResource cdktf.I
 	j := jsiiProxy_IotTopicRuleErrorActionTimestreamDimensionList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleErrorActionTimestreamDimensionList_Override(i IotTopicRuleEr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionTimestreamDimensionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

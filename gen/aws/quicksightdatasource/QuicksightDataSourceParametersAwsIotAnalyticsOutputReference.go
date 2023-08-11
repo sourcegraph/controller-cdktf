@@ -179,7 +179,7 @@ func NewQuicksightDataSourceParametersAwsIotAnalyticsOutputReference(terraformRe
 	j := jsiiProxy_QuicksightDataSourceParametersAwsIotAnalyticsOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalyticsOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalyticsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewQuicksightDataSourceParametersAwsIotAnalyticsOutputReference_Override(q 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalyticsOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersAwsIotAnalyticsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

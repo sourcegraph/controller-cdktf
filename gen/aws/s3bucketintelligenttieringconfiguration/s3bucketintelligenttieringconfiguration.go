@@ -413,7 +413,7 @@ func NewS3BucketIntelligentTieringConfiguration(scope constructs.Construct, id *
 	j := jsiiProxy_S3BucketIntelligentTieringConfiguration{}
 
 	_jsii_.Create(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewS3BucketIntelligentTieringConfiguration_Override(s S3BucketIntelligentTi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -570,7 +570,7 @@ func S3BucketIntelligentTieringConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func S3BucketIntelligentTieringConfiguration_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func S3BucketIntelligentTieringConfiguration_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func S3BucketIntelligentTieringConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
+		"@cdktf/provider-aws.s3BucketIntelligentTieringConfiguration.S3BucketIntelligentTieringConfiguration",
 		"tfResourceType",
 		&returns,
 	)

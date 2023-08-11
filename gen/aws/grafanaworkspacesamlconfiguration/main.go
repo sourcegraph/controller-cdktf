@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		reflect.TypeOf((*GrafanaWorkspaceSamlConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,15 +97,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationConfig",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationConfig",
 		reflect.TypeOf((*GrafanaWorkspaceSamlConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeouts",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeouts",
 		reflect.TypeOf((*GrafanaWorkspaceSamlConfigurationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference",
 		reflect.TypeOf((*GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

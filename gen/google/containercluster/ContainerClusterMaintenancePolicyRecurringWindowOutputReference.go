@@ -225,7 +225,7 @@ func NewContainerClusterMaintenancePolicyRecurringWindowOutputReference(terrafor
 	j := jsiiProxy_ContainerClusterMaintenancePolicyRecurringWindowOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewContainerClusterMaintenancePolicyRecurringWindowOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

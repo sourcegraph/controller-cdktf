@@ -116,7 +116,7 @@ func NewRulesetRulesLoggingList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_RulesetRulesLoggingList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesLoggingList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesLoggingList_Override(r RulesetRulesLoggingList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesLoggingList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesLoggingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

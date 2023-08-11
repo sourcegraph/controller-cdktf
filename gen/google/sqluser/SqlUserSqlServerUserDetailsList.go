@@ -104,7 +104,7 @@ func NewSqlUserSqlServerUserDetailsList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_SqlUserSqlServerUserDetailsList{}
 
 	_jsii_.Create(
-		"google.sqlUser.SqlUserSqlServerUserDetailsList",
+		"@cdktf/provider-google.sqlUser.SqlUserSqlServerUserDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewSqlUserSqlServerUserDetailsList_Override(s SqlUserSqlServerUserDetailsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlUser.SqlUserSqlServerUserDetailsList",
+		"@cdktf/provider-google.sqlUser.SqlUserSqlServerUserDetailsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

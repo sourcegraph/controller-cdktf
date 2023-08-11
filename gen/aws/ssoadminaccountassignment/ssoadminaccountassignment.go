@@ -435,7 +435,7 @@ func NewSsoadminAccountAssignment(scope constructs.Construct, id *string, config
 	j := jsiiProxy_SsoadminAccountAssignment{}
 
 	_jsii_.Create(
-		"aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
+		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewSsoadminAccountAssignment_Override(s SsoadminAccountAssignment, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
+		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -625,7 +625,7 @@ func SsoadminAccountAssignment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
+		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func SsoadminAccountAssignment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
+		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func SsoadminAccountAssignment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
+		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func SsoadminAccountAssignment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
+		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		"tfResourceType",
 		&returns,
 	)

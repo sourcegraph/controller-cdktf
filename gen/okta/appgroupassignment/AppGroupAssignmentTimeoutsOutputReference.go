@@ -228,7 +228,7 @@ func NewAppGroupAssignmentTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_AppGroupAssignmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"okta.appGroupAssignment.AppGroupAssignmentTimeoutsOutputReference",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAppGroupAssignmentTimeoutsOutputReference_Override(a AppGroupAssignmentT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appGroupAssignment.AppGroupAssignmentTimeoutsOutputReference",
+		"@cdktf/provider-okta.appGroupAssignment.AppGroupAssignmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

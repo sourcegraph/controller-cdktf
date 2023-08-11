@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList(terraformRes
 	j := jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList_Override(j J
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

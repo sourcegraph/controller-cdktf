@@ -116,7 +116,7 @@ func NewStatefulSetSpecTemplateSpecTolerationList(terraformResource cdktf.IInter
 	j := jsiiProxy_StatefulSetSpecTemplateSpecTolerationList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetSpecTemplateSpecTolerationList_Override(s StatefulSetSpecTemp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

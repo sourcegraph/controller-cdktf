@@ -116,7 +116,7 @@ func NewComputeFirewallPolicyRuleMatchLayer4ConfigsList(terraformResource cdktf.
 	j := jsiiProxy_ComputeFirewallPolicyRuleMatchLayer4ConfigsList{}
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeFirewallPolicyRuleMatchLayer4ConfigsList_Override(c ComputeFirewa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList",
+		"@cdktf/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

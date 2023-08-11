@@ -204,7 +204,7 @@ func NewEc2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference(terra
 	j := jsiiProxy_Ec2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEc2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2TransitGatewayMulticastDomainAssociation.Ec2TransitGatewayMulticastDomainAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

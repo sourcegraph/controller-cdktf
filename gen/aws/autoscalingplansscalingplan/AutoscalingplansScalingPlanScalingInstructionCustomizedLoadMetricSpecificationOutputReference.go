@@ -273,7 +273,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecifi
 	j := jsiiProxy_AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecifi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

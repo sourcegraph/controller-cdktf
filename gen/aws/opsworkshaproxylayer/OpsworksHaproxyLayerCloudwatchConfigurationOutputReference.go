@@ -204,7 +204,7 @@ func NewOpsworksHaproxyLayerCloudwatchConfigurationOutputReference(terraformReso
 	j := jsiiProxy_OpsworksHaproxyLayerCloudwatchConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOpsworksHaproxyLayerCloudwatchConfigurationOutputReference_Override(o Op
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

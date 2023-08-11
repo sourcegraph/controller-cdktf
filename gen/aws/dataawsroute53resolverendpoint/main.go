@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpoint",
 		reflect.TypeOf((*DataAwsRoute53ResolverEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointConfig",
 		reflect.TypeOf((*DataAwsRoute53ResolverEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilter",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilter",
 		reflect.TypeOf((*DataAwsRoute53ResolverEndpointFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterList",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterList",
 		reflect.TypeOf((*DataAwsRoute53ResolverEndpointFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterOutputReference",
 		reflect.TypeOf((*DataAwsRoute53ResolverEndpointFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

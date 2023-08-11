@@ -353,7 +353,7 @@ func NewBillingAccountIamPolicy(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_BillingAccountIamPolicy{}
 
 	_jsii_.Create(
-		"google.billingAccountIamPolicy.BillingAccountIamPolicy",
+		"@cdktf/provider-google.billingAccountIamPolicy.BillingAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewBillingAccountIamPolicy_Override(b BillingAccountIamPolicy, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.billingAccountIamPolicy.BillingAccountIamPolicy",
+		"@cdktf/provider-google.billingAccountIamPolicy.BillingAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -499,7 +499,7 @@ func BillingAccountIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.billingAccountIamPolicy.BillingAccountIamPolicy",
+		"@cdktf/provider-google.billingAccountIamPolicy.BillingAccountIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func BillingAccountIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.billingAccountIamPolicy.BillingAccountIamPolicy",
+		"@cdktf/provider-google.billingAccountIamPolicy.BillingAccountIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func BillingAccountIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.billingAccountIamPolicy.BillingAccountIamPolicy",
+		"@cdktf/provider-google.billingAccountIamPolicy.BillingAccountIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func BillingAccountIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.billingAccountIamPolicy.BillingAccountIamPolicy",
+		"@cdktf/provider-google.billingAccountIamPolicy.BillingAccountIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

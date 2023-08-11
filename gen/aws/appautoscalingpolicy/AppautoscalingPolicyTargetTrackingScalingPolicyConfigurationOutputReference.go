@@ -299,7 +299,7 @@ func NewAppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputRefere
 	j := jsiiProxy_AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference",
+		"@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewAppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference",
+		"@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

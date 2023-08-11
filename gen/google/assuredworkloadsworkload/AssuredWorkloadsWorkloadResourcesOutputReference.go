@@ -178,7 +178,7 @@ func NewAssuredWorkloadsWorkloadResourcesOutputReference(terraformResource cdktf
 	j := jsiiProxy_AssuredWorkloadsWorkloadResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourcesOutputReference",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewAssuredWorkloadsWorkloadResourcesOutputReference_Override(a AssuredWorkl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourcesOutputReference",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

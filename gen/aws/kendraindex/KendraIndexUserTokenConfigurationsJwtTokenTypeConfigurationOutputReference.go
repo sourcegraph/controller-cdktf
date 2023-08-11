@@ -323,7 +323,7 @@ func NewKendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReferen
 	j := jsiiProxy_KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -335,7 +335,7 @@ func NewKendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraIndex.KendraIndexUserTokenConfigurationsJwtTokenTypeConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

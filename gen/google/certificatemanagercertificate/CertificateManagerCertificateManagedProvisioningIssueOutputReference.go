@@ -178,7 +178,7 @@ func NewCertificateManagerCertificateManagedProvisioningIssueOutputReference(ter
 	j := jsiiProxy_CertificateManagerCertificateManagedProvisioningIssueOutputReference{}
 
 	_jsii_.Create(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewCertificateManagerCertificateManagedProvisioningIssueOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificate.CertificateManagerCertificateManagedProvisioningIssueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1",
 		reflect.TypeOf((*EndpointsV1)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.endpointsV1.EndpointsV1Config",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1Config",
 		reflect.TypeOf((*EndpointsV1Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.endpointsV1.EndpointsV1Metadata",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1Metadata",
 		reflect.TypeOf((*EndpointsV1Metadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1MetadataOutputReference",
 		reflect.TypeOf((*EndpointsV1MetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -120,15 +120,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.endpointsV1.EndpointsV1Subset",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1Subset",
 		reflect.TypeOf((*EndpointsV1Subset)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.endpointsV1.EndpointsV1SubsetAddress",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetAddress",
 		reflect.TypeOf((*EndpointsV1SubsetAddress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1SubsetAddressList",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetAddressList",
 		reflect.TypeOf((*EndpointsV1SubsetAddressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1SubsetAddressOutputReference",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetAddressOutputReference",
 		reflect.TypeOf((*EndpointsV1SubsetAddressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -189,7 +189,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1SubsetList",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetList",
 		reflect.TypeOf((*EndpointsV1SubsetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -210,11 +210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddress",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddress",
 		reflect.TypeOf((*EndpointsV1SubsetNotReadyAddress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressList",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressList",
 		reflect.TypeOf((*EndpointsV1SubsetNotReadyAddressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -235,7 +235,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressOutputReference",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressOutputReference",
 		reflect.TypeOf((*EndpointsV1SubsetNotReadyAddressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -275,7 +275,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1SubsetOutputReference",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetOutputReference",
 		reflect.TypeOf((*EndpointsV1SubsetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -319,11 +319,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.endpointsV1.EndpointsV1SubsetPort",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetPort",
 		reflect.TypeOf((*EndpointsV1SubsetPort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1SubsetPortList",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetPortList",
 		reflect.TypeOf((*EndpointsV1SubsetPortList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -344,7 +344,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.endpointsV1.EndpointsV1SubsetPortOutputReference",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetPortOutputReference",
 		reflect.TypeOf((*EndpointsV1SubsetPortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

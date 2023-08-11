@@ -189,7 +189,7 @@ func NewNetworkmanagerCoreNetworkSegmentsOutputReference(terraformResource cdktf
 	j := jsiiProxy_NetworkmanagerCoreNetworkSegmentsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsOutputReference",
+		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewNetworkmanagerCoreNetworkSegmentsOutputReference_Override(n Networkmanag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsOutputReference",
+		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetworkSegmentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

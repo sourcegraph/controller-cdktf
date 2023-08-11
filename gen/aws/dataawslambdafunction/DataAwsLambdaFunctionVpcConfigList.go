@@ -104,7 +104,7 @@ func NewDataAwsLambdaFunctionVpcConfigList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsLambdaFunctionVpcConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLambdaFunctionVpcConfigList_Override(d DataAwsLambdaFunctionVpcCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

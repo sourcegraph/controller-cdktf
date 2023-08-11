@@ -116,7 +116,7 @@ func NewAlbListenerDefaultActionForwardTargetGroupList(terraformResource cdktf.I
 	j := jsiiProxy_AlbListenerDefaultActionForwardTargetGroupList{}
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionForwardTargetGroupList",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAlbListenerDefaultActionForwardTargetGroupList_Override(a AlbListenerDef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionForwardTargetGroupList",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

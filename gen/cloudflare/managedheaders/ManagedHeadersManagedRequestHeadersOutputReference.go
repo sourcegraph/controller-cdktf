@@ -202,7 +202,7 @@ func NewManagedHeadersManagedRequestHeadersOutputReference(terraformResource cdk
 	j := jsiiProxy_ManagedHeadersManagedRequestHeadersOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewManagedHeadersManagedRequestHeadersOutputReference_Override(m ManagedHea
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

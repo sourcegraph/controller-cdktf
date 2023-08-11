@@ -204,7 +204,7 @@ func NewGrafanaLicenseAssociationTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GrafanaLicenseAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGrafanaLicenseAssociationTimeoutsOutputReference_Override(g GrafanaLicen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaLicenseAssociation.GrafanaLicenseAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

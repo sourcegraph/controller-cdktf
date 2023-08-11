@@ -425,7 +425,7 @@ func NewGameliftAlias(scope constructs.Construct, id *string, config *GameliftAl
 	j := jsiiProxy_GameliftAlias{}
 
 	_jsii_.Create(
-		"aws.gameliftAlias.GameliftAlias",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAlias",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewGameliftAlias_Override(g GameliftAlias, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftAlias.GameliftAlias",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAlias",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -593,7 +593,7 @@ func GameliftAlias_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftAlias.GameliftAlias",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAlias",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func GameliftAlias_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftAlias.GameliftAlias",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAlias",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GameliftAlias_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftAlias.GameliftAlias",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAlias",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GameliftAlias_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.gameliftAlias.GameliftAlias",
+		"@cdktf/provider-aws.gameliftAlias.GameliftAlias",
 		"tfResourceType",
 		&returns,
 	)

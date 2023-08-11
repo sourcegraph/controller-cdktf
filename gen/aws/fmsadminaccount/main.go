@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.fmsAdminAccount.FmsAdminAccount",
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		reflect.TypeOf((*FmsAdminAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fmsAdminAccount.FmsAdminAccountConfig",
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccountConfig",
 		reflect.TypeOf((*FmsAdminAccountConfig)(nil)).Elem(),
 	)
 }

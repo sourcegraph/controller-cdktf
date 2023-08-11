@@ -228,7 +228,7 @@ func NewSccNotificationConfigTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_SccNotificationConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.sccNotificationConfig.SccNotificationConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSccNotificationConfigTimeoutsOutputReference_Override(s SccNotificationC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccNotificationConfig.SccNotificationConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

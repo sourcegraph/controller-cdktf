@@ -116,7 +116,7 @@ func NewDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList(terraformResource cd
 	j := jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList{}
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList_Override(d DnsRecord
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

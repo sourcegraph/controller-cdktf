@@ -695,7 +695,7 @@ func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleWorkstationsWorkstationConfigA{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -708,7 +708,7 @@ func NewGoogleWorkstationsWorkstationConfigA_Override(g GoogleWorkstationsWorkst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -918,7 +918,7 @@ func GoogleWorkstationsWorkstationConfigA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -937,7 +937,7 @@ func GoogleWorkstationsWorkstationConfigA_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -956,7 +956,7 @@ func GoogleWorkstationsWorkstationConfigA_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -969,7 +969,7 @@ func GoogleWorkstationsWorkstationConfigA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigA",
 		"tfResourceType",
 		&returns,
 	)

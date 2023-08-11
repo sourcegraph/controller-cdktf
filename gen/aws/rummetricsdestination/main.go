@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rumMetricsDestination.RumMetricsDestination",
+		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestination",
 		reflect.TypeOf((*RumMetricsDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rumMetricsDestination.RumMetricsDestinationConfig",
+		"@cdktf/provider-aws.rumMetricsDestination.RumMetricsDestinationConfig",
 		reflect.TypeOf((*RumMetricsDestinationConfig)(nil)).Elem(),
 	)
 }

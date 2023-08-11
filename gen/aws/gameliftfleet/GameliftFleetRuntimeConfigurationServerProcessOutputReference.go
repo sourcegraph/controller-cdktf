@@ -226,7 +226,7 @@ func NewGameliftFleetRuntimeConfigurationServerProcessOutputReference(terraformR
 	j := jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGameliftFleetRuntimeConfigurationServerProcessOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetRuntimeConfigurationServerProcessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

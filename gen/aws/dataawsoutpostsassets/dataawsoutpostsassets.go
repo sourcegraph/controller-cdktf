@@ -350,7 +350,7 @@ func NewDataAwsOutpostsAssets(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsOutpostsAssets{}
 
 	_jsii_.Create(
-		"aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
+		"@cdktf/provider-aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -363,7 +363,7 @@ func NewDataAwsOutpostsAssets_Override(d DataAwsOutpostsAssets, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
+		"@cdktf/provider-aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -485,7 +485,7 @@ func DataAwsOutpostsAssets_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
+		"@cdktf/provider-aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func DataAwsOutpostsAssets_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
+		"@cdktf/provider-aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsOutpostsAssets_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
+		"@cdktf/provider-aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataAwsOutpostsAssets_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
+		"@cdktf/provider-aws.dataAwsOutpostsAssets.DataAwsOutpostsAssets",
 		"tfResourceType",
 		&returns,
 	)

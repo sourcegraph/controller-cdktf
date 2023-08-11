@@ -180,7 +180,7 @@ func NewCloudRunV2JobTemplateTemplateContainersLivenessProbeTcpSocketOutputRefer
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateContainersLivenessProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersLivenessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudRunV2JobTemplateTemplateContainersLivenessProbeTcpSocketOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersLivenessProbeTcpSocketOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersLivenessProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

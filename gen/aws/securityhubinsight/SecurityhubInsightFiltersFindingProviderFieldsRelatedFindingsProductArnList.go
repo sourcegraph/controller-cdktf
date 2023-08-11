@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnL
 	j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsRelatedFindingsProductArnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

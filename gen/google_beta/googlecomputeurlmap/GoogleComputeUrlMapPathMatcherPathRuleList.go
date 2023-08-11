@@ -116,7 +116,7 @@ func NewGoogleComputeUrlMapPathMatcherPathRuleList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeUrlMapPathMatcherPathRuleList_Override(g GoogleComputeUrlMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

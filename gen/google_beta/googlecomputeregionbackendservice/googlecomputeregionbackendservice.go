@@ -952,7 +952,7 @@ func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeRegionBackendService{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -965,7 +965,7 @@ func NewGoogleComputeRegionBackendService_Override(g GoogleComputeRegionBackendS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1241,7 +1241,7 @@ func GoogleComputeRegionBackendService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1260,7 +1260,7 @@ func GoogleComputeRegionBackendService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1279,7 +1279,7 @@ func GoogleComputeRegionBackendService_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1292,7 +1292,7 @@ func GoogleComputeRegionBackendService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendService",
 		"tfResourceType",
 		&returns,
 	)

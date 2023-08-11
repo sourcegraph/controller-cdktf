@@ -116,7 +116,7 @@ func NewImagebuilderContainerRecipeComponentList(terraformResource cdktf.IInterp
 	j := jsiiProxy_ImagebuilderContainerRecipeComponentList{}
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewImagebuilderContainerRecipeComponentList_Override(i ImagebuilderContaine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList",
+		"@cdktf/provider-aws.imagebuilderContainerRecipe.ImagebuilderContainerRecipeComponentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

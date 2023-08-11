@@ -104,7 +104,7 @@ func NewDataGoogleCloudfunctionsFunctionSecretVolumesVersionsList(terraformResou
 	j := jsiiProxy_DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudfunctionsFunctionSecretVolumesVersionsList_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

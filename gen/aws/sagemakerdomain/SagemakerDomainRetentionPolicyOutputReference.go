@@ -180,7 +180,7 @@ func NewSagemakerDomainRetentionPolicyOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SagemakerDomainRetentionPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainRetentionPolicyOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSagemakerDomainRetentionPolicyOutputReference_Override(s SagemakerDomain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainRetentionPolicyOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

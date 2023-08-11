@@ -116,7 +116,7 @@ func NewClusterRoleRuleList(terraformResource cdktf.IInterpolatingParent, terraf
 	j := jsiiProxy_ClusterRoleRuleList{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleRuleList",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewClusterRoleRuleList_Override(c ClusterRoleRuleList, terraformResource cd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleRuleList",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

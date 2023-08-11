@@ -758,7 +758,7 @@ func NewComputeRouterPeer(scope constructs.Construct, id *string, config *Comput
 	j := jsiiProxy_ComputeRouterPeer{}
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeer",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -771,7 +771,7 @@ func NewComputeRouterPeer_Override(c ComputeRouterPeer, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouterPeer.ComputeRouterPeer",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeer",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1058,7 +1058,7 @@ func ComputeRouterPeer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRouterPeer.ComputeRouterPeer",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1077,7 +1077,7 @@ func ComputeRouterPeer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRouterPeer.ComputeRouterPeer",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1096,7 +1096,7 @@ func ComputeRouterPeer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRouterPeer.ComputeRouterPeer",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1109,7 +1109,7 @@ func ComputeRouterPeer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRouterPeer.ComputeRouterPeer",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeer",
 		"tfResourceType",
 		&returns,
 	)

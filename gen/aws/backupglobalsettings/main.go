@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.backupGlobalSettings.BackupGlobalSettings",
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		reflect.TypeOf((*BackupGlobalSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupGlobalSettings.BackupGlobalSettingsConfig",
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettingsConfig",
 		reflect.TypeOf((*BackupGlobalSettingsConfig)(nil)).Elem(),
 	)
 }

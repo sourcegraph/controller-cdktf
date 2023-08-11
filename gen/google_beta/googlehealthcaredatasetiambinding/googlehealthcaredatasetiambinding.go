@@ -400,7 +400,7 @@ func NewGoogleHealthcareDatasetIamBinding(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleHealthcareDatasetIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleHealthcareDatasetIamBinding_Override(g GoogleHealthcareDatasetIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleHealthcareDatasetIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleHealthcareDatasetIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleHealthcareDatasetIamBinding_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleHealthcareDatasetIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamBinding.GoogleHealthcareDatasetIamBinding",
 		"tfResourceType",
 		&returns,
 	)

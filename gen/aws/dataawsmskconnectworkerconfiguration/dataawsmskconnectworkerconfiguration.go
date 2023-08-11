@@ -335,7 +335,7 @@ func NewDataAwsMskconnectWorkerConfiguration(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsMskconnectWorkerConfiguration{}
 
 	_jsii_.Create(
-		"aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -348,7 +348,7 @@ func NewDataAwsMskconnectWorkerConfiguration_Override(d DataAwsMskconnectWorkerC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -448,7 +448,7 @@ func DataAwsMskconnectWorkerConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsMskconnectWorkerConfiguration_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -486,7 +486,7 @@ func DataAwsMskconnectWorkerConfiguration_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataAwsMskconnectWorkerConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
+		"@cdktf/provider-aws.dataAwsMskconnectWorkerConfiguration.DataAwsMskconnectWorkerConfiguration",
 		"tfResourceType",
 		&returns,
 	)

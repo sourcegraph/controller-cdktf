@@ -291,7 +291,7 @@ func NewDataAwsWafregionalRateBasedRule(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsWafregionalRateBasedRule{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
+		"@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -304,7 +304,7 @@ func NewDataAwsWafregionalRateBasedRule_Override(d DataAwsWafregionalRateBasedRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
+		"@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -404,7 +404,7 @@ func DataAwsWafregionalRateBasedRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
+		"@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -423,7 +423,7 @@ func DataAwsWafregionalRateBasedRule_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
+		"@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -442,7 +442,7 @@ func DataAwsWafregionalRateBasedRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
+		"@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -455,7 +455,7 @@ func DataAwsWafregionalRateBasedRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
+		"@cdktf/provider-aws.dataAwsWafregionalRateBasedRule.DataAwsWafregionalRateBasedRule",
 		"tfResourceType",
 		&returns,
 	)

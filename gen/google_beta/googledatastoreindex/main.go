@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndex",
 		reflect.TypeOf((*GoogleDatastoreIndex)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexConfig",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexConfig",
 		reflect.TypeOf((*GoogleDatastoreIndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexProperties",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexProperties",
 		reflect.TypeOf((*GoogleDatastoreIndexProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesList",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesList",
 		reflect.TypeOf((*GoogleDatastoreIndexPropertiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesOutputReference",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexPropertiesOutputReference",
 		reflect.TypeOf((*GoogleDatastoreIndexPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,11 +137,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexTimeouts",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexTimeouts",
 		reflect.TypeOf((*GoogleDatastoreIndexTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDatastoreIndex.GoogleDatastoreIndexTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDatastoreIndex.GoogleDatastoreIndexTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDatastoreIndexTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

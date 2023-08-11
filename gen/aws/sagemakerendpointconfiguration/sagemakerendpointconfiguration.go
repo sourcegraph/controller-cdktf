@@ -498,7 +498,7 @@ func NewSagemakerEndpointConfiguration(scope constructs.Construct, id *string, c
 	j := jsiiProxy_SagemakerEndpointConfiguration{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -511,7 +511,7 @@ func NewSagemakerEndpointConfiguration_Override(s SagemakerEndpointConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -666,7 +666,7 @@ func SagemakerEndpointConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func SagemakerEndpointConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func SagemakerEndpointConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func SagemakerEndpointConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfiguration",
 		"tfResourceType",
 		&returns,
 	)

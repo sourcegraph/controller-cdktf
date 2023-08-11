@@ -342,7 +342,7 @@ func NewDevicePolicyCertificates(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DevicePolicyCertificates{}
 
 	_jsii_.Create(
-		"cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
+		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewDevicePolicyCertificates_Override(d DevicePolicyCertificates, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
+		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -488,7 +488,7 @@ func DevicePolicyCertificates_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
+		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func DevicePolicyCertificates_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
+		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DevicePolicyCertificates_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
+		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func DevicePolicyCertificates_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
+		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions
 	j := jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

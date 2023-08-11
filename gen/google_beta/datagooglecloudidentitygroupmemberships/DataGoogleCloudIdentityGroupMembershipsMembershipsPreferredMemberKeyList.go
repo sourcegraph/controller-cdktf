@@ -104,7 +104,7 @@ func NewDataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKeyList
 	j := jsiiProxy_DataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKeyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKeyList",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKeyList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKeyList",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroupMemberships.DataGoogleCloudIdentityGroupMembershipsMembershipsPreferredMemberKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

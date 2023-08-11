@@ -769,7 +769,7 @@ func NewComputeRegionInstanceGroupManager(scope constructs.Construct, id *string
 	j := jsiiProxy_ComputeRegionInstanceGroupManager{}
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -782,7 +782,7 @@ func NewComputeRegionInstanceGroupManager_Override(c ComputeRegionInstanceGroupM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1025,7 +1025,7 @@ func ComputeRegionInstanceGroupManager_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1044,7 +1044,7 @@ func ComputeRegionInstanceGroupManager_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1063,7 +1063,7 @@ func ComputeRegionInstanceGroupManager_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1076,7 +1076,7 @@ func ComputeRegionInstanceGroupManager_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManager",
 		"tfResourceType",
 		&returns,
 	)

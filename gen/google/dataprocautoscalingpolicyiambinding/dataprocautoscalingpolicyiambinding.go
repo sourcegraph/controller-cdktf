@@ -448,7 +448,7 @@ func NewDataprocAutoscalingPolicyIamBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataprocAutoscalingPolicyIamBinding{}
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataprocAutoscalingPolicyIamBinding_Override(d DataprocAutoscalingPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataprocAutoscalingPolicyIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataprocAutoscalingPolicyIamBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataprocAutoscalingPolicyIamBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataprocAutoscalingPolicyIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
 		"tfResourceType",
 		&returns,
 	)

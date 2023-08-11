@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
+		"@cdktf/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshot",
 		reflect.TypeOf((*DataGoogleComputeSnapshot)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig",
+		"@cdktf/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotConfig",
 		reflect.TypeOf((*DataGoogleComputeSnapshotConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKey",
+		"@cdktf/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKey",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSnapshotEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyList",
+		"@cdktf/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyList",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSnapshotEncryptionKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKey",
+		"@cdktf/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKey",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSourceDiskEncryptionKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyList",
+		"@cdktf/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyList",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSourceDiskEncryptionKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -168,7 +168,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeSnapshot.DataGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference",
 		reflect.TypeOf((*DataGoogleComputeSnapshotSourceDiskEncryptionKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

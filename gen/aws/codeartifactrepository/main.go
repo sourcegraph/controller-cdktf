@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codeartifactRepository.CodeartifactRepository",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository",
 		reflect.TypeOf((*CodeartifactRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codeartifactRepository.CodeartifactRepositoryConfig",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryConfig",
 		reflect.TypeOf((*CodeartifactRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codeartifactRepository.CodeartifactRepositoryExternalConnections",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnections",
 		reflect.TypeOf((*CodeartifactRepositoryExternalConnections)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference",
 		reflect.TypeOf((*CodeartifactRepositoryExternalConnectionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,11 +125,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codeartifactRepository.CodeartifactRepositoryUpstream",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstream",
 		reflect.TypeOf((*CodeartifactRepositoryUpstream)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
 		reflect.TypeOf((*CodeartifactRepositoryUpstreamList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -150,7 +150,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference",
 		reflect.TypeOf((*CodeartifactRepositoryUpstreamOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

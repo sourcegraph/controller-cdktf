@@ -202,7 +202,7 @@ func NewCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference
 	j := jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesVersionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

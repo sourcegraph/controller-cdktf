@@ -104,7 +104,7 @@ func NewDataplexAssetResourceStatusList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataplexAssetResourceStatusList{}
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetResourceStatusList",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetResourceStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataplexAssetResourceStatusList_Override(d DataplexAssetResourceStatusLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetResourceStatusList",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetResourceStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -473,7 +473,7 @@ func NewGoogleServiceDirectoryEndpoint(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleServiceDirectoryEndpoint{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
+		"@cdktf/provider-google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewGoogleServiceDirectoryEndpoint_Override(g GoogleServiceDirectoryEndpoint
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
+		"@cdktf/provider-google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -663,7 +663,7 @@ func GoogleServiceDirectoryEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
+		"@cdktf/provider-google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func GoogleServiceDirectoryEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
+		"@cdktf/provider-google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func GoogleServiceDirectoryEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
+		"@cdktf/provider-google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GoogleServiceDirectoryEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
+		"@cdktf/provider-google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpoint",
 		"tfResourceType",
 		&returns,
 	)

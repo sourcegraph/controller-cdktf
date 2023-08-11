@@ -228,7 +228,7 @@ func NewNetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputRefer
 	j := jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

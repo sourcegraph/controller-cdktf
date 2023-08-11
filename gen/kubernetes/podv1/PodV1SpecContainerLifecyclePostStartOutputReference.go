@@ -228,7 +228,7 @@ func NewPodV1SpecContainerLifecyclePostStartOutputReference(terraformResource cd
 	j := jsiiProxy_PodV1SpecContainerLifecyclePostStartOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerLifecyclePostStartOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLifecyclePostStartOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPodV1SpecContainerLifecyclePostStartOutputReference_Override(p PodV1Spec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerLifecyclePostStartOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLifecyclePostStartOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

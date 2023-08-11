@@ -227,7 +227,7 @@ func NewGlueCatalogTablePartitionKeysOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GlueCatalogTablePartitionKeysOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTablePartitionKeysOutputReference",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGlueCatalogTablePartitionKeysOutputReference_Override(g GlueCatalogTable
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTablePartitionKeysOutputReference",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTablePartitionKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

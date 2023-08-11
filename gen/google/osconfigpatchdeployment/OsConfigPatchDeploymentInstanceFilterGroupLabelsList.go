@@ -116,7 +116,7 @@ func NewOsConfigPatchDeploymentInstanceFilterGroupLabelsList(terraformResource c
 	j := jsiiProxy_OsConfigPatchDeploymentInstanceFilterGroupLabelsList{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsList",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOsConfigPatchDeploymentInstanceFilterGroupLabelsList_Override(o OsConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsList",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

@@ -204,7 +204,7 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutpu
 	j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

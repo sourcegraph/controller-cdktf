@@ -462,7 +462,7 @@ func NewPubsubLiteSubscription(scope constructs.Construct, id *string, config *P
 	j := jsiiProxy_PubsubLiteSubscription{}
 
 	_jsii_.Create(
-		"google.pubsubLiteSubscription.PubsubLiteSubscription",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,7 +475,7 @@ func NewPubsubLiteSubscription_Override(p PubsubLiteSubscription, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubLiteSubscription.PubsubLiteSubscription",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscription",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -641,7 +641,7 @@ func PubsubLiteSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubLiteSubscription.PubsubLiteSubscription",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func PubsubLiteSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubLiteSubscription.PubsubLiteSubscription",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func PubsubLiteSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubLiteSubscription.PubsubLiteSubscription",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func PubsubLiteSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.pubsubLiteSubscription.PubsubLiteSubscription",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscription",
 		"tfResourceType",
 		&returns,
 	)

@@ -484,7 +484,7 @@ func NewSsoadminPermissionSet(scope constructs.Construct, id *string, config *Ss
 	j := jsiiProxy_SsoadminPermissionSet{}
 
 	_jsii_.Create(
-		"aws.ssoadminPermissionSet.SsoadminPermissionSet",
+		"@cdktf/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewSsoadminPermissionSet_Override(s SsoadminPermissionSet, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminPermissionSet.SsoadminPermissionSet",
+		"@cdktf/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -685,7 +685,7 @@ func SsoadminPermissionSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminPermissionSet.SsoadminPermissionSet",
+		"@cdktf/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func SsoadminPermissionSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminPermissionSet.SsoadminPermissionSet",
+		"@cdktf/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func SsoadminPermissionSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminPermissionSet.SsoadminPermissionSet",
+		"@cdktf/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -736,7 +736,7 @@ func SsoadminPermissionSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssoadminPermissionSet.SsoadminPermissionSet",
+		"@cdktf/provider-aws.ssoadminPermissionSet.SsoadminPermissionSet",
 		"tfResourceType",
 		&returns,
 	)

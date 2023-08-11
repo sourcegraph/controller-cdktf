@@ -383,7 +383,7 @@ func NewDataAwsIpRanges(scope constructs.Construct, id *string, config *DataAwsI
 	j := jsiiProxy_DataAwsIpRanges{}
 
 	_jsii_.Create(
-		"aws.dataAwsIpRanges.DataAwsIpRanges",
+		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -396,7 +396,7 @@ func NewDataAwsIpRanges_Override(d DataAwsIpRanges, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIpRanges.DataAwsIpRanges",
+		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -518,7 +518,7 @@ func DataAwsIpRanges_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIpRanges.DataAwsIpRanges",
+		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsIpRanges_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIpRanges.DataAwsIpRanges",
+		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsIpRanges_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIpRanges.DataAwsIpRanges",
+		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataAwsIpRanges_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIpRanges.DataAwsIpRanges",
+		"@cdktf/provider-aws.dataAwsIpRanges.DataAwsIpRanges",
 		"tfResourceType",
 		&returns,
 	)

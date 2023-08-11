@@ -116,7 +116,7 @@ func NewStatefulSetV1SpecTemplateSpecDnsConfigOptionList(terraformResource cdktf
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecDnsConfigOptionList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetV1SpecTemplateSpecDnsConfigOptionList_Override(s StatefulSetV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleStorageBucketLifecycleRuleConditionList(terraformResource cdkt
 	j := jsiiProxy_DataGoogleStorageBucketLifecycleRuleConditionList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleStorageBucketLifecycleRuleConditionList_Override(d DataGoogleS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

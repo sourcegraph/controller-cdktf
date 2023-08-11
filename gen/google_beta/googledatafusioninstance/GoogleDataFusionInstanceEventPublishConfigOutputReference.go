@@ -202,7 +202,7 @@ func NewGoogleDataFusionInstanceEventPublishConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleDataFusionInstanceEventPublishConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleDataFusionInstanceEventPublishConfigOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstanceEventPublishConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

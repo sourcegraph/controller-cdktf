@@ -302,7 +302,7 @@ func NewDataAwsLocationTrackerAssociations(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsLocationTrackerAssociations{}
 
 	_jsii_.Create(
-		"aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
+		"@cdktf/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsLocationTrackerAssociations_Override(d DataAwsLocationTrackerAsso
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
+		"@cdktf/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsLocationTrackerAssociations_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
+		"@cdktf/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsLocationTrackerAssociations_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
+		"@cdktf/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsLocationTrackerAssociations_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
+		"@cdktf/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsLocationTrackerAssociations_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
+		"@cdktf/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
 		"tfResourceType",
 		&returns,
 	)

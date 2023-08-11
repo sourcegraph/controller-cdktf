@@ -204,7 +204,7 @@ func NewAutoscalingplansScalingPlanApplicationSourceOutputReference(terraformRes
 	j := jsiiProxy_AutoscalingplansScalingPlanApplicationSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceOutputReference",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAutoscalingplansScalingPlanApplicationSourceOutputReference_Override(a A
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceOutputReference",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanApplicationSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

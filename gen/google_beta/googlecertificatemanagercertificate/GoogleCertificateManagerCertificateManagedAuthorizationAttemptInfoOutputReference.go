@@ -200,7 +200,7 @@ func NewGoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutput
 	j := jsiiProxy_GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewGoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

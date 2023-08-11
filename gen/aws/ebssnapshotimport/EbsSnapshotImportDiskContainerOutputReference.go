@@ -251,7 +251,7 @@ func NewEbsSnapshotImportDiskContainerOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_EbsSnapshotImportDiskContainerOutputReference{}
 
 	_jsii_.Create(
-		"aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewEbsSnapshotImportDiskContainerOutputReference_Override(e EbsSnapshotImpo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference",
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImportDiskContainerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

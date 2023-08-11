@@ -226,7 +226,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOu
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

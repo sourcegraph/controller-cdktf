@@ -702,7 +702,7 @@ func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *Cl
 	j := jsiiProxy_CloudwatchEventTarget{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -715,7 +715,7 @@ func NewCloudwatchEventTarget_Override(c CloudwatchEventTarget, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -903,7 +903,7 @@ func CloudwatchEventTarget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -922,7 +922,7 @@ func CloudwatchEventTarget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -941,7 +941,7 @@ func CloudwatchEventTarget_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -954,7 +954,7 @@ func CloudwatchEventTarget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchEventTarget.CloudwatchEventTarget",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
 		"tfResourceType",
 		&returns,
 	)

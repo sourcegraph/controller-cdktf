@@ -228,7 +228,7 @@ func NewStatefulSetV1SpecTemplateSpecAffinityOutputReference(terraformResource c
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecAffinityOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStatefulSetV1SpecTemplateSpecAffinityOutputReference_Override(s Stateful
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

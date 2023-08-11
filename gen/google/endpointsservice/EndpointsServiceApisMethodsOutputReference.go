@@ -200,7 +200,7 @@ func NewEndpointsServiceApisMethodsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_EndpointsServiceApisMethodsOutputReference{}
 
 	_jsii_.Create(
-		"google.endpointsService.EndpointsServiceApisMethodsOutputReference",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewEndpointsServiceApisMethodsOutputReference_Override(e EndpointsServiceAp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsService.EndpointsServiceApisMethodsOutputReference",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

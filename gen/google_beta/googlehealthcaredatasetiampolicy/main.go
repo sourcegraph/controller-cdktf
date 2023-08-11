@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareDatasetIamPolicy.GoogleHealthcareDatasetIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamPolicy.GoogleHealthcareDatasetIamPolicy",
 		reflect.TypeOf((*GoogleHealthcareDatasetIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareDatasetIamPolicy.GoogleHealthcareDatasetIamPolicyConfig",
+		"@cdktf/provider-google-beta.googleHealthcareDatasetIamPolicy.GoogleHealthcareDatasetIamPolicyConfig",
 		reflect.TypeOf((*GoogleHealthcareDatasetIamPolicyConfig)(nil)).Elem(),
 	)
 }

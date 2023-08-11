@@ -459,7 +459,7 @@ func NewStorageNotification(scope constructs.Construct, id *string, config *Stor
 	j := jsiiProxy_StorageNotification{}
 
 	_jsii_.Create(
-		"google.storageNotification.StorageNotification",
+		"@cdktf/provider-google.storageNotification.StorageNotification",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewStorageNotification_Override(s StorageNotification, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageNotification.StorageNotification",
+		"@cdktf/provider-google.storageNotification.StorageNotification",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -649,7 +649,7 @@ func StorageNotification_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageNotification.StorageNotification",
+		"@cdktf/provider-google.storageNotification.StorageNotification",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func StorageNotification_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageNotification.StorageNotification",
+		"@cdktf/provider-google.storageNotification.StorageNotification",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func StorageNotification_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageNotification.StorageNotification",
+		"@cdktf/provider-google.storageNotification.StorageNotification",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func StorageNotification_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageNotification.StorageNotification",
+		"@cdktf/provider-google.storageNotification.StorageNotification",
 		"tfResourceType",
 		&returns,
 	)

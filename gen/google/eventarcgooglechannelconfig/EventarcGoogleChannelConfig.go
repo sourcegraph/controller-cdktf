@@ -425,7 +425,7 @@ func NewEventarcGoogleChannelConfig(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_EventarcGoogleChannelConfig{}
 
 	_jsii_.Create(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewEventarcGoogleChannelConfig_Override(e EventarcGoogleChannelConfig, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -593,7 +593,7 @@ func EventarcGoogleChannelConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func EventarcGoogleChannelConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func EventarcGoogleChannelConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func EventarcGoogleChannelConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
+		"@cdktf/provider-google.eventarcGoogleChannelConfig.EventarcGoogleChannelConfig",
 		"tfResourceType",
 		&returns,
 	)

@@ -285,7 +285,7 @@ func NewDefaultServiceAccountMetadataOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DefaultServiceAccountMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewDefaultServiceAccountMetadataOutputReference_Override(d DefaultServiceAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference",
+		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

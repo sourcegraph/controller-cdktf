@@ -227,7 +227,7 @@ func NewPolicyRuleIdpDiscoveryAppExcludeOutputReference(terraformResource cdktf.
 	j := jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference{}
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeOutputReference",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewPolicyRuleIdpDiscoveryAppExcludeOutputReference_Override(p PolicyRuleIdp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeOutputReference",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

@@ -179,7 +179,7 @@ func NewSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncrypti
 	j := jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncrypti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

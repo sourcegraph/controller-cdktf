@@ -180,7 +180,7 @@ func NewGoogleVertexAiMetadataStoreEncryptionSpecOutputReference(terraformResour
 	j := jsiiProxy_GoogleVertexAiMetadataStoreEncryptionSpecOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpecOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleVertexAiMetadataStoreEncryptionSpecOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpecOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

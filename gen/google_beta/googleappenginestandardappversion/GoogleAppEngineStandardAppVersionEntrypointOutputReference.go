@@ -179,7 +179,7 @@ func NewGoogleAppEngineStandardAppVersionEntrypointOutputReference(terraformReso
 	j := jsiiProxy_GoogleAppEngineStandardAppVersionEntrypointOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypointOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleAppEngineStandardAppVersionEntrypointOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypointOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypointOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

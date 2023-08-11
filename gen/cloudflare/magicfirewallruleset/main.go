@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
+		"@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRuleset",
 		reflect.TypeOf((*MagicFirewallRuleset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig",
+		"@cdktf/provider-cloudflare.magicFirewallRuleset.MagicFirewallRulesetConfig",
 		reflect.TypeOf((*MagicFirewallRulesetConfig)(nil)).Elem(),
 	)
 }

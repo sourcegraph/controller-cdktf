@@ -116,7 +116,7 @@ func NewDataAwsSecurityGroupsFilterList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataAwsSecurityGroupsFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterList",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsSecurityGroupsFilterList_Override(d DataAwsSecurityGroupsFilterLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterList",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

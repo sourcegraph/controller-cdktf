@@ -179,7 +179,7 @@ func NewGoogleDataprocJobHadoopConfigLoggingConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleDataprocJobHadoopConfigLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDataprocJobHadoopConfigLoggingConfigOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

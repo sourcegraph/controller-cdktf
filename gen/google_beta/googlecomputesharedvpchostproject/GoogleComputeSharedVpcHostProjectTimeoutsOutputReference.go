@@ -204,7 +204,7 @@ func NewGoogleComputeSharedVpcHostProjectTimeoutsOutputReference(terraformResour
 	j := jsiiProxy_GoogleComputeSharedVpcHostProjectTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeSharedVpcHostProjectTimeoutsOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProjectTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -252,7 +252,7 @@ func NewCodebuildProjectLogsConfigS3LogsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectLogsConfigS3LogsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigS3LogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewCodebuildProjectLogsConfigS3LogsOutputReference_Override(c CodebuildProj
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectLogsConfigS3LogsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigS3LogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

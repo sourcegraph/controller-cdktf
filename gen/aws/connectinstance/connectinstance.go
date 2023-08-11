@@ -601,7 +601,7 @@ func NewConnectInstance(scope constructs.Construct, id *string, config *ConnectI
 	j := jsiiProxy_ConnectInstance{}
 
 	_jsii_.Create(
-		"aws.connectInstance.ConnectInstance",
+		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -614,7 +614,7 @@ func NewConnectInstance_Override(c ConnectInstance, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectInstance.ConnectInstance",
+		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -835,7 +835,7 @@ func ConnectInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectInstance.ConnectInstance",
+		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -854,7 +854,7 @@ func ConnectInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectInstance.ConnectInstance",
+		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -873,7 +873,7 @@ func ConnectInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectInstance.ConnectInstance",
+		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -886,7 +886,7 @@ func ConnectInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectInstance.ConnectInstance",
+		"@cdktf/provider-aws.connectInstance.ConnectInstance",
 		"tfResourceType",
 		&returns,
 	)

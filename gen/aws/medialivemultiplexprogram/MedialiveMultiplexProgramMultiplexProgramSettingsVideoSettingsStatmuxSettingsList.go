@@ -116,7 +116,7 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSet
 	j := jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList{}
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList",
+		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

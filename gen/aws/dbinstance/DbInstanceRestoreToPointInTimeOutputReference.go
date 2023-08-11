@@ -276,7 +276,7 @@ func NewDbInstanceRestoreToPointInTimeOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewDbInstanceRestoreToPointInTimeOutputReference_Override(d DbInstanceResto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

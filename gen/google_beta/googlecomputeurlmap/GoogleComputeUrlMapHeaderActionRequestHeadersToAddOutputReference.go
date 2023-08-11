@@ -225,7 +225,7 @@ func NewGoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference(terraf
 	j := jsiiProxy_GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

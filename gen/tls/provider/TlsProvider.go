@@ -214,7 +214,7 @@ func NewTlsProvider(scope constructs.Construct, id *string, config *TlsProviderC
 	j := jsiiProxy_TlsProvider{}
 
 	_jsii_.Create(
-		"tls.provider.TlsProvider",
+		"@cdktf/provider-tls.provider.TlsProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewTlsProvider_Override(t TlsProvider, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.provider.TlsProvider",
+		"@cdktf/provider-tls.provider.TlsProvider",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -278,7 +278,7 @@ func TlsProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.provider.TlsProvider",
+		"@cdktf/provider-tls.provider.TlsProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -297,7 +297,7 @@ func TlsProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.provider.TlsProvider",
+		"@cdktf/provider-tls.provider.TlsProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -316,7 +316,7 @@ func TlsProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tls.provider.TlsProvider",
+		"@cdktf/provider-tls.provider.TlsProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -329,7 +329,7 @@ func TlsProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tls.provider.TlsProvider",
+		"@cdktf/provider-tls.provider.TlsProvider",
 		"tfResourceType",
 		&returns,
 	)

@@ -167,7 +167,7 @@ func NewDataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReferenc
 	j := jsiiProxy_DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -226,7 +226,7 @@ func NewCloudTasksQueueIamBindingConditionOutputReference(terraformResource cdkt
 	j := jsiiProxy_CloudTasksQueueIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConditionOutputReference",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCloudTasksQueueIamBindingConditionOutputReference_Override(c CloudTasksQ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConditionOutputReference",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

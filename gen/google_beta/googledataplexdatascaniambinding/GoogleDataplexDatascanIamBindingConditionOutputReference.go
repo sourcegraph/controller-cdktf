@@ -226,7 +226,7 @@ func NewGoogleDataplexDatascanIamBindingConditionOutputReference(terraformResour
 	j := jsiiProxy_GoogleDataplexDatascanIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascanIamBinding.GoogleDataplexDatascanIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamBinding.GoogleDataplexDatascanIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataplexDatascanIamBindingConditionOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascanIamBinding.GoogleDataplexDatascanIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamBinding.GoogleDataplexDatascanIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

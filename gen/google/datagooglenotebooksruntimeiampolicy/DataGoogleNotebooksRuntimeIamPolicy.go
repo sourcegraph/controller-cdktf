@@ -361,7 +361,7 @@ func NewDataGoogleNotebooksRuntimeIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleNotebooksRuntimeIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleNotebooksRuntimeIamPolicy_Override(d DataGoogleNotebooksRuntim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleNotebooksRuntimeIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleNotebooksRuntimeIamPolicy_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleNotebooksRuntimeIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleNotebooksRuntimeIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.dataGoogleNotebooksRuntimeIamPolicy.DataGoogleNotebooksRuntimeIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

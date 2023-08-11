@@ -228,7 +228,7 @@ func NewKinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference(terrafo
 	j := jsiiProxy_KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewKinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

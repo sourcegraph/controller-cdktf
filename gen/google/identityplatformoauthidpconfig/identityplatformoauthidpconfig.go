@@ -485,7 +485,7 @@ func NewIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *string, c
 	j := jsiiProxy_IdentityPlatformOauthIdpConfig{}
 
 	_jsii_.Create(
-		"google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewIdentityPlatformOauthIdpConfig_Override(i IdentityPlatformOauthIdpConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -686,7 +686,7 @@ func IdentityPlatformOauthIdpConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func IdentityPlatformOauthIdpConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func IdentityPlatformOauthIdpConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func IdentityPlatformOauthIdpConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
+		"@cdktf/provider-google.identityPlatformOauthIdpConfig.IdentityPlatformOauthIdpConfig",
 		"tfResourceType",
 		&returns,
 	)

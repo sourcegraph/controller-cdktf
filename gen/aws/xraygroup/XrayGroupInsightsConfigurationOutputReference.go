@@ -203,7 +203,7 @@ func NewXrayGroupInsightsConfigurationOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_XrayGroupInsightsConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.xrayGroup.XrayGroupInsightsConfigurationOutputReference",
+		"@cdktf/provider-aws.xrayGroup.XrayGroupInsightsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewXrayGroupInsightsConfigurationOutputReference_Override(x XrayGroupInsigh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.xrayGroup.XrayGroupInsightsConfigurationOutputReference",
+		"@cdktf/provider-aws.xrayGroup.XrayGroupInsightsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		x,
 	)

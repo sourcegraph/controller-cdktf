@@ -617,7 +617,7 @@ func NewAutoscalingPolicy(scope constructs.Construct, id *string, config *Autosc
 	j := jsiiProxy_AutoscalingPolicy{}
 
 	_jsii_.Create(
-		"aws.autoscalingPolicy.AutoscalingPolicy",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -630,7 +630,7 @@ func NewAutoscalingPolicy_Override(a AutoscalingPolicy, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingPolicy.AutoscalingPolicy",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -851,7 +851,7 @@ func AutoscalingPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingPolicy.AutoscalingPolicy",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -870,7 +870,7 @@ func AutoscalingPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingPolicy.AutoscalingPolicy",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -889,7 +889,7 @@ func AutoscalingPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingPolicy.AutoscalingPolicy",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -902,7 +902,7 @@ func AutoscalingPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.autoscalingPolicy.AutoscalingPolicy",
+		"@cdktf/provider-aws.autoscalingPolicy.AutoscalingPolicy",
 		"tfResourceType",
 		&returns,
 	)

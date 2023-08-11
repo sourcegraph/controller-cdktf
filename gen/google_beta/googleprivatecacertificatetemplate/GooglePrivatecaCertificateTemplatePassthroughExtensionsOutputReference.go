@@ -204,7 +204,7 @@ func NewGooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference(t
 	j := jsiiProxy_GooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePassthroughExtensionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

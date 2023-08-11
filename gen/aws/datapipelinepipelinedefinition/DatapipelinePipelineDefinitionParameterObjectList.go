@@ -116,7 +116,7 @@ func NewDatapipelinePipelineDefinitionParameterObjectList(terraformResource cdkt
 	j := jsiiProxy_DatapipelinePipelineDefinitionParameterObjectList{}
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectList",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDatapipelinePipelineDefinitionParameterObjectList_Override(d Datapipelin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectList",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

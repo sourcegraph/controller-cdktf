@@ -180,7 +180,7 @@ func NewInstanceEnclaveOptionsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_InstanceEnclaveOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.instance.InstanceEnclaveOptionsOutputReference",
+		"@cdktf/provider-aws.instance.InstanceEnclaveOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewInstanceEnclaveOptionsOutputReference_Override(i InstanceEnclaveOptionsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.InstanceEnclaveOptionsOutputReference",
+		"@cdktf/provider-aws.instance.InstanceEnclaveOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

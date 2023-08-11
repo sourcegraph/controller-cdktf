@@ -244,7 +244,7 @@ func NewDataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsOutputRefer
 	j := jsiiProxy_DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsOutputReference",
+		"@cdktf/provider-google.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewDataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsOutputReference",
+		"@cdktf/provider-google.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

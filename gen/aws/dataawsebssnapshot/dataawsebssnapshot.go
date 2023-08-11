@@ -579,7 +579,7 @@ func NewDataAwsEbsSnapshot(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsEbsSnapshot{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -592,7 +592,7 @@ func NewDataAwsEbsSnapshot_Override(d DataAwsEbsSnapshot, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -736,7 +736,7 @@ func DataAwsEbsSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -755,7 +755,7 @@ func DataAwsEbsSnapshot_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func DataAwsEbsSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -787,7 +787,7 @@ func DataAwsEbsSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
+		"@cdktf/provider-aws.dataAwsEbsSnapshot.DataAwsEbsSnapshot",
 		"tfResourceType",
 		&returns,
 	)

@@ -748,7 +748,7 @@ func NewComputeFirewall(scope constructs.Construct, id *string, config *ComputeF
 	j := jsiiProxy_ComputeFirewall{}
 
 	_jsii_.Create(
-		"google.computeFirewall.ComputeFirewall",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewall",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -761,7 +761,7 @@ func NewComputeFirewall_Override(c ComputeFirewall, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeFirewall.ComputeFirewall",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewall",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1026,7 +1026,7 @@ func ComputeFirewall_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeFirewall.ComputeFirewall",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewall",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1045,7 +1045,7 @@ func ComputeFirewall_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeFirewall.ComputeFirewall",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewall",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1064,7 +1064,7 @@ func ComputeFirewall_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeFirewall.ComputeFirewall",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewall",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1077,7 +1077,7 @@ func ComputeFirewall_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeFirewall.ComputeFirewall",
+		"@cdktf/provider-google.computeFirewall.ComputeFirewall",
 		"tfResourceType",
 		&returns,
 	)

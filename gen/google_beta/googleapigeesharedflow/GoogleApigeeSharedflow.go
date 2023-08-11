@@ -457,7 +457,7 @@ func NewGoogleApigeeSharedflow(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleApigeeSharedflow{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -470,7 +470,7 @@ func NewGoogleApigeeSharedflow_Override(g GoogleApigeeSharedflow, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -625,7 +625,7 @@ func GoogleApigeeSharedflow_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleApigeeSharedflow_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func GoogleApigeeSharedflow_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func GoogleApigeeSharedflow_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewMutatingWebhookConfigurationV1WebhookList(terraformResource cdktf.IInter
 	j := jsiiProxy_MutatingWebhookConfigurationV1WebhookList{}
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookList",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMutatingWebhookConfigurationV1WebhookList_Override(m MutatingWebhookConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookList",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

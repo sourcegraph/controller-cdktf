@@ -337,7 +337,7 @@ func NewDataKubernetesConfigMap(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataKubernetesConfigMap{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataKubernetesConfigMap_Override(d DataKubernetesConfigMap, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -450,7 +450,7 @@ func DataKubernetesConfigMap_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -469,7 +469,7 @@ func DataKubernetesConfigMap_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -488,7 +488,7 @@ func DataKubernetesConfigMap_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataKubernetesConfigMap_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
+		"@cdktf/provider-kubernetes.dataKubernetesConfigMap.DataKubernetesConfigMap",
 		"tfResourceType",
 		&returns,
 	)

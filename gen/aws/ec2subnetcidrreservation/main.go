@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
 		reflect.TypeOf((*Ec2SubnetCidrReservation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservationConfig",
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservationConfig",
 		reflect.TypeOf((*Ec2SubnetCidrReservationConfig)(nil)).Elem(),
 	)
 }

@@ -359,7 +359,7 @@ func NewDataGoogleComputeNetwork(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataGoogleComputeNetwork{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
+		"@cdktf/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -372,7 +372,7 @@ func NewDataGoogleComputeNetwork_Override(d DataGoogleComputeNetwork, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
+		"@cdktf/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -483,7 +483,7 @@ func DataGoogleComputeNetwork_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
+		"@cdktf/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataGoogleComputeNetwork_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
+		"@cdktf/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func DataGoogleComputeNetwork_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
+		"@cdktf/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleComputeNetwork_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
+		"@cdktf/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork",
 		"tfResourceType",
 		&returns,
 	)

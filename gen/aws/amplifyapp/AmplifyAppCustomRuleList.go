@@ -116,7 +116,7 @@ func NewAmplifyAppCustomRuleList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_AmplifyAppCustomRuleList{}
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppCustomRuleList",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAmplifyAppCustomRuleList_Override(a AmplifyAppCustomRuleList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppCustomRuleList",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

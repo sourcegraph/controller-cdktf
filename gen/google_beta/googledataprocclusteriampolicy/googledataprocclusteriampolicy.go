@@ -401,7 +401,7 @@ func NewGoogleDataprocClusterIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleDataprocClusterIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleDataprocClusterIamPolicy_Override(g GoogleDataprocClusterIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleDataprocClusterIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleDataprocClusterIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleDataprocClusterIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleDataprocClusterIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamPolicy.GoogleDataprocClusterIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

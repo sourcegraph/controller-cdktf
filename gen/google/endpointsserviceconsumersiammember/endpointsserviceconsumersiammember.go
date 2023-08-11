@@ -423,7 +423,7 @@ func NewEndpointsServiceConsumersIamMember(scope constructs.Construct, id *strin
 	j := jsiiProxy_EndpointsServiceConsumersIamMember{}
 
 	_jsii_.Create(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewEndpointsServiceConsumersIamMember_Override(e EndpointsServiceConsumersI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -591,7 +591,7 @@ func EndpointsServiceConsumersIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func EndpointsServiceConsumersIamMember_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func EndpointsServiceConsumersIamMember_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func EndpointsServiceConsumersIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
+		"@cdktf/provider-google.endpointsServiceConsumersIamMember.EndpointsServiceConsumersIamMember",
 		"tfResourceType",
 		&returns,
 	)

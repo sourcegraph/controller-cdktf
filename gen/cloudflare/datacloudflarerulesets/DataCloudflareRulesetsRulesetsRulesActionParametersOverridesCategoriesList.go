@@ -104,7 +104,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesLi
 	j := jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesetsRulesetsRulesActionParametersOverridesCategoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

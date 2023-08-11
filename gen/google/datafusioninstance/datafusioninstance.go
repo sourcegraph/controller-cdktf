@@ -873,7 +873,7 @@ func NewDataFusionInstance(scope constructs.Construct, id *string, config *DataF
 	j := jsiiProxy_DataFusionInstance{}
 
 	_jsii_.Create(
-		"google.dataFusionInstance.DataFusionInstance",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -886,7 +886,7 @@ func NewDataFusionInstance_Override(d DataFusionInstance, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataFusionInstance.DataFusionInstance",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1162,7 +1162,7 @@ func DataFusionInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataFusionInstance.DataFusionInstance",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1181,7 +1181,7 @@ func DataFusionInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataFusionInstance.DataFusionInstance",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1200,7 +1200,7 @@ func DataFusionInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataFusionInstance.DataFusionInstance",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1213,7 +1213,7 @@ func DataFusionInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataFusionInstance.DataFusionInstance",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		"tfResourceType",
 		&returns,
 	)

@@ -167,7 +167,7 @@ func NewDataAwsAppmeshMeshSpecEgressFilterOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsAppmeshMeshSpecEgressFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsAppmeshMeshSpecEgressFilterOutputReference_Override(d DataAwsAppm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecEgressFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

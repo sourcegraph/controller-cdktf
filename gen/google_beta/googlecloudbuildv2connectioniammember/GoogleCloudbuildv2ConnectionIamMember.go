@@ -448,7 +448,7 @@ func NewGoogleCloudbuildv2ConnectionIamMember(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleCloudbuildv2ConnectionIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudbuildv2ConnectionIamMember_Override(g GoogleCloudbuildv2Conne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudbuildv2ConnectionIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudbuildv2ConnectionIamMember_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudbuildv2ConnectionIamMember_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudbuildv2ConnectionIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMember",
 		"tfResourceType",
 		&returns,
 	)

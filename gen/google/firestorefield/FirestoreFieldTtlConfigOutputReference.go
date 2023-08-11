@@ -167,7 +167,7 @@ func NewFirestoreFieldTtlConfigOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_FirestoreFieldTtlConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.firestoreField.FirestoreFieldTtlConfigOutputReference",
+		"@cdktf/provider-google.firestoreField.FirestoreFieldTtlConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewFirestoreFieldTtlConfigOutputReference_Override(f FirestoreFieldTtlConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firestoreField.FirestoreFieldTtlConfigOutputReference",
+		"@cdktf/provider-google.firestoreField.FirestoreFieldTtlConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

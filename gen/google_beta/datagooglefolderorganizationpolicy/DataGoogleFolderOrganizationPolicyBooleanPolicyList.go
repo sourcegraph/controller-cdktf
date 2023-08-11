@@ -104,7 +104,7 @@ func NewDataGoogleFolderOrganizationPolicyBooleanPolicyList(terraformResource cd
 	j := jsiiProxy_DataGoogleFolderOrganizationPolicyBooleanPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleFolderOrganizationPolicyBooleanPolicyList_Override(d DataGoogl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

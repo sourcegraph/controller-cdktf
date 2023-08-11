@@ -338,7 +338,7 @@ func NewDataAwsImagebuilderComponents(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsImagebuilderComponents{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,7 +351,7 @@ func NewDataAwsImagebuilderComponents_Override(d DataAwsImagebuilderComponents, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataAwsImagebuilderComponents_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -470,7 +470,7 @@ func DataAwsImagebuilderComponents_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataAwsImagebuilderComponents_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsImagebuilderComponents_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
+		"@cdktf/provider-aws.dataAwsImagebuilderComponents.DataAwsImagebuilderComponents",
 		"tfResourceType",
 		&returns,
 	)

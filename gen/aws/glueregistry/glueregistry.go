@@ -402,7 +402,7 @@ func NewGlueRegistry(scope constructs.Construct, id *string, config *GlueRegistr
 	j := jsiiProxy_GlueRegistry{}
 
 	_jsii_.Create(
-		"aws.glueRegistry.GlueRegistry",
+		"@cdktf/provider-aws.glueRegistry.GlueRegistry",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewGlueRegistry_Override(g GlueRegistry, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueRegistry.GlueRegistry",
+		"@cdktf/provider-aws.glueRegistry.GlueRegistry",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -570,7 +570,7 @@ func GlueRegistry_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueRegistry.GlueRegistry",
+		"@cdktf/provider-aws.glueRegistry.GlueRegistry",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func GlueRegistry_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueRegistry.GlueRegistry",
+		"@cdktf/provider-aws.glueRegistry.GlueRegistry",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GlueRegistry_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueRegistry.GlueRegistry",
+		"@cdktf/provider-aws.glueRegistry.GlueRegistry",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func GlueRegistry_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueRegistry.GlueRegistry",
+		"@cdktf/provider-aws.glueRegistry.GlueRegistry",
 		"tfResourceType",
 		&returns,
 	)

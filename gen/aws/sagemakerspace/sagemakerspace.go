@@ -436,7 +436,7 @@ func NewSagemakerSpace(scope constructs.Construct, id *string, config *Sagemaker
 	j := jsiiProxy_SagemakerSpace{}
 
 	_jsii_.Create(
-		"aws.sagemakerSpace.SagemakerSpace",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewSagemakerSpace_Override(s SagemakerSpace, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerSpace.SagemakerSpace",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpace",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -604,7 +604,7 @@ func SagemakerSpace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerSpace.SagemakerSpace",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func SagemakerSpace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerSpace.SagemakerSpace",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func SagemakerSpace_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerSpace.SagemakerSpace",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func SagemakerSpace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerSpace.SagemakerSpace",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpace",
 		"tfResourceType",
 		&returns,
 	)

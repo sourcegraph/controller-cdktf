@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsQldbLedger.DataAwsQldbLedger",
+		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedger",
 		reflect.TypeOf((*DataAwsQldbLedger)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig",
+		"@cdktf/provider-aws.dataAwsQldbLedger.DataAwsQldbLedgerConfig",
 		reflect.TypeOf((*DataAwsQldbLedgerConfig)(nil)).Elem(),
 	)
 }

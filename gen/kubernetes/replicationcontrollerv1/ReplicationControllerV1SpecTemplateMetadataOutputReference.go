@@ -309,7 +309,7 @@ func NewReplicationControllerV1SpecTemplateMetadataOutputReference(terraformReso
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadataOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewReplicationControllerV1SpecTemplateMetadataOutputReference_Override(r Re
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadataOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

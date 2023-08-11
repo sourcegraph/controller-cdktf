@@ -377,7 +377,7 @@ func NewBinaryAuthorizationAttestorIamPolicy(scope constructs.Construct, id *str
 	j := jsiiProxy_BinaryAuthorizationAttestorIamPolicy{}
 
 	_jsii_.Create(
-		"google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewBinaryAuthorizationAttestorIamPolicy_Override(b BinaryAuthorizationAttes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -534,7 +534,7 @@ func BinaryAuthorizationAttestorIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func BinaryAuthorizationAttestorIamPolicy_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func BinaryAuthorizationAttestorIamPolicy_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func BinaryAuthorizationAttestorIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamPolicy.BinaryAuthorizationAttestorIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

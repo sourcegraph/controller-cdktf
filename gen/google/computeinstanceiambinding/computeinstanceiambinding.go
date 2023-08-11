@@ -448,7 +448,7 @@ func NewComputeInstanceIamBinding(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ComputeInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google.computeInstanceIamBinding.ComputeInstanceIamBinding",
+		"@cdktf/provider-google.computeInstanceIamBinding.ComputeInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewComputeInstanceIamBinding_Override(c ComputeInstanceIamBinding, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceIamBinding.ComputeInstanceIamBinding",
+		"@cdktf/provider-google.computeInstanceIamBinding.ComputeInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func ComputeInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceIamBinding.ComputeInstanceIamBinding",
+		"@cdktf/provider-google.computeInstanceIamBinding.ComputeInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ComputeInstanceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceIamBinding.ComputeInstanceIamBinding",
+		"@cdktf/provider-google.computeInstanceIamBinding.ComputeInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ComputeInstanceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceIamBinding.ComputeInstanceIamBinding",
+		"@cdktf/provider-google.computeInstanceIamBinding.ComputeInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ComputeInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeInstanceIamBinding.ComputeInstanceIamBinding",
+		"@cdktf/provider-google.computeInstanceIamBinding.ComputeInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

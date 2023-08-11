@@ -228,7 +228,7 @@ func NewGoogleServiceDirectoryEndpointTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_GoogleServiceDirectoryEndpointTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpointTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleServiceDirectoryEndpointTimeoutsOutputReference_Override(g GoogleS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpointTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleServiceDirectoryEndpoint.GoogleServiceDirectoryEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

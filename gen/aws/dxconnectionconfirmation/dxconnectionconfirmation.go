@@ -319,7 +319,7 @@ func NewDxConnectionConfirmation(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DxConnectionConfirmation{}
 
 	_jsii_.Create(
-		"aws.dxConnectionConfirmation.DxConnectionConfirmation",
+		"@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewDxConnectionConfirmation_Override(d DxConnectionConfirmation, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxConnectionConfirmation.DxConnectionConfirmation",
+		"@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -454,7 +454,7 @@ func DxConnectionConfirmation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxConnectionConfirmation.DxConnectionConfirmation",
+		"@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func DxConnectionConfirmation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxConnectionConfirmation.DxConnectionConfirmation",
+		"@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func DxConnectionConfirmation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxConnectionConfirmation.DxConnectionConfirmation",
+		"@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DxConnectionConfirmation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxConnectionConfirmation.DxConnectionConfirmation",
+		"@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation",
 		"tfResourceType",
 		&returns,
 	)

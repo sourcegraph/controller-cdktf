@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroup",
 		reflect.TypeOf((*DocdbClusterParameterGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupConfig",
 		reflect.TypeOf((*DocdbClusterParameterGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameter",
 		reflect.TypeOf((*DocdbClusterParameterGroupParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterList",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterList",
 		reflect.TypeOf((*DocdbClusterParameterGroupParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference",
 		reflect.TypeOf((*DocdbClusterParameterGroupParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyMethod", GoGetter: "ApplyMethod"},

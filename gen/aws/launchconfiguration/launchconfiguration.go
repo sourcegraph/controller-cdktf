@@ -785,7 +785,7 @@ func NewLaunchConfiguration(scope constructs.Construct, id *string, config *Laun
 	j := jsiiProxy_LaunchConfiguration{}
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfiguration",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -798,7 +798,7 @@ func NewLaunchConfiguration_Override(l LaunchConfiguration, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchConfiguration.LaunchConfiguration",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -1085,7 +1085,7 @@ func LaunchConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.launchConfiguration.LaunchConfiguration",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1104,7 +1104,7 @@ func LaunchConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.launchConfiguration.LaunchConfiguration",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1123,7 +1123,7 @@ func LaunchConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.launchConfiguration.LaunchConfiguration",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1136,7 +1136,7 @@ func LaunchConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.launchConfiguration.LaunchConfiguration",
+		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.apiServiceV1.ApiServiceV1",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1",
 		reflect.TypeOf((*ApiServiceV1)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.apiServiceV1.ApiServiceV1Config",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1Config",
 		reflect.TypeOf((*ApiServiceV1Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.apiServiceV1.ApiServiceV1Metadata",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1Metadata",
 		reflect.TypeOf((*ApiServiceV1Metadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.apiServiceV1.ApiServiceV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1MetadataOutputReference",
 		reflect.TypeOf((*ApiServiceV1MetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.apiServiceV1.ApiServiceV1Spec",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1Spec",
 		reflect.TypeOf((*ApiServiceV1Spec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.apiServiceV1.ApiServiceV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1SpecOutputReference",
 		reflect.TypeOf((*ApiServiceV1SpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caBundle", GoGetter: "CaBundle"},
@@ -170,11 +170,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.apiServiceV1.ApiServiceV1SpecService",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1SpecService",
 		reflect.TypeOf((*ApiServiceV1SpecService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.apiServiceV1.ApiServiceV1SpecServiceOutputReference",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1SpecServiceOutputReference",
 		reflect.TypeOf((*ApiServiceV1SpecServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

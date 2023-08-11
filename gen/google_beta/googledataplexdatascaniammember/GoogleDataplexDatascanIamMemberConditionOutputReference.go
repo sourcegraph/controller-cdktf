@@ -226,7 +226,7 @@ func NewGoogleDataplexDatascanIamMemberConditionOutputReference(terraformResourc
 	j := jsiiProxy_GoogleDataplexDatascanIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataplexDatascanIamMemberConditionOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamMember.GoogleDataplexDatascanIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

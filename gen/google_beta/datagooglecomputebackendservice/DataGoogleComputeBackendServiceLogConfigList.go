@@ -104,7 +104,7 @@ func NewDataGoogleComputeBackendServiceLogConfigList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataGoogleComputeBackendServiceLogConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceLogConfigList",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceLogConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeBackendServiceLogConfigList_Override(d DataGoogleComput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceLogConfigList",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceLogConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

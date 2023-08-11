@@ -179,7 +179,7 @@ func NewCognitoUserPoolUserAttributeUpdateSettingsOutputReference(terraformResou
 	j := jsiiProxy_CognitoUserPoolUserAttributeUpdateSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettingsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCognitoUserPoolUserAttributeUpdateSettingsOutputReference_Override(c Cog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettingsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

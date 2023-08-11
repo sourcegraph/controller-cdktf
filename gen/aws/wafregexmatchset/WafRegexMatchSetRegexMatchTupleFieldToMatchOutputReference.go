@@ -203,7 +203,7 @@ func NewWafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference(terraformReso
 	j := jsiiProxy_WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewWafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference_Override(w Wa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSetRegexMatchTupleFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

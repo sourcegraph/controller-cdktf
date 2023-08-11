@@ -104,7 +104,7 @@ func NewDataGoogleVpcAccessConnectorSubnetList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataGoogleVpcAccessConnectorSubnetList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetList",
+		"@cdktf/provider-google-beta.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleVpcAccessConnectorSubnetList_Override(d DataGoogleVpcAccessCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetList",
+		"@cdktf/provider-google-beta.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

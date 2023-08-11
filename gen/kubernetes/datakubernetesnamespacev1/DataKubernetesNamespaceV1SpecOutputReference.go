@@ -167,7 +167,7 @@ func NewDataKubernetesNamespaceV1SpecOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataKubernetesNamespaceV1SpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataKubernetesNamespaceV1SpecOutputReference_Override(d DataKubernetesNa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesNamespaceV1.DataKubernetesNamespaceV1SpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

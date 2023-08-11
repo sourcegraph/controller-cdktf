@@ -401,7 +401,7 @@ func NewPrivatecaCaPoolIamPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_PrivatecaCaPoolIamPolicy{}
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewPrivatecaCaPoolIamPolicy_Override(p PrivatecaCaPoolIamPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -569,7 +569,7 @@ func PrivatecaCaPoolIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func PrivatecaCaPoolIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func PrivatecaCaPoolIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func PrivatecaCaPoolIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
+		"@cdktf/provider-google.privatecaCaPoolIamPolicy.PrivatecaCaPoolIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -353,7 +353,7 @@ func NewCodecommitTrigger(scope constructs.Construct, id *string, config *Codeco
 	j := jsiiProxy_CodecommitTrigger{}
 
 	_jsii_.Create(
-		"aws.codecommitTrigger.CodecommitTrigger",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTrigger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewCodecommitTrigger_Override(c CodecommitTrigger, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codecommitTrigger.CodecommitTrigger",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTrigger",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -488,7 +488,7 @@ func CodecommitTrigger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitTrigger.CodecommitTrigger",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTrigger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func CodecommitTrigger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitTrigger.CodecommitTrigger",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTrigger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func CodecommitTrigger_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitTrigger.CodecommitTrigger",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTrigger",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func CodecommitTrigger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codecommitTrigger.CodecommitTrigger",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTrigger",
 		"tfResourceType",
 		&returns,
 	)

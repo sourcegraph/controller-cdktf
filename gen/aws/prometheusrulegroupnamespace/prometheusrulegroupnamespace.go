@@ -365,7 +365,7 @@ func NewPrometheusRuleGroupNamespace(scope constructs.Construct, id *string, con
 	j := jsiiProxy_PrometheusRuleGroupNamespace{}
 
 	_jsii_.Create(
-		"aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
+		"@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewPrometheusRuleGroupNamespace_Override(p PrometheusRuleGroupNamespace, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
+		"@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -522,7 +522,7 @@ func PrometheusRuleGroupNamespace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
+		"@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func PrometheusRuleGroupNamespace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
+		"@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func PrometheusRuleGroupNamespace_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
+		"@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func PrometheusRuleGroupNamespace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
+		"@cdktf/provider-aws.prometheusRuleGroupNamespace.PrometheusRuleGroupNamespace",
 		"tfResourceType",
 		&returns,
 	)

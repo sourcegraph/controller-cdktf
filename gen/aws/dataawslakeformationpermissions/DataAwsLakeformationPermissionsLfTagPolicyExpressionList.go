@@ -116,7 +116,7 @@ func NewDataAwsLakeformationPermissionsLfTagPolicyExpressionList(terraformResour
 	j := jsiiProxy_DataAwsLakeformationPermissionsLfTagPolicyExpressionList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicyExpressionList",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicyExpressionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsLakeformationPermissionsLfTagPolicyExpressionList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicyExpressionList",
+		"@cdktf/provider-aws.dataAwsLakeformationPermissions.DataAwsLakeformationPermissionsLfTagPolicyExpressionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

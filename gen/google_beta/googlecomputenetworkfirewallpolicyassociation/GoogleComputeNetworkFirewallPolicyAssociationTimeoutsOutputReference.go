@@ -204,7 +204,7 @@ func NewGoogleComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference(ter
 	j := jsiiProxy_GoogleComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkFirewallPolicyAssociation.GoogleComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicyAssociation.GoogleComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkFirewallPolicyAssociation.GoogleComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicyAssociation.GoogleComputeNetworkFirewallPolicyAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

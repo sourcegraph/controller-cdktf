@@ -116,7 +116,7 @@ func NewGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksL
 	j := jsiiProxy_GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

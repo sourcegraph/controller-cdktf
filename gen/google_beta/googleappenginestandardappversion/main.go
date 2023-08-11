@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersion",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersion",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -127,11 +127,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScaling",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScaling",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionAutomaticScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -182,11 +182,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,11 +230,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScaling",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScaling",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionBasicScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScalingOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionBasicScalingOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionBasicScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -271,19 +271,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionConfig",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionConfig",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeployment",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeployment",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeployment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFiles",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFiles",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentFiles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesList",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesList",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentFilesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -304,7 +304,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentFilesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -343,7 +343,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -383,11 +383,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZip",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZip",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentZip)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZipOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionDeploymentZipOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionDeploymentZipOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -424,11 +424,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypoint",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypoint",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionEntrypoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypointOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionEntrypointOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionEntrypointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -462,11 +462,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlers",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlers",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersList",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersList",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -487,7 +487,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authFailAction", GoGetter: "AuthFailAction"},
@@ -542,11 +542,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScript",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScript",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersScript)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScriptOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersScriptOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersScriptOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -580,11 +580,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFiles",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFiles",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersStaticFiles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionHandlersStaticFilesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationReadable", GoGetter: "ApplicationReadable"},
@@ -637,11 +637,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibraries",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibraries",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionLibraries)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibrariesList",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibrariesList",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionLibrariesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -662,7 +662,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibrariesOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionLibrariesOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionLibrariesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -700,11 +700,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScaling",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScaling",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionManualScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScalingOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionManualScalingOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionManualScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -738,11 +738,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeouts",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeouts",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -783,11 +783,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnector",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnector",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionVpcAccessConnector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference",
 		reflect.TypeOf((*GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

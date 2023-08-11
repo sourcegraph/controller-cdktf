@@ -228,7 +228,7 @@ func NewActiveDirectoryDomainTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ActiveDirectoryDomainTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.activeDirectoryDomain.ActiveDirectoryDomainTimeoutsOutputReference",
+		"@cdktf/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewActiveDirectoryDomainTimeoutsOutputReference_Override(a ActiveDirectoryD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.activeDirectoryDomain.ActiveDirectoryDomainTimeoutsOutputReference",
+		"@cdktf/provider-google.activeDirectoryDomain.ActiveDirectoryDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

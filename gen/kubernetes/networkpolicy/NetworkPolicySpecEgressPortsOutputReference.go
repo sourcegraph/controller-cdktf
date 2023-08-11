@@ -204,7 +204,7 @@ func NewNetworkPolicySpecEgressPortsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_NetworkPolicySpecEgressPortsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressPortsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressPortsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkPolicySpecEgressPortsOutputReference_Override(n NetworkPolicySpec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressPortsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressPortsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

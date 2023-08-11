@@ -390,7 +390,7 @@ func NewByoIpPrefix(scope constructs.Construct, id *string, config *ByoIpPrefixC
 	j := jsiiProxy_ByoIpPrefix{}
 
 	_jsii_.Create(
-		"cloudflare.byoIpPrefix.ByoIpPrefix",
+		"@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewByoIpPrefix_Override(b ByoIpPrefix, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.byoIpPrefix.ByoIpPrefix",
+		"@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -558,7 +558,7 @@ func ByoIpPrefix_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.byoIpPrefix.ByoIpPrefix",
+		"@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func ByoIpPrefix_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.byoIpPrefix.ByoIpPrefix",
+		"@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func ByoIpPrefix_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.byoIpPrefix.ByoIpPrefix",
+		"@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func ByoIpPrefix_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.byoIpPrefix.ByoIpPrefix",
+		"@cdktf/provider-cloudflare.byoIpPrefix.ByoIpPrefix",
 		"tfResourceType",
 		&returns,
 	)

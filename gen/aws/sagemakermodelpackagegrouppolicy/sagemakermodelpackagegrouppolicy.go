@@ -342,7 +342,7 @@ func NewSagemakerModelPackageGroupPolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_SagemakerModelPackageGroupPolicy{}
 
 	_jsii_.Create(
-		"aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
+		"@cdktf/provider-aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewSagemakerModelPackageGroupPolicy_Override(s SagemakerModelPackageGroupPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
+		"@cdktf/provider-aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -488,7 +488,7 @@ func SagemakerModelPackageGroupPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
+		"@cdktf/provider-aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func SagemakerModelPackageGroupPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
+		"@cdktf/provider-aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func SagemakerModelPackageGroupPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
+		"@cdktf/provider-aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func SagemakerModelPackageGroupPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
+		"@cdktf/provider-aws.sagemakerModelPackageGroupPolicy.SagemakerModelPackageGroupPolicy",
 		"tfResourceType",
 		&returns,
 	)

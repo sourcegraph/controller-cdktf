@@ -203,7 +203,7 @@ func NewComputeInstanceNetworkInterfaceAliasIpRangeOutputReference(terraformReso
 	j := jsiiProxy_ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeInstanceNetworkInterfaceAliasIpRangeOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkInterfaceAliasIpRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

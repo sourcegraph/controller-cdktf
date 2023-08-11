@@ -288,7 +288,7 @@ func NewDataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference(terrafor
 	j := jsiiProxy_DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -300,7 +300,7 @@ func NewDataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRules.DataAwsRoute53ResolverFirewallRulesFirewallRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

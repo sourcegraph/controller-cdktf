@@ -424,7 +424,7 @@ func NewGoogleComputeImageIamMember(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeImageIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleComputeImageIamMember_Override(g GoogleComputeImageIamMember, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleComputeImageIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleComputeImageIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleComputeImageIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleComputeImageIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
+		"@cdktf/provider-google-beta.googleComputeImageIamMember.GoogleComputeImageIamMember",
 		"tfResourceType",
 		&returns,
 	)

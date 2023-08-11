@@ -226,7 +226,7 @@ func NewComputeRegionDiskIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_ComputeRegionDiskIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeRegionDiskIamMemberConditionOutputReference_Override(c ComputeReg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

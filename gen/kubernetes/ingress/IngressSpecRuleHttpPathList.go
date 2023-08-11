@@ -116,7 +116,7 @@ func NewIngressSpecRuleHttpPathList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_IngressSpecRuleHttpPathList{}
 
 	_jsii_.Create(
-		"kubernetes.ingress.IngressSpecRuleHttpPathList",
+		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpPathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIngressSpecRuleHttpPathList_Override(i IngressSpecRuleHttpPathList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.ingress.IngressSpecRuleHttpPathList",
+		"@cdktf/provider-kubernetes.ingress.IngressSpecRuleHttpPathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

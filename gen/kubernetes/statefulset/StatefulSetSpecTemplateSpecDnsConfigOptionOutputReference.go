@@ -203,7 +203,7 @@ func NewStatefulSetSpecTemplateSpecDnsConfigOptionOutputReference(terraformResou
 	j := jsiiProxy_StatefulSetSpecTemplateSpecDnsConfigOptionOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecDnsConfigOptionOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecDnsConfigOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewStatefulSetSpecTemplateSpecDnsConfigOptionOutputReference_Override(s Sta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecDnsConfigOptionOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecDnsConfigOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

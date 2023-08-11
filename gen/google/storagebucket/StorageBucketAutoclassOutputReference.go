@@ -179,7 +179,7 @@ func NewStorageBucketAutoclassOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_StorageBucketAutoclassOutputReference{}
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketAutoclassOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewStorageBucketAutoclassOutputReference_Override(s StorageBucketAutoclassO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketAutoclassOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

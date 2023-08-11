@@ -228,7 +228,7 @@ func NewLexBotTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_LexBotTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotTimeoutsOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLexBotTimeoutsOutputReference_Override(l LexBotTimeoutsOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBot.LexBotTimeoutsOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

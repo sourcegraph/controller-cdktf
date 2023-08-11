@@ -274,7 +274,7 @@ func NewDatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference(terraf
 	j := jsiiProxy_DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewDatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

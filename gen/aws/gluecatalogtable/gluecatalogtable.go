@@ -641,7 +641,7 @@ func NewGlueCatalogTable(scope constructs.Construct, id *string, config *GlueCat
 	j := jsiiProxy_GlueCatalogTable{}
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTable",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -654,7 +654,7 @@ func NewGlueCatalogTable_Override(g GlueCatalogTable, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogTable.GlueCatalogTable",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -875,7 +875,7 @@ func GlueCatalogTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueCatalogTable.GlueCatalogTable",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -894,7 +894,7 @@ func GlueCatalogTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueCatalogTable.GlueCatalogTable",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -913,7 +913,7 @@ func GlueCatalogTable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueCatalogTable.GlueCatalogTable",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -926,7 +926,7 @@ func GlueCatalogTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueCatalogTable.GlueCatalogTable",
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
 		"tfResourceType",
 		&returns,
 	)

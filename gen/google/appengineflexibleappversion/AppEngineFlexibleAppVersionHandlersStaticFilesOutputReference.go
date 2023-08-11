@@ -324,7 +324,7 @@ func NewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference(terraformR
 	j := jsiiProxy_AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
+		"@cdktf/provider-google.appEngineFlexibleAppVersion.AppEngineFlexibleAppVersionHandlersStaticFilesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

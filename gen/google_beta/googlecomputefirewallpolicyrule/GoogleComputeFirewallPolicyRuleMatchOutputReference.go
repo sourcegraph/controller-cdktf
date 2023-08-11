@@ -419,7 +419,7 @@ func NewGoogleComputeFirewallPolicyRuleMatchOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleComputeFirewallPolicyRuleMatchOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleMatchOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -431,7 +431,7 @@ func NewGoogleComputeFirewallPolicyRuleMatchOutputReference_Override(g GoogleCom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleMatchOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRuleMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

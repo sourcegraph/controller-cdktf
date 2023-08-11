@@ -226,7 +226,7 @@ func NewDeviceDexTestDataOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DeviceDexTestDataOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.deviceDexTest.DeviceDexTestDataOutputReference",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDeviceDexTestDataOutputReference_Override(d DeviceDexTestDataOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.deviceDexTest.DeviceDexTestDataOutputReference",
+		"@cdktf/provider-cloudflare.deviceDexTest.DeviceDexTestDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

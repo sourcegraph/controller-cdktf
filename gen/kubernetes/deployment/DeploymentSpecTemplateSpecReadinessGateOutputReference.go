@@ -179,7 +179,7 @@ func NewDeploymentSpecTemplateSpecReadinessGateOutputReference(terraformResource
 	j := jsiiProxy_DeploymentSpecTemplateSpecReadinessGateOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDeploymentSpecTemplateSpecReadinessGateOutputReference_Override(d Deploy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecReadinessGateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

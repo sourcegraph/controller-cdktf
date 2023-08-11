@@ -418,7 +418,7 @@ func NewOpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference(te
 	j := jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewOpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

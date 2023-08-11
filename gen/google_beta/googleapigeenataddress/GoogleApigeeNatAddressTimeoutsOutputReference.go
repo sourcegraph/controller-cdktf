@@ -204,7 +204,7 @@ func NewGoogleApigeeNatAddressTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleApigeeNatAddressTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleApigeeNatAddressTimeoutsOutputReference_Override(g GoogleApigeeNat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddressTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

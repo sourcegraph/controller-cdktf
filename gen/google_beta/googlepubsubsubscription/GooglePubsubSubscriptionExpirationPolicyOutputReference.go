@@ -179,7 +179,7 @@ func NewGooglePubsubSubscriptionExpirationPolicyOutputReference(terraformResourc
 	j := jsiiProxy_GooglePubsubSubscriptionExpirationPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscriptionExpirationPolicyOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscriptionExpirationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGooglePubsubSubscriptionExpirationPolicyOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscription.GooglePubsubSubscriptionExpirationPolicyOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubSubscription.GooglePubsubSubscriptionExpirationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

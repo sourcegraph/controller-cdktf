@@ -402,7 +402,7 @@ func NewBackupVaultLockConfiguration(scope constructs.Construct, id *string, con
 	j := jsiiProxy_BackupVaultLockConfiguration{}
 
 	_jsii_.Create(
-		"aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
+		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewBackupVaultLockConfiguration_Override(b BackupVaultLockConfiguration, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
+		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -570,7 +570,7 @@ func BackupVaultLockConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
+		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func BackupVaultLockConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
+		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func BackupVaultLockConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
+		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func BackupVaultLockConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
+		"@cdktf/provider-aws.backupVaultLockConfiguration.BackupVaultLockConfiguration",
 		"tfResourceType",
 		&returns,
 	)

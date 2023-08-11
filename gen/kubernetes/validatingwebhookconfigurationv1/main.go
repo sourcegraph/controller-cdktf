@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1Config",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1Config",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1Metadata",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1Metadata",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1Metadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1MetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -116,15 +116,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1Webhook",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1Webhook",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1Webhook)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfig",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfig",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookClientConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigOutputReference",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookClientConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caBundle", GoGetter: "CaBundle"},
@@ -166,11 +166,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigService",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigService",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookClientConfigService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookClientConfigServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,7 +212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookList",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookList",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -233,15 +233,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelector",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelector",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookNamespaceSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressions",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -262,7 +262,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -303,7 +303,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorOutputReference",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookNamespaceSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -342,15 +342,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelector",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelector",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookObjectSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsList",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -371,7 +371,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -412,7 +412,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -451,7 +451,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookOutputReference",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "admissionReviewVersions", GoGetter: "AdmissionReviewVersions"},
@@ -515,11 +515,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRule",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRule",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleList",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleList",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -540,7 +540,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookRuleOutputReference",
 		reflect.TypeOf((*ValidatingWebhookConfigurationV1WebhookRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiGroups", GoGetter: "ApiGroups"},

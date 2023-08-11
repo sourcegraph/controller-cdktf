@@ -104,7 +104,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecVolumesSecretList(terraformResource
 	j := jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesSecretList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecVolumesSecretList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecVolumesSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecVolumesSecretList_Override(d DataGo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecVolumesSecretList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecVolumesSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

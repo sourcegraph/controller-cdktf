@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList(terraformRes
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

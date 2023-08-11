@@ -203,7 +203,7 @@ func NewComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference(ter
 	j := jsiiProxy_ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

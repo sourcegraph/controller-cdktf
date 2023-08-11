@@ -116,7 +116,7 @@ func NewGoogleComputeNetworkFirewallPolicyRuleMatchLayer4ConfigsList(terraformRe
 	j := jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleMatchLayer4ConfigsList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkFirewallPolicyRule.GoogleComputeNetworkFirewallPolicyRuleMatchLayer4ConfigsList",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicyRule.GoogleComputeNetworkFirewallPolicyRuleMatchLayer4ConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeNetworkFirewallPolicyRuleMatchLayer4ConfigsList_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkFirewallPolicyRule.GoogleComputeNetworkFirewallPolicyRuleMatchLayer4ConfigsList",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicyRule.GoogleComputeNetworkFirewallPolicyRuleMatchLayer4ConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

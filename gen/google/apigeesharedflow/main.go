@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.apigeeSharedflow.ApigeeSharedflow",
+		"@cdktf/provider-google.apigeeSharedflow.ApigeeSharedflow",
 		reflect.TypeOf((*ApigeeSharedflow)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeSharedflow.ApigeeSharedflowConfig",
+		"@cdktf/provider-google.apigeeSharedflow.ApigeeSharedflowConfig",
 		reflect.TypeOf((*ApigeeSharedflowConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeSharedflow.ApigeeSharedflowMetaData",
+		"@cdktf/provider-google.apigeeSharedflow.ApigeeSharedflowMetaData",
 		reflect.TypeOf((*ApigeeSharedflowMetaData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeSharedflow.ApigeeSharedflowMetaDataList",
+		"@cdktf/provider-google.apigeeSharedflow.ApigeeSharedflowMetaDataList",
 		reflect.TypeOf((*ApigeeSharedflowMetaDataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeSharedflow.ApigeeSharedflowMetaDataOutputReference",
+		"@cdktf/provider-google.apigeeSharedflow.ApigeeSharedflowMetaDataOutputReference",
 		reflect.TypeOf((*ApigeeSharedflowMetaDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,11 +135,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeSharedflow.ApigeeSharedflowTimeouts",
+		"@cdktf/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts",
 		reflect.TypeOf((*ApigeeSharedflowTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeSharedflow.ApigeeSharedflowTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeSharedflow.ApigeeSharedflowTimeoutsOutputReference",
 		reflect.TypeOf((*ApigeeSharedflowTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

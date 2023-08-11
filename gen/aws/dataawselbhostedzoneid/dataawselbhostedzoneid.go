@@ -292,7 +292,7 @@ func NewDataAwsElbHostedZoneId(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsElbHostedZoneId{}
 
 	_jsii_.Create(
-		"aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
+		"@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -305,7 +305,7 @@ func NewDataAwsElbHostedZoneId_Override(d DataAwsElbHostedZoneId, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
+		"@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -405,7 +405,7 @@ func DataAwsElbHostedZoneId_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
+		"@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -424,7 +424,7 @@ func DataAwsElbHostedZoneId_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
+		"@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsElbHostedZoneId_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
+		"@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsElbHostedZoneId_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
+		"@cdktf/provider-aws.dataAwsElbHostedZoneId.DataAwsElbHostedZoneId",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewDaemonSetV1SpecSelectorOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DaemonSetV1SpecSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonSetV1SpecSelectorOutputReference_Override(d DaemonSetV1SpecSelecto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

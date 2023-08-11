@@ -278,7 +278,7 @@ func NewDataOktaAppGroupAssignments(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataOktaAppGroupAssignments{}
 
 	_jsii_.Create(
-		"okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
+		"@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -291,7 +291,7 @@ func NewDataOktaAppGroupAssignments_Override(d DataOktaAppGroupAssignments, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
+		"@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -380,7 +380,7 @@ func DataOktaAppGroupAssignments_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
+		"@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -399,7 +399,7 @@ func DataOktaAppGroupAssignments_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
+		"@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -418,7 +418,7 @@ func DataOktaAppGroupAssignments_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
+		"@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -431,7 +431,7 @@ func DataOktaAppGroupAssignments_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
+		"@cdktf/provider-okta.dataOktaAppGroupAssignments.DataOktaAppGroupAssignments",
 		"tfResourceType",
 		&returns,
 	)

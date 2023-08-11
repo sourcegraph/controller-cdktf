@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecInitContainerLifecycleList(terraformResource cdktf.
 	j := jsiiProxy_DataKubernetesPodSpecInitContainerLifecycleList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLifecycleList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLifecycleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecInitContainerLifecycleList_Override(d DataKubernete
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLifecycleList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLifecycleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

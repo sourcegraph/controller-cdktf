@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRegionDiskIamMember.ComputeRegionDiskIamMember",
+		"@cdktf/provider-google.computeRegionDiskIamMember.ComputeRegionDiskIamMember",
 		reflect.TypeOf((*ComputeRegionDiskIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberCondition",
+		"@cdktf/provider-google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberCondition",
 		reflect.TypeOf((*ComputeRegionDiskIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberConditionOutputReference",
 		reflect.TypeOf((*ComputeRegionDiskIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberConfig",
+		"@cdktf/provider-google.computeRegionDiskIamMember.ComputeRegionDiskIamMemberConfig",
 		reflect.TypeOf((*ComputeRegionDiskIamMemberConfig)(nil)).Elem(),
 	)
 }

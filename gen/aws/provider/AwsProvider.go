@@ -934,7 +934,7 @@ func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderC
 	j := jsiiProxy_AwsProvider{}
 
 	_jsii_.Create(
-		"aws.provider.AwsProvider",
+		"@cdktf/provider-aws.provider.AwsProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -947,7 +947,7 @@ func NewAwsProvider_Override(a AwsProvider, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.provider.AwsProvider",
+		"@cdktf/provider-aws.provider.AwsProvider",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1277,7 +1277,7 @@ func AwsProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.provider.AwsProvider",
+		"@cdktf/provider-aws.provider.AwsProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1296,7 +1296,7 @@ func AwsProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.provider.AwsProvider",
+		"@cdktf/provider-aws.provider.AwsProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1315,7 +1315,7 @@ func AwsProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.provider.AwsProvider",
+		"@cdktf/provider-aws.provider.AwsProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -1328,7 +1328,7 @@ func AwsProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.provider.AwsProvider",
+		"@cdktf/provider-aws.provider.AwsProvider",
 		"tfResourceType",
 		&returns,
 	)

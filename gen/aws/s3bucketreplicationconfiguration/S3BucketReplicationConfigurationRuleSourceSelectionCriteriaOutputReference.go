@@ -204,7 +204,7 @@ func NewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReferen
 	j := jsiiProxy_S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference",
+		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference",
+		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleSourceSelectionCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

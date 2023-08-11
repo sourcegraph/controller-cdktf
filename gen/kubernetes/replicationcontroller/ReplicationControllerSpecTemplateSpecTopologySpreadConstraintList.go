@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintList(terraf
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecTopologySpreadConstraintList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

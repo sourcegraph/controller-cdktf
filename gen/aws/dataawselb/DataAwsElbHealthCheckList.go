@@ -104,7 +104,7 @@ func NewDataAwsElbHealthCheckList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_DataAwsElbHealthCheckList{}
 
 	_jsii_.Create(
-		"aws.dataAwsElb.DataAwsElbHealthCheckList",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbHealthCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsElbHealthCheckList_Override(d DataAwsElbHealthCheckList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElb.DataAwsElbHealthCheckList",
+		"@cdktf/provider-aws.dataAwsElb.DataAwsElbHealthCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -204,7 +204,7 @@ func NewGoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference(t
 	j := jsiiProxy_GoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskResourcePolicyAttachment.GoogleComputeRegionDiskResourcePolicyAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceBootDiskInitializeParamsList(terraformResource 
 	j := jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceBootDiskInitializeParamsList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceBootDiskInitializeParamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceBootDiskInitializeParamsList_Override(d DataGoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceBootDiskInitializeParamsList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceBootDiskInitializeParamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

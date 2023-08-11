@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.userFactorQuestion.UserFactorQuestion",
+		"@cdktf/provider-okta.userFactorQuestion.UserFactorQuestion",
 		reflect.TypeOf((*UserFactorQuestion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.userFactorQuestion.UserFactorQuestionConfig",
+		"@cdktf/provider-okta.userFactorQuestion.UserFactorQuestionConfig",
 		reflect.TypeOf((*UserFactorQuestionConfig)(nil)).Elem(),
 	)
 }

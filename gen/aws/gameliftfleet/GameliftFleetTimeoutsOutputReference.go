@@ -204,7 +204,7 @@ func NewGameliftFleetTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GameliftFleetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetTimeoutsOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGameliftFleetTimeoutsOutputReference_Override(g GameliftFleetTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetTimeoutsOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

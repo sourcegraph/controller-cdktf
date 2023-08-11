@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
+		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackages",
 		reflect.TypeOf((*DataAwsInspectorRulesPackages)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -54,7 +54,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig",
+		"@cdktf/provider-aws.dataAwsInspectorRulesPackages.DataAwsInspectorRulesPackagesConfig",
 		reflect.TypeOf((*DataAwsInspectorRulesPackagesConfig)(nil)).Elem(),
 	)
 }

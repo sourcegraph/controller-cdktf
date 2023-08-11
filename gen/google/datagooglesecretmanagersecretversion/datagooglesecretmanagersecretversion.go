@@ -394,7 +394,7 @@ func NewDataGoogleSecretManagerSecretVersion(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleSecretManagerSecretVersion{}
 
 	_jsii_.Create(
-		"google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -407,7 +407,7 @@ func NewDataGoogleSecretManagerSecretVersion_Override(d DataGoogleSecretManagerS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -529,7 +529,7 @@ func DataGoogleSecretManagerSecretVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataGoogleSecretManagerSecretVersion_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataGoogleSecretManagerSecretVersion_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func DataGoogleSecretManagerSecretVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
 		"tfResourceType",
 		&returns,
 	)

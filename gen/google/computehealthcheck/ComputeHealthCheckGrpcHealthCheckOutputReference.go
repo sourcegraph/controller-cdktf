@@ -252,7 +252,7 @@ func NewComputeHealthCheckGrpcHealthCheckOutputReference(terraformResource cdktf
 	j := jsiiProxy_ComputeHealthCheckGrpcHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"google.computeHealthCheck.ComputeHealthCheckGrpcHealthCheckOutputReference",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckGrpcHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewComputeHealthCheckGrpcHealthCheckOutputReference_Override(c ComputeHealt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeHealthCheck.ComputeHealthCheckGrpcHealthCheckOutputReference",
+		"@cdktf/provider-google.computeHealthCheck.ComputeHealthCheckGrpcHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

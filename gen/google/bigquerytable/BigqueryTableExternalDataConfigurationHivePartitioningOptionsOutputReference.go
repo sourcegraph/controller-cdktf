@@ -228,7 +228,7 @@ func NewBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputRefer
 	j := jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

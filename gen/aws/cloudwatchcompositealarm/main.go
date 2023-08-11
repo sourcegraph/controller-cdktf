@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
+		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarm",
 		reflect.TypeOf((*CloudwatchCompositeAlarm)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionsEnabled", GoGetter: "ActionsEnabled"},
@@ -81,7 +81,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarmConfig",
+		"@cdktf/provider-aws.cloudwatchCompositeAlarm.CloudwatchCompositeAlarmConfig",
 		reflect.TypeOf((*CloudwatchCompositeAlarmConfig)(nil)).Elem(),
 	)
 }

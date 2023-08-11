@@ -116,7 +116,7 @@ func NewLoggingProjectSinkExclusionsList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_LoggingProjectSinkExclusionsList{}
 
 	_jsii_.Create(
-		"google.loggingProjectSink.LoggingProjectSinkExclusionsList",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkExclusionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoggingProjectSinkExclusionsList_Override(l LoggingProjectSinkExclusions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingProjectSink.LoggingProjectSinkExclusionsList",
+		"@cdktf/provider-google.loggingProjectSink.LoggingProjectSinkExclusionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

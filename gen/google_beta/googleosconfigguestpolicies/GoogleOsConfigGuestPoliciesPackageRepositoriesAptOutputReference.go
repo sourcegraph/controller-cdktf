@@ -273,7 +273,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference(terrafo
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
 		reflect.TypeOf((*ApiGatewayDocumentationPart)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartConfig",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartConfig",
 		reflect.TypeOf((*ApiGatewayDocumentationPartConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocation",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocation",
 		reflect.TypeOf((*ApiGatewayDocumentationPartLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocationOutputReference",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPartLocationOutputReference",
 		reflect.TypeOf((*ApiGatewayDocumentationPartLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

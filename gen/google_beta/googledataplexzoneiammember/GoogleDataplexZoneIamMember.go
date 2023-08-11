@@ -471,7 +471,7 @@ func NewGoogleDataplexZoneIamMember(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleDataplexZoneIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
+		"@cdktf/provider-google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewGoogleDataplexZoneIamMember_Override(g GoogleDataplexZoneIamMember, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
+		"@cdktf/provider-google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -661,7 +661,7 @@ func GoogleDataplexZoneIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
+		"@cdktf/provider-google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GoogleDataplexZoneIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
+		"@cdktf/provider-google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func GoogleDataplexZoneIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
+		"@cdktf/provider-google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GoogleDataplexZoneIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
+		"@cdktf/provider-google-beta.googleDataplexZoneIamMember.GoogleDataplexZoneIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -180,7 +180,7 @@ func NewDataAwsKeyPairTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsKeyPairTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsKeyPair.DataAwsKeyPairTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsKeyPairTimeoutsOutputReference_Override(d DataAwsKeyPairTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKeyPair.DataAwsKeyPairTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -189,7 +189,7 @@ func NewDataAwsInstancePrivateDnsNameOptionsOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsInstancePrivateDnsNameOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsInstancePrivateDnsNameOptionsOutputReference_Override(d DataAwsIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstancePrivateDnsNameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

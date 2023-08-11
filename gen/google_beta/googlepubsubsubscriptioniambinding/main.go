@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBinding",
 		reflect.TypeOf((*GooglePubsubSubscriptionIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingCondition",
 		reflect.TypeOf((*GooglePubsubSubscriptionIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConditionOutputReference",
 		reflect.TypeOf((*GooglePubsubSubscriptionIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConfig",
 		reflect.TypeOf((*GooglePubsubSubscriptionIamBindingConfig)(nil)).Elem(),
 	)
 }

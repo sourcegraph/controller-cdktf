@@ -180,7 +180,7 @@ func NewLightsailContainerServicePrivateRegistryAccessOutputReference(terraformR
 	j := jsiiProxy_LightsailContainerServicePrivateRegistryAccessOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLightsailContainerServicePrivateRegistryAccessOutputReference_Override(l
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePrivateRegistryAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -203,7 +203,7 @@ func NewPodV1SpecDnsConfigOptionOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_PodV1SpecDnsConfigOptionOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecDnsConfigOptionOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecDnsConfigOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPodV1SpecDnsConfigOptionOutputReference_Override(p PodV1SpecDnsConfigOpt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecDnsConfigOptionOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecDnsConfigOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

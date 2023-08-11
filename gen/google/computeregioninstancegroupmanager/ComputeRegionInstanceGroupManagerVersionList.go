@@ -116,7 +116,7 @@ func NewComputeRegionInstanceGroupManagerVersionList(terraformResource cdktf.IIn
 	j := jsiiProxy_ComputeRegionInstanceGroupManagerVersionList{}
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeRegionInstanceGroupManagerVersionList_Override(c ComputeRegionIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionList",
+		"@cdktf/provider-google.computeRegionInstanceGroupManager.ComputeRegionInstanceGroupManagerVersionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

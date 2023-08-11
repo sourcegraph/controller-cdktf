@@ -178,7 +178,7 @@ func NewDataAwsKendraIndexCapacityUnitsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsKendraIndexCapacityUnitsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexCapacityUnitsOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexCapacityUnitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsKendraIndexCapacityUnitsOutputReference_Override(d DataAwsKendraI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexCapacityUnitsOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexCapacityUnitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

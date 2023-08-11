@@ -167,7 +167,7 @@ func NewComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReferen
 	j := jsiiProxy_ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

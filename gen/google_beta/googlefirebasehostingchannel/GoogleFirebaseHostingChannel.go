@@ -473,7 +473,7 @@ func NewGoogleFirebaseHostingChannel(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleFirebaseHostingChannel{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewGoogleFirebaseHostingChannel_Override(g GoogleFirebaseHostingChannel, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -663,7 +663,7 @@ func GoogleFirebaseHostingChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func GoogleFirebaseHostingChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func GoogleFirebaseHostingChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GoogleFirebaseHostingChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
+		"@cdktf/provider-google-beta.googleFirebaseHostingChannel.GoogleFirebaseHostingChannel",
 		"tfResourceType",
 		&returns,
 	)

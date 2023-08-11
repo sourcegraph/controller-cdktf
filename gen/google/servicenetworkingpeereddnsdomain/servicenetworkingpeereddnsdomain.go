@@ -448,7 +448,7 @@ func NewServiceNetworkingPeeredDnsDomain(scope constructs.Construct, id *string,
 	j := jsiiProxy_ServiceNetworkingPeeredDnsDomain{}
 
 	_jsii_.Create(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewServiceNetworkingPeeredDnsDomain_Override(s ServiceNetworkingPeeredDnsDo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -627,7 +627,7 @@ func ServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ServiceNetworkingPeeredDnsDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ServiceNetworkingPeeredDnsDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ServiceNetworkingPeeredDnsDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain",
 		"tfResourceType",
 		&returns,
 	)

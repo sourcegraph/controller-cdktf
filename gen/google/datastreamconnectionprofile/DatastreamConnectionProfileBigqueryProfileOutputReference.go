@@ -156,7 +156,7 @@ func NewDatastreamConnectionProfileBigqueryProfileOutputReference(terraformResou
 	j := jsiiProxy_DatastreamConnectionProfileBigqueryProfileOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDatastreamConnectionProfileBigqueryProfileOutputReference_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfileOutputReference",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

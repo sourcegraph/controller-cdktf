@@ -286,7 +286,7 @@ func NewGoogleMonitoringAlertPolicyConditionsOutputReference(terraformResource c
 	j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -298,7 +298,7 @@ func NewGoogleMonitoringAlertPolicyConditionsOutputReference_Override(g GoogleMo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

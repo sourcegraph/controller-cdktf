@@ -203,7 +203,7 @@ func NewStorageTransferJobTransferSpecGcsDataSinkOutputReference(terraformResour
 	j := jsiiProxy_StorageTransferJobTransferSpecGcsDataSinkOutputReference{}
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSinkOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSinkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewStorageTransferJobTransferSpecGcsDataSinkOutputReference_Override(s Stor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSinkOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSinkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

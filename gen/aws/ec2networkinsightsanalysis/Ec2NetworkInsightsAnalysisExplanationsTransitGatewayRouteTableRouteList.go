@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList(
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

@@ -116,7 +116,7 @@ func NewMskServerlessClusterVpcConfigList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_MskServerlessClusterVpcConfigList{}
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessClusterVpcConfigList",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMskServerlessClusterVpcConfigList_Override(m MskServerlessClusterVpcConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskServerlessCluster.MskServerlessClusterVpcConfigList",
+		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

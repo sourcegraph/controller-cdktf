@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerCluster.GameServicesGameServerCluster",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerCluster",
 		reflect.TypeOf((*GameServicesGameServerCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,19 +79,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerCluster.GameServicesGameServerClusterConfig",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerClusterConfig",
 		reflect.TypeOf((*GameServicesGameServerClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerCluster.GameServicesGameServerClusterConnectionInfo",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerClusterConnectionInfo",
 		reflect.TypeOf((*GameServicesGameServerClusterConnectionInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerCluster.GameServicesGameServerClusterConnectionInfoGkeClusterReference",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerClusterConnectionInfoGkeClusterReference",
 		reflect.TypeOf((*GameServicesGameServerClusterConnectionInfoGkeClusterReference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerCluster.GameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference",
 		reflect.TypeOf((*GameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerCluster.GameServicesGameServerClusterConnectionInfoOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerClusterConnectionInfoOutputReference",
 		reflect.TypeOf((*GameServicesGameServerClusterConnectionInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -162,11 +162,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gameServicesGameServerCluster.GameServicesGameServerClusterTimeouts",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerClusterTimeouts",
 		reflect.TypeOf((*GameServicesGameServerClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gameServicesGameServerCluster.GameServicesGameServerClusterTimeoutsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerCluster.GameServicesGameServerClusterTimeoutsOutputReference",
 		reflect.TypeOf((*GameServicesGameServerClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -386,7 +386,7 @@ func NewDataAwsEc2SpotPrice(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataAwsEc2SpotPrice{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,7 +399,7 @@ func NewDataAwsEc2SpotPrice_Override(d DataAwsEc2SpotPrice, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -510,7 +510,7 @@ func DataAwsEc2SpotPrice_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func DataAwsEc2SpotPrice_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataAwsEc2SpotPrice_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func DataAwsEc2SpotPrice_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
+		"@cdktf/provider-aws.dataAwsEc2SpotPrice.DataAwsEc2SpotPrice",
 		"tfResourceType",
 		&returns,
 	)

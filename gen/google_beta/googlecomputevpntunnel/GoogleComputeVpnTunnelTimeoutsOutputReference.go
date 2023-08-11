@@ -228,7 +228,7 @@ func NewGoogleComputeVpnTunnelTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleComputeVpnTunnelTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeVpnTunnelTimeoutsOutputReference_Override(g GoogleComputeVp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

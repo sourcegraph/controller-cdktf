@@ -116,7 +116,7 @@ func NewGoogleComputeUrlMapHeaderActionResponseHeadersToAddList(terraformResourc
 	j := jsiiProxy_GoogleComputeUrlMapHeaderActionResponseHeadersToAddList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeUrlMapHeaderActionResponseHeadersToAddList_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapHeaderActionResponseHeadersToAddList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

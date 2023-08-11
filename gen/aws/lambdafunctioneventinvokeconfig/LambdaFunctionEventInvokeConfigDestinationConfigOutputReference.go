@@ -204,7 +204,7 @@ func NewLambdaFunctionEventInvokeConfigDestinationConfigOutputReference(terrafor
 	j := jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLambdaFunctionEventInvokeConfigDestinationConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

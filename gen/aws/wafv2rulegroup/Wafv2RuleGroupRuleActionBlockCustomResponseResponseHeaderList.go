@@ -116,7 +116,7 @@ func NewWafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList(terraformR
 	j := jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList{}
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList_Override(w
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList",
+		"@cdktf/provider-aws.wafv2RuleGroup.Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

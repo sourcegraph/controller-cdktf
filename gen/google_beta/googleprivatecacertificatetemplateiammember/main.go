@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMember",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMember",
 		reflect.TypeOf((*GooglePrivatecaCertificateTemplateIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberCondition",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberCondition",
 		reflect.TypeOf((*GooglePrivatecaCertificateTemplateIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberConditionOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateTemplateIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberConfig",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberConfig",
 		reflect.TypeOf((*GooglePrivatecaCertificateTemplateIamMemberConfig)(nil)).Elem(),
 	)
 }

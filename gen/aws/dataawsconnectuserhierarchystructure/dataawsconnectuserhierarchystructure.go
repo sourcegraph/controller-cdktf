@@ -302,7 +302,7 @@ func NewDataAwsConnectUserHierarchyStructure(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsConnectUserHierarchyStructure{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsConnectUserHierarchyStructure_Override(d DataAwsConnectUserHierar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsConnectUserHierarchyStructure_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsConnectUserHierarchyStructure_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsConnectUserHierarchyStructure_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsConnectUserHierarchyStructure_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
+		"@cdktf/provider-aws.dataAwsConnectUserHierarchyStructure.DataAwsConnectUserHierarchyStructure",
 		"tfResourceType",
 		&returns,
 	)

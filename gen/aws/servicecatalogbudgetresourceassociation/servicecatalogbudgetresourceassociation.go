@@ -366,7 +366,7 @@ func NewServicecatalogBudgetResourceAssociation(scope constructs.Construct, id *
 	j := jsiiProxy_ServicecatalogBudgetResourceAssociation{}
 
 	_jsii_.Create(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewServicecatalogBudgetResourceAssociation_Override(s ServicecatalogBudgetR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -512,7 +512,7 @@ func ServicecatalogBudgetResourceAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func ServicecatalogBudgetResourceAssociation_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func ServicecatalogBudgetResourceAssociation_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func ServicecatalogBudgetResourceAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogBudgetResourceAssociation.ServicecatalogBudgetResourceAssociation",
 		"tfResourceType",
 		&returns,
 	)

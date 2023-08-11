@@ -423,7 +423,7 @@ func NewGoogleSccSourceIamBinding(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleSccSourceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
+		"@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewGoogleSccSourceIamBinding_Override(g GoogleSccSourceIamBinding, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
+		"@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -591,7 +591,7 @@ func GoogleSccSourceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
+		"@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func GoogleSccSourceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
+		"@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func GoogleSccSourceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
+		"@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func GoogleSccSourceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
+		"@cdktf/provider-google-beta.googleSccSourceIamBinding.GoogleSccSourceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -227,7 +227,7 @@ func NewGoogleCloudRunDomainMappingSpecOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpecOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleCloudRunDomainMappingSpecOutputReference_Override(g GoogleCloudRun
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpecOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

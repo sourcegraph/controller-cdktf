@@ -104,7 +104,7 @@ func NewDataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlList(ter
 	j := jsiiProxy_DataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlList",
+		"@cdktf/provider-google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlList",
+		"@cdktf/provider-google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWebServerNetworkAccessControlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

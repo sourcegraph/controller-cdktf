@@ -104,7 +104,7 @@ func NewDataAwsEc2ClientVpnEndpointConnectionLogOptionsList(terraformResource cd
 	j := jsiiProxy_DataAwsEc2ClientVpnEndpointConnectionLogOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsList",
+		"@cdktf/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEc2ClientVpnEndpointConnectionLogOptionsList_Override(d DataAwsEc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsList",
+		"@cdktf/provider-aws.dataAwsEc2ClientVpnEndpoint.DataAwsEc2ClientVpnEndpointConnectionLogOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

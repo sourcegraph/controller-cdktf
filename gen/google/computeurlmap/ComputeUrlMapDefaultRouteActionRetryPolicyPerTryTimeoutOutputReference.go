@@ -204,7 +204,7 @@ func NewComputeUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference(t
 	j := jsiiProxy_ComputeUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -581,7 +581,7 @@ func NewComputeNetwork(scope constructs.Construct, id *string, config *ComputeNe
 	j := jsiiProxy_ComputeNetwork{}
 
 	_jsii_.Create(
-		"google.computeNetwork.ComputeNetwork",
+		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -594,7 +594,7 @@ func NewComputeNetwork_Override(c ComputeNetwork, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNetwork.ComputeNetwork",
+		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -815,7 +815,7 @@ func ComputeNetwork_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetwork.ComputeNetwork",
+		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -834,7 +834,7 @@ func ComputeNetwork_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetwork.ComputeNetwork",
+		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -853,7 +853,7 @@ func ComputeNetwork_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeNetwork.ComputeNetwork",
+		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +866,7 @@ func ComputeNetwork_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeNetwork.ComputeNetwork",
+		"@cdktf/provider-google.computeNetwork.ComputeNetwork",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewCloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference(
 	j := jsiiProxy_CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -426,7 +426,7 @@ func NewStorageTransferAgentPool(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_StorageTransferAgentPool{}
 
 	_jsii_.Create(
-		"google.storageTransferAgentPool.StorageTransferAgentPool",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewStorageTransferAgentPool_Override(s StorageTransferAgentPool, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferAgentPool.StorageTransferAgentPool",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPool",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -583,7 +583,7 @@ func StorageTransferAgentPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageTransferAgentPool.StorageTransferAgentPool",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func StorageTransferAgentPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageTransferAgentPool.StorageTransferAgentPool",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func StorageTransferAgentPool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageTransferAgentPool.StorageTransferAgentPool",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func StorageTransferAgentPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageTransferAgentPool.StorageTransferAgentPool",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPool",
 		"tfResourceType",
 		&returns,
 	)

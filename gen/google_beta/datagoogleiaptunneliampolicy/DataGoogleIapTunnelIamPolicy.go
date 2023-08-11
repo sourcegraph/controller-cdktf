@@ -314,7 +314,7 @@ func NewDataGoogleIapTunnelIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataGoogleIapTunnelIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -327,7 +327,7 @@ func NewDataGoogleIapTunnelIamPolicy_Override(d DataGoogleIapTunnelIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -427,7 +427,7 @@ func DataGoogleIapTunnelIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -446,7 +446,7 @@ func DataGoogleIapTunnelIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -465,7 +465,7 @@ func DataGoogleIapTunnelIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataGoogleIapTunnelIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

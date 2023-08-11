@@ -116,7 +116,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionList(t
 	j := jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionList{}
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleRuleOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

@@ -448,7 +448,7 @@ func NewGooglePrivatecaCaPoolIamBinding(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GooglePrivatecaCaPoolIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGooglePrivatecaCaPoolIamBinding_Override(g GooglePrivatecaCaPoolIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GooglePrivatecaCaPoolIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GooglePrivatecaCaPoolIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GooglePrivatecaCaPoolIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GooglePrivatecaCaPoolIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPoolIamBinding.GooglePrivatecaCaPoolIamBinding",
 		"tfResourceType",
 		&returns,
 	)

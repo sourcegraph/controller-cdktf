@@ -529,7 +529,7 @@ func NewDbProxyEndpoint(scope constructs.Construct, id *string, config *DbProxyE
 	j := jsiiProxy_DbProxyEndpoint{}
 
 	_jsii_.Create(
-		"aws.dbProxyEndpoint.DbProxyEndpoint",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -542,7 +542,7 @@ func NewDbProxyEndpoint_Override(d DbProxyEndpoint, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbProxyEndpoint.DbProxyEndpoint",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpoint",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -730,7 +730,7 @@ func DbProxyEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbProxyEndpoint.DbProxyEndpoint",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func DbProxyEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbProxyEndpoint.DbProxyEndpoint",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -768,7 +768,7 @@ func DbProxyEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbProxyEndpoint.DbProxyEndpoint",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func DbProxyEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dbProxyEndpoint.DbProxyEndpoint",
+		"@cdktf/provider-aws.dbProxyEndpoint.DbProxyEndpoint",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecTolerationList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DeploymentSpecTemplateSpecTolerationList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecTolerationList_Override(d DeploymentSpecTempla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecTolerationList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

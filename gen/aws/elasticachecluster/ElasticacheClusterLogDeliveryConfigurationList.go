@@ -116,7 +116,7 @@ func NewElasticacheClusterLogDeliveryConfigurationList(terraformResource cdktf.I
 	j := jsiiProxy_ElasticacheClusterLogDeliveryConfigurationList{}
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationList",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewElasticacheClusterLogDeliveryConfigurationList_Override(e ElasticacheClu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationList",
+		"@cdktf/provider-aws.elasticacheCluster.ElasticacheClusterLogDeliveryConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

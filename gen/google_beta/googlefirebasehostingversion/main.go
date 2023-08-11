@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersion",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersion",
 		reflect.TypeOf((*GoogleFirebaseHostingVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfig",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfig",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigA",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigA",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigAOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigAOutputReference",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,11 +115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRedirects",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRedirects",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigRedirects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRedirectsList",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRedirectsList",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigRedirectsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -140,7 +140,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRedirectsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRedirectsOutputReference",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigRedirectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -182,11 +182,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewrites",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewrites",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigRewrites)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesList",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesList",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigRewritesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -207,7 +207,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesOutputReference",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigRewritesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -252,11 +252,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesRun",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesRun",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigRewritesRun)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesRunOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionConfigRewritesRunOutputReference",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionConfigRewritesRunOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -293,11 +293,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionTimeouts",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionTimeouts",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseHostingVersion.GoogleFirebaseHostingVersionTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFirebaseHostingVersionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -299,7 +299,7 @@ func NewCloudwatchEventTargetRedshiftTargetOutputReference(terraformResource cdk
 	j := jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewCloudwatchEventTargetRedshiftTargetOutputReference_Override(c Cloudwatch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

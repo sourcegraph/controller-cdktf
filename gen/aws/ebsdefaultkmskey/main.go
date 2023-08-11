@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ebsDefaultKmsKey.EbsDefaultKmsKey",
+		"@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKey",
 		reflect.TypeOf((*EbsDefaultKmsKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig",
+		"@cdktf/provider-aws.ebsDefaultKmsKey.EbsDefaultKmsKeyConfig",
 		reflect.TypeOf((*EbsDefaultKmsKeyConfig)(nil)).Elem(),
 	)
 }

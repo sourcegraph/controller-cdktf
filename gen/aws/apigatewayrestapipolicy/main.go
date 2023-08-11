@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
+		"@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
 		reflect.TypeOf((*ApiGatewayRestApiPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig",
+		"@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicyConfig",
 		reflect.TypeOf((*ApiGatewayRestApiPolicyConfig)(nil)).Elem(),
 	)
 }

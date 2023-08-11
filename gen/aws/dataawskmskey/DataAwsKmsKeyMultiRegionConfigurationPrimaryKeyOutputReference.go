@@ -178,7 +178,7 @@ func NewDataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference(terraform
 	j := jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

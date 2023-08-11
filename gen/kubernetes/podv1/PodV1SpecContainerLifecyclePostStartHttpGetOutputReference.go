@@ -276,7 +276,7 @@ func NewPodV1SpecContainerLifecyclePostStartHttpGetOutputReference(terraformReso
 	j := jsiiProxy_PodV1SpecContainerLifecyclePostStartHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerLifecyclePostStartHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLifecyclePostStartHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewPodV1SpecContainerLifecyclePostStartHttpGetOutputReference_Override(p Po
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerLifecyclePostStartHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLifecyclePostStartHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

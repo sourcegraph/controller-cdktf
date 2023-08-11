@@ -116,7 +116,7 @@ func NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList(terr
 	j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMacie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketCriteriaExcludesAndList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

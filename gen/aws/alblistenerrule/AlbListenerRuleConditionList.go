@@ -116,7 +116,7 @@ func NewAlbListenerRuleConditionList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AlbListenerRuleConditionList{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionList",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAlbListenerRuleConditionList_Override(a AlbListenerRuleConditionList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionList",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

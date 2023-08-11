@@ -116,7 +116,7 @@ func NewTransferWorkflowStepsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_TransferWorkflowStepsList{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsList",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTransferWorkflowStepsList_Override(t TransferWorkflowStepsList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsList",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

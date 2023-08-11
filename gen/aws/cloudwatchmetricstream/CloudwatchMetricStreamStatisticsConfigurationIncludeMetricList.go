@@ -116,7 +116,7 @@ func NewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricList(terraform
 	j := jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList{}
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

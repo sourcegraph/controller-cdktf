@@ -302,7 +302,7 @@ func NewDataOktaAuthServerScopes(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataOktaAuthServerScopes{}
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataOktaAuthServerScopes_Override(d DataOktaAuthServerScopes, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataOktaAuthServerScopes_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataOktaAuthServerScopes_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataOktaAuthServerScopes_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataOktaAuthServerScopes_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopes",
 		"tfResourceType",
 		&returns,
 	)

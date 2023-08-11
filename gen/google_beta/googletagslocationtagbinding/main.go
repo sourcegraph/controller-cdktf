@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBinding",
 		reflect.TypeOf((*GoogleTagsLocationTagBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBindingConfig",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBindingConfig",
 		reflect.TypeOf((*GoogleTagsLocationTagBindingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBindingTimeouts",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBindingTimeouts",
 		reflect.TypeOf((*GoogleTagsLocationTagBindingTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBindingTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleTagsLocationTagBinding.GoogleTagsLocationTagBindingTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleTagsLocationTagBindingTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

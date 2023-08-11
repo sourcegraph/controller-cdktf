@@ -415,7 +415,7 @@ func NewDbInstanceAutomatedBackupsReplication(scope constructs.Construct, id *st
 	j := jsiiProxy_DbInstanceAutomatedBackupsReplication{}
 
 	_jsii_.Create(
-		"aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
+		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewDbInstanceAutomatedBackupsReplication_Override(d DbInstanceAutomatedBack
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
+		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -583,7 +583,7 @@ func DbInstanceAutomatedBackupsReplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
+		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func DbInstanceAutomatedBackupsReplication_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
+		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func DbInstanceAutomatedBackupsReplication_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
+		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func DbInstanceAutomatedBackupsReplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
+		"@cdktf/provider-aws.dbInstanceAutomatedBackupsReplication.DbInstanceAutomatedBackupsReplication",
 		"tfResourceType",
 		&returns,
 	)

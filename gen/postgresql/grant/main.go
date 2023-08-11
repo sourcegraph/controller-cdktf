@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"postgresql.grant.Grant",
+		"@cdktf/provider-postgresql.grant.Grant",
 		reflect.TypeOf((*Grant)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.grant.GrantConfig",
+		"@cdktf/provider-postgresql.grant.GrantConfig",
 		reflect.TypeOf((*GrantConfig)(nil)).Elem(),
 	)
 }

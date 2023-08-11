@@ -180,7 +180,7 @@ func NewComposerEnvironmentConfigRecoveryConfigOutputReference(terraformResource
 	j := jsiiProxy_ComposerEnvironmentConfigRecoveryConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewComposerEnvironmentConfigRecoveryConfigOutputReference_Override(c Compos
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigRecoveryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

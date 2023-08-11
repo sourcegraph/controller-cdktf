@@ -202,7 +202,7 @@ func NewConnectQuickConnectQuickConnectConfigQueueConfigOutputReference(terrafor
 	j := jsiiProxy_ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewConnectQuickConnectQuickConnectConfigQueueConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference",
+		"@cdktf/provider-aws.connectQuickConnect.ConnectQuickConnectQuickConnectConfigQueueConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

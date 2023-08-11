@@ -116,7 +116,7 @@ func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceList(terraformResource 
 	j := jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceList",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceList_Override(s SpotFle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceList",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -179,7 +179,7 @@ func NewDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputRefer
 	j := jsiiProxy_DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

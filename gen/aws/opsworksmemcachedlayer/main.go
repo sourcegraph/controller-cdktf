@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		reflect.TypeOf((*OpsworksMemcachedLayer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -133,15 +133,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfiguration",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfiguration",
 		reflect.TypeOf((*OpsworksMemcachedLayerCloudwatchConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreams",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreams",
 		reflect.TypeOf((*OpsworksMemcachedLayerCloudwatchConfigurationLogStreams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsList",
 		reflect.TypeOf((*OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -162,7 +162,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference",
 		reflect.TypeOf((*OpsworksMemcachedLayerCloudwatchConfigurationLogStreamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchCount", GoGetter: "BatchCount"},
@@ -225,7 +225,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerCloudwatchConfigurationOutputReference",
 		reflect.TypeOf((*OpsworksMemcachedLayerCloudwatchConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,15 +264,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerConfig",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerConfig",
 		reflect.TypeOf((*OpsworksMemcachedLayerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolume",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolume",
 		reflect.TypeOf((*OpsworksMemcachedLayerEbsVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeList",
 		reflect.TypeOf((*OpsworksMemcachedLayerEbsVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -293,7 +293,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerEbsVolumeOutputReference",
 		reflect.TypeOf((*OpsworksMemcachedLayerEbsVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -343,15 +343,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScaling",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScaling",
 		reflect.TypeOf((*OpsworksMemcachedLayerLoadBasedAutoScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingDownscaling",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingDownscaling",
 		reflect.TypeOf((*OpsworksMemcachedLayerLoadBasedAutoScalingDownscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingDownscalingOutputReference",
 		reflect.TypeOf((*OpsworksMemcachedLayerLoadBasedAutoScalingDownscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
@@ -404,7 +404,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference",
 		reflect.TypeOf((*OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -447,11 +447,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingUpscaling",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingUpscaling",
 		reflect.TypeOf((*OpsworksMemcachedLayerLoadBasedAutoScalingUpscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputReference",
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputReference",
 		reflect.TypeOf((*OpsworksMemcachedLayerLoadBasedAutoScalingUpscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},

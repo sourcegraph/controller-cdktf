@@ -228,7 +228,7 @@ func NewGlobalacceleratorAcceleratorAttributesOutputReference(terraformResource 
 	j := jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributesOutputReference",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGlobalacceleratorAcceleratorAttributesOutputReference_Override(g Globala
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributesOutputReference",
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAcceleratorAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -417,7 +417,7 @@ func NewDataAwsAppmeshVirtualService(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsAppmeshVirtualService{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewDataAwsAppmeshVirtualService_Override(d DataAwsAppmeshVirtualService, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -563,7 +563,7 @@ func DataAwsAppmeshVirtualService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func DataAwsAppmeshVirtualService_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DataAwsAppmeshVirtualService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func DataAwsAppmeshVirtualService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
+		"@cdktf/provider-aws.dataAwsAppmeshVirtualService.DataAwsAppmeshVirtualService",
 		"tfResourceType",
 		&returns,
 	)

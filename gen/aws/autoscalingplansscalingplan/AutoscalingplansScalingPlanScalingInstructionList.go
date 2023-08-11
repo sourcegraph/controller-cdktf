@@ -116,7 +116,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionList(terraformResource cdkt
 	j := jsiiProxy_AutoscalingplansScalingPlanScalingInstructionList{}
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionList",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionList_Override(a Autoscaling
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionList",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

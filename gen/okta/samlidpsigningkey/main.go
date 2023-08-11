@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.samlIdpSigningKey.SamlIdpSigningKey",
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKey",
 		reflect.TypeOf((*SamlIdpSigningKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.samlIdpSigningKey.SamlIdpSigningKeyConfig",
+		"@cdktf/provider-okta.samlIdpSigningKey.SamlIdpSigningKeyConfig",
 		reflect.TypeOf((*SamlIdpSigningKeyConfig)(nil)).Elem(),
 	)
 }

@@ -529,7 +529,7 @@ func NewComputeReservation(scope constructs.Construct, id *string, config *Compu
 	j := jsiiProxy_ComputeReservation{}
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservation",
+		"@cdktf/provider-google.computeReservation.ComputeReservation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -542,7 +542,7 @@ func NewComputeReservation_Override(c ComputeReservation, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeReservation.ComputeReservation",
+		"@cdktf/provider-google.computeReservation.ComputeReservation",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -708,7 +708,7 @@ func ComputeReservation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeReservation.ComputeReservation",
+		"@cdktf/provider-google.computeReservation.ComputeReservation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func ComputeReservation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeReservation.ComputeReservation",
+		"@cdktf/provider-google.computeReservation.ComputeReservation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func ComputeReservation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeReservation.ComputeReservation",
+		"@cdktf/provider-google.computeReservation.ComputeReservation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func ComputeReservation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeReservation.ComputeReservation",
+		"@cdktf/provider-google.computeReservation.ComputeReservation",
 		"tfResourceType",
 		&returns,
 	)

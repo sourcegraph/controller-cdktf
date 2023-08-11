@@ -202,7 +202,7 @@ func NewSpectrumApplicationDnsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_SpectrumApplicationDnsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSpectrumApplicationDnsOutputReference_Override(s SpectrumApplicationDnsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationDnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

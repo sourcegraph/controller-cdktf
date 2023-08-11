@@ -325,7 +325,7 @@ func NewDataOktaEmailTemplate(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataOktaEmailTemplate{}
 
 	_jsii_.Create(
-		"okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
+		"@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataOktaEmailTemplate_Override(d DataOktaEmailTemplate, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
+		"@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataOktaEmailTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
+		"@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataOktaEmailTemplate_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
+		"@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataOktaEmailTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
+		"@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataOktaEmailTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
+		"@cdktf/provider-okta.dataOktaEmailTemplate.DataOktaEmailTemplate",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputR
 	j := jsiiProxy_ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

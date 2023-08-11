@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicy",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicy",
 		reflect.TypeOf((*MonitoringAlertPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,15 +88,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategy",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategy",
 		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy",
 		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyNotificationChannelStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList",
 		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,11 +155,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimit",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimit",
 		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyNotificationRateLimit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,7 +194,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyAlertStrategyOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyAlertStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoClose", GoGetter: "AutoClose"},
@@ -237,19 +237,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditions",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditions",
 		reflect.TypeOf((*MonitoringAlertPolicyConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsent",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsent",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionAbsent)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregations",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregations",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionAbsentAggregations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsList",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionAbsentAggregationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -270,7 +270,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionAbsentAggregationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriod", GoGetter: "AlignmentPeriod"},
@@ -314,7 +314,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionAbsentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregations", GoGetter: "Aggregations"},
@@ -359,11 +359,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTrigger",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTrigger",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionAbsentTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionAbsentTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -401,11 +401,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLog",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLog",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionMatchedLog)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -442,11 +442,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -489,11 +489,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -531,15 +531,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThreshold",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThreshold",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThreshold)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregations",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregations",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdAggregations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregationsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregationsList",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdAggregationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -560,7 +560,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriod", GoGetter: "AlignmentPeriod"},
@@ -604,11 +604,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -629,7 +629,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alignmentPeriod", GoGetter: "AlignmentPeriod"},
@@ -673,11 +673,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptions",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptions",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdForecastOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -711,7 +711,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregations", GoGetter: "Aggregations"},
@@ -775,11 +775,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdTrigger",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdTrigger",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -817,7 +817,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsList",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -838,7 +838,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -889,15 +889,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConfig",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConfig",
 		reflect.TypeOf((*MonitoringAlertPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecord",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecord",
 		reflect.TypeOf((*MonitoringAlertPolicyCreationRecord)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecordList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecordList",
 		reflect.TypeOf((*MonitoringAlertPolicyCreationRecordList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -917,7 +917,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecordOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyCreationRecordOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyCreationRecordOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -951,11 +951,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentation",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentation",
 		reflect.TypeOf((*MonitoringAlertPolicyDocumentation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyDocumentationOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyDocumentationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -993,11 +993,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyTimeouts",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyTimeouts",
 		reflect.TypeOf((*MonitoringAlertPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*MonitoringAlertPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

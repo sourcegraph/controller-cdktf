@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet",
+		"@cdktf/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet",
 		reflect.TypeOf((*WafregionalRegexPatternSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalRegexPatternSet.WafregionalRegexPatternSetConfig",
+		"@cdktf/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSetConfig",
 		reflect.TypeOf((*WafregionalRegexPatternSetConfig)(nil)).Elem(),
 	)
 }

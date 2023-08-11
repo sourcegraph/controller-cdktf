@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
+		"@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpoint",
 		reflect.TypeOf((*TeamsProxyEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig",
+		"@cdktf/provider-cloudflare.teamsProxyEndpoint.TeamsProxyEndpointConfig",
 		reflect.TypeOf((*TeamsProxyEndpointConfig)(nil)).Elem(),
 	)
 }

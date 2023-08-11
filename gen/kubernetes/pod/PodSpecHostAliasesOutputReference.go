@@ -202,7 +202,7 @@ func NewPodSpecHostAliasesOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_PodSpecHostAliasesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecHostAliasesOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecHostAliasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewPodSpecHostAliasesOutputReference_Override(p PodSpecHostAliasesOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecHostAliasesOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecHostAliasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

@@ -204,7 +204,7 @@ func NewSesv2DedicatedIpAssignmentTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_Sesv2DedicatedIpAssignmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSesv2DedicatedIpAssignmentTimeoutsOutputReference_Override(s Sesv2Dedica
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.sesv2DedicatedIpAssignment.Sesv2DedicatedIpAssignmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

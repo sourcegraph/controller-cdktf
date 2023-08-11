@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.addressMap.AddressMap",
+		"@cdktf/provider-cloudflare.addressMap.AddressMap",
 		reflect.TypeOf((*AddressMap)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.addressMap.AddressMapConfig",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapConfig",
 		reflect.TypeOf((*AddressMapConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.addressMap.AddressMapIps",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapIps",
 		reflect.TypeOf((*AddressMapIps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.addressMap.AddressMapIpsList",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapIpsList",
 		reflect.TypeOf((*AddressMapIpsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.addressMap.AddressMapIpsOutputReference",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapIpsOutputReference",
 		reflect.TypeOf((*AddressMapIpsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,11 +138,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.addressMap.AddressMapMemberships",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapMemberships",
 		reflect.TypeOf((*AddressMapMemberships)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.addressMap.AddressMapMembershipsList",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsList",
 		reflect.TypeOf((*AddressMapMembershipsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.addressMap.AddressMapMembershipsOutputReference",
+		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsOutputReference",
 		reflect.TypeOf((*AddressMapMembershipsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canDelete", GoGetter: "CanDelete"},

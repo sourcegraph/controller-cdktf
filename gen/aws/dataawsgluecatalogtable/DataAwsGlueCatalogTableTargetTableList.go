@@ -104,7 +104,7 @@ func NewDataAwsGlueCatalogTableTargetTableList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsGlueCatalogTableTargetTableList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableTargetTableList",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableTargetTableList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsGlueCatalogTableTargetTableList_Override(d DataAwsGlueCatalogTabl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableTargetTableList",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableTargetTableList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

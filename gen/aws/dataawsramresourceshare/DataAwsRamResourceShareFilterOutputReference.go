@@ -202,7 +202,7 @@ func NewDataAwsRamResourceShareFilterOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsRamResourceShareFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsRamResourceShareFilterOutputReference_Override(d DataAwsRamResour
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRamResourceShare.DataAwsRamResourceShareFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

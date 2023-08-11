@@ -754,7 +754,7 @@ func NewGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleSqlDatabaseInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -767,7 +767,7 @@ func NewGoogleSqlDatabaseInstance_Override(g GoogleSqlDatabaseInstance, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -988,7 +988,7 @@ func GoogleSqlDatabaseInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1007,7 +1007,7 @@ func GoogleSqlDatabaseInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1026,7 +1026,7 @@ func GoogleSqlDatabaseInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1039,7 +1039,7 @@ func GoogleSqlDatabaseInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstance",
 		"tfResourceType",
 		&returns,
 	)

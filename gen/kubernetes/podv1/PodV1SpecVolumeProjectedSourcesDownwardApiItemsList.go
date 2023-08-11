@@ -116,7 +116,7 @@ func NewPodV1SpecVolumeProjectedSourcesDownwardApiItemsList(terraformResource cd
 	j := jsiiProxy_PodV1SpecVolumeProjectedSourcesDownwardApiItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecVolumeProjectedSourcesDownwardApiItemsList_Override(p PodV1Spec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeProjectedSourcesDownwardApiItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

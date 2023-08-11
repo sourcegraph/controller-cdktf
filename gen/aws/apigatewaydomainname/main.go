@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayDomainName.ApiGatewayDomainName",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainName",
 		reflect.TypeOf((*ApiGatewayDomainName)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -104,15 +104,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayDomainName.ApiGatewayDomainNameConfig",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameConfig",
 		reflect.TypeOf((*ApiGatewayDomainNameConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfiguration",
 		reflect.TypeOf((*ApiGatewayDomainNameEndpointConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameEndpointConfigurationOutputReference",
 		reflect.TypeOf((*ApiGatewayDomainNameEndpointConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,11 +146,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthentication",
 		reflect.TypeOf((*ApiGatewayDomainNameMutualTlsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthenticationOutputReference",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthenticationOutputReference",
 		reflect.TypeOf((*ApiGatewayDomainNameMutualTlsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

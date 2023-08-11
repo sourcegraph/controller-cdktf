@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"random.uuid.Uuid",
+		"@cdktf/provider-random.uuid.Uuid",
 		reflect.TypeOf((*Uuid)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"random.uuid.UuidConfig",
+		"@cdktf/provider-random.uuid.UuidConfig",
 		reflect.TypeOf((*UuidConfig)(nil)).Elem(),
 	)
 }

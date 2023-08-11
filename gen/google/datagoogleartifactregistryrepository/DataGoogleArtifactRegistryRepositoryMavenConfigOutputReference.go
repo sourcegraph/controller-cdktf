@@ -178,7 +178,7 @@ func NewDataGoogleArtifactRegistryRepositoryMavenConfigOutputReference(terraform
 	j := jsiiProxy_DataGoogleArtifactRegistryRepositoryMavenConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryMavenConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryMavenConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleArtifactRegistryRepositoryMavenConfigOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryMavenConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryMavenConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

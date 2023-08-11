@@ -116,7 +116,7 @@ func NewGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList(te
 	j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

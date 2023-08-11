@@ -116,7 +116,7 @@ func NewLexIntentSlotValueElicitationPromptMessageList(terraformResource cdktf.I
 	j := jsiiProxy_LexIntentSlotValueElicitationPromptMessageList{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexIntentSlotValueElicitationPromptMessageList_Override(l LexIntentSlotV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentSlotValueElicitationPromptMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

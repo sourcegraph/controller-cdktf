@@ -204,7 +204,7 @@ func NewDatasyncLocationHdfsQopConfigurationOutputReference(terraformResource cd
 	j := jsiiProxy_DatasyncLocationHdfsQopConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfigurationOutputReference",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDatasyncLocationHdfsQopConfigurationOutputReference_Override(d DatasyncL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfigurationOutputReference",
+		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

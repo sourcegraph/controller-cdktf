@@ -377,7 +377,7 @@ func NewComputeImageIamPolicy(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ComputeImageIamPolicy{}
 
 	_jsii_.Create(
-		"google.computeImageIamPolicy.ComputeImageIamPolicy",
+		"@cdktf/provider-google.computeImageIamPolicy.ComputeImageIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewComputeImageIamPolicy_Override(c ComputeImageIamPolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImageIamPolicy.ComputeImageIamPolicy",
+		"@cdktf/provider-google.computeImageIamPolicy.ComputeImageIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -534,7 +534,7 @@ func ComputeImageIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImageIamPolicy.ComputeImageIamPolicy",
+		"@cdktf/provider-google.computeImageIamPolicy.ComputeImageIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func ComputeImageIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImageIamPolicy.ComputeImageIamPolicy",
+		"@cdktf/provider-google.computeImageIamPolicy.ComputeImageIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func ComputeImageIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeImageIamPolicy.ComputeImageIamPolicy",
+		"@cdktf/provider-google.computeImageIamPolicy.ComputeImageIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func ComputeImageIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeImageIamPolicy.ComputeImageIamPolicy",
+		"@cdktf/provider-google.computeImageIamPolicy.ComputeImageIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

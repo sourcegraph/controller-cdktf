@@ -179,7 +179,7 @@ func NewSagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationCondi
 	j := jsiiProxy_SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationCondi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinitionHumanLoopActivationConfigHumanLoopActivationConditionsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

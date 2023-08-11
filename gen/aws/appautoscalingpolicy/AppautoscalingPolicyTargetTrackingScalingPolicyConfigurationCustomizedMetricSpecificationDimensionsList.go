@@ -116,7 +116,7 @@ func NewAppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMe
 	j := jsiiProxy_AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsList{}
 
 	_jsii_.Create(
-		"aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsList",
+		"@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsList",
+		"@cdktf/provider-aws.appautoscalingPolicy.AppautoscalingPolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimensionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

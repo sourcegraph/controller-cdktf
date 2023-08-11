@@ -401,7 +401,7 @@ func NewEcsCapacityProvider(scope constructs.Construct, id *string, config *EcsC
 	j := jsiiProxy_EcsCapacityProvider{}
 
 	_jsii_.Create(
-		"aws.ecsCapacityProvider.EcsCapacityProvider",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewEcsCapacityProvider_Override(e EcsCapacityProvider, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsCapacityProvider.EcsCapacityProvider",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -558,7 +558,7 @@ func EcsCapacityProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsCapacityProvider.EcsCapacityProvider",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func EcsCapacityProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsCapacityProvider.EcsCapacityProvider",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func EcsCapacityProvider_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecsCapacityProvider.EcsCapacityProvider",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func EcsCapacityProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecsCapacityProvider.EcsCapacityProvider",
+		"@cdktf/provider-aws.ecsCapacityProvider.EcsCapacityProvider",
 		"tfResourceType",
 		&returns,
 	)

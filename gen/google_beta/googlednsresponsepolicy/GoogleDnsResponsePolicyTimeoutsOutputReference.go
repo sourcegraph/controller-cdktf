@@ -228,7 +228,7 @@ func NewGoogleDnsResponsePolicyTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleDnsResponsePolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDnsResponsePolicyTimeoutsOutputReference_Override(g GoogleDnsRespo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

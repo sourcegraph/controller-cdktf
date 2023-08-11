@@ -375,7 +375,7 @@ func NewDataAwsRedshiftOrderableCluster(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsRedshiftOrderableCluster{}
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -388,7 +388,7 @@ func NewDataAwsRedshiftOrderableCluster_Override(d DataAwsRedshiftOrderableClust
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -521,7 +521,7 @@ func DataAwsRedshiftOrderableCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func DataAwsRedshiftOrderableCluster_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func DataAwsRedshiftOrderableCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func DataAwsRedshiftOrderableCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
+		"@cdktf/provider-aws.dataAwsRedshiftOrderableCluster.DataAwsRedshiftOrderableCluster",
 		"tfResourceType",
 		&returns,
 	)

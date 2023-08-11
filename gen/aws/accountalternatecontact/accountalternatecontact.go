@@ -459,7 +459,7 @@ func NewAccountAlternateContact(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_AccountAlternateContact{}
 
 	_jsii_.Create(
-		"aws.accountAlternateContact.AccountAlternateContact",
+		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewAccountAlternateContact_Override(a AccountAlternateContact, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.accountAlternateContact.AccountAlternateContact",
+		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -649,7 +649,7 @@ func AccountAlternateContact_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.accountAlternateContact.AccountAlternateContact",
+		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func AccountAlternateContact_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.accountAlternateContact.AccountAlternateContact",
+		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func AccountAlternateContact_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.accountAlternateContact.AccountAlternateContact",
+		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func AccountAlternateContact_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.accountAlternateContact.AccountAlternateContact",
+		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContact",
 		"tfResourceType",
 		&returns,
 	)

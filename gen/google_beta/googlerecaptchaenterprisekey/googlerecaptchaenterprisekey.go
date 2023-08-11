@@ -509,7 +509,7 @@ func NewGoogleRecaptchaEnterpriseKey(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleRecaptchaEnterpriseKey{}
 
 	_jsii_.Create(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -522,7 +522,7 @@ func NewGoogleRecaptchaEnterpriseKey_Override(g GoogleRecaptchaEnterpriseKey, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -666,7 +666,7 @@ func GoogleRecaptchaEnterpriseKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func GoogleRecaptchaEnterpriseKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func GoogleRecaptchaEnterpriseKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func GoogleRecaptchaEnterpriseKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
+		"@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey.GoogleRecaptchaEnterpriseKey",
 		"tfResourceType",
 		&returns,
 	)

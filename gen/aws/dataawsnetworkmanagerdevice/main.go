@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDevice",
 		reflect.TypeOf((*DataAwsNetworkmanagerDevice)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceAwsLocation",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceAwsLocation",
 		reflect.TypeOf((*DataAwsNetworkmanagerDeviceAwsLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceAwsLocationList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceAwsLocationList",
 		reflect.TypeOf((*DataAwsNetworkmanagerDeviceAwsLocationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -93,7 +93,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceAwsLocationOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceAwsLocationOutputReference",
 		reflect.TypeOf((*DataAwsNetworkmanagerDeviceAwsLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -127,15 +127,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceConfig",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceConfig",
 		reflect.TypeOf((*DataAwsNetworkmanagerDeviceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocation",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocation",
 		reflect.TypeOf((*DataAwsNetworkmanagerDeviceLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationList",
 		reflect.TypeOf((*DataAwsNetworkmanagerDeviceLocationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,7 +155,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationOutputReference",
 		reflect.TypeOf((*DataAwsNetworkmanagerDeviceLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},

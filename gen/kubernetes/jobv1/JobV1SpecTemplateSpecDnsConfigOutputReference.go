@@ -228,7 +228,7 @@ func NewJobV1SpecTemplateSpecDnsConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_JobV1SpecTemplateSpecDnsConfigOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewJobV1SpecTemplateSpecDnsConfigOutputReference_Override(j JobV1SpecTempla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

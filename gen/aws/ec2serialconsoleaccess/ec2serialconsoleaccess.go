@@ -320,7 +320,7 @@ func NewEc2SerialConsoleAccess(scope constructs.Construct, id *string, config *E
 	j := jsiiProxy_Ec2SerialConsoleAccess{}
 
 	_jsii_.Create(
-		"aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
+		"@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewEc2SerialConsoleAccess_Override(e Ec2SerialConsoleAccess, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
+		"@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -455,7 +455,7 @@ func Ec2SerialConsoleAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
+		"@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -474,7 +474,7 @@ func Ec2SerialConsoleAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
+		"@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +493,7 @@ func Ec2SerialConsoleAccess_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
+		"@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -506,7 +506,7 @@ func Ec2SerialConsoleAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
+		"@cdktf/provider-aws.ec2SerialConsoleAccess.Ec2SerialConsoleAccess",
 		"tfResourceType",
 		&returns,
 	)

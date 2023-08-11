@@ -226,7 +226,7 @@ func NewGoogleApiGatewayApiIamMemberConditionOutputReference(terraformResource c
 	j := jsiiProxy_GoogleApiGatewayApiIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleApiGatewayApiIamMemberConditionOutputReference_Override(g GoogleAp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

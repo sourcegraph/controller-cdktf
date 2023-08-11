@@ -496,7 +496,7 @@ func NewGoogleFirebaseAndroidApp(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleFirebaseAndroidApp{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewGoogleFirebaseAndroidApp_Override(g GoogleFirebaseAndroidApp, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -686,7 +686,7 @@ func GoogleFirebaseAndroidApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func GoogleFirebaseAndroidApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func GoogleFirebaseAndroidApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func GoogleFirebaseAndroidApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.googleFirebaseAndroidApp.GoogleFirebaseAndroidApp",
 		"tfResourceType",
 		&returns,
 	)

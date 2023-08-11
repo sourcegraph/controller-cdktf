@@ -104,7 +104,7 @@ func NewGoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesList(terraf
 	j := jsiiProxy_GoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesList{}
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesList",
+		"@cdktf/provider-google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesList",
+		"@cdktf/provider-google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigSpConfigSpCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

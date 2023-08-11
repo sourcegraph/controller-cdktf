@@ -204,7 +204,7 @@ func NewFolderOrganizationPolicyListPolicyDenyOutputReference(terraformResource 
 	j := jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference{}
 
 	_jsii_.Create(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDenyOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDenyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewFolderOrganizationPolicyListPolicyDenyOutputReference_Override(f FolderO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDenyOutputReference",
+		"@cdktf/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicyDenyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

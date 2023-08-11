@@ -252,7 +252,7 @@ func NewSsmMaintenanceWindowTaskTaskInvocationParametersOutputReference(terrafor
 	j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewSsmMaintenanceWindowTaskTaskInvocationParametersOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

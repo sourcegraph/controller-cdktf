@@ -180,7 +180,7 @@ func NewRoute53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResou
 	j := jsiiProxy_Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference",
+		"@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewRoute53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference",
+		"@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetResourcesDnsTargetResourceTargetResourceNlbResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

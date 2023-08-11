@@ -202,7 +202,7 @@ func NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutpu
 	j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

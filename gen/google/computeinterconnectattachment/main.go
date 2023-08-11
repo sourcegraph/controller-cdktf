@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachment",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachment",
 		reflect.TypeOf((*ComputeInterconnectAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -111,15 +111,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachmentConfig",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentConfig",
 		reflect.TypeOf((*ComputeInterconnectAttachmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfo",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfo",
 		reflect.TypeOf((*ComputeInterconnectAttachmentPrivateInterconnectInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoList",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoList",
 		reflect.TypeOf((*ComputeInterconnectAttachmentPrivateInterconnectInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -139,7 +139,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference",
 		reflect.TypeOf((*ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -172,11 +172,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeouts",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeouts",
 		reflect.TypeOf((*ComputeInterconnectAttachmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeInterconnectAttachmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewGoogleComputeInstanceFromTemplateAttachedDiskList(terraformResource cdkt
 	j := jsiiProxy_GoogleComputeInstanceFromTemplateAttachedDiskList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAttachedDiskList",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAttachedDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeInstanceFromTemplateAttachedDiskList_Override(g GoogleCompu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAttachedDiskList",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAttachedDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

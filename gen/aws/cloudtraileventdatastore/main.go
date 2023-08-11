@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		reflect.TypeOf((*CloudtrailEventDataStore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelector",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelector",
 		reflect.TypeOf((*CloudtrailEventDataStoreAdvancedEventSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector",
 		reflect.TypeOf((*CloudtrailEventDataStoreAdvancedEventSelectorFieldSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList",
 		reflect.TypeOf((*CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -113,7 +113,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference",
 		reflect.TypeOf((*CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -166,7 +166,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorList",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorList",
 		reflect.TypeOf((*CloudtrailEventDataStoreAdvancedEventSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -187,7 +187,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorOutputReference",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorOutputReference",
 		reflect.TypeOf((*CloudtrailEventDataStoreAdvancedEventSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -226,15 +226,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreConfig",
 		reflect.TypeOf((*CloudtrailEventDataStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeouts",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeouts",
 		reflect.TypeOf((*CloudtrailEventDataStoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreTimeoutsOutputReference",
 		reflect.TypeOf((*CloudtrailEventDataStoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

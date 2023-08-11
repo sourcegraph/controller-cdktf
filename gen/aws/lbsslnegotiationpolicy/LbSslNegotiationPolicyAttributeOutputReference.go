@@ -202,7 +202,7 @@ func NewLbSslNegotiationPolicyAttributeOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_LbSslNegotiationPolicyAttributeOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeOutputReference",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLbSslNegotiationPolicyAttributeOutputReference_Override(l LbSslNegotiati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeOutputReference",
+		"@cdktf/provider-aws.lbSslNegotiationPolicy.LbSslNegotiationPolicyAttributeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

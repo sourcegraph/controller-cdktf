@@ -226,7 +226,7 @@ func NewSecretManagerSecretIamMemberConditionOutputReference(terraformResource c
 	j := jsiiProxy_SecretManagerSecretIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConditionOutputReference",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSecretManagerSecretIamMemberConditionOutputReference_Override(s SecretMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConditionOutputReference",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

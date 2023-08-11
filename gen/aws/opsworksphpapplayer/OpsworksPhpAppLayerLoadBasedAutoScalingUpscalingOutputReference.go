@@ -324,7 +324,7 @@ func NewOpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference(terrafor
 	j := jsiiProxy_OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewOpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

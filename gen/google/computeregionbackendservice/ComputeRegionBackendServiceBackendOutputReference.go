@@ -443,7 +443,7 @@ func NewComputeRegionBackendServiceBackendOutputReference(terraformResource cdkt
 	j := jsiiProxy_ComputeRegionBackendServiceBackendOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceBackendOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceBackendOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -455,7 +455,7 @@ func NewComputeRegionBackendServiceBackendOutputReference_Override(c ComputeRegi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceBackendOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceBackendOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

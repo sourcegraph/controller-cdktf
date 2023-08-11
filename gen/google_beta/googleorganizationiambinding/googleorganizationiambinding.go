@@ -400,7 +400,7 @@ func NewGoogleOrganizationIamBinding(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleOrganizationIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
+		"@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleOrganizationIamBinding_Override(g GoogleOrganizationIamBinding, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
+		"@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleOrganizationIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
+		"@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleOrganizationIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
+		"@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleOrganizationIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
+		"@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleOrganizationIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
+		"@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding",
 		"tfResourceType",
 		&returns,
 	)

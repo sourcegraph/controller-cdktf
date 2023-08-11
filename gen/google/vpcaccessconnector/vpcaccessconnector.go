@@ -605,7 +605,7 @@ func NewVpcAccessConnector(scope constructs.Construct, id *string, config *VpcAc
 	j := jsiiProxy_VpcAccessConnector{}
 
 	_jsii_.Create(
-		"google.vpcAccessConnector.VpcAccessConnector",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -618,7 +618,7 @@ func NewVpcAccessConnector_Override(v VpcAccessConnector, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vpcAccessConnector.VpcAccessConnector",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -839,7 +839,7 @@ func VpcAccessConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vpcAccessConnector.VpcAccessConnector",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -858,7 +858,7 @@ func VpcAccessConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vpcAccessConnector.VpcAccessConnector",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -877,7 +877,7 @@ func VpcAccessConnector_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vpcAccessConnector.VpcAccessConnector",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -890,7 +890,7 @@ func VpcAccessConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.vpcAccessConnector.VpcAccessConnector",
+		"@cdktf/provider-google.vpcAccessConnector.VpcAccessConnector",
 		"tfResourceType",
 		&returns,
 	)

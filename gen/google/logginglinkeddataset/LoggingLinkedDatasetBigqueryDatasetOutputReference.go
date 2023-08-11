@@ -167,7 +167,7 @@ func NewLoggingLinkedDatasetBigqueryDatasetOutputReference(terraformResource cdk
 	j := jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetOutputReference",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewLoggingLinkedDatasetBigqueryDatasetOutputReference_Override(l LoggingLin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetOutputReference",
+		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

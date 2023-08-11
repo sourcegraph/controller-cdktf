@@ -424,7 +424,7 @@ func NewSagemakerStudioLifecycleConfig(scope constructs.Construct, id *string, c
 	j := jsiiProxy_SagemakerStudioLifecycleConfig{}
 
 	_jsii_.Create(
-		"aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
+		"@cdktf/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewSagemakerStudioLifecycleConfig_Override(s SagemakerStudioLifecycleConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
+		"@cdktf/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -603,7 +603,7 @@ func SagemakerStudioLifecycleConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
+		"@cdktf/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func SagemakerStudioLifecycleConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
+		"@cdktf/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func SagemakerStudioLifecycleConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
+		"@cdktf/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func SagemakerStudioLifecycleConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
+		"@cdktf/provider-aws.sagemakerStudioLifecycleConfig.SagemakerStudioLifecycleConfig",
 		"tfResourceType",
 		&returns,
 	)

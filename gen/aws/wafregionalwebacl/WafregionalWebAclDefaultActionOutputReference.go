@@ -179,7 +179,7 @@ func NewWafregionalWebAclDefaultActionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_WafregionalWebAclDefaultActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclDefaultActionOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafregionalWebAclDefaultActionOutputReference_Override(w WafregionalWebA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclDefaultActionOutputReference",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclDefaultActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

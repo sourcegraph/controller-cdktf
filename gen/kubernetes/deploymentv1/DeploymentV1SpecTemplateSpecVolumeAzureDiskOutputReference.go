@@ -297,7 +297,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeAzureDiskOutputReference(terraformReso
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumeAzureDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeAzureDiskOutputReference_Override(d De
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

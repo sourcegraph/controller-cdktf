@@ -383,7 +383,7 @@ func NewDataAwsSsmParametersByPath(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsSsmParametersByPath{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
+		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -396,7 +396,7 @@ func NewDataAwsSsmParametersByPath_Override(d DataAwsSsmParametersByPath, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
+		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -518,7 +518,7 @@ func DataAwsSsmParametersByPath_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
+		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsSsmParametersByPath_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
+		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsSsmParametersByPath_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
+		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataAwsSsmParametersByPath_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
+		"@cdktf/provider-aws.dataAwsSsmParametersByPath.DataAwsSsmParametersByPath",
 		"tfResourceType",
 		&returns,
 	)

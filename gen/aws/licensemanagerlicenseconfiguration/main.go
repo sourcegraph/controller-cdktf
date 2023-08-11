@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
+		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfiguration",
 		reflect.TypeOf((*LicensemanagerLicenseConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,7 +79,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfigurationConfig",
+		"@cdktf/provider-aws.licensemanagerLicenseConfiguration.LicensemanagerLicenseConfigurationConfig",
 		reflect.TypeOf((*LicensemanagerLicenseConfigurationConfig)(nil)).Elem(),
 	)
 }

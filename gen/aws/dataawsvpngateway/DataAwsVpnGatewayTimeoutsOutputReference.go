@@ -180,7 +180,7 @@ func NewDataAwsVpnGatewayTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsVpnGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpnGateway.DataAwsVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsVpnGatewayTimeoutsOutputReference_Override(d DataAwsVpnGatewayTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpnGateway.DataAwsVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

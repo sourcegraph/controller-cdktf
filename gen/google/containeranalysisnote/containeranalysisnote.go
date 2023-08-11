@@ -543,7 +543,7 @@ func NewContainerAnalysisNote(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ContainerAnalysisNote{}
 
 	_jsii_.Create(
-		"google.containerAnalysisNote.ContainerAnalysisNote",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNote",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -556,7 +556,7 @@ func NewContainerAnalysisNote_Override(c ContainerAnalysisNote, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisNote.ContainerAnalysisNote",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNote",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -733,7 +733,7 @@ func ContainerAnalysisNote_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNote.ContainerAnalysisNote",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNote",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func ContainerAnalysisNote_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNote.ContainerAnalysisNote",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNote",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func ContainerAnalysisNote_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNote.ContainerAnalysisNote",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNote",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func ContainerAnalysisNote_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerAnalysisNote.ContainerAnalysisNote",
+		"@cdktf/provider-google.containerAnalysisNote.ContainerAnalysisNote",
 		"tfResourceType",
 		&returns,
 	)

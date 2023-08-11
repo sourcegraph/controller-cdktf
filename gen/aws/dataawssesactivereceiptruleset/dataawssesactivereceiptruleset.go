@@ -290,7 +290,7 @@ func NewDataAwsSesActiveReceiptRuleSet(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsSesActiveReceiptRuleSet{}
 
 	_jsii_.Create(
-		"aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -303,7 +303,7 @@ func NewDataAwsSesActiveReceiptRuleSet_Override(d DataAwsSesActiveReceiptRuleSet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -392,7 +392,7 @@ func DataAwsSesActiveReceiptRuleSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -411,7 +411,7 @@ func DataAwsSesActiveReceiptRuleSet_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -430,7 +430,7 @@ func DataAwsSesActiveReceiptRuleSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsSesActiveReceiptRuleSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.dataAwsSesActiveReceiptRuleSet.DataAwsSesActiveReceiptRuleSet",
 		"tfResourceType",
 		&returns,
 	)

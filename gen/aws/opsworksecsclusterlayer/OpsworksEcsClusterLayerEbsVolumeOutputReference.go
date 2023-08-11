@@ -321,7 +321,7 @@ func NewOpsworksEcsClusterLayerEbsVolumeOutputReference(terraformResource cdktf.
 	j := jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewOpsworksEcsClusterLayerEbsVolumeOutputReference_Override(o OpsworksEcsCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

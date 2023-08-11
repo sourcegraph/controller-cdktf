@@ -366,7 +366,7 @@ func NewSecretsmanagerSecretPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_SecretsmanagerSecretPolicy{}
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
+		"@cdktf/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewSecretsmanagerSecretPolicy_Override(s SecretsmanagerSecretPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
+		"@cdktf/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -523,7 +523,7 @@ func SecretsmanagerSecretPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
+		"@cdktf/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func SecretsmanagerSecretPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
+		"@cdktf/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func SecretsmanagerSecretPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
+		"@cdktf/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func SecretsmanagerSecretPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
+		"@cdktf/provider-aws.secretsmanagerSecretPolicy.SecretsmanagerSecretPolicy",
 		"tfResourceType",
 		&returns,
 	)

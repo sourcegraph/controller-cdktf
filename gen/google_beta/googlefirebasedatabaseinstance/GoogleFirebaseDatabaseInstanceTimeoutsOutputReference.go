@@ -228,7 +228,7 @@ func NewGoogleFirebaseDatabaseInstanceTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_GoogleFirebaseDatabaseInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleFirebaseDatabaseInstanceTimeoutsOutputReference_Override(g GoogleF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFirebaseDatabaseInstance.GoogleFirebaseDatabaseInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

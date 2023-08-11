@@ -116,7 +116,7 @@ func NewWorkerScriptSecretTextBindingList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_WorkerScriptSecretTextBindingList{}
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptSecretTextBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWorkerScriptSecretTextBindingList_Override(w WorkerScriptSecretTextBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptSecretTextBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

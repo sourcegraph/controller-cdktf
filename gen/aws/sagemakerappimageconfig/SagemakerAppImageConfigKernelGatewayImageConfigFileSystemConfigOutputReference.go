@@ -228,7 +228,7 @@ func NewSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputRef
 	j := jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -228,7 +228,7 @@ func NewSagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference(
 	j := jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -353,7 +353,7 @@ func NewGoogleHealthcareDicomStoreIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleHealthcareDicomStoreIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleHealthcareDicomStoreIamPolicy_Override(g GoogleHealthcareDicomStor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleHealthcareDicomStoreIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleHealthcareDicomStoreIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleHealthcareDicomStoreIamPolicy_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleHealthcareDicomStoreIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamPolicy.GoogleHealthcareDicomStoreIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

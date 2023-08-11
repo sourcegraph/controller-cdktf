@@ -228,7 +228,7 @@ func NewGoogleCloudAssetProjectFeedTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleCloudAssetProjectFeedTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeedTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeedTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleCloudAssetProjectFeedTimeoutsOutputReference_Override(g GoogleClou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeedTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudAssetProjectFeed.GoogleCloudAssetProjectFeedTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

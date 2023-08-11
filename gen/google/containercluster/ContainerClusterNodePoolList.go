@@ -116,7 +116,7 @@ func NewContainerClusterNodePoolList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_ContainerClusterNodePoolList{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewContainerClusterNodePoolList_Override(c ContainerClusterNodePoolList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -321,7 +321,7 @@ func NewOpsworksStaticWebLayerEbsVolumeOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_OpsworksStaticWebLayerEbsVolumeOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewOpsworksStaticWebLayerEbsVolumeOutputReference_Override(o OpsworksStatic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

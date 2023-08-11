@@ -179,7 +179,7 @@ func NewGoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputR
 	j := jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

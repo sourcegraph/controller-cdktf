@@ -663,7 +663,7 @@ func NewImagebuilderInfrastructureConfiguration(scope constructs.Construct, id *
 	j := jsiiProxy_ImagebuilderInfrastructureConfiguration{}
 
 	_jsii_.Create(
-		"aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
+		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -676,7 +676,7 @@ func NewImagebuilderInfrastructureConfiguration_Override(i ImagebuilderInfrastru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
+		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -919,7 +919,7 @@ func ImagebuilderInfrastructureConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
+		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -938,7 +938,7 @@ func ImagebuilderInfrastructureConfiguration_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
+		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -957,7 +957,7 @@ func ImagebuilderInfrastructureConfiguration_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
+		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -970,7 +970,7 @@ func ImagebuilderInfrastructureConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
+		"@cdktf/provider-aws.imagebuilderInfrastructureConfiguration.ImagebuilderInfrastructureConfiguration",
 		"tfResourceType",
 		&returns,
 	)

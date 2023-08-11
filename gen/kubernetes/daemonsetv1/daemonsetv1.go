@@ -390,7 +390,7 @@ func NewDaemonSetV1(scope constructs.Construct, id *string, config *DaemonSetV1C
 	j := jsiiProxy_DaemonSetV1{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewDaemonSetV1_Override(d DaemonSetV1, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -525,7 +525,7 @@ func DaemonSetV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.daemonSetV1.DaemonSetV1",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func DaemonSetV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.daemonSetV1.DaemonSetV1",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func DaemonSetV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.daemonSetV1.DaemonSetV1",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func DaemonSetV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.daemonSetV1.DaemonSetV1",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1",
 		"tfResourceType",
 		&returns,
 	)

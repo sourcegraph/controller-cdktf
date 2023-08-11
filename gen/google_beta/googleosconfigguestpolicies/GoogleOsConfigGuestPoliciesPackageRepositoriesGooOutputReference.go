@@ -202,7 +202,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference(terrafo
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

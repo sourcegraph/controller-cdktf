@@ -200,7 +200,7 @@ func NewDataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference(terrafor
 	j := jsiiProxy_DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPoolsPoolsLoadSheddingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

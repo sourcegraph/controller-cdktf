@@ -400,7 +400,7 @@ func NewGoogleProjectIamMember(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleProjectIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamMember.GoogleProjectIamMember",
+		"@cdktf/provider-google-beta.googleProjectIamMember.GoogleProjectIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleProjectIamMember_Override(g GoogleProjectIamMember, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectIamMember.GoogleProjectIamMember",
+		"@cdktf/provider-google-beta.googleProjectIamMember.GoogleProjectIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleProjectIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamMember.GoogleProjectIamMember",
+		"@cdktf/provider-google-beta.googleProjectIamMember.GoogleProjectIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleProjectIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamMember.GoogleProjectIamMember",
+		"@cdktf/provider-google-beta.googleProjectIamMember.GoogleProjectIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleProjectIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectIamMember.GoogleProjectIamMember",
+		"@cdktf/provider-google-beta.googleProjectIamMember.GoogleProjectIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleProjectIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProjectIamMember.GoogleProjectIamMember",
+		"@cdktf/provider-google-beta.googleProjectIamMember.GoogleProjectIamMember",
 		"tfResourceType",
 		&returns,
 	)

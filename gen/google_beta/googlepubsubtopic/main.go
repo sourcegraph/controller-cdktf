@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubTopic.GooglePubsubTopic",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopic",
 		reflect.TypeOf((*GooglePubsubTopic)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubTopic.GooglePubsubTopicConfig",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopicConfig",
 		reflect.TypeOf((*GooglePubsubTopicConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicy",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicy",
 		reflect.TypeOf((*GooglePubsubTopicMessageStoragePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicyOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopicMessageStoragePolicyOutputReference",
 		reflect.TypeOf((*GooglePubsubTopicMessageStoragePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedPersistenceRegions", GoGetter: "AllowedPersistenceRegions"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubTopic.GooglePubsubTopicSchemaSettings",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopicSchemaSettings",
 		reflect.TypeOf((*GooglePubsubTopicSchemaSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubTopic.GooglePubsubTopicSchemaSettingsOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopicSchemaSettingsOutputReference",
 		reflect.TypeOf((*GooglePubsubTopicSchemaSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -164,11 +164,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePubsubTopic.GooglePubsubTopicTimeouts",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopicTimeouts",
 		reflect.TypeOf((*GooglePubsubTopicTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePubsubTopic.GooglePubsubTopicTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubTopic.GooglePubsubTopicTimeoutsOutputReference",
 		reflect.TypeOf((*GooglePubsubTopicTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

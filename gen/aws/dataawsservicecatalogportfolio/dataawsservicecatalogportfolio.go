@@ -394,7 +394,7 @@ func NewDataAwsServicecatalogPortfolio(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsServicecatalogPortfolio{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -407,7 +407,7 @@ func NewDataAwsServicecatalogPortfolio_Override(d DataAwsServicecatalogPortfolio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -518,7 +518,7 @@ func DataAwsServicecatalogPortfolio_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsServicecatalogPortfolio_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsServicecatalogPortfolio_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataAwsServicecatalogPortfolio_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
+		"@cdktf/provider-aws.dataAwsServicecatalogPortfolio.DataAwsServicecatalogPortfolio",
 		"tfResourceType",
 		&returns,
 	)

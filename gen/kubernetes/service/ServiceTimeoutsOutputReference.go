@@ -180,7 +180,7 @@ func NewServiceTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_ServiceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.service.ServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewServiceTimeoutsOutputReference_Override(s ServiceTimeoutsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.service.ServiceTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.service.ServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

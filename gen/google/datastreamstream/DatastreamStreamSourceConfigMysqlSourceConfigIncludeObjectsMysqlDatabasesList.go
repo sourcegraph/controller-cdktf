@@ -116,7 +116,7 @@ func NewDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabase
 	j := jsiiProxy_DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabase
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

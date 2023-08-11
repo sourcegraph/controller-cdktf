@@ -448,7 +448,7 @@ func NewDataCatalogEntryGroupIamMember(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataCatalogEntryGroupIamMember{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataCatalogEntryGroupIamMember_Override(d DataCatalogEntryGroupIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataCatalogEntryGroupIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataCatalogEntryGroupIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataCatalogEntryGroupIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataCatalogEntryGroupIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamMember.DataCatalogEntryGroupIamMember",
 		"tfResourceType",
 		&returns,
 	)

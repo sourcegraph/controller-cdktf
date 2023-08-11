@@ -179,7 +179,7 @@ func NewCloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference(te
 	j := jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference",
+		"@cdktf/provider-aws.cloudfrontMonitoringSubscription.CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

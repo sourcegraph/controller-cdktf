@@ -189,7 +189,7 @@ func NewDataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputRef
 	j := jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesMutatingWebhookConfigurationV1.DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

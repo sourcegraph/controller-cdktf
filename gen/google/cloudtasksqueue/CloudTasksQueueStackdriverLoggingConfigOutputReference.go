@@ -179,7 +179,7 @@ func NewCloudTasksQueueStackdriverLoggingConfigOutputReference(terraformResource
 	j := jsiiProxy_CloudTasksQueueStackdriverLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfigOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudTasksQueueStackdriverLoggingConfigOutputReference_Override(c CloudT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfigOutputReference",
+		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueStackdriverLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

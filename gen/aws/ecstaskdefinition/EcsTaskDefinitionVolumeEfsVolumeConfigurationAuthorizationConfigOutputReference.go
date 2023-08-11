@@ -204,7 +204,7 @@ func NewEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputRe
 	j := jsiiProxy_EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

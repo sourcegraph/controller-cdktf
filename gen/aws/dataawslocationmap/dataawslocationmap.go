@@ -370,7 +370,7 @@ func NewDataAwsLocationMap(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsLocationMap{}
 
 	_jsii_.Create(
-		"aws.dataAwsLocationMap.DataAwsLocationMap",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataAwsLocationMap_Override(d DataAwsLocationMap, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLocationMap.DataAwsLocationMap",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -494,7 +494,7 @@ func DataAwsLocationMap_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationMap.DataAwsLocationMap",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataAwsLocationMap_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationMap.DataAwsLocationMap",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataAwsLocationMap_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLocationMap.DataAwsLocationMap",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataAwsLocationMap_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLocationMap.DataAwsLocationMap",
+		"@cdktf/provider-aws.dataAwsLocationMap.DataAwsLocationMap",
 		"tfResourceType",
 		&returns,
 	)

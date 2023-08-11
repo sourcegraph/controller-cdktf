@@ -520,7 +520,7 @@ func NewGoogleLoggingFolderSink(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleLoggingFolderSink{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewGoogleLoggingFolderSink_Override(g GoogleLoggingFolderSink, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -721,7 +721,7 @@ func GoogleLoggingFolderSink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func GoogleLoggingFolderSink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func GoogleLoggingFolderSink_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func GoogleLoggingFolderSink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
 		"tfResourceType",
 		&returns,
 	)

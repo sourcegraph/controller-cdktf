@@ -116,7 +116,7 @@ func NewComprehendEntityRecognizerInputDataConfigAugmentedManifestsList(terrafor
 	j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList{}
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComprehendEntityRecognizerInputDataConfigAugmentedManifestsList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

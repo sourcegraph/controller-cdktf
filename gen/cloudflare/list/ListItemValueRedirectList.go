@@ -116,7 +116,7 @@ func NewListItemValueRedirectList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_ListItemValueRedirectList{}
 
 	_jsii_.Create(
-		"cloudflare.list.ListItemValueRedirectList",
+		"@cdktf/provider-cloudflare.list.ListItemValueRedirectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewListItemValueRedirectList_Override(l ListItemValueRedirectList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.list.ListItemValueRedirectList",
+		"@cdktf/provider-cloudflare.list.ListItemValueRedirectList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

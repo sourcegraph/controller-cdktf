@@ -411,7 +411,7 @@ func NewUserAgentBlockingRule(scope constructs.Construct, id *string, config *Us
 	j := jsiiProxy_UserAgentBlockingRule{}
 
 	_jsii_.Create(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -424,7 +424,7 @@ func NewUserAgentBlockingRule_Override(u UserAgentBlockingRule, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -579,7 +579,7 @@ func UserAgentBlockingRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func UserAgentBlockingRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func UserAgentBlockingRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func UserAgentBlockingRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		"tfResourceType",
 		&returns,
 	)

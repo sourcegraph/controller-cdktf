@@ -494,7 +494,7 @@ func NewGoogleServiceAccountKey(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleServiceAccountKey{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewGoogleServiceAccountKey_Override(g GoogleServiceAccountKey, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -684,7 +684,7 @@ func GoogleServiceAccountKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func GoogleServiceAccountKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func GoogleServiceAccountKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func GoogleServiceAccountKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
+		"@cdktf/provider-google-beta.googleServiceAccountKey.GoogleServiceAccountKey",
 		"tfResourceType",
 		&returns,
 	)

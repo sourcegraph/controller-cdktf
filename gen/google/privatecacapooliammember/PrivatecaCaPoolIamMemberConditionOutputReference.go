@@ -226,7 +226,7 @@ func NewPrivatecaCaPoolIamMemberConditionOutputReference(terraformResource cdktf
 	j := jsiiProxy_PrivatecaCaPoolIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConditionOutputReference",
+		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPrivatecaCaPoolIamMemberConditionOutputReference_Override(p PrivatecaCaP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConditionOutputReference",
+		"@cdktf/provider-google.privatecaCaPoolIamMember.PrivatecaCaPoolIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -577,7 +577,7 @@ func NewGoogleComputeFirewallPolicyRule(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleComputeFirewallPolicyRule{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -590,7 +590,7 @@ func NewGoogleComputeFirewallPolicyRule_Override(g GoogleComputeFirewallPolicyRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -800,7 +800,7 @@ func GoogleComputeFirewallPolicyRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func GoogleComputeFirewallPolicyRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -838,7 +838,7 @@ func GoogleComputeFirewallPolicyRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -851,7 +851,7 @@ func GoogleComputeFirewallPolicyRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeFirewallPolicyRule.GoogleComputeFirewallPolicyRule",
 		"tfResourceType",
 		&returns,
 	)

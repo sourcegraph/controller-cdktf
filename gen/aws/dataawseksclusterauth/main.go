@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
+		"@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuth",
 		reflect.TypeOf((*DataAwsEksClusterAuth)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig",
+		"@cdktf/provider-aws.dataAwsEksClusterAuth.DataAwsEksClusterAuthConfig",
 		reflect.TypeOf((*DataAwsEksClusterAuthConfig)(nil)).Elem(),
 	)
 }

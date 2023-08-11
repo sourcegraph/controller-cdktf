@@ -228,7 +228,7 @@ func NewGoogleDataformRepositoryTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleDataformRepositoryTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataformRepository.GoogleDataformRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepositoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDataformRepositoryTimeoutsOutputReference_Override(g GoogleDatafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataformRepository.GoogleDataformRepositoryTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataformRepository.GoogleDataformRepositoryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

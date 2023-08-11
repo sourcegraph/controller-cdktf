@@ -325,7 +325,7 @@ func NewDataAwsPricingProduct(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsPricingProduct{}
 
 	_jsii_.Create(
-		"aws.dataAwsPricingProduct.DataAwsPricingProduct",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataAwsPricingProduct_Override(d DataAwsPricingProduct, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsPricingProduct.DataAwsPricingProduct",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -438,7 +438,7 @@ func DataAwsPricingProduct_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsPricingProduct.DataAwsPricingProduct",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -457,7 +457,7 @@ func DataAwsPricingProduct_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsPricingProduct.DataAwsPricingProduct",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -476,7 +476,7 @@ func DataAwsPricingProduct_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsPricingProduct.DataAwsPricingProduct",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataAwsPricingProduct_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsPricingProduct.DataAwsPricingProduct",
+		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		"tfResourceType",
 		&returns,
 	)

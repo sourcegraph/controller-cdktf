@@ -448,7 +448,7 @@ func NewDataprocJobIamBinding(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataprocJobIamBinding{}
 
 	_jsii_.Create(
-		"google.dataprocJobIamBinding.DataprocJobIamBinding",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataprocJobIamBinding_Override(d DataprocJobIamBinding, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJobIamBinding.DataprocJobIamBinding",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataprocJobIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocJobIamBinding.DataprocJobIamBinding",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataprocJobIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocJobIamBinding.DataprocJobIamBinding",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataprocJobIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocJobIamBinding.DataprocJobIamBinding",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataprocJobIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocJobIamBinding.DataprocJobIamBinding",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBinding",
 		"tfResourceType",
 		&returns,
 	)

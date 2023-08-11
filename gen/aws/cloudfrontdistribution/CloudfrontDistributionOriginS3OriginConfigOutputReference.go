@@ -179,7 +179,7 @@ func NewCloudfrontDistributionOriginS3OriginConfigOutputReference(terraformResou
 	j := jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginS3OriginConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginS3OriginConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudfrontDistributionOriginS3OriginConfigOutputReference_Override(c Clo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginS3OriginConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginS3OriginConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -353,7 +353,7 @@ func NewGoogleEndpointsServiceIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleEndpointsServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleEndpointsServiceIamPolicy_Override(g GoogleEndpointsServiceIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleEndpointsServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleEndpointsServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleEndpointsServiceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleEndpointsServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleEndpointsServiceIamPolicy.GoogleEndpointsServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewAppSharedCredentialsUsersList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_AppSharedCredentialsUsersList{}
 
 	_jsii_.Create(
-		"okta.appSharedCredentials.AppSharedCredentialsUsersList",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppSharedCredentialsUsersList_Override(a AppSharedCredentialsUsersList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSharedCredentials.AppSharedCredentialsUsersList",
+		"@cdktf/provider-okta.appSharedCredentials.AppSharedCredentialsUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

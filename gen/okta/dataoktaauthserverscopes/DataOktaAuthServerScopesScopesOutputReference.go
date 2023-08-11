@@ -244,7 +244,7 @@ func NewDataOktaAuthServerScopesScopesOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataOktaAuthServerScopesScopesOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesOutputReference",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewDataOktaAuthServerScopesScopesOutputReference_Override(d DataOktaAuthSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesOutputReference",
+		"@cdktf/provider-okta.dataOktaAuthServerScopes.DataOktaAuthServerScopesScopesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

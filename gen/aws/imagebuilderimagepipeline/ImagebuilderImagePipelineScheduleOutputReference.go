@@ -227,7 +227,7 @@ func NewImagebuilderImagePipelineScheduleOutputReference(terraformResource cdktf
 	j := jsiiProxy_ImagebuilderImagePipelineScheduleOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImagePipeline.ImagebuilderImagePipelineScheduleOutputReference",
+		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewImagebuilderImagePipelineScheduleOutputReference_Override(i Imagebuilder
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImagePipeline.ImagebuilderImagePipelineScheduleOutputReference",
+		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

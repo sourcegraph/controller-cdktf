@@ -407,7 +407,7 @@ func NewDataAwsConnectSecurityProfile(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsConnectSecurityProfile{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
+		"@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -420,7 +420,7 @@ func NewDataAwsConnectSecurityProfile_Override(d DataAwsConnectSecurityProfile, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
+		"@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -553,7 +553,7 @@ func DataAwsConnectSecurityProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
+		"@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func DataAwsConnectSecurityProfile_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
+		"@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -591,7 +591,7 @@ func DataAwsConnectSecurityProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
+		"@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -604,7 +604,7 @@ func DataAwsConnectSecurityProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
+		"@cdktf/provider-aws.dataAwsConnectSecurityProfile.DataAwsConnectSecurityProfile",
 		"tfResourceType",
 		&returns,
 	)

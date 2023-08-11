@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		reflect.TypeOf((*IvsPlaybackKeyPair)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairConfig",
 		reflect.TypeOf((*IvsPlaybackKeyPairConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeouts",
 		reflect.TypeOf((*IvsPlaybackKeyPairTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPairTimeoutsOutputReference",
 		reflect.TypeOf((*IvsPlaybackKeyPairTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

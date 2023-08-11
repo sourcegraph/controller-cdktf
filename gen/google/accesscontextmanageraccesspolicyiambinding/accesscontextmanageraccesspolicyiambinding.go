@@ -400,7 +400,7 @@ func NewAccessContextManagerAccessPolicyIamBinding(scope constructs.Construct, i
 	j := jsiiProxy_AccessContextManagerAccessPolicyIamBinding{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewAccessContextManagerAccessPolicyIamBinding_Override(a AccessContextManag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -557,7 +557,7 @@ func AccessContextManagerAccessPolicyIamBinding_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func AccessContextManagerAccessPolicyIamBinding_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func AccessContextManagerAccessPolicyIamBinding_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func AccessContextManagerAccessPolicyIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
+		"@cdktf/provider-google.accessContextManagerAccessPolicyIamBinding.AccessContextManagerAccessPolicyIamBinding",
 		"tfResourceType",
 		&returns,
 	)

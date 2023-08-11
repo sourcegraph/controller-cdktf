@@ -180,7 +180,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference(terrafo
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeLocalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -167,7 +167,7 @@ func NewDataplexDatascanDataQualityResultScannedDataOutputReference(terraformRes
 	j := jsiiProxy_DataplexDatascanDataQualityResultScannedDataOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultScannedDataOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultScannedDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataplexDatascanDataQualityResultScannedDataOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualityResultScannedDataOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualityResultScannedDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

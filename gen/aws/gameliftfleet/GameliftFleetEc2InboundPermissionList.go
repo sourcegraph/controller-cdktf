@@ -116,7 +116,7 @@ func NewGameliftFleetEc2InboundPermissionList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GameliftFleetEc2InboundPermissionList{}
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetEc2InboundPermissionList",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGameliftFleetEc2InboundPermissionList_Override(g GameliftFleetEc2Inbound
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetEc2InboundPermissionList",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetEc2InboundPermissionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

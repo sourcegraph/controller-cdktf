@@ -116,7 +116,7 @@ func NewDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesList(terra
 	j := jsiiProxy_DataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesList{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesList",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesList",
+		"@cdktf/provider-google.dataLossPreventionInspectTemplate.DataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

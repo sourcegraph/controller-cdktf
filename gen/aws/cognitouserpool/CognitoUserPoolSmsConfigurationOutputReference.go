@@ -226,7 +226,7 @@ func NewCognitoUserPoolSmsConfigurationOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSmsConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSmsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCognitoUserPoolSmsConfigurationOutputReference_Override(c CognitoUserPoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSmsConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSmsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

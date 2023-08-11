@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.securityhubActionTarget.SecurityhubActionTarget",
+		"@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTarget",
 		reflect.TypeOf((*SecurityhubActionTarget)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.securityhubActionTarget.SecurityhubActionTargetConfig",
+		"@cdktf/provider-aws.securityhubActionTarget.SecurityhubActionTargetConfig",
 		reflect.TypeOf((*SecurityhubActionTargetConfig)(nil)).Elem(),
 	)
 }

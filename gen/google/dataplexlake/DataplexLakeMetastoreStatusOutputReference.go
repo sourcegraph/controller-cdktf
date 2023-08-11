@@ -200,7 +200,7 @@ func NewDataplexLakeMetastoreStatusOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DataplexLakeMetastoreStatusOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLakeMetastoreStatusOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeMetastoreStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataplexLakeMetastoreStatusOutputReference_Override(d DataplexLakeMetast
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLakeMetastoreStatusOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeMetastoreStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

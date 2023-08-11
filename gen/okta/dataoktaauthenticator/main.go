@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaAuthenticator.DataOktaAuthenticator",
+		"@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticator",
 		reflect.TypeOf((*DataOktaAuthenticator)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig",
+		"@cdktf/provider-okta.dataOktaAuthenticator.DataOktaAuthenticatorConfig",
 		reflect.TypeOf((*DataOktaAuthenticatorConfig)(nil)).Elem(),
 	)
 }

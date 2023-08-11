@@ -204,7 +204,7 @@ func NewGoogleVertexAiMetadataStoreTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleVertexAiMetadataStoreTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleVertexAiMetadataStoreTimeoutsOutputReference_Override(g GoogleVert
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

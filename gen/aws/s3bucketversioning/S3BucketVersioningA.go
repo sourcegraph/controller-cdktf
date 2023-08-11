@@ -390,7 +390,7 @@ func NewS3BucketVersioningA(scope constructs.Construct, id *string, config *S3Bu
 	j := jsiiProxy_S3BucketVersioningA{}
 
 	_jsii_.Create(
-		"aws.s3BucketVersioning.S3BucketVersioningA",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewS3BucketVersioningA_Override(s S3BucketVersioningA, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketVersioning.S3BucketVersioningA",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningA",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -547,7 +547,7 @@ func S3BucketVersioningA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketVersioning.S3BucketVersioningA",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func S3BucketVersioningA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketVersioning.S3BucketVersioningA",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func S3BucketVersioningA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketVersioning.S3BucketVersioningA",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func S3BucketVersioningA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketVersioning.S3BucketVersioningA",
+		"@cdktf/provider-aws.s3BucketVersioning.S3BucketVersioningA",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewMedialiveInputMediaConnectFlowsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_MedialiveInputMediaConnectFlowsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewMedialiveInputMediaConnectFlowsOutputReference_Override(m MedialiveInput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference",
+		"@cdktf/provider-aws.medialiveInput.MedialiveInputMediaConnectFlowsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

@@ -178,7 +178,7 @@ func NewComputeServiceAttachmentConnectedEndpointsOutputReference(terraformResou
 	j := jsiiProxy_ComputeServiceAttachmentConnectedEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewComputeServiceAttachmentConnectedEndpointsOutputReference_Override(c Com
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

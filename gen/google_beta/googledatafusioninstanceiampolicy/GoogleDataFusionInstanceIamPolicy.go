@@ -401,7 +401,7 @@ func NewGoogleDataFusionInstanceIamPolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleDataFusionInstanceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleDataFusionInstanceIamPolicy_Override(g GoogleDataFusionInstanceIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleDataFusionInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleDataFusionInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleDataFusionInstanceIamPolicy_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleDataFusionInstanceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamPolicy.GoogleDataFusionInstanceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewPodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputRefere
 	j := jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

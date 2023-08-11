@@ -482,7 +482,7 @@ func NewBackupFramework(scope constructs.Construct, id *string, config *BackupFr
 	j := jsiiProxy_BackupFramework{}
 
 	_jsii_.Create(
-		"aws.backupFramework.BackupFramework",
+		"@cdktf/provider-aws.backupFramework.BackupFramework",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -495,7 +495,7 @@ func NewBackupFramework_Override(b BackupFramework, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupFramework.BackupFramework",
+		"@cdktf/provider-aws.backupFramework.BackupFramework",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -650,7 +650,7 @@ func BackupFramework_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupFramework.BackupFramework",
+		"@cdktf/provider-aws.backupFramework.BackupFramework",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func BackupFramework_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupFramework.BackupFramework",
+		"@cdktf/provider-aws.backupFramework.BackupFramework",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func BackupFramework_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupFramework.BackupFramework",
+		"@cdktf/provider-aws.backupFramework.BackupFramework",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func BackupFramework_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.backupFramework.BackupFramework",
+		"@cdktf/provider-aws.backupFramework.BackupFramework",
 		"tfResourceType",
 		&returns,
 	)

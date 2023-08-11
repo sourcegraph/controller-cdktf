@@ -275,7 +275,7 @@ func NewAppsyncDatasourceDynamodbConfigOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_AppsyncDatasourceDynamodbConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewAppsyncDatasourceDynamodbConfigOutputReference_Override(a AppsyncDatasou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceDynamodbConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

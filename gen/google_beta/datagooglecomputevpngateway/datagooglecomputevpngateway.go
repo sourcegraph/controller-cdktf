@@ -372,7 +372,7 @@ func NewDataGoogleComputeVpnGateway(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataGoogleComputeVpnGateway{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -385,7 +385,7 @@ func NewDataGoogleComputeVpnGateway_Override(d DataGoogleComputeVpnGateway, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -507,7 +507,7 @@ func DataGoogleComputeVpnGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DataGoogleComputeVpnGateway_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataGoogleComputeVpnGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func DataGoogleComputeVpnGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeVpnGateway.DataGoogleComputeVpnGateway",
 		"tfResourceType",
 		&returns,
 	)

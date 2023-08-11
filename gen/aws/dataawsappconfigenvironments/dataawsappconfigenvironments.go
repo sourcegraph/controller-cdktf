@@ -302,7 +302,7 @@ func NewDataAwsAppconfigEnvironments(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsAppconfigEnvironments{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsAppconfigEnvironments_Override(d DataAwsAppconfigEnvironments, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsAppconfigEnvironments_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsAppconfigEnvironments_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsAppconfigEnvironments_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsAppconfigEnvironments_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
+		"@cdktf/provider-aws.dataAwsAppconfigEnvironments.DataAwsAppconfigEnvironments",
 		"tfResourceType",
 		&returns,
 	)

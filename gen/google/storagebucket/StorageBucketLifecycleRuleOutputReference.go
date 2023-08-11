@@ -202,7 +202,7 @@ func NewStorageBucketLifecycleRuleOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_StorageBucketLifecycleRuleOutputReference{}
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketLifecycleRuleOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewStorageBucketLifecycleRuleOutputReference_Override(s StorageBucketLifecy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketLifecycleRuleOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

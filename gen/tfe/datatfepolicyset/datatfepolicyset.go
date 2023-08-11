@@ -429,7 +429,7 @@ func NewDataTfePolicySet(scope constructs.Construct, id *string, config *DataTfe
 	j := jsiiProxy_DataTfePolicySet{}
 
 	_jsii_.Create(
-		"tfe.dataTfePolicySet.DataTfePolicySet",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -442,7 +442,7 @@ func NewDataTfePolicySet_Override(d DataTfePolicySet, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfePolicySet.DataTfePolicySet",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -575,7 +575,7 @@ func DataTfePolicySet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfePolicySet.DataTfePolicySet",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func DataTfePolicySet_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfePolicySet.DataTfePolicySet",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func DataTfePolicySet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfePolicySet.DataTfePolicySet",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -626,7 +626,7 @@ func DataTfePolicySet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfePolicySet.DataTfePolicySet",
+		"@cdktf/provider-tfe.dataTfePolicySet.DataTfePolicySet",
 		"tfResourceType",
 		&returns,
 	)

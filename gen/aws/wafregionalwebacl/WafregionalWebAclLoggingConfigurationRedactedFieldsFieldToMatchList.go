@@ -116,7 +116,7 @@ func NewWafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList(terr
 	j := jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList{}
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
+		"@cdktf/provider-aws.wafregionalWebAcl.WafregionalWebAclLoggingConfigurationRedactedFieldsFieldToMatchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

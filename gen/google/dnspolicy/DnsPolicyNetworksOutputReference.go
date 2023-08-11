@@ -179,7 +179,7 @@ func NewDnsPolicyNetworksOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DnsPolicyNetworksOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsPolicy.DnsPolicyNetworksOutputReference",
+		"@cdktf/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDnsPolicyNetworksOutputReference_Override(d DnsPolicyNetworksOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsPolicy.DnsPolicyNetworksOutputReference",
+		"@cdktf/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

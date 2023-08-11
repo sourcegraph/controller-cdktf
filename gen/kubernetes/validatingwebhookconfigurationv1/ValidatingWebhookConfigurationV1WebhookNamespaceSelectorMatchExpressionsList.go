@@ -116,7 +116,7 @@ func NewValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressions
 	j := jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

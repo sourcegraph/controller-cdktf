@@ -250,7 +250,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference(terr
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -855,7 +855,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	j := jsiiProxy_Lb{}
 
 	_jsii_.Create(
-		"aws.lb.Lb",
+		"@cdktf/provider-aws.lb.Lb",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -868,7 +868,7 @@ func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lb.Lb",
+		"@cdktf/provider-aws.lb.Lb",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -1177,7 +1177,7 @@ func Lb_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lb.Lb",
+		"@cdktf/provider-aws.lb.Lb",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1196,7 +1196,7 @@ func Lb_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lb.Lb",
+		"@cdktf/provider-aws.lb.Lb",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1215,7 +1215,7 @@ func Lb_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lb.Lb",
+		"@cdktf/provider-aws.lb.Lb",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1228,7 +1228,7 @@ func Lb_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lb.Lb",
+		"@cdktf/provider-aws.lb.Lb",
 		"tfResourceType",
 		&returns,
 	)

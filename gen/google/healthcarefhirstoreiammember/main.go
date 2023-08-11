@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMember",
 		reflect.TypeOf((*HealthcareFhirStoreIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberCondition",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberCondition",
 		reflect.TypeOf((*HealthcareFhirStoreIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberConditionOutputReference",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberConditionOutputReference",
 		reflect.TypeOf((*HealthcareFhirStoreIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberConfig",
+		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberConfig",
 		reflect.TypeOf((*HealthcareFhirStoreIamMemberConfig)(nil)).Elem(),
 	)
 }

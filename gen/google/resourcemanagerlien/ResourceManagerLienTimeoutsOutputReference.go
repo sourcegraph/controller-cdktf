@@ -204,7 +204,7 @@ func NewResourceManagerLienTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ResourceManagerLienTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.resourceManagerLien.ResourceManagerLienTimeoutsOutputReference",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLienTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewResourceManagerLienTimeoutsOutputReference_Override(r ResourceManagerLie
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.resourceManagerLien.ResourceManagerLienTimeoutsOutputReference",
+		"@cdktf/provider-google.resourceManagerLien.ResourceManagerLienTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

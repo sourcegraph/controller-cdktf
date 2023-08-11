@@ -394,7 +394,7 @@ func NewCloudsearchDomainIndexFieldOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_CloudsearchDomainIndexFieldOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -406,7 +406,7 @@ func NewCloudsearchDomainIndexFieldOutputReference_Override(c CloudsearchDomainI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainIndexFieldOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

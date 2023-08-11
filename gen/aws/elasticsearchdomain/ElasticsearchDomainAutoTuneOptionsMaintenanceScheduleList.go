@@ -116,7 +116,7 @@ func NewElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList(terraformResou
 	j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList_Override(e Ela
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

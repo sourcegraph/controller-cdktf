@@ -416,7 +416,7 @@ func NewLakeformationDataLakeSettings(scope constructs.Construct, id *string, co
 	j := jsiiProxy_LakeformationDataLakeSettings{}
 
 	_jsii_.Create(
-		"aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -429,7 +429,7 @@ func NewLakeformationDataLakeSettings_Override(l LakeformationDataLakeSettings, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -573,7 +573,7 @@ func LakeformationDataLakeSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -592,7 +592,7 @@ func LakeformationDataLakeSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func LakeformationDataLakeSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func LakeformationDataLakeSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
 		"tfResourceType",
 		&returns,
 	)

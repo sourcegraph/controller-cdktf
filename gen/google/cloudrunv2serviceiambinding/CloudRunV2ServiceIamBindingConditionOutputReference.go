@@ -226,7 +226,7 @@ func NewCloudRunV2ServiceIamBindingConditionOutputReference(terraformResource cd
 	j := jsiiProxy_CloudRunV2ServiceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2ServiceIamBinding.CloudRunV2ServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.cloudRunV2ServiceIamBinding.CloudRunV2ServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCloudRunV2ServiceIamBindingConditionOutputReference_Override(c CloudRunV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2ServiceIamBinding.CloudRunV2ServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.cloudRunV2ServiceIamBinding.CloudRunV2ServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

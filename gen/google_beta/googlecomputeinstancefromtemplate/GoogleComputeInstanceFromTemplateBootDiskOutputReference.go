@@ -335,7 +335,7 @@ func NewGoogleComputeInstanceFromTemplateBootDiskOutputReference(terraformResour
 	j := jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -347,7 +347,7 @@ func NewGoogleComputeInstanceFromTemplateBootDiskOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -167,7 +167,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

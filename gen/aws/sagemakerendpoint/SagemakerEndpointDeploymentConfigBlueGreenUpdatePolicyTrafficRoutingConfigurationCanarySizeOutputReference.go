@@ -202,7 +202,7 @@ func NewSagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConf
 	j := jsiiProxy_SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference",
+		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicyTrafficRoutingConfigurationCanarySizeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

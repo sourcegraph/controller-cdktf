@@ -376,7 +376,7 @@ func NewCloud9EnvironmentMembership(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_Cloud9EnvironmentMembership{}
 
 	_jsii_.Create(
-		"aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewCloud9EnvironmentMembership_Override(c Cloud9EnvironmentMembership, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -533,7 +533,7 @@ func Cloud9EnvironmentMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func Cloud9EnvironmentMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func Cloud9EnvironmentMembership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func Cloud9EnvironmentMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
 		"tfResourceType",
 		&returns,
 	)

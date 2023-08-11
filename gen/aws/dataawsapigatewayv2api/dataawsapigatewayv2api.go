@@ -436,7 +436,7 @@ func NewDataAwsApigatewayv2Api(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsApigatewayv2Api{}
 
 	_jsii_.Create(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewDataAwsApigatewayv2Api_Override(d DataAwsApigatewayv2Api, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -560,7 +560,7 @@ func DataAwsApigatewayv2Api_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func DataAwsApigatewayv2Api_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func DataAwsApigatewayv2Api_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func DataAwsApigatewayv2Api_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
 		"tfResourceType",
 		&returns,
 	)

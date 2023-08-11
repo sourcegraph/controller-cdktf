@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificate",
 		reflect.TypeOf((*AuthenticatedOriginPullsCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateConfig",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateConfig",
 		reflect.TypeOf((*AuthenticatedOriginPullsCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateTimeouts",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateTimeouts",
 		reflect.TypeOf((*AuthenticatedOriginPullsCertificateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.authenticatedOriginPullsCertificate.AuthenticatedOriginPullsCertificateTimeoutsOutputReference",
 		reflect.TypeOf((*AuthenticatedOriginPullsCertificateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

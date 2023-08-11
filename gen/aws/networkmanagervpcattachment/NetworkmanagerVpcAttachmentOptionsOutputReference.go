@@ -204,7 +204,7 @@ func NewNetworkmanagerVpcAttachmentOptionsOutputReference(terraformResource cdkt
 	j := jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkmanagerVpcAttachmentOptionsOutputReference_Override(n Networkmana
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
+		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

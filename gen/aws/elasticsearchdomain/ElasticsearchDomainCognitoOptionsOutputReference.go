@@ -249,7 +249,7 @@ func NewElasticsearchDomainCognitoOptionsOutputReference(terraformResource cdktf
 	j := jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainCognitoOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainCognitoOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewElasticsearchDomainCognitoOptionsOutputReference_Override(e Elasticsearc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainCognitoOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainCognitoOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -342,7 +342,7 @@ func NewRunTrigger(scope constructs.Construct, id *string, config *RunTriggerCon
 	j := jsiiProxy_RunTrigger{}
 
 	_jsii_.Create(
-		"tfe.runTrigger.RunTrigger",
+		"@cdktf/provider-tfe.runTrigger.RunTrigger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewRunTrigger_Override(r RunTrigger, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.runTrigger.RunTrigger",
+		"@cdktf/provider-tfe.runTrigger.RunTrigger",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -488,7 +488,7 @@ func RunTrigger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.runTrigger.RunTrigger",
+		"@cdktf/provider-tfe.runTrigger.RunTrigger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func RunTrigger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.runTrigger.RunTrigger",
+		"@cdktf/provider-tfe.runTrigger.RunTrigger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func RunTrigger_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.runTrigger.RunTrigger",
+		"@cdktf/provider-tfe.runTrigger.RunTrigger",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func RunTrigger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.runTrigger.RunTrigger",
+		"@cdktf/provider-tfe.runTrigger.RunTrigger",
 		"tfResourceType",
 		&returns,
 	)

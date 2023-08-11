@@ -401,7 +401,7 @@ func NewGooglePrivatecaCertificateTemplateIamPolicy(scope constructs.Construct, 
 	j := jsiiProxy_GooglePrivatecaCertificateTemplateIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGooglePrivatecaCertificateTemplateIamPolicy_Override(g GooglePrivatecaCe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GooglePrivatecaCertificateTemplateIamPolicy_IsConstruct(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GooglePrivatecaCertificateTemplateIamPolicy_IsTerraformElement(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GooglePrivatecaCertificateTemplateIamPolicy_IsTerraformResource(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GooglePrivatecaCertificateTemplateIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

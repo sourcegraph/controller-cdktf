@@ -642,7 +642,7 @@ func NewGoogleContainerAzureNodePool(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleContainerAzureNodePool{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -655,7 +655,7 @@ func NewGoogleContainerAzureNodePool_Override(g GoogleContainerAzureNodePool, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -854,7 +854,7 @@ func GoogleContainerAzureNodePool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -873,7 +873,7 @@ func GoogleContainerAzureNodePool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -892,7 +892,7 @@ func GoogleContainerAzureNodePool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -905,7 +905,7 @@ func GoogleContainerAzureNodePool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
+		"@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool",
 		"tfResourceType",
 		&returns,
 	)

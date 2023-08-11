@@ -179,7 +179,7 @@ func NewGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference(terra
 	j := jsiiProxy_GoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

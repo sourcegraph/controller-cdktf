@@ -116,7 +116,7 @@ func NewNotificationPolicyPagerdutyIntegrationList(terraformResource cdktf.IInte
 	j := jsiiProxy_NotificationPolicyPagerdutyIntegrationList{}
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationList",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNotificationPolicyPagerdutyIntegrationList_Override(n NotificationPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationList",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

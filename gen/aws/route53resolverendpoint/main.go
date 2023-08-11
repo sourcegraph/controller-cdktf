@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpoint",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpoint",
 		reflect.TypeOf((*Route53ResolverEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpointConfig",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointConfig",
 		reflect.TypeOf((*Route53ResolverEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddress",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddress",
 		reflect.TypeOf((*Route53ResolverEndpointIpAddress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddressList",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddressList",
 		reflect.TypeOf((*Route53ResolverEndpointIpAddressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddressOutputReference",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointIpAddressOutputReference",
 		reflect.TypeOf((*Route53ResolverEndpointIpAddressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpointTimeouts",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointTimeouts",
 		reflect.TypeOf((*Route53ResolverEndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53ResolverEndpoint.Route53ResolverEndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53ResolverEndpoint.Route53ResolverEndpointTimeoutsOutputReference",
 		reflect.TypeOf((*Route53ResolverEndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -180,7 +180,7 @@ func NewMacie2FindingsFilterFindingCriteriaOutputReference(terraformResource cdk
 	j := jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewMacie2FindingsFilterFindingCriteriaOutputReference_Override(m Macie2Find
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

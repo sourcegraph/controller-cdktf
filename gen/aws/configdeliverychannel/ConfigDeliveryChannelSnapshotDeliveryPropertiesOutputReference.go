@@ -180,7 +180,7 @@ func NewConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference(terraform
 	j := jsiiProxy_ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference",
+		"@cdktf/provider-aws.configDeliveryChannel.ConfigDeliveryChannelSnapshotDeliveryPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

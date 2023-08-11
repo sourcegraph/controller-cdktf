@@ -387,7 +387,7 @@ func NewNetworkInterfaceAttachmentA(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_NetworkInterfaceAttachmentA{}
 
 	_jsii_.Create(
-		"aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
+		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -400,7 +400,7 @@ func NewNetworkInterfaceAttachmentA_Override(n NetworkInterfaceAttachmentA, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
+		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -544,7 +544,7 @@ func NetworkInterfaceAttachmentA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
+		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func NetworkInterfaceAttachmentA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
+		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func NetworkInterfaceAttachmentA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
+		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func NetworkInterfaceAttachmentA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
+		"@cdktf/provider-aws.networkInterfaceAttachment.NetworkInterfaceAttachmentA",
 		"tfResourceType",
 		&returns,
 	)

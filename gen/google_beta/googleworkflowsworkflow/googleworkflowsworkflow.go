@@ -580,7 +580,7 @@ func NewGoogleWorkflowsWorkflow(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleWorkflowsWorkflow{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -593,7 +593,7 @@ func NewGoogleWorkflowsWorkflow_Override(g GoogleWorkflowsWorkflow, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -803,7 +803,7 @@ func GoogleWorkflowsWorkflow_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -822,7 +822,7 @@ func GoogleWorkflowsWorkflow_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -841,7 +841,7 @@ func GoogleWorkflowsWorkflow_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -854,7 +854,7 @@ func GoogleWorkflowsWorkflow_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
+		"@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow",
 		"tfResourceType",
 		&returns,
 	)

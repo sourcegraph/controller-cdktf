@@ -237,7 +237,7 @@ func NewGoogleCertificateManagerCertificateManagedOutputReference(terraformResou
 	j := jsiiProxy_GoogleCertificateManagerCertificateManagedOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedOutputReference",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -249,7 +249,7 @@ func NewGoogleCertificateManagerCertificateManagedOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedOutputReference",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

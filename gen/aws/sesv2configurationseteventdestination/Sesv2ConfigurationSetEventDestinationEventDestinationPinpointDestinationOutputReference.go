@@ -179,7 +179,7 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination
 	j := jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -227,7 +227,7 @@ func NewCloudfrontDistributionLoggingConfigOutputReference(terraformResource cdk
 	j := jsiiProxy_CloudfrontDistributionLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionLoggingConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewCloudfrontDistributionLoggingConfigOutputReference_Override(c Cloudfront
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionLoggingConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

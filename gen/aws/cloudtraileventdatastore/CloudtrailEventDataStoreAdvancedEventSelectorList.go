@@ -116,7 +116,7 @@ func NewCloudtrailEventDataStoreAdvancedEventSelectorList(terraformResource cdkt
 	j := jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorList{}
 
 	_jsii_.Create(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorList",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudtrailEventDataStoreAdvancedEventSelectorList_Override(c CloudtrailE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorList",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProject",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProject",
 		reflect.TypeOf((*CodebuildProject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectArtifacts",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectArtifacts",
 		reflect.TypeOf((*CodebuildProjectArtifacts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectArtifactsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectArtifactsOutputReference",
 		reflect.TypeOf((*CodebuildProjectArtifactsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdentifier", GoGetter: "ArtifactIdentifier"},
@@ -201,11 +201,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectBuildBatchConfig",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfig",
 		reflect.TypeOf((*CodebuildProjectBuildBatchConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigOutputReference",
 		reflect.TypeOf((*CodebuildProjectBuildBatchConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "combineArtifacts", GoGetter: "CombineArtifacts"},
@@ -249,11 +249,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictions",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictions",
 		reflect.TypeOf((*CodebuildProjectBuildBatchConfigRestrictions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictionsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectBuildBatchConfigRestrictionsOutputReference",
 		reflect.TypeOf((*CodebuildProjectBuildBatchConfigRestrictionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -291,11 +291,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectCache",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectCache",
 		reflect.TypeOf((*CodebuildProjectCache)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectCacheOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectCacheOutputReference",
 		reflect.TypeOf((*CodebuildProjectCacheOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -336,19 +336,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectConfig",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectConfig",
 		reflect.TypeOf((*CodebuildProjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectEnvironment",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironment",
 		reflect.TypeOf((*CodebuildProjectEnvironment)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariable",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariable",
 		reflect.TypeOf((*CodebuildProjectEnvironmentEnvironmentVariable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableList",
 		reflect.TypeOf((*CodebuildProjectEnvironmentEnvironmentVariableList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -369,7 +369,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentEnvironmentVariableOutputReference",
 		reflect.TypeOf((*CodebuildProjectEnvironmentEnvironmentVariableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -408,7 +408,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectEnvironmentOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentOutputReference",
 		reflect.TypeOf((*CodebuildProjectEnvironmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
@@ -463,11 +463,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredential",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredential",
 		reflect.TypeOf((*CodebuildProjectEnvironmentRegistryCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredentialOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredentialOutputReference",
 		reflect.TypeOf((*CodebuildProjectEnvironmentRegistryCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -503,11 +503,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectFileSystemLocations",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocations",
 		reflect.TypeOf((*CodebuildProjectFileSystemLocations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectFileSystemLocationsList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsList",
 		reflect.TypeOf((*CodebuildProjectFileSystemLocationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -528,7 +528,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectFileSystemLocationsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectFileSystemLocationsOutputReference",
 		reflect.TypeOf((*CodebuildProjectFileSystemLocationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -575,15 +575,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectLogsConfig",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfig",
 		reflect.TypeOf((*CodebuildProjectLogsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogs",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogs",
 		reflect.TypeOf((*CodebuildProjectLogsConfigCloudwatchLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigCloudwatchLogsOutputReference",
 		reflect.TypeOf((*CodebuildProjectLogsConfigCloudwatchLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -624,7 +624,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectLogsConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigOutputReference",
 		reflect.TypeOf((*CodebuildProjectLogsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogs", GoGetter: "CloudwatchLogs"},
@@ -664,11 +664,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectLogsConfigS3Logs",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigS3Logs",
 		reflect.TypeOf((*CodebuildProjectLogsConfigS3Logs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectLogsConfigS3LogsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectLogsConfigS3LogsOutputReference",
 		reflect.TypeOf((*CodebuildProjectLogsConfigS3LogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketOwnerAccess", GoGetter: "BucketOwnerAccess"},
@@ -712,11 +712,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSecondaryArtifacts",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifacts",
 		reflect.TypeOf((*CodebuildProjectSecondaryArtifacts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSecondaryArtifactsList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsList",
 		reflect.TypeOf((*CodebuildProjectSecondaryArtifactsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -737,7 +737,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondaryArtifactsOutputReference",
 		reflect.TypeOf((*CodebuildProjectSecondaryArtifactsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactIdentifier", GoGetter: "ArtifactIdentifier"},
@@ -797,11 +797,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSecondarySourceVersion",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersion",
 		reflect.TypeOf((*CodebuildProjectSecondarySourceVersion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSecondarySourceVersionList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionList",
 		reflect.TypeOf((*CodebuildProjectSecondarySourceVersionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -822,7 +822,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSecondarySourceVersionOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourceVersionOutputReference",
 		reflect.TypeOf((*CodebuildProjectSecondarySourceVersionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -858,15 +858,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSecondarySources",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySources",
 		reflect.TypeOf((*CodebuildProjectSecondarySources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesAuth",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuth",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesAuthOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesAuthOutputReference",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -903,11 +903,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfig",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfig",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesBuildStatusConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -945,11 +945,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfig",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfig",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesGitSubmodulesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesGitSubmodulesConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -983,7 +983,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesList",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesList",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1004,7 +1004,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesOutputReference",
 		reflect.TypeOf((*CodebuildProjectSecondarySourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auth", GoGetter: "Auth"},
@@ -1067,15 +1067,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSource",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSource",
 		reflect.TypeOf((*CodebuildProjectSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSourceAuth",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceAuth",
 		reflect.TypeOf((*CodebuildProjectSourceAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSourceAuthOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceAuthOutputReference",
 		reflect.TypeOf((*CodebuildProjectSourceAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1112,11 +1112,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSourceBuildStatusConfig",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceBuildStatusConfig",
 		reflect.TypeOf((*CodebuildProjectSourceBuildStatusConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSourceBuildStatusConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceBuildStatusConfigOutputReference",
 		reflect.TypeOf((*CodebuildProjectSourceBuildStatusConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1154,11 +1154,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfig",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfig",
 		reflect.TypeOf((*CodebuildProjectSourceGitSubmodulesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceGitSubmodulesConfigOutputReference",
 		reflect.TypeOf((*CodebuildProjectSourceGitSubmodulesConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1192,7 +1192,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectSourceOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSourceOutputReference",
 		reflect.TypeOf((*CodebuildProjectSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auth", GoGetter: "Auth"},
@@ -1253,11 +1253,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildProject.CodebuildProjectVpcConfig",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectVpcConfig",
 		reflect.TypeOf((*CodebuildProjectVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
 		reflect.TypeOf((*CodebuildProjectVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

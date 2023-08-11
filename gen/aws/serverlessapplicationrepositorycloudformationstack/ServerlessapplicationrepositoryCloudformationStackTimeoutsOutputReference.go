@@ -228,7 +228,7 @@ func NewServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReferenc
 	j := jsiiProxy_ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference",
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference",
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStackTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

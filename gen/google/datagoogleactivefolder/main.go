@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleActiveFolder.DataGoogleActiveFolder",
+		"@cdktf/provider-google.dataGoogleActiveFolder.DataGoogleActiveFolder",
 		reflect.TypeOf((*DataGoogleActiveFolder)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleActiveFolder.DataGoogleActiveFolderConfig",
+		"@cdktf/provider-google.dataGoogleActiveFolder.DataGoogleActiveFolderConfig",
 		reflect.TypeOf((*DataGoogleActiveFolderConfig)(nil)).Elem(),
 	)
 }

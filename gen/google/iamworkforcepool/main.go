@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iamWorkforcePool.IamWorkforcePool",
+		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePool",
 		reflect.TypeOf((*IamWorkforcePool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkforcePool.IamWorkforcePoolConfig",
+		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePoolConfig",
 		reflect.TypeOf((*IamWorkforcePoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkforcePool.IamWorkforcePoolTimeouts",
+		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePoolTimeouts",
 		reflect.TypeOf((*IamWorkforcePoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamWorkforcePool.IamWorkforcePoolTimeoutsOutputReference",
+		"@cdktf/provider-google.iamWorkforcePool.IamWorkforcePoolTimeoutsOutputReference",
 		reflect.TypeOf((*IamWorkforcePoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

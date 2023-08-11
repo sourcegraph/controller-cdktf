@@ -116,7 +116,7 @@ func NewOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsInventoryFiltersList(t
 	j := jsiiProxy_OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsInventoryFiltersList{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsInventoryFiltersList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsInventoryFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOsConfigOsPolicyAssignmentOsPoliciesResourceGroupsInventoryFiltersList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsInventoryFiltersList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentOsPoliciesResourceGroupsInventoryFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

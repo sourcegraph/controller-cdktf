@@ -642,7 +642,7 @@ func NewContainerAzureNodePool(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_ContainerAzureNodePool{}
 
 	_jsii_.Create(
-		"google.containerAzureNodePool.ContainerAzureNodePool",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -655,7 +655,7 @@ func NewContainerAzureNodePool_Override(c ContainerAzureNodePool, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureNodePool.ContainerAzureNodePool",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePool",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -854,7 +854,7 @@ func ContainerAzureNodePool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAzureNodePool.ContainerAzureNodePool",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -873,7 +873,7 @@ func ContainerAzureNodePool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAzureNodePool.ContainerAzureNodePool",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -892,7 +892,7 @@ func ContainerAzureNodePool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAzureNodePool.ContainerAzureNodePool",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -905,7 +905,7 @@ func ContainerAzureNodePool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerAzureNodePool.ContainerAzureNodePool",
+		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePool",
 		"tfResourceType",
 		&returns,
 	)

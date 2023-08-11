@@ -396,7 +396,7 @@ func NewDataGoogleSqlBackupRun(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataGoogleSqlBackupRun{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
+		"@cdktf/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -409,7 +409,7 @@ func NewDataGoogleSqlBackupRun_Override(d DataGoogleSqlBackupRun, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
+		"@cdktf/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -542,7 +542,7 @@ func DataGoogleSqlBackupRun_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
+		"@cdktf/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func DataGoogleSqlBackupRun_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
+		"@cdktf/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func DataGoogleSqlBackupRun_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
+		"@cdktf/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -593,7 +593,7 @@ func DataGoogleSqlBackupRun_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
+		"@cdktf/provider-google.dataGoogleSqlBackupRun.DataGoogleSqlBackupRun",
 		"tfResourceType",
 		&returns,
 	)

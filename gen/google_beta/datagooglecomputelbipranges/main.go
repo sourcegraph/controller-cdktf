@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
+		"@cdktf/provider-google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges",
 		reflect.TypeOf((*DataGoogleComputeLbIpRanges)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -55,7 +55,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRangesConfig",
+		"@cdktf/provider-google-beta.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRangesConfig",
 		reflect.TypeOf((*DataGoogleComputeLbIpRangesConfig)(nil)).Elem(),
 	)
 }

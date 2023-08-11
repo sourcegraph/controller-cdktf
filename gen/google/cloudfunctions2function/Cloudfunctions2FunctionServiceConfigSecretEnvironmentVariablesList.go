@@ -116,7 +116,7 @@ func NewCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList(terra
 	j := jsiiProxy_Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList{}
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

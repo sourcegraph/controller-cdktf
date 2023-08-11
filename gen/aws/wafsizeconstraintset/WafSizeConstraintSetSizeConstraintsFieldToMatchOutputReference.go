@@ -203,7 +203,7 @@ func NewWafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference(terraform
 	j := jsiiProxy_WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewWafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsFieldToMatchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

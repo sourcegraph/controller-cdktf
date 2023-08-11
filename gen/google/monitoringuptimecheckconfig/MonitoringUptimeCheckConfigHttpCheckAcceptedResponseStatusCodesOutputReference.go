@@ -204,7 +204,7 @@ func NewMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputRef
 	j := jsiiProxy_MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

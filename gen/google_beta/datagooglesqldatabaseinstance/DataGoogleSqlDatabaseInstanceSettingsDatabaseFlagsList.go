@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList(terraformResource
 	j := jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList_Override(d DataGo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList",
+		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

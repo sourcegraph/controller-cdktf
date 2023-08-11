@@ -116,7 +116,7 @@ func NewPodV1SpecContainerLifecyclePostStartTcpSocketList(terraformResource cdkt
 	j := jsiiProxy_PodV1SpecContainerLifecyclePostStartTcpSocketList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLifecyclePostStartTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecContainerLifecyclePostStartTcpSocketList_Override(p PodV1SpecCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerLifecyclePostStartTcpSocketList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerLifecyclePostStartTcpSocketList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

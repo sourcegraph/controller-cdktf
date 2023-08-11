@@ -116,7 +116,7 @@ func NewGoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList(t
 	j := jsiiProxy_GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList",
+		"@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyRule.GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

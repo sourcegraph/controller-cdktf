@@ -436,7 +436,7 @@ func NewDataCatalogPolicyTag(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataCatalogPolicyTag{}
 
 	_jsii_.Create(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTag",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewDataCatalogPolicyTag_Override(d DataCatalogPolicyTag, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTag",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -604,7 +604,7 @@ func DataCatalogPolicyTag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTag",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataCatalogPolicyTag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTag",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func DataCatalogPolicyTag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTag",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func DataCatalogPolicyTag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTag",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag",
 		"tfResourceType",
 		&returns,
 	)

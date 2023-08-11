@@ -116,7 +116,7 @@ func NewDataprocClusterClusterConfigDataprocMetricConfigMetricsList(terraformRes
 	j := jsiiProxy_DataprocClusterClusterConfigDataprocMetricConfigMetricsList{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataprocClusterClusterConfigDataprocMetricConfigMetricsList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

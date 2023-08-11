@@ -425,7 +425,7 @@ func NewEmrcontainersVirtualCluster(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_EmrcontainersVirtualCluster{}
 
 	_jsii_.Create(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewEmrcontainersVirtualCluster_Override(e EmrcontainersVirtualCluster, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -582,7 +582,7 @@ func EmrcontainersVirtualCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func EmrcontainersVirtualCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func EmrcontainersVirtualCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func EmrcontainersVirtualCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
+		"@cdktf/provider-aws.emrcontainersVirtualCluster.EmrcontainersVirtualCluster",
 		"tfResourceType",
 		&returns,
 	)

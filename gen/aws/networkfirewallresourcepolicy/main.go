@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicy",
+		"@cdktf/provider-aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicy",
 		reflect.TypeOf((*NetworkfirewallResourcePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicyConfig",
+		"@cdktf/provider-aws.networkfirewallResourcePolicy.NetworkfirewallResourcePolicyConfig",
 		reflect.TypeOf((*NetworkfirewallResourcePolicyConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.mainRouteTableAssociation.MainRouteTableAssociation",
+		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociation",
 		reflect.TypeOf((*MainRouteTableAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mainRouteTableAssociation.MainRouteTableAssociationConfig",
+		"@cdktf/provider-aws.mainRouteTableAssociation.MainRouteTableAssociationConfig",
 		reflect.TypeOf((*MainRouteTableAssociationConfig)(nil)).Elem(),
 	)
 }

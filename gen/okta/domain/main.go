@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.domain.Domain",
+		"@cdktf/provider-okta.domain.Domain",
 		reflect.TypeOf((*Domain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.domain.DomainConfig",
+		"@cdktf/provider-okta.domain.DomainConfig",
 		reflect.TypeOf((*DomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.domain.DomainDnsRecords",
+		"@cdktf/provider-okta.domain.DomainDnsRecords",
 		reflect.TypeOf((*DomainDnsRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.domain.DomainDnsRecordsList",
+		"@cdktf/provider-okta.domain.DomainDnsRecordsList",
 		reflect.TypeOf((*DomainDnsRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -93,7 +93,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.domain.DomainDnsRecordsOutputReference",
+		"@cdktf/provider-okta.domain.DomainDnsRecordsOutputReference",
 		reflect.TypeOf((*DomainDnsRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

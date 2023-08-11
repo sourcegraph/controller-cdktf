@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization",
 		reflect.TypeOf((*ApigeeSyncAuthorization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorizationConfig",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationConfig",
 		reflect.TypeOf((*ApigeeSyncAuthorizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts",
 		reflect.TypeOf((*ApigeeSyncAuthorizationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeoutsOutputReference",
 		reflect.TypeOf((*ApigeeSyncAuthorizationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

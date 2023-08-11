@@ -227,7 +227,7 @@ func NewBigqueryJobCopySourceTablesOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_BigqueryJobCopySourceTablesOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewBigqueryJobCopySourceTablesOutputReference_Override(b BigqueryJobCopySou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

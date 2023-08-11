@@ -116,7 +116,7 @@ func NewOpsworksRailsAppLayerEbsVolumeList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_OpsworksRailsAppLayerEbsVolumeList{}
 
 	_jsii_.Create(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksRailsAppLayerEbsVolumeList_Override(o OpsworksRailsAppLayerEbsVo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

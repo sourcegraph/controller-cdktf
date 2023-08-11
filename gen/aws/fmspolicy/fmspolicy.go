@@ -627,7 +627,7 @@ func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfi
 	j := jsiiProxy_FmsPolicy{}
 
 	_jsii_.Create(
-		"aws.fmsPolicy.FmsPolicy",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -640,7 +640,7 @@ func NewFmsPolicy_Override(f FmsPolicy, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fmsPolicy.FmsPolicy",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -861,7 +861,7 @@ func FmsPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fmsPolicy.FmsPolicy",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -880,7 +880,7 @@ func FmsPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fmsPolicy.FmsPolicy",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -899,7 +899,7 @@ func FmsPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fmsPolicy.FmsPolicy",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -912,7 +912,7 @@ func FmsPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fmsPolicy.FmsPolicy",
+		"@cdktf/provider-aws.fmsPolicy.FmsPolicy",
 		"tfResourceType",
 		&returns,
 	)

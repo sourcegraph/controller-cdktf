@@ -448,7 +448,7 @@ func NewEfsAccessPoint(scope constructs.Construct, id *string, config *EfsAccess
 	j := jsiiProxy_EfsAccessPoint{}
 
 	_jsii_.Create(
-		"aws.efsAccessPoint.EfsAccessPoint",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewEfsAccessPoint_Override(e EfsAccessPoint, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsAccessPoint.EfsAccessPoint",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -605,7 +605,7 @@ func EfsAccessPoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsAccessPoint.EfsAccessPoint",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func EfsAccessPoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsAccessPoint.EfsAccessPoint",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func EfsAccessPoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsAccessPoint.EfsAccessPoint",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func EfsAccessPoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.efsAccessPoint.EfsAccessPoint",
+		"@cdktf/provider-aws.efsAccessPoint.EfsAccessPoint",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewBinaryAuthorizationPolicyClusterAdmissionRulesList(terraformResource cdk
 	j := jsiiProxy_BinaryAuthorizationPolicyClusterAdmissionRulesList{}
 
 	_jsii_.Create(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBinaryAuthorizationPolicyClusterAdmissionRulesList_Override(b BinaryAuth
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

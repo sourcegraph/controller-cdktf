@@ -313,7 +313,7 @@ func NewDataAwsDxGateway(scope constructs.Construct, id *string, config *DataAws
 	j := jsiiProxy_DataAwsDxGateway{}
 
 	_jsii_.Create(
-		"aws.dataAwsDxGateway.DataAwsDxGateway",
+		"@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataAwsDxGateway_Override(d DataAwsDxGateway, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDxGateway.DataAwsDxGateway",
+		"@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataAwsDxGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDxGateway.DataAwsDxGateway",
+		"@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataAwsDxGateway_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDxGateway.DataAwsDxGateway",
+		"@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataAwsDxGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDxGateway.DataAwsDxGateway",
+		"@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataAwsDxGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDxGateway.DataAwsDxGateway",
+		"@cdktf/provider-aws.dataAwsDxGateway.DataAwsDxGateway",
 		"tfResourceType",
 		&returns,
 	)

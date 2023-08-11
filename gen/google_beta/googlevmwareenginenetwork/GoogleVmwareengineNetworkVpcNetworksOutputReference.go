@@ -178,7 +178,7 @@ func NewGoogleVmwareengineNetworkVpcNetworksOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleVmwareengineNetworkVpcNetworksOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksOutputReference",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGoogleVmwareengineNetworkVpcNetworksOutputReference_Override(g GoogleVmw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksOutputReference",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetworkVpcNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

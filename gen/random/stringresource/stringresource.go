@@ -581,7 +581,7 @@ func NewStringResource(scope constructs.Construct, id *string, config *StringRes
 	j := jsiiProxy_StringResource{}
 
 	_jsii_.Create(
-		"random.stringResource.StringResource",
+		"@cdktf/provider-random.stringResource.StringResource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -594,7 +594,7 @@ func NewStringResource_Override(s StringResource, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"random.stringResource.StringResource",
+		"@cdktf/provider-random.stringResource.StringResource",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -826,7 +826,7 @@ func StringResource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.stringResource.StringResource",
+		"@cdktf/provider-random.stringResource.StringResource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -845,7 +845,7 @@ func StringResource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.stringResource.StringResource",
+		"@cdktf/provider-random.stringResource.StringResource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -864,7 +864,7 @@ func StringResource_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.stringResource.StringResource",
+		"@cdktf/provider-random.stringResource.StringResource",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -877,7 +877,7 @@ func StringResource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"random.stringResource.StringResource",
+		"@cdktf/provider-random.stringResource.StringResource",
 		"tfResourceType",
 		&returns,
 	)

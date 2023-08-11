@@ -414,7 +414,7 @@ func NewServicecatalogServiceAction(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ServicecatalogServiceAction{}
 
 	_jsii_.Create(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceAction",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewServicecatalogServiceAction_Override(s ServicecatalogServiceAction, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceAction",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -571,7 +571,7 @@ func ServicecatalogServiceAction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceAction",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func ServicecatalogServiceAction_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceAction",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func ServicecatalogServiceAction_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceAction",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func ServicecatalogServiceAction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceAction",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceAction",
 		"tfResourceType",
 		&returns,
 	)

@@ -660,7 +660,7 @@ func NewMemcacheInstance(scope constructs.Construct, id *string, config *Memcach
 	j := jsiiProxy_MemcacheInstance{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstance",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -673,7 +673,7 @@ func NewMemcacheInstance_Override(m MemcacheInstance, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstance",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -883,7 +883,7 @@ func MemcacheInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.memcacheInstance.MemcacheInstance",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -902,7 +902,7 @@ func MemcacheInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.memcacheInstance.MemcacheInstance",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -921,7 +921,7 @@ func MemcacheInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.memcacheInstance.MemcacheInstance",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -934,7 +934,7 @@ func MemcacheInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.memcacheInstance.MemcacheInstance",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstance",
 		"tfResourceType",
 		&returns,
 	)

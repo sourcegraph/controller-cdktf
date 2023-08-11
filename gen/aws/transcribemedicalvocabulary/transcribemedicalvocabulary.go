@@ -459,7 +459,7 @@ func NewTranscribeMedicalVocabulary(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_TranscribeMedicalVocabulary{}
 
 	_jsii_.Create(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewTranscribeMedicalVocabulary_Override(t TranscribeMedicalVocabulary, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -638,7 +638,7 @@ func TranscribeMedicalVocabulary_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func TranscribeMedicalVocabulary_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func TranscribeMedicalVocabulary_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func TranscribeMedicalVocabulary_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
+		"@cdktf/provider-aws.transcribeMedicalVocabulary.TranscribeMedicalVocabulary",
 		"tfResourceType",
 		&returns,
 	)

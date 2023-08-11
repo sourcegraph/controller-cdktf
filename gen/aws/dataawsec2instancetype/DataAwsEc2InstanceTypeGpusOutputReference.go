@@ -200,7 +200,7 @@ func NewDataAwsEc2InstanceTypeGpusOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsEc2InstanceTypeGpusOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsEc2InstanceTypeGpusOutputReference_Override(d DataAwsEc2InstanceT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeGpusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

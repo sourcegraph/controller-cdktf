@@ -228,7 +228,7 @@ func NewGoogleComputeBackendServiceConsistentHashHttpCookieOutputReference(terra
 	j := jsiiProxy_GoogleComputeBackendServiceConsistentHashHttpCookieOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceConsistentHashHttpCookieOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceConsistentHashHttpCookieOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeBackendServiceConsistentHashHttpCookieOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceConsistentHashHttpCookieOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceConsistentHashHttpCookieOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

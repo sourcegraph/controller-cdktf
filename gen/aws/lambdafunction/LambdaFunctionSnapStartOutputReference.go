@@ -190,7 +190,7 @@ func NewLambdaFunctionSnapStartOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LambdaFunctionSnapStartOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewLambdaFunctionSnapStartOutputReference_Override(l LambdaFunctionSnapStar
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -616,7 +616,7 @@ func NewComputeAddress(scope constructs.Construct, id *string, config *ComputeAd
 	j := jsiiProxy_ComputeAddress{}
 
 	_jsii_.Create(
-		"google.computeAddress.ComputeAddress",
+		"@cdktf/provider-google.computeAddress.ComputeAddress",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -629,7 +629,7 @@ func NewComputeAddress_Override(c ComputeAddress, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeAddress.ComputeAddress",
+		"@cdktf/provider-google.computeAddress.ComputeAddress",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -861,7 +861,7 @@ func ComputeAddress_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeAddress.ComputeAddress",
+		"@cdktf/provider-google.computeAddress.ComputeAddress",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -880,7 +880,7 @@ func ComputeAddress_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeAddress.ComputeAddress",
+		"@cdktf/provider-google.computeAddress.ComputeAddress",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -899,7 +899,7 @@ func ComputeAddress_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeAddress.ComputeAddress",
+		"@cdktf/provider-google.computeAddress.ComputeAddress",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -912,7 +912,7 @@ func ComputeAddress_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeAddress.ComputeAddress",
+		"@cdktf/provider-google.computeAddress.ComputeAddress",
 		"tfResourceType",
 		&returns,
 	)

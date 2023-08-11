@@ -104,7 +104,7 @@ func NewDataAwsKendraIndexUserGroupResolutionConfigurationList(terraformResource
 	j := jsiiProxy_DataAwsKendraIndexUserGroupResolutionConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexUserGroupResolutionConfigurationList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexUserGroupResolutionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraIndexUserGroupResolutionConfigurationList_Override(d DataAw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexUserGroupResolutionConfigurationList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexUserGroupResolutionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

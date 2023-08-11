@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamServiceLinkedRole.IamServiceLinkedRole",
+		"@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRole",
 		reflect.TypeOf((*IamServiceLinkedRole)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig",
+		"@cdktf/provider-aws.iamServiceLinkedRole.IamServiceLinkedRoleConfig",
 		reflect.TypeOf((*IamServiceLinkedRoleConfig)(nil)).Elem(),
 	)
 }

@@ -180,7 +180,7 @@ func NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutp
 	j := jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

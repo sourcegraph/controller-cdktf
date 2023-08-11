@@ -228,7 +228,7 @@ func NewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReference(terra
 	j := jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

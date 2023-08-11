@@ -104,7 +104,7 @@ func NewDataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginList
 	j := jsiiProxy_DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginList",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginList",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

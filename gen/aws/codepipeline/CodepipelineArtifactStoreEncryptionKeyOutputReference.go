@@ -202,7 +202,7 @@ func NewCodepipelineArtifactStoreEncryptionKeyOutputReference(terraformResource 
 	j := jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineArtifactStoreEncryptionKeyOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCodepipelineArtifactStoreEncryptionKeyOutputReference_Override(c Codepip
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineArtifactStoreEncryptionKeyOutputReference",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -407,7 +407,7 @@ func NewDataGoogleDataplexAssetIamPolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataGoogleDataplexAssetIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -420,7 +420,7 @@ func NewDataGoogleDataplexAssetIamPolicy_Override(d DataGoogleDataplexAssetIamPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -564,7 +564,7 @@ func DataGoogleDataplexAssetIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func DataGoogleDataplexAssetIamPolicy_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func DataGoogleDataplexAssetIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataGoogleDataplexAssetIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexAssetIamPolicy.DataGoogleDataplexAssetIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

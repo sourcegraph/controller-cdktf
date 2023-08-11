@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysis",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysis)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,11 +79,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHints",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHints",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisAlternatePathHints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisAlternatePathHintsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisAlternatePathHintsOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisAlternatePathHintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,19 +137,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisConfig",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisConfig",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanations",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanations",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanations)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAcl",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAcl",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAcl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -169,7 +169,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -204,11 +204,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRule",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRule",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -228,7 +228,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
@@ -266,11 +266,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRulePortRange",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRulePortRange",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRulePortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -290,7 +290,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAclRulePortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -324,11 +324,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAttachedTo",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAttachedTo",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAttachedTo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAttachedToList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAttachedToList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAttachedToList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -348,7 +348,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAttachedToOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsAttachedToOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsAttachedToOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -383,11 +383,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListener)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -407,7 +407,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -441,11 +441,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsComponent",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsComponent",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsComponent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsComponentList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsComponentList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsComponentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -465,7 +465,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsComponentOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsComponentOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsComponentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -500,11 +500,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsCustomerGateway",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsCustomerGateway",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsCustomerGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -524,7 +524,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsCustomerGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -559,11 +559,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestination",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestination",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -583,7 +583,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -618,11 +618,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationVpc",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationVpc",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationVpcList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -642,7 +642,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsDestinationVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -677,11 +677,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListener)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -701,7 +701,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsElasticLoadBalancerListenerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -736,11 +736,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsIngressRouteTable",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsIngressRouteTable",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsIngressRouteTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -760,7 +760,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsIngressRouteTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -795,11 +795,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsInternetGateway",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsInternetGateway",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsInternetGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsInternetGatewayList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsInternetGatewayList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsInternetGatewayList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -819,7 +819,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsInternetGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -854,7 +854,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -874,11 +874,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -898,7 +898,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -933,11 +933,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -957,7 +957,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsLoadBalancerTargetGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -992,11 +992,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGateway",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGateway",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNatGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNatGatewayList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1016,7 +1016,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNatGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1051,11 +1051,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNetworkInterface",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNetworkInterface",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNetworkInterface)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1075,7 +1075,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsNetworkInterfaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1110,7 +1110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
@@ -1190,11 +1190,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPortRanges",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPortRanges",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPortRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPortRangesList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPortRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1214,7 +1214,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPortRangesOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPortRangesOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPortRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1248,11 +1248,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1272,7 +1272,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1307,11 +1307,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTable",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTable",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1331,7 +1331,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1366,11 +1366,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRoute",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRoute",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1390,7 +1390,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1432,11 +1432,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroup",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroup",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1456,7 +1456,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1491,11 +1491,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRule",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRule",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1515,7 +1515,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
@@ -1553,11 +1553,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1577,7 +1577,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupRulePortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1611,11 +1611,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroups",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroups",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1635,7 +1635,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1670,11 +1670,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSourceVpc",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSourceVpc",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSourceVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSourceVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSourceVpcList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSourceVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1694,7 +1694,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSourceVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1729,11 +1729,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnet",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnet",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1753,7 +1753,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1788,11 +1788,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTable",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTable",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1812,7 +1812,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1847,15 +1847,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGateway",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGateway",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1875,7 +1875,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayAttachmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1910,7 +1910,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1930,7 +1930,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -1965,11 +1965,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1989,7 +1989,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2024,11 +2024,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2048,7 +2048,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsTransitGatewayRouteTableRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachmentId", GoGetter: "AttachmentId"},
@@ -2087,15 +2087,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpc",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpc",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcEndpoint",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcEndpoint",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcEndpointList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2115,7 +2115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2150,7 +2150,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2170,7 +2170,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2205,11 +2205,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnection",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnection",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnection)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2229,7 +2229,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpcPeeringConnectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2264,11 +2264,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnection",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnection",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnConnection)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnConnectionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2288,7 +2288,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnConnectionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2323,11 +2323,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnGateway",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnGateway",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnGatewayList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnGatewayList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnGatewayList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2347,7 +2347,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsVpnGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2382,15 +2382,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponents",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponents",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponents)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRule",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRule",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2410,7 +2410,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
@@ -2448,11 +2448,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2472,7 +2472,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAclRulePortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2506,15 +2506,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2534,7 +2534,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsComponentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2569,7 +2569,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2589,7 +2589,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAdditionalDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalDetailType", GoGetter: "AdditionalDetailType"},
@@ -2623,11 +2623,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedTo",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedTo",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedTo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2647,7 +2647,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsAttachedToOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2682,11 +2682,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsComponent",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsComponent",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsComponent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsComponentList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsComponentList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsComponentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2706,7 +2706,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsComponentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2741,11 +2741,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2765,7 +2765,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsDestinationVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -2800,15 +2800,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeader",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeader",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2828,7 +2828,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderDestinationPortRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2862,7 +2862,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2882,7 +2882,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2919,11 +2919,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2943,7 +2943,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsInboundHeaderSourcePortRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2977,7 +2977,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2997,15 +2997,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3025,7 +3025,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderDestinationPortRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3059,7 +3059,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3079,7 +3079,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3116,11 +3116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3140,7 +3140,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3174,7 +3174,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclRule", GoGetter: "AclRule"},
@@ -3221,11 +3221,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3245,7 +3245,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsRouteTableRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3287,11 +3287,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3311,7 +3311,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
@@ -3349,11 +3349,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3373,7 +3373,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSecurityGroupRulePortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3407,11 +3407,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpc",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpc",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3431,7 +3431,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSourceVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -3466,11 +3466,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSubnet",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSubnet",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSubnet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3490,7 +3490,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsSubnetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -3525,11 +3525,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGateway",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGateway",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3549,7 +3549,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -3584,11 +3584,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3608,7 +3608,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsTransitGatewayRouteTableRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachmentId", GoGetter: "AttachmentId"},
@@ -3647,11 +3647,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsVpc",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsVpc",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsVpcList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3671,7 +3671,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisForwardPathComponentsVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -3706,15 +3706,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponents",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponents",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponents)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRule",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRule",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3734,7 +3734,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
@@ -3772,11 +3772,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3796,7 +3796,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAclRulePortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3830,15 +3830,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3858,7 +3858,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsComponentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -3893,7 +3893,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3913,7 +3913,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAdditionalDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalDetailType", GoGetter: "AdditionalDetailType"},
@@ -3947,11 +3947,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedTo",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedTo",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedTo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3971,7 +3971,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsAttachedToOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -4006,11 +4006,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsComponent",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsComponent",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsComponent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsComponentList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsComponentList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsComponentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4030,7 +4030,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsComponentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -4065,11 +4065,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4089,7 +4089,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsDestinationVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -4124,15 +4124,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeader",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeader",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4152,7 +4152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderDestinationPortRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4186,7 +4186,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4206,7 +4206,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4243,11 +4243,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4267,7 +4267,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsInboundHeaderSourcePortRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4301,7 +4301,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4321,15 +4321,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4349,7 +4349,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderDestinationPortRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4383,7 +4383,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4403,7 +4403,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4440,11 +4440,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4464,7 +4464,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutboundHeaderSourcePortRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4498,7 +4498,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclRule", GoGetter: "AclRule"},
@@ -4545,11 +4545,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4569,7 +4569,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsRouteTableRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4611,11 +4611,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4635,7 +4635,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
@@ -4673,11 +4673,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4697,7 +4697,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSecurityGroupRulePortRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4731,11 +4731,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpc",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpc",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4755,7 +4755,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSourceVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -4790,11 +4790,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSubnet",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSubnet",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSubnet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4814,7 +4814,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsSubnetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -4849,11 +4849,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGateway",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGateway",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4873,7 +4873,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -4908,11 +4908,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRoute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4932,7 +4932,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayRouteTableRouteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachmentId", GoGetter: "AttachmentId"},
@@ -4971,11 +4971,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpc",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpc",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsVpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsVpcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4995,7 +4995,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference",
 		reflect.TypeOf((*Ec2NetworkInsightsAnalysisReturnPathComponentsVpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},

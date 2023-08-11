@@ -226,7 +226,7 @@ func NewStorageBucketIamBindingConditionOutputReference(terraformResource cdktf.
 	j := jsiiProxy_StorageBucketIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.storageBucketIamBinding.StorageBucketIamBindingConditionOutputReference",
+		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewStorageBucketIamBindingConditionOutputReference_Override(s StorageBucket
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucketIamBinding.StorageBucketIamBindingConditionOutputReference",
+		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

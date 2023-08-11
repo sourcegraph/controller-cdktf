@@ -252,7 +252,7 @@ func NewServicecatalogTagOptionTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_ServicecatalogTagOptionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewServicecatalogTagOptionTimeoutsOutputReference_Override(s Servicecatalog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

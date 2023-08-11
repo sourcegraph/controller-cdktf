@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.configConformancePack.ConfigConformancePack",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePack",
 		reflect.TypeOf((*ConfigConformancePack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConformancePack.ConfigConformancePackConfig",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackConfig",
 		reflect.TypeOf((*ConfigConformancePackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConformancePack.ConfigConformancePackInputParameter",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameter",
 		reflect.TypeOf((*ConfigConformancePackInputParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configConformancePack.ConfigConformancePackInputParameterList",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterList",
 		reflect.TypeOf((*ConfigConformancePackInputParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.configConformancePack.ConfigConformancePackInputParameterOutputReference",
+		"@cdktf/provider-aws.configConformancePack.ConfigConformancePackInputParameterOutputReference",
 		reflect.TypeOf((*ConfigConformancePackInputParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

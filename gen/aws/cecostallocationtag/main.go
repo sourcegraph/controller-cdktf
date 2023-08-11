@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ceCostAllocationTag.CeCostAllocationTag",
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		reflect.TypeOf((*CeCostAllocationTag)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostAllocationTag.CeCostAllocationTagConfig",
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTagConfig",
 		reflect.TypeOf((*CeCostAllocationTagConfig)(nil)).Elem(),
 	)
 }

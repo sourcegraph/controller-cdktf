@@ -204,7 +204,7 @@ func NewMqBrokerConfigurationOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_MqBrokerConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerConfigurationOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMqBrokerConfigurationOutputReference_Override(m MqBrokerConfigurationOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mqBroker.MqBrokerConfigurationOutputReference",
+		"@cdktf/provider-aws.mqBroker.MqBrokerConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.autoscalingSchedule.AutoscalingSchedule",
+		"@cdktf/provider-aws.autoscalingSchedule.AutoscalingSchedule",
 		reflect.TypeOf((*AutoscalingSchedule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.autoscalingSchedule.AutoscalingScheduleConfig",
+		"@cdktf/provider-aws.autoscalingSchedule.AutoscalingScheduleConfig",
 		reflect.TypeOf((*AutoscalingScheduleConfig)(nil)).Elem(),
 	)
 }

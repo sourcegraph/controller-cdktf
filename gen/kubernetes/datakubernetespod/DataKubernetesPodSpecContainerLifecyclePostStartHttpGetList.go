@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecContainerLifecyclePostStartHttpGetList(terraformRes
 	j := jsiiProxy_DataKubernetesPodSpecContainerLifecyclePostStartHttpGetList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerLifecyclePostStartHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerLifecyclePostStartHttpGetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecContainerLifecyclePostStartHttpGetList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerLifecyclePostStartHttpGetList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecContainerLifecyclePostStartHttpGetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

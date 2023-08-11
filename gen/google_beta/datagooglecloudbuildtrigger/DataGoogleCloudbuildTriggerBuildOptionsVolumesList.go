@@ -104,7 +104,7 @@ func NewDataGoogleCloudbuildTriggerBuildOptionsVolumesList(terraformResource cdk
 	j := jsiiProxy_DataGoogleCloudbuildTriggerBuildOptionsVolumesList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildOptionsVolumesList",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildOptionsVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudbuildTriggerBuildOptionsVolumesList_Override(d DataGoogle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildOptionsVolumesList",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildOptionsVolumesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

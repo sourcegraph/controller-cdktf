@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceScratchDiskList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataGoogleComputeInstanceScratchDiskList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceScratchDiskList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceScratchDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceScratchDiskList_Override(d DataGoogleComputeIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceScratchDiskList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceScratchDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

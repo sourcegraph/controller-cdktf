@@ -226,7 +226,7 @@ func NewLexIntentConfirmationPromptMessageOutputReference(terraformResource cdkt
 	j := jsiiProxy_LexIntentConfirmationPromptMessageOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewLexIntentConfirmationPromptMessageOutputReference_Override(l LexIntentCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

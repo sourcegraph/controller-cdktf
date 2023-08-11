@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference(terra
 	j := jsiiProxy_SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersProcessLaunchedAtDateRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -765,7 +765,7 @@ func NewPrivatecaCertificateAuthority(scope constructs.Construct, id *string, co
 	j := jsiiProxy_PrivatecaCertificateAuthority{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -778,7 +778,7 @@ func NewPrivatecaCertificateAuthority_Override(p PrivatecaCertificateAuthority, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -1032,7 +1032,7 @@ func PrivatecaCertificateAuthority_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1051,7 +1051,7 @@ func PrivatecaCertificateAuthority_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1070,7 +1070,7 @@ func PrivatecaCertificateAuthority_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1083,7 +1083,7 @@ func PrivatecaCertificateAuthority_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
+		"@cdktf/provider-google.privatecaCertificateAuthority.PrivatecaCertificateAuthority",
 		"tfResourceType",
 		&returns,
 	)

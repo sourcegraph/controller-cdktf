@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.storageObjectAccessControl.StorageObjectAccessControl",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControl",
 		reflect.TypeOf((*StorageObjectAccessControl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageObjectAccessControl.StorageObjectAccessControlConfig",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlConfig",
 		reflect.TypeOf((*StorageObjectAccessControlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.storageObjectAccessControl.StorageObjectAccessControlProjectTeam",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeam",
 		reflect.TypeOf((*StorageObjectAccessControlProjectTeam)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamList",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamList",
 		reflect.TypeOf((*StorageObjectAccessControlProjectTeamList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamOutputReference",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamOutputReference",
 		reflect.TypeOf((*StorageObjectAccessControlProjectTeamOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,11 +134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.storageObjectAccessControl.StorageObjectAccessControlTimeouts",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts",
 		reflect.TypeOf((*StorageObjectAccessControlTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
+		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
 		reflect.TypeOf((*StorageObjectAccessControlTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

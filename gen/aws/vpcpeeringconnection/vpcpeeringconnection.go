@@ -545,7 +545,7 @@ func NewVpcPeeringConnection(scope constructs.Construct, id *string, config *Vpc
 	j := jsiiProxy_VpcPeeringConnection{}
 
 	_jsii_.Create(
-		"aws.vpcPeeringConnection.VpcPeeringConnection",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -558,7 +558,7 @@ func NewVpcPeeringConnection_Override(v VpcPeeringConnection, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcPeeringConnection.VpcPeeringConnection",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnection",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -746,7 +746,7 @@ func VpcPeeringConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcPeeringConnection.VpcPeeringConnection",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func VpcPeeringConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcPeeringConnection.VpcPeeringConnection",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func VpcPeeringConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcPeeringConnection.VpcPeeringConnection",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func VpcPeeringConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcPeeringConnection.VpcPeeringConnection",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnection",
 		"tfResourceType",
 		&returns,
 	)

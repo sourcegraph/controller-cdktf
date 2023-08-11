@@ -179,7 +179,7 @@ func NewApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference(terraformRes
 	j := jsiiProxy_ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference{}
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference",
+		"@cdktf/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference_Override(a A
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference",
+		"@cdktf/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

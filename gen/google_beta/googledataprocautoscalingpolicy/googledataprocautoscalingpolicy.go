@@ -474,7 +474,7 @@ func NewGoogleDataprocAutoscalingPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleDataprocAutoscalingPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewGoogleDataprocAutoscalingPolicy_Override(g GoogleDataprocAutoscalingPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -631,7 +631,7 @@ func GoogleDataprocAutoscalingPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -650,7 +650,7 @@ func GoogleDataprocAutoscalingPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func GoogleDataprocAutoscalingPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func GoogleDataprocAutoscalingPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
+		"@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy",
 		"tfResourceType",
 		&returns,
 	)

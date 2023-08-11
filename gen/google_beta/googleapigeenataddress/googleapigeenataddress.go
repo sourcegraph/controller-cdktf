@@ -388,7 +388,7 @@ func NewGoogleApigeeNatAddress(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleApigeeNatAddress{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewGoogleApigeeNatAddress_Override(g GoogleApigeeNatAddress, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleApigeeNatAddress_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleApigeeNatAddress_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleApigeeNatAddress_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleApigeeNatAddress_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
+		"@cdktf/provider-google-beta.googleApigeeNatAddress.GoogleApigeeNatAddress",
 		"tfResourceType",
 		&returns,
 	)

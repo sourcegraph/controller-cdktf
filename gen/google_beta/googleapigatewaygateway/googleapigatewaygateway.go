@@ -484,7 +484,7 @@ func NewGoogleApiGatewayGateway(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleApiGatewayGateway{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewGoogleApiGatewayGateway_Override(g GoogleApiGatewayGateway, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -674,7 +674,7 @@ func GoogleApiGatewayGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func GoogleApiGatewayGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GoogleApiGatewayGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func GoogleApiGatewayGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
+		"@cdktf/provider-google-beta.googleApiGatewayGateway.GoogleApiGatewayGateway",
 		"tfResourceType",
 		&returns,
 	)

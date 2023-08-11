@@ -297,7 +297,7 @@ func NewDaemonsetSpecTemplateSpecVolumeAzureDiskOutputReference(terraformResourc
 	j := jsiiProxy_DaemonsetSpecTemplateSpecVolumeAzureDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -309,7 +309,7 @@ func NewDaemonsetSpecTemplateSpecVolumeAzureDiskOutputReference_Override(d Daemo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeAzureDiskOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

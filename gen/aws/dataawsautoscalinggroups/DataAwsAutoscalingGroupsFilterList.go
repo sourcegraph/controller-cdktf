@@ -116,7 +116,7 @@ func NewDataAwsAutoscalingGroupsFilterList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsAutoscalingGroupsFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAutoscalingGroups.DataAwsAutoscalingGroupsFilterList",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroups.DataAwsAutoscalingGroupsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsAutoscalingGroupsFilterList_Override(d DataAwsAutoscalingGroupsFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAutoscalingGroups.DataAwsAutoscalingGroupsFilterList",
+		"@cdktf/provider-aws.dataAwsAutoscalingGroups.DataAwsAutoscalingGroupsFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

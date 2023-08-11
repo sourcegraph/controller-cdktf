@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBinding",
 		reflect.TypeOf((*GkeBackupBackupPlanIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingCondition",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingCondition",
 		reflect.TypeOf((*GkeBackupBackupPlanIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingConditionOutputReference",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingConditionOutputReference",
 		reflect.TypeOf((*GkeBackupBackupPlanIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingConfig",
+		"@cdktf/provider-google.gkeBackupBackupPlanIamBinding.GkeBackupBackupPlanIamBindingConfig",
 		reflect.TypeOf((*GkeBackupBackupPlanIamBindingConfig)(nil)).Elem(),
 	)
 }

@@ -116,7 +116,7 @@ func NewDataAwsSsmInstancesFilterList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_DataAwsSsmInstancesFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmInstances.DataAwsSsmInstancesFilterList",
+		"@cdktf/provider-aws.dataAwsSsmInstances.DataAwsSsmInstancesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsSsmInstancesFilterList_Override(d DataAwsSsmInstancesFilterList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmInstances.DataAwsSsmInstancesFilterList",
+		"@cdktf/provider-aws.dataAwsSsmInstances.DataAwsSsmInstancesFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

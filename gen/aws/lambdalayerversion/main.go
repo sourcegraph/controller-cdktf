@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lambdaLayerVersion.LambdaLayerVersion",
+		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersion",
 		reflect.TypeOf((*LambdaLayerVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaLayerVersion.LambdaLayerVersionConfig",
+		"@cdktf/provider-aws.lambdaLayerVersion.LambdaLayerVersionConfig",
 		reflect.TypeOf((*LambdaLayerVersionConfig)(nil)).Elem(),
 	)
 }

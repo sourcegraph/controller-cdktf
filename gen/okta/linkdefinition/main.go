@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.linkDefinition.LinkDefinition",
+		"@cdktf/provider-okta.linkDefinition.LinkDefinition",
 		reflect.TypeOf((*LinkDefinition)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.linkDefinition.LinkDefinitionConfig",
+		"@cdktf/provider-okta.linkDefinition.LinkDefinitionConfig",
 		reflect.TypeOf((*LinkDefinitionConfig)(nil)).Elem(),
 	)
 }

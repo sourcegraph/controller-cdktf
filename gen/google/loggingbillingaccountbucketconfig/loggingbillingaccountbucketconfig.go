@@ -459,7 +459,7 @@ func NewLoggingBillingAccountBucketConfig(scope constructs.Construct, id *string
 	j := jsiiProxy_LoggingBillingAccountBucketConfig{}
 
 	_jsii_.Create(
-		"google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
+		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewLoggingBillingAccountBucketConfig_Override(l LoggingBillingAccountBucket
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
+		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -638,7 +638,7 @@ func LoggingBillingAccountBucketConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
+		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func LoggingBillingAccountBucketConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
+		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func LoggingBillingAccountBucketConfig_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
+		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func LoggingBillingAccountBucketConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
+		"@cdktf/provider-google.loggingBillingAccountBucketConfig.LoggingBillingAccountBucketConfig",
 		"tfResourceType",
 		&returns,
 	)

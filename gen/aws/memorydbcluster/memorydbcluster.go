@@ -962,7 +962,7 @@ func NewMemorydbCluster(scope constructs.Construct, id *string, config *Memorydb
 	j := jsiiProxy_MemorydbCluster{}
 
 	_jsii_.Create(
-		"aws.memorydbCluster.MemorydbCluster",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -975,7 +975,7 @@ func NewMemorydbCluster_Override(m MemorydbCluster, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.memorydbCluster.MemorydbCluster",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -1361,7 +1361,7 @@ func MemorydbCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbCluster.MemorydbCluster",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1380,7 +1380,7 @@ func MemorydbCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbCluster.MemorydbCluster",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1399,7 +1399,7 @@ func MemorydbCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbCluster.MemorydbCluster",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1412,7 +1412,7 @@ func MemorydbCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.memorydbCluster.MemorydbCluster",
+		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
 		"tfResourceType",
 		&returns,
 	)

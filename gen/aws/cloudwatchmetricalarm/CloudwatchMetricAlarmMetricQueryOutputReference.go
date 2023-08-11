@@ -299,7 +299,7 @@ func NewCloudwatchMetricAlarmMetricQueryOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewCloudwatchMetricAlarmMetricQueryOutputReference_Override(c CloudwatchMet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryOutputReference",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

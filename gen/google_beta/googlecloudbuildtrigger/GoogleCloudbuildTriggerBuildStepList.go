@@ -116,7 +116,7 @@ func NewGoogleCloudbuildTriggerBuildStepList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GoogleCloudbuildTriggerBuildStepList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildStepList",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildStepList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleCloudbuildTriggerBuildStepList_Override(g GoogleCloudbuildTriggerB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildStepList",
+		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildStepList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

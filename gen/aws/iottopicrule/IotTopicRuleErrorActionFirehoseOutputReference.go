@@ -226,7 +226,7 @@ func NewIotTopicRuleErrorActionFirehoseOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_IotTopicRuleErrorActionFirehoseOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewIotTopicRuleErrorActionFirehoseOutputReference_Override(i IotTopicRuleEr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionFirehoseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

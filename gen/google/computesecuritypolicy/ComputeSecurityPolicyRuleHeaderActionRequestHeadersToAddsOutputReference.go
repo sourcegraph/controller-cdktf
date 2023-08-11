@@ -203,7 +203,7 @@ func NewComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference
 	j := jsiiProxy_ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleBeyondcorpAppGatewayAllocatedConnectionsList(terraformResource
 	j := jsiiProxy_DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleBeyondcorpAppGatewayAllocatedConnectionsList_Override(d DataGo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppGateway.DataGoogleBeyondcorpAppGatewayAllocatedConnectionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

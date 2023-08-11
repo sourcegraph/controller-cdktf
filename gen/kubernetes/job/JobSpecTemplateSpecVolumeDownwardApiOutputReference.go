@@ -204,7 +204,7 @@ func NewJobSpecTemplateSpecVolumeDownwardApiOutputReference(terraformResource cd
 	j := jsiiProxy_JobSpecTemplateSpecVolumeDownwardApiOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewJobSpecTemplateSpecVolumeDownwardApiOutputReference_Override(j JobSpecTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeDownwardApiOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeDownwardApiOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

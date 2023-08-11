@@ -538,7 +538,7 @@ func NewEvidentlyProject(scope constructs.Construct, id *string, config *Evident
 	j := jsiiProxy_EvidentlyProject{}
 
 	_jsii_.Create(
-		"aws.evidentlyProject.EvidentlyProject",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -551,7 +551,7 @@ func NewEvidentlyProject_Override(e EvidentlyProject, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyProject.EvidentlyProject",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -706,7 +706,7 @@ func EvidentlyProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlyProject.EvidentlyProject",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func EvidentlyProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlyProject.EvidentlyProject",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -744,7 +744,7 @@ func EvidentlyProject_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.evidentlyProject.EvidentlyProject",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func EvidentlyProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.evidentlyProject.EvidentlyProject",
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		"tfResourceType",
 		&returns,
 	)

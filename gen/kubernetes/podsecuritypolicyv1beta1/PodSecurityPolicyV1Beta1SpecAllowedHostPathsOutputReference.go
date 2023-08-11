@@ -203,7 +203,7 @@ func NewPodSecurityPolicyV1Beta1SpecAllowedHostPathsOutputReference(terraformRes
 	j := jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedHostPathsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecAllowedHostPathsOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecAllowedHostPathsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPodSecurityPolicyV1Beta1SpecAllowedHostPathsOutputReference_Override(p P
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecAllowedHostPathsOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecAllowedHostPathsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

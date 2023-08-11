@@ -300,7 +300,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigOutputReference(terraformResource c
 	j := jsiiProxy_GoogleGkeBackupBackupPlanBackupConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleGkeBackupBackupPlanBackupConfigOutputReference_Override(g GoogleGk
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlanBackupConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

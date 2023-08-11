@@ -228,7 +228,7 @@ func NewEksNodeGroupTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_EksNodeGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEksNodeGroupTimeoutsOutputReference_Override(e EksNodeGroupTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

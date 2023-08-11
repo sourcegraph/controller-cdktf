@@ -250,7 +250,7 @@ func NewLoggingOrganizationSinkExclusionsOutputReference(terraformResource cdktf
 	j := jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference{}
 
 	_jsii_.Create(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsOutputReference",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewLoggingOrganizationSinkExclusionsOutputReference_Override(l LoggingOrgan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsOutputReference",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSinkExclusionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftUsageLimit.RedshiftUsageLimit",
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		reflect.TypeOf((*RedshiftUsageLimit)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,7 +76,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftUsageLimit.RedshiftUsageLimitConfig",
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimitConfig",
 		reflect.TypeOf((*RedshiftUsageLimitConfig)(nil)).Elem(),
 	)
 }

@@ -244,7 +244,7 @@ func NewDataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference(terra
 	j := jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewDataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

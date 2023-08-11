@@ -180,7 +180,7 @@ func NewImagebuilderImageTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ImagebuilderImageTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImage.ImagebuilderImageTimeoutsOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewImagebuilderImageTimeoutsOutputReference_Override(i ImagebuilderImageTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImage.ImagebuilderImageTimeoutsOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

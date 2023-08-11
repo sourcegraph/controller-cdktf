@@ -104,7 +104,7 @@ func NewDataAwsVpcCidrBlockAssociationsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsVpcCidrBlockAssociationsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpc.DataAwsVpcCidrBlockAssociationsList",
+		"@cdktf/provider-aws.dataAwsVpc.DataAwsVpcCidrBlockAssociationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsVpcCidrBlockAssociationsList_Override(d DataAwsVpcCidrBlockAssoci
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpc.DataAwsVpcCidrBlockAssociationsList",
+		"@cdktf/provider-aws.dataAwsVpc.DataAwsVpcCidrBlockAssociationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

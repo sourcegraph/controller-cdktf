@@ -450,7 +450,7 @@ func NewNetworkmanagerSite(scope constructs.Construct, id *string, config *Netwo
 	j := jsiiProxy_NetworkmanagerSite{}
 
 	_jsii_.Create(
-		"aws.networkmanagerSite.NetworkmanagerSite",
+		"@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewNetworkmanagerSite_Override(n NetworkmanagerSite, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerSite.NetworkmanagerSite",
+		"@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -618,7 +618,7 @@ func NetworkmanagerSite_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerSite.NetworkmanagerSite",
+		"@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -637,7 +637,7 @@ func NetworkmanagerSite_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerSite.NetworkmanagerSite",
+		"@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func NetworkmanagerSite_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerSite.NetworkmanagerSite",
+		"@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func NetworkmanagerSite_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerSite.NetworkmanagerSite",
+		"@cdktf/provider-aws.networkmanagerSite.NetworkmanagerSite",
 		"tfResourceType",
 		&returns,
 	)

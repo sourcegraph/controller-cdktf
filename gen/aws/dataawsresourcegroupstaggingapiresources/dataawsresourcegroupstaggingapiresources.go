@@ -399,7 +399,7 @@ func NewDataAwsResourcegroupstaggingapiResources(scope constructs.Construct, id 
 	j := jsiiProxy_DataAwsResourcegroupstaggingapiResources{}
 
 	_jsii_.Create(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -412,7 +412,7 @@ func NewDataAwsResourcegroupstaggingapiResources_Override(d DataAwsResourcegroup
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -545,7 +545,7 @@ func DataAwsResourcegroupstaggingapiResources_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func DataAwsResourcegroupstaggingapiResources_IsTerraformDataSource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func DataAwsResourcegroupstaggingapiResources_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func DataAwsResourcegroupstaggingapiResources_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResources",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
 		reflect.TypeOf((*ConfigConfigurationRecorderStatus)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig",
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatusConfig",
 		reflect.TypeOf((*ConfigConfigurationRecorderStatusConfig)(nil)).Elem(),
 	)
 }

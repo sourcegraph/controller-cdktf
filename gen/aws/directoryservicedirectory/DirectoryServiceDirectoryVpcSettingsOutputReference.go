@@ -213,7 +213,7 @@ func NewDirectoryServiceDirectoryVpcSettingsOutputReference(terraformResource cd
 	j := jsiiProxy_DirectoryServiceDirectoryVpcSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettingsOutputReference",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewDirectoryServiceDirectoryVpcSettingsOutputReference_Override(d Directory
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettingsOutputReference",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryVpcSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

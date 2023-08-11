@@ -202,7 +202,7 @@ func NewGooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference(t
 	j := jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCaPool.GooglePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

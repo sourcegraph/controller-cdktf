@@ -251,7 +251,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference(terraf
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

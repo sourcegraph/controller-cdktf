@@ -250,7 +250,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOu
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesRedshiftOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -116,7 +116,7 @@ func NewFolderIamAuditConfigAuditLogConfigList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_FolderIamAuditConfigAuditLogConfigList{}
 
 	_jsii_.Create(
-		"google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigList",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFolderIamAuditConfigAuditLogConfigList_Override(f FolderIamAuditConfigAu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigList",
+		"@cdktf/provider-google.folderIamAuditConfig.FolderIamAuditConfigAuditLogConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

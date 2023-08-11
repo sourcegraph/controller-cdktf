@@ -228,7 +228,7 @@ func NewCertificateManagerCertificateMapEntryTimeoutsOutputReference(terraformRe
 	j := jsiiProxy_CertificateManagerCertificateMapEntryTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeoutsOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCertificateManagerCertificateMapEntryTimeoutsOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeoutsOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

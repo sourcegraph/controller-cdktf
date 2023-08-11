@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference(ter
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

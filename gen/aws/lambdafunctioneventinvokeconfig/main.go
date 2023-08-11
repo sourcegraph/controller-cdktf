@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfig",
 		reflect.TypeOf((*LambdaFunctionEventInvokeConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,19 +70,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigConfig",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigConfig",
 		reflect.TypeOf((*LambdaFunctionEventInvokeConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfig",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfig",
 		reflect.TypeOf((*LambdaFunctionEventInvokeConfigDestinationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailure",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailure",
 		reflect.TypeOf((*LambdaFunctionEventInvokeConfigDestinationConfigOnFailure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference",
 		reflect.TypeOf((*LambdaFunctionEventInvokeConfigDestinationConfigOnFailureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess",
 		reflect.TypeOf((*LambdaFunctionEventInvokeConfigDestinationConfigOnSuccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference",
 		reflect.TypeOf((*LambdaFunctionEventInvokeConfigDestinationConfigOnSuccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,7 +154,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunctionEventInvokeConfig.LambdaFunctionEventInvokeConfigDestinationConfigOutputReference",
 		reflect.TypeOf((*LambdaFunctionEventInvokeConfigDestinationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

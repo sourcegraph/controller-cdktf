@@ -116,7 +116,7 @@ func NewAccessPolicyIncludeSamlList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_AccessPolicyIncludeSamlList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeSamlList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSamlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyIncludeSamlList_Override(a AccessPolicyIncludeSamlList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeSamlList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSamlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

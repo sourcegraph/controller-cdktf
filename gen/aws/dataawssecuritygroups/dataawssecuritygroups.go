@@ -373,7 +373,7 @@ func NewDataAwsSecurityGroups(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsSecurityGroups{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataAwsSecurityGroups_Override(d DataAwsSecurityGroups, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -486,7 +486,7 @@ func DataAwsSecurityGroups_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DataAwsSecurityGroups_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsSecurityGroups_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsSecurityGroups_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroups",
 		"tfResourceType",
 		&returns,
 	)

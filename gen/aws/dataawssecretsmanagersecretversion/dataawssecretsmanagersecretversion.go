@@ -383,7 +383,7 @@ func NewDataAwsSecretsmanagerSecretVersion(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsSecretsmanagerSecretVersion{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -396,7 +396,7 @@ func NewDataAwsSecretsmanagerSecretVersion_Override(d DataAwsSecretsmanagerSecre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -518,7 +518,7 @@ func DataAwsSecretsmanagerSecretVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsSecretsmanagerSecretVersion_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsSecretsmanagerSecretVersion_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataAwsSecretsmanagerSecretVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecretVersion.DataAwsSecretsmanagerSecretVersion",
 		"tfResourceType",
 		&returns,
 	)

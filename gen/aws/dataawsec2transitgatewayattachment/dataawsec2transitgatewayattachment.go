@@ -417,7 +417,7 @@ func NewDataAwsEc2TransitGatewayAttachment(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataAwsEc2TransitGatewayAttachment{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -430,7 +430,7 @@ func NewDataAwsEc2TransitGatewayAttachment_Override(d DataAwsEc2TransitGatewayAt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -541,7 +541,7 @@ func DataAwsEc2TransitGatewayAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func DataAwsEc2TransitGatewayAttachment_IsTerraformDataSource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func DataAwsEc2TransitGatewayAttachment_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -592,7 +592,7 @@ func DataAwsEc2TransitGatewayAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayAttachment.DataAwsEc2TransitGatewayAttachment",
 		"tfResourceType",
 		&returns,
 	)

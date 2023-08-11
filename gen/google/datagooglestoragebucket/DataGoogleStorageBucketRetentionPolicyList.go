@@ -104,7 +104,7 @@ func NewDataGoogleStorageBucketRetentionPolicyList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataGoogleStorageBucketRetentionPolicyList{}
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketRetentionPolicyList",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketRetentionPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleStorageBucketRetentionPolicyList_Override(d DataGoogleStorageB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketRetentionPolicyList",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketRetentionPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

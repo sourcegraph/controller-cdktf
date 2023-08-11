@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.oauthClient.OauthClient",
+		"@cdktf/provider-tfe.oauthClient.OauthClient",
 		reflect.TypeOf((*OauthClient)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.oauthClient.OauthClientConfig",
+		"@cdktf/provider-tfe.oauthClient.OauthClientConfig",
 		reflect.TypeOf((*OauthClientConfig)(nil)).Elem(),
 	)
 }

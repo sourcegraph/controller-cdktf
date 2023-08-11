@@ -178,7 +178,7 @@ func NewDataAwsDynamodbTableServerSideEncryptionOutputReference(terraformResourc
 	j := jsiiProxy_DataAwsDynamodbTableServerSideEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTableServerSideEncryptionOutputReference",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableServerSideEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsDynamodbTableServerSideEncryptionOutputReference_Override(d DataA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTableServerSideEncryptionOutputReference",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableServerSideEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

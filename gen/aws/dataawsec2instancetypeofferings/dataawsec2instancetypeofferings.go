@@ -373,7 +373,7 @@ func NewDataAwsEc2InstanceTypeOfferings(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsEc2InstanceTypeOfferings{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataAwsEc2InstanceTypeOfferings_Override(d DataAwsEc2InstanceTypeOfferin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -486,7 +486,7 @@ func DataAwsEc2InstanceTypeOfferings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DataAwsEc2InstanceTypeOfferings_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsEc2InstanceTypeOfferings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsEc2InstanceTypeOfferings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOfferings.DataAwsEc2InstanceTypeOfferings",
 		"tfResourceType",
 		&returns,
 	)

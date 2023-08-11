@@ -325,7 +325,7 @@ func NewDataGoogleKmsSecretCiphertext(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleKmsSecretCiphertext{}
 
 	_jsii_.Create(
-		"google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
+		"@cdktf/provider-google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataGoogleKmsSecretCiphertext_Override(d DataGoogleKmsSecretCiphertext, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
+		"@cdktf/provider-google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataGoogleKmsSecretCiphertext_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
+		"@cdktf/provider-google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataGoogleKmsSecretCiphertext_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
+		"@cdktf/provider-google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataGoogleKmsSecretCiphertext_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
+		"@cdktf/provider-google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataGoogleKmsSecretCiphertext_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
+		"@cdktf/provider-google.dataGoogleKmsSecretCiphertext.DataGoogleKmsSecretCiphertext",
 		"tfResourceType",
 		&returns,
 	)

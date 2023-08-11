@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.networkConnectivityHub.NetworkConnectivityHub",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHub",
 		reflect.TypeOf((*NetworkConnectivityHub)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkConnectivityHub.NetworkConnectivityHubConfig",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubConfig",
 		reflect.TypeOf((*NetworkConnectivityHubConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcs",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcs",
 		reflect.TypeOf((*NetworkConnectivityHubRoutingVpcs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsList",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsList",
 		reflect.TypeOf((*NetworkConnectivityHubRoutingVpcsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsOutputReference",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubRoutingVpcsOutputReference",
 		reflect.TypeOf((*NetworkConnectivityHubRoutingVpcsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.networkConnectivityHub.NetworkConnectivityHubTimeouts",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubTimeouts",
 		reflect.TypeOf((*NetworkConnectivityHubTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.networkConnectivityHub.NetworkConnectivityHubTimeoutsOutputReference",
+		"@cdktf/provider-google.networkConnectivityHub.NetworkConnectivityHubTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkConnectivityHubTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

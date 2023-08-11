@@ -482,7 +482,7 @@ func NewStorageTransferJob(scope constructs.Construct, id *string, config *Stora
 	j := jsiiProxy_StorageTransferJob{}
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJob",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -495,7 +495,7 @@ func NewStorageTransferJob_Override(s StorageTransferJob, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJob",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -639,7 +639,7 @@ func StorageTransferJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageTransferJob.StorageTransferJob",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func StorageTransferJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageTransferJob.StorageTransferJob",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func StorageTransferJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageTransferJob.StorageTransferJob",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func StorageTransferJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageTransferJob.StorageTransferJob",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJob",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewJobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference(terraform
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewJobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumePhotonPersistentDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

@@ -116,7 +116,7 @@ func NewSchedulerScheduleTargetEcsParametersPlacementStrategyList(terraformResou
 	j := jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyList{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyList",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSchedulerScheduleTargetEcsParametersPlacementStrategyList_Override(s Sch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyList",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

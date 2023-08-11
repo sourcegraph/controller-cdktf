@@ -367,7 +367,7 @@ func NewRouteTableAssociation(scope constructs.Construct, id *string, config *Ro
 	j := jsiiProxy_RouteTableAssociation{}
 
 	_jsii_.Create(
-		"aws.routeTableAssociation.RouteTableAssociation",
+		"@cdktf/provider-aws.routeTableAssociation.RouteTableAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewRouteTableAssociation_Override(r RouteTableAssociation, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.routeTableAssociation.RouteTableAssociation",
+		"@cdktf/provider-aws.routeTableAssociation.RouteTableAssociation",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -524,7 +524,7 @@ func RouteTableAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.routeTableAssociation.RouteTableAssociation",
+		"@cdktf/provider-aws.routeTableAssociation.RouteTableAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func RouteTableAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.routeTableAssociation.RouteTableAssociation",
+		"@cdktf/provider-aws.routeTableAssociation.RouteTableAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func RouteTableAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.routeTableAssociation.RouteTableAssociation",
+		"@cdktf/provider-aws.routeTableAssociation.RouteTableAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func RouteTableAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.routeTableAssociation.RouteTableAssociation",
+		"@cdktf/provider-aws.routeTableAssociation.RouteTableAssociation",
 		"tfResourceType",
 		&returns,
 	)

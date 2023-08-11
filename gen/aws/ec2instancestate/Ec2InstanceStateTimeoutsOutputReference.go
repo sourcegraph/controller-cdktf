@@ -228,7 +228,7 @@ func NewEc2InstanceStateTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_Ec2InstanceStateTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2InstanceState.Ec2InstanceStateTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceStateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEc2InstanceStateTimeoutsOutputReference_Override(e Ec2InstanceStateTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2InstanceState.Ec2InstanceStateTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceStateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

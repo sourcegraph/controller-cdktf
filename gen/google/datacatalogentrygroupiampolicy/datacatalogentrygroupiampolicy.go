@@ -401,7 +401,7 @@ func NewDataCatalogEntryGroupIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataCatalogEntryGroupIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataCatalogEntryGroupIamPolicy_Override(d DataCatalogEntryGroupIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -569,7 +569,7 @@ func DataCatalogEntryGroupIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataCatalogEntryGroupIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataCatalogEntryGroupIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataCatalogEntryGroupIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
+		"@cdktf/provider-google.dataCatalogEntryGroupIamPolicy.DataCatalogEntryGroupIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

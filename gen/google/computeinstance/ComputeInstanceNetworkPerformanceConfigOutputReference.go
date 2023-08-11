@@ -179,7 +179,7 @@ func NewComputeInstanceNetworkPerformanceConfigOutputReference(terraformResource
 	j := jsiiProxy_ComputeInstanceNetworkPerformanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceNetworkPerformanceConfigOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkPerformanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeInstanceNetworkPerformanceConfigOutputReference_Override(c Comput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceNetworkPerformanceConfigOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceNetworkPerformanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

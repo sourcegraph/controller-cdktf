@@ -244,7 +244,7 @@ func NewDataGoogleFoldersFoldersOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataGoogleFoldersFoldersOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleFolders.DataGoogleFoldersFoldersOutputReference",
+		"@cdktf/provider-google.dataGoogleFolders.DataGoogleFoldersFoldersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -256,7 +256,7 @@ func NewDataGoogleFoldersFoldersOutputReference_Override(d DataGoogleFoldersFold
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleFolders.DataGoogleFoldersFoldersOutputReference",
+		"@cdktf/provider-google.dataGoogleFolders.DataGoogleFoldersFoldersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

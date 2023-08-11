@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecSecurityContextSysctlList(terraformResource cd
 	j := jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecSecurityContextSysctlList_Override(d Deploymen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSysctlList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecSecurityContextSysctlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

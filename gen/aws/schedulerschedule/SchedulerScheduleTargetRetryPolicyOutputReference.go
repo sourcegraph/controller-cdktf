@@ -204,7 +204,7 @@ func NewSchedulerScheduleTargetRetryPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicyOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSchedulerScheduleTargetRetryPolicyOutputReference_Override(s SchedulerSc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicyOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -116,7 +116,7 @@ func NewCloudtrailEventSelectorDataResourceList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_CloudtrailEventSelectorDataResourceList{}
 
 	_jsii_.Create(
-		"aws.cloudtrail.CloudtrailEventSelectorDataResourceList",
+		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudtrailEventSelectorDataResourceList_Override(c CloudtrailEventSelect
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudtrail.CloudtrailEventSelectorDataResourceList",
+		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

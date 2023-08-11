@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunction",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunction",
 		reflect.TypeOf((*DataAwsLambdaFunction)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,15 +89,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionConfig",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionConfig",
 		reflect.TypeOf((*DataAwsLambdaFunctionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfig",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfig",
 		reflect.TypeOf((*DataAwsLambdaFunctionDeadLetterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigList",
 		reflect.TypeOf((*DataAwsLambdaFunctionDeadLetterConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -117,7 +117,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionDeadLetterConfigOutputReference",
 		reflect.TypeOf((*DataAwsLambdaFunctionDeadLetterConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,11 +150,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironment",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironment",
 		reflect.TypeOf((*DataAwsLambdaFunctionEnvironment)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentList",
 		reflect.TypeOf((*DataAwsLambdaFunctionEnvironmentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -174,7 +174,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEnvironmentOutputReference",
 		reflect.TypeOf((*DataAwsLambdaFunctionEnvironmentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,11 +207,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorage",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorage",
 		reflect.TypeOf((*DataAwsLambdaFunctionEphemeralStorage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageList",
 		reflect.TypeOf((*DataAwsLambdaFunctionEphemeralStorageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -231,7 +231,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageOutputReference",
 		reflect.TypeOf((*DataAwsLambdaFunctionEphemeralStorageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,11 +264,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfig",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfig",
 		reflect.TypeOf((*DataAwsLambdaFunctionFileSystemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigList",
 		reflect.TypeOf((*DataAwsLambdaFunctionFileSystemConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -288,7 +288,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigOutputReference",
 		reflect.TypeOf((*DataAwsLambdaFunctionFileSystemConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -322,11 +322,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfig",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfig",
 		reflect.TypeOf((*DataAwsLambdaFunctionTracingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigList",
 		reflect.TypeOf((*DataAwsLambdaFunctionTracingConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -346,7 +346,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionTracingConfigOutputReference",
 		reflect.TypeOf((*DataAwsLambdaFunctionTracingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -379,11 +379,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfig",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfig",
 		reflect.TypeOf((*DataAwsLambdaFunctionVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigList",
 		reflect.TypeOf((*DataAwsLambdaFunctionVpcConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -403,7 +403,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionVpcConfigOutputReference",
 		reflect.TypeOf((*DataAwsLambdaFunctionVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -167,7 +167,7 @@ func NewDataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOu
 	j := jsiiProxy_DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

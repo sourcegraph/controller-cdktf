@@ -116,7 +116,7 @@ func NewGoogleComputeInstanceGroupManagerNamedPortList(terraformResource cdktf.I
 	j := jsiiProxy_GoogleComputeInstanceGroupManagerNamedPortList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerNamedPortList",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerNamedPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeInstanceGroupManagerNamedPortList_Override(g GoogleComputeI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerNamedPortList",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerNamedPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

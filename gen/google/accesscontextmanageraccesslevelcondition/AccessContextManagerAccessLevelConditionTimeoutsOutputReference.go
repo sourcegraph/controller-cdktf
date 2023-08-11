@@ -204,7 +204,7 @@ func NewAccessContextManagerAccessLevelConditionTimeoutsOutputReference(terrafor
 	j := jsiiProxy_AccessContextManagerAccessLevelConditionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessContextManagerAccessLevelConditionTimeoutsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

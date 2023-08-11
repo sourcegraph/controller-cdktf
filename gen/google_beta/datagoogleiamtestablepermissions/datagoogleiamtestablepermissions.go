@@ -350,7 +350,7 @@ func NewDataGoogleIamTestablePermissions(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataGoogleIamTestablePermissions{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -363,7 +363,7 @@ func NewDataGoogleIamTestablePermissions_Override(d DataGoogleIamTestablePermiss
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -485,7 +485,7 @@ func DataGoogleIamTestablePermissions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func DataGoogleIamTestablePermissions_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataGoogleIamTestablePermissions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func DataGoogleIamTestablePermissions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
+		"@cdktf/provider-google-beta.dataGoogleIamTestablePermissions.DataGoogleIamTestablePermissions",
 		"tfResourceType",
 		&returns,
 	)

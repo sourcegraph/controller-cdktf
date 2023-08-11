@@ -116,7 +116,7 @@ func NewGoogleComputeInstanceNetworkInterfaceList(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleComputeInstanceNetworkInterfaceList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceList",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeInstanceNetworkInterfaceList_Override(g GoogleComputeInstan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceList",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

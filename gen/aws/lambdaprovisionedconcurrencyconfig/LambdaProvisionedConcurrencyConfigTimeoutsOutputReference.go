@@ -204,7 +204,7 @@ func NewLambdaProvisionedConcurrencyConfigTimeoutsOutputReference(terraformResou
 	j := jsiiProxy_LambdaProvisionedConcurrencyConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeoutsOutputReference",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLambdaProvisionedConcurrencyConfigTimeoutsOutputReference_Override(l Lam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeoutsOutputReference",
+		"@cdktf/provider-aws.lambdaProvisionedConcurrencyConfig.LambdaProvisionedConcurrencyConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

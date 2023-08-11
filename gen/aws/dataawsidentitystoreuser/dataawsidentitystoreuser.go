@@ -517,7 +517,7 @@ func NewDataAwsIdentitystoreUser(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsIdentitystoreUser{}
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -530,7 +530,7 @@ func NewDataAwsIdentitystoreUser_Override(d DataAwsIdentitystoreUser, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -641,7 +641,7 @@ func DataAwsIdentitystoreUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func DataAwsIdentitystoreUser_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func DataAwsIdentitystoreUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func DataAwsIdentitystoreUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
+		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUser",
 		"tfResourceType",
 		&returns,
 	)

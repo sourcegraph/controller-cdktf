@@ -1011,7 +1011,7 @@ func NewComputeBackendService(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_ComputeBackendService{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendService",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1024,7 +1024,7 @@ func NewComputeBackendService_Override(c ComputeBackendService, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendService",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendService",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1333,7 +1333,7 @@ func ComputeBackendService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeBackendService.ComputeBackendService",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1352,7 +1352,7 @@ func ComputeBackendService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeBackendService.ComputeBackendService",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1371,7 +1371,7 @@ func ComputeBackendService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeBackendService.ComputeBackendService",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1384,7 +1384,7 @@ func ComputeBackendService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeBackendService.ComputeBackendService",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendService",
 		"tfResourceType",
 		&returns,
 	)

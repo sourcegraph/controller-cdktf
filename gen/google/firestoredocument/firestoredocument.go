@@ -481,7 +481,7 @@ func NewFirestoreDocument(scope constructs.Construct, id *string, config *Firest
 	j := jsiiProxy_FirestoreDocument{}
 
 	_jsii_.Create(
-		"google.firestoreDocument.FirestoreDocument",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewFirestoreDocument_Override(f FirestoreDocument, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firestoreDocument.FirestoreDocument",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -660,7 +660,7 @@ func FirestoreDocument_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreDocument.FirestoreDocument",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func FirestoreDocument_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreDocument.FirestoreDocument",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func FirestoreDocument_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.firestoreDocument.FirestoreDocument",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func FirestoreDocument_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.firestoreDocument.FirestoreDocument",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		"tfResourceType",
 		&returns,
 	)

@@ -426,7 +426,7 @@ func NewDmsCertificate(scope constructs.Construct, id *string, config *DmsCertif
 	j := jsiiProxy_DmsCertificate{}
 
 	_jsii_.Create(
-		"aws.dmsCertificate.DmsCertificate",
+		"@cdktf/provider-aws.dmsCertificate.DmsCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewDmsCertificate_Override(d DmsCertificate, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dmsCertificate.DmsCertificate",
+		"@cdktf/provider-aws.dmsCertificate.DmsCertificate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -605,7 +605,7 @@ func DmsCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsCertificate.DmsCertificate",
+		"@cdktf/provider-aws.dmsCertificate.DmsCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func DmsCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsCertificate.DmsCertificate",
+		"@cdktf/provider-aws.dmsCertificate.DmsCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func DmsCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dmsCertificate.DmsCertificate",
+		"@cdktf/provider-aws.dmsCertificate.DmsCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func DmsCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dmsCertificate.DmsCertificate",
+		"@cdktf/provider-aws.dmsCertificate.DmsCertificate",
 		"tfResourceType",
 		&returns,
 	)

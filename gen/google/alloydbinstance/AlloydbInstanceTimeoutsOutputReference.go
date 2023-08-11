@@ -228,7 +228,7 @@ func NewAlloydbInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_AlloydbInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAlloydbInstanceTimeoutsOutputReference_Override(a AlloydbInstanceTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

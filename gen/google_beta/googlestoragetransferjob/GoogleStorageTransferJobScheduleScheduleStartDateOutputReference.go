@@ -225,7 +225,7 @@ func NewGoogleStorageTransferJobScheduleScheduleStartDateOutputReference(terrafo
 	j := jsiiProxy_GoogleStorageTransferJobScheduleScheduleStartDateOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobScheduleScheduleStartDateOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobScheduleScheduleStartDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleStorageTransferJobScheduleScheduleStartDateOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobScheduleScheduleStartDateOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobScheduleScheduleStartDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

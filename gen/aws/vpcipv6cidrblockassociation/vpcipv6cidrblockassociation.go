@@ -414,7 +414,7 @@ func NewVpcIpv6CidrBlockAssociation(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_VpcIpv6CidrBlockAssociation{}
 
 	_jsii_.Create(
-		"aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
+		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewVpcIpv6CidrBlockAssociation_Override(v VpcIpv6CidrBlockAssociation, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
+		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -582,7 +582,7 @@ func VpcIpv6CidrBlockAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
+		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func VpcIpv6CidrBlockAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
+		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func VpcIpv6CidrBlockAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
+		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func VpcIpv6CidrBlockAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
+		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		"tfResourceType",
 		&returns,
 	)

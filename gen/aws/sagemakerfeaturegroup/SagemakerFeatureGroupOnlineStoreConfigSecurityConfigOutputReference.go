@@ -180,7 +180,7 @@ func NewSagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference(terr
 	j := jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigSecurityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

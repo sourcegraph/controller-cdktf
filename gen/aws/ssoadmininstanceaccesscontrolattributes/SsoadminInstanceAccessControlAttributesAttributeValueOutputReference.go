@@ -179,7 +179,7 @@ func NewSsoadminInstanceAccessControlAttributesAttributeValueOutputReference(ter
 	j := jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueOutputReference",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSsoadminInstanceAccessControlAttributesAttributeValueOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueOutputReference",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

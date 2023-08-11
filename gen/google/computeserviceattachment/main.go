@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeServiceAttachment.ComputeServiceAttachment",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachment",
 		reflect.TypeOf((*ComputeServiceAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,15 +91,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConfig",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig",
 		reflect.TypeOf((*ComputeServiceAttachmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpoints",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpoints",
 		reflect.TypeOf((*ComputeServiceAttachmentConnectedEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsList",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsList",
 		reflect.TypeOf((*ComputeServiceAttachmentConnectedEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -119,7 +119,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference",
 		reflect.TypeOf((*ComputeServiceAttachmentConnectedEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -153,11 +153,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists",
 		reflect.TypeOf((*ComputeServiceAttachmentConsumerAcceptLists)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsList",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsList",
 		reflect.TypeOf((*ComputeServiceAttachmentConsumerAcceptListsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -178,7 +178,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference",
 		reflect.TypeOf((*ComputeServiceAttachmentConsumerAcceptListsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -214,11 +214,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeServiceAttachment.ComputeServiceAttachmentTimeouts",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts",
 		reflect.TypeOf((*ComputeServiceAttachmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeServiceAttachment.ComputeServiceAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeServiceAttachmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -225,7 +225,7 @@ func NewGoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference(te
 	j := jsiiProxy_GoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

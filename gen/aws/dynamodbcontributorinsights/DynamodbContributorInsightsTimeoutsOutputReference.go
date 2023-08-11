@@ -204,7 +204,7 @@ func NewDynamodbContributorInsightsTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_DynamodbContributorInsightsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDynamodbContributorInsightsTimeoutsOutputReference_Override(d DynamodbCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dynamodbContributorInsights.DynamodbContributorInsightsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference(terra
 	j := jsiiProxy_AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecGrpcRouteRetryPolicyPerRetryTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

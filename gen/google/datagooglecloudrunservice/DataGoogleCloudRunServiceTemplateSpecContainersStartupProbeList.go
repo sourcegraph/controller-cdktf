@@ -104,7 +104,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList(terrafor
 	j := jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList",
+		"@cdktf/provider-google.dataGoogleCloudRunService.DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

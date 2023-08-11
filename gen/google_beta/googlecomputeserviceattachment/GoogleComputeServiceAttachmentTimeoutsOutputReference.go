@@ -228,7 +228,7 @@ func NewGoogleComputeServiceAttachmentTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_GoogleComputeServiceAttachmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeServiceAttachmentTimeoutsOutputReference_Override(g GoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

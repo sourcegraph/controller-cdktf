@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigqueryReservation.BigqueryReservation",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservation",
 		reflect.TypeOf((*BigqueryReservation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -85,11 +85,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryReservation.BigqueryReservationAutoscale",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationAutoscale",
 		reflect.TypeOf((*BigqueryReservationAutoscale)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryReservation.BigqueryReservationAutoscaleOutputReference",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationAutoscaleOutputReference",
 		reflect.TypeOf((*BigqueryReservationAutoscaleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,15 +125,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryReservation.BigqueryReservationConfig",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationConfig",
 		reflect.TypeOf((*BigqueryReservationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryReservation.BigqueryReservationTimeouts",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationTimeouts",
 		reflect.TypeOf((*BigqueryReservationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryReservation.BigqueryReservationTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationTimeoutsOutputReference",
 		reflect.TypeOf((*BigqueryReservationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

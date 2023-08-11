@@ -324,7 +324,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideOutputReference(terraformResource cd
 	j := jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideOutputReference_Override(e Ec2FleetL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

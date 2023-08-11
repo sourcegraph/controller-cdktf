@@ -116,7 +116,7 @@ func NewImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration
 	j := jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList{}
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList",
+		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

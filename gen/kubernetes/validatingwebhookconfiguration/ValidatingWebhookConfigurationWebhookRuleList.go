@@ -116,7 +116,7 @@ func NewValidatingWebhookConfigurationWebhookRuleList(terraformResource cdktf.II
 	j := jsiiProxy_ValidatingWebhookConfigurationWebhookRuleList{}
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookRuleList",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewValidatingWebhookConfigurationWebhookRuleList_Override(v ValidatingWebho
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookRuleList",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

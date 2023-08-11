@@ -104,7 +104,7 @@ func NewDataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList(terra
 	j := jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList",
+		"@cdktf/provider-aws.dataAwsEmrcontainersVirtualCluster.DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

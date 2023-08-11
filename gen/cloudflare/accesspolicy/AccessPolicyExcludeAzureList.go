@@ -116,7 +116,7 @@ func NewAccessPolicyExcludeAzureList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AccessPolicyExcludeAzureList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeAzureList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzureList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyExcludeAzureList_Override(a AccessPolicyExcludeAzureList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyExcludeAzureList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyExcludeAzureList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

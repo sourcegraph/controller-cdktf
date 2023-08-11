@@ -228,7 +228,7 @@ func NewDaemonSetV1SpecTemplateSpecAffinityOutputReference(terraformResource cdk
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecAffinityOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDaemonSetV1SpecTemplateSpecAffinityOutputReference_Override(d DaemonSetV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

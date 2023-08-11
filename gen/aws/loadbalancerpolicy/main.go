@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.loadBalancerPolicy.LoadBalancerPolicy",
+		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicy",
 		reflect.TypeOf((*LoadBalancerPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.loadBalancerPolicy.LoadBalancerPolicyConfig",
+		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyConfig",
 		reflect.TypeOf((*LoadBalancerPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttribute",
+		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttribute",
 		reflect.TypeOf((*LoadBalancerPolicyPolicyAttribute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeList",
+		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeList",
 		reflect.TypeOf((*LoadBalancerPolicyPolicyAttributeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeOutputReference",
+		"@cdktf/provider-aws.loadBalancerPolicy.LoadBalancerPolicyPolicyAttributeOutputReference",
 		reflect.TypeOf((*LoadBalancerPolicyPolicyAttributeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -446,7 +446,7 @@ func NewDataKubernetesStorageClass(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataKubernetesStorageClass{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -459,7 +459,7 @@ func NewDataKubernetesStorageClass_Override(d DataKubernetesStorageClass, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -603,7 +603,7 @@ func DataKubernetesStorageClass_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func DataKubernetesStorageClass_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func DataKubernetesStorageClass_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func DataKubernetesStorageClass_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClass",
 		"tfResourceType",
 		&returns,
 	)

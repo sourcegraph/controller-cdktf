@@ -412,7 +412,7 @@ func NewGoogleIapBrand(scope constructs.Construct, id *string, config *GoogleIap
 	j := jsiiProxy_GoogleIapBrand{}
 
 	_jsii_.Create(
-		"google-beta.googleIapBrand.GoogleIapBrand",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewGoogleIapBrand_Override(g GoogleIapBrand, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapBrand.GoogleIapBrand",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleIapBrand_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapBrand.GoogleIapBrand",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleIapBrand_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapBrand.GoogleIapBrand",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleIapBrand_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapBrand.GoogleIapBrand",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleIapBrand_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapBrand.GoogleIapBrand",
+		"@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand",
 		"tfResourceType",
 		&returns,
 	)

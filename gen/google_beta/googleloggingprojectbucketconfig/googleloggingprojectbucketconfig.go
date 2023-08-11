@@ -483,7 +483,7 @@ func NewGoogleLoggingProjectBucketConfig(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleLoggingProjectBucketConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewGoogleLoggingProjectBucketConfig_Override(g GoogleLoggingProjectBucketCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -673,7 +673,7 @@ func GoogleLoggingProjectBucketConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func GoogleLoggingProjectBucketConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func GoogleLoggingProjectBucketConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func GoogleLoggingProjectBucketConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
+		"@cdktf/provider-google-beta.googleLoggingProjectBucketConfig.GoogleLoggingProjectBucketConfig",
 		"tfResourceType",
 		&returns,
 	)

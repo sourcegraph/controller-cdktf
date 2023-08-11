@@ -425,7 +425,7 @@ func NewRolesanywhereTrustAnchor(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_RolesanywhereTrustAnchor{}
 
 	_jsii_.Create(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewRolesanywhereTrustAnchor_Override(r RolesanywhereTrustAnchor, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -593,7 +593,7 @@ func RolesanywhereTrustAnchor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func RolesanywhereTrustAnchor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func RolesanywhereTrustAnchor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func RolesanywhereTrustAnchor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
+		"@cdktf/provider-aws.rolesanywhereTrustAnchor.RolesanywhereTrustAnchor",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewGoogleContainerAwsNodePoolConfigProxyConfigOutputReference(terraformReso
 	j := jsiiProxy_GoogleContainerAwsNodePoolConfigProxyConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigProxyConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigProxyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleContainerAwsNodePoolConfigProxyConfigOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigProxyConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigProxyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

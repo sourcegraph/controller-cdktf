@@ -116,7 +116,7 @@ func NewElastictranscoderPresetVideoWatermarksList(terraformResource cdktf.IInte
 	j := jsiiProxy_ElastictranscoderPresetVideoWatermarksList{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksList",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewElastictranscoderPresetVideoWatermarksList_Override(e ElastictranscoderP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksList",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

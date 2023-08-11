@@ -180,7 +180,7 @@ func NewAcmCertificateValidationTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_AcmCertificateValidationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.acmCertificateValidation.AcmCertificateValidationTimeoutsOutputReference",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAcmCertificateValidationTimeoutsOutputReference_Override(a AcmCertificat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmCertificateValidation.AcmCertificateValidationTimeoutsOutputReference",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

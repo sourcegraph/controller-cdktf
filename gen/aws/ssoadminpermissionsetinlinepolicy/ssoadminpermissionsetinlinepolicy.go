@@ -365,7 +365,7 @@ func NewSsoadminPermissionSetInlinePolicy(scope constructs.Construct, id *string
 	j := jsiiProxy_SsoadminPermissionSetInlinePolicy{}
 
 	_jsii_.Create(
-		"aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
+		"@cdktf/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewSsoadminPermissionSetInlinePolicy_Override(s SsoadminPermissionSetInline
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
+		"@cdktf/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -522,7 +522,7 @@ func SsoadminPermissionSetInlinePolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
+		"@cdktf/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func SsoadminPermissionSetInlinePolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
+		"@cdktf/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func SsoadminPermissionSetInlinePolicy_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
+		"@cdktf/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func SsoadminPermissionSetInlinePolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
+		"@cdktf/provider-aws.ssoadminPermissionSetInlinePolicy.SsoadminPermissionSetInlinePolicy",
 		"tfResourceType",
 		&returns,
 	)

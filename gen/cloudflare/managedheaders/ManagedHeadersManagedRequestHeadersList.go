@@ -116,7 +116,7 @@ func NewManagedHeadersManagedRequestHeadersList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ManagedHeadersManagedRequestHeadersList{}
 
 	_jsii_.Create(
-		"cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersList",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewManagedHeadersManagedRequestHeadersList_Override(m ManagedHeadersManaged
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersList",
+		"@cdktf/provider-cloudflare.managedHeaders.ManagedHeadersManagedRequestHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

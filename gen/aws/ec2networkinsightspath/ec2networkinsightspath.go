@@ -496,7 +496,7 @@ func NewEc2NetworkInsightsPath(scope constructs.Construct, id *string, config *E
 	j := jsiiProxy_Ec2NetworkInsightsPath{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
+		"@cdktf/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewEc2NetworkInsightsPath_Override(e Ec2NetworkInsightsPath, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
+		"@cdktf/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -708,7 +708,7 @@ func Ec2NetworkInsightsPath_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
+		"@cdktf/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func Ec2NetworkInsightsPath_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
+		"@cdktf/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func Ec2NetworkInsightsPath_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
+		"@cdktf/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func Ec2NetworkInsightsPath_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
+		"@cdktf/provider-aws.ec2NetworkInsightsPath.Ec2NetworkInsightsPath",
 		"tfResourceType",
 		&returns,
 	)

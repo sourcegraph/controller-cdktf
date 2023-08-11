@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaUser.DataOktaUser",
+		"@cdktf/provider-okta.dataOktaUser.DataOktaUser",
 		reflect.TypeOf((*DataOktaUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -107,15 +107,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaUser.DataOktaUserConfig",
+		"@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig",
 		reflect.TypeOf((*DataOktaUserConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaUser.DataOktaUserSearch",
+		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch",
 		reflect.TypeOf((*DataOktaUserSearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaUser.DataOktaUserSearchList",
+		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchList",
 		reflect.TypeOf((*DataOktaUserSearchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -136,7 +136,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaUser.DataOktaUserSearchOutputReference",
+		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchOutputReference",
 		reflect.TypeOf((*DataOktaUserSearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},

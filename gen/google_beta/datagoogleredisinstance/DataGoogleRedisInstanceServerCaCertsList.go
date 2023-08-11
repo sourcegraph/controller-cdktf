@@ -104,7 +104,7 @@ func NewDataGoogleRedisInstanceServerCaCertsList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataGoogleRedisInstanceServerCaCertsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsList",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleRedisInstanceServerCaCertsList_Override(d DataGoogleRedisInsta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsList",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

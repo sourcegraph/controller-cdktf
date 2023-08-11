@@ -213,7 +213,7 @@ func NewDatabaseMigrationServiceConnectionProfileCloudsqlOutputReference(terrafo
 	j := jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference{}
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewDatabaseMigrationServiceConnectionProfileCloudsqlOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

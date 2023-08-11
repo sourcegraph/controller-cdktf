@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glueJob.GlueJob",
+		"@cdktf/provider-aws.glueJob.GlueJob",
 		reflect.TypeOf((*GlueJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -113,11 +113,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueJob.GlueJobCommand",
+		"@cdktf/provider-aws.glueJob.GlueJobCommand",
 		reflect.TypeOf((*GlueJobCommand)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueJob.GlueJobCommandOutputReference",
+		"@cdktf/provider-aws.glueJob.GlueJobCommandOutputReference",
 		reflect.TypeOf((*GlueJobCommandOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,15 +157,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueJob.GlueJobConfig",
+		"@cdktf/provider-aws.glueJob.GlueJobConfig",
 		reflect.TypeOf((*GlueJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueJob.GlueJobExecutionProperty",
+		"@cdktf/provider-aws.glueJob.GlueJobExecutionProperty",
 		reflect.TypeOf((*GlueJobExecutionProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueJob.GlueJobExecutionPropertyOutputReference",
+		"@cdktf/provider-aws.glueJob.GlueJobExecutionPropertyOutputReference",
 		reflect.TypeOf((*GlueJobExecutionPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -200,11 +200,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueJob.GlueJobNotificationProperty",
+		"@cdktf/provider-aws.glueJob.GlueJobNotificationProperty",
 		reflect.TypeOf((*GlueJobNotificationProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.glueJob.GlueJobNotificationPropertyOutputReference",
+		"@cdktf/provider-aws.glueJob.GlueJobNotificationPropertyOutputReference",
 		reflect.TypeOf((*GlueJobNotificationPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

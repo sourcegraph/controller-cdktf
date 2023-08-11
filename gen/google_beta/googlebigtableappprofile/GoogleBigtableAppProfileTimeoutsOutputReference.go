@@ -228,7 +228,7 @@ func NewGoogleBigtableAppProfileTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleBigtableAppProfileTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleBigtableAppProfileTimeoutsOutputReference_Override(g GoogleBigtabl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

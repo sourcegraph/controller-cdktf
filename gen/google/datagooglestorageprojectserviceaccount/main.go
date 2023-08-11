@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
 		reflect.TypeOf((*DataGoogleStorageProjectServiceAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccountConfig",
+		"@cdktf/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccountConfig",
 		reflect.TypeOf((*DataGoogleStorageProjectServiceAccountConfig)(nil)).Elem(),
 	)
 }

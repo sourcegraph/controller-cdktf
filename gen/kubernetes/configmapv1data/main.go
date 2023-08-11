@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.configMapV1Data.ConfigMapV1Data",
+		"@cdktf/provider-kubernetes.configMapV1Data.ConfigMapV1Data",
 		reflect.TypeOf((*ConfigMapV1Data)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.configMapV1Data.ConfigMapV1DataConfig",
+		"@cdktf/provider-kubernetes.configMapV1Data.ConfigMapV1DataConfig",
 		reflect.TypeOf((*ConfigMapV1DataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.configMapV1Data.ConfigMapV1DataMetadata",
+		"@cdktf/provider-kubernetes.configMapV1Data.ConfigMapV1DataMetadata",
 		reflect.TypeOf((*ConfigMapV1DataMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.configMapV1Data.ConfigMapV1DataMetadataOutputReference",
+		"@cdktf/provider-kubernetes.configMapV1Data.ConfigMapV1DataMetadataOutputReference",
 		reflect.TypeOf((*ConfigMapV1DataMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -457,7 +457,7 @@ func NewGoogleComputeNetworkFirewallPolicy(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleComputeNetworkFirewallPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -470,7 +470,7 @@ func NewGoogleComputeNetworkFirewallPolicy_Override(g GoogleComputeNetworkFirewa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -614,7 +614,7 @@ func GoogleComputeNetworkFirewallPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func GoogleComputeNetworkFirewallPolicy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -652,7 +652,7 @@ func GoogleComputeNetworkFirewallPolicy_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeNetworkFirewallPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
+		"@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicy.GoogleComputeNetworkFirewallPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewGoogleStorageHmacKeyTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleStorageHmacKeyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleStorageHmacKeyTimeoutsOutputReference_Override(g GoogleStorageHmac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

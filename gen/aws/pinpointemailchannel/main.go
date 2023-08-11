@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.pinpointEmailChannel.PinpointEmailChannel",
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
 		reflect.TypeOf((*PinpointEmailChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.pinpointEmailChannel.PinpointEmailChannelConfig",
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannelConfig",
 		reflect.TypeOf((*PinpointEmailChannelConfig)(nil)).Elem(),
 	)
 }

@@ -325,7 +325,7 @@ func NewDataGoogleActiveFolder(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataGoogleActiveFolder{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
+		"@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataGoogleActiveFolder_Override(d DataGoogleActiveFolder, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
+		"@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -449,7 +449,7 @@ func DataGoogleActiveFolder_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
+		"@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -468,7 +468,7 @@ func DataGoogleActiveFolder_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
+		"@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -487,7 +487,7 @@ func DataGoogleActiveFolder_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
+		"@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataGoogleActiveFolder_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
+		"@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder",
 		"tfResourceType",
 		&returns,
 	)

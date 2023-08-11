@@ -225,7 +225,7 @@ func NewWafv2WebAclVisibilityConfigOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_Wafv2WebAclVisibilityConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclVisibilityConfigOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafv2WebAclVisibilityConfigOutputReference_Override(w Wafv2WebAclVisibil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclVisibilityConfigOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

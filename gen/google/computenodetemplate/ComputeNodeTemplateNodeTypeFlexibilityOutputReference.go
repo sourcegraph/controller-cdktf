@@ -215,7 +215,7 @@ func NewComputeNodeTemplateNodeTypeFlexibilityOutputReference(terraformResource 
 	j := jsiiProxy_ComputeNodeTemplateNodeTypeFlexibilityOutputReference{}
 
 	_jsii_.Create(
-		"google.computeNodeTemplate.ComputeNodeTemplateNodeTypeFlexibilityOutputReference",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateNodeTypeFlexibilityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -227,7 +227,7 @@ func NewComputeNodeTemplateNodeTypeFlexibilityOutputReference_Override(c Compute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeNodeTemplate.ComputeNodeTemplateNodeTypeFlexibilityOutputReference",
+		"@cdktf/provider-google.computeNodeTemplate.ComputeNodeTemplateNodeTypeFlexibilityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

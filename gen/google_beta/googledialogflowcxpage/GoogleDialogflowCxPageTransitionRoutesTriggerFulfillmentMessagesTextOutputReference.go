@@ -191,7 +191,7 @@ func NewGoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutp
 	j := jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewGoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

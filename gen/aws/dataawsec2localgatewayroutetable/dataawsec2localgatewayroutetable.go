@@ -436,7 +436,7 @@ func NewDataAwsEc2LocalGatewayRouteTable(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsEc2LocalGatewayRouteTable{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewDataAwsEc2LocalGatewayRouteTable_Override(d DataAwsEc2LocalGatewayRouteT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -593,7 +593,7 @@ func DataAwsEc2LocalGatewayRouteTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func DataAwsEc2LocalGatewayRouteTable_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func DataAwsEc2LocalGatewayRouteTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func DataAwsEc2LocalGatewayRouteTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
+		"@cdktf/provider-aws.dataAwsEc2LocalGatewayRouteTable.DataAwsEc2LocalGatewayRouteTable",
 		"tfResourceType",
 		&returns,
 	)

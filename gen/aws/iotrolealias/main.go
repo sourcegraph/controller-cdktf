@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotRoleAlias.IotRoleAlias",
+		"@cdktf/provider-aws.iotRoleAlias.IotRoleAlias",
 		reflect.TypeOf((*IotRoleAlias)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotRoleAlias.IotRoleAliasConfig",
+		"@cdktf/provider-aws.iotRoleAlias.IotRoleAliasConfig",
 		reflect.TypeOf((*IotRoleAliasConfig)(nil)).Elem(),
 	)
 }

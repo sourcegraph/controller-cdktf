@@ -203,7 +203,7 @@ func NewGoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputRefer
 	j := jsiiProxy_GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

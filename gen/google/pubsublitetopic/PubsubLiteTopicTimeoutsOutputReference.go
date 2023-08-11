@@ -228,7 +228,7 @@ func NewPubsubLiteTopicTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_PubsubLiteTopicTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubLiteTopic.PubsubLiteTopicTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPubsubLiteTopicTimeoutsOutputReference_Override(p PubsubLiteTopicTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubLiteTopic.PubsubLiteTopicTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

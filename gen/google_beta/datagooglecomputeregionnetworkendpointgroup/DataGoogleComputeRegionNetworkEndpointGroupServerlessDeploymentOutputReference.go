@@ -200,7 +200,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputRef
 	j := jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

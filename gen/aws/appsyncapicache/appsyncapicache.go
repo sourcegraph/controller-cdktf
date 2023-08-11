@@ -436,7 +436,7 @@ func NewAppsyncApiCache(scope constructs.Construct, id *string, config *AppsyncA
 	j := jsiiProxy_AppsyncApiCache{}
 
 	_jsii_.Create(
-		"aws.appsyncApiCache.AppsyncApiCache",
+		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewAppsyncApiCache_Override(a AppsyncApiCache, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncApiCache.AppsyncApiCache",
+		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -626,7 +626,7 @@ func AppsyncApiCache_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncApiCache.AppsyncApiCache",
+		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func AppsyncApiCache_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncApiCache.AppsyncApiCache",
+		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func AppsyncApiCache_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appsyncApiCache.AppsyncApiCache",
+		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func AppsyncApiCache_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appsyncApiCache.AppsyncApiCache",
+		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		"tfResourceType",
 		&returns,
 	)

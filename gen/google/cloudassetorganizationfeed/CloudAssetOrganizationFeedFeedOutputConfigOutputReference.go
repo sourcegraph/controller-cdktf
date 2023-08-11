@@ -179,7 +179,7 @@ func NewCloudAssetOrganizationFeedFeedOutputConfigOutputReference(terraformResou
 	j := jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeedFeedOutputConfigOutputReference",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeedFeedOutputConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudAssetOrganizationFeedFeedOutputConfigOutputReference_Override(c Clo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeedFeedOutputConfigOutputReference",
+		"@cdktf/provider-google.cloudAssetOrganizationFeed.CloudAssetOrganizationFeedFeedOutputConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

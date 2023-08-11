@@ -202,7 +202,7 @@ func NewTemplateSmsTranslationsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_TemplateSmsTranslationsOutputReference{}
 
 	_jsii_.Create(
-		"okta.templateSms.TemplateSmsTranslationsOutputReference",
+		"@cdktf/provider-okta.templateSms.TemplateSmsTranslationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTemplateSmsTranslationsOutputReference_Override(t TemplateSmsTranslation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.templateSms.TemplateSmsTranslationsOutputReference",
+		"@cdktf/provider-okta.templateSms.TemplateSmsTranslationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

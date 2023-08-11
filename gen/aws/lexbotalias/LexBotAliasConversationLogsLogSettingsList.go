@@ -116,7 +116,7 @@ func NewLexBotAliasConversationLogsLogSettingsList(terraformResource cdktf.IInte
 	j := jsiiProxy_LexBotAliasConversationLogsLogSettingsList{}
 
 	_jsii_.Create(
-		"aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexBotAliasConversationLogsLogSettingsList_Override(l LexBotAliasConvers
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

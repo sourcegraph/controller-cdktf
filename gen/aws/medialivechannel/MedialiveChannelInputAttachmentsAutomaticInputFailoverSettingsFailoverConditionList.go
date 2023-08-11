@@ -116,7 +116,7 @@ func NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCo
 	j := jsiiProxy_MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsAutomaticInputFailoverSettingsFailoverConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

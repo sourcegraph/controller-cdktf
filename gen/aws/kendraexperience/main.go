@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kendraExperience.KendraExperience",
+		"@cdktf/provider-aws.kendraExperience.KendraExperience",
 		reflect.TypeOf((*KendraExperience)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,19 +76,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraExperience.KendraExperienceConfig",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfig",
 		reflect.TypeOf((*KendraExperienceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraExperience.KendraExperienceConfiguration",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfiguration",
 		reflect.TypeOf((*KendraExperienceConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfiguration",
 		reflect.TypeOf((*KendraExperienceConfigurationContentSourceConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraExperience.KendraExperienceConfigurationContentSourceConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationContentSourceConfigurationOutputReference",
 		reflect.TypeOf((*KendraExperienceConfigurationContentSourceConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,7 +129,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraExperience.KendraExperienceConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationOutputReference",
 		reflect.TypeOf((*KendraExperienceConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -169,11 +169,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfiguration",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfiguration",
 		reflect.TypeOf((*KendraExperienceConfigurationUserIdentityConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfigurationOutputReference",
 		reflect.TypeOf((*KendraExperienceConfigurationUserIdentityConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,11 +207,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraExperience.KendraExperienceEndpoints",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpoints",
 		reflect.TypeOf((*KendraExperienceEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraExperience.KendraExperienceEndpointsList",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpointsList",
 		reflect.TypeOf((*KendraExperienceEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -231,7 +231,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraExperience.KendraExperienceEndpointsOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceEndpointsOutputReference",
 		reflect.TypeOf((*KendraExperienceEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,11 +265,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraExperience.KendraExperienceTimeouts",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceTimeouts",
 		reflect.TypeOf((*KendraExperienceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraExperience.KendraExperienceTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceTimeoutsOutputReference",
 		reflect.TypeOf((*KendraExperienceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

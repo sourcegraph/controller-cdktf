@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataplexZone.DataplexZone",
+		"@cdktf/provider-google.dataplexZone.DataplexZone",
 		reflect.TypeOf((*DataplexZone)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,11 +90,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexZone.DataplexZoneAssetStatus",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneAssetStatus",
 		reflect.TypeOf((*DataplexZoneAssetStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexZone.DataplexZoneAssetStatusList",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneAssetStatusList",
 		reflect.TypeOf((*DataplexZoneAssetStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexZone.DataplexZoneAssetStatusOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneAssetStatusOutputReference",
 		reflect.TypeOf((*DataplexZoneAssetStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeAssets", GoGetter: "ActiveAssets"},
@@ -149,19 +149,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexZone.DataplexZoneConfig",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneConfig",
 		reflect.TypeOf((*DataplexZoneConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexZone.DataplexZoneDiscoverySpec",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpec",
 		reflect.TypeOf((*DataplexZoneDiscoverySpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexZone.DataplexZoneDiscoverySpecCsvOptions",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpecCsvOptions",
 		reflect.TypeOf((*DataplexZoneDiscoverySpecCsvOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexZone.DataplexZoneDiscoverySpecCsvOptionsOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpecCsvOptionsOutputReference",
 		reflect.TypeOf((*DataplexZoneDiscoverySpecCsvOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -205,11 +205,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexZone.DataplexZoneDiscoverySpecJsonOptions",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpecJsonOptions",
 		reflect.TypeOf((*DataplexZoneDiscoverySpecJsonOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexZone.DataplexZoneDiscoverySpecJsonOptionsOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpecJsonOptionsOutputReference",
 		reflect.TypeOf((*DataplexZoneDiscoverySpecJsonOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -247,7 +247,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexZone.DataplexZoneDiscoverySpecOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpecOutputReference",
 		reflect.TypeOf((*DataplexZoneDiscoverySpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -298,11 +298,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexZone.DataplexZoneResourceSpec",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneResourceSpec",
 		reflect.TypeOf((*DataplexZoneResourceSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexZone.DataplexZoneResourceSpecOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneResourceSpecOutputReference",
 		reflect.TypeOf((*DataplexZoneResourceSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -336,11 +336,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataplexZone.DataplexZoneTimeouts",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneTimeouts",
 		reflect.TypeOf((*DataplexZoneTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataplexZone.DataplexZoneTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneTimeoutsOutputReference",
 		reflect.TypeOf((*DataplexZoneTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

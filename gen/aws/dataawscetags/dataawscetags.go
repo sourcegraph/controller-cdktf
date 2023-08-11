@@ -398,7 +398,7 @@ func NewDataAwsCeTags(scope constructs.Construct, id *string, config *DataAwsCeT
 	j := jsiiProxy_DataAwsCeTags{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTags",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -411,7 +411,7 @@ func NewDataAwsCeTags_Override(d DataAwsCeTags, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTags",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -522,7 +522,7 @@ func DataAwsCeTags_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCeTags.DataAwsCeTags",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func DataAwsCeTags_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCeTags.DataAwsCeTags",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func DataAwsCeTags_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCeTags.DataAwsCeTags",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func DataAwsCeTags_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCeTags.DataAwsCeTags",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTags",
 		"tfResourceType",
 		&returns,
 	)

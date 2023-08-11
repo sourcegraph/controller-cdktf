@@ -228,7 +228,7 @@ func NewContainerAnalysisOccurrenceTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_ContainerAnalysisOccurrenceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewContainerAnalysisOccurrenceTimeoutsOutputReference_Override(c ContainerA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

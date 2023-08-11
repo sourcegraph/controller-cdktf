@@ -179,7 +179,7 @@ func NewGoogleStorageTransferJobTransferSpecPosixDataSinkOutputReference(terrafo
 	j := jsiiProxy_GoogleStorageTransferJobTransferSpecPosixDataSinkOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecPosixDataSinkOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecPosixDataSinkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleStorageTransferJobTransferSpecPosixDataSinkOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecPosixDataSinkOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecPosixDataSinkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

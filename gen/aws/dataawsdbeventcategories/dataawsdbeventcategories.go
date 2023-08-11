@@ -303,7 +303,7 @@ func NewDataAwsDbEventCategories(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsDbEventCategories{}
 
 	_jsii_.Create(
-		"aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
+		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsDbEventCategories_Override(d DataAwsDbEventCategories, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
+		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataAwsDbEventCategories_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
+		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataAwsDbEventCategories_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
+		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsDbEventCategories_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
+		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsDbEventCategories_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
+		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleComputeRouterNatLogConfigList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataGoogleComputeRouterNatLogConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatLogConfigList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatLogConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRouterNatLogConfigList_Override(d DataGoogleComputeRout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatLogConfigList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRouterNat.DataGoogleComputeRouterNatLogConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

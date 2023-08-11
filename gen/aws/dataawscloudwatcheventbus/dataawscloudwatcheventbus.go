@@ -302,7 +302,7 @@ func NewDataAwsCloudwatchEventBus(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsCloudwatchEventBus{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsCloudwatchEventBus_Override(d DataAwsCloudwatchEventBus, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsCloudwatchEventBus_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsCloudwatchEventBus_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsCloudwatchEventBus_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsCloudwatchEventBus_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
+		"@cdktf/provider-aws.dataAwsCloudwatchEventBus.DataAwsCloudwatchEventBus",
 		"tfResourceType",
 		&returns,
 	)

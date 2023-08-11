@@ -228,7 +228,7 @@ func NewGoogleCloudbuildWorkerPoolTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleCloudbuildWorkerPoolTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleCloudbuildWorkerPoolTimeoutsOutputReference_Override(g GoogleCloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildWorkerPool.GoogleCloudbuildWorkerPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

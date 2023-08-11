@@ -116,7 +116,7 @@ func NewAccessGroupRequireGithubList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_AccessGroupRequireGithubList{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireGithubList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessGroupRequireGithubList_Override(a AccessGroupRequireGithubList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireGithubList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

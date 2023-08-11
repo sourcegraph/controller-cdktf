@@ -508,7 +508,7 @@ func NewComputeManagedSslCertificate(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ComputeManagedSslCertificate{}
 
 	_jsii_.Create(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificate",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewComputeManagedSslCertificate_Override(c ComputeManagedSslCertificate, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificate",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -687,7 +687,7 @@ func ComputeManagedSslCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificate",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -706,7 +706,7 @@ func ComputeManagedSslCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificate",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func ComputeManagedSslCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificate",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func ComputeManagedSslCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeManagedSslCertificate.ComputeManagedSslCertificate",
+		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate",
 		"tfResourceType",
 		&returns,
 	)

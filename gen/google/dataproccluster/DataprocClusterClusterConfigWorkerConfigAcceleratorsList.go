@@ -116,7 +116,7 @@ func NewDataprocClusterClusterConfigWorkerConfigAcceleratorsList(terraformResour
 	j := jsiiProxy_DataprocClusterClusterConfigWorkerConfigAcceleratorsList{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataprocClusterClusterConfigWorkerConfigAcceleratorsList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

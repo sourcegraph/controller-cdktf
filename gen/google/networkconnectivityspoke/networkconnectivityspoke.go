@@ -577,7 +577,7 @@ func NewNetworkConnectivitySpoke(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_NetworkConnectivitySpoke{}
 
 	_jsii_.Create(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpoke",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -590,7 +590,7 @@ func NewNetworkConnectivitySpoke_Override(n NetworkConnectivitySpoke, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpoke",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -767,7 +767,7 @@ func NetworkConnectivitySpoke_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpoke",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -786,7 +786,7 @@ func NetworkConnectivitySpoke_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpoke",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -805,7 +805,7 @@ func NetworkConnectivitySpoke_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpoke",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -818,7 +818,7 @@ func NetworkConnectivitySpoke_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.networkConnectivitySpoke.NetworkConnectivitySpoke",
+		"@cdktf/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke",
 		"tfResourceType",
 		&returns,
 	)

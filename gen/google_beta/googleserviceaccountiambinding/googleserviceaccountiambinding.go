@@ -400,7 +400,7 @@ func NewGoogleServiceAccountIamBinding(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleServiceAccountIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
+		"@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleServiceAccountIamBinding_Override(g GoogleServiceAccountIamBinding
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
+		"@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleServiceAccountIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
+		"@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleServiceAccountIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
+		"@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleServiceAccountIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
+		"@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleServiceAccountIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
+		"@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding",
 		"tfResourceType",
 		&returns,
 	)

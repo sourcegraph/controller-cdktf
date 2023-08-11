@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicy",
 		reflect.TypeOf((*DataGoogleDataprocMetastoreFederationIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig",
+		"@cdktf/provider-google-beta.dataGoogleDataprocMetastoreFederationIamPolicy.DataGoogleDataprocMetastoreFederationIamPolicyConfig",
 		reflect.TypeOf((*DataGoogleDataprocMetastoreFederationIamPolicyConfig)(nil)).Elem(),
 	)
 }

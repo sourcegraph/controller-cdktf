@@ -226,7 +226,7 @@ func NewJobV1SpecTemplateSpecVolumeNfsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeNfsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeNfsOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeNfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewJobV1SpecTemplateSpecVolumeNfsOutputReference_Override(j JobV1SpecTempla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeNfsOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeNfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

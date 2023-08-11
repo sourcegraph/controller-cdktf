@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsConfidenceList(terraformRe
 	j := jsiiProxy_SecurityhubInsightFiltersFindingProviderFieldsConfidenceList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersFindingProviderFieldsConfidenceList_Override(s 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersFindingProviderFieldsConfidenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

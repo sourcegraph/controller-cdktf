@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentity",
 		reflect.TypeOf((*DataAwsCloudfrontOriginAccessIdentity)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentityConfig",
+		"@cdktf/provider-aws.dataAwsCloudfrontOriginAccessIdentity.DataAwsCloudfrontOriginAccessIdentityConfig",
 		reflect.TypeOf((*DataAwsCloudfrontOriginAccessIdentityConfig)(nil)).Elem(),
 	)
 }

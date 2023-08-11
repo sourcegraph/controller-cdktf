@@ -320,7 +320,7 @@ func NewComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference(
 	j := jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -252,7 +252,7 @@ func NewOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputRefe
 	j := jsiiProxy_OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference",
+		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

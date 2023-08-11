@@ -179,7 +179,7 @@ func NewGoogleComputePacketMirroringNetworkOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleComputePacketMirroringNetworkOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetworkOutputReference",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputePacketMirroringNetworkOutputReference_Override(g GoogleComp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetworkOutputReference",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetworkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeTargetTcpProxy.ComputeTargetTcpProxy",
+		"@cdktf/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxy",
 		reflect.TypeOf((*ComputeTargetTcpProxy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig",
+		"@cdktf/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyConfig",
 		reflect.TypeOf((*ComputeTargetTcpProxyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts",
+		"@cdktf/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeouts",
 		reflect.TypeOf((*ComputeTargetTcpProxyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeTargetTcpProxyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

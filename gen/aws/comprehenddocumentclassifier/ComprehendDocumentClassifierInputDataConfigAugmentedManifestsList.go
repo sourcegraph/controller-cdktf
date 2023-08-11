@@ -116,7 +116,7 @@ func NewComprehendDocumentClassifierInputDataConfigAugmentedManifestsList(terraf
 	j := jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList{}
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComprehendDocumentClassifierInputDataConfigAugmentedManifestsList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

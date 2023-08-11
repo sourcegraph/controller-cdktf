@@ -483,7 +483,7 @@ func NewS3BucketInventory(scope constructs.Construct, id *string, config *S3Buck
 	j := jsiiProxy_S3BucketInventory{}
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventory",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewS3BucketInventory_Override(s S3BucketInventory, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketInventory.S3BucketInventory",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -662,7 +662,7 @@ func S3BucketInventory_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketInventory.S3BucketInventory",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func S3BucketInventory_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketInventory.S3BucketInventory",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func S3BucketInventory_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketInventory.S3BucketInventory",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func S3BucketInventory_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketInventory.S3BucketInventory",
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		"tfResourceType",
 		&returns,
 	)

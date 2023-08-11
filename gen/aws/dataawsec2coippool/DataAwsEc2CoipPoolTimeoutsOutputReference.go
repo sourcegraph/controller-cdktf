@@ -180,7 +180,7 @@ func NewDataAwsEc2CoipPoolTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsEc2CoipPoolTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEc2CoipPoolTimeoutsOutputReference_Override(d DataAwsEc2CoipPoolT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2CoipPool.DataAwsEc2CoipPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

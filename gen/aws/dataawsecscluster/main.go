@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcsCluster.DataAwsEcsCluster",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsCluster",
 		reflect.TypeOf((*DataAwsEcsCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterConfig",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterConfig",
 		reflect.TypeOf((*DataAwsEcsClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaults",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaults",
 		reflect.TypeOf((*DataAwsEcsClusterServiceConnectDefaults)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsList",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsList",
 		reflect.TypeOf((*DataAwsEcsClusterServiceConnectDefaultsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsOutputReference",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterServiceConnectDefaultsOutputReference",
 		reflect.TypeOf((*DataAwsEcsClusterServiceConnectDefaultsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterSetting",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterSetting",
 		reflect.TypeOf((*DataAwsEcsClusterSetting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterSettingList",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterSettingList",
 		reflect.TypeOf((*DataAwsEcsClusterSettingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEcsCluster.DataAwsEcsClusterSettingOutputReference",
+		"@cdktf/provider-aws.dataAwsEcsCluster.DataAwsEcsClusterSettingOutputReference",
 		reflect.TypeOf((*DataAwsEcsClusterSettingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

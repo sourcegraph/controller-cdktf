@@ -179,7 +179,7 @@ func NewGoogleDnsResponsePolicyRuleLocalDataOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataOutputReference",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDnsResponsePolicyRuleLocalDataOutputReference_Override(g GoogleDns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataOutputReference",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

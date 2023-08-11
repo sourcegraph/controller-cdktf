@@ -227,7 +227,7 @@ func NewNotebooksInstanceReservationAffinityOutputReference(terraformResource cd
 	j := jsiiProxy_NotebooksInstanceReservationAffinityOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksInstance.NotebooksInstanceReservationAffinityOutputReference",
+		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceReservationAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewNotebooksInstanceReservationAffinityOutputReference_Override(n Notebooks
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksInstance.NotebooksInstanceReservationAffinityOutputReference",
+		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceReservationAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

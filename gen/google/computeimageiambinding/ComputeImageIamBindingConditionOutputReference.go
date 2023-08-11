@@ -226,7 +226,7 @@ func NewComputeImageIamBindingConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_ComputeImageIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeImageIamBinding.ComputeImageIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeImageIamBindingConditionOutputReference_Override(c ComputeImageIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeImageIamBinding.ComputeImageIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeImageIamBinding.ComputeImageIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

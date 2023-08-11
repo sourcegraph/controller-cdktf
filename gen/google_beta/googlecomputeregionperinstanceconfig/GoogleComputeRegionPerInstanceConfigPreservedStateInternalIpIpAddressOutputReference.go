@@ -180,7 +180,7 @@ func NewGoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOut
 	j := jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig.GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

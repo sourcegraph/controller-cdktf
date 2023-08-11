@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSet",
 		reflect.TypeOf((*WafSqlInjectionMatchSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,19 +61,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetConfig",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetConfig",
 		reflect.TypeOf((*WafSqlInjectionMatchSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuples",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuples",
 		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuples)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch",
 		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference",
 		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuplesFieldToMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesList",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesList",
 		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuplesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -131,7 +131,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference",
+		"@cdktf/provider-aws.wafSqlInjectionMatchSet.WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference",
 		reflect.TypeOf((*WafSqlInjectionMatchSetSqlInjectionMatchTuplesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

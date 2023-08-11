@@ -203,7 +203,7 @@ func NewGoogleComputeRegionBackendServiceOutlierDetectionIntervalOutputReference
 	j := jsiiProxy_GoogleComputeRegionBackendServiceOutlierDetectionIntervalOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceOutlierDetectionIntervalOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceOutlierDetectionIntervalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeRegionBackendServiceOutlierDetectionIntervalOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceOutlierDetectionIntervalOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceOutlierDetectionIntervalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

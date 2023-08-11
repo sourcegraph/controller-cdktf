@@ -226,7 +226,7 @@ func NewDlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference(terr
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsActionCrossRegionCopyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -472,7 +472,7 @@ func NewDefaultRouteTable(scope constructs.Construct, id *string, config *Defaul
 	j := jsiiProxy_DefaultRouteTable{}
 
 	_jsii_.Create(
-		"aws.defaultRouteTable.DefaultRouteTable",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewDefaultRouteTable_Override(d DefaultRouteTable, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultRouteTable.DefaultRouteTable",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTable",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -640,7 +640,7 @@ func DefaultRouteTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.defaultRouteTable.DefaultRouteTable",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func DefaultRouteTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.defaultRouteTable.DefaultRouteTable",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DefaultRouteTable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.defaultRouteTable.DefaultRouteTable",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func DefaultRouteTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.defaultRouteTable.DefaultRouteTable",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTable",
 		"tfResourceType",
 		&returns,
 	)

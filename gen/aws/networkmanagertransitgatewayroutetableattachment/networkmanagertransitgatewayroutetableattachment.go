@@ -524,7 +524,7 @@ func NewNetworkmanagerTransitGatewayRouteTableAttachment(scope constructs.Constr
 	j := jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment{}
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -537,7 +537,7 @@ func NewNetworkmanagerTransitGatewayRouteTableAttachment_Override(n Networkmanag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -692,7 +692,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_IsConstruct(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformElement(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformResource(x inte
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -743,7 +743,7 @@ func NetworkmanagerTransitGatewayRouteTableAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRouteTableAttachment.NetworkmanagerTransitGatewayRouteTableAttachment",
 		"tfResourceType",
 		&returns,
 	)

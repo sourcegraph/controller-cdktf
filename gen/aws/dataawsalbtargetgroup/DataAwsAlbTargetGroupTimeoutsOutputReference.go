@@ -180,7 +180,7 @@ func NewDataAwsAlbTargetGroupTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsAlbTargetGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsAlbTargetGroupTimeoutsOutputReference_Override(d DataAwsAlbTarget
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

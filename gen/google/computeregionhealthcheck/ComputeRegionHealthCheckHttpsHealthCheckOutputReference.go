@@ -324,7 +324,7 @@ func NewComputeRegionHealthCheckHttpsHealthCheckOutputReference(terraformResourc
 	j := jsiiProxy_ComputeRegionHealthCheckHttpsHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpsHealthCheckOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpsHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewComputeRegionHealthCheckHttpsHealthCheckOutputReference_Override(c Compu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpsHealthCheckOutputReference",
+		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpsHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

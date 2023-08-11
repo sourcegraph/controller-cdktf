@@ -233,7 +233,7 @@ func NewDataAwsNetworkInterfaceAssociationOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsNetworkInterfaceAssociationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -245,7 +245,7 @@ func NewDataAwsNetworkInterfaceAssociationOutputReference_Override(d DataAwsNetw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -487,7 +487,7 @@ func NewGoogleDataprocCluster(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleDataprocCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocCluster",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewGoogleDataprocCluster_Override(g GoogleDataprocCluster, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocCluster",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -666,7 +666,7 @@ func GoogleDataprocCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocCluster.GoogleDataprocCluster",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func GoogleDataprocCluster_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocCluster.GoogleDataprocCluster",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func GoogleDataprocCluster_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocCluster.GoogleDataprocCluster",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -717,7 +717,7 @@ func GoogleDataprocCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocCluster.GoogleDataprocCluster",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceTemplateServiceAccountList(terraformResource cd
 	j := jsiiProxy_DataGoogleComputeInstanceTemplateServiceAccountList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateServiceAccountList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateServiceAccountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceTemplateServiceAccountList_Override(d DataGoogl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateServiceAccountList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateServiceAccountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

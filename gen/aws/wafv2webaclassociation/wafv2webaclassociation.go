@@ -342,7 +342,7 @@ func NewWafv2WebAclAssociation(scope constructs.Construct, id *string, config *W
 	j := jsiiProxy_Wafv2WebAclAssociation{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
+		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewWafv2WebAclAssociation_Override(w Wafv2WebAclAssociation, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
+		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -488,7 +488,7 @@ func Wafv2WebAclAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
+		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func Wafv2WebAclAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
+		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func Wafv2WebAclAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
+		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func Wafv2WebAclAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
+		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociation",
 		"tfResourceType",
 		&returns,
 	)

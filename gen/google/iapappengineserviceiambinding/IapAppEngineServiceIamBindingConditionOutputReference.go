@@ -226,7 +226,7 @@ func NewIapAppEngineServiceIamBindingConditionOutputReference(terraformResource 
 	j := jsiiProxy_IapAppEngineServiceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.iapAppEngineServiceIamBinding.IapAppEngineServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.iapAppEngineServiceIamBinding.IapAppEngineServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewIapAppEngineServiceIamBindingConditionOutputReference_Override(i IapAppE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapAppEngineServiceIamBinding.IapAppEngineServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.iapAppEngineServiceIamBinding.IapAppEngineServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

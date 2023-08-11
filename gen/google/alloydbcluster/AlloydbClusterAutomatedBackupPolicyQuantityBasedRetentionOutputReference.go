@@ -180,7 +180,7 @@ func NewAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference
 	j := jsiiProxy_AlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference{}
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

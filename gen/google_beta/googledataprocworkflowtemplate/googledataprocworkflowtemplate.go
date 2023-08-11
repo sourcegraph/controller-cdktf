@@ -554,7 +554,7 @@ func NewGoogleDataprocWorkflowTemplate(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleDataprocWorkflowTemplate{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -567,7 +567,7 @@ func NewGoogleDataprocWorkflowTemplate_Override(g GoogleDataprocWorkflowTemplate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -744,7 +744,7 @@ func GoogleDataprocWorkflowTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func GoogleDataprocWorkflowTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func GoogleDataprocWorkflowTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func GoogleDataprocWorkflowTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplate",
 		"tfResourceType",
 		&returns,
 	)

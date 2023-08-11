@@ -116,7 +116,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsList(terraformReso
 	j := jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsList{}
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsList_Override(n Ne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

@@ -324,7 +324,7 @@ func NewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReferenc
 	j := jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference",
+		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

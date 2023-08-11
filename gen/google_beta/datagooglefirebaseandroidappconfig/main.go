@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleFirebaseAndroidAppConfig.DataGoogleFirebaseAndroidAppConfigA",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAndroidAppConfig.DataGoogleFirebaseAndroidAppConfigA",
 		reflect.TypeOf((*DataGoogleFirebaseAndroidAppConfigA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleFirebaseAndroidAppConfig.DataGoogleFirebaseAndroidAppConfigAConfig",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAndroidAppConfig.DataGoogleFirebaseAndroidAppConfigAConfig",
 		reflect.TypeOf((*DataGoogleFirebaseAndroidAppConfigAConfig)(nil)).Elem(),
 	)
 }

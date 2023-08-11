@@ -204,7 +204,7 @@ func NewImagebuilderImagePipelineImageTestsConfigurationOutputReference(terrafor
 	j := jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfigurationOutputReference",
+		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewImagebuilderImagePipelineImageTestsConfigurationOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfigurationOutputReference",
+		"@cdktf/provider-aws.imagebuilderImagePipeline.ImagebuilderImagePipelineImageTestsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

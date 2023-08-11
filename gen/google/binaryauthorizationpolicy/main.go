@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		reflect.TypeOf((*BinaryAuthorizationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,11 +79,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatterns",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatterns",
 		reflect.TypeOf((*BinaryAuthorizationPolicyAdmissionWhitelistPatterns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsList",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsList",
 		reflect.TypeOf((*BinaryAuthorizationPolicyAdmissionWhitelistPatternsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,7 +104,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference",
 		reflect.TypeOf((*BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,11 +138,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules",
 		reflect.TypeOf((*BinaryAuthorizationPolicyClusterAdmissionRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList",
 		reflect.TypeOf((*BinaryAuthorizationPolicyClusterAdmissionRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference",
 		reflect.TypeOf((*BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
@@ -204,15 +204,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig",
 		reflect.TypeOf((*BinaryAuthorizationPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRule",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRule",
 		reflect.TypeOf((*BinaryAuthorizationPolicyDefaultAdmissionRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference",
 		reflect.TypeOf((*BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -251,11 +251,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts",
 		reflect.TypeOf((*BinaryAuthorizationPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*BinaryAuthorizationPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

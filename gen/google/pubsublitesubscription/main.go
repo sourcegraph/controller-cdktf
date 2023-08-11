@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.pubsubLiteSubscription.PubsubLiteSubscription",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscription",
 		reflect.TypeOf((*PubsubLiteSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionConfig",
 		reflect.TypeOf((*PubsubLiteSubscriptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfig",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfig",
 		reflect.TypeOf((*PubsubLiteSubscriptionDeliveryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfigOutputReference",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionDeliveryConfigOutputReference",
 		reflect.TypeOf((*PubsubLiteSubscriptionDeliveryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,11 +118,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeouts",
 		reflect.TypeOf((*PubsubLiteSubscriptionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubLiteSubscription.PubsubLiteSubscriptionTimeoutsOutputReference",
 		reflect.TypeOf((*PubsubLiteSubscriptionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

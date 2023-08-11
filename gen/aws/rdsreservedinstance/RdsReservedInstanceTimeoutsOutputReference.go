@@ -228,7 +228,7 @@ func NewRdsReservedInstanceTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_RdsReservedInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.rdsReservedInstance.RdsReservedInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRdsReservedInstanceTimeoutsOutputReference_Override(r RdsReservedInstanc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsReservedInstance.RdsReservedInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

@@ -204,7 +204,7 @@ func NewTagsTagBindingTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_TagsTagBindingTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference",
+		"@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewTagsTagBindingTimeoutsOutputReference_Override(t TagsTagBindingTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference",
+		"@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

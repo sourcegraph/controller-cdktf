@@ -228,7 +228,7 @@ func NewNotebooksInstanceShieldedInstanceConfigOutputReference(terraformResource
 	j := jsiiProxy_NotebooksInstanceShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksInstance.NotebooksInstanceShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNotebooksInstanceShieldedInstanceConfigOutputReference_Override(n Notebo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksInstance.NotebooksInstanceShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.notebooksInstance.NotebooksInstanceShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

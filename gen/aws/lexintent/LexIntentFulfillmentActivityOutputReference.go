@@ -203,7 +203,7 @@ func NewLexIntentFulfillmentActivityOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_LexIntentFulfillmentActivityOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFulfillmentActivityOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLexIntentFulfillmentActivityOutputReference_Override(l LexIntentFulfillm
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFulfillmentActivityOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

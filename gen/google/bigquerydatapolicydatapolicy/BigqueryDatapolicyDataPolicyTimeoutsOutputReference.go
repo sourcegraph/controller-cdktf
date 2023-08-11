@@ -228,7 +228,7 @@ func NewBigqueryDatapolicyDataPolicyTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_BigqueryDatapolicyDataPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBigqueryDatapolicyDataPolicyTimeoutsOutputReference_Override(b BigqueryD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicy.BigqueryDatapolicyDataPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

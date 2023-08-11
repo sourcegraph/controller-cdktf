@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSet",
 		reflect.TypeOf((*Sesv2ConfigurationSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetConfig",
 		reflect.TypeOf((*Sesv2ConfigurationSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptions",
 		reflect.TypeOf((*Sesv2ConfigurationSetDeliveryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetDeliveryOptionsOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetDeliveryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptions",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptions",
 		reflect.TypeOf((*Sesv2ConfigurationSetReputationOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetReputationOptionsOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetReputationOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -170,11 +170,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptions",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptions",
 		reflect.TypeOf((*Sesv2ConfigurationSetSendingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSendingOptionsOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetSendingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -209,11 +209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptions",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptions",
 		reflect.TypeOf((*Sesv2ConfigurationSetSuppressionOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetSuppressionOptionsOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetSuppressionOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -248,11 +248,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptions",
 		reflect.TypeOf((*Sesv2ConfigurationSetTrackingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptionsOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetTrackingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

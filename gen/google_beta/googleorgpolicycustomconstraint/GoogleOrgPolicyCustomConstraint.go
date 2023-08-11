@@ -517,7 +517,7 @@ func NewGoogleOrgPolicyCustomConstraint(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleOrgPolicyCustomConstraint{}
 
 	_jsii_.Create(
-		"google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
+		"@cdktf/provider-google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -530,7 +530,7 @@ func NewGoogleOrgPolicyCustomConstraint_Override(g GoogleOrgPolicyCustomConstrai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
+		"@cdktf/provider-google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -729,7 +729,7 @@ func GoogleOrgPolicyCustomConstraint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
+		"@cdktf/provider-google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func GoogleOrgPolicyCustomConstraint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
+		"@cdktf/provider-google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -767,7 +767,7 @@ func GoogleOrgPolicyCustomConstraint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
+		"@cdktf/provider-google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func GoogleOrgPolicyCustomConstraint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
+		"@cdktf/provider-google-beta.googleOrgPolicyCustomConstraint.GoogleOrgPolicyCustomConstraint",
 		"tfResourceType",
 		&returns,
 	)

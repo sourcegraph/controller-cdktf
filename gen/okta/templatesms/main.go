@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.templateSms.TemplateSms",
+		"@cdktf/provider-okta.templateSms.TemplateSms",
 		reflect.TypeOf((*TemplateSms)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.templateSms.TemplateSmsConfig",
+		"@cdktf/provider-okta.templateSms.TemplateSmsConfig",
 		reflect.TypeOf((*TemplateSmsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.templateSms.TemplateSmsTranslations",
+		"@cdktf/provider-okta.templateSms.TemplateSmsTranslations",
 		reflect.TypeOf((*TemplateSmsTranslations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.templateSms.TemplateSmsTranslationsList",
+		"@cdktf/provider-okta.templateSms.TemplateSmsTranslationsList",
 		reflect.TypeOf((*TemplateSmsTranslationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.templateSms.TemplateSmsTranslationsOutputReference",
+		"@cdktf/provider-okta.templateSms.TemplateSmsTranslationsOutputReference",
 		reflect.TypeOf((*TemplateSmsTranslationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

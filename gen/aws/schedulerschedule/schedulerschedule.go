@@ -592,7 +592,7 @@ func NewSchedulerSchedule(scope constructs.Construct, id *string, config *Schedu
 	j := jsiiProxy_SchedulerSchedule{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerSchedule",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -605,7 +605,7 @@ func NewSchedulerSchedule_Override(s SchedulerSchedule, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerSchedule",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -826,7 +826,7 @@ func SchedulerSchedule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schedulerSchedule.SchedulerSchedule",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -845,7 +845,7 @@ func SchedulerSchedule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schedulerSchedule.SchedulerSchedule",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -864,7 +864,7 @@ func SchedulerSchedule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schedulerSchedule.SchedulerSchedule",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -877,7 +877,7 @@ func SchedulerSchedule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.schedulerSchedule.SchedulerSchedule",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule",
 		"tfResourceType",
 		&returns,
 	)

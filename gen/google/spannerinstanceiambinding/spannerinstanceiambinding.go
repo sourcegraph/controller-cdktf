@@ -424,7 +424,7 @@ func NewSpannerInstanceIamBinding(scope constructs.Construct, id *string, config
 	j := jsiiProxy_SpannerInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
+		"@cdktf/provider-google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewSpannerInstanceIamBinding_Override(s SpannerInstanceIamBinding, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
+		"@cdktf/provider-google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -592,7 +592,7 @@ func SpannerInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
+		"@cdktf/provider-google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func SpannerInstanceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
+		"@cdktf/provider-google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func SpannerInstanceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
+		"@cdktf/provider-google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func SpannerInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
+		"@cdktf/provider-google.spannerInstanceIamBinding.SpannerInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

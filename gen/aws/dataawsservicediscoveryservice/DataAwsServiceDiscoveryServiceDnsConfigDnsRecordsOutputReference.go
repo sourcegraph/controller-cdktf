@@ -178,7 +178,7 @@ func NewDataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference(terrafo
 	j := jsiiProxy_DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceDnsConfigDnsRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

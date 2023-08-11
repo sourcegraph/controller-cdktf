@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sccMuteConfig.SccMuteConfig",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfig",
 		reflect.TypeOf((*SccMuteConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sccMuteConfig.SccMuteConfigConfig",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfigConfig",
 		reflect.TypeOf((*SccMuteConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.sccMuteConfig.SccMuteConfigTimeouts",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfigTimeouts",
 		reflect.TypeOf((*SccMuteConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sccMuteConfig.SccMuteConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfigTimeoutsOutputReference",
 		reflect.TypeOf((*SccMuteConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

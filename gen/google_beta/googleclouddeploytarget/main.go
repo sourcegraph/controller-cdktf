@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTarget",
 		reflect.TypeOf((*GoogleClouddeployTarget)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -103,11 +103,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosCluster",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosCluster",
 		reflect.TypeOf((*GoogleClouddeployTargetAnthosCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosClusterOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetAnthosClusterOutputReference",
 		reflect.TypeOf((*GoogleClouddeployTargetAnthosClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,15 +142,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetConfig",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetConfig",
 		reflect.TypeOf((*GoogleClouddeployTargetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigs",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigs",
 		reflect.TypeOf((*GoogleClouddeployTargetExecutionConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsList",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsList",
 		reflect.TypeOf((*GoogleClouddeployTargetExecutionConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -171,7 +171,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetExecutionConfigsOutputReference",
 		reflect.TypeOf((*GoogleClouddeployTargetExecutionConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactStorage", GoGetter: "ArtifactStorage"},
@@ -217,11 +217,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetGke",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetGke",
 		reflect.TypeOf((*GoogleClouddeployTargetGke)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetGkeOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetGkeOutputReference",
 		reflect.TypeOf((*GoogleClouddeployTargetGkeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
@@ -259,11 +259,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTarget",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTarget",
 		reflect.TypeOf((*GoogleClouddeployTargetMultiTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTargetOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetMultiTargetOutputReference",
 		reflect.TypeOf((*GoogleClouddeployTargetMultiTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -297,11 +297,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetRun",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetRun",
 		reflect.TypeOf((*GoogleClouddeployTargetRun)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetRunOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetRunOutputReference",
 		reflect.TypeOf((*GoogleClouddeployTargetRunOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -335,11 +335,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeouts",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeouts",
 		reflect.TypeOf((*GoogleClouddeployTargetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleClouddeployTarget.GoogleClouddeployTargetTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleClouddeployTargetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

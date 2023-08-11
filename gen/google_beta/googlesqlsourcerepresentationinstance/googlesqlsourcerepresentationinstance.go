@@ -605,7 +605,7 @@ func NewGoogleSqlSourceRepresentationInstance(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleSqlSourceRepresentationInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
+		"@cdktf/provider-google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -618,7 +618,7 @@ func NewGoogleSqlSourceRepresentationInstance_Override(g GoogleSqlSourceRepresen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
+		"@cdktf/provider-google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -861,7 +861,7 @@ func GoogleSqlSourceRepresentationInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
+		"@cdktf/provider-google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -880,7 +880,7 @@ func GoogleSqlSourceRepresentationInstance_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
+		"@cdktf/provider-google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -899,7 +899,7 @@ func GoogleSqlSourceRepresentationInstance_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
+		"@cdktf/provider-google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -912,7 +912,7 @@ func GoogleSqlSourceRepresentationInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
+		"@cdktf/provider-google-beta.googleSqlSourceRepresentationInstance.GoogleSqlSourceRepresentationInstance",
 		"tfResourceType",
 		&returns,
 	)

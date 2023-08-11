@@ -116,7 +116,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeSecretItemsList(terraformRes
 	j := jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumeSecretItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobSpecJobTemplateSpecTemplateSpecVolumeSecretItemsList_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeSecretItemsList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecTemplateSpecVolumeSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

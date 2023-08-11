@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataFusionInstanceIamMember.GoogleDataFusionInstanceIamMember",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamMember.GoogleDataFusionInstanceIamMember",
 		reflect.TypeOf((*GoogleDataFusionInstanceIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataFusionInstanceIamMember.GoogleDataFusionInstanceIamMemberCondition",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamMember.GoogleDataFusionInstanceIamMemberCondition",
 		reflect.TypeOf((*GoogleDataFusionInstanceIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataFusionInstanceIamMember.GoogleDataFusionInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamMember.GoogleDataFusionInstanceIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleDataFusionInstanceIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataFusionInstanceIamMember.GoogleDataFusionInstanceIamMemberConfig",
+		"@cdktf/provider-google-beta.googleDataFusionInstanceIamMember.GoogleDataFusionInstanceIamMemberConfig",
 		reflect.TypeOf((*GoogleDataFusionInstanceIamMemberConfig)(nil)).Elem(),
 	)
 }

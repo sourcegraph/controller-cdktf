@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceReservationAffinitySpecificReservationList(terr
 	j := jsiiProxy_DataGoogleComputeInstanceReservationAffinitySpecificReservationList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceReservationAffinitySpecificReservationList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceReservationAffinitySpecificReservationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceReservationAffinitySpecificReservationList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceReservationAffinitySpecificReservationList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceReservationAffinitySpecificReservationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.groupRoles.GroupRoles",
+		"@cdktf/provider-okta.groupRoles.GroupRoles",
 		reflect.TypeOf((*GroupRoles)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.groupRoles.GroupRolesConfig",
+		"@cdktf/provider-okta.groupRoles.GroupRolesConfig",
 		reflect.TypeOf((*GroupRolesConfig)(nil)).Elem(),
 	)
 }

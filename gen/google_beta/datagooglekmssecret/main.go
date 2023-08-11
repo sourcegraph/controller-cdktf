@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
 		reflect.TypeOf((*DataGoogleKmsSecret)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalAuthenticatedData", GoGetter: "AdditionalAuthenticatedData"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleKmsSecret.DataGoogleKmsSecretConfig",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecret.DataGoogleKmsSecretConfig",
 		reflect.TypeOf((*DataGoogleKmsSecretConfig)(nil)).Elem(),
 	)
 }

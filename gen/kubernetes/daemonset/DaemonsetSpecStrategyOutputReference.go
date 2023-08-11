@@ -204,7 +204,7 @@ func NewDaemonsetSpecStrategyOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DaemonsetSpecStrategyOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecStrategyOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonsetSpecStrategyOutputReference_Override(d DaemonsetSpecStrategyOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecStrategyOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

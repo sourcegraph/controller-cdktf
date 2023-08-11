@@ -228,7 +228,7 @@ func NewSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference(terraformRes
 	j := jsiiProxy_SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference_Override(s S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

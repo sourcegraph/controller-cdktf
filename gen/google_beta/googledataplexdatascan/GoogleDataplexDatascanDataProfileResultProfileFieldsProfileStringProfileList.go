@@ -104,7 +104,7 @@ func NewGoogleDataplexDatascanDataProfileResultProfileFieldsProfileStringProfile
 	j := jsiiProxy_GoogleDataplexDatascanDataProfileResultProfileFieldsProfileStringProfileList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultProfileFieldsProfileStringProfileList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultProfileFieldsProfileStringProfileList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDataplexDatascanDataProfileResultProfileFieldsProfileStringProfile
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultProfileFieldsProfileStringProfileList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataProfileResultProfileFieldsProfileStringProfileList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

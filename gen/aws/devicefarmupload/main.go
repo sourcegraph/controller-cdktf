@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.devicefarmUpload.DevicefarmUpload",
+		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUpload",
 		reflect.TypeOf((*DevicefarmUpload)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.devicefarmUpload.DevicefarmUploadConfig",
+		"@cdktf/provider-aws.devicefarmUpload.DevicefarmUploadConfig",
 		reflect.TypeOf((*DevicefarmUploadConfig)(nil)).Elem(),
 	)
 }

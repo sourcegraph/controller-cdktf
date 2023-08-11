@@ -474,7 +474,7 @@ func NewDbParameterGroup(scope constructs.Construct, id *string, config *DbParam
 	j := jsiiProxy_DbParameterGroup{}
 
 	_jsii_.Create(
-		"aws.dbParameterGroup.DbParameterGroup",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewDbParameterGroup_Override(d DbParameterGroup, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbParameterGroup.DbParameterGroup",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -664,7 +664,7 @@ func DbParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbParameterGroup.DbParameterGroup",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func DbParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbParameterGroup.DbParameterGroup",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func DbParameterGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbParameterGroup.DbParameterGroup",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func DbParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dbParameterGroup.DbParameterGroup",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

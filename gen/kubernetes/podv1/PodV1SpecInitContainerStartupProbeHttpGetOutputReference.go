@@ -276,7 +276,7 @@ func NewPodV1SpecInitContainerStartupProbeHttpGetOutputReference(terraformResour
 	j := jsiiProxy_PodV1SpecInitContainerStartupProbeHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewPodV1SpecInitContainerStartupProbeHttpGetOutputReference_Override(p PodV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

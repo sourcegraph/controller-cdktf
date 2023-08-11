@@ -180,7 +180,7 @@ func NewStoragegatewayFileSystemAssociationCacheAttributesOutputReference(terraf
 	j := jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputReference{}
 
 	_jsii_.Create(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributesOutputReference",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewStoragegatewayFileSystemAssociationCacheAttributesOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributesOutputReference",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociationCacheAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -180,7 +180,7 @@ func NewSagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference(terra
 	j := jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -228,7 +228,7 @@ func NewStoragegatewaySmbFileShareTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_StoragegatewaySmbFileShareTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStoragegatewaySmbFileShareTimeoutsOutputReference_Override(s Storagegate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

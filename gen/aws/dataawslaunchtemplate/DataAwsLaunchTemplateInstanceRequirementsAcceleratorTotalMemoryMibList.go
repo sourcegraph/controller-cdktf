@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList(t
 	j := jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

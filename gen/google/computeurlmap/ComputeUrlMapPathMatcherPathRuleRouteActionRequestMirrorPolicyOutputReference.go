@@ -179,7 +179,7 @@ func NewComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputRefe
 	j := jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

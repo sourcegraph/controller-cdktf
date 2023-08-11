@@ -180,7 +180,7 @@ func NewDataAwsEbsSnapshotIdsTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsEbsSnapshotIdsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEbsSnapshotIdsTimeoutsOutputReference_Override(d DataAwsEbsSnapsh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsSnapshotIds.DataAwsEbsSnapshotIdsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

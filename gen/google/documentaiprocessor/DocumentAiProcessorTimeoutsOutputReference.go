@@ -204,7 +204,7 @@ func NewDocumentAiProcessorTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DocumentAiProcessorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.documentAiProcessor.DocumentAiProcessorTimeoutsOutputReference",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDocumentAiProcessorTimeoutsOutputReference_Override(d DocumentAiProcesso
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.documentAiProcessor.DocumentAiProcessorTimeoutsOutputReference",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

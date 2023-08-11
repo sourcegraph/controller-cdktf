@@ -179,7 +179,7 @@ func NewRoute53RecordFailoverRoutingPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_Route53RecordFailoverRoutingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordFailoverRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordFailoverRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewRoute53RecordFailoverRoutingPolicyOutputReference_Override(r Route53Reco
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53Record.Route53RecordFailoverRoutingPolicyOutputReference",
+		"@cdktf/provider-aws.route53Record.Route53RecordFailoverRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

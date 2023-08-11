@@ -226,7 +226,7 @@ func NewFolderIamBindingConditionOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_FolderIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.folderIamBinding.FolderIamBindingConditionOutputReference",
+		"@cdktf/provider-google.folderIamBinding.FolderIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewFolderIamBindingConditionOutputReference_Override(f FolderIamBindingCond
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderIamBinding.FolderIamBindingConditionOutputReference",
+		"@cdktf/provider-google.folderIamBinding.FolderIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

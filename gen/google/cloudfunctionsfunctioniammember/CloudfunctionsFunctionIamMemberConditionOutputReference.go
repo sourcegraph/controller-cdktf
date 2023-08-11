@@ -226,7 +226,7 @@ func NewCloudfunctionsFunctionIamMemberConditionOutputReference(terraformResourc
 	j := jsiiProxy_CloudfunctionsFunctionIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberConditionOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCloudfunctionsFunctionIamMemberConditionOutputReference_Override(c Cloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberConditionOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

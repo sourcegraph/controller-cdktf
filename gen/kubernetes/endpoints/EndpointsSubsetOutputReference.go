@@ -228,7 +228,7 @@ func NewEndpointsSubsetOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_EndpointsSubsetOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.endpoints.EndpointsSubsetOutputReference",
+		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEndpointsSubsetOutputReference_Override(e EndpointsSubsetOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.endpoints.EndpointsSubsetOutputReference",
+		"@cdktf/provider-kubernetes.endpoints.EndpointsSubsetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

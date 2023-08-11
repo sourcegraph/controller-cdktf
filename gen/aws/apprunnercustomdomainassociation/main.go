@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociation",
 		reflect.TypeOf((*ApprunnerCustomDomainAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,11 +65,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecords",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecords",
 		reflect.TypeOf((*ApprunnerCustomDomainAssociationCertificateValidationRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsList",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsList",
 		reflect.TypeOf((*ApprunnerCustomDomainAssociationCertificateValidationRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -89,7 +89,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference",
 		reflect.TypeOf((*ApprunnerCustomDomainAssociationCertificateValidationRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationConfig",
+		"@cdktf/provider-aws.apprunnerCustomDomainAssociation.ApprunnerCustomDomainAssociationConfig",
 		reflect.TypeOf((*ApprunnerCustomDomainAssociationConfig)(nil)).Elem(),
 	)
 }

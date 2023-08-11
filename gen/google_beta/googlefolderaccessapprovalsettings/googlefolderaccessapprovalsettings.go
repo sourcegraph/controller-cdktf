@@ -458,7 +458,7 @@ func NewGoogleFolderAccessApprovalSettings(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleFolderAccessApprovalSettings{}
 
 	_jsii_.Create(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewGoogleFolderAccessApprovalSettings_Override(g GoogleFolderAccessApproval
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -615,7 +615,7 @@ func GoogleFolderAccessApprovalSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func GoogleFolderAccessApprovalSettings_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func GoogleFolderAccessApprovalSettings_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func GoogleFolderAccessApprovalSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleFolderAccessApprovalSettings.GoogleFolderAccessApprovalSettings",
 		"tfResourceType",
 		&returns,
 	)

@@ -191,7 +191,7 @@ func NewMemcacheInstanceMemcacheParametersOutputReference(terraformResource cdkt
 	j := jsiiProxy_MemcacheInstanceMemcacheParametersOutputReference{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMemcacheParametersOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewMemcacheInstanceMemcacheParametersOutputReference_Override(m MemcacheIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMemcacheParametersOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

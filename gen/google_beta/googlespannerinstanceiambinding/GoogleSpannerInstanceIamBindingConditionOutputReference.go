@@ -226,7 +226,7 @@ func NewGoogleSpannerInstanceIamBindingConditionOutputReference(terraformResourc
 	j := jsiiProxy_GoogleSpannerInstanceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleSpannerInstanceIamBindingConditionOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

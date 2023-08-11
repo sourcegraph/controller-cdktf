@@ -593,7 +593,7 @@ func NewGoogleMonitoringSlo(scope constructs.Construct, id *string, config *Goog
 	j := jsiiProxy_GoogleMonitoringSlo{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -606,7 +606,7 @@ func NewGoogleMonitoringSlo_Override(g GoogleMonitoringSlo, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -805,7 +805,7 @@ func GoogleMonitoringSlo_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -824,7 +824,7 @@ func GoogleMonitoringSlo_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -843,7 +843,7 @@ func GoogleMonitoringSlo_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -856,7 +856,7 @@ func GoogleMonitoringSlo_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
 		"tfResourceType",
 		&returns,
 	)

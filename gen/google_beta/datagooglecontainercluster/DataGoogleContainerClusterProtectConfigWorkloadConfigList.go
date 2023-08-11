@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterProtectConfigWorkloadConfigList(terraformResou
 	j := jsiiProxy_DataGoogleContainerClusterProtectConfigWorkloadConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterProtectConfigWorkloadConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterProtectConfigWorkloadConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterProtectConfigWorkloadConfigList_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterProtectConfigWorkloadConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterProtectConfigWorkloadConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

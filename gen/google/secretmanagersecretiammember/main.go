@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
 		reflect.TypeOf((*SecretManagerSecretIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberCondition",
 		reflect.TypeOf((*SecretManagerSecretIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConditionOutputReference",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConditionOutputReference",
 		reflect.TypeOf((*SecretManagerSecretIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMemberConfig",
 		reflect.TypeOf((*SecretManagerSecretIamMemberConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamUserGroupMembership.IamUserGroupMembership",
+		"@cdktf/provider-aws.iamUserGroupMembership.IamUserGroupMembership",
 		reflect.TypeOf((*IamUserGroupMembership)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamUserGroupMembership.IamUserGroupMembershipConfig",
+		"@cdktf/provider-aws.iamUserGroupMembership.IamUserGroupMembershipConfig",
 		reflect.TypeOf((*IamUserGroupMembershipConfig)(nil)).Elem(),
 	)
 }

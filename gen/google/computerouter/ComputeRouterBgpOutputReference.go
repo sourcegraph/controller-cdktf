@@ -275,7 +275,7 @@ func NewComputeRouterBgpOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_ComputeRouterBgpOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRouter.ComputeRouterBgpOutputReference",
+		"@cdktf/provider-google.computeRouter.ComputeRouterBgpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewComputeRouterBgpOutputReference_Override(c ComputeRouterBgpOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRouter.ComputeRouterBgpOutputReference",
+		"@cdktf/provider-google.computeRouter.ComputeRouterBgpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

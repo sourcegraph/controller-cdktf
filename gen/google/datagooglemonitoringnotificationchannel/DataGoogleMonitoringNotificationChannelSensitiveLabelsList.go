@@ -104,7 +104,7 @@ func NewDataGoogleMonitoringNotificationChannelSensitiveLabelsList(terraformReso
 	j := jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsList",
+		"@cdktf/provider-google.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleMonitoringNotificationChannelSensitiveLabelsList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsList",
+		"@cdktf/provider-google.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

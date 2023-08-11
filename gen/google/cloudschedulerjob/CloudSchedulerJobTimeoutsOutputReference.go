@@ -228,7 +228,7 @@ func NewCloudSchedulerJobTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudSchedulerJobTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudSchedulerJob.CloudSchedulerJobTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudSchedulerJobTimeoutsOutputReference_Override(c CloudSchedulerJobTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudSchedulerJob.CloudSchedulerJobTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudSchedulerJob.CloudSchedulerJobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

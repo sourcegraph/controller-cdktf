@@ -116,7 +116,7 @@ func NewNetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationCon
 	j := jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList{}
 
 	_jsii_.Create(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

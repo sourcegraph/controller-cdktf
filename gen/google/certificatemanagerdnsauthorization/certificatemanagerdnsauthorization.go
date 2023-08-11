@@ -449,7 +449,7 @@ func NewCertificateManagerDnsAuthorization(scope constructs.Construct, id *strin
 	j := jsiiProxy_CertificateManagerDnsAuthorization{}
 
 	_jsii_.Create(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewCertificateManagerDnsAuthorization_Override(c CertificateManagerDnsAutho
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -628,7 +628,7 @@ func CertificateManagerDnsAuthorization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func CertificateManagerDnsAuthorization_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func CertificateManagerDnsAuthorization_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func CertificateManagerDnsAuthorization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
+		"@cdktf/provider-google.certificateManagerDnsAuthorization.CertificateManagerDnsAuthorization",
 		"tfResourceType",
 		&returns,
 	)

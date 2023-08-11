@@ -116,7 +116,7 @@ func NewEmrClusterStepHadoopJarStepList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_EmrClusterStepHadoopJarStepList{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterStepHadoopJarStepList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrClusterStepHadoopJarStepList_Override(e EmrClusterStepHadoopJarStepLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterStepHadoopJarStepList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterStepHadoopJarStepList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

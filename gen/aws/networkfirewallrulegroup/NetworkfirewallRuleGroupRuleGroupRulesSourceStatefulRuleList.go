@@ -116,7 +116,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleList(terraformRe
 	j := jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleList{}
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleList_Override(n 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceStatefulRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

@@ -180,7 +180,7 @@ func NewGoogleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference(
 	j := jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

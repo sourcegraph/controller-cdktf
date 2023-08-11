@@ -179,7 +179,7 @@ func NewGoogleGameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutp
 	j := jsiiProxy_GoogleGameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleGameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerClusterConnectionInfoGkeClusterReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewGoogleDataprocMetastoreServiceNetworkConfigConsumersList(terraformResour
 	j := jsiiProxy_GoogleDataprocMetastoreServiceNetworkConfigConsumersList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersList",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDataprocMetastoreServiceNetworkConfigConsumersList_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersList",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceNetworkConfigConsumersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

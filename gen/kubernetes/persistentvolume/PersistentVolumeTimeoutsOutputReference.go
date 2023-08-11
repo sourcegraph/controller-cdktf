@@ -180,7 +180,7 @@ func NewPersistentVolumeTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_PersistentVolumeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewPersistentVolumeTimeoutsOutputReference_Override(p PersistentVolumeTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

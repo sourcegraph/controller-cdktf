@@ -104,7 +104,7 @@ func NewDataCloudflareAccountsAccountsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataCloudflareAccountsAccountsList{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsList",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataCloudflareAccountsAccountsList_Override(d DataCloudflareAccountsAcco
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsList",
+		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSink",
 		reflect.TypeOf((*GoogleLoggingFolderSink)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,11 +82,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkBigqueryOptions",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkBigqueryOptions",
 		reflect.TypeOf((*GoogleLoggingFolderSinkBigqueryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkBigqueryOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkBigqueryOptionsOutputReference",
 		reflect.TypeOf((*GoogleLoggingFolderSinkBigqueryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,15 +120,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkConfig",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkConfig",
 		reflect.TypeOf((*GoogleLoggingFolderSinkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusions",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusions",
 		reflect.TypeOf((*GoogleLoggingFolderSinkExclusions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsList",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsList",
 		reflect.TypeOf((*GoogleLoggingFolderSinkExclusionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsOutputReference",
 		reflect.TypeOf((*GoogleLoggingFolderSinkExclusionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersRelatedFindingsIdList(terraformResource cdktf.I
 	j := jsiiProxy_SecurityhubInsightFiltersRelatedFindingsIdList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersRelatedFindingsIdList_Override(s SecurityhubIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsIdList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

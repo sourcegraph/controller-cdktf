@@ -342,7 +342,7 @@ func NewIamUserPolicyAttachment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_IamUserPolicyAttachment{}
 
 	_jsii_.Create(
-		"aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
+		"@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewIamUserPolicyAttachment_Override(i IamUserPolicyAttachment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
+		"@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -488,7 +488,7 @@ func IamUserPolicyAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
+		"@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func IamUserPolicyAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
+		"@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func IamUserPolicyAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
+		"@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func IamUserPolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
+		"@cdktf/provider-aws.iamUserPolicyAttachment.IamUserPolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

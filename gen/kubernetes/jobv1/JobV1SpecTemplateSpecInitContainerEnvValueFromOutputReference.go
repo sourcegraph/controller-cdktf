@@ -252,7 +252,7 @@ func NewJobV1SpecTemplateSpecInitContainerEnvValueFromOutputReference(terraformR
 	j := jsiiProxy_JobV1SpecTemplateSpecInitContainerEnvValueFromOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvValueFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewJobV1SpecTemplateSpecInitContainerEnvValueFromOutputReference_Override(j
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvValueFromOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerEnvValueFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

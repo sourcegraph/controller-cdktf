@@ -454,7 +454,7 @@ func NewCloudflareProvider(scope constructs.Construct, id *string, config *Cloud
 	j := jsiiProxy_CloudflareProvider{}
 
 	_jsii_.Create(
-		"cloudflare.provider.CloudflareProvider",
+		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -467,7 +467,7 @@ func NewCloudflareProvider_Override(c CloudflareProvider, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.provider.CloudflareProvider",
+		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -598,7 +598,7 @@ func CloudflareProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.provider.CloudflareProvider",
+		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func CloudflareProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.provider.CloudflareProvider",
+		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func CloudflareProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.provider.CloudflareProvider",
+		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -649,7 +649,7 @@ func CloudflareProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.provider.CloudflareProvider",
+		"@cdktf/provider-cloudflare.provider.CloudflareProvider",
 		"tfResourceType",
 		&returns,
 	)

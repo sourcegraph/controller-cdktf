@@ -104,7 +104,7 @@ func NewDataAwsVpcPeeringConnectionPeerCidrBlockSetList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsVpcPeeringConnectionPeerCidrBlockSetList{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSetList",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsVpcPeeringConnectionPeerCidrBlockSetList_Override(d DataAwsVpcPee
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSetList",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnection.DataAwsVpcPeeringConnectionPeerCidrBlockSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

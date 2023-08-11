@@ -276,7 +276,7 @@ func NewFilestoreInstanceFileSharesNfsExportOptionsOutputReference(terraformReso
 	j := jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewFilestoreInstanceFileSharesNfsExportOptionsOutputReference_Override(f Fi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

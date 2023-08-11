@@ -228,7 +228,7 @@ func NewRulesetRulesActionParametersUriOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_RulesetRulesActionParametersUriOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRulesetRulesActionParametersUriOutputReference_Override(r RulesetRulesAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

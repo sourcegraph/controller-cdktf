@@ -225,7 +225,7 @@ func NewContainerAzureClusterNetworkingOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_ContainerAzureClusterNetworkingOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterNetworkingOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterNetworkingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewContainerAzureClusterNetworkingOutputReference_Override(c ContainerAzure
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterNetworkingOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterNetworkingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

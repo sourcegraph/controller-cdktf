@@ -202,7 +202,7 @@ func NewInspectorAssessmentTemplateEventSubscriptionOutputReference(terraformRes
 	j := jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionOutputReference",
+		"@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewInspectorAssessmentTemplateEventSubscriptionOutputReference_Override(i I
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionOutputReference",
+		"@cdktf/provider-aws.inspectorAssessmentTemplate.InspectorAssessmentTemplateEventSubscriptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

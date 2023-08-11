@@ -225,7 +225,7 @@ func NewRegistryModuleVcsRepoOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_RegistryModuleVcsRepoOutputReference{}
 
 	_jsii_.Create(
-		"tfe.registryModule.RegistryModuleVcsRepoOutputReference",
+		"@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewRegistryModuleVcsRepoOutputReference_Override(r RegistryModuleVcsRepoOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.registryModule.RegistryModuleVcsRepoOutputReference",
+		"@cdktf/provider-tfe.registryModule.RegistryModuleVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

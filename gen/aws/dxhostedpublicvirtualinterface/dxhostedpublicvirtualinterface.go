@@ -586,7 +586,7 @@ func NewDxHostedPublicVirtualInterface(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DxHostedPublicVirtualInterface{}
 
 	_jsii_.Create(
-		"aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -599,7 +599,7 @@ func NewDxHostedPublicVirtualInterface_Override(d DxHostedPublicVirtualInterface
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -820,7 +820,7 @@ func DxHostedPublicVirtualInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func DxHostedPublicVirtualInterface_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -858,7 +858,7 @@ func DxHostedPublicVirtualInterface_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -871,7 +871,7 @@ func DxHostedPublicVirtualInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
 		"tfResourceType",
 		&returns,
 	)

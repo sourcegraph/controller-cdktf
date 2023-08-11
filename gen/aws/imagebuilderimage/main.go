@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImage.ImagebuilderImage",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImage",
 		reflect.TypeOf((*ImagebuilderImage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImage.ImagebuilderImageConfig",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageConfig",
 		reflect.TypeOf((*ImagebuilderImageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfiguration",
 		reflect.TypeOf((*ImagebuilderImageImageTestsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImage.ImagebuilderImageImageTestsConfigurationOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageImageTestsConfigurationOutputReference",
 		reflect.TypeOf((*ImagebuilderImageImageTestsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,15 +136,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResources",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResources",
 		reflect.TypeOf((*ImagebuilderImageOutputResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmis",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmis",
 		reflect.TypeOf((*ImagebuilderImageOutputResourcesAmis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisList",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisList",
 		reflect.TypeOf((*ImagebuilderImageOutputResourcesAmisList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -164,7 +164,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisOutputReference",
 		reflect.TypeOf((*ImagebuilderImageOutputResourcesAmisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -201,7 +201,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesList",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesList",
 		reflect.TypeOf((*ImagebuilderImageOutputResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -221,7 +221,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesOutputReference",
 		reflect.TypeOf((*ImagebuilderImageOutputResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amis", GoGetter: "Amis"},
@@ -254,11 +254,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImage.ImagebuilderImageTimeouts",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageTimeouts",
 		reflect.TypeOf((*ImagebuilderImageTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImage.ImagebuilderImageTimeoutsOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageTimeoutsOutputReference",
 		reflect.TypeOf((*ImagebuilderImageTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -179,7 +179,7 @@ func NewS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutp
 	j := jsiiProxy_S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference",
+		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference",
+		"@cdktf/provider-aws.s3BucketReplicationConfiguration.S3BucketReplicationConfigurationRuleDestinationMetricsEventThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

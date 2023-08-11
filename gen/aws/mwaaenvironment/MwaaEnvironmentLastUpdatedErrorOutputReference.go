@@ -178,7 +178,7 @@ func NewMwaaEnvironmentLastUpdatedErrorOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_MwaaEnvironmentLastUpdatedErrorOutputReference{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewMwaaEnvironmentLastUpdatedErrorOutputReference_Override(m MwaaEnvironmen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorOutputReference",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedErrorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

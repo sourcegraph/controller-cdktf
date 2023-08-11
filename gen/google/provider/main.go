@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.provider.GoogleProvider",
+		"@cdktf/provider-google.provider.GoogleProvider",
 		reflect.TypeOf((*GoogleProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessApprovalCustomEndpoint", GoGetter: "AccessApprovalCustomEndpoint"},
@@ -402,11 +402,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.provider.GoogleProviderBatching",
+		"@cdktf/provider-google.provider.GoogleProviderBatching",
 		reflect.TypeOf((*GoogleProviderBatching)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.provider.GoogleProviderConfig",
+		"@cdktf/provider-google.provider.GoogleProviderConfig",
 		reflect.TypeOf((*GoogleProviderConfig)(nil)).Elem(),
 	)
 }

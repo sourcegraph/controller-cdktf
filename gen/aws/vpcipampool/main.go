@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcIpamPool.VpcIpamPool",
+		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPool",
 		reflect.TypeOf((*VpcIpamPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -106,15 +106,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcIpamPool.VpcIpamPoolConfig",
+		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPoolConfig",
 		reflect.TypeOf((*VpcIpamPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcIpamPool.VpcIpamPoolTimeouts",
+		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts",
 		reflect.TypeOf((*VpcIpamPoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcIpamPool.VpcIpamPoolTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPoolTimeoutsOutputReference",
 		reflect.TypeOf((*VpcIpamPoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

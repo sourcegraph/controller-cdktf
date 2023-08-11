@@ -527,7 +527,7 @@ func NewDataAwsNetworkInterface(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsNetworkInterface{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -540,7 +540,7 @@ func NewDataAwsNetworkInterface_Override(d DataAwsNetworkInterface, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -640,7 +640,7 @@ func DataAwsNetworkInterface_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func DataAwsNetworkInterface_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataAwsNetworkInterface_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func DataAwsNetworkInterface_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterface",
 		"tfResourceType",
 		&returns,
 	)

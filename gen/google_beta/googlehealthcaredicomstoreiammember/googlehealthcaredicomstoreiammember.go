@@ -400,7 +400,7 @@ func NewGoogleHealthcareDicomStoreIamMember(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleHealthcareDicomStoreIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleHealthcareDicomStoreIamMember_Override(g GoogleHealthcareDicomStor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleHealthcareDicomStoreIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleHealthcareDicomStoreIamMember_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleHealthcareDicomStoreIamMember_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleHealthcareDicomStoreIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareDicomStoreIamMember.GoogleHealthcareDicomStoreIamMember",
 		"tfResourceType",
 		&returns,
 	)

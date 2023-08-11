@@ -330,7 +330,7 @@ func NewSesActiveReceiptRuleSet(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_SesActiveReceiptRuleSet{}
 
 	_jsii_.Create(
-		"aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -343,7 +343,7 @@ func NewSesActiveReceiptRuleSet_Override(s SesActiveReceiptRuleSet, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -465,7 +465,7 @@ func SesActiveReceiptRuleSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -484,7 +484,7 @@ func SesActiveReceiptRuleSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func SesActiveReceiptRuleSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func SesActiveReceiptRuleSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
+		"@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
 		"tfResourceType",
 		&returns,
 	)

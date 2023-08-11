@@ -116,7 +116,7 @@ func NewGoogleCloudRunV2ServiceTemplateContainersVolumeMountsList(terraformResou
 	j := jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersVolumeMountsList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersVolumeMountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleCloudRunV2ServiceTemplateContainersVolumeMountsList_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersVolumeMountsList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersVolumeMountsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

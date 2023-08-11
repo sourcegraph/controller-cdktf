@@ -337,7 +337,7 @@ func NewDataGoogleBinaryAuthorizationAttestorIamPolicy(scope constructs.Construc
 	j := jsiiProxy_DataGoogleBinaryAuthorizationAttestorIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleBinaryAuthorizationAttestorIamPolicy_Override(d DataGoogleBina
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleBinaryAuthorizationAttestorIamPolicy_IsConstruct(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformDataSource(x inte
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformElement(x interfa
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleBinaryAuthorizationAttestorIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
+		"@cdktf/provider-google.dataGoogleBinaryAuthorizationAttestorIamPolicy.DataGoogleBinaryAuthorizationAttestorIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

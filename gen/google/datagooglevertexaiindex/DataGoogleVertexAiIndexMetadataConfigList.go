@@ -104,7 +104,7 @@ func NewDataGoogleVertexAiIndexMetadataConfigList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataGoogleVertexAiIndexMetadataConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigList",
+		"@cdktf/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleVertexAiIndexMetadataConfigList_Override(d DataGoogleVertexAiI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigList",
+		"@cdktf/provider-google.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

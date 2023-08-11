@@ -116,7 +116,7 @@ func NewEmrserverlessApplicationInitialCapacityList(terraformResource cdktf.IInt
 	j := jsiiProxy_EmrserverlessApplicationInitialCapacityList{}
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrserverlessApplicationInitialCapacityList_Override(e EmrserverlessAppl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

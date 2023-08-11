@@ -435,7 +435,7 @@ func NewGoogleDialogflowCxVersion(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleDialogflowCxVersion{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewGoogleDialogflowCxVersion_Override(g GoogleDialogflowCxVersion, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleDialogflowCxVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleDialogflowCxVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleDialogflowCxVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleDialogflowCxVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
+		"@cdktf/provider-google-beta.googleDialogflowCxVersion.GoogleDialogflowCxVersion",
 		"tfResourceType",
 		&returns,
 	)

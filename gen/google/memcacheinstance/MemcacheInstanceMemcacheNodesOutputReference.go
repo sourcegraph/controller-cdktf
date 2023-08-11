@@ -211,7 +211,7 @@ func NewMemcacheInstanceMemcacheNodesOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_MemcacheInstanceMemcacheNodesOutputReference{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewMemcacheInstanceMemcacheNodesOutputReference_Override(m MemcacheInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMemcacheNodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

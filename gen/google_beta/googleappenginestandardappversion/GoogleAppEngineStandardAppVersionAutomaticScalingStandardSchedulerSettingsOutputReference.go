@@ -252,7 +252,7 @@ func NewGoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettin
 	j := jsiiProxy_GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

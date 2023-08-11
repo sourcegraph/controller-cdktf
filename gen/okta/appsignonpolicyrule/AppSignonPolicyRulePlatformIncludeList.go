@@ -116,7 +116,7 @@ func NewAppSignonPolicyRulePlatformIncludeList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_AppSignonPolicyRulePlatformIncludeList{}
 
 	_jsii_.Create(
-		"okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppSignonPolicyRulePlatformIncludeList_Override(a AppSignonPolicyRulePla
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

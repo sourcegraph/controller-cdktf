@@ -324,7 +324,7 @@ func NewApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference(terraformReso
 	j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference_Override(a Ap
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

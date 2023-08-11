@@ -390,7 +390,7 @@ func NewStorageObjectAcl(scope constructs.Construct, id *string, config *Storage
 	j := jsiiProxy_StorageObjectAcl{}
 
 	_jsii_.Create(
-		"google.storageObjectAcl.StorageObjectAcl",
+		"@cdktf/provider-google.storageObjectAcl.StorageObjectAcl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewStorageObjectAcl_Override(s StorageObjectAcl, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageObjectAcl.StorageObjectAcl",
+		"@cdktf/provider-google.storageObjectAcl.StorageObjectAcl",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -558,7 +558,7 @@ func StorageObjectAcl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageObjectAcl.StorageObjectAcl",
+		"@cdktf/provider-google.storageObjectAcl.StorageObjectAcl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func StorageObjectAcl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageObjectAcl.StorageObjectAcl",
+		"@cdktf/provider-google.storageObjectAcl.StorageObjectAcl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func StorageObjectAcl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.storageObjectAcl.StorageObjectAcl",
+		"@cdktf/provider-google.storageObjectAcl.StorageObjectAcl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func StorageObjectAcl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.storageObjectAcl.StorageObjectAcl",
+		"@cdktf/provider-google.storageObjectAcl.StorageObjectAcl",
 		"tfResourceType",
 		&returns,
 	)

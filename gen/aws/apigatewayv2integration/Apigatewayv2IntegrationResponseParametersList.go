@@ -116,7 +116,7 @@ func NewApigatewayv2IntegrationResponseParametersList(terraformResource cdktf.II
 	j := jsiiProxy_Apigatewayv2IntegrationResponseParametersList{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApigatewayv2IntegrationResponseParametersList_Override(a Apigatewayv2Int
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList",
+		"@cdktf/provider-aws.apigatewayv2Integration.Apigatewayv2IntegrationResponseParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

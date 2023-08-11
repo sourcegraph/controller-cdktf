@@ -204,7 +204,7 @@ func NewKmsGrantConstraintsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_KmsGrantConstraintsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kmsGrant.KmsGrantConstraintsOutputReference",
+		"@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKmsGrantConstraintsOutputReference_Override(k KmsGrantConstraintsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kmsGrant.KmsGrantConstraintsOutputReference",
+		"@cdktf/provider-aws.kmsGrant.KmsGrantConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		k,
 	)

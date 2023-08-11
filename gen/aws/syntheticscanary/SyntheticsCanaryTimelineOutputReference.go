@@ -200,7 +200,7 @@ func NewSyntheticsCanaryTimelineOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SyntheticsCanaryTimelineOutputReference{}
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryTimelineOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewSyntheticsCanaryTimelineOutputReference_Override(s SyntheticsCanaryTimel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryTimelineOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryTimelineOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -382,7 +382,7 @@ func NewDataGoogleServiceNetworkingPeeredDnsDomain(scope constructs.Construct, i
 	j := jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain{}
 
 	_jsii_.Create(
-		"google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -395,7 +395,7 @@ func NewDataGoogleServiceNetworkingPeeredDnsDomain_Override(d DataGoogleServiceN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -528,7 +528,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformDataSource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -579,7 +579,7 @@ func DataGoogleServiceNetworkingPeeredDnsDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
+		"@cdktf/provider-google.dataGoogleServiceNetworkingPeeredDnsDomain.DataGoogleServiceNetworkingPeeredDnsDomain",
 		"tfResourceType",
 		&returns,
 	)

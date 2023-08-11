@@ -116,7 +116,7 @@ func NewEmrInstanceFleetLaunchSpecificationsSpotSpecificationList(terraformResou
 	j := jsiiProxy_EmrInstanceFleetLaunchSpecificationsSpotSpecificationList{}
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationList",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrInstanceFleetLaunchSpecificationsSpotSpecificationList_Override(e Emr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationList",
+		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsSpotSpecificationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

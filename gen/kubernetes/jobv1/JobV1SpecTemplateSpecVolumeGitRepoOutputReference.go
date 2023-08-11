@@ -228,7 +228,7 @@ func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResource cdkt
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference_Override(j JobV1SpecTe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

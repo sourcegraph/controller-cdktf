@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecVolumeGcePersistentDiskList(terraformResource cdktf
 	j := jsiiProxy_DataKubernetesPodSpecVolumeGcePersistentDiskList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeGcePersistentDiskList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeGcePersistentDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecVolumeGcePersistentDiskList_Override(d DataKubernet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeGcePersistentDiskList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeGcePersistentDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

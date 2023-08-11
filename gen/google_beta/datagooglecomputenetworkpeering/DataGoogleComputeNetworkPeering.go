@@ -426,7 +426,7 @@ func NewDataGoogleComputeNetworkPeering(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleComputeNetworkPeering{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewDataGoogleComputeNetworkPeering_Override(d DataGoogleComputeNetworkPeeri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -550,7 +550,7 @@ func DataGoogleComputeNetworkPeering_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataGoogleComputeNetworkPeering_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataGoogleComputeNetworkPeering_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DataGoogleComputeNetworkPeering_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.dataGoogleComputeNetworkPeering.DataGoogleComputeNetworkPeering",
 		"tfResourceType",
 		&returns,
 	)

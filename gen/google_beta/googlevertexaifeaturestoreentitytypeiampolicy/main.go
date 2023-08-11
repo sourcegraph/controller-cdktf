@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleVertexAiFeaturestoreEntitytypeIamPolicy.GoogleVertexAiFeaturestoreEntitytypeIamPolicy",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamPolicy.GoogleVertexAiFeaturestoreEntitytypeIamPolicy",
 		reflect.TypeOf((*GoogleVertexAiFeaturestoreEntitytypeIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleVertexAiFeaturestoreEntitytypeIamPolicy.GoogleVertexAiFeaturestoreEntitytypeIamPolicyConfig",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeIamPolicy.GoogleVertexAiFeaturestoreEntitytypeIamPolicyConfig",
 		reflect.TypeOf((*GoogleVertexAiFeaturestoreEntitytypeIamPolicyConfig)(nil)).Elem(),
 	)
 }

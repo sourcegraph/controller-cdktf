@@ -104,7 +104,7 @@ func NewDataAwsKendraExperienceConfigurationList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsKendraExperienceConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationList",
+		"@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraExperienceConfigurationList_Override(d DataAwsKendraExperie
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationList",
+		"@cdktf/provider-aws.dataAwsKendraExperience.DataAwsKendraExperienceConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

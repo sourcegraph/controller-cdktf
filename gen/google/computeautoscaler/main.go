@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscaler",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscaler",
 		reflect.TypeOf((*ComputeAutoscaler)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicy",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicy",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilization",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilization",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyCpuUtilization)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyCpuUtilizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,11 +122,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilization)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,11 +160,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyMetric",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyMetric",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyMetric)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyMetricList",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyMetricList",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyMetricList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -185,7 +185,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyMetricOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyMetricOutputReference",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyMetricOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,7 +225,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyOutputReference",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -287,15 +287,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControl",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControl",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScaleInControl)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -333,7 +333,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -372,11 +372,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedules",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedules",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScalingSchedules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesList",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesList",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScalingSchedulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -397,7 +397,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference",
 		reflect.TypeOf((*ComputeAutoscalerAutoscalingPolicyScalingSchedulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -446,15 +446,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeAutoscaler.ComputeAutoscalerConfig",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerConfig",
 		reflect.TypeOf((*ComputeAutoscalerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeAutoscaler.ComputeAutoscalerTimeouts",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerTimeouts",
 		reflect.TypeOf((*ComputeAutoscalerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeAutoscaler.ComputeAutoscalerTimeoutsOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeAutoscalerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

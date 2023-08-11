@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList(terraformR
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList_Override(s
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

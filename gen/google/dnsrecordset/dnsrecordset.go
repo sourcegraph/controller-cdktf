@@ -461,7 +461,7 @@ func NewDnsRecordSet(scope constructs.Construct, id *string, config *DnsRecordSe
 	j := jsiiProxy_DnsRecordSet{}
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSet",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewDnsRecordSet_Override(d DnsRecordSet, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSet",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSet",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -651,7 +651,7 @@ func DnsRecordSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dnsRecordSet.DnsRecordSet",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -670,7 +670,7 @@ func DnsRecordSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dnsRecordSet.DnsRecordSet",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func DnsRecordSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dnsRecordSet.DnsRecordSet",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func DnsRecordSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dnsRecordSet.DnsRecordSet",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSet",
 		"tfResourceType",
 		&returns,
 	)

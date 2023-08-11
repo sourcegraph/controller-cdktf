@@ -637,7 +637,7 @@ func NewClouddeployTarget(scope constructs.Construct, id *string, config *Cloudd
 	j := jsiiProxy_ClouddeployTarget{}
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTarget",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTarget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -650,7 +650,7 @@ func NewClouddeployTarget_Override(c ClouddeployTarget, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployTarget.ClouddeployTarget",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTarget",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -838,7 +838,7 @@ func ClouddeployTarget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.clouddeployTarget.ClouddeployTarget",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTarget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -857,7 +857,7 @@ func ClouddeployTarget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.clouddeployTarget.ClouddeployTarget",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTarget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -876,7 +876,7 @@ func ClouddeployTarget_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.clouddeployTarget.ClouddeployTarget",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTarget",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -889,7 +889,7 @@ func ClouddeployTarget_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.clouddeployTarget.ClouddeployTarget",
+		"@cdktf/provider-google.clouddeployTarget.ClouddeployTarget",
 		"tfResourceType",
 		&returns,
 	)

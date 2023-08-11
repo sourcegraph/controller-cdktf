@@ -179,7 +179,7 @@ func NewLambdaCodeSigningConfigPoliciesOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLambdaCodeSigningConfigPoliciesOutputReference_Override(l LambdaCodeSign
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

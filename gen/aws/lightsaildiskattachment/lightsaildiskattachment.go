@@ -365,7 +365,7 @@ func NewLightsailDiskAttachment(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_LightsailDiskAttachment{}
 
 	_jsii_.Create(
-		"aws.lightsailDiskAttachment.LightsailDiskAttachment",
+		"@cdktf/provider-aws.lightsailDiskAttachment.LightsailDiskAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewLightsailDiskAttachment_Override(l LightsailDiskAttachment, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailDiskAttachment.LightsailDiskAttachment",
+		"@cdktf/provider-aws.lightsailDiskAttachment.LightsailDiskAttachment",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -522,7 +522,7 @@ func LightsailDiskAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailDiskAttachment.LightsailDiskAttachment",
+		"@cdktf/provider-aws.lightsailDiskAttachment.LightsailDiskAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func LightsailDiskAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailDiskAttachment.LightsailDiskAttachment",
+		"@cdktf/provider-aws.lightsailDiskAttachment.LightsailDiskAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func LightsailDiskAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailDiskAttachment.LightsailDiskAttachment",
+		"@cdktf/provider-aws.lightsailDiskAttachment.LightsailDiskAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func LightsailDiskAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailDiskAttachment.LightsailDiskAttachment",
+		"@cdktf/provider-aws.lightsailDiskAttachment.LightsailDiskAttachment",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewProjectAccessApprovalSettingsEnrolledServicesList(terraformResource cdkt
 	j := jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList{}
 
 	_jsii_.Create(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewProjectAccessApprovalSettingsEnrolledServicesList_Override(p ProjectAcce
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesList",
+		"@cdktf/provider-google.projectAccessApprovalSettings.ProjectAccessApprovalSettingsEnrolledServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -116,7 +116,7 @@ func NewDataAwsGlueScriptDagNodeArgsList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataAwsGlueScriptDagNodeArgsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsList",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsGlueScriptDagNodeArgsList_Override(d DataAwsGlueScriptDagNodeArgs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsList",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagNodeArgsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

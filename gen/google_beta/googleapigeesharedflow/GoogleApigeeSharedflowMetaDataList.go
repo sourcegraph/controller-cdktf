@@ -104,7 +104,7 @@ func NewGoogleApigeeSharedflowMetaDataList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_GoogleApigeeSharedflowMetaDataList{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataList",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleApigeeSharedflowMetaDataList_Override(g GoogleApigeeSharedflowMeta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataList",
+		"@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowMetaDataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

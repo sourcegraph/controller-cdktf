@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigqueryRoutine.BigqueryRoutine",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutine",
 		reflect.TypeOf((*BigqueryRoutine)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,11 +95,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryRoutine.BigqueryRoutineArguments",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineArguments",
 		reflect.TypeOf((*BigqueryRoutineArguments)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryRoutine.BigqueryRoutineArgumentsList",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsList",
 		reflect.TypeOf((*BigqueryRoutineArgumentsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference",
 		reflect.TypeOf((*BigqueryRoutineArgumentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "argumentKind", GoGetter: "ArgumentKind"},
@@ -164,15 +164,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryRoutine.BigqueryRoutineConfig",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineConfig",
 		reflect.TypeOf((*BigqueryRoutineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryRoutine.BigqueryRoutineTimeouts",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineTimeouts",
 		reflect.TypeOf((*BigqueryRoutineTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryRoutine.BigqueryRoutineTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineTimeoutsOutputReference",
 		reflect.TypeOf((*BigqueryRoutineTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

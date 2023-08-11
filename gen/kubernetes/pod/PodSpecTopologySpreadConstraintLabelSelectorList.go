@@ -116,7 +116,7 @@ func NewPodSpecTopologySpreadConstraintLabelSelectorList(terraformResource cdktf
 	j := jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorList",
+		"@cdktf/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecTopologySpreadConstraintLabelSelectorList_Override(p PodSpecTopol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorList",
+		"@cdktf/provider-kubernetes.pod.PodSpecTopologySpreadConstraintLabelSelectorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -239,7 +239,7 @@ func NewOauthAppUsersOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_OauthAppUsersOutputReference{}
 
 	_jsii_.Create(
-		"okta.oauthApp.OauthAppUsersOutputReference",
+		"@cdktf/provider-okta.oauthApp.OauthAppUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewOauthAppUsersOutputReference_Override(o OauthAppUsersOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.oauthApp.OauthAppUsersOutputReference",
+		"@cdktf/provider-okta.oauthApp.OauthAppUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

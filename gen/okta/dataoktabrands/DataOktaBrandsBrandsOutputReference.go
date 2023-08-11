@@ -200,7 +200,7 @@ func NewDataOktaBrandsBrandsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataOktaBrandsBrandsOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaBrands.DataOktaBrandsBrandsOutputReference",
+		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrandsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataOktaBrandsBrandsOutputReference_Override(d DataOktaBrandsBrandsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaBrands.DataOktaBrandsBrandsOutputReference",
+		"@cdktf/provider-okta.dataOktaBrands.DataOktaBrandsBrandsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

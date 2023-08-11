@@ -638,7 +638,7 @@ func NewTheme(scope constructs.Construct, id *string, config *ThemeConfig) Theme
 	j := jsiiProxy_Theme{}
 
 	_jsii_.Create(
-		"okta.theme.Theme",
+		"@cdktf/provider-okta.theme.Theme",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -651,7 +651,7 @@ func NewTheme_Override(t Theme, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.theme.Theme",
+		"@cdktf/provider-okta.theme.Theme",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -894,7 +894,7 @@ func Theme_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.theme.Theme",
+		"@cdktf/provider-okta.theme.Theme",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -913,7 +913,7 @@ func Theme_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.theme.Theme",
+		"@cdktf/provider-okta.theme.Theme",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -932,7 +932,7 @@ func Theme_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.theme.Theme",
+		"@cdktf/provider-okta.theme.Theme",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -945,7 +945,7 @@ func Theme_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.theme.Theme",
+		"@cdktf/provider-okta.theme.Theme",
 		"tfResourceType",
 		&returns,
 	)

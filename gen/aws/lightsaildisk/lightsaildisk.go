@@ -446,7 +446,7 @@ func NewLightsailDisk(scope constructs.Construct, id *string, config *LightsailD
 	j := jsiiProxy_LightsailDisk{}
 
 	_jsii_.Create(
-		"aws.lightsailDisk.LightsailDisk",
+		"@cdktf/provider-aws.lightsailDisk.LightsailDisk",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -459,7 +459,7 @@ func NewLightsailDisk_Override(l LightsailDisk, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailDisk.LightsailDisk",
+		"@cdktf/provider-aws.lightsailDisk.LightsailDisk",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -625,7 +625,7 @@ func LightsailDisk_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailDisk.LightsailDisk",
+		"@cdktf/provider-aws.lightsailDisk.LightsailDisk",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func LightsailDisk_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailDisk.LightsailDisk",
+		"@cdktf/provider-aws.lightsailDisk.LightsailDisk",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func LightsailDisk_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailDisk.LightsailDisk",
+		"@cdktf/provider-aws.lightsailDisk.LightsailDisk",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func LightsailDisk_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailDisk.LightsailDisk",
+		"@cdktf/provider-aws.lightsailDisk.LightsailDisk",
 		"tfResourceType",
 		&returns,
 	)

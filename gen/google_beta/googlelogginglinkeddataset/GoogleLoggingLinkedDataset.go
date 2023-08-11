@@ -495,7 +495,7 @@ func NewGoogleLoggingLinkedDataset(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleLoggingLinkedDataset{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
+		"@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewGoogleLoggingLinkedDataset_Override(g GoogleLoggingLinkedDataset, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
+		"@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -674,7 +674,7 @@ func GoogleLoggingLinkedDataset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
+		"@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func GoogleLoggingLinkedDataset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
+		"@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GoogleLoggingLinkedDataset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
+		"@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func GoogleLoggingLinkedDataset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
+		"@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset",
 		"tfResourceType",
 		&returns,
 	)

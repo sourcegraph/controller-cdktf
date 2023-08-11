@@ -474,7 +474,7 @@ func NewRdsClusterParameterGroup(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_RdsClusterParameterGroup{}
 
 	_jsii_.Create(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewRdsClusterParameterGroup_Override(r RdsClusterParameterGroup, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -664,7 +664,7 @@ func RdsClusterParameterGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func RdsClusterParameterGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func RdsClusterParameterGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func RdsClusterParameterGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		"tfResourceType",
 		&returns,
 	)

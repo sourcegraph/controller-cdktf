@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
+		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignment",
 		reflect.TypeOf((*SsoadminAccountAssignment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssoadminAccountAssignment.SsoadminAccountAssignmentConfig",
+		"@cdktf/provider-aws.ssoadminAccountAssignment.SsoadminAccountAssignmentConfig",
 		reflect.TypeOf((*SsoadminAccountAssignmentConfig)(nil)).Elem(),
 	)
 }

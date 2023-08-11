@@ -179,7 +179,7 @@ func NewGoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference(terra
 	j := jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

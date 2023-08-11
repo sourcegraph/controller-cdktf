@@ -273,7 +273,7 @@ func NewCodecommitTriggerTriggerOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_CodecommitTriggerTriggerOutputReference{}
 
 	_jsii_.Create(
-		"aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewCodecommitTriggerTriggerOutputReference_Override(c CodecommitTriggerTrig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference",
+		"@cdktf/provider-aws.codecommitTrigger.CodecommitTriggerTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -204,7 +204,7 @@ func NewComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference(terra
 	j := jsiiProxy_ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

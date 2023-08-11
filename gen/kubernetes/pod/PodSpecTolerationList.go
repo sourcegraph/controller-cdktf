@@ -116,7 +116,7 @@ func NewPodSpecTolerationList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_PodSpecTolerationList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTolerationList",
+		"@cdktf/provider-kubernetes.pod.PodSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecTolerationList_Override(p PodSpecTolerationList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTolerationList",
+		"@cdktf/provider-kubernetes.pod.PodSpecTolerationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

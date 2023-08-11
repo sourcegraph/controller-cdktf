@@ -225,7 +225,7 @@ func NewMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference(
 	j := jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

@@ -116,7 +116,7 @@ func NewEcrReplicationConfigurationReplicationConfigurationRuleDestinationList(t
 	j := jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleDestinationList{}
 
 	_jsii_.Create(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationList",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcrReplicationConfigurationReplicationConfigurationRuleDestinationList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationList",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleDestinationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

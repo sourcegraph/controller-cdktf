@@ -204,7 +204,7 @@ func NewFsxDataRepositoryAssociationS3OutputReference(terraformResource cdktf.II
 	j := jsiiProxy_FsxDataRepositoryAssociationS3OutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewFsxDataRepositoryAssociationS3OutputReference_Override(f FsxDataReposito
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

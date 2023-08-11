@@ -492,7 +492,7 @@ func NewRoute53DomainsRegisteredDomainTechContactOutputReference(terraformResour
 	j := jsiiProxy_Route53DomainsRegisteredDomainTechContactOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContactOutputReference",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContactOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -504,7 +504,7 @@ func NewRoute53DomainsRegisteredDomainTechContactOutputReference_Override(r Rout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContactOutputReference",
+		"@cdktf/provider-aws.route53DomainsRegisteredDomain.Route53DomainsRegisteredDomainTechContactOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

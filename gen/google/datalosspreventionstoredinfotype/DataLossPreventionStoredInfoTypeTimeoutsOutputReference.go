@@ -228,7 +228,7 @@ func NewDataLossPreventionStoredInfoTypeTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_DataLossPreventionStoredInfoTypeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeTimeoutsOutputReference",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataLossPreventionStoredInfoTypeTimeoutsOutputReference_Override(d DataL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeTimeoutsOutputReference",
+		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

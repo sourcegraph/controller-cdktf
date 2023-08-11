@@ -541,7 +541,7 @@ func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleCloudbuildv2Connection{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -554,7 +554,7 @@ func NewGoogleCloudbuildv2Connection_Override(g GoogleCloudbuildv2Connection, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -720,7 +720,7 @@ func GoogleCloudbuildv2Connection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func GoogleCloudbuildv2Connection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func GoogleCloudbuildv2Connection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func GoogleCloudbuildv2Connection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2Connection",
 		"tfResourceType",
 		&returns,
 	)

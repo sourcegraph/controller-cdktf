@@ -104,7 +104,7 @@ func NewDataGoogleBeyondcorpAppConnectionGatewayList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataGoogleBeyondcorpAppConnectionGatewayList{}
 
 	_jsii_.Create(
-		"google.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGatewayList",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGatewayList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleBeyondcorpAppConnectionGatewayList_Override(d DataGoogleBeyond
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGatewayList",
+		"@cdktf/provider-google.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGatewayList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

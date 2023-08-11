@@ -204,7 +204,7 @@ func NewInstanceCapacityReservationSpecificationOutputReference(terraformResourc
 	j := jsiiProxy_InstanceCapacityReservationSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.instance.InstanceCapacityReservationSpecificationOutputReference",
+		"@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewInstanceCapacityReservationSpecificationOutputReference_Override(i Insta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.instance.InstanceCapacityReservationSpecificationOutputReference",
+		"@cdktf/provider-aws.instance.InstanceCapacityReservationSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

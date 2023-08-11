@@ -876,7 +876,7 @@ func NewDataAwsInstance(scope constructs.Construct, id *string, config *DataAwsI
 	j := jsiiProxy_DataAwsInstance{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstance",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -889,7 +889,7 @@ func NewDataAwsInstance_Override(d DataAwsInstance, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstance",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1033,7 +1033,7 @@ func DataAwsInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsInstance.DataAwsInstance",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1052,7 +1052,7 @@ func DataAwsInstance_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsInstance.DataAwsInstance",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -1071,7 +1071,7 @@ func DataAwsInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsInstance.DataAwsInstance",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1084,7 +1084,7 @@ func DataAwsInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsInstance.DataAwsInstance",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstance",
 		"tfResourceType",
 		&returns,
 	)

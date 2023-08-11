@@ -790,7 +790,7 @@ func NewFsxOntapFileSystem(scope constructs.Construct, id *string, config *FsxOn
 	j := jsiiProxy_FsxOntapFileSystem{}
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystem",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -803,7 +803,7 @@ func NewFsxOntapFileSystem_Override(f FsxOntapFileSystem, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystem",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -1090,7 +1090,7 @@ func FsxOntapFileSystem_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystem",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1109,7 +1109,7 @@ func FsxOntapFileSystem_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystem",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1128,7 +1128,7 @@ func FsxOntapFileSystem_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystem",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1141,7 +1141,7 @@ func FsxOntapFileSystem_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystem",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		"tfResourceType",
 		&returns,
 	)

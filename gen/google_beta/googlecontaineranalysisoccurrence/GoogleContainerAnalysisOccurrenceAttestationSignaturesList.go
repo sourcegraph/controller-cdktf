@@ -116,7 +116,7 @@ func NewGoogleContainerAnalysisOccurrenceAttestationSignaturesList(terraformReso
 	j := jsiiProxy_GoogleContainerAnalysisOccurrenceAttestationSignaturesList{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrenceAttestationSignaturesList",
+		"@cdktf/provider-google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrenceAttestationSignaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleContainerAnalysisOccurrenceAttestationSignaturesList_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrenceAttestationSignaturesList",
+		"@cdktf/provider-google-beta.googleContainerAnalysisOccurrence.GoogleContainerAnalysisOccurrenceAttestationSignaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

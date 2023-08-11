@@ -420,7 +420,7 @@ func NewDataAwsApigatewayv2Export(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsApigatewayv2Export{}
 
 	_jsii_.Create(
-		"aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -433,7 +433,7 @@ func NewDataAwsApigatewayv2Export_Override(d DataAwsApigatewayv2Export, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -588,7 +588,7 @@ func DataAwsApigatewayv2Export_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataAwsApigatewayv2Export_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -626,7 +626,7 @@ func DataAwsApigatewayv2Export_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -639,7 +639,7 @@ func DataAwsApigatewayv2Export_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Export.DataAwsApigatewayv2Export",
 		"tfResourceType",
 		&returns,
 	)

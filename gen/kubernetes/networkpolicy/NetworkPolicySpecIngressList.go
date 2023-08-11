@@ -116,7 +116,7 @@ func NewNetworkPolicySpecIngressList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_NetworkPolicySpecIngressList{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkPolicySpecIngressList_Override(n NetworkPolicySpecIngressList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

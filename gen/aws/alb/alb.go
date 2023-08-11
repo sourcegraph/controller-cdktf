@@ -855,7 +855,7 @@ func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	j := jsiiProxy_Alb{}
 
 	_jsii_.Create(
-		"aws.alb.Alb",
+		"@cdktf/provider-aws.alb.Alb",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -868,7 +868,7 @@ func NewAlb_Override(a Alb, scope constructs.Construct, id *string, config *AlbC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.alb.Alb",
+		"@cdktf/provider-aws.alb.Alb",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1177,7 +1177,7 @@ func Alb_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.alb.Alb",
+		"@cdktf/provider-aws.alb.Alb",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1196,7 +1196,7 @@ func Alb_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.alb.Alb",
+		"@cdktf/provider-aws.alb.Alb",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1215,7 +1215,7 @@ func Alb_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.alb.Alb",
+		"@cdktf/provider-aws.alb.Alb",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1228,7 +1228,7 @@ func Alb_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.alb.Alb",
+		"@cdktf/provider-aws.alb.Alb",
 		"tfResourceType",
 		&returns,
 	)

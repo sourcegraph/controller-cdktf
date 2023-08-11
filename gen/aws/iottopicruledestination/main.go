@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestination",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestination",
 		reflect.TypeOf((*IotTopicRuleDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestinationConfig",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationConfig",
 		reflect.TypeOf((*IotTopicRuleDestinationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeouts",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeouts",
 		reflect.TypeOf((*IotTopicRuleDestinationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
 		reflect.TypeOf((*IotTopicRuleDestinationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,11 +115,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfiguration",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfiguration",
 		reflect.TypeOf((*IotTopicRuleDestinationVpcConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfigurationOutputReference",
 		reflect.TypeOf((*IotTopicRuleDestinationVpcConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

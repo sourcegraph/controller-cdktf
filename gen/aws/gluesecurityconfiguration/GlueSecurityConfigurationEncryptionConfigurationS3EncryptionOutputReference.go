@@ -204,7 +204,7 @@ func NewGlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputRefere
 	j := jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference",
+		"@cdktf/provider-aws.glueSecurityConfiguration.GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

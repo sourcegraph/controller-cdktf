@@ -104,7 +104,7 @@ func NewVertexAiEndpointDeployedModelsPrivateEndpointsList(terraformResource cdk
 	j := jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList{}
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVertexAiEndpointDeployedModelsPrivateEndpointsList_Override(v VertexAiEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsList",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsPrivateEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

@@ -807,7 +807,7 @@ func NewDataAwsRdsOrderableDbInstance(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataAwsRdsOrderableDbInstance{}
 
 	_jsii_.Create(
-		"aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -820,7 +820,7 @@ func NewDataAwsRdsOrderableDbInstance_Override(d DataAwsRdsOrderableDbInstance, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1096,7 +1096,7 @@ func DataAwsRdsOrderableDbInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1115,7 +1115,7 @@ func DataAwsRdsOrderableDbInstance_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -1134,7 +1134,7 @@ func DataAwsRdsOrderableDbInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1147,7 +1147,7 @@ func DataAwsRdsOrderableDbInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
+		"@cdktf/provider-aws.dataAwsRdsOrderableDbInstance.DataAwsRdsOrderableDbInstance",
 		"tfResourceType",
 		&returns,
 	)

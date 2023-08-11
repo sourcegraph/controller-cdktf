@@ -489,7 +489,7 @@ func NewDataAwsLaunchConfiguration(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataAwsLaunchConfiguration{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -502,7 +502,7 @@ func NewDataAwsLaunchConfiguration_Override(d DataAwsLaunchConfiguration, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -602,7 +602,7 @@ func DataAwsLaunchConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func DataAwsLaunchConfiguration_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func DataAwsLaunchConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func DataAwsLaunchConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewGluePartitionIndexTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GluePartitionIndexTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.gluePartitionIndex.GluePartitionIndexTimeoutsOutputReference",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGluePartitionIndexTimeoutsOutputReference_Override(g GluePartitionIndexT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gluePartitionIndex.GluePartitionIndexTimeoutsOutputReference",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

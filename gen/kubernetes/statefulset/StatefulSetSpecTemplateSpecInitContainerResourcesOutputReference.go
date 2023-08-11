@@ -204,7 +204,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerResourcesOutputReference(terrafo
 	j := jsiiProxy_StatefulSetSpecTemplateSpecInitContainerResourcesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewStatefulSetSpecTemplateSpecInitContainerResourcesOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecInitContainerResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

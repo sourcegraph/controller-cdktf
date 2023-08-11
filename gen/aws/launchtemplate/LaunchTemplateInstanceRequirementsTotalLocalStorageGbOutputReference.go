@@ -204,7 +204,7 @@ func NewLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference(ter
 	j := jsiiProxy_LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

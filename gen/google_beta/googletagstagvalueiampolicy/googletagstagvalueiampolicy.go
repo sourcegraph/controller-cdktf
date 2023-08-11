@@ -353,7 +353,7 @@ func NewGoogleTagsTagValueIamPolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleTagsTagValueIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleTagsTagValueIamPolicy_Override(g GoogleTagsTagValueIamPolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleTagsTagValueIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleTagsTagValueIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleTagsTagValueIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleTagsTagValueIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamPolicy.GoogleTagsTagValueIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

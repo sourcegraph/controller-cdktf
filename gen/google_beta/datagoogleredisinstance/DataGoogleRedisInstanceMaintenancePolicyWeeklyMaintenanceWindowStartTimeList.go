@@ -104,7 +104,7 @@ func NewDataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime
 	j := jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList",
+		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

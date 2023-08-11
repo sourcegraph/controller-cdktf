@@ -624,7 +624,7 @@ func NewGameliftGameServerGroup(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GameliftGameServerGroup{}
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroup",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -637,7 +637,7 @@ func NewGameliftGameServerGroup_Override(g GameliftGameServerGroup, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroup",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -847,7 +847,7 @@ func GameliftGameServerGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroup",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -866,7 +866,7 @@ func GameliftGameServerGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroup",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -885,7 +885,7 @@ func GameliftGameServerGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroup",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -898,7 +898,7 @@ func GameliftGameServerGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroup",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroup",
 		"tfResourceType",
 		&returns,
 	)

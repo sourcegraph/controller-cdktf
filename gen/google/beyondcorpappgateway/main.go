@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.beyondcorpAppGateway.BeyondcorpAppGateway",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGateway",
 		reflect.TypeOf((*BeyondcorpAppGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,11 +82,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnections",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnections",
 		reflect.TypeOf((*BeyondcorpAppGatewayAllocatedConnections)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsList",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsList",
 		reflect.TypeOf((*BeyondcorpAppGatewayAllocatedConnectionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsOutputReference",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayAllocatedConnectionsOutputReference",
 		reflect.TypeOf((*BeyondcorpAppGatewayAllocatedConnectionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,15 +140,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayConfig",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayConfig",
 		reflect.TypeOf((*BeyondcorpAppGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayTimeouts",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayTimeouts",
 		reflect.TypeOf((*BeyondcorpAppGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.beyondcorpAppGateway.BeyondcorpAppGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*BeyondcorpAppGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

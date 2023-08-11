@@ -204,7 +204,7 @@ func NewAppstreamImageBuilderDomainJoinInfoOutputReference(terraformResource cdk
 	j := jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfoOutputReference",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppstreamImageBuilderDomainJoinInfoOutputReference_Override(a AppstreamI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfoOutputReference",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilderDomainJoinInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

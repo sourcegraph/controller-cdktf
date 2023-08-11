@@ -116,7 +116,7 @@ func NewGroupSchemaPropertyArrayOneOfList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_GroupSchemaPropertyArrayOneOfList{}
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfList",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGroupSchemaPropertyArrayOneOfList_Override(g GroupSchemaPropertyArrayOne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfList",
+		"@cdktf/provider-okta.groupSchemaProperty.GroupSchemaPropertyArrayOneOfList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

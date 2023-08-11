@@ -394,7 +394,7 @@ func NewDataGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleComputeHaVpnGateway{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -407,7 +407,7 @@ func NewDataGoogleComputeHaVpnGateway_Override(d DataGoogleComputeHaVpnGateway, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -529,7 +529,7 @@ func DataGoogleComputeHaVpnGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataGoogleComputeHaVpnGateway_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataGoogleComputeHaVpnGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -580,7 +580,7 @@ func DataGoogleComputeHaVpnGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway",
 		"tfResourceType",
 		&returns,
 	)

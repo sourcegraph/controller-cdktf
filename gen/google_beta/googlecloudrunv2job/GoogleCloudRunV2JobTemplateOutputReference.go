@@ -251,7 +251,7 @@ func NewGoogleCloudRunV2JobTemplateOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleCloudRunV2JobTemplateOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewGoogleCloudRunV2JobTemplateOutputReference_Override(g GoogleCloudRunV2Jo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

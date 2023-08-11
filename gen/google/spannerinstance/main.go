@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.spannerInstance.SpannerInstance",
+		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		reflect.TypeOf((*SpannerInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.spannerInstance.SpannerInstanceConfig",
+		"@cdktf/provider-google.spannerInstance.SpannerInstanceConfig",
 		reflect.TypeOf((*SpannerInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.spannerInstance.SpannerInstanceTimeouts",
+		"@cdktf/provider-google.spannerInstance.SpannerInstanceTimeouts",
 		reflect.TypeOf((*SpannerInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.spannerInstance.SpannerInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.spannerInstance.SpannerInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*SpannerInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

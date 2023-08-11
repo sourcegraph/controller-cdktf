@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociation",
 		reflect.TypeOf((*Route53ResolverRuleAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociationConfig",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociationConfig",
 		reflect.TypeOf((*Route53ResolverRuleAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociationTimeouts",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociationTimeouts",
 		reflect.TypeOf((*Route53ResolverRuleAssociationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.route53ResolverRuleAssociation.Route53ResolverRuleAssociationTimeoutsOutputReference",
 		reflect.TypeOf((*Route53ResolverRuleAssociationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

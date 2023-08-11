@@ -203,7 +203,7 @@ func NewComputeUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference(terraf
 	j := jsiiProxy_ComputeUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

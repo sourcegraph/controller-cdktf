@@ -178,7 +178,7 @@ func NewDataAwsEksNodeGroupRemoteAccessOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsEksNodeGroupRemoteAccessOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsEksNodeGroupRemoteAccessOutputReference_Override(d DataAwsEksNode
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

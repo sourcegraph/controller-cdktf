@@ -400,7 +400,7 @@ func NewEndpointsServiceIamBinding(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_EndpointsServiceIamBinding{}
 
 	_jsii_.Create(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewEndpointsServiceIamBinding_Override(e EndpointsServiceIamBinding, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -557,7 +557,7 @@ func EndpointsServiceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func EndpointsServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func EndpointsServiceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func EndpointsServiceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
+		"@cdktf/provider-google.endpointsServiceIamBinding.EndpointsServiceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

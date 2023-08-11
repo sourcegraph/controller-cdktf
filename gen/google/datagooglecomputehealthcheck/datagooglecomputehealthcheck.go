@@ -480,7 +480,7 @@ func NewDataGoogleComputeHealthCheck(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataGoogleComputeHealthCheck{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
+		"@cdktf/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -493,7 +493,7 @@ func NewDataGoogleComputeHealthCheck_Override(d DataGoogleComputeHealthCheck, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
+		"@cdktf/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -604,7 +604,7 @@ func DataGoogleComputeHealthCheck_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
+		"@cdktf/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func DataGoogleComputeHealthCheck_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
+		"@cdktf/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func DataGoogleComputeHealthCheck_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
+		"@cdktf/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func DataGoogleComputeHealthCheck_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
+		"@cdktf/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck",
 		"tfResourceType",
 		&returns,
 	)

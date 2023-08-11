@@ -275,7 +275,7 @@ func NewConnectInstanceStorageConfigStorageConfigOutputReference(terraformResour
 	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewConnectInstanceStorageConfigStorageConfigOutputReference_Override(c Conn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

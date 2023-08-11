@@ -532,7 +532,7 @@ func NewSecretManagerSecret(scope constructs.Construct, id *string, config *Secr
 	j := jsiiProxy_SecretManagerSecret{}
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecret",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -545,7 +545,7 @@ func NewSecretManagerSecret_Override(s SecretManagerSecret, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecret",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecret",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -711,7 +711,7 @@ func SecretManagerSecret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecret.SecretManagerSecret",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func SecretManagerSecret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecret.SecretManagerSecret",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func SecretManagerSecret_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecret.SecretManagerSecret",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecret",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func SecretManagerSecret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.secretManagerSecret.SecretManagerSecret",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecret",
 		"tfResourceType",
 		&returns,
 	)

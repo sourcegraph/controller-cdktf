@@ -258,7 +258,7 @@ func NewBigqueryConnectionAzureOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_BigqueryConnectionAzureOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryConnection.BigqueryConnectionAzureOutputReference",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAzureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -270,7 +270,7 @@ func NewBigqueryConnectionAzureOutputReference_Override(b BigqueryConnectionAzur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryConnection.BigqueryConnectionAzureOutputReference",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAzureOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

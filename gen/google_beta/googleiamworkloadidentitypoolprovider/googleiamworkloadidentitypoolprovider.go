@@ -580,7 +580,7 @@ func NewGoogleIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleIamWorkloadIdentityPoolProvider{}
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -593,7 +593,7 @@ func NewGoogleIamWorkloadIdentityPoolProvider_Override(g GoogleIamWorkloadIdenti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -792,7 +792,7 @@ func GoogleIamWorkloadIdentityPoolProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -811,7 +811,7 @@ func GoogleIamWorkloadIdentityPoolProvider_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -830,7 +830,7 @@ func GoogleIamWorkloadIdentityPoolProvider_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -843,7 +843,7 @@ func GoogleIamWorkloadIdentityPoolProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkloadIdentityPoolProvider.GoogleIamWorkloadIdentityPoolProvider",
 		"tfResourceType",
 		&returns,
 	)

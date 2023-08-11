@@ -226,7 +226,7 @@ func NewGoogleComputeBackendBucketIamBindingConditionOutputReference(terraformRe
 	j := jsiiProxy_GoogleComputeBackendBucketIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeBackendBucketIamBindingConditionOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamBinding.GoogleComputeBackendBucketIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

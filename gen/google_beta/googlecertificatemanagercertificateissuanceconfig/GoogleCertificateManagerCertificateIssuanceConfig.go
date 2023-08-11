@@ -553,7 +553,7 @@ func NewGoogleCertificateManagerCertificateIssuanceConfig(scope constructs.Const
 	j := jsiiProxy_GoogleCertificateManagerCertificateIssuanceConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -566,7 +566,7 @@ func NewGoogleCertificateManagerCertificateIssuanceConfig_Override(g GoogleCerti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -765,7 +765,7 @@ func GoogleCertificateManagerCertificateIssuanceConfig_IsConstruct(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func GoogleCertificateManagerCertificateIssuanceConfig_IsTerraformElement(x inte
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -803,7 +803,7 @@ func GoogleCertificateManagerCertificateIssuanceConfig_IsTerraformResource(x int
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -816,7 +816,7 @@ func GoogleCertificateManagerCertificateIssuanceConfig_TfResourceType() *string 
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificateIssuanceConfig.GoogleCertificateManagerCertificateIssuanceConfig",
 		"tfResourceType",
 		&returns,
 	)

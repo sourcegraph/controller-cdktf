@@ -179,7 +179,7 @@ func NewDatasyncTaskScheduleOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DatasyncTaskScheduleOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncTask.DatasyncTaskScheduleOutputReference",
+		"@cdktf/provider-aws.datasyncTask.DatasyncTaskScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDatasyncTaskScheduleOutputReference_Override(d DatasyncTaskScheduleOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncTask.DatasyncTaskScheduleOutputReference",
+		"@cdktf/provider-aws.datasyncTask.DatasyncTaskScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

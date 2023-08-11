@@ -669,7 +669,7 @@ func NewDataGoogleRedisInstance(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataGoogleRedisInstance{}
 
 	_jsii_.Create(
-		"google.dataGoogleRedisInstance.DataGoogleRedisInstance",
+		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -682,7 +682,7 @@ func NewDataGoogleRedisInstance_Override(d DataGoogleRedisInstance, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleRedisInstance.DataGoogleRedisInstance",
+		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -804,7 +804,7 @@ func DataGoogleRedisInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleRedisInstance.DataGoogleRedisInstance",
+		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -823,7 +823,7 @@ func DataGoogleRedisInstance_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleRedisInstance.DataGoogleRedisInstance",
+		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func DataGoogleRedisInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleRedisInstance.DataGoogleRedisInstance",
+		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -855,7 +855,7 @@ func DataGoogleRedisInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleRedisInstance.DataGoogleRedisInstance",
+		"@cdktf/provider-google.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		"tfResourceType",
 		&returns,
 	)

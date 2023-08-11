@@ -204,7 +204,7 @@ func NewCodebuildProjectSecondarySourcesBuildStatusConfigOutputReference(terrafo
 	j := jsiiProxy_CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCodebuildProjectSecondarySourcesBuildStatusConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectSecondarySourcesBuildStatusConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

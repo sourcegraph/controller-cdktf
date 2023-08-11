@@ -531,7 +531,7 @@ func NewBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string,
 	j := jsiiProxy_BigqueryAnalyticsHubDataExchange{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -544,7 +544,7 @@ func NewBigqueryAnalyticsHubDataExchange_Override(b BigqueryAnalyticsHubDataExch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -743,7 +743,7 @@ func BigqueryAnalyticsHubDataExchange_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func BigqueryAnalyticsHubDataExchange_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func BigqueryAnalyticsHubDataExchange_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func BigqueryAnalyticsHubDataExchange_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange",
 		"tfResourceType",
 		&returns,
 	)

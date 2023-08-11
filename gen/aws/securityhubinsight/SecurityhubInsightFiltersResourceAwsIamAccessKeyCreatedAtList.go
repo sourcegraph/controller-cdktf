@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList(terraformR
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList_Override(s
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyCreatedAtList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

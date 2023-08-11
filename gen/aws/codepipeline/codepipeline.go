@@ -447,7 +447,7 @@ func NewCodepipeline(scope constructs.Construct, id *string, config *Codepipelin
 	j := jsiiProxy_Codepipeline{}
 
 	_jsii_.Create(
-		"aws.codepipeline.Codepipeline",
+		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewCodepipeline_Override(c Codepipeline, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipeline.Codepipeline",
+		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -615,7 +615,7 @@ func Codepipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codepipeline.Codepipeline",
+		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func Codepipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codepipeline.Codepipeline",
+		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func Codepipeline_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codepipeline.Codepipeline",
+		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func Codepipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codepipeline.Codepipeline",
+		"@cdktf/provider-aws.codepipeline.Codepipeline",
 		"tfResourceType",
 		&returns,
 	)

@@ -180,7 +180,7 @@ func NewElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference(terra
 	j := jsiiProxy_ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

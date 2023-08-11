@@ -534,7 +534,7 @@ func NewBeyondcorpAppConnection(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_BeyondcorpAppConnection{}
 
 	_jsii_.Create(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnection",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -547,7 +547,7 @@ func NewBeyondcorpAppConnection_Override(b BeyondcorpAppConnection, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnection",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -735,7 +735,7 @@ func BeyondcorpAppConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnection",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -754,7 +754,7 @@ func BeyondcorpAppConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnection",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func BeyondcorpAppConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnection",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -786,7 +786,7 @@ func BeyondcorpAppConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.beyondcorpAppConnection.BeyondcorpAppConnection",
+		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
 		"tfResourceType",
 		&returns,
 	)

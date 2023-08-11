@@ -104,7 +104,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupCloudRunList(terraformResourc
 	j := jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupCloudRunList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupCloudRunList",
+		"@cdktf/provider-google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupCloudRunList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupCloudRunList_Override(d DataG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupCloudRunList",
+		"@cdktf/provider-google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupCloudRunList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

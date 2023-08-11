@@ -424,7 +424,7 @@ func NewGoogleSecretManagerSecretIamBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleSecretManagerSecretIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleSecretManagerSecretIamBinding_Override(g GoogleSecretManagerSecret
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleSecretManagerSecretIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleSecretManagerSecretIamBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleSecretManagerSecretIamBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleSecretManagerSecretIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
+		"@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding",
 		"tfResourceType",
 		&returns,
 	)

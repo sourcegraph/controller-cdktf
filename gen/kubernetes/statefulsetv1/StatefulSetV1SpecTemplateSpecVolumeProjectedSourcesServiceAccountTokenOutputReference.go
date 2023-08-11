@@ -227,7 +227,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOu
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewStatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecVolumeProjectedSourcesServiceAccountTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

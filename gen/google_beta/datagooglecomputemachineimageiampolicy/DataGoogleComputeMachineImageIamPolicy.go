@@ -337,7 +337,7 @@ func NewDataGoogleComputeMachineImageIamPolicy(scope constructs.Construct, id *s
 	j := jsiiProxy_DataGoogleComputeMachineImageIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleComputeMachineImageIamPolicy_Override(d DataGoogleComputeMachi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleComputeMachineImageIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleComputeMachineImageIamPolicy_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleComputeMachineImageIamPolicy_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleComputeMachineImageIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeMachineImageIamPolicy.DataGoogleComputeMachineImageIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

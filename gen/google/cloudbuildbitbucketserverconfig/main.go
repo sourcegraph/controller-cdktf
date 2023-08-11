@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfig",
 		reflect.TypeOf((*CloudbuildBitbucketServerConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConfig",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConfig",
 		reflect.TypeOf((*CloudbuildBitbucketServerConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositories",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositories",
 		reflect.TypeOf((*CloudbuildBitbucketServerConfigConnectedRepositories)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesList",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesList",
 		reflect.TypeOf((*CloudbuildBitbucketServerConfigConnectedRepositoriesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference",
 		reflect.TypeOf((*CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -152,11 +152,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecrets",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecrets",
 		reflect.TypeOf((*CloudbuildBitbucketServerConfigSecrets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecretsOutputReference",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigSecretsOutputReference",
 		reflect.TypeOf((*CloudbuildBitbucketServerConfigSecretsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminAccessTokenVersionName", GoGetter: "AdminAccessTokenVersionName"},
@@ -194,11 +194,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeouts",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeouts",
 		reflect.TypeOf((*CloudbuildBitbucketServerConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudbuildBitbucketServerConfig.CloudbuildBitbucketServerConfigTimeoutsOutputReference",
 		reflect.TypeOf((*CloudbuildBitbucketServerConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

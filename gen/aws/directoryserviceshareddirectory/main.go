@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
 		reflect.TypeOf((*DirectoryServiceSharedDirectory)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryConfig",
 		reflect.TypeOf((*DirectoryServiceSharedDirectoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTarget",
 		reflect.TypeOf((*DirectoryServiceSharedDirectoryTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTargetOutputReference",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTargetOutputReference",
 		reflect.TypeOf((*DirectoryServiceSharedDirectoryTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeouts",
 		reflect.TypeOf((*DirectoryServiceSharedDirectoryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeoutsOutputReference",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectoryTimeoutsOutputReference",
 		reflect.TypeOf((*DirectoryServiceSharedDirectoryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

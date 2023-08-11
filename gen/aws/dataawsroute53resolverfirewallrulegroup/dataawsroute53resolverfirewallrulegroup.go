@@ -401,7 +401,7 @@ func NewDataAwsRoute53ResolverFirewallRuleGroup(scope constructs.Construct, id *
 	j := jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataAwsRoute53ResolverFirewallRuleGroup_Override(d DataAwsRoute53Resolve
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -514,7 +514,7 @@ func DataAwsRoute53ResolverFirewallRuleGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataAwsRoute53ResolverFirewallRuleGroup_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func DataAwsRoute53ResolverFirewallRuleGroup_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func DataAwsRoute53ResolverFirewallRuleGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverFirewallRuleGroup.DataAwsRoute53ResolverFirewallRuleGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputRefe
 	j := jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

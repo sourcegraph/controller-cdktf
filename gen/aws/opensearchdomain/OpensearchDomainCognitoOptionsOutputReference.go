@@ -249,7 +249,7 @@ func NewOpensearchDomainCognitoOptionsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_OpensearchDomainCognitoOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewOpensearchDomainCognitoOptionsOutputReference_Override(o OpensearchDomai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

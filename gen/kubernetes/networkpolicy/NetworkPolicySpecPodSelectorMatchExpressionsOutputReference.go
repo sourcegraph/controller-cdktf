@@ -228,7 +228,7 @@ func NewNetworkPolicySpecPodSelectorMatchExpressionsOutputReference(terraformRes
 	j := jsiiProxy_NetworkPolicySpecPodSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkPolicySpecPodSelectorMatchExpressionsOutputReference_Override(n N
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

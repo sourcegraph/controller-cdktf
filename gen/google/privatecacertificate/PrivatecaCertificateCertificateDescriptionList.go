@@ -104,7 +104,7 @@ func NewPrivatecaCertificateCertificateDescriptionList(terraformResource cdktf.I
 	j := jsiiProxy_PrivatecaCertificateCertificateDescriptionList{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewPrivatecaCertificateCertificateDescriptionList_Override(p PrivatecaCerti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

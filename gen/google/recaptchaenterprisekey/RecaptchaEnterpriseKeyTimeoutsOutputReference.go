@@ -228,7 +228,7 @@ func NewRecaptchaEnterpriseKeyTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_RecaptchaEnterpriseKeyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewRecaptchaEnterpriseKeyTimeoutsOutputReference_Override(r RecaptchaEnterp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTimeoutsOutputReference",
+		"@cdktf/provider-google.recaptchaEnterpriseKey.RecaptchaEnterpriseKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

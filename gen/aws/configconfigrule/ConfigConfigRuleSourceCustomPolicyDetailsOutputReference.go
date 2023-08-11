@@ -226,7 +226,7 @@ func NewConfigConfigRuleSourceCustomPolicyDetailsOutputReference(terraformResour
 	j := jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewConfigConfigRuleSourceCustomPolicyDetailsOutputReference_Override(c Conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference",
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

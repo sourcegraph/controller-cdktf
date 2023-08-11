@@ -252,7 +252,7 @@ func NewDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference(terraform
 	j := jsiiProxy_DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

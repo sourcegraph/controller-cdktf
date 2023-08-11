@@ -342,7 +342,7 @@ func NewEfsBackupPolicy(scope constructs.Construct, id *string, config *EfsBacku
 	j := jsiiProxy_EfsBackupPolicy{}
 
 	_jsii_.Create(
-		"aws.efsBackupPolicy.EfsBackupPolicy",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewEfsBackupPolicy_Override(e EfsBackupPolicy, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsBackupPolicy.EfsBackupPolicy",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -477,7 +477,7 @@ func EfsBackupPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsBackupPolicy.EfsBackupPolicy",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func EfsBackupPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsBackupPolicy.EfsBackupPolicy",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func EfsBackupPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.efsBackupPolicy.EfsBackupPolicy",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func EfsBackupPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.efsBackupPolicy.EfsBackupPolicy",
+		"@cdktf/provider-aws.efsBackupPolicy.EfsBackupPolicy",
 		"tfResourceType",
 		&returns,
 	)

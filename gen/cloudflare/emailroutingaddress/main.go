@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingAddress.EmailRoutingAddress",
+		"@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddress",
 		reflect.TypeOf((*EmailRoutingAddress)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.emailRoutingAddress.EmailRoutingAddressConfig",
+		"@cdktf/provider-cloudflare.emailRoutingAddress.EmailRoutingAddressConfig",
 		reflect.TypeOf((*EmailRoutingAddressConfig)(nil)).Elem(),
 	)
 }

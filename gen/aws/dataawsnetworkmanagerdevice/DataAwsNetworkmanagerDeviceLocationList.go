@@ -104,7 +104,7 @@ func NewDataAwsNetworkmanagerDeviceLocationList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsNetworkmanagerDeviceLocationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsNetworkmanagerDeviceLocationList_Override(d DataAwsNetworkmanager
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerDevice.DataAwsNetworkmanagerDeviceLocationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

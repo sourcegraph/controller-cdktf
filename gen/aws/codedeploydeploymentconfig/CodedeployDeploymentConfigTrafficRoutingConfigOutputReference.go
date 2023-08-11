@@ -228,7 +228,7 @@ func NewCodedeployDeploymentConfigTrafficRoutingConfigOutputReference(terraformR
 	j := jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCodedeployDeploymentConfigTrafficRoutingConfigOutputReference_Override(c
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentConfig.CodedeployDeploymentConfigTrafficRoutingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

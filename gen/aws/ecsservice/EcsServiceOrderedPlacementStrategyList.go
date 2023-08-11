@@ -116,7 +116,7 @@ func NewEcsServiceOrderedPlacementStrategyList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EcsServiceOrderedPlacementStrategyList{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceOrderedPlacementStrategyList",
+		"@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsServiceOrderedPlacementStrategyList_Override(e EcsServiceOrderedPlace
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceOrderedPlacementStrategyList",
+		"@cdktf/provider-aws.ecsService.EcsServiceOrderedPlacementStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

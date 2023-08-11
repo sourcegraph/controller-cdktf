@@ -116,7 +116,7 @@ func NewCognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList(terraformRe
 	j := jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList{}
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

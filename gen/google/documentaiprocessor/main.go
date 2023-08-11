@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.documentAiProcessor.DocumentAiProcessor",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessor",
 		reflect.TypeOf((*DocumentAiProcessor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.documentAiProcessor.DocumentAiProcessorConfig",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessorConfig",
 		reflect.TypeOf((*DocumentAiProcessorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.documentAiProcessor.DocumentAiProcessorTimeouts",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts",
 		reflect.TypeOf((*DocumentAiProcessorTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.documentAiProcessor.DocumentAiProcessorTimeoutsOutputReference",
+		"@cdktf/provider-google.documentAiProcessor.DocumentAiProcessorTimeoutsOutputReference",
 		reflect.TypeOf((*DocumentAiProcessorTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -534,7 +534,7 @@ func NewBigqueryReservation(scope constructs.Construct, id *string, config *Bigq
 	j := jsiiProxy_BigqueryReservation{}
 
 	_jsii_.Create(
-		"google.bigqueryReservation.BigqueryReservation",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -547,7 +547,7 @@ func NewBigqueryReservation_Override(b BigqueryReservation, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryReservation.BigqueryReservation",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservation",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -746,7 +746,7 @@ func BigqueryReservation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryReservation.BigqueryReservation",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func BigqueryReservation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryReservation.BigqueryReservation",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func BigqueryReservation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryReservation.BigqueryReservation",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func BigqueryReservation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryReservation.BigqueryReservation",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservation",
 		"tfResourceType",
 		&returns,
 	)

@@ -178,7 +178,7 @@ func NewDataAwsSignerSigningProfileSignatureValidityPeriodOutputReference(terraf
 	j := jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsSignerSigningProfileSignatureValidityPeriodOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

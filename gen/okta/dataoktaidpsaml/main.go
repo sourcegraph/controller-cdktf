@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaIdpSaml.DataOktaIdpSaml",
+		"@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSaml",
 		reflect.TypeOf((*DataOktaIdpSaml)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acsBinding", GoGetter: "AcsBinding"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaIdpSaml.DataOktaIdpSamlConfig",
+		"@cdktf/provider-okta.dataOktaIdpSaml.DataOktaIdpSamlConfig",
 		reflect.TypeOf((*DataOktaIdpSamlConfig)(nil)).Elem(),
 	)
 }

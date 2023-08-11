@@ -178,7 +178,7 @@ func NewGoogleCloudiotDeviceStateOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleCloudiotDeviceStateOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGoogleCloudiotDeviceStateOutputReference_Override(g GoogleCloudiotDevice
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateOutputReference",
+		"@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

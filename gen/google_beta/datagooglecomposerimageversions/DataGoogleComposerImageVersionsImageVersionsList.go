@@ -104,7 +104,7 @@ func NewDataGoogleComposerImageVersionsImageVersionsList(terraformResource cdktf
 	j := jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsList",
+		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComposerImageVersionsImageVersionsList_Override(d DataGoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsList",
+		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewTeamsRuleRuleSettingsL4OverrideOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_TeamsRuleRuleSettingsL4OverrideOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsL4OverrideOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4OverrideOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTeamsRuleRuleSettingsL4OverrideOutputReference_Override(t TeamsRuleRuleS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsL4OverrideOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4OverrideOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

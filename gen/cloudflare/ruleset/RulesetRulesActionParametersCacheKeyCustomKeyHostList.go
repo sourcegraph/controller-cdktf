@@ -116,7 +116,7 @@ func NewRulesetRulesActionParametersCacheKeyCustomKeyHostList(terraformResource 
 	j := jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHostList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesActionParametersCacheKeyCustomKeyHostList_Override(r Ruleset
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersCacheKeyCustomKeyHostList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

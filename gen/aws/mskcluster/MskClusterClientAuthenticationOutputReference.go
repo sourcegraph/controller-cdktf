@@ -228,7 +228,7 @@ func NewMskClusterClientAuthenticationOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_MskClusterClientAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterClientAuthenticationOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterClientAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMskClusterClientAuthenticationOutputReference_Override(m MskClusterClien
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterClientAuthenticationOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterClientAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

@@ -342,7 +342,7 @@ func NewIamGroupPolicyAttachment(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_IamGroupPolicyAttachment{}
 
 	_jsii_.Create(
-		"aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
+		"@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewIamGroupPolicyAttachment_Override(i IamGroupPolicyAttachment, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
+		"@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -488,7 +488,7 @@ func IamGroupPolicyAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
+		"@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func IamGroupPolicyAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
+		"@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func IamGroupPolicyAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
+		"@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func IamGroupPolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
+		"@cdktf/provider-aws.iamGroupPolicyAttachment.IamGroupPolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

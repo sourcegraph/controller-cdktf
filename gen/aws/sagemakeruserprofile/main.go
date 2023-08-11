@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfile",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfile",
 		reflect.TypeOf((*SagemakerUserProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,19 +77,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileConfig",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileConfig",
 		reflect.TypeOf((*SagemakerUserProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettings",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettings",
 		reflect.TypeOf((*SagemakerUserProfileUserSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettings",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettings",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsCanvasAppSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,11 +125,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amazonForecastRoleArn", GoGetter: "AmazonForecastRoleArn"},
@@ -167,15 +167,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettings",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsJupyterServerAppSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepository)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -196,7 +196,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,11 +230,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsJupyterServerAppSettingsDefaultResourceSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -278,7 +278,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codeRepository", GoGetter: "CodeRepository"},
@@ -320,15 +320,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettings",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsKernelGatewayAppSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -349,7 +349,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appImageConfigName", GoGetter: "AppImageConfigName"},
@@ -388,11 +388,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsKernelGatewayAppSettingsDefaultResourceSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -436,7 +436,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -478,7 +478,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canvasAppSettings", GoGetter: "CanvasAppSettings"},
@@ -539,15 +539,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettings",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettings",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsRSessionAppSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -568,7 +568,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsRSessionAppSettingsCustomImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appImageConfigName", GoGetter: "AppImageConfigName"},
@@ -607,11 +607,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -655,7 +655,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsRSessionAppSettingsOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsRSessionAppSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -695,11 +695,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettings",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsSharingSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsSharingSettingsOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsSharingSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -740,15 +740,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettings",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettings",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsTensorBoardAppSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -792,7 +792,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference",
 		reflect.TypeOf((*SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -204,7 +204,7 @@ func NewComputeInstanceGroupManagerVersionTargetSizeOutputReference(terraformRes
 	j := jsiiProxy_ComputeInstanceGroupManagerVersionTargetSizeOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeInstanceGroupManagerVersionTargetSizeOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

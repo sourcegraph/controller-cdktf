@@ -701,7 +701,7 @@ func NewDbSnapshotCopy(scope constructs.Construct, id *string, config *DbSnapsho
 	j := jsiiProxy_DbSnapshotCopy{}
 
 	_jsii_.Create(
-		"aws.dbSnapshotCopy.DbSnapshotCopy",
+		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -714,7 +714,7 @@ func NewDbSnapshotCopy_Override(d DbSnapshotCopy, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbSnapshotCopy.DbSnapshotCopy",
+		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -935,7 +935,7 @@ func DbSnapshotCopy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbSnapshotCopy.DbSnapshotCopy",
+		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -954,7 +954,7 @@ func DbSnapshotCopy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbSnapshotCopy.DbSnapshotCopy",
+		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -973,7 +973,7 @@ func DbSnapshotCopy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbSnapshotCopy.DbSnapshotCopy",
+		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -986,7 +986,7 @@ func DbSnapshotCopy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dbSnapshotCopy.DbSnapshotCopy",
+		"@cdktf/provider-aws.dbSnapshotCopy.DbSnapshotCopy",
 		"tfResourceType",
 		&returns,
 	)

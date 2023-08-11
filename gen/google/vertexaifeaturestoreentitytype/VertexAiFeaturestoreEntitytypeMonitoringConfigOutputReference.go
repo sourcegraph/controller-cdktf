@@ -252,7 +252,7 @@ func NewVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference(terraformR
 	j := jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference_Override(v
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestoreEntitytype.VertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

@@ -324,7 +324,7 @@ func NewCertificatePackValidationRecordsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CertificatePackValidationRecordsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewCertificatePackValidationRecordsOutputReference_Override(c CertificatePa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
+		"@cdktf/provider-cloudflare.certificatePack.CertificatePackValidationRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

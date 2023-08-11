@@ -104,7 +104,7 @@ func NewDataGoogleStorageBucketLifecycleRuleActionList(terraformResource cdktf.I
 	j := jsiiProxy_DataGoogleStorageBucketLifecycleRuleActionList{}
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleActionList",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleStorageBucketLifecycleRuleActionList_Override(d DataGoogleStor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleActionList",
+		"@cdktf/provider-google.dataGoogleStorageBucket.DataGoogleStorageBucketLifecycleRuleActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachment",
 		reflect.TypeOf((*Ec2TransitGatewayVpcAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,7 +83,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachmentConfig",
+		"@cdktf/provider-aws.ec2TransitGatewayVpcAttachment.Ec2TransitGatewayVpcAttachmentConfig",
 		reflect.TypeOf((*Ec2TransitGatewayVpcAttachmentConfig)(nil)).Elem(),
 	)
 }

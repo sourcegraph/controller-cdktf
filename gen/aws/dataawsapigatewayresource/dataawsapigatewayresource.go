@@ -336,7 +336,7 @@ func NewDataAwsApiGatewayResource(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsApiGatewayResource{}
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
+		"@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataAwsApiGatewayResource_Override(d DataAwsApiGatewayResource, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
+		"@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +460,7 @@ func DataAwsApiGatewayResource_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
+		"@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataAwsApiGatewayResource_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
+		"@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -498,7 +498,7 @@ func DataAwsApiGatewayResource_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
+		"@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataAwsApiGatewayResource_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
+		"@cdktf/provider-aws.dataAwsApiGatewayResource.DataAwsApiGatewayResource",
 		"tfResourceType",
 		&returns,
 	)

@@ -437,7 +437,7 @@ func NewEc2TransitGatewayPeeringAttachment(scope constructs.Construct, id *strin
 	j := jsiiProxy_Ec2TransitGatewayPeeringAttachment{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewEc2TransitGatewayPeeringAttachment_Override(e Ec2TransitGatewayPeeringAt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -627,7 +627,7 @@ func Ec2TransitGatewayPeeringAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func Ec2TransitGatewayPeeringAttachment_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func Ec2TransitGatewayPeeringAttachment_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func Ec2TransitGatewayPeeringAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
+		"@cdktf/provider-aws.ec2TransitGatewayPeeringAttachment.Ec2TransitGatewayPeeringAttachment",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference(terraformResource c
 	j := jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference{}
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference_Override(p PolicyRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
+		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

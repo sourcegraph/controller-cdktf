@@ -180,7 +180,7 @@ func NewMskconnectConnectorKafkaClusterEncryptionInTransitOutputReference(terraf
 	j := jsiiProxy_MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewMskconnectConnectorKafkaClusterEncryptionInTransitOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorKafkaClusterEncryptionInTransitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

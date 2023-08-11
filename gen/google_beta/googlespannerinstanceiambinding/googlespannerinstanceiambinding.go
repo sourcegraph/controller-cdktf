@@ -424,7 +424,7 @@ func NewGoogleSpannerInstanceIamBinding(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleSpannerInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleSpannerInstanceIamBinding_Override(g GoogleSpannerInstanceIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleSpannerInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleSpannerInstanceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleSpannerInstanceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleSpannerInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
+		"@cdktf/provider-google-beta.googleSpannerInstanceIamBinding.GoogleSpannerInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -539,7 +539,7 @@ func NewGlueSchema(scope constructs.Construct, id *string, config *GlueSchemaCon
 	j := jsiiProxy_GlueSchema{}
 
 	_jsii_.Create(
-		"aws.glueSchema.GlueSchema",
+		"@cdktf/provider-aws.glueSchema.GlueSchema",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -552,7 +552,7 @@ func NewGlueSchema_Override(g GlueSchema, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueSchema.GlueSchema",
+		"@cdktf/provider-aws.glueSchema.GlueSchema",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -751,7 +751,7 @@ func GlueSchema_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueSchema.GlueSchema",
+		"@cdktf/provider-aws.glueSchema.GlueSchema",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func GlueSchema_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueSchema.GlueSchema",
+		"@cdktf/provider-aws.glueSchema.GlueSchema",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -789,7 +789,7 @@ func GlueSchema_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueSchema.GlueSchema",
+		"@cdktf/provider-aws.glueSchema.GlueSchema",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -802,7 +802,7 @@ func GlueSchema_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueSchema.GlueSchema",
+		"@cdktf/provider-aws.glueSchema.GlueSchema",
 		"tfResourceType",
 		&returns,
 	)

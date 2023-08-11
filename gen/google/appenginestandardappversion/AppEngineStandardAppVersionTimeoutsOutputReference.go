@@ -228,7 +228,7 @@ func NewAppEngineStandardAppVersionTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_AppEngineStandardAppVersionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAppEngineStandardAppVersionTimeoutsOutputReference_Override(a AppEngineS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

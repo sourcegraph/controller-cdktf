@@ -484,7 +484,7 @@ func NewGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleFirebaseAppleApp{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewGoogleFirebaseAppleApp_Override(g GoogleFirebaseAppleApp, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -674,7 +674,7 @@ func GoogleFirebaseAppleApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func GoogleFirebaseAppleApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GoogleFirebaseAppleApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func GoogleFirebaseAppleApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
+		"@cdktf/provider-google-beta.googleFirebaseAppleApp.GoogleFirebaseAppleApp",
 		"tfResourceType",
 		&returns,
 	)

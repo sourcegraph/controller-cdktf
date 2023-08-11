@@ -116,7 +116,7 @@ func NewGoogleNetworkServicesHttpRouteRulesMatchesList(terraformResource cdktf.I
 	j := jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesList{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesList",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleNetworkServicesHttpRouteRulesMatchesList_Override(g GoogleNetworkS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesList",
+		"@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

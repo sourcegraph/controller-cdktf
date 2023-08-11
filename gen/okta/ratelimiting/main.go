@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.rateLimiting.RateLimiting",
+		"@cdktf/provider-okta.rateLimiting.RateLimiting",
 		reflect.TypeOf((*RateLimiting)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.rateLimiting.RateLimitingConfig",
+		"@cdktf/provider-okta.rateLimiting.RateLimitingConfig",
 		reflect.TypeOf((*RateLimitingConfig)(nil)).Elem(),
 	)
 }

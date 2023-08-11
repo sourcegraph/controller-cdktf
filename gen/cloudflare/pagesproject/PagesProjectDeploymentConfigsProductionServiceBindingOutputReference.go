@@ -226,7 +226,7 @@ func NewPagesProjectDeploymentConfigsProductionServiceBindingOutputReference(ter
 	j := jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingOutputReference",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPagesProjectDeploymentConfigsProductionServiceBindingOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingOutputReference",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

@@ -337,7 +337,7 @@ func NewDataGooglePubsubTopicIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataGooglePubsubTopicIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGooglePubsubTopicIamPolicy_Override(d DataGooglePubsubTopicIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGooglePubsubTopicIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGooglePubsubTopicIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGooglePubsubTopicIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGooglePubsubTopicIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicy",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicy",
 		reflect.TypeOf((*GoogleIamDenyPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,23 +70,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyConfig",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyConfig",
 		reflect.TypeOf((*GoogleIamDenyPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRules",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRules",
 		reflect.TypeOf((*GoogleIamDenyPolicyRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRule",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRule",
 		reflect.TypeOf((*GoogleIamDenyPolicyRulesDenyRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleDenialCondition",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleDenialCondition",
 		reflect.TypeOf((*GoogleIamDenyPolicyRulesDenyRuleDenialCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleDenialConditionOutputReference",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleDenialConditionOutputReference",
 		reflect.TypeOf((*GoogleIamDenyPolicyRulesDenyRuleDenialConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,7 +129,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleOutputReference",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesDenyRuleOutputReference",
 		reflect.TypeOf((*GoogleIamDenyPolicyRulesDenyRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -177,7 +177,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesList",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesList",
 		reflect.TypeOf((*GoogleIamDenyPolicyRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -198,7 +198,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesOutputReference",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyRulesOutputReference",
 		reflect.TypeOf((*GoogleIamDenyPolicyRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -237,11 +237,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyTimeouts",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyTimeouts",
 		reflect.TypeOf((*GoogleIamDenyPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleIamDenyPolicy.GoogleIamDenyPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleIamDenyPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

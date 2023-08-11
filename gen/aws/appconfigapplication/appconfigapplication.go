@@ -402,7 +402,7 @@ func NewAppconfigApplication(scope constructs.Construct, id *string, config *App
 	j := jsiiProxy_AppconfigApplication{}
 
 	_jsii_.Create(
-		"aws.appconfigApplication.AppconfigApplication",
+		"@cdktf/provider-aws.appconfigApplication.AppconfigApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewAppconfigApplication_Override(a AppconfigApplication, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigApplication.AppconfigApplication",
+		"@cdktf/provider-aws.appconfigApplication.AppconfigApplication",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -570,7 +570,7 @@ func AppconfigApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigApplication.AppconfigApplication",
+		"@cdktf/provider-aws.appconfigApplication.AppconfigApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func AppconfigApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigApplication.AppconfigApplication",
+		"@cdktf/provider-aws.appconfigApplication.AppconfigApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func AppconfigApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigApplication.AppconfigApplication",
+		"@cdktf/provider-aws.appconfigApplication.AppconfigApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func AppconfigApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appconfigApplication.AppconfigApplication",
+		"@cdktf/provider-aws.appconfigApplication.AppconfigApplication",
 		"tfResourceType",
 		&returns,
 	)

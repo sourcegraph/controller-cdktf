@@ -116,7 +116,7 @@ func NewDataAwsEc2InstanceTypeOfferingFilterList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsEc2InstanceTypeOfferingFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOfferingFilterList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOfferingFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEc2InstanceTypeOfferingFilterList_Override(d DataAwsEc2InstanceTy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOfferingFilterList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOfferingFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

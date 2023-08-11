@@ -303,7 +303,7 @@ func NewDataGoogleAlloydbLocations(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataGoogleAlloydbLocations{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataGoogleAlloydbLocations_Override(d DataGoogleAlloydbLocations, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataGoogleAlloydbLocations_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataGoogleAlloydbLocations_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataGoogleAlloydbLocations_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataGoogleAlloydbLocations_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
+		"@cdktf/provider-google-beta.dataGoogleAlloydbLocations.DataGoogleAlloydbLocations",
 		"tfResourceType",
 		&returns,
 	)

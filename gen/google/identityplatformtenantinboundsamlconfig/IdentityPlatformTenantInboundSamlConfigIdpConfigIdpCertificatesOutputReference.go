@@ -180,7 +180,7 @@ func NewIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputRef
 	j := jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference{}
 
 	_jsii_.Create(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
+		"@cdktf/provider-google.identityPlatformTenantInboundSamlConfig.IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

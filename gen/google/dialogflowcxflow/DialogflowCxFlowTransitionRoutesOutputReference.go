@@ -287,7 +287,7 @@ func NewDialogflowCxFlowTransitionRoutesOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DialogflowCxFlowTransitionRoutesOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -299,7 +299,7 @@ func NewDialogflowCxFlowTransitionRoutesOutputReference_Override(d DialogflowCxF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

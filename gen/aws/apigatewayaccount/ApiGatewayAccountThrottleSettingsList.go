@@ -104,7 +104,7 @@ func NewApiGatewayAccountThrottleSettingsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ApiGatewayAccountThrottleSettingsList{}
 
 	_jsii_.Create(
-		"aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsList",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewApiGatewayAccountThrottleSettingsList_Override(a ApiGatewayAccountThrott
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsList",
+		"@cdktf/provider-aws.apiGatewayAccount.ApiGatewayAccountThrottleSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

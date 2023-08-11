@@ -650,7 +650,7 @@ func NewIdentitystoreUser(scope constructs.Construct, id *string, config *Identi
 	j := jsiiProxy_IdentitystoreUser{}
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUser",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -663,7 +663,7 @@ func NewIdentitystoreUser_Override(i IdentitystoreUser, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.identitystoreUser.IdentitystoreUser",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -884,7 +884,7 @@ func IdentitystoreUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.identitystoreUser.IdentitystoreUser",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -903,7 +903,7 @@ func IdentitystoreUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.identitystoreUser.IdentitystoreUser",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -922,7 +922,7 @@ func IdentitystoreUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.identitystoreUser.IdentitystoreUser",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -935,7 +935,7 @@ func IdentitystoreUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.identitystoreUser.IdentitystoreUser",
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
 		"tfResourceType",
 		&returns,
 	)

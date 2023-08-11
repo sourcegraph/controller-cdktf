@@ -664,7 +664,7 @@ func NewGoogleBigqueryDataTransferConfig(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleBigqueryDataTransferConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -677,7 +677,7 @@ func NewGoogleBigqueryDataTransferConfig_Override(g GoogleBigqueryDataTransferCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -909,7 +909,7 @@ func GoogleBigqueryDataTransferConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -928,7 +928,7 @@ func GoogleBigqueryDataTransferConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -947,7 +947,7 @@ func GoogleBigqueryDataTransferConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -960,7 +960,7 @@ func GoogleBigqueryDataTransferConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
+		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfig",
 		"tfResourceType",
 		&returns,
 	)

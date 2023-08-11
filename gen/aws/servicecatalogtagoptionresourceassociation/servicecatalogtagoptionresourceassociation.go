@@ -410,7 +410,7 @@ func NewServicecatalogTagOptionResourceAssociation(scope constructs.Construct, i
 	j := jsiiProxy_ServicecatalogTagOptionResourceAssociation{}
 
 	_jsii_.Create(
-		"aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -423,7 +423,7 @@ func NewServicecatalogTagOptionResourceAssociation_Override(s ServicecatalogTagO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -556,7 +556,7 @@ func ServicecatalogTagOptionResourceAssociation_IsConstruct(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -575,7 +575,7 @@ func ServicecatalogTagOptionResourceAssociation_IsTerraformElement(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -594,7 +594,7 @@ func ServicecatalogTagOptionResourceAssociation_IsTerraformResource(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func ServicecatalogTagOptionResourceAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList(terrafo
 	j := jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList",
+		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList",
+		"@cdktf/provider-aws.dataAwsAuditmanagerControl.DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

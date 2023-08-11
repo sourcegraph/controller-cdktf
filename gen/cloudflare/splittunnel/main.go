@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.splitTunnel.SplitTunnel",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		reflect.TypeOf((*SplitTunnel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.splitTunnel.SplitTunnelConfig",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelConfig",
 		reflect.TypeOf((*SplitTunnelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.splitTunnel.SplitTunnelTunnels",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnels",
 		reflect.TypeOf((*SplitTunnelTunnels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.splitTunnel.SplitTunnelTunnelsList",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsList",
 		reflect.TypeOf((*SplitTunnelTunnelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnelTunnelsOutputReference",
 		reflect.TypeOf((*SplitTunnelTunnelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},

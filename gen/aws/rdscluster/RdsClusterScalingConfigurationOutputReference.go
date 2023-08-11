@@ -276,7 +276,7 @@ func NewRdsClusterScalingConfigurationOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_RdsClusterScalingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.rdsCluster.RdsClusterScalingConfigurationOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterScalingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewRdsClusterScalingConfigurationOutputReference_Override(r RdsClusterScali
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsCluster.RdsClusterScalingConfigurationOutputReference",
+		"@cdktf/provider-aws.rdsCluster.RdsClusterScalingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

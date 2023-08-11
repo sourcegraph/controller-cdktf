@@ -483,7 +483,7 @@ func NewNeptuneClusterEndpoint(scope constructs.Construct, id *string, config *N
 	j := jsiiProxy_NeptuneClusterEndpoint{}
 
 	_jsii_.Create(
-		"aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
+		"@cdktf/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewNeptuneClusterEndpoint_Override(n NeptuneClusterEndpoint, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
+		"@cdktf/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -684,7 +684,7 @@ func NeptuneClusterEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
+		"@cdktf/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func NeptuneClusterEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
+		"@cdktf/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func NeptuneClusterEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
+		"@cdktf/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func NeptuneClusterEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
+		"@cdktf/provider-aws.neptuneClusterEndpoint.NeptuneClusterEndpoint",
 		"tfResourceType",
 		&returns,
 	)

@@ -204,7 +204,7 @@ func NewGoogleContainerClusterBinaryAuthorizationOutputReference(terraformResour
 	j := jsiiProxy_GoogleContainerClusterBinaryAuthorizationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterBinaryAuthorizationOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterBinaryAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleContainerClusterBinaryAuthorizationOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterBinaryAuthorizationOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterBinaryAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

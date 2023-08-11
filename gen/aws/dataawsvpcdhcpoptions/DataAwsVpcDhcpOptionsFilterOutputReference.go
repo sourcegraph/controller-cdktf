@@ -202,7 +202,7 @@ func NewDataAwsVpcDhcpOptionsFilterOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsVpcDhcpOptionsFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsVpcDhcpOptionsFilterOutputReference_Override(d DataAwsVpcDhcpOpti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

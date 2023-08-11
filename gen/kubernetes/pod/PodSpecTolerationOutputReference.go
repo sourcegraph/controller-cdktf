@@ -276,7 +276,7 @@ func NewPodSpecTolerationOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_PodSpecTolerationOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecTolerationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewPodSpecTolerationOutputReference_Override(p PodSpecTolerationOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecTolerationOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecTolerationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

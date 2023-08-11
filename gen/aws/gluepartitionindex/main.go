@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.gluePartitionIndex.GluePartitionIndex",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndex",
 		reflect.TypeOf((*GluePartitionIndex)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.gluePartitionIndex.GluePartitionIndexConfig",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexConfig",
 		reflect.TypeOf((*GluePartitionIndexConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.gluePartitionIndex.GluePartitionIndexPartitionIndex",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexPartitionIndex",
 		reflect.TypeOf((*GluePartitionIndexPartitionIndex)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.gluePartitionIndex.GluePartitionIndexPartitionIndexOutputReference",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexPartitionIndexOutputReference",
 		reflect.TypeOf((*GluePartitionIndexPartitionIndexOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.gluePartitionIndex.GluePartitionIndexTimeouts",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexTimeouts",
 		reflect.TypeOf((*GluePartitionIndexTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.gluePartitionIndex.GluePartitionIndexTimeoutsOutputReference",
+		"@cdktf/provider-aws.gluePartitionIndex.GluePartitionIndexTimeoutsOutputReference",
 		reflect.TypeOf((*GluePartitionIndexTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

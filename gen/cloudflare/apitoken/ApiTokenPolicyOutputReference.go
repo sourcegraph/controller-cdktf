@@ -226,7 +226,7 @@ func NewApiTokenPolicyOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_ApiTokenPolicyOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.apiToken.ApiTokenPolicyOutputReference",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewApiTokenPolicyOutputReference_Override(a ApiTokenPolicyOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.apiToken.ApiTokenPolicyOutputReference",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

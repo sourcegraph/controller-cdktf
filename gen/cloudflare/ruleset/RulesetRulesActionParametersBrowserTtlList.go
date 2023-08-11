@@ -116,7 +116,7 @@ func NewRulesetRulesActionParametersBrowserTtlList(terraformResource cdktf.IInte
 	j := jsiiProxy_RulesetRulesActionParametersBrowserTtlList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesActionParametersBrowserTtlList_Override(r RulesetRulesAction
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesActionParametersBrowserTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

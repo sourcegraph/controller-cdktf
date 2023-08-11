@@ -179,7 +179,7 @@ func NewComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference(terraf
 	j := jsiiProxy_ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

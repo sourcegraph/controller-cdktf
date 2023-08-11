@@ -116,7 +116,7 @@ func NewEcsServicePlacementConstraintsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_EcsServicePlacementConstraintsList{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServicePlacementConstraintsList",
+		"@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsServicePlacementConstraintsList_Override(e EcsServicePlacementConstra
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServicePlacementConstraintsList",
+		"@cdktf/provider-aws.ecsService.EcsServicePlacementConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

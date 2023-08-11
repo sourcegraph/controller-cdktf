@@ -228,7 +228,7 @@ func NewGoogleCloudbuildv2ConnectionTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleCloudbuildv2ConnectionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleCloudbuildv2ConnectionTimeoutsOutputReference_Override(g GoogleClo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2Connection.GoogleCloudbuildv2ConnectionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

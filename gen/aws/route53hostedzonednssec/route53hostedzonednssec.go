@@ -343,7 +343,7 @@ func NewRoute53HostedZoneDnssec(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_Route53HostedZoneDnssec{}
 
 	_jsii_.Create(
-		"aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
+		"@cdktf/provider-aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewRoute53HostedZoneDnssec_Override(r Route53HostedZoneDnssec, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
+		"@cdktf/provider-aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -489,7 +489,7 @@ func Route53HostedZoneDnssec_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
+		"@cdktf/provider-aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func Route53HostedZoneDnssec_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
+		"@cdktf/provider-aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func Route53HostedZoneDnssec_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
+		"@cdktf/provider-aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func Route53HostedZoneDnssec_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
+		"@cdktf/provider-aws.route53HostedZoneDnssec.Route53HostedZoneDnssec",
 		"tfResourceType",
 		&returns,
 	)

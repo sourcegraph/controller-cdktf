@@ -360,7 +360,7 @@ func NewDataGoogleApiGatewayApiConfigIamPolicy(scope constructs.Construct, id *s
 	j := jsiiProxy_DataGoogleApiGatewayApiConfigIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -373,7 +373,7 @@ func NewDataGoogleApiGatewayApiConfigIamPolicy_Override(d DataGoogleApiGatewayAp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -495,7 +495,7 @@ func DataGoogleApiGatewayApiConfigIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -514,7 +514,7 @@ func DataGoogleApiGatewayApiConfigIamPolicy_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataGoogleApiGatewayApiConfigIamPolicy_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataGoogleApiGatewayApiConfigIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

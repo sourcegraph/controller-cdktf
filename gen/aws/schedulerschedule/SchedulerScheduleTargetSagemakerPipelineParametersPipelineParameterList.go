@@ -116,7 +116,7 @@ func NewSchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList(
 	j := jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

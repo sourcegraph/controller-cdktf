@@ -104,7 +104,7 @@ func NewDataAwsGlobalacceleratorAcceleratorAttributesList(terraformResource cdkt
 	j := jsiiProxy_DataAwsGlobalacceleratorAcceleratorAttributesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributesList",
+		"@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsGlobalacceleratorAcceleratorAttributesList_Override(d DataAwsGlob
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributesList",
+		"@cdktf/provider-aws.dataAwsGlobalacceleratorAccelerator.DataAwsGlobalacceleratorAcceleratorAttributesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterMasterAuthClientCertificateConfigList(terrafor
 	j := jsiiProxy_DataGoogleContainerClusterMasterAuthClientCertificateConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterMasterAuthClientCertificateConfigList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

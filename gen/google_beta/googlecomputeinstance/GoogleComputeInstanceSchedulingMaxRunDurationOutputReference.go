@@ -203,7 +203,7 @@ func NewGoogleComputeInstanceSchedulingMaxRunDurationOutputReference(terraformRe
 	j := jsiiProxy_GoogleComputeInstanceSchedulingMaxRunDurationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingMaxRunDurationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingMaxRunDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeInstanceSchedulingMaxRunDurationOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingMaxRunDurationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingMaxRunDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

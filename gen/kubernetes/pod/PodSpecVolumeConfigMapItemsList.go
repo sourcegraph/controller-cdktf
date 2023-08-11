@@ -116,7 +116,7 @@ func NewPodSpecVolumeConfigMapItemsList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_PodSpecVolumeConfigMapItemsList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeConfigMapItemsList",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecVolumeConfigMapItemsList_Override(p PodSpecVolumeConfigMapItemsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeConfigMapItemsList",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

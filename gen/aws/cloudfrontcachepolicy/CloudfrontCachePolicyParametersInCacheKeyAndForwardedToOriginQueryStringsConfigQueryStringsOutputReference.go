@@ -180,7 +180,7 @@ func NewCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryString
 	j := jsiiProxy_CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsOutputReference",
+		"@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryString
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsOutputReference",
+		"@cdktf/provider-aws.cloudfrontCachePolicy.CloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

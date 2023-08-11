@@ -227,7 +227,7 @@ func NewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference(terra
 	j := jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

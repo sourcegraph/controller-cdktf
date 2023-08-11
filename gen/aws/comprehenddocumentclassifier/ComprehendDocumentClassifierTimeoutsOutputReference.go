@@ -228,7 +228,7 @@ func NewComprehendDocumentClassifierTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComprehendDocumentClassifierTimeoutsOutputReference_Override(c Comprehen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

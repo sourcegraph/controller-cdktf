@@ -274,7 +274,7 @@ func NewS3ObjectCopyGrantOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_S3ObjectCopyGrantOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewS3ObjectCopyGrantOutputReference_Override(s S3ObjectCopyGrantOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -116,7 +116,7 @@ func NewDataAwsVpnGatewayFilterList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_DataAwsVpnGatewayFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterList",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsVpnGatewayFilterList_Override(d DataAwsVpnGatewayFilterList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterList",
+		"@cdktf/provider-aws.dataAwsVpnGateway.DataAwsVpnGatewayFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

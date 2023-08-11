@@ -167,7 +167,7 @@ func NewDataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference(terraform
 	j := jsiiProxy_DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleFolderOrganizationPolicy.DataGoogleFolderOrganizationPolicyBooleanPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

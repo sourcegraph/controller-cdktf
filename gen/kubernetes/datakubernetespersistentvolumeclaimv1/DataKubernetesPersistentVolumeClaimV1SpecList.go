@@ -116,7 +116,7 @@ func NewDataKubernetesPersistentVolumeClaimV1SpecList(terraformResource cdktf.II
 	j := jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPersistentVolumeClaimV1.DataKubernetesPersistentVolumeClaimV1SpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaimV1.DataKubernetesPersistentVolumeClaimV1SpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataKubernetesPersistentVolumeClaimV1SpecList_Override(d DataKubernetesP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPersistentVolumeClaimV1.DataKubernetesPersistentVolumeClaimV1SpecList",
+		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaimV1.DataKubernetesPersistentVolumeClaimV1SpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

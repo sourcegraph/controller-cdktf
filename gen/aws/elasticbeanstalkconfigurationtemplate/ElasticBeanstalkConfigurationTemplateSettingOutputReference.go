@@ -249,7 +249,7 @@ func NewElasticBeanstalkConfigurationTemplateSettingOutputReference(terraformRes
 	j := jsiiProxy_ElasticBeanstalkConfigurationTemplateSettingOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSettingOutputReference",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewElasticBeanstalkConfigurationTemplateSettingOutputReference_Override(e E
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSettingOutputReference",
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplateSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

@@ -400,7 +400,7 @@ func NewGoogleTagsTagKeyIamBinding(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleTagsTagKeyIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleTagsTagKeyIamBinding_Override(g GoogleTagsTagKeyIamBinding, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleTagsTagKeyIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleTagsTagKeyIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleTagsTagKeyIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleTagsTagKeyIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamBinding.GoogleTagsTagKeyIamBinding",
 		"tfResourceType",
 		&returns,
 	)

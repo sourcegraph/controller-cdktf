@@ -391,7 +391,7 @@ func NewS3BucketAcl(scope constructs.Construct, id *string, config *S3BucketAclC
 	j := jsiiProxy_S3BucketAcl{}
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAcl",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAcl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewS3BucketAcl_Override(s S3BucketAcl, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketAcl.S3BucketAcl",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAcl",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -548,7 +548,7 @@ func S3BucketAcl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketAcl.S3BucketAcl",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAcl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func S3BucketAcl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketAcl.S3BucketAcl",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAcl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func S3BucketAcl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketAcl.S3BucketAcl",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAcl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func S3BucketAcl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketAcl.S3BucketAcl",
+		"@cdktf/provider-aws.s3BucketAcl.S3BucketAcl",
 		"tfResourceType",
 		&returns,
 	)

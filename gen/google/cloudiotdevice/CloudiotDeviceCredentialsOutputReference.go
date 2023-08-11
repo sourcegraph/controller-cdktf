@@ -203,7 +203,7 @@ func NewCloudiotDeviceCredentialsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudiotDeviceCredentialsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceCredentialsOutputReference",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudiotDeviceCredentialsOutputReference_Override(c CloudiotDeviceCreden
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceCredentialsOutputReference",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

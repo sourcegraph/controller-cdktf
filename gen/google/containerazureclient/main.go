@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.containerAzureClient.ContainerAzureClient",
+		"@cdktf/provider-google.containerAzureClient.ContainerAzureClient",
 		reflect.TypeOf((*ContainerAzureClient)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureClient.ContainerAzureClientConfig",
+		"@cdktf/provider-google.containerAzureClient.ContainerAzureClientConfig",
 		reflect.TypeOf((*ContainerAzureClientConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAzureClient.ContainerAzureClientTimeouts",
+		"@cdktf/provider-google.containerAzureClient.ContainerAzureClientTimeouts",
 		reflect.TypeOf((*ContainerAzureClientTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAzureClient.ContainerAzureClientTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAzureClient.ContainerAzureClientTimeoutsOutputReference",
 		reflect.TypeOf((*ContainerAzureClientTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

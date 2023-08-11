@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBinding",
 		reflect.TypeOf((*GoogleCloudRunV2JobIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingCondition",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingCondition",
 		reflect.TypeOf((*GoogleCloudRunV2JobIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingConditionOutputReference",
 		reflect.TypeOf((*GoogleCloudRunV2JobIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingConfig",
+		"@cdktf/provider-google-beta.googleCloudRunV2JobIamBinding.GoogleCloudRunV2JobIamBindingConfig",
 		reflect.TypeOf((*GoogleCloudRunV2JobIamBindingConfig)(nil)).Elem(),
 	)
 }

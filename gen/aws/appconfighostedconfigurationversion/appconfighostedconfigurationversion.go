@@ -434,7 +434,7 @@ func NewAppconfigHostedConfigurationVersion(scope constructs.Construct, id *stri
 	j := jsiiProxy_AppconfigHostedConfigurationVersion{}
 
 	_jsii_.Create(
-		"aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
+		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -447,7 +447,7 @@ func NewAppconfigHostedConfigurationVersion_Override(a AppconfigHostedConfigurat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
+		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -613,7 +613,7 @@ func AppconfigHostedConfigurationVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
+		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func AppconfigHostedConfigurationVersion_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
+		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func AppconfigHostedConfigurationVersion_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
+		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func AppconfigHostedConfigurationVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
+		"@cdktf/provider-aws.appconfigHostedConfigurationVersion.AppconfigHostedConfigurationVersion",
 		"tfResourceType",
 		&returns,
 	)

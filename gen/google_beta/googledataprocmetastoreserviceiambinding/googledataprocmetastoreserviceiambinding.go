@@ -448,7 +448,7 @@ func NewGoogleDataprocMetastoreServiceIamBinding(scope constructs.Construct, id 
 	j := jsiiProxy_GoogleDataprocMetastoreServiceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleDataprocMetastoreServiceIamBinding_Override(g GoogleDataprocMetast
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleDataprocMetastoreServiceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleDataprocMetastoreServiceIamBinding_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleDataprocMetastoreServiceIamBinding_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDataprocMetastoreServiceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
+		"@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

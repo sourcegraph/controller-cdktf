@@ -252,7 +252,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeConfigMapOutputReference(terraformReso
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumeConfigMapOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeConfigMapOutputReference_Override(d De
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

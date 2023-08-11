@@ -203,7 +203,7 @@ func NewSchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference(ter
 	j := jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

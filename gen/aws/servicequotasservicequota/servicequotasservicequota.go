@@ -442,7 +442,7 @@ func NewServicequotasServiceQuota(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ServicequotasServiceQuota{}
 
 	_jsii_.Create(
-		"aws.servicequotasServiceQuota.ServicequotasServiceQuota",
+		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -455,7 +455,7 @@ func NewServicequotasServiceQuota_Override(s ServicequotasServiceQuota, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicequotasServiceQuota.ServicequotasServiceQuota",
+		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -599,7 +599,7 @@ func ServicequotasServiceQuota_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicequotasServiceQuota.ServicequotasServiceQuota",
+		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func ServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicequotasServiceQuota.ServicequotasServiceQuota",
+		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -637,7 +637,7 @@ func ServicequotasServiceQuota_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicequotasServiceQuota.ServicequotasServiceQuota",
+		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -650,7 +650,7 @@ func ServicequotasServiceQuota_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicequotasServiceQuota.ServicequotasServiceQuota",
+		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		"tfResourceType",
 		&returns,
 	)

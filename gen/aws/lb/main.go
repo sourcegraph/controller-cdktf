@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lb.Lb",
+		"@cdktf/provider-aws.lb.Lb",
 		reflect.TypeOf((*Lb)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogs", GoGetter: "AccessLogs"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lb.LbAccessLogs",
+		"@cdktf/provider-aws.lb.LbAccessLogs",
 		reflect.TypeOf((*LbAccessLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lb.LbAccessLogsOutputReference",
+		"@cdktf/provider-aws.lb.LbAccessLogsOutputReference",
 		reflect.TypeOf((*LbAccessLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -170,15 +170,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lb.LbConfig",
+		"@cdktf/provider-aws.lb.LbConfig",
 		reflect.TypeOf((*LbConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lb.LbSubnetMapping",
+		"@cdktf/provider-aws.lb.LbSubnetMapping",
 		reflect.TypeOf((*LbSubnetMapping)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lb.LbSubnetMappingList",
+		"@cdktf/provider-aws.lb.LbSubnetMappingList",
 		reflect.TypeOf((*LbSubnetMappingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -199,7 +199,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lb.LbSubnetMappingOutputReference",
+		"@cdktf/provider-aws.lb.LbSubnetMappingOutputReference",
 		reflect.TypeOf((*LbSubnetMappingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationId", GoGetter: "AllocationId"},
@@ -243,11 +243,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lb.LbTimeouts",
+		"@cdktf/provider-aws.lb.LbTimeouts",
 		reflect.TypeOf((*LbTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lb.LbTimeoutsOutputReference",
+		"@cdktf/provider-aws.lb.LbTimeoutsOutputReference",
 		reflect.TypeOf((*LbTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

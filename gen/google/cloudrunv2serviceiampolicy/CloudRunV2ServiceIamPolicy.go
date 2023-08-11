@@ -401,7 +401,7 @@ func NewCloudRunV2ServiceIamPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_CloudRunV2ServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewCloudRunV2ServiceIamPolicy_Override(c CloudRunV2ServiceIamPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func CloudRunV2ServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func CloudRunV2ServiceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func CloudRunV2ServiceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func CloudRunV2ServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
+		"@cdktf/provider-google.cloudRunV2ServiceIamPolicy.CloudRunV2ServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcDhcpOptions.VpcDhcpOptions",
+		"@cdktf/provider-aws.vpcDhcpOptions.VpcDhcpOptions",
 		reflect.TypeOf((*VpcDhcpOptions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcDhcpOptions.VpcDhcpOptionsConfig",
+		"@cdktf/provider-aws.vpcDhcpOptions.VpcDhcpOptionsConfig",
 		reflect.TypeOf((*VpcDhcpOptionsConfig)(nil)).Elem(),
 	)
 }

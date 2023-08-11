@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dxLag.DxLag",
+		"@cdktf/provider-aws.dxLag.DxLag",
 		reflect.TypeOf((*DxLag)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxLag.DxLagConfig",
+		"@cdktf/provider-aws.dxLag.DxLagConfig",
 		reflect.TypeOf((*DxLagConfig)(nil)).Elem(),
 	)
 }

@@ -202,7 +202,7 @@ func NewAcmpcaCertificateValidityOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_AcmpcaCertificateValidityOutputReference{}
 
 	_jsii_.Create(
-		"aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAcmpcaCertificateValidityOutputReference_Override(a AcmpcaCertificateVal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference",
+		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificateValidityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

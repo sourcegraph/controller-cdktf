@@ -202,7 +202,7 @@ func NewCognitoUserPoolLambdaConfigCustomEmailSenderOutputReference(terraformRes
 	j := jsiiProxy_CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCognitoUserPoolLambdaConfigCustomEmailSenderOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

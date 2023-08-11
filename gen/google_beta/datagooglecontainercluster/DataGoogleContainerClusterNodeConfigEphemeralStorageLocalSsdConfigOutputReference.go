@@ -167,7 +167,7 @@ func NewDataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutput
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

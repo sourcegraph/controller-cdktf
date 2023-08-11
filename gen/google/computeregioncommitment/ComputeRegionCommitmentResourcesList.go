@@ -116,7 +116,7 @@ func NewComputeRegionCommitmentResourcesList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ComputeRegionCommitmentResourcesList{}
 
 	_jsii_.Create(
-		"google.computeRegionCommitment.ComputeRegionCommitmentResourcesList",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeRegionCommitmentResourcesList_Override(c ComputeRegionCommitmentR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionCommitment.ComputeRegionCommitmentResourcesList",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -228,7 +228,7 @@ func NewComputeResourcePolicyGroupPlacementPolicyOutputReference(terraformResour
 	j := jsiiProxy_ComputeResourcePolicyGroupPlacementPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeResourcePolicy.ComputeResourcePolicyGroupPlacementPolicyOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyGroupPlacementPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeResourcePolicyGroupPlacementPolicyOutputReference_Override(c Comp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeResourcePolicy.ComputeResourcePolicyGroupPlacementPolicyOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyGroupPlacementPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

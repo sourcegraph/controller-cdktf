@@ -116,7 +116,7 @@ func NewWafRulePredicatesList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_WafRulePredicatesList{}
 
 	_jsii_.Create(
-		"aws.wafRule.WafRulePredicatesList",
+		"@cdktf/provider-aws.wafRule.WafRulePredicatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafRulePredicatesList_Override(w WafRulePredicatesList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafRule.WafRulePredicatesList",
+		"@cdktf/provider-aws.wafRule.WafRulePredicatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

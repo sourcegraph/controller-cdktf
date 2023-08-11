@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaAuthServerClaims.DataOktaAuthServerClaims",
+		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaims",
 		reflect.TypeOf((*DataOktaAuthServerClaims)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,11 +56,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaims",
+		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaims",
 		reflect.TypeOf((*DataOktaAuthServerClaimsClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsList",
+		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsList",
 		reflect.TypeOf((*DataOktaAuthServerClaimsClaimsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -80,7 +80,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsOutputReference",
+		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsOutputReference",
 		reflect.TypeOf((*DataOktaAuthServerClaimsClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alwaysIncludeInToken", GoGetter: "AlwaysIncludeInToken"},
@@ -120,7 +120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsConfig",
+		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsConfig",
 		reflect.TypeOf((*DataOktaAuthServerClaimsConfig)(nil)).Elem(),
 	)
 }

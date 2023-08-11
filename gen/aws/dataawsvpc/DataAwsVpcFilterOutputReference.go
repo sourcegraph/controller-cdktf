@@ -202,7 +202,7 @@ func NewDataAwsVpcFilterOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataAwsVpcFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpc.DataAwsVpcFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpc.DataAwsVpcFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsVpcFilterOutputReference_Override(d DataAwsVpcFilterOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpc.DataAwsVpcFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpc.DataAwsVpcFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

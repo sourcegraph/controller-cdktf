@@ -252,7 +252,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutpu
 	j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

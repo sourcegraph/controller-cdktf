@@ -116,7 +116,7 @@ func NewFilestoreInstanceFileSharesNfsExportOptionsList(terraformResource cdktf.
 	j := jsiiProxy_FilestoreInstanceFileSharesNfsExportOptionsList{}
 
 	_jsii_.Create(
-		"google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsList",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFilestoreInstanceFileSharesNfsExportOptionsList_Override(f FilestoreInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsList",
+		"@cdktf/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

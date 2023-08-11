@@ -435,7 +435,7 @@ func NewDialogflowCxVersion(scope constructs.Construct, id *string, config *Dial
 	j := jsiiProxy_DialogflowCxVersion{}
 
 	_jsii_.Create(
-		"google.dialogflowCxVersion.DialogflowCxVersion",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewDialogflowCxVersion_Override(d DialogflowCxVersion, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxVersion.DialogflowCxVersion",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -592,7 +592,7 @@ func DialogflowCxVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxVersion.DialogflowCxVersion",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func DialogflowCxVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxVersion.DialogflowCxVersion",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func DialogflowCxVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dialogflowCxVersion.DialogflowCxVersion",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func DialogflowCxVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dialogflowCxVersion.DialogflowCxVersion",
+		"@cdktf/provider-google.dialogflowCxVersion.DialogflowCxVersion",
 		"tfResourceType",
 		&returns,
 	)

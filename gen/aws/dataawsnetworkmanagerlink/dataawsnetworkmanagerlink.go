@@ -404,7 +404,7 @@ func NewDataAwsNetworkmanagerLink(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataAwsNetworkmanagerLink{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -417,7 +417,7 @@ func NewDataAwsNetworkmanagerLink_Override(d DataAwsNetworkmanagerLink, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -539,7 +539,7 @@ func DataAwsNetworkmanagerLink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func DataAwsNetworkmanagerLink_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func DataAwsNetworkmanagerLink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func DataAwsNetworkmanagerLink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLink",
 		"tfResourceType",
 		&returns,
 	)

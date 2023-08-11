@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecAffinityPodAntiAffinityList(terraformResource cdktf
 	j := jsiiProxy_DataKubernetesPodSpecAffinityPodAntiAffinityList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecAffinityPodAntiAffinityList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecAffinityPodAntiAffinityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecAffinityPodAntiAffinityList_Override(d DataKubernet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecAffinityPodAntiAffinityList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecAffinityPodAntiAffinityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

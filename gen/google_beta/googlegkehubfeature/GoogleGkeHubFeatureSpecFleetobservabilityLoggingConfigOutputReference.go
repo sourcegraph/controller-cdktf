@@ -204,7 +204,7 @@ func NewGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference(te
 	j := jsiiProxy_GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

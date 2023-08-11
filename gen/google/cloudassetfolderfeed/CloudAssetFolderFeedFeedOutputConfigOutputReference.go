@@ -179,7 +179,7 @@ func NewCloudAssetFolderFeedFeedOutputConfigOutputReference(terraformResource cd
 	j := jsiiProxy_CloudAssetFolderFeedFeedOutputConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigOutputReference",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudAssetFolderFeedFeedOutputConfigOutputReference_Override(c CloudAsse
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigOutputReference",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

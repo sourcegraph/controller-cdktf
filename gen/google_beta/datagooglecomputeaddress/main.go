@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeAddress.DataGoogleComputeAddress",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddress.DataGoogleComputeAddress",
 		reflect.TypeOf((*DataGoogleComputeAddress)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeAddress.DataGoogleComputeAddressConfig",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddress.DataGoogleComputeAddressConfig",
 		reflect.TypeOf((*DataGoogleComputeAddressConfig)(nil)).Elem(),
 	)
 }

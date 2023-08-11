@@ -227,7 +227,7 @@ func NewAppGroupAssignmentsGroupOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AppGroupAssignmentsGroupOutputReference{}
 
 	_jsii_.Create(
-		"okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
+		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAppGroupAssignmentsGroupOutputReference_Override(a AppGroupAssignmentsGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
+		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

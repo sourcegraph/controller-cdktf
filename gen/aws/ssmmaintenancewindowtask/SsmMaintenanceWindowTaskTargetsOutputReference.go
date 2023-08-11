@@ -202,7 +202,7 @@ func NewSsmMaintenanceWindowTaskTargetsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsOutputReference",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSsmMaintenanceWindowTaskTargetsOutputReference_Override(s SsmMaintenance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsOutputReference",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

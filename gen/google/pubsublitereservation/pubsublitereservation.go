@@ -414,7 +414,7 @@ func NewPubsubLiteReservation(scope constructs.Construct, id *string, config *Pu
 	j := jsiiProxy_PubsubLiteReservation{}
 
 	_jsii_.Create(
-		"google.pubsubLiteReservation.PubsubLiteReservation",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewPubsubLiteReservation_Override(p PubsubLiteReservation, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubLiteReservation.PubsubLiteReservation",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -582,7 +582,7 @@ func PubsubLiteReservation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubLiteReservation.PubsubLiteReservation",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func PubsubLiteReservation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubLiteReservation.PubsubLiteReservation",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func PubsubLiteReservation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubLiteReservation.PubsubLiteReservation",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func PubsubLiteReservation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.pubsubLiteReservation.PubsubLiteReservation",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		"tfResourceType",
 		&returns,
 	)

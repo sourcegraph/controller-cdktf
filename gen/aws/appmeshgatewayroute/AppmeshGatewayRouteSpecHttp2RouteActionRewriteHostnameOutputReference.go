@@ -179,7 +179,7 @@ func NewAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference(te
 	j := jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference",
+		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -423,7 +423,7 @@ func NewHealthcareConsentStoreIamMember(scope constructs.Construct, id *string, 
 	j := jsiiProxy_HealthcareConsentStoreIamMember{}
 
 	_jsii_.Create(
-		"google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
+		"@cdktf/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewHealthcareConsentStoreIamMember_Override(h HealthcareConsentStoreIamMemb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
+		"@cdktf/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -591,7 +591,7 @@ func HealthcareConsentStoreIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
+		"@cdktf/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func HealthcareConsentStoreIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
+		"@cdktf/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func HealthcareConsentStoreIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
+		"@cdktf/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func HealthcareConsentStoreIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
+		"@cdktf/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMember",
 		"tfResourceType",
 		&returns,
 	)

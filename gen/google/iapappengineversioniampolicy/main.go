@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
 		reflect.TypeOf((*IapAppEngineVersionIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicyConfig",
+		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicyConfig",
 		reflect.TypeOf((*IapAppEngineVersionIamPolicyConfig)(nil)).Elem(),
 	)
 }

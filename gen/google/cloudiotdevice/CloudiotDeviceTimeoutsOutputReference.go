@@ -228,7 +228,7 @@ func NewCloudiotDeviceTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_CloudiotDeviceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudiotDeviceTimeoutsOutputReference_Override(c CloudiotDeviceTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotDevice.CloudiotDeviceTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudiotDevice.CloudiotDeviceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

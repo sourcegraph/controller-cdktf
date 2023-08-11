@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicy",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicy",
 		reflect.TypeOf((*NetworkPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicyConfig",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicyConfig",
 		reflect.TypeOf((*NetworkPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicyMetadata",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicyMetadata",
 		reflect.TypeOf((*NetworkPolicyMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicyMetadataOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicyMetadataOutputReference",
 		reflect.TypeOf((*NetworkPolicyMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -119,15 +119,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpec",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpec",
 		reflect.TypeOf((*NetworkPolicySpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgress",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgress",
 		reflect.TypeOf((*NetworkPolicySpecEgress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressList",
 		reflect.TypeOf((*NetworkPolicySpecEgressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -148,7 +148,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecEgressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,11 +188,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressPorts",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressPorts",
 		reflect.TypeOf((*NetworkPolicySpecEgressPorts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressPortsList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressPortsList",
 		reflect.TypeOf((*NetworkPolicySpecEgressPortsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -213,7 +213,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressPortsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressPortsOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecEgressPortsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -251,15 +251,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressTo",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressTo",
 		reflect.TypeOf((*NetworkPolicySpecEgressTo)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToIpBlock",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToIpBlock",
 		reflect.TypeOf((*NetworkPolicySpecEgressToIpBlock)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToIpBlockOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToIpBlockOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecEgressToIpBlockOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
@@ -297,7 +297,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToList",
 		reflect.TypeOf((*NetworkPolicySpecEgressToList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -318,15 +318,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelector",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelector",
 		reflect.TypeOf((*NetworkPolicySpecEgressToNamespaceSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions",
 		reflect.TypeOf((*NetworkPolicySpecEgressToNamespaceSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList",
 		reflect.TypeOf((*NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -347,7 +347,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -388,7 +388,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToNamespaceSelectorOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecEgressToNamespaceSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -427,7 +427,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecEgressToOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -471,15 +471,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelector",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelector",
 		reflect.TypeOf((*NetworkPolicySpecEgressToPodSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressions",
 		reflect.TypeOf((*NetworkPolicySpecEgressToPodSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressionsList",
 		reflect.TypeOf((*NetworkPolicySpecEgressToPodSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -500,7 +500,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecEgressToPodSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -541,7 +541,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecEgressToPodSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -580,19 +580,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngress",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngress",
 		reflect.TypeOf((*NetworkPolicySpecIngress)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFrom",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFrom",
 		reflect.TypeOf((*NetworkPolicySpecIngressFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromIpBlock",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromIpBlock",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromIpBlock)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromIpBlockOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromIpBlockOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromIpBlockOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidr", GoGetter: "Cidr"},
@@ -630,7 +630,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromList",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -651,15 +651,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelector",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelector",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromNamespaceSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsList",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -680,7 +680,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromNamespaceSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -721,7 +721,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromNamespaceSelectorOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromNamespaceSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -760,7 +760,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -804,15 +804,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelector",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelector",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromPodSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelectorMatchExpressions",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromPodSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -833,7 +833,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromPodSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -874,7 +874,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressFromPodSelectorOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecIngressFromPodSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -913,7 +913,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressList",
 		reflect.TypeOf((*NetworkPolicySpecIngressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -934,7 +934,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecIngressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -974,11 +974,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressPorts",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressPorts",
 		reflect.TypeOf((*NetworkPolicySpecIngressPorts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressPortsList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressPortsList",
 		reflect.TypeOf((*NetworkPolicySpecIngressPortsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -999,7 +999,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecIngressPortsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecIngressPortsOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecIngressPortsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1037,7 +1037,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1082,15 +1082,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecPodSelector",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecPodSelector",
 		reflect.TypeOf((*NetworkPolicySpecPodSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressions",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressions",
 		reflect.TypeOf((*NetworkPolicySpecPodSelectorMatchExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressionsList",
 		reflect.TypeOf((*NetworkPolicySpecPodSelectorMatchExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1111,7 +1111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecPodSelectorMatchExpressionsOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecPodSelectorMatchExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1152,7 +1152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.networkPolicy.NetworkPolicySpecPodSelectorOutputReference",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecPodSelectorOutputReference",
 		reflect.TypeOf((*NetworkPolicySpecPodSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

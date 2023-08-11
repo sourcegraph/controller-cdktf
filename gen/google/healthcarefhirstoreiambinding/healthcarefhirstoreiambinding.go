@@ -400,7 +400,7 @@ func NewHealthcareFhirStoreIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_HealthcareFhirStoreIamBinding{}
 
 	_jsii_.Create(
-		"google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewHealthcareFhirStoreIamBinding_Override(h HealthcareFhirStoreIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -557,7 +557,7 @@ func HealthcareFhirStoreIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func HealthcareFhirStoreIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func HealthcareFhirStoreIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func HealthcareFhirStoreIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
+		"@cdktf/provider-google.healthcareFhirStoreIamBinding.HealthcareFhirStoreIamBinding",
 		"tfResourceType",
 		&returns,
 	)

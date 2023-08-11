@@ -179,7 +179,7 @@ func NewGoogleComputeFirewallLogConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleComputeFirewallLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeFirewallLogConfigOutputReference_Override(g GoogleComputeFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

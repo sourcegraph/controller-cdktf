@@ -543,7 +543,7 @@ func NewDeploymentManagerDeployment(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DeploymentManagerDeployment{}
 
 	_jsii_.Create(
-		"google.deploymentManagerDeployment.DeploymentManagerDeployment",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -556,7 +556,7 @@ func NewDeploymentManagerDeployment_Override(d DeploymentManagerDeployment, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.deploymentManagerDeployment.DeploymentManagerDeployment",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -733,7 +733,7 @@ func DeploymentManagerDeployment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.deploymentManagerDeployment.DeploymentManagerDeployment",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func DeploymentManagerDeployment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.deploymentManagerDeployment.DeploymentManagerDeployment",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func DeploymentManagerDeployment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.deploymentManagerDeployment.DeploymentManagerDeployment",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func DeploymentManagerDeployment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.deploymentManagerDeployment.DeploymentManagerDeployment",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment",
 		"tfResourceType",
 		&returns,
 	)

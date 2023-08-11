@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.firestoreDocument.FirestoreDocument",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocument",
 		reflect.TypeOf((*FirestoreDocument)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.firestoreDocument.FirestoreDocumentConfig",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocumentConfig",
 		reflect.TypeOf((*FirestoreDocumentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.firestoreDocument.FirestoreDocumentTimeouts",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocumentTimeouts",
 		reflect.TypeOf((*FirestoreDocumentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.firestoreDocument.FirestoreDocumentTimeoutsOutputReference",
+		"@cdktf/provider-google.firestoreDocument.FirestoreDocumentTimeoutsOutputReference",
 		reflect.TypeOf((*FirestoreDocumentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

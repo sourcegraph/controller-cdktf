@@ -228,7 +228,7 @@ func NewDataplexLakeTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataplexLakeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLakeTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataplexLakeTimeoutsOutputReference_Override(d DataplexLakeTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexLake.DataplexLakeTimeoutsOutputReference",
+		"@cdktf/provider-google.dataplexLake.DataplexLakeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -470,7 +470,7 @@ func NewGoogleVmwareengineNetwork(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleVmwareengineNetwork{}
 
 	_jsii_.Create(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,7 +483,7 @@ func NewGoogleVmwareengineNetwork_Override(g GoogleVmwareengineNetwork, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -649,7 +649,7 @@ func GoogleVmwareengineNetwork_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func GoogleVmwareengineNetwork_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func GoogleVmwareengineNetwork_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GoogleVmwareengineNetwork_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
+		"@cdktf/provider-google-beta.googleVmwareengineNetwork.GoogleVmwareengineNetwork",
 		"tfResourceType",
 		&returns,
 	)

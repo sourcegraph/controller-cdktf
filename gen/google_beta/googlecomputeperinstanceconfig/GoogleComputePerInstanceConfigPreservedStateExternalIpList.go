@@ -116,7 +116,7 @@ func NewGoogleComputePerInstanceConfigPreservedStateExternalIpList(terraformReso
 	j := jsiiProxy_GoogleComputePerInstanceConfigPreservedStateExternalIpList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpList",
+		"@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputePerInstanceConfigPreservedStateExternalIpList_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpList",
+		"@cdktf/provider-google-beta.googleComputePerInstanceConfig.GoogleComputePerInstanceConfigPreservedStateExternalIpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

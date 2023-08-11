@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestions",
 		reflect.TypeOf((*DataOktaUserSecurityQuestions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,15 +56,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsConfig",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsConfig",
 		reflect.TypeOf((*DataOktaUserSecurityQuestionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestions",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestions",
 		reflect.TypeOf((*DataOktaUserSecurityQuestionsQuestions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsList",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsList",
 		reflect.TypeOf((*DataOktaUserSecurityQuestionsQuestionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsOutputReference",
+		"@cdktf/provider-okta.dataOktaUserSecurityQuestions.DataOktaUserSecurityQuestionsQuestionsOutputReference",
 		reflect.TypeOf((*DataOktaUserSecurityQuestionsQuestionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -180,7 +180,7 @@ func NewComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference(
 	j := jsiiProxy_ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

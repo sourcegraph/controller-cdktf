@@ -401,7 +401,7 @@ func NewCertificateSigningRequest(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CertificateSigningRequest{}
 
 	_jsii_.Create(
-		"kubernetes.certificateSigningRequest.CertificateSigningRequest",
+		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewCertificateSigningRequest_Override(c CertificateSigningRequest, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.certificateSigningRequest.CertificateSigningRequest",
+		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequest",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -536,7 +536,7 @@ func CertificateSigningRequest_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.certificateSigningRequest.CertificateSigningRequest",
+		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func CertificateSigningRequest_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.certificateSigningRequest.CertificateSigningRequest",
+		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func CertificateSigningRequest_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.certificateSigningRequest.CertificateSigningRequest",
+		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequest",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func CertificateSigningRequest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.certificateSigningRequest.CertificateSigningRequest",
+		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequest",
 		"tfResourceType",
 		&returns,
 	)

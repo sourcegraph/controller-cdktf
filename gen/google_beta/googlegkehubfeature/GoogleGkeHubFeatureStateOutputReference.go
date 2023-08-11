@@ -167,7 +167,7 @@ func NewGoogleGkeHubFeatureStateOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GoogleGkeHubFeatureStateOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewGoogleGkeHubFeatureStateOutputReference_Override(g GoogleGkeHubFeatureSt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureStateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

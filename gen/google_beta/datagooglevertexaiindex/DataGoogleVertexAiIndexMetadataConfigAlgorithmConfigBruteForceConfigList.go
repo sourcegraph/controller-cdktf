@@ -104,7 +104,7 @@ func NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList
 	j := jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList",
+		"@cdktf/provider-google-beta.dataGoogleVertexAiIndex.DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

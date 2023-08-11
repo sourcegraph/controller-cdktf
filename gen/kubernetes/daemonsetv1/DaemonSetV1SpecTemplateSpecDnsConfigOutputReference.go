@@ -228,7 +228,7 @@ func NewDaemonSetV1SpecTemplateSpecDnsConfigOutputReference(terraformResource cd
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecDnsConfigOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDaemonSetV1SpecTemplateSpecDnsConfigOutputReference_Override(d DaemonSet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

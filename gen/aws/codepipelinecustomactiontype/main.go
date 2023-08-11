@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionType",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionType",
 		reflect.TypeOf((*CodepipelineCustomActionType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfig",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfig",
 		reflect.TypeOf((*CodepipelineCustomActionTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationProperty",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationProperty",
 		reflect.TypeOf((*CodepipelineCustomActionTypeConfigurationProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyList",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyList",
 		reflect.TypeOf((*CodepipelineCustomActionTypeConfigurationPropertyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeConfigurationPropertyOutputReference",
 		reflect.TypeOf((*CodepipelineCustomActionTypeConfigurationPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,11 +161,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetails",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetails",
 		reflect.TypeOf((*CodepipelineCustomActionTypeInputArtifactDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetailsOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeInputArtifactDetailsOutputReference",
 		reflect.TypeOf((*CodepipelineCustomActionTypeInputArtifactDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -201,11 +201,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetails",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetails",
 		reflect.TypeOf((*CodepipelineCustomActionTypeOutputArtifactDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference",
 		reflect.TypeOf((*CodepipelineCustomActionTypeOutputArtifactDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -241,11 +241,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettings",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettings",
 		reflect.TypeOf((*CodepipelineCustomActionTypeSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
+		"@cdktf/provider-aws.codepipelineCustomActionType.CodepipelineCustomActionTypeSettingsOutputReference",
 		reflect.TypeOf((*CodepipelineCustomActionTypeSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

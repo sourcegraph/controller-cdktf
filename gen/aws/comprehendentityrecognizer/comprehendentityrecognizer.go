@@ -591,7 +591,7 @@ func NewComprehendEntityRecognizer(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_ComprehendEntityRecognizer{}
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -604,7 +604,7 @@ func NewComprehendEntityRecognizer_Override(c ComprehendEntityRecognizer, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -814,7 +814,7 @@ func ComprehendEntityRecognizer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -833,7 +833,7 @@ func ComprehendEntityRecognizer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -852,7 +852,7 @@ func ComprehendEntityRecognizer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -865,7 +865,7 @@ func ComprehendEntityRecognizer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizer",
 		"tfResourceType",
 		&returns,
 	)

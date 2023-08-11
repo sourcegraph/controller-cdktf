@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
+		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilter",
 		reflect.TypeOf((*TranscribeVocabularyFilter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig",
+		"@cdktf/provider-aws.transcribeVocabularyFilter.TranscribeVocabularyFilterConfig",
 		reflect.TypeOf((*TranscribeVocabularyFilterConfig)(nil)).Elem(),
 	)
 }

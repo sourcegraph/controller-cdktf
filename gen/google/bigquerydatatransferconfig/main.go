@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		reflect.TypeOf((*BigqueryDataTransferConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -102,15 +102,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigConfig",
 		reflect.TypeOf((*BigqueryDataTransferConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferences",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferences",
 		reflect.TypeOf((*BigqueryDataTransferConfigEmailPreferences)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferencesOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigEmailPreferencesOutputReference",
 		reflect.TypeOf((*BigqueryDataTransferConfigEmailPreferencesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptions",
 		reflect.TypeOf((*BigqueryDataTransferConfigScheduleOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigScheduleOptionsOutputReference",
 		reflect.TypeOf((*BigqueryDataTransferConfigScheduleOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -189,11 +189,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParams",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParams",
 		reflect.TypeOf((*BigqueryDataTransferConfigSensitiveParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParamsOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParamsOutputReference",
 		reflect.TypeOf((*BigqueryDataTransferConfigSensitiveParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,11 +227,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeouts",
 		reflect.TypeOf((*BigqueryDataTransferConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigTimeoutsOutputReference",
 		reflect.TypeOf((*BigqueryDataTransferConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

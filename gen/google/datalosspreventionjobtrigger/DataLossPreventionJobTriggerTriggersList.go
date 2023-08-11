@@ -116,7 +116,7 @@ func NewDataLossPreventionJobTriggerTriggersList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataLossPreventionJobTriggerTriggersList{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersList",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataLossPreventionJobTriggerTriggersList_Override(d DataLossPreventionJo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersList",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

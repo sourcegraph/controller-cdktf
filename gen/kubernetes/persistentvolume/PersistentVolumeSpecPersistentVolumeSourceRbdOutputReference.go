@@ -346,7 +346,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceRbdOutputReference(terraformRe
 	j := jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceRbdOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceRbdOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceRbdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -358,7 +358,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceRbdOutputReference_Override(p 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceRbdOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceRbdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

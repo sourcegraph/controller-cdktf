@@ -342,7 +342,7 @@ func NewRoute53DelegationSet(scope constructs.Construct, id *string, config *Rou
 	j := jsiiProxy_Route53DelegationSet{}
 
 	_jsii_.Create(
-		"aws.route53DelegationSet.Route53DelegationSet",
+		"@cdktf/provider-aws.route53DelegationSet.Route53DelegationSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewRoute53DelegationSet_Override(r Route53DelegationSet, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53DelegationSet.Route53DelegationSet",
+		"@cdktf/provider-aws.route53DelegationSet.Route53DelegationSet",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -477,7 +477,7 @@ func Route53DelegationSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53DelegationSet.Route53DelegationSet",
+		"@cdktf/provider-aws.route53DelegationSet.Route53DelegationSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func Route53DelegationSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53DelegationSet.Route53DelegationSet",
+		"@cdktf/provider-aws.route53DelegationSet.Route53DelegationSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func Route53DelegationSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53DelegationSet.Route53DelegationSet",
+		"@cdktf/provider-aws.route53DelegationSet.Route53DelegationSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func Route53DelegationSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53DelegationSet.Route53DelegationSet",
+		"@cdktf/provider-aws.route53DelegationSet.Route53DelegationSet",
 		"tfResourceType",
 		&returns,
 	)

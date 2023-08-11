@@ -226,7 +226,7 @@ func NewIotTopicRuleFirehoseOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_IotTopicRuleFirehoseOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleFirehoseOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewIotTopicRuleFirehoseOutputReference_Override(i IotTopicRuleFirehoseOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleFirehoseOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

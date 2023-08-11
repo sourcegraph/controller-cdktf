@@ -116,7 +116,7 @@ func NewGoogleComputeRegionInstanceGroupManagerStatefulDiskList(terraformResourc
 	j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulDiskList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulDiskList",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRegionInstanceGroupManagerStatefulDiskList_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulDiskList",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulDiskList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

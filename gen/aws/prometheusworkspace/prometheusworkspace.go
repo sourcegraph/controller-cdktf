@@ -414,7 +414,7 @@ func NewPrometheusWorkspace(scope constructs.Construct, id *string, config *Prom
 	j := jsiiProxy_PrometheusWorkspace{}
 
 	_jsii_.Create(
-		"aws.prometheusWorkspace.PrometheusWorkspace",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewPrometheusWorkspace_Override(p PrometheusWorkspace, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.prometheusWorkspace.PrometheusWorkspace",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -571,7 +571,7 @@ func PrometheusWorkspace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.prometheusWorkspace.PrometheusWorkspace",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func PrometheusWorkspace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.prometheusWorkspace.PrometheusWorkspace",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func PrometheusWorkspace_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.prometheusWorkspace.PrometheusWorkspace",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func PrometheusWorkspace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.prometheusWorkspace.PrometheusWorkspace",
+		"@cdktf/provider-aws.prometheusWorkspace.PrometheusWorkspace",
 		"tfResourceType",
 		&returns,
 	)

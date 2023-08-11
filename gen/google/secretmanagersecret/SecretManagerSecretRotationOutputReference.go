@@ -204,7 +204,7 @@ func NewSecretManagerSecretRotationOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_SecretManagerSecretRotationOutputReference{}
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretRotationOutputReference",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSecretManagerSecretRotationOutputReference_Override(s SecretManagerSecre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecret.SecretManagerSecretRotationOutputReference",
+		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

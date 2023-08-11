@@ -204,7 +204,7 @@ func NewEc2ClientVpnNetworkAssociationTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_Ec2ClientVpnNetworkAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEc2ClientVpnNetworkAssociationTimeoutsOutputReference_Override(e Ec2Clie
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

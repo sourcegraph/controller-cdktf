@@ -250,7 +250,7 @@ func NewGoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference(terraformRes
 	j := jsiiProxy_GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference",
+		"@cdktf/provider-google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewGoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference",
+		"@cdktf/provider-google-beta.googleDnsRecordSet.GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

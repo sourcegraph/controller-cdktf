@@ -104,7 +104,7 @@ func NewImagebuilderImageOutputResourcesList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ImagebuilderImageOutputResourcesList{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesList",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewImagebuilderImageOutputResourcesList_Override(i ImagebuilderImageOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesList",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

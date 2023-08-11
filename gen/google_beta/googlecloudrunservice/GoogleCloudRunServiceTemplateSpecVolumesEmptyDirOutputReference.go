@@ -204,7 +204,7 @@ func NewGoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference(terrafor
 	j := jsiiProxy_GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

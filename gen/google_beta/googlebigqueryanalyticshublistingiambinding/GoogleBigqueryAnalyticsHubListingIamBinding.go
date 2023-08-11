@@ -471,7 +471,7 @@ func NewGoogleBigqueryAnalyticsHubListingIamBinding(scope constructs.Construct, 
 	j := jsiiProxy_GoogleBigqueryAnalyticsHubListingIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewGoogleBigqueryAnalyticsHubListingIamBinding_Override(g GoogleBigqueryAna
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -661,7 +661,7 @@ func GoogleBigqueryAnalyticsHubListingIamBinding_IsConstruct(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GoogleBigqueryAnalyticsHubListingIamBinding_IsTerraformElement(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func GoogleBigqueryAnalyticsHubListingIamBinding_IsTerraformResource(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GoogleBigqueryAnalyticsHubListingIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListingIamBinding.GoogleBigqueryAnalyticsHubListingIamBinding",
 		"tfResourceType",
 		&returns,
 	)

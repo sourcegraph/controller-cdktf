@@ -226,7 +226,7 @@ func NewContainerAnalysisNoteIamMemberConditionOutputReference(terraformResource
 	j := jsiiProxy_ContainerAnalysisNoteIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMemberConditionOutputReference",
+		"@cdktf/provider-google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewContainerAnalysisNoteIamMemberConditionOutputReference_Override(c Contai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMemberConditionOutputReference",
+		"@cdktf/provider-google.containerAnalysisNoteIamMember.ContainerAnalysisNoteIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

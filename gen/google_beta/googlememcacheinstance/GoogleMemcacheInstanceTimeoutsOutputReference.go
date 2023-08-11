@@ -228,7 +228,7 @@ func NewGoogleMemcacheInstanceTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleMemcacheInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleMemcacheInstanceTimeoutsOutputReference_Override(g GoogleMemcacheI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

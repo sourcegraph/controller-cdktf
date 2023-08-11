@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig",
+		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfig",
 		reflect.TypeOf((*CloudfrontRealtimeLogConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,19 +65,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigConfig",
+		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigConfig",
 		reflect.TypeOf((*CloudfrontRealtimeLogConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpoint",
+		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpoint",
 		reflect.TypeOf((*CloudfrontRealtimeLogConfigEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig",
+		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig",
 		reflect.TypeOf((*CloudfrontRealtimeLogConfigEndpointKinesisStreamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference",
+		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference",
 		reflect.TypeOf((*CloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -113,7 +113,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointOutputReference",
+		"@cdktf/provider-aws.cloudfrontRealtimeLogConfig.CloudfrontRealtimeLogConfigEndpointOutputReference",
 		reflect.TypeOf((*CloudfrontRealtimeLogConfigEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

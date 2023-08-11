@@ -484,7 +484,7 @@ func NewProjectOrganizationPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_ProjectOrganizationPolicy{}
 
 	_jsii_.Create(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicy",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewProjectOrganizationPolicy_Override(p ProjectOrganizationPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicy",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -641,7 +641,7 @@ func ProjectOrganizationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicy",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func ProjectOrganizationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicy",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func ProjectOrganizationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicy",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func ProjectOrganizationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicy",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy",
 		"tfResourceType",
 		&returns,
 	)

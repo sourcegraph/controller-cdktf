@@ -204,7 +204,7 @@ func NewSecurityGroupTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_SecurityGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityGroup.SecurityGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.securityGroup.SecurityGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSecurityGroupTimeoutsOutputReference_Override(s SecurityGroupTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityGroup.SecurityGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.securityGroup.SecurityGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rdsClusterActivityStream.RdsClusterActivityStream",
+		"@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream",
 		reflect.TypeOf((*RdsClusterActivityStream)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig",
+		"@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStreamConfig",
 		reflect.TypeOf((*RdsClusterActivityStreamConfig)(nil)).Elem(),
 	)
 }

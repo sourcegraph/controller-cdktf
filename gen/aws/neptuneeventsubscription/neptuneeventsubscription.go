@@ -557,7 +557,7 @@ func NewNeptuneEventSubscription(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_NeptuneEventSubscription{}
 
 	_jsii_.Create(
-		"aws.neptuneEventSubscription.NeptuneEventSubscription",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -570,7 +570,7 @@ func NewNeptuneEventSubscription_Override(n NeptuneEventSubscription, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneEventSubscription.NeptuneEventSubscription",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -780,7 +780,7 @@ func NeptuneEventSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneEventSubscription.NeptuneEventSubscription",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -799,7 +799,7 @@ func NeptuneEventSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneEventSubscription.NeptuneEventSubscription",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -818,7 +818,7 @@ func NeptuneEventSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.neptuneEventSubscription.NeptuneEventSubscription",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -831,7 +831,7 @@ func NeptuneEventSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.neptuneEventSubscription.NeptuneEventSubscription",
+		"@cdktf/provider-aws.neptuneEventSubscription.NeptuneEventSubscription",
 		"tfResourceType",
 		&returns,
 	)

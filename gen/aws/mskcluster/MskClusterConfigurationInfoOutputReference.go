@@ -202,7 +202,7 @@ func NewMskClusterConfigurationInfoOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_MskClusterConfigurationInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterConfigurationInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterConfigurationInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewMskClusterConfigurationInfoOutputReference_Override(m MskClusterConfigur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskCluster.MskClusterConfigurationInfoOutputReference",
+		"@cdktf/provider-aws.mskCluster.MskClusterConfigurationInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

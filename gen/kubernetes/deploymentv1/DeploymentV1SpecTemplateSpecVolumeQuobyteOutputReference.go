@@ -274,7 +274,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeQuobyteOutputReference(terraformResour
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumeQuobyteOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeQuobyteOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeQuobyteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeQuobyteOutputReference_Override(d Depl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeQuobyteOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeQuobyteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

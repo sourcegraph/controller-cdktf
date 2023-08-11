@@ -179,7 +179,7 @@ func NewNetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference(t
 	j := jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewNetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference",
+		"@cdktf/provider-aws.networkfirewallLoggingConfiguration.NetworkfirewallLoggingConfigurationLoggingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

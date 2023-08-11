@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecContainerPortList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_JobSpecTemplateSpecContainerPortList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerPortList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecContainerPortList_Override(j JobSpecTemplateSpecConta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerPortList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

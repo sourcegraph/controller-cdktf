@@ -104,7 +104,7 @@ func NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesList(terraformReso
 	j := jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesList_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList",
+		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

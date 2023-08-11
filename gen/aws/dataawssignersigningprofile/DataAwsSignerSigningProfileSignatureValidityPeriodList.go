@@ -104,7 +104,7 @@ func NewDataAwsSignerSigningProfileSignatureValidityPeriodList(terraformResource
 	j := jsiiProxy_DataAwsSignerSigningProfileSignatureValidityPeriodList{}
 
 	_jsii_.Create(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodList",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsSignerSigningProfileSignatureValidityPeriodList_Override(d DataAw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodList",
+		"@cdktf/provider-aws.dataAwsSignerSigningProfile.DataAwsSignerSigningProfileSignatureValidityPeriodList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

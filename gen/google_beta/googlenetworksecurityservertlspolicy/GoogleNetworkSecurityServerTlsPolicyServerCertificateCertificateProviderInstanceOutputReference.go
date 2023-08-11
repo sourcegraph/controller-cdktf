@@ -179,7 +179,7 @@ func NewGoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProvider
 	j := jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProvider
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference",
+		"@cdktf/provider-google-beta.googleNetworkSecurityServerTlsPolicy.GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

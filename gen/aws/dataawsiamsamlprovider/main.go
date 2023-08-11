@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
+		"@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProvider",
 		reflect.TypeOf((*DataAwsIamSamlProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig",
+		"@cdktf/provider-aws.dataAwsIamSamlProvider.DataAwsIamSamlProviderConfig",
 		reflect.TypeOf((*DataAwsIamSamlProviderConfig)(nil)).Elem(),
 	)
 }

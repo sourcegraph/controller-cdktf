@@ -116,7 +116,7 @@ func NewDeploymentSpecTemplateSpecTopologySpreadConstraintList(terraformResource
 	j := jsiiProxy_DeploymentSpecTemplateSpecTopologySpreadConstraintList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecTemplateSpecTopologySpreadConstraintList_Override(d Deploy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecTopologySpreadConstraintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

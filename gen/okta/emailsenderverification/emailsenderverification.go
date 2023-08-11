@@ -319,7 +319,7 @@ func NewEmailSenderVerification(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_EmailSenderVerification{}
 
 	_jsii_.Create(
-		"okta.emailSenderVerification.EmailSenderVerification",
+		"@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewEmailSenderVerification_Override(e EmailSenderVerification, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.emailSenderVerification.EmailSenderVerification",
+		"@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -454,7 +454,7 @@ func EmailSenderVerification_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.emailSenderVerification.EmailSenderVerification",
+		"@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func EmailSenderVerification_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.emailSenderVerification.EmailSenderVerification",
+		"@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func EmailSenderVerification_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.emailSenderVerification.EmailSenderVerification",
+		"@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func EmailSenderVerification_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.emailSenderVerification.EmailSenderVerification",
+		"@cdktf/provider-okta.emailSenderVerification.EmailSenderVerification",
 		"tfResourceType",
 		&returns,
 	)

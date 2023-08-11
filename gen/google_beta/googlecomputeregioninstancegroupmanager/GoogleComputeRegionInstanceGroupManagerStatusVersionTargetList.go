@@ -104,7 +104,7 @@ func NewGoogleComputeRegionInstanceGroupManagerStatusVersionTargetList(terraform
 	j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatusVersionTargetList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusVersionTargetList",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusVersionTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleComputeRegionInstanceGroupManagerStatusVersionTargetList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusVersionTargetList",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatusVersionTargetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -189,7 +189,7 @@ func NewMemcacheInstanceMaintenanceScheduleOutputReference(terraformResource cdk
 	j := jsiiProxy_MemcacheInstanceMaintenanceScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceScheduleOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewMemcacheInstanceMaintenanceScheduleOutputReference_Override(m MemcacheIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceScheduleOutputReference",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)

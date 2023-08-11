@@ -663,7 +663,7 @@ func NewAppstreamImageBuilder(scope constructs.Construct, id *string, config *Ap
 	j := jsiiProxy_AppstreamImageBuilder{}
 
 	_jsii_.Create(
-		"aws.appstreamImageBuilder.AppstreamImageBuilder",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -676,7 +676,7 @@ func NewAppstreamImageBuilder_Override(a AppstreamImageBuilder, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamImageBuilder.AppstreamImageBuilder",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -908,7 +908,7 @@ func AppstreamImageBuilder_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamImageBuilder.AppstreamImageBuilder",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -927,7 +927,7 @@ func AppstreamImageBuilder_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamImageBuilder.AppstreamImageBuilder",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -946,7 +946,7 @@ func AppstreamImageBuilder_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamImageBuilder.AppstreamImageBuilder",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -959,7 +959,7 @@ func AppstreamImageBuilder_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appstreamImageBuilder.AppstreamImageBuilder",
+		"@cdktf/provider-aws.appstreamImageBuilder.AppstreamImageBuilder",
 		"tfResourceType",
 		&returns,
 	)

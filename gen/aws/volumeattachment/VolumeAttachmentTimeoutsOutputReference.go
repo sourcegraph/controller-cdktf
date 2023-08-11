@@ -204,7 +204,7 @@ func NewVolumeAttachmentTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_VolumeAttachmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.volumeAttachment.VolumeAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVolumeAttachmentTimeoutsOutputReference_Override(v VolumeAttachmentTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.volumeAttachment.VolumeAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.volumeAttachment.VolumeAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

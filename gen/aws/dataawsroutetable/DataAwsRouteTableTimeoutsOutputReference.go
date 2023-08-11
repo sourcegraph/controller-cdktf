@@ -180,7 +180,7 @@ func NewDataAwsRouteTableTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsRouteTableTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTable.DataAwsRouteTableTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsRouteTableTimeoutsOutputReference_Override(d DataAwsRouteTableTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTable.DataAwsRouteTableTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

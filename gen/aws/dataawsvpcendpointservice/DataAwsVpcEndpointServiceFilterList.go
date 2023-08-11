@@ -116,7 +116,7 @@ func NewDataAwsVpcEndpointServiceFilterList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsVpcEndpointServiceFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterList",
+		"@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsVpcEndpointServiceFilterList_Override(d DataAwsVpcEndpointService
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterList",
+		"@cdktf/provider-aws.dataAwsVpcEndpointService.DataAwsVpcEndpointServiceFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewAppstreamDirectoryConfigServiceAccountCredentialsOutputReference(terrafo
 	j := jsiiProxy_AppstreamDirectoryConfigServiceAccountCredentialsOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentialsOutputReference",
+		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAppstreamDirectoryConfigServiceAccountCredentialsOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentialsOutputReference",
+		"@cdktf/provider-aws.appstreamDirectoryConfig.AppstreamDirectoryConfigServiceAccountCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

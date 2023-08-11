@@ -250,7 +250,7 @@ func NewEcsServiceLoadBalancerOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_EcsServiceLoadBalancerOutputReference{}
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceLoadBalancerOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewEcsServiceLoadBalancerOutputReference_Override(e EcsServiceLoadBalancerO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsService.EcsServiceLoadBalancerOutputReference",
+		"@cdktf/provider-aws.ecsService.EcsServiceLoadBalancerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

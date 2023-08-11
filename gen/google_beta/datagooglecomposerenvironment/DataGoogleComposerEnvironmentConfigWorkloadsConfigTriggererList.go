@@ -104,7 +104,7 @@ func NewDataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList(terrafor
 	j := jsiiProxy_DataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList",
+		"@cdktf/provider-google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList",
+		"@cdktf/provider-google-beta.dataGoogleComposerEnvironment.DataGoogleComposerEnvironmentConfigWorkloadsConfigTriggererList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

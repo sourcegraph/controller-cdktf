@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMember",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMember",
 		reflect.TypeOf((*BinaryAuthorizationAttestorIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberCondition",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberCondition",
 		reflect.TypeOf((*BinaryAuthorizationAttestorIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberConditionOutputReference",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberConditionOutputReference",
 		reflect.TypeOf((*BinaryAuthorizationAttestorIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberConfig",
+		"@cdktf/provider-google.binaryAuthorizationAttestorIamMember.BinaryAuthorizationAttestorIamMemberConfig",
 		reflect.TypeOf((*BinaryAuthorizationAttestorIamMemberConfig)(nil)).Elem(),
 	)
 }

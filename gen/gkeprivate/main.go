@@ -1,4 +1,4 @@
-// gkeprivate
+// @cdktf/provider-gkeprivate
 package gkeprivate
 
 import (
@@ -9,7 +9,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"gkeprivate.Gkeprivate",
+		"@cdktf/provider-gkeprivate.Gkeprivate",
 		reflect.TypeOf((*Gkeprivate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addClusterFirewallRules", GoGetter: "AddClusterFirewallRules"},
@@ -177,7 +177,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"gkeprivate.GkeprivateConfig",
+		"@cdktf/provider-gkeprivate.GkeprivateConfig",
 		reflect.TypeOf((*GkeprivateConfig)(nil)).Elem(),
 	)
 }

@@ -179,7 +179,7 @@ func NewGoogleDnsResponsePolicyGkeClustersOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleDnsResponsePolicyGkeClustersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyGkeClustersOutputReference",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyGkeClustersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDnsResponsePolicyGkeClustersOutputReference_Override(g GoogleDnsRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyGkeClustersOutputReference",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicy.GoogleDnsResponsePolicyGkeClustersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

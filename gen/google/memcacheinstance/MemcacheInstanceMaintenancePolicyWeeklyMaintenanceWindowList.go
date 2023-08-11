@@ -116,7 +116,7 @@ func NewMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList(terraformRe
 	j := jsiiProxy_MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList_Override(m 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

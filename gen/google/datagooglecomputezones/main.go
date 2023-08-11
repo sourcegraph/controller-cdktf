@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeZones.DataGoogleComputeZones",
+		"@cdktf/provider-google.dataGoogleComputeZones.DataGoogleComputeZones",
 		reflect.TypeOf((*DataGoogleComputeZones)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeZones.DataGoogleComputeZonesConfig",
+		"@cdktf/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig",
 		reflect.TypeOf((*DataGoogleComputeZonesConfig)(nil)).Elem(),
 	)
 }

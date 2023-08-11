@@ -222,7 +222,7 @@ func NewConnectRoutingProfileQueueConfigsAssociatedOutputReference(terraformReso
 	j := jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedOutputReference",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewConnectRoutingProfileQueueConfigsAssociatedOutputReference_Override(c Co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedOutputReference",
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -179,7 +179,7 @@ func NewWafregionalRuleGroupActivatedRuleActionOutputReference(terraformResource
 	j := jsiiProxy_WafregionalRuleGroupActivatedRuleActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleActionOutputReference",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewWafregionalRuleGroupActivatedRuleActionOutputReference_Override(w Wafreg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleActionOutputReference",
+		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -250,7 +250,7 @@ func NewCloudbuildTriggerSourceToBuildOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewCloudbuildTriggerSourceToBuildOutputReference_Override(c CloudbuildTrigg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

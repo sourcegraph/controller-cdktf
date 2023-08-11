@@ -104,7 +104,7 @@ func NewDataAwsNetworkInterfaceAssociationList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsNetworkInterfaceAssociationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationList",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsNetworkInterfaceAssociationList_Override(d DataAwsNetworkInterfac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationList",
+		"@cdktf/provider-aws.dataAwsNetworkInterface.DataAwsNetworkInterfaceAssociationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

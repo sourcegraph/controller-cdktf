@@ -450,7 +450,7 @@ func NewDataCatalogTaxonomy(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataCatalogTaxonomy{}
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomy",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewDataCatalogTaxonomy_Override(d DataCatalogTaxonomy, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomy",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -629,7 +629,7 @@ func DataCatalogTaxonomy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomy",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func DataCatalogTaxonomy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomy",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func DataCatalogTaxonomy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomy",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func DataCatalogTaxonomy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogTaxonomy.DataCatalogTaxonomy",
+		"@cdktf/provider-google.dataCatalogTaxonomy.DataCatalogTaxonomy",
 		"tfResourceType",
 		&returns,
 	)

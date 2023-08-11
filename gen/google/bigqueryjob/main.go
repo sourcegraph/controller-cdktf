@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJob",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJob",
 		reflect.TypeOf((*BigqueryJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,19 +92,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobConfig",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobConfig",
 		reflect.TypeOf((*BigqueryJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobCopy",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopy",
 		reflect.TypeOf((*BigqueryJobCopy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobCopyDestinationEncryptionConfiguration",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyDestinationEncryptionConfiguration",
 		reflect.TypeOf((*BigqueryJobCopyDestinationEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobCopyDestinationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyDestinationEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*BigqueryJobCopyDestinationEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,11 +139,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobCopyDestinationTable",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyDestinationTable",
 		reflect.TypeOf((*BigqueryJobCopyDestinationTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobCopyDestinationTableOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyDestinationTableOutputReference",
 		reflect.TypeOf((*BigqueryJobCopyDestinationTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,7 +183,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobCopyOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopyOutputReference",
 		reflect.TypeOf((*BigqueryJobCopyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -232,11 +232,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobCopySourceTables",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTables",
 		reflect.TypeOf((*BigqueryJobCopySourceTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobCopySourceTablesList",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTablesList",
 		reflect.TypeOf((*BigqueryJobCopySourceTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -257,7 +257,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
 		reflect.TypeOf((*BigqueryJobCopySourceTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -297,11 +297,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobExtract",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtract",
 		reflect.TypeOf((*BigqueryJobExtract)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobExtractOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractOutputReference",
 		reflect.TypeOf((*BigqueryJobExtractOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -358,11 +358,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobExtractSourceModel",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceModel",
 		reflect.TypeOf((*BigqueryJobExtractSourceModel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobExtractSourceModelOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceModelOutputReference",
 		reflect.TypeOf((*BigqueryJobExtractSourceModelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -400,11 +400,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobExtractSourceTable",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceTable",
 		reflect.TypeOf((*BigqueryJobExtractSourceTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobExtractSourceTableOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceTableOutputReference",
 		reflect.TypeOf((*BigqueryJobExtractSourceTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -444,15 +444,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobLoad",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoad",
 		reflect.TypeOf((*BigqueryJobLoad)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobLoadDestinationEncryptionConfiguration",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadDestinationEncryptionConfiguration",
 		reflect.TypeOf((*BigqueryJobLoadDestinationEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobLoadDestinationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadDestinationEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*BigqueryJobLoadDestinationEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -487,11 +487,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobLoadDestinationTable",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadDestinationTable",
 		reflect.TypeOf((*BigqueryJobLoadDestinationTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobLoadDestinationTableOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadDestinationTableOutputReference",
 		reflect.TypeOf((*BigqueryJobLoadDestinationTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -531,7 +531,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobLoadOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadOutputReference",
 		reflect.TypeOf((*BigqueryJobLoadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowJaggedRows", GoGetter: "AllowJaggedRows"},
@@ -628,11 +628,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobLoadParquetOptions",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadParquetOptions",
 		reflect.TypeOf((*BigqueryJobLoadParquetOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobLoadParquetOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadParquetOptionsOutputReference",
 		reflect.TypeOf((*BigqueryJobLoadParquetOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -670,11 +670,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobLoadTimePartitioning",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadTimePartitioning",
 		reflect.TypeOf((*BigqueryJobLoadTimePartitioning)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobLoadTimePartitioningOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobLoadTimePartitioningOutputReference",
 		reflect.TypeOf((*BigqueryJobLoadTimePartitioningOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -714,15 +714,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobQuery",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQuery",
 		reflect.TypeOf((*BigqueryJobQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobQueryDefaultDataset",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDefaultDataset",
 		reflect.TypeOf((*BigqueryJobQueryDefaultDataset)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobQueryDefaultDatasetOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDefaultDatasetOutputReference",
 		reflect.TypeOf((*BigqueryJobQueryDefaultDatasetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -759,11 +759,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfiguration",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfiguration",
 		reflect.TypeOf((*BigqueryJobQueryDestinationEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*BigqueryJobQueryDestinationEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -798,11 +798,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobQueryDestinationTable",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationTable",
 		reflect.TypeOf((*BigqueryJobQueryDestinationTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobQueryDestinationTableOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryDestinationTableOutputReference",
 		reflect.TypeOf((*BigqueryJobQueryDestinationTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -842,7 +842,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobQueryOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryOutputReference",
 		reflect.TypeOf((*BigqueryJobQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowLargeResults", GoGetter: "AllowLargeResults"},
@@ -929,11 +929,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobQueryScriptOptions",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryScriptOptions",
 		reflect.TypeOf((*BigqueryJobQueryScriptOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobQueryScriptOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryScriptOptionsOutputReference",
 		reflect.TypeOf((*BigqueryJobQueryScriptOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -974,11 +974,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResources",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResources",
 		reflect.TypeOf((*BigqueryJobQueryUserDefinedFunctionResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesList",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesList",
 		reflect.TypeOf((*BigqueryJobQueryUserDefinedFunctionResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -999,7 +999,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobQueryUserDefinedFunctionResourcesOutputReference",
 		reflect.TypeOf((*BigqueryJobQueryUserDefinedFunctionResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1037,15 +1037,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobStatus",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatus",
 		reflect.TypeOf((*BigqueryJobStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobStatusErrorResult",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResult",
 		reflect.TypeOf((*BigqueryJobStatusErrorResult)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobStatusErrorResultList",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResultList",
 		reflect.TypeOf((*BigqueryJobStatusErrorResultList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1065,7 +1065,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobStatusErrorResultOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorResultOutputReference",
 		reflect.TypeOf((*BigqueryJobStatusErrorResultOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1100,11 +1100,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobStatusErrors",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrors",
 		reflect.TypeOf((*BigqueryJobStatusErrors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobStatusErrorsList",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorsList",
 		reflect.TypeOf((*BigqueryJobStatusErrorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1124,7 +1124,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobStatusErrorsOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusErrorsOutputReference",
 		reflect.TypeOf((*BigqueryJobStatusErrorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1159,7 +1159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobStatusList",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusList",
 		reflect.TypeOf((*BigqueryJobStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1179,7 +1179,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobStatusOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusOutputReference",
 		reflect.TypeOf((*BigqueryJobStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1214,11 +1214,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryJob.BigqueryJobTimeouts",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobTimeouts",
 		reflect.TypeOf((*BigqueryJobTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryJob.BigqueryJobTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobTimeoutsOutputReference",
 		reflect.TypeOf((*BigqueryJobTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

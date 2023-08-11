@@ -299,7 +299,7 @@ func NewDataplexAssetDiscoverySpecOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataplexAssetDiscoverySpecOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetDiscoverySpecOutputReference",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewDataplexAssetDiscoverySpecOutputReference_Override(d DataplexAssetDiscov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexAsset.DataplexAssetDiscoverySpecOutputReference",
+		"@cdktf/provider-google.dataplexAsset.DataplexAssetDiscoverySpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

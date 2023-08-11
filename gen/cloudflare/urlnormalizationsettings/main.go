@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
+		"@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
 		reflect.TypeOf((*UrlNormalizationSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig",
+		"@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettingsConfig",
 		reflect.TypeOf((*UrlNormalizationSettingsConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpnConnection.VpnConnection",
+		"@cdktf/provider-aws.vpnConnection.VpnConnection",
 		reflect.TypeOf((*VpnConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -231,15 +231,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpnConnection.VpnConnectionConfig",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionConfig",
 		reflect.TypeOf((*VpnConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpnConnection.VpnConnectionRoutes",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutes",
 		reflect.TypeOf((*VpnConnectionRoutes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpnConnection.VpnConnectionRoutesList",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesList",
 		reflect.TypeOf((*VpnConnectionRoutesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -259,7 +259,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.vpnConnection.VpnConnectionRoutesOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference",
 		reflect.TypeOf((*VpnConnectionRoutesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,15 +294,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpnConnection.VpnConnectionTunnel1LogOptions",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptions",
 		reflect.TypeOf((*VpnConnectionTunnel1LogOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions",
 		reflect.TypeOf((*VpnConnectionTunnel1LogOptionsCloudwatchLogOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference",
 		reflect.TypeOf((*VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -343,7 +343,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel1LogOptionsOutputReference",
 		reflect.TypeOf((*VpnConnectionTunnel1LogOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptions", GoGetter: "CloudwatchLogOptions"},
@@ -379,15 +379,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpnConnection.VpnConnectionTunnel2LogOptions",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptions",
 		reflect.TypeOf((*VpnConnectionTunnel2LogOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions",
 		reflect.TypeOf((*VpnConnectionTunnel2LogOptionsCloudwatchLogOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference",
 		reflect.TypeOf((*VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -428,7 +428,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionTunnel2LogOptionsOutputReference",
 		reflect.TypeOf((*VpnConnectionTunnel2LogOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptions", GoGetter: "CloudwatchLogOptions"},
@@ -464,11 +464,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpnConnection.VpnConnectionVgwTelemetry",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetry",
 		reflect.TypeOf((*VpnConnectionVgwTelemetry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpnConnection.VpnConnectionVgwTelemetryList",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList",
 		reflect.TypeOf((*VpnConnectionVgwTelemetryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -488,7 +488,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryOutputReference",
 		reflect.TypeOf((*VpnConnectionVgwTelemetryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptedRouteCount", GoGetter: "AcceptedRouteCount"},

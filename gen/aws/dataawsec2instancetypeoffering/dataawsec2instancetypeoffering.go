@@ -375,7 +375,7 @@ func NewDataAwsEc2InstanceTypeOffering(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsEc2InstanceTypeOffering{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -388,7 +388,7 @@ func NewDataAwsEc2InstanceTypeOffering_Override(d DataAwsEc2InstanceTypeOffering
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -499,7 +499,7 @@ func DataAwsEc2InstanceTypeOffering_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func DataAwsEc2InstanceTypeOffering_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsEc2InstanceTypeOffering_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DataAwsEc2InstanceTypeOffering_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
+		"@cdktf/provider-aws.dataAwsEc2InstanceTypeOffering.DataAwsEc2InstanceTypeOffering",
 		"tfResourceType",
 		&returns,
 	)

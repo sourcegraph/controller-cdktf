@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
+		"@cdktf/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachment",
 		reflect.TypeOf((*NetworkInterfaceSgAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig",
+		"@cdktf/provider-aws.networkInterfaceSgAttachment.NetworkInterfaceSgAttachmentConfig",
 		reflect.TypeOf((*NetworkInterfaceSgAttachmentConfig)(nil)).Elem(),
 	)
 }

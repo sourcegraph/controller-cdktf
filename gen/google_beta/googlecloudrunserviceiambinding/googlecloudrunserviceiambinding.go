@@ -448,7 +448,7 @@ func NewGoogleCloudRunServiceIamBinding(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleCloudRunServiceIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudRunServiceIamBinding_Override(g GoogleCloudRunServiceIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudRunServiceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudRunServiceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudRunServiceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudRunServiceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamBinding.GoogleCloudRunServiceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

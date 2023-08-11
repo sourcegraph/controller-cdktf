@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkAcl.NetworkAcl",
+		"@cdktf/provider-aws.networkAcl.NetworkAcl",
 		reflect.TypeOf((*NetworkAcl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkAcl.NetworkAclConfig",
+		"@cdktf/provider-aws.networkAcl.NetworkAclConfig",
 		reflect.TypeOf((*NetworkAclConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkAcl.NetworkAclEgress",
+		"@cdktf/provider-aws.networkAcl.NetworkAclEgress",
 		reflect.TypeOf((*NetworkAclEgress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkAcl.NetworkAclEgressList",
+		"@cdktf/provider-aws.networkAcl.NetworkAclEgressList",
 		reflect.TypeOf((*NetworkAclEgressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -105,7 +105,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.networkAcl.NetworkAclEgressOutputReference",
+		"@cdktf/provider-aws.networkAcl.NetworkAclEgressOutputReference",
 		reflect.TypeOf((*NetworkAclEgressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -164,11 +164,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkAcl.NetworkAclIngress",
+		"@cdktf/provider-aws.networkAcl.NetworkAclIngress",
 		reflect.TypeOf((*NetworkAclIngress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkAcl.NetworkAclIngressList",
+		"@cdktf/provider-aws.networkAcl.NetworkAclIngressList",
 		reflect.TypeOf((*NetworkAclIngressList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -189,7 +189,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.networkAcl.NetworkAclIngressOutputReference",
+		"@cdktf/provider-aws.networkAcl.NetworkAclIngressOutputReference",
 		reflect.TypeOf((*NetworkAclIngressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},

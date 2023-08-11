@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.listItem.ListItemA",
+		"@cdktf/provider-cloudflare.listItem.ListItemA",
 		reflect.TypeOf((*ListItemA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.listItem.ListItemAConfig",
+		"@cdktf/provider-cloudflare.listItem.ListItemAConfig",
 		reflect.TypeOf((*ListItemAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.listItem.ListItemRedirect",
+		"@cdktf/provider-cloudflare.listItem.ListItemRedirect",
 		reflect.TypeOf((*ListItemRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.listItem.ListItemRedirectOutputReference",
+		"@cdktf/provider-cloudflare.listItem.ListItemRedirectOutputReference",
 		reflect.TypeOf((*ListItemRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

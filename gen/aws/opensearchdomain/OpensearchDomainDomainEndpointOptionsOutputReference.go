@@ -276,7 +276,7 @@ func NewOpensearchDomainDomainEndpointOptionsOutputReference(terraformResource c
 	j := jsiiProxy_OpensearchDomainDomainEndpointOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainDomainEndpointOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewOpensearchDomainDomainEndpointOptionsOutputReference_Override(o Opensear
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainDomainEndpointOptionsOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainDomainEndpointOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

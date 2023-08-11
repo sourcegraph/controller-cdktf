@@ -104,7 +104,7 @@ func NewGoogleDataplexDatascanExecutionStatusList(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleDataplexDatascanExecutionStatusList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionStatusList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDataplexDatascanExecutionStatusList_Override(g GoogleDataplexDatas
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionStatusList",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.tunnelConfig.TunnelConfigA",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
 		reflect.TypeOf((*TunnelConfigA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -62,19 +62,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.tunnelConfig.TunnelConfigAConfig",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig",
 		reflect.TypeOf((*TunnelConfigAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.tunnelConfig.TunnelConfigConfig",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfig",
 		reflect.TypeOf((*TunnelConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.tunnelConfig.TunnelConfigConfigIngressRule",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRule",
 		reflect.TypeOf((*TunnelConfigConfigIngressRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList",
 		reflect.TypeOf((*TunnelConfigConfigIngressRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -95,7 +95,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigIngressRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,15 +135,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOriginRequest",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequest",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRules",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRules",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequestIpRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequestIpRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -164,7 +164,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequestIpRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
@@ -205,7 +205,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bastionMode", GoGetter: "BastionMode"},
@@ -286,7 +286,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -329,11 +329,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.tunnelConfig.TunnelConfigConfigWarpRouting",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRouting",
 		reflect.TypeOf((*TunnelConfigConfigWarpRouting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
+		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigWarpRoutingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

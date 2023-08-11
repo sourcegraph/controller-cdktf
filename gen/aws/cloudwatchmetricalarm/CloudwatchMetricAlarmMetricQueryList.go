@@ -116,7 +116,7 @@ func NewCloudwatchMetricAlarmMetricQueryList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_CloudwatchMetricAlarmMetricQueryList{}
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryList",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudwatchMetricAlarmMetricQueryList_Override(c CloudwatchMetricAlarmMet
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryList",
+		"@cdktf/provider-aws.cloudwatchMetricAlarm.CloudwatchMetricAlarmMetricQueryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

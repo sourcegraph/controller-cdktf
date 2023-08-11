@@ -469,7 +469,7 @@ func NewDataGoogleStorageObjectSignedUrl(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataGoogleStorageObjectSignedUrl{}
 
 	_jsii_.Create(
-		"google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
+		"@cdktf/provider-google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -482,7 +482,7 @@ func NewDataGoogleStorageObjectSignedUrl_Override(d DataGoogleStorageObjectSigne
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
+		"@cdktf/provider-google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -659,7 +659,7 @@ func DataGoogleStorageObjectSignedUrl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
+		"@cdktf/provider-google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataGoogleStorageObjectSignedUrl_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
+		"@cdktf/provider-google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -697,7 +697,7 @@ func DataGoogleStorageObjectSignedUrl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
+		"@cdktf/provider-google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func DataGoogleStorageObjectSignedUrl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
+		"@cdktf/provider-google.dataGoogleStorageObjectSignedUrl.DataGoogleStorageObjectSignedUrl",
 		"tfResourceType",
 		&returns,
 	)

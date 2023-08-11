@@ -346,7 +346,7 @@ func NewDataAwsMskConfiguration(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsMskConfiguration{}
 
 	_jsii_.Create(
-		"aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
+		"@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewDataAwsMskConfiguration_Override(d DataAwsMskConfiguration, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
+		"@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -459,7 +459,7 @@ func DataAwsMskConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
+		"@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsMskConfiguration_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
+		"@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func DataAwsMskConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
+		"@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsMskConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
+		"@cdktf/provider-aws.dataAwsMskConfiguration.DataAwsMskConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -156,7 +156,7 @@ func NewDataLossPreventionJobTriggerTriggersManualOutputReference(terraformResou
 	j := jsiiProxy_DataLossPreventionJobTriggerTriggersManualOutputReference{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersManualOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersManualOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewDataLossPreventionJobTriggerTriggersManualOutputReference_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersManualOutputReference",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerTriggersManualOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

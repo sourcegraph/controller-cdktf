@@ -1,4 +1,4 @@
-// budget
+// @cdktf/provider-budget
 package budget
 
 import (
@@ -9,7 +9,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"budget.Budget",
+		"@cdktf/provider-budget.Budget",
 		reflect.TypeOf((*Budget)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,7 +58,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"budget.BudgetConfig",
+		"@cdktf/provider-budget.BudgetConfig",
 		reflect.TypeOf((*BudgetConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		reflect.TypeOf((*ContainerAnalysisOccurrence)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,11 +76,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestation",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestation",
 		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationOutputReference",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationOutputReference",
 		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -117,11 +117,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignatures",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignatures",
 		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestationSignatures)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignaturesList",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignaturesList",
 		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestationSignaturesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -142,7 +142,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignaturesOutputReference",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestationSignaturesOutputReference",
 		reflect.TypeOf((*ContainerAnalysisOccurrenceAttestationSignaturesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -179,15 +179,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig",
 		reflect.TypeOf((*ContainerAnalysisOccurrenceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts",
 		reflect.TypeOf((*ContainerAnalysisOccurrenceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeoutsOutputReference",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeoutsOutputReference",
 		reflect.TypeOf((*ContainerAnalysisOccurrenceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

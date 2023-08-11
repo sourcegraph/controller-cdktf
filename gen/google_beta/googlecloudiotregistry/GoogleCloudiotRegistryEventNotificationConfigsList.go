@@ -116,7 +116,7 @@ func NewGoogleCloudiotRegistryEventNotificationConfigsList(terraformResource cdk
 	j := jsiiProxy_GoogleCloudiotRegistryEventNotificationConfigsList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsList",
+		"@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleCloudiotRegistryEventNotificationConfigsList_Override(g GoogleClou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsList",
+		"@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

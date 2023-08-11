@@ -204,7 +204,7 @@ func NewBigqueryReservationAssignmentTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_BigqueryReservationAssignmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewBigqueryReservationAssignmentTimeoutsOutputReference_Override(b Bigquery
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

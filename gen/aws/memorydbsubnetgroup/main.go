@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.memorydbSubnetGroup.MemorydbSubnetGroup",
+		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroup",
 		reflect.TypeOf((*MemorydbSubnetGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,7 +74,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig",
+		"@cdktf/provider-aws.memorydbSubnetGroup.MemorydbSubnetGroupConfig",
 		reflect.TypeOf((*MemorydbSubnetGroupConfig)(nil)).Elem(),
 	)
 }

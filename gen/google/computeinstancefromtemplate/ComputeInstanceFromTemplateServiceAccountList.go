@@ -116,7 +116,7 @@ func NewComputeInstanceFromTemplateServiceAccountList(terraformResource cdktf.II
 	j := jsiiProxy_ComputeInstanceFromTemplateServiceAccountList{}
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateServiceAccountList",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateServiceAccountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceFromTemplateServiceAccountList_Override(c ComputeInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateServiceAccountList",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateServiceAccountList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

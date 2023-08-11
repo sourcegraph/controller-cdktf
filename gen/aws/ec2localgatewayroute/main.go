@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
+		"@cdktf/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRoute",
 		reflect.TypeOf((*Ec2LocalGatewayRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2LocalGatewayRoute.Ec2LocalGatewayRouteConfig",
+		"@cdktf/provider-aws.ec2LocalGatewayRoute.Ec2LocalGatewayRouteConfig",
 		reflect.TypeOf((*Ec2LocalGatewayRouteConfig)(nil)).Elem(),
 	)
 }

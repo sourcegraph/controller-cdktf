@@ -228,7 +228,7 @@ func NewComputeTargetTcpProxyTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ComputeTargetTcpProxyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeTargetTcpProxyTimeoutsOutputReference_Override(c ComputeTargetTcp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeTargetTcpProxy.ComputeTargetTcpProxyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

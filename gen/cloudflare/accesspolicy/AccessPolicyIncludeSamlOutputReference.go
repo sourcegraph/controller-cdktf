@@ -228,7 +228,7 @@ func NewAccessPolicyIncludeSamlOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_AccessPolicyIncludeSamlOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeSamlOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSamlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccessPolicyIncludeSamlOutputReference_Override(a AccessPolicyIncludeSam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyIncludeSamlOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyIncludeSamlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

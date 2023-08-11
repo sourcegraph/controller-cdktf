@@ -116,7 +116,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleList(terraformResource cdktf.IInt
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleList{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleList",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleList_Override(d DlmLifecyclePolic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleList",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyList(terrafo
 	j := jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList{}
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList",
+		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

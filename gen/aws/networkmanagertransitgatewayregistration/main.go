@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistration",
 		reflect.TypeOf((*NetworkmanagerTransitGatewayRegistration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationConfig",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationConfig",
 		reflect.TypeOf((*NetworkmanagerTransitGatewayRegistrationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationTimeouts",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationTimeouts",
 		reflect.TypeOf((*NetworkmanagerTransitGatewayRegistrationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

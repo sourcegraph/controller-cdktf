@@ -202,7 +202,7 @@ func NewGoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference(terrafor
 	j := jsiiProxy_GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

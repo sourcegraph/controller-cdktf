@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaNetworkZone.DataOktaNetworkZone",
+		"@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZone",
 		reflect.TypeOf((*DataOktaNetworkZone)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig",
+		"@cdktf/provider-okta.dataOktaNetworkZone.DataOktaNetworkZoneConfig",
 		reflect.TypeOf((*DataOktaNetworkZoneConfig)(nil)).Elem(),
 	)
 }

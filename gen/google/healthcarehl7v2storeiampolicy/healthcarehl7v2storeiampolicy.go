@@ -353,7 +353,7 @@ func NewHealthcareHl7V2StoreIamPolicy(scope constructs.Construct, id *string, co
 	j := jsiiProxy_HealthcareHl7V2StoreIamPolicy{}
 
 	_jsii_.Create(
-		"google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewHealthcareHl7V2StoreIamPolicy_Override(h HealthcareHl7V2StoreIamPolicy, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -499,7 +499,7 @@ func HealthcareHl7V2StoreIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func HealthcareHl7V2StoreIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func HealthcareHl7V2StoreIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func HealthcareHl7V2StoreIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamPolicy.HealthcareHl7V2StoreIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

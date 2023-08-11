@@ -202,7 +202,7 @@ func NewDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference(terr
 	j := jsiiProxy_DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

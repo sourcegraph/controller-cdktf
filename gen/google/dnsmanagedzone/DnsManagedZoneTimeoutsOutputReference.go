@@ -228,7 +228,7 @@ func NewDnsManagedZoneTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DnsManagedZoneTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDnsManagedZoneTimeoutsOutputReference_Override(d DnsManagedZoneTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

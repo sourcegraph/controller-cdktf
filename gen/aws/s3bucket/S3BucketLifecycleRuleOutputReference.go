@@ -371,7 +371,7 @@ func NewS3BucketLifecycleRuleOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_S3BucketLifecycleRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewS3BucketLifecycleRuleOutputReference_Override(s S3BucketLifecycleRuleOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketLifecycleRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

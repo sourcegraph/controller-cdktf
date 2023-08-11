@@ -116,7 +116,7 @@ func NewDataAwsKmsSecretsSecretList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_DataAwsKmsSecretsSecretList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecretList",
+		"@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsKmsSecretsSecretList_Override(d DataAwsKmsSecretsSecretList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecretList",
+		"@cdktf/provider-aws.dataAwsKmsSecrets.DataAwsKmsSecretsSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

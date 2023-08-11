@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
+		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachment",
 		reflect.TypeOf((*IotThingPrincipalAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotThingPrincipalAttachment.IotThingPrincipalAttachmentConfig",
+		"@cdktf/provider-aws.iotThingPrincipalAttachment.IotThingPrincipalAttachmentConfig",
 		reflect.TypeOf((*IotThingPrincipalAttachmentConfig)(nil)).Elem(),
 	)
 }

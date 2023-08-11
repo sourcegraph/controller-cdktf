@@ -211,7 +211,7 @@ func NewDataGoogleSqlCaCertsCertsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataGoogleSqlCaCertsCertsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataGoogleSqlCaCertsCertsOutputReference_Override(d DataGoogleSqlCaCerts
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

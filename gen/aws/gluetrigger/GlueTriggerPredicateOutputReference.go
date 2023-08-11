@@ -203,7 +203,7 @@ func NewGlueTriggerPredicateOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_GlueTriggerPredicateOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerPredicateOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGlueTriggerPredicateOutputReference_Override(g GlueTriggerPredicateOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueTrigger.GlueTriggerPredicateOutputReference",
+		"@cdktf/provider-aws.glueTrigger.GlueTriggerPredicateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

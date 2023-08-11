@@ -203,7 +203,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputR
 	j := jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

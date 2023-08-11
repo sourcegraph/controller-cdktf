@@ -448,7 +448,7 @@ func NewPinpointEmailChannel(scope constructs.Construct, id *string, config *Pin
 	j := jsiiProxy_PinpointEmailChannel{}
 
 	_jsii_.Create(
-		"aws.pinpointEmailChannel.PinpointEmailChannel",
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewPinpointEmailChannel_Override(p PinpointEmailChannel, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.pinpointEmailChannel.PinpointEmailChannel",
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -638,7 +638,7 @@ func PinpointEmailChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointEmailChannel.PinpointEmailChannel",
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func PinpointEmailChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointEmailChannel.PinpointEmailChannel",
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func PinpointEmailChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.pinpointEmailChannel.PinpointEmailChannel",
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func PinpointEmailChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.pinpointEmailChannel.PinpointEmailChannel",
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
 		"tfResourceType",
 		&returns,
 	)

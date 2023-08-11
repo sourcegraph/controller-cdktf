@@ -491,7 +491,7 @@ func NewCloudbuildTriggerBuildStepOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_CloudbuildTriggerBuildStepOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -503,7 +503,7 @@ func NewCloudbuildTriggerBuildStepOutputReference_Override(c CloudbuildTriggerBu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

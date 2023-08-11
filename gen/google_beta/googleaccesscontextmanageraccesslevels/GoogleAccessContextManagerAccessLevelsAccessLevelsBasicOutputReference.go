@@ -203,7 +203,7 @@ func NewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicOutputReference(t
 	j := jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessLevels.GoogleAccessContextManagerAccessLevelsAccessLevelsBasicOutputReference",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevels.GoogleAccessContextManagerAccessLevelsAccessLevelsBasicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAccessContextManagerAccessLevels.GoogleAccessContextManagerAccessLevelsAccessLevelsBasicOutputReference",
+		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevels.GoogleAccessContextManagerAccessLevelsAccessLevelsBasicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

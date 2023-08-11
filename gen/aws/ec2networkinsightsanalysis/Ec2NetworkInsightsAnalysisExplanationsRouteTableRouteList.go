@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList(terraformResou
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList_Override(e Ec2
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

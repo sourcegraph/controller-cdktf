@@ -116,7 +116,7 @@ func NewGoogleGkeonpremVmwareClusterAuthorizationAdminUsersList(terraformResourc
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleGkeonpremVmwareClusterAuthorizationAdminUsersList_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterAuthorizationAdminUsersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

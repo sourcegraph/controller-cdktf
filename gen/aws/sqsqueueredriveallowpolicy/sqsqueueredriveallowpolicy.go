@@ -342,7 +342,7 @@ func NewSqsQueueRedriveAllowPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_SqsQueueRedriveAllowPolicy{}
 
 	_jsii_.Create(
-		"aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
+		"@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewSqsQueueRedriveAllowPolicy_Override(s SqsQueueRedriveAllowPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
+		"@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -488,7 +488,7 @@ func SqsQueueRedriveAllowPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
+		"@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func SqsQueueRedriveAllowPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
+		"@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func SqsQueueRedriveAllowPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
+		"@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func SqsQueueRedriveAllowPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
+		"@cdktf/provider-aws.sqsQueueRedriveAllowPolicy.SqsQueueRedriveAllowPolicy",
 		"tfResourceType",
 		&returns,
 	)

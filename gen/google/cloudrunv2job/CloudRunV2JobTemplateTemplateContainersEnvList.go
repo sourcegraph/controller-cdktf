@@ -116,7 +116,7 @@ func NewCloudRunV2JobTemplateTemplateContainersEnvList(terraformResource cdktf.I
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateContainersEnvList{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersEnvList",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudRunV2JobTemplateTemplateContainersEnvList_Override(c CloudRunV2JobT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersEnvList",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersEnvList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

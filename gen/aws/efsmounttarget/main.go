@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.efsMountTarget.EfsMountTarget",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
 		reflect.TypeOf((*EfsMountTarget)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsMountTarget.EfsMountTargetConfig",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTargetConfig",
 		reflect.TypeOf((*EfsMountTargetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsMountTarget.EfsMountTargetTimeouts",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTargetTimeouts",
 		reflect.TypeOf((*EfsMountTargetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.efsMountTarget.EfsMountTargetTimeoutsOutputReference",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTargetTimeoutsOutputReference",
 		reflect.TypeOf((*EfsMountTargetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

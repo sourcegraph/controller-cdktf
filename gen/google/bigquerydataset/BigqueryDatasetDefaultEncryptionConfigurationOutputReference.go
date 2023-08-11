@@ -179,7 +179,7 @@ func NewBigqueryDatasetDefaultEncryptionConfigurationOutputReference(terraformRe
 	j := jsiiProxy_BigqueryDatasetDefaultEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewBigqueryDatasetDefaultEncryptionConfigurationOutputReference_Override(b 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

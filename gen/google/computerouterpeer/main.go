@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRouterPeer.ComputeRouterPeer",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeer",
 		reflect.TypeOf((*ComputeRouterPeer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -111,11 +111,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges",
 		reflect.TypeOf((*ComputeRouterPeerAdvertisedIpRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList",
 		reflect.TypeOf((*ComputeRouterPeerAdvertisedIpRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -136,7 +136,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference",
 		reflect.TypeOf((*ComputeRouterPeerAdvertisedIpRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -173,11 +173,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRouterPeer.ComputeRouterPeerBfd",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerBfd",
 		reflect.TypeOf((*ComputeRouterPeerBfd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRouterPeer.ComputeRouterPeerBfdOutputReference",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference",
 		reflect.TypeOf((*ComputeRouterPeerBfdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -220,15 +220,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRouterPeer.ComputeRouterPeerConfig",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerConfig",
 		reflect.TypeOf((*ComputeRouterPeerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRouterPeer.ComputeRouterPeerTimeouts",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts",
 		reflect.TypeOf((*ComputeRouterPeerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRouterPeerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

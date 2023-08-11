@@ -179,7 +179,7 @@ func NewLambdaCodeSigningConfigAllowedPublishersOutputReference(terraformResourc
 	j := jsiiProxy_LambdaCodeSigningConfigAllowedPublishersOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishersOutputReference",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLambdaCodeSigningConfigAllowedPublishersOutputReference_Override(l Lambd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishersOutputReference",
+		"@cdktf/provider-aws.lambdaCodeSigningConfig.LambdaCodeSigningConfigAllowedPublishersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

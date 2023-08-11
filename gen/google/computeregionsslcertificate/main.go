@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificate",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate",
 		reflect.TypeOf((*ComputeRegionSslCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig",
 		reflect.TypeOf((*ComputeRegionSslCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts",
 		reflect.TypeOf((*ComputeRegionSslCertificateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRegionSslCertificateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

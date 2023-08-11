@@ -228,7 +228,7 @@ func NewJobSpecSelectorMatchExpressionsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_JobSpecSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewJobSpecSelectorMatchExpressionsOutputReference_Override(j JobSpecSelecto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucket",
 		reflect.TypeOf((*GoogleProjectUsageExportBucket)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketConfig",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketConfig",
 		reflect.TypeOf((*GoogleProjectUsageExportBucketConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketTimeouts",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketTimeouts",
 		reflect.TypeOf((*GoogleProjectUsageExportBucketTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleProjectUsageExportBucket.GoogleProjectUsageExportBucketTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleProjectUsageExportBucketTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

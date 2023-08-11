@@ -523,7 +523,7 @@ func NewIamAccountPasswordPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_IamAccountPasswordPolicy{}
 
 	_jsii_.Create(
-		"aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
+		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -536,7 +536,7 @@ func NewIamAccountPasswordPolicy_Override(i IamAccountPasswordPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
+		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -746,7 +746,7 @@ func IamAccountPasswordPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
+		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func IamAccountPasswordPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
+		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func IamAccountPasswordPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
+		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func IamAccountPasswordPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
+		"@cdktf/provider-aws.iamAccountPasswordPolicy.IamAccountPasswordPolicy",
 		"tfResourceType",
 		&returns,
 	)

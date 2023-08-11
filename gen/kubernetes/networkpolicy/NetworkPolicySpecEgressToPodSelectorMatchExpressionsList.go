@@ -116,7 +116,7 @@ func NewNetworkPolicySpecEgressToPodSelectorMatchExpressionsList(terraformResour
 	j := jsiiProxy_NetworkPolicySpecEgressToPodSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkPolicySpecEgressToPodSelectorMatchExpressionsList_Override(n Netw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.networkPolicy.NetworkPolicySpecEgressToPodSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

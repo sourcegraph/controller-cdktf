@@ -104,7 +104,7 @@ func NewDataGoogleCloudbuildTriggerBuildSourceRepoSourceList(terraformResource c
 	j := jsiiProxy_DataGoogleCloudbuildTriggerBuildSourceRepoSourceList{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildSourceRepoSourceList",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildSourceRepoSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudbuildTriggerBuildSourceRepoSourceList_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildSourceRepoSourceList",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildSourceRepoSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

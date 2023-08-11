@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannel",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannel",
 		reflect.TypeOf((*GoogleEventarcChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationToken", GoGetter: "ActivationToken"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannelConfig",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannelConfig",
 		reflect.TypeOf((*GoogleEventarcChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannelTimeouts",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannelTimeouts",
 		reflect.TypeOf((*GoogleEventarcChannelTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleEventarcChannel.GoogleEventarcChannelTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleEventarcChannel.GoogleEventarcChannelTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleEventarcChannelTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

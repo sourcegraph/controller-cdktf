@@ -348,7 +348,7 @@ func NewTeamsAccountBlockPageOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_TeamsAccountBlockPageOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewTeamsAccountBlockPageOutputReference_Override(t TeamsAccountBlockPageOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

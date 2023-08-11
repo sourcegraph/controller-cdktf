@@ -225,7 +225,7 @@ func NewComputeInstanceSchedulingNodeAffinitiesOutputReference(terraformResource
 	j := jsiiProxy_ComputeInstanceSchedulingNodeAffinitiesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewComputeInstanceSchedulingNodeAffinitiesOutputReference_Override(c Comput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesOutputReference",
+		"@cdktf/provider-google.computeInstance.ComputeInstanceSchedulingNodeAffinitiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleCloudIdentityGroupsGroupsGroupKeyList(terraformResource cdktf.
 	j := jsiiProxy_DataGoogleCloudIdentityGroupsGroupsGroupKeyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyList",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudIdentityGroupsGroupsGroupKeyList_Override(d DataGoogleClo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyList",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

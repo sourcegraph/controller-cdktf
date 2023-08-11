@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodePoolAutoscalingList(terraformResource cdkt
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodePoolAutoscalingList_Override(d DataGoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

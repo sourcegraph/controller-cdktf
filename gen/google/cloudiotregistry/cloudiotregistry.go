@@ -535,7 +535,7 @@ func NewCloudiotRegistry(scope constructs.Construct, id *string, config *Cloudio
 	j := jsiiProxy_CloudiotRegistry{}
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistry",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistry",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -548,7 +548,7 @@ func NewCloudiotRegistry_Override(c CloudiotRegistry, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistry",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistry",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -736,7 +736,7 @@ func CloudiotRegistry_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudiotRegistry.CloudiotRegistry",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistry",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -755,7 +755,7 @@ func CloudiotRegistry_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudiotRegistry.CloudiotRegistry",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistry",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -774,7 +774,7 @@ func CloudiotRegistry_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudiotRegistry.CloudiotRegistry",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistry",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -787,7 +787,7 @@ func CloudiotRegistry_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudiotRegistry.CloudiotRegistry",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistry",
 		"tfResourceType",
 		&returns,
 	)

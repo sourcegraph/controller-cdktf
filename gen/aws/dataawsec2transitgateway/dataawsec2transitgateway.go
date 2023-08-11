@@ -483,7 +483,7 @@ func NewDataAwsEc2TransitGateway(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsEc2TransitGateway{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
+		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewDataAwsEc2TransitGateway_Override(d DataAwsEc2TransitGateway, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
+		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -596,7 +596,7 @@ func DataAwsEc2TransitGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
+		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataAwsEc2TransitGateway_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
+		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func DataAwsEc2TransitGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
+		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func DataAwsEc2TransitGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
+		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGateway",
 		"tfResourceType",
 		&returns,
 	)

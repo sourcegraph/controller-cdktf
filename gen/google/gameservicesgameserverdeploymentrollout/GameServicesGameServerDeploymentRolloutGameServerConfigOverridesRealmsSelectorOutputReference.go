@@ -180,7 +180,7 @@ func NewGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSe
 	j := jsiiProxy_GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

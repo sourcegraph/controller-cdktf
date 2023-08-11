@@ -203,7 +203,7 @@ func NewMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference(terraf
 	j := jsiiProxy_MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewMonitoringAlertPolicyConditionsConditionMatchedLogOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionMatchedLogOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

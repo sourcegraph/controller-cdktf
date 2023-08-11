@@ -664,7 +664,7 @@ func NewBigqueryDataTransferConfig(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_BigqueryDataTransferConfig{}
 
 	_jsii_.Create(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -677,7 +677,7 @@ func NewBigqueryDataTransferConfig_Override(b BigqueryDataTransferConfig, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -909,7 +909,7 @@ func BigqueryDataTransferConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -928,7 +928,7 @@ func BigqueryDataTransferConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -947,7 +947,7 @@ func BigqueryDataTransferConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -960,7 +960,7 @@ func BigqueryDataTransferConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfig",
 		"tfResourceType",
 		&returns,
 	)

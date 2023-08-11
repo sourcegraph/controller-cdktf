@@ -248,7 +248,7 @@ func NewWafSizeConstraintSetSizeConstraintsOutputReference(terraformResource cdk
 	j := jsiiProxy_WafSizeConstraintSetSizeConstraintsOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsOutputReference",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -260,7 +260,7 @@ func NewWafSizeConstraintSetSizeConstraintsOutputReference_Override(w WafSizeCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsOutputReference",
+		"@cdktf/provider-aws.wafSizeConstraintSet.WafSizeConstraintSetSizeConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

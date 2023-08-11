@@ -228,7 +228,7 @@ func NewInspector2OrganizationConfigurationTimeoutsOutputReference(terraformReso
 	j := jsiiProxy_Inspector2OrganizationConfigurationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewInspector2OrganizationConfigurationTimeoutsOutputReference_Override(i In
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.inspector2OrganizationConfiguration.Inspector2OrganizationConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

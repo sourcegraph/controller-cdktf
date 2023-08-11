@@ -228,7 +228,7 @@ func NewComputeRegionBackendServiceFailoverPolicyOutputReference(terraformResour
 	j := jsiiProxy_ComputeRegionBackendServiceFailoverPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceFailoverPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceFailoverPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeRegionBackendServiceFailoverPolicyOutputReference_Override(c Comp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceFailoverPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceFailoverPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

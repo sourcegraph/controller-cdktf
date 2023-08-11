@@ -474,7 +474,7 @@ func NewMediaConvertQueue(scope constructs.Construct, id *string, config *MediaC
 	j := jsiiProxy_MediaConvertQueue{}
 
 	_jsii_.Create(
-		"aws.mediaConvertQueue.MediaConvertQueue",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewMediaConvertQueue_Override(m MediaConvertQueue, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mediaConvertQueue.MediaConvertQueue",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -664,7 +664,7 @@ func MediaConvertQueue_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaConvertQueue.MediaConvertQueue",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func MediaConvertQueue_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaConvertQueue.MediaConvertQueue",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func MediaConvertQueue_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mediaConvertQueue.MediaConvertQueue",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func MediaConvertQueue_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mediaConvertQueue.MediaConvertQueue",
+		"@cdktf/provider-aws.mediaConvertQueue.MediaConvertQueue",
 		"tfResourceType",
 		&returns,
 	)

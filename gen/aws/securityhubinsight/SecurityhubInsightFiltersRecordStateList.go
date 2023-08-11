@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersRecordStateList(terraformResource cdktf.IInterp
 	j := jsiiProxy_SecurityhubInsightFiltersRecordStateList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersRecordStateList_Override(s SecurityhubInsightFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRecordStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

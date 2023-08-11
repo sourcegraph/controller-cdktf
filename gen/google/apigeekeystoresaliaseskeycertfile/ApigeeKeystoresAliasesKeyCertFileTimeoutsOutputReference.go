@@ -252,7 +252,7 @@ func NewApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference(terraformResour
 	j := jsiiProxy_ApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference_Override(a Apig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -204,7 +204,7 @@ func NewLoadBalancerLocationStrategyOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_LoadBalancerLocationStrategyOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLoadBalancerLocationStrategyOutputReference_Override(l LoadBalancerLocat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerLocationStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

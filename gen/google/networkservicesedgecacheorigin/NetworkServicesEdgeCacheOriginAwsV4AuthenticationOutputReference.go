@@ -225,7 +225,7 @@ func NewNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference(terrafo
 	j := jsiiProxy_NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

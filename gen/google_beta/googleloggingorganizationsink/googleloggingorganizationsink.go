@@ -520,7 +520,7 @@ func NewGoogleLoggingOrganizationSink(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleLoggingOrganizationSink{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewGoogleLoggingOrganizationSink_Override(g GoogleLoggingOrganizationSink, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -721,7 +721,7 @@ func GoogleLoggingOrganizationSink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func GoogleLoggingOrganizationSink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func GoogleLoggingOrganizationSink_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func GoogleLoggingOrganizationSink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
+		"@cdktf/provider-google-beta.googleLoggingOrganizationSink.GoogleLoggingOrganizationSink",
 		"tfResourceType",
 		&returns,
 	)

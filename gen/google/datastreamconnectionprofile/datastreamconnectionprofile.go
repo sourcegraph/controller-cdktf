@@ -616,7 +616,7 @@ func NewDatastreamConnectionProfile(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DatastreamConnectionProfile{}
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -629,7 +629,7 @@ func NewDatastreamConnectionProfile_Override(d DatastreamConnectionProfile, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -795,7 +795,7 @@ func DatastreamConnectionProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -814,7 +814,7 @@ func DatastreamConnectionProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -833,7 +833,7 @@ func DatastreamConnectionProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -846,7 +846,7 @@ func DatastreamConnectionProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.datastreamConnectionProfile.DatastreamConnectionProfile",
+		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile",
 		"tfResourceType",
 		&returns,
 	)

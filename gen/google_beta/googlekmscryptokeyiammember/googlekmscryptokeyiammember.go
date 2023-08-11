@@ -400,7 +400,7 @@ func NewGoogleKmsCryptoKeyIamMember(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleKmsCryptoKeyIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleKmsCryptoKeyIamMember_Override(g GoogleKmsCryptoKeyIamMember, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleKmsCryptoKeyIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleKmsCryptoKeyIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleKmsCryptoKeyIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleKmsCryptoKeyIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
+		"@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember",
 		"tfResourceType",
 		&returns,
 	)

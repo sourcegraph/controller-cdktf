@@ -426,7 +426,7 @@ func NewConfigConfigurationAggregator(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ConfigConfigurationAggregator{}
 
 	_jsii_.Create(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregator",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewConfigConfigurationAggregator_Override(c ConfigConfigurationAggregator, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregator",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -583,7 +583,7 @@ func ConfigConfigurationAggregator_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregator",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func ConfigConfigurationAggregator_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregator",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func ConfigConfigurationAggregator_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregator",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func ConfigConfigurationAggregator_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configConfigurationAggregator.ConfigConfigurationAggregator",
+		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregator",
 		"tfResourceType",
 		&returns,
 	)

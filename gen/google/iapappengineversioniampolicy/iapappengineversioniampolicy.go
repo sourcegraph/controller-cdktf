@@ -423,7 +423,7 @@ func NewIapAppEngineVersionIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_IapAppEngineVersionIamPolicy{}
 
 	_jsii_.Create(
-		"google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewIapAppEngineVersionIamPolicy_Override(i IapAppEngineVersionIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -602,7 +602,7 @@ func IapAppEngineVersionIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func IapAppEngineVersionIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func IapAppEngineVersionIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func IapAppEngineVersionIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
+		"@cdktf/provider-google.iapAppEngineVersionIamPolicy.IapAppEngineVersionIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

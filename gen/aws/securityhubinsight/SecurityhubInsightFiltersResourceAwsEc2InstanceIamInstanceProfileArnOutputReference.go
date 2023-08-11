@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutp
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

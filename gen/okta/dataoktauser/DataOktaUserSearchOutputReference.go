@@ -252,7 +252,7 @@ func NewDataOktaUserSearchOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataOktaUserSearchOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaUser.DataOktaUserSearchOutputReference",
+		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDataOktaUserSearchOutputReference_Override(d DataOktaUserSearchOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaUser.DataOktaUserSearchOutputReference",
+		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

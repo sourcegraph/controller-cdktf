@@ -569,7 +569,7 @@ func NewConfigOrganizationManagedRule(scope constructs.Construct, id *string, co
 	j := jsiiProxy_ConfigOrganizationManagedRule{}
 
 	_jsii_.Create(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -582,7 +582,7 @@ func NewConfigOrganizationManagedRule_Override(c ConfigOrganizationManagedRule, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -803,7 +803,7 @@ func ConfigOrganizationManagedRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -822,7 +822,7 @@ func ConfigOrganizationManagedRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -841,7 +841,7 @@ func ConfigOrganizationManagedRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -854,7 +854,7 @@ func ConfigOrganizationManagedRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
 		"tfResourceType",
 		&returns,
 	)

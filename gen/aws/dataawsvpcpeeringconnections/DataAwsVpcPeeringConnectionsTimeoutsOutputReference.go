@@ -180,7 +180,7 @@ func NewDataAwsVpcPeeringConnectionsTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsVpcPeeringConnectionsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsVpcPeeringConnectionsTimeoutsOutputReference_Override(d DataAwsVp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

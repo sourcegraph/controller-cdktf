@@ -104,7 +104,7 @@ func NewComputeInstanceGroupManagerStatusStatefulList(terraformResource cdktf.II
 	j := jsiiProxy_ComputeInstanceGroupManagerStatusStatefulList{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewComputeInstanceGroupManagerStatusStatefulList_Override(c ComputeInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

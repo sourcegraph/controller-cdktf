@@ -202,7 +202,7 @@ func NewDataAwsSecurityGroupsFilterOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsSecurityGroupsFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsSecurityGroupsFilterOutputReference_Override(d DataAwsSecurityGro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsSecurityGroups.DataAwsSecurityGroupsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

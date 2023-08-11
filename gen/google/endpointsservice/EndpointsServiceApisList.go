@@ -104,7 +104,7 @@ func NewEndpointsServiceApisList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_EndpointsServiceApisList{}
 
 	_jsii_.Create(
-		"google.endpointsService.EndpointsServiceApisList",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEndpointsServiceApisList_Override(e EndpointsServiceApisList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.endpointsService.EndpointsServiceApisList",
+		"@cdktf/provider-google.endpointsService.EndpointsServiceApisList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

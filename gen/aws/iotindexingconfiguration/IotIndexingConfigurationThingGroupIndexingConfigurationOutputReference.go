@@ -227,7 +227,7 @@ func NewIotIndexingConfigurationThingGroupIndexingConfigurationOutputReference(t
 	j := jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewIotIndexingConfigurationThingGroupIndexingConfigurationOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference",
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingGroupIndexingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

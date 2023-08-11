@@ -179,7 +179,7 @@ func NewGoogleDeploymentManagerDeploymentTargetConfigOutputReference(terraformRe
 	j := jsiiProxy_GoogleDeploymentManagerDeploymentTargetConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDeploymentManagerDeploymentTargetConfigOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDeploymentManagerDeployment.GoogleDeploymentManagerDeploymentTargetConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.efsFileSystem.EfsFileSystem",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		reflect.TypeOf((*EfsFileSystem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,15 +92,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsFileSystem.EfsFileSystemConfig",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemConfig",
 		reflect.TypeOf((*EfsFileSystemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsFileSystem.EfsFileSystemLifecyclePolicy",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicy",
 		reflect.TypeOf((*EfsFileSystemLifecyclePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.efsFileSystem.EfsFileSystemLifecyclePolicyList",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyList",
 		reflect.TypeOf((*EfsFileSystemLifecyclePolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -121,7 +121,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyOutputReference",
 		reflect.TypeOf((*EfsFileSystemLifecyclePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,11 +159,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.efsFileSystem.EfsFileSystemSizeInBytes",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytes",
 		reflect.TypeOf((*EfsFileSystemSizeInBytes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.efsFileSystem.EfsFileSystemSizeInBytesList",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytesList",
 		reflect.TypeOf((*EfsFileSystemSizeInBytesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -183,7 +183,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.efsFileSystem.EfsFileSystemSizeInBytesOutputReference",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemSizeInBytesOutputReference",
 		reflect.TypeOf((*EfsFileSystemSizeInBytesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

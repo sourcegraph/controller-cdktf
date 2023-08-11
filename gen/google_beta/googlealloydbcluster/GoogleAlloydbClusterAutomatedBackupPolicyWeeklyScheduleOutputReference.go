@@ -203,7 +203,7 @@ func NewGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference(t
 	j := jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

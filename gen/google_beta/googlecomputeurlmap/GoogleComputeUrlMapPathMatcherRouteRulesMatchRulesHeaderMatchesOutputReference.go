@@ -347,7 +347,7 @@ func NewGoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputRef
 	j := jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewGoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

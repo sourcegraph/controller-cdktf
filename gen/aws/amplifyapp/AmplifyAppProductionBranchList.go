@@ -104,7 +104,7 @@ func NewAmplifyAppProductionBranchList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_AmplifyAppProductionBranchList{}
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppProductionBranchList",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewAmplifyAppProductionBranchList_Override(a AmplifyAppProductionBranchList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppProductionBranchList",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

@@ -228,7 +228,7 @@ func NewFallbackDomainDomainsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_FallbackDomainDomainsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFallbackDomainDomainsOutputReference_Override(f FallbackDomainDomainsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomainDomainsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

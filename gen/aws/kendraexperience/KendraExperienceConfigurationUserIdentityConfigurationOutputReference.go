@@ -179,7 +179,7 @@ func NewKendraExperienceConfigurationUserIdentityConfigurationOutputReference(te
 	j := jsiiProxy_KendraExperienceConfigurationUserIdentityConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewKendraExperienceConfigurationUserIdentityConfigurationOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraExperience.KendraExperienceConfigurationUserIdentityConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

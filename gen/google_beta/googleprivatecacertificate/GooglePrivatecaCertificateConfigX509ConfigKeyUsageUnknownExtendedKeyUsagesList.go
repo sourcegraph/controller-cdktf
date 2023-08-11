@@ -116,7 +116,7 @@ func NewGooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsag
 	j := jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

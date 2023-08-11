@@ -343,7 +343,7 @@ func NewChimeVoiceConnectorGroup(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ChimeVoiceConnectorGroup{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewChimeVoiceConnectorGroup_Override(c ChimeVoiceConnectorGroup, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -478,7 +478,7 @@ func ChimeVoiceConnectorGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func ChimeVoiceConnectorGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func ChimeVoiceConnectorGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func ChimeVoiceConnectorGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroup",
 		"tfResourceType",
 		&returns,
 	)

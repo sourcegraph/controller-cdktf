@@ -299,7 +299,7 @@ func NewDbOptionGroupOptionOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DbOptionGroupOptionOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbOptionGroup.DbOptionGroupOptionOutputReference",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewDbOptionGroupOptionOutputReference_Override(d DbOptionGroupOptionOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbOptionGroup.DbOptionGroupOptionOutputReference",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupOptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -203,7 +203,7 @@ func NewGoogleApikeysKeyRestrictionsApiTargetsOutputReference(terraformResource 
 	j := jsiiProxy_GoogleApikeysKeyRestrictionsApiTargetsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleApikeysKeyRestrictionsApiTargetsOutputReference_Override(g GoogleA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsApiTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

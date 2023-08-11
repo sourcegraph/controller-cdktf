@@ -420,7 +420,7 @@ func NewGoogleStorageBucketLifecycleRuleConditionOutputReference(terraformResour
 	j := jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleConditionOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewGoogleStorageBucketLifecycleRuleConditionOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleConditionOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

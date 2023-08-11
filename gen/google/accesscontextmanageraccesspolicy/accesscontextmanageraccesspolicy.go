@@ -423,7 +423,7 @@ func NewAccessContextManagerAccessPolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_AccessContextManagerAccessPolicy{}
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewAccessContextManagerAccessPolicy_Override(a AccessContextManagerAccessPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -580,7 +580,7 @@ func AccessContextManagerAccessPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func AccessContextManagerAccessPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func AccessContextManagerAccessPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func AccessContextManagerAccessPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
+		"@cdktf/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy",
 		"tfResourceType",
 		&returns,
 	)

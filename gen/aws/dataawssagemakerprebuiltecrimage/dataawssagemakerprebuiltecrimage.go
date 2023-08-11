@@ -385,7 +385,7 @@ func NewDataAwsSagemakerPrebuiltEcrImage(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsSagemakerPrebuiltEcrImage{}
 
 	_jsii_.Create(
-		"aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
+		"@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -398,7 +398,7 @@ func NewDataAwsSagemakerPrebuiltEcrImage_Override(d DataAwsSagemakerPrebuiltEcrI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
+		"@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -531,7 +531,7 @@ func DataAwsSagemakerPrebuiltEcrImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
+		"@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DataAwsSagemakerPrebuiltEcrImage_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
+		"@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -569,7 +569,7 @@ func DataAwsSagemakerPrebuiltEcrImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
+		"@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -582,7 +582,7 @@ func DataAwsSagemakerPrebuiltEcrImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
+		"@cdktf/provider-aws.dataAwsSagemakerPrebuiltEcrImage.DataAwsSagemakerPrebuiltEcrImage",
 		"tfResourceType",
 		&returns,
 	)

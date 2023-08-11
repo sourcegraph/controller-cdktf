@@ -355,7 +355,7 @@ func NewOrganizationToken(scope constructs.Construct, id *string, config *Organi
 	j := jsiiProxy_OrganizationToken{}
 
 	_jsii_.Create(
-		"tfe.organizationToken.OrganizationToken",
+		"@cdktf/provider-tfe.organizationToken.OrganizationToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -368,7 +368,7 @@ func NewOrganizationToken_Override(o OrganizationToken, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.organizationToken.OrganizationToken",
+		"@cdktf/provider-tfe.organizationToken.OrganizationToken",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -501,7 +501,7 @@ func OrganizationToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationToken.OrganizationToken",
+		"@cdktf/provider-tfe.organizationToken.OrganizationToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -520,7 +520,7 @@ func OrganizationToken_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationToken.OrganizationToken",
+		"@cdktf/provider-tfe.organizationToken.OrganizationToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func OrganizationToken_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationToken.OrganizationToken",
+		"@cdktf/provider-tfe.organizationToken.OrganizationToken",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func OrganizationToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.organizationToken.OrganizationToken",
+		"@cdktf/provider-tfe.organizationToken.OrganizationToken",
 		"tfResourceType",
 		&returns,
 	)

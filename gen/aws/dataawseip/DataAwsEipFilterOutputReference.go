@@ -202,7 +202,7 @@ func NewDataAwsEipFilterOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataAwsEipFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEip.DataAwsEipFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEip.DataAwsEipFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEipFilterOutputReference_Override(d DataAwsEipFilterOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEip.DataAwsEipFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEip.DataAwsEipFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -226,7 +226,7 @@ func NewDataAwsGlueScriptDagEdgeOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataAwsGlueScriptDagEdgeOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeOutputReference",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDataAwsGlueScriptDagEdgeOutputReference_Override(d DataAwsGlueScriptDagE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeOutputReference",
+		"@cdktf/provider-aws.dataAwsGlueScript.DataAwsGlueScriptDagEdgeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -228,7 +228,7 @@ func NewAmiFromInstanceTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_AmiFromInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.amiFromInstance.AmiFromInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAmiFromInstanceTimeoutsOutputReference_Override(a AmiFromInstanceTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiFromInstance.AmiFromInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.amiFromInstance.AmiFromInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

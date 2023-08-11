@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersRelatedFindingsProductArnList(terraformResource
 	j := jsiiProxy_SecurityhubInsightFiltersRelatedFindingsProductArnList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersRelatedFindingsProductArnList_Override(s Securi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersRelatedFindingsProductArnList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

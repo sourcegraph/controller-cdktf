@@ -178,7 +178,7 @@ func NewDataAwsCloudformationTypeLoggingConfigOutputReference(terraformResource 
 	j := jsiiProxy_DataAwsCloudformationTypeLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsCloudformationTypeLoggingConfigOutputReference_Override(d DataAws
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

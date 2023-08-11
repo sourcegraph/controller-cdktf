@@ -448,7 +448,7 @@ func NewBigqueryConnectionIamBinding(scope constructs.Construct, id *string, con
 	j := jsiiProxy_BigqueryConnectionIamBinding{}
 
 	_jsii_.Create(
-		"google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
+		"@cdktf/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewBigqueryConnectionIamBinding_Override(b BigqueryConnectionIamBinding, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
+		"@cdktf/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -627,7 +627,7 @@ func BigqueryConnectionIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
+		"@cdktf/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func BigqueryConnectionIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
+		"@cdktf/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func BigqueryConnectionIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
+		"@cdktf/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func BigqueryConnectionIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
+		"@cdktf/provider-google.bigqueryConnectionIamBinding.BigqueryConnectionIamBinding",
 		"tfResourceType",
 		&returns,
 	)

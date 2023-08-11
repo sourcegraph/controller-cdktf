@@ -203,7 +203,7 @@ func NewS3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference(terrafo
 	j := jsiiProxy_S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewS3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference",
+		"@cdktf/provider-aws.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

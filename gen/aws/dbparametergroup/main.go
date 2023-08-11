@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dbParameterGroup.DbParameterGroup",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroup",
 		reflect.TypeOf((*DbParameterGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbParameterGroup.DbParameterGroupConfig",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupConfig",
 		reflect.TypeOf((*DbParameterGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbParameterGroup.DbParameterGroupParameter",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameter",
 		reflect.TypeOf((*DbParameterGroupParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbParameterGroup.DbParameterGroupParameterList",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterList",
 		reflect.TypeOf((*DbParameterGroupParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dbParameterGroup.DbParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterOutputReference",
 		reflect.TypeOf((*DbParameterGroupParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyMethod", GoGetter: "ApplyMethod"},

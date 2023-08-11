@@ -411,7 +411,7 @@ func NewIamUserSshKey(scope constructs.Construct, id *string, config *IamUserSsh
 	j := jsiiProxy_IamUserSshKey{}
 
 	_jsii_.Create(
-		"aws.iamUserSshKey.IamUserSshKey",
+		"@cdktf/provider-aws.iamUserSshKey.IamUserSshKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -424,7 +424,7 @@ func NewIamUserSshKey_Override(i IamUserSshKey, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iamUserSshKey.IamUserSshKey",
+		"@cdktf/provider-aws.iamUserSshKey.IamUserSshKey",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -579,7 +579,7 @@ func IamUserSshKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserSshKey.IamUserSshKey",
+		"@cdktf/provider-aws.iamUserSshKey.IamUserSshKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func IamUserSshKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserSshKey.IamUserSshKey",
+		"@cdktf/provider-aws.iamUserSshKey.IamUserSshKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -617,7 +617,7 @@ func IamUserSshKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iamUserSshKey.IamUserSshKey",
+		"@cdktf/provider-aws.iamUserSshKey.IamUserSshKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func IamUserSshKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iamUserSshKey.IamUserSshKey",
+		"@cdktf/provider-aws.iamUserSshKey.IamUserSshKey",
 		"tfResourceType",
 		&returns,
 	)

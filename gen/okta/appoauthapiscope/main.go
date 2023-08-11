@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appOauthApiScope.AppOauthApiScope",
+		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScope",
 		reflect.TypeOf((*AppOauthApiScope)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appOauthApiScope.AppOauthApiScopeConfig",
+		"@cdktf/provider-okta.appOauthApiScope.AppOauthApiScopeConfig",
 		reflect.TypeOf((*AppOauthApiScopeConfig)(nil)).Elem(),
 	)
 }

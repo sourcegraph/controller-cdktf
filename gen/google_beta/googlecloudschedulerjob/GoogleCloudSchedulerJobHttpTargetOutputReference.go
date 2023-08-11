@@ -299,7 +299,7 @@ func NewGoogleCloudSchedulerJobHttpTargetOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleCloudSchedulerJobHttpTargetOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudSchedulerJob.GoogleCloudSchedulerJobHttpTargetOutputReference",
+		"@cdktf/provider-google-beta.googleCloudSchedulerJob.GoogleCloudSchedulerJobHttpTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewGoogleCloudSchedulerJobHttpTargetOutputReference_Override(g GoogleCloudS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudSchedulerJob.GoogleCloudSchedulerJobHttpTargetOutputReference",
+		"@cdktf/provider-google-beta.googleCloudSchedulerJob.GoogleCloudSchedulerJobHttpTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

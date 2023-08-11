@@ -463,7 +463,7 @@ func NewBinaryAuthorizationPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_BinaryAuthorizationPolicy{}
 
 	_jsii_.Create(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -476,7 +476,7 @@ func NewBinaryAuthorizationPolicy_Override(b BinaryAuthorizationPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -620,7 +620,7 @@ func BinaryAuthorizationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -639,7 +639,7 @@ func BinaryAuthorizationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func BinaryAuthorizationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func BinaryAuthorizationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
+		"@cdktf/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy",
 		"tfResourceType",
 		&returns,
 	)

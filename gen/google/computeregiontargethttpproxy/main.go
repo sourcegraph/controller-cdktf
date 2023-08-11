@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
 		reflect.TypeOf((*ComputeRegionTargetHttpProxy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxyConfig",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxyConfig",
 		reflect.TypeOf((*ComputeRegionTargetHttpProxyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxyTimeouts",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxyTimeouts",
 		reflect.TypeOf((*ComputeRegionTargetHttpProxyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxyTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRegionTargetHttpProxyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

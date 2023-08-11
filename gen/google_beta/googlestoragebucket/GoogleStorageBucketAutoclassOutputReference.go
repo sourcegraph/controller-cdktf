@@ -179,7 +179,7 @@ func NewGoogleStorageBucketAutoclassOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleStorageBucketAutoclassOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketAutoclassOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketAutoclassOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleStorageBucketAutoclassOutputReference_Override(g GoogleStorageBuck
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageBucket.GoogleStorageBucketAutoclassOutputReference",
+		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketAutoclassOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

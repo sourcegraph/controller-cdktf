@@ -303,7 +303,7 @@ func NewDataGoogleCloudRunLocations(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataGoogleCloudRunLocations{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataGoogleCloudRunLocations_Override(d DataGoogleCloudRunLocations, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataGoogleCloudRunLocations_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataGoogleCloudRunLocations_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataGoogleCloudRunLocations_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataGoogleCloudRunLocations_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
 		"tfResourceType",
 		&returns,
 	)

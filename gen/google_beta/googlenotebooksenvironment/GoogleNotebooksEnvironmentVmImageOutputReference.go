@@ -227,7 +227,7 @@ func NewGoogleNotebooksEnvironmentVmImageOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleNotebooksEnvironmentVmImageOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironmentVmImageOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironmentVmImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleNotebooksEnvironmentVmImageOutputReference_Override(g GoogleNotebo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironmentVmImageOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksEnvironment.GoogleNotebooksEnvironmentVmImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

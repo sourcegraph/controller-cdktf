@@ -875,7 +875,7 @@ func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	j := jsiiProxy_FsxWindowsFileSystem{}
 
 	_jsii_.Create(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -888,7 +888,7 @@ func NewFsxWindowsFileSystem_Override(f FsxWindowsFileSystem, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -1197,7 +1197,7 @@ func FsxWindowsFileSystem_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1216,7 +1216,7 @@ func FsxWindowsFileSystem_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1235,7 +1235,7 @@ func FsxWindowsFileSystem_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1248,7 +1248,7 @@ func FsxWindowsFileSystem_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystem",
 		"tfResourceType",
 		&returns,
 	)

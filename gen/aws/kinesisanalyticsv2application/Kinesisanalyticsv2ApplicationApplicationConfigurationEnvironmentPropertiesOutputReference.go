@@ -179,7 +179,7 @@ func NewKinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentProperti
 	j := jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisanalyticsv2Application.Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference",
+		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewKinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentProperti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisanalyticsv2Application.Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference",
+		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2ApplicationApplicationConfigurationEnvironmentPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

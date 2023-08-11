@@ -178,7 +178,7 @@ func NewDataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverrid
 	j := jsiiProxy_DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewDataAwsRoute53TrafficPolicyDocumentRuleRegionList(terraformResource cdkt
 	j := jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionList{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleRegionList",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleRegionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsRoute53TrafficPolicyDocumentRuleRegionList_Override(d DataAwsRout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleRegionList",
+		"@cdktf/provider-aws.dataAwsRoute53TrafficPolicyDocument.DataAwsRoute53TrafficPolicyDocumentRuleRegionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

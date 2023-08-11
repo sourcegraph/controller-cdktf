@@ -424,7 +424,7 @@ func NewPubsubSubscriptionIamMember(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_PubsubSubscriptionIamMember{}
 
 	_jsii_.Create(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewPubsubSubscriptionIamMember_Override(p PubsubSubscriptionIamMember, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -592,7 +592,7 @@ func PubsubSubscriptionIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func PubsubSubscriptionIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func PubsubSubscriptionIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func PubsubSubscriptionIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
+		"@cdktf/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember",
 		"tfResourceType",
 		&returns,
 	)

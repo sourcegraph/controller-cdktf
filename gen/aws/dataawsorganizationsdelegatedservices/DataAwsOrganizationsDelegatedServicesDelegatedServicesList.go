@@ -104,7 +104,7 @@ func NewDataAwsOrganizationsDelegatedServicesDelegatedServicesList(terraformReso
 	j := jsiiProxy_DataAwsOrganizationsDelegatedServicesDelegatedServicesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServicesList",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsOrganizationsDelegatedServicesDelegatedServicesList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServicesList",
+		"@cdktf/provider-aws.dataAwsOrganizationsDelegatedServices.DataAwsOrganizationsDelegatedServicesDelegatedServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

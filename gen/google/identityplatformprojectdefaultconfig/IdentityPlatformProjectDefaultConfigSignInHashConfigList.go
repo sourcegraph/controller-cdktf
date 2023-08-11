@@ -104,7 +104,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInHashConfigList(terraformResour
 	j := jsiiProxy_IdentityPlatformProjectDefaultConfigSignInHashConfigList{}
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigList",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInHashConfigList_Override(i Iden
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigList",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInHashConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

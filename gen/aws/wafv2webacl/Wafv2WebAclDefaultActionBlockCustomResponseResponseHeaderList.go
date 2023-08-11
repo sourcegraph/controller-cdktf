@@ -116,7 +116,7 @@ func NewWafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList(terraformR
 	j := jsiiProxy_Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList_Override(w
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

@@ -377,7 +377,7 @@ func NewGoogleApigeeInstanceAttachment(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleApigeeInstanceAttachment{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
+		"@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleApigeeInstanceAttachment_Override(g GoogleApigeeInstanceAttachment
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
+		"@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -523,7 +523,7 @@ func GoogleApigeeInstanceAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
+		"@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func GoogleApigeeInstanceAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
+		"@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func GoogleApigeeInstanceAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
+		"@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func GoogleApigeeInstanceAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
+		"@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment",
 		"tfResourceType",
 		&returns,
 	)

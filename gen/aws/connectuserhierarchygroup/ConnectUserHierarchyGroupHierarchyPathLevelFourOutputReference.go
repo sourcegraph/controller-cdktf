@@ -189,7 +189,7 @@ func NewConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference(terraform
 	j := jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference",
+		"@cdktf/provider-aws.connectUserHierarchyGroup.ConnectUserHierarchyGroupHierarchyPathLevelFourOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

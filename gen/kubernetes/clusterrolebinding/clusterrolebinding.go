@@ -365,7 +365,7 @@ func NewClusterRoleBinding(scope constructs.Construct, id *string, config *Clust
 	j := jsiiProxy_ClusterRoleBinding{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleBinding.ClusterRoleBinding",
+		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewClusterRoleBinding_Override(c ClusterRoleBinding, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleBinding.ClusterRoleBinding",
+		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -489,7 +489,7 @@ func ClusterRoleBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.clusterRoleBinding.ClusterRoleBinding",
+		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func ClusterRoleBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.clusterRoleBinding.ClusterRoleBinding",
+		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func ClusterRoleBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.clusterRoleBinding.ClusterRoleBinding",
+		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func ClusterRoleBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.clusterRoleBinding.ClusterRoleBinding",
+		"@cdktf/provider-kubernetes.clusterRoleBinding.ClusterRoleBinding",
 		"tfResourceType",
 		&returns,
 	)

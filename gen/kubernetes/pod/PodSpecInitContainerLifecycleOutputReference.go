@@ -204,7 +204,7 @@ func NewPodSpecInitContainerLifecycleOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PodSpecInitContainerLifecycleOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodSpecInitContainerLifecycleOutputReference_Override(p PodSpecInitConta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecInitContainerLifecycleOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecInitContainerLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

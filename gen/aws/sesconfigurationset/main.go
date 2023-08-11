@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesConfigurationSet.SesConfigurationSet",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSet",
 		reflect.TypeOf((*SesConfigurationSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesConfigurationSet.SesConfigurationSetConfig",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetConfig",
 		reflect.TypeOf((*SesConfigurationSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesConfigurationSet.SesConfigurationSetDeliveryOptions",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptions",
 		reflect.TypeOf((*SesConfigurationSetDeliveryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesConfigurationSet.SesConfigurationSetDeliveryOptionsOutputReference",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptionsOutputReference",
 		reflect.TypeOf((*SesConfigurationSetDeliveryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesConfigurationSet.SesConfigurationSetTrackingOptions",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptions",
 		reflect.TypeOf((*SesConfigurationSetTrackingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesConfigurationSet.SesConfigurationSetTrackingOptionsOutputReference",
+		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptionsOutputReference",
 		reflect.TypeOf((*SesConfigurationSetTrackingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

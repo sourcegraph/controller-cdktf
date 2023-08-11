@@ -179,7 +179,7 @@ func NewLambdaFunctionDeadLetterConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_LambdaFunctionDeadLetterConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionDeadLetterConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLambdaFunctionDeadLetterConfigOutputReference_Override(l LambdaFunctionD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionDeadLetterConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionDeadLetterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

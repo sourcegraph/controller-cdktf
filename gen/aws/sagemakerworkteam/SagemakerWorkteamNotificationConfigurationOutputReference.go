@@ -180,7 +180,7 @@ func NewSagemakerWorkteamNotificationConfigurationOutputReference(terraformResou
 	j := jsiiProxy_SagemakerWorkteamNotificationConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfigurationOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSagemakerWorkteamNotificationConfigurationOutputReference_Override(s Sag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfigurationOutputReference",
+		"@cdktf/provider-aws.sagemakerWorkteam.SagemakerWorkteamNotificationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

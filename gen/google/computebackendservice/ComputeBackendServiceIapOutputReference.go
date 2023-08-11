@@ -213,7 +213,7 @@ func NewComputeBackendServiceIapOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ComputeBackendServiceIapOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceIapOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewComputeBackendServiceIapOutputReference_Override(c ComputeBackendService
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceIapOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

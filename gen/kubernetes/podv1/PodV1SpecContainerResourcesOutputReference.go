@@ -204,7 +204,7 @@ func NewPodV1SpecContainerResourcesOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_PodV1SpecContainerResourcesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodV1SpecContainerResourcesOutputReference_Override(p PodV1SpecContainer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecContainerResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

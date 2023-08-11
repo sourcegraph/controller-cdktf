@@ -227,7 +227,7 @@ func NewBigqueryConnectionCloudSpannerOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_BigqueryConnectionCloudSpannerOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryConnection.BigqueryConnectionCloudSpannerOutputReference",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudSpannerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewBigqueryConnectionCloudSpannerOutputReference_Override(b BigqueryConnect
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryConnection.BigqueryConnectionCloudSpannerOutputReference",
+		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudSpannerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

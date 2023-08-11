@@ -104,7 +104,7 @@ func NewDataGoogleBeyondcorpAppConnectorPrincipalInfoList(terraformResource cdkt
 	j := jsiiProxy_DataGoogleBeyondcorpAppConnectorPrincipalInfoList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoList",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleBeyondcorpAppConnectorPrincipalInfoList_Override(d DataGoogleB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoList",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnector.DataGoogleBeyondcorpAppConnectorPrincipalInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

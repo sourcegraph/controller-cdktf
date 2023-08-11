@@ -274,7 +274,7 @@ func NewWorkspaceVcsRepoOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_WorkspaceVcsRepoOutputReference{}
 
 	_jsii_.Create(
-		"tfe.workspace.WorkspaceVcsRepoOutputReference",
+		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewWorkspaceVcsRepoOutputReference_Override(w WorkspaceVcsRepoOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.workspace.WorkspaceVcsRepoOutputReference",
+		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

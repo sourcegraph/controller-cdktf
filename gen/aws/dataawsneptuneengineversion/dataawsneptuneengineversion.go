@@ -441,7 +441,7 @@ func NewDataAwsNeptuneEngineVersion(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsNeptuneEngineVersion{}
 
 	_jsii_.Create(
-		"aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
+		"@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -454,7 +454,7 @@ func NewDataAwsNeptuneEngineVersion_Override(d DataAwsNeptuneEngineVersion, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
+		"@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -587,7 +587,7 @@ func DataAwsNeptuneEngineVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
+		"@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func DataAwsNeptuneEngineVersion_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
+		"@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +625,7 @@ func DataAwsNeptuneEngineVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
+		"@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +638,7 @@ func DataAwsNeptuneEngineVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
+		"@cdktf/provider-aws.dataAwsNeptuneEngineVersion.DataAwsNeptuneEngineVersion",
 		"tfResourceType",
 		&returns,
 	)

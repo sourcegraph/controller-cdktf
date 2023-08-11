@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermission",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermission",
 		reflect.TypeOf((*CloudwatchEventPermission)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionCondition",
 		reflect.TypeOf((*CloudwatchEventPermissionCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermissionConditionOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConditionOutputReference",
 		reflect.TypeOf((*CloudwatchEventPermissionConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -111,7 +111,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig",
+		"@cdktf/provider-aws.cloudwatchEventPermission.CloudwatchEventPermissionConfig",
 		reflect.TypeOf((*CloudwatchEventPermissionConfig)(nil)).Elem(),
 	)
 }

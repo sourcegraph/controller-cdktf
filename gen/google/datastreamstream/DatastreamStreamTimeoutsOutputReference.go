@@ -228,7 +228,7 @@ func NewDatastreamStreamTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DatastreamStreamTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamTimeoutsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDatastreamStreamTimeoutsOutputReference_Override(d DatastreamStreamTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastreamStream.DatastreamStreamTimeoutsOutputReference",
+		"@cdktf/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

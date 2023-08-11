@@ -116,7 +116,7 @@ func NewGoogleComputeHaVpnGatewayVpnInterfacesList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleComputeHaVpnGatewayVpnInterfacesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesList",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeHaVpnGatewayVpnInterfacesList_Override(g GoogleComputeHaVpn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesList",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGatewayVpnInterfacesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

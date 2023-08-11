@@ -180,7 +180,7 @@ func NewDatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReferen
 	j := jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference",
+		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference",
+		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolNfsMountOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

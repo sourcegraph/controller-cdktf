@@ -189,7 +189,7 @@ func NewDataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference(terra
 	j := jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeResourcePolicy.DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.s3ObjectCopy.S3ObjectCopy",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		reflect.TypeOf((*S3ObjectCopy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
@@ -176,15 +176,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3ObjectCopy.S3ObjectCopyConfig",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig",
 		reflect.TypeOf((*S3ObjectCopyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.s3ObjectCopy.S3ObjectCopyGrant",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant",
 		reflect.TypeOf((*S3ObjectCopyGrant)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.s3ObjectCopy.S3ObjectCopyGrantList",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList",
 		reflect.TypeOf((*S3ObjectCopyGrantList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -205,7 +205,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
 		reflect.TypeOf((*S3ObjectCopyGrantOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

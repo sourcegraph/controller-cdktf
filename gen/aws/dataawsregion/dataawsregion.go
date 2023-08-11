@@ -327,7 +327,7 @@ func NewDataAwsRegion(scope constructs.Construct, id *string, config *DataAwsReg
 	j := jsiiProxy_DataAwsRegion{}
 
 	_jsii_.Create(
-		"aws.dataAwsRegion.DataAwsRegion",
+		"@cdktf/provider-aws.dataAwsRegion.DataAwsRegion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataAwsRegion_Override(d DataAwsRegion, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRegion.DataAwsRegion",
+		"@cdktf/provider-aws.dataAwsRegion.DataAwsRegion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataAwsRegion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRegion.DataAwsRegion",
+		"@cdktf/provider-aws.dataAwsRegion.DataAwsRegion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -470,7 +470,7 @@ func DataAwsRegion_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRegion.DataAwsRegion",
+		"@cdktf/provider-aws.dataAwsRegion.DataAwsRegion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataAwsRegion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRegion.DataAwsRegion",
+		"@cdktf/provider-aws.dataAwsRegion.DataAwsRegion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsRegion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRegion.DataAwsRegion",
+		"@cdktf/provider-aws.dataAwsRegion.DataAwsRegion",
 		"tfResourceType",
 		&returns,
 	)

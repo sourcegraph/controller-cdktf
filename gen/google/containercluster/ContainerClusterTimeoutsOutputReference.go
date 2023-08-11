@@ -252,7 +252,7 @@ func NewContainerClusterTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ContainerClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterTimeoutsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewContainerClusterTimeoutsOutputReference_Override(c ContainerClusterTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterTimeoutsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

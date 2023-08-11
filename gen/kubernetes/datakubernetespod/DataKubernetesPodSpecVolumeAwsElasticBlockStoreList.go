@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecVolumeAwsElasticBlockStoreList(terraformResource cd
 	j := jsiiProxy_DataKubernetesPodSpecVolumeAwsElasticBlockStoreList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeAwsElasticBlockStoreList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeAwsElasticBlockStoreList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecVolumeAwsElasticBlockStoreList_Override(d DataKuber
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeAwsElasticBlockStoreList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeAwsElasticBlockStoreList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

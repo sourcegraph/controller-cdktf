@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
 		reflect.TypeOf((*GoogleSpannerDatabase)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseConfig",
 		reflect.TypeOf((*GoogleSpannerDatabaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfig",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfig",
 		reflect.TypeOf((*GoogleSpannerDatabaseEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseEncryptionConfigOutputReference",
 		reflect.TypeOf((*GoogleSpannerDatabaseEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,11 +125,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeouts",
 		reflect.TypeOf((*GoogleSpannerDatabaseTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleSpannerDatabaseTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

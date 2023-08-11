@@ -448,7 +448,7 @@ func NewPrivatecaCaPoolIamBinding(scope constructs.Construct, id *string, config
 	j := jsiiProxy_PrivatecaCaPoolIamBinding{}
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewPrivatecaCaPoolIamBinding_Override(p PrivatecaCaPoolIamBinding, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -627,7 +627,7 @@ func PrivatecaCaPoolIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func PrivatecaCaPoolIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func PrivatecaCaPoolIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func PrivatecaCaPoolIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
+		"@cdktf/provider-google.privatecaCaPoolIamBinding.PrivatecaCaPoolIamBinding",
 		"tfResourceType",
 		&returns,
 	)

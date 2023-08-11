@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecret",
 		reflect.TypeOf((*DataAwsSecretsmanagerSecret)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretConfig",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretConfig",
 		reflect.TypeOf((*DataAwsSecretsmanagerSecretConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretRotationRules",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretRotationRules",
 		reflect.TypeOf((*DataAwsSecretsmanagerSecretRotationRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretRotationRulesList",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretRotationRulesList",
 		reflect.TypeOf((*DataAwsSecretsmanagerSecretRotationRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretRotationRulesOutputReference",
+		"@cdktf/provider-aws.dataAwsSecretsmanagerSecret.DataAwsSecretsmanagerSecretRotationRulesOutputReference",
 		reflect.TypeOf((*DataAwsSecretsmanagerSecretRotationRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automaticallyAfterDays", GoGetter: "AutomaticallyAfterDays"},

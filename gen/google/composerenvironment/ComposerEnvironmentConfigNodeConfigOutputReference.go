@@ -396,7 +396,7 @@ func NewComposerEnvironmentConfigNodeConfigOutputReference(terraformResource cdk
 	j := jsiiProxy_ComposerEnvironmentConfigNodeConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigNodeConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -408,7 +408,7 @@ func NewComposerEnvironmentConfigNodeConfigOutputReference_Override(c ComposerEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigNodeConfigOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigNodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

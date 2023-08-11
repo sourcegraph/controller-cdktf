@@ -116,7 +116,7 @@ func NewLaunchTemplateBlockDeviceMappingsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_LaunchTemplateBlockDeviceMappingsList{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLaunchTemplateBlockDeviceMappingsList_Override(l LaunchTemplateBlockDevi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

@@ -204,7 +204,7 @@ func NewDaemonsetSpecTemplateSpecAffinityPodAffinityOutputReference(terraformRes
 	j := jsiiProxy_DaemonsetSpecTemplateSpecAffinityPodAffinityOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecAffinityPodAffinityOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecAffinityPodAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonsetSpecTemplateSpecAffinityPodAffinityOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecAffinityPodAffinityOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecAffinityPodAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

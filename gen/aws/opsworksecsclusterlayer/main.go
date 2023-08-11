@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayer",
 		reflect.TypeOf((*OpsworksEcsClusterLayer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -132,15 +132,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfiguration",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfiguration",
 		reflect.TypeOf((*OpsworksEcsClusterLayerCloudwatchConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreams",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreams",
 		reflect.TypeOf((*OpsworksEcsClusterLayerCloudwatchConfigurationLogStreams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList",
 		reflect.TypeOf((*OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -161,7 +161,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsOutputReference",
 		reflect.TypeOf((*OpsworksEcsClusterLayerCloudwatchConfigurationLogStreamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchCount", GoGetter: "BatchCount"},
@@ -224,7 +224,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerCloudwatchConfigurationOutputReference",
 		reflect.TypeOf((*OpsworksEcsClusterLayerCloudwatchConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -263,15 +263,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerConfig",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerConfig",
 		reflect.TypeOf((*OpsworksEcsClusterLayerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolume",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolume",
 		reflect.TypeOf((*OpsworksEcsClusterLayerEbsVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeList",
 		reflect.TypeOf((*OpsworksEcsClusterLayerEbsVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -292,7 +292,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeOutputReference",
 		reflect.TypeOf((*OpsworksEcsClusterLayerEbsVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -342,15 +342,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScaling",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScaling",
 		reflect.TypeOf((*OpsworksEcsClusterLayerLoadBasedAutoScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling",
 		reflect.TypeOf((*OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference",
 		reflect.TypeOf((*OpsworksEcsClusterLayerLoadBasedAutoScalingDownscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
@@ -403,7 +403,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference",
 		reflect.TypeOf((*OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -446,11 +446,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling",
 		reflect.TypeOf((*OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference",
 		reflect.TypeOf((*OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},

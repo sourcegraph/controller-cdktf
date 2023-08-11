@@ -204,7 +204,7 @@ func NewGrafanaRoleAssociationTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GrafanaRoleAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGrafanaRoleAssociationTimeoutsOutputReference_Override(g GrafanaRoleAsso
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

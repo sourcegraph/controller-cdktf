@@ -180,7 +180,7 @@ func NewGoogleContainerClusterIdentityServiceConfigOutputReference(terraformReso
 	j := jsiiProxy_GoogleContainerClusterIdentityServiceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterIdentityServiceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterIdentityServiceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleContainerClusterIdentityServiceConfigOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterIdentityServiceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterIdentityServiceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

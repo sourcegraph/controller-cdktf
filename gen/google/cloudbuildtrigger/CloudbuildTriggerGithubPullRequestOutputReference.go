@@ -227,7 +227,7 @@ func NewCloudbuildTriggerGithubPullRequestOutputReference(terraformResource cdkt
 	j := jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewCloudbuildTriggerGithubPullRequestOutputReference_Override(c CloudbuildT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -300,7 +300,7 @@ func NewGoogleAppEngineStandardAppVersionAutomaticScalingOutputReference(terrafo
 	j := jsiiProxy_GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleAppEngineStandardAppVersionAutomaticScalingOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineStandardAppVersion.GoogleAppEngineStandardAppVersionAutomaticScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

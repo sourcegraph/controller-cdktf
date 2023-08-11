@@ -250,7 +250,7 @@ func NewSpotInstanceRequestNetworkInterfaceOutputReference(terraformResource cdk
 	j := jsiiProxy_SpotInstanceRequestNetworkInterfaceOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewSpotInstanceRequestNetworkInterfaceOutputReference_Override(s SpotInstan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

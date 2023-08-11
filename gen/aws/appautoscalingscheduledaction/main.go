@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledAction",
 		reflect.TypeOf((*AppautoscalingScheduledAction)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledActionConfig",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledActionConfig",
 		reflect.TypeOf((*AppautoscalingScheduledActionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetAction",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetAction",
 		reflect.TypeOf((*AppautoscalingScheduledActionScalableTargetAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetActionOutputReference",
+		"@cdktf/provider-aws.appautoscalingScheduledAction.AppautoscalingScheduledActionScalableTargetActionOutputReference",
 		reflect.TypeOf((*AppautoscalingScheduledActionScalableTargetActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

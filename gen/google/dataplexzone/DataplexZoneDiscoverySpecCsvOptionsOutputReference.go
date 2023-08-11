@@ -252,7 +252,7 @@ func NewDataplexZoneDiscoverySpecCsvOptionsOutputReference(terraformResource cdk
 	j := jsiiProxy_DataplexZoneDiscoverySpecCsvOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexZone.DataplexZoneDiscoverySpecCsvOptionsOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpecCsvOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDataplexZoneDiscoverySpecCsvOptionsOutputReference_Override(d DataplexZo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexZone.DataplexZoneDiscoverySpecCsvOptionsOutputReference",
+		"@cdktf/provider-google.dataplexZone.DataplexZoneDiscoverySpecCsvOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

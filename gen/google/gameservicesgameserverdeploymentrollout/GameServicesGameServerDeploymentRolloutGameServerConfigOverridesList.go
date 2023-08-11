@@ -116,7 +116,7 @@ func NewGameServicesGameServerDeploymentRolloutGameServerConfigOverridesList(ter
 	j := jsiiProxy_GameServicesGameServerDeploymentRolloutGameServerConfigOverridesList{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesList",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGameServicesGameServerDeploymentRolloutGameServerConfigOverridesList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesList",
+		"@cdktf/provider-google.gameServicesGameServerDeploymentRollout.GameServicesGameServerDeploymentRolloutGameServerConfigOverridesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

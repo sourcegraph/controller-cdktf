@@ -203,7 +203,7 @@ func NewGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReferen
 	j := jsiiProxy_GoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionInstanceTemplate.GoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -202,7 +202,7 @@ func NewChimeVoiceConnectorGroupConnectorOutputReference(terraformResource cdktf
 	j := jsiiProxy_ChimeVoiceConnectorGroupConnectorOutputReference{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorOutputReference",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewChimeVoiceConnectorGroupConnectorOutputReference_Override(c ChimeVoiceCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorOutputReference",
+		"@cdktf/provider-aws.chimeVoiceConnectorGroup.ChimeVoiceConnectorGroupConnectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

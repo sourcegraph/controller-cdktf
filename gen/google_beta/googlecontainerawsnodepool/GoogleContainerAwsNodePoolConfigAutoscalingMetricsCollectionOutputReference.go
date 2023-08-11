@@ -203,7 +203,7 @@ func NewGoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputRefere
 	j := jsiiProxy_GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

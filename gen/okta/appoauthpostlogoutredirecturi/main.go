@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
+		"@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUri",
 		reflect.TypeOf((*AppOauthPostLogoutRedirectUri)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUriConfig",
+		"@cdktf/provider-okta.appOauthPostLogoutRedirectUri.AppOauthPostLogoutRedirectUriConfig",
 		reflect.TypeOf((*AppOauthPostLogoutRedirectUriConfig)(nil)).Elem(),
 	)
 }

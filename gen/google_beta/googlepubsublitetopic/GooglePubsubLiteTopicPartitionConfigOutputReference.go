@@ -203,7 +203,7 @@ func NewGooglePubsubLiteTopicPartitionConfigOutputReference(terraformResource cd
 	j := jsiiProxy_GooglePubsubLiteTopicPartitionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGooglePubsubLiteTopicPartitionConfigOutputReference_Override(g GooglePub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopicPartitionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

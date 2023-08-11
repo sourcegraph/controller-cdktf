@@ -485,7 +485,7 @@ func NewTerraformVersion(scope constructs.Construct, id *string, config *Terrafo
 	j := jsiiProxy_TerraformVersion{}
 
 	_jsii_.Create(
-		"tfe.terraformVersion.TerraformVersion",
+		"@cdktf/provider-tfe.terraformVersion.TerraformVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewTerraformVersion_Override(t TerraformVersion, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.terraformVersion.TerraformVersion",
+		"@cdktf/provider-tfe.terraformVersion.TerraformVersion",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -697,7 +697,7 @@ func TerraformVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.terraformVersion.TerraformVersion",
+		"@cdktf/provider-tfe.terraformVersion.TerraformVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func TerraformVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.terraformVersion.TerraformVersion",
+		"@cdktf/provider-tfe.terraformVersion.TerraformVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func TerraformVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.terraformVersion.TerraformVersion",
+		"@cdktf/provider-tfe.terraformVersion.TerraformVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func TerraformVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.terraformVersion.TerraformVersion",
+		"@cdktf/provider-tfe.terraformVersion.TerraformVersion",
 		"tfResourceType",
 		&returns,
 	)

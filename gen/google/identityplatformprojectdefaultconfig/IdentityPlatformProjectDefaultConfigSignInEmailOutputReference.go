@@ -204,7 +204,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInEmailOutputReference(terraform
 	j := jsiiProxy_IdentityPlatformProjectDefaultConfigSignInEmailOutputReference{}
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInEmailOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIdentityPlatformProjectDefaultConfigSignInEmailOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInEmailOutputReference",
+		"@cdktf/provider-google.identityPlatformProjectDefaultConfig.IdentityPlatformProjectDefaultConfigSignInEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

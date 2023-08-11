@@ -204,7 +204,7 @@ func NewMutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference(terra
 	j := jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference",
+		"@cdktf/provider-kubernetes.mutatingWebhookConfigurationV1.MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

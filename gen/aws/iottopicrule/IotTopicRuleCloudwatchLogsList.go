@@ -116,7 +116,7 @@ func NewIotTopicRuleCloudwatchLogsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_IotTopicRuleCloudwatchLogsList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchLogsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleCloudwatchLogsList_Override(i IotTopicRuleCloudwatchLogsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchLogsList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

@@ -300,7 +300,7 @@ func NewGoogleComputeBackendServiceCircuitBreakersOutputReference(terraformResou
 	j := jsiiProxy_GoogleComputeBackendServiceCircuitBreakersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceCircuitBreakersOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCircuitBreakersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleComputeBackendServiceCircuitBreakersOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceCircuitBreakersOutputReference",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCircuitBreakersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

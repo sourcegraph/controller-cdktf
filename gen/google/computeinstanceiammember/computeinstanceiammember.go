@@ -448,7 +448,7 @@ func NewComputeInstanceIamMember(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ComputeInstanceIamMember{}
 
 	_jsii_.Create(
-		"google.computeInstanceIamMember.ComputeInstanceIamMember",
+		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewComputeInstanceIamMember_Override(c ComputeInstanceIamMember, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceIamMember.ComputeInstanceIamMember",
+		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func ComputeInstanceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceIamMember.ComputeInstanceIamMember",
+		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ComputeInstanceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceIamMember.ComputeInstanceIamMember",
+		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ComputeInstanceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeInstanceIamMember.ComputeInstanceIamMember",
+		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ComputeInstanceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeInstanceIamMember.ComputeInstanceIamMember",
+		"@cdktf/provider-google.computeInstanceIamMember.ComputeInstanceIamMember",
 		"tfResourceType",
 		&returns,
 	)

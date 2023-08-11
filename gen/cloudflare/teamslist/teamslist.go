@@ -413,7 +413,7 @@ func NewTeamsList(scope constructs.Construct, id *string, config *TeamsListConfi
 	j := jsiiProxy_TeamsList{}
 
 	_jsii_.Create(
-		"cloudflare.teamsList.TeamsList",
+		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewTeamsList_Override(t TeamsList, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsList.TeamsList",
+		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -592,7 +592,7 @@ func TeamsList_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsList.TeamsList",
+		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func TeamsList_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsList.TeamsList",
+		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func TeamsList_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsList.TeamsList",
+		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func TeamsList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.teamsList.TeamsList",
+		"@cdktf/provider-cloudflare.teamsList.TeamsList",
 		"tfResourceType",
 		&returns,
 	)

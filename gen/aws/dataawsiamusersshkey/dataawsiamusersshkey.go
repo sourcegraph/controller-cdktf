@@ -370,7 +370,7 @@ func NewDataAwsIamUserSshKey(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataAwsIamUserSshKey{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
+		"@cdktf/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataAwsIamUserSshKey_Override(d DataAwsIamUserSshKey, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
+		"@cdktf/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -505,7 +505,7 @@ func DataAwsIamUserSshKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
+		"@cdktf/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsIamUserSshKey_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
+		"@cdktf/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataAwsIamUserSshKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
+		"@cdktf/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsIamUserSshKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
+		"@cdktf/provider-aws.dataAwsIamUserSshKey.DataAwsIamUserSshKey",
 		"tfResourceType",
 		&returns,
 	)

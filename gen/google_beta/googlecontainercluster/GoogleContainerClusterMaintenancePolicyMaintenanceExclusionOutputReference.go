@@ -249,7 +249,7 @@ func NewGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReferen
 	j := jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

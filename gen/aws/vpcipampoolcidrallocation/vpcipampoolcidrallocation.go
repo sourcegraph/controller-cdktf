@@ -459,7 +459,7 @@ func NewVpcIpamPoolCidrAllocation(scope constructs.Construct, id *string, config
 	j := jsiiProxy_VpcIpamPoolCidrAllocation{}
 
 	_jsii_.Create(
-		"aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
+		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewVpcIpamPoolCidrAllocation_Override(v VpcIpamPoolCidrAllocation, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
+		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -638,7 +638,7 @@ func VpcIpamPoolCidrAllocation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
+		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func VpcIpamPoolCidrAllocation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
+		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func VpcIpamPoolCidrAllocation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
+		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func VpcIpamPoolCidrAllocation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
+		"@cdktf/provider-aws.vpcIpamPoolCidrAllocation.VpcIpamPoolCidrAllocation",
 		"tfResourceType",
 		&returns,
 	)

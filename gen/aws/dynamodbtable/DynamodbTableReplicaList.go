@@ -116,7 +116,7 @@ func NewDynamodbTableReplicaList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DynamodbTableReplicaList{}
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableReplicaList",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableReplicaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDynamodbTableReplicaList_Override(d DynamodbTableReplicaList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTableReplicaList",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTableReplicaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

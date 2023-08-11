@@ -202,7 +202,7 @@ func NewWorkerScriptPlainTextBindingOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_WorkerScriptPlainTextBindingOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptPlainTextBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWorkerScriptPlainTextBindingOutputReference_Override(w WorkerScriptPlain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptPlainTextBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

@@ -202,7 +202,7 @@ func NewOpsworksInstanceEphemeralBlockDeviceOutputReference(terraformResource cd
 	j := jsiiProxy_OpsworksInstanceEphemeralBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewOpsworksInstanceEphemeralBlockDeviceOutputReference_Override(o OpsworksI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

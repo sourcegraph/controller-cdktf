@@ -227,7 +227,7 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOut
 	j := jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

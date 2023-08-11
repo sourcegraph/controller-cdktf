@@ -178,7 +178,7 @@ func NewDataKubernetesIngressSpecRuleOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataKubernetesIngressSpecRuleOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngressSpecRuleOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngressSpecRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataKubernetesIngressSpecRuleOutputReference_Override(d DataKubernetesIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngressSpecRuleOutputReference",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngressSpecRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

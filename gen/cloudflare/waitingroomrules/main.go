@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.waitingRoomRules.WaitingRoomRules",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRules",
 		reflect.TypeOf((*WaitingRoomRules)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.waitingRoomRules.WaitingRoomRulesConfig",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesConfig",
 		reflect.TypeOf((*WaitingRoomRulesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.waitingRoomRules.WaitingRoomRulesRules",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRules",
 		reflect.TypeOf((*WaitingRoomRulesRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.waitingRoomRules.WaitingRoomRulesRulesList",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesList",
 		reflect.TypeOf((*WaitingRoomRulesRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.waitingRoomRules.WaitingRoomRulesRulesOutputReference",
+		"@cdktf/provider-cloudflare.waitingRoomRules.WaitingRoomRulesRulesOutputReference",
 		reflect.TypeOf((*WaitingRoomRulesRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},

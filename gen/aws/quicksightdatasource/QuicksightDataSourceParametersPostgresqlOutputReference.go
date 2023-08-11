@@ -225,7 +225,7 @@ func NewQuicksightDataSourceParametersPostgresqlOutputReference(terraformResourc
 	j := jsiiProxy_QuicksightDataSourceParametersPostgresqlOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersPostgresqlOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewQuicksightDataSourceParametersPostgresqlOutputReference_Override(q Quick
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersPostgresqlOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersPostgresqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

@@ -362,7 +362,7 @@ func NewDataAwsEips(scope constructs.Construct, id *string, config *DataAwsEipsC
 	j := jsiiProxy_DataAwsEips{}
 
 	_jsii_.Create(
-		"aws.dataAwsEips.DataAwsEips",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEips",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -375,7 +375,7 @@ func NewDataAwsEips_Override(d DataAwsEips, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEips.DataAwsEips",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEips",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -475,7 +475,7 @@ func DataAwsEips_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEips.DataAwsEips",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEips",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -494,7 +494,7 @@ func DataAwsEips_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEips.DataAwsEips",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEips",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataAwsEips_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEips.DataAwsEips",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEips",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DataAwsEips_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEips.DataAwsEips",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEips",
 		"tfResourceType",
 		&returns,
 	)

@@ -309,7 +309,7 @@ func NewStatefulSetMetadataOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_StatefulSetMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetMetadataOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewStatefulSetMetadataOutputReference_Override(s StatefulSetMetadataOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetMetadataOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

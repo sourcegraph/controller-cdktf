@@ -250,7 +250,7 @@ func NewRoleBindingSubjectOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_RoleBindingSubjectOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.roleBinding.RoleBindingSubjectOutputReference",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewRoleBindingSubjectOutputReference_Override(r RoleBindingSubjectOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.roleBinding.RoleBindingSubjectOutputReference",
+		"@cdktf/provider-kubernetes.roleBinding.RoleBindingSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

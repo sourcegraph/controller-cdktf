@@ -104,7 +104,7 @@ func NewCloudRunDomainMappingStatusList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_CloudRunDomainMappingStatusList{}
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusList",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCloudRunDomainMappingStatusList_Override(c CloudRunDomainMappingStatusLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusList",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

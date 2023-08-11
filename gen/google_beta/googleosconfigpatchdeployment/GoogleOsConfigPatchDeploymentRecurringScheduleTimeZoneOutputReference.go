@@ -203,7 +203,7 @@ func NewGoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference(te
 	j := jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

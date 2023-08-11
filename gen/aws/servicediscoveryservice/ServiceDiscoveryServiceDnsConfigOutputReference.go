@@ -226,7 +226,7 @@ func NewServiceDiscoveryServiceDnsConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ServiceDiscoveryServiceDnsConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewServiceDiscoveryServiceDnsConfigOutputReference_Override(s ServiceDiscov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference",
+		"@cdktf/provider-aws.serviceDiscoveryService.ServiceDiscoveryServiceDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

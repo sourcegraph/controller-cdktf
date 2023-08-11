@@ -367,7 +367,7 @@ func NewGoogleMonitoringDashboard(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleMonitoringDashboard{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
+		"@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewGoogleMonitoringDashboard_Override(g GoogleMonitoringDashboard, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
+		"@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -513,7 +513,7 @@ func GoogleMonitoringDashboard_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
+		"@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func GoogleMonitoringDashboard_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
+		"@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func GoogleMonitoringDashboard_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
+		"@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func GoogleMonitoringDashboard_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
+		"@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard",
 		"tfResourceType",
 		&returns,
 	)

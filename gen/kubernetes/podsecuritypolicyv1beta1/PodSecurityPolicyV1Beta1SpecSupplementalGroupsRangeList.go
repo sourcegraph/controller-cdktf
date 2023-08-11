@@ -116,7 +116,7 @@ func NewPodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList(terraformResourc
 	j := jsiiProxy_PodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList_Override(p PodSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecSupplementalGroupsRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

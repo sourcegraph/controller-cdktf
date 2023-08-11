@@ -178,7 +178,7 @@ func NewEvidentlyFeatureEvaluationRulesOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesOutputReference",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewEvidentlyFeatureEvaluationRulesOutputReference_Override(e EvidentlyFeatu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesOutputReference",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureEvaluationRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

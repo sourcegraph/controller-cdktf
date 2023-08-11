@@ -532,7 +532,7 @@ func NewGooglePrivatecaCertificateTemplate(scope constructs.Construct, id *strin
 	j := jsiiProxy_GooglePrivatecaCertificateTemplate{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -545,7 +545,7 @@ func NewGooglePrivatecaCertificateTemplate_Override(g GooglePrivatecaCertificate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -711,7 +711,7 @@ func GooglePrivatecaCertificateTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func GooglePrivatecaCertificateTemplate_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func GooglePrivatecaCertificateTemplate_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GooglePrivatecaCertificateTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplate",
 		"tfResourceType",
 		&returns,
 	)

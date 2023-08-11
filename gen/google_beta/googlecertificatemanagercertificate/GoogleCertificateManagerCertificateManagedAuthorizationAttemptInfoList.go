@@ -104,7 +104,7 @@ func NewGoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList(t
 	j := jsiiProxy_GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificateManagedAuthorizationAttemptInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

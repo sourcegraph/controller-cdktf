@@ -261,7 +261,7 @@ func NewClusterRoleMetadataOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_ClusterRoleMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleMetadataOutputReference",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -273,7 +273,7 @@ func NewClusterRoleMetadataOutputReference_Override(c ClusterRoleMetadataOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleMetadataOutputReference",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -274,7 +274,7 @@ func NewEc2FleetTargetCapacitySpecificationOutputReference(terraformResource cdk
 	j := jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetTargetCapacitySpecificationOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetTargetCapacitySpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -286,7 +286,7 @@ func NewEc2FleetTargetCapacitySpecificationOutputReference_Override(e Ec2FleetTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetTargetCapacitySpecificationOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetTargetCapacitySpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

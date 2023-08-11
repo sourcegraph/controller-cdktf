@@ -180,7 +180,7 @@ func NewKeyspacesTablePointInTimeRecoveryOutputReference(terraformResource cdktf
 	j := jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTablePointInTimeRecoveryOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecoveryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewKeyspacesTablePointInTimeRecoveryOutputReference_Override(k KeyspacesTab
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTablePointInTimeRecoveryOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTablePointInTimeRecoveryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.mskScramSecretAssociation.MskScramSecretAssociation",
+		"@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociation",
 		reflect.TypeOf((*MskScramSecretAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.mskScramSecretAssociation.MskScramSecretAssociationConfig",
+		"@cdktf/provider-aws.mskScramSecretAssociation.MskScramSecretAssociationConfig",
 		reflect.TypeOf((*MskScramSecretAssociationConfig)(nil)).Elem(),
 	)
 }

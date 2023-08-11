@@ -228,7 +228,7 @@ func NewPodSpecContainerEnvFromOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_PodSpecContainerEnvFromOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerEnvFromOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewPodSpecContainerEnvFromOutputReference_Override(p PodSpecContainerEnvFro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerEnvFromOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerEnvFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

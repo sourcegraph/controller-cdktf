@@ -180,7 +180,7 @@ func NewGlueJobNotificationPropertyOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GlueJobNotificationPropertyOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueJob.GlueJobNotificationPropertyOutputReference",
+		"@cdktf/provider-aws.glueJob.GlueJobNotificationPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGlueJobNotificationPropertyOutputReference_Override(g GlueJobNotificatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueJob.GlueJobNotificationPropertyOutputReference",
+		"@cdktf/provider-aws.glueJob.GlueJobNotificationPropertyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

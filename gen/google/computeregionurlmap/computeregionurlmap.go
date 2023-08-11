@@ -603,7 +603,7 @@ func NewComputeRegionUrlMap(scope constructs.Construct, id *string, config *Comp
 	j := jsiiProxy_ComputeRegionUrlMap{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMap",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -616,7 +616,7 @@ func NewComputeRegionUrlMap_Override(c ComputeRegionUrlMap, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMap",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -782,7 +782,7 @@ func ComputeRegionUrlMap_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionUrlMap.ComputeRegionUrlMap",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -801,7 +801,7 @@ func ComputeRegionUrlMap_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionUrlMap.ComputeRegionUrlMap",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -820,7 +820,7 @@ func ComputeRegionUrlMap_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionUrlMap.ComputeRegionUrlMap",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -833,7 +833,7 @@ func ComputeRegionUrlMap_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionUrlMap.ComputeRegionUrlMap",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMap",
 		"tfResourceType",
 		&returns,
 	)

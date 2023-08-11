@@ -204,7 +204,7 @@ func NewPodTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_PodTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodTimeoutsOutputReference_Override(p PodTimeoutsOutputReference, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

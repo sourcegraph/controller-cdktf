@@ -438,7 +438,7 @@ func NewHealthcareConsentStore(scope constructs.Construct, id *string, config *H
 	j := jsiiProxy_HealthcareConsentStore{}
 
 	_jsii_.Create(
-		"google.healthcareConsentStore.HealthcareConsentStore",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewHealthcareConsentStore_Override(h HealthcareConsentStore, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareConsentStore.HealthcareConsentStore",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -617,7 +617,7 @@ func HealthcareConsentStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStore.HealthcareConsentStore",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func HealthcareConsentStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStore.HealthcareConsentStore",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func HealthcareConsentStore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareConsentStore.HealthcareConsentStore",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func HealthcareConsentStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareConsentStore.HealthcareConsentStore",
+		"@cdktf/provider-google.healthcareConsentStore.HealthcareConsentStore",
 		"tfResourceType",
 		&returns,
 	)

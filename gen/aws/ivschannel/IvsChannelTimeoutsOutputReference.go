@@ -228,7 +228,7 @@ func NewIvsChannelTimeoutsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_IvsChannelTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ivsChannel.IvsChannelTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivsChannel.IvsChannelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIvsChannelTimeoutsOutputReference_Override(i IvsChannelTimeoutsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivsChannel.IvsChannelTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivsChannel.IvsChannelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

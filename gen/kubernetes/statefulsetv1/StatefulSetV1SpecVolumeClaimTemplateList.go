@@ -116,7 +116,7 @@ func NewStatefulSetV1SpecVolumeClaimTemplateList(terraformResource cdktf.IInterp
 	j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateList{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewStatefulSetV1SpecVolumeClaimTemplateList_Override(s StatefulSetV1SpecVol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateList",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

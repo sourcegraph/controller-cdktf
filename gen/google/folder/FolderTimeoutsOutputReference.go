@@ -252,7 +252,7 @@ func NewFolderTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_FolderTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.folder.FolderTimeoutsOutputReference",
+		"@cdktf/provider-google.folder.FolderTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewFolderTimeoutsOutputReference_Override(f FolderTimeoutsOutputReference, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folder.FolderTimeoutsOutputReference",
+		"@cdktf/provider-google.folder.FolderTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

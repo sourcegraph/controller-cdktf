@@ -227,7 +227,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference(terrafor
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleShareRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

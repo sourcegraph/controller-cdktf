@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
+		"@cdktf/provider-google-beta.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
 		reflect.TypeOf((*DataGoogleAccessApprovalProjectServiceAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountEmail", GoGetter: "AccountEmail"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccountConfig",
+		"@cdktf/provider-google-beta.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccountConfig",
 		reflect.TypeOf((*DataGoogleAccessApprovalProjectServiceAccountConfig)(nil)).Elem(),
 	)
 }

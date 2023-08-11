@@ -460,7 +460,7 @@ func NewGrant(scope constructs.Construct, id *string, config *GrantConfig) Grant
 	j := jsiiProxy_Grant{}
 
 	_jsii_.Create(
-		"postgresql.grant.Grant",
+		"@cdktf/provider-postgresql.grant.Grant",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewGrant_Override(g Grant, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.grant.Grant",
+		"@cdktf/provider-postgresql.grant.Grant",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -661,7 +661,7 @@ func Grant_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.grant.Grant",
+		"@cdktf/provider-postgresql.grant.Grant",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func Grant_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.grant.Grant",
+		"@cdktf/provider-postgresql.grant.Grant",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func Grant_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.grant.Grant",
+		"@cdktf/provider-postgresql.grant.Grant",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func Grant_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.grant.Grant",
+		"@cdktf/provider-postgresql.grant.Grant",
 		"tfResourceType",
 		&returns,
 	)

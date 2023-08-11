@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey",
+		"@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKey",
 		reflect.TypeOf((*DataAwsApiGatewayApiKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig",
+		"@cdktf/provider-aws.dataAwsApiGatewayApiKey.DataAwsApiGatewayApiKeyConfig",
 		reflect.TypeOf((*DataAwsApiGatewayApiKeyConfig)(nil)).Elem(),
 	)
 }

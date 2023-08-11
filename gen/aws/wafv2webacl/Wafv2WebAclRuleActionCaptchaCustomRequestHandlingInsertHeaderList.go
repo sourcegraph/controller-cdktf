@@ -116,7 +116,7 @@ func NewWafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList(terraf
 	j := jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

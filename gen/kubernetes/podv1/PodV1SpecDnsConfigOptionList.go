@@ -116,7 +116,7 @@ func NewPodV1SpecDnsConfigOptionList(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_PodV1SpecDnsConfigOptionList{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodV1SpecDnsConfigOptionList_Override(p PodV1SpecDnsConfigOptionList, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

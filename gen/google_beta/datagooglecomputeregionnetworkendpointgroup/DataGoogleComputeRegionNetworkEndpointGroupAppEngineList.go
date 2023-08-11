@@ -104,7 +104,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupAppEngineList(terraformResour
 	j := jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupAppEngineList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupAppEngineList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupAppEngineList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupAppEngineList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupAppEngineList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

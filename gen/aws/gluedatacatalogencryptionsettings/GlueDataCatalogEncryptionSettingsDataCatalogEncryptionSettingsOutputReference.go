@@ -202,7 +202,7 @@ func NewGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputRefe
 	j := jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference",
+		"@cdktf/provider-aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference",
+		"@cdktf/provider-aws.glueDataCatalogEncryptionSettings.GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

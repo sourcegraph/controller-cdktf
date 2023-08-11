@@ -365,7 +365,7 @@ func NewOrganizationMembership(scope constructs.Construct, id *string, config *O
 	j := jsiiProxy_OrganizationMembership{}
 
 	_jsii_.Create(
-		"tfe.organizationMembership.OrganizationMembership",
+		"@cdktf/provider-tfe.organizationMembership.OrganizationMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewOrganizationMembership_Override(o OrganizationMembership, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.organizationMembership.OrganizationMembership",
+		"@cdktf/provider-tfe.organizationMembership.OrganizationMembership",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -511,7 +511,7 @@ func OrganizationMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationMembership.OrganizationMembership",
+		"@cdktf/provider-tfe.organizationMembership.OrganizationMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func OrganizationMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationMembership.OrganizationMembership",
+		"@cdktf/provider-tfe.organizationMembership.OrganizationMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func OrganizationMembership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.organizationMembership.OrganizationMembership",
+		"@cdktf/provider-tfe.organizationMembership.OrganizationMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func OrganizationMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.organizationMembership.OrganizationMembership",
+		"@cdktf/provider-tfe.organizationMembership.OrganizationMembership",
 		"tfResourceType",
 		&returns,
 	)

@@ -226,7 +226,7 @@ func NewFolderIamMemberConditionOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_FolderIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.folderIamMember.FolderIamMemberConditionOutputReference",
+		"@cdktf/provider-google.folderIamMember.FolderIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewFolderIamMemberConditionOutputReference_Override(f FolderIamMemberCondit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderIamMember.FolderIamMemberConditionOutputReference",
+		"@cdktf/provider-google.folderIamMember.FolderIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
 		reflect.TypeOf((*OpsworksHaproxyLayer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -147,15 +147,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfiguration",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfiguration",
 		reflect.TypeOf((*OpsworksHaproxyLayerCloudwatchConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreams",
 		reflect.TypeOf((*OpsworksHaproxyLayerCloudwatchConfigurationLogStreams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsList",
 		reflect.TypeOf((*OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -176,7 +176,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference",
 		reflect.TypeOf((*OpsworksHaproxyLayerCloudwatchConfigurationLogStreamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchCount", GoGetter: "BatchCount"},
@@ -239,7 +239,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerCloudwatchConfigurationOutputReference",
 		reflect.TypeOf((*OpsworksHaproxyLayerCloudwatchConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -278,15 +278,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerConfig",
 		reflect.TypeOf((*OpsworksHaproxyLayerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolume",
 		reflect.TypeOf((*OpsworksHaproxyLayerEbsVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeList",
 		reflect.TypeOf((*OpsworksHaproxyLayerEbsVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -307,7 +307,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerEbsVolumeOutputReference",
 		reflect.TypeOf((*OpsworksHaproxyLayerEbsVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -357,15 +357,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScaling",
 		reflect.TypeOf((*OpsworksHaproxyLayerLoadBasedAutoScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling",
 		reflect.TypeOf((*OpsworksHaproxyLayerLoadBasedAutoScalingDownscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference",
 		reflect.TypeOf((*OpsworksHaproxyLayerLoadBasedAutoScalingDownscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
@@ -418,7 +418,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingOutputReference",
 		reflect.TypeOf((*OpsworksHaproxyLayerLoadBasedAutoScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -461,11 +461,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling",
 		reflect.TypeOf((*OpsworksHaproxyLayerLoadBasedAutoScalingUpscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputReference",
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputReference",
 		reflect.TypeOf((*OpsworksHaproxyLayerLoadBasedAutoScalingUpscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},

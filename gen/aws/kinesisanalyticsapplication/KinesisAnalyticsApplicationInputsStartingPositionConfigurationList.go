@@ -116,7 +116,7 @@ func NewKinesisAnalyticsApplicationInputsStartingPositionConfigurationList(terra
 	j := jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsStartingPositionConfigurationList",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsStartingPositionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKinesisAnalyticsApplicationInputsStartingPositionConfigurationList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsStartingPositionConfigurationList",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationInputsStartingPositionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

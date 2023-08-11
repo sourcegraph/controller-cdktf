@@ -204,7 +204,7 @@ func NewDeploymentV1SpecStrategyRollingUpdateOutputReference(terraformResource c
 	j := jsiiProxy_DeploymentV1SpecStrategyRollingUpdateOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecStrategyRollingUpdateOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecStrategyRollingUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentV1SpecStrategyRollingUpdateOutputReference_Override(d Deployme
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecStrategyRollingUpdateOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecStrategyRollingUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewPagesProjectDeploymentConfigsProductionServiceBindingList(terraformResou
 	j := jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingList{}
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingList",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPagesProjectDeploymentConfigsProductionServiceBindingList_Override(p Pag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingList",
+		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionServiceBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

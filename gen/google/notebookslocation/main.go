@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.notebooksLocation.NotebooksLocation",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocation",
 		reflect.TypeOf((*NotebooksLocation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.notebooksLocation.NotebooksLocationConfig",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocationConfig",
 		reflect.TypeOf((*NotebooksLocationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.notebooksLocation.NotebooksLocationTimeouts",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocationTimeouts",
 		reflect.TypeOf((*NotebooksLocationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.notebooksLocation.NotebooksLocationTimeoutsOutputReference",
+		"@cdktf/provider-google.notebooksLocation.NotebooksLocationTimeoutsOutputReference",
 		reflect.TypeOf((*NotebooksLocationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

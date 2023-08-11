@@ -335,7 +335,7 @@ func NewDataGoogleGameServicesGameServerDeploymentRollout(scope constructs.Const
 	j := jsiiProxy_DataGoogleGameServicesGameServerDeploymentRollout{}
 
 	_jsii_.Create(
-		"google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -348,7 +348,7 @@ func NewDataGoogleGameServicesGameServerDeploymentRollout_Override(d DataGoogleG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -448,7 +448,7 @@ func DataGoogleGameServicesGameServerDeploymentRollout_IsConstruct(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataGoogleGameServicesGameServerDeploymentRollout_IsTerraformDataSource(x i
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -486,7 +486,7 @@ func DataGoogleGameServicesGameServerDeploymentRollout_IsTerraformElement(x inte
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleGameServicesGameServerDeploymentRollout_TfResourceType() *string 
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
+		"@cdktf/provider-google.dataGoogleGameServicesGameServerDeploymentRollout.DataGoogleGameServicesGameServerDeploymentRollout",
 		"tfResourceType",
 		&returns,
 	)

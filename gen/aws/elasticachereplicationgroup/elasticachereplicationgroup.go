@@ -1332,7 +1332,7 @@ func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ElasticacheReplicationGroup{}
 
 	_jsii_.Create(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1345,7 +1345,7 @@ func NewElasticacheReplicationGroup_Override(e ElasticacheReplicationGroup, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -1863,7 +1863,7 @@ func ElasticacheReplicationGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1882,7 +1882,7 @@ func ElasticacheReplicationGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1901,7 +1901,7 @@ func ElasticacheReplicationGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1914,7 +1914,7 @@ func ElasticacheReplicationGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		"tfResourceType",
 		&returns,
 	)

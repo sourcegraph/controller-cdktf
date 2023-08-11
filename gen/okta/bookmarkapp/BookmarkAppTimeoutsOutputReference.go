@@ -228,7 +228,7 @@ func NewBookmarkAppTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_BookmarkAppTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"okta.bookmarkApp.BookmarkAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBookmarkAppTimeoutsOutputReference_Override(b BookmarkAppTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.bookmarkApp.BookmarkAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.bookmarkApp.BookmarkAppTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

@@ -425,7 +425,7 @@ func NewDirectoryServiceSharedDirectory(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DirectoryServiceSharedDirectory{}
 
 	_jsii_.Create(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewDirectoryServiceSharedDirectory_Override(d DirectoryServiceSharedDirecto
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -582,7 +582,7 @@ func DirectoryServiceSharedDirectory_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DirectoryServiceSharedDirectory_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DirectoryServiceSharedDirectory_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func DirectoryServiceSharedDirectory_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
 		"tfResourceType",
 		&returns,
 	)

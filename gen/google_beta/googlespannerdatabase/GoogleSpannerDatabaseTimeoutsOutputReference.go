@@ -228,7 +228,7 @@ func NewGoogleSpannerDatabaseTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleSpannerDatabaseTimeoutsOutputReference_Override(g GoogleSpannerDat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabaseTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

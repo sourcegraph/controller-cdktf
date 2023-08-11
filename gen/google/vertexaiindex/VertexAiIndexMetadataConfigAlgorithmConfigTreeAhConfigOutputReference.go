@@ -204,7 +204,7 @@ func NewVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference(te
 	j := jsiiProxy_VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference",
+		"@cdktf/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

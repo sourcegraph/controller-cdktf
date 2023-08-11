@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntry",
 		reflect.TypeOf((*CertificateManagerCertificateMapEntry)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryConfig",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryConfig",
 		reflect.TypeOf((*CertificateManagerCertificateMapEntryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeouts",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeouts",
 		reflect.TypeOf((*CertificateManagerCertificateMapEntryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeoutsOutputReference",
+		"@cdktf/provider-google.certificateManagerCertificateMapEntry.CertificateManagerCertificateMapEntryTimeoutsOutputReference",
 		reflect.TypeOf((*CertificateManagerCertificateMapEntryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

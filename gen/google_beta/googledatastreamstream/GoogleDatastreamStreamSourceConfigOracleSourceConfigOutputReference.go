@@ -300,7 +300,7 @@ func NewGoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference(terr
 	j := jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

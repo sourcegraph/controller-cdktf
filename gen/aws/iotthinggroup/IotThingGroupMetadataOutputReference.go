@@ -189,7 +189,7 @@ func NewIotThingGroupMetadataOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_IotThingGroupMetadataOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotThingGroup.IotThingGroupMetadataOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewIotThingGroupMetadataOutputReference_Override(i IotThingGroupMetadataOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotThingGroup.IotThingGroupMetadataOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

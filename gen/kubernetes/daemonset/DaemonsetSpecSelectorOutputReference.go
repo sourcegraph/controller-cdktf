@@ -204,7 +204,7 @@ func NewDaemonsetSpecSelectorOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DaemonsetSpecSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDaemonsetSpecSelectorOutputReference_Override(d DaemonsetSpecSelectorOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

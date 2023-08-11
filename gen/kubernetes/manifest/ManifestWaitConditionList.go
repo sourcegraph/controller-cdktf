@@ -116,7 +116,7 @@ func NewManifestWaitConditionList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_ManifestWaitConditionList{}
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestWaitConditionList",
+		"@cdktf/provider-kubernetes.manifest.ManifestWaitConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewManifestWaitConditionList_Override(m ManifestWaitConditionList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.manifest.ManifestWaitConditionList",
+		"@cdktf/provider-kubernetes.manifest.ManifestWaitConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

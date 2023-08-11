@@ -435,7 +435,7 @@ func NewCognitoUserPoolUiCustomization(scope constructs.Construct, id *string, c
 	j := jsiiProxy_CognitoUserPoolUiCustomization{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
+		"@cdktf/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewCognitoUserPoolUiCustomization_Override(c CognitoUserPoolUiCustomization
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
+		"@cdktf/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -603,7 +603,7 @@ func CognitoUserPoolUiCustomization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
+		"@cdktf/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func CognitoUserPoolUiCustomization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
+		"@cdktf/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func CognitoUserPoolUiCustomization_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
+		"@cdktf/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func CognitoUserPoolUiCustomization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
+		"@cdktf/provider-aws.cognitoUserPoolUiCustomization.CognitoUserPoolUiCustomization",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewConfigOrganizationCustomRuleTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_ConfigOrganizationCustomRuleTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewConfigOrganizationCustomRuleTimeoutsOutputReference_Override(c ConfigOrg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeoutsOutputReference",
+		"@cdktf/provider-aws.configOrganizationCustomRule.ConfigOrganizationCustomRuleTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -249,7 +249,7 @@ func NewCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference(terrafor
 	j := jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

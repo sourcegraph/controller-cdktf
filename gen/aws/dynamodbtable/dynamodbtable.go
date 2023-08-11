@@ -856,7 +856,7 @@ func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTa
 	j := jsiiProxy_DynamodbTable{}
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTable",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -869,7 +869,7 @@ func NewDynamodbTable_Override(d DynamodbTable, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbTable.DynamodbTable",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1134,7 +1134,7 @@ func DynamodbTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbTable.DynamodbTable",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1153,7 +1153,7 @@ func DynamodbTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbTable.DynamodbTable",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1172,7 +1172,7 @@ func DynamodbTable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbTable.DynamodbTable",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1185,7 +1185,7 @@ func DynamodbTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dynamodbTable.DynamodbTable",
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		"tfResourceType",
 		&returns,
 	)

@@ -481,7 +481,7 @@ func NewContainerAnalysisOccurrence(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ContainerAnalysisOccurrence{}
 
 	_jsii_.Create(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewContainerAnalysisOccurrence_Override(c ContainerAnalysisOccurrence, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -649,7 +649,7 @@ func ContainerAnalysisOccurrence_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func ContainerAnalysisOccurrence_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func ContainerAnalysisOccurrence_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func ContainerAnalysisOccurrence_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
+		"@cdktf/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence",
 		"tfResourceType",
 		&returns,
 	)

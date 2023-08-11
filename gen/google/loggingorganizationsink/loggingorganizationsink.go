@@ -520,7 +520,7 @@ func NewLoggingOrganizationSink(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_LoggingOrganizationSink{}
 
 	_jsii_.Create(
-		"google.loggingOrganizationSink.LoggingOrganizationSink",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewLoggingOrganizationSink_Override(l LoggingOrganizationSink, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.loggingOrganizationSink.LoggingOrganizationSink",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -721,7 +721,7 @@ func LoggingOrganizationSink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingOrganizationSink.LoggingOrganizationSink",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func LoggingOrganizationSink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingOrganizationSink.LoggingOrganizationSink",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func LoggingOrganizationSink_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.loggingOrganizationSink.LoggingOrganizationSink",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func LoggingOrganizationSink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.loggingOrganizationSink.LoggingOrganizationSink",
+		"@cdktf/provider-google.loggingOrganizationSink.LoggingOrganizationSink",
 		"tfResourceType",
 		&returns,
 	)

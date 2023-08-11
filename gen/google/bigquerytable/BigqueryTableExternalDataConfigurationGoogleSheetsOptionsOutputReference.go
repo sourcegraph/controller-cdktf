@@ -204,7 +204,7 @@ func NewBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference
 	j := jsiiProxy_BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

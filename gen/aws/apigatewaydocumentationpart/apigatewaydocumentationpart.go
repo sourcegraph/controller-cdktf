@@ -365,7 +365,7 @@ func NewApiGatewayDocumentationPart(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ApiGatewayDocumentationPart{}
 
 	_jsii_.Create(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewApiGatewayDocumentationPart_Override(a ApiGatewayDocumentationPart, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -511,7 +511,7 @@ func ApiGatewayDocumentationPart_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -530,7 +530,7 @@ func ApiGatewayDocumentationPart_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func ApiGatewayDocumentationPart_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -562,7 +562,7 @@ func ApiGatewayDocumentationPart_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
+		"@cdktf/provider-aws.apiGatewayDocumentationPart.ApiGatewayDocumentationPart",
 		"tfResourceType",
 		&returns,
 	)

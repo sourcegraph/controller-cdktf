@@ -204,7 +204,7 @@ func NewGoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference(ter
 	j := jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference",
+		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

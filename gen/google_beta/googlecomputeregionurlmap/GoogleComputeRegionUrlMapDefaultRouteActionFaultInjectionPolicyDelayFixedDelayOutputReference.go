@@ -204,7 +204,7 @@ func NewGoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixe
 	j := jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

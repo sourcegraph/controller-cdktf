@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dbInstance.DbInstance",
+		"@cdktf/provider-aws.dbInstance.DbInstance",
 		reflect.TypeOf((*DbInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -253,11 +253,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbInstance.DbInstanceBlueGreenUpdate",
+		"@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate",
 		reflect.TypeOf((*DbInstanceBlueGreenUpdate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
 		reflect.TypeOf((*DbInstanceBlueGreenUpdateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -292,15 +292,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbInstance.DbInstanceConfig",
+		"@cdktf/provider-aws.dbInstance.DbInstanceConfig",
 		reflect.TypeOf((*DbInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbInstance.DbInstanceRestoreToPointInTime",
+		"@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime",
 		reflect.TypeOf((*DbInstanceRestoreToPointInTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
 		reflect.TypeOf((*DbInstanceRestoreToPointInTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -347,11 +347,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbInstance.DbInstanceS3Import",
+		"@cdktf/provider-aws.dbInstance.DbInstanceS3Import",
 		reflect.TypeOf((*DbInstanceS3Import)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbInstance.DbInstanceS3ImportOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference",
 		reflect.TypeOf((*DbInstanceS3ImportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -394,11 +394,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbInstance.DbInstanceTimeouts",
+		"@cdktf/provider-aws.dbInstance.DbInstanceTimeouts",
 		reflect.TypeOf((*DbInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbInstance.DbInstanceTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*DbInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -401,7 +401,7 @@ func NewComputeDiskIamPolicy(scope constructs.Construct, id *string, config *Com
 	j := jsiiProxy_ComputeDiskIamPolicy{}
 
 	_jsii_.Create(
-		"google.computeDiskIamPolicy.ComputeDiskIamPolicy",
+		"@cdktf/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewComputeDiskIamPolicy_Override(c ComputeDiskIamPolicy, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeDiskIamPolicy.ComputeDiskIamPolicy",
+		"@cdktf/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func ComputeDiskIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskIamPolicy.ComputeDiskIamPolicy",
+		"@cdktf/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func ComputeDiskIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskIamPolicy.ComputeDiskIamPolicy",
+		"@cdktf/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func ComputeDiskIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskIamPolicy.ComputeDiskIamPolicy",
+		"@cdktf/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func ComputeDiskIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeDiskIamPolicy.ComputeDiskIamPolicy",
+		"@cdktf/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

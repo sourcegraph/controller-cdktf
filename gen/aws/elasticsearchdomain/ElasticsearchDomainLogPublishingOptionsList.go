@@ -116,7 +116,7 @@ func NewElasticsearchDomainLogPublishingOptionsList(terraformResource cdktf.IInt
 	j := jsiiProxy_ElasticsearchDomainLogPublishingOptionsList{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsList",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewElasticsearchDomainLogPublishingOptionsList_Override(e ElasticsearchDoma
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsList",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

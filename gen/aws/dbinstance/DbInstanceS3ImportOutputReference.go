@@ -272,7 +272,7 @@ func NewDbInstanceS3ImportOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DbInstanceS3ImportOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbInstance.DbInstanceS3ImportOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,7 +284,7 @@ func NewDbInstanceS3ImportOutputReference_Override(d DbInstanceS3ImportOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbInstance.DbInstanceS3ImportOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

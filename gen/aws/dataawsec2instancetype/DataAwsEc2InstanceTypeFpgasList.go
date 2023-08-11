@@ -104,7 +104,7 @@ func NewDataAwsEc2InstanceTypeFpgasList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_DataAwsEc2InstanceTypeFpgasList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsEc2InstanceTypeFpgasList_Override(d DataAwsEc2InstanceTypeFpgasLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasList",
+		"@cdktf/provider-aws.dataAwsEc2InstanceType.DataAwsEc2InstanceTypeFpgasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

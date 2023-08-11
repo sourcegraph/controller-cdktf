@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.backupVaultNotifications.BackupVaultNotifications",
+		"@cdktf/provider-aws.backupVaultNotifications.BackupVaultNotifications",
 		reflect.TypeOf((*BackupVaultNotifications)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.backupVaultNotifications.BackupVaultNotificationsConfig",
+		"@cdktf/provider-aws.backupVaultNotifications.BackupVaultNotificationsConfig",
 		reflect.TypeOf((*BackupVaultNotificationsConfig)(nil)).Elem(),
 	)
 }

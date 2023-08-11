@@ -568,7 +568,7 @@ func NewEmrserverlessApplication(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_EmrserverlessApplication{}
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplication",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -581,7 +581,7 @@ func NewEmrserverlessApplication_Override(e EmrserverlessApplication, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrserverlessApplication.EmrserverlessApplication",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -758,7 +758,7 @@ func EmrserverlessApplication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrserverlessApplication.EmrserverlessApplication",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -777,7 +777,7 @@ func EmrserverlessApplication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrserverlessApplication.EmrserverlessApplication",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func EmrserverlessApplication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.emrserverlessApplication.EmrserverlessApplication",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func EmrserverlessApplication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.emrserverlessApplication.EmrserverlessApplication",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		"tfResourceType",
 		&returns,
 	)

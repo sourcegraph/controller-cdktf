@@ -180,7 +180,7 @@ func NewDataAwsEc2TransitGatewayRouteTablesTimeoutsOutputReference(terraformReso
 	j := jsiiProxy_DataAwsEc2TransitGatewayRouteTablesTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTablesTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTablesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEc2TransitGatewayRouteTablesTimeoutsOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTablesTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTablesTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

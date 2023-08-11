@@ -424,7 +424,7 @@ func NewSecretManagerSecretIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_SecretManagerSecretIamMember{}
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewSecretManagerSecretIamMember_Override(s SecretManagerSecretIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -592,7 +592,7 @@ func SecretManagerSecretIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func SecretManagerSecretIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func SecretManagerSecretIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func SecretManagerSecretIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
+		"@cdktf/provider-google.secretManagerSecretIamMember.SecretManagerSecretIamMember",
 		"tfResourceType",
 		&returns,
 	)

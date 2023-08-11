@@ -203,7 +203,7 @@ func NewS3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionBy
 	j := jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference",
+		"@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewS3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionBy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference",
+		"@cdktf/provider-aws.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -116,7 +116,7 @@ func NewGoogleDnsResponsePolicyRuleLocalDataLocalDatasList(terraformResource cdk
 	j := jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataLocalDatasList{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDnsResponsePolicyRuleLocalDataLocalDatasList_Override(g GoogleDnsR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRuleLocalDataLocalDatasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

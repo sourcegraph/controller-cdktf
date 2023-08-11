@@ -228,7 +228,7 @@ func NewNetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference(terraformRe
 	j := jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerSiteToSiteVpnAttachment.NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerSiteToSiteVpnAttachment.NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference_Override(n 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerSiteToSiteVpnAttachment.NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerSiteToSiteVpnAttachment.NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

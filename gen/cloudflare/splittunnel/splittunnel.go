@@ -389,7 +389,7 @@ func NewSplitTunnel(scope constructs.Construct, id *string, config *SplitTunnelC
 	j := jsiiProxy_SplitTunnel{}
 
 	_jsii_.Create(
-		"cloudflare.splitTunnel.SplitTunnel",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewSplitTunnel_Override(s SplitTunnel, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.splitTunnel.SplitTunnel",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -546,7 +546,7 @@ func SplitTunnel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.splitTunnel.SplitTunnel",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func SplitTunnel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.splitTunnel.SplitTunnel",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func SplitTunnel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.splitTunnel.SplitTunnel",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func SplitTunnel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.splitTunnel.SplitTunnel",
+		"@cdktf/provider-cloudflare.splitTunnel.SplitTunnel",
 		"tfResourceType",
 		&returns,
 	)

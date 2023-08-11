@@ -228,7 +228,7 @@ func NewCodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference(terraf
 	j := jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

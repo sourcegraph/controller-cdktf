@@ -401,7 +401,7 @@ func NewGoogleComputeInstanceIamPolicy(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleComputeInstanceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleComputeInstanceIamPolicy_Override(g GoogleComputeInstanceIamPolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleComputeInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleComputeInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleComputeInstanceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleComputeInstanceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

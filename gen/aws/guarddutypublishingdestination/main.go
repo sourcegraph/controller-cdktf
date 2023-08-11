@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
+		"@cdktf/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
 		reflect.TypeOf((*GuarddutyPublishingDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,7 +64,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyPublishingDestination.GuarddutyPublishingDestinationConfig",
+		"@cdktf/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestinationConfig",
 		reflect.TypeOf((*GuarddutyPublishingDestinationConfig)(nil)).Elem(),
 	)
 }

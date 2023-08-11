@@ -180,7 +180,7 @@ func NewDaemonsetSpecTemplateSpecVolumeLocalOutputReference(terraformResource cd
 	j := jsiiProxy_DaemonsetSpecTemplateSpecVolumeLocalOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeLocalOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeLocalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDaemonsetSpecTemplateSpecVolumeLocalOutputReference_Override(d Daemonset
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeLocalOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecVolumeLocalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -225,7 +225,7 @@ func NewQuicksightDataSourceParametersMariaDbOutputReference(terraformResource c
 	j := jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersMariaDbOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDbOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewQuicksightDataSourceParametersMariaDbOutputReference_Override(q Quicksig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersMariaDbOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersMariaDbOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

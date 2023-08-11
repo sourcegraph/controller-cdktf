@@ -382,7 +382,7 @@ func NewGoogleGkeonpremVmwareNodePoolConfigAOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigAOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolConfigAOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -394,7 +394,7 @@ func NewGoogleGkeonpremVmwareNodePoolConfigAOutputReference_Override(g GoogleGke
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolConfigAOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

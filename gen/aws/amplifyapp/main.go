@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.amplifyApp.AmplifyApp",
+		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
 		reflect.TypeOf((*AmplifyApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amplifyApp.AmplifyAppAutoBranchCreationConfig",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig",
 		reflect.TypeOf((*AmplifyAppAutoBranchCreationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference",
 		reflect.TypeOf((*AmplifyAppAutoBranchCreationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuthCredentials", GoGetter: "BasicAuthCredentials"},
@@ -182,15 +182,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amplifyApp.AmplifyAppConfig",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppConfig",
 		reflect.TypeOf((*AmplifyAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.amplifyApp.AmplifyAppCustomRule",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule",
 		reflect.TypeOf((*AmplifyAppCustomRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.amplifyApp.AmplifyAppCustomRuleList",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList",
 		reflect.TypeOf((*AmplifyAppCustomRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -211,7 +211,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
 		reflect.TypeOf((*AmplifyAppCustomRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -253,11 +253,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amplifyApp.AmplifyAppProductionBranch",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranch",
 		reflect.TypeOf((*AmplifyAppProductionBranch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.amplifyApp.AmplifyAppProductionBranchList",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList",
 		reflect.TypeOf((*AmplifyAppProductionBranchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -277,7 +277,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.amplifyApp.AmplifyAppProductionBranchOutputReference",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference",
 		reflect.TypeOf((*AmplifyAppProductionBranchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},

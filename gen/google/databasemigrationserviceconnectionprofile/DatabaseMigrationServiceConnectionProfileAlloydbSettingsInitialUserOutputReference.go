@@ -213,7 +213,7 @@ func NewDatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutpu
 	j := jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference{}
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -225,7 +225,7 @@ func NewDatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

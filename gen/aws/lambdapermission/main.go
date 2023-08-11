@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lambdaPermission.LambdaPermission",
+		"@cdktf/provider-aws.lambdaPermission.LambdaPermission",
 		reflect.TypeOf((*LambdaPermission)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -85,7 +85,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lambdaPermission.LambdaPermissionConfig",
+		"@cdktf/provider-aws.lambdaPermission.LambdaPermissionConfig",
 		reflect.TypeOf((*LambdaPermissionConfig)(nil)).Elem(),
 	)
 }

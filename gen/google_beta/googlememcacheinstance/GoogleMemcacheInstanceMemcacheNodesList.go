@@ -104,7 +104,7 @@ func NewGoogleMemcacheInstanceMemcacheNodesList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GoogleMemcacheInstanceMemcacheNodesList{}
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMemcacheNodesList",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMemcacheNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleMemcacheInstanceMemcacheNodesList_Override(g GoogleMemcacheInstanc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMemcacheNodesList",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMemcacheNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

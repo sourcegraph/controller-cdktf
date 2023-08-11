@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicy",
 		reflect.TypeOf((*ComputeResourcePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicyConfig",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyConfig",
 		reflect.TypeOf((*ComputeResourcePolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicyGroupPlacementPolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyGroupPlacementPolicy",
 		reflect.TypeOf((*ComputeResourcePolicyGroupPlacementPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicyGroupPlacementPolicyOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyGroupPlacementPolicyOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicyGroupPlacementPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityDomainCount", GoGetter: "AvailabilityDomainCount"},
@@ -132,11 +132,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicy",
 		reflect.TypeOf((*ComputeResourcePolicyInstanceSchedulePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicyInstanceSchedulePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -184,11 +184,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule",
 		reflect.TypeOf((*ComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicyInstanceSchedulePolicyVmStartScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule",
 		reflect.TypeOf((*ComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicyInstanceSchedulePolicyVmStopScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -260,11 +260,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicy",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -307,11 +307,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicy",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicy",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyRetentionPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -348,15 +348,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicySchedule",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicySchedule",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleDailySchedule",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleDailySchedule",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleDailySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -392,11 +392,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedule",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedule",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleHourlyScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -432,7 +432,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -476,15 +476,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -505,7 +505,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -541,7 +541,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -576,11 +576,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicySnapshotProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "chainName", GoGetter: "ChainName"},
@@ -624,11 +624,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeResourcePolicy.ComputeResourcePolicyTimeouts",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyTimeouts",
 		reflect.TypeOf((*ComputeResourcePolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeResourcePolicy.ComputeResourcePolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeResourcePolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

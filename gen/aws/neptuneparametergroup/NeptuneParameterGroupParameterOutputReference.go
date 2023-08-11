@@ -226,7 +226,7 @@ func NewNeptuneParameterGroupParameterOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_NeptuneParameterGroupParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewNeptuneParameterGroupParameterOutputReference_Override(n NeptuneParamete
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.neptuneParameterGroup.NeptuneParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

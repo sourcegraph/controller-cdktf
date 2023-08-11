@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSlo",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSlo",
 		reflect.TypeOf((*MonitoringSlo)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,15 +94,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloBasicSli",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSli",
 		reflect.TypeOf((*MonitoringSloBasicSli)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloBasicSliAvailability",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliAvailability",
 		reflect.TypeOf((*MonitoringSloBasicSliAvailability)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloBasicSliAvailabilityOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliAvailabilityOutputReference",
 		reflect.TypeOf((*MonitoringSloBasicSliAvailabilityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,11 +137,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloBasicSliLatency",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliLatency",
 		reflect.TypeOf((*MonitoringSloBasicSliLatency)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloBasicSliLatencyOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliLatencyOutputReference",
 		reflect.TypeOf((*MonitoringSloBasicSliLatencyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,7 +175,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloBasicSliOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloBasicSliOutputReference",
 		reflect.TypeOf((*MonitoringSloBasicSliOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -224,19 +224,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloConfig",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloConfig",
 		reflect.TypeOf((*MonitoringSloConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloRequestBasedSli",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSli",
 		reflect.TypeOf((*MonitoringSloRequestBasedSli)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCut",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCut",
 		reflect.TypeOf((*MonitoringSloRequestBasedSliDistributionCut)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutOutputReference",
 		reflect.TypeOf((*MonitoringSloRequestBasedSliDistributionCutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -273,11 +273,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutRange",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutRange",
 		reflect.TypeOf((*MonitoringSloRequestBasedSliDistributionCutRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutRangeOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutRangeOutputReference",
 		reflect.TypeOf((*MonitoringSloRequestBasedSliDistributionCutRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -315,11 +315,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatio",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatio",
 		reflect.TypeOf((*MonitoringSloRequestBasedSliGoodTotalRatio)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatioOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliGoodTotalRatioOutputReference",
 		reflect.TypeOf((*MonitoringSloRequestBasedSliGoodTotalRatioOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "badServiceFilter", GoGetter: "BadServiceFilter"},
@@ -360,7 +360,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliOutputReference",
 		reflect.TypeOf((*MonitoringSloRequestBasedSliOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -400,11 +400,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloTimeouts",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloTimeouts",
 		reflect.TypeOf((*MonitoringSloTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloTimeoutsOutputReference",
 		reflect.TypeOf((*MonitoringSloTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -445,23 +445,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSli",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSli",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSli)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThreshold",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThreshold",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThreshold)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -496,11 +496,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -534,7 +534,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -583,7 +583,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicSliPerformance", GoGetter: "BasicSliPerformance"},
@@ -626,15 +626,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -671,11 +671,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -713,11 +713,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "badServiceFilter", GoGetter: "BadServiceFilter"},
@@ -758,7 +758,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -798,11 +798,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRange",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRange",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricMeanInRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -839,11 +839,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRange",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRange",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricMeanInRangeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -881,11 +881,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRange",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRange",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricSumInRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricSumInRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -922,11 +922,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRange",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRange",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricSumInRangeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -964,7 +964,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringSlo.MonitoringSloWindowsBasedSliOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloWindowsBasedSliOutputReference",
 		reflect.TypeOf((*MonitoringSloWindowsBasedSliOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

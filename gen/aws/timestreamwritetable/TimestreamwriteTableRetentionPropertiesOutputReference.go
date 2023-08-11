@@ -202,7 +202,7 @@ func NewTimestreamwriteTableRetentionPropertiesOutputReference(terraformResource
 	j := jsiiProxy_TimestreamwriteTableRetentionPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.timestreamwriteTable.TimestreamwriteTableRetentionPropertiesOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTimestreamwriteTableRetentionPropertiesOutputReference_Override(t Timest
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.timestreamwriteTable.TimestreamwriteTableRetentionPropertiesOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableRetentionPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

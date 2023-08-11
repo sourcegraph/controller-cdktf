@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList(terrafor
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

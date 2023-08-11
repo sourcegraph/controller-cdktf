@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsRegions.DataAwsRegions",
+		"@cdktf/provider-aws.dataAwsRegions.DataAwsRegions",
 		reflect.TypeOf((*DataAwsRegions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRegions.DataAwsRegionsConfig",
+		"@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsConfig",
 		reflect.TypeOf((*DataAwsRegionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRegions.DataAwsRegionsFilter",
+		"@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilter",
 		reflect.TypeOf((*DataAwsRegionsFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRegions.DataAwsRegionsFilterList",
+		"@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilterList",
 		reflect.TypeOf((*DataAwsRegionsFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsRegions.DataAwsRegionsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsRegions.DataAwsRegionsFilterOutputReference",
 		reflect.TypeOf((*DataAwsRegionsFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

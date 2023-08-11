@@ -202,7 +202,7 @@ func NewFsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfiguration
 	j := jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewFsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemRootVolumeConfigurationNfsExportsClientConfigurationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

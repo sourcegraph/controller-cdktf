@@ -248,7 +248,7 @@ func NewIotTopicRuleCloudwatchAlarmOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_IotTopicRuleCloudwatchAlarmOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -260,7 +260,7 @@ func NewIotTopicRuleCloudwatchAlarmOutputReference_Override(i IotTopicRuleCloudw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

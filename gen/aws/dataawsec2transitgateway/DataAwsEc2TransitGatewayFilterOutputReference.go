@@ -202,7 +202,7 @@ func NewDataAwsEc2TransitGatewayFilterOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsEc2TransitGatewayFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsEc2TransitGatewayFilterOutputReference_Override(d DataAwsEc2Trans
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2TransitGateway.DataAwsEc2TransitGatewayFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

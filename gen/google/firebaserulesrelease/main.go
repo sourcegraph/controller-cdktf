@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.firebaserulesRelease.FirebaserulesRelease",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesRelease",
 		reflect.TypeOf((*FirebaserulesRelease)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.firebaserulesRelease.FirebaserulesReleaseConfig",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesReleaseConfig",
 		reflect.TypeOf((*FirebaserulesReleaseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.firebaserulesRelease.FirebaserulesReleaseTimeouts",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeouts",
 		reflect.TypeOf((*FirebaserulesReleaseTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.firebaserulesRelease.FirebaserulesReleaseTimeoutsOutputReference",
+		"@cdktf/provider-google.firebaserulesRelease.FirebaserulesReleaseTimeoutsOutputReference",
 		reflect.TypeOf((*FirebaserulesReleaseTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

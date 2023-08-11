@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutine",
 		reflect.TypeOf((*GoogleBigqueryRoutine)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,11 +95,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArguments",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArguments",
 		reflect.TypeOf((*GoogleBigqueryRoutineArguments)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArgumentsList",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArgumentsList",
 		reflect.TypeOf((*GoogleBigqueryRoutineArgumentsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArgumentsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineArgumentsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryRoutineArgumentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "argumentKind", GoGetter: "ArgumentKind"},
@@ -164,15 +164,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineConfig",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineConfig",
 		reflect.TypeOf((*GoogleBigqueryRoutineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineTimeouts",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineTimeouts",
 		reflect.TypeOf((*GoogleBigqueryRoutineTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryRoutine.GoogleBigqueryRoutineTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleBigqueryRoutineTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

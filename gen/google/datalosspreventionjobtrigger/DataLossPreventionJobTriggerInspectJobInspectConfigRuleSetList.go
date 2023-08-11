@@ -116,7 +116,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList(terraform
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsKendraIndexServerSideEncryptionConfigurationList(terraformResourc
 	j := jsiiProxy_DataAwsKendraIndexServerSideEncryptionConfigurationList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexServerSideEncryptionConfigurationList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexServerSideEncryptionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraIndexServerSideEncryptionConfigurationList_Override(d DataA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraIndex.DataAwsKendraIndexServerSideEncryptionConfigurationList",
+		"@cdktf/provider-aws.dataAwsKendraIndex.DataAwsKendraIndexServerSideEncryptionConfigurationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

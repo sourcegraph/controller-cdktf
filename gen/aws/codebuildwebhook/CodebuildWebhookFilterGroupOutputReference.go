@@ -180,7 +180,7 @@ func NewCodebuildWebhookFilterGroupOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_CodebuildWebhookFilterGroupOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroupOutputReference",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCodebuildWebhookFilterGroupOutputReference_Override(c CodebuildWebhookFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildWebhook.CodebuildWebhookFilterGroupOutputReference",
+		"@cdktf/provider-aws.codebuildWebhook.CodebuildWebhookFilterGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

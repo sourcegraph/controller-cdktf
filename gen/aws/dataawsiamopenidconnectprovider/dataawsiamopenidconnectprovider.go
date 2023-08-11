@@ -362,7 +362,7 @@ func NewDataAwsIamOpenidConnectProvider(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsIamOpenidConnectProvider{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
+		"@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -375,7 +375,7 @@ func NewDataAwsIamOpenidConnectProvider_Override(d DataAwsIamOpenidConnectProvid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
+		"@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -497,7 +497,7 @@ func DataAwsIamOpenidConnectProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
+		"@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func DataAwsIamOpenidConnectProvider_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
+		"@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataAwsIamOpenidConnectProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
+		"@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataAwsIamOpenidConnectProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
+		"@cdktf/provider-aws.dataAwsIamOpenidConnectProvider.DataAwsIamOpenidConnectProvider",
 		"tfResourceType",
 		&returns,
 	)

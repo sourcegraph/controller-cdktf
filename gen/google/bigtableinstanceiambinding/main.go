@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBinding",
 		reflect.TypeOf((*BigtableInstanceIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBindingCondition",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBindingCondition",
 		reflect.TypeOf((*BigtableInstanceIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBindingConditionOutputReference",
 		reflect.TypeOf((*BigtableInstanceIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableInstanceIamBinding.BigtableInstanceIamBindingConfig",
+		"@cdktf/provider-google.bigtableInstanceIamBinding.BigtableInstanceIamBindingConfig",
 		reflect.TypeOf((*BigtableInstanceIamBindingConfig)(nil)).Elem(),
 	)
 }

@@ -250,7 +250,7 @@ func NewComputeRegionPerInstanceConfigPreservedStateDiskOutputReference(terrafor
 	j := jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewComputeRegionPerInstanceConfigPreservedStateDiskOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference",
+		"@cdktf/provider-google.computeRegionPerInstanceConfig.ComputeRegionPerInstanceConfigPreservedStateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

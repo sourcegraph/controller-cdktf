@@ -116,7 +116,7 @@ func NewTransferWorkflowStepsTagStepDetailsTagsList(terraformResource cdktf.IInt
 	j := jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsList{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsList",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTransferWorkflowStepsTagStepDetailsTagsList_Override(t TransferWorkflowS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsList",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

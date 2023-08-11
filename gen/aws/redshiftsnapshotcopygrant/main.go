@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
+		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrant",
 		reflect.TypeOf((*RedshiftSnapshotCopyGrant)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrantConfig",
+		"@cdktf/provider-aws.redshiftSnapshotCopyGrant.RedshiftSnapshotCopyGrantConfig",
 		reflect.TypeOf((*RedshiftSnapshotCopyGrantConfig)(nil)).Elem(),
 	)
 }

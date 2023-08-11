@@ -200,7 +200,7 @@ func NewDataGoogleStorageBucketCorsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DataGoogleStorageBucketCorsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketCorsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketCorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataGoogleStorageBucketCorsOutputReference_Override(d DataGoogleStorageB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketCorsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucket.DataGoogleStorageBucketCorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -543,7 +543,7 @@ func NewGoogleContainerAnalysisNote(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleContainerAnalysisNote{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -556,7 +556,7 @@ func NewGoogleContainerAnalysisNote_Override(g GoogleContainerAnalysisNote, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -733,7 +733,7 @@ func GoogleContainerAnalysisNote_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func GoogleContainerAnalysisNote_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func GoogleContainerAnalysisNote_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func GoogleContainerAnalysisNote_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNote",
 		"tfResourceType",
 		&returns,
 	)

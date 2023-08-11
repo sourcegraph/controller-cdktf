@@ -116,7 +116,7 @@ func NewCodepipelineArtifactStoreList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_CodepipelineArtifactStoreList{}
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineArtifactStoreList",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodepipelineArtifactStoreList_Override(c CodepipelineArtifactStoreList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipeline.CodepipelineArtifactStoreList",
+		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

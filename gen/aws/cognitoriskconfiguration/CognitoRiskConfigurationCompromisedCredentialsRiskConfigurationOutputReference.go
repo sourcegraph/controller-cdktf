@@ -203,7 +203,7 @@ func NewCognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputRef
 	j := jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

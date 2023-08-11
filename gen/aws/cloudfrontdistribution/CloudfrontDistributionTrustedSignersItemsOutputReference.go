@@ -178,7 +178,7 @@ func NewCloudfrontDistributionTrustedSignersItemsOutputReference(terraformResour
 	j := jsiiProxy_CloudfrontDistributionTrustedSignersItemsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewCloudfrontDistributionTrustedSignersItemsOutputReference_Override(c Clou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedSignersItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

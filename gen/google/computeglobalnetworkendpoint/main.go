@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpoint",
 		reflect.TypeOf((*ComputeGlobalNetworkEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpointConfig",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpointConfig",
 		reflect.TypeOf((*ComputeGlobalNetworkEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpointTimeouts",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpointTimeouts",
 		reflect.TypeOf((*ComputeGlobalNetworkEndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpointTimeoutsOutputReference",
+		"@cdktf/provider-google.computeGlobalNetworkEndpoint.ComputeGlobalNetworkEndpointTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeGlobalNetworkEndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

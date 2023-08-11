@@ -104,7 +104,7 @@ func NewGoogleSqlUserPasswordPolicyStatusList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_GoogleSqlUserPasswordPolicyStatusList{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusList",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleSqlUserPasswordPolicyStatusList_Override(g GoogleSqlUserPasswordPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusList",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserPasswordPolicyStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

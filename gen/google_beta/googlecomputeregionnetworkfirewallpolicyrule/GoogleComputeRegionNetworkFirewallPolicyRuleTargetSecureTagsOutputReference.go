@@ -190,7 +190,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputRefere
 	j := jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRuleTargetSecureTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

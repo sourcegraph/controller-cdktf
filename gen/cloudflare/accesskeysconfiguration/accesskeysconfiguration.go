@@ -343,7 +343,7 @@ func NewAccessKeysConfiguration(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_AccessKeysConfiguration{}
 
 	_jsii_.Create(
-		"cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
+		"@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewAccessKeysConfiguration_Override(a AccessKeysConfiguration, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
+		"@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -489,7 +489,7 @@ func AccessKeysConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
+		"@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func AccessKeysConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
+		"@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func AccessKeysConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
+		"@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func AccessKeysConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
+		"@cdktf/provider-cloudflare.accessKeysConfiguration.AccessKeysConfiguration",
 		"tfResourceType",
 		&returns,
 	)

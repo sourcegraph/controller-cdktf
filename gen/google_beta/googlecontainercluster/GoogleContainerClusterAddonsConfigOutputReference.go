@@ -444,7 +444,7 @@ func NewGoogleContainerClusterAddonsConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -456,7 +456,7 @@ func NewGoogleContainerClusterAddonsConfigOutputReference_Override(g GoogleConta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

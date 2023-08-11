@@ -324,7 +324,7 @@ func NewGoogleComputeUrlMapDefaultRouteActionOutputReference(terraformResource c
 	j := jsiiProxy_GoogleComputeUrlMapDefaultRouteActionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewGoogleComputeUrlMapDefaultRouteActionOutputReference_Override(g GoogleCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

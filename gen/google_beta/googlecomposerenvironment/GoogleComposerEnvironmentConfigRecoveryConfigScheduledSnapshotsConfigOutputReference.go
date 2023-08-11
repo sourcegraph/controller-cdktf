@@ -251,7 +251,7 @@ func NewGoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOut
 	j := jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewGoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

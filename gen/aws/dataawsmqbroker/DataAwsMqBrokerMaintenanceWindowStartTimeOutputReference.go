@@ -189,7 +189,7 @@ func NewDataAwsMqBrokerMaintenanceWindowStartTimeOutputReference(terraformResour
 	j := jsiiProxy_DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsMqBrokerMaintenanceWindowStartTimeOutputReference_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-aws.dataAwsMqBroker.DataAwsMqBrokerMaintenanceWindowStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

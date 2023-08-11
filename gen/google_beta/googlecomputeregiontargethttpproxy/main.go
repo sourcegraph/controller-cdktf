@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
 		reflect.TypeOf((*GoogleComputeRegionTargetHttpProxy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyConfig",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyConfig",
 		reflect.TypeOf((*GoogleComputeRegionTargetHttpProxyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyTimeouts",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyTimeouts",
 		reflect.TypeOf((*GoogleComputeRegionTargetHttpProxyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxyTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeRegionTargetHttpProxyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding",
 		reflect.TypeOf((*CloudTasksQueueIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingCondition",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingCondition",
 		reflect.TypeOf((*CloudTasksQueueIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConditionOutputReference",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConditionOutputReference",
 		reflect.TypeOf((*CloudTasksQueueIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig",
+		"@cdktf/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig",
 		reflect.TypeOf((*CloudTasksQueueIamBindingConfig)(nil)).Elem(),
 	)
 }

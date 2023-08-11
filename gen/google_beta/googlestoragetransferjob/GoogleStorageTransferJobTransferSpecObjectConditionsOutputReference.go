@@ -300,7 +300,7 @@ func NewGoogleStorageTransferJobTransferSpecObjectConditionsOutputReference(terr
 	j := jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleStorageTransferJobTransferSpecObjectConditionsOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference",
+		"@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -330,7 +330,7 @@ func NewSecurityhubProductSubscription(scope constructs.Construct, id *string, c
 	j := jsiiProxy_SecurityhubProductSubscription{}
 
 	_jsii_.Create(
-		"aws.securityhubProductSubscription.SecurityhubProductSubscription",
+		"@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -343,7 +343,7 @@ func NewSecurityhubProductSubscription_Override(s SecurityhubProductSubscription
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubProductSubscription.SecurityhubProductSubscription",
+		"@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -465,7 +465,7 @@ func SecurityhubProductSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubProductSubscription.SecurityhubProductSubscription",
+		"@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -484,7 +484,7 @@ func SecurityhubProductSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubProductSubscription.SecurityhubProductSubscription",
+		"@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func SecurityhubProductSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.securityhubProductSubscription.SecurityhubProductSubscription",
+		"@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func SecurityhubProductSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.securityhubProductSubscription.SecurityhubProductSubscription",
+		"@cdktf/provider-aws.securityhubProductSubscription.SecurityhubProductSubscription",
 		"tfResourceType",
 		&returns,
 	)

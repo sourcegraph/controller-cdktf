@@ -496,7 +496,7 @@ func NewGoogleGameServicesGameServerCluster(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleGameServicesGameServerCluster{}
 
 	_jsii_.Create(
-		"google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewGoogleGameServicesGameServerCluster_Override(g GoogleGameServicesGameSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -686,7 +686,7 @@ func GoogleGameServicesGameServerCluster_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func GoogleGameServicesGameServerCluster_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func GoogleGameServicesGameServerCluster_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func GoogleGameServicesGameServerCluster_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
+		"@cdktf/provider-google-beta.googleGameServicesGameServerCluster.GoogleGameServicesGameServerCluster",
 		"tfResourceType",
 		&returns,
 	)

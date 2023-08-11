@@ -482,7 +482,7 @@ func NewServicecatalogConstraint(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ServicecatalogConstraint{}
 
 	_jsii_.Create(
-		"aws.servicecatalogConstraint.ServicecatalogConstraint",
+		"@cdktf/provider-aws.servicecatalogConstraint.ServicecatalogConstraint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -495,7 +495,7 @@ func NewServicecatalogConstraint_Override(s ServicecatalogConstraint, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogConstraint.ServicecatalogConstraint",
+		"@cdktf/provider-aws.servicecatalogConstraint.ServicecatalogConstraint",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -672,7 +672,7 @@ func ServicecatalogConstraint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogConstraint.ServicecatalogConstraint",
+		"@cdktf/provider-aws.servicecatalogConstraint.ServicecatalogConstraint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func ServicecatalogConstraint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogConstraint.ServicecatalogConstraint",
+		"@cdktf/provider-aws.servicecatalogConstraint.ServicecatalogConstraint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func ServicecatalogConstraint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogConstraint.ServicecatalogConstraint",
+		"@cdktf/provider-aws.servicecatalogConstraint.ServicecatalogConstraint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func ServicecatalogConstraint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogConstraint.ServicecatalogConstraint",
+		"@cdktf/provider-aws.servicecatalogConstraint.ServicecatalogConstraint",
 		"tfResourceType",
 		&returns,
 	)

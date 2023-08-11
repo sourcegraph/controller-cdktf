@@ -226,7 +226,7 @@ func NewSourcerepoRepositoryIamBindingConditionOutputReference(terraformResource
 	j := jsiiProxy_SourcerepoRepositoryIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBindingConditionOutputReference",
+		"@cdktf/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSourcerepoRepositoryIamBindingConditionOutputReference_Override(s Source
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBindingConditionOutputReference",
+		"@cdktf/provider-google.sourcerepoRepositoryIamBinding.SourcerepoRepositoryIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

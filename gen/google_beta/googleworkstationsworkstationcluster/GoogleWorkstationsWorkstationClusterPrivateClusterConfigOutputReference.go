@@ -201,7 +201,7 @@ func NewGoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference(
 	j := jsiiProxy_GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,7 +213,7 @@ func NewGoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference",
+		"@cdktf/provider-google-beta.googleWorkstationsWorkstationCluster.GoogleWorkstationsWorkstationClusterPrivateClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

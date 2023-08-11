@@ -400,7 +400,7 @@ func NewIotThing(scope constructs.Construct, id *string, config *IotThingConfig)
 	j := jsiiProxy_IotThing{}
 
 	_jsii_.Create(
-		"aws.iotThing.IotThing",
+		"@cdktf/provider-aws.iotThing.IotThing",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewIotThing_Override(i IotThing, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotThing.IotThing",
+		"@cdktf/provider-aws.iotThing.IotThing",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -557,7 +557,7 @@ func IotThing_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotThing.IotThing",
+		"@cdktf/provider-aws.iotThing.IotThing",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func IotThing_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotThing.IotThing",
+		"@cdktf/provider-aws.iotThing.IotThing",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func IotThing_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotThing.IotThing",
+		"@cdktf/provider-aws.iotThing.IotThing",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func IotThing_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotThing.IotThing",
+		"@cdktf/provider-aws.iotThing.IotThing",
 		"tfResourceType",
 		&returns,
 	)

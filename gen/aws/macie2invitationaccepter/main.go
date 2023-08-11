@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepter",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepter",
 		reflect.TypeOf((*Macie2InvitationAccepter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterConfig",
 		reflect.TypeOf((*Macie2InvitationAccepterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeouts",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeouts",
 		reflect.TypeOf((*Macie2InvitationAccepterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeoutsOutputReference",
 		reflect.TypeOf((*Macie2InvitationAccepterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

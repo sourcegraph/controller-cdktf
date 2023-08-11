@@ -116,7 +116,7 @@ func NewBatchSchedulingPolicyFairSharePolicyShareDistributionList(terraformResou
 	j := jsiiProxy_BatchSchedulingPolicyFairSharePolicyShareDistributionList{}
 
 	_jsii_.Create(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyShareDistributionList",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyShareDistributionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewBatchSchedulingPolicyFairSharePolicyShareDistributionList_Override(b Bat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyShareDistributionList",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicyFairSharePolicyShareDistributionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)

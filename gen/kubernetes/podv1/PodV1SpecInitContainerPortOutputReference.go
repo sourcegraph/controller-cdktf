@@ -275,7 +275,7 @@ func NewPodV1SpecInitContainerPortOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_PodV1SpecInitContainerPortOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerPortOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewPodV1SpecInitContainerPortOutputReference_Override(p PodV1SpecInitContai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecInitContainerPortOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

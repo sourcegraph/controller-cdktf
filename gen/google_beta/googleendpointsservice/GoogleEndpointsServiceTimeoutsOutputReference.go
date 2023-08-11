@@ -228,7 +228,7 @@ func NewGoogleEndpointsServiceTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleEndpointsServiceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleEndpointsServiceTimeoutsOutputReference_Override(g GoogleEndpoints
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEndpointsService.GoogleEndpointsServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleEndpointsService.GoogleEndpointsServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

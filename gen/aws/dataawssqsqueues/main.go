@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSqsQueues.DataAwsSqsQueues",
+		"@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueues",
 		reflect.TypeOf((*DataAwsSqsQueues)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig",
+		"@cdktf/provider-aws.dataAwsSqsQueues.DataAwsSqsQueuesConfig",
 		reflect.TypeOf((*DataAwsSqsQueuesConfig)(nil)).Elem(),
 	)
 }

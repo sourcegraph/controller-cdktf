@@ -116,7 +116,7 @@ func NewGoogleCloudRunV2ServiceTemplateContainersPortsList(terraformResource cdk
 	j := jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersPortsList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersPortsList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleCloudRunV2ServiceTemplateContainersPortsList_Override(g GoogleClou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersPortsList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

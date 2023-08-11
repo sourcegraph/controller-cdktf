@@ -189,7 +189,7 @@ func NewBigqueryJobStatusOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_BigqueryJobStatusOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobStatusOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewBigqueryJobStatusOutputReference_Override(b BigqueryJobStatusOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobStatusOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

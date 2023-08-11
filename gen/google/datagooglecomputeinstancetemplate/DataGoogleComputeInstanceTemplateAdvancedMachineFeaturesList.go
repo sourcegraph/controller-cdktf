@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList(terraformRe
 	j := jsiiProxy_DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

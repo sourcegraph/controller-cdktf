@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackup",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackup",
 		reflect.TypeOf((*GoogleAlloydbBackup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -86,15 +86,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupConfig",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupConfig",
 		reflect.TypeOf((*GoogleAlloydbBackupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionConfig",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionConfig",
 		reflect.TypeOf((*GoogleAlloydbBackupEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionConfigOutputReference",
 		reflect.TypeOf((*GoogleAlloydbBackupEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,11 +129,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionInfo",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionInfo",
 		reflect.TypeOf((*GoogleAlloydbBackupEncryptionInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionInfoList",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionInfoList",
 		reflect.TypeOf((*GoogleAlloydbBackupEncryptionInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -153,7 +153,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionInfoOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionInfoOutputReference",
 		reflect.TypeOf((*GoogleAlloydbBackupEncryptionInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -187,11 +187,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupTimeouts",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupTimeouts",
 		reflect.TypeOf((*GoogleAlloydbBackupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleAlloydbBackupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

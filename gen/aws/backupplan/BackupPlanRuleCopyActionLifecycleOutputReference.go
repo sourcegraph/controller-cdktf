@@ -204,7 +204,7 @@ func NewBackupPlanRuleCopyActionLifecycleOutputReference(terraformResource cdktf
 	j := jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference{}
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference",
+		"@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewBackupPlanRuleCopyActionLifecycleOutputReference_Override(b BackupPlanRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference",
+		"@cdktf/provider-aws.backupPlan.BackupPlanRuleCopyActionLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

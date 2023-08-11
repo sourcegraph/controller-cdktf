@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamPolicy.IamPolicy",
+		"@cdktf/provider-aws.iamPolicy.IamPolicy",
 		reflect.TypeOf((*IamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,7 +77,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamPolicy.IamPolicyConfig",
+		"@cdktf/provider-aws.iamPolicy.IamPolicyConfig",
 		reflect.TypeOf((*IamPolicyConfig)(nil)).Elem(),
 	)
 }

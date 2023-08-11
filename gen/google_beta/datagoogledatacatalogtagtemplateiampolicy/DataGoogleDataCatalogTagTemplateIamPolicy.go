@@ -361,7 +361,7 @@ func NewDataGoogleDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id
 	j := jsiiProxy_DataGoogleDataCatalogTagTemplateIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleDataCatalogTagTemplateIamPolicy_Override(d DataGoogleDataCatal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleDataCatalogTagTemplateIamPolicy_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleDataCatalogTagTemplateIamPolicy_IsTerraformDataSource(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleDataCatalogTagTemplateIamPolicy_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleDataCatalogTagTemplateIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
+		"@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

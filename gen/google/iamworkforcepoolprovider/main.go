@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider",
 		reflect.TypeOf((*IamWorkforcePoolProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,15 +90,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig",
 		reflect.TypeOf((*IamWorkforcePoolProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidc",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidc",
 		reflect.TypeOf((*IamWorkforcePoolProviderOidc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcOutputReference",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcOutputReference",
 		reflect.TypeOf((*IamWorkforcePoolProviderOidcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -138,11 +138,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcWebSsoConfig",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcWebSsoConfig",
 		reflect.TypeOf((*IamWorkforcePoolProviderOidcWebSsoConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcWebSsoConfigOutputReference",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcWebSsoConfigOutputReference",
 		reflect.TypeOf((*IamWorkforcePoolProviderOidcWebSsoConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assertionClaimsBehavior", GoGetter: "AssertionClaimsBehavior"},
@@ -178,11 +178,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderSaml",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderSaml",
 		reflect.TypeOf((*IamWorkforcePoolProviderSaml)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderSamlOutputReference",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderSamlOutputReference",
 		reflect.TypeOf((*IamWorkforcePoolProviderSamlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -216,11 +216,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts",
 		reflect.TypeOf((*IamWorkforcePoolProviderTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeoutsOutputReference",
+		"@cdktf/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeoutsOutputReference",
 		reflect.TypeOf((*IamWorkforcePoolProviderTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -390,7 +390,7 @@ func NewDeployment(scope constructs.Construct, id *string, config *DeploymentCon
 	j := jsiiProxy_Deployment{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.Deployment",
+		"@cdktf/provider-kubernetes.deployment.Deployment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewDeployment_Override(d Deployment, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.Deployment",
+		"@cdktf/provider-kubernetes.deployment.Deployment",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -525,7 +525,7 @@ func Deployment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.deployment.Deployment",
+		"@cdktf/provider-kubernetes.deployment.Deployment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func Deployment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.deployment.Deployment",
+		"@cdktf/provider-kubernetes.deployment.Deployment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func Deployment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.deployment.Deployment",
+		"@cdktf/provider-kubernetes.deployment.Deployment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func Deployment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.deployment.Deployment",
+		"@cdktf/provider-kubernetes.deployment.Deployment",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeRoute.ComputeRoute",
+		"@cdktf/provider-google.computeRoute.ComputeRoute",
 		reflect.TypeOf((*ComputeRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -97,15 +97,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRoute.ComputeRouteConfig",
+		"@cdktf/provider-google.computeRoute.ComputeRouteConfig",
 		reflect.TypeOf((*ComputeRouteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeRoute.ComputeRouteTimeouts",
+		"@cdktf/provider-google.computeRoute.ComputeRouteTimeouts",
 		reflect.TypeOf((*ComputeRouteTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeRoute.ComputeRouteTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRoute.ComputeRouteTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRouteTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

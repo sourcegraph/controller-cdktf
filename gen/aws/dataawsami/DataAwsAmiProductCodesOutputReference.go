@@ -178,7 +178,7 @@ func NewDataAwsAmiProductCodesOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsAmiProductCodesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiProductCodesOutputReference",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsAmiProductCodesOutputReference_Override(d DataAwsAmiProductCodesO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiProductCodesOutputReference",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

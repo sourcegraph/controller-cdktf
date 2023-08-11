@@ -420,7 +420,7 @@ func NewOpensearchDomainClusterConfigOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_OpensearchDomainClusterConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewOpensearchDomainClusterConfigOutputReference_Override(o OpensearchDomain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomain.OpensearchDomainClusterConfigOutputReference",
+		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

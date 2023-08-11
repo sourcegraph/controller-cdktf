@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.storagegatewayGateway.StoragegatewayGateway",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGateway",
 		reflect.TypeOf((*StoragegatewayGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationKey", GoGetter: "ActivationKey"},
@@ -119,15 +119,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayGateway.StoragegatewayGatewayConfig",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayConfig",
 		reflect.TypeOf((*StoragegatewayGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterface",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterface",
 		reflect.TypeOf((*StoragegatewayGatewayGatewayNetworkInterface)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceList",
 		reflect.TypeOf((*StoragegatewayGatewayGatewayNetworkInterfaceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayGatewayNetworkInterfaceOutputReference",
 		reflect.TypeOf((*StoragegatewayGatewayGatewayNetworkInterfaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -180,11 +180,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTime",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTime",
 		reflect.TypeOf((*StoragegatewayGatewayMaintenanceStartTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference",
 		reflect.TypeOf((*StoragegatewayGatewayMaintenanceStartTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,11 +227,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettings",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettings",
 		reflect.TypeOf((*StoragegatewayGatewaySmbActiveDirectorySettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference",
 		reflect.TypeOf((*StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryStatus", GoGetter: "ActiveDirectoryStatus"},
@@ -279,11 +279,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayGateway.StoragegatewayGatewayTimeouts",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeouts",
 		reflect.TypeOf((*StoragegatewayGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*StoragegatewayGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

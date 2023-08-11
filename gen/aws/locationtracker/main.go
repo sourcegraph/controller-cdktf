@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.locationTracker.LocationTracker",
+		"@cdktf/provider-aws.locationTracker.LocationTracker",
 		reflect.TypeOf((*LocationTracker)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.locationTracker.LocationTrackerConfig",
+		"@cdktf/provider-aws.locationTracker.LocationTrackerConfig",
 		reflect.TypeOf((*LocationTrackerConfig)(nil)).Elem(),
 	)
 }

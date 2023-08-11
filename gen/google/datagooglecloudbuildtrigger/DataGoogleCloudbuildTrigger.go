@@ -569,7 +569,7 @@ func NewDataGoogleCloudbuildTrigger(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataGoogleCloudbuildTrigger{}
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -582,7 +582,7 @@ func NewDataGoogleCloudbuildTrigger_Override(d DataGoogleCloudbuildTrigger, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -704,7 +704,7 @@ func DataGoogleCloudbuildTrigger_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func DataGoogleCloudbuildTrigger_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -742,7 +742,7 @@ func DataGoogleCloudbuildTrigger_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -755,7 +755,7 @@ func DataGoogleCloudbuildTrigger_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
+		"@cdktf/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger",
 		"tfResourceType",
 		&returns,
 	)

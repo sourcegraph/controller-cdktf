@@ -226,7 +226,7 @@ func NewHealthcareConsentStoreIamMemberConditionOutputReference(terraformResourc
 	j := jsiiProxy_HealthcareConsentStoreIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMemberConditionOutputReference",
+		"@cdktf/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewHealthcareConsentStoreIamMemberConditionOutputReference_Override(h Healt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMemberConditionOutputReference",
+		"@cdktf/provider-google.healthcareConsentStoreIamMember.HealthcareConsentStoreIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

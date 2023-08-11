@@ -116,7 +116,7 @@ func NewGoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList(te
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterLoadBalancerMetalLbConfigAddressPoolsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

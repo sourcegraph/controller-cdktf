@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMember",
 		reflect.TypeOf((*GoogleHealthcareFhirStoreIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberCondition",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberCondition",
 		reflect.TypeOf((*GoogleHealthcareFhirStoreIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleHealthcareFhirStoreIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConfig",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStoreIamMember.GoogleHealthcareFhirStoreIamMemberConfig",
 		reflect.TypeOf((*GoogleHealthcareFhirStoreIamMemberConfig)(nil)).Elem(),
 	)
 }

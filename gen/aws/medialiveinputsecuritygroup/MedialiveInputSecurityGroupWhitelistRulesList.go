@@ -116,7 +116,7 @@ func NewMedialiveInputSecurityGroupWhitelistRulesList(terraformResource cdktf.II
 	j := jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList{}
 
 	_jsii_.Create(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesList",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveInputSecurityGroupWhitelistRulesList_Override(m MedialiveInputS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesList",
+		"@cdktf/provider-aws.medialiveInputSecurityGroup.MedialiveInputSecurityGroupWhitelistRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

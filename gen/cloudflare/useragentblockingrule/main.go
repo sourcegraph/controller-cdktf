@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule",
 		reflect.TypeOf((*UserAgentBlockingRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig",
 		reflect.TypeOf((*UserAgentBlockingRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration",
 		reflect.TypeOf((*UserAgentBlockingRuleConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference",
+		"@cdktf/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfigurationOutputReference",
 		reflect.TypeOf((*UserAgentBlockingRuleConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

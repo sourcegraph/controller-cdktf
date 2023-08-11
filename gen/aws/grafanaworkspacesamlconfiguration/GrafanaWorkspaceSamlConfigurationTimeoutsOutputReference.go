@@ -204,7 +204,7 @@ func NewGrafanaWorkspaceSamlConfigurationTimeoutsOutputReference(terraformResour
 	j := jsiiProxy_GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGrafanaWorkspaceSamlConfigurationTimeoutsOutputReference_Override(g Graf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfigurationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

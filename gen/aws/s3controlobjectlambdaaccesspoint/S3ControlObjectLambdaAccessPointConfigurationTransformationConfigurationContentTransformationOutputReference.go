@@ -179,7 +179,7 @@ func NewS3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration
 	j := jsiiProxy_S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference",
+		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewS3ControlObjectLambdaAccessPointConfigurationTransformationConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference",
+		"@cdktf/provider-aws.s3ControlObjectLambdaAccessPoint.S3ControlObjectLambdaAccessPointConfigurationTransformationConfigurationContentTransformationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

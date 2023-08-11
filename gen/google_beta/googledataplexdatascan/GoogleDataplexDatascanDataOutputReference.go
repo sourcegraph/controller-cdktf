@@ -204,7 +204,7 @@ func NewGoogleDataplexDatascanDataOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleDataplexDatascanDataOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleDataplexDatascanDataOutputReference_Override(g GoogleDataplexDatas
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

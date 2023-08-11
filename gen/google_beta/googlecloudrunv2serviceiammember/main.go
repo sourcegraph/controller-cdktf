@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMember",
 		reflect.TypeOf((*GoogleCloudRunV2ServiceIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberCondition",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberCondition",
 		reflect.TypeOf((*GoogleCloudRunV2ServiceIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleCloudRunV2ServiceIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberConfig",
+		"@cdktf/provider-google-beta.googleCloudRunV2ServiceIamMember.GoogleCloudRunV2ServiceIamMemberConfig",
 		reflect.TypeOf((*GoogleCloudRunV2ServiceIamMemberConfig)(nil)).Elem(),
 	)
 }

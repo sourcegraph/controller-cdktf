@@ -313,7 +313,7 @@ func NewDataGoogleAccessApprovalFolderServiceAccount(scope constructs.Construct,
 	j := jsiiProxy_DataGoogleAccessApprovalFolderServiceAccount{}
 
 	_jsii_.Create(
-		"google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleAccessApprovalFolderServiceAccount_Override(d DataGoogleAccess
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleAccessApprovalFolderServiceAccount_IsConstruct(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleAccessApprovalFolderServiceAccount_IsTerraformDataSource(x interf
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleAccessApprovalFolderServiceAccount_IsTerraformElement(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleAccessApprovalFolderServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalFolderServiceAccount.DataGoogleAccessApprovalFolderServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

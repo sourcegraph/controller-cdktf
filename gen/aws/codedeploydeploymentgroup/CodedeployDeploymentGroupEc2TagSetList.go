@@ -116,7 +116,7 @@ func NewCodedeployDeploymentGroupEc2TagSetList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_CodedeployDeploymentGroupEc2TagSetList{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCodedeployDeploymentGroupEc2TagSetList_Override(c CodedeployDeploymentGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetList",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupEc2TagSetList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

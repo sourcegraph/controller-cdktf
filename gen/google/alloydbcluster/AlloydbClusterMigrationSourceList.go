@@ -104,7 +104,7 @@ func NewAlloydbClusterMigrationSourceList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_AlloydbClusterMigrationSourceList{}
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterMigrationSourceList",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterMigrationSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewAlloydbClusterMigrationSourceList_Override(a AlloydbClusterMigrationSour
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterMigrationSourceList",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterMigrationSourceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

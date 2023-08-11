@@ -116,7 +116,7 @@ func NewGoogleComputeBackendServiceLocalityLbPoliciesList(terraformResource cdkt
 	j := jsiiProxy_GoogleComputeBackendServiceLocalityLbPoliciesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesList",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeBackendServiceLocalityLbPoliciesList_Override(g GoogleCompu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesList",
+		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

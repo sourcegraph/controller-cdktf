@@ -435,7 +435,7 @@ func NewCodedeployApp(scope constructs.Construct, id *string, config *Codedeploy
 	j := jsiiProxy_CodedeployApp{}
 
 	_jsii_.Create(
-		"aws.codedeployApp.CodedeployApp",
+		"@cdktf/provider-aws.codedeployApp.CodedeployApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewCodedeployApp_Override(c CodedeployApp, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployApp.CodedeployApp",
+		"@cdktf/provider-aws.codedeployApp.CodedeployApp",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -603,7 +603,7 @@ func CodedeployApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codedeployApp.CodedeployApp",
+		"@cdktf/provider-aws.codedeployApp.CodedeployApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func CodedeployApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codedeployApp.CodedeployApp",
+		"@cdktf/provider-aws.codedeployApp.CodedeployApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func CodedeployApp_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codedeployApp.CodedeployApp",
+		"@cdktf/provider-aws.codedeployApp.CodedeployApp",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func CodedeployApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codedeployApp.CodedeployApp",
+		"@cdktf/provider-aws.codedeployApp.CodedeployApp",
 		"tfResourceType",
 		&returns,
 	)

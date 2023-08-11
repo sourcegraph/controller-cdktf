@@ -376,7 +376,7 @@ func NewOrganizationIamAuditConfig(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_OrganizationIamAuditConfig{}
 
 	_jsii_.Create(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfig",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewOrganizationIamAuditConfig_Override(o OrganizationIamAuditConfig, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfig",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -522,7 +522,7 @@ func OrganizationIamAuditConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfig",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func OrganizationIamAuditConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfig",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func OrganizationIamAuditConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfig",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func OrganizationIamAuditConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfig",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig",
 		"tfResourceType",
 		&returns,
 	)

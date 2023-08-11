@@ -495,7 +495,7 @@ func NewSagemakerFlowDefinition(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_SagemakerFlowDefinition{}
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewSagemakerFlowDefinition_Override(s SagemakerFlowDefinition, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -663,7 +663,7 @@ func SagemakerFlowDefinition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func SagemakerFlowDefinition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func SagemakerFlowDefinition_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func SagemakerFlowDefinition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
+		"@cdktf/provider-aws.sagemakerFlowDefinition.SagemakerFlowDefinition",
 		"tfResourceType",
 		&returns,
 	)

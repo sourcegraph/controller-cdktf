@@ -228,7 +228,7 @@ func NewTransferWorkflowOnExceptionStepsTagStepDetailsOutputReference(terraformR
 	j := jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewTransferWorkflowOnExceptionStepsTagStepDetailsOutputReference_Override(t
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

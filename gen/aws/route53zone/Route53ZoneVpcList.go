@@ -116,7 +116,7 @@ func NewRoute53ZoneVpcList(terraformResource cdktf.IInterpolatingParent, terrafo
 	j := jsiiProxy_Route53ZoneVpcList{}
 
 	_jsii_.Create(
-		"aws.route53Zone.Route53ZoneVpcList",
+		"@cdktf/provider-aws.route53Zone.Route53ZoneVpcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRoute53ZoneVpcList_Override(r Route53ZoneVpcList, terraformResource cdkt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53Zone.Route53ZoneVpcList",
+		"@cdktf/provider-aws.route53Zone.Route53ZoneVpcList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

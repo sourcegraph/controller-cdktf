@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptions",
 		reflect.TypeOf((*ElasticsearchDomainSamlOptions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,19 +65,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsConfig",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsConfig",
 		reflect.TypeOf((*ElasticsearchDomainSamlOptionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptions",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptions",
 		reflect.TypeOf((*ElasticsearchDomainSamlOptionsSamlOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdp",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdp",
 		reflect.TypeOf((*ElasticsearchDomainSamlOptionsSamlOptionsIdp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainSamlOptionsSamlOptionsIdpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -113,7 +113,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsSamlOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainSamlOptionsSamlOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -167,11 +167,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeouts",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeouts",
 		reflect.TypeOf((*ElasticsearchDomainSamlOptionsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomainSamlOptions.ElasticsearchDomainSamlOptionsTimeoutsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainSamlOptionsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

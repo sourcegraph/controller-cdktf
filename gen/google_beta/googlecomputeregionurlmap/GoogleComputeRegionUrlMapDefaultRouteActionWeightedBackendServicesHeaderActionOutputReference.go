@@ -252,7 +252,7 @@ func NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeader
 	j := jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeader
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionUrlMap.GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

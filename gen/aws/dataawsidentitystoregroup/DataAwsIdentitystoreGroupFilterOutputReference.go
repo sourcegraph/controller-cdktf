@@ -202,7 +202,7 @@ func NewDataAwsIdentitystoreGroupFilterOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsIdentitystoreGroupFilterOutputReference_Override(d DataAwsIdentit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

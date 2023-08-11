@@ -227,7 +227,7 @@ func NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference(
 	j := jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerUserProfile.SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

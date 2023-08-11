@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfile",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,11 +94,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydb",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydb",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterId", GoGetter: "ClusterId"},
@@ -136,15 +136,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettings",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettings",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydbSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUser",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUser",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydbSettingsInitialUserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,7 +181,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,15 +225,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettings",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettings",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfig",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfig",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsMachineConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -267,7 +267,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileAlloydbSettingsPrimaryInstanceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -311,11 +311,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsql",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsql",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileCloudsql)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSqlId", GoGetter: "CloudSqlId"},
@@ -354,19 +354,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettings",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettings",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileCloudsqlSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfig",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfig",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksList",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksList",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -387,7 +387,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigAuthorizedNetworksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -430,7 +430,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizedNetworks", GoGetter: "AuthorizedNetworks"},
@@ -475,7 +475,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activationPolicy", GoGetter: "ActivationPolicy"},
@@ -553,15 +553,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileConfig",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileConfig",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileError",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileError",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileError)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorList",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorList",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileErrorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -581,7 +581,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileErrorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -616,11 +616,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysql",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysql",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileMysql)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileMysqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSqlId", GoGetter: "CloudSqlId"},
@@ -668,11 +668,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSsl",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSsl",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileMysqlSsl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
@@ -713,11 +713,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfilePostgresql",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfilePostgresql",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfilePostgresql)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfilePostgresqlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudSqlId", GoGetter: "CloudSqlId"},
@@ -766,11 +766,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfilePostgresqlSsl",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfilePostgresqlSsl",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfilePostgresqlSsl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caCertificate", GoGetter: "CaCertificate"},
@@ -811,11 +811,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileTimeouts",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileTimeouts",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference",
+		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference",
 		reflect.TypeOf((*DatabaseMigrationServiceConnectionProfileTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

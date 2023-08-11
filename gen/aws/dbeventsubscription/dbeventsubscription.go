@@ -557,7 +557,7 @@ func NewDbEventSubscription(scope constructs.Construct, id *string, config *DbEv
 	j := jsiiProxy_DbEventSubscription{}
 
 	_jsii_.Create(
-		"aws.dbEventSubscription.DbEventSubscription",
+		"@cdktf/provider-aws.dbEventSubscription.DbEventSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -570,7 +570,7 @@ func NewDbEventSubscription_Override(d DbEventSubscription, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbEventSubscription.DbEventSubscription",
+		"@cdktf/provider-aws.dbEventSubscription.DbEventSubscription",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -780,7 +780,7 @@ func DbEventSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbEventSubscription.DbEventSubscription",
+		"@cdktf/provider-aws.dbEventSubscription.DbEventSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -799,7 +799,7 @@ func DbEventSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbEventSubscription.DbEventSubscription",
+		"@cdktf/provider-aws.dbEventSubscription.DbEventSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -818,7 +818,7 @@ func DbEventSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dbEventSubscription.DbEventSubscription",
+		"@cdktf/provider-aws.dbEventSubscription.DbEventSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -831,7 +831,7 @@ func DbEventSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dbEventSubscription.DbEventSubscription",
+		"@cdktf/provider-aws.dbEventSubscription.DbEventSubscription",
 		"tfResourceType",
 		&returns,
 	)

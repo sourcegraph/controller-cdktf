@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		reflect.TypeOf((*SesDomainIdentityVerification)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationConfig",
 		reflect.TypeOf((*SesDomainIdentityVerificationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeouts",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeouts",
 		reflect.TypeOf((*SesDomainIdentityVerificationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeoutsOutputReference",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerificationTimeoutsOutputReference",
 		reflect.TypeOf((*SesDomainIdentityVerificationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

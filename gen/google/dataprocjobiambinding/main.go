@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataprocJobIamBinding.DataprocJobIamBinding",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBinding",
 		reflect.TypeOf((*DataprocJobIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocJobIamBinding.DataprocJobIamBindingCondition",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBindingCondition",
 		reflect.TypeOf((*DataprocJobIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocJobIamBinding.DataprocJobIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBindingConditionOutputReference",
 		reflect.TypeOf((*DataprocJobIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocJobIamBinding.DataprocJobIamBindingConfig",
+		"@cdktf/provider-google.dataprocJobIamBinding.DataprocJobIamBindingConfig",
 		reflect.TypeOf((*DataprocJobIamBindingConfig)(nil)).Elem(),
 	)
 }

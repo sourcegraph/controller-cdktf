@@ -116,7 +116,7 @@ func NewJobV1SpecTemplateSpecDnsConfigOptionList(terraformResource cdktf.IInterp
 	j := jsiiProxy_JobV1SpecTemplateSpecDnsConfigOptionList{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobV1SpecTemplateSpecDnsConfigOptionList_Override(j JobV1SpecTemplateSpe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

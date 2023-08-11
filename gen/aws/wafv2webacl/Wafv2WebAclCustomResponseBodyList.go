@@ -116,7 +116,7 @@ func NewWafv2WebAclCustomResponseBodyList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_Wafv2WebAclCustomResponseBodyList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclCustomResponseBodyList_Override(w Wafv2WebAclCustomResponseBo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

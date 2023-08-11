@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
+		"@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentity",
 		reflect.TypeOf((*DataAwsSesEmailIdentity)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentityConfig",
+		"@cdktf/provider-aws.dataAwsSesEmailIdentity.DataAwsSesEmailIdentityConfig",
 		reflect.TypeOf((*DataAwsSesEmailIdentityConfig)(nil)).Elem(),
 	)
 }

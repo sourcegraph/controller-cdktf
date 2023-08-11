@@ -204,7 +204,7 @@ func NewOpensearchDomainPolicyTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_OpensearchDomainPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeoutsOutputReference",
+		"@cdktf/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOpensearchDomainPolicyTimeoutsOutputReference_Override(o OpensearchDomai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeoutsOutputReference",
+		"@cdktf/provider-aws.opensearchDomainPolicy.OpensearchDomainPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

@@ -577,7 +577,7 @@ func NewMonitoringMetricDescriptor(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_MonitoringMetricDescriptor{}
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -590,7 +590,7 @@ func NewMonitoringMetricDescriptor_Override(m MonitoringMetricDescriptor, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -789,7 +789,7 @@ func MonitoringMetricDescriptor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func MonitoringMetricDescriptor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -827,7 +827,7 @@ func MonitoringMetricDescriptor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func MonitoringMetricDescriptor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor",
 		"tfResourceType",
 		&returns,
 	)

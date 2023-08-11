@@ -203,7 +203,7 @@ func NewEnvMetadataOutputReference(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_EnvMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.env.EnvMetadataOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewEnvMetadataOutputReference_Override(e EnvMetadataOutputReference, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.env.EnvMetadataOutputReference",
+		"@cdktf/provider-kubernetes.env.EnvMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

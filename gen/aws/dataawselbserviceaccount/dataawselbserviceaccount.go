@@ -303,7 +303,7 @@ func NewDataAwsElbServiceAccount(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsElbServiceAccount{}
 
 	_jsii_.Create(
-		"aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
+		"@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsElbServiceAccount_Override(d DataAwsElbServiceAccount, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
+		"@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataAwsElbServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
+		"@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataAwsElbServiceAccount_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
+		"@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsElbServiceAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
+		"@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsElbServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
+		"@cdktf/provider-aws.dataAwsElbServiceAccount.DataAwsElbServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

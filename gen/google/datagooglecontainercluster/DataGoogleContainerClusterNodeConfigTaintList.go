@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodeConfigTaintList(terraformResource cdktf.II
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigTaintList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodeConfigTaintList_Override(d DataGoogleConta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

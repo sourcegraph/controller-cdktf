@@ -474,7 +474,7 @@ func NewResourcegroupsGroup(scope constructs.Construct, id *string, config *Reso
 	j := jsiiProxy_ResourcegroupsGroup{}
 
 	_jsii_.Create(
-		"aws.resourcegroupsGroup.ResourcegroupsGroup",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewResourcegroupsGroup_Override(r ResourcegroupsGroup, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.resourcegroupsGroup.ResourcegroupsGroup",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroup",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -642,7 +642,7 @@ func ResourcegroupsGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.resourcegroupsGroup.ResourcegroupsGroup",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -661,7 +661,7 @@ func ResourcegroupsGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.resourcegroupsGroup.ResourcegroupsGroup",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func ResourcegroupsGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.resourcegroupsGroup.ResourcegroupsGroup",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func ResourcegroupsGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.resourcegroupsGroup.ResourcegroupsGroup",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroup",
 		"tfResourceType",
 		&returns,
 	)

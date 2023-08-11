@@ -116,7 +116,7 @@ func NewPageRuleActionsCacheTtlByStatusList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_PageRuleActionsCacheTtlByStatusList{}
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsCacheTtlByStatusList",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPageRuleActionsCacheTtlByStatusList_Override(p PageRuleActionsCacheTtlBy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.pageRule.PageRuleActionsCacheTtlByStatusList",
+		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

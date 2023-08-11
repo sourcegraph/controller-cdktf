@@ -116,7 +116,7 @@ func NewNotificationPolicyEmailIntegrationList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_NotificationPolicyEmailIntegrationList{}
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationList",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNotificationPolicyEmailIntegrationList_Override(n NotificationPolicyEmai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationList",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

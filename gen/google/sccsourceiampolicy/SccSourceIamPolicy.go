@@ -376,7 +376,7 @@ func NewSccSourceIamPolicy(scope constructs.Construct, id *string, config *SccSo
 	j := jsiiProxy_SccSourceIamPolicy{}
 
 	_jsii_.Create(
-		"google.sccSourceIamPolicy.SccSourceIamPolicy",
+		"@cdktf/provider-google.sccSourceIamPolicy.SccSourceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewSccSourceIamPolicy_Override(s SccSourceIamPolicy, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccSourceIamPolicy.SccSourceIamPolicy",
+		"@cdktf/provider-google.sccSourceIamPolicy.SccSourceIamPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -533,7 +533,7 @@ func SccSourceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSourceIamPolicy.SccSourceIamPolicy",
+		"@cdktf/provider-google.sccSourceIamPolicy.SccSourceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func SccSourceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSourceIamPolicy.SccSourceIamPolicy",
+		"@cdktf/provider-google.sccSourceIamPolicy.SccSourceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func SccSourceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccSourceIamPolicy.SccSourceIamPolicy",
+		"@cdktf/provider-google.sccSourceIamPolicy.SccSourceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func SccSourceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sccSourceIamPolicy.SccSourceIamPolicy",
+		"@cdktf/provider-google.sccSourceIamPolicy.SccSourceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

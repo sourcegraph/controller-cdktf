@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecVolumeGitRepoList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepoList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecVolumeGitRepoList_Override(d DataKubernetesPodV1S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepoList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecVolumeGitRepoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

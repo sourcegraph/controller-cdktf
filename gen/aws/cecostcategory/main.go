@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategory",
 		reflect.TypeOf((*CeCostCategory)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,19 +80,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryConfig",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryConfig",
 		reflect.TypeOf((*CeCostCategoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRule",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRule",
 		reflect.TypeOf((*CeCostCategoryRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleInheritedValue",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValue",
 		reflect.TypeOf((*CeCostCategoryRuleInheritedValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleInheritedValueOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleInheritedValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,7 +130,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleList",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleList",
 		reflect.TypeOf((*CeCostCategoryRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -197,19 +197,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRule",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRule",
 		reflect.TypeOf((*CeCostCategoryRuleRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleAnd",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAnd",
 		reflect.TypeOf((*CeCostCategoryRuleRuleAnd)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategory",
 		reflect.TypeOf((*CeCostCategoryRuleRuleAndCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndCostCategoryOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleAndCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -250,11 +250,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimension",
 		reflect.TypeOf((*CeCostCategoryRuleRuleAndDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndDimensionOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleAndDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,7 +295,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleAndList",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndList",
 		reflect.TypeOf((*CeCostCategoryRuleRuleAndList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -316,7 +316,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleAndOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -360,11 +360,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleAndTags",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTags",
 		reflect.TypeOf((*CeCostCategoryRuleRuleAndTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleAndTagsOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleAndTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -405,11 +405,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategory",
 		reflect.TypeOf((*CeCostCategoryRuleRuleCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleCostCategoryOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -450,11 +450,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleDimension",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimension",
 		reflect.TypeOf((*CeCostCategoryRuleRuleDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleDimensionOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -495,15 +495,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNot",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNot",
 		reflect.TypeOf((*CeCostCategoryRuleRuleNot)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategory",
 		reflect.TypeOf((*CeCostCategoryRuleRuleNotCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotCostCategoryOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleNotCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -544,11 +544,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimension",
 		reflect.TypeOf((*CeCostCategoryRuleRuleNotDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotDimensionOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleNotDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -589,7 +589,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleNotOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -633,11 +633,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNotTags",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTags",
 		reflect.TypeOf((*CeCostCategoryRuleRuleNotTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleNotTagsOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleNotTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -678,15 +678,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOr",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOr",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOr)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategory",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOrCostCategory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrCostCategoryOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOrCostCategoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -727,11 +727,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimension",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOrDimension)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrDimensionOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOrDimensionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -772,7 +772,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrList",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrList",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOrList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -793,7 +793,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOrOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -837,11 +837,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrTags",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTags",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOrTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOrTagsOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOrTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -882,7 +882,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "and", GoGetter: "And"},
@@ -938,11 +938,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleTags",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTags",
 		reflect.TypeOf((*CeCostCategoryRuleRuleTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategoryRuleRuleTagsOutputReference",
 		reflect.TypeOf((*CeCostCategoryRuleRuleTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -983,11 +983,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRule",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRule",
 		reflect.TypeOf((*CeCostCategorySplitChargeRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRuleList",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleList",
 		reflect.TypeOf((*CeCostCategorySplitChargeRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1008,7 +1008,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleOutputReference",
 		reflect.TypeOf((*CeCostCategorySplitChargeRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1050,11 +1050,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameter",
 		reflect.TypeOf((*CeCostCategorySplitChargeRuleParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterList",
 		reflect.TypeOf((*CeCostCategorySplitChargeRuleParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1075,7 +1075,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference",
+		"@cdktf/provider-aws.ceCostCategory.CeCostCategorySplitChargeRuleParameterOutputReference",
 		reflect.TypeOf((*CeCostCategorySplitChargeRuleParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

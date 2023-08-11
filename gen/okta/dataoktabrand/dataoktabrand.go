@@ -311,7 +311,7 @@ func NewDataOktaBrand(scope constructs.Construct, id *string, config *DataOktaBr
 	j := jsiiProxy_DataOktaBrand{}
 
 	_jsii_.Create(
-		"okta.dataOktaBrand.DataOktaBrand",
+		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -324,7 +324,7 @@ func NewDataOktaBrand_Override(d DataOktaBrand, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaBrand.DataOktaBrand",
+		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -413,7 +413,7 @@ func DataOktaBrand_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaBrand.DataOktaBrand",
+		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -432,7 +432,7 @@ func DataOktaBrand_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaBrand.DataOktaBrand",
+		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -451,7 +451,7 @@ func DataOktaBrand_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaBrand.DataOktaBrand",
+		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataOktaBrand_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaBrand.DataOktaBrand",
+		"@cdktf/provider-okta.dataOktaBrand.DataOktaBrand",
 		"tfResourceType",
 		&returns,
 	)

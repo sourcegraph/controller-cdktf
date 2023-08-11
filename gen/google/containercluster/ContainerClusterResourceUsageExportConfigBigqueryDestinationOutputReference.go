@@ -179,7 +179,7 @@ func NewContainerClusterResourceUsageExportConfigBigqueryDestinationOutputRefere
 	j := jsiiProxy_ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterResourceUsageExportConfigBigqueryDestinationOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -475,7 +475,7 @@ func NewCloudwatchLogGroup(scope constructs.Construct, id *string, config *Cloud
 	j := jsiiProxy_CloudwatchLogGroup{}
 
 	_jsii_.Create(
-		"aws.cloudwatchLogGroup.CloudwatchLogGroup",
+		"@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -488,7 +488,7 @@ func NewCloudwatchLogGroup_Override(c CloudwatchLogGroup, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchLogGroup.CloudwatchLogGroup",
+		"@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -676,7 +676,7 @@ func CloudwatchLogGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogGroup.CloudwatchLogGroup",
+		"@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -695,7 +695,7 @@ func CloudwatchLogGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogGroup.CloudwatchLogGroup",
+		"@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func CloudwatchLogGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogGroup.CloudwatchLogGroup",
+		"@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func CloudwatchLogGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchLogGroup.CloudwatchLogGroup",
+		"@cdktf/provider-aws.cloudwatchLogGroup.CloudwatchLogGroup",
 		"tfResourceType",
 		&returns,
 	)

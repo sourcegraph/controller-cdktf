@@ -104,7 +104,7 @@ func NewVpnConnectionVgwTelemetryList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_VpnConnectionVgwTelemetryList{}
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionVgwTelemetryList",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewVpnConnectionVgwTelemetryList_Override(v VpnConnectionVgwTelemetryList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionVgwTelemetryList",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionVgwTelemetryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

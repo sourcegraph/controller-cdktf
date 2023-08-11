@@ -554,7 +554,7 @@ func NewGoogleBigqueryCapacityCommitment(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleBigqueryCapacityCommitment{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
+		"@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -567,7 +567,7 @@ func NewGoogleBigqueryCapacityCommitment_Override(g GoogleBigqueryCapacityCommit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
+		"@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -766,7 +766,7 @@ func GoogleBigqueryCapacityCommitment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
+		"@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func GoogleBigqueryCapacityCommitment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
+		"@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -804,7 +804,7 @@ func GoogleBigqueryCapacityCommitment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
+		"@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -817,7 +817,7 @@ func GoogleBigqueryCapacityCommitment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
+		"@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment",
 		"tfResourceType",
 		&returns,
 	)

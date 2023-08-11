@@ -339,7 +339,7 @@ func NewDataCloudflareLoadBalancerPools(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataCloudflareLoadBalancerPools{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -352,7 +352,7 @@ func NewDataCloudflareLoadBalancerPools_Override(d DataCloudflareLoadBalancerPoo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -452,7 +452,7 @@ func DataCloudflareLoadBalancerPools_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -471,7 +471,7 @@ func DataCloudflareLoadBalancerPools_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -490,7 +490,7 @@ func DataCloudflareLoadBalancerPools_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func DataCloudflareLoadBalancerPools_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
+		"@cdktf/provider-cloudflare.dataCloudflareLoadBalancerPools.DataCloudflareLoadBalancerPools",
 		"tfResourceType",
 		&returns,
 	)

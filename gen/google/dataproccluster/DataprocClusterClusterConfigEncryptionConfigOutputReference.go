@@ -179,7 +179,7 @@ func NewDataprocClusterClusterConfigEncryptionConfigOutputReference(terraformRes
 	j := jsiiProxy_DataprocClusterClusterConfigEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataprocClusterClusterConfigEncryptionConfigOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -179,7 +179,7 @@ func NewPodSecurityPolicySpecAllowedFlexVolumesOutputReference(terraformResource
 	j := jsiiProxy_PodSecurityPolicySpecAllowedFlexVolumesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumesOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPodSecurityPolicySpecAllowedFlexVolumesOutputReference_Override(p PodSec
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumesOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedFlexVolumesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

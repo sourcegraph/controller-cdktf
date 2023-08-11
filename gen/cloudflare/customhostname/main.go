@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.customHostname.CustomHostname",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
 		reflect.TypeOf((*CustomHostname)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.customHostname.CustomHostnameConfig",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig",
 		reflect.TypeOf((*CustomHostnameConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.customHostname.CustomHostnameSsl",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl",
 		reflect.TypeOf((*CustomHostnameSsl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customHostname.CustomHostnameSslList",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslList",
 		reflect.TypeOf((*CustomHostnameSslList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customHostname.CustomHostnameSslOutputReference",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
 		reflect.TypeOf((*CustomHostnameSslOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthority", GoGetter: "CertificateAuthority"},
@@ -164,11 +164,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.customHostname.CustomHostnameSslSettings",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings",
 		reflect.TypeOf((*CustomHostnameSslSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customHostname.CustomHostnameSslSettingsList",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsList",
 		reflect.TypeOf((*CustomHostnameSslSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -189,7 +189,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customHostname.CustomHostnameSslSettingsOutputReference",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference",
 		reflect.TypeOf((*CustomHostnameSslSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ciphers", GoGetter: "Ciphers"},
@@ -236,11 +236,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.customHostname.CustomHostnameSslValidationErrors",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrors",
 		reflect.TypeOf((*CustomHostnameSslValidationErrors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customHostname.CustomHostnameSslValidationErrorsList",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsList",
 		reflect.TypeOf((*CustomHostnameSslValidationErrorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -260,7 +260,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference",
 		reflect.TypeOf((*CustomHostnameSslValidationErrorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -293,11 +293,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.customHostname.CustomHostnameSslValidationRecords",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecords",
 		reflect.TypeOf((*CustomHostnameSslValidationRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customHostname.CustomHostnameSslValidationRecordsList",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsList",
 		reflect.TypeOf((*CustomHostnameSslValidationRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -317,7 +317,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.customHostname.CustomHostnameSslValidationRecordsOutputReference",
+		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsOutputReference",
 		reflect.TypeOf((*CustomHostnameSslValidationRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cnameName", GoGetter: "CnameName"},

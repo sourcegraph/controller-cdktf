@@ -116,7 +116,7 @@ func NewMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations
 	j := jsiiProxy_MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList{}
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList",
+		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

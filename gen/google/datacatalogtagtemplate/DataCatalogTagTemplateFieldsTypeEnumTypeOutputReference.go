@@ -179,7 +179,7 @@ func NewDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference(terraformResourc
 	j := jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewDataCatalogTagTemplateFieldsTypeEnumTypeOutputReference_Override(d DataC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplate.DataCatalogTagTemplateFieldsTypeEnumTypeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

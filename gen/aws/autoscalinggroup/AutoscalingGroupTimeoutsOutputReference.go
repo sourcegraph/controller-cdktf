@@ -204,7 +204,7 @@ func NewAutoscalingGroupTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AutoscalingGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAutoscalingGroupTimeoutsOutputReference_Override(a AutoscalingGroupTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

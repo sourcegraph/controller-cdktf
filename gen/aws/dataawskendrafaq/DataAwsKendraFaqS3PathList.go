@@ -104,7 +104,7 @@ func NewDataAwsKendraFaqS3PathList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_DataAwsKendraFaqS3PathList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathList",
+		"@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraFaqS3PathList_Override(d DataAwsKendraFaqS3PathList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathList",
+		"@cdktf/provider-aws.dataAwsKendraFaq.DataAwsKendraFaqS3PathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

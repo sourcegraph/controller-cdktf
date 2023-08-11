@@ -458,7 +458,7 @@ func NewGoogleSccNotificationConfig(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleSccNotificationConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewGoogleSccNotificationConfig_Override(g GoogleSccNotificationConfig, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -626,7 +626,7 @@ func GoogleSccNotificationConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleSccNotificationConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func GoogleSccNotificationConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func GoogleSccNotificationConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
+		"@cdktf/provider-google-beta.googleSccNotificationConfig.GoogleSccNotificationConfig",
 		"tfResourceType",
 		&returns,
 	)

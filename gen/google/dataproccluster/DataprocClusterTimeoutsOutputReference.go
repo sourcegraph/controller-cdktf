@@ -228,7 +228,7 @@ func NewDataprocClusterTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataprocClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterTimeoutsOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataprocClusterTimeoutsOutputReference_Override(d DataprocClusterTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocCluster.DataprocClusterTimeoutsOutputReference",
+		"@cdktf/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

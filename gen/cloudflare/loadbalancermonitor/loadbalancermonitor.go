@@ -677,7 +677,7 @@ func NewLoadBalancerMonitor(scope constructs.Construct, id *string, config *Load
 	j := jsiiProxy_LoadBalancerMonitor{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -690,7 +690,7 @@ func NewLoadBalancerMonitor_Override(l LoadBalancerMonitor, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -955,7 +955,7 @@ func LoadBalancerMonitor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -974,7 +974,7 @@ func LoadBalancerMonitor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -993,7 +993,7 @@ func LoadBalancerMonitor_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1006,7 +1006,7 @@ func LoadBalancerMonitor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitor",
 		"tfResourceType",
 		&returns,
 	)

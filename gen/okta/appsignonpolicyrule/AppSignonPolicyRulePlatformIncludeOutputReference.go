@@ -228,7 +228,7 @@ func NewAppSignonPolicyRulePlatformIncludeOutputReference(terraformResource cdkt
 	j := jsiiProxy_AppSignonPolicyRulePlatformIncludeOutputReference{}
 
 	_jsii_.Create(
-		"okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAppSignonPolicyRulePlatformIncludeOutputReference_Override(a AppSignonPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference",
+		"@cdktf/provider-okta.appSignonPolicyRule.AppSignonPolicyRulePlatformIncludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

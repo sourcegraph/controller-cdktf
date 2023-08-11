@@ -228,7 +228,7 @@ func NewComputeInstanceGroupTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputeInstanceGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroup.ComputeInstanceGroupTimeoutsOutputReference",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeInstanceGroupTimeoutsOutputReference_Override(c ComputeInstanceGr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroup.ComputeInstanceGroupTimeoutsOutputReference",
+		"@cdktf/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

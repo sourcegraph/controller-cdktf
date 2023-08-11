@@ -483,7 +483,7 @@ func NewComputeRegionAutoscaler(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ComputeRegionAutoscaler{}
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscaler",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewComputeRegionAutoscaler_Override(c ComputeRegionAutoscaler, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscaler",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -662,7 +662,7 @@ func ComputeRegionAutoscaler_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscaler",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func ComputeRegionAutoscaler_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscaler",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func ComputeRegionAutoscaler_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscaler",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func ComputeRegionAutoscaler_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionAutoscaler.ComputeRegionAutoscaler",
+		"@cdktf/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler",
 		"tfResourceType",
 		&returns,
 	)

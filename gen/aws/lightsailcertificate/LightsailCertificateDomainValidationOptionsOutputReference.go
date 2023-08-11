@@ -200,7 +200,7 @@ func NewLightsailCertificateDomainValidationOptionsOutputReference(terraformReso
 	j := jsiiProxy_LightsailCertificateDomainValidationOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailCertificate.LightsailCertificateDomainValidationOptionsOutputReference",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificateDomainValidationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewLightsailCertificateDomainValidationOptionsOutputReference_Override(l Li
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailCertificate.LightsailCertificateDomainValidationOptionsOutputReference",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificateDomainValidationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

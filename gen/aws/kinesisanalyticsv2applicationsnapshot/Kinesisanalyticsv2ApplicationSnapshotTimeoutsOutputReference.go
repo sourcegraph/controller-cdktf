@@ -204,7 +204,7 @@ func NewKinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference(terraformRe
 	j := jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewKinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference_Override(k 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.kinesisanalyticsv2ApplicationSnapshot.Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

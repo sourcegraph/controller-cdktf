@@ -462,7 +462,7 @@ func NewGoogleComputeAttachedDisk(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleComputeAttachedDisk{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,7 +475,7 @@ func NewGoogleComputeAttachedDisk_Override(g GoogleComputeAttachedDisk, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -652,7 +652,7 @@ func GoogleComputeAttachedDisk_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func GoogleComputeAttachedDisk_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func GoogleComputeAttachedDisk_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func GoogleComputeAttachedDisk_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
+		"@cdktf/provider-google-beta.googleComputeAttachedDisk.GoogleComputeAttachedDisk",
 		"tfResourceType",
 		&returns,
 	)

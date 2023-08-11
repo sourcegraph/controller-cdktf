@@ -345,7 +345,7 @@ func NewStatefulSetV1SpecOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_StatefulSetV1SpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -357,7 +357,7 @@ func NewStatefulSetV1SpecOutputReference_Override(s StatefulSetV1SpecOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

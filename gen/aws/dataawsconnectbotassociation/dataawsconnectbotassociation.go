@@ -314,7 +314,7 @@ func NewDataAwsConnectBotAssociation(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataAwsConnectBotAssociation{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
+		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -327,7 +327,7 @@ func NewDataAwsConnectBotAssociation_Override(d DataAwsConnectBotAssociation, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
+		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -427,7 +427,7 @@ func DataAwsConnectBotAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
+		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -446,7 +446,7 @@ func DataAwsConnectBotAssociation_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
+		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -465,7 +465,7 @@ func DataAwsConnectBotAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
+		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsConnectBotAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
+		"@cdktf/provider-aws.dataAwsConnectBotAssociation.DataAwsConnectBotAssociation",
 		"tfResourceType",
 		&returns,
 	)

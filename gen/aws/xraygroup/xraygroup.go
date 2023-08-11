@@ -425,7 +425,7 @@ func NewXrayGroup(scope constructs.Construct, id *string, config *XrayGroupConfi
 	j := jsiiProxy_XrayGroup{}
 
 	_jsii_.Create(
-		"aws.xrayGroup.XrayGroup",
+		"@cdktf/provider-aws.xrayGroup.XrayGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewXrayGroup_Override(x XrayGroup, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.xrayGroup.XrayGroup",
+		"@cdktf/provider-aws.xrayGroup.XrayGroup",
 		[]interface{}{scope, id, config},
 		x,
 	)
@@ -593,7 +593,7 @@ func XrayGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.xrayGroup.XrayGroup",
+		"@cdktf/provider-aws.xrayGroup.XrayGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func XrayGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.xrayGroup.XrayGroup",
+		"@cdktf/provider-aws.xrayGroup.XrayGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func XrayGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.xrayGroup.XrayGroup",
+		"@cdktf/provider-aws.xrayGroup.XrayGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func XrayGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.xrayGroup.XrayGroup",
+		"@cdktf/provider-aws.xrayGroup.XrayGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -653,7 +653,7 @@ func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssoci
 	j := jsiiProxy_SsmAssociation{}
 
 	_jsii_.Create(
-		"aws.ssmAssociation.SsmAssociation",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -666,7 +666,7 @@ func NewSsmAssociation_Override(s SsmAssociation, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmAssociation.SsmAssociation",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -909,7 +909,7 @@ func SsmAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmAssociation.SsmAssociation",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -928,7 +928,7 @@ func SsmAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmAssociation.SsmAssociation",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -947,7 +947,7 @@ func SsmAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmAssociation.SsmAssociation",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -960,7 +960,7 @@ func SsmAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmAssociation.SsmAssociation",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		"tfResourceType",
 		&returns,
 	)

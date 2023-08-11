@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerCluster",
+		"@cdktf/provider-google.containerCluster.ContainerCluster",
 		reflect.TypeOf((*ContainerCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addonsConfig", GoGetter: "AddonsConfig"},
@@ -258,15 +258,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfig",
 		reflect.TypeOf((*ContainerClusterAddonsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig",
 		reflect.TypeOf((*ContainerClusterAddonsConfigCloudrunConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigCloudrunConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -303,11 +303,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig",
 		reflect.TypeOf((*ContainerClusterAddonsConfigConfigConnectorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigConfigConnectorConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -341,11 +341,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig",
 		reflect.TypeOf((*ContainerClusterAddonsConfigDnsCacheConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigDnsCacheConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -379,11 +379,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig",
 		reflect.TypeOf((*ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -417,11 +417,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig",
 		reflect.TypeOf((*ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -455,11 +455,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig",
 		reflect.TypeOf((*ContainerClusterAddonsConfigGkeBackupAgentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -493,11 +493,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling",
 		reflect.TypeOf((*ContainerClusterAddonsConfigHorizontalPodAutoscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -531,11 +531,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing",
 		reflect.TypeOf((*ContainerClusterAddonsConfigHttpLoadBalancing)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigHttpLoadBalancingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -569,11 +569,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig",
 		reflect.TypeOf((*ContainerClusterAddonsConfigNetworkPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -607,7 +607,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAddonsConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterAddonsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudrunConfig", GoGetter: "CloudrunConfig"},
@@ -675,11 +675,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterAuthenticatorGroupsConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfig",
 		reflect.TypeOf((*ContainerClusterAuthenticatorGroupsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterAuthenticatorGroupsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -713,11 +713,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterBinaryAuthorization",
+		"@cdktf/provider-google.containerCluster.ContainerClusterBinaryAuthorization",
 		reflect.TypeOf((*ContainerClusterBinaryAuthorization)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference",
 		reflect.TypeOf((*ContainerClusterBinaryAuthorizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -755,19 +755,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterClusterAutoscaling",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscaling",
 		reflect.TypeOf((*ContainerClusterClusterAutoscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaults",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaults",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaults)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoRepair", GoGetter: "AutoRepair"},
@@ -806,11 +806,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptions",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptions",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -830,7 +830,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoUpgradeStartTime", GoGetter: "AutoUpgradeStartTime"},
@@ -864,7 +864,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskKmsKey", GoGetter: "BootDiskKmsKey"},
@@ -929,11 +929,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -971,15 +971,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1018,11 +1018,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchNodeCount", GoGetter: "BatchNodeCount"},
@@ -1063,7 +1063,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blueGreenSettings", GoGetter: "BlueGreenSettings"},
@@ -1108,7 +1108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoProvisioningDefaults", GoGetter: "AutoProvisioningDefaults"},
@@ -1151,11 +1151,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingResourceLimits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingResourceLimitsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1176,7 +1176,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference",
 		reflect.TypeOf((*ContainerClusterClusterAutoscalingResourceLimitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1216,11 +1216,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterConfidentialNodes",
+		"@cdktf/provider-google.containerCluster.ContainerClusterConfidentialNodes",
 		reflect.TypeOf((*ContainerClusterConfidentialNodes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterConfidentialNodesOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference",
 		reflect.TypeOf((*ContainerClusterConfidentialNodesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1254,15 +1254,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterConfig",
 		reflect.TypeOf((*ContainerClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterCostManagementConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterCostManagementConfig",
 		reflect.TypeOf((*ContainerClusterCostManagementConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterCostManagementConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterCostManagementConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1296,11 +1296,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterDatabaseEncryption",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDatabaseEncryption",
 		reflect.TypeOf((*ContainerClusterDatabaseEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference",
 		reflect.TypeOf((*ContainerClusterDatabaseEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1337,11 +1337,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterDefaultSnatStatus",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDefaultSnatStatus",
 		reflect.TypeOf((*ContainerClusterDefaultSnatStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference",
 		reflect.TypeOf((*ContainerClusterDefaultSnatStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1375,11 +1375,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterDnsConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDnsConfig",
 		reflect.TypeOf((*ContainerClusterDnsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterDnsConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterDnsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterDns", GoGetter: "ClusterDns"},
@@ -1420,11 +1420,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterGatewayApiConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterGatewayApiConfig",
 		reflect.TypeOf((*ContainerClusterGatewayApiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterGatewayApiConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterGatewayApiConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterGatewayApiConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channel", GoGetter: "Channel"},
@@ -1458,11 +1458,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterIpAllocationPolicy",
+		"@cdktf/provider-google.containerCluster.ContainerClusterIpAllocationPolicy",
 		reflect.TypeOf((*ContainerClusterIpAllocationPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference",
 		reflect.TypeOf((*ContainerClusterIpAllocationPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterIpv4CidrBlock", GoGetter: "ClusterIpv4CidrBlock"},
@@ -1513,11 +1513,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig",
 		reflect.TypeOf((*ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1551,11 +1551,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterLoggingConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterLoggingConfig",
 		reflect.TypeOf((*ContainerClusterLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterLoggingConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterLoggingConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1589,15 +1589,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMaintenancePolicy",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicy",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyDailyMaintenanceWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1632,15 +1632,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyMaintenanceExclusion)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1674,7 +1674,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyMaintenanceExclusionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1695,7 +1695,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1737,7 +1737,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMaintenancePolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1781,11 +1781,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyRecurringWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference",
 		reflect.TypeOf((*ContainerClusterMaintenancePolicyRecurringWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1823,15 +1823,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMasterAuth",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuth",
 		reflect.TypeOf((*ContainerClusterMasterAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMasterAuthClientCertificateConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfig",
 		reflect.TypeOf((*ContainerClusterMasterAuthClientCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterMasterAuthClientCertificateConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1865,7 +1865,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMasterAuthOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference",
 		reflect.TypeOf((*ContainerClusterMasterAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientCertificate", GoGetter: "ClientCertificate"},
@@ -1903,15 +1903,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig",
 		reflect.TypeOf((*ContainerClusterMasterAuthorizedNetworksConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks",
 		reflect.TypeOf((*ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList",
 		reflect.TypeOf((*ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1932,7 +1932,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
 		reflect.TypeOf((*ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlock", GoGetter: "CidrBlock"},
@@ -1969,7 +1969,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterMasterAuthorizedNetworksConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrBlocks", GoGetter: "CidrBlocks"},
@@ -2008,11 +2008,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMeshCertificates",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMeshCertificates",
 		reflect.TypeOf((*ContainerClusterMeshCertificates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMeshCertificatesOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference",
 		reflect.TypeOf((*ContainerClusterMeshCertificatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2046,15 +2046,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMonitoringConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMonitoringConfig",
 		reflect.TypeOf((*ContainerClusterMonitoringConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheus",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheus",
 		reflect.TypeOf((*ContainerClusterMonitoringConfigManagedPrometheus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference",
 		reflect.TypeOf((*ContainerClusterMonitoringConfigManagedPrometheusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2088,7 +2088,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterMonitoringConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterMonitoringConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterMonitoringConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2126,11 +2126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNetworkPolicy",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNetworkPolicy",
 		reflect.TypeOf((*ContainerClusterNetworkPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNetworkPolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference",
 		reflect.TypeOf((*ContainerClusterNetworkPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2167,15 +2167,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfig",
 		reflect.TypeOf((*ContainerClusterNodeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures",
 		reflect.TypeOf((*ContainerClusterNodeConfigAdvancedMachineFeatures)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2209,11 +2209,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig",
 		reflect.TypeOf((*ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2247,11 +2247,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigGcfsConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfig",
 		reflect.TypeOf((*ContainerClusterNodeConfigGcfsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigGcfsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2285,15 +2285,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigGuestAccelerator",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator",
 		reflect.TypeOf((*ContainerClusterNodeConfigGuestAccelerator)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig",
 		reflect.TypeOf((*ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList",
 		reflect.TypeOf((*ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2314,7 +2314,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2352,7 +2352,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList",
 		reflect.TypeOf((*ContainerClusterNodeConfigGuestAcceleratorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2373,7 +2373,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigGuestAcceleratorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2418,11 +2418,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigGvnic",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGvnic",
 		reflect.TypeOf((*ContainerClusterNodeConfigGvnic)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigGvnicOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2456,11 +2456,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigKubeletConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig",
 		reflect.TypeOf((*ContainerClusterNodeConfigKubeletConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigKubeletConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2503,11 +2503,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfig",
 		reflect.TypeOf((*ContainerClusterNodeConfigLinuxNodeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigLinuxNodeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2541,11 +2541,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfig",
 		reflect.TypeOf((*ContainerClusterNodeConfigLocalNvmeSsdBlockConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2579,7 +2579,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedMachineFeatures", GoGetter: "AdvancedMachineFeatures"},
@@ -2710,11 +2710,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigReservationAffinity",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinity",
 		reflect.TypeOf((*ContainerClusterNodeConfigReservationAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigReservationAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2754,11 +2754,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig",
 		reflect.TypeOf((*ContainerClusterNodeConfigShieldedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigShieldedInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2796,11 +2796,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigTaint",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigTaint",
 		reflect.TypeOf((*ContainerClusterNodeConfigTaint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigTaintList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigTaintList",
 		reflect.TypeOf((*ContainerClusterNodeConfigTaintList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2821,7 +2821,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigTaintOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigTaintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2862,11 +2862,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfig",
 		reflect.TypeOf((*ContainerClusterNodeConfigWorkloadMetadataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2900,15 +2900,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePool",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePool",
 		reflect.TypeOf((*ContainerClusterNodePool)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolAutoscaling",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolAutoscaling",
 		reflect.TypeOf((*ContainerClusterNodePoolAutoscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolAutoscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2955,15 +2955,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolDefaults",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolDefaults",
 		reflect.TypeOf((*ContainerClusterNodePoolDefaults)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaults",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaults",
 		reflect.TypeOf((*ContainerClusterNodePoolDefaultsNodeConfigDefaults)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2998,7 +2998,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolDefaultsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolDefaultsOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolDefaultsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3034,7 +3034,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolList",
 		reflect.TypeOf((*ContainerClusterNodePoolList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3055,11 +3055,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolManagement",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolManagement",
 		reflect.TypeOf((*ContainerClusterNodePoolManagement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolManagementOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolManagementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoRepair", GoGetter: "AutoRepair"},
@@ -3097,11 +3097,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNetworkConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3149,11 +3149,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3187,15 +3187,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3229,11 +3229,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3267,11 +3267,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGcfsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3305,15 +3305,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGuestAccelerator)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3334,7 +3334,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3372,7 +3372,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGuestAcceleratorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3393,7 +3393,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3438,11 +3438,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGvnic",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnic",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGvnic)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigGvnicOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3476,11 +3476,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigKubeletConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3523,11 +3523,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigLinuxNodeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3561,11 +3561,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3599,7 +3599,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedMachineFeatures", GoGetter: "AdvancedMachineFeatures"},
@@ -3730,11 +3730,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinity",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinity",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigReservationAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3774,11 +3774,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigShieldedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3816,11 +3816,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigTaint",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigTaint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigTaintList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3841,7 +3841,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigTaintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3882,11 +3882,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3920,7 +3920,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscaling", GoGetter: "Autoscaling"},
@@ -3999,11 +3999,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolPlacementPolicy",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolPlacementPolicy",
 		reflect.TypeOf((*ContainerClusterNodePoolPlacementPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolPlacementPolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolPlacementPolicyOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolPlacementPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4037,15 +4037,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolUpgradeSettings",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettings",
 		reflect.TypeOf((*ContainerClusterNodePoolUpgradeSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettings",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettings",
 		reflect.TypeOf((*ContainerClusterNodePoolUpgradeSettingsBlueGreenSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4083,11 +4083,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy",
 		reflect.TypeOf((*ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchNodeCount", GoGetter: "BatchNodeCount"},
@@ -4128,7 +4128,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNodePoolUpgradeSettingsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsOutputReference",
 		reflect.TypeOf((*ContainerClusterNodePoolUpgradeSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blueGreenSettings", GoGetter: "BlueGreenSettings"},
@@ -4173,11 +4173,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNotificationConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfig",
 		reflect.TypeOf((*ContainerClusterNotificationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNotificationConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterNotificationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4212,15 +4212,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNotificationConfigPubsub",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfigPubsub",
 		reflect.TypeOf((*ContainerClusterNotificationConfigPubsub)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterNotificationConfigPubsubFilter",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilter",
 		reflect.TypeOf((*ContainerClusterNotificationConfigPubsubFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReference",
 		reflect.TypeOf((*ContainerClusterNotificationConfigPubsubFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4254,7 +4254,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
 		reflect.TypeOf((*ContainerClusterNotificationConfigPubsubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4295,15 +4295,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterPrivateClusterConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterPrivateClusterConfig",
 		reflect.TypeOf((*ContainerClusterPrivateClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig",
 		reflect.TypeOf((*ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4337,7 +4337,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterPrivateClusterConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4388,11 +4388,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterReleaseChannel",
+		"@cdktf/provider-google.containerCluster.ContainerClusterReleaseChannel",
 		reflect.TypeOf((*ContainerClusterReleaseChannel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterReleaseChannelOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference",
 		reflect.TypeOf((*ContainerClusterReleaseChannelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channel", GoGetter: "Channel"},
@@ -4426,15 +4426,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterResourceUsageExportConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig",
 		reflect.TypeOf((*ContainerClusterResourceUsageExportConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestination",
+		"@cdktf/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestination",
 		reflect.TypeOf((*ContainerClusterResourceUsageExportConfigBigqueryDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference",
 		reflect.TypeOf((*ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4468,7 +4468,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterResourceUsageExportConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryDestination", GoGetter: "BigqueryDestination"},
@@ -4509,11 +4509,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterServiceExternalIpsConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfig",
 		reflect.TypeOf((*ContainerClusterServiceExternalIpsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterServiceExternalIpsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4547,11 +4547,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterTimeouts",
+		"@cdktf/provider-google.containerCluster.ContainerClusterTimeouts",
 		reflect.TypeOf((*ContainerClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterTimeoutsOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference",
 		reflect.TypeOf((*ContainerClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4595,11 +4595,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterVerticalPodAutoscaling",
+		"@cdktf/provider-google.containerCluster.ContainerClusterVerticalPodAutoscaling",
 		reflect.TypeOf((*ContainerClusterVerticalPodAutoscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference",
 		reflect.TypeOf((*ContainerClusterVerticalPodAutoscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4633,11 +4633,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.containerCluster.ContainerClusterWorkloadIdentityConfig",
+		"@cdktf/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfig",
 		reflect.TypeOf((*ContainerClusterWorkloadIdentityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference",
 		reflect.TypeOf((*ContainerClusterWorkloadIdentityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

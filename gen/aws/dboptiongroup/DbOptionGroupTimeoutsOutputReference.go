@@ -180,7 +180,7 @@ func NewDbOptionGroupTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DbOptionGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbOptionGroup.DbOptionGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDbOptionGroupTimeoutsOutputReference_Override(d DbOptionGroupTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbOptionGroup.DbOptionGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbOptionGroup.DbOptionGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

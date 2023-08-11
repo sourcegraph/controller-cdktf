@@ -225,7 +225,7 @@ func NewTeamsAccountAntivirusOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_TeamsAccountAntivirusOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountAntivirusOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewTeamsAccountAntivirusOutputReference_Override(t TeamsAccountAntivirusOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountAntivirusOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

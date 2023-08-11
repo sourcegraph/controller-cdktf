@@ -542,7 +542,7 @@ func NewGoogleNetworkServicesGrpcRoute(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleNetworkServicesGrpcRoute{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -555,7 +555,7 @@ func NewGoogleNetworkServicesGrpcRoute_Override(g GoogleNetworkServicesGrpcRoute
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -743,7 +743,7 @@ func GoogleNetworkServicesGrpcRoute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleNetworkServicesGrpcRoute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func GoogleNetworkServicesGrpcRoute_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func GoogleNetworkServicesGrpcRoute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
+		"@cdktf/provider-google-beta.googleNetworkServicesGrpcRoute.GoogleNetworkServicesGrpcRoute",
 		"tfResourceType",
 		&returns,
 	)

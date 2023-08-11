@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBinding",
 		reflect.TypeOf((*CloudiotRegistryIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBindingCondition",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBindingCondition",
 		reflect.TypeOf((*CloudiotRegistryIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBindingConditionOutputReference",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBindingConditionOutputReference",
 		reflect.TypeOf((*CloudiotRegistryIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudiotRegistryIamBinding.CloudiotRegistryIamBindingConfig",
+		"@cdktf/provider-google.cloudiotRegistryIamBinding.CloudiotRegistryIamBindingConfig",
 		reflect.TypeOf((*CloudiotRegistryIamBindingConfig)(nil)).Elem(),
 	)
 }

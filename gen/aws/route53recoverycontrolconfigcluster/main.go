@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigCluster",
 		reflect.TypeOf((*Route53RecoverycontrolconfigCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,11 +60,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpoints",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpoints",
 		reflect.TypeOf((*Route53RecoverycontrolconfigClusterClusterEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsList",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsList",
 		reflect.TypeOf((*Route53RecoverycontrolconfigClusterClusterEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference",
 		reflect.TypeOf((*Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,7 +118,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigCluster.Route53RecoverycontrolconfigClusterConfig",
 		reflect.TypeOf((*Route53RecoverycontrolconfigClusterConfig)(nil)).Elem(),
 	)
 }

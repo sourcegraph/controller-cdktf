@@ -202,7 +202,7 @@ func NewBackupPlanAdvancedBackupSettingOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_BackupPlanAdvancedBackupSettingOutputReference{}
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference",
+		"@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewBackupPlanAdvancedBackupSettingOutputReference_Override(b BackupPlanAdva
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference",
+		"@cdktf/provider-aws.backupPlan.BackupPlanAdvancedBackupSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

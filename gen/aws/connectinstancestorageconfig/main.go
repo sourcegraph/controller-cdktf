@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
 		reflect.TypeOf((*ConnectInstanceStorageConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,19 +63,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigConfig",
 		reflect.TypeOf((*ConnectInstanceStorageConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfig",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,11 +109,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -147,15 +147,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,7 +191,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,7 +230,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigOutputReference",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -280,15 +280,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3Config",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3Config",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigS3Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -324,7 +324,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference",
 		reflect.TypeOf((*ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},

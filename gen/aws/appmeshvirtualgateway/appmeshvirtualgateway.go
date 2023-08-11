@@ -481,7 +481,7 @@ func NewAppmeshVirtualGateway(scope constructs.Construct, id *string, config *Ap
 	j := jsiiProxy_AppmeshVirtualGateway{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGateway",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewAppmeshVirtualGateway_Override(a AppmeshVirtualGateway, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGateway",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -660,7 +660,7 @@ func AppmeshVirtualGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGateway",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func AppmeshVirtualGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGateway",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func AppmeshVirtualGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGateway",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func AppmeshVirtualGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGateway",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway",
 		"tfResourceType",
 		&returns,
 	)

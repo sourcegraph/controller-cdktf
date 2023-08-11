@@ -505,7 +505,7 @@ func NewCodepipelineWebhook(scope constructs.Construct, id *string, config *Code
 	j := jsiiProxy_CodepipelineWebhook{}
 
 	_jsii_.Create(
-		"aws.codepipelineWebhook.CodepipelineWebhook",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -518,7 +518,7 @@ func NewCodepipelineWebhook_Override(c CodepipelineWebhook, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codepipelineWebhook.CodepipelineWebhook",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -695,7 +695,7 @@ func CodepipelineWebhook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codepipelineWebhook.CodepipelineWebhook",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func CodepipelineWebhook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codepipelineWebhook.CodepipelineWebhook",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func CodepipelineWebhook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codepipelineWebhook.CodepipelineWebhook",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func CodepipelineWebhook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codepipelineWebhook.CodepipelineWebhook",
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
 		"tfResourceType",
 		&returns,
 	)

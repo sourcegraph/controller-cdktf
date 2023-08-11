@@ -470,7 +470,7 @@ func NewGluePartition(scope constructs.Construct, id *string, config *GluePartit
 	j := jsiiProxy_GluePartition{}
 
 	_jsii_.Create(
-		"aws.gluePartition.GluePartition",
+		"@cdktf/provider-aws.gluePartition.GluePartition",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,7 +483,7 @@ func NewGluePartition_Override(g GluePartition, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gluePartition.GluePartition",
+		"@cdktf/provider-aws.gluePartition.GluePartition",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -649,7 +649,7 @@ func GluePartition_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gluePartition.GluePartition",
+		"@cdktf/provider-aws.gluePartition.GluePartition",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func GluePartition_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gluePartition.GluePartition",
+		"@cdktf/provider-aws.gluePartition.GluePartition",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -687,7 +687,7 @@ func GluePartition_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gluePartition.GluePartition",
+		"@cdktf/provider-aws.gluePartition.GluePartition",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func GluePartition_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.gluePartition.GluePartition",
+		"@cdktf/provider-aws.gluePartition.GluePartition",
 		"tfResourceType",
 		&returns,
 	)

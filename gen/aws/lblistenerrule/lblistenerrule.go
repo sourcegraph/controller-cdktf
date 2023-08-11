@@ -448,7 +448,7 @@ func NewLbListenerRule(scope constructs.Construct, id *string, config *LbListene
 	j := jsiiProxy_LbListenerRule{}
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRule",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewLbListenerRule_Override(l LbListenerRule, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRule",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRule",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -616,7 +616,7 @@ func LbListenerRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbListenerRule.LbListenerRule",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func LbListenerRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbListenerRule.LbListenerRule",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func LbListenerRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbListenerRule.LbListenerRule",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func LbListenerRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lbListenerRule.LbListenerRule",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRule",
 		"tfResourceType",
 		&returns,
 	)

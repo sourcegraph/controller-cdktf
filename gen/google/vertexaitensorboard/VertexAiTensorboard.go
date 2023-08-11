@@ -518,7 +518,7 @@ func NewVertexAiTensorboard(scope constructs.Construct, id *string, config *Vert
 	j := jsiiProxy_VertexAiTensorboard{}
 
 	_jsii_.Create(
-		"google.vertexAiTensorboard.VertexAiTensorboard",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboard",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -531,7 +531,7 @@ func NewVertexAiTensorboard_Override(v VertexAiTensorboard, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiTensorboard.VertexAiTensorboard",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboard",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -697,7 +697,7 @@ func VertexAiTensorboard_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiTensorboard.VertexAiTensorboard",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboard",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func VertexAiTensorboard_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiTensorboard.VertexAiTensorboard",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboard",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func VertexAiTensorboard_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.vertexAiTensorboard.VertexAiTensorboard",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboard",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func VertexAiTensorboard_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.vertexAiTensorboard.VertexAiTensorboard",
+		"@cdktf/provider-google.vertexAiTensorboard.VertexAiTensorboard",
 		"tfResourceType",
 		&returns,
 	)

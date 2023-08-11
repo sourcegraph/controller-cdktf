@@ -180,7 +180,7 @@ func NewNamespaceTimeoutsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_NamespaceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.namespace.NamespaceTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.namespace.NamespaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewNamespaceTimeoutsOutputReference_Override(n NamespaceTimeoutsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.namespace.NamespaceTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.namespace.NamespaceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

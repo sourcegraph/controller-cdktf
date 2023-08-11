@@ -346,7 +346,7 @@ func NewDataAwsArn(scope constructs.Construct, id *string, config *DataAwsArnCon
 	j := jsiiProxy_DataAwsArn{}
 
 	_jsii_.Create(
-		"aws.dataAwsArn.DataAwsArn",
+		"@cdktf/provider-aws.dataAwsArn.DataAwsArn",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewDataAwsArn_Override(d DataAwsArn, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsArn.DataAwsArn",
+		"@cdktf/provider-aws.dataAwsArn.DataAwsArn",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -459,7 +459,7 @@ func DataAwsArn_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsArn.DataAwsArn",
+		"@cdktf/provider-aws.dataAwsArn.DataAwsArn",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsArn_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsArn.DataAwsArn",
+		"@cdktf/provider-aws.dataAwsArn.DataAwsArn",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func DataAwsArn_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsArn.DataAwsArn",
+		"@cdktf/provider-aws.dataAwsArn.DataAwsArn",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsArn_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsArn.DataAwsArn",
+		"@cdktf/provider-aws.dataAwsArn.DataAwsArn",
 		"tfResourceType",
 		&returns,
 	)

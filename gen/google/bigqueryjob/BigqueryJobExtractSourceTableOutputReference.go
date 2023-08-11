@@ -227,7 +227,7 @@ func NewBigqueryJobExtractSourceTableOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_BigqueryJobExtractSourceTableOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobExtractSourceTableOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewBigqueryJobExtractSourceTableOutputReference_Override(b BigqueryJobExtra
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryJob.BigqueryJobExtractSourceTableOutputReference",
+		"@cdktf/provider-google.bigqueryJob.BigqueryJobExtractSourceTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

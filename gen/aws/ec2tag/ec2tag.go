@@ -365,7 +365,7 @@ func NewEc2Tag(scope constructs.Construct, id *string, config *Ec2TagConfig) Ec2
 	j := jsiiProxy_Ec2Tag{}
 
 	_jsii_.Create(
-		"aws.ec2Tag.Ec2Tag",
+		"@cdktf/provider-aws.ec2Tag.Ec2Tag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewEc2Tag_Override(e Ec2Tag, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Tag.Ec2Tag",
+		"@cdktf/provider-aws.ec2Tag.Ec2Tag",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -522,7 +522,7 @@ func Ec2Tag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2Tag.Ec2Tag",
+		"@cdktf/provider-aws.ec2Tag.Ec2Tag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func Ec2Tag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2Tag.Ec2Tag",
+		"@cdktf/provider-aws.ec2Tag.Ec2Tag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func Ec2Tag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2Tag.Ec2Tag",
+		"@cdktf/provider-aws.ec2Tag.Ec2Tag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func Ec2Tag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2Tag.Ec2Tag",
+		"@cdktf/provider-aws.ec2Tag.Ec2Tag",
 		"tfResourceType",
 		&returns,
 	)

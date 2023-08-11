@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecImagePullSecretsList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataKubernetesPodV1SpecImagePullSecretsList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecImagePullSecretsList_Override(d DataKubernetesPod
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

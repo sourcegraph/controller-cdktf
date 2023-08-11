@@ -227,7 +227,7 @@ func NewDatapipelinePipelineDefinitionPipelineObjectFieldOutputReference(terrafo
 	j := jsiiProxy_DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference{}
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewDatapipelinePipelineDefinitionPipelineObjectFieldOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionPipelineObjectFieldOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

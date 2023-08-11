@@ -190,7 +190,7 @@ func NewBigqueryTableEncryptionConfigurationOutputReference(terraformResource cd
 	j := jsiiProxy_BigqueryTableEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewBigqueryTableEncryptionConfigurationOutputReference_Override(b BigqueryT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference",
+		"@cdktf/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

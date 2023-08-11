@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.amiLaunchPermission.AmiLaunchPermission",
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
 		reflect.TypeOf((*AmiLaunchPermission)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.amiLaunchPermission.AmiLaunchPermissionConfig",
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermissionConfig",
 		reflect.TypeOf((*AmiLaunchPermissionConfig)(nil)).Elem(),
 	)
 }

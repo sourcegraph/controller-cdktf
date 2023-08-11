@@ -202,7 +202,7 @@ func NewDatapipelinePipelineDefinitionParameterObjectAttributeOutputReference(te
 	j := jsiiProxy_DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference{}
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDatapipelinePipelineDefinitionParameterObjectAttributeOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference",
+		"@cdktf/provider-aws.datapipelinePipelineDefinition.DatapipelinePipelineDefinitionParameterObjectAttributeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

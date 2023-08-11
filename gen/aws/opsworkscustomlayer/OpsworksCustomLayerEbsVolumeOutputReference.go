@@ -321,7 +321,7 @@ func NewOpsworksCustomLayerEbsVolumeOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_OpsworksCustomLayerEbsVolumeOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -333,7 +333,7 @@ func NewOpsworksCustomLayerEbsVolumeOutputReference_Override(o OpsworksCustomLay
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

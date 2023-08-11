@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.healthcareFhirStore.HealthcareFhirStore",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStore",
 		reflect.TypeOf((*HealthcareFhirStore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,15 +89,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareFhirStore.HealthcareFhirStoreConfig",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig",
 		reflect.TypeOf((*HealthcareFhirStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareFhirStore.HealthcareFhirStoreNotificationConfig",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfig",
 		reflect.TypeOf((*HealthcareFhirStoreNotificationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference",
 		reflect.TypeOf((*HealthcareFhirStoreNotificationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,15 +131,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs",
 		reflect.TypeOf((*HealthcareFhirStoreStreamConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestination",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestination",
 		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference",
 		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,11 +176,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig",
 		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference",
 		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -217,7 +217,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList",
 		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -238,7 +238,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference",
 		reflect.TypeOf((*HealthcareFhirStoreStreamConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryDestination", GoGetter: "BigqueryDestination"},
@@ -276,11 +276,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareFhirStore.HealthcareFhirStoreTimeouts",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts",
 		reflect.TypeOf((*HealthcareFhirStoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference",
+		"@cdktf/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference",
 		reflect.TypeOf((*HealthcareFhirStoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

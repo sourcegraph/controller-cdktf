@@ -343,7 +343,7 @@ func NewWafregionalByteMatchSet(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_WafregionalByteMatchSet{}
 
 	_jsii_.Create(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewWafregionalByteMatchSet_Override(w WafregionalByteMatchSet, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -478,7 +478,7 @@ func WafregionalByteMatchSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func WafregionalByteMatchSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func WafregionalByteMatchSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func WafregionalByteMatchSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		"tfResourceType",
 		&returns,
 	)

@@ -167,7 +167,7 @@ func NewNotebooksRuntimeMetricsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_NotebooksRuntimeMetricsOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeMetricsOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeMetricsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewNotebooksRuntimeMetricsOutputReference_Override(n NotebooksRuntimeMetric
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeMetricsOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeMetricsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

@@ -180,7 +180,7 @@ func NewGoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterCon
 	j := jsiiProxy_GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocWorkflowTemplate.GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

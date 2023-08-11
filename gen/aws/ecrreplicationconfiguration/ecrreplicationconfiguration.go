@@ -331,7 +331,7 @@ func NewEcrReplicationConfiguration(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_EcrReplicationConfiguration{}
 
 	_jsii_.Create(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -344,7 +344,7 @@ func NewEcrReplicationConfiguration_Override(e EcrReplicationConfiguration, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -455,7 +455,7 @@ func EcrReplicationConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -474,7 +474,7 @@ func EcrReplicationConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +493,7 @@ func EcrReplicationConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -506,7 +506,7 @@ func EcrReplicationConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfiguration",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsVpcEndpointDnsOptionsList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DataAwsVpcEndpointDnsOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsList",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsVpcEndpointDnsOptionsList_Override(d DataAwsVpcEndpointDnsOptions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsList",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

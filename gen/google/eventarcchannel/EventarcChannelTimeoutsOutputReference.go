@@ -228,7 +228,7 @@ func NewEventarcChannelTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EventarcChannelTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.eventarcChannel.EventarcChannelTimeoutsOutputReference",
+		"@cdktf/provider-google.eventarcChannel.EventarcChannelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEventarcChannelTimeoutsOutputReference_Override(e EventarcChannelTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.eventarcChannel.EventarcChannelTimeoutsOutputReference",
+		"@cdktf/provider-google.eventarcChannel.EventarcChannelTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion",
 		reflect.TypeOf((*DataGoogleSecretManagerSecretVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig",
 		reflect.TypeOf((*DataGoogleSecretManagerSecretVersionConfig)(nil)).Elem(),
 	)
 }

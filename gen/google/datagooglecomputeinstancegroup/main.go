@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
+		"@cdktf/provider-google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroup",
 		reflect.TypeOf((*DataGoogleComputeInstanceGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig",
+		"@cdktf/provider-google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupConfig",
 		reflect.TypeOf((*DataGoogleComputeInstanceGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPort",
+		"@cdktf/provider-google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPort",
 		reflect.TypeOf((*DataGoogleComputeInstanceGroupNamedPort)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortList",
 		reflect.TypeOf((*DataGoogleComputeInstanceGroupNamedPortList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeInstanceGroup.DataGoogleComputeInstanceGroupNamedPortOutputReference",
 		reflect.TypeOf((*DataGoogleComputeInstanceGroupNamedPortOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

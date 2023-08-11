@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepter",
 		reflect.TypeOf((*GuarddutyInviteAccepter)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepterConfig",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepterConfig",
 		reflect.TypeOf((*GuarddutyInviteAccepterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeouts",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeouts",
 		reflect.TypeOf((*GuarddutyInviteAccepterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.guarddutyInviteAccepter.GuarddutyInviteAccepterTimeoutsOutputReference",
 		reflect.TypeOf((*GuarddutyInviteAccepterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

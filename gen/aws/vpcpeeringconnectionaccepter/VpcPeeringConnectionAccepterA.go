@@ -518,7 +518,7 @@ func NewVpcPeeringConnectionAccepterA(scope constructs.Construct, id *string, co
 	j := jsiiProxy_VpcPeeringConnectionAccepterA{}
 
 	_jsii_.Create(
-		"aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
+		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -531,7 +531,7 @@ func NewVpcPeeringConnectionAccepterA_Override(v VpcPeeringConnectionAccepterA, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
+		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -686,7 +686,7 @@ func VpcPeeringConnectionAccepterA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
+		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -705,7 +705,7 @@ func VpcPeeringConnectionAccepterA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
+		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func VpcPeeringConnectionAccepterA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
+		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func VpcPeeringConnectionAccepterA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
+		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		"tfResourceType",
 		&returns,
 	)

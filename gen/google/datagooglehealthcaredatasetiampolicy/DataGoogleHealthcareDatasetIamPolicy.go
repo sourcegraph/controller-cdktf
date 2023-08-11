@@ -313,7 +313,7 @@ func NewDataGoogleHealthcareDatasetIamPolicy(scope constructs.Construct, id *str
 	j := jsiiProxy_DataGoogleHealthcareDatasetIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleHealthcareDatasetIamPolicy_Override(d DataGoogleHealthcareData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleHealthcareDatasetIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleHealthcareDatasetIamPolicy_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleHealthcareDatasetIamPolicy_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleHealthcareDatasetIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

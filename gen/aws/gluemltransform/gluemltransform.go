@@ -637,7 +637,7 @@ func NewGlueMlTransform(scope constructs.Construct, id *string, config *GlueMlTr
 	j := jsiiProxy_GlueMlTransform{}
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransform",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransform",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -650,7 +650,7 @@ func NewGlueMlTransform_Override(g GlueMlTransform, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransform",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransform",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -882,7 +882,7 @@ func GlueMlTransform_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueMlTransform.GlueMlTransform",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransform",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -901,7 +901,7 @@ func GlueMlTransform_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueMlTransform.GlueMlTransform",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransform",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -920,7 +920,7 @@ func GlueMlTransform_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueMlTransform.GlueMlTransform",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransform",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -933,7 +933,7 @@ func GlueMlTransform_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueMlTransform.GlueMlTransform",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransform",
 		"tfResourceType",
 		&returns,
 	)

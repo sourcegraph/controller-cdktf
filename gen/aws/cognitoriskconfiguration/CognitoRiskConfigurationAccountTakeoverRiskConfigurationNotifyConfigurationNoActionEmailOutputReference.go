@@ -225,7 +225,7 @@ func NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurat
 	j := jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewCognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference",
+		"@cdktf/provider-aws.cognitoRiskConfiguration.CognitoRiskConfigurationAccountTakeoverRiskConfigurationNotifyConfigurationNoActionEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

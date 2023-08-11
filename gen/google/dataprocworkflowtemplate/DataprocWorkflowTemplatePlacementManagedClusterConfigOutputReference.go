@@ -468,7 +468,7 @@ func NewDataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference(ter
 	j := jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewDataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

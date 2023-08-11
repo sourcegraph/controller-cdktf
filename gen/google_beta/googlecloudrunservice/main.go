@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunService",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunService",
 		reflect.TypeOf((*GoogleCloudRunService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,15 +82,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceConfig",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceConfig",
 		reflect.TypeOf((*GoogleCloudRunServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceMetadata",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceMetadata",
 		reflect.TypeOf((*GoogleCloudRunServiceMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceMetadataOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceMetadataOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -135,15 +135,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceStatus",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceStatus",
 		reflect.TypeOf((*GoogleCloudRunServiceStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceStatusConditions",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceStatusConditions",
 		reflect.TypeOf((*GoogleCloudRunServiceStatusConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceStatusConditionsList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceStatusConditionsList",
 		reflect.TypeOf((*GoogleCloudRunServiceStatusConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -163,7 +163,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceStatusConditionsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceStatusConditionsOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceStatusConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,7 +199,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceStatusList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceStatusList",
 		reflect.TypeOf((*GoogleCloudRunServiceStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -219,7 +219,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceStatusOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceStatusOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -256,15 +256,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplate",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplate",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateMetadata",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateMetadata",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateMetadataOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateMetadataOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -312,7 +312,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -352,31 +352,31 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpec",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpec",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainers",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainers",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainers)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnv",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnv",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnv)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFrom",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFrom",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRef",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRef",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -410,7 +410,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -449,7 +449,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromList",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -470,7 +470,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -513,15 +513,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRef",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRef",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -555,7 +555,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -594,7 +594,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvList",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -615,7 +615,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -657,11 +657,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvValueFrom",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvValueFrom",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvValueFrom)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvValueFromOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvValueFromOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvValueFromOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -696,11 +696,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRef",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRef",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRef)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -736,7 +736,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersList",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -757,15 +757,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbe",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbe",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersLivenessProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpc",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpc",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -803,15 +803,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGet",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGet",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -832,7 +832,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -869,7 +869,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -911,7 +911,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -963,7 +963,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -1037,11 +1037,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersPorts",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersPorts",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersPorts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersPortsList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersPortsList",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersPortsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1062,7 +1062,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersPortsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersPortsOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersPortsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1103,11 +1103,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersResources",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersResources",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1145,15 +1145,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbe",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbe",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbe)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpc",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpc",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1191,15 +1191,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1220,7 +1220,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1257,7 +1257,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1299,7 +1299,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1355,11 +1355,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1394,11 +1394,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersVolumeMounts",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersVolumeMounts",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersVolumeMounts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersVolumeMountsList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersVolumeMountsList",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersVolumeMountsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1419,7 +1419,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersVolumeMountsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecContainersVolumeMountsOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecContainersVolumeMountsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1455,7 +1455,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1505,15 +1505,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumes",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumes",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesEmptyDir",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesEmptyDir",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumesEmptyDir)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1551,7 +1551,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesList",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1572,7 +1572,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1614,15 +1614,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecret",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecret",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumesSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretItems",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretItems",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumesSecretItems)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretItemsList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretItemsList",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumesSecretItemsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1643,7 +1643,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretItemsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretItemsOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumesSecretItemsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1682,7 +1682,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTemplateSpecVolumesSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1723,11 +1723,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTimeouts",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTimeouts",
 		reflect.TypeOf((*GoogleCloudRunServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1768,11 +1768,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTraffic",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTraffic",
 		reflect.TypeOf((*GoogleCloudRunServiceTraffic)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTrafficList",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTrafficList",
 		reflect.TypeOf((*GoogleCloudRunServiceTrafficList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1793,7 +1793,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudRunService.GoogleCloudRunServiceTrafficOutputReference",
+		"@cdktf/provider-google-beta.googleCloudRunService.GoogleCloudRunServiceTrafficOutputReference",
 		reflect.TypeOf((*GoogleCloudRunServiceTrafficOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

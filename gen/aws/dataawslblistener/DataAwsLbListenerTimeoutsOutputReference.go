@@ -180,7 +180,7 @@ func NewDataAwsLbListenerTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsLbListenerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsLbListenerTimeoutsOutputReference_Override(d DataAwsLbListenerTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

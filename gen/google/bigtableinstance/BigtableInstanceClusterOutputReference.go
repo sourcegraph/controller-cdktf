@@ -299,7 +299,7 @@ func NewBigtableInstanceClusterOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_BigtableInstanceClusterOutputReference{}
 
 	_jsii_.Create(
-		"google.bigtableInstance.BigtableInstanceClusterOutputReference",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewBigtableInstanceClusterOutputReference_Override(b BigtableInstanceCluste
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigtableInstance.BigtableInstanceClusterOutputReference",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

@@ -180,7 +180,7 @@ func NewComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference(te
 	j := jsiiProxy_ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWebServerNetworkAccessControlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

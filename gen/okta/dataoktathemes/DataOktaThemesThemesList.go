@@ -104,7 +104,7 @@ func NewDataOktaThemesThemesList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_DataOktaThemesThemesList{}
 
 	_jsii_.Create(
-		"okta.dataOktaThemes.DataOktaThemesThemesList",
+		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaThemesThemesList_Override(d DataOktaThemesThemesList, terraformR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaThemes.DataOktaThemesThemesList",
+		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -251,7 +251,7 @@ func NewCloudAssetFolderFeedConditionOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_CloudAssetFolderFeedConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeedConditionOutputReference",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewCloudAssetFolderFeedConditionOutputReference_Override(c CloudAssetFolder
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudAssetFolderFeed.CloudAssetFolderFeedConditionOutputReference",
+		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -292,7 +292,7 @@ func NewDataAwsCloudfrontLogDeliveryCanonicalUserId(scope constructs.Construct, 
 	j := jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -305,7 +305,7 @@ func NewDataAwsCloudfrontLogDeliveryCanonicalUserId_Override(d DataAwsCloudfront
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -405,7 +405,7 @@ func DataAwsCloudfrontLogDeliveryCanonicalUserId_IsConstruct(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -424,7 +424,7 @@ func DataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformDataSource(x interfa
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -443,7 +443,7 @@ func DataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformElement(x interface{
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -456,7 +456,7 @@ func DataAwsCloudfrontLogDeliveryCanonicalUserId_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCloudfrontLogDeliveryCanonicalUserId.DataAwsCloudfrontLogDeliveryCanonicalUserId",
 		"tfResourceType",
 		&returns,
 	)

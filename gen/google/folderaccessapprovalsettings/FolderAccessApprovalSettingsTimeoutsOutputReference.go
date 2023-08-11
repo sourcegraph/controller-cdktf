@@ -228,7 +228,7 @@ func NewFolderAccessApprovalSettingsTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_FolderAccessApprovalSettingsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFolderAccessApprovalSettingsTimeoutsOutputReference_Override(f FolderAcc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeoutsOutputReference",
+		"@cdktf/provider-google.folderAccessApprovalSettings.FolderAccessApprovalSettingsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

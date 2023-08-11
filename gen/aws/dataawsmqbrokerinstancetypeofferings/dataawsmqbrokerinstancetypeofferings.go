@@ -351,7 +351,7 @@ func NewDataAwsMqBrokerInstanceTypeOfferings(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataAwsMqBrokerInstanceTypeOfferings_Override(d DataAwsMqBrokerInstanceT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -486,7 +486,7 @@ func DataAwsMqBrokerInstanceTypeOfferings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func DataAwsMqBrokerInstanceTypeOfferings_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsMqBrokerInstanceTypeOfferings_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsMqBrokerInstanceTypeOfferings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferings",
 		"tfResourceType",
 		&returns,
 	)

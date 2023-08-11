@@ -226,7 +226,7 @@ func NewDocdbClusterParameterGroupParameterOutputReference(terraformResource cdk
 	j := jsiiProxy_DocdbClusterParameterGroupParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDocdbClusterParameterGroupParameterOutputReference_Override(d DocdbClust
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.docdbClusterParameterGroup.DocdbClusterParameterGroupParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

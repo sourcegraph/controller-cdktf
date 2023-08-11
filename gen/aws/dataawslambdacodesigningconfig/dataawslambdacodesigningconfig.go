@@ -346,7 +346,7 @@ func NewDataAwsLambdaCodeSigningConfig(scope constructs.Construct, id *string, c
 	j := jsiiProxy_DataAwsLambdaCodeSigningConfig{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewDataAwsLambdaCodeSigningConfig_Override(d DataAwsLambdaCodeSigningConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -459,7 +459,7 @@ func DataAwsLambdaCodeSigningConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsLambdaCodeSigningConfig_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func DataAwsLambdaCodeSigningConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsLambdaCodeSigningConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
+		"@cdktf/provider-aws.dataAwsLambdaCodeSigningConfig.DataAwsLambdaCodeSigningConfig",
 		"tfResourceType",
 		&returns,
 	)

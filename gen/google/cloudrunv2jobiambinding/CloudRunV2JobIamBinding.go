@@ -448,7 +448,7 @@ func NewCloudRunV2JobIamBinding(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_CloudRunV2JobIamBinding{}
 
 	_jsii_.Create(
-		"google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
+		"@cdktf/provider-google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudRunV2JobIamBinding_Override(c CloudRunV2JobIamBinding, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
+		"@cdktf/provider-google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func CloudRunV2JobIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
+		"@cdktf/provider-google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func CloudRunV2JobIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
+		"@cdktf/provider-google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func CloudRunV2JobIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
+		"@cdktf/provider-google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func CloudRunV2JobIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
+		"@cdktf/provider-google.cloudRunV2JobIamBinding.CloudRunV2JobIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewTransferAccessHomeDirectoryMappingsList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_TransferAccessHomeDirectoryMappingsList{}
 
 	_jsii_.Create(
-		"aws.transferAccess.TransferAccessHomeDirectoryMappingsList",
+		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTransferAccessHomeDirectoryMappingsList_Override(t TransferAccessHomeDir
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferAccess.TransferAccessHomeDirectoryMappingsList",
+		"@cdktf/provider-aws.transferAccess.TransferAccessHomeDirectoryMappingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

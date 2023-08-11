@@ -180,7 +180,7 @@ func NewFirestoreFieldIndexConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_FirestoreFieldIndexConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.firestoreField.FirestoreFieldIndexConfigOutputReference",
+		"@cdktf/provider-google.firestoreField.FirestoreFieldIndexConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewFirestoreFieldIndexConfigOutputReference_Override(f FirestoreFieldIndexC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firestoreField.FirestoreFieldIndexConfigOutputReference",
+		"@cdktf/provider-google.firestoreField.FirestoreFieldIndexConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

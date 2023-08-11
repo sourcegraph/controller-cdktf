@@ -116,7 +116,7 @@ func NewEmailRoutingRuleActionList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_EmailRoutingRuleActionList{}
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleActionList",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmailRoutingRuleActionList_Override(e EmailRoutingRuleActionList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleActionList",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

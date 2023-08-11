@@ -227,7 +227,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference(terra
 	j := jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.replicationControllerV1.ReplicationControllerV1SpecTemplateSpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

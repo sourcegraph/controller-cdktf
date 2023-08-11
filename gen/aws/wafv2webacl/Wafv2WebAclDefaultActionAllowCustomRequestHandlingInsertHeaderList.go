@@ -116,7 +116,7 @@ func NewWafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList(terra
 	j := jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

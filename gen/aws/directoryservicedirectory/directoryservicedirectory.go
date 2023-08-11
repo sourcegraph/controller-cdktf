@@ -687,7 +687,7 @@ func NewDirectoryServiceDirectory(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DirectoryServiceDirectory{}
 
 	_jsii_.Create(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectory",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -700,7 +700,7 @@ func NewDirectoryServiceDirectory_Override(d DirectoryServiceDirectory, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectory",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -943,7 +943,7 @@ func DirectoryServiceDirectory_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectory",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -962,7 +962,7 @@ func DirectoryServiceDirectory_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectory",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -981,7 +981,7 @@ func DirectoryServiceDirectory_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectory",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -994,7 +994,7 @@ func DirectoryServiceDirectory_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.directoryServiceDirectory.DirectoryServiceDirectory",
+		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectory",
 		"tfResourceType",
 		&returns,
 	)

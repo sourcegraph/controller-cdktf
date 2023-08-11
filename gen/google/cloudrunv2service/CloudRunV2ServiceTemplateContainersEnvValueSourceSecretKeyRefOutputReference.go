@@ -203,7 +203,7 @@ func NewCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputRefer
 	j := jsiiProxy_CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference",
+		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

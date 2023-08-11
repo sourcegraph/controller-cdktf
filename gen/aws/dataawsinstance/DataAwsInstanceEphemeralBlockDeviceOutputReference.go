@@ -189,7 +189,7 @@ func NewDataAwsInstanceEphemeralBlockDeviceOutputReference(terraformResource cdk
 	j := jsiiProxy_DataAwsInstanceEphemeralBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataAwsInstanceEphemeralBlockDeviceOutputReference_Override(d DataAwsIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

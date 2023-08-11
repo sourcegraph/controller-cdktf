@@ -227,7 +227,7 @@ func NewGoogleContainerClusterResourceUsageExportConfigOutputReference(terraform
 	j := jsiiProxy_GoogleContainerClusterResourceUsageExportConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterResourceUsageExportConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterResourceUsageExportConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleContainerClusterResourceUsageExportConfigOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterResourceUsageExportConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterResourceUsageExportConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

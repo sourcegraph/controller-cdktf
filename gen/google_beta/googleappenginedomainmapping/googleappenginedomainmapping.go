@@ -437,7 +437,7 @@ func NewGoogleAppEngineDomainMapping(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleAppEngineDomainMapping{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewGoogleAppEngineDomainMapping_Override(g GoogleAppEngineDomainMapping, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -594,7 +594,7 @@ func GoogleAppEngineDomainMapping_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func GoogleAppEngineDomainMapping_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func GoogleAppEngineDomainMapping_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleAppEngineDomainMapping_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
+		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMapping",
 		"tfResourceType",
 		&returns,
 	)

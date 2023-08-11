@@ -228,7 +228,7 @@ func NewGoogleApigeeSyncAuthorizationTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_GoogleApigeeSyncAuthorizationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleApigeeSyncAuthorizationTimeoutsOutputReference_Override(g GoogleAp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

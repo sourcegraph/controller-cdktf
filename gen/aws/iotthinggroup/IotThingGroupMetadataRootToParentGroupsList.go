@@ -104,7 +104,7 @@ func NewIotThingGroupMetadataRootToParentGroupsList(terraformResource cdktf.IInt
 	j := jsiiProxy_IotThingGroupMetadataRootToParentGroupsList{}
 
 	_jsii_.Create(
-		"aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewIotThingGroupMetadataRootToParentGroupsList_Override(i IotThingGroupMeta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

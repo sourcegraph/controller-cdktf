@@ -414,7 +414,7 @@ func NewGrafanaRoleAssociation(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GrafanaRoleAssociation{}
 
 	_jsii_.Create(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociation",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewGrafanaRoleAssociation_Override(g GrafanaRoleAssociation, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociation",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -582,7 +582,7 @@ func GrafanaRoleAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociation",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func GrafanaRoleAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociation",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GrafanaRoleAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociation",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func GrafanaRoleAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.grafanaRoleAssociation.GrafanaRoleAssociation",
+		"@cdktf/provider-aws.grafanaRoleAssociation.GrafanaRoleAssociation",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBot",
+		"@cdktf/provider-aws.lexBot.LexBot",
 		reflect.TypeOf((*LexBot)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abortStatement", GoGetter: "AbortStatement"},
@@ -107,15 +107,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBot.LexBotAbortStatement",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatement",
 		reflect.TypeOf((*LexBotAbortStatement)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBot.LexBotAbortStatementMessage",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessage",
 		reflect.TypeOf((*LexBotAbortStatementMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBotAbortStatementMessageList",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageList",
 		reflect.TypeOf((*LexBotAbortStatementMessageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -136,7 +136,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBotAbortStatementMessageOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementMessageOutputReference",
 		reflect.TypeOf((*LexBotAbortStatementMessageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,7 +175,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBotAbortStatementOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotAbortStatementOutputReference",
 		reflect.TypeOf((*LexBotAbortStatementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,15 +213,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBot.LexBotClarificationPrompt",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPrompt",
 		reflect.TypeOf((*LexBotClarificationPrompt)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBot.LexBotClarificationPromptMessage",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessage",
 		reflect.TypeOf((*LexBotClarificationPromptMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBotClarificationPromptMessageList",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageList",
 		reflect.TypeOf((*LexBotClarificationPromptMessageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -242,7 +242,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBotClarificationPromptMessageOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptMessageOutputReference",
 		reflect.TypeOf((*LexBotClarificationPromptMessageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -281,7 +281,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBotClarificationPromptOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotClarificationPromptOutputReference",
 		reflect.TypeOf((*LexBotClarificationPromptOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -321,15 +321,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBot.LexBotConfig",
+		"@cdktf/provider-aws.lexBot.LexBotConfig",
 		reflect.TypeOf((*LexBotConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBot.LexBotIntent",
+		"@cdktf/provider-aws.lexBot.LexBotIntent",
 		reflect.TypeOf((*LexBotIntent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBotIntentList",
+		"@cdktf/provider-aws.lexBot.LexBotIntentList",
 		reflect.TypeOf((*LexBotIntentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -350,7 +350,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBotIntentOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotIntentOutputReference",
 		reflect.TypeOf((*LexBotIntentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -386,11 +386,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexBot.LexBotTimeouts",
+		"@cdktf/provider-aws.lexBot.LexBotTimeouts",
 		reflect.TypeOf((*LexBotTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexBot.LexBotTimeoutsOutputReference",
+		"@cdktf/provider-aws.lexBot.LexBotTimeoutsOutputReference",
 		reflect.TypeOf((*LexBotTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

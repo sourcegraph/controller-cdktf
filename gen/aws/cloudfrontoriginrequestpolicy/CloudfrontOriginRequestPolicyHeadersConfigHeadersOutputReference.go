@@ -180,7 +180,7 @@ func NewCloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference(terrafo
 	j := jsiiProxy_CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference",
+		"@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference",
+		"@cdktf/provider-aws.cloudfrontOriginRequestPolicy.CloudfrontOriginRequestPolicyHeadersConfigHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

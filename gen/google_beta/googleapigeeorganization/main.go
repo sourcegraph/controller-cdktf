@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganization",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganization",
 		reflect.TypeOf((*GoogleApigeeOrganization)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,15 +92,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationConfig",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationConfig",
 		reflect.TypeOf((*GoogleApigeeOrganizationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationProperties",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationProperties",
 		reflect.TypeOf((*GoogleApigeeOrganizationProperties)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesOutputReference",
 		reflect.TypeOf((*GoogleApigeeOrganizationPropertiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesProperty",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesProperty",
 		reflect.TypeOf((*GoogleApigeeOrganizationPropertiesProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesPropertyList",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesPropertyList",
 		reflect.TypeOf((*GoogleApigeeOrganizationPropertiesPropertyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -161,7 +161,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesPropertyOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesPropertyOutputReference",
 		reflect.TypeOf((*GoogleApigeeOrganizationPropertiesPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,11 +199,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationTimeouts",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationTimeouts",
 		reflect.TypeOf((*GoogleApigeeOrganizationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeOrganization.GoogleApigeeOrganizationTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApigeeOrganizationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

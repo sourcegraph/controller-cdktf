@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailLbCertificate.LightsailLbCertificate",
+		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificate",
 		reflect.TypeOf((*LightsailLbCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailLbCertificate.LightsailLbCertificateConfig",
+		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateConfig",
 		reflect.TypeOf((*LightsailLbCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecords",
+		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecords",
 		reflect.TypeOf((*LightsailLbCertificateDomainValidationRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList",
+		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsList",
 		reflect.TypeOf((*LightsailLbCertificateDomainValidationRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsOutputReference",
+		"@cdktf/provider-aws.lightsailLbCertificate.LightsailLbCertificateDomainValidationRecordsOutputReference",
 		reflect.TypeOf((*LightsailLbCertificateDomainValidationRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

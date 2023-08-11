@@ -227,7 +227,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeCinderOutputReference(terraformResource
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeCinderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeCinderOutputReference_Override(d Daemon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

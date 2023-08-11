@@ -179,7 +179,7 @@ func NewContainerClusterAddonsConfigConfigConnectorConfigOutputReference(terrafo
 	j := jsiiProxy_ContainerClusterAddonsConfigConfigConnectorConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterAddonsConfigConfigConnectorConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -313,7 +313,7 @@ func NewDataGoogleProjectIamPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataGoogleProjectIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
+		"@cdktf/provider-google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleProjectIamPolicy_Override(d DataGoogleProjectIamPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
+		"@cdktf/provider-google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleProjectIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
+		"@cdktf/provider-google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleProjectIamPolicy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
+		"@cdktf/provider-google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleProjectIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
+		"@cdktf/provider-google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleProjectIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
+		"@cdktf/provider-google.dataGoogleProjectIamPolicy.DataGoogleProjectIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

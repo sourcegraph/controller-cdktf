@@ -202,7 +202,7 @@ func NewCodebuildProjectEnvironmentRegistryCredentialOutputReference(terraformRe
 	j := jsiiProxy_CodebuildProjectEnvironmentRegistryCredentialOutputReference{}
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredentialOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCodebuildProjectEnvironmentRegistryCredentialOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredentialOutputReference",
+		"@cdktf/provider-aws.codebuildProject.CodebuildProjectEnvironmentRegistryCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

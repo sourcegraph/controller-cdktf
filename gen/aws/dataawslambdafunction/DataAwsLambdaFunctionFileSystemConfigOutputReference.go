@@ -178,7 +178,7 @@ func NewDataAwsLambdaFunctionFileSystemConfigOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsLambdaFunctionFileSystemConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsLambdaFunctionFileSystemConfigOutputReference_Override(d DataAwsL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionFileSystemConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -365,7 +365,7 @@ func NewUrlNormalizationSettings(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_UrlNormalizationSettings{}
 
 	_jsii_.Create(
-		"cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
+		"@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewUrlNormalizationSettings_Override(u UrlNormalizationSettings, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
+		"@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -522,7 +522,7 @@ func UrlNormalizationSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
+		"@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func UrlNormalizationSettings_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
+		"@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func UrlNormalizationSettings_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
+		"@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func UrlNormalizationSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
+		"@cdktf/provider-cloudflare.urlNormalizationSettings.UrlNormalizationSettings",
 		"tfResourceType",
 		&returns,
 	)

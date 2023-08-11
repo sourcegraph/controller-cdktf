@@ -228,7 +228,7 @@ func NewGoogleFirestoreIndexFieldsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleFirestoreIndexFieldsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleFirestoreIndexFieldsOutputReference_Override(g GoogleFirestoreInde
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

@@ -250,7 +250,7 @@ func NewAmplifyAppCustomRuleOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_AmplifyAppCustomRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewAmplifyAppCustomRuleOutputReference_Override(a AmplifyAppCustomRuleOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
+		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

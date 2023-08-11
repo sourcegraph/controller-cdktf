@@ -116,7 +116,7 @@ func NewGoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracle
 	j := jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracle
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

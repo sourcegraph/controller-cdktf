@@ -228,7 +228,7 @@ func NewComputeBackendServiceConsistentHashOutputReference(terraformResource cdk
 	j := jsiiProxy_ComputeBackendServiceConsistentHashOutputReference{}
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeBackendServiceConsistentHashOutputReference_Override(c ComputeBac
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference",
+		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

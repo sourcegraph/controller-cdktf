@@ -600,7 +600,7 @@ func NewImagebuilderImageRecipe(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ImagebuilderImageRecipe{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -613,7 +613,7 @@ func NewImagebuilderImageRecipe_Override(i ImagebuilderImageRecipe, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -812,7 +812,7 @@ func ImagebuilderImageRecipe_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -831,7 +831,7 @@ func ImagebuilderImageRecipe_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -850,7 +850,7 @@ func ImagebuilderImageRecipe_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -863,7 +863,7 @@ func ImagebuilderImageRecipe_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
 		"tfResourceType",
 		&returns,
 	)

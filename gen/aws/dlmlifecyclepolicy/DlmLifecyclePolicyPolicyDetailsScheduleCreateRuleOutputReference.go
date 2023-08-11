@@ -276,7 +276,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference(terrafo
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference",
+		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleCreateRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

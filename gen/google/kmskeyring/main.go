@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.kmsKeyRing.KmsKeyRing",
+		"@cdktf/provider-google.kmsKeyRing.KmsKeyRing",
 		reflect.TypeOf((*KmsKeyRing)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsKeyRing.KmsKeyRingConfig",
+		"@cdktf/provider-google.kmsKeyRing.KmsKeyRingConfig",
 		reflect.TypeOf((*KmsKeyRingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.kmsKeyRing.KmsKeyRingTimeouts",
+		"@cdktf/provider-google.kmsKeyRing.KmsKeyRingTimeouts",
 		reflect.TypeOf((*KmsKeyRingTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.kmsKeyRing.KmsKeyRingTimeoutsOutputReference",
+		"@cdktf/provider-google.kmsKeyRing.KmsKeyRingTimeoutsOutputReference",
 		reflect.TypeOf((*KmsKeyRingTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -495,7 +495,7 @@ func NewCodestarnotificationsNotificationRule(scope constructs.Construct, id *st
 	j := jsiiProxy_CodestarnotificationsNotificationRule{}
 
 	_jsii_.Create(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewCodestarnotificationsNotificationRule_Override(c CodestarnotificationsNo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -696,7 +696,7 @@ func CodestarnotificationsNotificationRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func CodestarnotificationsNotificationRule_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func CodestarnotificationsNotificationRule_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func CodestarnotificationsNotificationRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
 		"tfResourceType",
 		&returns,
 	)

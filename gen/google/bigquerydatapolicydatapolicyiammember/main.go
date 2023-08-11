@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigqueryDatapolicyDataPolicyIamMember.BigqueryDatapolicyDataPolicyIamMember",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamMember.BigqueryDatapolicyDataPolicyIamMember",
 		reflect.TypeOf((*BigqueryDatapolicyDataPolicyIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryDatapolicyDataPolicyIamMember.BigqueryDatapolicyDataPolicyIamMemberCondition",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamMember.BigqueryDatapolicyDataPolicyIamMemberCondition",
 		reflect.TypeOf((*BigqueryDatapolicyDataPolicyIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigqueryDatapolicyDataPolicyIamMember.BigqueryDatapolicyDataPolicyIamMemberConditionOutputReference",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamMember.BigqueryDatapolicyDataPolicyIamMemberConditionOutputReference",
 		reflect.TypeOf((*BigqueryDatapolicyDataPolicyIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigqueryDatapolicyDataPolicyIamMember.BigqueryDatapolicyDataPolicyIamMemberConfig",
+		"@cdktf/provider-google.bigqueryDatapolicyDataPolicyIamMember.BigqueryDatapolicyDataPolicyIamMemberConfig",
 		reflect.TypeOf((*BigqueryDatapolicyDataPolicyIamMemberConfig)(nil)).Elem(),
 	)
 }

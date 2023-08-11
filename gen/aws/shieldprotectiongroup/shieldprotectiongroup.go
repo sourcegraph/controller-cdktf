@@ -472,7 +472,7 @@ func NewShieldProtectionGroup(scope constructs.Construct, id *string, config *Sh
 	j := jsiiProxy_ShieldProtectionGroup{}
 
 	_jsii_.Create(
-		"aws.shieldProtectionGroup.ShieldProtectionGroup",
+		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewShieldProtectionGroup_Override(s ShieldProtectionGroup, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.shieldProtectionGroup.ShieldProtectionGroup",
+		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -673,7 +673,7 @@ func ShieldProtectionGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.shieldProtectionGroup.ShieldProtectionGroup",
+		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func ShieldProtectionGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.shieldProtectionGroup.ShieldProtectionGroup",
+		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func ShieldProtectionGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.shieldProtectionGroup.ShieldProtectionGroup",
+		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -724,7 +724,7 @@ func ShieldProtectionGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.shieldProtectionGroup.ShieldProtectionGroup",
+		"@cdktf/provider-aws.shieldProtectionGroup.ShieldProtectionGroup",
 		"tfResourceType",
 		&returns,
 	)

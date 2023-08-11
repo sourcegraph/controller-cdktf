@@ -204,7 +204,7 @@ func NewEfsMountTargetTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_EfsMountTargetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.efsMountTarget.EfsMountTargetTimeoutsOutputReference",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTargetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEfsMountTargetTimeoutsOutputReference_Override(e EfsMountTargetTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsMountTarget.EfsMountTargetTimeoutsOutputReference",
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTargetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -372,7 +372,7 @@ func NewDataGoogleComputeRouterStatus(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleComputeRouterStatus{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -385,7 +385,7 @@ func NewDataGoogleComputeRouterStatus_Override(d DataGoogleComputeRouterStatus, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -507,7 +507,7 @@ func DataGoogleComputeRouterStatus_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func DataGoogleComputeRouterStatus_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataGoogleComputeRouterStatus_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func DataGoogleComputeRouterStatus_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
+		"@cdktf/provider-google.dataGoogleComputeRouterStatus.DataGoogleComputeRouterStatus",
 		"tfResourceType",
 		&returns,
 	)

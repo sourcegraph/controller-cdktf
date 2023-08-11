@@ -203,7 +203,7 @@ func NewNetworkfirewallFirewallEncryptionConfigurationOutputReference(terraformR
 	j := jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewNetworkfirewallFirewallEncryptionConfigurationOutputReference_Override(n
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

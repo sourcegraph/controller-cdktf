@@ -116,7 +116,7 @@ func NewDaemonSetV1SpecTemplateSpecHostAliasesList(terraformResource cdktf.IInte
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecHostAliasesList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonSetV1SpecTemplateSpecHostAliasesList_Override(d DaemonSetV1SpecTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecHostAliasesList",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecHostAliasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

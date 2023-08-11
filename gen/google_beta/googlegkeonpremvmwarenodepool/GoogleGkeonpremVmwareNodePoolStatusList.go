@@ -104,7 +104,7 @@ func NewGoogleGkeonpremVmwareNodePoolStatusList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GoogleGkeonpremVmwareNodePoolStatusList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolStatusList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleGkeonpremVmwareNodePoolStatusList_Override(g GoogleGkeonpremVmware
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolStatusList",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareNodePool.GoogleGkeonpremVmwareNodePoolStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

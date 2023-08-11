@@ -360,7 +360,7 @@ func NewDataGoogleIapAppEngineServiceIamPolicy(scope constructs.Construct, id *s
 	j := jsiiProxy_DataGoogleIapAppEngineServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
+		"@cdktf/provider-google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -373,7 +373,7 @@ func NewDataGoogleIapAppEngineServiceIamPolicy_Override(d DataGoogleIapAppEngine
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
+		"@cdktf/provider-google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -495,7 +495,7 @@ func DataGoogleIapAppEngineServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
+		"@cdktf/provider-google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -514,7 +514,7 @@ func DataGoogleIapAppEngineServiceIamPolicy_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
+		"@cdktf/provider-google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataGoogleIapAppEngineServiceIamPolicy_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
+		"@cdktf/provider-google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataGoogleIapAppEngineServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
+		"@cdktf/provider-google.dataGoogleIapAppEngineServiceIamPolicy.DataGoogleIapAppEngineServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewDataAwsFsxOpenzfsSnapshotFilterOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsFsxOpenzfsSnapshotFilterOutputReference_Override(d DataAwsFsxOpen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsFsxOpenzfsSnapshot.DataAwsFsxOpenzfsSnapshotFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

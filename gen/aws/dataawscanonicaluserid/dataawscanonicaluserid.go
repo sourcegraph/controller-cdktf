@@ -279,7 +279,7 @@ func NewDataAwsCanonicalUserId(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataAwsCanonicalUserId{}
 
 	_jsii_.Create(
-		"aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -292,7 +292,7 @@ func NewDataAwsCanonicalUserId_Override(d DataAwsCanonicalUserId, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -381,7 +381,7 @@ func DataAwsCanonicalUserId_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -400,7 +400,7 @@ func DataAwsCanonicalUserId_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -419,7 +419,7 @@ func DataAwsCanonicalUserId_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -432,7 +432,7 @@ func DataAwsCanonicalUserId_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
+		"@cdktf/provider-aws.dataAwsCanonicalUserId.DataAwsCanonicalUserId",
 		"tfResourceType",
 		&returns,
 	)

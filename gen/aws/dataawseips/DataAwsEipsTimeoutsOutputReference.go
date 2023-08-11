@@ -180,7 +180,7 @@ func NewDataAwsEipsTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsEipsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEips.DataAwsEipsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEipsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEipsTimeoutsOutputReference_Override(d DataAwsEipsTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEips.DataAwsEipsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEips.DataAwsEipsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

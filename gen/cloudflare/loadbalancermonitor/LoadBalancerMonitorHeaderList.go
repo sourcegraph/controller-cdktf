@@ -116,7 +116,7 @@ func NewLoadBalancerMonitorHeaderList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_LoadBalancerMonitorHeaderList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderList",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerMonitorHeaderList_Override(l LoadBalancerMonitorHeaderList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderList",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

@@ -116,7 +116,7 @@ func NewEfsFileSystemLifecyclePolicyList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_EfsFileSystemLifecyclePolicyList{}
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystemLifecyclePolicyList",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEfsFileSystemLifecyclePolicyList_Override(e EfsFileSystemLifecyclePolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.efsFileSystem.EfsFileSystemLifecyclePolicyList",
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemLifecyclePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

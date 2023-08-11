@@ -116,7 +116,7 @@ func NewGoogleLoggingBillingAccountSinkExclusionsList(terraformResource cdktf.II
 	j := jsiiProxy_GoogleLoggingBillingAccountSinkExclusionsList{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSinkExclusionsList",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSinkExclusionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleLoggingBillingAccountSinkExclusionsList_Override(g GoogleLoggingBi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSinkExclusionsList",
+		"@cdktf/provider-google-beta.googleLoggingBillingAccountSink.GoogleLoggingBillingAccountSinkExclusionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -348,7 +348,7 @@ func NewDataAwsBackupVault(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsBackupVault{}
 
 	_jsii_.Create(
-		"aws.dataAwsBackupVault.DataAwsBackupVault",
+		"@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,7 +361,7 @@ func NewDataAwsBackupVault_Override(d DataAwsBackupVault, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsBackupVault.DataAwsBackupVault",
+		"@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -472,7 +472,7 @@ func DataAwsBackupVault_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupVault.DataAwsBackupVault",
+		"@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +491,7 @@ func DataAwsBackupVault_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupVault.DataAwsBackupVault",
+		"@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsBackupVault_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsBackupVault.DataAwsBackupVault",
+		"@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsBackupVault_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsBackupVault.DataAwsBackupVault",
+		"@cdktf/provider-aws.dataAwsBackupVault.DataAwsBackupVault",
 		"tfResourceType",
 		&returns,
 	)

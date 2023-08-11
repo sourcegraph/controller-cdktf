@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBinding",
 		reflect.TypeOf((*DataprocAutoscalingPolicyIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBindingCondition",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBindingCondition",
 		reflect.TypeOf((*DataprocAutoscalingPolicyIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBindingConditionOutputReference",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBindingConditionOutputReference",
 		reflect.TypeOf((*DataprocAutoscalingPolicyIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBindingConfig",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamBinding.DataprocAutoscalingPolicyIamBindingConfig",
 		reflect.TypeOf((*DataprocAutoscalingPolicyIamBindingConfig)(nil)).Elem(),
 	)
 }

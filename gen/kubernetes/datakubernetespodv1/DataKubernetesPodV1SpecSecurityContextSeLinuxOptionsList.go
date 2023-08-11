@@ -104,7 +104,7 @@ func NewDataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList(terraformResour
 	j := jsiiProxy_DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList_Override(d Data
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesPodV1.DataKubernetesPodV1SpecSecurityContextSeLinuxOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -390,7 +390,7 @@ func NewTeamAccess(scope constructs.Construct, id *string, config *TeamAccessCon
 	j := jsiiProxy_TeamAccess{}
 
 	_jsii_.Create(
-		"tfe.teamAccess.TeamAccess",
+		"@cdktf/provider-tfe.teamAccess.TeamAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewTeamAccess_Override(t TeamAccess, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.teamAccess.TeamAccess",
+		"@cdktf/provider-tfe.teamAccess.TeamAccess",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -547,7 +547,7 @@ func TeamAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamAccess.TeamAccess",
+		"@cdktf/provider-tfe.teamAccess.TeamAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func TeamAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamAccess.TeamAccess",
+		"@cdktf/provider-tfe.teamAccess.TeamAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func TeamAccess_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.teamAccess.TeamAccess",
+		"@cdktf/provider-tfe.teamAccess.TeamAccess",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func TeamAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.teamAccess.TeamAccess",
+		"@cdktf/provider-tfe.teamAccess.TeamAccess",
 		"tfResourceType",
 		&returns,
 	)

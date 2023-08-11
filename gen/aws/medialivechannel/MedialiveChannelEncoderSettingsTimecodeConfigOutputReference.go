@@ -203,7 +203,7 @@ func NewMedialiveChannelEncoderSettingsTimecodeConfigOutputReference(terraformRe
 	j := jsiiProxy_MedialiveChannelEncoderSettingsTimecodeConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfigOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewMedialiveChannelEncoderSettingsTimecodeConfigOutputReference_Override(m 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfigOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsTimecodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

@@ -116,7 +116,7 @@ func NewCronJobSpecJobTemplateSpecSelectorMatchExpressionsList(terraformResource
 	j := jsiiProxy_CronJobSpecJobTemplateSpecSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCronJobSpecJobTemplateSpecSelectorMatchExpressionsList_Override(c CronJo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJob.CronJobSpecJobTemplateSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.cronJob.CronJobSpecJobTemplateSpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

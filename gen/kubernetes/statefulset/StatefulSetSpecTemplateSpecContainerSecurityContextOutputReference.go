@@ -372,7 +372,7 @@ func NewStatefulSetSpecTemplateSpecContainerSecurityContextOutputReference(terra
 	j := jsiiProxy_StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewStatefulSetSpecTemplateSpecContainerSecurityContextOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference",
+		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecContainerSecurityContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

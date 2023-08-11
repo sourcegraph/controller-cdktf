@@ -178,7 +178,7 @@ func NewRdsGlobalClusterGlobalClusterMembersOutputReference(terraformResource cd
 	j := jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference{}
 
 	_jsii_.Create(
-		"aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersOutputReference",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewRdsGlobalClusterGlobalClusterMembersOutputReference_Override(r RdsGlobal
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersOutputReference",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMember",
 		reflect.TypeOf((*GoogleDataprocClusterIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberCondition",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberCondition",
 		reflect.TypeOf((*GoogleDataprocClusterIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleDataprocClusterIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberConfig",
+		"@cdktf/provider-google-beta.googleDataprocClusterIamMember.GoogleDataprocClusterIamMemberConfig",
 		reflect.TypeOf((*GoogleDataprocClusterIamMemberConfig)(nil)).Elem(),
 	)
 }

@@ -483,7 +483,7 @@ func NewServiceAccount(scope constructs.Construct, id *string, config *ServiceAc
 	j := jsiiProxy_ServiceAccount{}
 
 	_jsii_.Create(
-		"google.serviceAccount.ServiceAccount",
+		"@cdktf/provider-google.serviceAccount.ServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewServiceAccount_Override(s ServiceAccount, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceAccount.ServiceAccount",
+		"@cdktf/provider-google.serviceAccount.ServiceAccount",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -662,7 +662,7 @@ func ServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccount.ServiceAccount",
+		"@cdktf/provider-google.serviceAccount.ServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -681,7 +681,7 @@ func ServiceAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccount.ServiceAccount",
+		"@cdktf/provider-google.serviceAccount.ServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -700,7 +700,7 @@ func ServiceAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccount.ServiceAccount",
+		"@cdktf/provider-google.serviceAccount.ServiceAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func ServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.serviceAccount.ServiceAccount",
+		"@cdktf/provider-google.serviceAccount.ServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

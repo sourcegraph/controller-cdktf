@@ -204,7 +204,7 @@ func NewDatasyncTaskExcludesOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DatasyncTaskExcludesOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncTask.DatasyncTaskExcludesOutputReference",
+		"@cdktf/provider-aws.datasyncTask.DatasyncTaskExcludesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDatasyncTaskExcludesOutputReference_Override(d DatasyncTaskExcludesOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncTask.DatasyncTaskExcludesOutputReference",
+		"@cdktf/provider-aws.datasyncTask.DatasyncTaskExcludesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

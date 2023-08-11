@@ -367,7 +367,7 @@ func NewComputeProjectDefaultNetworkTier(scope constructs.Construct, id *string,
 	j := jsiiProxy_ComputeProjectDefaultNetworkTier{}
 
 	_jsii_.Create(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewComputeProjectDefaultNetworkTier_Override(c ComputeProjectDefaultNetwork
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -513,7 +513,7 @@ func ComputeProjectDefaultNetworkTier_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func ComputeProjectDefaultNetworkTier_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func ComputeProjectDefaultNetworkTier_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func ComputeProjectDefaultNetworkTier_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
 		"tfResourceType",
 		&returns,
 	)

@@ -740,7 +740,7 @@ func NewElasticBeanstalkEnvironment(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ElasticBeanstalkEnvironment{}
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
+		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -753,7 +753,7 @@ func NewElasticBeanstalkEnvironment_Override(e ElasticBeanstalkEnvironment, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
+		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -1007,7 +1007,7 @@ func ElasticBeanstalkEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
+		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1026,7 +1026,7 @@ func ElasticBeanstalkEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
+		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1045,7 +1045,7 @@ func ElasticBeanstalkEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
+		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1058,7 +1058,7 @@ func ElasticBeanstalkEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
+		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
 		"tfResourceType",
 		&returns,
 	)

@@ -467,7 +467,7 @@ func NewGoogleKmsKeyRingImportJob(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleKmsKeyRingImportJob{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
+		"@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewGoogleKmsKeyRingImportJob_Override(g GoogleKmsKeyRingImportJob, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
+		"@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -635,7 +635,7 @@ func GoogleKmsKeyRingImportJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
+		"@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func GoogleKmsKeyRingImportJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
+		"@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -673,7 +673,7 @@ func GoogleKmsKeyRingImportJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
+		"@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func GoogleKmsKeyRingImportJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
+		"@cdktf/provider-google-beta.googleKmsKeyRingImportJob.GoogleKmsKeyRingImportJob",
 		"tfResourceType",
 		&returns,
 	)

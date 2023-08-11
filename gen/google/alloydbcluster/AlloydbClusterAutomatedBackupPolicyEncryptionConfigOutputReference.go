@@ -180,7 +180,7 @@ func NewAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference(terra
 	j := jsiiProxy_AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference",
+		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

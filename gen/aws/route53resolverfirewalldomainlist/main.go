@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
+		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainList",
 		reflect.TypeOf((*Route53ResolverFirewallDomainList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig",
+		"@cdktf/provider-aws.route53ResolverFirewallDomainList.Route53ResolverFirewallDomainListConfig",
 		reflect.TypeOf((*Route53ResolverFirewallDomainListConfig)(nil)).Elem(),
 	)
 }

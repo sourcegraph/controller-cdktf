@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.autoscalingNotification.AutoscalingNotification",
+		"@cdktf/provider-aws.autoscalingNotification.AutoscalingNotification",
 		reflect.TypeOf((*AutoscalingNotification)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.autoscalingNotification.AutoscalingNotificationConfig",
+		"@cdktf/provider-aws.autoscalingNotification.AutoscalingNotificationConfig",
 		reflect.TypeOf((*AutoscalingNotificationConfig)(nil)).Elem(),
 	)
 }

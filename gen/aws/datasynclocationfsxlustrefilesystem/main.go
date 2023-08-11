@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
+		"@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystem",
 		reflect.TypeOf((*DatasyncLocationFsxLustreFileSystem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystemConfig",
+		"@cdktf/provider-aws.datasyncLocationFsxLustreFileSystem.DatasyncLocationFsxLustreFileSystemConfig",
 		reflect.TypeOf((*DatasyncLocationFsxLustreFileSystemConfig)(nil)).Elem(),
 	)
 }

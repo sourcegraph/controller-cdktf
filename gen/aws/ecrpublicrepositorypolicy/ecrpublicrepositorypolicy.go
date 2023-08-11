@@ -353,7 +353,7 @@ func NewEcrpublicRepositoryPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_EcrpublicRepositoryPolicy{}
 
 	_jsii_.Create(
-		"aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
+		"@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewEcrpublicRepositoryPolicy_Override(e EcrpublicRepositoryPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
+		"@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -499,7 +499,7 @@ func EcrpublicRepositoryPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
+		"@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func EcrpublicRepositoryPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
+		"@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func EcrpublicRepositoryPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
+		"@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func EcrpublicRepositoryPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
+		"@cdktf/provider-aws.ecrpublicRepositoryPolicy.EcrpublicRepositoryPolicy",
 		"tfResourceType",
 		&returns,
 	)

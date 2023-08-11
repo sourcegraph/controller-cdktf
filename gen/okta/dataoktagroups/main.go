@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaGroups.DataOktaGroups",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroups",
 		reflect.TypeOf((*DataOktaGroups)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,15 +63,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaGroups.DataOktaGroupsConfig",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsConfig",
 		reflect.TypeOf((*DataOktaGroupsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaGroups.DataOktaGroupsGroups",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroups",
 		reflect.TypeOf((*DataOktaGroupsGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaGroups.DataOktaGroupsGroupsList",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsList",
 		reflect.TypeOf((*DataOktaGroupsGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference",
+		"@cdktf/provider-okta.dataOktaGroups.DataOktaGroupsGroupsOutputReference",
 		reflect.TypeOf((*DataOktaGroupsGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

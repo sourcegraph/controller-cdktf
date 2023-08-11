@@ -179,7 +179,7 @@ func NewPubsubSubscriptionExpirationPolicyOutputReference(terraformResource cdkt
 	j := jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPubsubSubscriptionExpirationPolicyOutputReference_Override(p PubsubSubsc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

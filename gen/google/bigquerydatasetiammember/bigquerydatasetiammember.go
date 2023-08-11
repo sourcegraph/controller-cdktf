@@ -424,7 +424,7 @@ func NewBigqueryDatasetIamMember(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_BigqueryDatasetIamMember{}
 
 	_jsii_.Create(
-		"google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
+		"@cdktf/provider-google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewBigqueryDatasetIamMember_Override(b BigqueryDatasetIamMember, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
+		"@cdktf/provider-google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -592,7 +592,7 @@ func BigqueryDatasetIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
+		"@cdktf/provider-google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func BigqueryDatasetIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
+		"@cdktf/provider-google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func BigqueryDatasetIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
+		"@cdktf/provider-google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func BigqueryDatasetIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
+		"@cdktf/provider-google.bigqueryDatasetIamMember.BigqueryDatasetIamMember",
 		"tfResourceType",
 		&returns,
 	)

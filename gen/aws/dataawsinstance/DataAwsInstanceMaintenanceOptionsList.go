@@ -104,7 +104,7 @@ func NewDataAwsInstanceMaintenanceOptionsList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataAwsInstanceMaintenanceOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsInstanceMaintenanceOptionsList_Override(d DataAwsInstanceMaintena
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsList",
+		"@cdktf/provider-aws.dataAwsInstance.DataAwsInstanceMaintenanceOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewSsmAssociationTargetsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_SsmAssociationTargetsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmAssociation.SsmAssociationTargetsOutputReference",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSsmAssociationTargetsOutputReference_Override(s SsmAssociationTargetsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmAssociation.SsmAssociationTargetsOutputReference",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

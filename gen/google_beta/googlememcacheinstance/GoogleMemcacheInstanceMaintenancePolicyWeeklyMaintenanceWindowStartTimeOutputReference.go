@@ -252,7 +252,7 @@ func NewGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeO
 	j := jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector",
 		reflect.TypeOf((*DataGoogleVpcAccessConnector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig",
 		reflect.TypeOf((*DataGoogleVpcAccessConnectorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnet",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnet",
 		reflect.TypeOf((*DataGoogleVpcAccessConnectorSubnet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetList",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetList",
 		reflect.TypeOf((*DataGoogleVpcAccessConnectorSubnetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetOutputReference",
+		"@cdktf/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetOutputReference",
 		reflect.TypeOf((*DataGoogleVpcAccessConnectorSubnetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

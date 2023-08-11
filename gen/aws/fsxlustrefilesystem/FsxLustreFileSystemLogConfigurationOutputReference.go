@@ -204,7 +204,7 @@ func NewFsxLustreFileSystemLogConfigurationOutputReference(terraformResource cdk
 	j := jsiiProxy_FsxLustreFileSystemLogConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewFsxLustreFileSystemLogConfigurationOutputReference_Override(f FsxLustreF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystemLogConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

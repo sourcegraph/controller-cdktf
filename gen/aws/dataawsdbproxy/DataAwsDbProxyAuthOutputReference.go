@@ -211,7 +211,7 @@ func NewDataAwsDbProxyAuthOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataAwsDbProxyAuthOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsDbProxyAuthOutputReference_Override(d DataAwsDbProxyAuthOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

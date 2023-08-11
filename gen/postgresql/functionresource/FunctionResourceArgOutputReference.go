@@ -251,7 +251,7 @@ func NewFunctionResourceArgOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_FunctionResourceArgOutputReference{}
 
 	_jsii_.Create(
-		"postgresql.functionResource.FunctionResourceArgOutputReference",
+		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewFunctionResourceArgOutputReference_Override(f FunctionResourceArgOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.functionResource.FunctionResourceArgOutputReference",
+		"@cdktf/provider-postgresql.functionResource.FunctionResourceArgOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)

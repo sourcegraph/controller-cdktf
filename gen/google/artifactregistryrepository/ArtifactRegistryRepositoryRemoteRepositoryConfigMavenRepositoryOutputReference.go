@@ -180,7 +180,7 @@ func NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputRef
 	j := jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

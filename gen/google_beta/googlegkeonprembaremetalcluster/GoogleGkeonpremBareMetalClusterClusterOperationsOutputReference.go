@@ -180,7 +180,7 @@ func NewGoogleGkeonpremBareMetalClusterClusterOperationsOutputReference(terrafor
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleGkeonpremBareMetalClusterClusterOperationsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

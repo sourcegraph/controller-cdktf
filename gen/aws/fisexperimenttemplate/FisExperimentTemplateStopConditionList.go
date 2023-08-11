@@ -116,7 +116,7 @@ func NewFisExperimentTemplateStopConditionList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_FisExperimentTemplateStopConditionList{}
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateStopConditionList",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewFisExperimentTemplateStopConditionList_Override(f FisExperimentTemplateS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fisExperimentTemplate.FisExperimentTemplateStopConditionList",
+		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateStopConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

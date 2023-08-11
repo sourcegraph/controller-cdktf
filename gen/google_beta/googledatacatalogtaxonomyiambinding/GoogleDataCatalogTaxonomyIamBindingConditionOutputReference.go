@@ -226,7 +226,7 @@ func NewGoogleDataCatalogTaxonomyIamBindingConditionOutputReference(terraformRes
 	j := jsiiProxy_GoogleDataCatalogTaxonomyIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTaxonomyIamBinding.GoogleDataCatalogTaxonomyIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamBinding.GoogleDataCatalogTaxonomyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleDataCatalogTaxonomyIamBindingConditionOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTaxonomyIamBinding.GoogleDataCatalogTaxonomyIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamBinding.GoogleDataCatalogTaxonomyIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

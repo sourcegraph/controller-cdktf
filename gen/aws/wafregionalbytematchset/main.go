@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSet",
 		reflect.TypeOf((*WafregionalByteMatchSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,15 +61,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuples",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuples",
 		reflect.TypeOf((*WafregionalByteMatchSetByteMatchTuples)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesFieldToMatch",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesFieldToMatch",
 		reflect.TypeOf((*WafregionalByteMatchSetByteMatchTuplesFieldToMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference",
 		reflect.TypeOf((*WafregionalByteMatchSetByteMatchTuplesFieldToMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesList",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesList",
 		reflect.TypeOf((*WafregionalByteMatchSetByteMatchTuplesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -127,7 +127,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesOutputReference",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetByteMatchTuplesOutputReference",
 		reflect.TypeOf((*WafregionalByteMatchSetByteMatchTuplesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -169,7 +169,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.wafregionalByteMatchSet.WafregionalByteMatchSetConfig",
+		"@cdktf/provider-aws.wafregionalByteMatchSet.WafregionalByteMatchSetConfig",
 		reflect.TypeOf((*WafregionalByteMatchSetConfig)(nil)).Elem(),
 	)
 }

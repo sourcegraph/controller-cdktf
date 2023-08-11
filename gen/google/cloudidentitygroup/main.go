@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudIdentityGroup.CloudIdentityGroup",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroup",
 		reflect.TypeOf((*CloudIdentityGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudIdentityGroup.CloudIdentityGroupConfig",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroupConfig",
 		reflect.TypeOf((*CloudIdentityGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudIdentityGroup.CloudIdentityGroupGroupKey",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroupGroupKey",
 		reflect.TypeOf((*CloudIdentityGroupGroupKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudIdentityGroup.CloudIdentityGroupGroupKeyOutputReference",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroupGroupKeyOutputReference",
 		reflect.TypeOf((*CloudIdentityGroupGroupKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudIdentityGroup.CloudIdentityGroupTimeouts",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroupTimeouts",
 		reflect.TypeOf((*CloudIdentityGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudIdentityGroup.CloudIdentityGroupTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudIdentityGroup.CloudIdentityGroupTimeoutsOutputReference",
 		reflect.TypeOf((*CloudIdentityGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

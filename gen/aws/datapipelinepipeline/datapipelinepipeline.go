@@ -391,7 +391,7 @@ func NewDatapipelinePipeline(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DatapipelinePipeline{}
 
 	_jsii_.Create(
-		"aws.datapipelinePipeline.DatapipelinePipeline",
+		"@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewDatapipelinePipeline_Override(d DatapipelinePipeline, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datapipelinePipeline.DatapipelinePipeline",
+		"@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -559,7 +559,7 @@ func DatapipelinePipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datapipelinePipeline.DatapipelinePipeline",
+		"@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func DatapipelinePipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datapipelinePipeline.DatapipelinePipeline",
+		"@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func DatapipelinePipeline_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datapipelinePipeline.DatapipelinePipeline",
+		"@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func DatapipelinePipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.datapipelinePipeline.DatapipelinePipeline",
+		"@cdktf/provider-aws.datapipelinePipeline.DatapipelinePipeline",
 		"tfResourceType",
 		&returns,
 	)

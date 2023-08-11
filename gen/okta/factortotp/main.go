@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.factorTotp.FactorTotp",
+		"@cdktf/provider-okta.factorTotp.FactorTotp",
 		reflect.TypeOf((*FactorTotp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.factorTotp.FactorTotpConfig",
+		"@cdktf/provider-okta.factorTotp.FactorTotpConfig",
 		reflect.TypeOf((*FactorTotpConfig)(nil)).Elem(),
 	)
 }

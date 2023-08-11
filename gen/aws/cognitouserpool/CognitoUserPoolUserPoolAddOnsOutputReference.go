@@ -179,7 +179,7 @@ func NewCognitoUserPoolUserPoolAddOnsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_CognitoUserPoolUserPoolAddOnsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolUserPoolAddOnsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserPoolAddOnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCognitoUserPoolUserPoolAddOnsOutputReference_Override(c CognitoUserPoolU
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolUserPoolAddOnsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserPoolAddOnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

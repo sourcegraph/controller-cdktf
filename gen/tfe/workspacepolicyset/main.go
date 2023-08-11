@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.workspacePolicySet.WorkspacePolicySet",
+		"@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySet",
 		reflect.TypeOf((*WorkspacePolicySet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.workspacePolicySet.WorkspacePolicySetConfig",
+		"@cdktf/provider-tfe.workspacePolicySet.WorkspacePolicySetConfig",
 		reflect.TypeOf((*WorkspacePolicySetConfig)(nil)).Elem(),
 	)
 }

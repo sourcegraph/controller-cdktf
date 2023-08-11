@@ -342,7 +342,7 @@ func NewS3ControlBucketLifecycleConfiguration(scope constructs.Construct, id *st
 	j := jsiiProxy_S3ControlBucketLifecycleConfiguration{}
 
 	_jsii_.Create(
-		"aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
+		"@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewS3ControlBucketLifecycleConfiguration_Override(s S3ControlBucketLifecycl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
+		"@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -477,7 +477,7 @@ func S3ControlBucketLifecycleConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
+		"@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func S3ControlBucketLifecycleConfiguration_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
+		"@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func S3ControlBucketLifecycleConfiguration_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
+		"@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func S3ControlBucketLifecycleConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
+		"@cdktf/provider-aws.s3ControlBucketLifecycleConfiguration.S3ControlBucketLifecycleConfiguration",
 		"tfResourceType",
 		&returns,
 	)

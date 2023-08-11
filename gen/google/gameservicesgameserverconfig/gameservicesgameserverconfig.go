@@ -520,7 +520,7 @@ func NewGameServicesGameServerConfig(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GameServicesGameServerConfig{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfig",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewGameServicesGameServerConfig_Override(g GameServicesGameServerConfig, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfig",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -710,7 +710,7 @@ func GameServicesGameServerConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfig",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -729,7 +729,7 @@ func GameServicesGameServerConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfig",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func GameServicesGameServerConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfig",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -761,7 +761,7 @@ func GameServicesGameServerConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfig",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfig",
 		"tfResourceType",
 		&returns,
 	)

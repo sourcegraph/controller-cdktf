@@ -116,7 +116,7 @@ func NewGoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices
 	j := jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList",
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

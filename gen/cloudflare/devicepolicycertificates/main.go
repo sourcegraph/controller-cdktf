@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
+		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificates",
 		reflect.TypeOf((*DevicePolicyCertificates)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.devicePolicyCertificates.DevicePolicyCertificatesConfig",
+		"@cdktf/provider-cloudflare.devicePolicyCertificates.DevicePolicyCertificatesConfig",
 		reflect.TypeOf((*DevicePolicyCertificatesConfig)(nil)).Elem(),
 	)
 }

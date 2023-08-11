@@ -436,7 +436,7 @@ func NewCloudwatchLogSubscriptionFilter(scope constructs.Construct, id *string, 
 	j := jsiiProxy_CloudwatchLogSubscriptionFilter{}
 
 	_jsii_.Create(
-		"aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
+		"@cdktf/provider-aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewCloudwatchLogSubscriptionFilter_Override(c CloudwatchLogSubscriptionFilt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
+		"@cdktf/provider-aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -626,7 +626,7 @@ func CloudwatchLogSubscriptionFilter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
+		"@cdktf/provider-aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func CloudwatchLogSubscriptionFilter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
+		"@cdktf/provider-aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func CloudwatchLogSubscriptionFilter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
+		"@cdktf/provider-aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func CloudwatchLogSubscriptionFilter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
+		"@cdktf/provider-aws.cloudwatchLogSubscriptionFilter.CloudwatchLogSubscriptionFilter",
 		"tfResourceType",
 		&returns,
 	)

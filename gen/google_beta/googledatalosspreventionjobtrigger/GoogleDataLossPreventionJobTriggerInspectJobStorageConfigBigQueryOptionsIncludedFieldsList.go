@@ -116,7 +116,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions
 	j := jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList{}
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList",
+		"@cdktf/provider-google-beta.googleDataLossPreventionJobTrigger.GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

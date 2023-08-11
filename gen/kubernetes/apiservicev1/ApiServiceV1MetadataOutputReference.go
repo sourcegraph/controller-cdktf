@@ -285,7 +285,7 @@ func NewApiServiceV1MetadataOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ApiServiceV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.apiServiceV1.ApiServiceV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewApiServiceV1MetadataOutputReference_Override(a ApiServiceV1MetadataOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.apiServiceV1.ApiServiceV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.apiServiceV1.ApiServiceV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

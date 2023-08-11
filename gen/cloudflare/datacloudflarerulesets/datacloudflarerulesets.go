@@ -375,7 +375,7 @@ func NewDataCloudflareRulesets(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataCloudflareRulesets{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -388,7 +388,7 @@ func NewDataCloudflareRulesets_Override(d DataCloudflareRulesets, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -510,7 +510,7 @@ func DataCloudflareRulesets_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func DataCloudflareRulesets_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func DataCloudflareRulesets_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func DataCloudflareRulesets_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
+		"@cdktf/provider-cloudflare.dataCloudflareRulesets.DataCloudflareRulesets",
 		"tfResourceType",
 		&returns,
 	)

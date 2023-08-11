@@ -443,7 +443,7 @@ func NewGoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference(terrafo
 	j := jsiiProxy_GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -455,7 +455,7 @@ func NewGoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

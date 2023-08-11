@@ -337,7 +337,7 @@ func NewDataAwsDatapipelinePipeline(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsDatapipelinePipeline{}
 
 	_jsii_.Create(
-		"aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataAwsDatapipelinePipeline_Override(d DataAwsDatapipelinePipeline, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataAwsDatapipelinePipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataAwsDatapipelinePipeline_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataAwsDatapipelinePipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataAwsDatapipelinePipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
+		"@cdktf/provider-aws.dataAwsDatapipelinePipeline.DataAwsDatapipelinePipeline",
 		"tfResourceType",
 		&returns,
 	)

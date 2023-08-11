@@ -190,7 +190,7 @@ func NewDataCatalogEntryGcsFilesetSpecOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataCatalogEntryGcsFilesetSpecOutputReference{}
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -202,7 +202,7 @@ func NewDataCatalogEntryGcsFilesetSpecOutputReference_Override(d DataCatalogEntr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -204,7 +204,7 @@ func NewTimestreamwriteTableMagneticStoreWritePropertiesOutputReference(terrafor
 	j := jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewTimestreamwriteTableMagneticStoreWritePropertiesOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesOutputReference",
+		"@cdktf/provider-aws.timestreamwriteTable.TimestreamwriteTableMagneticStoreWritePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

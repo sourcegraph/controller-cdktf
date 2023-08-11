@@ -266,7 +266,7 @@ func NewSamlAppKeysOutputReference(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_SamlAppKeysOutputReference{}
 
 	_jsii_.Create(
-		"okta.samlApp.SamlAppKeysOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -278,7 +278,7 @@ func NewSamlAppKeysOutputReference_Override(s SamlAppKeysOutputReference, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.samlApp.SamlAppKeysOutputReference",
+		"@cdktf/provider-okta.samlApp.SamlAppKeysOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

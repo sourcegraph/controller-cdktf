@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkmanagerLink.NetworkmanagerLink",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLink",
 		reflect.TypeOf((*NetworkmanagerLink)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -82,11 +82,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerLink.NetworkmanagerLinkBandwidth",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkBandwidth",
 		reflect.TypeOf((*NetworkmanagerLinkBandwidth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerLink.NetworkmanagerLinkBandwidthOutputReference",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkBandwidthOutputReference",
 		reflect.TypeOf((*NetworkmanagerLinkBandwidthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,15 +124,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerLink.NetworkmanagerLinkConfig",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkConfig",
 		reflect.TypeOf((*NetworkmanagerLinkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerLink.NetworkmanagerLinkTimeouts",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkTimeouts",
 		reflect.TypeOf((*NetworkmanagerLinkTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerLink.NetworkmanagerLinkTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerLink.NetworkmanagerLinkTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkmanagerLinkTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -204,7 +204,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCou
 	j := jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

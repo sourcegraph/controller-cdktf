@@ -116,7 +116,7 @@ func NewDataAwsEc2TransitGatewayVpcAttachmentFilterList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsEc2TransitGatewayVpcAttachmentFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentFilterList",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEc2TransitGatewayVpcAttachmentFilterList_Override(d DataAwsEc2Tra
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentFilterList",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayVpcAttachment.DataAwsEc2TransitGatewayVpcAttachmentFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

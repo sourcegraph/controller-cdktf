@@ -458,7 +458,7 @@ func NewOrganizationIamCustomRole(scope constructs.Construct, id *string, config
 	j := jsiiProxy_OrganizationIamCustomRole{}
 
 	_jsii_.Create(
-		"google.organizationIamCustomRole.OrganizationIamCustomRole",
+		"@cdktf/provider-google.organizationIamCustomRole.OrganizationIamCustomRole",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewOrganizationIamCustomRole_Override(o OrganizationIamCustomRole, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationIamCustomRole.OrganizationIamCustomRole",
+		"@cdktf/provider-google.organizationIamCustomRole.OrganizationIamCustomRole",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -648,7 +648,7 @@ func OrganizationIamCustomRole_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationIamCustomRole.OrganizationIamCustomRole",
+		"@cdktf/provider-google.organizationIamCustomRole.OrganizationIamCustomRole",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func OrganizationIamCustomRole_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationIamCustomRole.OrganizationIamCustomRole",
+		"@cdktf/provider-google.organizationIamCustomRole.OrganizationIamCustomRole",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -686,7 +686,7 @@ func OrganizationIamCustomRole_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationIamCustomRole.OrganizationIamCustomRole",
+		"@cdktf/provider-google.organizationIamCustomRole.OrganizationIamCustomRole",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -699,7 +699,7 @@ func OrganizationIamCustomRole_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.organizationIamCustomRole.OrganizationIamCustomRole",
+		"@cdktf/provider-google.organizationIamCustomRole.OrganizationIamCustomRole",
 		"tfResourceType",
 		&returns,
 	)

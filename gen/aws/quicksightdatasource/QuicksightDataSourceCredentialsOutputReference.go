@@ -204,7 +204,7 @@ func NewQuicksightDataSourceCredentialsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_QuicksightDataSourceCredentialsOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceCredentialsOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewQuicksightDataSourceCredentialsOutputReference_Override(q QuicksightData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceCredentialsOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

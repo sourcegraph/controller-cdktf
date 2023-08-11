@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicy",
 		reflect.TypeOf((*ArtifactRegistryRepositoryIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicyConfig",
+		"@cdktf/provider-google.artifactRegistryRepositoryIamPolicy.ArtifactRegistryRepositoryIamPolicyConfig",
 		reflect.TypeOf((*ArtifactRegistryRepositoryIamPolicyConfig)(nil)).Elem(),
 	)
 }

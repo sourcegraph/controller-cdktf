@@ -203,7 +203,7 @@ func NewAlbListenerRuleActionForwardTargetGroupOutputReference(terraformResource
 	j := jsiiProxy_AlbListenerRuleActionForwardTargetGroupOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAlbListenerRuleActionForwardTargetGroupOutputReference_Override(a AlbLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleActionForwardTargetGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

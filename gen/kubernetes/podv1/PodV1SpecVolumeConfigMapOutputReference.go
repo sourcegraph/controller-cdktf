@@ -252,7 +252,7 @@ func NewPodV1SpecVolumeConfigMapOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_PodV1SpecVolumeConfigMapOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewPodV1SpecVolumeConfigMapOutputReference_Override(p PodV1SpecVolumeConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1SpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.podV1.PodV1SpecVolumeConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

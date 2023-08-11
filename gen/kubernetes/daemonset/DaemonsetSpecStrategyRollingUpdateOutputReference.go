@@ -180,7 +180,7 @@ func NewDaemonsetSpecStrategyRollingUpdateOutputReference(terraformResource cdkt
 	j := jsiiProxy_DaemonsetSpecStrategyRollingUpdateOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecStrategyRollingUpdateOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecStrategyRollingUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDaemonsetSpecStrategyRollingUpdateOutputReference_Override(d DaemonsetSp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecStrategyRollingUpdateOutputReference",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecStrategyRollingUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

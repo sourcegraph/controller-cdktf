@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingSettings.EmailRoutingSettings",
+		"@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings",
 		reflect.TypeOf((*EmailRoutingSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig",
+		"@cdktf/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig",
 		reflect.TypeOf((*EmailRoutingSettingsConfig)(nil)).Elem(),
 	)
 }

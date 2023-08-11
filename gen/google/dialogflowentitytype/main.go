@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dialogflowEntityType.DialogflowEntityType",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityType",
 		reflect.TypeOf((*DialogflowEntityType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowEntityType.DialogflowEntityTypeConfig",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeConfig",
 		reflect.TypeOf((*DialogflowEntityTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowEntityType.DialogflowEntityTypeEntities",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeEntities",
 		reflect.TypeOf((*DialogflowEntityTypeEntities)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowEntityType.DialogflowEntityTypeEntitiesList",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeEntitiesList",
 		reflect.TypeOf((*DialogflowEntityTypeEntitiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowEntityType.DialogflowEntityTypeEntitiesOutputReference",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeEntitiesOutputReference",
 		reflect.TypeOf((*DialogflowEntityTypeEntitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,11 +139,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dialogflowEntityType.DialogflowEntityTypeTimeouts",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeouts",
 		reflect.TypeOf((*DialogflowEntityTypeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dialogflowEntityType.DialogflowEntityTypeTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowEntityTypeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

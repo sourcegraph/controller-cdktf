@@ -545,7 +545,7 @@ func NewLbListener(scope constructs.Construct, id *string, config *LbListenerCon
 	j := jsiiProxy_LbListener{}
 
 	_jsii_.Create(
-		"aws.lbListener.LbListener",
+		"@cdktf/provider-aws.lbListener.LbListener",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -558,7 +558,7 @@ func NewLbListener_Override(l LbListener, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListener.LbListener",
+		"@cdktf/provider-aws.lbListener.LbListener",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -757,7 +757,7 @@ func LbListener_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbListener.LbListener",
+		"@cdktf/provider-aws.lbListener.LbListener",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -776,7 +776,7 @@ func LbListener_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbListener.LbListener",
+		"@cdktf/provider-aws.lbListener.LbListener",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func LbListener_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lbListener.LbListener",
+		"@cdktf/provider-aws.lbListener.LbListener",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -808,7 +808,7 @@ func LbListener_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lbListener.LbListener",
+		"@cdktf/provider-aws.lbListener.LbListener",
 		"tfResourceType",
 		&returns,
 	)

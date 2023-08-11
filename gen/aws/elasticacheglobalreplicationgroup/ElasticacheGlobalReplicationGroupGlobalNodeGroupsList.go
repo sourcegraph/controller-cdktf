@@ -104,7 +104,7 @@ func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList(terraformResource 
 	j := jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList{}
 
 	_jsii_.Create(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList_Override(e Elastic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
+		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

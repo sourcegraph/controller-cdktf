@@ -388,7 +388,7 @@ func NewCloudwatchLogMetricFilter(scope constructs.Construct, id *string, config
 	j := jsiiProxy_CloudwatchLogMetricFilter{}
 
 	_jsii_.Create(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewCloudwatchLogMetricFilter_Override(c CloudwatchLogMetricFilter, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -545,7 +545,7 @@ func CloudwatchLogMetricFilter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func CloudwatchLogMetricFilter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func CloudwatchLogMetricFilter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func CloudwatchLogMetricFilter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
+		"@cdktf/provider-aws.cloudwatchLogMetricFilter.CloudwatchLogMetricFilter",
 		"tfResourceType",
 		&returns,
 	)

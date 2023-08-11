@@ -116,7 +116,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList(terraformResou
 	j := jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList",
+		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateVolumesSecretItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

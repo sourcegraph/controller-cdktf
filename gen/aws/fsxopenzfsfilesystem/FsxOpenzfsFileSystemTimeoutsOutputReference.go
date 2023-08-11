@@ -228,7 +228,7 @@ func NewFsxOpenzfsFileSystemTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_FsxOpenzfsFileSystemTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFsxOpenzfsFileSystemTimeoutsOutputReference_Override(f FsxOpenzfsFileSys
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsFileSystem.FsxOpenzfsFileSystemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

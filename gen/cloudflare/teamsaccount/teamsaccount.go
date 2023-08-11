@@ -535,7 +535,7 @@ func NewTeamsAccount(scope constructs.Construct, id *string, config *TeamsAccoun
 	j := jsiiProxy_TeamsAccount{}
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccount",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -548,7 +548,7 @@ func NewTeamsAccount_Override(t TeamsAccount, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccount",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -703,7 +703,7 @@ func TeamsAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsAccount.TeamsAccount",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func TeamsAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsAccount.TeamsAccount",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func TeamsAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsAccount.TeamsAccount",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -754,7 +754,7 @@ func TeamsAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.teamsAccount.TeamsAccount",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
 		"tfResourceType",
 		&returns,
 	)

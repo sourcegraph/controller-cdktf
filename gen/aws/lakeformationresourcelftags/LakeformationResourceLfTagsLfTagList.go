@@ -116,7 +116,7 @@ func NewLakeformationResourceLfTagsLfTagList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_LakeformationResourceLfTagsLfTagList{}
 
 	_jsii_.Create(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagList",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLakeformationResourceLfTagsLfTagList_Override(l LakeformationResourceLfT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagList",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

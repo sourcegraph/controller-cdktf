@@ -116,7 +116,7 @@ func NewCloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList(terrafo
 	j := jsiiProxy_CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionProfile.CloudfrontFieldLevelEncryptionProfileEncryptionEntitiesItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

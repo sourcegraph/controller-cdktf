@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.appUserSchema.AppUserSchema",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchema",
 		reflect.TypeOf((*AppUserSchema)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -116,11 +116,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appUserSchema.AppUserSchemaArrayOneOf",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchemaArrayOneOf",
 		reflect.TypeOf((*AppUserSchemaArrayOneOf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appUserSchema.AppUserSchemaArrayOneOfList",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchemaArrayOneOfList",
 		reflect.TypeOf((*AppUserSchemaArrayOneOfList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -141,7 +141,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.appUserSchema.AppUserSchemaArrayOneOfOutputReference",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchemaArrayOneOfOutputReference",
 		reflect.TypeOf((*AppUserSchemaArrayOneOfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -177,15 +177,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.appUserSchema.AppUserSchemaConfig",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchemaConfig",
 		reflect.TypeOf((*AppUserSchemaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.appUserSchema.AppUserSchemaOneOf",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchemaOneOf",
 		reflect.TypeOf((*AppUserSchemaOneOf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.appUserSchema.AppUserSchemaOneOfList",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchemaOneOfList",
 		reflect.TypeOf((*AppUserSchemaOneOfList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -206,7 +206,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.appUserSchema.AppUserSchemaOneOfOutputReference",
+		"@cdktf/provider-okta.appUserSchema.AppUserSchemaOneOfOutputReference",
 		reflect.TypeOf((*AppUserSchemaOneOfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

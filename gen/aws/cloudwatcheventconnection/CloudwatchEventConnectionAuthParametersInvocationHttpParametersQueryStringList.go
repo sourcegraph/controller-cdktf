@@ -116,7 +116,7 @@ func NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStri
 	j := jsiiProxy_CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList",
+		"@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList",
+		"@cdktf/provider-aws.cloudwatchEventConnection.CloudwatchEventConnectionAuthParametersInvocationHttpParametersQueryStringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

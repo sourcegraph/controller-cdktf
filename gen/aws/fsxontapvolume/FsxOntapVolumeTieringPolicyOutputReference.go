@@ -204,7 +204,7 @@ func NewFsxOntapVolumeTieringPolicyOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_FsxOntapVolumeTieringPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewFsxOntapVolumeTieringPolicyOutputReference_Override(f FsxOntapVolumeTier
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTieringPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

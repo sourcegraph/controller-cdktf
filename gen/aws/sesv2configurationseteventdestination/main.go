@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestination",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,23 +62,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationConfig",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationConfig",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestination",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfiguration",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfiguration",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -99,7 +99,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationDimensionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,7 +137,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationCloudWatchDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -172,11 +172,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,7 +212,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudWatchDestination", GoGetter: "CloudWatchDestination"},
@@ -265,11 +265,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationPinpointDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationArn", GoGetter: "ApplicationArn"},
@@ -303,11 +303,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestination",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestination",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSetEventDestination.Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference",
 		reflect.TypeOf((*Sesv2ConfigurationSetEventDestinationEventDestinationSnsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

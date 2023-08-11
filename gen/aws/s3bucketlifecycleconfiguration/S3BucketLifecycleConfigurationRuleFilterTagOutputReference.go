@@ -202,7 +202,7 @@ func NewS3BucketLifecycleConfigurationRuleFilterTagOutputReference(terraformReso
 	j := jsiiProxy_S3BucketLifecycleConfigurationRuleFilterTagOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTagOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewS3BucketLifecycleConfigurationRuleFilterTagOutputReference_Override(s S3
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTagOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleFilterTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

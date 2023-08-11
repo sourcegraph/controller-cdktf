@@ -178,7 +178,7 @@ func NewDataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference(te
 	j := jsiiProxy_DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsConnectQuickConnect.DataAwsConnectQuickConnectQuickConnectConfigUserConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

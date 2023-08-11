@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterMasterAuthList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataGoogleContainerClusterMasterAuthList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterMasterAuthList_Override(d DataGoogleContainerC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

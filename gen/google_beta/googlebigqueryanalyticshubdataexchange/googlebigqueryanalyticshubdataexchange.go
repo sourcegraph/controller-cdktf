@@ -531,7 +531,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *s
 	j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -544,7 +544,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchange_Override(g GoogleBigqueryAnalytic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -743,7 +743,7 @@ func GoogleBigqueryAnalyticsHubDataExchange_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleBigqueryAnalyticsHubDataExchange_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func GoogleBigqueryAnalyticsHubDataExchange_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func GoogleBigqueryAnalyticsHubDataExchange_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchange.GoogleBigqueryAnalyticsHubDataExchange",
 		"tfResourceType",
 		&returns,
 	)

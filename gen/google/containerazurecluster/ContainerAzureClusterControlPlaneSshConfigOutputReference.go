@@ -179,7 +179,7 @@ func NewContainerAzureClusterControlPlaneSshConfigOutputReference(terraformResou
 	j := jsiiProxy_ContainerAzureClusterControlPlaneSshConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfigOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerAzureClusterControlPlaneSshConfigOutputReference_Override(c Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfigOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneSshConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

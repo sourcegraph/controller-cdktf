@@ -203,7 +203,7 @@ func NewAppflowFlowTriggerConfigOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AppflowFlowTriggerConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTriggerConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppflowFlowTriggerConfigOutputReference_Override(a AppflowFlowTriggerCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowTriggerConfigOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowTriggerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

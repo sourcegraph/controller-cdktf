@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeImage.DataGoogleComputeImage",
+		"@cdktf/provider-google.dataGoogleComputeImage.DataGoogleComputeImage",
 		reflect.TypeOf((*DataGoogleComputeImage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,7 +80,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeImage.DataGoogleComputeImageConfig",
+		"@cdktf/provider-google.dataGoogleComputeImage.DataGoogleComputeImageConfig",
 		reflect.TypeOf((*DataGoogleComputeImageConfig)(nil)).Elem(),
 	)
 }

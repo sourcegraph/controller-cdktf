@@ -391,7 +391,7 @@ func NewAutoscalingAttachment(scope constructs.Construct, id *string, config *Au
 	j := jsiiProxy_AutoscalingAttachment{}
 
 	_jsii_.Create(
-		"aws.autoscalingAttachment.AutoscalingAttachment",
+		"@cdktf/provider-aws.autoscalingAttachment.AutoscalingAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewAutoscalingAttachment_Override(a AutoscalingAttachment, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingAttachment.AutoscalingAttachment",
+		"@cdktf/provider-aws.autoscalingAttachment.AutoscalingAttachment",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -559,7 +559,7 @@ func AutoscalingAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingAttachment.AutoscalingAttachment",
+		"@cdktf/provider-aws.autoscalingAttachment.AutoscalingAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func AutoscalingAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingAttachment.AutoscalingAttachment",
+		"@cdktf/provider-aws.autoscalingAttachment.AutoscalingAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func AutoscalingAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingAttachment.AutoscalingAttachment",
+		"@cdktf/provider-aws.autoscalingAttachment.AutoscalingAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func AutoscalingAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.autoscalingAttachment.AutoscalingAttachment",
+		"@cdktf/provider-aws.autoscalingAttachment.AutoscalingAttachment",
 		"tfResourceType",
 		&returns,
 	)

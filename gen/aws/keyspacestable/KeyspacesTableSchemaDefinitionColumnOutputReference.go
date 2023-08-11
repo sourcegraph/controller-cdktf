@@ -202,7 +202,7 @@ func NewKeyspacesTableSchemaDefinitionColumnOutputReference(terraformResource cd
 	j := jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewKeyspacesTableSchemaDefinitionColumnOutputReference_Override(k Keyspaces
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnOutputReference",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionColumnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		k,
 	)

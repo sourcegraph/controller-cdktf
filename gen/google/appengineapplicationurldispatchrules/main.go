@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRules",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRules)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,15 +65,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesConfig",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesConfig",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRulesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesDispatchRules",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesDispatchRules",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRulesDispatchRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesDispatchRulesList",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesDispatchRulesList",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRulesDispatchRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -94,7 +94,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,11 +133,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesTimeouts",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesTimeouts",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRulesTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference",
+		"@cdktf/provider-google.appEngineApplicationUrlDispatchRules.AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference",
 		reflect.TypeOf((*AppEngineApplicationUrlDispatchRulesTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

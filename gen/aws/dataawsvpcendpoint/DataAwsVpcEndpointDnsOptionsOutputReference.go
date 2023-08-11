@@ -167,7 +167,7 @@ func NewDataAwsVpcEndpointDnsOptionsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsVpcEndpointDnsOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsVpcEndpointDnsOptionsOutputReference_Override(d DataAwsVpcEndpoin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcEndpoint.DataAwsVpcEndpointDnsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

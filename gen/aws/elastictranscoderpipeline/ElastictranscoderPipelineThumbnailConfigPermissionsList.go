@@ -116,7 +116,7 @@ func NewElastictranscoderPipelineThumbnailConfigPermissionsList(terraformResourc
 	j := jsiiProxy_ElastictranscoderPipelineThumbnailConfigPermissionsList{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsList",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewElastictranscoderPipelineThumbnailConfigPermissionsList_Override(e Elast
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsList",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

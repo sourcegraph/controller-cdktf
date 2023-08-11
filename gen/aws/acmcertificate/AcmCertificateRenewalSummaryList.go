@@ -104,7 +104,7 @@ func NewAcmCertificateRenewalSummaryList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_AcmCertificateRenewalSummaryList{}
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateRenewalSummaryList",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewAcmCertificateRenewalSummaryList_Override(a AcmCertificateRenewalSummary
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateRenewalSummaryList",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

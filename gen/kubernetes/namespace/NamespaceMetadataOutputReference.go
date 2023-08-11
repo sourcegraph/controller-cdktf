@@ -285,7 +285,7 @@ func NewNamespaceMetadataOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_NamespaceMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.namespace.NamespaceMetadataOutputReference",
+		"@cdktf/provider-kubernetes.namespace.NamespaceMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewNamespaceMetadataOutputReference_Override(n NamespaceMetadataOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.namespace.NamespaceMetadataOutputReference",
+		"@cdktf/provider-kubernetes.namespace.NamespaceMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

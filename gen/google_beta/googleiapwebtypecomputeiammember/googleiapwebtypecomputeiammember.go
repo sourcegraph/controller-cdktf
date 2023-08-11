@@ -401,7 +401,7 @@ func NewGoogleIapWebTypeComputeIamMember(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleIapWebTypeComputeIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleIapWebTypeComputeIamMember_Override(g GoogleIapWebTypeComputeIamMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -558,7 +558,7 @@ func GoogleIapWebTypeComputeIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func GoogleIapWebTypeComputeIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func GoogleIapWebTypeComputeIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleIapWebTypeComputeIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
+		"@cdktf/provider-google-beta.googleIapWebTypeComputeIamMember.GoogleIapWebTypeComputeIamMember",
 		"tfResourceType",
 		&returns,
 	)

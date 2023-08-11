@@ -343,7 +343,7 @@ func NewGoogleStorageDefaultObjectAcl(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleStorageDefaultObjectAcl{}
 
 	_jsii_.Create(
-		"google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewGoogleStorageDefaultObjectAcl_Override(g GoogleStorageDefaultObjectAcl, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -489,7 +489,7 @@ func GoogleStorageDefaultObjectAcl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func GoogleStorageDefaultObjectAcl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func GoogleStorageDefaultObjectAcl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func GoogleStorageDefaultObjectAcl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
+		"@cdktf/provider-google-beta.googleStorageDefaultObjectAcl.GoogleStorageDefaultObjectAcl",
 		"tfResourceType",
 		&returns,
 	)

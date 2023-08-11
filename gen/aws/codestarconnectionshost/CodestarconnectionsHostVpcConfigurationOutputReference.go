@@ -249,7 +249,7 @@ func NewCodestarconnectionsHostVpcConfigurationOutputReference(terraformResource
 	j := jsiiProxy_CodestarconnectionsHostVpcConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewCodestarconnectionsHostVpcConfigurationOutputReference_Override(c Codest
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

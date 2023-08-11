@@ -116,7 +116,7 @@ func NewSesReceiptRuleWorkmailActionList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_SesReceiptRuleWorkmailActionList{}
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleWorkmailActionList",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSesReceiptRuleWorkmailActionList_Override(s SesReceiptRuleWorkmailAction
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleWorkmailActionList",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleWorkmailActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

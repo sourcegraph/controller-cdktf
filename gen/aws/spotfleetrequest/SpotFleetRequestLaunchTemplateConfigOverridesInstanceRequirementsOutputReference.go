@@ -660,7 +660,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputR
 	j := jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -672,7 +672,7 @@ func NewSpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

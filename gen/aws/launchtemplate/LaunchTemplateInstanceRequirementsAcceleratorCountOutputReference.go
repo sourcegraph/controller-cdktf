@@ -204,7 +204,7 @@ func NewLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference(terraf
 	j := jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateInstanceRequirementsAcceleratorCountOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

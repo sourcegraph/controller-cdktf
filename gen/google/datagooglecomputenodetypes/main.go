@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleComputeNodeTypes.DataGoogleComputeNodeTypes",
+		"@cdktf/provider-google.dataGoogleComputeNodeTypes.DataGoogleComputeNodeTypes",
 		reflect.TypeOf((*DataGoogleComputeNodeTypes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleComputeNodeTypes.DataGoogleComputeNodeTypesConfig",
+		"@cdktf/provider-google.dataGoogleComputeNodeTypes.DataGoogleComputeNodeTypesConfig",
 		reflect.TypeOf((*DataGoogleComputeNodeTypesConfig)(nil)).Elem(),
 	)
 }

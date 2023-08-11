@@ -202,7 +202,7 @@ func NewDataAwsSsmMaintenanceWindowsFilterOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsSsmMaintenanceWindowsFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsSsmMaintenanceWindowsFilterOutputReference_Override(d DataAwsSsmM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindowsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -226,7 +226,7 @@ func NewDeploymentSpecTemplateSpecVolumeGlusterfsOutputReference(terraformResour
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeGlusterfsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGlusterfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewDeploymentSpecTemplateSpecVolumeGlusterfsOutputReference_Override(d Depl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeGlusterfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

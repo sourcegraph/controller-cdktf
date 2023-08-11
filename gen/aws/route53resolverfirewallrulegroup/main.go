@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		reflect.TypeOf((*Route53ResolverFirewallRuleGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig",
+		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroupConfig",
 		reflect.TypeOf((*Route53ResolverFirewallRuleGroupConfig)(nil)).Elem(),
 	)
 }

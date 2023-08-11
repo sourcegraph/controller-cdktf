@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunction",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunction",
 		reflect.TypeOf((*CloudfunctionsFunction)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -152,19 +152,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionConfig",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig",
 		reflect.TypeOf((*CloudfunctionsFunctionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionEventTrigger",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionEventTrigger",
 		reflect.TypeOf((*CloudfunctionsFunctionEventTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerFailurePolicy",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerFailurePolicy",
 		reflect.TypeOf((*CloudfunctionsFunctionEventTriggerFailurePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerFailurePolicyOutputReference",
 		reflect.TypeOf((*CloudfunctionsFunctionEventTriggerFailurePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -198,7 +198,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerOutputReference",
 		reflect.TypeOf((*CloudfunctionsFunctionEventTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,11 +238,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariables",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariables",
 		reflect.TypeOf((*CloudfunctionsFunctionSecretEnvironmentVariables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesList",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesList",
 		reflect.TypeOf((*CloudfunctionsFunctionSecretEnvironmentVariablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -263,7 +263,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference",
 		reflect.TypeOf((*CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,11 +304,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumes",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumes",
 		reflect.TypeOf((*CloudfunctionsFunctionSecretVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesList",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesList",
 		reflect.TypeOf((*CloudfunctionsFunctionSecretVolumesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -329,7 +329,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesOutputReference",
 		reflect.TypeOf((*CloudfunctionsFunctionSecretVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -372,11 +372,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesVersions",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesVersions",
 		reflect.TypeOf((*CloudfunctionsFunctionSecretVolumesVersions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesVersionsList",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesVersionsList",
 		reflect.TypeOf((*CloudfunctionsFunctionSecretVolumesVersionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -397,7 +397,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesVersionsOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesVersionsOutputReference",
 		reflect.TypeOf((*CloudfunctionsFunctionSecretVolumesVersionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -433,11 +433,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepository",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepository",
 		reflect.TypeOf((*CloudfunctionsFunctionSourceRepository)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepositoryOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepositoryOutputReference",
 		reflect.TypeOf((*CloudfunctionsFunctionSourceRepositoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -472,11 +472,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts",
 		reflect.TypeOf((*CloudfunctionsFunctionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunction.CloudfunctionsFunctionTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeoutsOutputReference",
 		reflect.TypeOf((*CloudfunctionsFunctionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

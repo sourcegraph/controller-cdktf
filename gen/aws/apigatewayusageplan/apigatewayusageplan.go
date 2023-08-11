@@ -498,7 +498,7 @@ func NewApiGatewayUsagePlan(scope constructs.Construct, id *string, config *ApiG
 	j := jsiiProxy_ApiGatewayUsagePlan{}
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -511,7 +511,7 @@ func NewApiGatewayUsagePlan_Override(a ApiGatewayUsagePlan, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -677,7 +677,7 @@ func ApiGatewayUsagePlan_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -696,7 +696,7 @@ func ApiGatewayUsagePlan_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func ApiGatewayUsagePlan_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -728,7 +728,7 @@ func ApiGatewayUsagePlan_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
+		"@cdktf/provider-aws.apiGatewayUsagePlan.ApiGatewayUsagePlan",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDbParameterGroupParameterList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_DbParameterGroupParameterList{}
 
 	_jsii_.Create(
-		"aws.dbParameterGroup.DbParameterGroupParameterList",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDbParameterGroupParameterList_Override(d DbParameterGroupParameterList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbParameterGroup.DbParameterGroupParameterList",
+		"@cdktf/provider-aws.dbParameterGroup.DbParameterGroupParameterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

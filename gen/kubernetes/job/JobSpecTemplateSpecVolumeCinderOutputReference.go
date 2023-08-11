@@ -227,7 +227,7 @@ func NewJobSpecTemplateSpecVolumeCinderOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_JobSpecTemplateSpecVolumeCinderOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewJobSpecTemplateSpecVolumeCinderOutputReference_Override(j JobSpecTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeCinderOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeCinderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

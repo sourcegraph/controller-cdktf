@@ -373,7 +373,7 @@ func NewDataAwsNetworkfirewallFirewallPolicy(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsNetworkfirewallFirewallPolicy{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataAwsNetworkfirewallFirewallPolicy_Override(d DataAwsNetworkfirewallFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -508,7 +508,7 @@ func DataAwsNetworkfirewallFirewallPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func DataAwsNetworkfirewallFirewallPolicy_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataAwsNetworkfirewallFirewallPolicy_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func DataAwsNetworkfirewallFirewallPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference(ter
 	j := jsiiProxy_DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference",
+		"@cdktf/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference",
+		"@cdktf/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -204,7 +204,7 @@ func NewGoogleKmsKeyRingTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GoogleKmsKeyRingTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleKmsKeyRingTimeoutsOutputReference_Override(g GoogleKmsKeyRingTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleKmsKeyRing.GoogleKmsKeyRingTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

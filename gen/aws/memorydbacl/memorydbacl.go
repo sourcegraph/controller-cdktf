@@ -438,7 +438,7 @@ func NewMemorydbAcl(scope constructs.Construct, id *string, config *MemorydbAclC
 	j := jsiiProxy_MemorydbAcl{}
 
 	_jsii_.Create(
-		"aws.memorydbAcl.MemorydbAcl",
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewMemorydbAcl_Override(m MemorydbAcl, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.memorydbAcl.MemorydbAcl",
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -617,7 +617,7 @@ func MemorydbAcl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbAcl.MemorydbAcl",
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func MemorydbAcl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbAcl.MemorydbAcl",
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func MemorydbAcl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.memorydbAcl.MemorydbAcl",
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func MemorydbAcl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.memorydbAcl.MemorydbAcl",
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
 		"tfResourceType",
 		&returns,
 	)

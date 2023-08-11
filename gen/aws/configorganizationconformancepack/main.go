@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
 		reflect.TypeOf((*ConfigOrganizationConformancePack)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackConfig",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackConfig",
 		reflect.TypeOf((*ConfigOrganizationConformancePackConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameter",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameter",
 		reflect.TypeOf((*ConfigOrganizationConformancePackInputParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterList",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterList",
 		reflect.TypeOf((*ConfigOrganizationConformancePackInputParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -110,7 +110,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterOutputReference",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackInputParameterOutputReference",
 		reflect.TypeOf((*ConfigOrganizationConformancePackInputParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,11 +146,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeouts",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeouts",
 		reflect.TypeOf((*ConfigOrganizationConformancePackTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeoutsOutputReference",
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePackTimeoutsOutputReference",
 		reflect.TypeOf((*ConfigOrganizationConformancePackTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

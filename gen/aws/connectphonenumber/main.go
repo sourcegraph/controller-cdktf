@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.connectPhoneNumber.ConnectPhoneNumber",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumber",
 		reflect.TypeOf((*ConnectPhoneNumber)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectPhoneNumber.ConnectPhoneNumberConfig",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberConfig",
 		reflect.TypeOf((*ConnectPhoneNumberConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectPhoneNumber.ConnectPhoneNumberStatus",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatus",
 		reflect.TypeOf((*ConnectPhoneNumberStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusList",
 		reflect.TypeOf((*ConnectPhoneNumberStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberStatusOutputReference",
 		reflect.TypeOf((*ConnectPhoneNumberStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,11 +142,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectPhoneNumber.ConnectPhoneNumberTimeouts",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberTimeouts",
 		reflect.TypeOf((*ConnectPhoneNumberTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectPhoneNumber.ConnectPhoneNumberTimeoutsOutputReference",
+		"@cdktf/provider-aws.connectPhoneNumber.ConnectPhoneNumberTimeoutsOutputReference",
 		reflect.TypeOf((*ConnectPhoneNumberTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

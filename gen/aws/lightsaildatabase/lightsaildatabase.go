@@ -806,7 +806,7 @@ func NewLightsailDatabase(scope constructs.Construct, id *string, config *Lights
 	j := jsiiProxy_LightsailDatabase{}
 
 	_jsii_.Create(
-		"aws.lightsailDatabase.LightsailDatabase",
+		"@cdktf/provider-aws.lightsailDatabase.LightsailDatabase",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -819,7 +819,7 @@ func NewLightsailDatabase_Override(l LightsailDatabase, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailDatabase.LightsailDatabase",
+		"@cdktf/provider-aws.lightsailDatabase.LightsailDatabase",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -1106,7 +1106,7 @@ func LightsailDatabase_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailDatabase.LightsailDatabase",
+		"@cdktf/provider-aws.lightsailDatabase.LightsailDatabase",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1125,7 +1125,7 @@ func LightsailDatabase_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailDatabase.LightsailDatabase",
+		"@cdktf/provider-aws.lightsailDatabase.LightsailDatabase",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1144,7 +1144,7 @@ func LightsailDatabase_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailDatabase.LightsailDatabase",
+		"@cdktf/provider-aws.lightsailDatabase.LightsailDatabase",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1157,7 +1157,7 @@ func LightsailDatabase_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailDatabase.LightsailDatabase",
+		"@cdktf/provider-aws.lightsailDatabase.LightsailDatabase",
 		"tfResourceType",
 		&returns,
 	)

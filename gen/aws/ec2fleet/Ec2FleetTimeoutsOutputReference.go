@@ -228,7 +228,7 @@ func NewEc2FleetTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_Ec2FleetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewEc2FleetTimeoutsOutputReference_Override(e Ec2FleetTimeoutsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetTimeoutsOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

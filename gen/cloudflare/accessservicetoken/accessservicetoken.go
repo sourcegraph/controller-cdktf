@@ -424,7 +424,7 @@ func NewAccessServiceToken(scope constructs.Construct, id *string, config *Acces
 	j := jsiiProxy_AccessServiceToken{}
 
 	_jsii_.Create(
-		"cloudflare.accessServiceToken.AccessServiceToken",
+		"@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewAccessServiceToken_Override(a AccessServiceToken, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessServiceToken.AccessServiceToken",
+		"@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -592,7 +592,7 @@ func AccessServiceToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessServiceToken.AccessServiceToken",
+		"@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func AccessServiceToken_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessServiceToken.AccessServiceToken",
+		"@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func AccessServiceToken_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessServiceToken.AccessServiceToken",
+		"@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func AccessServiceToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessServiceToken.AccessServiceToken",
+		"@cdktf/provider-cloudflare.accessServiceToken.AccessServiceToken",
 		"tfResourceType",
 		&returns,
 	)

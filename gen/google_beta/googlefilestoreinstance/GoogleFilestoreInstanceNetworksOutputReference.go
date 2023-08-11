@@ -261,7 +261,7 @@ func NewGoogleFilestoreInstanceNetworksOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksOutputReference",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -273,7 +273,7 @@ func NewGoogleFilestoreInstanceNetworksOutputReference_Override(g GoogleFilestor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksOutputReference",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstanceNetworksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

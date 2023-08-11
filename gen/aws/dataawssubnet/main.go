@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSubnet.DataAwsSubnet",
+		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnet",
 		reflect.TypeOf((*DataAwsSubnet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,15 +99,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSubnet.DataAwsSubnetConfig",
+		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetConfig",
 		reflect.TypeOf((*DataAwsSubnetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSubnet.DataAwsSubnetFilter",
+		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetFilter",
 		reflect.TypeOf((*DataAwsSubnetFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSubnet.DataAwsSubnetFilterList",
+		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetFilterList",
 		reflect.TypeOf((*DataAwsSubnetFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -128,7 +128,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSubnet.DataAwsSubnetFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetFilterOutputReference",
 		reflect.TypeOf((*DataAwsSubnetFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -164,11 +164,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSubnet.DataAwsSubnetTimeouts",
+		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetTimeouts",
 		reflect.TypeOf((*DataAwsSubnetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSubnet.DataAwsSubnetTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsSubnet.DataAwsSubnetTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsSubnetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

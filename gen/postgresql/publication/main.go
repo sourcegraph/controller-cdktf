@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"postgresql.publication.Publication",
+		"@cdktf/provider-postgresql.publication.Publication",
 		reflect.TypeOf((*Publication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,7 +78,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"postgresql.publication.PublicationConfig",
+		"@cdktf/provider-postgresql.publication.PublicationConfig",
 		reflect.TypeOf((*PublicationConfig)(nil)).Elem(),
 	)
 }

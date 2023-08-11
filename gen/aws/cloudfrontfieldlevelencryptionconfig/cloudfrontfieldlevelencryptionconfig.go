@@ -388,7 +388,7 @@ func NewCloudfrontFieldLevelEncryptionConfig(scope constructs.Construct, id *str
 	j := jsiiProxy_CloudfrontFieldLevelEncryptionConfig{}
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +401,7 @@ func NewCloudfrontFieldLevelEncryptionConfig_Override(c CloudfrontFieldLevelEncr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -523,7 +523,7 @@ func CloudfrontFieldLevelEncryptionConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func CloudfrontFieldLevelEncryptionConfig_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func CloudfrontFieldLevelEncryptionConfig_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func CloudfrontFieldLevelEncryptionConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfig",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewDataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList(ter
 	j := jsiiProxy_DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList",
+		"@cdktf/provider-kubernetes.dataKubernetesStorageClass.DataKubernetesStorageClassAllowedTopologiesMatchLabelExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

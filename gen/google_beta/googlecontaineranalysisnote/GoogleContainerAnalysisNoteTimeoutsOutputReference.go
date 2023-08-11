@@ -228,7 +228,7 @@ func NewGoogleContainerAnalysisNoteTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleContainerAnalysisNoteTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleContainerAnalysisNoteTimeoutsOutputReference_Override(g GoogleCont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

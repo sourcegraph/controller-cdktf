@@ -641,7 +641,7 @@ func NewGrafanaWorkspaceSamlConfiguration(scope constructs.Construct, id *string
 	j := jsiiProxy_GrafanaWorkspaceSamlConfiguration{}
 
 	_jsii_.Create(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -654,7 +654,7 @@ func NewGrafanaWorkspaceSamlConfiguration_Override(g GrafanaWorkspaceSamlConfigu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -908,7 +908,7 @@ func GrafanaWorkspaceSamlConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -927,7 +927,7 @@ func GrafanaWorkspaceSamlConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -946,7 +946,7 @@ func GrafanaWorkspaceSamlConfiguration_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -959,7 +959,7 @@ func GrafanaWorkspaceSamlConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
+		"@cdktf/provider-aws.grafanaWorkspaceSamlConfiguration.GrafanaWorkspaceSamlConfiguration",
 		"tfResourceType",
 		&returns,
 	)

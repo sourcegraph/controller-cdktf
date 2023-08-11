@@ -565,7 +565,7 @@ func NewOrganizationsAccount(scope constructs.Construct, id *string, config *Org
 	j := jsiiProxy_OrganizationsAccount{}
 
 	_jsii_.Create(
-		"aws.organizationsAccount.OrganizationsAccount",
+		"@cdktf/provider-aws.organizationsAccount.OrganizationsAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -578,7 +578,7 @@ func NewOrganizationsAccount_Override(o OrganizationsAccount, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.organizationsAccount.OrganizationsAccount",
+		"@cdktf/provider-aws.organizationsAccount.OrganizationsAccount",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -788,7 +788,7 @@ func OrganizationsAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsAccount.OrganizationsAccount",
+		"@cdktf/provider-aws.organizationsAccount.OrganizationsAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -807,7 +807,7 @@ func OrganizationsAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsAccount.OrganizationsAccount",
+		"@cdktf/provider-aws.organizationsAccount.OrganizationsAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -826,7 +826,7 @@ func OrganizationsAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsAccount.OrganizationsAccount",
+		"@cdktf/provider-aws.organizationsAccount.OrganizationsAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -839,7 +839,7 @@ func OrganizationsAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.organizationsAccount.OrganizationsAccount",
+		"@cdktf/provider-aws.organizationsAccount.OrganizationsAccount",
 		"tfResourceType",
 		&returns,
 	)

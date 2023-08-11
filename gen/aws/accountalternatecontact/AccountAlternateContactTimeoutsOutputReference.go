@@ -228,7 +228,7 @@ func NewAccountAlternateContactTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_AccountAlternateContactTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference",
+		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAccountAlternateContactTimeoutsOutputReference_Override(a AccountAlterna
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference",
+		"@cdktf/provider-aws.accountAlternateContact.AccountAlternateContactTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

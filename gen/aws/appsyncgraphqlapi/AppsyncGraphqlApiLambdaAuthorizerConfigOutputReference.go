@@ -227,7 +227,7 @@ func NewAppsyncGraphqlApiLambdaAuthorizerConfigOutputReference(terraformResource
 	j := jsiiProxy_AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAppsyncGraphqlApiLambdaAuthorizerConfigOutputReference_Override(a Appsyn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference",
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

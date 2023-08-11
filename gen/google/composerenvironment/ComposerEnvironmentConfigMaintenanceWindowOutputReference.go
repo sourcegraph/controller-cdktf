@@ -225,7 +225,7 @@ func NewComposerEnvironmentConfigMaintenanceWindowOutputReference(terraformResou
 	j := jsiiProxy_ComposerEnvironmentConfigMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewComposerEnvironmentConfigMaintenanceWindowOutputReference_Override(c Com
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindowOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigMaintenanceWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

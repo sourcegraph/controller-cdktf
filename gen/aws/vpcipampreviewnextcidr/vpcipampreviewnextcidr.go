@@ -378,7 +378,7 @@ func NewVpcIpamPreviewNextCidr(scope constructs.Construct, id *string, config *V
 	j := jsiiProxy_VpcIpamPreviewNextCidr{}
 
 	_jsii_.Create(
-		"aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -391,7 +391,7 @@ func NewVpcIpamPreviewNextCidr_Override(v VpcIpamPreviewNextCidr, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -535,7 +535,7 @@ func VpcIpamPreviewNextCidr_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func VpcIpamPreviewNextCidr_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func VpcIpamPreviewNextCidr_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func VpcIpamPreviewNextCidr_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
 		"tfResourceType",
 		&returns,
 	)

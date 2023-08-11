@@ -180,7 +180,7 @@ func NewKendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfig
 	j := jsiiProxy_KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewKendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceConfigurationWebCrawlerConfigurationAuthenticationConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

@@ -471,7 +471,7 @@ func NewComputeRegionTargetHttpProxy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ComputeRegionTargetHttpProxy{}
 
 	_jsii_.Create(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewComputeRegionTargetHttpProxy_Override(c ComputeRegionTargetHttpProxy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -650,7 +650,7 @@ func ComputeRegionTargetHttpProxy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func ComputeRegionTargetHttpProxy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func ComputeRegionTargetHttpProxy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func ComputeRegionTargetHttpProxy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google.computeRegionTargetHttpProxy.ComputeRegionTargetHttpProxy",
 		"tfResourceType",
 		&returns,
 	)

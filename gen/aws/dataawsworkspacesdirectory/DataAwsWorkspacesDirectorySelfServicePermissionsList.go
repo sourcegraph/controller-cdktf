@@ -104,7 +104,7 @@ func NewDataAwsWorkspacesDirectorySelfServicePermissionsList(terraformResource c
 	j := jsiiProxy_DataAwsWorkspacesDirectorySelfServicePermissionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissionsList",
+		"@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsWorkspacesDirectorySelfServicePermissionsList_Override(d DataAwsW
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissionsList",
+		"@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectorySelfServicePermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

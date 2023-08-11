@@ -350,7 +350,7 @@ func NewDataAwsServicecatalogLaunchPaths(scope constructs.Construct, id *string,
 	j := jsiiProxy_DataAwsServicecatalogLaunchPaths{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -363,7 +363,7 @@ func NewDataAwsServicecatalogLaunchPaths_Override(d DataAwsServicecatalogLaunchP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -474,7 +474,7 @@ func DataAwsServicecatalogLaunchPaths_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +493,7 @@ func DataAwsServicecatalogLaunchPaths_IsTerraformDataSource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataAwsServicecatalogLaunchPaths_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -525,7 +525,7 @@ func DataAwsServicecatalogLaunchPaths_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPaths",
 		"tfResourceType",
 		&returns,
 	)

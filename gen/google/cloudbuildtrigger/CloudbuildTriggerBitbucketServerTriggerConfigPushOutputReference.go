@@ -228,7 +228,7 @@ func NewCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference(terrafo
 	j := jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

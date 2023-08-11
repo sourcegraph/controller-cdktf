@@ -202,7 +202,7 @@ func NewDataAwsVpcPeeringConnectionsFilterOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsVpcPeeringConnectionsFilterOutputReference_Override(d DataAwsVpcP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcPeeringConnections.DataAwsVpcPeeringConnectionsFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

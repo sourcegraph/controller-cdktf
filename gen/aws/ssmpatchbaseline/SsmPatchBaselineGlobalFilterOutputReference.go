@@ -202,7 +202,7 @@ func NewSsmPatchBaselineGlobalFilterOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_SsmPatchBaselineGlobalFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSsmPatchBaselineGlobalFilterOutputReference_Override(s SsmPatchBaselineG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterOutputReference",
+		"@cdktf/provider-aws.ssmPatchBaseline.SsmPatchBaselineGlobalFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

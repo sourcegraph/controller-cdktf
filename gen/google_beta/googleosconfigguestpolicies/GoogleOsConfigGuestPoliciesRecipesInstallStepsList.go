@@ -116,7 +116,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesInstallStepsList(terraformResource cdk
 	j := jsiiProxy_GoogleOsConfigGuestPoliciesRecipesInstallStepsList{}
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsList",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleOsConfigGuestPoliciesRecipesInstallStepsList_Override(g GoogleOsCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsList",
+		"@cdktf/provider-google-beta.googleOsConfigGuestPolicies.GoogleOsConfigGuestPoliciesRecipesInstallStepsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

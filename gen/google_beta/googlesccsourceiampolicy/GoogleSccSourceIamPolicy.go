@@ -376,7 +376,7 @@ func NewGoogleSccSourceIamPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleSccSourceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
+		"@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewGoogleSccSourceIamPolicy_Override(g GoogleSccSourceIamPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
+		"@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -533,7 +533,7 @@ func GoogleSccSourceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
+		"@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func GoogleSccSourceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
+		"@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func GoogleSccSourceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
+		"@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func GoogleSccSourceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
+		"@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

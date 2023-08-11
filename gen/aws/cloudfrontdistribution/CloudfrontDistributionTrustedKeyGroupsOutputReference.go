@@ -178,7 +178,7 @@ func NewCloudfrontDistributionTrustedKeyGroupsOutputReference(terraformResource 
 	j := jsiiProxy_CloudfrontDistributionTrustedKeyGroupsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewCloudfrontDistributionTrustedKeyGroupsOutputReference_Override(c Cloudfr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionTrustedKeyGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

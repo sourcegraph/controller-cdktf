@@ -252,7 +252,7 @@ func NewProjectServiceTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_ProjectServiceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.projectService.ProjectServiceTimeoutsOutputReference",
+		"@cdktf/provider-google.projectService.ProjectServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewProjectServiceTimeoutsOutputReference_Override(p ProjectServiceTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectService.ProjectServiceTimeoutsOutputReference",
+		"@cdktf/provider-google.projectService.ProjectServiceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

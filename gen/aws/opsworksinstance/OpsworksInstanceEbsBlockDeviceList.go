@@ -116,7 +116,7 @@ func NewOpsworksInstanceEbsBlockDeviceList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_OpsworksInstanceEbsBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceList",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksInstanceEbsBlockDeviceList_Override(o OpsworksInstanceEbsBlockDe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceList",
+		"@cdktf/provider-aws.opsworksInstance.OpsworksInstanceEbsBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

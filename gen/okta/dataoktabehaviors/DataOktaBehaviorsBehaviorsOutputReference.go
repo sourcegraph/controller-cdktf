@@ -211,7 +211,7 @@ func NewDataOktaBehaviorsBehaviorsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataOktaBehaviorsBehaviorsOutputReference{}
 
 	_jsii_.Create(
-		"okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference",
+		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataOktaBehaviorsBehaviorsOutputReference_Override(d DataOktaBehaviorsBe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference",
+		"@cdktf/provider-okta.dataOktaBehaviors.DataOktaBehaviorsBehaviorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

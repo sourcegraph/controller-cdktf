@@ -104,7 +104,7 @@ func NewDataAwsLambdaFunctionEphemeralStorageList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLambdaFunctionEphemeralStorageList_Override(d DataAwsLambdaFuncti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageList",
+		"@cdktf/provider-aws.dataAwsLambdaFunction.DataAwsLambdaFunctionEphemeralStorageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

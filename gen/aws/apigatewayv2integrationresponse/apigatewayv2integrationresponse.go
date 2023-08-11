@@ -437,7 +437,7 @@ func NewApigatewayv2IntegrationResponse(scope constructs.Construct, id *string, 
 	j := jsiiProxy_Apigatewayv2IntegrationResponse{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
+		"@cdktf/provider-aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewApigatewayv2IntegrationResponse_Override(a Apigatewayv2IntegrationRespon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
+		"@cdktf/provider-aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -627,7 +627,7 @@ func Apigatewayv2IntegrationResponse_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
+		"@cdktf/provider-aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func Apigatewayv2IntegrationResponse_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
+		"@cdktf/provider-aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func Apigatewayv2IntegrationResponse_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
+		"@cdktf/provider-aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func Apigatewayv2IntegrationResponse_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
+		"@cdktf/provider-aws.apigatewayv2IntegrationResponse.Apigatewayv2IntegrationResponse",
 		"tfResourceType",
 		&returns,
 	)

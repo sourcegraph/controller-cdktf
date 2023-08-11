@@ -412,7 +412,7 @@ func NewVpcEndpointConnectionNotification(scope constructs.Construct, id *string
 	j := jsiiProxy_VpcEndpointConnectionNotification{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
+		"@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewVpcEndpointConnectionNotification_Override(v VpcEndpointConnectionNotifi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
+		"@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -580,7 +580,7 @@ func VpcEndpointConnectionNotification_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
+		"@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func VpcEndpointConnectionNotification_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
+		"@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func VpcEndpointConnectionNotification_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
+		"@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func VpcEndpointConnectionNotification_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
+		"@cdktf/provider-aws.vpcEndpointConnectionNotification.VpcEndpointConnectionNotification",
 		"tfResourceType",
 		&returns,
 	)

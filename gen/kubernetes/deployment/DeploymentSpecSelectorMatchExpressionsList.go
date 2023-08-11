@@ -116,7 +116,7 @@ func NewDeploymentSpecSelectorMatchExpressionsList(terraformResource cdktf.IInte
 	j := jsiiProxy_DeploymentSpecSelectorMatchExpressionsList{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDeploymentSpecSelectorMatchExpressionsList_Override(d DeploymentSpecSele
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsList",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecSelectorMatchExpressionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

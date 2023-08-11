@@ -228,7 +228,7 @@ func NewGoogleAssuredWorkloadsWorkloadTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleAssuredWorkloadsWorkloadTimeoutsOutputReference_Override(g GoogleA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleAssuredWorkloadsWorkload.GoogleAssuredWorkloadsWorkloadTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -204,7 +204,7 @@ func NewGoogleBigqueryJobTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleBigqueryJobTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleBigqueryJobTimeoutsOutputReference_Override(g GoogleBigqueryJobTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

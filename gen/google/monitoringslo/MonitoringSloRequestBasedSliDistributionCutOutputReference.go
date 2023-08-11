@@ -202,7 +202,7 @@ func NewMonitoringSloRequestBasedSliDistributionCutOutputReference(terraformReso
 	j := jsiiProxy_MonitoringSloRequestBasedSliDistributionCutOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewMonitoringSloRequestBasedSliDistributionCutOutputReference_Override(m Mo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutOutputReference",
+		"@cdktf/provider-google.monitoringSlo.MonitoringSloRequestBasedSliDistributionCutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

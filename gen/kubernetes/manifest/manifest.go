@@ -439,7 +439,7 @@ func NewManifest(scope constructs.Construct, id *string, config *ManifestConfig)
 	j := jsiiProxy_Manifest{}
 
 	_jsii_.Create(
-		"kubernetes.manifest.Manifest",
+		"@cdktf/provider-kubernetes.manifest.Manifest",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -452,7 +452,7 @@ func NewManifest_Override(m Manifest, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.manifest.Manifest",
+		"@cdktf/provider-kubernetes.manifest.Manifest",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -585,7 +585,7 @@ func Manifest_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.manifest.Manifest",
+		"@cdktf/provider-kubernetes.manifest.Manifest",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -604,7 +604,7 @@ func Manifest_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.manifest.Manifest",
+		"@cdktf/provider-kubernetes.manifest.Manifest",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func Manifest_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.manifest.Manifest",
+		"@cdktf/provider-kubernetes.manifest.Manifest",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func Manifest_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.manifest.Manifest",
+		"@cdktf/provider-kubernetes.manifest.Manifest",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewGoogleGkeHubFeatureTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleGkeHubFeatureTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleGkeHubFeatureTimeoutsOutputReference_Override(g GoogleGkeHubFeatur
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubFeature.GoogleGkeHubFeatureTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubFeature.GoogleGkeHubFeatureTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

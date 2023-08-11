@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeSubnetworkIamPolicy.ComputeSubnetworkIamPolicy",
+		"@cdktf/provider-google.computeSubnetworkIamPolicy.ComputeSubnetworkIamPolicy",
 		reflect.TypeOf((*ComputeSubnetworkIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeSubnetworkIamPolicy.ComputeSubnetworkIamPolicyConfig",
+		"@cdktf/provider-google.computeSubnetworkIamPolicy.ComputeSubnetworkIamPolicyConfig",
 		reflect.TypeOf((*ComputeSubnetworkIamPolicyConfig)(nil)).Elem(),
 	)
 }

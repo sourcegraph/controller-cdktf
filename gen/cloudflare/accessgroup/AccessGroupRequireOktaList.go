@@ -116,7 +116,7 @@ func NewAccessGroupRequireOktaList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_AccessGroupRequireOktaList{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireOktaList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessGroupRequireOktaList_Override(a AccessGroupRequireOktaList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireOktaList",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

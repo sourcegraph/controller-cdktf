@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apprunnerVpcConnector.ApprunnerVpcConnector",
+		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnector",
 		reflect.TypeOf((*ApprunnerVpcConnector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,7 +70,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig",
+		"@cdktf/provider-aws.apprunnerVpcConnector.ApprunnerVpcConnectorConfig",
 		reflect.TypeOf((*ApprunnerVpcConnectorConfig)(nil)).Elem(),
 	)
 }

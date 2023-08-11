@@ -104,7 +104,7 @@ func NewDataAwsAmiProductCodesList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_DataAwsAmiProductCodesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiProductCodesList",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAmiProductCodesList_Override(d DataAwsAmiProductCodesList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiProductCodesList",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiProductCodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

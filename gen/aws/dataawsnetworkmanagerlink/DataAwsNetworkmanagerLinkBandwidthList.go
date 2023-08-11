@@ -104,7 +104,7 @@ func NewDataAwsNetworkmanagerLinkBandwidthList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_DataAwsNetworkmanagerLinkBandwidthList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsNetworkmanagerLinkBandwidthList_Override(d DataAwsNetworkmanagerL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthList",
+		"@cdktf/provider-aws.dataAwsNetworkmanagerLink.DataAwsNetworkmanagerLinkBandwidthList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

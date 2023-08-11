@@ -454,7 +454,7 @@ func NewDataGoogleMonitoringNotificationChannel(scope constructs.Construct, id *
 	j := jsiiProxy_DataGoogleMonitoringNotificationChannel{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -467,7 +467,7 @@ func NewDataGoogleMonitoringNotificationChannel_Override(d DataGoogleMonitoringN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -611,7 +611,7 @@ func DataGoogleMonitoringNotificationChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func DataGoogleMonitoringNotificationChannel_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -649,7 +649,7 @@ func DataGoogleMonitoringNotificationChannel_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -662,7 +662,7 @@ func DataGoogleMonitoringNotificationChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
 		"tfResourceType",
 		&returns,
 	)

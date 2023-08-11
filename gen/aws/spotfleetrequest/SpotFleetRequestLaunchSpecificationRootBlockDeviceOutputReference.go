@@ -324,7 +324,7 @@ func NewSpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference(terraf
 	j := jsiiProxy_SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewSpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationRootBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.sshKey.SshKey",
+		"@cdktf/provider-tfe.sshKey.SshKey",
 		reflect.TypeOf((*SshKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.sshKey.SshKeyConfig",
+		"@cdktf/provider-tfe.sshKey.SshKeyConfig",
 		reflect.TypeOf((*SshKeyConfig)(nil)).Elem(),
 	)
 }

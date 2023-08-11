@@ -104,7 +104,7 @@ func NewDataAwsLaunchConfigurationRootBlockDeviceList(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsLaunchConfigurationRootBlockDeviceList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchConfigurationRootBlockDeviceList_Override(d DataAwsLaunchCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceList",
+		"@cdktf/provider-aws.dataAwsLaunchConfiguration.DataAwsLaunchConfigurationRootBlockDeviceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

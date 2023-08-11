@@ -180,7 +180,7 @@ func NewContainerAttachedClusterLoggingConfigComponentConfigOutputReference(terr
 	j := jsiiProxy_ContainerAttachedClusterLoggingConfigComponentConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigComponentConfigOutputReference",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigComponentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewContainerAttachedClusterLoggingConfigComponentConfigOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigComponentConfigOutputReference",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigComponentConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

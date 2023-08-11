@@ -628,7 +628,7 @@ func NewEc2TransitGateway(scope constructs.Construct, id *string, config *Ec2Tra
 	j := jsiiProxy_Ec2TransitGateway{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGateway.Ec2TransitGateway",
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -641,7 +641,7 @@ func NewEc2TransitGateway_Override(e Ec2TransitGateway, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGateway.Ec2TransitGateway",
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -873,7 +873,7 @@ func Ec2TransitGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGateway.Ec2TransitGateway",
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -892,7 +892,7 @@ func Ec2TransitGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGateway.Ec2TransitGateway",
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -911,7 +911,7 @@ func Ec2TransitGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGateway.Ec2TransitGateway",
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -924,7 +924,7 @@ func Ec2TransitGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGateway.Ec2TransitGateway",
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
 		"tfResourceType",
 		&returns,
 	)

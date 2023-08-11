@@ -252,7 +252,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigO
 	j := jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -302,7 +302,7 @@ func NewDataAwsMskBrokerNodes(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsMskBrokerNodes{}
 
 	_jsii_.Create(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -315,7 +315,7 @@ func NewDataAwsMskBrokerNodes_Override(d DataAwsMskBrokerNodes, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataAwsMskBrokerNodes_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataAwsMskBrokerNodes_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataAwsMskBrokerNodes_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataAwsMskBrokerNodes_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodes",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewGoogleContainerClusterNodeConfigGcfsConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleContainerClusterNodeConfigGcfsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterNodeConfigGcfsConfigOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

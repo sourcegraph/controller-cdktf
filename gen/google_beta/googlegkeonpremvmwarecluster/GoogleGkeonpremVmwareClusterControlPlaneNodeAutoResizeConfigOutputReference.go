@@ -179,7 +179,7 @@ func NewGoogleGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputRefere
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

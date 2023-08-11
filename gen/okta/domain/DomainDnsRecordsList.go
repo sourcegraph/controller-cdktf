@@ -104,7 +104,7 @@ func NewDomainDnsRecordsList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_DomainDnsRecordsList{}
 
 	_jsii_.Create(
-		"okta.domain.DomainDnsRecordsList",
+		"@cdktf/provider-okta.domain.DomainDnsRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDomainDnsRecordsList_Override(d DomainDnsRecordsList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.domain.DomainDnsRecordsList",
+		"@cdktf/provider-okta.domain.DomainDnsRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

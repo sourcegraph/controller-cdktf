@@ -448,7 +448,7 @@ func NewCloudhsmV2Hsm(scope constructs.Construct, id *string, config *CloudhsmV2
 	j := jsiiProxy_CloudhsmV2Hsm{}
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudhsmV2Hsm_Override(c CloudhsmV2Hsm, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -616,7 +616,7 @@ func CloudhsmV2Hsm_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func CloudhsmV2Hsm_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func CloudhsmV2Hsm_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func CloudhsmV2Hsm_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
+		"@cdktf/provider-aws.cloudhsmV2Hsm.CloudhsmV2Hsm",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSlo",
 		reflect.TypeOf((*GoogleMonitoringSlo)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -94,15 +94,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSli",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSli",
 		reflect.TypeOf((*GoogleMonitoringSloBasicSli)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliAvailability",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliAvailability",
 		reflect.TypeOf((*GoogleMonitoringSloBasicSliAvailability)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliAvailabilityOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliAvailabilityOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloBasicSliAvailabilityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,11 +137,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatency",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatency",
 		reflect.TypeOf((*GoogleMonitoringSloBasicSliLatency)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatencyOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliLatencyOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloBasicSliLatencyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,7 +175,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloBasicSliOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloBasicSliOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -224,19 +224,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloConfig",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloConfig",
 		reflect.TypeOf((*GoogleMonitoringSloConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSli",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSli",
 		reflect.TypeOf((*GoogleMonitoringSloRequestBasedSli)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCut",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCut",
 		reflect.TypeOf((*GoogleMonitoringSloRequestBasedSliDistributionCut)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -273,11 +273,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange",
 		reflect.TypeOf((*GoogleMonitoringSloRequestBasedSliDistributionCutRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRangeOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRangeOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloRequestBasedSliDistributionCutRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -315,11 +315,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliGoodTotalRatio",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliGoodTotalRatio",
 		reflect.TypeOf((*GoogleMonitoringSloRequestBasedSliGoodTotalRatio)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "badServiceFilter", GoGetter: "BadServiceFilter"},
@@ -360,7 +360,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloRequestBasedSliOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -400,11 +400,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloTimeouts",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloTimeouts",
 		reflect.TypeOf((*GoogleMonitoringSloTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -445,23 +445,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSli",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSli",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSli)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -496,11 +496,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -534,7 +534,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availability", GoGetter: "Availability"},
@@ -583,7 +583,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicSliPerformance", GoGetter: "BasicSliPerformance"},
@@ -626,15 +626,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -671,11 +671,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -713,11 +713,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "badServiceFilter", GoGetter: "BadServiceFilter"},
@@ -758,7 +758,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -798,11 +798,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRange",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRange",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliMetricMeanInRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -839,11 +839,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -881,11 +881,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRange",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRange",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliMetricSumInRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -922,11 +922,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -964,7 +964,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliOutputReference",
 		reflect.TypeOf((*GoogleMonitoringSloWindowsBasedSliOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

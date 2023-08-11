@@ -361,7 +361,7 @@ func NewDataGoogleDataplexDatascanIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleDataplexDatascanIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +374,7 @@ func NewDataGoogleDataplexDatascanIamPolicy_Override(d DataGoogleDataplexDatasca
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -496,7 +496,7 @@ func DataGoogleDataplexDatascanIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataGoogleDataplexDatascanIamPolicy_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -534,7 +534,7 @@ func DataGoogleDataplexDatascanIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -547,7 +547,7 @@ func DataGoogleDataplexDatascanIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexDatascanIamPolicy.DataGoogleDataplexDatascanIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -226,7 +226,7 @@ func NewAccessApplicationSaasAppOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AccessApplicationSaasAppOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewAccessApplicationSaasAppOutputReference_Override(a AccessApplicationSaas
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.spannerDatabaseIamBinding.SpannerDatabaseIamBinding",
+		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBinding",
 		reflect.TypeOf((*SpannerDatabaseIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,11 +71,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.spannerDatabaseIamBinding.SpannerDatabaseIamBindingCondition",
+		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBindingCondition",
 		reflect.TypeOf((*SpannerDatabaseIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.spannerDatabaseIamBinding.SpannerDatabaseIamBindingConditionOutputReference",
+		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBindingConditionOutputReference",
 		reflect.TypeOf((*SpannerDatabaseIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.spannerDatabaseIamBinding.SpannerDatabaseIamBindingConfig",
+		"@cdktf/provider-google.spannerDatabaseIamBinding.SpannerDatabaseIamBindingConfig",
 		reflect.TypeOf((*SpannerDatabaseIamBindingConfig)(nil)).Elem(),
 	)
 }

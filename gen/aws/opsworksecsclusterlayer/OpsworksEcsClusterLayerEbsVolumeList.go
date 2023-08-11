@@ -116,7 +116,7 @@ func NewOpsworksEcsClusterLayerEbsVolumeList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList{}
 
 	_jsii_.Create(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksEcsClusterLayerEbsVolumeList_Override(o OpsworksEcsClusterLayerE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

@@ -180,7 +180,7 @@ func NewComputeSecurityPolicyAdaptiveProtectionConfigOutputReference(terraformRe
 	j := jsiiProxy_ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewComputeSecurityPolicyAdaptiveProtectionConfigOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyAdaptiveProtectionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

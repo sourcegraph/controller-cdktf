@@ -420,7 +420,7 @@ func NewApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference(terraf
 	j := jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

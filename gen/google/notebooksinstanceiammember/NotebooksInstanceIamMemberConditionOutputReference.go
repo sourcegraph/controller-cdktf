@@ -226,7 +226,7 @@ func NewNotebooksInstanceIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_NotebooksInstanceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewNotebooksInstanceIamMemberConditionOutputReference_Override(n NotebooksI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConditionOutputReference",
+		"@cdktf/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

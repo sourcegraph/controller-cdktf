@@ -202,7 +202,7 @@ func NewTeamsAccountLoggingOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_TeamsAccountLoggingOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountLoggingOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTeamsAccountLoggingOutputReference_Override(t TeamsAccountLoggingOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountLoggingOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

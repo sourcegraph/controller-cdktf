@@ -203,7 +203,7 @@ func NewStorageBucketRetentionPolicyOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_StorageBucketRetentionPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketRetentionPolicyOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewStorageBucketRetentionPolicyOutputReference_Override(s StorageBucketRete
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageBucket.StorageBucketRetentionPolicyOutputReference",
+		"@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

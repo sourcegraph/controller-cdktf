@@ -116,7 +116,7 @@ func NewGoogleComputeNodeGroupShareSettingsProjectMapList(terraformResource cdkt
 	j := jsiiProxy_GoogleComputeNodeGroupShareSettingsProjectMapList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupShareSettingsProjectMapList",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupShareSettingsProjectMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeNodeGroupShareSettingsProjectMapList_Override(g GoogleCompu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupShareSettingsProjectMapList",
+		"@cdktf/provider-google-beta.googleComputeNodeGroup.GoogleComputeNodeGroupShareSettingsProjectMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

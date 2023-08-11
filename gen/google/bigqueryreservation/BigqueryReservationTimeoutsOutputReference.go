@@ -228,7 +228,7 @@ func NewBigqueryReservationTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_BigqueryReservationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryReservation.BigqueryReservationTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBigqueryReservationTimeoutsOutputReference_Override(b BigqueryReservatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryReservation.BigqueryReservationTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryReservation.BigqueryReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

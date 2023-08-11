@@ -116,7 +116,7 @@ func NewMedialiveChannelInputAttachmentsList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_MedialiveChannelInputAttachmentsList{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMedialiveChannelInputAttachmentsList_Override(m MedialiveChannelInputAtt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelInputAttachmentsList",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelInputAttachmentsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

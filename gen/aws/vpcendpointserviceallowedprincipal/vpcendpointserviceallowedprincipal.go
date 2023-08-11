@@ -342,7 +342,7 @@ func NewVpcEndpointServiceAllowedPrincipal(scope constructs.Construct, id *strin
 	j := jsiiProxy_VpcEndpointServiceAllowedPrincipal{}
 
 	_jsii_.Create(
-		"aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
+		"@cdktf/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewVpcEndpointServiceAllowedPrincipal_Override(v VpcEndpointServiceAllowedP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
+		"@cdktf/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -488,7 +488,7 @@ func VpcEndpointServiceAllowedPrincipal_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
+		"@cdktf/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func VpcEndpointServiceAllowedPrincipal_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
+		"@cdktf/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func VpcEndpointServiceAllowedPrincipal_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
+		"@cdktf/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func VpcEndpointServiceAllowedPrincipal_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
+		"@cdktf/provider-aws.vpcEndpointServiceAllowedPrincipal.VpcEndpointServiceAllowedPrincipal",
 		"tfResourceType",
 		&returns,
 	)

@@ -443,7 +443,7 @@ func NewRedshiftserverlessSnapshot(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_RedshiftserverlessSnapshot{}
 
 	_jsii_.Create(
-		"aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
+		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -456,7 +456,7 @@ func NewRedshiftserverlessSnapshot_Override(r RedshiftserverlessSnapshot, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
+		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -600,7 +600,7 @@ func RedshiftserverlessSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
+		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func RedshiftserverlessSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
+		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +638,7 @@ func RedshiftserverlessSnapshot_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
+		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -651,7 +651,7 @@ func RedshiftserverlessSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
+		"@cdktf/provider-aws.redshiftserverlessSnapshot.RedshiftserverlessSnapshot",
 		"tfResourceType",
 		&returns,
 	)

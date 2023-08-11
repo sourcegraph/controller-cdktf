@@ -377,7 +377,7 @@ func NewIotRoleAlias(scope constructs.Construct, id *string, config *IotRoleAlia
 	j := jsiiProxy_IotRoleAlias{}
 
 	_jsii_.Create(
-		"aws.iotRoleAlias.IotRoleAlias",
+		"@cdktf/provider-aws.iotRoleAlias.IotRoleAlias",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewIotRoleAlias_Override(i IotRoleAlias, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotRoleAlias.IotRoleAlias",
+		"@cdktf/provider-aws.iotRoleAlias.IotRoleAlias",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -534,7 +534,7 @@ func IotRoleAlias_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotRoleAlias.IotRoleAlias",
+		"@cdktf/provider-aws.iotRoleAlias.IotRoleAlias",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func IotRoleAlias_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotRoleAlias.IotRoleAlias",
+		"@cdktf/provider-aws.iotRoleAlias.IotRoleAlias",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func IotRoleAlias_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotRoleAlias.IotRoleAlias",
+		"@cdktf/provider-aws.iotRoleAlias.IotRoleAlias",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func IotRoleAlias_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotRoleAlias.IotRoleAlias",
+		"@cdktf/provider-aws.iotRoleAlias.IotRoleAlias",
 		"tfResourceType",
 		&returns,
 	)

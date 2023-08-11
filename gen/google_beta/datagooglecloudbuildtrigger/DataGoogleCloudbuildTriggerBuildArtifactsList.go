@@ -104,7 +104,7 @@ func NewDataGoogleCloudbuildTriggerBuildArtifactsList(terraformResource cdktf.II
 	j := jsiiProxy_DataGoogleCloudbuildTriggerBuildArtifactsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildArtifactsList",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildArtifactsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudbuildTriggerBuildArtifactsList_Override(d DataGoogleCloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildArtifactsList",
+		"@cdktf/provider-google-beta.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildArtifactsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -353,7 +353,7 @@ func NewFolderIamPolicy(scope constructs.Construct, id *string, config *FolderIa
 	j := jsiiProxy_FolderIamPolicy{}
 
 	_jsii_.Create(
-		"google.folderIamPolicy.FolderIamPolicy",
+		"@cdktf/provider-google.folderIamPolicy.FolderIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewFolderIamPolicy_Override(f FolderIamPolicy, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.folderIamPolicy.FolderIamPolicy",
+		"@cdktf/provider-google.folderIamPolicy.FolderIamPolicy",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -499,7 +499,7 @@ func FolderIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamPolicy.FolderIamPolicy",
+		"@cdktf/provider-google.folderIamPolicy.FolderIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func FolderIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamPolicy.FolderIamPolicy",
+		"@cdktf/provider-google.folderIamPolicy.FolderIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func FolderIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.folderIamPolicy.FolderIamPolicy",
+		"@cdktf/provider-google.folderIamPolicy.FolderIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func FolderIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.folderIamPolicy.FolderIamPolicy",
+		"@cdktf/provider-google.folderIamPolicy.FolderIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewGoogleDataplexDatascanExecutionSpecOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleDataplexDatascanExecutionSpecOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleDataplexDatascanExecutionSpecOutputReference_Override(g GoogleData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanExecutionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

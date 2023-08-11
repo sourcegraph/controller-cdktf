@@ -226,7 +226,7 @@ func NewGooglePubsubSubscriptionIamBindingConditionOutputReference(terraformReso
 	j := jsiiProxy_GooglePubsubSubscriptionIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGooglePubsubSubscriptionIamBindingConditionOutputReference_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding.GooglePubsubSubscriptionIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

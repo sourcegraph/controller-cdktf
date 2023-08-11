@@ -104,7 +104,7 @@ func NewDataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList(terraformResourc
 	j := jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList_Override(d DataA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipe.DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

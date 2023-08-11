@@ -415,7 +415,7 @@ func NewProjectService(scope constructs.Construct, id *string, config *ProjectSe
 	j := jsiiProxy_ProjectService{}
 
 	_jsii_.Create(
-		"google.projectService.ProjectService",
+		"@cdktf/provider-google.projectService.ProjectService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -428,7 +428,7 @@ func NewProjectService_Override(p ProjectService, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectService.ProjectService",
+		"@cdktf/provider-google.projectService.ProjectService",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -583,7 +583,7 @@ func ProjectService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectService.ProjectService",
+		"@cdktf/provider-google.projectService.ProjectService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func ProjectService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectService.ProjectService",
+		"@cdktf/provider-google.projectService.ProjectService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func ProjectService_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.projectService.ProjectService",
+		"@cdktf/provider-google.projectService.ProjectService",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func ProjectService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.projectService.ProjectService",
+		"@cdktf/provider-google.projectService.ProjectService",
 		"tfResourceType",
 		&returns,
 	)

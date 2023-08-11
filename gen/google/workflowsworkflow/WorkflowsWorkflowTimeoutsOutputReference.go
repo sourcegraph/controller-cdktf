@@ -228,7 +228,7 @@ func NewWorkflowsWorkflowTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_WorkflowsWorkflowTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.workflowsWorkflow.WorkflowsWorkflowTimeoutsOutputReference",
+		"@cdktf/provider-google.workflowsWorkflow.WorkflowsWorkflowTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewWorkflowsWorkflowTimeoutsOutputReference_Override(w WorkflowsWorkflowTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.workflowsWorkflow.WorkflowsWorkflowTimeoutsOutputReference",
+		"@cdktf/provider-google.workflowsWorkflow.WorkflowsWorkflowTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.serviceDiscoveryInstance.ServiceDiscoveryInstance",
+		"@cdktf/provider-aws.serviceDiscoveryInstance.ServiceDiscoveryInstance",
 		reflect.TypeOf((*ServiceDiscoveryInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.serviceDiscoveryInstance.ServiceDiscoveryInstanceConfig",
+		"@cdktf/provider-aws.serviceDiscoveryInstance.ServiceDiscoveryInstanceConfig",
 		reflect.TypeOf((*ServiceDiscoveryInstanceConfig)(nil)).Elem(),
 	)
 }

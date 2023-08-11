@@ -204,7 +204,7 @@ func NewJobSpecTemplateSpecContainerResourcesOutputReference(terraformResource c
 	j := jsiiProxy_JobSpecTemplateSpecContainerResourcesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewJobSpecTemplateSpecContainerResourcesOutputReference_Override(j JobSpecT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerResourcesOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

@@ -881,7 +881,7 @@ func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_CloudfrontDistribution{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistribution",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -894,7 +894,7 @@ func NewCloudfrontDistribution_Override(c CloudfrontDistribution, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistribution",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -1137,7 +1137,7 @@ func CloudfrontDistribution_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontDistribution.CloudfrontDistribution",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1156,7 +1156,7 @@ func CloudfrontDistribution_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontDistribution.CloudfrontDistribution",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1175,7 +1175,7 @@ func CloudfrontDistribution_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontDistribution.CloudfrontDistribution",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1188,7 +1188,7 @@ func CloudfrontDistribution_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontDistribution.CloudfrontDistribution",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleComputeRouterBgpList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_DataGoogleComputeRouterBgpList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpList",
+		"@cdktf/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRouterBgpList_Override(d DataGoogleComputeRouterBgpList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpList",
+		"@cdktf/provider-google.dataGoogleComputeRouter.DataGoogleComputeRouterBgpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

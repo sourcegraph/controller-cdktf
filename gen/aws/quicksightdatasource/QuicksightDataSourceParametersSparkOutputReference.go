@@ -202,7 +202,7 @@ func NewQuicksightDataSourceParametersSparkOutputReference(terraformResource cdk
 	j := jsiiProxy_QuicksightDataSourceParametersSparkOutputReference{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersSparkOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSparkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewQuicksightDataSourceParametersSparkOutputReference_Override(q Quicksight
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourceParametersSparkOutputReference",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersSparkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)

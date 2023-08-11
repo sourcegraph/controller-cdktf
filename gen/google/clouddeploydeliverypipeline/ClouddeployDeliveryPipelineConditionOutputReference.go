@@ -189,7 +189,7 @@ func NewClouddeployDeliveryPipelineConditionOutputReference(terraformResource cd
 	j := jsiiProxy_ClouddeployDeliveryPipelineConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewClouddeployDeliveryPipelineConditionOutputReference_Override(c Clouddepl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionOutputReference",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -546,7 +546,7 @@ func NewElastictranscoderPreset(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ElastictranscoderPreset{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPreset",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -559,7 +559,7 @@ func NewElastictranscoderPreset_Override(e ElastictranscoderPreset, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPreset.ElastictranscoderPreset",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -725,7 +725,7 @@ func ElastictranscoderPreset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elastictranscoderPreset.ElastictranscoderPreset",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -744,7 +744,7 @@ func ElastictranscoderPreset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elastictranscoderPreset.ElastictranscoderPreset",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func ElastictranscoderPreset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elastictranscoderPreset.ElastictranscoderPreset",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -776,7 +776,7 @@ func ElastictranscoderPreset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elastictranscoderPreset.ElastictranscoderPreset",
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
 		"tfResourceType",
 		&returns,
 	)

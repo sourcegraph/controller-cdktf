@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecVolumeProjectedSourcesDownwardApiList(terraformReso
 	j := jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesDownwardApiList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesDownwardApiList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesDownwardApiList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecVolumeProjectedSourcesDownwardApiList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesDownwardApiList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesDownwardApiList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

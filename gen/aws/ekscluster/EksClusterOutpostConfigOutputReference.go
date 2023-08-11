@@ -226,7 +226,7 @@ func NewEksClusterOutpostConfigOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EksClusterOutpostConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterOutpostConfigOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewEksClusterOutpostConfigOutputReference_Override(e EksClusterOutpostConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksCluster.EksClusterOutpostConfigOutputReference",
+		"@cdktf/provider-aws.eksCluster.EksClusterOutpostConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

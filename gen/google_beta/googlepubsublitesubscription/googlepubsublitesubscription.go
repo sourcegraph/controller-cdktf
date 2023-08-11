@@ -462,7 +462,7 @@ func NewGooglePubsubLiteSubscription(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GooglePubsubLiteSubscription{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
+		"@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -475,7 +475,7 @@ func NewGooglePubsubLiteSubscription_Override(g GooglePubsubLiteSubscription, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
+		"@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -641,7 +641,7 @@ func GooglePubsubLiteSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
+		"@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func GooglePubsubLiteSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
+		"@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GooglePubsubLiteSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
+		"@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func GooglePubsubLiteSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
+		"@cdktf/provider-google-beta.googlePubsubLiteSubscription.GooglePubsubLiteSubscription",
 		"tfResourceType",
 		&returns,
 	)

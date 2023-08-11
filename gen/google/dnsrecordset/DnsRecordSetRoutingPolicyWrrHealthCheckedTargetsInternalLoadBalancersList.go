@@ -116,7 +116,7 @@ func NewDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersLis
 	j := jsiiProxy_DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList{}
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList",
+		"@cdktf/provider-google.dnsRecordSet.DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

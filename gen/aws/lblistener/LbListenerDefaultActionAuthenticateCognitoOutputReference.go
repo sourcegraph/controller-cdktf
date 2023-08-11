@@ -345,7 +345,7 @@ func NewLbListenerDefaultActionAuthenticateCognitoOutputReference(terraformResou
 	j := jsiiProxy_LbListenerDefaultActionAuthenticateCognitoOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionAuthenticateCognitoOutputReference",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognitoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -357,7 +357,7 @@ func NewLbListenerDefaultActionAuthenticateCognitoOutputReference_Override(l LbL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListener.LbListenerDefaultActionAuthenticateCognitoOutputReference",
+		"@cdktf/provider-aws.lbListener.LbListenerDefaultActionAuthenticateCognitoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

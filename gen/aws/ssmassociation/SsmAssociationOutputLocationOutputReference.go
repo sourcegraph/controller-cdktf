@@ -227,7 +227,7 @@ func NewSsmAssociationOutputLocationOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_SsmAssociationOutputLocationOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmAssociation.SsmAssociationOutputLocationOutputReference",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSsmAssociationOutputLocationOutputReference_Override(s SsmAssociationOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmAssociation.SsmAssociationOutputLocationOutputReference",
+		"@cdktf/provider-aws.ssmAssociation.SsmAssociationOutputLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

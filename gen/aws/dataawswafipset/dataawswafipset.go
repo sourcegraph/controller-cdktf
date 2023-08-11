@@ -291,7 +291,7 @@ func NewDataAwsWafIpset(scope constructs.Construct, id *string, config *DataAwsW
 	j := jsiiProxy_DataAwsWafIpset{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafIpset.DataAwsWafIpset",
+		"@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -304,7 +304,7 @@ func NewDataAwsWafIpset_Override(d DataAwsWafIpset, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafIpset.DataAwsWafIpset",
+		"@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -404,7 +404,7 @@ func DataAwsWafIpset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafIpset.DataAwsWafIpset",
+		"@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -423,7 +423,7 @@ func DataAwsWafIpset_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafIpset.DataAwsWafIpset",
+		"@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -442,7 +442,7 @@ func DataAwsWafIpset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafIpset.DataAwsWafIpset",
+		"@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -455,7 +455,7 @@ func DataAwsWafIpset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafIpset.DataAwsWafIpset",
+		"@cdktf/provider-aws.dataAwsWafIpset.DataAwsWafIpset",
 		"tfResourceType",
 		&returns,
 	)

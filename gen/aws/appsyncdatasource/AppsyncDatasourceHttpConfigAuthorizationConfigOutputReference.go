@@ -204,7 +204,7 @@ func NewAppsyncDatasourceHttpConfigAuthorizationConfigOutputReference(terraformR
 	j := jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppsyncDatasourceHttpConfigAuthorizationConfigOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference",
+		"@cdktf/provider-aws.appsyncDatasource.AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

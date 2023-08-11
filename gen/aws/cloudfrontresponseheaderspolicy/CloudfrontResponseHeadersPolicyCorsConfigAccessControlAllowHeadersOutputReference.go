@@ -180,7 +180,7 @@ func NewCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutput
 	j := jsiiProxy_CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

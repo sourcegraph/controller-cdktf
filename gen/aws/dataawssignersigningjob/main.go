@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJob",
 		reflect.TypeOf((*DataAwsSignerSigningJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobConfig",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobConfig",
 		reflect.TypeOf((*DataAwsSignerSigningJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobRevocationRecord",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobRevocationRecord",
 		reflect.TypeOf((*DataAwsSignerSigningJobRevocationRecord)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobRevocationRecordList",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobRevocationRecordList",
 		reflect.TypeOf((*DataAwsSignerSigningJobRevocationRecordList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobRevocationRecordOutputReference",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobRevocationRecordOutputReference",
 		reflect.TypeOf((*DataAwsSignerSigningJobRevocationRecordOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,11 +133,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObject",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObject",
 		reflect.TypeOf((*DataAwsSignerSigningJobSignedObject)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectList",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectList",
 		reflect.TypeOf((*DataAwsSignerSigningJobSignedObjectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -157,7 +157,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectOutputReference",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectOutputReference",
 		reflect.TypeOf((*DataAwsSignerSigningJobSignedObjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,11 +190,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectS3",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectS3",
 		reflect.TypeOf((*DataAwsSignerSigningJobSignedObjectS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectS3List",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectS3List",
 		reflect.TypeOf((*DataAwsSignerSigningJobSignedObjectS3List)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -214,7 +214,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectS3OutputReference",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSignedObjectS3OutputReference",
 		reflect.TypeOf((*DataAwsSignerSigningJobSignedObjectS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -248,11 +248,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSource",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSource",
 		reflect.TypeOf((*DataAwsSignerSigningJobSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceList",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceList",
 		reflect.TypeOf((*DataAwsSignerSigningJobSourceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -272,7 +272,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceOutputReference",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceOutputReference",
 		reflect.TypeOf((*DataAwsSignerSigningJobSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -305,11 +305,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceS3",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceS3",
 		reflect.TypeOf((*DataAwsSignerSigningJobSourceS3)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceS3List",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceS3List",
 		reflect.TypeOf((*DataAwsSignerSigningJobSourceS3List)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -329,7 +329,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceS3OutputReference",
+		"@cdktf/provider-aws.dataAwsSignerSigningJob.DataAwsSignerSigningJobSourceS3OutputReference",
 		reflect.TypeOf((*DataAwsSignerSigningJobSourceS3OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},

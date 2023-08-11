@@ -204,7 +204,7 @@ func NewNetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference(terrafor
 	j := jsiiProxy_NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewNetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerTransitGatewayRegistration.NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

@@ -116,7 +116,7 @@ func NewLimitRangeSpecLimitList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_LimitRangeSpecLimitList{}
 
 	_jsii_.Create(
-		"kubernetes.limitRange.LimitRangeSpecLimitList",
+		"@cdktf/provider-kubernetes.limitRange.LimitRangeSpecLimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLimitRangeSpecLimitList_Override(l LimitRangeSpecLimitList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.limitRange.LimitRangeSpecLimitList",
+		"@cdktf/provider-kubernetes.limitRange.LimitRangeSpecLimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

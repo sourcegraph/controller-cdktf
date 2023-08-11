@@ -275,7 +275,7 @@ func NewClusterRoleV1RuleOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_ClusterRoleV1RuleOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleV1.ClusterRoleV1RuleOutputReference",
+		"@cdktf/provider-kubernetes.clusterRoleV1.ClusterRoleV1RuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewClusterRoleV1RuleOutputReference_Override(c ClusterRoleV1RuleOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRoleV1.ClusterRoleV1RuleOutputReference",
+		"@cdktf/provider-kubernetes.clusterRoleV1.ClusterRoleV1RuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

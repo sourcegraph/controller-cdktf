@@ -180,7 +180,7 @@ func NewAlloydbInstanceReadPoolConfigOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_AlloydbInstanceReadPoolConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAlloydbInstanceReadPoolConfigOutputReference_Override(a AlloydbInstanceR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference",
+		"@cdktf/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

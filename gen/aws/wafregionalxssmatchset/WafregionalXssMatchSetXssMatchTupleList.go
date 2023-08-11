@@ -116,7 +116,7 @@ func NewWafregionalXssMatchSetXssMatchTupleList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_WafregionalXssMatchSetXssMatchTupleList{}
 
 	_jsii_.Create(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleList",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafregionalXssMatchSetXssMatchTupleList_Override(w WafregionalXssMatchSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleList",
+		"@cdktf/provider-aws.wafregionalXssMatchSet.WafregionalXssMatchSetXssMatchTupleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

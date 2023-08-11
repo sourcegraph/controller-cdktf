@@ -343,7 +343,7 @@ func NewServicecatalogOrganizationsAccess(scope constructs.Construct, id *string
 	j := jsiiProxy_ServicecatalogOrganizationsAccess{}
 
 	_jsii_.Create(
-		"aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewServicecatalogOrganizationsAccess_Override(s ServicecatalogOrganizations
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -478,7 +478,7 @@ func ServicecatalogOrganizationsAccess_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func ServicecatalogOrganizationsAccess_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func ServicecatalogOrganizationsAccess_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func ServicecatalogOrganizationsAccess_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		"tfResourceType",
 		&returns,
 	)

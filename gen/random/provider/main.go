@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"random.provider.RandomProvider",
+		"@cdktf/provider-random.provider.RandomProvider",
 		reflect.TypeOf((*RandomProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -39,7 +39,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"random.provider.RandomProviderConfig",
+		"@cdktf/provider-random.provider.RandomProviderConfig",
 		reflect.TypeOf((*RandomProviderConfig)(nil)).Elem(),
 	)
 }

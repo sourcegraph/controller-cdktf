@@ -211,7 +211,7 @@ func NewImagebuilderImageOutputResourcesAmisOutputReference(terraformResource cd
 	j := jsiiProxy_ImagebuilderImageOutputResourcesAmisOutputReference{}
 
 	_jsii_.Create(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewImagebuilderImageOutputResourcesAmisOutputReference_Override(i Imagebuil
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisOutputReference",
+		"@cdktf/provider-aws.imagebuilderImage.ImagebuilderImageOutputResourcesAmisOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

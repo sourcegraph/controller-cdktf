@@ -379,7 +379,7 @@ func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleIdentityPlatformConfig{}
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -392,7 +392,7 @@ func NewGoogleIdentityPlatformConfig_Override(g GoogleIdentityPlatformConfig, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -525,7 +525,7 @@ func GoogleIdentityPlatformConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func GoogleIdentityPlatformConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func GoogleIdentityPlatformConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleIdentityPlatformConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
+		"@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfig",
 		"tfResourceType",
 		&returns,
 	)

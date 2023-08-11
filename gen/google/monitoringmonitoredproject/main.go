@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProject",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject",
 		reflect.TypeOf((*MonitoringMonitoredProject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig",
 		reflect.TypeOf((*MonitoringMonitoredProjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts",
 		reflect.TypeOf((*MonitoringMonitoredProjectTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeoutsOutputReference",
 		reflect.TypeOf((*MonitoringMonitoredProjectTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

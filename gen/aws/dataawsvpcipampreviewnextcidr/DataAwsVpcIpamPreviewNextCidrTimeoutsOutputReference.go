@@ -180,7 +180,7 @@ func NewDataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference_Override(d DataAwsV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcIpamPreviewNextCidr.DataAwsVpcIpamPreviewNextCidrTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

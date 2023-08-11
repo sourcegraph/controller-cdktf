@@ -511,7 +511,7 @@ func NewGoogleCertificateManagerCertificate(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleCertificateManagerCertificate{}
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -524,7 +524,7 @@ func NewGoogleCertificateManagerCertificate_Override(g GoogleCertificateManagerC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -701,7 +701,7 @@ func GoogleCertificateManagerCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -720,7 +720,7 @@ func GoogleCertificateManagerCertificate_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func GoogleCertificateManagerCertificate_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func GoogleCertificateManagerCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
+		"@cdktf/provider-google-beta.googleCertificateManagerCertificate.GoogleCertificateManagerCertificate",
 		"tfResourceType",
 		&returns,
 	)

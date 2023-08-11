@@ -179,7 +179,7 @@ func NewVertexAiFeaturestoreEncryptionSpecOutputReference(terraformResource cdkt
 	j := jsiiProxy_VertexAiFeaturestoreEncryptionSpecOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpecOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewVertexAiFeaturestoreEncryptionSpecOutputReference_Override(v VertexAiFea
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpecOutputReference",
+		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

@@ -377,7 +377,7 @@ func NewGoogleApiGatewayApiIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleApiGatewayApiIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleApiGatewayApiIamPolicy_Override(g GoogleApiGatewayApiIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleApiGatewayApiIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleApiGatewayApiIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleApiGatewayApiIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleApiGatewayApiIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamPolicy.GoogleApiGatewayApiIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

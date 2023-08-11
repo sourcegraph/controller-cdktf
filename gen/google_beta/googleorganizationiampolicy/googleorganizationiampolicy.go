@@ -353,7 +353,7 @@ func NewGoogleOrganizationIamPolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleOrganizationIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleOrganizationIamPolicy_Override(g GoogleOrganizationIamPolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleOrganizationIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleOrganizationIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleOrganizationIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleOrganizationIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
+		"@cdktf/provider-google-beta.googleOrganizationIamPolicy.GoogleOrganizationIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

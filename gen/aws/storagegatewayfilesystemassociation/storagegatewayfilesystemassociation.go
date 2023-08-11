@@ -495,7 +495,7 @@ func NewStoragegatewayFileSystemAssociation(scope constructs.Construct, id *stri
 	j := jsiiProxy_StoragegatewayFileSystemAssociation{}
 
 	_jsii_.Create(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewStoragegatewayFileSystemAssociation_Override(s StoragegatewayFileSystemA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -696,7 +696,7 @@ func StoragegatewayFileSystemAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func StoragegatewayFileSystemAssociation_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func StoragegatewayFileSystemAssociation_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func StoragegatewayFileSystemAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
+		"@cdktf/provider-aws.storagegatewayFileSystemAssociation.StoragegatewayFileSystemAssociation",
 		"tfResourceType",
 		&returns,
 	)

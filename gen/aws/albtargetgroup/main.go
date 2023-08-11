@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroup",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
 		reflect.TypeOf((*AlbTargetGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -120,15 +120,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.albTargetGroup.AlbTargetGroupConfig",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupConfig",
 		reflect.TypeOf((*AlbTargetGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.albTargetGroup.AlbTargetGroupHealthCheck",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheck",
 		reflect.TypeOf((*AlbTargetGroupHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
 		reflect.TypeOf((*AlbTargetGroupHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -187,11 +187,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.albTargetGroup.AlbTargetGroupStickiness",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickiness",
 		reflect.TypeOf((*AlbTargetGroupStickiness)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
 		reflect.TypeOf((*AlbTargetGroupStickinessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -234,11 +234,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailover",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailover",
 		reflect.TypeOf((*AlbTargetGroupTargetFailover)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailoverList",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverList",
 		reflect.TypeOf((*AlbTargetGroupTargetFailoverList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -259,7 +259,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
 		reflect.TypeOf((*AlbTargetGroupTargetFailoverOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

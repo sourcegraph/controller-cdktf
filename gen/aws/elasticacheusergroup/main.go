@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.elasticacheUserGroup.ElasticacheUserGroup",
+		"@cdktf/provider-aws.elasticacheUserGroup.ElasticacheUserGroup",
 		reflect.TypeOf((*ElasticacheUserGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,7 +71,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.elasticacheUserGroup.ElasticacheUserGroupConfig",
+		"@cdktf/provider-aws.elasticacheUserGroup.ElasticacheUserGroupConfig",
 		reflect.TypeOf((*ElasticacheUserGroupConfig)(nil)).Elem(),
 	)
 }

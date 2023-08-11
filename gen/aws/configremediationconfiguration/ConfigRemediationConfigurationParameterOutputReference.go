@@ -251,7 +251,7 @@ func NewConfigRemediationConfigurationParameterOutputReference(terraformResource
 	j := jsiiProxy_ConfigRemediationConfigurationParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterOutputReference",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewConfigRemediationConfigurationParameterOutputReference_Override(c Config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterOutputReference",
+		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

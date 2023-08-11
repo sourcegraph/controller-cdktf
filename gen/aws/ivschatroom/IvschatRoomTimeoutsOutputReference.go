@@ -228,7 +228,7 @@ func NewIvschatRoomTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_IvschatRoomTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ivschatRoom.IvschatRoomTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoomTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIvschatRoomTimeoutsOutputReference_Override(i IvschatRoomTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivschatRoom.IvschatRoomTimeoutsOutputReference",
+		"@cdktf/provider-aws.ivschatRoom.IvschatRoomTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

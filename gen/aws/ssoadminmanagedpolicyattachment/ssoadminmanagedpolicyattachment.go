@@ -376,7 +376,7 @@ func NewSsoadminManagedPolicyAttachment(scope constructs.Construct, id *string, 
 	j := jsiiProxy_SsoadminManagedPolicyAttachment{}
 
 	_jsii_.Create(
-		"aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewSsoadminManagedPolicyAttachment_Override(s SsoadminManagedPolicyAttachme
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -533,7 +533,7 @@ func SsoadminManagedPolicyAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func SsoadminManagedPolicyAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func SsoadminManagedPolicyAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func SsoadminManagedPolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
+		"@cdktf/provider-aws.ssoadminManagedPolicyAttachment.SsoadminManagedPolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

@@ -448,7 +448,7 @@ func NewCloudTasksQueueIamMember(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_CloudTasksQueueIamMember{}
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
+		"@cdktf/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewCloudTasksQueueIamMember_Override(c CloudTasksQueueIamMember, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
+		"@cdktf/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func CloudTasksQueueIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
+		"@cdktf/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func CloudTasksQueueIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
+		"@cdktf/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func CloudTasksQueueIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
+		"@cdktf/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func CloudTasksQueueIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
+		"@cdktf/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember",
 		"tfResourceType",
 		&returns,
 	)

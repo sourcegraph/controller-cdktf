@@ -202,7 +202,7 @@ func NewRedshiftdataStatementParametersOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_RedshiftdataStatementParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftdataStatement.RedshiftdataStatementParametersOutputReference",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewRedshiftdataStatementParametersOutputReference_Override(r RedshiftdataSt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftdataStatement.RedshiftdataStatementParametersOutputReference",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatementParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

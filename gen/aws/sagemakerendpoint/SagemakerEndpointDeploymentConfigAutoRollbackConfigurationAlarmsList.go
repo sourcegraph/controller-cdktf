@@ -116,7 +116,7 @@ func NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList(ter
 	j := jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList",
+		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList",
+		"@cdktf/provider-aws.sagemakerEndpoint.SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

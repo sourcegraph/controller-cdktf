@@ -437,7 +437,7 @@ func NewIvsPlaybackKeyPair(scope constructs.Construct, id *string, config *IvsPl
 	j := jsiiProxy_IvsPlaybackKeyPair{}
 
 	_jsii_.Create(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewIvsPlaybackKeyPair_Override(i IvsPlaybackKeyPair, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -605,7 +605,7 @@ func IvsPlaybackKeyPair_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func IvsPlaybackKeyPair_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func IvsPlaybackKeyPair_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func IvsPlaybackKeyPair_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
+		"@cdktf/provider-aws.ivsPlaybackKeyPair.IvsPlaybackKeyPair",
 		"tfResourceType",
 		&returns,
 	)

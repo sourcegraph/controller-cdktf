@@ -180,7 +180,7 @@ func NewCloudwatchEventTargetDeadLetterConfigOutputReference(terraformResource c
 	j := jsiiProxy_CloudwatchEventTargetDeadLetterConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfigOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewCloudwatchEventTargetDeadLetterConfigOutputReference_Override(c Cloudwat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfigOutputReference",
+		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetDeadLetterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

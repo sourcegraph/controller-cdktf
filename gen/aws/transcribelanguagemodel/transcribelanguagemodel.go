@@ -471,7 +471,7 @@ func NewTranscribeLanguageModel(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_TranscribeLanguageModel{}
 
 	_jsii_.Create(
-		"aws.transcribeLanguageModel.TranscribeLanguageModel",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewTranscribeLanguageModel_Override(t TranscribeLanguageModel, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transcribeLanguageModel.TranscribeLanguageModel",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModel",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -650,7 +650,7 @@ func TranscribeLanguageModel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transcribeLanguageModel.TranscribeLanguageModel",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func TranscribeLanguageModel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transcribeLanguageModel.TranscribeLanguageModel",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func TranscribeLanguageModel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transcribeLanguageModel.TranscribeLanguageModel",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func TranscribeLanguageModel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.transcribeLanguageModel.TranscribeLanguageModel",
+		"@cdktf/provider-aws.transcribeLanguageModel.TranscribeLanguageModel",
 		"tfResourceType",
 		&returns,
 	)

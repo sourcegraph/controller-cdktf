@@ -228,7 +228,7 @@ func NewJobV1SpecTemplateSpecAffinityOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_JobV1SpecTemplateSpecAffinityOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewJobV1SpecTemplateSpecAffinityOutputReference_Override(j JobV1SpecTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecAffinityOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

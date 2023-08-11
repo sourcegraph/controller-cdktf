@@ -116,7 +116,7 @@ func NewDefaultRouteTableRouteList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_DefaultRouteTableRouteList{}
 
 	_jsii_.Create(
-		"aws.defaultRouteTable.DefaultRouteTableRouteList",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDefaultRouteTableRouteList_Override(d DefaultRouteTableRouteList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultRouteTable.DefaultRouteTableRouteList",
+		"@cdktf/provider-aws.defaultRouteTable.DefaultRouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

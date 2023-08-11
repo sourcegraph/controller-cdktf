@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlan",
 		reflect.TypeOf((*DataAwsBackupReportPlan)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanConfig",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanConfig",
 		reflect.TypeOf((*DataAwsBackupReportPlanConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannel",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannel",
 		reflect.TypeOf((*DataAwsBackupReportPlanReportDeliveryChannel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelList",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelList",
 		reflect.TypeOf((*DataAwsBackupReportPlanReportDeliveryChannelList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -92,7 +92,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportDeliveryChannelOutputReference",
 		reflect.TypeOf((*DataAwsBackupReportPlanReportDeliveryChannelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -127,11 +127,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSetting",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSetting",
 		reflect.TypeOf((*DataAwsBackupReportPlanReportSetting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingList",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingList",
 		reflect.TypeOf((*DataAwsBackupReportPlanReportSettingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -151,7 +151,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingOutputReference",
+		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingOutputReference",
 		reflect.TypeOf((*DataAwsBackupReportPlanReportSettingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

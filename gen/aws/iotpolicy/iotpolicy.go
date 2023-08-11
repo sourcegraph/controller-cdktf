@@ -364,7 +364,7 @@ func NewIotPolicy(scope constructs.Construct, id *string, config *IotPolicyConfi
 	j := jsiiProxy_IotPolicy{}
 
 	_jsii_.Create(
-		"aws.iotPolicy.IotPolicy",
+		"@cdktf/provider-aws.iotPolicy.IotPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -377,7 +377,7 @@ func NewIotPolicy_Override(i IotPolicy, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotPolicy.IotPolicy",
+		"@cdktf/provider-aws.iotPolicy.IotPolicy",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -510,7 +510,7 @@ func IotPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotPolicy.IotPolicy",
+		"@cdktf/provider-aws.iotPolicy.IotPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func IotPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotPolicy.IotPolicy",
+		"@cdktf/provider-aws.iotPolicy.IotPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func IotPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotPolicy.IotPolicy",
+		"@cdktf/provider-aws.iotPolicy.IotPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func IotPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotPolicy.IotPolicy",
+		"@cdktf/provider-aws.iotPolicy.IotPolicy",
 		"tfResourceType",
 		&returns,
 	)

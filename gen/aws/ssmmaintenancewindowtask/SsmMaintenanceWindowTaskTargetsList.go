@@ -116,7 +116,7 @@ func NewSsmMaintenanceWindowTaskTargetsList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_SsmMaintenanceWindowTaskTargetsList{}
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsList",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSsmMaintenanceWindowTaskTargetsList_Override(s SsmMaintenanceWindowTaskT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsList",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTargetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

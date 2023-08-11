@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
+		"@cdktf/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociations",
 		reflect.TypeOf((*DataAwsLocationTrackerAssociations)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociationsConfig",
+		"@cdktf/provider-aws.dataAwsLocationTrackerAssociations.DataAwsLocationTrackerAssociationsConfig",
 		reflect.TypeOf((*DataAwsLocationTrackerAssociationsConfig)(nil)).Elem(),
 	)
 }

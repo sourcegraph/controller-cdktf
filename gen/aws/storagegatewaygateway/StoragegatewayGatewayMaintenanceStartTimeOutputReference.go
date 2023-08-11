@@ -251,7 +251,7 @@ func NewStoragegatewayGatewayMaintenanceStartTimeOutputReference(terraformResour
 	j := jsiiProxy_StoragegatewayGatewayMaintenanceStartTimeOutputReference{}
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewStoragegatewayGatewayMaintenanceStartTimeOutputReference_Override(s Stor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewayMaintenanceStartTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

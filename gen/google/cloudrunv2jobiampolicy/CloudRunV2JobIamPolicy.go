@@ -401,7 +401,7 @@ func NewCloudRunV2JobIamPolicy(scope constructs.Construct, id *string, config *C
 	j := jsiiProxy_CloudRunV2JobIamPolicy{}
 
 	_jsii_.Create(
-		"google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
+		"@cdktf/provider-google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewCloudRunV2JobIamPolicy_Override(c CloudRunV2JobIamPolicy, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
+		"@cdktf/provider-google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -569,7 +569,7 @@ func CloudRunV2JobIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
+		"@cdktf/provider-google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func CloudRunV2JobIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
+		"@cdktf/provider-google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func CloudRunV2JobIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
+		"@cdktf/provider-google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func CloudRunV2JobIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
+		"@cdktf/provider-google.cloudRunV2JobIamPolicy.CloudRunV2JobIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

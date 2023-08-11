@@ -423,7 +423,7 @@ func NewEc2ClientVpnNetworkAssociation(scope constructs.Construct, id *string, c
 	j := jsiiProxy_Ec2ClientVpnNetworkAssociation{}
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewEc2ClientVpnNetworkAssociation_Override(e Ec2ClientVpnNetworkAssociation
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -580,7 +580,7 @@ func Ec2ClientVpnNetworkAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func Ec2ClientVpnNetworkAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func Ec2ClientVpnNetworkAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func Ec2ClientVpnNetworkAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
+		"@cdktf/provider-aws.ec2ClientVpnNetworkAssociation.Ec2ClientVpnNetworkAssociation",
 		"tfResourceType",
 		&returns,
 	)

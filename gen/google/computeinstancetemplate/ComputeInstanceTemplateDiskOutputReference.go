@@ -564,7 +564,7 @@ func NewComputeInstanceTemplateDiskOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeInstanceTemplateDiskOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -576,7 +576,7 @@ func NewComputeInstanceTemplateDiskOutputReference_Override(c ComputeInstanceTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
+		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

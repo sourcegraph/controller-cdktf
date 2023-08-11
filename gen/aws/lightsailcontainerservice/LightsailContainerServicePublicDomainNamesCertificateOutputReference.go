@@ -202,7 +202,7 @@ func NewLightsailContainerServicePublicDomainNamesCertificateOutputReference(ter
 	j := jsiiProxy_LightsailContainerServicePublicDomainNamesCertificateOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLightsailContainerServicePublicDomainNamesCertificateOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesCertificateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

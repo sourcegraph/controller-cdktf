@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMember",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMember",
 		reflect.TypeOf((*HealthcareHl7V2StoreIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMemberCondition",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMemberCondition",
 		reflect.TypeOf((*HealthcareHl7V2StoreIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMemberConditionOutputReference",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMemberConditionOutputReference",
 		reflect.TypeOf((*HealthcareHl7V2StoreIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMemberConfig",
+		"@cdktf/provider-google.healthcareHl7V2StoreIamMember.HealthcareHl7V2StoreIamMemberConfig",
 		reflect.TypeOf((*HealthcareHl7V2StoreIamMemberConfig)(nil)).Elem(),
 	)
 }

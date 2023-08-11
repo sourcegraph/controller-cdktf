@@ -486,7 +486,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionOutputReference(terraformRe
 	j := jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionOutputReference_Override(a 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

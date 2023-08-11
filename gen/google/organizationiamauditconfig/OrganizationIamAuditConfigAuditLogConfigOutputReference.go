@@ -203,7 +203,7 @@ func NewOrganizationIamAuditConfigAuditLogConfigOutputReference(terraformResourc
 	j := jsiiProxy_OrganizationIamAuditConfigAuditLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewOrganizationIamAuditConfigAuditLogConfigOutputReference_Override(o Organ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
+		"@cdktf/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

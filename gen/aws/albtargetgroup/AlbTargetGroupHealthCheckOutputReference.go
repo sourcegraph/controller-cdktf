@@ -372,7 +372,7 @@ func NewAlbTargetGroupHealthCheckOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_AlbTargetGroupHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewAlbTargetGroupHealthCheckOutputReference_Override(a AlbTargetGroupHealth
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

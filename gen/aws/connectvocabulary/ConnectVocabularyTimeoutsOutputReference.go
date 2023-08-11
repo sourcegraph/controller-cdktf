@@ -204,7 +204,7 @@ func NewConnectVocabularyTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ConnectVocabularyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectVocabulary.ConnectVocabularyTimeoutsOutputReference",
+		"@cdktf/provider-aws.connectVocabulary.ConnectVocabularyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewConnectVocabularyTimeoutsOutputReference_Override(c ConnectVocabularyTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectVocabulary.ConnectVocabularyTimeoutsOutputReference",
+		"@cdktf/provider-aws.connectVocabulary.ConnectVocabularyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

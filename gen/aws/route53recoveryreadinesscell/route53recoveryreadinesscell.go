@@ -437,7 +437,7 @@ func NewRoute53RecoveryreadinessCell(scope constructs.Construct, id *string, con
 	j := jsiiProxy_Route53RecoveryreadinessCell{}
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
+		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewRoute53RecoveryreadinessCell_Override(r Route53RecoveryreadinessCell, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
+		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -605,7 +605,7 @@ func Route53RecoveryreadinessCell_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
+		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -624,7 +624,7 @@ func Route53RecoveryreadinessCell_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
+		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func Route53RecoveryreadinessCell_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
+		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func Route53RecoveryreadinessCell_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
+		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
 		"tfResourceType",
 		&returns,
 	)

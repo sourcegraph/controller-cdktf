@@ -447,7 +447,7 @@ func NewCloudwatchEventApiDestination(scope constructs.Construct, id *string, co
 	j := jsiiProxy_CloudwatchEventApiDestination{}
 
 	_jsii_.Create(
-		"aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
+		"@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewCloudwatchEventApiDestination_Override(c CloudwatchEventApiDestination, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
+		"@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -637,7 +637,7 @@ func CloudwatchEventApiDestination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
+		"@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func CloudwatchEventApiDestination_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
+		"@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func CloudwatchEventApiDestination_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
+		"@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func CloudwatchEventApiDestination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
+		"@cdktf/provider-aws.cloudwatchEventApiDestination.CloudwatchEventApiDestination",
 		"tfResourceType",
 		&returns,
 	)

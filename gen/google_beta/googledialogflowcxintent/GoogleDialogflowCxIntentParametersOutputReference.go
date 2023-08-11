@@ -250,7 +250,7 @@ func NewGoogleDialogflowCxIntentParametersOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleDialogflowCxIntentParametersOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewGoogleDialogflowCxIntentParametersOutputReference_Override(g GoogleDialo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowCxIntent.GoogleDialogflowCxIntentParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

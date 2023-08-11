@@ -104,7 +104,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList(terrafo
 	j := jsiiProxy_DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendBucket.DataGoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

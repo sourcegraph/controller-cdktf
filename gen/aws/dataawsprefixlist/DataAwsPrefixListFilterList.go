@@ -116,7 +116,7 @@ func NewDataAwsPrefixListFilterList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_DataAwsPrefixListFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsPrefixList.DataAwsPrefixListFilterList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsPrefixListFilterList_Override(d DataAwsPrefixListFilterList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsPrefixList.DataAwsPrefixListFilterList",
+		"@cdktf/provider-aws.dataAwsPrefixList.DataAwsPrefixListFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

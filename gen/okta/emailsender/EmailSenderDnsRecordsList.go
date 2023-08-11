@@ -104,7 +104,7 @@ func NewEmailSenderDnsRecordsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_EmailSenderDnsRecordsList{}
 
 	_jsii_.Create(
-		"okta.emailSender.EmailSenderDnsRecordsList",
+		"@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEmailSenderDnsRecordsList_Override(e EmailSenderDnsRecordsList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.emailSender.EmailSenderDnsRecordsList",
+		"@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

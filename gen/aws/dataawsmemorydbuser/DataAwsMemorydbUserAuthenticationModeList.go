@@ -104,7 +104,7 @@ func NewDataAwsMemorydbUserAuthenticationModeList(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsMemorydbUserAuthenticationModeList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeList",
+		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMemorydbUserAuthenticationModeList_Override(d DataAwsMemorydbUser
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeList",
+		"@cdktf/provider-aws.dataAwsMemorydbUser.DataAwsMemorydbUserAuthenticationModeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

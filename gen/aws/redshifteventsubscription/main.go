@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftEventSubscription.RedshiftEventSubscription",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		reflect.TypeOf((*RedshiftEventSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionConfig",
 		reflect.TypeOf((*RedshiftEventSubscriptionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeouts",
 		reflect.TypeOf((*RedshiftEventSubscriptionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
 		reflect.TypeOf((*RedshiftEventSubscriptionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

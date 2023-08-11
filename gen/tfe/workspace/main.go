@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.workspace.Workspace",
+		"@cdktf/provider-tfe.workspace.Workspace",
 		reflect.TypeOf((*Workspace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -128,15 +128,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.workspace.WorkspaceConfig",
+		"@cdktf/provider-tfe.workspace.WorkspaceConfig",
 		reflect.TypeOf((*WorkspaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"tfe.workspace.WorkspaceVcsRepo",
+		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepo",
 		reflect.TypeOf((*WorkspaceVcsRepo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"tfe.workspace.WorkspaceVcsRepoOutputReference",
+		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
 		reflect.TypeOf((*WorkspaceVcsRepoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},

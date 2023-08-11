@@ -202,7 +202,7 @@ func NewGoogleBigqueryConnectionCloudSqlCredentialOutputReference(terraformResou
 	j := jsiiProxy_GoogleBigqueryConnectionCloudSqlCredentialOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlCredentialOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleBigqueryConnectionCloudSqlCredentialOutputReference_Override(g Goo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlCredentialOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSqlCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

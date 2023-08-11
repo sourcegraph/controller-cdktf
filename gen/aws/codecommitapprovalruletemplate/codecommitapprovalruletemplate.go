@@ -421,7 +421,7 @@ func NewCodecommitApprovalRuleTemplate(scope constructs.Construct, id *string, c
 	j := jsiiProxy_CodecommitApprovalRuleTemplate{}
 
 	_jsii_.Create(
-		"aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -434,7 +434,7 @@ func NewCodecommitApprovalRuleTemplate_Override(c CodecommitApprovalRuleTemplate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -578,7 +578,7 @@ func CodecommitApprovalRuleTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func CodecommitApprovalRuleTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -616,7 +616,7 @@ func CodecommitApprovalRuleTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -629,7 +629,7 @@ func CodecommitApprovalRuleTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
+		"@cdktf/provider-aws.codecommitApprovalRuleTemplate.CodecommitApprovalRuleTemplate",
 		"tfResourceType",
 		&returns,
 	)

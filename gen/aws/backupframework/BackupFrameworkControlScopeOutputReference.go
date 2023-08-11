@@ -228,7 +228,7 @@ func NewBackupFrameworkControlScopeOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_BackupFrameworkControlScopeOutputReference{}
 
 	_jsii_.Create(
-		"aws.backupFramework.BackupFrameworkControlScopeOutputReference",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlScopeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBackupFrameworkControlScopeOutputReference_Override(b BackupFrameworkCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupFramework.BackupFrameworkControlScopeOutputReference",
+		"@cdktf/provider-aws.backupFramework.BackupFrameworkControlScopeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

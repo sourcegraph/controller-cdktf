@@ -180,7 +180,7 @@ func NewSfnStateMachineTracingConfigurationOutputReference(terraformResource cdk
 	j := jsiiProxy_SfnStateMachineTracingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewSfnStateMachineTracingConfigurationOutputReference_Override(s SfnStateMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
+		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

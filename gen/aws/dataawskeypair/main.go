@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsKeyPair.DataAwsKeyPair",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPair",
 		reflect.TypeOf((*DataAwsKeyPair)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKeyPair.DataAwsKeyPairConfig",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairConfig",
 		reflect.TypeOf((*DataAwsKeyPairConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKeyPair.DataAwsKeyPairFilter",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilter",
 		reflect.TypeOf((*DataAwsKeyPairFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKeyPair.DataAwsKeyPairFilterList",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilterList",
 		reflect.TypeOf((*DataAwsKeyPairFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKeyPair.DataAwsKeyPairFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilterOutputReference",
 		reflect.TypeOf((*DataAwsKeyPairFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,11 +143,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKeyPair.DataAwsKeyPairTimeouts",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeouts",
 		reflect.TypeOf((*DataAwsKeyPairTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKeyPair.DataAwsKeyPairTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsKeyPairTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

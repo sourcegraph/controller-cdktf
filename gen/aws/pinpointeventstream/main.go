@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.pinpointEventStream.PinpointEventStream",
+		"@cdktf/provider-aws.pinpointEventStream.PinpointEventStream",
 		reflect.TypeOf((*PinpointEventStream)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -61,7 +61,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.pinpointEventStream.PinpointEventStreamConfig",
+		"@cdktf/provider-aws.pinpointEventStream.PinpointEventStreamConfig",
 		reflect.TypeOf((*PinpointEventStreamConfig)(nil)).Elem(),
 	)
 }

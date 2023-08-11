@@ -228,7 +228,7 @@ func NewCodedeployDeploymentGroupLoadBalancerInfoOutputReference(terraformResour
 	j := jsiiProxy_CodedeployDeploymentGroupLoadBalancerInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCodedeployDeploymentGroupLoadBalancerInfoOutputReference_Override(c Code
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoOutputReference",
+		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupLoadBalancerInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

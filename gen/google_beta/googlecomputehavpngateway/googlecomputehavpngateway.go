@@ -497,7 +497,7 @@ func NewGoogleComputeHaVpnGateway(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleComputeHaVpnGateway{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -510,7 +510,7 @@ func NewGoogleComputeHaVpnGateway_Override(g GoogleComputeHaVpnGateway, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -687,7 +687,7 @@ func GoogleComputeHaVpnGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -706,7 +706,7 @@ func GoogleComputeHaVpnGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func GoogleComputeHaVpnGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func GoogleComputeHaVpnGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeHaVpnGateway.GoogleComputeHaVpnGateway",
 		"tfResourceType",
 		&returns,
 	)

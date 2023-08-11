@@ -104,7 +104,7 @@ func NewDataAwsAlbListenerDefaultActionAuthenticateCognitoList(terraformResource
 	j := jsiiProxy_DataAwsAlbListenerDefaultActionAuthenticateCognitoList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAlbListenerDefaultActionAuthenticateCognitoList_Override(d DataAw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoList",
+		"@cdktf/provider-aws.dataAwsAlbListener.DataAwsAlbListenerDefaultActionAuthenticateCognitoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

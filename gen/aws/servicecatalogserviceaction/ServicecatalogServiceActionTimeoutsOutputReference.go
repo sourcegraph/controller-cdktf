@@ -252,7 +252,7 @@ func NewServicecatalogServiceActionTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_ServicecatalogServiceActionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewServicecatalogServiceActionTimeoutsOutputReference_Override(s Servicecat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogServiceAction.ServicecatalogServiceActionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

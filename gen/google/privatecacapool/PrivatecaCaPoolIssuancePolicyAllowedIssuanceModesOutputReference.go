@@ -202,7 +202,7 @@ func NewPrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference(terrafo
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewPrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -225,7 +225,7 @@ func NewWafRateBasedRulePredicatesOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_WafRateBasedRulePredicatesOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference",
+		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafRateBasedRulePredicatesOutputReference_Override(w WafRateBasedRulePre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference",
+		"@cdktf/provider-aws.wafRateBasedRule.WafRateBasedRulePredicatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

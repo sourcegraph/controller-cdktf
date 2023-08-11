@@ -374,7 +374,7 @@ func NewDataGoogleServiceAccountIdToken(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleServiceAccountIdToken{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -387,7 +387,7 @@ func NewDataGoogleServiceAccountIdToken_Override(d DataGoogleServiceAccountIdTok
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -520,7 +520,7 @@ func DataGoogleServiceAccountIdToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func DataGoogleServiceAccountIdToken_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +558,7 @@ func DataGoogleServiceAccountIdToken_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func DataGoogleServiceAccountIdToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountIdToken.DataGoogleServiceAccountIdToken",
 		"tfResourceType",
 		&returns,
 	)

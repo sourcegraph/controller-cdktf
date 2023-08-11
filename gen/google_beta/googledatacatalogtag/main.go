@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
 		reflect.TypeOf((*GoogleDataCatalogTag)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTagConfig",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTagConfig",
 		reflect.TypeOf((*GoogleDataCatalogTagConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTagFields",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTagFields",
 		reflect.TypeOf((*GoogleDataCatalogTagFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTagFieldsList",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTagFieldsList",
 		reflect.TypeOf((*GoogleDataCatalogTagFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTagFieldsOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTagFieldsOutputReference",
 		reflect.TypeOf((*GoogleDataCatalogTagFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "boolValue", GoGetter: "BoolValue"},
@@ -152,11 +152,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTagTimeouts",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTagTimeouts",
 		reflect.TypeOf((*GoogleDataCatalogTagTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTagTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTagTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDataCatalogTagTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

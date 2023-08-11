@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.tagsTagBinding.TagsTagBinding",
+		"@cdktf/provider-google.tagsTagBinding.TagsTagBinding",
 		reflect.TypeOf((*TagsTagBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.tagsTagBinding.TagsTagBindingConfig",
+		"@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig",
 		reflect.TypeOf((*TagsTagBindingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.tagsTagBinding.TagsTagBindingTimeouts",
+		"@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts",
 		reflect.TypeOf((*TagsTagBindingTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference",
+		"@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference",
 		reflect.TypeOf((*TagsTagBindingTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

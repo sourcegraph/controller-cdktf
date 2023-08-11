@@ -228,7 +228,7 @@ func NewComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference(terrafo
 	j := jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference{}
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
+		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -204,7 +204,7 @@ func NewLaunchTemplateTagSpecificationsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_LaunchTemplateTagSpecificationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewLaunchTemplateTagSpecificationsOutputReference_Override(l LaunchTemplate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

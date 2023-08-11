@@ -180,7 +180,7 @@ func NewGoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastor
 	j := jsiiProxy_GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

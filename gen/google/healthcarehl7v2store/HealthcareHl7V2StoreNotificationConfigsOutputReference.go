@@ -203,7 +203,7 @@ func NewHealthcareHl7V2StoreNotificationConfigsOutputReference(terraformResource
 	j := jsiiProxy_HealthcareHl7V2StoreNotificationConfigsOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference",
+		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewHealthcareHl7V2StoreNotificationConfigsOutputReference_Override(h Health
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference",
+		"@cdktf/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTier",
 		reflect.TypeOf((*ComputeProjectDefaultNetworkTier)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -64,15 +64,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierConfig",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierConfig",
 		reflect.TypeOf((*ComputeProjectDefaultNetworkTierConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeouts",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeouts",
 		reflect.TypeOf((*ComputeProjectDefaultNetworkTierTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeoutsOutputReference",
+		"@cdktf/provider-google.computeProjectDefaultNetworkTier.ComputeProjectDefaultNetworkTierTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeProjectDefaultNetworkTierTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

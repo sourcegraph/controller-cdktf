@@ -276,7 +276,7 @@ func NewCustomSslCustomSslOptionsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CustomSslCustomSslOptionsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.customSsl.CustomSslCustomSslOptionsOutputReference",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewCustomSslCustomSslOptionsOutputReference_Override(c CustomSslCustomSslOp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customSsl.CustomSslCustomSslOptionsOutputReference",
+		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

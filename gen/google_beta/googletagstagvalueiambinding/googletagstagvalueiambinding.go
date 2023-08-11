@@ -400,7 +400,7 @@ func NewGoogleTagsTagValueIamBinding(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleTagsTagValueIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleTagsTagValueIamBinding_Override(g GoogleTagsTagValueIamBinding, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleTagsTagValueIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleTagsTagValueIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleTagsTagValueIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleTagsTagValueIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamBinding.GoogleTagsTagValueIamBinding",
 		"tfResourceType",
 		&returns,
 	)

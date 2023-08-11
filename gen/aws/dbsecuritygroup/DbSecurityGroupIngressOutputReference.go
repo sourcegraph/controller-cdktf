@@ -252,7 +252,7 @@ func NewDbSecurityGroupIngressOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DbSecurityGroupIngressOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference",
+		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDbSecurityGroupIngressOutputReference_Override(d DbSecurityGroupIngressO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference",
+		"@cdktf/provider-aws.dbSecurityGroup.DbSecurityGroupIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -531,7 +531,7 @@ func NewNetworkfirewallRuleGroup(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_NetworkfirewallRuleGroup{}
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -544,7 +544,7 @@ func NewNetworkfirewallRuleGroup_Override(n NetworkfirewallRuleGroup, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -732,7 +732,7 @@ func NetworkfirewallRuleGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -751,7 +751,7 @@ func NetworkfirewallRuleGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func NetworkfirewallRuleGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -783,7 +783,7 @@ func NetworkfirewallRuleGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.keyPair.KeyPair",
+		"@cdktf/provider-aws.keyPair.KeyPair",
 		reflect.TypeOf((*KeyPair)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.keyPair.KeyPairConfig",
+		"@cdktf/provider-aws.keyPair.KeyPairConfig",
 		reflect.TypeOf((*KeyPairConfig)(nil)).Elem(),
 	)
 }

@@ -104,7 +104,7 @@ func NewDataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList(terraformR
 	j := jsiiProxy_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

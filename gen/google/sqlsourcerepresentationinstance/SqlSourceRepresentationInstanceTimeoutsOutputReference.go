@@ -204,7 +204,7 @@ func NewSqlSourceRepresentationInstanceTimeoutsOutputReference(terraformResource
 	j := jsiiProxy_SqlSourceRepresentationInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSqlSourceRepresentationInstanceTimeoutsOutputReference_Override(s SqlSou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.sqlSourceRepresentationInstance.SqlSourceRepresentationInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

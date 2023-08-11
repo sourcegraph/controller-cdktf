@@ -436,7 +436,7 @@ func NewFsxOpenzfsSnapshot(scope constructs.Construct, id *string, config *FsxOp
 	j := jsiiProxy_FsxOpenzfsSnapshot{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewFsxOpenzfsSnapshot_Override(f FsxOpenzfsSnapshot, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -604,7 +604,7 @@ func FsxOpenzfsSnapshot_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func FsxOpenzfsSnapshot_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func FsxOpenzfsSnapshot_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func FsxOpenzfsSnapshot_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
+		"@cdktf/provider-aws.fsxOpenzfsSnapshot.FsxOpenzfsSnapshot",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"kubernetes.storageClassV1.StorageClassV1",
+		"@cdktf/provider-kubernetes.storageClassV1.StorageClassV1",
 		reflect.TypeOf((*StorageClassV1)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.storageClassV1.StorageClassV1AllowedTopologies",
+		"@cdktf/provider-kubernetes.storageClassV1.StorageClassV1AllowedTopologies",
 		reflect.TypeOf((*StorageClassV1AllowedTopologies)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.storageClassV1.StorageClassV1AllowedTopologiesMatchLabelExpressions",
+		"@cdktf/provider-kubernetes.storageClassV1.StorageClassV1AllowedTopologiesMatchLabelExpressions",
 		reflect.TypeOf((*StorageClassV1AllowedTopologiesMatchLabelExpressions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.storageClassV1.StorageClassV1AllowedTopologiesMatchLabelExpressionsList",
+		"@cdktf/provider-kubernetes.storageClassV1.StorageClassV1AllowedTopologiesMatchLabelExpressionsList",
 		reflect.TypeOf((*StorageClassV1AllowedTopologiesMatchLabelExpressionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.storageClassV1.StorageClassV1AllowedTopologiesMatchLabelExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.storageClassV1.StorageClassV1AllowedTopologiesMatchLabelExpressionsOutputReference",
 		reflect.TypeOf((*StorageClassV1AllowedTopologiesMatchLabelExpressionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,7 +146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.storageClassV1.StorageClassV1AllowedTopologiesOutputReference",
+		"@cdktf/provider-kubernetes.storageClassV1.StorageClassV1AllowedTopologiesOutputReference",
 		reflect.TypeOf((*StorageClassV1AllowedTopologiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -182,15 +182,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.storageClassV1.StorageClassV1Config",
+		"@cdktf/provider-kubernetes.storageClassV1.StorageClassV1Config",
 		reflect.TypeOf((*StorageClassV1Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"kubernetes.storageClassV1.StorageClassV1Metadata",
+		"@cdktf/provider-kubernetes.storageClassV1.StorageClassV1Metadata",
 		reflect.TypeOf((*StorageClassV1Metadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"kubernetes.storageClassV1.StorageClassV1MetadataOutputReference",
+		"@cdktf/provider-kubernetes.storageClassV1.StorageClassV1MetadataOutputReference",
 		reflect.TypeOf((*StorageClassV1MetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},

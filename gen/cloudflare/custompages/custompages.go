@@ -414,7 +414,7 @@ func NewCustomPages(scope constructs.Construct, id *string, config *CustomPagesC
 	j := jsiiProxy_CustomPages{}
 
 	_jsii_.Create(
-		"cloudflare.customPages.CustomPages",
+		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewCustomPages_Override(c CustomPages, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.customPages.CustomPages",
+		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -593,7 +593,7 @@ func CustomPages_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customPages.CustomPages",
+		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func CustomPages_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customPages.CustomPages",
+		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func CustomPages_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.customPages.CustomPages",
+		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func CustomPages_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.customPages.CustomPages",
+		"@cdktf/provider-cloudflare.customPages.CustomPages",
 		"tfResourceType",
 		&returns,
 	)

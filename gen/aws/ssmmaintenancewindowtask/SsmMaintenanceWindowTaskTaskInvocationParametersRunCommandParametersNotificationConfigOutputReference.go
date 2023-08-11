@@ -228,7 +228,7 @@ func NewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNoti
 	j := jsiiProxy_SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNoti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference",
+		"@cdktf/provider-aws.ssmMaintenanceWindowTask.SsmMaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

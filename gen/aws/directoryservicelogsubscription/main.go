@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
+		"@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscription",
 		reflect.TypeOf((*DirectoryServiceLogSubscription)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig",
+		"@cdktf/provider-aws.directoryServiceLogSubscription.DirectoryServiceLogSubscriptionConfig",
 		reflect.TypeOf((*DirectoryServiceLogSubscriptionConfig)(nil)).Elem(),
 	)
 }

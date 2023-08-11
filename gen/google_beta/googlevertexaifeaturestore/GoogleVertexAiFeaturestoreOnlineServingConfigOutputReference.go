@@ -204,7 +204,7 @@ func NewGoogleVertexAiFeaturestoreOnlineServingConfigOutputReference(terraformRe
 	j := jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleVertexAiFeaturestoreOnlineServingConfigOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleVertexAiFeaturestore.GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

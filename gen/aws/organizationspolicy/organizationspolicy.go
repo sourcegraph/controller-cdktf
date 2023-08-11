@@ -449,7 +449,7 @@ func NewOrganizationsPolicy(scope constructs.Construct, id *string, config *Orga
 	j := jsiiProxy_OrganizationsPolicy{}
 
 	_jsii_.Create(
-		"aws.organizationsPolicy.OrganizationsPolicy",
+		"@cdktf/provider-aws.organizationsPolicy.OrganizationsPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewOrganizationsPolicy_Override(o OrganizationsPolicy, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.organizationsPolicy.OrganizationsPolicy",
+		"@cdktf/provider-aws.organizationsPolicy.OrganizationsPolicy",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -639,7 +639,7 @@ func OrganizationsPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsPolicy.OrganizationsPolicy",
+		"@cdktf/provider-aws.organizationsPolicy.OrganizationsPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func OrganizationsPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsPolicy.OrganizationsPolicy",
+		"@cdktf/provider-aws.organizationsPolicy.OrganizationsPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func OrganizationsPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.organizationsPolicy.OrganizationsPolicy",
+		"@cdktf/provider-aws.organizationsPolicy.OrganizationsPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func OrganizationsPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.organizationsPolicy.OrganizationsPolicy",
+		"@cdktf/provider-aws.organizationsPolicy.OrganizationsPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -367,7 +367,7 @@ func NewAcmCertificateValidation(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_AcmCertificateValidation{}
 
 	_jsii_.Create(
-		"aws.acmCertificateValidation.AcmCertificateValidation",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewAcmCertificateValidation_Override(a AcmCertificateValidation, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmCertificateValidation.AcmCertificateValidation",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -513,7 +513,7 @@ func AcmCertificateValidation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmCertificateValidation.AcmCertificateValidation",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func AcmCertificateValidation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmCertificateValidation.AcmCertificateValidation",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func AcmCertificateValidation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmCertificateValidation.AcmCertificateValidation",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func AcmCertificateValidation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.acmCertificateValidation.AcmCertificateValidation",
+		"@cdktf/provider-aws.acmCertificateValidation.AcmCertificateValidation",
 		"tfResourceType",
 		&returns,
 	)

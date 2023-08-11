@@ -180,7 +180,7 @@ func NewStoragegatewaySmbFileShareCacheAttributesOutputReference(terraformResour
 	j := jsiiProxy_StoragegatewaySmbFileShareCacheAttributesOutputReference{}
 
 	_jsii_.Create(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributesOutputReference",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewStoragegatewaySmbFileShareCacheAttributesOutputReference_Override(s Stor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributesOutputReference",
+		"@cdktf/provider-aws.storagegatewaySmbFileShare.StoragegatewaySmbFileShareCacheAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

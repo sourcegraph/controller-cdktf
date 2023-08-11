@@ -275,7 +275,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeFlexVolumeOutputReference(terraformRes
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumeFlexVolumeOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeFlexVolumeOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeFlexVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewDeploymentV1SpecTemplateSpecVolumeFlexVolumeOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeFlexVolumeOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumeFlexVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

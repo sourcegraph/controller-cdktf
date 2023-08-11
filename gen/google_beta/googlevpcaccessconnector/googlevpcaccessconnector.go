@@ -605,7 +605,7 @@ func NewGoogleVpcAccessConnector(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleVpcAccessConnector{}
 
 	_jsii_.Create(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -618,7 +618,7 @@ func NewGoogleVpcAccessConnector_Override(g GoogleVpcAccessConnector, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -839,7 +839,7 @@ func GoogleVpcAccessConnector_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -858,7 +858,7 @@ func GoogleVpcAccessConnector_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -877,7 +877,7 @@ func GoogleVpcAccessConnector_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -890,7 +890,7 @@ func GoogleVpcAccessConnector_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
+		"@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector",
 		"tfResourceType",
 		&returns,
 	)

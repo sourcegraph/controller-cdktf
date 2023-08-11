@@ -116,7 +116,7 @@ func NewEmrClusterMasterInstanceGroupEbsConfigList(terraformResource cdktf.IInte
 	j := jsiiProxy_EmrClusterMasterInstanceGroupEbsConfigList{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrClusterMasterInstanceGroupEbsConfigList_Override(e EmrClusterMasterIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterMasterInstanceGroupEbsConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

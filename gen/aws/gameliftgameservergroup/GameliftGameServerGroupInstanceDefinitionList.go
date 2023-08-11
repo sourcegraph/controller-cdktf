@@ -116,7 +116,7 @@ func NewGameliftGameServerGroupInstanceDefinitionList(terraformResource cdktf.II
 	j := jsiiProxy_GameliftGameServerGroupInstanceDefinitionList{}
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionList",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGameliftGameServerGroupInstanceDefinitionList_Override(g GameliftGameSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionList",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ceAnomalyMonitor.CeAnomalyMonitor",
+		"@cdktf/provider-aws.ceAnomalyMonitor.CeAnomalyMonitor",
 		reflect.TypeOf((*CeAnomalyMonitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,7 +72,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ceAnomalyMonitor.CeAnomalyMonitorConfig",
+		"@cdktf/provider-aws.ceAnomalyMonitor.CeAnomalyMonitorConfig",
 		reflect.TypeOf((*CeAnomalyMonitorConfig)(nil)).Elem(),
 	)
 }

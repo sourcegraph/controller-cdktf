@@ -179,7 +179,7 @@ func NewLaunchTemplateElasticGpuSpecificationsOutputReference(terraformResource 
 	j := jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference{}
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLaunchTemplateElasticGpuSpecificationsOutputReference_Override(l LaunchT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference",
+		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

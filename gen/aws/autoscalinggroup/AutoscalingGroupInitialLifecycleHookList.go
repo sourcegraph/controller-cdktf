@@ -116,7 +116,7 @@ func NewAutoscalingGroupInitialLifecycleHookList(terraformResource cdktf.IInterp
 	j := jsiiProxy_AutoscalingGroupInitialLifecycleHookList{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupInitialLifecycleHookList",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupInitialLifecycleHookList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAutoscalingGroupInitialLifecycleHookList_Override(a AutoscalingGroupInit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupInitialLifecycleHookList",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupInitialLifecycleHookList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

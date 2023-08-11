@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.record.Record",
+		"@cdktf/provider-cloudflare.record.Record",
 		reflect.TypeOf((*Record)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,15 +95,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.record.RecordConfig",
+		"@cdktf/provider-cloudflare.record.RecordConfig",
 		reflect.TypeOf((*RecordConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.record.RecordData",
+		"@cdktf/provider-cloudflare.record.RecordData",
 		reflect.TypeOf((*RecordData)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.record.RecordDataOutputReference",
+		"@cdktf/provider-cloudflare.record.RecordDataOutputReference",
 		reflect.TypeOf((*RecordDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -252,11 +252,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.record.RecordTimeouts",
+		"@cdktf/provider-cloudflare.record.RecordTimeouts",
 		reflect.TypeOf((*RecordTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.record.RecordTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.record.RecordTimeoutsOutputReference",
 		reflect.TypeOf((*RecordTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

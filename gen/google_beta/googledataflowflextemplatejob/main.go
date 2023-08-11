@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
+		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
 		reflect.TypeOf((*GoogleDataflowFlexTemplateJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
@@ -128,7 +128,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJobConfig",
+		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJobConfig",
 		reflect.TypeOf((*GoogleDataflowFlexTemplateJobConfig)(nil)).Elem(),
 	)
 }

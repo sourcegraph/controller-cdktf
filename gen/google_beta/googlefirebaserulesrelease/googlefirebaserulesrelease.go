@@ -423,7 +423,7 @@ func NewGoogleFirebaserulesRelease(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleFirebaserulesRelease{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -436,7 +436,7 @@ func NewGoogleFirebaserulesRelease_Override(g GoogleFirebaserulesRelease, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -580,7 +580,7 @@ func GoogleFirebaserulesRelease_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func GoogleFirebaserulesRelease_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func GoogleFirebaserulesRelease_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GoogleFirebaserulesRelease_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
+		"@cdktf/provider-google-beta.googleFirebaserulesRelease.GoogleFirebaserulesRelease",
 		"tfResourceType",
 		&returns,
 	)

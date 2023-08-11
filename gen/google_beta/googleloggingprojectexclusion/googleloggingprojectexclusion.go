@@ -414,7 +414,7 @@ func NewGoogleLoggingProjectExclusion(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleLoggingProjectExclusion{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
+		"@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewGoogleLoggingProjectExclusion_Override(g GoogleLoggingProjectExclusion, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
+		"@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -593,7 +593,7 @@ func GoogleLoggingProjectExclusion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
+		"@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func GoogleLoggingProjectExclusion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
+		"@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GoogleLoggingProjectExclusion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
+		"@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleLoggingProjectExclusion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
+		"@cdktf/provider-google-beta.googleLoggingProjectExclusion.GoogleLoggingProjectExclusion",
 		"tfResourceType",
 		&returns,
 	)

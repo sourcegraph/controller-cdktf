@@ -116,7 +116,7 @@ func NewSecretsmanagerSecretReplicaList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_SecretsmanagerSecretReplicaList{}
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretReplicaList",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecretsmanagerSecretReplicaList_Override(s SecretsmanagerSecretReplicaLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretReplicaList",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

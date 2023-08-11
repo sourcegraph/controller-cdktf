@@ -204,7 +204,7 @@ func NewValidatingWebhookConfigurationWebhookObjectSelectorOutputReference(terra
 	j := jsiiProxy_ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewValidatingWebhookConfigurationWebhookObjectSelectorOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference",
+		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationWebhookObjectSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)

@@ -463,7 +463,7 @@ func NewGoogleBigtableInstance(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleBigtableInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstance",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -476,7 +476,7 @@ func NewGoogleBigtableInstance_Override(g GoogleBigtableInstance, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstance",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -653,7 +653,7 @@ func GoogleBigtableInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstance",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -672,7 +672,7 @@ func GoogleBigtableInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstance",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func GoogleBigtableInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstance",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func GoogleBigtableInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstance",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance",
 		"tfResourceType",
 		&returns,
 	)

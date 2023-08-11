@@ -204,7 +204,7 @@ func NewPodDisruptionBudgetV1SpecSelectorOutputReference(terraformResource cdktf
 	j := jsiiProxy_PodDisruptionBudgetV1SpecSelectorOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1SpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1SpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewPodDisruptionBudgetV1SpecSelectorOutputReference_Override(p PodDisruptio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1SpecSelectorOutputReference",
+		"@cdktf/provider-kubernetes.podDisruptionBudgetV1.PodDisruptionBudgetV1SpecSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

@@ -204,7 +204,7 @@ func NewIapBrandTimeoutsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_IapBrandTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.iapBrand.IapBrandTimeoutsOutputReference",
+		"@cdktf/provider-google.iapBrand.IapBrandTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewIapBrandTimeoutsOutputReference_Override(i IapBrandTimeoutsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapBrand.IapBrandTimeoutsOutputReference",
+		"@cdktf/provider-google.iapBrand.IapBrandTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

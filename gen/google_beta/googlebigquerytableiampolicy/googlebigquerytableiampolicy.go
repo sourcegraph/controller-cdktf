@@ -400,7 +400,7 @@ func NewGoogleBigqueryTableIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleBigqueryTableIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleBigqueryTableIamPolicy_Override(g GoogleBigqueryTableIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -568,7 +568,7 @@ func GoogleBigqueryTableIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func GoogleBigqueryTableIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func GoogleBigqueryTableIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func GoogleBigqueryTableIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamPolicy.GoogleBigqueryTableIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputRefe
 	j := jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

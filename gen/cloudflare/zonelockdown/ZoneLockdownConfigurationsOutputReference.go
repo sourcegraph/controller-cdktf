@@ -202,7 +202,7 @@ func NewZoneLockdownConfigurationsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ZoneLockdownConfigurationsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewZoneLockdownConfigurationsOutputReference_Override(z ZoneLockdownConfigu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference",
+		"@cdktf/provider-cloudflare.zoneLockdown.ZoneLockdownConfigurationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		z,
 	)

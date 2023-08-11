@@ -228,7 +228,7 @@ func NewServicecatalogTagOptionResourceAssociationTimeoutsOutputReference(terraf
 	j := jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewServicecatalogTagOptionResourceAssociationTimeoutsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

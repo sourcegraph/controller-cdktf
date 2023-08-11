@@ -324,7 +324,7 @@ func NewOpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference(terr
 	j := jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewOpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerLoadBasedAutoScalingDownscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

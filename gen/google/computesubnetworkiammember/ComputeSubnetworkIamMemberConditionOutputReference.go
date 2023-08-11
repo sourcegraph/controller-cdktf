@@ -226,7 +226,7 @@ func NewComputeSubnetworkIamMemberConditionOutputReference(terraformResource cdk
 	j := jsiiProxy_ComputeSubnetworkIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeSubnetworkIamMemberConditionOutputReference_Override(c ComputeSub
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConditionOutputReference",
+		"@cdktf/provider-google.computeSubnetworkIamMember.ComputeSubnetworkIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

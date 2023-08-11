@@ -116,7 +116,7 @@ func NewNetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetRefere
 	j := jsiiProxy_NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceList{}
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceList",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupReferenceSetsIpSetReferencesIpSetReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

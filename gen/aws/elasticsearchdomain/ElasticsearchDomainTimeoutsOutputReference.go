@@ -228,7 +228,7 @@ func NewElasticsearchDomainTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ElasticsearchDomainTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewElasticsearchDomainTimeoutsOutputReference_Override(e ElasticsearchDomai
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticsearchDomain.ElasticsearchDomainTimeoutsOutputReference",
+		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

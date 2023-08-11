@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayer",
 		reflect.TypeOf((*OpsworksPhpAppLayer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -130,15 +130,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfiguration",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfiguration",
 		reflect.TypeOf((*OpsworksPhpAppLayerCloudwatchConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreams",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreams",
 		reflect.TypeOf((*OpsworksPhpAppLayerCloudwatchConfigurationLogStreams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList",
 		reflect.TypeOf((*OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsOutputReference",
 		reflect.TypeOf((*OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "batchCount", GoGetter: "BatchCount"},
@@ -222,7 +222,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationOutputReference",
 		reflect.TypeOf((*OpsworksPhpAppLayerCloudwatchConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -261,15 +261,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerConfig",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerConfig",
 		reflect.TypeOf((*OpsworksPhpAppLayerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolume",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolume",
 		reflect.TypeOf((*OpsworksPhpAppLayerEbsVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolumeList",
 		reflect.TypeOf((*OpsworksPhpAppLayerEbsVolumeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -290,7 +290,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolumeOutputReference",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerEbsVolumeOutputReference",
 		reflect.TypeOf((*OpsworksPhpAppLayerEbsVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -340,15 +340,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScaling",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScaling",
 		reflect.TypeOf((*OpsworksPhpAppLayerLoadBasedAutoScaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling",
 		reflect.TypeOf((*OpsworksPhpAppLayerLoadBasedAutoScalingDownscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingDownscalingOutputReference",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingDownscalingOutputReference",
 		reflect.TypeOf((*OpsworksPhpAppLayerLoadBasedAutoScalingDownscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},
@@ -401,7 +401,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference",
 		reflect.TypeOf((*OpsworksPhpAppLayerLoadBasedAutoScalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -444,11 +444,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscaling",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscaling",
 		reflect.TypeOf((*OpsworksPhpAppLayerLoadBasedAutoScalingUpscaling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference",
 		reflect.TypeOf((*OpsworksPhpAppLayerLoadBasedAutoScalingUpscalingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alarms", GoGetter: "Alarms"},

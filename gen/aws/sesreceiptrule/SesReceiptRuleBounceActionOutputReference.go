@@ -296,7 +296,7 @@ func NewSesReceiptRuleBounceActionOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_SesReceiptRuleBounceActionOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -308,7 +308,7 @@ func NewSesReceiptRuleBounceActionOutputReference_Override(s SesReceiptRuleBounc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleBounceActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

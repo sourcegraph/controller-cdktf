@@ -471,7 +471,7 @@ func NewGoogleComputeRegionTargetHttpProxy(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleComputeRegionTargetHttpProxy{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -484,7 +484,7 @@ func NewGoogleComputeRegionTargetHttpProxy_Override(g GoogleComputeRegionTargetH
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -650,7 +650,7 @@ func GoogleComputeRegionTargetHttpProxy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func GoogleComputeRegionTargetHttpProxy_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func GoogleComputeRegionTargetHttpProxy_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func GoogleComputeRegionTargetHttpProxy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
+		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpProxy.GoogleComputeRegionTargetHttpProxy",
 		"tfResourceType",
 		&returns,
 	)

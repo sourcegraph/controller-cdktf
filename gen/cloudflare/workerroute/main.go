@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.workerRoute.WorkerRoute",
+		"@cdktf/provider-cloudflare.workerRoute.WorkerRoute",
 		reflect.TypeOf((*WorkerRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerRoute.WorkerRouteConfig",
+		"@cdktf/provider-cloudflare.workerRoute.WorkerRouteConfig",
 		reflect.TypeOf((*WorkerRouteConfig)(nil)).Elem(),
 	)
 }

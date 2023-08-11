@@ -204,7 +204,7 @@ func NewGoogleBillingBudgetAmountOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleBillingBudgetAmountOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetAmountOutputReference",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleBillingBudgetAmountOutputReference_Override(g GoogleBillingBudgetA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBillingBudget.GoogleBillingBudgetAmountOutputReference",
+		"@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -276,7 +276,7 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializePara
 	j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializePara
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskInitializeParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

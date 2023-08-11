@@ -202,7 +202,7 @@ func NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputR
 	j := jsiiProxy_ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

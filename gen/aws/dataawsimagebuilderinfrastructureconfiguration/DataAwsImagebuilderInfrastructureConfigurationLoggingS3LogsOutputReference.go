@@ -178,7 +178,7 @@ func NewDataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReferen
 	j := jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderInfrastructureConfiguration.DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderInfrastructureConfiguration.DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderInfrastructureConfiguration.DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference",
+		"@cdktf/provider-aws.dataAwsImagebuilderInfrastructureConfiguration.DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

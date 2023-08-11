@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroup",
 		reflect.TypeOf((*NeptuneClusterParameterGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupConfig",
 		reflect.TypeOf((*NeptuneClusterParameterGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameter",
 		reflect.TypeOf((*NeptuneClusterParameterGroupParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterList",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterList",
 		reflect.TypeOf((*NeptuneClusterParameterGroupParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.neptuneClusterParameterGroup.NeptuneClusterParameterGroupParameterOutputReference",
 		reflect.TypeOf((*NeptuneClusterParameterGroupParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyMethod", GoGetter: "ApplyMethod"},

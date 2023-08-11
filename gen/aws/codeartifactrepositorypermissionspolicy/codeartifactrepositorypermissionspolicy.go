@@ -424,7 +424,7 @@ func NewCodeartifactRepositoryPermissionsPolicy(scope constructs.Construct, id *
 	j := jsiiProxy_CodeartifactRepositoryPermissionsPolicy{}
 
 	_jsii_.Create(
-		"aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewCodeartifactRepositoryPermissionsPolicy_Override(c CodeartifactRepositor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -603,7 +603,7 @@ func CodeartifactRepositoryPermissionsPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func CodeartifactRepositoryPermissionsPolicy_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func CodeartifactRepositoryPermissionsPolicy_IsTerraformResource(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func CodeartifactRepositoryPermissionsPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
+		"@cdktf/provider-aws.codeartifactRepositoryPermissionsPolicy.CodeartifactRepositoryPermissionsPolicy",
 		"tfResourceType",
 		&returns,
 	)

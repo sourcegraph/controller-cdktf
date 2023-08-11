@@ -180,7 +180,7 @@ func NewRumAppMonitorCustomEventsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_RumAppMonitorCustomEventsOutputReference{}
 
 	_jsii_.Create(
-		"aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewRumAppMonitorCustomEventsOutputReference_Override(r RumAppMonitorCustomE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
+		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

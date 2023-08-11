@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList(te
 	j := jsiiProxy_DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

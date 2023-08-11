@@ -204,7 +204,7 @@ func NewGameServicesGameServerConfigTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_GameServicesGameServerConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGameServicesGameServerConfigTimeoutsOutputReference_Override(g GameServi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesGameServerConfig.GameServicesGameServerConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.gameServicesGameServerConfig.GameServicesGameServerConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

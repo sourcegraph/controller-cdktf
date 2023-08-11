@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProduct",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProduct",
 		reflect.TypeOf((*ServicecatalogProvisionedProduct)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceptLanguage", GoGetter: "AcceptLanguage"},
@@ -116,15 +116,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductConfig",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductConfig",
 		reflect.TypeOf((*ServicecatalogProvisionedProductConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputs",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputs",
 		reflect.TypeOf((*ServicecatalogProvisionedProductOutputs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsList",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsList",
 		reflect.TypeOf((*ServicecatalogProvisionedProductOutputsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -144,7 +144,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsOutputReference",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductOutputsOutputReference",
 		reflect.TypeOf((*ServicecatalogProvisionedProductOutputsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -179,11 +179,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParameters",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParameters",
 		reflect.TypeOf((*ServicecatalogProvisionedProductProvisioningParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersList",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersList",
 		reflect.TypeOf((*ServicecatalogProvisionedProductProvisioningParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -204,7 +204,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersOutputReference",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductProvisioningParametersOutputReference",
 		reflect.TypeOf((*ServicecatalogProvisionedProductProvisioningParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -244,11 +244,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferences",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferences",
 		reflect.TypeOf((*ServicecatalogProvisionedProductStackSetProvisioningPreferences)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference",
 		reflect.TypeOf((*ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accounts", GoGetter: "Accounts"},
@@ -298,11 +298,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductTimeouts",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductTimeouts",
 		reflect.TypeOf((*ServicecatalogProvisionedProductTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductTimeoutsOutputReference",
+		"@cdktf/provider-aws.servicecatalogProvisionedProduct.ServicecatalogProvisionedProductTimeoutsOutputReference",
 		reflect.TypeOf((*ServicecatalogProvisionedProductTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

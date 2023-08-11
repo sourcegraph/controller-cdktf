@@ -116,7 +116,7 @@ func NewComputeInstanceFromTemplateNetworkInterfaceList(terraformResource cdktf.
 	j := jsiiProxy_ComputeInstanceFromTemplateNetworkInterfaceList{}
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateNetworkInterfaceList",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceFromTemplateNetworkInterfaceList_Override(c ComputeInstan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceFromTemplate.ComputeInstanceFromTemplateNetworkInterfaceList",
+		"@cdktf/provider-google.computeInstanceFromTemplate.ComputeInstanceFromTemplateNetworkInterfaceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsDynamodbTableTtlList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_DataAwsDynamodbTableTtlList{}
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTableTtlList",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsDynamodbTableTtlList_Override(d DataAwsDynamodbTableTtlList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDynamodbTable.DataAwsDynamodbTableTtlList",
+		"@cdktf/provider-aws.dataAwsDynamodbTable.DataAwsDynamodbTableTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -308,7 +308,7 @@ func NewStoragegatewayGatewaySmbActiveDirectorySettingsOutputReference(terraform
 	j := jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -320,7 +320,7 @@ func NewStoragegatewayGatewaySmbActiveDirectorySettingsOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference",
+		"@cdktf/provider-aws.storagegatewayGateway.StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

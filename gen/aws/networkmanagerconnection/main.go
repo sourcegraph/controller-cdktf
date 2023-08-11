@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkmanagerConnection.NetworkmanagerConnection",
+		"@cdktf/provider-aws.networkmanagerConnection.NetworkmanagerConnection",
 		reflect.TypeOf((*NetworkmanagerConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerConnection.NetworkmanagerConnectionConfig",
+		"@cdktf/provider-aws.networkmanagerConnection.NetworkmanagerConnectionConfig",
 		reflect.TypeOf((*NetworkmanagerConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerConnection.NetworkmanagerConnectionTimeouts",
+		"@cdktf/provider-aws.networkmanagerConnection.NetworkmanagerConnectionTimeouts",
 		reflect.TypeOf((*NetworkmanagerConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerConnection.NetworkmanagerConnectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerConnection.NetworkmanagerConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkmanagerConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -448,7 +448,7 @@ func NewDataplexLakeIamMember(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataplexLakeIamMember{}
 
 	_jsii_.Create(
-		"google.dataplexLakeIamMember.DataplexLakeIamMember",
+		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataplexLakeIamMember_Override(d DataplexLakeIamMember, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexLakeIamMember.DataplexLakeIamMember",
+		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataplexLakeIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexLakeIamMember.DataplexLakeIamMember",
+		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataplexLakeIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexLakeIamMember.DataplexLakeIamMember",
+		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataplexLakeIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexLakeIamMember.DataplexLakeIamMember",
+		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataplexLakeIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataplexLakeIamMember.DataplexLakeIamMember",
+		"@cdktf/provider-google.dataplexLakeIamMember.DataplexLakeIamMember",
 		"tfResourceType",
 		&returns,
 	)

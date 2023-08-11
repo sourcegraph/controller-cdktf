@@ -104,7 +104,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesIpAddressList(terraformResource c
 	j := jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesIpAddressList{}
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesIpAddressList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesIpAddressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesIpAddressList_Override(d DataGoog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesIpAddressList",
+		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesIpAddressList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -485,7 +485,7 @@ func NewAutoscalingLifecycleHook(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_AutoscalingLifecycleHook{}
 
 	_jsii_.Create(
-		"aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
+		"@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -498,7 +498,7 @@ func NewAutoscalingLifecycleHook_Override(a AutoscalingLifecycleHook, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
+		"@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -697,7 +697,7 @@ func AutoscalingLifecycleHook_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
+		"@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func AutoscalingLifecycleHook_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
+		"@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func AutoscalingLifecycleHook_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
+		"@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func AutoscalingLifecycleHook_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
+		"@cdktf/provider-aws.autoscalingLifecycleHook.AutoscalingLifecycleHook",
 		"tfResourceType",
 		&returns,
 	)

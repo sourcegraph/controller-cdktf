@@ -228,7 +228,7 @@ func NewConnectQueueOutboundCallerConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ConnectQueueOutboundCallerConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.connectQueue.ConnectQueueOutboundCallerConfigOutputReference",
+		"@cdktf/provider-aws.connectQueue.ConnectQueueOutboundCallerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewConnectQueueOutboundCallerConfigOutputReference_Override(c ConnectQueueO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectQueue.ConnectQueueOutboundCallerConfigOutputReference",
+		"@cdktf/provider-aws.connectQueue.ConnectQueueOutboundCallerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

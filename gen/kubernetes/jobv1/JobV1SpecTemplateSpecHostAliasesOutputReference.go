@@ -202,7 +202,7 @@ func NewJobV1SpecTemplateSpecHostAliasesOutputReference(terraformResource cdktf.
 	j := jsiiProxy_JobV1SpecTemplateSpecHostAliasesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecHostAliasesOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecHostAliasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewJobV1SpecTemplateSpecHostAliasesOutputReference_Override(j JobV1SpecTemp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecHostAliasesOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecHostAliasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)

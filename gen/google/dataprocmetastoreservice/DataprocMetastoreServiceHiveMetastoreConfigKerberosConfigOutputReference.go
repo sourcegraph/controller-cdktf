@@ -225,7 +225,7 @@ func NewDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference
 	j := jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference",
+		"@cdktf/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

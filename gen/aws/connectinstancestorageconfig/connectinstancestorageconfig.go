@@ -376,7 +376,7 @@ func NewConnectInstanceStorageConfig(scope constructs.Construct, id *string, con
 	j := jsiiProxy_ConnectInstanceStorageConfig{}
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewConnectInstanceStorageConfig_Override(c ConnectInstanceStorageConfig, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -522,7 +522,7 @@ func ConnectInstanceStorageConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func ConnectInstanceStorageConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func ConnectInstanceStorageConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func ConnectInstanceStorageConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
+		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfig",
 		"tfResourceType",
 		&returns,
 	)

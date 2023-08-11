@@ -634,7 +634,7 @@ func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleComputeBackendService{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -647,7 +647,7 @@ func NewDataGoogleComputeBackendService_Override(d DataGoogleComputeBackendServi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -758,7 +758,7 @@ func DataGoogleComputeBackendService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -777,7 +777,7 @@ func DataGoogleComputeBackendService_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -796,7 +796,7 @@ func DataGoogleComputeBackendService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func DataGoogleComputeBackendService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
+		"@cdktf/provider-google-beta.dataGoogleComputeBackendService.DataGoogleComputeBackendService",
 		"tfResourceType",
 		&returns,
 	)

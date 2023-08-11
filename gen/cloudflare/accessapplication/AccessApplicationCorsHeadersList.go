@@ -116,7 +116,7 @@ func NewAccessApplicationCorsHeadersList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_AccessApplicationCorsHeadersList{}
 
 	_jsii_.Create(
-		"cloudflare.accessApplication.AccessApplicationCorsHeadersList",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessApplicationCorsHeadersList_Override(a AccessApplicationCorsHeaders
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessApplication.AccessApplicationCorsHeadersList",
+		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

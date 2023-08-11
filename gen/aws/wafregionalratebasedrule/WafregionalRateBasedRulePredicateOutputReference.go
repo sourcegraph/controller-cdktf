@@ -225,7 +225,7 @@ func NewWafregionalRateBasedRulePredicateOutputReference(terraformResource cdktf
 	j := jsiiProxy_WafregionalRateBasedRulePredicateOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicateOutputReference",
+		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewWafregionalRateBasedRulePredicateOutputReference_Override(w WafregionalR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicateOutputReference",
+		"@cdktf/provider-aws.wafregionalRateBasedRule.WafregionalRateBasedRulePredicateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

@@ -204,7 +204,7 @@ func NewElastictranscoderPipelineThumbnailConfigOutputReference(terraformResourc
 	j := jsiiProxy_ElastictranscoderPipelineThumbnailConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewElastictranscoderPipelineThumbnailConfigOutputReference_Override(e Elast
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigOutputReference",
+		"@cdktf/provider-aws.elastictranscoderPipeline.ElastictranscoderPipelineThumbnailConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

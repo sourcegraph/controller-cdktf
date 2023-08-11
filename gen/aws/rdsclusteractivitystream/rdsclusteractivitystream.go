@@ -400,7 +400,7 @@ func NewRdsClusterActivityStream(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_RdsClusterActivityStream{}
 
 	_jsii_.Create(
-		"aws.rdsClusterActivityStream.RdsClusterActivityStream",
+		"@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewRdsClusterActivityStream_Override(r RdsClusterActivityStream, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsClusterActivityStream.RdsClusterActivityStream",
+		"@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -568,7 +568,7 @@ func RdsClusterActivityStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterActivityStream.RdsClusterActivityStream",
+		"@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func RdsClusterActivityStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterActivityStream.RdsClusterActivityStream",
+		"@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func RdsClusterActivityStream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.rdsClusterActivityStream.RdsClusterActivityStream",
+		"@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func RdsClusterActivityStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.rdsClusterActivityStream.RdsClusterActivityStream",
+		"@cdktf/provider-aws.rdsClusterActivityStream.RdsClusterActivityStream",
 		"tfResourceType",
 		&returns,
 	)

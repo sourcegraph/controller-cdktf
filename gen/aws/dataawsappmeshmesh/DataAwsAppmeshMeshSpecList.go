@@ -104,7 +104,7 @@ func NewDataAwsAppmeshMeshSpecList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_DataAwsAppmeshMeshSpecList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecList",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAppmeshMeshSpecList_Override(d DataAwsAppmeshMeshSpecList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecList",
+		"@cdktf/provider-aws.dataAwsAppmeshMesh.DataAwsAppmeshMeshSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

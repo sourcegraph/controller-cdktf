@@ -298,7 +298,7 @@ func NewComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputRefer
 	j := jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference{}
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -310,7 +310,7 @@ func NewComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference",
+		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

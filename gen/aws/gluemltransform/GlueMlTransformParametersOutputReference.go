@@ -202,7 +202,7 @@ func NewGlueMlTransformParametersOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_GlueMlTransformParametersOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformParametersOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGlueMlTransformParametersOutputReference_Override(g GlueMlTransformParam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformParametersOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

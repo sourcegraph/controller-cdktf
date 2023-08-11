@@ -227,7 +227,7 @@ func NewSagemakerCodeRepositoryGitConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_SagemakerCodeRepositoryGitConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSagemakerCodeRepositoryGitConfigOutputReference_Override(s SagemakerCode
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerCodeRepository.SagemakerCodeRepositoryGitConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

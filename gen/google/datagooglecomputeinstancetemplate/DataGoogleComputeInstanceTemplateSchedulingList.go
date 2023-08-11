@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceTemplateSchedulingList(terraformResource cdktf.
 	j := jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceTemplateSchedulingList_Override(d DataGoogleCom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingList",
+		"@cdktf/provider-google.dataGoogleComputeInstanceTemplate.DataGoogleComputeInstanceTemplateSchedulingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

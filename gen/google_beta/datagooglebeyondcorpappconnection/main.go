@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnection",
 		reflect.TypeOf((*DataGoogleBeyondcorpAppConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,11 +67,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpoint",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpoint",
 		reflect.TypeOf((*DataGoogleBeyondcorpAppConnectionApplicationEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpointList",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpointList",
 		reflect.TypeOf((*DataGoogleBeyondcorpAppConnectionApplicationEndpointList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference",
 		reflect.TypeOf((*DataGoogleBeyondcorpAppConnectionApplicationEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,15 +125,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionConfig",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionConfig",
 		reflect.TypeOf((*DataGoogleBeyondcorpAppConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGateway",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGateway",
 		reflect.TypeOf((*DataGoogleBeyondcorpAppConnectionGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGatewayList",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGatewayList",
 		reflect.TypeOf((*DataGoogleBeyondcorpAppConnectionGatewayList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -153,7 +153,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGatewayOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleBeyondcorpAppConnection.DataGoogleBeyondcorpAppConnectionGatewayOutputReference",
 		reflect.TypeOf((*DataGoogleBeyondcorpAppConnectionGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appGateway", GoGetter: "AppGateway"},

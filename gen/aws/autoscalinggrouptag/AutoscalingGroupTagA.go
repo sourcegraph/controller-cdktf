@@ -342,7 +342,7 @@ func NewAutoscalingGroupTagA(scope constructs.Construct, id *string, config *Aut
 	j := jsiiProxy_AutoscalingGroupTagA{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroupTag.AutoscalingGroupTagA",
+		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewAutoscalingGroupTagA_Override(a AutoscalingGroupTagA, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroupTag.AutoscalingGroupTagA",
+		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -477,7 +477,7 @@ func AutoscalingGroupTagA_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingGroupTag.AutoscalingGroupTagA",
+		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -496,7 +496,7 @@ func AutoscalingGroupTagA_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingGroupTag.AutoscalingGroupTagA",
+		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func AutoscalingGroupTagA_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.autoscalingGroupTag.AutoscalingGroupTagA",
+		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func AutoscalingGroupTagA_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.autoscalingGroupTag.AutoscalingGroupTagA",
+		"@cdktf/provider-aws.autoscalingGroupTag.AutoscalingGroupTagA",
 		"tfResourceType",
 		&returns,
 	)

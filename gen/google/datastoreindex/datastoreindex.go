@@ -426,7 +426,7 @@ func NewDatastoreIndex(scope constructs.Construct, id *string, config *Datastore
 	j := jsiiProxy_DatastoreIndex{}
 
 	_jsii_.Create(
-		"google.datastoreIndex.DatastoreIndex",
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndex",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -439,7 +439,7 @@ func NewDatastoreIndex_Override(d DatastoreIndex, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.datastoreIndex.DatastoreIndex",
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndex",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -583,7 +583,7 @@ func DatastoreIndex_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.datastoreIndex.DatastoreIndex",
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndex",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func DatastoreIndex_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.datastoreIndex.DatastoreIndex",
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndex",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func DatastoreIndex_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.datastoreIndex.DatastoreIndex",
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndex",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func DatastoreIndex_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.datastoreIndex.DatastoreIndex",
+		"@cdktf/provider-google.datastoreIndex.DatastoreIndex",
 		"tfResourceType",
 		&returns,
 	)

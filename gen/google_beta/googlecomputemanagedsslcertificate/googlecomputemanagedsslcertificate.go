@@ -508,7 +508,7 @@ func NewGoogleComputeManagedSslCertificate(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleComputeManagedSslCertificate{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewGoogleComputeManagedSslCertificate_Override(g GoogleComputeManagedSslCer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -687,7 +687,7 @@ func GoogleComputeManagedSslCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -706,7 +706,7 @@ func GoogleComputeManagedSslCertificate_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func GoogleComputeManagedSslCertificate_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func GoogleComputeManagedSslCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
+		"@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate",
 		"tfResourceType",
 		&returns,
 	)

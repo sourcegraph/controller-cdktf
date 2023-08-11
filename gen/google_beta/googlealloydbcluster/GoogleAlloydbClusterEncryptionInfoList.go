@@ -104,7 +104,7 @@ func NewGoogleAlloydbClusterEncryptionInfoList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleAlloydbClusterEncryptionInfoList{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleAlloydbClusterEncryptionInfoList_Override(g GoogleAlloydbClusterEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList",
+		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterEncryptionInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

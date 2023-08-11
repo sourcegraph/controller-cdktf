@@ -459,7 +459,7 @@ func NewGoogleNetworkSecurityUrlLists(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleNetworkSecurityUrlLists{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
+		"@cdktf/provider-google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -472,7 +472,7 @@ func NewGoogleNetworkSecurityUrlLists_Override(g GoogleNetworkSecurityUrlLists, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
+		"@cdktf/provider-google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -638,7 +638,7 @@ func GoogleNetworkSecurityUrlLists_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
+		"@cdktf/provider-google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -657,7 +657,7 @@ func GoogleNetworkSecurityUrlLists_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
+		"@cdktf/provider-google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func GoogleNetworkSecurityUrlLists_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
+		"@cdktf/provider-google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -689,7 +689,7 @@ func GoogleNetworkSecurityUrlLists_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
+		"@cdktf/provider-google-beta.googleNetworkSecurityUrlLists.GoogleNetworkSecurityUrlLists",
 		"tfResourceType",
 		&returns,
 	)

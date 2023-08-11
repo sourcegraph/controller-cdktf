@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPool",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPool",
 		reflect.TypeOf((*CognitoUserPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountRecoverySetting", GoGetter: "AccountRecoverySetting"},
@@ -149,11 +149,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySetting",
 		reflect.TypeOf((*CognitoUserPoolAccountRecoverySetting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingOutputReference",
 		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,11 +188,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanism",
 		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingRecoveryMechanism)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismList",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismList",
 		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingRecoveryMechanismList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -213,7 +213,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference",
 		reflect.TypeOf((*CognitoUserPoolAccountRecoverySettingRecoveryMechanismOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -249,15 +249,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfig",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfig",
 		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate",
 		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfigInviteMessageTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference",
 		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfigInviteMessageTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -298,7 +298,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolAdminCreateUserConfigOutputReference",
 		reflect.TypeOf((*CognitoUserPoolAdminCreateUserConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAdminCreateUserOnly", GoGetter: "AllowAdminCreateUserOnly"},
@@ -337,15 +337,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolConfig",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolConfig",
 		reflect.TypeOf((*CognitoUserPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolDeviceConfiguration",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolDeviceConfiguration",
 		reflect.TypeOf((*CognitoUserPoolDeviceConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolDeviceConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolDeviceConfigurationOutputReference",
 		reflect.TypeOf((*CognitoUserPoolDeviceConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "challengeRequiredOnNewDevice", GoGetter: "ChallengeRequiredOnNewDevice"},
@@ -383,11 +383,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolEmailConfiguration",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolEmailConfiguration",
 		reflect.TypeOf((*CognitoUserPoolEmailConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolEmailConfigurationOutputReference",
 		reflect.TypeOf((*CognitoUserPoolEmailConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -434,15 +434,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfig",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfig",
 		reflect.TypeOf((*CognitoUserPoolLambdaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSender",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSender",
 		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomEmailSender)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference",
 		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomEmailSenderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -478,11 +478,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSender",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSender",
 		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomSmsSender)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference",
 		reflect.TypeOf((*CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -518,7 +518,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigOutputReference",
 		reflect.TypeOf((*CognitoUserPoolLambdaConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -591,11 +591,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolPasswordPolicy",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolPasswordPolicy",
 		reflect.TypeOf((*CognitoUserPoolPasswordPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolPasswordPolicyOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolPasswordPolicyOutputReference",
 		reflect.TypeOf((*CognitoUserPoolPasswordPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -645,11 +645,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSchema",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchema",
 		reflect.TypeOf((*CognitoUserPoolSchema)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaList",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaList",
 		reflect.TypeOf((*CognitoUserPoolSchemaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -670,11 +670,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraints",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraints",
 		reflect.TypeOf((*CognitoUserPoolSchemaNumberAttributeConstraints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference",
 		reflect.TypeOf((*CognitoUserPoolSchemaNumberAttributeConstraintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -712,7 +712,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaOutputReference",
 		reflect.TypeOf((*CognitoUserPoolSchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeDataType", GoGetter: "AttributeDataType"},
@@ -765,11 +765,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaStringAttributeConstraints",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaStringAttributeConstraints",
 		reflect.TypeOf((*CognitoUserPoolSchemaStringAttributeConstraints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaStringAttributeConstraintsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaStringAttributeConstraintsOutputReference",
 		reflect.TypeOf((*CognitoUserPoolSchemaStringAttributeConstraintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -807,11 +807,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSmsConfiguration",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSmsConfiguration",
 		reflect.TypeOf((*CognitoUserPoolSmsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSmsConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSmsConfigurationOutputReference",
 		reflect.TypeOf((*CognitoUserPoolSmsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -850,11 +850,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfiguration",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfiguration",
 		reflect.TypeOf((*CognitoUserPoolSoftwareTokenMfaConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference",
 		reflect.TypeOf((*CognitoUserPoolSoftwareTokenMfaConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -888,11 +888,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettings",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettings",
 		reflect.TypeOf((*CognitoUserPoolUserAttributeUpdateSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettingsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserAttributeUpdateSettingsOutputReference",
 		reflect.TypeOf((*CognitoUserPoolUserAttributeUpdateSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributesRequireVerificationBeforeUpdate", GoGetter: "AttributesRequireVerificationBeforeUpdate"},
@@ -926,11 +926,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolUserPoolAddOns",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserPoolAddOns",
 		reflect.TypeOf((*CognitoUserPoolUserPoolAddOns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolUserPoolAddOnsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUserPoolAddOnsOutputReference",
 		reflect.TypeOf((*CognitoUserPoolUserPoolAddOnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedSecurityMode", GoGetter: "AdvancedSecurityMode"},
@@ -964,11 +964,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolUsernameConfiguration",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUsernameConfiguration",
 		reflect.TypeOf((*CognitoUserPoolUsernameConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolUsernameConfigurationOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolUsernameConfigurationOutputReference",
 		reflect.TypeOf((*CognitoUserPoolUsernameConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "caseSensitive", GoGetter: "CaseSensitive"},
@@ -1002,11 +1002,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplate",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplate",
 		reflect.TypeOf((*CognitoUserPoolVerificationMessageTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplateOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolVerificationMessageTemplateOutputReference",
 		reflect.TypeOf((*CognitoUserPoolVerificationMessageTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

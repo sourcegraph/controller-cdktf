@@ -116,7 +116,7 @@ func NewEc2ManagedPrefixListEntryList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_Ec2ManagedPrefixListEntryList{}
 
 	_jsii_.Create(
-		"aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
+		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEc2ManagedPrefixListEntryList_Override(e Ec2ManagedPrefixListEntryList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
+		"@cdktf/provider-aws.ec2ManagedPrefixList.Ec2ManagedPrefixListEntryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

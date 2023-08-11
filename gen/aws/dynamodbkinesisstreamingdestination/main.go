@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
+		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestination",
 		reflect.TypeOf((*DynamodbKinesisStreamingDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestinationConfig",
+		"@cdktf/provider-aws.dynamodbKinesisStreamingDestination.DynamodbKinesisStreamingDestinationConfig",
 		reflect.TypeOf((*DynamodbKinesisStreamingDestinationConfig)(nil)).Elem(),
 	)
 }

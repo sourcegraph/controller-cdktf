@@ -116,7 +116,7 @@ func NewVpcIpamOperatingRegionsList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_VpcIpamOperatingRegionsList{}
 
 	_jsii_.Create(
-		"aws.vpcIpam.VpcIpamOperatingRegionsList",
+		"@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewVpcIpamOperatingRegionsList_Override(v VpcIpamOperatingRegionsList, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcIpam.VpcIpamOperatingRegionsList",
+		"@cdktf/provider-aws.vpcIpam.VpcIpamOperatingRegionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		v,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2Cluster",
 		reflect.TypeOf((*CloudhsmV2Cluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,11 +77,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificates",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificates",
 		reflect.TypeOf((*CloudhsmV2ClusterClusterCertificates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesList",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesList",
 		reflect.TypeOf((*CloudhsmV2ClusterClusterCertificatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesOutputReference",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterClusterCertificatesOutputReference",
 		reflect.TypeOf((*CloudhsmV2ClusterClusterCertificatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsHardwareCertificate", GoGetter: "AwsHardwareCertificate"},
@@ -138,15 +138,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterConfig",
 		reflect.TypeOf((*CloudhsmV2ClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeouts",
 		reflect.TypeOf((*CloudhsmV2ClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudhsmV2Cluster.CloudhsmV2ClusterTimeoutsOutputReference",
 		reflect.TypeOf((*CloudhsmV2ClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -457,7 +457,7 @@ func NewSccMuteConfig(scope constructs.Construct, id *string, config *SccMuteCon
 	j := jsiiProxy_SccMuteConfig{}
 
 	_jsii_.Create(
-		"google.sccMuteConfig.SccMuteConfig",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -470,7 +470,7 @@ func NewSccMuteConfig_Override(s SccMuteConfig, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccMuteConfig.SccMuteConfig",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfig",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -625,7 +625,7 @@ func SccMuteConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccMuteConfig.SccMuteConfig",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func SccMuteConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccMuteConfig.SccMuteConfig",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -663,7 +663,7 @@ func SccMuteConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.sccMuteConfig.SccMuteConfig",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -676,7 +676,7 @@ func SccMuteConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.sccMuteConfig.SccMuteConfig",
+		"@cdktf/provider-google.sccMuteConfig.SccMuteConfig",
 		"tfResourceType",
 		&returns,
 	)

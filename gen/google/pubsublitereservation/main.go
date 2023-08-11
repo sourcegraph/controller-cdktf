@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.pubsubLiteReservation.PubsubLiteReservation",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservation",
 		reflect.TypeOf((*PubsubLiteReservation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.pubsubLiteReservation.PubsubLiteReservationConfig",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservationConfig",
 		reflect.TypeOf((*PubsubLiteReservationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.pubsubLiteReservation.PubsubLiteReservationTimeouts",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeouts",
 		reflect.TypeOf((*PubsubLiteReservationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
+		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
 		reflect.TypeOf((*PubsubLiteReservationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

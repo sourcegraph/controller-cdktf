@@ -104,7 +104,7 @@ func NewDataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEnc
 	j := jsiiProxy_DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList",
+		"@cdktf/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEnc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList",
+		"@cdktf/provider-aws.dataAwsGlueDataCatalogEncryptionSettings.DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

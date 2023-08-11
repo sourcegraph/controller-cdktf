@@ -178,7 +178,7 @@ func NewNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference
 	j := jsiiProxy_NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference",
+		"@cdktf/provider-aws.networkfirewallFirewall.NetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

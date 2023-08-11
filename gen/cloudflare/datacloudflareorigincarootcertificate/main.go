@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
+		"@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificate",
 		reflect.TypeOf((*DataCloudflareOriginCaRootCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig",
+		"@cdktf/provider-cloudflare.dataCloudflareOriginCaRootCertificate.DataCloudflareOriginCaRootCertificateConfig",
 		reflect.TypeOf((*DataCloudflareOriginCaRootCertificateConfig)(nil)).Elem(),
 	)
 }

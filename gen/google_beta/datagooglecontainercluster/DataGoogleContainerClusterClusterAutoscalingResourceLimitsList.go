@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterClusterAutoscalingResourceLimitsList(terraform
 	j := jsiiProxy_DataGoogleContainerClusterClusterAutoscalingResourceLimitsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterClusterAutoscalingResourceLimitsList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

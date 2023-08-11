@@ -300,7 +300,7 @@ func NewComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference(terraf
 	j := jsiiProxy_ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

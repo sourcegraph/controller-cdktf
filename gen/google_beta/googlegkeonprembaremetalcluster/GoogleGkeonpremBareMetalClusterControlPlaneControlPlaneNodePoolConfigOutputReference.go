@@ -179,7 +179,7 @@ func NewGoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigOut
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

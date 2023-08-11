@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rdsClusterEndpoint.RdsClusterEndpoint",
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		reflect.TypeOf((*RdsClusterEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,7 +75,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsClusterEndpoint.RdsClusterEndpointConfig",
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpointConfig",
 		reflect.TypeOf((*RdsClusterEndpointConfig)(nil)).Elem(),
 	)
 }

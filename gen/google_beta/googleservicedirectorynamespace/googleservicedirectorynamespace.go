@@ -425,7 +425,7 @@ func NewGoogleServiceDirectoryNamespace(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleServiceDirectoryNamespace{}
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewGoogleServiceDirectoryNamespace_Override(g GoogleServiceDirectoryNamespa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -593,7 +593,7 @@ func GoogleServiceDirectoryNamespace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func GoogleServiceDirectoryNamespace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GoogleServiceDirectoryNamespace_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleServiceDirectoryNamespace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
+		"@cdktf/provider-google-beta.googleServiceDirectoryNamespace.GoogleServiceDirectoryNamespace",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewGoogleComputePacketMirroringMirroredResourcesInstancesList(terraformReso
 	j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesInstancesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesList",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputePacketMirroringMirroredResourcesInstancesList_Override(g Go
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesList",
+		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

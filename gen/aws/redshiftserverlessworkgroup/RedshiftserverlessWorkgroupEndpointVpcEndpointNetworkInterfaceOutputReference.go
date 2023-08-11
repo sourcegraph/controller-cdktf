@@ -200,7 +200,7 @@ func NewRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputRefe
 	j := jsiiProxy_RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference{}
 
 	_jsii_.Create(
-		"aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewRedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference",
+		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointVpcEndpointNetworkInterfaceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

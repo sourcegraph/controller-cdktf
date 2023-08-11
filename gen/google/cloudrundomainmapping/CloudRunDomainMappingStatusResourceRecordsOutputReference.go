@@ -189,7 +189,7 @@ func NewCloudRunDomainMappingStatusResourceRecordsOutputReference(terraformResou
 	j := jsiiProxy_CloudRunDomainMappingStatusResourceRecordsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewCloudRunDomainMappingStatusResourceRecordsOutputReference_Override(c Clo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsOutputReference",
+		"@cdktf/provider-google.cloudRunDomainMapping.CloudRunDomainMappingStatusResourceRecordsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

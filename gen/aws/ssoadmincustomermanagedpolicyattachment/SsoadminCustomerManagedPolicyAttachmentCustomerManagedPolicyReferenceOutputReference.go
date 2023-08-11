@@ -203,7 +203,7 @@ func NewSsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOut
 	j := jsiiProxy_SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference",
+		"@cdktf/provider-aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference",
+		"@cdktf/provider-aws.ssoadminCustomerManagedPolicyAttachment.SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

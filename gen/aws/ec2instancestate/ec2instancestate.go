@@ -390,7 +390,7 @@ func NewEc2InstanceState(scope constructs.Construct, id *string, config *Ec2Inst
 	j := jsiiProxy_Ec2InstanceState{}
 
 	_jsii_.Create(
-		"aws.ec2InstanceState.Ec2InstanceState",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceState",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewEc2InstanceState_Override(e Ec2InstanceState, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2InstanceState.Ec2InstanceState",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceState",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -547,7 +547,7 @@ func Ec2InstanceState_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2InstanceState.Ec2InstanceState",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceState",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -566,7 +566,7 @@ func Ec2InstanceState_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2InstanceState.Ec2InstanceState",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceState",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func Ec2InstanceState_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2InstanceState.Ec2InstanceState",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceState",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -598,7 +598,7 @@ func Ec2InstanceState_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2InstanceState.Ec2InstanceState",
+		"@cdktf/provider-aws.ec2InstanceState.Ec2InstanceState",
 		"tfResourceType",
 		&returns,
 	)

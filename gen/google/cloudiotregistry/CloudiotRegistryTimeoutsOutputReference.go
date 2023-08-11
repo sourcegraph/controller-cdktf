@@ -228,7 +228,7 @@ func NewCloudiotRegistryTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_CloudiotRegistryTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudiotRegistryTimeoutsOutputReference_Override(c CloudiotRegistryTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryTimeoutsOutputReference",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

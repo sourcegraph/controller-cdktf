@@ -521,7 +521,7 @@ func NewDxHostedConnection(scope constructs.Construct, id *string, config *DxHos
 	j := jsiiProxy_DxHostedConnection{}
 
 	_jsii_.Create(
-		"aws.dxHostedConnection.DxHostedConnection",
+		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewDxHostedConnection_Override(d DxHostedConnection, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxHostedConnection.DxHostedConnection",
+		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -700,7 +700,7 @@ func DxHostedConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedConnection.DxHostedConnection",
+		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -719,7 +719,7 @@ func DxHostedConnection_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedConnection.DxHostedConnection",
+		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func DxHostedConnection_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dxHostedConnection.DxHostedConnection",
+		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -751,7 +751,7 @@ func DxHostedConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dxHostedConnection.DxHostedConnection",
+		"@cdktf/provider-aws.dxHostedConnection.DxHostedConnection",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplatePrivateDnsNameOptionsList(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePrivateDnsNameOptionsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePrivateDnsNameOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplatePrivateDnsNameOptionsList_Override(d DataAwsLaunchT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePrivateDnsNameOptionsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplatePrivateDnsNameOptionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

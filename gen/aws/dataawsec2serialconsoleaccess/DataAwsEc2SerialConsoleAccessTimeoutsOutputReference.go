@@ -180,7 +180,7 @@ func NewDataAwsEc2SerialConsoleAccessTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_DataAwsEc2SerialConsoleAccessTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccessTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccessTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsEc2SerialConsoleAccessTimeoutsOutputReference_Override(d DataAwsE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccessTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEc2SerialConsoleAccess.DataAwsEc2SerialConsoleAccessTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

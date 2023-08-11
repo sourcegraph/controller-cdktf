@@ -338,7 +338,7 @@ func NewDataGoogleStorageProjectServiceAccount(scope constructs.Construct, id *s
 	j := jsiiProxy_DataGoogleStorageProjectServiceAccount{}
 
 	_jsii_.Create(
-		"google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,7 +351,7 @@ func NewDataGoogleStorageProjectServiceAccount_Override(d DataGoogleStorageProje
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -462,7 +462,7 @@ func DataGoogleStorageProjectServiceAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -481,7 +481,7 @@ func DataGoogleStorageProjectServiceAccount_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -500,7 +500,7 @@ func DataGoogleStorageProjectServiceAccount_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataGoogleStorageProjectServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleStorageProjectServiceAccount.DataGoogleStorageProjectServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

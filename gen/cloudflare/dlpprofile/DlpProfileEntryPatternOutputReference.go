@@ -203,7 +203,7 @@ func NewDlpProfileEntryPatternOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DlpProfileEntryPatternOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dlpProfile.DlpProfileEntryPatternOutputReference",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewDlpProfileEntryPatternOutputReference_Override(d DlpProfileEntryPatternO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dlpProfile.DlpProfileEntryPatternOutputReference",
+		"@cdktf/provider-cloudflare.dlpProfile.DlpProfileEntryPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

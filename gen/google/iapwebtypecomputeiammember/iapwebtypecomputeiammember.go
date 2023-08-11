@@ -401,7 +401,7 @@ func NewIapWebTypeComputeIamMember(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_IapWebTypeComputeIamMember{}
 
 	_jsii_.Create(
-		"google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
+		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewIapWebTypeComputeIamMember_Override(i IapWebTypeComputeIamMember, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
+		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -558,7 +558,7 @@ func IapWebTypeComputeIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
+		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func IapWebTypeComputeIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
+		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func IapWebTypeComputeIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
+		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func IapWebTypeComputeIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
+		"@cdktf/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember",
 		"tfResourceType",
 		&returns,
 	)

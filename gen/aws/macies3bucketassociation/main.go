@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociation",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		reflect.TypeOf((*MacieS3BucketAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,11 +67,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationType",
 		reflect.TypeOf((*MacieS3BucketAssociationClassificationType)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationTypeOutputReference",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationClassificationTypeOutputReference",
 		reflect.TypeOf((*MacieS3BucketAssociationClassificationTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociationConfig",
 		reflect.TypeOf((*MacieS3BucketAssociationConfig)(nil)).Elem(),
 	)
 }

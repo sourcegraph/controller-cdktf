@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule",
 		reflect.TypeOf((*ComputeGlobalForwardingRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -102,19 +102,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig",
 		reflect.TypeOf((*ComputeGlobalForwardingRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters",
 		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels",
 		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersFilterLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList",
 		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -135,7 +135,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference",
 		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -171,7 +171,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList",
 		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference",
 		reflect.TypeOf((*ComputeGlobalForwardingRuleMetadataFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -229,11 +229,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts",
 		reflect.TypeOf((*ComputeGlobalForwardingRuleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference",
+		"@cdktf/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeGlobalForwardingRuleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

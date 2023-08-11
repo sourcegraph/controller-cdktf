@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
 		reflect.TypeOf((*AccessanalyzerArchiveRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleConfig",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleConfig",
 		reflect.TypeOf((*AccessanalyzerArchiveRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilter",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilter",
 		reflect.TypeOf((*AccessanalyzerArchiveRuleFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterList",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterList",
 		reflect.TypeOf((*AccessanalyzerArchiveRuleFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -91,7 +91,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterOutputReference",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterOutputReference",
 		reflect.TypeOf((*AccessanalyzerArchiveRuleFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -228,7 +228,7 @@ func NewGoogleActiveDirectoryDomainTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleActiveDirectoryDomainTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomainTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleActiveDirectoryDomainTimeoutsOutputReference_Override(g GoogleActi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomainTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleActiveDirectoryDomain.GoogleActiveDirectoryDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

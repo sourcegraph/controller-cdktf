@@ -116,7 +116,7 @@ func NewMacie2ClassificationJobS3JobDefinitionBucketDefinitionsList(terraformRes
 	j := jsiiProxy_Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMacie2ClassificationJobS3JobDefinitionBucketDefinitionsList_Override(m M
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJobS3JobDefinitionBucketDefinitionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

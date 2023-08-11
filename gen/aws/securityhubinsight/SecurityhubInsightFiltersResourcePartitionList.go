@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersResourcePartitionList(terraformResource cdktf.I
 	j := jsiiProxy_SecurityhubInsightFiltersResourcePartitionList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersResourcePartitionList_Override(s SecurityhubIns
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourcePartitionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

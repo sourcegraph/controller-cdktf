@@ -104,7 +104,7 @@ func NewDataAwsAmiBlockDeviceMappingsList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataAwsAmiBlockDeviceMappingsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsList",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsAmiBlockDeviceMappingsList_Override(d DataAwsAmiBlockDeviceMappin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsList",
+		"@cdktf/provider-aws.dataAwsAmi.DataAwsAmiBlockDeviceMappingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

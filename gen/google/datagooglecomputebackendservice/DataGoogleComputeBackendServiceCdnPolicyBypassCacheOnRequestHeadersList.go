@@ -104,7 +104,7 @@ func NewDataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList(
 	j := jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

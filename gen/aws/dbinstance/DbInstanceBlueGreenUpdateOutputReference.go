@@ -180,7 +180,7 @@ func NewDbInstanceBlueGreenUpdateOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DbInstanceBlueGreenUpdateOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDbInstanceBlueGreenUpdateOutputReference_Override(d DbInstanceBlueGreenU
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
+		"@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

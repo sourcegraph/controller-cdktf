@@ -116,7 +116,7 @@ func NewCloudwatchMetricStreamIncludeFilterList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_CloudwatchMetricStreamIncludeFilterList{}
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterList",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudwatchMetricStreamIncludeFilterList_Override(c CloudwatchMetricStrea
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterList",
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStreamIncludeFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

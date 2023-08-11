@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.xraySamplingRule.XraySamplingRule",
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
 		reflect.TypeOf((*XraySamplingRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -88,7 +88,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.xraySamplingRule.XraySamplingRuleConfig",
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRuleConfig",
 		reflect.TypeOf((*XraySamplingRuleConfig)(nil)).Elem(),
 	)
 }

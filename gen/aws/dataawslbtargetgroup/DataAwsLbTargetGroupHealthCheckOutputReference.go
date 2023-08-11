@@ -255,7 +255,7 @@ func NewDataAwsLbTargetGroupHealthCheckOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsLbTargetGroupHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupHealthCheckOutputReference",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -267,7 +267,7 @@ func NewDataAwsLbTargetGroupHealthCheckOutputReference_Override(d DataAwsLbTarge
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupHealthCheckOutputReference",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -180,7 +180,7 @@ func NewTeamsRuleRuleSettingsUntrustedCertOutputReference(terraformResource cdkt
 	j := jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewTeamsRuleRuleSettingsUntrustedCertOutputReference_Override(t TeamsRuleRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

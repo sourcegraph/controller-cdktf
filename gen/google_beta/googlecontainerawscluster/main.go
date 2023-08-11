@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsCluster",
 		reflect.TypeOf((*GoogleContainerAwsCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -98,15 +98,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorization",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorization",
 		reflect.TypeOf((*GoogleContainerAwsClusterAuthorization)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorizationAdminUsers",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorizationAdminUsers",
 		reflect.TypeOf((*GoogleContainerAwsClusterAuthorizationAdminUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorizationAdminUsersList",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorizationAdminUsersList",
 		reflect.TypeOf((*GoogleContainerAwsClusterAuthorizationAdminUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -127,7 +127,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,7 +161,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorizationOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterAuthorizationOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterAuthorizationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "adminUsers", GoGetter: "AdminUsers"},
@@ -196,19 +196,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterConfig",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterConfig",
 		reflect.TypeOf((*GoogleContainerAwsClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlane",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlane",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlane)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneAwsServicesAuthentication",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneAwsServicesAuthentication",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneAwsServicesAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -245,11 +245,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneConfigEncryption",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneConfigEncryption",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneConfigEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneConfigEncryptionOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneConfigEncryptionOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneConfigEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -283,11 +283,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneDatabaseEncryption",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneDatabaseEncryption",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneDatabaseEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -321,11 +321,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneInstancePlacement",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneInstancePlacement",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneInstancePlacement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneInstancePlacementOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneInstancePlacementOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneInstancePlacementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -360,11 +360,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneMainVolume",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneMainVolume",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneMainVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneMainVolumeOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneMainVolumeOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneMainVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -408,7 +408,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsServicesAuthentication", GoGetter: "AwsServicesAuthentication"},
@@ -484,11 +484,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneProxyConfig",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneProxyConfig",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneProxyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneProxyConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneProxyConfigOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneProxyConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -524,11 +524,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneRootVolume",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneRootVolume",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneRootVolume)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneRootVolumeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -572,11 +572,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneSshConfig",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneSshConfig",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneSshConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneSshConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterControlPlaneSshConfigOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterControlPlaneSshConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -610,11 +610,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterFleet",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterFleet",
 		reflect.TypeOf((*GoogleContainerAwsClusterFleet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterFleetOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterFleetOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterFleetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -650,15 +650,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfig",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfig",
 		reflect.TypeOf((*GoogleContainerAwsClusterLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigComponentConfig",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigComponentConfig",
 		reflect.TypeOf((*GoogleContainerAwsClusterLoggingConfigComponentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigComponentConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigComponentConfigOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterLoggingConfigComponentConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -693,7 +693,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -729,11 +729,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterNetworking",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterNetworking",
 		reflect.TypeOf((*GoogleContainerAwsClusterNetworking)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterNetworkingOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterNetworkingOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterNetworkingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -771,11 +771,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterTimeouts",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterTimeouts",
 		reflect.TypeOf((*GoogleContainerAwsClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -816,11 +816,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterWorkloadIdentityConfig",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterWorkloadIdentityConfig",
 		reflect.TypeOf((*GoogleContainerAwsClusterWorkloadIdentityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterWorkloadIdentityConfigList",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterWorkloadIdentityConfigList",
 		reflect.TypeOf((*GoogleContainerAwsClusterWorkloadIdentityConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -840,7 +840,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterWorkloadIdentityConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsCluster.GoogleContainerAwsClusterWorkloadIdentityConfigOutputReference",
 		reflect.TypeOf((*GoogleContainerAwsClusterWorkloadIdentityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -104,7 +104,7 @@ func NewRedisInstanceServerCaCertsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_RedisInstanceServerCaCertsList{}
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceServerCaCertsList",
+		"@cdktf/provider-google.redisInstance.RedisInstanceServerCaCertsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewRedisInstanceServerCaCertsList_Override(r RedisInstanceServerCaCertsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.redisInstance.RedisInstanceServerCaCertsList",
+		"@cdktf/provider-google.redisInstance.RedisInstanceServerCaCertsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

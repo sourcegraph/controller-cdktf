@@ -116,7 +116,7 @@ func NewDataplexDatascanDataQualitySpecRulesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataplexDatascanDataQualitySpecRulesList{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataplexDatascanDataQualitySpecRulesList_Override(d DataplexDatascanData
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesList",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

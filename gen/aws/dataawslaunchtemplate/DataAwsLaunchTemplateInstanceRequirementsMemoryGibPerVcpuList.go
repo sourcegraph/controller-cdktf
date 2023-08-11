@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList(terraformR
 	j := jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

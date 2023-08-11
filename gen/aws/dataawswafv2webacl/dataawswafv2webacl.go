@@ -336,7 +336,7 @@ func NewDataAwsWafv2WebAcl(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsWafv2WebAcl{}
 
 	_jsii_.Create(
-		"aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
+		"@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -349,7 +349,7 @@ func NewDataAwsWafv2WebAcl_Override(d DataAwsWafv2WebAcl, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
+		"@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +460,7 @@ func DataAwsWafv2WebAcl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
+		"@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -479,7 +479,7 @@ func DataAwsWafv2WebAcl_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
+		"@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -498,7 +498,7 @@ func DataAwsWafv2WebAcl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
+		"@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -511,7 +511,7 @@ func DataAwsWafv2WebAcl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
+		"@cdktf/provider-aws.dataAwsWafv2WebAcl.DataAwsWafv2WebAcl",
 		"tfResourceType",
 		&returns,
 	)

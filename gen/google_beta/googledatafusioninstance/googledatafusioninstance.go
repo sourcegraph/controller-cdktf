@@ -884,7 +884,7 @@ func NewGoogleDataFusionInstance(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleDataFusionInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -897,7 +897,7 @@ func NewGoogleDataFusionInstance_Override(g GoogleDataFusionInstance, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1173,7 +1173,7 @@ func GoogleDataFusionInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1192,7 +1192,7 @@ func GoogleDataFusionInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1211,7 +1211,7 @@ func GoogleDataFusionInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1224,7 +1224,7 @@ func GoogleDataFusionInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
+		"@cdktf/provider-google-beta.googleDataFusionInstance.GoogleDataFusionInstance",
 		"tfResourceType",
 		&returns,
 	)

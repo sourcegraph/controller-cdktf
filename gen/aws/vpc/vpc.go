@@ -768,7 +768,7 @@ func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	j := jsiiProxy_Vpc{}
 
 	_jsii_.Create(
-		"aws.vpc.Vpc",
+		"@cdktf/provider-aws.vpc.Vpc",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -781,7 +781,7 @@ func NewVpc_Override(v Vpc, scope constructs.Construct, id *string, config *VpcC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpc.Vpc",
+		"@cdktf/provider-aws.vpc.Vpc",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -1068,7 +1068,7 @@ func Vpc_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpc.Vpc",
+		"@cdktf/provider-aws.vpc.Vpc",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1087,7 +1087,7 @@ func Vpc_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpc.Vpc",
+		"@cdktf/provider-aws.vpc.Vpc",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1106,7 +1106,7 @@ func Vpc_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpc.Vpc",
+		"@cdktf/provider-aws.vpc.Vpc",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1119,7 +1119,7 @@ func Vpc_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpc.Vpc",
+		"@cdktf/provider-aws.vpc.Vpc",
 		"tfResourceType",
 		&returns,
 	)

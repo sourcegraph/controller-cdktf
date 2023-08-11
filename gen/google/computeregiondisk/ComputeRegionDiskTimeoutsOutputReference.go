@@ -228,7 +228,7 @@ func NewComputeRegionDiskTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_ComputeRegionDiskTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionDisk.ComputeRegionDiskTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeRegionDiskTimeoutsOutputReference_Override(c ComputeRegionDiskTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionDisk.ComputeRegionDiskTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

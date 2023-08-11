@@ -116,7 +116,7 @@ func NewDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExclud
 	j := jsiiProxy_DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList{}
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExclud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList",
+		"@cdktf/provider-google.dataLossPreventionJobTrigger.DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

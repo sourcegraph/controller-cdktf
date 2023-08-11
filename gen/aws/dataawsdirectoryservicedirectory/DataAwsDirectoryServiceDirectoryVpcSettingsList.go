@@ -104,7 +104,7 @@ func NewDataAwsDirectoryServiceDirectoryVpcSettingsList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsDirectoryServiceDirectoryVpcSettingsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettingsList",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsDirectoryServiceDirectoryVpcSettingsList_Override(d DataAwsDirect
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettingsList",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryVpcSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

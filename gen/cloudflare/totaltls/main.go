@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.totalTls.TotalTls",
+		"@cdktf/provider-cloudflare.totalTls.TotalTls",
 		reflect.TypeOf((*TotalTls)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.totalTls.TotalTlsConfig",
+		"@cdktf/provider-cloudflare.totalTls.TotalTlsConfig",
 		reflect.TypeOf((*TotalTlsConfig)(nil)).Elem(),
 	)
 }

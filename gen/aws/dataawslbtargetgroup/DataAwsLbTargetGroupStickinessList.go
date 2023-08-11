@@ -104,7 +104,7 @@ func NewDataAwsLbTargetGroupStickinessList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataAwsLbTargetGroupStickinessList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupStickinessList",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupStickinessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLbTargetGroupStickinessList_Override(d DataAwsLbTargetGroupSticki
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupStickinessList",
+		"@cdktf/provider-aws.dataAwsLbTargetGroup.DataAwsLbTargetGroupStickinessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -202,7 +202,7 @@ func NewDataFusionInstanceAcceleratorsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataFusionInstanceAcceleratorsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataFusionInstanceAcceleratorsOutputReference_Override(d DataFusionInsta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

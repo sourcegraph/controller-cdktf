@@ -204,7 +204,7 @@ func NewContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference(terrafo
 	j := jsiiProxy_ContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerNodePool.ContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.containerNodePool.ContainerNodePoolNodeConfigShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

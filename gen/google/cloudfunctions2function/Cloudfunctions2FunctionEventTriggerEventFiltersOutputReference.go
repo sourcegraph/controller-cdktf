@@ -226,7 +226,7 @@ func NewCloudfunctions2FunctionEventTriggerEventFiltersOutputReference(terraform
 	j := jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCloudfunctions2FunctionEventTriggerEventFiltersOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
+		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerEventFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -204,7 +204,7 @@ func NewCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReferenc
 	j := jsiiProxy_CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList(terr
 	j := jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList{}
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList",
+		"@cdktf/provider-aws.dataAwsGlueCatalogTable.DataAwsGlueCatalogTableStorageDescriptorSchemaReferenceSchemaIdList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

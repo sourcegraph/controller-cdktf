@@ -318,7 +318,7 @@ func NewUuid(scope constructs.Construct, id *string, config *UuidConfig) Uuid {
 	j := jsiiProxy_Uuid{}
 
 	_jsii_.Create(
-		"random.uuid.Uuid",
+		"@cdktf/provider-random.uuid.Uuid",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -331,7 +331,7 @@ func NewUuid_Override(u Uuid, scope constructs.Construct, id *string, config *Uu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"random.uuid.Uuid",
+		"@cdktf/provider-random.uuid.Uuid",
 		[]interface{}{scope, id, config},
 		u,
 	)
@@ -442,7 +442,7 @@ func Uuid_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.uuid.Uuid",
+		"@cdktf/provider-random.uuid.Uuid",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -461,7 +461,7 @@ func Uuid_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.uuid.Uuid",
+		"@cdktf/provider-random.uuid.Uuid",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func Uuid_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.uuid.Uuid",
+		"@cdktf/provider-random.uuid.Uuid",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -493,7 +493,7 @@ func Uuid_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"random.uuid.Uuid",
+		"@cdktf/provider-random.uuid.Uuid",
 		"tfResourceType",
 		&returns,
 	)

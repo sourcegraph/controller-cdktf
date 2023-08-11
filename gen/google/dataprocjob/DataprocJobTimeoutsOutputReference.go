@@ -204,7 +204,7 @@ func NewDataprocJobTimeoutsOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_DataprocJobTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobTimeoutsOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataprocJobTimeoutsOutputReference_Override(d DataprocJobTimeoutsOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocJob.DataprocJobTimeoutsOutputReference",
+		"@cdktf/provider-google.dataprocJob.DataprocJobTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

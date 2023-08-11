@@ -369,7 +369,7 @@ func NewDataAwsRdsCertificate(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataAwsRdsCertificate{}
 
 	_jsii_.Create(
-		"aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
+		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewDataAwsRdsCertificate_Override(d DataAwsRdsCertificate, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
+		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -482,7 +482,7 @@ func DataAwsRdsCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
+		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -501,7 +501,7 @@ func DataAwsRdsCertificate_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
+		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -520,7 +520,7 @@ func DataAwsRdsCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
+		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -533,7 +533,7 @@ func DataAwsRdsCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
+		"@cdktf/provider-aws.dataAwsRdsCertificate.DataAwsRdsCertificate",
 		"tfResourceType",
 		&returns,
 	)

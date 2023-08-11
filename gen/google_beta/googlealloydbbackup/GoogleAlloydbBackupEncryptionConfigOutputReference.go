@@ -180,7 +180,7 @@ func NewGoogleAlloydbBackupEncryptionConfigOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleAlloydbBackupEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleAlloydbBackupEncryptionConfigOutputReference_Override(g GoogleAllo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionConfigOutputReference",
+		"@cdktf/provider-google-beta.googleAlloydbBackup.GoogleAlloydbBackupEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

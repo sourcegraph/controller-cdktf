@@ -400,7 +400,7 @@ func NewRoute53ResolverFirewallRuleGroup(scope constructs.Construct, id *string,
 	j := jsiiProxy_Route53ResolverFirewallRuleGroup{}
 
 	_jsii_.Create(
-		"aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewRoute53ResolverFirewallRuleGroup_Override(r Route53ResolverFirewallRuleG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -557,7 +557,7 @@ func Route53ResolverFirewallRuleGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func Route53ResolverFirewallRuleGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func Route53ResolverFirewallRuleGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func Route53ResolverFirewallRuleGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
+		"@cdktf/provider-aws.route53ResolverFirewallRuleGroup.Route53ResolverFirewallRuleGroup",
 		"tfResourceType",
 		&returns,
 	)

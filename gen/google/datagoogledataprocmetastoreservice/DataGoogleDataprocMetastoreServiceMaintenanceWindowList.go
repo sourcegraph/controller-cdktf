@@ -104,7 +104,7 @@ func NewDataGoogleDataprocMetastoreServiceMaintenanceWindowList(terraformResourc
 	j := jsiiProxy_DataGoogleDataprocMetastoreServiceMaintenanceWindowList{}
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMaintenanceWindowList",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMaintenanceWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleDataprocMetastoreServiceMaintenanceWindowList_Override(d DataG
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMaintenanceWindowList",
+		"@cdktf/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMaintenanceWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

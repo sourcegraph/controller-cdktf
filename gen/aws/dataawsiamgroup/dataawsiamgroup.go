@@ -335,7 +335,7 @@ func NewDataAwsIamGroup(scope constructs.Construct, id *string, config *DataAwsI
 	j := jsiiProxy_DataAwsIamGroup{}
 
 	_jsii_.Create(
-		"aws.dataAwsIamGroup.DataAwsIamGroup",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -348,7 +348,7 @@ func NewDataAwsIamGroup_Override(d DataAwsIamGroup, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIamGroup.DataAwsIamGroup",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -448,7 +448,7 @@ func DataAwsIamGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamGroup.DataAwsIamGroup",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsIamGroup_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamGroup.DataAwsIamGroup",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -486,7 +486,7 @@ func DataAwsIamGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIamGroup.DataAwsIamGroup",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataAwsIamGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIamGroup.DataAwsIamGroup",
+		"@cdktf/provider-aws.dataAwsIamGroup.DataAwsIamGroup",
 		"tfResourceType",
 		&returns,
 	)

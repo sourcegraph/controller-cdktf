@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
+		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicy",
 		reflect.TypeOf((*DataOktaAppSignonPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,7 +56,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig",
+		"@cdktf/provider-okta.dataOktaAppSignonPolicy.DataOktaAppSignonPolicyConfig",
 		reflect.TypeOf((*DataOktaAppSignonPolicyConfig)(nil)).Elem(),
 	)
 }

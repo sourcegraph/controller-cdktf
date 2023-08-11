@@ -116,7 +116,7 @@ func NewRulesetRulesExposedCredentialCheckList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_RulesetRulesExposedCredentialCheckList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesExposedCredentialCheckList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesExposedCredentialCheckList_Override(r RulesetRulesExposedCre
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesExposedCredentialCheckList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesExposedCredentialCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

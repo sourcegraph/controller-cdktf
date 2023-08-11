@@ -532,7 +532,7 @@ func NewGoogleSecretManagerSecret(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleSecretManagerSecret{}
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -545,7 +545,7 @@ func NewGoogleSecretManagerSecret_Override(g GoogleSecretManagerSecret, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -711,7 +711,7 @@ func GoogleSecretManagerSecret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func GoogleSecretManagerSecret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func GoogleSecretManagerSecret_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleSecretManagerSecret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecret",
 		"tfResourceType",
 		&returns,
 	)

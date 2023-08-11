@@ -579,7 +579,7 @@ func NewDatasyncLocationObjectStorage(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DatasyncLocationObjectStorage{}
 
 	_jsii_.Create(
-		"aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
+		"@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -592,7 +592,7 @@ func NewDatasyncLocationObjectStorage_Override(d DatasyncLocationObjectStorage, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
+		"@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -824,7 +824,7 @@ func DatasyncLocationObjectStorage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
+		"@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -843,7 +843,7 @@ func DatasyncLocationObjectStorage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
+		"@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -862,7 +862,7 @@ func DatasyncLocationObjectStorage_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
+		"@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -875,7 +875,7 @@ func DatasyncLocationObjectStorage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
+		"@cdktf/provider-aws.datasyncLocationObjectStorage.DatasyncLocationObjectStorage",
 		"tfResourceType",
 		&returns,
 	)

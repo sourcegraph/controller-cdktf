@@ -116,7 +116,7 @@ func NewAuditmanagerFrameworkControlSetsList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_AuditmanagerFrameworkControlSetsList{}
 
 	_jsii_.Create(
-		"aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsList",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAuditmanagerFrameworkControlSetsList_Override(a AuditmanagerFrameworkCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsList",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBinding",
 		reflect.TypeOf((*IapWebBackendServiceIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,11 +69,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingCondition",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingCondition",
 		reflect.TypeOf((*IapWebBackendServiceIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingConditionOutputReference",
 		reflect.TypeOf((*IapWebBackendServiceIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -112,7 +112,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingConfig",
+		"@cdktf/provider-google.iapWebBackendServiceIamBinding.IapWebBackendServiceIamBindingConfig",
 		reflect.TypeOf((*IapWebBackendServiceIamBindingConfig)(nil)).Elem(),
 	)
 }

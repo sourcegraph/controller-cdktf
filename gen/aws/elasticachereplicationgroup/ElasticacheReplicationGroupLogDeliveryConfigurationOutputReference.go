@@ -248,7 +248,7 @@ func NewElasticacheReplicationGroupLogDeliveryConfigurationOutputReference(terra
 	j := jsiiProxy_ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -260,7 +260,7 @@ func NewElasticacheReplicationGroupLogDeliveryConfigurationOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference",
+		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroupLogDeliveryConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

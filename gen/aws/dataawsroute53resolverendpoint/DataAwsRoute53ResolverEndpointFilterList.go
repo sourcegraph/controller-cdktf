@@ -116,7 +116,7 @@ func NewDataAwsRoute53ResolverEndpointFilterList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataAwsRoute53ResolverEndpointFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterList",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsRoute53ResolverEndpointFilterList_Override(d DataAwsRoute53Resolv
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterList",
+		"@cdktf/provider-aws.dataAwsRoute53ResolverEndpoint.DataAwsRoute53ResolverEndpointFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

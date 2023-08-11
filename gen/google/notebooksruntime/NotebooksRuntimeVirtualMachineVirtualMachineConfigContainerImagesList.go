@@ -116,7 +116,7 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList(te
 	j := jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList{}
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)

@@ -420,7 +420,7 @@ func NewBudgetsBudgetCostTypesOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_BudgetsBudgetCostTypesOutputReference{}
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -432,7 +432,7 @@ func NewBudgetsBudgetCostTypesOutputReference_Override(b BudgetsBudgetCostTypesO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudgetCostTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

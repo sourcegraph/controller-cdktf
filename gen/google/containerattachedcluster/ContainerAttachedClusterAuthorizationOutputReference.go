@@ -180,7 +180,7 @@ func NewContainerAttachedClusterAuthorizationOutputReference(terraformResource c
 	j := jsiiProxy_ContainerAttachedClusterAuthorizationOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewContainerAttachedClusterAuthorizationOutputReference_Override(c Containe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

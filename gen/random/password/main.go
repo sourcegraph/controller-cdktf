@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"random.password.Password",
+		"@cdktf/provider-random.password.Password",
 		reflect.TypeOf((*Password)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"random.password.PasswordConfig",
+		"@cdktf/provider-random.password.PasswordConfig",
 		reflect.TypeOf((*PasswordConfig)(nil)).Elem(),
 	)
 }

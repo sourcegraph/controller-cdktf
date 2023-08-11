@@ -436,7 +436,7 @@ func NewGoogleDataCatalogTag(scope constructs.Construct, id *string, config *Goo
 	j := jsiiProxy_GoogleDataCatalogTag{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewGoogleDataCatalogTag_Override(g GoogleDataCatalogTag, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -593,7 +593,7 @@ func GoogleDataCatalogTag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func GoogleDataCatalogTag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GoogleDataCatalogTag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleDataCatalogTag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
+		"@cdktf/provider-google-beta.googleDataCatalogTag.GoogleDataCatalogTag",
 		"tfResourceType",
 		&returns,
 	)

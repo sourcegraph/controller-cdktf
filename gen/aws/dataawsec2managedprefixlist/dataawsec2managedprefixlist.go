@@ -430,7 +430,7 @@ func NewDataAwsEc2ManagedPrefixList(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataAwsEc2ManagedPrefixList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -443,7 +443,7 @@ func NewDataAwsEc2ManagedPrefixList_Override(d DataAwsEc2ManagedPrefixList, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -554,7 +554,7 @@ func DataAwsEc2ManagedPrefixList_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func DataAwsEc2ManagedPrefixList_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -592,7 +592,7 @@ func DataAwsEc2ManagedPrefixList_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -605,7 +605,7 @@ func DataAwsEc2ManagedPrefixList_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
+		"@cdktf/provider-aws.dataAwsEc2ManagedPrefixList.DataAwsEc2ManagedPrefixList",
 		"tfResourceType",
 		&returns,
 	)

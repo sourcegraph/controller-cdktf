@@ -167,7 +167,7 @@ func NewComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference(terr
 	j := jsiiProxy_ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference",
+		"@cdktf/provider-google.computeInterconnectAttachment.ComputeInterconnectAttachmentPrivateInterconnectInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

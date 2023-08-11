@@ -179,7 +179,7 @@ func NewGoogleComputeDiskAsyncPrimaryDiskOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleComputeDiskAsyncPrimaryDiskOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDiskAsyncPrimaryDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskAsyncPrimaryDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleComputeDiskAsyncPrimaryDiskOutputReference_Override(g GoogleComput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDiskAsyncPrimaryDiskOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskAsyncPrimaryDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

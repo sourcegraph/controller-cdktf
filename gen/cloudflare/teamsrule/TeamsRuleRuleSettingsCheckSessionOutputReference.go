@@ -202,7 +202,7 @@ func NewTeamsRuleRuleSettingsCheckSessionOutputReference(terraformResource cdktf
 	j := jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSessionOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSessionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTeamsRuleRuleSettingsCheckSessionOutputReference_Override(t TeamsRuleRul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSessionOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSessionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

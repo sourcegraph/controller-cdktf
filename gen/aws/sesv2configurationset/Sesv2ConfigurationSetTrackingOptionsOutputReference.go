@@ -179,7 +179,7 @@ func NewSesv2ConfigurationSetTrackingOptionsOutputReference(terraformResource cd
 	j := jsiiProxy_Sesv2ConfigurationSetTrackingOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSesv2ConfigurationSetTrackingOptionsOutputReference_Override(s Sesv2Conf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptionsOutputReference",
+		"@cdktf/provider-aws.sesv2ConfigurationSet.Sesv2ConfigurationSetTrackingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

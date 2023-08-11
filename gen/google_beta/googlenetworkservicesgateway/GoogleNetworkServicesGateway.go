@@ -709,7 +709,7 @@ func NewGoogleNetworkServicesGateway(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleNetworkServicesGateway{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -722,7 +722,7 @@ func NewGoogleNetworkServicesGateway_Override(g GoogleNetworkServicesGateway, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -998,7 +998,7 @@ func GoogleNetworkServicesGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1017,7 +1017,7 @@ func GoogleNetworkServicesGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1036,7 +1036,7 @@ func GoogleNetworkServicesGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1049,7 +1049,7 @@ func GoogleNetworkServicesGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
+		"@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway",
 		"tfResourceType",
 		&returns,
 	)

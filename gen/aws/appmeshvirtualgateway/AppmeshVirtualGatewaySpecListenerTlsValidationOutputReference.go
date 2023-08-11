@@ -203,7 +203,7 @@ func NewAppmeshVirtualGatewaySpecListenerTlsValidationOutputReference(terraformR
 	j := jsiiProxy_AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAppmeshVirtualGatewaySpecListenerTlsValidationOutputReference_Override(a
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

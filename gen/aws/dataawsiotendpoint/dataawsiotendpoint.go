@@ -303,7 +303,7 @@ func NewDataAwsIotEndpoint(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsIotEndpoint{}
 
 	_jsii_.Create(
-		"aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
+		"@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataAwsIotEndpoint_Override(d DataAwsIotEndpoint, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
+		"@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataAwsIotEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
+		"@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataAwsIotEndpoint_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
+		"@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataAwsIotEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
+		"@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataAwsIotEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
+		"@cdktf/provider-aws.dataAwsIotEndpoint.DataAwsIotEndpoint",
 		"tfResourceType",
 		&returns,
 	)

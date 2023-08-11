@@ -309,7 +309,7 @@ func NewLimitRangeMetadataOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_LimitRangeMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.limitRange.LimitRangeMetadataOutputReference",
+		"@cdktf/provider-kubernetes.limitRange.LimitRangeMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewLimitRangeMetadataOutputReference_Override(l LimitRangeMetadataOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.limitRange.LimitRangeMetadataOutputReference",
+		"@cdktf/provider-kubernetes.limitRange.LimitRangeMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -578,7 +578,7 @@ func NewGoogleFilestoreInstance(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleFilestoreInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -591,7 +591,7 @@ func NewGoogleFilestoreInstance_Override(g GoogleFilestoreInstance, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -790,7 +790,7 @@ func GoogleFilestoreInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -809,7 +809,7 @@ func GoogleFilestoreInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -828,7 +828,7 @@ func GoogleFilestoreInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -841,7 +841,7 @@ func GoogleFilestoreInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
+		"@cdktf/provider-google-beta.googleFilestoreInstance.GoogleFilestoreInstance",
 		"tfResourceType",
 		&returns,
 	)

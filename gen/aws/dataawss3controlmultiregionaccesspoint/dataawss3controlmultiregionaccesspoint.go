@@ -392,7 +392,7 @@ func NewDataAwsS3ControlMultiRegionAccessPoint(scope constructs.Construct, id *s
 	j := jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint{}
 
 	_jsii_.Create(
-		"aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -405,7 +405,7 @@ func NewDataAwsS3ControlMultiRegionAccessPoint_Override(d DataAwsS3ControlMultiR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -516,7 +516,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataAwsS3ControlMultiRegionAccessPoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
+		"@cdktf/provider-aws.dataAwsS3ControlMultiRegionAccessPoint.DataAwsS3ControlMultiRegionAccessPoint",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewLbListenerRuleConditionHttpRequestMethodOutputReference(terraformResourc
 	j := jsiiProxy_LbListenerRuleConditionHttpRequestMethodOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLbListenerRuleConditionHttpRequestMethodOutputReference_Override(l LbLis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionHttpRequestMethodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

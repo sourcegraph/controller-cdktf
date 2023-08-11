@@ -449,7 +449,7 @@ func NewGoogleFirestoreIndex(scope constructs.Construct, id *string, config *Goo
 	j := jsiiProxy_GoogleFirestoreIndex{}
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -462,7 +462,7 @@ func NewGoogleFirestoreIndex_Override(g GoogleFirestoreIndex, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -617,7 +617,7 @@ func GoogleFirestoreIndex_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func GoogleFirestoreIndex_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func GoogleFirestoreIndex_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func GoogleFirestoreIndex_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
+		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndex",
 		"tfResourceType",
 		&returns,
 	)

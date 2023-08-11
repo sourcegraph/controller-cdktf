@@ -189,7 +189,7 @@ func NewDataplexDatascanDataProfileResultProfileFieldsProfileStringProfileOutput
 	j := jsiiProxy_DataplexDatascanDataProfileResultProfileFieldsProfileStringProfileOutputReference{}
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataProfileResultProfileFieldsProfileStringProfileOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileResultProfileFieldsProfileStringProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewDataplexDatascanDataProfileResultProfileFieldsProfileStringProfileOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascan.DataplexDatascanDataProfileResultProfileFieldsProfileStringProfileOutputReference",
+		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileResultProfileFieldsProfileStringProfileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

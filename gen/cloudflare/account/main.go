@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.account.Account",
+		"@cdktf/provider-cloudflare.account.Account",
 		reflect.TypeOf((*Account)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.account.AccountConfig",
+		"@cdktf/provider-cloudflare.account.AccountConfig",
 		reflect.TypeOf((*AccountConfig)(nil)).Elem(),
 	)
 }

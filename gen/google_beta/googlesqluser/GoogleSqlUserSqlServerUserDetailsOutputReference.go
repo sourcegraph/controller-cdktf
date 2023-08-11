@@ -178,7 +178,7 @@ func NewGoogleSqlUserSqlServerUserDetailsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsOutputReference",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGoogleSqlUserSqlServerUserDetailsOutputReference_Override(g GoogleSqlUse
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsOutputReference",
+		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

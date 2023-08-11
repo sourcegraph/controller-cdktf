@@ -353,7 +353,7 @@ func NewAgentToken(scope constructs.Construct, id *string, config *AgentTokenCon
 	j := jsiiProxy_AgentToken{}
 
 	_jsii_.Create(
-		"tfe.agentToken.AgentToken",
+		"@cdktf/provider-tfe.agentToken.AgentToken",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewAgentToken_Override(a AgentToken, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.agentToken.AgentToken",
+		"@cdktf/provider-tfe.agentToken.AgentToken",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -499,7 +499,7 @@ func AgentToken_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.agentToken.AgentToken",
+		"@cdktf/provider-tfe.agentToken.AgentToken",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func AgentToken_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.agentToken.AgentToken",
+		"@cdktf/provider-tfe.agentToken.AgentToken",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func AgentToken_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.agentToken.AgentToken",
+		"@cdktf/provider-tfe.agentToken.AgentToken",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func AgentToken_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.agentToken.AgentToken",
+		"@cdktf/provider-tfe.agentToken.AgentToken",
 		"tfResourceType",
 		&returns,
 	)

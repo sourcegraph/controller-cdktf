@@ -463,7 +463,7 @@ func NewGoogleNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *str
 	j := jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -476,7 +476,7 @@ func NewGoogleNetworkServicesEdgeCacheKeyset_Override(g GoogleNetworkServicesEdg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -631,7 +631,7 @@ func GoogleNetworkServicesEdgeCacheKeyset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -650,7 +650,7 @@ func GoogleNetworkServicesEdgeCacheKeyset_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func GoogleNetworkServicesEdgeCacheKeyset_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func GoogleNetworkServicesEdgeCacheKeyset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
+		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheKeyset.GoogleNetworkServicesEdgeCacheKeyset",
 		"tfResourceType",
 		&returns,
 	)

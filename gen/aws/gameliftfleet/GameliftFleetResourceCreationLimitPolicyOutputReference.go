@@ -204,7 +204,7 @@ func NewGameliftFleetResourceCreationLimitPolicyOutputReference(terraformResourc
 	j := jsiiProxy_GameliftFleetResourceCreationLimitPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicyOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGameliftFleetResourceCreationLimitPolicyOutputReference_Override(g Gamel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicyOutputReference",
+		"@cdktf/provider-aws.gameliftFleet.GameliftFleetResourceCreationLimitPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

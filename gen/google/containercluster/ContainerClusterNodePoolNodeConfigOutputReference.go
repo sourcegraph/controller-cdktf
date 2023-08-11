@@ -852,7 +852,7 @@ func NewContainerClusterNodePoolNodeConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_ContainerClusterNodePoolNodeConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -864,7 +864,7 @@ func NewContainerClusterNodePoolNodeConfigOutputReference_Override(c ContainerCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

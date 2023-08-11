@@ -225,7 +225,7 @@ func NewRoute53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference(terrafor
 	j := jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewRoute53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

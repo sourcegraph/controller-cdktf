@@ -377,7 +377,7 @@ func NewGoogleIapWebBackendServiceIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleIapWebBackendServiceIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGoogleIapWebBackendServiceIamPolicy_Override(g GoogleIapWebBackendServic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GoogleIapWebBackendServiceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GoogleIapWebBackendServiceIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GoogleIapWebBackendServiceIamPolicy_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GoogleIapWebBackendServiceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
+		"@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

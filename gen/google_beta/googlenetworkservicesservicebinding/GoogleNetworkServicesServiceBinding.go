@@ -460,7 +460,7 @@ func NewGoogleNetworkServicesServiceBinding(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleNetworkServicesServiceBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
+		"@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewGoogleNetworkServicesServiceBinding_Override(g GoogleNetworkServicesServ
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
+		"@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -639,7 +639,7 @@ func GoogleNetworkServicesServiceBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
+		"@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func GoogleNetworkServicesServiceBinding_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
+		"@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func GoogleNetworkServicesServiceBinding_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
+		"@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func GoogleNetworkServicesServiceBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
+		"@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding",
 		"tfResourceType",
 		&returns,
 	)

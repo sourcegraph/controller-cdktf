@@ -104,7 +104,7 @@ func NewRdsGlobalClusterGlobalClusterMembersList(terraformResource cdktf.IInterp
 	j := jsiiProxy_RdsGlobalClusterGlobalClusterMembersList{}
 
 	_jsii_.Create(
-		"aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersList",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewRdsGlobalClusterGlobalClusterMembersList_Override(r RdsGlobalClusterGlob
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersList",
+		"@cdktf/provider-aws.rdsGlobalCluster.RdsGlobalClusterGlobalClusterMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

@@ -377,7 +377,7 @@ func NewDaxSubnetGroup(scope constructs.Construct, id *string, config *DaxSubnet
 	j := jsiiProxy_DaxSubnetGroup{}
 
 	_jsii_.Create(
-		"aws.daxSubnetGroup.DaxSubnetGroup",
+		"@cdktf/provider-aws.daxSubnetGroup.DaxSubnetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewDaxSubnetGroup_Override(d DaxSubnetGroup, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.daxSubnetGroup.DaxSubnetGroup",
+		"@cdktf/provider-aws.daxSubnetGroup.DaxSubnetGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -534,7 +534,7 @@ func DaxSubnetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.daxSubnetGroup.DaxSubnetGroup",
+		"@cdktf/provider-aws.daxSubnetGroup.DaxSubnetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func DaxSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.daxSubnetGroup.DaxSubnetGroup",
+		"@cdktf/provider-aws.daxSubnetGroup.DaxSubnetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func DaxSubnetGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.daxSubnetGroup.DaxSubnetGroup",
+		"@cdktf/provider-aws.daxSubnetGroup.DaxSubnetGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func DaxSubnetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.daxSubnetGroup.DaxSubnetGroup",
+		"@cdktf/provider-aws.daxSubnetGroup.DaxSubnetGroup",
 		"tfResourceType",
 		&returns,
 	)

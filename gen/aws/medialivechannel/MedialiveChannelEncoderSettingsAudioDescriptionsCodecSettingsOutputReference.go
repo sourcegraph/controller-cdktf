@@ -324,7 +324,7 @@ func NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputRefer
 	j := jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewMedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

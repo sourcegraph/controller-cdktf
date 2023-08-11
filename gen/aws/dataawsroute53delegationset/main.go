@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
+		"@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
 		reflect.TypeOf((*DataAwsRoute53DelegationSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -55,7 +55,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig",
+		"@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSetConfig",
 		reflect.TypeOf((*DataAwsRoute53DelegationSetConfig)(nil)).Elem(),
 	)
 }

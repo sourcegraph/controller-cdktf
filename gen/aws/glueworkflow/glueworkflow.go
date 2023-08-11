@@ -451,7 +451,7 @@ func NewGlueWorkflow(scope constructs.Construct, id *string, config *GlueWorkflo
 	j := jsiiProxy_GlueWorkflow{}
 
 	_jsii_.Create(
-		"aws.glueWorkflow.GlueWorkflow",
+		"@cdktf/provider-aws.glueWorkflow.GlueWorkflow",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -464,7 +464,7 @@ func NewGlueWorkflow_Override(g GlueWorkflow, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueWorkflow.GlueWorkflow",
+		"@cdktf/provider-aws.glueWorkflow.GlueWorkflow",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -641,7 +641,7 @@ func GlueWorkflow_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueWorkflow.GlueWorkflow",
+		"@cdktf/provider-aws.glueWorkflow.GlueWorkflow",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func GlueWorkflow_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueWorkflow.GlueWorkflow",
+		"@cdktf/provider-aws.glueWorkflow.GlueWorkflow",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GlueWorkflow_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.glueWorkflow.GlueWorkflow",
+		"@cdktf/provider-aws.glueWorkflow.GlueWorkflow",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func GlueWorkflow_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.glueWorkflow.GlueWorkflow",
+		"@cdktf/provider-aws.glueWorkflow.GlueWorkflow",
 		"tfResourceType",
 		&returns,
 	)

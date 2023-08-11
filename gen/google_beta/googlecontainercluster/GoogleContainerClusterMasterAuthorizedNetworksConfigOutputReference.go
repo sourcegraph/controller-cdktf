@@ -204,7 +204,7 @@ func NewGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference(terr
 	j := jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

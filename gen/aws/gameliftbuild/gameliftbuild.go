@@ -448,7 +448,7 @@ func NewGameliftBuild(scope constructs.Construct, id *string, config *GameliftBu
 	j := jsiiProxy_GameliftBuild{}
 
 	_jsii_.Create(
-		"aws.gameliftBuild.GameliftBuild",
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGameliftBuild_Override(g GameliftBuild, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftBuild.GameliftBuild",
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GameliftBuild_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftBuild.GameliftBuild",
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GameliftBuild_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftBuild.GameliftBuild",
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GameliftBuild_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.gameliftBuild.GameliftBuild",
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GameliftBuild_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.gameliftBuild.GameliftBuild",
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
 		"tfResourceType",
 		&returns,
 	)

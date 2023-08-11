@@ -116,7 +116,7 @@ func NewEcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterL
 	j := jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList{}
 
 	_jsii_.Create(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList",
+		"@cdktf/provider-aws.ecrReplicationConfiguration.EcrReplicationConfigurationReplicationConfigurationRuleRepositoryFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

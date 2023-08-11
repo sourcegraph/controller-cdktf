@@ -116,7 +116,7 @@ func NewClouddeployDeliveryPipelineSerialPipelineStagesList(terraformResource cd
 	j := jsiiProxy_ClouddeployDeliveryPipelineSerialPipelineStagesList{}
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesList",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewClouddeployDeliveryPipelineSerialPipelineStagesList_Override(c Clouddepl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesList",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineSerialPipelineStagesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

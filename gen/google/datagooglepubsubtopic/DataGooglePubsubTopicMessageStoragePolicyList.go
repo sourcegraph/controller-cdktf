@@ -104,7 +104,7 @@ func NewDataGooglePubsubTopicMessageStoragePolicyList(terraformResource cdktf.II
 	j := jsiiProxy_DataGooglePubsubTopicMessageStoragePolicyList{}
 
 	_jsii_.Create(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyList",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGooglePubsubTopicMessageStoragePolicyList_Override(d DataGooglePubsu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyList",
+		"@cdktf/provider-google.dataGooglePubsubTopic.DataGooglePubsubTopicMessageStoragePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

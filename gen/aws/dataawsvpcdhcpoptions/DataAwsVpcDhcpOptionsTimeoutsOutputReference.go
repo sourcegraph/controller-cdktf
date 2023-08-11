@@ -180,7 +180,7 @@ func NewDataAwsVpcDhcpOptionsTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataAwsVpcDhcpOptionsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsVpcDhcpOptionsTimeoutsOutputReference_Override(d DataAwsVpcDhcpOp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcDhcpOptions.DataAwsVpcDhcpOptionsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

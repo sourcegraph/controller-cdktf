@@ -252,7 +252,7 @@ func NewEvidentlyFeatureVariationsValueOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_EvidentlyFeatureVariationsValueOutputReference{}
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureVariationsValueOutputReference",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewEvidentlyFeatureVariationsValueOutputReference_Override(e EvidentlyFeatu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.evidentlyFeature.EvidentlyFeatureVariationsValueOutputReference",
+		"@cdktf/provider-aws.evidentlyFeature.EvidentlyFeatureVariationsValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

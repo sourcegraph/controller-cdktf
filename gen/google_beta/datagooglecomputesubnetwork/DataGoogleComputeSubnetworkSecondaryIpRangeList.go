@@ -104,7 +104,7 @@ func NewDataGoogleComputeSubnetworkSecondaryIpRangeList(terraformResource cdktf.
 	j := jsiiProxy_DataGoogleComputeSubnetworkSecondaryIpRangeList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeList",
+		"@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeSubnetworkSecondaryIpRangeList_Override(d DataGoogleCom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeList",
+		"@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

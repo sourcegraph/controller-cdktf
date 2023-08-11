@@ -104,7 +104,7 @@ func NewDataAwsWorkspacesWorkspaceWorkspacePropertiesList(terraformResource cdkt
 	j := jsiiProxy_DataAwsWorkspacesWorkspaceWorkspacePropertiesList{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspaceWorkspacePropertiesList",
+		"@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspaceWorkspacePropertiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsWorkspacesWorkspaceWorkspacePropertiesList_Override(d DataAwsWork
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspaceWorkspacePropertiesList",
+		"@cdktf/provider-aws.dataAwsWorkspacesWorkspace.DataAwsWorkspacesWorkspaceWorkspacePropertiesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

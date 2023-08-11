@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTags",
 		reflect.TypeOf((*LakeformationResourceLfTags)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsConfig",
 		reflect.TypeOf((*LakeformationResourceLfTagsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabase",
 		reflect.TypeOf((*LakeformationResourceLfTagsDatabase)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabaseOutputReference",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsDatabaseOutputReference",
 		reflect.TypeOf((*LakeformationResourceLfTagsDatabaseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
@@ -122,11 +122,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTag",
 		reflect.TypeOf((*LakeformationResourceLfTagsLfTag)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagList",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagList",
 		reflect.TypeOf((*LakeformationResourceLfTagsLfTagList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagOutputReference",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsLfTagOutputReference",
 		reflect.TypeOf((*LakeformationResourceLfTagsLfTagOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
@@ -186,11 +186,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTable",
 		reflect.TypeOf((*LakeformationResourceLfTagsTable)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableOutputReference",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableOutputReference",
 		reflect.TypeOf((*LakeformationResourceLfTagsTableOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
@@ -233,11 +233,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumns",
 		reflect.TypeOf((*LakeformationResourceLfTagsTableWithColumns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTableWithColumnsOutputReference",
 		reflect.TypeOf((*LakeformationResourceLfTagsTableWithColumnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
@@ -285,11 +285,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeouts",
 		reflect.TypeOf((*LakeformationResourceLfTagsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeoutsOutputReference",
+		"@cdktf/provider-aws.lakeformationResourceLfTags.LakeformationResourceLfTagsTimeoutsOutputReference",
 		reflect.TypeOf((*LakeformationResourceLfTagsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -249,7 +249,7 @@ func NewGoogleBigtableInstanceClusterAutoscalingConfigOutputReference(terraformR
 	j := jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewGoogleBigtableInstanceClusterAutoscalingConfigOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

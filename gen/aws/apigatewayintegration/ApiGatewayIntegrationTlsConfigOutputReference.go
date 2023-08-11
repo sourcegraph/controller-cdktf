@@ -180,7 +180,7 @@ func NewApiGatewayIntegrationTlsConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ApiGatewayIntegrationTlsConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfigOutputReference",
+		"@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewApiGatewayIntegrationTlsConfigOutputReference_Override(a ApiGatewayInteg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfigOutputReference",
+		"@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegrationTlsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

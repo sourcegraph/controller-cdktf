@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"random.stringResource.StringResource",
+		"@cdktf/provider-random.stringResource.StringResource",
 		reflect.TypeOf((*StringResource)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -89,7 +89,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"random.stringResource.StringResourceConfig",
+		"@cdktf/provider-random.stringResource.StringResourceConfig",
 		reflect.TypeOf((*StringResourceConfig)(nil)).Elem(),
 	)
 }

@@ -180,7 +180,7 @@ func NewLambdaFunctionEphemeralStorageOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_LambdaFunctionEphemeralStorageOutputReference{}
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaFunctionEphemeralStorageOutputReference_Override(l LambdaFunctionE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaFunction.LambdaFunctionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

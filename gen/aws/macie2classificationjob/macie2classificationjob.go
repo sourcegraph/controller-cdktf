@@ -626,7 +626,7 @@ func NewMacie2ClassificationJob(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_Macie2ClassificationJob{}
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJob",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -639,7 +639,7 @@ func NewMacie2ClassificationJob_Override(m Macie2ClassificationJob, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2ClassificationJob.Macie2ClassificationJob",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -860,7 +860,7 @@ func Macie2ClassificationJob_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2ClassificationJob.Macie2ClassificationJob",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -879,7 +879,7 @@ func Macie2ClassificationJob_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2ClassificationJob.Macie2ClassificationJob",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -898,7 +898,7 @@ func Macie2ClassificationJob_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2ClassificationJob.Macie2ClassificationJob",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -911,7 +911,7 @@ func Macie2ClassificationJob_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macie2ClassificationJob.Macie2ClassificationJob",
+		"@cdktf/provider-aws.macie2ClassificationJob.Macie2ClassificationJob",
 		"tfResourceType",
 		&returns,
 	)

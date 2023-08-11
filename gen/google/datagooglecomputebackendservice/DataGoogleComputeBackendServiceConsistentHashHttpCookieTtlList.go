@@ -104,7 +104,7 @@ func NewDataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList(terraform
 	j := jsiiProxy_DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList",
+		"@cdktf/provider-google.dataGoogleComputeBackendService.DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

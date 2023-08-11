@@ -179,7 +179,7 @@ func NewGoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOu
 	j := jsiiProxy_GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

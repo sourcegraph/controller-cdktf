@@ -520,7 +520,7 @@ func NewGoogleBeyondcorpAppGateway(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleBeyondcorpAppGateway{}
 
 	_jsii_.Create(
-		"google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -533,7 +533,7 @@ func NewGoogleBeyondcorpAppGateway_Override(g GoogleBeyondcorpAppGateway, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -721,7 +721,7 @@ func GoogleBeyondcorpAppGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -740,7 +740,7 @@ func GoogleBeyondcorpAppGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func GoogleBeyondcorpAppGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -772,7 +772,7 @@ func GoogleBeyondcorpAppGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
+		"@cdktf/provider-google-beta.googleBeyondcorpAppGateway.GoogleBeyondcorpAppGateway",
 		"tfResourceType",
 		&returns,
 	)

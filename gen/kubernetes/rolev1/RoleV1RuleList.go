@@ -116,7 +116,7 @@ func NewRoleV1RuleList(terraformResource cdktf.IInterpolatingParent, terraformAt
 	j := jsiiProxy_RoleV1RuleList{}
 
 	_jsii_.Create(
-		"kubernetes.roleV1.RoleV1RuleList",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1RuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRoleV1RuleList_Override(r RoleV1RuleList, terraformResource cdktf.IInter
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.roleV1.RoleV1RuleList",
+		"@cdktf/provider-kubernetes.roleV1.RoleV1RuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

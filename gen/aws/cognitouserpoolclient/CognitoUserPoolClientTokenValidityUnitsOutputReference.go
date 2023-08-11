@@ -228,7 +228,7 @@ func NewCognitoUserPoolClientTokenValidityUnitsOutputReference(terraformResource
 	j := jsiiProxy_CognitoUserPoolClientTokenValidityUnitsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnitsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCognitoUserPoolClientTokenValidityUnitsOutputReference_Override(c Cognit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnitsOutputReference",
+		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnitsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewDataKubernetesPodSpecVolumeIscsiList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_DataKubernetesPodSpecVolumeIscsiList{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeIscsiList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeIscsiList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataKubernetesPodSpecVolumeIscsiList_Override(d DataKubernetesPodSpecVol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeIscsiList",
+		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeIscsiList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

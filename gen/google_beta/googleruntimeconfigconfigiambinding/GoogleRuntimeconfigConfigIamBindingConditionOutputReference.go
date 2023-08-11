@@ -226,7 +226,7 @@ func NewGoogleRuntimeconfigConfigIamBindingConditionOutputReference(terraformRes
 	j := jsiiProxy_GoogleRuntimeconfigConfigIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleRuntimeconfigConfigIamBindingConditionOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

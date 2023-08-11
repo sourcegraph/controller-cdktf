@@ -104,7 +104,7 @@ func NewDataAwsDirectoryServiceDirectoryRadiusSettingsList(terraformResource cdk
 	j := jsiiProxy_DataAwsDirectoryServiceDirectoryRadiusSettingsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettingsList",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsDirectoryServiceDirectoryRadiusSettingsList_Override(d DataAwsDir
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettingsList",
+		"@cdktf/provider-aws.dataAwsDirectoryServiceDirectory.DataAwsDirectoryServiceDirectoryRadiusSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

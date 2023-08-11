@@ -885,7 +885,7 @@ func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvi
 	j := jsiiProxy_MwaaEnvironment{}
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironment",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -898,7 +898,7 @@ func NewMwaaEnvironment_Override(m MwaaEnvironment, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mwaaEnvironment.MwaaEnvironment",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -1218,7 +1218,7 @@ func MwaaEnvironment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mwaaEnvironment.MwaaEnvironment",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1237,7 +1237,7 @@ func MwaaEnvironment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mwaaEnvironment.MwaaEnvironment",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1256,7 +1256,7 @@ func MwaaEnvironment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.mwaaEnvironment.MwaaEnvironment",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1269,7 +1269,7 @@ func MwaaEnvironment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.mwaaEnvironment.MwaaEnvironment",
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
 		"tfResourceType",
 		&returns,
 	)

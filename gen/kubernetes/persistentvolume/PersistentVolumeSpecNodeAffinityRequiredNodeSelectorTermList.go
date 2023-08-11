@@ -116,7 +116,7 @@ func NewPersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList(terraformRe
 	j := jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList_Override(p 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

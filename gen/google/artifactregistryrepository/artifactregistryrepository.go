@@ -639,7 +639,7 @@ func NewArtifactRegistryRepository(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_ArtifactRegistryRepository{}
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepository",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -652,7 +652,7 @@ func NewArtifactRegistryRepository_Override(a ArtifactRegistryRepository, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.artifactRegistryRepository.ArtifactRegistryRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepository",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -851,7 +851,7 @@ func ArtifactRegistryRepository_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepository.ArtifactRegistryRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepository",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -870,7 +870,7 @@ func ArtifactRegistryRepository_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepository.ArtifactRegistryRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepository",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -889,7 +889,7 @@ func ArtifactRegistryRepository_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.artifactRegistryRepository.ArtifactRegistryRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepository",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -902,7 +902,7 @@ func ArtifactRegistryRepository_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.artifactRegistryRepository.ArtifactRegistryRepository",
+		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepository",
 		"tfResourceType",
 		&returns,
 	)

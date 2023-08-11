@@ -116,7 +116,7 @@ func NewInlineHookHeadersList(terraformResource cdktf.IInterpolatingParent, terr
 	j := jsiiProxy_InlineHookHeadersList{}
 
 	_jsii_.Create(
-		"okta.inlineHook.InlineHookHeadersList",
+		"@cdktf/provider-okta.inlineHook.InlineHookHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewInlineHookHeadersList_Override(i InlineHookHeadersList, terraformResourc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.inlineHook.InlineHookHeadersList",
+		"@cdktf/provider-okta.inlineHook.InlineHookHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

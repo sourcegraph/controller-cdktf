@@ -338,7 +338,7 @@ func NewDataAwsImagebuilderImageRecipes(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataAwsImagebuilderImageRecipes{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -351,7 +351,7 @@ func NewDataAwsImagebuilderImageRecipes_Override(d DataAwsImagebuilderImageRecip
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataAwsImagebuilderImageRecipes_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -470,7 +470,7 @@ func DataAwsImagebuilderImageRecipes_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataAwsImagebuilderImageRecipes_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsImagebuilderImageRecipes_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
+		"@cdktf/provider-aws.dataAwsImagebuilderImageRecipes.DataAwsImagebuilderImageRecipes",
 		"tfResourceType",
 		&returns,
 	)

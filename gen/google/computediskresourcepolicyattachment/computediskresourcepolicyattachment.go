@@ -414,7 +414,7 @@ func NewComputeDiskResourcePolicyAttachment(scope constructs.Construct, id *stri
 	j := jsiiProxy_ComputeDiskResourcePolicyAttachment{}
 
 	_jsii_.Create(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewComputeDiskResourcePolicyAttachment_Override(c ComputeDiskResourcePolicy
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -582,7 +582,7 @@ func ComputeDiskResourcePolicyAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func ComputeDiskResourcePolicyAttachment_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func ComputeDiskResourcePolicyAttachment_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func ComputeDiskResourcePolicyAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
+		"@cdktf/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReferenc
 	j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference{}
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference",
+		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

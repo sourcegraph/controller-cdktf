@@ -204,7 +204,7 @@ func NewDataprocWorkflowTemplateParametersValidationOutputReference(terraformRes
 	j := jsiiProxy_DataprocWorkflowTemplateParametersValidationOutputReference{}
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDataprocWorkflowTemplateParametersValidationOutputReference_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference",
+		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupRefe
 	j := jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList",
+		"@cdktf/provider-aws.dataAwsNetworkfirewallFirewallPolicy.DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

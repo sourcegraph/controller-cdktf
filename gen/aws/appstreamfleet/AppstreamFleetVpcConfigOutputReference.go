@@ -204,7 +204,7 @@ func NewAppstreamFleetVpcConfigOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_AppstreamFleetVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamFleet.AppstreamFleetVpcConfigOutputReference",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppstreamFleetVpcConfigOutputReference_Override(a AppstreamFleetVpcConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamFleet.AppstreamFleetVpcConfigOutputReference",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

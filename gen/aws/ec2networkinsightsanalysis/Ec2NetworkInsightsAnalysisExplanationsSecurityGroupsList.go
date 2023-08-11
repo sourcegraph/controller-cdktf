@@ -104,7 +104,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsSecurityGroupsList(terraformResour
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList{}
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsSecurityGroupsList_Override(e Ec2N
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList",
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsSecurityGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

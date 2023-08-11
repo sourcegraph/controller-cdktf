@@ -227,7 +227,7 @@ func NewSqlDatabaseInstanceRestoreBackupContextOutputReference(terraformResource
 	j := jsiiProxy_SqlDatabaseInstanceRestoreBackupContextOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSqlDatabaseInstanceRestoreBackupContextOutputReference_Override(s SqlDat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

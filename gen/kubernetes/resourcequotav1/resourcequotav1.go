@@ -367,7 +367,7 @@ func NewResourceQuotaV1(scope constructs.Construct, id *string, config *Resource
 	j := jsiiProxy_ResourceQuotaV1{}
 
 	_jsii_.Create(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewResourceQuotaV1_Override(r ResourceQuotaV1, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -491,7 +491,7 @@ func ResourceQuotaV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func ResourceQuotaV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func ResourceQuotaV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func ResourceQuotaV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.resourceQuotaV1.ResourceQuotaV1",
+		"@cdktf/provider-kubernetes.resourceQuotaV1.ResourceQuotaV1",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewIdentityPlatformConfigTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_IdentityPlatformConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.identityPlatformConfig.IdentityPlatformConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewIdentityPlatformConfigTimeoutsOutputReference_Override(i IdentityPlatfor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformConfig.IdentityPlatformConfigTimeoutsOutputReference",
+		"@cdktf/provider-google.identityPlatformConfig.IdentityPlatformConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

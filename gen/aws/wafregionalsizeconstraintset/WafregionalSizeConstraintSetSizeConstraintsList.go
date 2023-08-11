@@ -116,7 +116,7 @@ func NewWafregionalSizeConstraintSetSizeConstraintsList(terraformResource cdktf.
 	j := jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList{}
 
 	_jsii_.Create(
-		"aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsList",
+		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafregionalSizeConstraintSetSizeConstraintsList_Override(w WafregionalSi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsList",
+		"@cdktf/provider-aws.wafregionalSizeConstraintSet.WafregionalSizeConstraintSetSizeConstraintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

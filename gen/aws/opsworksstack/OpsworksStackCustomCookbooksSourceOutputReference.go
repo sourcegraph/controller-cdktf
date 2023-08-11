@@ -298,7 +298,7 @@ func NewOpsworksStackCustomCookbooksSourceOutputReference(terraformResource cdkt
 	j := jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -310,7 +310,7 @@ func NewOpsworksStackCustomCookbooksSourceOutputReference_Override(o OpsworksSta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference",
+		"@cdktf/provider-aws.opsworksStack.OpsworksStackCustomCookbooksSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

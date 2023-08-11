@@ -104,7 +104,7 @@ func NewGoogleDialogflowIntentFollowupIntentInfoList(terraformResource cdktf.IIn
 	j := jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoList",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleDialogflowIntentFollowupIntentInfoList_Override(g GoogleDialogflow
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoList",
+		"@cdktf/provider-google-beta.googleDialogflowIntent.GoogleDialogflowIntentFollowupIntentInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

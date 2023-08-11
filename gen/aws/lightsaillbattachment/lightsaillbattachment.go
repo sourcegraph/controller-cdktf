@@ -342,7 +342,7 @@ func NewLightsailLbAttachment(scope constructs.Construct, id *string, config *Li
 	j := jsiiProxy_LightsailLbAttachment{}
 
 	_jsii_.Create(
-		"aws.lightsailLbAttachment.LightsailLbAttachment",
+		"@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewLightsailLbAttachment_Override(l LightsailLbAttachment, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailLbAttachment.LightsailLbAttachment",
+		"@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -488,7 +488,7 @@ func LightsailLbAttachment_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbAttachment.LightsailLbAttachment",
+		"@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func LightsailLbAttachment_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbAttachment.LightsailLbAttachment",
+		"@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func LightsailLbAttachment_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailLbAttachment.LightsailLbAttachment",
+		"@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func LightsailLbAttachment_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailLbAttachment.LightsailLbAttachment",
+		"@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleDnsKeysKeySigningKeysDigestsList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataGoogleDnsKeysKeySigningKeysDigestsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsList",
+		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleDnsKeysKeySigningKeysDigestsList_Override(d DataGoogleDnsKeysK
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsList",
+		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

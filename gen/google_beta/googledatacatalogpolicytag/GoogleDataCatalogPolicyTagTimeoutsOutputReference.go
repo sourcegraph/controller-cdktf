@@ -228,7 +228,7 @@ func NewGoogleDataCatalogPolicyTagTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleDataCatalogPolicyTagTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTagTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTagTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleDataCatalogPolicyTagTimeoutsOutputReference_Override(g GoogleDataC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTagTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTagTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

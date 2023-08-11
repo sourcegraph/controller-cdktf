@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecImagePullSecretsList(terraformResou
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecImagePullSecretsList_Override(r Rep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

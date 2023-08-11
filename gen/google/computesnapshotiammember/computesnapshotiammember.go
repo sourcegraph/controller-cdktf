@@ -424,7 +424,7 @@ func NewComputeSnapshotIamMember(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_ComputeSnapshotIamMember{}
 
 	_jsii_.Create(
-		"google.computeSnapshotIamMember.ComputeSnapshotIamMember",
+		"@cdktf/provider-google.computeSnapshotIamMember.ComputeSnapshotIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewComputeSnapshotIamMember_Override(c ComputeSnapshotIamMember, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSnapshotIamMember.ComputeSnapshotIamMember",
+		"@cdktf/provider-google.computeSnapshotIamMember.ComputeSnapshotIamMember",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -592,7 +592,7 @@ func ComputeSnapshotIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSnapshotIamMember.ComputeSnapshotIamMember",
+		"@cdktf/provider-google.computeSnapshotIamMember.ComputeSnapshotIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func ComputeSnapshotIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSnapshotIamMember.ComputeSnapshotIamMember",
+		"@cdktf/provider-google.computeSnapshotIamMember.ComputeSnapshotIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func ComputeSnapshotIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeSnapshotIamMember.ComputeSnapshotIamMember",
+		"@cdktf/provider-google.computeSnapshotIamMember.ComputeSnapshotIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func ComputeSnapshotIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeSnapshotIamMember.ComputeSnapshotIamMember",
+		"@cdktf/provider-google.computeSnapshotIamMember.ComputeSnapshotIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroup",
 		reflect.TypeOf((*DataAwsAlbTargetGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,15 +81,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupConfig",
 		reflect.TypeOf((*DataAwsAlbTargetGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheck",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheck",
 		reflect.TypeOf((*DataAwsAlbTargetGroupHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckList",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckList",
 		reflect.TypeOf((*DataAwsAlbTargetGroupHealthCheckList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckOutputReference",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckOutputReference",
 		reflect.TypeOf((*DataAwsAlbTargetGroupHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,11 +150,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickiness",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickiness",
 		reflect.TypeOf((*DataAwsAlbTargetGroupStickiness)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
 		reflect.TypeOf((*DataAwsAlbTargetGroupStickinessList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -174,7 +174,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessOutputReference",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessOutputReference",
 		reflect.TypeOf((*DataAwsAlbTargetGroupStickinessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -210,11 +210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeouts",
 		reflect.TypeOf((*DataAwsAlbTargetGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsAlbTargetGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

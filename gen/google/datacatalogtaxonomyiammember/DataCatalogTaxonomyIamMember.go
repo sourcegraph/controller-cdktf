@@ -448,7 +448,7 @@ func NewDataCatalogTaxonomyIamMember(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataCatalogTaxonomyIamMember{}
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataCatalogTaxonomyIamMember_Override(d DataCatalogTaxonomyIamMember, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataCatalogTaxonomyIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataCatalogTaxonomyIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataCatalogTaxonomyIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataCatalogTaxonomyIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
+		"@cdktf/provider-google.dataCatalogTaxonomyIamMember.DataCatalogTaxonomyIamMember",
 		"tfResourceType",
 		&returns,
 	)

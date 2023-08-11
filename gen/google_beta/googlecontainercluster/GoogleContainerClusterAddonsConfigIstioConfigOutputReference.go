@@ -203,7 +203,7 @@ func NewGoogleContainerClusterAddonsConfigIstioConfigOutputReference(terraformRe
 	j := jsiiProxy_GoogleContainerClusterAddonsConfigIstioConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigIstioConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigIstioConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleContainerClusterAddonsConfigIstioConfigOutputReference_Override(g 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigIstioConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigIstioConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -202,7 +202,7 @@ func NewAssuredWorkloadsWorkloadKmsSettingsOutputReference(terraformResource cdk
 	j := jsiiProxy_AssuredWorkloadsWorkloadKmsSettingsOutputReference{}
 
 	_jsii_.Create(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadKmsSettingsOutputReference",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadKmsSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewAssuredWorkloadsWorkloadKmsSettingsOutputReference_Override(a AssuredWor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadKmsSettingsOutputReference",
+		"@cdktf/provider-google.assuredWorkloadsWorkload.AssuredWorkloadsWorkloadKmsSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

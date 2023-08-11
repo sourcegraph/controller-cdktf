@@ -353,7 +353,7 @@ func NewGoogleTagsTagKeyIamPolicy(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleTagsTagKeyIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleTagsTagKeyIamPolicy_Override(g GoogleTagsTagKeyIamPolicy, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleTagsTagKeyIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleTagsTagKeyIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleTagsTagKeyIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleTagsTagKeyIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

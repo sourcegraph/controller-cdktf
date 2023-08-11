@@ -202,7 +202,7 @@ func NewWorklinkFleetIdentityProviderOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_WorklinkFleetIdentityProviderOutputReference{}
 
 	_jsii_.Create(
-		"aws.worklinkFleet.WorklinkFleetIdentityProviderOutputReference",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWorklinkFleetIdentityProviderOutputReference_Override(w WorklinkFleetIde
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.worklinkFleet.WorklinkFleetIdentityProviderOutputReference",
+		"@cdktf/provider-aws.worklinkFleet.WorklinkFleetIdentityProviderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

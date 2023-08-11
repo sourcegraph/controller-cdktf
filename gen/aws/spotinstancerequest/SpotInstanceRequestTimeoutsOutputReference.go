@@ -204,7 +204,7 @@ func NewSpotInstanceRequestTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_SpotInstanceRequestTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestTimeoutsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSpotInstanceRequestTimeoutsOutputReference_Override(s SpotInstanceReques
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestTimeoutsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

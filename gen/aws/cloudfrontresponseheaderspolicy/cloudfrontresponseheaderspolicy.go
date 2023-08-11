@@ -463,7 +463,7 @@ func NewCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_CloudfrontResponseHeadersPolicy{}
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -476,7 +476,7 @@ func NewCloudfrontResponseHeadersPolicy_Override(c CloudfrontResponseHeadersPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -620,7 +620,7 @@ func CloudfrontResponseHeadersPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -639,7 +639,7 @@ func CloudfrontResponseHeadersPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -658,7 +658,7 @@ func CloudfrontResponseHeadersPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -671,7 +671,7 @@ func CloudfrontResponseHeadersPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
+		"@cdktf/provider-aws.cloudfrontResponseHeadersPolicy.CloudfrontResponseHeadersPolicy",
 		"tfResourceType",
 		&returns,
 	)

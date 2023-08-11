@@ -156,7 +156,7 @@ func NewGoogleDataplexDatascanDataQualityResultRulesRuleUniquenessExpectationOut
 	j := jsiiProxy_GoogleDataplexDatascanDataQualityResultRulesRuleUniquenessExpectationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleUniquenessExpectationOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleUniquenessExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -168,7 +168,7 @@ func NewGoogleDataplexDatascanDataQualityResultRulesRuleUniquenessExpectationOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleUniquenessExpectationOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualityResultRulesRuleUniquenessExpectationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

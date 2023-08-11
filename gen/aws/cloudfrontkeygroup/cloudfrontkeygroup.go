@@ -377,7 +377,7 @@ func NewCloudfrontKeyGroup(scope constructs.Construct, id *string, config *Cloud
 	j := jsiiProxy_CloudfrontKeyGroup{}
 
 	_jsii_.Create(
-		"aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
+		"@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewCloudfrontKeyGroup_Override(c CloudfrontKeyGroup, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
+		"@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -534,7 +534,7 @@ func CloudfrontKeyGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
+		"@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func CloudfrontKeyGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
+		"@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func CloudfrontKeyGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
+		"@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func CloudfrontKeyGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
+		"@cdktf/provider-aws.cloudfrontKeyGroup.CloudfrontKeyGroup",
 		"tfResourceType",
 		&returns,
 	)

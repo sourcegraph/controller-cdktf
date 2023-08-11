@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.storagegatewayCache.StoragegatewayCache",
+		"@cdktf/provider-aws.storagegatewayCache.StoragegatewayCache",
 		reflect.TypeOf((*StoragegatewayCache)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayCache.StoragegatewayCacheConfig",
+		"@cdktf/provider-aws.storagegatewayCache.StoragegatewayCacheConfig",
 		reflect.TypeOf((*StoragegatewayCacheConfig)(nil)).Elem(),
 	)
 }

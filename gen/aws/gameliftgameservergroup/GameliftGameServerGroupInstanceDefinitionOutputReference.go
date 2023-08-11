@@ -203,7 +203,7 @@ func NewGameliftGameServerGroupInstanceDefinitionOutputReference(terraformResour
 	j := jsiiProxy_GameliftGameServerGroupInstanceDefinitionOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGameliftGameServerGroupInstanceDefinitionOutputReference_Override(g Game
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionOutputReference",
+		"@cdktf/provider-aws.gameliftGameServerGroup.GameliftGameServerGroupInstanceDefinitionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

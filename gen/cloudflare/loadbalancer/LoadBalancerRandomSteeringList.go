@@ -116,7 +116,7 @@ func NewLoadBalancerRandomSteeringList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_LoadBalancerRandomSteeringList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRandomSteeringList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerRandomSteeringList_Override(l LoadBalancerRandomSteeringList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRandomSteeringList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRandomSteeringList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

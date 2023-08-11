@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroup",
 		reflect.TypeOf((*RdsClusterParameterGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroupConfig",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupConfig",
 		reflect.TypeOf((*RdsClusterParameterGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameter",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameter",
 		reflect.TypeOf((*RdsClusterParameterGroupParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterList",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterList",
 		reflect.TypeOf((*RdsClusterParameterGroupParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.rdsClusterParameterGroup.RdsClusterParameterGroupParameterOutputReference",
 		reflect.TypeOf((*RdsClusterParameterGroupParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applyMethod", GoGetter: "ApplyMethod"},

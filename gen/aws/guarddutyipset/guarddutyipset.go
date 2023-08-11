@@ -470,7 +470,7 @@ func NewGuarddutyIpset(scope constructs.Construct, id *string, config *Guardduty
 	j := jsiiProxy_GuarddutyIpset{}
 
 	_jsii_.Create(
-		"aws.guarddutyIpset.GuarddutyIpset",
+		"@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -483,7 +483,7 @@ func NewGuarddutyIpset_Override(g GuarddutyIpset, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyIpset.GuarddutyIpset",
+		"@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -671,7 +671,7 @@ func GuarddutyIpset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyIpset.GuarddutyIpset",
+		"@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -690,7 +690,7 @@ func GuarddutyIpset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyIpset.GuarddutyIpset",
+		"@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -709,7 +709,7 @@ func GuarddutyIpset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyIpset.GuarddutyIpset",
+		"@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func GuarddutyIpset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.guarddutyIpset.GuarddutyIpset",
+		"@cdktf/provider-aws.guarddutyIpset.GuarddutyIpset",
 		"tfResourceType",
 		&returns,
 	)

@@ -222,7 +222,7 @@ func NewDataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference
 	j := jsiiProxy_DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewDataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsMqBrokerInstanceTypeOfferings.DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

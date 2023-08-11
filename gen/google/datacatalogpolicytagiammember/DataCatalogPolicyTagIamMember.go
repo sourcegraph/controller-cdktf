@@ -400,7 +400,7 @@ func NewDataCatalogPolicyTagIamMember(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataCatalogPolicyTagIamMember{}
 
 	_jsii_.Create(
-		"google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewDataCatalogPolicyTagIamMember_Override(d DataCatalogPolicyTagIamMember, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -557,7 +557,7 @@ func DataCatalogPolicyTagIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func DataCatalogPolicyTagIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func DataCatalogPolicyTagIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func DataCatalogPolicyTagIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
+		"@cdktf/provider-google.dataCatalogPolicyTagIamMember.DataCatalogPolicyTagIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewLexIntentFulfillmentActivityCodeHookOutputReference(terraformResource cd
 	j := jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLexIntentFulfillmentActivityCodeHookOutputReference_Override(l LexIntent
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
+		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

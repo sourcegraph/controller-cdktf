@@ -413,7 +413,7 @@ func NewGlobalacceleratorListener(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GlobalacceleratorListener{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorListener.GlobalacceleratorListener",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListener",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewGlobalacceleratorListener_Override(g GlobalacceleratorListener, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorListener.GlobalacceleratorListener",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListener",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -570,7 +570,7 @@ func GlobalacceleratorListener_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.globalacceleratorListener.GlobalacceleratorListener",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListener",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func GlobalacceleratorListener_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.globalacceleratorListener.GlobalacceleratorListener",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListener",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GlobalacceleratorListener_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.globalacceleratorListener.GlobalacceleratorListener",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListener",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func GlobalacceleratorListener_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.globalacceleratorListener.GlobalacceleratorListener",
+		"@cdktf/provider-aws.globalacceleratorListener.GlobalacceleratorListener",
 		"tfResourceType",
 		&returns,
 	)

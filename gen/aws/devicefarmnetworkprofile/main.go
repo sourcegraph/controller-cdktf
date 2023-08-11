@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
 		reflect.TypeOf((*DevicefarmNetworkProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -96,7 +96,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.devicefarmNetworkProfile.DevicefarmNetworkProfileConfig",
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfileConfig",
 		reflect.TypeOf((*DevicefarmNetworkProfileConfig)(nil)).Elem(),
 	)
 }

@@ -473,7 +473,7 @@ func NewCustomerGateway(scope constructs.Construct, id *string, config *Customer
 	j := jsiiProxy_CustomerGateway{}
 
 	_jsii_.Create(
-		"aws.customerGateway.CustomerGateway",
+		"@cdktf/provider-aws.customerGateway.CustomerGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -486,7 +486,7 @@ func NewCustomerGateway_Override(c CustomerGateway, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.customerGateway.CustomerGateway",
+		"@cdktf/provider-aws.customerGateway.CustomerGateway",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -674,7 +674,7 @@ func CustomerGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.customerGateway.CustomerGateway",
+		"@cdktf/provider-aws.customerGateway.CustomerGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func CustomerGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.customerGateway.CustomerGateway",
+		"@cdktf/provider-aws.customerGateway.CustomerGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func CustomerGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.customerGateway.CustomerGateway",
+		"@cdktf/provider-aws.customerGateway.CustomerGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func CustomerGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.customerGateway.CustomerGateway",
+		"@cdktf/provider-aws.customerGateway.CustomerGateway",
 		"tfResourceType",
 		&returns,
 	)

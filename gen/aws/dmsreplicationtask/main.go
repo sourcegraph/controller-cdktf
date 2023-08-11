@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dmsReplicationTask.DmsReplicationTask",
+		"@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTask",
 		reflect.TypeOf((*DmsReplicationTask)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,7 +87,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dmsReplicationTask.DmsReplicationTaskConfig",
+		"@cdktf/provider-aws.dmsReplicationTask.DmsReplicationTaskConfig",
 		reflect.TypeOf((*DmsReplicationTaskConfig)(nil)).Elem(),
 	)
 }

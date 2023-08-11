@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataFusionInstance.DataFusionInstance",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstance",
 		reflect.TypeOf((*DataFusionInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accelerators", GoGetter: "Accelerators"},
@@ -127,11 +127,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataFusionInstance.DataFusionInstanceAccelerators",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceAccelerators",
 		reflect.TypeOf((*DataFusionInstanceAccelerators)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataFusionInstance.DataFusionInstanceAcceleratorsList",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsList",
 		reflect.TypeOf((*DataFusionInstanceAcceleratorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -152,7 +152,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference",
 		reflect.TypeOf((*DataFusionInstanceAcceleratorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorType", GoGetter: "AcceleratorType"},
@@ -188,15 +188,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataFusionInstance.DataFusionInstanceConfig",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceConfig",
 		reflect.TypeOf((*DataFusionInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataFusionInstance.DataFusionInstanceCryptoKeyConfig",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceCryptoKeyConfig",
 		reflect.TypeOf((*DataFusionInstanceCryptoKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataFusionInstance.DataFusionInstanceCryptoKeyConfigOutputReference",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceCryptoKeyConfigOutputReference",
 		reflect.TypeOf((*DataFusionInstanceCryptoKeyConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,11 +230,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataFusionInstance.DataFusionInstanceEventPublishConfig",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceEventPublishConfig",
 		reflect.TypeOf((*DataFusionInstanceEventPublishConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataFusionInstance.DataFusionInstanceEventPublishConfigOutputReference",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceEventPublishConfigOutputReference",
 		reflect.TypeOf((*DataFusionInstanceEventPublishConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,11 +270,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataFusionInstance.DataFusionInstanceNetworkConfig",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfig",
 		reflect.TypeOf((*DataFusionInstanceNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataFusionInstance.DataFusionInstanceNetworkConfigOutputReference",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigOutputReference",
 		reflect.TypeOf((*DataFusionInstanceNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -310,11 +310,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataFusionInstance.DataFusionInstanceTimeouts",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceTimeouts",
 		reflect.TypeOf((*DataFusionInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*DataFusionInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

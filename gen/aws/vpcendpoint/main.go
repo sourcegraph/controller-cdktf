@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcEndpoint.VpcEndpoint",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpoint",
 		reflect.TypeOf((*VpcEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -105,15 +105,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcEndpoint.VpcEndpointConfig",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointConfig",
 		reflect.TypeOf((*VpcEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcEndpoint.VpcEndpointDnsEntry",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntry",
 		reflect.TypeOf((*VpcEndpointDnsEntry)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcEndpoint.VpcEndpointDnsEntryList",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntryList",
 		reflect.TypeOf((*VpcEndpointDnsEntryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -133,7 +133,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcEndpoint.VpcEndpointDnsEntryOutputReference",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsEntryOutputReference",
 		reflect.TypeOf((*VpcEndpointDnsEntryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -167,11 +167,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcEndpoint.VpcEndpointDnsOptions",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsOptions",
 		reflect.TypeOf((*VpcEndpointDnsOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcEndpoint.VpcEndpointDnsOptionsOutputReference",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointDnsOptionsOutputReference",
 		reflect.TypeOf((*VpcEndpointDnsOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -206,11 +206,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcEndpoint.VpcEndpointTimeouts",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointTimeouts",
 		reflect.TypeOf((*VpcEndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcEndpoint.VpcEndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcEndpoint.VpcEndpointTimeoutsOutputReference",
 		reflect.TypeOf((*VpcEndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

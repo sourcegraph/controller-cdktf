@@ -275,7 +275,7 @@ func NewJobV1SpecTemplateSpecVolumeFlexVolumeOutputReference(terraformResource c
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeFlexVolumeOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeFlexVolumeOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeFlexVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewJobV1SpecTemplateSpecVolumeFlexVolumeOutputReference_Override(j JobV1Spe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecVolumeFlexVolumeOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeFlexVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsLaunchTemplateBlockDeviceMappingsEbsList(terraformResource cdktf.
 	j := jsiiProxy_DataAwsLaunchTemplateBlockDeviceMappingsEbsList{}
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappingsEbsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappingsEbsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsLaunchTemplateBlockDeviceMappingsEbsList_Override(d DataAwsLaunch
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappingsEbsList",
+		"@cdktf/provider-aws.dataAwsLaunchTemplate.DataAwsLaunchTemplateBlockDeviceMappingsEbsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

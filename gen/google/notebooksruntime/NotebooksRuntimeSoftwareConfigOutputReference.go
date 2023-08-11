@@ -383,7 +383,7 @@ func NewNotebooksRuntimeSoftwareConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_NotebooksRuntimeSoftwareConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeSoftwareConfigOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeSoftwareConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -395,7 +395,7 @@ func NewNotebooksRuntimeSoftwareConfigOutputReference_Override(n NotebooksRuntim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.notebooksRuntime.NotebooksRuntimeSoftwareConfigOutputReference",
+		"@cdktf/provider-google.notebooksRuntime.NotebooksRuntimeSoftwareConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

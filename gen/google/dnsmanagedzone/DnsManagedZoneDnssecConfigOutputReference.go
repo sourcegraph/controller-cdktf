@@ -252,7 +252,7 @@ func NewDnsManagedZoneDnssecConfigOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DnsManagedZoneDnssecConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDnsManagedZoneDnssecConfigOutputReference_Override(d DnsManagedZoneDnsse
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

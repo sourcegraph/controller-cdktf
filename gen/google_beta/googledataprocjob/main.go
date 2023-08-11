@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJob",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob",
 		reflect.TypeOf((*GoogleDataprocJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -113,19 +113,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobConfig",
 		reflect.TypeOf((*GoogleDataprocJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfig",
 		reflect.TypeOf((*GoogleDataprocJobHadoopConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigLoggingConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigLoggingConfig",
 		reflect.TypeOf((*GoogleDataprocJobHadoopConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobHadoopConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,7 +159,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobHadoopConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
@@ -216,11 +216,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHiveConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHiveConfig",
 		reflect.TypeOf((*GoogleDataprocJobHiveConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHiveConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHiveConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobHiveConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,15 +270,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPigConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPigConfig",
 		reflect.TypeOf((*GoogleDataprocJobPigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPigConfigLoggingConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPigConfigLoggingConfig",
 		reflect.TypeOf((*GoogleDataprocJobPigConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPigConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPigConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobPigConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -312,7 +312,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPigConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPigConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobPigConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -366,11 +366,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPlacement",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPlacement",
 		reflect.TypeOf((*GoogleDataprocJobPlacement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPlacementOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPlacementOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobPlacementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
@@ -405,15 +405,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPrestoConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPrestoConfig",
 		reflect.TypeOf((*GoogleDataprocJobPrestoConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPrestoConfigLoggingConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPrestoConfigLoggingConfig",
 		reflect.TypeOf((*GoogleDataprocJobPrestoConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPrestoConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPrestoConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobPrestoConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -447,7 +447,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPrestoConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPrestoConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobPrestoConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientTags", GoGetter: "ClientTags"},
@@ -501,15 +501,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPysparkConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPysparkConfig",
 		reflect.TypeOf((*GoogleDataprocJobPysparkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPysparkConfigLoggingConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPysparkConfigLoggingConfig",
 		reflect.TypeOf((*GoogleDataprocJobPysparkConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPysparkConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPysparkConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobPysparkConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -543,7 +543,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobPysparkConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPysparkConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobPysparkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
@@ -599,11 +599,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobReference",
 		reflect.TypeOf((*GoogleDataprocJobReference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobReferenceOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobReferenceOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobReferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -638,11 +638,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobScheduling",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobScheduling",
 		reflect.TypeOf((*GoogleDataprocJobScheduling)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSchedulingOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSchedulingOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobSchedulingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -678,15 +678,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSparkConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparkConfig",
 		reflect.TypeOf((*GoogleDataprocJobSparkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSparkConfigLoggingConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparkConfigLoggingConfig",
 		reflect.TypeOf((*GoogleDataprocJobSparkConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSparkConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparkConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobSparkConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -720,7 +720,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSparkConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparkConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobSparkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
@@ -777,15 +777,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSparksqlConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparksqlConfig",
 		reflect.TypeOf((*GoogleDataprocJobSparksqlConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSparksqlConfigLoggingConfig",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparksqlConfigLoggingConfig",
 		reflect.TypeOf((*GoogleDataprocJobSparksqlConfigLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSparksqlConfigLoggingConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparksqlConfigLoggingConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobSparksqlConfigLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -819,7 +819,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobSparksqlConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparksqlConfigOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobSparksqlConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -870,11 +870,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobStatus",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobStatus",
 		reflect.TypeOf((*GoogleDataprocJobStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobStatusList",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobStatusList",
 		reflect.TypeOf((*GoogleDataprocJobStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -894,7 +894,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobStatusOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobStatusOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -930,11 +930,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleDataprocJob.GoogleDataprocJobTimeouts",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobTimeouts",
 		reflect.TypeOf((*GoogleDataprocJobTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleDataprocJob.GoogleDataprocJobTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDataprocJobTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

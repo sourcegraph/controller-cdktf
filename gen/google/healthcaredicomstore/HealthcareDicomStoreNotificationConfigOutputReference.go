@@ -179,7 +179,7 @@ func NewHealthcareDicomStoreNotificationConfigOutputReference(terraformResource 
 	j := jsiiProxy_HealthcareDicomStoreNotificationConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.healthcareDicomStore.HealthcareDicomStoreNotificationConfigOutputReference",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreNotificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewHealthcareDicomStoreNotificationConfigOutputReference_Override(h Healthc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareDicomStore.HealthcareDicomStoreNotificationConfigOutputReference",
+		"@cdktf/provider-google.healthcareDicomStore.HealthcareDicomStoreNotificationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)

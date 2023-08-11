@@ -252,7 +252,7 @@ func NewJobSpecTemplateSpecVolumeConfigMapOutputReference(terraformResource cdkt
 	j := jsiiProxy_JobSpecTemplateSpecVolumeConfigMapOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewJobSpecTemplateSpecVolumeConfigMapOutputReference_Override(j JobSpecTemp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecVolumeConfigMapOutputReference",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeConfigMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

@@ -474,7 +474,7 @@ func NewGoogleComputeExternalVpnGateway(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleComputeExternalVpnGateway{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewGoogleComputeExternalVpnGateway_Override(g GoogleComputeExternalVpnGatew
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -653,7 +653,7 @@ func GoogleComputeExternalVpnGateway_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -672,7 +672,7 @@ func GoogleComputeExternalVpnGateway_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func GoogleComputeExternalVpnGateway_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -704,7 +704,7 @@ func GoogleComputeExternalVpnGateway_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
+		"@cdktf/provider-google-beta.googleComputeExternalVpnGateway.GoogleComputeExternalVpnGateway",
 		"tfResourceType",
 		&returns,
 	)

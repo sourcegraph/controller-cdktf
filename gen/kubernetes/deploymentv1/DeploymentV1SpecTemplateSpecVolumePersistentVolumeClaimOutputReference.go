@@ -204,7 +204,7 @@ func NewDeploymentV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference(t
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
+		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecVolumePersistentVolumeClaimOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

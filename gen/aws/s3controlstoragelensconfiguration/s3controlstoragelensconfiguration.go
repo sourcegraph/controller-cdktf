@@ -425,7 +425,7 @@ func NewS3ControlStorageLensConfiguration(scope constructs.Construct, id *string
 	j := jsiiProxy_S3ControlStorageLensConfiguration{}
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewS3ControlStorageLensConfiguration_Override(s S3ControlStorageLensConfigu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -593,7 +593,7 @@ func S3ControlStorageLensConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func S3ControlStorageLensConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func S3ControlStorageLensConfiguration_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func S3ControlStorageLensConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
+		"@cdktf/provider-aws.s3ControlStorageLensConfiguration.S3ControlStorageLensConfiguration",
 		"tfResourceType",
 		&returns,
 	)

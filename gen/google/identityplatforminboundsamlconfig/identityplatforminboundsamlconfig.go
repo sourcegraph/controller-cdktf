@@ -460,7 +460,7 @@ func NewIdentityPlatformInboundSamlConfig(scope constructs.Construct, id *string
 	j := jsiiProxy_IdentityPlatformInboundSamlConfig{}
 
 	_jsii_.Create(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -473,7 +473,7 @@ func NewIdentityPlatformInboundSamlConfig_Override(i IdentityPlatformInboundSaml
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -628,7 +628,7 @@ func IdentityPlatformInboundSamlConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -647,7 +647,7 @@ func IdentityPlatformInboundSamlConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func IdentityPlatformInboundSamlConfig_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func IdentityPlatformInboundSamlConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
+		"@cdktf/provider-google.identityPlatformInboundSamlConfig.IdentityPlatformInboundSamlConfig",
 		"tfResourceType",
 		&returns,
 	)

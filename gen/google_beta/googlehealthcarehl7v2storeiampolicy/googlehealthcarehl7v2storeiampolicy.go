@@ -353,7 +353,7 @@ func NewGoogleHealthcareHl7V2StoreIamPolicy(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleHealthcareHl7V2StoreIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewGoogleHealthcareHl7V2StoreIamPolicy_Override(g GoogleHealthcareHl7V2Stor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -499,7 +499,7 @@ func GoogleHealthcareHl7V2StoreIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func GoogleHealthcareHl7V2StoreIamPolicy_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func GoogleHealthcareHl7V2StoreIamPolicy_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func GoogleHealthcareHl7V2StoreIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamPolicy.GoogleHealthcareHl7V2StoreIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

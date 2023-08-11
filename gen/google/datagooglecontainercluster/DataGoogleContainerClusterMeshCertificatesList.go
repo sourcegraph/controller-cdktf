@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterMeshCertificatesList(terraformResource cdktf.I
 	j := jsiiProxy_DataGoogleContainerClusterMeshCertificatesList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterMeshCertificatesList_Override(d DataGoogleCont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

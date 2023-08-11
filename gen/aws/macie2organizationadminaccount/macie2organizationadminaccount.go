@@ -319,7 +319,7 @@ func NewMacie2OrganizationAdminAccount(scope constructs.Construct, id *string, c
 	j := jsiiProxy_Macie2OrganizationAdminAccount{}
 
 	_jsii_.Create(
-		"aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
+		"@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -332,7 +332,7 @@ func NewMacie2OrganizationAdminAccount_Override(m Macie2OrganizationAdminAccount
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
+		"@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -454,7 +454,7 @@ func Macie2OrganizationAdminAccount_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
+		"@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -473,7 +473,7 @@ func Macie2OrganizationAdminAccount_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
+		"@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -492,7 +492,7 @@ func Macie2OrganizationAdminAccount_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
+		"@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -505,7 +505,7 @@ func Macie2OrganizationAdminAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
+		"@cdktf/provider-aws.macie2OrganizationAdminAccount.Macie2OrganizationAdminAccount",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewIotTopicRuleErrorActionDynamodbv2OutputReference(terraformResource cdktf
 	j := jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewIotTopicRuleErrorActionDynamodbv2OutputReference_Override(i IotTopicRule
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionDynamodbv2OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

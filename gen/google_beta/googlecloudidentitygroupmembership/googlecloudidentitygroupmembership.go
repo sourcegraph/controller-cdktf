@@ -458,7 +458,7 @@ func NewGoogleCloudIdentityGroupMembership(scope constructs.Construct, id *strin
 	j := jsiiProxy_GoogleCloudIdentityGroupMembership{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewGoogleCloudIdentityGroupMembership_Override(g GoogleCloudIdentityGroupMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -593,7 +593,7 @@ func GoogleCloudIdentityGroupMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -612,7 +612,7 @@ func GoogleCloudIdentityGroupMembership_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func GoogleCloudIdentityGroupMembership_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -644,7 +644,7 @@ func GoogleCloudIdentityGroupMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroupMembership.GoogleCloudIdentityGroupMembership",
 		"tfResourceType",
 		&returns,
 	)

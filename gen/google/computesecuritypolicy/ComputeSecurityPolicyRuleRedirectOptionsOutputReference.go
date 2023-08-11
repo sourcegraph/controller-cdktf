@@ -203,7 +203,7 @@ func NewComputeSecurityPolicyRuleRedirectOptionsOutputReference(terraformResourc
 	j := jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptionsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeSecurityPolicyRuleRedirectOptionsOutputReference_Override(c Compu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptionsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRedirectOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

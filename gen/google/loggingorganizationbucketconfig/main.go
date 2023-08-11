@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfig",
 		reflect.TypeOf((*LoggingOrganizationBucketConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,11 +73,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettings",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettings",
 		reflect.TypeOf((*LoggingOrganizationBucketConfigCmekSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettingsOutputReference",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigCmekSettingsOutputReference",
 		reflect.TypeOf((*LoggingOrganizationBucketConfigCmekSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,7 +114,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig",
+		"@cdktf/provider-google.loggingOrganizationBucketConfig.LoggingOrganizationBucketConfigConfig",
 		reflect.TypeOf((*LoggingOrganizationBucketConfigConfig)(nil)).Elem(),
 	)
 }

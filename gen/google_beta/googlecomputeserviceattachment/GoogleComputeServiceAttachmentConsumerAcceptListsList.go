@@ -116,7 +116,7 @@ func NewGoogleComputeServiceAttachmentConsumerAcceptListsList(terraformResource 
 	j := jsiiProxy_GoogleComputeServiceAttachmentConsumerAcceptListsList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentConsumerAcceptListsList",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentConsumerAcceptListsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeServiceAttachmentConsumerAcceptListsList_Override(g GoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentConsumerAcceptListsList",
+		"@cdktf/provider-google-beta.googleComputeServiceAttachment.GoogleComputeServiceAttachmentConsumerAcceptListsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

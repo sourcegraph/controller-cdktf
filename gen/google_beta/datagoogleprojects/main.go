@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleProjects.DataGoogleProjects",
+		"@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjects",
 		reflect.TypeOf((*DataGoogleProjects)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -56,15 +56,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleProjects.DataGoogleProjectsConfig",
+		"@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsConfig",
 		reflect.TypeOf((*DataGoogleProjectsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleProjects.DataGoogleProjectsProjects",
+		"@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsProjects",
 		reflect.TypeOf((*DataGoogleProjectsProjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleProjects.DataGoogleProjectsProjectsList",
+		"@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsProjectsList",
 		reflect.TypeOf((*DataGoogleProjectsProjectsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -84,7 +84,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleProjects.DataGoogleProjectsProjectsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleProjects.DataGoogleProjectsProjectsOutputReference",
 		reflect.TypeOf((*DataGoogleProjectsProjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

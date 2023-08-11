@@ -227,7 +227,7 @@ func NewGoogleBigqueryConnectionCloudSpannerOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleBigqueryConnectionCloudSpannerOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpannerOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpannerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewGoogleBigqueryConnectionCloudSpannerOutputReference_Override(g GoogleBig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpannerOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryConnection.GoogleBigqueryConnectionCloudSpannerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

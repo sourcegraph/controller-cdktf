@@ -180,7 +180,7 @@ func NewPodSpecContainerLifecyclePreStopExecOutputReference(terraformResource cd
 	j := jsiiProxy_PodSpecContainerLifecyclePreStopExecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLifecyclePreStopExecOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewPodSpecContainerLifecyclePreStopExecOutputReference_Override(p PodSpecCo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLifecyclePreStopExecOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

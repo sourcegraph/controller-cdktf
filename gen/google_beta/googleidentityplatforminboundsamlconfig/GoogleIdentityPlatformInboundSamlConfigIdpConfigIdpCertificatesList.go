@@ -116,7 +116,7 @@ func NewGoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList(terr
 	j := jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList{}
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList",
+		"@cdktf/provider-google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList",
+		"@cdktf/provider-google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

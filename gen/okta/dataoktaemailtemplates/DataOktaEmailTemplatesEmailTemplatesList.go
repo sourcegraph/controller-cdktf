@@ -104,7 +104,7 @@ func NewDataOktaEmailTemplatesEmailTemplatesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataOktaEmailTemplatesEmailTemplatesList{}
 
 	_jsii_.Create(
-		"okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesList",
+		"@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaEmailTemplatesEmailTemplatesList_Override(d DataOktaEmailTemplat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesList",
+		"@cdktf/provider-okta.dataOktaEmailTemplates.DataOktaEmailTemplatesEmailTemplatesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

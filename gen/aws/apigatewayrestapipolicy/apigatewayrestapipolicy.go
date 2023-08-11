@@ -342,7 +342,7 @@ func NewApiGatewayRestApiPolicy(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ApiGatewayRestApiPolicy{}
 
 	_jsii_.Create(
-		"aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
+		"@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewApiGatewayRestApiPolicy_Override(a ApiGatewayRestApiPolicy, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
+		"@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -488,7 +488,7 @@ func ApiGatewayRestApiPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
+		"@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func ApiGatewayRestApiPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
+		"@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func ApiGatewayRestApiPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
+		"@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func ApiGatewayRestApiPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
+		"@cdktf/provider-aws.apiGatewayRestApiPolicy.ApiGatewayRestApiPolicy",
 		"tfResourceType",
 		&returns,
 	)

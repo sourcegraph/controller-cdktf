@@ -179,7 +179,7 @@ func NewGoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference(terraf
 	j := jsiiProxy_GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference",
+		"@cdktf/provider-google-beta.googleApikeysKey.GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

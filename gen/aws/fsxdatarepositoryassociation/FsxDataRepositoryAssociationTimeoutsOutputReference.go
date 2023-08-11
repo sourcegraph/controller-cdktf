@@ -228,7 +228,7 @@ func NewFsxDataRepositoryAssociationTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_FsxDataRepositoryAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFsxDataRepositoryAssociationTimeoutsOutputReference_Override(f FsxDataRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

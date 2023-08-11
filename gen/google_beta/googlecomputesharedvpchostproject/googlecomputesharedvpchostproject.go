@@ -343,7 +343,7 @@ func NewGoogleComputeSharedVpcHostProject(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeSharedVpcHostProject{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewGoogleComputeSharedVpcHostProject_Override(g GoogleComputeSharedVpcHostP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -478,7 +478,7 @@ func GoogleComputeSharedVpcHostProject_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func GoogleComputeSharedVpcHostProject_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func GoogleComputeSharedVpcHostProject_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func GoogleComputeSharedVpcHostProject_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
+		"@cdktf/provider-google-beta.googleComputeSharedVpcHostProject.GoogleComputeSharedVpcHostProject",
 		"tfResourceType",
 		&returns,
 	)

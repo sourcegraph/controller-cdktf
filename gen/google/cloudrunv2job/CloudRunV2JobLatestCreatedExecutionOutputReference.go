@@ -189,7 +189,7 @@ func NewCloudRunV2JobLatestCreatedExecutionOutputReference(terraformResource cdk
 	j := jsiiProxy_CloudRunV2JobLatestCreatedExecutionOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobLatestCreatedExecutionOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobLatestCreatedExecutionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewCloudRunV2JobLatestCreatedExecutionOutputReference_Override(c CloudRunV2
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunV2Job.CloudRunV2JobLatestCreatedExecutionOutputReference",
+		"@cdktf/provider-google.cloudRunV2Job.CloudRunV2JobLatestCreatedExecutionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.vpcPeeringConnection.VpcPeeringConnection",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnection",
 		reflect.TypeOf((*VpcPeeringConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accepter", GoGetter: "Accepter"},
@@ -87,11 +87,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcPeeringConnection.VpcPeeringConnectionAccepter",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionAccepter",
 		reflect.TypeOf((*VpcPeeringConnectionAccepter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcPeeringConnection.VpcPeeringConnectionAccepterOutputReference",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionAccepterOutputReference",
 		reflect.TypeOf((*VpcPeeringConnectionAccepterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowClassicLinkToRemoteVpc", GoGetter: "AllowClassicLinkToRemoteVpc"},
@@ -132,15 +132,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcPeeringConnection.VpcPeeringConnectionConfig",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionConfig",
 		reflect.TypeOf((*VpcPeeringConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcPeeringConnection.VpcPeeringConnectionRequester",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionRequester",
 		reflect.TypeOf((*VpcPeeringConnectionRequester)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcPeeringConnection.VpcPeeringConnectionRequesterOutputReference",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionRequesterOutputReference",
 		reflect.TypeOf((*VpcPeeringConnectionRequesterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowClassicLinkToRemoteVpc", GoGetter: "AllowClassicLinkToRemoteVpc"},
@@ -181,11 +181,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.vpcPeeringConnection.VpcPeeringConnectionTimeouts",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionTimeouts",
 		reflect.TypeOf((*VpcPeeringConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.vpcPeeringConnection.VpcPeeringConnectionTimeoutsOutputReference",
+		"@cdktf/provider-aws.vpcPeeringConnection.VpcPeeringConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*VpcPeeringConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

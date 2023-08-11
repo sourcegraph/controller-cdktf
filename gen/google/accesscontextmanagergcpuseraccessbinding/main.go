@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding",
 		reflect.TypeOf((*AccessContextManagerGcpUserAccessBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLevels", GoGetter: "AccessLevels"},
@@ -66,15 +66,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig",
 		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts",
 		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference",
+		"@cdktf/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference",
 		reflect.TypeOf((*AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

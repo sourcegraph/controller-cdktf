@@ -226,7 +226,7 @@ func NewGooglePrivatecaCertificateTemplateIamMemberConditionOutputReference(terr
 	j := jsiiProxy_GooglePrivatecaCertificateTemplateIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGooglePrivatecaCertificateTemplateIamMemberConditionOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamMember.GooglePrivatecaCertificateTemplateIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -179,7 +179,7 @@ func NewStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials
 	j := jsiiProxy_StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference{}
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference",
+		"@cdktf/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

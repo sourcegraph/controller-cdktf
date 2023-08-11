@@ -228,7 +228,7 @@ func NewGoogleComputeAutoscalerTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleComputeAutoscalerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeAutoscalerTimeoutsOutputReference_Override(g GoogleComputeA
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeAutoscaler.GoogleComputeAutoscalerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

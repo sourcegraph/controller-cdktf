@@ -384,7 +384,7 @@ func NewDataGoogleDataplexZoneIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleDataplexZoneIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -397,7 +397,7 @@ func NewDataGoogleDataplexZoneIamPolicy_Override(d DataGoogleDataplexZoneIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -530,7 +530,7 @@ func DataGoogleDataplexZoneIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func DataGoogleDataplexZoneIamPolicy_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -568,7 +568,7 @@ func DataGoogleDataplexZoneIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func DataGoogleDataplexZoneIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
+		"@cdktf/provider-google.dataGoogleDataplexZoneIamPolicy.DataGoogleDataplexZoneIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

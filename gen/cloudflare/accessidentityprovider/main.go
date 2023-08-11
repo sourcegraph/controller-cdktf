@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.accessIdentityProvider.AccessIdentityProvider",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProvider",
 		reflect.TypeOf((*AccessIdentityProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderConfig",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfig",
 		reflect.TypeOf((*AccessIdentityProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderConfigA",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigA",
 		reflect.TypeOf((*AccessIdentityProviderConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAList",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAList",
 		reflect.TypeOf((*AccessIdentityProviderConfigAList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAOutputReference",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderConfigAOutputReference",
 		reflect.TypeOf((*AccessIdentityProviderConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiToken", GoGetter: "ApiToken"},
@@ -203,11 +203,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfig",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfig",
 		reflect.TypeOf((*AccessIdentityProviderScimConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigList",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigList",
 		reflect.TypeOf((*AccessIdentityProviderScimConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -228,7 +228,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigOutputReference",
+		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigOutputReference",
 		reflect.TypeOf((*AccessIdentityProviderScimConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -590,7 +590,7 @@ func NewGoogleGkeBackupBackupPlan(scope constructs.Construct, id *string, config
 	j := jsiiProxy_GoogleGkeBackupBackupPlan{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -603,7 +603,7 @@ func NewGoogleGkeBackupBackupPlan_Override(g GoogleGkeBackupBackupPlan, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -791,7 +791,7 @@ func GoogleGkeBackupBackupPlan_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -810,7 +810,7 @@ func GoogleGkeBackupBackupPlan_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func GoogleGkeBackupBackupPlan_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func GoogleGkeBackupBackupPlan_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
+		"@cdktf/provider-google-beta.googleGkeBackupBackupPlan.GoogleGkeBackupBackupPlan",
 		"tfResourceType",
 		&returns,
 	)

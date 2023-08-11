@@ -250,7 +250,7 @@ func NewPolicySetVcsRepoOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_PolicySetVcsRepoOutputReference{}
 
 	_jsii_.Create(
-		"tfe.policySet.PolicySetVcsRepoOutputReference",
+		"@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewPolicySetVcsRepoOutputReference_Override(p PolicySetVcsRepoOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.policySet.PolicySetVcsRepoOutputReference",
+		"@cdktf/provider-tfe.policySet.PolicySetVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

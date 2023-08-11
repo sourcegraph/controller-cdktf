@@ -401,7 +401,7 @@ func NewEc2TransitGatewayPrefixListReference(scope constructs.Construct, id *str
 	j := jsiiProxy_Ec2TransitGatewayPrefixListReference{}
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
+		"@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewEc2TransitGatewayPrefixListReference_Override(e Ec2TransitGatewayPrefixL
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
+		"@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -569,7 +569,7 @@ func Ec2TransitGatewayPrefixListReference_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
+		"@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func Ec2TransitGatewayPrefixListReference_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
+		"@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func Ec2TransitGatewayPrefixListReference_IsTerraformResource(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
+		"@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func Ec2TransitGatewayPrefixListReference_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
+		"@cdktf/provider-aws.ec2TransitGatewayPrefixListReference.Ec2TransitGatewayPrefixListReference",
 		"tfResourceType",
 		&returns,
 	)

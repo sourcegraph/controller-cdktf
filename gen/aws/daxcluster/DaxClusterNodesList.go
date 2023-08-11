@@ -104,7 +104,7 @@ func NewDaxClusterNodesList(terraformResource cdktf.IInterpolatingParent, terraf
 	j := jsiiProxy_DaxClusterNodesList{}
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxClusterNodesList",
+		"@cdktf/provider-aws.daxCluster.DaxClusterNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDaxClusterNodesList_Override(d DaxClusterNodesList, terraformResource cd
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxClusterNodesList",
+		"@cdktf/provider-aws.daxCluster.DaxClusterNodesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

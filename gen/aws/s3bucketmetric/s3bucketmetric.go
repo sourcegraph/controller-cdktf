@@ -366,7 +366,7 @@ func NewS3BucketMetric(scope constructs.Construct, id *string, config *S3BucketM
 	j := jsiiProxy_S3BucketMetric{}
 
 	_jsii_.Create(
-		"aws.s3BucketMetric.S3BucketMetric",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewS3BucketMetric_Override(s S3BucketMetric, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketMetric.S3BucketMetric",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -512,7 +512,7 @@ func S3BucketMetric_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketMetric.S3BucketMetric",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func S3BucketMetric_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketMetric.S3BucketMetric",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func S3BucketMetric_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.s3BucketMetric.S3BucketMetric",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func S3BucketMetric_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.s3BucketMetric.S3BucketMetric",
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		"tfResourceType",
 		&returns,
 	)

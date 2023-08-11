@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
+		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPools",
 		reflect.TypeOf((*DataAwsCognitoUserPools)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig",
+		"@cdktf/provider-aws.dataAwsCognitoUserPools.DataAwsCognitoUserPoolsConfig",
 		reflect.TypeOf((*DataAwsCognitoUserPoolsConfig)(nil)).Elem(),
 	)
 }

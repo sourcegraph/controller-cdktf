@@ -178,7 +178,7 @@ func NewDataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputRefere
 	j := jsiiProxy_DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference",
+		"@cdktf/provider-aws.dataAwsServicecatalogLaunchPaths.DataAwsServicecatalogLaunchPathsSummariesConstraintSummariesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

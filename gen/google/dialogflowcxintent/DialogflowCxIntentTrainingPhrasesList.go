@@ -116,7 +116,7 @@ func NewDialogflowCxIntentTrainingPhrasesList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DialogflowCxIntentTrainingPhrasesList{}
 
 	_jsii_.Create(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDialogflowCxIntentTrainingPhrasesList_Override(d DialogflowCxIntentTrain
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

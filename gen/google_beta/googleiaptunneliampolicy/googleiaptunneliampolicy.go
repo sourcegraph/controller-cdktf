@@ -354,7 +354,7 @@ func NewGoogleIapTunnelIamPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_GoogleIapTunnelIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewGoogleIapTunnelIamPolicy_Override(g GoogleIapTunnelIamPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -500,7 +500,7 @@ func GoogleIapTunnelIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -519,7 +519,7 @@ func GoogleIapTunnelIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func GoogleIapTunnelIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func GoogleIapTunnelIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
+		"@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -484,7 +484,7 @@ func NewGoogleProjectOrganizationPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleProjectOrganizationPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -497,7 +497,7 @@ func NewGoogleProjectOrganizationPolicy_Override(g GoogleProjectOrganizationPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -641,7 +641,7 @@ func GoogleProjectOrganizationPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -660,7 +660,7 @@ func GoogleProjectOrganizationPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GoogleProjectOrganizationPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -692,7 +692,7 @@ func GoogleProjectOrganizationPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
+		"@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy",
 		"tfResourceType",
 		&returns,
 	)

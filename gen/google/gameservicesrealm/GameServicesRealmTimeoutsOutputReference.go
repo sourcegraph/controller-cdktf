@@ -228,7 +228,7 @@ func NewGameServicesRealmTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_GameServicesRealmTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.gameServicesRealm.GameServicesRealmTimeoutsOutputReference",
+		"@cdktf/provider-google.gameServicesRealm.GameServicesRealmTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGameServicesRealmTimeoutsOutputReference_Override(g GameServicesRealmTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gameServicesRealm.GameServicesRealmTimeoutsOutputReference",
+		"@cdktf/provider-google.gameServicesRealm.GameServicesRealmTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

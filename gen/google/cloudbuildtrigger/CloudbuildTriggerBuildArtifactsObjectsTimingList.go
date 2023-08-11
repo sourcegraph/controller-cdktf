@@ -104,7 +104,7 @@ func NewCloudbuildTriggerBuildArtifactsObjectsTimingList(terraformResource cdktf
 	j := jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingList{}
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewCloudbuildTriggerBuildArtifactsObjectsTimingList_Override(c CloudbuildTr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList",
+		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

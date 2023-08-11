@@ -391,7 +391,7 @@ func NewMacieS3BucketAssociation(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_MacieS3BucketAssociation{}
 
 	_jsii_.Create(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociation",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -404,7 +404,7 @@ func NewMacieS3BucketAssociation_Override(m MacieS3BucketAssociation, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociation",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -548,7 +548,7 @@ func MacieS3BucketAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociation",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func MacieS3BucketAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociation",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -586,7 +586,7 @@ func MacieS3BucketAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociation",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func MacieS3BucketAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.macieS3BucketAssociation.MacieS3BucketAssociation",
+		"@cdktf/provider-aws.macieS3BucketAssociation.MacieS3BucketAssociation",
 		"tfResourceType",
 		&returns,
 	)

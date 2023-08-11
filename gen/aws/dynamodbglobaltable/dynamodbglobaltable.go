@@ -377,7 +377,7 @@ func NewDynamodbGlobalTable(scope constructs.Construct, id *string, config *Dyna
 	j := jsiiProxy_DynamodbGlobalTable{}
 
 	_jsii_.Create(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTable",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewDynamodbGlobalTable_Override(d DynamodbGlobalTable, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTable",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -512,7 +512,7 @@ func DynamodbGlobalTable_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTable",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func DynamodbGlobalTable_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTable",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DynamodbGlobalTable_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTable",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func DynamodbGlobalTable_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dynamodbGlobalTable.DynamodbGlobalTable",
+		"@cdktf/provider-aws.dynamodbGlobalTable.DynamodbGlobalTable",
 		"tfResourceType",
 		&returns,
 	)

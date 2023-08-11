@@ -204,7 +204,7 @@ func NewEventHookHeadersOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_EventHookHeadersOutputReference{}
 
 	_jsii_.Create(
-		"okta.eventHook.EventHookHeadersOutputReference",
+		"@cdktf/provider-okta.eventHook.EventHookHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEventHookHeadersOutputReference_Override(e EventHookHeadersOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.eventHook.EventHookHeadersOutputReference",
+		"@cdktf/provider-okta.eventHook.EventHookHeadersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

@@ -167,7 +167,7 @@ func NewDataAwsLocationPlaceIndexDataSourceConfigurationOutputReference(terrafor
 	j := jsiiProxy_DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataAwsLocationPlaceIndexDataSourceConfigurationOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsLocationPlaceIndex.DataAwsLocationPlaceIndexDataSourceConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

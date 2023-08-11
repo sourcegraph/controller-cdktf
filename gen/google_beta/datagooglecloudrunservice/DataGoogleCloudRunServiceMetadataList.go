@@ -104,7 +104,7 @@ func NewDataGoogleCloudRunServiceMetadataList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataGoogleCloudRunServiceMetadataList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceMetadataList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceMetadataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudRunServiceMetadataList_Override(d DataGoogleCloudRunServi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceMetadataList",
+		"@cdktf/provider-google-beta.dataGoogleCloudRunService.DataGoogleCloudRunServiceMetadataList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

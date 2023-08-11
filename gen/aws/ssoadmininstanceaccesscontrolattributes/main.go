@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributes",
 		reflect.TypeOf((*SsoadminInstanceAccessControlAttributes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,11 +62,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttribute",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttribute",
 		reflect.TypeOf((*SsoadminInstanceAccessControlAttributesAttribute)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeList",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeList",
 		reflect.TypeOf((*SsoadminInstanceAccessControlAttributesAttributeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeOutputReference",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeOutputReference",
 		reflect.TypeOf((*SsoadminInstanceAccessControlAttributesAttributeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,11 +124,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValue",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValue",
 		reflect.TypeOf((*SsoadminInstanceAccessControlAttributesAttributeValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueList",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueList",
 		reflect.TypeOf((*SsoadminInstanceAccessControlAttributesAttributeValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -149,7 +149,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueOutputReference",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesAttributeValueOutputReference",
 		reflect.TypeOf((*SsoadminInstanceAccessControlAttributesAttributeValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,7 +183,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesConfig",
+		"@cdktf/provider-aws.ssoadminInstanceAccessControlAttributes.SsoadminInstanceAccessControlAttributesConfig",
 		reflect.TypeOf((*SsoadminInstanceAccessControlAttributesConfig)(nil)).Elem(),
 	)
 }

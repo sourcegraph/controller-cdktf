@@ -204,7 +204,7 @@ func NewSagemakerFeatureGroupOnlineStoreConfigOutputReference(terraformResource 
 	j := jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSagemakerFeatureGroupOnlineStoreConfigOutputReference_Override(s Sagemak
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigOutputReference",
+		"@cdktf/provider-aws.sagemakerFeatureGroup.SagemakerFeatureGroupOnlineStoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

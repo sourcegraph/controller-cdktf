@@ -424,7 +424,7 @@ func NewGoogleContainerAnalysisNoteIamBinding(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleContainerAnalysisNoteIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleContainerAnalysisNoteIamBinding_Override(g GoogleContainerAnalysis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleContainerAnalysisNoteIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleContainerAnalysisNoteIamBinding_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleContainerAnalysisNoteIamBinding_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleContainerAnalysisNoteIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google-beta.googleContainerAnalysisNoteIamBinding.GoogleContainerAnalysisNoteIamBinding",
 		"tfResourceType",
 		&returns,
 	)

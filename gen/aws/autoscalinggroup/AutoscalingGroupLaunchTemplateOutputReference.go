@@ -228,7 +228,7 @@ func NewAutoscalingGroupLaunchTemplateOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAutoscalingGroupLaunchTemplateOutputReference_Override(a AutoscalingGrou
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupLaunchTemplateOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

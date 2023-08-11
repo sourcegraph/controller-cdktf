@@ -178,7 +178,7 @@ func NewDataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputRefere
 	j := jsiiProxy_DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputRefere
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewUserSchemaPropertyMasterOverridePriorityList(terraformResource cdktf.IIn
 	j := jsiiProxy_UserSchemaPropertyMasterOverridePriorityList{}
 
 	_jsii_.Create(
-		"okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityList",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewUserSchemaPropertyMasterOverridePriorityList_Override(u UserSchemaProper
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityList",
+		"@cdktf/provider-okta.userSchemaProperty.UserSchemaPropertyMasterOverridePriorityList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		u,
 	)

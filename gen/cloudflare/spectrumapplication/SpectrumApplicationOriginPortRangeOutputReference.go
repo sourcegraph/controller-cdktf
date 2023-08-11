@@ -202,7 +202,7 @@ func NewSpectrumApplicationOriginPortRangeOutputReference(terraformResource cdkt
 	j := jsiiProxy_SpectrumApplicationOriginPortRangeOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.spectrumApplication.SpectrumApplicationOriginPortRangeOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSpectrumApplicationOriginPortRangeOutputReference_Override(s SpectrumApp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.spectrumApplication.SpectrumApplicationOriginPortRangeOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationOriginPortRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

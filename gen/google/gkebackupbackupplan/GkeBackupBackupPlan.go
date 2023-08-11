@@ -590,7 +590,7 @@ func NewGkeBackupBackupPlan(scope constructs.Construct, id *string, config *GkeB
 	j := jsiiProxy_GkeBackupBackupPlan{}
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlan",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlan",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -603,7 +603,7 @@ func NewGkeBackupBackupPlan_Override(g GkeBackupBackupPlan, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlan",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlan",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -791,7 +791,7 @@ func GkeBackupBackupPlan_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlan",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlan",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -810,7 +810,7 @@ func GkeBackupBackupPlan_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlan",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlan",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func GkeBackupBackupPlan_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlan",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlan",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func GkeBackupBackupPlan_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gkeBackupBackupPlan.GkeBackupBackupPlan",
+		"@cdktf/provider-google.gkeBackupBackupPlan.GkeBackupBackupPlan",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference(terr
 	j := jsiiProxy_ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

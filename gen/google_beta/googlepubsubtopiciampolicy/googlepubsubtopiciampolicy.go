@@ -377,7 +377,7 @@ func NewGooglePubsubTopicIamPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GooglePubsubTopicIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -390,7 +390,7 @@ func NewGooglePubsubTopicIamPolicy_Override(g GooglePubsubTopicIamPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -534,7 +534,7 @@ func GooglePubsubTopicIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func GooglePubsubTopicIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +572,7 @@ func GooglePubsubTopicIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -585,7 +585,7 @@ func GooglePubsubTopicIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
+		"@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

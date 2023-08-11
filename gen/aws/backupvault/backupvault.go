@@ -461,7 +461,7 @@ func NewBackupVault(scope constructs.Construct, id *string, config *BackupVaultC
 	j := jsiiProxy_BackupVault{}
 
 	_jsii_.Create(
-		"aws.backupVault.BackupVault",
+		"@cdktf/provider-aws.backupVault.BackupVault",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewBackupVault_Override(b BackupVault, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupVault.BackupVault",
+		"@cdktf/provider-aws.backupVault.BackupVault",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -640,7 +640,7 @@ func BackupVault_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVault.BackupVault",
+		"@cdktf/provider-aws.backupVault.BackupVault",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func BackupVault_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVault.BackupVault",
+		"@cdktf/provider-aws.backupVault.BackupVault",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func BackupVault_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.backupVault.BackupVault",
+		"@cdktf/provider-aws.backupVault.BackupVault",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func BackupVault_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.backupVault.BackupVault",
+		"@cdktf/provider-aws.backupVault.BackupVault",
 		"tfResourceType",
 		&returns,
 	)

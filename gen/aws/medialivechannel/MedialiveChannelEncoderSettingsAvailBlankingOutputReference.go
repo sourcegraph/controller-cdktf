@@ -204,7 +204,7 @@ func NewMedialiveChannelEncoderSettingsAvailBlankingOutputReference(terraformRes
 	j := jsiiProxy_MedialiveChannelEncoderSettingsAvailBlankingOutputReference{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMedialiveChannelEncoderSettingsAvailBlankingOutputReference_Override(m M
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingOutputReference",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannelEncoderSettingsAvailBlankingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

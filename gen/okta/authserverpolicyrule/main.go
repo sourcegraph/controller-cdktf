@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.authServerPolicyRule.AuthServerPolicyRule",
+		"@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule",
 		reflect.TypeOf((*AuthServerPolicyRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenLifetimeMinutes", GoGetter: "AccessTokenLifetimeMinutes"},
@@ -98,7 +98,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.authServerPolicyRule.AuthServerPolicyRuleConfig",
+		"@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig",
 		reflect.TypeOf((*AuthServerPolicyRuleConfig)(nil)).Elem(),
 	)
 }

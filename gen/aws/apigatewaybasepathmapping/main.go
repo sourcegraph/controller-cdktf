@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
+		"@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMapping",
 		reflect.TypeOf((*ApiGatewayBasePathMapping)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayBasePathMapping.ApiGatewayBasePathMappingConfig",
+		"@cdktf/provider-aws.apiGatewayBasePathMapping.ApiGatewayBasePathMappingConfig",
 		reflect.TypeOf((*ApiGatewayBasePathMappingConfig)(nil)).Elem(),
 	)
 }

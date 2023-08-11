@@ -228,7 +228,7 @@ func NewGoogleNotebooksInstanceTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleNotebooksInstanceTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleNotebooksInstanceTimeoutsOutputReference_Override(g GoogleNotebook
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

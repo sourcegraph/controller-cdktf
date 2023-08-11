@@ -204,7 +204,7 @@ func NewDeploymentManagerDeploymentLabelsOutputReference(terraformResource cdktf
 	j := jsiiProxy_DeploymentManagerDeploymentLabelsOutputReference{}
 
 	_jsii_.Create(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDeploymentManagerDeploymentLabelsOutputReference_Override(d DeploymentMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference",
+		"@cdktf/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

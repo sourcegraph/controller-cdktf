@@ -104,7 +104,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentList(terr
 	j := jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentList_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupServerlessDeploymentList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"tfe.adminOrganizationSettings.AdminOrganizationSettings",
+		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettings",
 		reflect.TypeOf((*AdminOrganizationSettings)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessBetaTools", GoGetter: "AccessBetaTools"},
@@ -71,7 +71,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig",
+		"@cdktf/provider-tfe.adminOrganizationSettings.AdminOrganizationSettingsConfig",
 		reflect.TypeOf((*AdminOrganizationSettingsConfig)(nil)).Elem(),
 	)
 }

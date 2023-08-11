@@ -275,7 +275,7 @@ func NewAccessanalyzerArchiveRuleFilterOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_AccessanalyzerArchiveRuleFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterOutputReference",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewAccessanalyzerArchiveRuleFilterOutputReference_Override(a Accessanalyzer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterOutputReference",
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRuleFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleApiGatewayGatewayIamMember.GoogleApiGatewayGatewayIamMember",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamMember.GoogleApiGatewayGatewayIamMember",
 		reflect.TypeOf((*GoogleApiGatewayGatewayIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApiGatewayGatewayIamMember.GoogleApiGatewayGatewayIamMemberCondition",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamMember.GoogleApiGatewayGatewayIamMemberCondition",
 		reflect.TypeOf((*GoogleApiGatewayGatewayIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApiGatewayGatewayIamMember.GoogleApiGatewayGatewayIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamMember.GoogleApiGatewayGatewayIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleApiGatewayGatewayIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApiGatewayGatewayIamMember.GoogleApiGatewayGatewayIamMemberConfig",
+		"@cdktf/provider-google-beta.googleApiGatewayGatewayIamMember.GoogleApiGatewayGatewayIamMemberConfig",
 		reflect.TypeOf((*GoogleApiGatewayGatewayIamMemberConfig)(nil)).Elem(),
 	)
 }

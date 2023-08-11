@@ -104,7 +104,7 @@ func NewGoogleBigqueryJobStatusErrorsList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_GoogleBigqueryJobStatusErrorsList{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobStatusErrorsList",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobStatusErrorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleBigqueryJobStatusErrorsList_Override(g GoogleBigqueryJobStatusErro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobStatusErrorsList",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobStatusErrorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

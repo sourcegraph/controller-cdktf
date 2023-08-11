@@ -203,7 +203,7 @@ func NewFirebaserulesRulesetSourceOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_FirebaserulesRulesetSourceOutputReference{}
 
 	_jsii_.Create(
-		"google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewFirebaserulesRulesetSourceOutputReference_Override(f FirebaserulesRulese
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
+		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

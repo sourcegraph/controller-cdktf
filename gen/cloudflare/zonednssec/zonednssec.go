@@ -453,7 +453,7 @@ func NewZoneDnssec(scope constructs.Construct, id *string, config *ZoneDnssecCon
 	j := jsiiProxy_ZoneDnssec{}
 
 	_jsii_.Create(
-		"cloudflare.zoneDnssec.ZoneDnssec",
+		"@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -466,7 +466,7 @@ func NewZoneDnssec_Override(z ZoneDnssec, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneDnssec.ZoneDnssec",
+		"@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec",
 		[]interface{}{scope, id, config},
 		z,
 	)
@@ -599,7 +599,7 @@ func ZoneDnssec_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneDnssec.ZoneDnssec",
+		"@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func ZoneDnssec_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneDnssec.ZoneDnssec",
+		"@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -637,7 +637,7 @@ func ZoneDnssec_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.zoneDnssec.ZoneDnssec",
+		"@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -650,7 +650,7 @@ func ZoneDnssec_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.zoneDnssec.ZoneDnssec",
+		"@cdktf/provider-cloudflare.zoneDnssec.ZoneDnssec",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutpu
 	j := jsiiProxy_AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

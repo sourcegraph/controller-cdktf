@@ -227,7 +227,7 @@ func NewAccessPolicyApprovalGroupOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_AccessPolicyApprovalGroupOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyApprovalGroupOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAccessPolicyApprovalGroupOutputReference_Override(a AccessPolicyApproval
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyApprovalGroupOutputReference",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyApprovalGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroup",
 		reflect.TypeOf((*DbProxyDefaultTargetGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConfig",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConfig",
 		reflect.TypeOf((*DbProxyDefaultTargetGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfig",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfig",
 		reflect.TypeOf((*DbProxyDefaultTargetGroupConnectionPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference",
 		reflect.TypeOf((*DbProxyDefaultTargetGroupConnectionPoolConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,11 +122,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeouts",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeouts",
 		reflect.TypeOf((*DbProxyDefaultTargetGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbProxyDefaultTargetGroup.DbProxyDefaultTargetGroupTimeoutsOutputReference",
 		reflect.TypeOf((*DbProxyDefaultTargetGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

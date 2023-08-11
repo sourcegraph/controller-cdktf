@@ -225,7 +225,7 @@ func NewDevicefarmTestGridProjectVpcConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_DevicefarmTestGridProjectVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewDevicefarmTestGridProjectVpcConfigOutputReference_Override(d DevicefarmT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
+		"@cdktf/provider-aws.devicefarmTestGridProject.DevicefarmTestGridProjectVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

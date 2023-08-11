@@ -400,7 +400,7 @@ func NewOrganizationIamBinding(scope constructs.Construct, id *string, config *O
 	j := jsiiProxy_OrganizationIamBinding{}
 
 	_jsii_.Create(
-		"google.organizationIamBinding.OrganizationIamBinding",
+		"@cdktf/provider-google.organizationIamBinding.OrganizationIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewOrganizationIamBinding_Override(o OrganizationIamBinding, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationIamBinding.OrganizationIamBinding",
+		"@cdktf/provider-google.organizationIamBinding.OrganizationIamBinding",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -557,7 +557,7 @@ func OrganizationIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationIamBinding.OrganizationIamBinding",
+		"@cdktf/provider-google.organizationIamBinding.OrganizationIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func OrganizationIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationIamBinding.OrganizationIamBinding",
+		"@cdktf/provider-google.organizationIamBinding.OrganizationIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func OrganizationIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.organizationIamBinding.OrganizationIamBinding",
+		"@cdktf/provider-google.organizationIamBinding.OrganizationIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func OrganizationIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.organizationIamBinding.OrganizationIamBinding",
+		"@cdktf/provider-google.organizationIamBinding.OrganizationIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -250,7 +250,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceAzureFileOutputReference(terra
 	j := jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceAzureFileOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewPersistentVolumeSpecPersistentVolumeSourceAzureFileOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceAzureFileOutputReference",
+		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecPersistentVolumeSourceAzureFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

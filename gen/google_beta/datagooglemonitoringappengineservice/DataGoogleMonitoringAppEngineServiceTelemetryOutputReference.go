@@ -167,7 +167,7 @@ func NewDataGoogleMonitoringAppEngineServiceTelemetryOutputReference(terraformRe
 	j := jsiiProxy_DataGoogleMonitoringAppEngineServiceTelemetryOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleMonitoringAppEngineServiceTelemetryOutputReference_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleMonitoringAppEngineService.DataGoogleMonitoringAppEngineServiceTelemetryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

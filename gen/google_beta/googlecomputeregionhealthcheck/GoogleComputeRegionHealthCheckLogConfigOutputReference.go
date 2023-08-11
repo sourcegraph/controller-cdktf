@@ -180,7 +180,7 @@ func NewGoogleComputeRegionHealthCheckLogConfigOutputReference(terraformResource
 	j := jsiiProxy_GoogleComputeRegionHealthCheckLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleComputeRegionHealthCheckLogConfigOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfigOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionHealthCheck.GoogleComputeRegionHealthCheckLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

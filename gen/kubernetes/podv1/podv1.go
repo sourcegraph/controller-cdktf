@@ -366,7 +366,7 @@ func NewPodV1(scope constructs.Construct, id *string, config *PodV1Config) PodV1
 	j := jsiiProxy_PodV1{}
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1",
+		"@cdktf/provider-kubernetes.podV1.PodV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewPodV1_Override(p PodV1, scope constructs.Construct, id *string, config *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podV1.PodV1",
+		"@cdktf/provider-kubernetes.podV1.PodV1",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -490,7 +490,7 @@ func PodV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.podV1.PodV1",
+		"@cdktf/provider-kubernetes.podV1.PodV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -509,7 +509,7 @@ func PodV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.podV1.PodV1",
+		"@cdktf/provider-kubernetes.podV1.PodV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func PodV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.podV1.PodV1",
+		"@cdktf/provider-kubernetes.podV1.PodV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func PodV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.podV1.PodV1",
+		"@cdktf/provider-kubernetes.podV1.PodV1",
 		"tfResourceType",
 		&returns,
 	)

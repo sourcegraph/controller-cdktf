@@ -252,7 +252,7 @@ func NewAthenaWorkgroupConfigurationResultConfigurationOutputReference(terraform
 	j := jsiiProxy_AthenaWorkgroupConfigurationResultConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewAthenaWorkgroupConfigurationResultConfigurationOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -566,7 +566,7 @@ func NewTeamsRule(scope constructs.Construct, id *string, config *TeamsRuleConfi
 	j := jsiiProxy_TeamsRule{}
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRule",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -579,7 +579,7 @@ func NewTeamsRule_Override(t TeamsRule, scope constructs.Construct, id *string, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRule",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRule",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -800,7 +800,7 @@ func TeamsRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsRule.TeamsRule",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -819,7 +819,7 @@ func TeamsRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsRule.TeamsRule",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -838,7 +838,7 @@ func TeamsRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.teamsRule.TeamsRule",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -851,7 +851,7 @@ func TeamsRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.teamsRule.TeamsRule",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRule",
 		"tfResourceType",
 		&returns,
 	)

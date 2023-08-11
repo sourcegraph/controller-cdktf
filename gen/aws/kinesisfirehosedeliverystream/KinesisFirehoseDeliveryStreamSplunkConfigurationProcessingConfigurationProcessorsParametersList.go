@@ -116,7 +116,7 @@ func NewKinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationP
 	j := jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList{}
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorsParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

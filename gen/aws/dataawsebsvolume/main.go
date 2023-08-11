@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsVolume.DataAwsEbsVolume",
+		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolume",
 		reflect.TypeOf((*DataAwsEbsVolume)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEbsVolume.DataAwsEbsVolumeConfig",
+		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeConfig",
 		reflect.TypeOf((*DataAwsEbsVolumeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEbsVolume.DataAwsEbsVolumeFilter",
+		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilter",
 		reflect.TypeOf((*DataAwsEbsVolumeFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterList",
+		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterList",
 		reflect.TypeOf((*DataAwsEbsVolumeFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterOutputReference",
 		reflect.TypeOf((*DataAwsEbsVolumeFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,11 +144,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeouts",
+		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeouts",
 		reflect.TypeOf((*DataAwsEbsVolumeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsEbsVolumeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

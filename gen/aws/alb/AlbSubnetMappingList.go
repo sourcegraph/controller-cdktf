@@ -116,7 +116,7 @@ func NewAlbSubnetMappingList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_AlbSubnetMappingList{}
 
 	_jsii_.Create(
-		"aws.alb.AlbSubnetMappingList",
+		"@cdktf/provider-aws.alb.AlbSubnetMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAlbSubnetMappingList_Override(a AlbSubnetMappingList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.alb.AlbSubnetMappingList",
+		"@cdktf/provider-aws.alb.AlbSubnetMappingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

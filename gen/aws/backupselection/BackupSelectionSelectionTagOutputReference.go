@@ -225,7 +225,7 @@ func NewBackupSelectionSelectionTagOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_BackupSelectionSelectionTagOutputReference{}
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionSelectionTagOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewBackupSelectionSelectionTagOutputReference_Override(b BackupSelectionSel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.backupSelection.BackupSelectionSelectionTagOutputReference",
+		"@cdktf/provider-aws.backupSelection.BackupSelectionSelectionTagOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)

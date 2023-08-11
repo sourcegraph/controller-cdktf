@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codebuildResourcePolicy.CodebuildResourcePolicy",
+		"@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicy",
 		reflect.TypeOf((*CodebuildResourcePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig",
+		"@cdktf/provider-aws.codebuildResourcePolicy.CodebuildResourcePolicyConfig",
 		reflect.TypeOf((*CodebuildResourcePolicyConfig)(nil)).Elem(),
 	)
 }

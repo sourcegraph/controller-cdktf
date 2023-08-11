@@ -204,7 +204,7 @@ func NewSsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference(
 	j := jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference{}
 
 	_jsii_.Create(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference",
+		"@cdktf/provider-aws.ssoadminPermissionsBoundaryAttachment.SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -116,7 +116,7 @@ func NewApigatewayv2StageRouteSettingsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_Apigatewayv2StageRouteSettingsList{}
 
 	_jsii_.Create(
-		"aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsList",
+		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApigatewayv2StageRouteSettingsList_Override(a Apigatewayv2StageRouteSett
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsList",
+		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

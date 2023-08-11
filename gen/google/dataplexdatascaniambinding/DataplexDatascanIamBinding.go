@@ -448,7 +448,7 @@ func NewDataplexDatascanIamBinding(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_DataplexDatascanIamBinding{}
 
 	_jsii_.Create(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataplexDatascanIamBinding_Override(d DataplexDatascanIamBinding, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataplexDatascanIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataplexDatascanIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataplexDatascanIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataplexDatascanIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
+		"@cdktf/provider-google.dataplexDatascanIamBinding.DataplexDatascanIamBinding",
 		"tfResourceType",
 		&returns,
 	)

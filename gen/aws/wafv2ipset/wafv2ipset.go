@@ -483,7 +483,7 @@ func NewWafv2IpSet(scope constructs.Construct, id *string, config *Wafv2IpSetCon
 	j := jsiiProxy_Wafv2IpSet{}
 
 	_jsii_.Create(
-		"aws.wafv2IpSet.Wafv2IpSet",
+		"@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -496,7 +496,7 @@ func NewWafv2IpSet_Override(w Wafv2IpSet, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2IpSet.Wafv2IpSet",
+		"@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -684,7 +684,7 @@ func Wafv2IpSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafv2IpSet.Wafv2IpSet",
+		"@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -703,7 +703,7 @@ func Wafv2IpSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafv2IpSet.Wafv2IpSet",
+		"@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -722,7 +722,7 @@ func Wafv2IpSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafv2IpSet.Wafv2IpSet",
+		"@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func Wafv2IpSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafv2IpSet.Wafv2IpSet",
+		"@cdktf/provider-aws.wafv2IpSet.Wafv2IpSet",
 		"tfResourceType",
 		&returns,
 	)

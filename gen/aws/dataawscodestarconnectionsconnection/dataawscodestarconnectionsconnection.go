@@ -373,7 +373,7 @@ func NewDataAwsCodestarconnectionsConnection(scope constructs.Construct, id *str
 	j := jsiiProxy_DataAwsCodestarconnectionsConnection{}
 
 	_jsii_.Create(
-		"aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
+		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataAwsCodestarconnectionsConnection_Override(d DataAwsCodestarconnectio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
+		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -508,7 +508,7 @@ func DataAwsCodestarconnectionsConnection_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
+		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func DataAwsCodestarconnectionsConnection_IsTerraformDataSource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
+		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataAwsCodestarconnectionsConnection_IsTerraformElement(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
+		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func DataAwsCodestarconnectionsConnection_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
+		"@cdktf/provider-aws.dataAwsCodestarconnectionsConnection.DataAwsCodestarconnectionsConnection",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleStorageBucketObjectContentCustomerEncryptionList(terraformReso
 	j := jsiiProxy_DataGoogleStorageBucketObjectContentCustomerEncryptionList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContentCustomerEncryptionList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContentCustomerEncryptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleStorageBucketObjectContentCustomerEncryptionList_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContentCustomerEncryptionList",
+		"@cdktf/provider-google-beta.dataGoogleStorageBucketObjectContent.DataGoogleStorageBucketObjectContentCustomerEncryptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

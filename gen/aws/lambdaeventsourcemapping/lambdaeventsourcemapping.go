@@ -889,7 +889,7 @@ func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_LambdaEventSourceMapping{}
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -902,7 +902,7 @@ func NewLambdaEventSourceMapping_Override(l LambdaEventSourceMapping, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -1178,7 +1178,7 @@ func LambdaEventSourceMapping_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1197,7 +1197,7 @@ func LambdaEventSourceMapping_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1216,7 +1216,7 @@ func LambdaEventSourceMapping_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1229,7 +1229,7 @@ func LambdaEventSourceMapping_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
+		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
 		"tfResourceType",
 		&returns,
 	)

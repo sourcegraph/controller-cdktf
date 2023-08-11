@@ -438,7 +438,7 @@ func NewIvschatLoggingConfiguration(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_IvschatLoggingConfiguration{}
 
 	_jsii_.Create(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewIvschatLoggingConfiguration_Override(i IvschatLoggingConfiguration, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -595,7 +595,7 @@ func IvschatLoggingConfiguration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -614,7 +614,7 @@ func IvschatLoggingConfiguration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func IvschatLoggingConfiguration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func IvschatLoggingConfiguration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
+		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfiguration",
 		"tfResourceType",
 		&returns,
 	)

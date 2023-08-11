@@ -403,7 +403,7 @@ func NewEc2TrafficMirrorFilter(scope constructs.Construct, id *string, config *E
 	j := jsiiProxy_Ec2TrafficMirrorFilter{}
 
 	_jsii_.Create(
-		"aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -416,7 +416,7 @@ func NewEc2TrafficMirrorFilter_Override(e Ec2TrafficMirrorFilter, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -571,7 +571,7 @@ func Ec2TrafficMirrorFilter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func Ec2TrafficMirrorFilter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func Ec2TrafficMirrorFilter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func Ec2TrafficMirrorFilter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
+		"@cdktf/provider-aws.ec2TrafficMirrorFilter.Ec2TrafficMirrorFilter",
 		"tfResourceType",
 		&returns,
 	)

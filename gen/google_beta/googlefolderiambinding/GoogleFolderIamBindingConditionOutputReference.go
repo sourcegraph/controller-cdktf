@@ -226,7 +226,7 @@ func NewGoogleFolderIamBindingConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleFolderIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleFolderIamBindingConditionOutputReference_Override(g GoogleFolderIa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

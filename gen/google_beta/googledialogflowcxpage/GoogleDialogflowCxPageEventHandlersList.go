@@ -116,7 +116,7 @@ func NewGoogleDialogflowCxPageEventHandlersList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_GoogleDialogflowCxPageEventHandlersList{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEventHandlersList",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEventHandlersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleDialogflowCxPageEventHandlersList_Override(g GoogleDialogflowCxPag
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEventHandlersList",
+		"@cdktf/provider-google-beta.googleDialogflowCxPage.GoogleDialogflowCxPageEventHandlersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

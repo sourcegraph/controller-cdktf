@@ -202,7 +202,7 @@ func NewTransferWorkflowStepsTagStepDetailsTagsOutputReference(terraformResource
 	j := jsiiProxy_TransferWorkflowStepsTagStepDetailsTagsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewTransferWorkflowStepsTagStepDetailsTagsOutputReference_Override(t Transf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsOutputReference",
+		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsTagStepDetailsTagsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)

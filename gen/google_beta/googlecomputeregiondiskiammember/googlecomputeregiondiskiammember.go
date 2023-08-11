@@ -448,7 +448,7 @@ func NewGoogleComputeRegionDiskIamMember(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleComputeRegionDiskIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleComputeRegionDiskIamMember_Override(g GoogleComputeRegionDiskIamMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleComputeRegionDiskIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleComputeRegionDiskIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeRegionDiskIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleComputeRegionDiskIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
+		"@cdktf/provider-google-beta.googleComputeRegionDiskIamMember.GoogleComputeRegionDiskIamMember",
 		"tfResourceType",
 		&returns,
 	)

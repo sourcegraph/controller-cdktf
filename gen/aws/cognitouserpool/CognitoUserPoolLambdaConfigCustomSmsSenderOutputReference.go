@@ -202,7 +202,7 @@ func NewCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference(terraformResou
 	j := jsiiProxy_CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewCognitoUserPoolLambdaConfigCustomSmsSenderOutputReference_Override(c Cog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigCustomSmsSenderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

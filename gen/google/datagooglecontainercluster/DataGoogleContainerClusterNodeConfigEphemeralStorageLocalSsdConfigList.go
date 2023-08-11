@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList(t
 	j := jsiiProxy_DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList_O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

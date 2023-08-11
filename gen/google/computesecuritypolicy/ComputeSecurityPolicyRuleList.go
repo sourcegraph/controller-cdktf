@@ -116,7 +116,7 @@ func NewComputeSecurityPolicyRuleList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_ComputeSecurityPolicyRuleList{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleList",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeSecurityPolicyRuleList_Override(c ComputeSecurityPolicyRuleList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleList",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

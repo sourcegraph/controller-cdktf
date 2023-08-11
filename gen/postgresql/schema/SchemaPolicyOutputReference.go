@@ -276,7 +276,7 @@ func NewSchemaPolicyOutputReference(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_SchemaPolicyOutputReference{}
 
 	_jsii_.Create(
-		"postgresql.schema.SchemaPolicyOutputReference",
+		"@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewSchemaPolicyOutputReference_Override(s SchemaPolicyOutputReference, terr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.schema.SchemaPolicyOutputReference",
+		"@cdktf/provider-postgresql.schema.SchemaPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

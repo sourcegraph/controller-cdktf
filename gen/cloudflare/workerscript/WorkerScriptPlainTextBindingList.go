@@ -116,7 +116,7 @@ func NewWorkerScriptPlainTextBindingList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_WorkerScriptPlainTextBindingList{}
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptPlainTextBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWorkerScriptPlainTextBindingList_Override(w WorkerScriptPlainTextBinding
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.workerScript.WorkerScriptPlainTextBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

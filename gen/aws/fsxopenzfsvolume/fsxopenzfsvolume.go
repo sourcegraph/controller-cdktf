@@ -665,7 +665,7 @@ func NewFsxOpenzfsVolume(scope constructs.Construct, id *string, config *FsxOpen
 	j := jsiiProxy_FsxOpenzfsVolume{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -678,7 +678,7 @@ func NewFsxOpenzfsVolume_Override(f FsxOpenzfsVolume, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -910,7 +910,7 @@ func FsxOpenzfsVolume_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -929,7 +929,7 @@ func FsxOpenzfsVolume_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -948,7 +948,7 @@ func FsxOpenzfsVolume_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -961,7 +961,7 @@ func FsxOpenzfsVolume_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolume",
 		"tfResourceType",
 		&returns,
 	)

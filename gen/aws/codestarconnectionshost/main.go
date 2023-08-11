@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
 		reflect.TypeOf((*CodestarconnectionsHost)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codestarconnectionsHost.CodestarconnectionsHostConfig",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostConfig",
 		reflect.TypeOf((*CodestarconnectionsHostConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeouts",
 		reflect.TypeOf((*CodestarconnectionsHostTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostTimeoutsOutputReference",
 		reflect.TypeOf((*CodestarconnectionsHostTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,11 +120,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfiguration",
 		reflect.TypeOf((*CodestarconnectionsHostVpcConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHostVpcConfigurationOutputReference",
 		reflect.TypeOf((*CodestarconnectionsHostVpcConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

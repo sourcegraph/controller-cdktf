@@ -353,7 +353,7 @@ func NewKmsCryptoKeyIamPolicy(scope constructs.Construct, id *string, config *Km
 	j := jsiiProxy_KmsCryptoKeyIamPolicy{}
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewKmsCryptoKeyIamPolicy_Override(k KmsCryptoKeyIamPolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -499,7 +499,7 @@ func KmsCryptoKeyIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func KmsCryptoKeyIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func KmsCryptoKeyIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func KmsCryptoKeyIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
+		"@cdktf/provider-google.kmsCryptoKeyIamPolicy.KmsCryptoKeyIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -180,7 +180,7 @@ func NewMacie2InvitationAccepterTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_Macie2InvitationAccepterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewMacie2InvitationAccepterTimeoutsOutputReference_Override(m Macie2Invitat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeoutsOutputReference",
+		"@cdktf/provider-aws.macie2InvitationAccepter.Macie2InvitationAccepterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

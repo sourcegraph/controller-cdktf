@@ -251,7 +251,7 @@ func NewSagemakerDomainDefaultSpaceSettingsOutputReference(terraformResource cdk
 	j := jsiiProxy_SagemakerDomainDefaultSpaceSettingsOutputReference{}
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewSagemakerDomainDefaultSpaceSettingsOutputReference_Override(s SagemakerD
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsOutputReference",
+		"@cdktf/provider-aws.sagemakerDomain.SagemakerDomainDefaultSpaceSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

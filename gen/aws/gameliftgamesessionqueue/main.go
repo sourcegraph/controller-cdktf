@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueue",
 		reflect.TypeOf((*GameliftGameSessionQueue)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueueConfig",
 		reflect.TypeOf((*GameliftGameSessionQueueConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicy",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicy",
 		reflect.TypeOf((*GameliftGameSessionQueuePlayerLatencyPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyList",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyList",
 		reflect.TypeOf((*GameliftGameSessionQueuePlayerLatencyPolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyOutputReference",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyOutputReference",
 		reflect.TypeOf((*GameliftGameSessionQueuePlayerLatencyPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

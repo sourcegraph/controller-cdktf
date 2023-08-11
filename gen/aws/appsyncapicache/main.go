@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appsyncApiCache.AppsyncApiCache",
+		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCache",
 		reflect.TypeOf((*AppsyncApiCache)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appsyncApiCache.AppsyncApiCacheConfig",
+		"@cdktf/provider-aws.appsyncApiCache.AppsyncApiCacheConfig",
 		reflect.TypeOf((*AppsyncApiCacheConfig)(nil)).Elem(),
 	)
 }

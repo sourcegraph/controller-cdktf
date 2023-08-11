@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
 		reflect.TypeOf((*GooglePrivatecaCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -95,15 +95,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescription",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescription",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescription)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionAuthorityKeyId",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionAuthorityKeyId",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionAuthorityKeyId)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionAuthorityKeyIdList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionAuthorityKeyIdList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionAuthorityKeyIdList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -123,7 +123,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,11 +156,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionCertFingerprint",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionCertFingerprint",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionCertFingerprint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionCertFingerprintList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionCertFingerprintList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionCertFingerprintList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -180,7 +180,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,23 +213,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValues",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValues",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsage",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsage",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsage",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsage",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptions",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptions",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptionsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptionsList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -249,7 +249,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptionsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptionsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageKeyUsageOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certSign", GoGetter: "CertSign"},
@@ -290,7 +290,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -310,7 +310,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageBaseKeyUsageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -343,11 +343,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsage",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsage",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsageList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsageList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -367,7 +367,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsageOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageExtendedKeyUsageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientAuth", GoGetter: "ClientAuth"},
@@ -405,7 +405,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -425,7 +425,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseKeyUsage", GoGetter: "BaseKeyUsage"},
@@ -460,11 +460,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsages",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsages",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -484,11 +484,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectId",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectId",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectId)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectIdList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectIdList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectIdList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -508,7 +508,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectIdOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectIdOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesObectIdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -541,7 +541,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesKeyUsageUnknownExtendedKeyUsagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -574,7 +574,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -594,7 +594,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionConfigValuesOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionConfigValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -627,7 +627,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -647,7 +647,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aiaIssuingCertificateUrls", GoGetter: "AiaIssuingCertificateUrls"},
@@ -688,11 +688,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionPublicKey",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionPublicKey",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionPublicKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionPublicKeyList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionPublicKeyList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionPublicKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -712,7 +712,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionPublicKeyOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionPublicKeyOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionPublicKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -746,11 +746,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescription",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescription",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescription)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -770,7 +770,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -808,19 +808,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubject",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubject",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubject)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltName",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltName",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltName)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSans",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSans",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSans)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -840,11 +840,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectId",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectId",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectId)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -864,7 +864,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -897,7 +897,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -932,7 +932,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -952,7 +952,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -989,7 +989,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1009,7 +1009,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
@@ -1049,11 +1049,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectKeyId",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectKeyId",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectKeyId)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1073,7 +1073,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1106,15 +1106,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509Description",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509Description",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509Description)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1134,11 +1134,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectId",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectId",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectId)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1158,7 +1158,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1191,7 +1191,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1226,11 +1226,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1250,7 +1250,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1284,15 +1284,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsage",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsage",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1312,7 +1312,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certSign", GoGetter: "CertSign"},
@@ -1353,11 +1353,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1377,7 +1377,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientAuth", GoGetter: "ClientAuth"},
@@ -1415,7 +1415,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1435,7 +1435,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseKeyUsage", GoGetter: "BaseKeyUsage"},
@@ -1470,11 +1470,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1494,7 +1494,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1527,7 +1527,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1547,11 +1547,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraints",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraints",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1571,7 +1571,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1612,7 +1612,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExtensions", GoGetter: "AdditionalExtensions"},
@@ -1650,11 +1650,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIds",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIds",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1674,7 +1674,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1707,15 +1707,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigA",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigA",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigAOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigAOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigAOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1756,11 +1756,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigPublicKey",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigPublicKey",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigPublicKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigPublicKeyOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigPublicKeyOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigPublicKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1797,11 +1797,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfig",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfig",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigSubjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigSubjectConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1840,15 +1840,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigSubject",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigSubject",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigSubjectConfigSubject)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigSubjectAltName",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigSubjectAltName",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigSubjectConfigSubjectAltName)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1892,7 +1892,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigSubjectOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigSubjectConfigSubjectOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigSubjectConfigSubjectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commonName", GoGetter: "CommonName"},
@@ -1946,15 +1946,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509Config",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509Config",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509Config)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensions",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensions",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsList",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1975,11 +1975,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2013,7 +2013,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2052,11 +2052,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigCaOptions",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigCaOptions",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigCaOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigCaOptionsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigCaOptionsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigCaOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2100,15 +2100,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsage",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsage",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigKeyUsage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certSign", GoGetter: "CertSign"},
@@ -2167,11 +2167,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientAuth", GoGetter: "ClientAuth"},
@@ -2221,7 +2221,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigKeyUsageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "baseKeyUsage", GoGetter: "BaseKeyUsage"},
@@ -2263,11 +2263,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2288,7 +2288,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2322,11 +2322,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigNameConstraints",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigNameConstraints",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigNameConstraints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2384,7 +2384,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExtensions", GoGetter: "AdditionalExtensions"},
@@ -2438,11 +2438,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIds",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIds",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigPolicyIds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2463,7 +2463,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2497,11 +2497,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateRevocationDetails",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateRevocationDetails",
 		reflect.TypeOf((*GooglePrivatecaCertificateRevocationDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateRevocationDetailsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateRevocationDetailsList",
 		reflect.TypeOf((*GooglePrivatecaCertificateRevocationDetailsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2521,7 +2521,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateRevocationDetailsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateRevocationDetailsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateRevocationDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2555,11 +2555,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateTimeouts",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateTimeouts",
 		reflect.TypeOf((*GooglePrivatecaCertificateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateTimeoutsOutputReference",
 		reflect.TypeOf((*GooglePrivatecaCertificateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

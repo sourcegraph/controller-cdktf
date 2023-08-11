@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeBackendBucketIamPolicy.GoogleComputeBackendBucketIamPolicy",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamPolicy.GoogleComputeBackendBucketIamPolicy",
 		reflect.TypeOf((*GoogleComputeBackendBucketIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeBackendBucketIamPolicy.GoogleComputeBackendBucketIamPolicyConfig",
+		"@cdktf/provider-google-beta.googleComputeBackendBucketIamPolicy.GoogleComputeBackendBucketIamPolicyConfig",
 		reflect.TypeOf((*GoogleComputeBackendBucketIamPolicyConfig)(nil)).Elem(),
 	)
 }

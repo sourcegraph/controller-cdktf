@@ -226,7 +226,7 @@ func NewGoogleKmsKeyRingIamMemberConditionOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleKmsKeyRingIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleKmsKeyRingIamMemberConditionOutputReference_Override(g GoogleKmsKe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

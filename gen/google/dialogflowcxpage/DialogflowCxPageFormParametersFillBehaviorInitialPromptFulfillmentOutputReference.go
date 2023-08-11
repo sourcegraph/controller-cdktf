@@ -252,7 +252,7 @@ func NewDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutput
 	j := jsiiProxy_DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference",
+		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

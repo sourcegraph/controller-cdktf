@@ -211,7 +211,7 @@ func NewDataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference(ter
 	j := jsiiProxy_DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference",
+		"@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference",
+		"@cdktf/provider-aws.dataAwsWorkspacesDirectory.DataAwsWorkspacesDirectoryWorkspaceCreationPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

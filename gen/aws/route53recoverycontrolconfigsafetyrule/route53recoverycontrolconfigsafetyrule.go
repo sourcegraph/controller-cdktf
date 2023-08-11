@@ -482,7 +482,7 @@ func NewRoute53RecoverycontrolconfigSafetyRule(scope constructs.Construct, id *s
 	j := jsiiProxy_Route53RecoverycontrolconfigSafetyRule{}
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -495,7 +495,7 @@ func NewRoute53RecoverycontrolconfigSafetyRule_Override(r Route53Recoverycontrol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -672,7 +672,7 @@ func Route53RecoverycontrolconfigSafetyRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func Route53RecoverycontrolconfigSafetyRule_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -710,7 +710,7 @@ func Route53RecoverycontrolconfigSafetyRule_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -723,7 +723,7 @@ func Route53RecoverycontrolconfigSafetyRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigSafetyRule.Route53RecoverycontrolconfigSafetyRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewGoogleSecretManagerSecretReplicationUserManagedOutputReference(terraform
 	j := jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedOutputReference",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleSecretManagerSecretReplicationUserManagedOutputReference_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedOutputReference",
+		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationUserManagedOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

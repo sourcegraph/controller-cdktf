@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterMasterAuthorizedNetworksConfigList(terraformRe
 	j := jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigList{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterMasterAuthorizedNetworksConfigList_Override(d 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

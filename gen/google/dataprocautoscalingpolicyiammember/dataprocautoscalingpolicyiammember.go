@@ -448,7 +448,7 @@ func NewDataprocAutoscalingPolicyIamMember(scope constructs.Construct, id *strin
 	j := jsiiProxy_DataprocAutoscalingPolicyIamMember{}
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataprocAutoscalingPolicyIamMember_Override(d DataprocAutoscalingPolicyI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataprocAutoscalingPolicyIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataprocAutoscalingPolicyIamMember_IsTerraformElement(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataprocAutoscalingPolicyIamMember_IsTerraformResource(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataprocAutoscalingPolicyIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
+		"@cdktf/provider-google.dataprocAutoscalingPolicyIamMember.DataprocAutoscalingPolicyIamMember",
 		"tfResourceType",
 		&returns,
 	)

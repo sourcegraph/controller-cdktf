@@ -495,7 +495,7 @@ func NewDefaultSecurityGroup(scope constructs.Construct, id *string, config *Def
 	j := jsiiProxy_DefaultSecurityGroup{}
 
 	_jsii_.Create(
-		"aws.defaultSecurityGroup.DefaultSecurityGroup",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewDefaultSecurityGroup_Override(d DefaultSecurityGroup, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultSecurityGroup.DefaultSecurityGroup",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -663,7 +663,7 @@ func DefaultSecurityGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.defaultSecurityGroup.DefaultSecurityGroup",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -682,7 +682,7 @@ func DefaultSecurityGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.defaultSecurityGroup.DefaultSecurityGroup",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func DefaultSecurityGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.defaultSecurityGroup.DefaultSecurityGroup",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func DefaultSecurityGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.defaultSecurityGroup.DefaultSecurityGroup",
+		"@cdktf/provider-aws.defaultSecurityGroup.DefaultSecurityGroup",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.timestreamwriteDatabase.TimestreamwriteDatabase",
+		"@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabase",
 		reflect.TypeOf((*TimestreamwriteDatabase)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig",
+		"@cdktf/provider-aws.timestreamwriteDatabase.TimestreamwriteDatabaseConfig",
 		reflect.TypeOf((*TimestreamwriteDatabaseConfig)(nil)).Elem(),
 	)
 }

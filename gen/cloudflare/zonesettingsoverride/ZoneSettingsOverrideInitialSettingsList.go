@@ -104,7 +104,7 @@ func NewZoneSettingsOverrideInitialSettingsList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ZoneSettingsOverrideInitialSettingsList{}
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewZoneSettingsOverrideInitialSettingsList_Override(z ZoneSettingsOverrideI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList",
+		"@cdktf/provider-cloudflare.zoneSettingsOverride.ZoneSettingsOverrideInitialSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		z,
 	)

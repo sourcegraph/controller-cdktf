@@ -299,7 +299,7 @@ func NewLbListenerRuleActionRedirectOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_LbListenerRuleActionRedirectOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -311,7 +311,7 @@ func NewLbListenerRuleActionRedirectOutputReference_Override(l LbListenerRuleAct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleActionRedirectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2Api",
 		reflect.TypeOf((*DataAwsApigatewayv2Api)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,15 +69,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiConfig",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiConfig",
 		reflect.TypeOf((*DataAwsApigatewayv2ApiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfiguration",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfiguration",
 		reflect.TypeOf((*DataAwsApigatewayv2ApiCorsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationList",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationList",
 		reflect.TypeOf((*DataAwsApigatewayv2ApiCorsConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsApigatewayv2Api.DataAwsApigatewayv2ApiCorsConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsApigatewayv2ApiCorsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowCredentials", GoGetter: "AllowCredentials"},

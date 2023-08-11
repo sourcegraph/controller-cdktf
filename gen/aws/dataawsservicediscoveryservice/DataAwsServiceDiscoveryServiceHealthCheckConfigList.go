@@ -104,7 +104,7 @@ func NewDataAwsServiceDiscoveryServiceHealthCheckConfigList(terraformResource cd
 	j := jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfigList",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsServiceDiscoveryServiceHealthCheckConfigList_Override(d DataAwsSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfigList",
+		"@cdktf/provider-aws.dataAwsServiceDiscoveryService.DataAwsServiceDiscoveryServiceHealthCheckConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

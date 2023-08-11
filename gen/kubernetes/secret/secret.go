@@ -463,7 +463,7 @@ func NewSecret(scope constructs.Construct, id *string, config *SecretConfig) Sec
 	j := jsiiProxy_Secret{}
 
 	_jsii_.Create(
-		"kubernetes.secret.Secret",
+		"@cdktf/provider-kubernetes.secret.Secret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -476,7 +476,7 @@ func NewSecret_Override(s Secret, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.secret.Secret",
+		"@cdktf/provider-kubernetes.secret.Secret",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -642,7 +642,7 @@ func Secret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.secret.Secret",
+		"@cdktf/provider-kubernetes.secret.Secret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -661,7 +661,7 @@ func Secret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.secret.Secret",
+		"@cdktf/provider-kubernetes.secret.Secret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func Secret_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.secret.Secret",
+		"@cdktf/provider-kubernetes.secret.Secret",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func Secret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.secret.Secret",
+		"@cdktf/provider-kubernetes.secret.Secret",
 		"tfResourceType",
 		&returns,
 	)

@@ -506,7 +506,7 @@ func NewEksFargateProfile(scope constructs.Construct, id *string, config *EksFar
 	j := jsiiProxy_EksFargateProfile{}
 
 	_jsii_.Create(
-		"aws.eksFargateProfile.EksFargateProfile",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -519,7 +519,7 @@ func NewEksFargateProfile_Override(e EksFargateProfile, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksFargateProfile.EksFargateProfile",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -696,7 +696,7 @@ func EksFargateProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksFargateProfile.EksFargateProfile",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func EksFargateProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksFargateProfile.EksFargateProfile",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -734,7 +734,7 @@ func EksFargateProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.eksFargateProfile.EksFargateProfile",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +747,7 @@ func EksFargateProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.eksFargateProfile.EksFargateProfile",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
 		"tfResourceType",
 		&returns,
 	)

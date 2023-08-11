@@ -228,7 +228,7 @@ func NewComputeRegionUrlMapTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_ComputeRegionUrlMapTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeRegionUrlMapTimeoutsOutputReference_Override(c ComputeRegionUrlMa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

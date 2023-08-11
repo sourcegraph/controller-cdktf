@@ -179,7 +179,7 @@ func NewCloudfrontDistributionOriginGroupMemberOutputReference(terraformResource
 	j := jsiiProxy_CloudfrontDistributionOriginGroupMemberOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCloudfrontDistributionOriginGroupMemberOutputReference_Override(c Cloudf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberOutputReference",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginGroupMemberOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

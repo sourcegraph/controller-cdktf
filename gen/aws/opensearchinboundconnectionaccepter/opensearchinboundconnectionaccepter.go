@@ -354,7 +354,7 @@ func NewOpensearchInboundConnectionAccepter(scope constructs.Construct, id *stri
 	j := jsiiProxy_OpensearchInboundConnectionAccepter{}
 
 	_jsii_.Create(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewOpensearchInboundConnectionAccepter_Override(o OpensearchInboundConnecti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -489,7 +489,7 @@ func OpensearchInboundConnectionAccepter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func OpensearchInboundConnectionAccepter_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func OpensearchInboundConnectionAccepter_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func OpensearchInboundConnectionAccepter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
+		"@cdktf/provider-aws.opensearchInboundConnectionAccepter.OpensearchInboundConnectionAccepter",
 		"tfResourceType",
 		&returns,
 	)

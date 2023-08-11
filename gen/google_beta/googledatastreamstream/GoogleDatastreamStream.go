@@ -601,7 +601,7 @@ func NewGoogleDatastreamStream(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleDatastreamStream{}
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStream",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStream",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -614,7 +614,7 @@ func NewGoogleDatastreamStream_Override(g GoogleDatastreamStream, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStream",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStream",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -802,7 +802,7 @@ func GoogleDatastreamStream_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStream",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStream",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -821,7 +821,7 @@ func GoogleDatastreamStream_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStream",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStream",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -840,7 +840,7 @@ func GoogleDatastreamStream_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStream",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStream",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -853,7 +853,7 @@ func GoogleDatastreamStream_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDatastreamStream.GoogleDatastreamStream",
+		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStream",
 		"tfResourceType",
 		&returns,
 	)

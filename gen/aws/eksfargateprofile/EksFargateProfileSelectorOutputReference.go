@@ -203,7 +203,7 @@ func NewEksFargateProfileSelectorOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_EksFargateProfileSelectorOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksFargateProfile.EksFargateProfileSelectorOutputReference",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewEksFargateProfileSelectorOutputReference_Override(e EksFargateProfileSel
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksFargateProfile.EksFargateProfileSelectorOutputReference",
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfileSelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

@@ -250,7 +250,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeFcOutputReference(terraformResource cdk
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeFcOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFcOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewDaemonSetV1SpecTemplateSpecVolumeFcOutputReference_Override(d DaemonSetV
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFcOutputReference",
+		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecVolumeFcOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

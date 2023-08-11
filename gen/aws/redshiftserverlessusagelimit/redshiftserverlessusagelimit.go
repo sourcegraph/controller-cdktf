@@ -424,7 +424,7 @@ func NewRedshiftserverlessUsageLimit(scope constructs.Construct, id *string, con
 	j := jsiiProxy_RedshiftserverlessUsageLimit{}
 
 	_jsii_.Create(
-		"aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
+		"@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewRedshiftserverlessUsageLimit_Override(r RedshiftserverlessUsageLimit, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
+		"@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -603,7 +603,7 @@ func RedshiftserverlessUsageLimit_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
+		"@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func RedshiftserverlessUsageLimit_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
+		"@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -641,7 +641,7 @@ func RedshiftserverlessUsageLimit_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
+		"@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func RedshiftserverlessUsageLimit_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
+		"@cdktf/provider-aws.redshiftserverlessUsageLimit.RedshiftserverlessUsageLimit",
 		"tfResourceType",
 		&returns,
 	)

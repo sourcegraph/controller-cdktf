@@ -342,7 +342,7 @@ func NewHorizontalPodAutoscalerV1(scope constructs.Construct, id *string, config
 	j := jsiiProxy_HorizontalPodAutoscalerV1{}
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewHorizontalPodAutoscalerV1_Override(h HorizontalPodAutoscalerV1, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -466,7 +466,7 @@ func HorizontalPodAutoscalerV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -485,7 +485,7 @@ func HorizontalPodAutoscalerV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -504,7 +504,7 @@ func HorizontalPodAutoscalerV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func HorizontalPodAutoscalerV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
+		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV1.HorizontalPodAutoscalerV1",
 		"tfResourceType",
 		&returns,
 	)

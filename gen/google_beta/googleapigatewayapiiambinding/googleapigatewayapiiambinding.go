@@ -424,7 +424,7 @@ func NewGoogleApiGatewayApiIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleApiGatewayApiIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGoogleApiGatewayApiIamBinding_Override(g GoogleApiGatewayApiIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GoogleApiGatewayApiIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GoogleApiGatewayApiIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GoogleApiGatewayApiIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GoogleApiGatewayApiIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
+		"@cdktf/provider-google-beta.googleApiGatewayApiIamBinding.GoogleApiGatewayApiIamBinding",
 		"tfResourceType",
 		&returns,
 	)

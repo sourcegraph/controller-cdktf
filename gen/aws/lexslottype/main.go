@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lexSlotType.LexSlotType",
+		"@cdktf/provider-aws.lexSlotType.LexSlotType",
 		reflect.TypeOf((*LexSlotType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexSlotType.LexSlotTypeConfig",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeConfig",
 		reflect.TypeOf((*LexSlotTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexSlotType.LexSlotTypeEnumerationValue",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValue",
 		reflect.TypeOf((*LexSlotTypeEnumerationValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexSlotType.LexSlotTypeEnumerationValueList",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValueList",
 		reflect.TypeOf((*LexSlotTypeEnumerationValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -106,7 +106,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.lexSlotType.LexSlotTypeEnumerationValueOutputReference",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeEnumerationValueOutputReference",
 		reflect.TypeOf((*LexSlotTypeEnumerationValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,11 +143,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lexSlotType.LexSlotTypeTimeouts",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeTimeouts",
 		reflect.TypeOf((*LexSlotTypeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.lexSlotType.LexSlotTypeTimeoutsOutputReference",
+		"@cdktf/provider-aws.lexSlotType.LexSlotTypeTimeoutsOutputReference",
 		reflect.TypeOf((*LexSlotTypeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

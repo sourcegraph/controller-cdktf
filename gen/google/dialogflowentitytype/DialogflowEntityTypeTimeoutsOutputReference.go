@@ -228,7 +228,7 @@ func NewDialogflowEntityTypeTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DialogflowEntityTypeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowEntityType.DialogflowEntityTypeTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDialogflowEntityTypeTimeoutsOutputReference_Override(d DialogflowEntityT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowEntityType.DialogflowEntityTypeTimeoutsOutputReference",
+		"@cdktf/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingRule.EmailRoutingRule",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRule",
 		reflect.TypeOf((*EmailRoutingRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleAction",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleAction",
 		reflect.TypeOf((*EmailRoutingRuleAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleActionList",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionList",
 		reflect.TypeOf((*EmailRoutingRuleActionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -97,7 +97,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleActionOutputReference",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActionOutputReference",
 		reflect.TypeOf((*EmailRoutingRuleActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,15 +133,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleConfig",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig",
 		reflect.TypeOf((*EmailRoutingRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleMatcher",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcher",
 		reflect.TypeOf((*EmailRoutingRuleMatcher)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleMatcherList",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherList",
 		reflect.TypeOf((*EmailRoutingRuleMatcherList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -162,7 +162,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference",
 		reflect.TypeOf((*EmailRoutingRuleMatcherOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

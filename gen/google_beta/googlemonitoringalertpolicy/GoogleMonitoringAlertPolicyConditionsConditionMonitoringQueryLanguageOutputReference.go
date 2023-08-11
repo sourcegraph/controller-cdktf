@@ -250,7 +250,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOut
 	j := jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewGoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference",
+		"@cdktf/provider-google-beta.googleMonitoringAlertPolicy.GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

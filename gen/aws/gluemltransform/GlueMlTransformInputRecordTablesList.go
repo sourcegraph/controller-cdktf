@@ -116,7 +116,7 @@ func NewGlueMlTransformInputRecordTablesList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GlueMlTransformInputRecordTablesList{}
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformInputRecordTablesList",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGlueMlTransformInputRecordTablesList_Override(g GlueMlTransformInputReco
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformInputRecordTablesList",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformInputRecordTablesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

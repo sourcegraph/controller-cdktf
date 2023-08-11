@@ -228,7 +228,7 @@ func NewDataAwsCeTagsFilterNotCostCategoryOutputReference(terraformResource cdkt
 	j := jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategoryOutputReference",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDataAwsCeTagsFilterNotCostCategoryOutputReference_Override(d DataAwsCeTa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategoryOutputReference",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterNotCostCategoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

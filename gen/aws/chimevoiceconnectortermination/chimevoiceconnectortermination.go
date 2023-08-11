@@ -437,7 +437,7 @@ func NewChimeVoiceConnectorTermination(scope constructs.Construct, id *string, c
 	j := jsiiProxy_ChimeVoiceConnectorTermination{}
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
+		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewChimeVoiceConnectorTermination_Override(c ChimeVoiceConnectorTermination
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
+		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -627,7 +627,7 @@ func ChimeVoiceConnectorTermination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
+		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func ChimeVoiceConnectorTermination_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
+		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func ChimeVoiceConnectorTermination_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
+		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func ChimeVoiceConnectorTermination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
+		"@cdktf/provider-aws.chimeVoiceConnectorTermination.ChimeVoiceConnectorTermination",
 		"tfResourceType",
 		&returns,
 	)

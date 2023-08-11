@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dxConnectionConfirmation.DxConnectionConfirmation",
+		"@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmation",
 		reflect.TypeOf((*DxConnectionConfirmation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dxConnectionConfirmation.DxConnectionConfirmationConfig",
+		"@cdktf/provider-aws.dxConnectionConfirmation.DxConnectionConfirmationConfig",
 		reflect.TypeOf((*DxConnectionConfirmationConfig)(nil)).Elem(),
 	)
 }

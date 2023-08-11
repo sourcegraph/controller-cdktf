@@ -116,7 +116,7 @@ func NewKeyspacesTableSchemaDefinitionPartitionKeyList(terraformResource cdktf.I
 	j := jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList{}
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyList",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKeyspacesTableSchemaDefinitionPartitionKeyList_Override(k KeyspacesTable
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyList",
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableSchemaDefinitionPartitionKeyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

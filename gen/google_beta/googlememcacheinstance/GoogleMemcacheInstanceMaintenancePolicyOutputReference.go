@@ -225,7 +225,7 @@ func NewGoogleMemcacheInstanceMaintenancePolicyOutputReference(terraformResource
 	j := jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenancePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleMemcacheInstanceMaintenancePolicyOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenancePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleMemcacheInstance.GoogleMemcacheInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

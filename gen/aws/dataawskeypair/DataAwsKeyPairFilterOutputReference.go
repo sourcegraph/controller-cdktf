@@ -202,7 +202,7 @@ func NewDataAwsKeyPairFilterOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsKeyPairFilterOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsKeyPair.DataAwsKeyPairFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataAwsKeyPairFilterOutputReference_Override(d DataAwsKeyPairFilterOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKeyPair.DataAwsKeyPairFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsKeyPair.DataAwsKeyPairFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

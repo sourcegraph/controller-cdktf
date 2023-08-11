@@ -279,7 +279,7 @@ func NewDataAwsDefaultTags(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsDefaultTags{}
 
 	_jsii_.Create(
-		"aws.dataAwsDefaultTags.DataAwsDefaultTags",
+		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -292,7 +292,7 @@ func NewDataAwsDefaultTags_Override(d DataAwsDefaultTags, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDefaultTags.DataAwsDefaultTags",
+		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -381,7 +381,7 @@ func DataAwsDefaultTags_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDefaultTags.DataAwsDefaultTags",
+		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -400,7 +400,7 @@ func DataAwsDefaultTags_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDefaultTags.DataAwsDefaultTags",
+		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -419,7 +419,7 @@ func DataAwsDefaultTags_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDefaultTags.DataAwsDefaultTags",
+		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -432,7 +432,7 @@ func DataAwsDefaultTags_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDefaultTags.DataAwsDefaultTags",
+		"@cdktf/provider-aws.dataAwsDefaultTags.DataAwsDefaultTags",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.redshiftParameterGroup.RedshiftParameterGroup",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroup",
 		reflect.TypeOf((*RedshiftParameterGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftParameterGroup.RedshiftParameterGroupConfig",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupConfig",
 		reflect.TypeOf((*RedshiftParameterGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.redshiftParameterGroup.RedshiftParameterGroupParameter",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameter",
 		reflect.TypeOf((*RedshiftParameterGroupParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftParameterGroup.RedshiftParameterGroupParameterList",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterList",
 		reflect.TypeOf((*RedshiftParameterGroupParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -102,7 +102,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.redshiftParameterGroup.RedshiftParameterGroupParameterOutputReference",
+		"@cdktf/provider-aws.redshiftParameterGroup.RedshiftParameterGroupParameterOutputReference",
 		reflect.TypeOf((*RedshiftParameterGroupParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -418,7 +418,7 @@ func NewDataGoogleSpannerInstance(scope constructs.Construct, id *string, config
 	j := jsiiProxy_DataGoogleSpannerInstance{}
 
 	_jsii_.Create(
-		"google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
+		"@cdktf/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -431,7 +431,7 @@ func NewDataGoogleSpannerInstance_Override(d DataGoogleSpannerInstance, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
+		"@cdktf/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -564,7 +564,7 @@ func DataGoogleSpannerInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
+		"@cdktf/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func DataGoogleSpannerInstance_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
+		"@cdktf/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -602,7 +602,7 @@ func DataGoogleSpannerInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
+		"@cdktf/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -615,7 +615,7 @@ func DataGoogleSpannerInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
+		"@cdktf/provider-google.dataGoogleSpannerInstance.DataGoogleSpannerInstance",
 		"tfResourceType",
 		&returns,
 	)

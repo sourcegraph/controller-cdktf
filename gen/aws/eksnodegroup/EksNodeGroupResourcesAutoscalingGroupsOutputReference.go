@@ -167,7 +167,7 @@ func NewEksNodeGroupResourcesAutoscalingGroupsOutputReference(terraformResource 
 	j := jsiiProxy_EksNodeGroupResourcesAutoscalingGroupsOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewEksNodeGroupResourcesAutoscalingGroupsOutputReference_Override(e EksNode
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsOutputReference",
+		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroupResourcesAutoscalingGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

@@ -116,7 +116,7 @@ func NewAppEngineStandardAppVersionLibrariesList(terraformResource cdktf.IInterp
 	j := jsiiProxy_AppEngineStandardAppVersionLibrariesList{}
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppEngineStandardAppVersionLibrariesList_Override(a AppEngineStandardApp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

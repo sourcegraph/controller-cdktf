@@ -116,7 +116,7 @@ func NewGooglePrivatecaCertificateConfigX509ConfigPolicyIdsList(terraformResourc
 	j := jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList{}
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGooglePrivatecaCertificateConfigX509ConfigPolicyIdsList_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList",
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigX509ConfigPolicyIdsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

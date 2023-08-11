@@ -204,7 +204,7 @@ func NewContainerClusterNodeConfigShieldedInstanceConfigOutputReference(terrafor
 	j := jsiiProxy_ContainerClusterNodeConfigShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewContainerClusterNodeConfigShieldedInstanceConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

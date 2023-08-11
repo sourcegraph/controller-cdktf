@@ -401,7 +401,7 @@ func NewDataFusionInstanceIamPolicy(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_DataFusionInstanceIamPolicy{}
 
 	_jsii_.Create(
-		"google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
+		"@cdktf/provider-google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewDataFusionInstanceIamPolicy_Override(d DataFusionInstanceIamPolicy, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
+		"@cdktf/provider-google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -569,7 +569,7 @@ func DataFusionInstanceIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
+		"@cdktf/provider-google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func DataFusionInstanceIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
+		"@cdktf/provider-google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func DataFusionInstanceIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
+		"@cdktf/provider-google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataFusionInstanceIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
+		"@cdktf/provider-google.dataFusionInstanceIamPolicy.DataFusionInstanceIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

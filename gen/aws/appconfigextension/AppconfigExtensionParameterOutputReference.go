@@ -227,7 +227,7 @@ func NewAppconfigExtensionParameterOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_AppconfigExtensionParameterOutputReference{}
 
 	_jsii_.Create(
-		"aws.appconfigExtension.AppconfigExtensionParameterOutputReference",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewAppconfigExtensionParameterOutputReference_Override(a AppconfigExtension
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigExtension.AppconfigExtensionParameterOutputReference",
+		"@cdktf/provider-aws.appconfigExtension.AppconfigExtensionParameterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

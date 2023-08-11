@@ -346,7 +346,7 @@ func NewDataAwsApiGatewayVpcLink(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsApiGatewayVpcLink{}
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
+		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewDataAwsApiGatewayVpcLink_Override(d DataAwsApiGatewayVpcLink, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
+		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -459,7 +459,7 @@ func DataAwsApiGatewayVpcLink_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
+		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -478,7 +478,7 @@ func DataAwsApiGatewayVpcLink_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
+		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func DataAwsApiGatewayVpcLink_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
+		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +510,7 @@ func DataAwsApiGatewayVpcLink_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
+		"@cdktf/provider-aws.dataAwsApiGatewayVpcLink.DataAwsApiGatewayVpcLink",
 		"tfResourceType",
 		&returns,
 	)

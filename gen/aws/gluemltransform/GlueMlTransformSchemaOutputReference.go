@@ -178,7 +178,7 @@ func NewGlueMlTransformSchemaOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GlueMlTransformSchemaOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformSchemaOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewGlueMlTransformSchemaOutputReference_Override(g GlueMlTransformSchemaOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueMlTransform.GlueMlTransformSchemaOutputReference",
+		"@cdktf/provider-aws.glueMlTransform.GlueMlTransformSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

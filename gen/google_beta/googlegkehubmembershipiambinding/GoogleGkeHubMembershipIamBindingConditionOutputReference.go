@@ -226,7 +226,7 @@ func NewGoogleGkeHubMembershipIamBindingConditionOutputReference(terraformResour
 	j := jsiiProxy_GoogleGkeHubMembershipIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleGkeHubMembershipIamBindingConditionOutputReference_Override(g Goog
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBindingConditionOutputReference",
+		"@cdktf/provider-google-beta.googleGkeHubMembershipIamBinding.GoogleGkeHubMembershipIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

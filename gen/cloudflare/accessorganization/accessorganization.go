@@ -487,7 +487,7 @@ func NewAccessOrganization(scope constructs.Construct, id *string, config *Acces
 	j := jsiiProxy_AccessOrganization{}
 
 	_jsii_.Create(
-		"cloudflare.accessOrganization.AccessOrganization",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganization",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewAccessOrganization_Override(a AccessOrganization, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessOrganization.AccessOrganization",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganization",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -688,7 +688,7 @@ func AccessOrganization_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessOrganization.AccessOrganization",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganization",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -707,7 +707,7 @@ func AccessOrganization_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessOrganization.AccessOrganization",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganization",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func AccessOrganization_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accessOrganization.AccessOrganization",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganization",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func AccessOrganization_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accessOrganization.AccessOrganization",
+		"@cdktf/provider-cloudflare.accessOrganization.AccessOrganization",
 		"tfResourceType",
 		&returns,
 	)

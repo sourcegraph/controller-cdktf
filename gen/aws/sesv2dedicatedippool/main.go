@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPool",
 		reflect.TypeOf((*Sesv2DedicatedIpPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolConfig",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolConfig",
 		reflect.TypeOf((*Sesv2DedicatedIpPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeouts",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeouts",
 		reflect.TypeOf((*Sesv2DedicatedIpPoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeoutsOutputReference",
+		"@cdktf/provider-aws.sesv2DedicatedIpPool.Sesv2DedicatedIpPoolTimeoutsOutputReference",
 		reflect.TypeOf((*Sesv2DedicatedIpPoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

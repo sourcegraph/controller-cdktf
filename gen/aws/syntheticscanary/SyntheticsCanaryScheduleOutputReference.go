@@ -203,7 +203,7 @@ func NewSyntheticsCanaryScheduleOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SyntheticsCanaryScheduleOutputReference{}
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryScheduleOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewSyntheticsCanaryScheduleOutputReference_Override(s SyntheticsCanarySched
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.syntheticsCanary.SyntheticsCanaryScheduleOutputReference",
+		"@cdktf/provider-aws.syntheticsCanary.SyntheticsCanaryScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

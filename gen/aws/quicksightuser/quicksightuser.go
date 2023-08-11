@@ -496,7 +496,7 @@ func NewQuicksightUser(scope constructs.Construct, id *string, config *Quicksigh
 	j := jsiiProxy_QuicksightUser{}
 
 	_jsii_.Create(
-		"aws.quicksightUser.QuicksightUser",
+		"@cdktf/provider-aws.quicksightUser.QuicksightUser",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewQuicksightUser_Override(q QuicksightUser, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightUser.QuicksightUser",
+		"@cdktf/provider-aws.quicksightUser.QuicksightUser",
 		[]interface{}{scope, id, config},
 		q,
 	)
@@ -708,7 +708,7 @@ func QuicksightUser_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightUser.QuicksightUser",
+		"@cdktf/provider-aws.quicksightUser.QuicksightUser",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -727,7 +727,7 @@ func QuicksightUser_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightUser.QuicksightUser",
+		"@cdktf/provider-aws.quicksightUser.QuicksightUser",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func QuicksightUser_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.quicksightUser.QuicksightUser",
+		"@cdktf/provider-aws.quicksightUser.QuicksightUser",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -759,7 +759,7 @@ func QuicksightUser_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.quicksightUser.QuicksightUser",
+		"@cdktf/provider-aws.quicksightUser.QuicksightUser",
 		"tfResourceType",
 		&returns,
 	)

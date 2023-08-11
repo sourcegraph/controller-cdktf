@@ -116,7 +116,7 @@ func NewGoogleComputeRouterPeerAdvertisedIpRangesList(terraformResource cdktf.II
 	j := jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesList{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesList",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComputeRouterPeerAdvertisedIpRangesList_Override(g GoogleComputeRo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesList",
+		"@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

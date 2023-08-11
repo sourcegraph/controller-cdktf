@@ -116,7 +116,7 @@ func NewAppstreamStackUserSettingsList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_AppstreamStackUserSettingsList{}
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackUserSettingsList",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppstreamStackUserSettingsList_Override(a AppstreamStackUserSettingsList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackUserSettingsList",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackUserSettingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

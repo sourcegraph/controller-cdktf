@@ -425,7 +425,7 @@ func NewElasticacheSubnetGroup(scope constructs.Construct, id *string, config *E
 	j := jsiiProxy_ElasticacheSubnetGroup{}
 
 	_jsii_.Create(
-		"aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
+		"@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -438,7 +438,7 @@ func NewElasticacheSubnetGroup_Override(e ElasticacheSubnetGroup, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
+		"@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -604,7 +604,7 @@ func ElasticacheSubnetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
+		"@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func ElasticacheSubnetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
+		"@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func ElasticacheSubnetGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
+		"@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func ElasticacheSubnetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
+		"@cdktf/provider-aws.elasticacheSubnetGroup.ElasticacheSubnetGroup",
 		"tfResourceType",
 		&returns,
 	)

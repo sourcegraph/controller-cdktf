@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.emrserverlessApplication.EmrserverlessApplication",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		reflect.TypeOf((*EmrserverlessApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,11 +91,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration",
 		reflect.TypeOf((*EmrserverlessApplicationAutoStartConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationAutoStartConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,11 +130,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration",
 		reflect.TypeOf((*EmrserverlessApplicationAutoStopConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfigurationOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfigurationOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationAutoStopConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -172,19 +172,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrserverlessApplication.EmrserverlessApplicationConfig",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig",
 		reflect.TypeOf((*EmrserverlessApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacity)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,7 +265,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -286,7 +286,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -324,11 +324,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity",
 		reflect.TypeOf((*EmrserverlessApplicationMaximumCapacity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationMaximumCapacityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -367,11 +367,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration",
 		reflect.TypeOf((*EmrserverlessApplicationNetworkConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference",
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationNetworkConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -393,7 +393,7 @@ func NewContainerAzureClusterControlPlaneOutputReference(terraformResource cdktf
 	j := jsiiProxy_ContainerAzureClusterControlPlaneOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -405,7 +405,7 @@ func NewContainerAzureClusterControlPlaneOutputReference_Override(c ContainerAzu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference",
+		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

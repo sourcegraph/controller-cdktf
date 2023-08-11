@@ -273,7 +273,7 @@ func NewIotTopicRuleErrorActionKafkaOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_IotTopicRuleErrorActionKafkaOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -285,7 +285,7 @@ func NewIotTopicRuleErrorActionKafkaOutputReference_Override(i IotTopicRuleError
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionKafkaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

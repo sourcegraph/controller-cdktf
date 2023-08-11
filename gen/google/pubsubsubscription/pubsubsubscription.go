@@ -678,7 +678,7 @@ func NewPubsubSubscription(scope constructs.Construct, id *string, config *Pubsu
 	j := jsiiProxy_PubsubSubscription{}
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscription",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -691,7 +691,7 @@ func NewPubsubSubscription_Override(p PubsubSubscription, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubSubscription.PubsubSubscription",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -912,7 +912,7 @@ func PubsubSubscription_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSubscription.PubsubSubscription",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -931,7 +931,7 @@ func PubsubSubscription_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSubscription.PubsubSubscription",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -950,7 +950,7 @@ func PubsubSubscription_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.pubsubSubscription.PubsubSubscription",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -963,7 +963,7 @@ func PubsubSubscription_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.pubsubSubscription.PubsubSubscription",
+		"@cdktf/provider-google.pubsubSubscription.PubsubSubscription",
 		"tfResourceType",
 		&returns,
 	)

@@ -203,7 +203,7 @@ func NewAnnotationsMetadataOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_AnnotationsMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.annotations.AnnotationsMetadataOutputReference",
+		"@cdktf/provider-kubernetes.annotations.AnnotationsMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAnnotationsMetadataOutputReference_Override(a AnnotationsMetadataOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.annotations.AnnotationsMetadataOutputReference",
+		"@cdktf/provider-kubernetes.annotations.AnnotationsMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

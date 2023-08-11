@@ -204,7 +204,7 @@ func NewMemorydbSnapshotTimeoutsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_MemorydbSnapshotTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMemorydbSnapshotTimeoutsOutputReference_Override(m MemorydbSnapshotTimeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference",
+		"@cdktf/provider-aws.memorydbSnapshot.MemorydbSnapshotTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

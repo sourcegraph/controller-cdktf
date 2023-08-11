@@ -521,7 +521,7 @@ func NewGoogleSpannerDatabase(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleSpannerDatabase{}
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewGoogleSpannerDatabase_Override(g GoogleSpannerDatabase, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -722,7 +722,7 @@ func GoogleSpannerDatabase_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -741,7 +741,7 @@ func GoogleSpannerDatabase_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -760,7 +760,7 @@ func GoogleSpannerDatabase_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -773,7 +773,7 @@ func GoogleSpannerDatabase_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
+		"@cdktf/provider-google-beta.googleSpannerDatabase.GoogleSpannerDatabase",
 		"tfResourceType",
 		&returns,
 	)

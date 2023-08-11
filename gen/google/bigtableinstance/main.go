@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.bigtableInstance.BigtableInstance",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstance",
 		reflect.TypeOf((*BigtableInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -76,15 +76,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableInstance.BigtableInstanceCluster",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceCluster",
 		reflect.TypeOf((*BigtableInstanceCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableInstance.BigtableInstanceClusterAutoscalingConfig",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterAutoscalingConfig",
 		reflect.TypeOf((*BigtableInstanceClusterAutoscalingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableInstance.BigtableInstanceClusterAutoscalingConfigOutputReference",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterAutoscalingConfigOutputReference",
 		reflect.TypeOf((*BigtableInstanceClusterAutoscalingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableInstance.BigtableInstanceClusterList",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterList",
 		reflect.TypeOf((*BigtableInstanceClusterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -146,7 +146,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.bigtableInstance.BigtableInstanceClusterOutputReference",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceClusterOutputReference",
 		reflect.TypeOf((*BigtableInstanceClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingConfig", GoGetter: "AutoscalingConfig"},
@@ -196,7 +196,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.bigtableInstance.BigtableInstanceConfig",
+		"@cdktf/provider-google.bigtableInstance.BigtableInstanceConfig",
 		reflect.TypeOf((*BigtableInstanceConfig)(nil)).Elem(),
 	)
 }

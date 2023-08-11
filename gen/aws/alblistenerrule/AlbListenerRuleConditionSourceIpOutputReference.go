@@ -179,7 +179,7 @@ func NewAlbListenerRuleConditionSourceIpOutputReference(terraformResource cdktf.
 	j := jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAlbListenerRuleConditionSourceIpOutputReference_Override(a AlbListenerRu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

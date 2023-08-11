@@ -179,7 +179,7 @@ func NewBigqueryDataTransferConfigSensitiveParamsOutputReference(terraformResour
 	j := jsiiProxy_BigqueryDataTransferConfigSensitiveParamsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParamsOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewBigqueryDataTransferConfigSensitiveParamsOutputReference_Override(b Bigq
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParamsOutputReference",
+		"@cdktf/provider-google.bigqueryDataTransferConfig.BigqueryDataTransferConfigSensitiveParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

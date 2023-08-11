@@ -116,7 +116,7 @@ func NewEmrClusterCoreInstanceFleetInstanceTypeConfigsList(terraformResource cdk
 	j := jsiiProxy_EmrClusterCoreInstanceFleetInstanceTypeConfigsList{}
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEmrClusterCoreInstanceFleetInstanceTypeConfigsList_Override(e EmrCluster
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsList",
+		"@cdktf/provider-aws.emrCluster.EmrClusterCoreInstanceFleetInstanceTypeConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

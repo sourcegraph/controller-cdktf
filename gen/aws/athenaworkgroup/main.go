@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.athenaWorkgroup.AthenaWorkgroup",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		reflect.TypeOf((*AthenaWorkgroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,19 +77,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfig",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfig",
 		reflect.TypeOf((*AthenaWorkgroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfiguration",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfiguration",
 		reflect.TypeOf((*AthenaWorkgroupConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersion",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersion",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationEngineVersion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersionOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationEngineVersionOutputReference",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationEngineVersionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,7 +125,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationOutputReference",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bytesScannedCutoffPerQuery", GoGetter: "BytesScannedCutoffPerQuery"},
@@ -180,15 +180,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfiguration",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfiguration",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfiguration",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationAclConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationAclConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationEncryptionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationEncryptionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,7 +264,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationOutputReference",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroupConfigurationResultConfigurationOutputReference",
 		reflect.TypeOf((*AthenaWorkgroupConfigurationResultConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclConfiguration", GoGetter: "AclConfiguration"},

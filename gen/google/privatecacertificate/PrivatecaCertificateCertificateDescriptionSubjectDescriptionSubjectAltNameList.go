@@ -104,7 +104,7 @@ func NewPrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNa
 	j := jsiiProxy_PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList{}
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewPrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNa
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList",
+		"@cdktf/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -116,7 +116,7 @@ func NewEcsTaskDefinitionInferenceAcceleratorList(terraformResource cdktf.IInter
 	j := jsiiProxy_EcsTaskDefinitionInferenceAcceleratorList{}
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewEcsTaskDefinitionInferenceAcceleratorList_Override(e EcsTaskDefinitionIn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList",
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinitionInferenceAcceleratorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)

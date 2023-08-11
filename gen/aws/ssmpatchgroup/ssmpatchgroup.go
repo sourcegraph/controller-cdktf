@@ -342,7 +342,7 @@ func NewSsmPatchGroup(scope constructs.Construct, id *string, config *SsmPatchGr
 	j := jsiiProxy_SsmPatchGroup{}
 
 	_jsii_.Create(
-		"aws.ssmPatchGroup.SsmPatchGroup",
+		"@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewSsmPatchGroup_Override(s SsmPatchGroup, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmPatchGroup.SsmPatchGroup",
+		"@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -488,7 +488,7 @@ func SsmPatchGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmPatchGroup.SsmPatchGroup",
+		"@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func SsmPatchGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmPatchGroup.SsmPatchGroup",
+		"@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func SsmPatchGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmPatchGroup.SsmPatchGroup",
+		"@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func SsmPatchGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmPatchGroup.SsmPatchGroup",
+		"@cdktf/provider-aws.ssmPatchGroup.SsmPatchGroup",
 		"tfResourceType",
 		&returns,
 	)

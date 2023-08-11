@@ -225,7 +225,7 @@ func NewOpensearchOutboundConnectionLocalDomainInfoOutputReference(terraformReso
 	j := jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfoOutputReference",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewOpensearchOutboundConnectionLocalDomainInfoOutputReference_Override(o Op
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfoOutputReference",
+		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnectionLocalDomainInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

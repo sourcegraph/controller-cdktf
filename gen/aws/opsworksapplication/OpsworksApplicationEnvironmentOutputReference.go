@@ -226,7 +226,7 @@ func NewOpsworksApplicationEnvironmentOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_OpsworksApplicationEnvironmentOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationEnvironmentOutputReference",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewOpsworksApplicationEnvironmentOutputReference_Override(o OpsworksApplica
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksApplication.OpsworksApplicationEnvironmentOutputReference",
+		"@cdktf/provider-aws.opsworksApplication.OpsworksApplicationEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)

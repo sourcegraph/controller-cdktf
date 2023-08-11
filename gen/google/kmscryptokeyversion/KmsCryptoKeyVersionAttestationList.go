@@ -104,7 +104,7 @@ func NewKmsCryptoKeyVersionAttestationList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_KmsCryptoKeyVersionAttestationList{}
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationList",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewKmsCryptoKeyVersionAttestationList_Override(k KmsCryptoKeyVersionAttesta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationList",
+		"@cdktf/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

@@ -116,7 +116,7 @@ func NewAppstreamStackAccessEndpointsList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_AppstreamStackAccessEndpointsList{}
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackAccessEndpointsList",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppstreamStackAccessEndpointsList_Override(a AppstreamStackAccessEndpoin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamStack.AppstreamStackAccessEndpointsList",
+		"@cdktf/provider-aws.appstreamStack.AppstreamStackAccessEndpointsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

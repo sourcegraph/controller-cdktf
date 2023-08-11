@@ -226,7 +226,7 @@ func NewSecretManagerSecretIamBindingConditionOutputReference(terraformResource 
 	j := jsiiProxy_SecretManagerSecretIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConditionOutputReference",
+		"@cdktf/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewSecretManagerSecretIamBindingConditionOutputReference_Override(s SecretM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConditionOutputReference",
+		"@cdktf/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

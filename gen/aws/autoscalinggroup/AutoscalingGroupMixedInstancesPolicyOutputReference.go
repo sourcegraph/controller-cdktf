@@ -203,7 +203,7 @@ func NewAutoscalingGroupMixedInstancesPolicyOutputReference(terraformResource cd
 	j := jsiiProxy_AutoscalingGroupMixedInstancesPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAutoscalingGroupMixedInstancesPolicyOutputReference_Override(a Autoscali
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyOutputReference",
+		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupMixedInstancesPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

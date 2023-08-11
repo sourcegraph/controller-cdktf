@@ -116,7 +116,7 @@ func NewIotTopicRuleHttpList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_IotTopicRuleHttpList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleHttpList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleHttpList_Override(i IotTopicRuleHttpList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleHttpList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleHttpList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

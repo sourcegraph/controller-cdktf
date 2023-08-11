@@ -353,7 +353,7 @@ func NewServiceAccountIamPolicy(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ServiceAccountIamPolicy{}
 
 	_jsii_.Create(
-		"google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
+		"@cdktf/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewServiceAccountIamPolicy_Override(s ServiceAccountIamPolicy, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
+		"@cdktf/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -499,7 +499,7 @@ func ServiceAccountIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
+		"@cdktf/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func ServiceAccountIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
+		"@cdktf/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func ServiceAccountIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
+		"@cdktf/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func ServiceAccountIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
+		"@cdktf/provider-google.serviceAccountIamPolicy.ServiceAccountIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

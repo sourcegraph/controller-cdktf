@@ -226,7 +226,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference(terr
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference_Over
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeGlusterfsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

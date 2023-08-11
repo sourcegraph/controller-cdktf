@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.healthcareDatasetIamMember.HealthcareDatasetIamMember",
+		"@cdktf/provider-google.healthcareDatasetIamMember.HealthcareDatasetIamMember",
 		reflect.TypeOf((*HealthcareDatasetIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareDatasetIamMember.HealthcareDatasetIamMemberCondition",
+		"@cdktf/provider-google.healthcareDatasetIamMember.HealthcareDatasetIamMemberCondition",
 		reflect.TypeOf((*HealthcareDatasetIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.healthcareDatasetIamMember.HealthcareDatasetIamMemberConditionOutputReference",
+		"@cdktf/provider-google.healthcareDatasetIamMember.HealthcareDatasetIamMemberConditionOutputReference",
 		reflect.TypeOf((*HealthcareDatasetIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.healthcareDatasetIamMember.HealthcareDatasetIamMemberConfig",
+		"@cdktf/provider-google.healthcareDatasetIamMember.HealthcareDatasetIamMemberConfig",
 		reflect.TypeOf((*HealthcareDatasetIamMemberConfig)(nil)).Elem(),
 	)
 }

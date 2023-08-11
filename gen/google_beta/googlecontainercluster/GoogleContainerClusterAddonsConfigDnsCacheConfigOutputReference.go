@@ -179,7 +179,7 @@ func NewGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference(terrafor
 	j := jsiiProxy_GoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

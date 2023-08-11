@@ -178,7 +178,7 @@ func NewAmiCopyEphemeralBlockDeviceOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewAmiCopyEphemeralBlockDeviceOutputReference_Override(a AmiCopyEphemeralBl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
+		"@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

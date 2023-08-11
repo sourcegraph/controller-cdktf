@@ -448,7 +448,7 @@ func NewGoogleComputeSubnetworkIamBinding(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeSubnetworkIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleComputeSubnetworkIamBinding_Override(g GoogleComputeSubnetworkIamB
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleComputeSubnetworkIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleComputeSubnetworkIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeSubnetworkIamBinding_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleComputeSubnetworkIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamBinding.GoogleComputeSubnetworkIamBinding",
 		"tfResourceType",
 		&returns,
 	)

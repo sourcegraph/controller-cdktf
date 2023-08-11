@@ -204,7 +204,7 @@ func NewAppstreamFleetDomainJoinInfoOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_AppstreamFleetDomainJoinInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.appstreamFleet.AppstreamFleetDomainJoinInfoOutputReference",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAppstreamFleetDomainJoinInfoOutputReference_Override(a AppstreamFleetDom
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamFleet.AppstreamFleetDomainJoinInfoOutputReference",
+		"@cdktf/provider-aws.appstreamFleet.AppstreamFleetDomainJoinInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

@@ -116,7 +116,7 @@ func NewCloudiotRegistryEventNotificationConfigsList(terraformResource cdktf.IIn
 	j := jsiiProxy_CloudiotRegistryEventNotificationConfigsList{}
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsList",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudiotRegistryEventNotificationConfigsList_Override(c CloudiotRegistry
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsList",
+		"@cdktf/provider-google.cloudiotRegistry.CloudiotRegistryEventNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

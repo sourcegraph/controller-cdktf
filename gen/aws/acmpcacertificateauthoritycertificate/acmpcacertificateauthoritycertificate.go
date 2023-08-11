@@ -366,7 +366,7 @@ func NewAcmpcaCertificateAuthorityCertificate(scope constructs.Construct, id *st
 	j := jsiiProxy_AcmpcaCertificateAuthorityCertificate{}
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
+		"@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewAcmpcaCertificateAuthorityCertificate_Override(a AcmpcaCertificateAuthor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
+		"@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -523,7 +523,7 @@ func AcmpcaCertificateAuthorityCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
+		"@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func AcmpcaCertificateAuthorityCertificate_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
+		"@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func AcmpcaCertificateAuthorityCertificate_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
+		"@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func AcmpcaCertificateAuthorityCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
+		"@cdktf/provider-aws.acmpcaCertificateAuthorityCertificate.AcmpcaCertificateAuthorityCertificate",
 		"tfResourceType",
 		&returns,
 	)

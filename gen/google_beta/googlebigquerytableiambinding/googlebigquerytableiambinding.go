@@ -447,7 +447,7 @@ func NewGoogleBigqueryTableIamBinding(scope constructs.Construct, id *string, co
 	j := jsiiProxy_GoogleBigqueryTableIamBinding{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewGoogleBigqueryTableIamBinding_Override(g GoogleBigqueryTableIamBinding, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -626,7 +626,7 @@ func GoogleBigqueryTableIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func GoogleBigqueryTableIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func GoogleBigqueryTableIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func GoogleBigqueryTableIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
+		"@cdktf/provider-google-beta.googleBigqueryTableIamBinding.GoogleBigqueryTableIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewWafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference(ter
 	j := jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference",
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

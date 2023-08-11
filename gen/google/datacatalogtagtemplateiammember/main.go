@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMember",
 		reflect.TypeOf((*DataCatalogTagTemplateIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberCondition",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberCondition",
 		reflect.TypeOf((*DataCatalogTagTemplateIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberConditionOutputReference",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberConditionOutputReference",
 		reflect.TypeOf((*DataCatalogTagTemplateIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberConfig",
+		"@cdktf/provider-google.dataCatalogTagTemplateIamMember.DataCatalogTagTemplateIamMemberConfig",
 		reflect.TypeOf((*DataCatalogTagTemplateIamMemberConfig)(nil)).Elem(),
 	)
 }

@@ -104,7 +104,7 @@ func NewDataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHead
 	j := jsiiProxy_DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersList",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHead
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersList",
+		"@cdktf/provider-aws.dataAwsCloudfrontCachePolicy.DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

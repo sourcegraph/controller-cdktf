@@ -204,7 +204,7 @@ func NewSchedulerScheduleGroupTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_SchedulerScheduleGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewSchedulerScheduleGroupTimeoutsOutputReference_Override(s SchedulerSchedu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.schedulerScheduleGroup.SchedulerScheduleGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

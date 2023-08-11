@@ -116,7 +116,7 @@ func NewOpsworksMysqlLayerEbsVolumeList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_OpsworksMysqlLayerEbsVolumeList{}
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksMysqlLayerEbsVolumeList_Override(o OpsworksMysqlLayerEbsVolumeLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeList",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerEbsVolumeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

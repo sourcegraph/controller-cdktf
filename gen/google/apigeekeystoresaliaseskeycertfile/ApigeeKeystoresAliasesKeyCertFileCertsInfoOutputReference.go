@@ -180,7 +180,7 @@ func NewApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference(terraformResou
 	j := jsiiProxy_ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference_Override(a Api
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesKeyCertFile.ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

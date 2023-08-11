@@ -228,7 +228,7 @@ func NewNeptuneClusterTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_NeptuneClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.neptuneCluster.NeptuneClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewNeptuneClusterTimeoutsOutputReference_Override(n NeptuneClusterTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.neptuneCluster.NeptuneClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

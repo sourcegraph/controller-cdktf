@@ -116,7 +116,7 @@ func NewContainerAwsNodePoolConfigTaintsList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ContainerAwsNodePoolConfigTaintsList{}
 
 	_jsii_.Create(
-		"google.containerAwsNodePool.ContainerAwsNodePoolConfigTaintsList",
+		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigTaintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewContainerAwsNodePoolConfigTaintsList_Override(c ContainerAwsNodePoolConf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAwsNodePool.ContainerAwsNodePoolConfigTaintsList",
+		"@cdktf/provider-google.containerAwsNodePool.ContainerAwsNodePoolConfigTaintsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

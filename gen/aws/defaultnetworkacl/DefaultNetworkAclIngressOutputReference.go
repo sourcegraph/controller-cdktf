@@ -367,7 +367,7 @@ func NewDefaultNetworkAclIngressOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DefaultNetworkAclIngressOutputReference{}
 
 	_jsii_.Create(
-		"aws.defaultNetworkAcl.DefaultNetworkAclIngressOutputReference",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewDefaultNetworkAclIngressOutputReference_Override(d DefaultNetworkAclIngr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.defaultNetworkAcl.DefaultNetworkAclIngressOutputReference",
+		"@cdktf/provider-aws.defaultNetworkAcl.DefaultNetworkAclIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -367,7 +367,7 @@ func NewAccessContextManagerServicePerimeters(scope constructs.Construct, id *st
 	j := jsiiProxy_AccessContextManagerServicePerimeters{}
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
+		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewAccessContextManagerServicePerimeters_Override(a AccessContextManagerSer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
+		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -502,7 +502,7 @@ func AccessContextManagerServicePerimeters_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
+		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func AccessContextManagerServicePerimeters_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
+		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func AccessContextManagerServicePerimeters_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
+		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func AccessContextManagerServicePerimeters_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
+		"@cdktf/provider-google.accessContextManagerServicePerimeters.AccessContextManagerServicePerimeters",
 		"tfResourceType",
 		&returns,
 	)

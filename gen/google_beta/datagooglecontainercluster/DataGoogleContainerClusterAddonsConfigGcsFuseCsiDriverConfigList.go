@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList(terrafo
 	j := jsiiProxy_DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList_Overrid
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

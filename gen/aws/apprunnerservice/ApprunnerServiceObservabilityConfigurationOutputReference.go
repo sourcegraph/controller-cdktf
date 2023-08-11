@@ -203,7 +203,7 @@ func NewApprunnerServiceObservabilityConfigurationOutputReference(terraformResou
 	j := jsiiProxy_ApprunnerServiceObservabilityConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceObservabilityConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceObservabilityConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewApprunnerServiceObservabilityConfigurationOutputReference_Override(a App
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apprunnerService.ApprunnerServiceObservabilityConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerService.ApprunnerServiceObservabilityConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

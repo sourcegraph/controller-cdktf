@@ -250,7 +250,7 @@ func NewDialogflowCxIntentParametersOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DialogflowCxIntentParametersOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewDialogflowCxIntentParametersOutputReference_Override(d DialogflowCxInten
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

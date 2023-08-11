@@ -116,7 +116,7 @@ func NewDataGoogleIamPolicyBindingList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_DataGoogleIamPolicyBindingList{}
 
 	_jsii_.Create(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataGoogleIamPolicyBindingList_Override(d DataGoogleIamPolicyBindingList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
+		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

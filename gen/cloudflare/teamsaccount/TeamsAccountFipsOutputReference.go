@@ -180,7 +180,7 @@ func NewTeamsAccountFipsOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_TeamsAccountFipsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountFipsOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFipsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewTeamsAccountFipsOutputReference_Override(t TeamsAccountFipsOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsAccount.TeamsAccountFipsOutputReference",
+		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFipsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

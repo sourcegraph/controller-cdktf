@@ -203,7 +203,7 @@ func NewRoute53ResolverRuleTargetIpOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_Route53ResolverRuleTargetIpOutputReference{}
 
 	_jsii_.Create(
-		"aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewRoute53ResolverRuleTargetIpOutputReference_Override(r Route53ResolverRul
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference",
+		"@cdktf/provider-aws.route53ResolverRule.Route53ResolverRuleTargetIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

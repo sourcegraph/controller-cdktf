@@ -392,7 +392,7 @@ func NewDataGoogleFirebaseAndroidApp(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataGoogleFirebaseAndroidApp{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -405,7 +405,7 @@ func NewDataGoogleFirebaseAndroidApp_Override(d DataGoogleFirebaseAndroidApp, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -516,7 +516,7 @@ func DataGoogleFirebaseAndroidApp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataGoogleFirebaseAndroidApp_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -554,7 +554,7 @@ func DataGoogleFirebaseAndroidApp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -567,7 +567,7 @@ func DataGoogleFirebaseAndroidApp_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
+		"@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp",
 		"tfResourceType",
 		&returns,
 	)

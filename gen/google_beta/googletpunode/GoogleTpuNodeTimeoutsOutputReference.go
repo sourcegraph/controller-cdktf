@@ -228,7 +228,7 @@ func NewGoogleTpuNodeTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_GoogleTpuNodeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleTpuNode.GoogleTpuNodeTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleTpuNodeTimeoutsOutputReference_Override(g GoogleTpuNodeTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTpuNode.GoogleTpuNodeTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

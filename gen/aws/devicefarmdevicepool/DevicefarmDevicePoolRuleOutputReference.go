@@ -228,7 +228,7 @@ func NewDevicefarmDevicePoolRuleOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DevicefarmDevicePoolRuleOutputReference{}
 
 	_jsii_.Create(
-		"aws.devicefarmDevicePool.DevicefarmDevicePoolRuleOutputReference",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDevicefarmDevicePoolRuleOutputReference_Override(d DevicefarmDevicePoolR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.devicefarmDevicePool.DevicefarmDevicePoolRuleOutputReference",
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePoolRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

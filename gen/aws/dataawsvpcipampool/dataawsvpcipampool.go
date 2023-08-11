@@ -553,7 +553,7 @@ func NewDataAwsVpcIpamPool(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsVpcIpamPool{}
 
 	_jsii_.Create(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -566,7 +566,7 @@ func NewDataAwsVpcIpamPool_Override(d DataAwsVpcIpamPool, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -688,7 +688,7 @@ func DataAwsVpcIpamPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -707,7 +707,7 @@ func DataAwsVpcIpamPool_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func DataAwsVpcIpamPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func DataAwsVpcIpamPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
+		"@cdktf/provider-aws.dataAwsVpcIpamPool.DataAwsVpcIpamPool",
 		"tfResourceType",
 		&returns,
 	)

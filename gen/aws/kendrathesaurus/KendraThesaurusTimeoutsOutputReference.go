@@ -228,7 +228,7 @@ func NewKendraThesaurusTimeoutsOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_KendraThesaurusTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewKendraThesaurusTimeoutsOutputReference_Override(k KendraThesaurusTimeout
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurusTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

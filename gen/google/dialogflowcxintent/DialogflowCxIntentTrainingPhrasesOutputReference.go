@@ -214,7 +214,7 @@ func NewDialogflowCxIntentTrainingPhrasesOutputReference(terraformResource cdktf
 	j := jsiiProxy_DialogflowCxIntentTrainingPhrasesOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -226,7 +226,7 @@ func NewDialogflowCxIntentTrainingPhrasesOutputReference_Override(d DialogflowCx
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference",
+		"@cdktf/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

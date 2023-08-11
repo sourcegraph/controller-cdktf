@@ -203,7 +203,7 @@ func NewApiGatewayDomainNameMutualTlsAuthenticationOutputReference(terraformReso
 	j := jsiiProxy_ApiGatewayDomainNameMutualTlsAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthenticationOutputReference",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewApiGatewayDomainNameMutualTlsAuthenticationOutputReference_Override(a Ap
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthenticationOutputReference",
+		"@cdktf/provider-aws.apiGatewayDomainName.ApiGatewayDomainNameMutualTlsAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

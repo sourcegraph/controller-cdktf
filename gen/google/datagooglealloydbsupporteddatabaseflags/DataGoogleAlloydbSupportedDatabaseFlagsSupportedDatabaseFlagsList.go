@@ -104,7 +104,7 @@ func NewDataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsList(terraf
 	j := jsiiProxy_DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsList{}
 
 	_jsii_.Create(
-		"google.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsList",
+		"@cdktf/provider-google.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsList_Overri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsList",
+		"@cdktf/provider-google.dataGoogleAlloydbSupportedDatabaseFlags.DataGoogleAlloydbSupportedDatabaseFlagsSupportedDatabaseFlagsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

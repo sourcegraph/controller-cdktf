@@ -412,7 +412,7 @@ func NewDataAwsDbProxy(scope constructs.Construct, id *string, config *DataAwsDb
 	j := jsiiProxy_DataAwsDbProxy{}
 
 	_jsii_.Create(
-		"aws.dataAwsDbProxy.DataAwsDbProxy",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewDataAwsDbProxy_Override(d DataAwsDbProxy, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsDbProxy.DataAwsDbProxy",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -525,7 +525,7 @@ func DataAwsDbProxy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDbProxy.DataAwsDbProxy",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func DataAwsDbProxy_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDbProxy.DataAwsDbProxy",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func DataAwsDbProxy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsDbProxy.DataAwsDbProxy",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func DataAwsDbProxy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsDbProxy.DataAwsDbProxy",
+		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
 		"tfResourceType",
 		&returns,
 	)

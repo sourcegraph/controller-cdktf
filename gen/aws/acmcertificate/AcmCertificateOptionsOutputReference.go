@@ -180,7 +180,7 @@ func NewAcmCertificateOptionsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_AcmCertificateOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateOptionsOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAcmCertificateOptionsOutputReference_Override(a AcmCertificateOptionsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.acmCertificate.AcmCertificateOptionsOutputReference",
+		"@cdktf/provider-aws.acmCertificate.AcmCertificateOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

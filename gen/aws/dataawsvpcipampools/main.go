@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPools",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPools",
 		reflect.TypeOf((*DataAwsVpcIpamPools)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,15 +58,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsConfig",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsConfig",
 		reflect.TypeOf((*DataAwsVpcIpamPoolsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsFilter",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsFilter",
 		reflect.TypeOf((*DataAwsVpcIpamPoolsFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsFilterList",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsFilterList",
 		reflect.TypeOf((*DataAwsVpcIpamPoolsFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsFilterOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsFilterOutputReference",
 		reflect.TypeOf((*DataAwsVpcIpamPoolsFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPools",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPools",
 		reflect.TypeOf((*DataAwsVpcIpamPoolsIpamPools)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPoolsList",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPoolsList",
 		reflect.TypeOf((*DataAwsVpcIpamPoolsIpamPoolsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,7 +147,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPoolsOutputReference",
+		"@cdktf/provider-aws.dataAwsVpcIpamPools.DataAwsVpcIpamPoolsIpamPoolsOutputReference",
 		reflect.TypeOf((*DataAwsVpcIpamPoolsIpamPoolsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressFamily", GoGetter: "AddressFamily"},

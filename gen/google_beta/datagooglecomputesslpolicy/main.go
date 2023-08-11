@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
+		"@cdktf/provider-google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicy",
 		reflect.TypeOf((*DataGoogleComputeSslPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicyConfig",
+		"@cdktf/provider-google-beta.dataGoogleComputeSslPolicy.DataGoogleComputeSslPolicyConfig",
 		reflect.TypeOf((*DataGoogleComputeSslPolicyConfig)(nil)).Elem(),
 	)
 }

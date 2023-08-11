@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		reflect.TypeOf((*StoragegatewayNfsFileShare)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributes",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributes",
 		reflect.TypeOf((*StoragegatewayNfsFileShareCacheAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributesOutputReference",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareCacheAttributesOutputReference",
 		reflect.TypeOf((*StoragegatewayNfsFileShareCacheAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cacheStaleTimeoutInSeconds", GoGetter: "CacheStaleTimeoutInSeconds"},
@@ -162,15 +162,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareConfig",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareConfig",
 		reflect.TypeOf((*StoragegatewayNfsFileShareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaults",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaults",
 		reflect.TypeOf((*StoragegatewayNfsFileShareNfsFileShareDefaults)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference",
 		reflect.TypeOf((*StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -214,11 +214,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeouts",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeouts",
 		reflect.TypeOf((*StoragegatewayNfsFileShareTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShareTimeoutsOutputReference",
 		reflect.TypeOf((*StoragegatewayNfsFileShareTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

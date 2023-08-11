@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dmsS3Endpoint.DmsS3Endpoint",
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
 		reflect.TypeOf((*DmsS3Endpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addColumnName", GoGetter: "AddColumnName"},
@@ -200,15 +200,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dmsS3Endpoint.DmsS3EndpointConfig",
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig",
 		reflect.TypeOf((*DmsS3EndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dmsS3Endpoint.DmsS3EndpointTimeouts",
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeouts",
 		reflect.TypeOf((*DmsS3EndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
+		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
 		reflect.TypeOf((*DmsS3EndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

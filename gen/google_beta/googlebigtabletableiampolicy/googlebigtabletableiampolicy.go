@@ -400,7 +400,7 @@ func NewGoogleBigtableTableIamPolicy(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleBigtableTableIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleBigtableTableIamPolicy_Override(g GoogleBigtableTableIamPolicy, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -568,7 +568,7 @@ func GoogleBigtableTableIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func GoogleBigtableTableIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func GoogleBigtableTableIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func GoogleBigtableTableIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
+		"@cdktf/provider-google-beta.googleBigtableTableIamPolicy.GoogleBigtableTableIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

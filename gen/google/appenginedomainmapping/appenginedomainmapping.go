@@ -437,7 +437,7 @@ func NewAppEngineDomainMapping(scope constructs.Construct, id *string, config *A
 	j := jsiiProxy_AppEngineDomainMapping{}
 
 	_jsii_.Create(
-		"google.appEngineDomainMapping.AppEngineDomainMapping",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMapping",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -450,7 +450,7 @@ func NewAppEngineDomainMapping_Override(a AppEngineDomainMapping, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineDomainMapping.AppEngineDomainMapping",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMapping",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -594,7 +594,7 @@ func AppEngineDomainMapping_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineDomainMapping.AppEngineDomainMapping",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMapping",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func AppEngineDomainMapping_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineDomainMapping.AppEngineDomainMapping",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMapping",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func AppEngineDomainMapping_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineDomainMapping.AppEngineDomainMapping",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMapping",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func AppEngineDomainMapping_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.appEngineDomainMapping.AppEngineDomainMapping",
+		"@cdktf/provider-google.appEngineDomainMapping.AppEngineDomainMapping",
 		"tfResourceType",
 		&returns,
 	)

@@ -190,7 +190,7 @@ func NewRandomProvider(scope constructs.Construct, id *string, config *RandomPro
 	j := jsiiProxy_RandomProvider{}
 
 	_jsii_.Create(
-		"random.provider.RandomProvider",
+		"@cdktf/provider-random.provider.RandomProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewRandomProvider_Override(r RandomProvider, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"random.provider.RandomProvider",
+		"@cdktf/provider-random.provider.RandomProvider",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -243,7 +243,7 @@ func RandomProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.provider.RandomProvider",
+		"@cdktf/provider-random.provider.RandomProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -262,7 +262,7 @@ func RandomProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.provider.RandomProvider",
+		"@cdktf/provider-random.provider.RandomProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -281,7 +281,7 @@ func RandomProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.provider.RandomProvider",
+		"@cdktf/provider-random.provider.RandomProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -294,7 +294,7 @@ func RandomProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"random.provider.RandomProvider",
+		"@cdktf/provider-random.provider.RandomProvider",
 		"tfResourceType",
 		&returns,
 	)

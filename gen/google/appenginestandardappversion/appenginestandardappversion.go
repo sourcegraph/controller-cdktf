@@ -831,7 +831,7 @@ func NewAppEngineStandardAppVersion(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_AppEngineStandardAppVersion{}
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -844,7 +844,7 @@ func NewAppEngineStandardAppVersion_Override(a AppEngineStandardAppVersion, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1098,7 +1098,7 @@ func AppEngineStandardAppVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1117,7 +1117,7 @@ func AppEngineStandardAppVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1136,7 +1136,7 @@ func AppEngineStandardAppVersion_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1149,7 +1149,7 @@ func AppEngineStandardAppVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
+		"@cdktf/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion",
 		"tfResourceType",
 		&returns,
 	)

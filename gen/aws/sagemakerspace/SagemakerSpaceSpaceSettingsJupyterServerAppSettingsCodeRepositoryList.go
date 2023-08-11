@@ -116,7 +116,7 @@ func NewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList(te
 	j := jsiiProxy_SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList{}
 
 	_jsii_.Create(
-		"aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
+		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsJupyterServerAppSettingsCodeRepositoryList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

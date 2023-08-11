@@ -325,7 +325,7 @@ func NewDataOktaBehavior(scope constructs.Construct, id *string, config *DataOkt
 	j := jsiiProxy_DataOktaBehavior{}
 
 	_jsii_.Create(
-		"okta.dataOktaBehavior.DataOktaBehavior",
+		"@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -338,7 +338,7 @@ func NewDataOktaBehavior_Override(d DataOktaBehavior, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaBehavior.DataOktaBehavior",
+		"@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -438,7 +438,7 @@ func DataOktaBehavior_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaBehavior.DataOktaBehavior",
+		"@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -457,7 +457,7 @@ func DataOktaBehavior_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaBehavior.DataOktaBehavior",
+		"@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -476,7 +476,7 @@ func DataOktaBehavior_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaBehavior.DataOktaBehavior",
+		"@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataOktaBehavior_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaBehavior.DataOktaBehavior",
+		"@cdktf/provider-okta.dataOktaBehavior.DataOktaBehavior",
 		"tfResourceType",
 		&returns,
 	)

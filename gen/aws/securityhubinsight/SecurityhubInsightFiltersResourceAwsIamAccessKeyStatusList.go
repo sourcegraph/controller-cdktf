@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList(terraformReso
 	j := jsiiProxy_SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList_Override(s Se
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceAwsIamAccessKeyStatusList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

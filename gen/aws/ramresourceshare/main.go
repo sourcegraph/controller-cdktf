@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ramResourceShare.RamResourceShare",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShare",
 		reflect.TypeOf((*RamResourceShare)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -74,15 +74,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ramResourceShare.RamResourceShareConfig",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShareConfig",
 		reflect.TypeOf((*RamResourceShareConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.ramResourceShare.RamResourceShareTimeouts",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShareTimeouts",
 		reflect.TypeOf((*RamResourceShareTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.ramResourceShare.RamResourceShareTimeoutsOutputReference",
+		"@cdktf/provider-aws.ramResourceShare.RamResourceShareTimeoutsOutputReference",
 		reflect.TypeOf((*RamResourceShareTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

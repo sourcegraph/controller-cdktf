@@ -390,7 +390,7 @@ func NewGoogleAppEngineServiceNetworkSettings(scope constructs.Construct, id *st
 	j := jsiiProxy_GoogleAppEngineServiceNetworkSettings{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
+		"@cdktf/provider-google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewGoogleAppEngineServiceNetworkSettings_Override(g GoogleAppEngineServiceN
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
+		"@cdktf/provider-google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -536,7 +536,7 @@ func GoogleAppEngineServiceNetworkSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
+		"@cdktf/provider-google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func GoogleAppEngineServiceNetworkSettings_IsTerraformElement(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
+		"@cdktf/provider-google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func GoogleAppEngineServiceNetworkSettings_IsTerraformResource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
+		"@cdktf/provider-google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func GoogleAppEngineServiceNetworkSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
+		"@cdktf/provider-google-beta.googleAppEngineServiceNetworkSettings.GoogleAppEngineServiceNetworkSettings",
 		"tfResourceType",
 		&returns,
 	)

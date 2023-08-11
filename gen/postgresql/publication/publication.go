@@ -487,7 +487,7 @@ func NewPublication(scope constructs.Construct, id *string, config *PublicationC
 	j := jsiiProxy_Publication{}
 
 	_jsii_.Create(
-		"postgresql.publication.Publication",
+		"@cdktf/provider-postgresql.publication.Publication",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewPublication_Override(p Publication, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"postgresql.publication.Publication",
+		"@cdktf/provider-postgresql.publication.Publication",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -699,7 +699,7 @@ func Publication_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.publication.Publication",
+		"@cdktf/provider-postgresql.publication.Publication",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -718,7 +718,7 @@ func Publication_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.publication.Publication",
+		"@cdktf/provider-postgresql.publication.Publication",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -737,7 +737,7 @@ func Publication_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"postgresql.publication.Publication",
+		"@cdktf/provider-postgresql.publication.Publication",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func Publication_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"postgresql.publication.Publication",
+		"@cdktf/provider-postgresql.publication.Publication",
 		"tfResourceType",
 		&returns,
 	)

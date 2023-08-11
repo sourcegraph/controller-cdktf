@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.logpullRetention.LogpullRetention",
+		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetention",
 		reflect.TypeOf((*LogpullRetention)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.logpullRetention.LogpullRetentionConfig",
+		"@cdktf/provider-cloudflare.logpullRetention.LogpullRetentionConfig",
 		reflect.TypeOf((*LogpullRetentionConfig)(nil)).Elem(),
 	)
 }

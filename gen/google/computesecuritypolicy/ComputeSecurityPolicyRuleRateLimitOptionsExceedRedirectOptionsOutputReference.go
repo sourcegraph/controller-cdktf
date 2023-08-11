@@ -203,7 +203,7 @@ func NewComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputRefe
 	j := jsiiProxy_ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference",
+		"@cdktf/provider-google.computeSecurityPolicy.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

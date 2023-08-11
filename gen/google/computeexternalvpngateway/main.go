@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGateway",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		reflect.TypeOf((*ComputeExternalVpnGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig",
 		reflect.TypeOf((*ComputeExternalVpnGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterface",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterface",
 		reflect.TypeOf((*ComputeExternalVpnGatewayInterface)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceList",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceList",
 		reflect.TypeOf((*ComputeExternalVpnGatewayInterfaceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -107,7 +107,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
 		reflect.TypeOf((*ComputeExternalVpnGatewayInterfaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,11 +145,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts",
 		reflect.TypeOf((*ComputeExternalVpnGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeoutsOutputReference",
+		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeExternalVpnGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

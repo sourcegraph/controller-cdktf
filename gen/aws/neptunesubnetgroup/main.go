@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.neptuneSubnetGroup.NeptuneSubnetGroup",
+		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroup",
 		reflect.TypeOf((*NeptuneSubnetGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,7 +73,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.neptuneSubnetGroup.NeptuneSubnetGroupConfig",
+		"@cdktf/provider-aws.neptuneSubnetGroup.NeptuneSubnetGroupConfig",
 		reflect.TypeOf((*NeptuneSubnetGroupConfig)(nil)).Elem(),
 	)
 }

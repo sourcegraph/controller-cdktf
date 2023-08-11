@@ -167,7 +167,7 @@ func NewDataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfi
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -179,7 +179,7 @@ func NewDataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

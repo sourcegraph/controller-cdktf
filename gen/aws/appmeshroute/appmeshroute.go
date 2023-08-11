@@ -504,7 +504,7 @@ func NewAppmeshRoute(scope constructs.Construct, id *string, config *AppmeshRout
 	j := jsiiProxy_AppmeshRoute{}
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRoute",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRoute",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -517,7 +517,7 @@ func NewAppmeshRoute_Override(a AppmeshRoute, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshRoute.AppmeshRoute",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRoute",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -694,7 +694,7 @@ func AppmeshRoute_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshRoute.AppmeshRoute",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRoute",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -713,7 +713,7 @@ func AppmeshRoute_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshRoute.AppmeshRoute",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRoute",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -732,7 +732,7 @@ func AppmeshRoute_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appmeshRoute.AppmeshRoute",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRoute",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +745,7 @@ func AppmeshRoute_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appmeshRoute.AppmeshRoute",
+		"@cdktf/provider-aws.appmeshRoute.AppmeshRoute",
 		"tfResourceType",
 		&returns,
 	)

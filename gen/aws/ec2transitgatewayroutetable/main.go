@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTable",
 		reflect.TypeOf((*Ec2TransitGatewayRouteTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig",
+		"@cdktf/provider-aws.ec2TransitGatewayRouteTable.Ec2TransitGatewayRouteTableConfig",
 		reflect.TypeOf((*Ec2TransitGatewayRouteTableConfig)(nil)).Elem(),
 	)
 }

@@ -532,7 +532,7 @@ func NewGoogleComputeNetworkEndpointGroup(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleComputeNetworkEndpointGroup{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -545,7 +545,7 @@ func NewGoogleComputeNetworkEndpointGroup_Override(g GoogleComputeNetworkEndpoin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -744,7 +744,7 @@ func GoogleComputeNetworkEndpointGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -763,7 +763,7 @@ func GoogleComputeNetworkEndpointGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func GoogleComputeNetworkEndpointGroup_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -795,7 +795,7 @@ func GoogleComputeNetworkEndpointGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
+		"@cdktf/provider-google-beta.googleComputeNetworkEndpointGroup.GoogleComputeNetworkEndpointGroup",
 		"tfResourceType",
 		&returns,
 	)

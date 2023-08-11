@@ -327,7 +327,7 @@ func NewDataGoogleComposerImageVersions(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleComposerImageVersions{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
+		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -340,7 +340,7 @@ func NewDataGoogleComposerImageVersions_Override(d DataGoogleComposerImageVersio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
+		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -451,7 +451,7 @@ func DataGoogleComposerImageVersions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
+		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -470,7 +470,7 @@ func DataGoogleComposerImageVersions_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
+		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -489,7 +489,7 @@ func DataGoogleComposerImageVersions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
+		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataGoogleComposerImageVersions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
+		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		"tfResourceType",
 		&returns,
 	)

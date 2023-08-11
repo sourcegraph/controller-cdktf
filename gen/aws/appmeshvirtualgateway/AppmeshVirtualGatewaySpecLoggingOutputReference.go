@@ -180,7 +180,7 @@ func NewAppmeshVirtualGatewaySpecLoggingOutputReference(terraformResource cdktf.
 	j := jsiiProxy_AppmeshVirtualGatewaySpecLoggingOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewAppmeshVirtualGatewaySpecLoggingOutputReference_Override(a AppmeshVirtua
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

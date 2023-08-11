@@ -178,7 +178,7 @@ func NewIotThingGroupMetadataRootToParentGroupsOutputReference(terraformResource
 	j := jsiiProxy_IotThingGroupMetadataRootToParentGroupsOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewIotThingGroupMetadataRootToParentGroupsOutputReference_Override(i IotThi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsOutputReference",
+		"@cdktf/provider-aws.iotThingGroup.IotThingGroupMetadataRootToParentGroupsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)

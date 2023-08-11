@@ -179,7 +179,7 @@ func NewContainerClusterAuthenticatorGroupsConfigOutputReference(terraformResour
 	j := jsiiProxy_ContainerClusterAuthenticatorGroupsConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewContainerClusterAuthenticatorGroupsConfigOutputReference_Override(c Cont
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

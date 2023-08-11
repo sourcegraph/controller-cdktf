@@ -179,7 +179,7 @@ func NewIvsRecordingConfigurationDestinationConfigurationS3OutputReference(terra
 	j := jsiiProxy_IvsRecordingConfigurationDestinationConfigurationS3OutputReference{}
 
 	_jsii_.Create(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3OutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewIvsRecordingConfigurationDestinationConfigurationS3OutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3OutputReference",
+		"@cdktf/provider-aws.ivsRecordingConfiguration.IvsRecordingConfigurationDestinationConfigurationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

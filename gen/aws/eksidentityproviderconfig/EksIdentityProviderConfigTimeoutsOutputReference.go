@@ -204,7 +204,7 @@ func NewEksIdentityProviderConfigTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_EksIdentityProviderConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewEksIdentityProviderConfigTimeoutsOutputReference_Override(e EksIdentityP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksIdentityProviderConfig.EksIdentityProviderConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

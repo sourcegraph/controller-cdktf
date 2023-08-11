@@ -116,7 +116,7 @@ func NewOpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList(terraformResour
 	j := jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList{}
 
 	_jsii_.Create(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList_Override(o Opsw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksPhpAppLayer.OpsworksPhpAppLayerCloudwatchConfigurationLogStreamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.signonPolicy.SignonPolicy",
+		"@cdktf/provider-okta.signonPolicy.SignonPolicy",
 		reflect.TypeOf((*SignonPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.signonPolicy.SignonPolicyConfig",
+		"@cdktf/provider-okta.signonPolicy.SignonPolicyConfig",
 		reflect.TypeOf((*SignonPolicyConfig)(nil)).Elem(),
 	)
 }

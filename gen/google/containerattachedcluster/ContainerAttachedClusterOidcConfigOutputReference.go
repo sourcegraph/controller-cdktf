@@ -203,7 +203,7 @@ func NewContainerAttachedClusterOidcConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_ContainerAttachedClusterOidcConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewContainerAttachedClusterOidcConfigOutputReference_Override(c ContainerAt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference",
+		"@cdktf/provider-google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

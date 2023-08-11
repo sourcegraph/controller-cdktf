@@ -400,7 +400,7 @@ func NewGoogleTagsTagValueIamMember(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleTagsTagValueIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewGoogleTagsTagValueIamMember_Override(g GoogleTagsTagValueIamMember, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GoogleTagsTagValueIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GoogleTagsTagValueIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GoogleTagsTagValueIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GoogleTagsTagValueIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
+		"@cdktf/provider-google-beta.googleTagsTagValueIamMember.GoogleTagsTagValueIamMember",
 		"tfResourceType",
 		&returns,
 	)

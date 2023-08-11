@@ -204,7 +204,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference(terra
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecVolumeHostPathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

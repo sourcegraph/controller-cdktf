@@ -228,7 +228,7 @@ func NewFsxOntapVolumeTimeoutsOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_FsxOntapVolumeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewFsxOntapVolumeTimeoutsOutputReference_Override(f FsxOntapVolumeTimeoutsO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

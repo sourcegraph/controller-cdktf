@@ -275,7 +275,7 @@ func NewEc2ClientVpnEndpointAuthenticationOptionsOutputReference(terraformResour
 	j := jsiiProxy_Ec2ClientVpnEndpointAuthenticationOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -287,7 +287,7 @@ func NewEc2ClientVpnEndpointAuthenticationOptionsOutputReference_Override(e Ec2C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsOutputReference",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointAuthenticationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

@@ -351,7 +351,7 @@ func NewDataAwsEc2TransitGatewayRouteTables(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataAwsEc2TransitGatewayRouteTables{}
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -364,7 +364,7 @@ func NewDataAwsEc2TransitGatewayRouteTables_Override(d DataAwsEc2TransitGatewayR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -464,7 +464,7 @@ func DataAwsEc2TransitGatewayRouteTables_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -483,7 +483,7 @@ func DataAwsEc2TransitGatewayRouteTables_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -502,7 +502,7 @@ func DataAwsEc2TransitGatewayRouteTables_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -515,7 +515,7 @@ func DataAwsEc2TransitGatewayRouteTables_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
+		"@cdktf/provider-aws.dataAwsEc2TransitGatewayRouteTables.DataAwsEc2TransitGatewayRouteTables",
 		"tfResourceType",
 		&returns,
 	)

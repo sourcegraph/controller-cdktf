@@ -1089,7 +1089,7 @@ func NewGoogleComputeInstance(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleComputeInstance{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstance",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1102,7 +1102,7 @@ func NewGoogleComputeInstance_Override(g GoogleComputeInstance, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstance",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstance",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -1400,7 +1400,7 @@ func GoogleComputeInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstance.GoogleComputeInstance",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1419,7 +1419,7 @@ func GoogleComputeInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstance.GoogleComputeInstance",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1438,7 +1438,7 @@ func GoogleComputeInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeInstance.GoogleComputeInstance",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1451,7 +1451,7 @@ func GoogleComputeInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeInstance.GoogleComputeInstance",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstance",
 		"tfResourceType",
 		&returns,
 	)

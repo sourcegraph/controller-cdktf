@@ -312,7 +312,7 @@ func NewDataCloudflareApiTokenPermissionGroups(scope constructs.Construct, id *s
 	j := jsiiProxy_DataCloudflareApiTokenPermissionGroups{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
+		"@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -325,7 +325,7 @@ func NewDataCloudflareApiTokenPermissionGroups_Override(d DataCloudflareApiToken
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
+		"@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -414,7 +414,7 @@ func DataCloudflareApiTokenPermissionGroups_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
+		"@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -433,7 +433,7 @@ func DataCloudflareApiTokenPermissionGroups_IsTerraformDataSource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
+		"@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -452,7 +452,7 @@ func DataCloudflareApiTokenPermissionGroups_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
+		"@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -465,7 +465,7 @@ func DataCloudflareApiTokenPermissionGroups_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
+		"@cdktf/provider-cloudflare.dataCloudflareApiTokenPermissionGroups.DataCloudflareApiTokenPermissionGroups",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
+		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicy",
 		reflect.TypeOf((*NotebooksRuntimeIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,7 +66,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicyConfig",
+		"@cdktf/provider-google.notebooksRuntimeIamPolicy.NotebooksRuntimeIamPolicyConfig",
 		reflect.TypeOf((*NotebooksRuntimeIamPolicyConfig)(nil)).Elem(),
 	)
 }

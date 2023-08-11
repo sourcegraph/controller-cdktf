@@ -495,7 +495,7 @@ func NewGoogleVertexAiDataset(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GoogleVertexAiDataset{}
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewGoogleVertexAiDataset_Override(g GoogleVertexAiDataset, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -674,7 +674,7 @@ func GoogleVertexAiDataset_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func GoogleVertexAiDataset_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -712,7 +712,7 @@ func GoogleVertexAiDataset_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -725,7 +725,7 @@ func GoogleVertexAiDataset_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
+		"@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset",
 		"tfResourceType",
 		&returns,
 	)

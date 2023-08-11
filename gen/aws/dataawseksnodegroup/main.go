@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroup",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroup",
 		reflect.TypeOf((*DataAwsEksNodeGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,15 +75,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupConfig",
 		reflect.TypeOf((*DataAwsEksNodeGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccess",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccess",
 		reflect.TypeOf((*DataAwsEksNodeGroupRemoteAccess)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessList",
 		reflect.TypeOf((*DataAwsEksNodeGroupRemoteAccessList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -103,7 +103,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupRemoteAccessOutputReference",
 		reflect.TypeOf((*DataAwsEksNodeGroupRemoteAccessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,15 +137,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResources",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResources",
 		reflect.TypeOf((*DataAwsEksNodeGroupResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroups",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroups",
 		reflect.TypeOf((*DataAwsEksNodeGroupResourcesAutoscalingGroups)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsList",
 		reflect.TypeOf((*DataAwsEksNodeGroupResourcesAutoscalingGroupsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -165,7 +165,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference",
 		reflect.TypeOf((*DataAwsEksNodeGroupResourcesAutoscalingGroupsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -198,7 +198,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesList",
 		reflect.TypeOf((*DataAwsEksNodeGroupResourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -218,7 +218,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupResourcesOutputReference",
 		reflect.TypeOf((*DataAwsEksNodeGroupResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingGroups", GoGetter: "AutoscalingGroups"},
@@ -252,11 +252,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfig",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfig",
 		reflect.TypeOf((*DataAwsEksNodeGroupScalingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigList",
 		reflect.TypeOf((*DataAwsEksNodeGroupScalingConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -276,7 +276,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupScalingConfigOutputReference",
 		reflect.TypeOf((*DataAwsEksNodeGroupScalingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -311,11 +311,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaints",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaints",
 		reflect.TypeOf((*DataAwsEksNodeGroupTaints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsList",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsList",
 		reflect.TypeOf((*DataAwsEksNodeGroupTaintsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -335,7 +335,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsOutputReference",
+		"@cdktf/provider-aws.dataAwsEksNodeGroup.DataAwsEksNodeGroupTaintsOutputReference",
 		reflect.TypeOf((*DataAwsEksNodeGroupTaintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

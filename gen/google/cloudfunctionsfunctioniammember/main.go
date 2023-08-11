@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMember",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMember",
 		reflect.TypeOf((*CloudfunctionsFunctionIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,11 +72,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberCondition",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberCondition",
 		reflect.TypeOf((*CloudfunctionsFunctionIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberConditionOutputReference",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberConditionOutputReference",
 		reflect.TypeOf((*CloudfunctionsFunctionIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,7 +115,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberConfig",
+		"@cdktf/provider-google.cloudfunctionsFunctionIamMember.CloudfunctionsFunctionIamMemberConfig",
 		reflect.TypeOf((*CloudfunctionsFunctionIamMemberConfig)(nil)).Elem(),
 	)
 }

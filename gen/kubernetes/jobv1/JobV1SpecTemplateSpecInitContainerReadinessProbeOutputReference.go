@@ -348,7 +348,7 @@ func NewJobV1SpecTemplateSpecInitContainerReadinessProbeOutputReference(terrafor
 	j := jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -360,7 +360,7 @@ func NewJobV1SpecTemplateSpecInitContainerReadinessProbeOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbeOutputReference",
+		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecInitContainerReadinessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)

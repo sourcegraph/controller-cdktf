@@ -203,7 +203,7 @@ func NewGoogleAppEngineServiceSplitTrafficSplitOutputReference(terraformResource
 	j := jsiiProxy_GoogleAppEngineServiceSplitTrafficSplitOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTrafficSplitOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTrafficSplitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleAppEngineServiceSplitTrafficSplitOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTrafficSplitOutputReference",
+		"@cdktf/provider-google-beta.googleAppEngineServiceSplitTraffic.GoogleAppEngineServiceSplitTrafficSplitOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

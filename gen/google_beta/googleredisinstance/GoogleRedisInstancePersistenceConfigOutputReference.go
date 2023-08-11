@@ -239,7 +239,7 @@ func NewGoogleRedisInstancePersistenceConfigOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleRedisInstancePersistenceConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstancePersistenceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstancePersistenceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -251,7 +251,7 @@ func NewGoogleRedisInstancePersistenceConfigOutputReference_Override(g GoogleRed
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstancePersistenceConfigOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstancePersistenceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -528,7 +528,7 @@ func NewGoogleCloudIdsEndpoint(scope constructs.Construct, id *string, config *G
 	j := jsiiProxy_GoogleCloudIdsEndpoint{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -541,7 +541,7 @@ func NewGoogleCloudIdsEndpoint_Override(g GoogleCloudIdsEndpoint, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -729,7 +729,7 @@ func GoogleCloudIdsEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func GoogleCloudIdsEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -767,7 +767,7 @@ func GoogleCloudIdsEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -780,7 +780,7 @@ func GoogleCloudIdsEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
+		"@cdktf/provider-google-beta.googleCloudIdsEndpoint.GoogleCloudIdsEndpoint",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iamUserPolicy.IamUserPolicy",
+		"@cdktf/provider-aws.iamUserPolicy.IamUserPolicy",
 		reflect.TypeOf((*IamUserPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iamUserPolicy.IamUserPolicyConfig",
+		"@cdktf/provider-aws.iamUserPolicy.IamUserPolicyConfig",
 		reflect.TypeOf((*IamUserPolicyConfig)(nil)).Elem(),
 	)
 }

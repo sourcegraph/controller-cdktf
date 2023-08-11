@@ -116,7 +116,7 @@ func NewPodSpecContainerLifecyclePreStopList(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_PodSpecContainerLifecyclePreStopList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecContainerLifecyclePreStopList_Override(p PodSpecContainerLifecycl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecContainerLifecyclePreStopList",
+		"@cdktf/provider-kubernetes.pod.PodSpecContainerLifecyclePreStopList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

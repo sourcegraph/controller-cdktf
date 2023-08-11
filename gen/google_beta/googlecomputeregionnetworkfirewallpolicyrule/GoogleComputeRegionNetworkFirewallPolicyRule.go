@@ -649,7 +649,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyRule(scope constructs.Construct,
 	j := jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRule{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -662,7 +662,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyRule_Override(g GoogleComputeReg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -894,7 +894,7 @@ func GoogleComputeRegionNetworkFirewallPolicyRule_IsConstruct(x interface{}) *bo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -913,7 +913,7 @@ func GoogleComputeRegionNetworkFirewallPolicyRule_IsTerraformElement(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -932,7 +932,7 @@ func GoogleComputeRegionNetworkFirewallPolicyRule_IsTerraformResource(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -945,7 +945,7 @@ func GoogleComputeRegionNetworkFirewallPolicyRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
+		"@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyRule.GoogleComputeRegionNetworkFirewallPolicyRule",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewSccNotificationConfigStreamingConfigOutputReference(terraformResource cd
 	j := jsiiProxy_SccNotificationConfigStreamingConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.sccNotificationConfig.SccNotificationConfigStreamingConfigOutputReference",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigStreamingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewSccNotificationConfigStreamingConfigOutputReference_Override(s SccNotifi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sccNotificationConfig.SccNotificationConfigStreamingConfigOutputReference",
+		"@cdktf/provider-google.sccNotificationConfig.SccNotificationConfigStreamingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

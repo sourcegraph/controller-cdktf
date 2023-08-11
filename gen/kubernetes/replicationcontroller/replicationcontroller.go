@@ -366,7 +366,7 @@ func NewReplicationController(scope constructs.Construct, id *string, config *Re
 	j := jsiiProxy_ReplicationController{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationController",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewReplicationController_Override(r ReplicationController, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationController",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -490,7 +490,7 @@ func ReplicationController_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.replicationController.ReplicationController",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -509,7 +509,7 @@ func ReplicationController_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.replicationController.ReplicationController",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -528,7 +528,7 @@ func ReplicationController_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.replicationController.ReplicationController",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func ReplicationController_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.replicationController.ReplicationController",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationController",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewFsxOntapFileSystemEndpointsInterclusterList(terraformResource cdktf.IInt
 	j := jsiiProxy_FsxOntapFileSystemEndpointsInterclusterList{}
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterList",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewFsxOntapFileSystemEndpointsInterclusterList_Override(f FsxOntapFileSyste
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterList",
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		f,
 	)

@@ -424,7 +424,7 @@ func NewGkeHubMembershipIamBinding(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GkeHubMembershipIamBinding{}
 
 	_jsii_.Create(
-		"google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
+		"@cdktf/provider-google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewGkeHubMembershipIamBinding_Override(g GkeHubMembershipIamBinding, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
+		"@cdktf/provider-google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -592,7 +592,7 @@ func GkeHubMembershipIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
+		"@cdktf/provider-google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func GkeHubMembershipIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
+		"@cdktf/provider-google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func GkeHubMembershipIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
+		"@cdktf/provider-google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func GkeHubMembershipIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
+		"@cdktf/provider-google.gkeHubMembershipIamBinding.GkeHubMembershipIamBinding",
 		"tfResourceType",
 		&returns,
 	)

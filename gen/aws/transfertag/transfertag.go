@@ -365,7 +365,7 @@ func NewTransferTag(scope constructs.Construct, id *string, config *TransferTagC
 	j := jsiiProxy_TransferTag{}
 
 	_jsii_.Create(
-		"aws.transferTag.TransferTag",
+		"@cdktf/provider-aws.transferTag.TransferTag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -378,7 +378,7 @@ func NewTransferTag_Override(t TransferTag, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferTag.TransferTag",
+		"@cdktf/provider-aws.transferTag.TransferTag",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -522,7 +522,7 @@ func TransferTag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferTag.TransferTag",
+		"@cdktf/provider-aws.transferTag.TransferTag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -541,7 +541,7 @@ func TransferTag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferTag.TransferTag",
+		"@cdktf/provider-aws.transferTag.TransferTag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -560,7 +560,7 @@ func TransferTag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.transferTag.TransferTag",
+		"@cdktf/provider-aws.transferTag.TransferTag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -573,7 +573,7 @@ func TransferTag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.transferTag.TransferTag",
+		"@cdktf/provider-aws.transferTag.TransferTag",
 		"tfResourceType",
 		&returns,
 	)

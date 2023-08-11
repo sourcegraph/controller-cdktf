@@ -376,7 +376,7 @@ func NewIdentitystoreGroupMembership(scope constructs.Construct, id *string, con
 	j := jsiiProxy_IdentitystoreGroupMembership{}
 
 	_jsii_.Create(
-		"aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
+		"@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -389,7 +389,7 @@ func NewIdentitystoreGroupMembership_Override(i IdentitystoreGroupMembership, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
+		"@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -533,7 +533,7 @@ func IdentitystoreGroupMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
+		"@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -552,7 +552,7 @@ func IdentitystoreGroupMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
+		"@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -571,7 +571,7 @@ func IdentitystoreGroupMembership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
+		"@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func IdentitystoreGroupMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
+		"@cdktf/provider-aws.identitystoreGroupMembership.IdentitystoreGroupMembership",
 		"tfResourceType",
 		&returns,
 	)

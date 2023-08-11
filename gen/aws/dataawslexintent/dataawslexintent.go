@@ -381,7 +381,7 @@ func NewDataAwsLexIntent(scope constructs.Construct, id *string, config *DataAws
 	j := jsiiProxy_DataAwsLexIntent{}
 
 	_jsii_.Create(
-		"aws.dataAwsLexIntent.DataAwsLexIntent",
+		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -394,7 +394,7 @@ func NewDataAwsLexIntent_Override(d DataAwsLexIntent, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLexIntent.DataAwsLexIntent",
+		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -505,7 +505,7 @@ func DataAwsLexIntent_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLexIntent.DataAwsLexIntent",
+		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -524,7 +524,7 @@ func DataAwsLexIntent_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLexIntent.DataAwsLexIntent",
+		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -543,7 +543,7 @@ func DataAwsLexIntent_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLexIntent.DataAwsLexIntent",
+		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -556,7 +556,7 @@ func DataAwsLexIntent_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLexIntent.DataAwsLexIntent",
+		"@cdktf/provider-aws.dataAwsLexIntent.DataAwsLexIntent",
 		"tfResourceType",
 		&returns,
 	)

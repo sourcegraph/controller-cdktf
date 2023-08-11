@@ -402,7 +402,7 @@ func NewBatchSchedulingPolicy(scope constructs.Construct, id *string, config *Ba
 	j := jsiiProxy_BatchSchedulingPolicy{}
 
 	_jsii_.Create(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicy",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewBatchSchedulingPolicy_Override(b BatchSchedulingPolicy, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicy",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicy",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -559,7 +559,7 @@ func BatchSchedulingPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicy",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func BatchSchedulingPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicy",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func BatchSchedulingPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicy",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -610,7 +610,7 @@ func BatchSchedulingPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.batchSchedulingPolicy.BatchSchedulingPolicy",
+		"@cdktf/provider-aws.batchSchedulingPolicy.BatchSchedulingPolicy",
 		"tfResourceType",
 		&returns,
 	)

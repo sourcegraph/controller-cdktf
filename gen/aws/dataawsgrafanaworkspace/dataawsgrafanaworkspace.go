@@ -513,7 +513,7 @@ func NewDataAwsGrafanaWorkspace(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_DataAwsGrafanaWorkspace{}
 
 	_jsii_.Create(
-		"aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
+		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -526,7 +526,7 @@ func NewDataAwsGrafanaWorkspace_Override(d DataAwsGrafanaWorkspace, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
+		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -637,7 +637,7 @@ func DataAwsGrafanaWorkspace_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
+		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func DataAwsGrafanaWorkspace_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
+		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func DataAwsGrafanaWorkspace_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
+		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func DataAwsGrafanaWorkspace_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
+		"@cdktf/provider-aws.dataAwsGrafanaWorkspace.DataAwsGrafanaWorkspace",
 		"tfResourceType",
 		&returns,
 	)

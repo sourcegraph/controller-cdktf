@@ -804,7 +804,7 @@ func NewDeploymentSpecTemplateSpecOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DeploymentSpecTemplateSpecOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -816,7 +816,7 @@ func NewDeploymentSpecTemplateSpecOutputReference_Override(d DeploymentSpecTempl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

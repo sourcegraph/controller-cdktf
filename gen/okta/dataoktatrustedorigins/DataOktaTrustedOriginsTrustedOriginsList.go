@@ -104,7 +104,7 @@ func NewDataOktaTrustedOriginsTrustedOriginsList(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataOktaTrustedOriginsTrustedOriginsList{}
 
 	_jsii_.Create(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsList",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataOktaTrustedOriginsTrustedOriginsList_Override(d DataOktaTrustedOrigi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsList",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

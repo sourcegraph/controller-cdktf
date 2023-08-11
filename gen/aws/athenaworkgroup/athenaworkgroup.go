@@ -474,7 +474,7 @@ func NewAthenaWorkgroup(scope constructs.Construct, id *string, config *AthenaWo
 	j := jsiiProxy_AthenaWorkgroup{}
 
 	_jsii_.Create(
-		"aws.athenaWorkgroup.AthenaWorkgroup",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -487,7 +487,7 @@ func NewAthenaWorkgroup_Override(a AthenaWorkgroup, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.athenaWorkgroup.AthenaWorkgroup",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -664,7 +664,7 @@ func AthenaWorkgroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaWorkgroup.AthenaWorkgroup",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -683,7 +683,7 @@ func AthenaWorkgroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaWorkgroup.AthenaWorkgroup",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -702,7 +702,7 @@ func AthenaWorkgroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaWorkgroup.AthenaWorkgroup",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -715,7 +715,7 @@ func AthenaWorkgroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.athenaWorkgroup.AthenaWorkgroup",
+		"@cdktf/provider-aws.athenaWorkgroup.AthenaWorkgroup",
 		"tfResourceType",
 		&returns,
 	)

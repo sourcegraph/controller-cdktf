@@ -347,7 +347,7 @@ func NewComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference
 	j := jsiiProxy_ComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -359,7 +359,7 @@ func NewComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.transcribeVocabulary.TranscribeVocabulary",
+		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabulary",
 		reflect.TypeOf((*TranscribeVocabulary)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -77,15 +77,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.transcribeVocabulary.TranscribeVocabularyConfig",
+		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyConfig",
 		reflect.TypeOf((*TranscribeVocabularyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.transcribeVocabulary.TranscribeVocabularyTimeouts",
+		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyTimeouts",
 		reflect.TypeOf((*TranscribeVocabularyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.transcribeVocabulary.TranscribeVocabularyTimeoutsOutputReference",
+		"@cdktf/provider-aws.transcribeVocabulary.TranscribeVocabularyTimeoutsOutputReference",
 		reflect.TypeOf((*TranscribeVocabularyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

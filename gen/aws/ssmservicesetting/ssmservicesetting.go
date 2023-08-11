@@ -364,7 +364,7 @@ func NewSsmServiceSetting(scope constructs.Construct, id *string, config *SsmSer
 	j := jsiiProxy_SsmServiceSetting{}
 
 	_jsii_.Create(
-		"aws.ssmServiceSetting.SsmServiceSetting",
+		"@cdktf/provider-aws.ssmServiceSetting.SsmServiceSetting",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -377,7 +377,7 @@ func NewSsmServiceSetting_Override(s SsmServiceSetting, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ssmServiceSetting.SsmServiceSetting",
+		"@cdktf/provider-aws.ssmServiceSetting.SsmServiceSetting",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -510,7 +510,7 @@ func SsmServiceSetting_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmServiceSetting.SsmServiceSetting",
+		"@cdktf/provider-aws.ssmServiceSetting.SsmServiceSetting",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func SsmServiceSetting_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmServiceSetting.SsmServiceSetting",
+		"@cdktf/provider-aws.ssmServiceSetting.SsmServiceSetting",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -548,7 +548,7 @@ func SsmServiceSetting_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ssmServiceSetting.SsmServiceSetting",
+		"@cdktf/provider-aws.ssmServiceSetting.SsmServiceSetting",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func SsmServiceSetting_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ssmServiceSetting.SsmServiceSetting",
+		"@cdktf/provider-aws.ssmServiceSetting.SsmServiceSetting",
 		"tfResourceType",
 		&returns,
 	)

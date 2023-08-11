@@ -406,7 +406,7 @@ func NewSpotInstanceRequestEbsBlockDeviceOutputReference(terraformResource cdktf
 	j := jsiiProxy_SpotInstanceRequestEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -418,7 +418,7 @@ func NewSpotInstanceRequestEbsBlockDeviceOutputReference_Override(s SpotInstance
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

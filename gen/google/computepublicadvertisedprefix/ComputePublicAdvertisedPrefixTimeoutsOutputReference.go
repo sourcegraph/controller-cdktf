@@ -204,7 +204,7 @@ func NewComputePublicAdvertisedPrefixTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_ComputePublicAdvertisedPrefixTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeoutsOutputReference",
+		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputePublicAdvertisedPrefixTimeoutsOutputReference_Override(c ComputeP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeoutsOutputReference",
+		"@cdktf/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

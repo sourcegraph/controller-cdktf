@@ -534,7 +534,7 @@ func NewRedshiftdataStatement(scope constructs.Construct, id *string, config *Re
 	j := jsiiProxy_RedshiftdataStatement{}
 
 	_jsii_.Create(
-		"aws.redshiftdataStatement.RedshiftdataStatement",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -547,7 +547,7 @@ func NewRedshiftdataStatement_Override(r RedshiftdataStatement, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftdataStatement.RedshiftdataStatement",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -746,7 +746,7 @@ func RedshiftdataStatement_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftdataStatement.RedshiftdataStatement",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -765,7 +765,7 @@ func RedshiftdataStatement_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftdataStatement.RedshiftdataStatement",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func RedshiftdataStatement_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftdataStatement.RedshiftdataStatement",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -797,7 +797,7 @@ func RedshiftdataStatement_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftdataStatement.RedshiftdataStatement",
+		"@cdktf/provider-aws.redshiftdataStatement.RedshiftdataStatement",
 		"tfResourceType",
 		&returns,
 	)

@@ -228,7 +228,7 @@ func NewGluePartitionStorageDescriptorSkewedInfoOutputReference(terraformResourc
 	j := jsiiProxy_GluePartitionStorageDescriptorSkewedInfoOutputReference{}
 
 	_jsii_.Create(
-		"aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGluePartitionStorageDescriptorSkewedInfoOutputReference_Override(g GlueP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference",
+		"@cdktf/provider-aws.gluePartition.GluePartitionStorageDescriptorSkewedInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

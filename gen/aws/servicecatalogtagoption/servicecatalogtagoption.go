@@ -401,7 +401,7 @@ func NewServicecatalogTagOption(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_ServicecatalogTagOption{}
 
 	_jsii_.Create(
-		"aws.servicecatalogTagOption.ServicecatalogTagOption",
+		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewServicecatalogTagOption_Override(s ServicecatalogTagOption, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.servicecatalogTagOption.ServicecatalogTagOption",
+		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -558,7 +558,7 @@ func ServicecatalogTagOption_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogTagOption.ServicecatalogTagOption",
+		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -577,7 +577,7 @@ func ServicecatalogTagOption_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogTagOption.ServicecatalogTagOption",
+		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func ServicecatalogTagOption_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.servicecatalogTagOption.ServicecatalogTagOption",
+		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func ServicecatalogTagOption_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.servicecatalogTagOption.ServicecatalogTagOption",
+		"@cdktf/provider-aws.servicecatalogTagOption.ServicecatalogTagOption",
 		"tfResourceType",
 		&returns,
 	)

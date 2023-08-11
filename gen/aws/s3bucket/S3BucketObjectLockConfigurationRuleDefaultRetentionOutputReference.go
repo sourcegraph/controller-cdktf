@@ -227,7 +227,7 @@ func NewS3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference(terra
 	j := jsiiProxy_S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewS3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference",
+		"@cdktf/provider-aws.s3Bucket.S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

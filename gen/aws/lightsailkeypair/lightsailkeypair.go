@@ -447,7 +447,7 @@ func NewLightsailKeyPair(scope constructs.Construct, id *string, config *Lightsa
 	j := jsiiProxy_LightsailKeyPair{}
 
 	_jsii_.Create(
-		"aws.lightsailKeyPair.LightsailKeyPair",
+		"@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewLightsailKeyPair_Override(l LightsailKeyPair, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailKeyPair.LightsailKeyPair",
+		"@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -615,7 +615,7 @@ func LightsailKeyPair_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailKeyPair.LightsailKeyPair",
+		"@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -634,7 +634,7 @@ func LightsailKeyPair_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailKeyPair.LightsailKeyPair",
+		"@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -653,7 +653,7 @@ func LightsailKeyPair_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailKeyPair.LightsailKeyPair",
+		"@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func LightsailKeyPair_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailKeyPair.LightsailKeyPair",
+		"@cdktf/provider-aws.lightsailKeyPair.LightsailKeyPair",
 		"tfResourceType",
 		&returns,
 	)

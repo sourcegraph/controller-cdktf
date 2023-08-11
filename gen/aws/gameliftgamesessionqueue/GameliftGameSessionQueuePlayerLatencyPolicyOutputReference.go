@@ -203,7 +203,7 @@ func NewGameliftGameSessionQueuePlayerLatencyPolicyOutputReference(terraformReso
 	j := jsiiProxy_GameliftGameSessionQueuePlayerLatencyPolicyOutputReference{}
 
 	_jsii_.Create(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyOutputReference",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGameliftGameSessionQueuePlayerLatencyPolicyOutputReference_Override(g Ga
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyOutputReference",
+		"@cdktf/provider-aws.gameliftGameSessionQueue.GameliftGameSessionQueuePlayerLatencyPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

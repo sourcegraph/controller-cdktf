@@ -202,7 +202,7 @@ func NewGlobalacceleratorEndpointGroupPortOverrideOutputReference(terraformResou
 	j := jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideOutputReference{}
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideOutputReference",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGlobalacceleratorEndpointGroupPortOverrideOutputReference_Override(g Glo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideOutputReference",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

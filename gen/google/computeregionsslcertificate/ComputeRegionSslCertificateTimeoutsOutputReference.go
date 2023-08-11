@@ -204,7 +204,7 @@ func NewComputeRegionSslCertificateTimeoutsOutputReference(terraformResource cdk
 	j := jsiiProxy_ComputeRegionSslCertificateTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeRegionSslCertificateTimeoutsOutputReference_Override(c ComputeReg
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeoutsOutputReference",
+		"@cdktf/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

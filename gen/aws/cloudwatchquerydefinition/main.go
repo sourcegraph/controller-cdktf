@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
+		"@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinition",
 		reflect.TypeOf((*CloudwatchQueryDefinition)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,7 +63,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig",
+		"@cdktf/provider-aws.cloudwatchQueryDefinition.CloudwatchQueryDefinitionConfig",
 		reflect.TypeOf((*CloudwatchQueryDefinitionConfig)(nil)).Elem(),
 	)
 }

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.connectBotAssociation.ConnectBotAssociation",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociation",
 		reflect.TypeOf((*ConnectBotAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,15 +60,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectBotAssociation.ConnectBotAssociationConfig",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationConfig",
 		reflect.TypeOf((*ConnectBotAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.connectBotAssociation.ConnectBotAssociationLexBot",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBot",
 		reflect.TypeOf((*ConnectBotAssociationLexBot)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.connectBotAssociation.ConnectBotAssociationLexBotOutputReference",
+		"@cdktf/provider-aws.connectBotAssociation.ConnectBotAssociationLexBotOutputReference",
 		reflect.TypeOf((*ConnectBotAssociationLexBotOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

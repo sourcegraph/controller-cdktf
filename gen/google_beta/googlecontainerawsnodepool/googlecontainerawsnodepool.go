@@ -618,7 +618,7 @@ func NewGoogleContainerAwsNodePool(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleContainerAwsNodePool{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -631,7 +631,7 @@ func NewGoogleContainerAwsNodePool_Override(g GoogleContainerAwsNodePool, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -819,7 +819,7 @@ func GoogleContainerAwsNodePool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -838,7 +838,7 @@ func GoogleContainerAwsNodePool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -857,7 +857,7 @@ func GoogleContainerAwsNodePool_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -870,7 +870,7 @@ func GoogleContainerAwsNodePool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePool",
 		"tfResourceType",
 		&returns,
 	)

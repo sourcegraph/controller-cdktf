@@ -104,7 +104,7 @@ func NewDataAwsKendraQuerySuggestionsBlockListSourceS3PathList(terraformResource
 	j := jsiiProxy_DataAwsKendraQuerySuggestionsBlockListSourceS3PathList{}
 
 	_jsii_.Create(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathList",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsKendraQuerySuggestionsBlockListSourceS3PathList_Override(d DataAw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathList",
+		"@cdktf/provider-aws.dataAwsKendraQuerySuggestionsBlockList.DataAwsKendraQuerySuggestionsBlockListSourceS3PathList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

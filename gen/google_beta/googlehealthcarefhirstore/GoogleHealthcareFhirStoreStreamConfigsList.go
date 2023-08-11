@@ -116,7 +116,7 @@ func NewGoogleHealthcareFhirStoreStreamConfigsList(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsList{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreStreamConfigsList",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreStreamConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleHealthcareFhirStoreStreamConfigsList_Override(g GoogleHealthcareFh
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreStreamConfigsList",
+		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreStreamConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockList",
 		reflect.TypeOf((*KendraQuerySuggestionsBlockList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -80,15 +80,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListConfig",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListConfig",
 		reflect.TypeOf((*KendraQuerySuggestionsBlockListConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3Path",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3Path",
 		reflect.TypeOf((*KendraQuerySuggestionsBlockListSourceS3Path)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3PathOutputReference",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListSourceS3PathOutputReference",
 		reflect.TypeOf((*KendraQuerySuggestionsBlockListSourceS3PathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -124,11 +124,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeouts",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeouts",
 		reflect.TypeOf((*KendraQuerySuggestionsBlockListTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeoutsOutputReference",
+		"@cdktf/provider-aws.kendraQuerySuggestionsBlockList.KendraQuerySuggestionsBlockListTimeoutsOutputReference",
 		reflect.TypeOf((*KendraQuerySuggestionsBlockListTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

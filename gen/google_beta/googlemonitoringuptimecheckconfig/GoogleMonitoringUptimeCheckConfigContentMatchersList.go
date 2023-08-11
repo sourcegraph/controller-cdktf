@@ -116,7 +116,7 @@ func NewGoogleMonitoringUptimeCheckConfigContentMatchersList(terraformResource c
 	j := jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersList{}
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersList",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleMonitoringUptimeCheckConfigContentMatchersList_Override(g GoogleMo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersList",
+		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigContentMatchersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

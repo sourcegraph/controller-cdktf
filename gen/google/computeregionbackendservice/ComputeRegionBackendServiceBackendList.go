@@ -116,7 +116,7 @@ func NewComputeRegionBackendServiceBackendList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_ComputeRegionBackendServiceBackendList{}
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceBackendList",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeRegionBackendServiceBackendList_Override(c ComputeRegionBackendSe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionBackendService.ComputeRegionBackendServiceBackendList",
+		"@cdktf/provider-google.computeRegionBackendService.ComputeRegionBackendServiceBackendList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

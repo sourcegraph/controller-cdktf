@@ -191,7 +191,7 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputR
 	j := jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -203,7 +203,7 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference",
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesSchemaRecordFormatOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

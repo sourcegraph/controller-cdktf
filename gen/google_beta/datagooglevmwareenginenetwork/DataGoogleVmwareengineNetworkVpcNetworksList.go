@@ -104,7 +104,7 @@ func NewDataGoogleVmwareengineNetworkVpcNetworksList(terraformResource cdktf.IIn
 	j := jsiiProxy_DataGoogleVmwareengineNetworkVpcNetworksList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetworkVpcNetworksList",
+		"@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetworkVpcNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleVmwareengineNetworkVpcNetworksList_Override(d DataGoogleVmware
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetworkVpcNetworksList",
+		"@cdktf/provider-google-beta.dataGoogleVmwareengineNetwork.DataGoogleVmwareengineNetworkVpcNetworksList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

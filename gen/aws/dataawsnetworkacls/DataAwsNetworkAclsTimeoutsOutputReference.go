@@ -180,7 +180,7 @@ func NewDataAwsNetworkAclsTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataAwsNetworkAclsTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDataAwsNetworkAclsTimeoutsOutputReference_Override(d DataAwsNetworkAclsT
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference",
+		"@cdktf/provider-aws.dataAwsNetworkAcls.DataAwsNetworkAclsTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

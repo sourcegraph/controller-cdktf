@@ -592,7 +592,7 @@ func NewPassword(scope constructs.Construct, id *string, config *PasswordConfig)
 	j := jsiiProxy_Password{}
 
 	_jsii_.Create(
-		"random.password.Password",
+		"@cdktf/provider-random.password.Password",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -605,7 +605,7 @@ func NewPassword_Override(p Password, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"random.password.Password",
+		"@cdktf/provider-random.password.Password",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -837,7 +837,7 @@ func Password_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.password.Password",
+		"@cdktf/provider-random.password.Password",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -856,7 +856,7 @@ func Password_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.password.Password",
+		"@cdktf/provider-random.password.Password",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -875,7 +875,7 @@ func Password_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"random.password.Password",
+		"@cdktf/provider-random.password.Password",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -888,7 +888,7 @@ func Password_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"random.password.Password",
+		"@cdktf/provider-random.password.Password",
 		"tfResourceType",
 		&returns,
 	)

@@ -200,7 +200,7 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference(terrafor
 	j := jsiiProxy_VertexAiEndpointDeployedModelsDedicatedResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesOutputReference",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference_Override
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesOutputReference",
+		"@cdktf/provider-google.vertexAiEndpoint.VertexAiEndpointDeployedModelsDedicatedResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)

@@ -487,7 +487,7 @@ func NewGooglePubsubLiteTopic(scope constructs.Construct, id *string, config *Go
 	j := jsiiProxy_GooglePubsubLiteTopic{}
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -500,7 +500,7 @@ func NewGooglePubsubLiteTopic_Override(g GooglePubsubLiteTopic, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -655,7 +655,7 @@ func GooglePubsubLiteTopic_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -674,7 +674,7 @@ func GooglePubsubLiteTopic_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -693,7 +693,7 @@ func GooglePubsubLiteTopic_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -706,7 +706,7 @@ func GooglePubsubLiteTopic_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
+		"@cdktf/provider-google-beta.googlePubsubLiteTopic.GooglePubsubLiteTopic",
 		"tfResourceType",
 		&returns,
 	)

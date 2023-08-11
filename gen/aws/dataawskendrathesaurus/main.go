@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus",
+		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurus",
 		reflect.TypeOf((*DataAwsKendraThesaurus)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -72,15 +72,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusConfig",
+		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusConfig",
 		reflect.TypeOf((*DataAwsKendraThesaurusConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3Path",
+		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3Path",
 		reflect.TypeOf((*DataAwsKendraThesaurusSourceS3Path)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathList",
+		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathList",
 		reflect.TypeOf((*DataAwsKendraThesaurusSourceS3PathList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -100,7 +100,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathOutputReference",
+		"@cdktf/provider-aws.dataAwsKendraThesaurus.DataAwsKendraThesaurusSourceS3PathOutputReference",
 		reflect.TypeOf((*DataAwsKendraThesaurusSourceS3PathOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},

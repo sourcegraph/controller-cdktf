@@ -116,7 +116,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerList(terraformResource
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerList{}
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerList_Override(r Replic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerList",
+		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

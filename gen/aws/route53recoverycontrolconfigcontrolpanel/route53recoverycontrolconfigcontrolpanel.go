@@ -386,7 +386,7 @@ func NewRoute53RecoverycontrolconfigControlPanel(scope constructs.Construct, id 
 	j := jsiiProxy_Route53RecoverycontrolconfigControlPanel{}
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -399,7 +399,7 @@ func NewRoute53RecoverycontrolconfigControlPanel_Override(r Route53Recoverycontr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -532,7 +532,7 @@ func Route53RecoverycontrolconfigControlPanel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func Route53RecoverycontrolconfigControlPanel_IsTerraformElement(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -570,7 +570,7 @@ func Route53RecoverycontrolconfigControlPanel_IsTerraformResource(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -583,7 +583,7 @@ func Route53RecoverycontrolconfigControlPanel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
 		"tfResourceType",
 		&returns,
 	)

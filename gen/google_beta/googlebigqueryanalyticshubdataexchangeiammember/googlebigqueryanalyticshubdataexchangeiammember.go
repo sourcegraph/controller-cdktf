@@ -448,7 +448,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchangeIamMember(scope constructs.Constru
 	j := jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchangeIamMember_Override(g GoogleBigquer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleBigqueryAnalyticsHubDataExchangeIamMember_IsConstruct(x interface{}) 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleBigqueryAnalyticsHubDataExchangeIamMember_IsTerraformElement(x interf
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleBigqueryAnalyticsHubDataExchangeIamMember_IsTerraformResource(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleBigqueryAnalyticsHubDataExchangeIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
+		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamMember.GoogleBigqueryAnalyticsHubDataExchangeIamMember",
 		"tfResourceType",
 		&returns,
 	)

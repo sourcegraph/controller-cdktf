@@ -252,7 +252,7 @@ func NewPodSpecVolumeProjectedSourcesOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedSourcesOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewPodSpecVolumeProjectedSourcesOutputReference_Override(p PodSpecVolumePro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedSourcesOutputReference",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)

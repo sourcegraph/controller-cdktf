@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.notificationPolicy.NotificationPolicy",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicy",
 		reflect.TypeOf((*NotificationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.notificationPolicy.NotificationPolicyConfig",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyConfig",
 		reflect.TypeOf((*NotificationPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.notificationPolicy.NotificationPolicyEmailIntegration",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegration",
 		reflect.TypeOf((*NotificationPolicyEmailIntegration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationList",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationList",
 		reflect.TypeOf((*NotificationPolicyEmailIntegrationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -113,7 +113,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationOutputReference",
 		reflect.TypeOf((*NotificationPolicyEmailIntegrationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,11 +150,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.notificationPolicy.NotificationPolicyFilters",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFilters",
 		reflect.TypeOf((*NotificationPolicyFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyFiltersOutputReference",
 		reflect.TypeOf((*NotificationPolicyFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -240,11 +240,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegration",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegration",
 		reflect.TypeOf((*NotificationPolicyPagerdutyIntegration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationList",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationList",
 		reflect.TypeOf((*NotificationPolicyPagerdutyIntegrationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -265,7 +265,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyPagerdutyIntegrationOutputReference",
 		reflect.TypeOf((*NotificationPolicyPagerdutyIntegrationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -302,11 +302,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegration",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegration",
 		reflect.TypeOf((*NotificationPolicyWebhooksIntegration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationList",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationList",
 		reflect.TypeOf((*NotificationPolicyWebhooksIntegrationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -327,7 +327,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
 		reflect.TypeOf((*NotificationPolicyWebhooksIntegrationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

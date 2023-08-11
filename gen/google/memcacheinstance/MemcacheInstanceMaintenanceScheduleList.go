@@ -104,7 +104,7 @@ func NewMemcacheInstanceMaintenanceScheduleList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_MemcacheInstanceMaintenanceScheduleList{}
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewMemcacheInstanceMaintenanceScheduleList_Override(m MemcacheInstanceMaint
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
+		"@cdktf/provider-google.memcacheInstance.MemcacheInstanceMaintenanceScheduleList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

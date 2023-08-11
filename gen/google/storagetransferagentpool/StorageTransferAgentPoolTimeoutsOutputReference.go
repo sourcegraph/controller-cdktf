@@ -228,7 +228,7 @@ func NewStorageTransferAgentPoolTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_StorageTransferAgentPoolTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.storageTransferAgentPool.StorageTransferAgentPoolTimeoutsOutputReference",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStorageTransferAgentPoolTimeoutsOutputReference_Override(s StorageTransf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.storageTransferAgentPool.StorageTransferAgentPoolTimeoutsOutputReference",
+		"@cdktf/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

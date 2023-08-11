@@ -353,7 +353,7 @@ func NewHealthcareDatasetIamPolicy(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_HealthcareDatasetIamPolicy{}
 
 	_jsii_.Create(
-		"google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +366,7 @@ func NewHealthcareDatasetIamPolicy_Override(h HealthcareDatasetIamPolicy, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -499,7 +499,7 @@ func HealthcareDatasetIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func HealthcareDatasetIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func HealthcareDatasetIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func HealthcareDatasetIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
+		"@cdktf/provider-google.healthcareDatasetIamPolicy.HealthcareDatasetIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

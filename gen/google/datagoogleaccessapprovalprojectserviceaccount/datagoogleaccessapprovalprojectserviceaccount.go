@@ -313,7 +313,7 @@ func NewDataGoogleAccessApprovalProjectServiceAccount(scope constructs.Construct
 	j := jsiiProxy_DataGoogleAccessApprovalProjectServiceAccount{}
 
 	_jsii_.Create(
-		"google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataGoogleAccessApprovalProjectServiceAccount_Override(d DataGoogleAcces
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +426,7 @@ func DataGoogleAccessApprovalProjectServiceAccount_IsConstruct(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -445,7 +445,7 @@ func DataGoogleAccessApprovalProjectServiceAccount_IsTerraformDataSource(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -464,7 +464,7 @@ func DataGoogleAccessApprovalProjectServiceAccount_IsTerraformElement(x interfac
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -477,7 +477,7 @@ func DataGoogleAccessApprovalProjectServiceAccount_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
+		"@cdktf/provider-google.dataGoogleAccessApprovalProjectServiceAccount.DataGoogleAccessApprovalProjectServiceAccount",
 		"tfResourceType",
 		&returns,
 	)

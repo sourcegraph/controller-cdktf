@@ -390,7 +390,7 @@ func NewStatefulSetV1(scope constructs.Construct, id *string, config *StatefulSe
 	j := jsiiProxy_StatefulSetV1{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -403,7 +403,7 @@ func NewStatefulSetV1_Override(s StatefulSetV1, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -525,7 +525,7 @@ func StatefulSetV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.statefulSetV1.StatefulSetV1",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -544,7 +544,7 @@ func StatefulSetV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.statefulSetV1.StatefulSetV1",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func StatefulSetV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.statefulSetV1.StatefulSetV1",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func StatefulSetV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.statefulSetV1.StatefulSetV1",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1",
 		"tfResourceType",
 		&returns,
 	)

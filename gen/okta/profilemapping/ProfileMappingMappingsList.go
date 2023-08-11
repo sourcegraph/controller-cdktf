@@ -116,7 +116,7 @@ func NewProfileMappingMappingsList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_ProfileMappingMappingsList{}
 
 	_jsii_.Create(
-		"okta.profileMapping.ProfileMappingMappingsList",
+		"@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewProfileMappingMappingsList_Override(p ProfileMappingMappingsList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.profileMapping.ProfileMappingMappingsList",
+		"@cdktf/provider-okta.profileMapping.ProfileMappingMappingsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

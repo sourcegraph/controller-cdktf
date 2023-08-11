@@ -252,7 +252,7 @@ func NewSpotInstanceRequestMetadataOptionsOutputReference(terraformResource cdkt
 	j := jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewSpotInstanceRequestMetadataOptionsOutputReference_Override(s SpotInstanc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestMetadataOptionsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestMetadataOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -189,7 +189,7 @@ func NewVpnConnectionRoutesOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_VpnConnectionRoutesOutputReference{}
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionRoutesOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -201,7 +201,7 @@ func NewVpnConnectionRoutesOutputReference_Override(v VpnConnectionRoutesOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpnConnection.VpnConnectionRoutesOutputReference",
+		"@cdktf/provider-aws.vpnConnection.VpnConnectionRoutesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)

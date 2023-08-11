@@ -228,7 +228,7 @@ func NewGoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference
 	j := jsiiProxy_GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

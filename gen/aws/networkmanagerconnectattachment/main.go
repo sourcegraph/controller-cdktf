@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachment",
 		reflect.TypeOf((*NetworkmanagerConnectAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -83,15 +83,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentConfig",
 		reflect.TypeOf((*NetworkmanagerConnectAttachmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptions",
 		reflect.TypeOf((*NetworkmanagerConnectAttachmentOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptionsOutputReference",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentOptionsOutputReference",
 		reflect.TypeOf((*NetworkmanagerConnectAttachmentOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeouts",
 		reflect.TypeOf((*NetworkmanagerConnectAttachmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeoutsOutputReference",
+		"@cdktf/provider-aws.networkmanagerConnectAttachment.NetworkmanagerConnectAttachmentTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkmanagerConnectAttachmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

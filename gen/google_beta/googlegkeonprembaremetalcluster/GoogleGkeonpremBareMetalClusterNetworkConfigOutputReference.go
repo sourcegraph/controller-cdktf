@@ -252,7 +252,7 @@ func NewGoogleGkeonpremBareMetalClusterNetworkConfigOutputReference(terraformRes
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterNetworkConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleGkeonpremBareMetalClusterNetworkConfigOutputReference_Override(g G
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

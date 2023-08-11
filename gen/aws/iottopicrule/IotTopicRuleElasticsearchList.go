@@ -116,7 +116,7 @@ func NewIotTopicRuleElasticsearchList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_IotTopicRuleElasticsearchList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleElasticsearchList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleElasticsearchList_Override(i IotTopicRuleElasticsearchList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleElasticsearchList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleElasticsearchList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

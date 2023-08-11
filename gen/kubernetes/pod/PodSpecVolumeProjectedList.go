@@ -116,7 +116,7 @@ func NewPodSpecVolumeProjectedList(terraformResource cdktf.IInterpolatingParent,
 	j := jsiiProxy_PodSpecVolumeProjectedList{}
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedList",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSpecVolumeProjectedList_Override(p PodSpecVolumeProjectedList, terraf
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.pod.PodSpecVolumeProjectedList",
+		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

@@ -180,7 +180,7 @@ func NewApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputRefe
 	j := jsiiProxy_ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference{}
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference",
+		"@cdktf/provider-google.apigeeKeystoresAliasesSelfSignedCert.ApigeeKeystoresAliasesSelfSignedCertSubjectAlternativeDnsNamesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

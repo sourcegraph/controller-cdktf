@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
+		"@cdktf/provider-google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocations",
 		reflect.TypeOf((*DataGoogleCloudRunLocations)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,7 +57,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocationsConfig",
+		"@cdktf/provider-google.dataGoogleCloudRunLocations.DataGoogleCloudRunLocationsConfig",
 		reflect.TypeOf((*DataGoogleCloudRunLocationsConfig)(nil)).Elem(),
 	)
 }

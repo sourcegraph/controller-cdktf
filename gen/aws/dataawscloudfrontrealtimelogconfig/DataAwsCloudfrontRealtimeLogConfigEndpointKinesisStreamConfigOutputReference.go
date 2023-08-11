@@ -178,7 +178,7 @@ func NewDataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputRefer
 	j := jsiiProxy_DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference",
+		"@cdktf/provider-aws.dataAwsCloudfrontRealtimeLogConfig.DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

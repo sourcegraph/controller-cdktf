@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy",
 		reflect.TypeOf((*IamAccessBoundaryPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,23 +70,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig",
 		reflect.TypeOf((*IamAccessBoundaryPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRules",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRules",
 		reflect.TypeOf((*IamAccessBoundaryPolicyRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRule",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRule",
 		reflect.TypeOf((*IamAccessBoundaryPolicyRulesAccessBoundaryRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondition",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondition",
 		reflect.TypeOf((*IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference",
 		reflect.TypeOf((*IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,7 +129,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference",
 		reflect.TypeOf((*IamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityCondition", GoGetter: "AvailabilityCondition"},
@@ -171,7 +171,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesList",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesList",
 		reflect.TypeOf((*IamAccessBoundaryPolicyRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesOutputReference",
 		reflect.TypeOf((*IamAccessBoundaryPolicyRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessBoundaryRule", GoGetter: "AccessBoundaryRule"},
@@ -231,11 +231,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts",
 		reflect.TypeOf((*IamAccessBoundaryPolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeoutsOutputReference",
 		reflect.TypeOf((*IamAccessBoundaryPolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

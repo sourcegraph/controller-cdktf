@@ -204,7 +204,7 @@ func NewProjectOrganizationPolicyListPolicyAllowOutputReference(terraformResourc
 	j := jsiiProxy_ProjectOrganizationPolicyListPolicyAllowOutputReference{}
 
 	_jsii_.Create(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyAllowOutputReference",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyAllowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewProjectOrganizationPolicyListPolicyAllowOutputReference_Override(p Proje
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyAllowOutputReference",
+		"@cdktf/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicyAllowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

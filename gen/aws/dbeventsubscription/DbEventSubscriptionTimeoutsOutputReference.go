@@ -228,7 +228,7 @@ func NewDbEventSubscriptionTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_DbEventSubscriptionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dbEventSubscription.DbEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDbEventSubscriptionTimeoutsOutputReference_Override(d DbEventSubscriptio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dbEventSubscription.DbEventSubscriptionTimeoutsOutputReference",
+		"@cdktf/provider-aws.dbEventSubscription.DbEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

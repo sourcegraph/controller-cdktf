@@ -116,7 +116,7 @@ func NewJobSpecTemplateSpecContainerLifecyclePostStartList(terraformResource cdk
 	j := jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartList{}
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLifecyclePostStartList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewJobSpecTemplateSpecContainerLifecyclePostStartList_Override(j JobSpecTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.job.JobSpecTemplateSpecContainerLifecyclePostStartList",
+		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerLifecyclePostStartList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		j,
 	)

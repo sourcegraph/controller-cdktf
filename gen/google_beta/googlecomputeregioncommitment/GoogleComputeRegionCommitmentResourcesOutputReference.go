@@ -228,7 +228,7 @@ func NewGoogleComputeRegionCommitmentResourcesOutputReference(terraformResource 
 	j := jsiiProxy_GoogleComputeRegionCommitmentResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeRegionCommitmentResourcesOutputReference_Override(g GoogleC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionCommitment.GoogleComputeRegionCommitmentResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

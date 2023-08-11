@@ -532,7 +532,7 @@ func NewPrivatecaCertificateTemplate(scope constructs.Construct, id *string, con
 	j := jsiiProxy_PrivatecaCertificateTemplate{}
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -545,7 +545,7 @@ func NewPrivatecaCertificateTemplate_Override(p PrivatecaCertificateTemplate, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		[]interface{}{scope, id, config},
 		p,
 	)
@@ -711,7 +711,7 @@ func PrivatecaCertificateTemplate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -730,7 +730,7 @@ func PrivatecaCertificateTemplate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -749,7 +749,7 @@ func PrivatecaCertificateTemplate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func PrivatecaCertificateTemplate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
+		"@cdktf/provider-google.privatecaCertificateTemplate.PrivatecaCertificateTemplate",
 		"tfResourceType",
 		&returns,
 	)

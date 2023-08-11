@@ -204,7 +204,7 @@ func NewResourceQuotaTimeoutsOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ResourceQuotaTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.resourceQuota.ResourceQuotaTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewResourceQuotaTimeoutsOutputReference_Override(r ResourceQuotaTimeoutsOut
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.resourceQuota.ResourceQuotaTimeoutsOutputReference",
+		"@cdktf/provider-kubernetes.resourceQuota.ResourceQuotaTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)

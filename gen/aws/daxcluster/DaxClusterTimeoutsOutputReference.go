@@ -228,7 +228,7 @@ func NewDaxClusterTimeoutsOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DaxClusterTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.daxCluster.DaxClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDaxClusterTimeoutsOutputReference_Override(d DaxClusterTimeoutsOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.daxCluster.DaxClusterTimeoutsOutputReference",
+		"@cdktf/provider-aws.daxCluster.DaxClusterTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

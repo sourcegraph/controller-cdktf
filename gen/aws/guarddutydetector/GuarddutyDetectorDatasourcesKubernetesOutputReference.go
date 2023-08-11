@@ -179,7 +179,7 @@ func NewGuarddutyDetectorDatasourcesKubernetesOutputReference(terraformResource 
 	j := jsiiProxy_GuarddutyDetectorDatasourcesKubernetesOutputReference{}
 
 	_jsii_.Create(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGuarddutyDetectorDatasourcesKubernetesOutputReference_Override(g Guarddu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesOutputReference",
+		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesKubernetesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -116,7 +116,7 @@ func NewSesReceiptRuleLambdaActionList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_SesReceiptRuleLambdaActionList{}
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleLambdaActionList",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSesReceiptRuleLambdaActionList_Override(s SesReceiptRuleLambdaActionList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesReceiptRule.SesReceiptRuleLambdaActionList",
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRuleLambdaActionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

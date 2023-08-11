@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTag",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTag",
 		reflect.TypeOf((*DataCatalogPolicyTag)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagConfig",
 		reflect.TypeOf((*DataCatalogPolicyTagConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeouts",
 		reflect.TypeOf((*DataCatalogPolicyTagTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeoutsOutputReference",
+		"@cdktf/provider-google.dataCatalogPolicyTag.DataCatalogPolicyTagTimeoutsOutputReference",
 		reflect.TypeOf((*DataCatalogPolicyTagTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -343,7 +343,7 @@ func NewWafregionalGeoMatchSet(scope constructs.Construct, id *string, config *W
 	j := jsiiProxy_WafregionalGeoMatchSet{}
 
 	_jsii_.Create(
-		"aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
+		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -356,7 +356,7 @@ func NewWafregionalGeoMatchSet_Override(w WafregionalGeoMatchSet, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
+		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -478,7 +478,7 @@ func WafregionalGeoMatchSet_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
+		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -497,7 +497,7 @@ func WafregionalGeoMatchSet_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
+		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -516,7 +516,7 @@ func WafregionalGeoMatchSet_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
+		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -529,7 +529,7 @@ func WafregionalGeoMatchSet_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
+		"@cdktf/provider-aws.wafregionalGeoMatchSet.WafregionalGeoMatchSet",
 		"tfResourceType",
 		&returns,
 	)

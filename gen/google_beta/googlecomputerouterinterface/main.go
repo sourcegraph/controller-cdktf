@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterface",
 		reflect.TypeOf((*GoogleComputeRouterInterface)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterfaceConfig",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterfaceConfig",
 		reflect.TypeOf((*GoogleComputeRouterInterfaceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterfaceTimeouts",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterfaceTimeouts",
 		reflect.TypeOf((*GoogleComputeRouterInterfaceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleComputeRouterInterface.GoogleComputeRouterInterfaceTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRouterInterface.GoogleComputeRouterInterfaceTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeRouterInterfaceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

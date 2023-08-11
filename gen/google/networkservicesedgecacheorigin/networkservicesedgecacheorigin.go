@@ -654,7 +654,7 @@ func NewNetworkServicesEdgeCacheOrigin(scope constructs.Construct, id *string, c
 	j := jsiiProxy_NetworkServicesEdgeCacheOrigin{}
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -667,7 +667,7 @@ func NewNetworkServicesEdgeCacheOrigin_Override(n NetworkServicesEdgeCacheOrigin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -888,7 +888,7 @@ func NetworkServicesEdgeCacheOrigin_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -907,7 +907,7 @@ func NetworkServicesEdgeCacheOrigin_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -926,7 +926,7 @@ func NetworkServicesEdgeCacheOrigin_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -939,7 +939,7 @@ func NetworkServicesEdgeCacheOrigin_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
+		"@cdktf/provider-google.networkServicesEdgeCacheOrigin.NetworkServicesEdgeCacheOrigin",
 		"tfResourceType",
 		&returns,
 	)

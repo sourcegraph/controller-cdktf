@@ -204,7 +204,7 @@ func NewDxBgpPeerTimeoutsOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_DxBgpPeerTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dxBgpPeer.DxBgpPeerTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewDxBgpPeerTimeoutsOutputReference_Override(d DxBgpPeerTimeoutsOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dxBgpPeer.DxBgpPeerTimeoutsOutputReference",
+		"@cdktf/provider-aws.dxBgpPeer.DxBgpPeerTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

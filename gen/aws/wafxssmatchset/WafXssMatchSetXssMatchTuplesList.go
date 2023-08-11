@@ -116,7 +116,7 @@ func NewWafXssMatchSetXssMatchTuplesList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_WafXssMatchSetXssMatchTuplesList{}
 
 	_jsii_.Create(
-		"aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesList",
+		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewWafXssMatchSetXssMatchTuplesList_Override(w WafXssMatchSetXssMatchTuples
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesList",
+		"@cdktf/provider-aws.wafXssMatchSet.WafXssMatchSetXssMatchTuplesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)

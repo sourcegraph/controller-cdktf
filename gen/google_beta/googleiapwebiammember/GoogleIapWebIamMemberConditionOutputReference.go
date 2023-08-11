@@ -226,7 +226,7 @@ func NewGoogleIapWebIamMemberConditionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleIapWebIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleIapWebIamMemberConditionOutputReference_Override(g GoogleIapWebIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleIapWebIamMember.GoogleIapWebIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

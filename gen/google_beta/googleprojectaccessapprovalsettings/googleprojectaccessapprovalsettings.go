@@ -482,7 +482,7 @@ func NewGoogleProjectAccessApprovalSettings(scope constructs.Construct, id *stri
 	j := jsiiProxy_GoogleProjectAccessApprovalSettings{}
 
 	_jsii_.Create(
-		"google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -495,7 +495,7 @@ func NewGoogleProjectAccessApprovalSettings_Override(g GoogleProjectAccessApprov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -650,7 +650,7 @@ func GoogleProjectAccessApprovalSettings_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -669,7 +669,7 @@ func GoogleProjectAccessApprovalSettings_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func GoogleProjectAccessApprovalSettings_IsTerraformResource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -701,7 +701,7 @@ func GoogleProjectAccessApprovalSettings_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
+		"@cdktf/provider-google-beta.googleProjectAccessApprovalSettings.GoogleProjectAccessApprovalSettings",
 		"tfResourceType",
 		&returns,
 	)

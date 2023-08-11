@@ -116,7 +116,7 @@ func NewSecurityhubInsightFiltersNetworkProtocolList(terraformResource cdktf.IIn
 	j := jsiiProxy_SecurityhubInsightFiltersNetworkProtocolList{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSecurityhubInsightFiltersNetworkProtocolList_Override(s SecurityhubInsig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkProtocolList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

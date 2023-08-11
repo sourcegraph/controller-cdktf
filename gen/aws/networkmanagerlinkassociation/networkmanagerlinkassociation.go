@@ -389,7 +389,7 @@ func NewNetworkmanagerLinkAssociation(scope constructs.Construct, id *string, co
 	j := jsiiProxy_NetworkmanagerLinkAssociation{}
 
 	_jsii_.Create(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewNetworkmanagerLinkAssociation_Override(n NetworkmanagerLinkAssociation, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -546,7 +546,7 @@ func NetworkmanagerLinkAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func NetworkmanagerLinkAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -584,7 +584,7 @@ func NetworkmanagerLinkAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -597,7 +597,7 @@ func NetworkmanagerLinkAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
+		"@cdktf/provider-aws.networkmanagerLinkAssociation.NetworkmanagerLinkAssociation",
 		"tfResourceType",
 		&returns,
 	)

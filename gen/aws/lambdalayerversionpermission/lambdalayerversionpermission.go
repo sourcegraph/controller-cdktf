@@ -457,7 +457,7 @@ func NewLambdaLayerVersionPermission(scope constructs.Construct, id *string, con
 	j := jsiiProxy_LambdaLayerVersionPermission{}
 
 	_jsii_.Create(
-		"aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
+		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -470,7 +470,7 @@ func NewLambdaLayerVersionPermission_Override(l LambdaLayerVersionPermission, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
+		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -647,7 +647,7 @@ func LambdaLayerVersionPermission_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
+		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -666,7 +666,7 @@ func LambdaLayerVersionPermission_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
+		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -685,7 +685,7 @@ func LambdaLayerVersionPermission_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
+		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func LambdaLayerVersionPermission_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
+		"@cdktf/provider-aws.lambdaLayerVersionPermission.LambdaLayerVersionPermission",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewGoogleGkeonpremBareMetalClusterValidationCheckList(terraformResource cdk
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterValidationCheckList{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterValidationCheckList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterValidationCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewGoogleGkeonpremBareMetalClusterValidationCheckList_Override(g GoogleGkeo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterValidationCheckList",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterValidationCheckList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddresses",
 		reflect.TypeOf((*DataGoogleComputeAddresses)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -63,11 +63,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddresses",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddresses",
 		reflect.TypeOf((*DataGoogleComputeAddressesAddresses)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesList",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesList",
 		reflect.TypeOf((*DataGoogleComputeAddressesAddressesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -87,7 +87,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference",
 		reflect.TypeOf((*DataGoogleComputeAddressesAddressesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -127,7 +127,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig",
+		"@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig",
 		reflect.TypeOf((*DataGoogleComputeAddressesConfig)(nil)).Elem(),
 	)
 }

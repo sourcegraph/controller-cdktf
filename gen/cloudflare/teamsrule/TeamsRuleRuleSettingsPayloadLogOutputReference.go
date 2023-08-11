@@ -179,7 +179,7 @@ func NewTeamsRuleRuleSettingsPayloadLogOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_TeamsRuleRuleSettingsPayloadLogOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewTeamsRuleRuleSettingsPayloadLogOutputReference_Override(t TeamsRuleRuleS
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference",
+		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

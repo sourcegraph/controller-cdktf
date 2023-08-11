@@ -202,7 +202,7 @@ func NewLoadBalancerMonitorHeaderOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_LoadBalancerMonitorHeaderOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLoadBalancerMonitorHeaderOutputReference_Override(l LoadBalancerMonitorH
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderOutputReference",
+		"@cdktf/provider-cloudflare.loadBalancerMonitor.LoadBalancerMonitorHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

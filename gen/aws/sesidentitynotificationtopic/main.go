@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
+		"@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopic",
 		reflect.TypeOf((*SesIdentityNotificationTopic)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig",
+		"@cdktf/provider-aws.sesIdentityNotificationTopic.SesIdentityNotificationTopicConfig",
 		reflect.TypeOf((*SesIdentityNotificationTopicConfig)(nil)).Elem(),
 	)
 }

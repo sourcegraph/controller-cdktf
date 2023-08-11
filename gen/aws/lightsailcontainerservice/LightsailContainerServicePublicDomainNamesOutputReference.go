@@ -179,7 +179,7 @@ func NewLightsailContainerServicePublicDomainNamesOutputReference(terraformResou
 	j := jsiiProxy_LightsailContainerServicePublicDomainNamesOutputReference{}
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLightsailContainerServicePublicDomainNamesOutputReference_Override(l Lig
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesOutputReference",
+		"@cdktf/provider-aws.lightsailContainerService.LightsailContainerServicePublicDomainNamesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"okta.swaApp.SwaApp",
+		"@cdktf/provider-okta.swaApp.SwaApp",
 		reflect.TypeOf((*SwaApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessibilityErrorRedirectUrl", GoGetter: "AccessibilityErrorRedirectUrl"},
@@ -146,15 +146,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.swaApp.SwaAppConfig",
+		"@cdktf/provider-okta.swaApp.SwaAppConfig",
 		reflect.TypeOf((*SwaAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"okta.swaApp.SwaAppTimeouts",
+		"@cdktf/provider-okta.swaApp.SwaAppTimeouts",
 		reflect.TypeOf((*SwaAppTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.swaApp.SwaAppTimeoutsOutputReference",
+		"@cdktf/provider-okta.swaApp.SwaAppTimeoutsOutputReference",
 		reflect.TypeOf((*SwaAppTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -195,11 +195,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"okta.swaApp.SwaAppUsers",
+		"@cdktf/provider-okta.swaApp.SwaAppUsers",
 		reflect.TypeOf((*SwaAppUsers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"okta.swaApp.SwaAppUsersList",
+		"@cdktf/provider-okta.swaApp.SwaAppUsersList",
 		reflect.TypeOf((*SwaAppUsersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -220,7 +220,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"okta.swaApp.SwaAppUsersOutputReference",
+		"@cdktf/provider-okta.swaApp.SwaAppUsersOutputReference",
 		reflect.TypeOf((*SwaAppUsersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

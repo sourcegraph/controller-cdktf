@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
+		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicy",
 		reflect.TypeOf((*CloudwatchLogDestinationPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicy", GoGetter: "AccessPolicy"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicyConfig",
+		"@cdktf/provider-aws.cloudwatchLogDestinationPolicy.CloudwatchLogDestinationPolicyConfig",
 		reflect.TypeOf((*CloudwatchLogDestinationPolicyConfig)(nil)).Elem(),
 	)
 }

@@ -337,7 +337,7 @@ func NewDataAwsSqsQueue(scope constructs.Construct, id *string, config *DataAwsS
 	j := jsiiProxy_DataAwsSqsQueue{}
 
 	_jsii_.Create(
-		"aws.dataAwsSqsQueue.DataAwsSqsQueue",
+		"@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataAwsSqsQueue_Override(d DataAwsSqsQueue, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsSqsQueue.DataAwsSqsQueue",
+		"@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataAwsSqsQueue_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSqsQueue.DataAwsSqsQueue",
+		"@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataAwsSqsQueue_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSqsQueue.DataAwsSqsQueue",
+		"@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataAwsSqsQueue_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsSqsQueue.DataAwsSqsQueue",
+		"@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataAwsSqsQueue_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsSqsQueue.DataAwsSqsQueue",
+		"@cdktf/provider-aws.dataAwsSqsQueue.DataAwsSqsQueue",
 		"tfResourceType",
 		&returns,
 	)

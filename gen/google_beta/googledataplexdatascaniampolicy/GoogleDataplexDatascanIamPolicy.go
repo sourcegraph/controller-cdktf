@@ -401,7 +401,7 @@ func NewGoogleDataplexDatascanIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_GoogleDataplexDatascanIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleDataplexDatascanIamPolicy_Override(g GoogleDataplexDatascanIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleDataplexDatascanIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleDataplexDatascanIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleDataplexDatascanIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleDataplexDatascanIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
+		"@cdktf/provider-google-beta.googleDataplexDatascanIamPolicy.GoogleDataplexDatascanIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

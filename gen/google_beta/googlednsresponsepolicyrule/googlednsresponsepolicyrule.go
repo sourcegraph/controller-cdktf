@@ -461,7 +461,7 @@ func NewGoogleDnsResponsePolicyRule(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleDnsResponsePolicyRule{}
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewGoogleDnsResponsePolicyRule_Override(g GoogleDnsResponsePolicyRule, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -640,7 +640,7 @@ func GoogleDnsResponsePolicyRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func GoogleDnsResponsePolicyRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleDnsResponsePolicyRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func GoogleDnsResponsePolicyRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
+		"@cdktf/provider-google-beta.googleDnsResponsePolicyRule.GoogleDnsResponsePolicyRule",
 		"tfResourceType",
 		&returns,
 	)

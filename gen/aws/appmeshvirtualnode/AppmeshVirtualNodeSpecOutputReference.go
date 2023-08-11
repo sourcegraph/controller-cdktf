@@ -276,7 +276,7 @@ func NewAppmeshVirtualNodeSpecOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_AppmeshVirtualNodeSpecOutputReference{}
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewAppmeshVirtualNodeSpecOutputReference_Override(a AppmeshVirtualNodeSpecO
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

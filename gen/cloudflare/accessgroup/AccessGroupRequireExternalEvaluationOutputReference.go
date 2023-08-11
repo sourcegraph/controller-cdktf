@@ -204,7 +204,7 @@ func NewAccessGroupRequireExternalEvaluationOutputReference(terraformResource cd
 	j := jsiiProxy_AccessGroupRequireExternalEvaluationOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewAccessGroupRequireExternalEvaluationOutputReference_Override(a AccessGro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference",
+		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

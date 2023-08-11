@@ -116,7 +116,7 @@ func NewIotTopicRuleCloudwatchAlarmList(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_IotTopicRuleCloudwatchAlarmList{}
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewIotTopicRuleCloudwatchAlarmList_Override(i IotTopicRuleCloudwatchAlarmLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList",
+		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchAlarmList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)

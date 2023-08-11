@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroup",
 		reflect.TypeOf((*GoogleCloudIdentityGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -78,15 +78,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupConfig",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupConfig",
 		reflect.TypeOf((*GoogleCloudIdentityGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKey",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKey",
 		reflect.TypeOf((*GoogleCloudIdentityGroupGroupKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKeyOutputReference",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupGroupKeyOutputReference",
 		reflect.TypeOf((*GoogleCloudIdentityGroupGroupKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,11 +123,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeouts",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeouts",
 		reflect.TypeOf((*GoogleCloudIdentityGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleCloudIdentityGroup.GoogleCloudIdentityGroupTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleCloudIdentityGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

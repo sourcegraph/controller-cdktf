@@ -372,7 +372,7 @@ func NewCertRequestSubjectOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_CertRequestSubjectOutputReference{}
 
 	_jsii_.Create(
-		"tls.certRequest.CertRequestSubjectOutputReference",
+		"@cdktf/provider-tls.certRequest.CertRequestSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -384,7 +384,7 @@ func NewCertRequestSubjectOutputReference_Override(c CertRequestSubjectOutputRef
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tls.certRequest.CertRequestSubjectOutputReference",
+		"@cdktf/provider-tls.certRequest.CertRequestSubjectOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

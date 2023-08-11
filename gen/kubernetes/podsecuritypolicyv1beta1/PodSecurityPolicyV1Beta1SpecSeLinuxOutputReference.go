@@ -203,7 +203,7 @@ func NewPodSecurityPolicyV1Beta1SpecSeLinuxOutputReference(terraformResource cdk
 	j := jsiiProxy_PodSecurityPolicyV1Beta1SpecSeLinuxOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecSeLinuxOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecSeLinuxOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPodSecurityPolicyV1Beta1SpecSeLinuxOutputReference_Override(p PodSecurit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecSeLinuxOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicyV1Beta1.PodSecurityPolicyV1Beta1SpecSeLinuxOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

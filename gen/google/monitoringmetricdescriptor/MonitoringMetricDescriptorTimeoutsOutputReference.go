@@ -228,7 +228,7 @@ func NewMonitoringMetricDescriptorTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewMonitoringMetricDescriptorTimeoutsOutputReference_Override(m MonitoringM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

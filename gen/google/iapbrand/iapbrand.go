@@ -412,7 +412,7 @@ func NewIapBrand(scope constructs.Construct, id *string, config *IapBrandConfig)
 	j := jsiiProxy_IapBrand{}
 
 	_jsii_.Create(
-		"google.iapBrand.IapBrand",
+		"@cdktf/provider-google.iapBrand.IapBrand",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewIapBrand_Override(i IapBrand, scope constructs.Construct, id *string, co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.iapBrand.IapBrand",
+		"@cdktf/provider-google.iapBrand.IapBrand",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -569,7 +569,7 @@ func IapBrand_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapBrand.IapBrand",
+		"@cdktf/provider-google.iapBrand.IapBrand",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func IapBrand_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapBrand.IapBrand",
+		"@cdktf/provider-google.iapBrand.IapBrand",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func IapBrand_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.iapBrand.IapBrand",
+		"@cdktf/provider-google.iapBrand.IapBrand",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func IapBrand_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.iapBrand.IapBrand",
+		"@cdktf/provider-google.iapBrand.IapBrand",
 		"tfResourceType",
 		&returns,
 	)

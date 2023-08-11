@@ -204,7 +204,7 @@ func NewOpsworksMysqlLayerCloudwatchConfigurationOutputReference(terraformResour
 	j := jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewOpsworksMysqlLayerCloudwatchConfigurationOutputReference_Override(o Opsw
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationOutputReference",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

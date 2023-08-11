@@ -116,7 +116,7 @@ func NewGoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRan
 	j := jsiiProxy_GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList{}
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRan
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList",
+		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -366,7 +366,7 @@ func NewAuditmanagerAccountRegistration(scope constructs.Construct, id *string, 
 	j := jsiiProxy_AuditmanagerAccountRegistration{}
 
 	_jsii_.Create(
-		"aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewAuditmanagerAccountRegistration_Override(a AuditmanagerAccountRegistrati
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -512,7 +512,7 @@ func AuditmanagerAccountRegistration_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func AuditmanagerAccountRegistration_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func AuditmanagerAccountRegistration_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func AuditmanagerAccountRegistration_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
+		"@cdktf/provider-aws.auditmanagerAccountRegistration.AuditmanagerAccountRegistration",
 		"tfResourceType",
 		&returns,
 	)

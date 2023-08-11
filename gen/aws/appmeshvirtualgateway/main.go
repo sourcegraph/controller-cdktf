@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGateway",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGateway",
 		reflect.TypeOf((*AppmeshVirtualGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -75,23 +75,23 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewayConfig",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewayConfig",
 		reflect.TypeOf((*AppmeshVirtualGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpec",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpec",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaults",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaults",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaults)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -127,19 +127,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificate)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
@@ -175,7 +175,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -215,11 +215,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsCertificateSdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -253,7 +253,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
@@ -298,11 +298,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -341,15 +341,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNames)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -383,7 +383,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationSubjectAlternativeNamesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -418,15 +418,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrust)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcm)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustAcmOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthorityArns", GoGetter: "CertificateAuthorityArns"},
@@ -460,11 +460,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
@@ -498,7 +498,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acm", GoGetter: "Acm"},
@@ -542,11 +542,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTlsValidationTrustSdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -580,7 +580,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecBackendDefaultsOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecBackendDefaultsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientPolicy", GoGetter: "ClientPolicy"},
@@ -616,19 +616,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListener",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListener",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListener)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPool",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPool",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerConnectionPool)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerConnectionPoolGrpcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -662,15 +662,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerConnectionPoolHttp)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -704,7 +704,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerConnectionPoolHttpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -741,7 +741,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerConnectionPoolOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -785,11 +785,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerHealthCheck",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerHealthCheck",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -837,7 +837,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerList",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerList",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -858,7 +858,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -905,11 +905,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerPortMapping",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerPortMapping",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerPortMapping)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerPortMappingOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerPortMappingOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerPortMappingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -945,19 +945,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTls",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTls",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTls)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificate",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificate",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsCertificate)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateAcm",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateAcm",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsCertificateAcm)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsCertificateAcmOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateArn", GoGetter: "CertificateArn"},
@@ -991,11 +991,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateFile",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateFile",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsCertificateFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsCertificateFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
@@ -1031,7 +1031,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsCertificateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acm", GoGetter: "Acm"},
@@ -1075,11 +1075,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSds",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSds",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsCertificateSds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsCertificateSdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1113,7 +1113,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificate", GoGetter: "Certificate"},
@@ -1154,11 +1154,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidation",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidation",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1197,15 +1197,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNames)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1239,7 +1239,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationSubjectAlternativeNamesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1274,15 +1274,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrust",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrust",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationTrust)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationTrustFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateChain", GoGetter: "CertificateChain"},
@@ -1316,7 +1316,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationTrustOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1356,11 +1356,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationTrustSds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecListenerTlsValidationTrustSdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1394,19 +1394,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLogging",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLogging",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecLogging)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLog",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLog",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecLoggingAccessLog)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFile",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFile",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecLoggingAccessLogFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1440,7 +1440,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecLoggingAccessLogOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1476,7 +1476,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecLoggingOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecLoggingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLog", GoGetter: "AccessLog"},
@@ -1512,7 +1512,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecOutputReference",
+		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecOutputReference",
 		reflect.TypeOf((*AppmeshVirtualGatewaySpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backendDefaults", GoGetter: "BackendDefaults"},

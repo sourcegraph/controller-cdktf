@@ -733,7 +733,7 @@ func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2
 	j := jsiiProxy_Ec2ClientVpnEndpoint{}
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -746,7 +746,7 @@ func NewEc2ClientVpnEndpoint_Override(e Ec2ClientVpnEndpoint, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		[]interface{}{scope, id, config},
 		e,
 	)
@@ -1000,7 +1000,7 @@ func Ec2ClientVpnEndpoint_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1019,7 +1019,7 @@ func Ec2ClientVpnEndpoint_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1038,7 +1038,7 @@ func Ec2ClientVpnEndpoint_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1051,7 +1051,7 @@ func Ec2ClientVpnEndpoint_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
+		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpoint",
 		"tfResourceType",
 		&returns,
 	)

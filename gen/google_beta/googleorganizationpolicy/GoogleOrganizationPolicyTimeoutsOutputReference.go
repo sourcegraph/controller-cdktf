@@ -252,7 +252,7 @@ func NewGoogleOrganizationPolicyTimeoutsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleOrganizationPolicyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -264,7 +264,7 @@ func NewGoogleOrganizationPolicyTimeoutsOutputReference_Override(g GoogleOrganiz
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleOrganizationPolicy.GoogleOrganizationPolicyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

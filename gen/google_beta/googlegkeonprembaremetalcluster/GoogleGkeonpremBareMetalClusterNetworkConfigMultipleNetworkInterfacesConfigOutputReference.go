@@ -180,7 +180,7 @@ func NewGoogleGkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesCon
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleGkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesCon
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference",
+		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

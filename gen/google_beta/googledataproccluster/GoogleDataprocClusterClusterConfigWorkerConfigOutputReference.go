@@ -311,7 +311,7 @@ func NewGoogleDataprocClusterClusterConfigWorkerConfigOutputReference(terraformR
 	j := jsiiProxy_GoogleDataprocClusterClusterConfigWorkerConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -323,7 +323,7 @@ func NewGoogleDataprocClusterClusterConfigWorkerConfigOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

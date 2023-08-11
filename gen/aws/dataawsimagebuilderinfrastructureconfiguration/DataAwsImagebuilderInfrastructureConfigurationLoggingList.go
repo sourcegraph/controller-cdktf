@@ -104,7 +104,7 @@ func NewDataAwsImagebuilderInfrastructureConfigurationLoggingList(terraformResou
 	j := jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingList{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderInfrastructureConfiguration.DataAwsImagebuilderInfrastructureConfigurationLoggingList",
+		"@cdktf/provider-aws.dataAwsImagebuilderInfrastructureConfiguration.DataAwsImagebuilderInfrastructureConfigurationLoggingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsImagebuilderInfrastructureConfigurationLoggingList_Override(d Dat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderInfrastructureConfiguration.DataAwsImagebuilderInfrastructureConfigurationLoggingList",
+		"@cdktf/provider-aws.dataAwsImagebuilderInfrastructureConfiguration.DataAwsImagebuilderInfrastructureConfigurationLoggingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -116,7 +116,7 @@ func NewTemplateEmailTranslationsList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_TemplateEmailTranslationsList{}
 
 	_jsii_.Create(
-		"okta.templateEmail.TemplateEmailTranslationsList",
+		"@cdktf/provider-okta.templateEmail.TemplateEmailTranslationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewTemplateEmailTranslationsList_Override(t TemplateEmailTranslationsList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.templateEmail.TemplateEmailTranslationsList",
+		"@cdktf/provider-okta.templateEmail.TemplateEmailTranslationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		t,
 	)

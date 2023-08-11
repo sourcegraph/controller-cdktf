@@ -104,7 +104,7 @@ func NewDataAwsCeCostCategoryRuleInheritedValueList(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsCeCostCategoryRuleInheritedValueList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleInheritedValueList",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleInheritedValueList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCeCostCategoryRuleInheritedValueList_Override(d DataAwsCeCostCate
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleInheritedValueList",
+		"@cdktf/provider-aws.dataAwsCeCostCategory.DataAwsCeCostCategoryRuleInheritedValueList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

@@ -508,7 +508,7 @@ func NewAppUserBaseSchemaProperty(scope constructs.Construct, id *string, config
 	j := jsiiProxy_AppUserBaseSchemaProperty{}
 
 	_jsii_.Create(
-		"okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
+		"@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -521,7 +521,7 @@ func NewAppUserBaseSchemaProperty_Override(a AppUserBaseSchemaProperty, scope co
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
+		"@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -731,7 +731,7 @@ func AppUserBaseSchemaProperty_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
+		"@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -750,7 +750,7 @@ func AppUserBaseSchemaProperty_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
+		"@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -769,7 +769,7 @@ func AppUserBaseSchemaProperty_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
+		"@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -782,7 +782,7 @@ func AppUserBaseSchemaProperty_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
+		"@cdktf/provider-okta.appUserBaseSchemaProperty.AppUserBaseSchemaProperty",
 		"tfResourceType",
 		&returns,
 	)

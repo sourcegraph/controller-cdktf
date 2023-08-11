@@ -389,7 +389,7 @@ func NewAppstreamUserStackAssociation(scope constructs.Construct, id *string, co
 	j := jsiiProxy_AppstreamUserStackAssociation{}
 
 	_jsii_.Create(
-		"aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
+		"@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewAppstreamUserStackAssociation_Override(a AppstreamUserStackAssociation, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
+		"@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -557,7 +557,7 @@ func AppstreamUserStackAssociation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
+		"@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func AppstreamUserStackAssociation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
+		"@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func AppstreamUserStackAssociation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
+		"@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func AppstreamUserStackAssociation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
+		"@cdktf/provider-aws.appstreamUserStackAssociation.AppstreamUserStackAssociation",
 		"tfResourceType",
 		&returns,
 	)

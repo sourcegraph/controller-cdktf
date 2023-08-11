@@ -203,7 +203,7 @@ func NewGoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputR
 	j := jsiiProxy_GoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewGoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference",
+		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

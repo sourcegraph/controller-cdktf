@@ -116,7 +116,7 @@ func NewGoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList(terraform
 	j := jsiiProxy_GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList",
+		"@cdktf/provider-google-beta.googleCloudbuildBitbucketServerConfig.GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -580,7 +580,7 @@ func NewKmsExternalKey(scope constructs.Construct, id *string, config *KmsExtern
 	j := jsiiProxy_KmsExternalKey{}
 
 	_jsii_.Create(
-		"aws.kmsExternalKey.KmsExternalKey",
+		"@cdktf/provider-aws.kmsExternalKey.KmsExternalKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -593,7 +593,7 @@ func NewKmsExternalKey_Override(k KmsExternalKey, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kmsExternalKey.KmsExternalKey",
+		"@cdktf/provider-aws.kmsExternalKey.KmsExternalKey",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -814,7 +814,7 @@ func KmsExternalKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsExternalKey.KmsExternalKey",
+		"@cdktf/provider-aws.kmsExternalKey.KmsExternalKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -833,7 +833,7 @@ func KmsExternalKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsExternalKey.KmsExternalKey",
+		"@cdktf/provider-aws.kmsExternalKey.KmsExternalKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -852,7 +852,7 @@ func KmsExternalKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsExternalKey.KmsExternalKey",
+		"@cdktf/provider-aws.kmsExternalKey.KmsExternalKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -865,7 +865,7 @@ func KmsExternalKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kmsExternalKey.KmsExternalKey",
+		"@cdktf/provider-aws.kmsExternalKey.KmsExternalKey",
 		"tfResourceType",
 		&returns,
 	)

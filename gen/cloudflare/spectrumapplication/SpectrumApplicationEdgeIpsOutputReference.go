@@ -227,7 +227,7 @@ func NewSpectrumApplicationEdgeIpsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_SpectrumApplicationEdgeIpsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewSpectrumApplicationEdgeIpsOutputReference_Override(s SpectrumApplication
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference",
+		"@cdktf/provider-cloudflare.spectrumApplication.SpectrumApplicationEdgeIpsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

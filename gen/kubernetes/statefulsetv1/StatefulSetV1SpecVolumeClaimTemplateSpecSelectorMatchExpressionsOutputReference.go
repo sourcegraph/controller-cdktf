@@ -228,7 +228,7 @@ func NewStatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputRe
 	j := jsiiProxy_StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewStatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference",
+		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecVolumeClaimTemplateSpecSelectorMatchExpressionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.eksAddon.EksAddon",
+		"@cdktf/provider-aws.eksAddon.EksAddon",
 		reflect.TypeOf((*EksAddon)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addonName", GoGetter: "AddonName"},
@@ -87,15 +87,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.eksAddon.EksAddonConfig",
+		"@cdktf/provider-aws.eksAddon.EksAddonConfig",
 		reflect.TypeOf((*EksAddonConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.eksAddon.EksAddonTimeouts",
+		"@cdktf/provider-aws.eksAddon.EksAddonTimeouts",
 		reflect.TypeOf((*EksAddonTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.eksAddon.EksAddonTimeoutsOutputReference",
+		"@cdktf/provider-aws.eksAddon.EksAddonTimeoutsOutputReference",
 		reflect.TypeOf((*EksAddonTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

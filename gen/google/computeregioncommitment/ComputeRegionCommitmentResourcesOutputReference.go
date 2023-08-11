@@ -228,7 +228,7 @@ func NewComputeRegionCommitmentResourcesOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ComputeRegionCommitmentResourcesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionCommitment.ComputeRegionCommitmentResourcesOutputReference",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewComputeRegionCommitmentResourcesOutputReference_Override(c ComputeRegion
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionCommitment.ComputeRegionCommitmentResourcesOutputReference",
+		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

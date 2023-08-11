@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.resourcegroupsGroup.ResourcegroupsGroup",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroup",
 		reflect.TypeOf((*ResourcegroupsGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -79,15 +79,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfig",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfig",
 		reflect.TypeOf((*ResourcegroupsGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfiguration",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfiguration",
 		reflect.TypeOf((*ResourcegroupsGroupConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationList",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationList",
 		reflect.TypeOf((*ResourcegroupsGroupConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -108,7 +108,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationOutputReference",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationOutputReference",
 		reflect.TypeOf((*ResourcegroupsGroupConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -146,11 +146,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParameters",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParameters",
 		reflect.TypeOf((*ResourcegroupsGroupConfigurationParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParametersList",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParametersList",
 		reflect.TypeOf((*ResourcegroupsGroupConfigurationParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -171,7 +171,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParametersOutputReference",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupConfigurationParametersOutputReference",
 		reflect.TypeOf((*ResourcegroupsGroupConfigurationParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -207,11 +207,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupResourceQuery",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupResourceQuery",
 		reflect.TypeOf((*ResourcegroupsGroupResourceQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupResourceQueryOutputReference",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupResourceQueryOutputReference",
 		reflect.TypeOf((*ResourcegroupsGroupResourceQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -248,11 +248,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupTimeouts",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupTimeouts",
 		reflect.TypeOf((*ResourcegroupsGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.resourcegroupsGroup.ResourcegroupsGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.resourcegroupsGroup.ResourcegroupsGroupTimeoutsOutputReference",
 		reflect.TypeOf((*ResourcegroupsGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -226,7 +226,7 @@ func NewCloudRunServiceTemplateSpecVolumesSecretItemsOutputReference(terraformRe
 	j := jsiiProxy_CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference{}
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewCloudRunServiceTemplateSpecVolumesSecretItemsOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference",
+		"@cdktf/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

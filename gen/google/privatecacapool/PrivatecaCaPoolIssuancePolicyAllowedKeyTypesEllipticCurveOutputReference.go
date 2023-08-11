@@ -179,7 +179,7 @@ func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

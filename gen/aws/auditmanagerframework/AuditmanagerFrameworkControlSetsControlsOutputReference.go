@@ -179,7 +179,7 @@ func NewAuditmanagerFrameworkControlSetsControlsOutputReference(terraformResourc
 	j := jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference{}
 
 	_jsii_.Create(
-		"aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControlsOutputReference",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewAuditmanagerFrameworkControlSetsControlsOutputReference_Override(a Audit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControlsOutputReference",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFrameworkControlSetsControlsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

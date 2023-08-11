@@ -204,7 +204,7 @@ func NewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputRefer
 	j := jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewS3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

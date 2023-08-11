@@ -116,7 +116,7 @@ func NewCognitoUserPoolSchemaList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_CognitoUserPoolSchemaList{}
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaList",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCognitoUserPoolSchemaList_Override(c CognitoUserPoolSchemaList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoUserPool.CognitoUserPoolSchemaList",
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolSchemaList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

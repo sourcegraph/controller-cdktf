@@ -200,7 +200,7 @@ func NewDataAwsOpensearchDomainVpcOptionsOutputReference(terraformResource cdktf
 	j := jsiiProxy_DataAwsOpensearchDomainVpcOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsOpensearchDomainVpcOptionsOutputReference_Override(d DataAwsOpens
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsOutputReference",
+		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainVpcOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleComputeInstanceSchedulingList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataGoogleComputeInstanceSchedulingList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceSchedulingList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceSchedulingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeInstanceSchedulingList_Override(d DataGoogleComputeInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceSchedulingList",
+		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceSchedulingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

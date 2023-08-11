@@ -226,7 +226,7 @@ func NewGoogleComputeSnapshotIamMemberConditionOutputReference(terraformResource
 	j := jsiiProxy_GoogleComputeSnapshotIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleComputeSnapshotIamMemberConditionOutputReference_Override(g Google
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

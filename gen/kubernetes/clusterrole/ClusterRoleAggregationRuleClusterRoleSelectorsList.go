@@ -116,7 +116,7 @@ func NewClusterRoleAggregationRuleClusterRoleSelectorsList(terraformResource cdk
 	j := jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsList{}
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewClusterRoleAggregationRuleClusterRoleSelectorsList_Override(c ClusterRol
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList",
+		"@cdktf/provider-kubernetes.clusterRole.ClusterRoleAggregationRuleClusterRoleSelectorsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

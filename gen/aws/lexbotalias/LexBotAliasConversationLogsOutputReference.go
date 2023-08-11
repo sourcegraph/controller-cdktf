@@ -203,7 +203,7 @@ func NewLexBotAliasConversationLogsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_LexBotAliasConversationLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewLexBotAliasConversationLogsOutputReference_Override(l LexBotAliasConvers
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
+		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

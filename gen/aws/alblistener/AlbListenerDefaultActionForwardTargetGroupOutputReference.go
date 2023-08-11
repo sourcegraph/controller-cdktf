@@ -203,7 +203,7 @@ func NewAlbListenerDefaultActionForwardTargetGroupOutputReference(terraformResou
 	j := jsiiProxy_AlbListenerDefaultActionForwardTargetGroupOutputReference{}
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewAlbListenerDefaultActionForwardTargetGroupOutputReference_Override(a Alb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference",
+		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)

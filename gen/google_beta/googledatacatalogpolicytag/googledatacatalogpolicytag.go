@@ -436,7 +436,7 @@ func NewGoogleDataCatalogPolicyTag(scope constructs.Construct, id *string, confi
 	j := jsiiProxy_GoogleDataCatalogPolicyTag{}
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -449,7 +449,7 @@ func NewGoogleDataCatalogPolicyTag_Override(g GoogleDataCatalogPolicyTag, scope 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -604,7 +604,7 @@ func GoogleDataCatalogPolicyTag_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -623,7 +623,7 @@ func GoogleDataCatalogPolicyTag_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -642,7 +642,7 @@ func GoogleDataCatalogPolicyTag_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func GoogleDataCatalogPolicyTag_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
+		"@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag",
 		"tfResourceType",
 		&returns,
 	)

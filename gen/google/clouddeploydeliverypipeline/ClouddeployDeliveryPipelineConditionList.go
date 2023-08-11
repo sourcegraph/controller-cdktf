@@ -104,7 +104,7 @@ func NewClouddeployDeliveryPipelineConditionList(terraformResource cdktf.IInterp
 	j := jsiiProxy_ClouddeployDeliveryPipelineConditionList{}
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionList",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewClouddeployDeliveryPipelineConditionList_Override(c ClouddeployDeliveryP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionList",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipelineConditionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

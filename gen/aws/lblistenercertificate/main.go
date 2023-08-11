@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lbListenerCertificate.LbListenerCertificate",
+		"@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificate",
 		reflect.TypeOf((*LbListenerCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lbListenerCertificate.LbListenerCertificateConfig",
+		"@cdktf/provider-aws.lbListenerCertificate.LbListenerCertificateConfig",
 		reflect.TypeOf((*LbListenerCertificateConfig)(nil)).Elem(),
 	)
 }

@@ -104,7 +104,7 @@ func NewDataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList(terraformR
 	j := jsiiProxy_DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList_Override(d
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctions2Function.DataGoogleCloudfunctions2FunctionEventTriggerEventFiltersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

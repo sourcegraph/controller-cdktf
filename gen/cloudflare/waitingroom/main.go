@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.waitingRoom.WaitingRoom",
+		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoom",
 		reflect.TypeOf((*WaitingRoom)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -99,15 +99,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.waitingRoom.WaitingRoomConfig",
+		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomConfig",
 		reflect.TypeOf((*WaitingRoomConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.waitingRoom.WaitingRoomTimeouts",
+		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeouts",
 		reflect.TypeOf((*WaitingRoomTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
+		"@cdktf/provider-cloudflare.waitingRoom.WaitingRoomTimeoutsOutputReference",
 		reflect.TypeOf((*WaitingRoomTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

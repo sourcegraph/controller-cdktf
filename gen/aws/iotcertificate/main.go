@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.iotCertificate.IotCertificate",
+		"@cdktf/provider-aws.iotCertificate.IotCertificate",
 		reflect.TypeOf((*IotCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "active", GoGetter: "Active"},
@@ -69,7 +69,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.iotCertificate.IotCertificateConfig",
+		"@cdktf/provider-aws.iotCertificate.IotCertificateConfig",
 		reflect.TypeOf((*IotCertificateConfig)(nil)).Elem(),
 	)
 }

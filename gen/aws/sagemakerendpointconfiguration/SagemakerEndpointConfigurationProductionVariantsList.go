@@ -116,7 +116,7 @@ func NewSagemakerEndpointConfigurationProductionVariantsList(terraformResource c
 	j := jsiiProxy_SagemakerEndpointConfigurationProductionVariantsList{}
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsList",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewSagemakerEndpointConfigurationProductionVariantsList_Override(s Sagemake
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsList",
+		"@cdktf/provider-aws.sagemakerEndpointConfiguration.SagemakerEndpointConfigurationProductionVariantsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)

@@ -203,7 +203,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputR
 	j := jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference{}
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewEc2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference",
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

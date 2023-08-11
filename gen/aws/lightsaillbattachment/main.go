@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.lightsailLbAttachment.LightsailLbAttachment",
+		"@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachment",
 		reflect.TypeOf((*LightsailLbAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -59,7 +59,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.lightsailLbAttachment.LightsailLbAttachmentConfig",
+		"@cdktf/provider-aws.lightsailLbAttachment.LightsailLbAttachmentConfig",
 		reflect.TypeOf((*LightsailLbAttachmentConfig)(nil)).Elem(),
 	)
 }

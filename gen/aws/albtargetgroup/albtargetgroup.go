@@ -798,7 +798,7 @@ func NewAlbTargetGroup(scope constructs.Construct, id *string, config *AlbTarget
 	j := jsiiProxy_AlbTargetGroup{}
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroup",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -811,7 +811,7 @@ func NewAlbTargetGroup_Override(a AlbTargetGroup, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albTargetGroup.AlbTargetGroup",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1109,7 +1109,7 @@ func AlbTargetGroup_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albTargetGroup.AlbTargetGroup",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1128,7 +1128,7 @@ func AlbTargetGroup_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albTargetGroup.AlbTargetGroup",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1147,7 +1147,7 @@ func AlbTargetGroup_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albTargetGroup.AlbTargetGroup",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -1160,7 +1160,7 @@ func AlbTargetGroup_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.albTargetGroup.AlbTargetGroup",
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
 		"tfResourceType",
 		&returns,
 	)

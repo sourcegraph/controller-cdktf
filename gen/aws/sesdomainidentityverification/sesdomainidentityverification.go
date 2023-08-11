@@ -354,7 +354,7 @@ func NewSesDomainIdentityVerification(scope constructs.Construct, id *string, co
 	j := jsiiProxy_SesDomainIdentityVerification{}
 
 	_jsii_.Create(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -367,7 +367,7 @@ func NewSesDomainIdentityVerification_Override(s SesDomainIdentityVerification, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -489,7 +489,7 @@ func SesDomainIdentityVerification_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +508,7 @@ func SesDomainIdentityVerification_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func SesDomainIdentityVerification_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func SesDomainIdentityVerification_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
+		"@cdktf/provider-aws.sesDomainIdentityVerification.SesDomainIdentityVerification",
 		"tfResourceType",
 		&returns,
 	)

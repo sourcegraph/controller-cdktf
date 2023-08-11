@@ -178,7 +178,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference(
 	j := jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
+		"@cdktf/provider-google.dataGoogleComputeRegionNetworkEndpointGroup.DataGoogleComputeRegionNetworkEndpointGroupCloudFunctionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

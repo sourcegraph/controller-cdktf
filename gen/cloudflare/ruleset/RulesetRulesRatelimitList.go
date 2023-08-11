@@ -116,7 +116,7 @@ func NewRulesetRulesRatelimitList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_RulesetRulesRatelimitList{}
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesRatelimitList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewRulesetRulesRatelimitList_Override(r RulesetRulesRatelimitList, terrafor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.ruleset.RulesetRulesRatelimitList",
+		"@cdktf/provider-cloudflare.ruleset.RulesetRulesRatelimitList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

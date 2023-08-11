@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfiguration",
 		reflect.TypeOf((*ApprunnerObservabilityConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -71,15 +71,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfigurationConfig",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfigurationConfig",
 		reflect.TypeOf((*ApprunnerObservabilityConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfigurationTraceConfiguration",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfigurationTraceConfiguration",
 		reflect.TypeOf((*ApprunnerObservabilityConfigurationTraceConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfigurationTraceConfigurationOutputReference",
+		"@cdktf/provider-aws.apprunnerObservabilityConfiguration.ApprunnerObservabilityConfigurationTraceConfigurationOutputReference",
 		reflect.TypeOf((*ApprunnerObservabilityConfigurationTraceConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

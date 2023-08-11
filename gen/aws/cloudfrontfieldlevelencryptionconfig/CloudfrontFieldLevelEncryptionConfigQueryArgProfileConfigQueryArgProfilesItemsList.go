@@ -116,7 +116,7 @@ func NewCloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfile
 	j := jsiiProxy_CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfile
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList",
+		"@cdktf/provider-aws.cloudfrontFieldLevelEncryptionConfig.CloudfrontFieldLevelEncryptionConfigQueryArgProfileConfigQueryArgProfilesItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

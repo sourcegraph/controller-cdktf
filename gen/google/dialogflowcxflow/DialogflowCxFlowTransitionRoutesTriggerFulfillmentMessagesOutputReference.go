@@ -180,7 +180,7 @@ func NewDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReferenc
 	j := jsiiProxy_DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference{}
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReferenc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference",
+		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

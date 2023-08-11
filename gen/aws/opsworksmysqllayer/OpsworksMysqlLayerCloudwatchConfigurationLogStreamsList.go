@@ -116,7 +116,7 @@ func NewOpsworksMysqlLayerCloudwatchConfigurationLogStreamsList(terraformResourc
 	j := jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList{}
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOpsworksMysqlLayerCloudwatchConfigurationLogStreamsList_Override(o Opswo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList",
+		"@cdktf/provider-aws.opsworksMysqlLayer.OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

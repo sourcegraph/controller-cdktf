@@ -285,7 +285,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference(terraformRes
 	j := jsiiProxy_CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -297,7 +297,7 @@ func NewCronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference_Override(c C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference",
+		"@cdktf/provider-kubernetes.cronJobV1.CronJobV1SpecJobTemplateSpecTemplateMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

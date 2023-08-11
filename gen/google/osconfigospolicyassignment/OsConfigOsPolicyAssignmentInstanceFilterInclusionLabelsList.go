@@ -116,7 +116,7 @@ func NewOsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList(terraformRes
 	j := jsiiProxy_OsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList{}
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewOsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList_Override(o O
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList",
+		"@cdktf/provider-google.osConfigOsPolicyAssignment.OsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)

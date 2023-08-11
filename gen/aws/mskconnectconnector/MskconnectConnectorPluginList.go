@@ -116,7 +116,7 @@ func NewMskconnectConnectorPluginList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_MskconnectConnectorPluginList{}
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorPluginList",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewMskconnectConnectorPluginList_Override(m MskconnectConnectorPluginList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.mskconnectConnector.MskconnectConnectorPluginList",
+		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorPluginList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)

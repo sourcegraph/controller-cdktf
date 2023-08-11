@@ -228,7 +228,7 @@ func NewBigqueryAnalyticsHubDataExchangeTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewBigqueryAnalyticsHubDataExchangeTimeoutsOutputReference_Override(b Bigqu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference",
+		"@cdktf/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)

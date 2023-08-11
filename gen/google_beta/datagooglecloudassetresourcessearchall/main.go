@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll",
 		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAll)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,15 +62,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllConfig",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllConfig",
 		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAllConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResults",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResults",
 		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAllResults)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsList",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsList",
 		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAllResultsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -90,7 +90,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsOutputReference",
 		reflect.TypeOf((*DataGoogleCloudAssetResourcesSearchAllResultsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalAttributes", GoGetter: "AdditionalAttributes"},

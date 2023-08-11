@@ -104,7 +104,7 @@ func NewDataGoogleCloudfunctionsFunctionEventTriggerList(terraformResource cdktf
 	j := jsiiProxy_DataGoogleCloudfunctionsFunctionEventTriggerList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerList",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleCloudfunctionsFunctionEventTriggerList_Override(d DataGoogleCl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerList",
+		"@cdktf/provider-google-beta.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

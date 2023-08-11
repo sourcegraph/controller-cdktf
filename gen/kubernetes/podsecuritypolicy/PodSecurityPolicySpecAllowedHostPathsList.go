@@ -116,7 +116,7 @@ func NewPodSecurityPolicySpecAllowedHostPathsList(terraformResource cdktf.IInter
 	j := jsiiProxy_PodSecurityPolicySpecAllowedHostPathsList{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPathsList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPathsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewPodSecurityPolicySpecAllowedHostPathsList_Override(p PodSecurityPolicySp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPathsList",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecAllowedHostPathsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)

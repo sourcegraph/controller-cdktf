@@ -400,7 +400,7 @@ func NewHealthcareDatasetIamBinding(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_HealthcareDatasetIamBinding{}
 
 	_jsii_.Create(
-		"google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
+		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewHealthcareDatasetIamBinding_Override(h HealthcareDatasetIamBinding, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
+		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
 		[]interface{}{scope, id, config},
 		h,
 	)
@@ -557,7 +557,7 @@ func HealthcareDatasetIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
+		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func HealthcareDatasetIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
+		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func HealthcareDatasetIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
+		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func HealthcareDatasetIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
+		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding",
 		"tfResourceType",
 		&returns,
 	)

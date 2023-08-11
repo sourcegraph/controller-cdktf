@@ -370,7 +370,7 @@ func NewKinesisFirehoseDeliveryStreamS3ConfigurationOutputReference(terraformRes
 	j := jsiiProxy_KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -382,7 +382,7 @@ func NewKinesisFirehoseDeliveryStreamS3ConfigurationOutputReference_Override(k K
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference",
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

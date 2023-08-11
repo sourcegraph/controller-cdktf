@@ -228,7 +228,7 @@ func NewSpotInstanceRequestPrivateDnsNameOptionsOutputReference(terraformResourc
 	j := jsiiProxy_SpotInstanceRequestPrivateDnsNameOptionsOutputReference{}
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptionsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewSpotInstanceRequestPrivateDnsNameOptionsOutputReference_Override(s SpotI
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptionsOutputReference",
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestPrivateDnsNameOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

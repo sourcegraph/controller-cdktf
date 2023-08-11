@@ -458,7 +458,7 @@ func NewDataAwsImagebuilderImage(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataAwsImagebuilderImage{}
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -471,7 +471,7 @@ func NewDataAwsImagebuilderImage_Override(d DataAwsImagebuilderImage, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -582,7 +582,7 @@ func DataAwsImagebuilderImage_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -601,7 +601,7 @@ func DataAwsImagebuilderImage_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func DataAwsImagebuilderImage_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -633,7 +633,7 @@ func DataAwsImagebuilderImage_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
+		"@cdktf/provider-aws.dataAwsImagebuilderImage.DataAwsImagebuilderImage",
 		"tfResourceType",
 		&returns,
 	)

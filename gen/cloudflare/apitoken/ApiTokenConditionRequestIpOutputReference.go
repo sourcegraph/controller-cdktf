@@ -204,7 +204,7 @@ func NewApiTokenConditionRequestIpOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_ApiTokenConditionRequestIpOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.apiToken.ApiTokenConditionRequestIpOutputReference",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenConditionRequestIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewApiTokenConditionRequestIpOutputReference_Override(a ApiTokenConditionRe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.apiToken.ApiTokenConditionRequestIpOutputReference",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenConditionRequestIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

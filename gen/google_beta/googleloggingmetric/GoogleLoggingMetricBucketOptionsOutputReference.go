@@ -228,7 +228,7 @@ func NewGoogleLoggingMetricBucketOptionsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleLoggingMetricBucketOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleLoggingMetricBucketOptionsOutputReference_Override(g GoogleLogging
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

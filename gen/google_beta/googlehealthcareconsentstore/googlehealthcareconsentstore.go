@@ -438,7 +438,7 @@ func NewGoogleHealthcareConsentStore(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleHealthcareConsentStore{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -451,7 +451,7 @@ func NewGoogleHealthcareConsentStore_Override(g GoogleHealthcareConsentStore, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -617,7 +617,7 @@ func GoogleHealthcareConsentStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -636,7 +636,7 @@ func GoogleHealthcareConsentStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -655,7 +655,7 @@ func GoogleHealthcareConsentStore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -668,7 +668,7 @@ func GoogleHealthcareConsentStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
+		"@cdktf/provider-google-beta.googleHealthcareConsentStore.GoogleHealthcareConsentStore",
 		"tfResourceType",
 		&returns,
 	)

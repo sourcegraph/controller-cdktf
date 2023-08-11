@@ -573,7 +573,7 @@ func NewDataGooglePrivatecaCertificateAuthority(scope constructs.Construct, id *
 	j := jsiiProxy_DataGooglePrivatecaCertificateAuthority{}
 
 	_jsii_.Create(
-		"google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
+		"@cdktf/provider-google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -586,7 +586,7 @@ func NewDataGooglePrivatecaCertificateAuthority_Override(d DataGooglePrivatecaCe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
+		"@cdktf/provider-google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -719,7 +719,7 @@ func DataGooglePrivatecaCertificateAuthority_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
+		"@cdktf/provider-google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -738,7 +738,7 @@ func DataGooglePrivatecaCertificateAuthority_IsTerraformDataSource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
+		"@cdktf/provider-google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -757,7 +757,7 @@ func DataGooglePrivatecaCertificateAuthority_IsTerraformElement(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
+		"@cdktf/provider-google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -770,7 +770,7 @@ func DataGooglePrivatecaCertificateAuthority_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
+		"@cdktf/provider-google.dataGooglePrivatecaCertificateAuthority.DataGooglePrivatecaCertificateAuthority",
 		"tfResourceType",
 		&returns,
 	)

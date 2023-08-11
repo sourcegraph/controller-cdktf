@@ -116,7 +116,7 @@ func NewApiTokenPolicyList(terraformResource cdktf.IInterpolatingParent, terrafo
 	j := jsiiProxy_ApiTokenPolicyList{}
 
 	_jsii_.Create(
-		"cloudflare.apiToken.ApiTokenPolicyList",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewApiTokenPolicyList_Override(a ApiTokenPolicyList, terraformResource cdkt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.apiToken.ApiTokenPolicyList",
+		"@cdktf/provider-cloudflare.apiToken.ApiTokenPolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

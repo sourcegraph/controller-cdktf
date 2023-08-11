@@ -116,7 +116,7 @@ func NewDataAwsCeTagsSortByList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_DataAwsCeTagsSortByList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsSortByList",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsCeTagsSortByList_Override(d DataAwsCeTagsSortByList, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCeTags.DataAwsCeTagsSortByList",
+		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

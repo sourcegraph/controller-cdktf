@@ -228,7 +228,7 @@ func NewDeploymentSpecTemplateSpecDnsConfigOutputReference(terraformResource cdk
 	j := jsiiProxy_DeploymentSpecTemplateSpecDnsConfigOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewDeploymentSpecTemplateSpecDnsConfigOutputReference_Override(d Deployment
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOutputReference",
+		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecDnsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

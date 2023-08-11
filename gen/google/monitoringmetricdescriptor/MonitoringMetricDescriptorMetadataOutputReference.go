@@ -204,7 +204,7 @@ func NewMonitoringMetricDescriptorMetadataOutputReference(terraformResource cdkt
 	j := jsiiProxy_MonitoringMetricDescriptorMetadataOutputReference{}
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewMonitoringMetricDescriptorMetadataOutputReference_Override(m MonitoringM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference",
+		"@cdktf/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)

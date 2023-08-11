@@ -178,7 +178,7 @@ func NewRdsReservedInstanceRecurringChargesOutputReference(terraformResource cdk
 	j := jsiiProxy_RdsReservedInstanceRecurringChargesOutputReference{}
 
 	_jsii_.Create(
-		"aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesOutputReference",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewRdsReservedInstanceRecurringChargesOutputReference_Override(r RdsReserve
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesOutputReference",
+		"@cdktf/provider-aws.rdsReservedInstance.RdsReservedInstanceRecurringChargesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)

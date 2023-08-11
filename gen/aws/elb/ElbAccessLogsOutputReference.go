@@ -251,7 +251,7 @@ func NewElbAccessLogsOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_ElbAccessLogsOutputReference{}
 
 	_jsii_.Create(
-		"aws.elb.ElbAccessLogsOutputReference",
+		"@cdktf/provider-aws.elb.ElbAccessLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -263,7 +263,7 @@ func NewElbAccessLogsOutputReference_Override(e ElbAccessLogsOutputReference, te
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.elb.ElbAccessLogsOutputReference",
+		"@cdktf/provider-aws.elb.ElbAccessLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)

@@ -388,7 +388,7 @@ func NewBudget(scope constructs.Construct, id *string, config *BudgetConfig) Bud
 	j := jsiiProxy_Budget{}
 
 	_jsii_.Create(
-		"budget.Budget",
+		"@cdktf/provider-budget.Budget",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -400,7 +400,7 @@ func NewBudget_Override(b Budget, scope constructs.Construct, id *string, config
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"budget.Budget",
+		"@cdktf/provider-budget.Budget",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -577,7 +577,7 @@ func Budget_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"budget.Budget",
+		"@cdktf/provider-budget.Budget",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -596,7 +596,7 @@ func Budget_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"budget.Budget",
+		"@cdktf/provider-budget.Budget",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,

@@ -250,7 +250,7 @@ func NewCognitoIdentityPoolRolesAttachmentRoleMappingOutputReference(terraformRe
 	j := jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference{}
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -262,7 +262,7 @@ func NewCognitoIdentityPoolRolesAttachmentRoleMappingOutputReference_Override(c 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference",
+		"@cdktf/provider-aws.cognitoIdentityPoolRolesAttachment.CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

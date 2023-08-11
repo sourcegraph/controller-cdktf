@@ -276,7 +276,7 @@ func NewTransferServerEndpointDetailsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_TransferServerEndpointDetailsOutputReference{}
 
 	_jsii_.Create(
-		"aws.transferServer.TransferServerEndpointDetailsOutputReference",
+		"@cdktf/provider-aws.transferServer.TransferServerEndpointDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -288,7 +288,7 @@ func NewTransferServerEndpointDetailsOutputReference_Override(t TransferServerEn
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.transferServer.TransferServerEndpointDetailsOutputReference",
+		"@cdktf/provider-aws.transferServer.TransferServerEndpointDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)

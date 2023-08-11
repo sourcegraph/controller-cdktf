@@ -179,7 +179,7 @@ func NewFsxOpenzfsVolumeNfsExportsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference{}
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewFsxOpenzfsVolumeNfsExportsOutputReference_Override(f FsxOpenzfsVolumeNfs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsOutputReference",
+		"@cdktf/provider-aws.fsxOpenzfsVolume.FsxOpenzfsVolumeNfsExportsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)

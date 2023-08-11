@@ -496,7 +496,7 @@ func NewGoogleActiveDirectoryPeering(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleActiveDirectoryPeering{}
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -509,7 +509,7 @@ func NewGoogleActiveDirectoryPeering_Override(g GoogleActiveDirectoryPeering, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -697,7 +697,7 @@ func GoogleActiveDirectoryPeering_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -716,7 +716,7 @@ func GoogleActiveDirectoryPeering_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -735,7 +735,7 @@ func GoogleActiveDirectoryPeering_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -748,7 +748,7 @@ func GoogleActiveDirectoryPeering_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
+		"@cdktf/provider-google-beta.googleActiveDirectoryPeering.GoogleActiveDirectoryPeering",
 		"tfResourceType",
 		&returns,
 	)

@@ -104,7 +104,7 @@ func NewDataGoogleContainerClusterMaintenancePolicyRecurringWindowList(terraform
 	j := jsiiProxy_DataGoogleContainerClusterMaintenancePolicyRecurringWindowList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleContainerClusterMaintenancePolicyRecurringWindowList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList",
+		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

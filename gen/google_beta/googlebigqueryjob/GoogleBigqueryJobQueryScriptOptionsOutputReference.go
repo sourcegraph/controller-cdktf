@@ -228,7 +228,7 @@ func NewGoogleBigqueryJobQueryScriptOptionsOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleBigqueryJobQueryScriptOptionsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobQueryScriptOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobQueryScriptOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleBigqueryJobQueryScriptOptionsOutputReference_Override(g GoogleBigq
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBigqueryJob.GoogleBigqueryJobQueryScriptOptionsOutputReference",
+		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobQueryScriptOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

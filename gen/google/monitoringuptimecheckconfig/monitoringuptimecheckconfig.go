@@ -604,7 +604,7 @@ func NewMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_MonitoringUptimeCheckConfig{}
 
 	_jsii_.Create(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -617,7 +617,7 @@ func NewMonitoringUptimeCheckConfig_Override(m MonitoringUptimeCheckConfig, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -794,7 +794,7 @@ func MonitoringUptimeCheckConfig_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -813,7 +813,7 @@ func MonitoringUptimeCheckConfig_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -832,7 +832,7 @@ func MonitoringUptimeCheckConfig_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -845,7 +845,7 @@ func MonitoringUptimeCheckConfig_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
+		"@cdktf/provider-google.monitoringUptimeCheckConfig.MonitoringUptimeCheckConfig",
 		"tfResourceType",
 		&returns,
 	)

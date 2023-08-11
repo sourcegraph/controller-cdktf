@@ -104,7 +104,7 @@ func NewRedshiftserverlessWorkgroupEndpointList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_RedshiftserverlessWorkgroupEndpointList{}
 
 	_jsii_.Create(
-		"aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointList",
+		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewRedshiftserverlessWorkgroupEndpointList_Override(r RedshiftserverlessWor
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointList",
+		"@cdktf/provider-aws.redshiftserverlessWorkgroup.RedshiftserverlessWorkgroupEndpointList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)

@@ -116,7 +116,7 @@ func NewKendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfiguration
 	j := jsiiProxy_KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList{}
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewKendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfiguration
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList",
+		"@cdktf/provider-aws.kendraDataSource.KendraDataSourceCustomDocumentEnrichmentConfigurationInlineConfigurationsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		k,
 	)

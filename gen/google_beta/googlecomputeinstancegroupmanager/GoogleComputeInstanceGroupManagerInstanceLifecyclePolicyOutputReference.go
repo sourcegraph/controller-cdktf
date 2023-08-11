@@ -180,7 +180,7 @@ func NewGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference(
 	j := jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstanceGroupManager.GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

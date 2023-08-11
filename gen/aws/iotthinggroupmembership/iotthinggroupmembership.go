@@ -366,7 +366,7 @@ func NewIotThingGroupMembership(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_IotThingGroupMembership{}
 
 	_jsii_.Create(
-		"aws.iotThingGroupMembership.IotThingGroupMembership",
+		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewIotThingGroupMembership_Override(i IotThingGroupMembership, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotThingGroupMembership.IotThingGroupMembership",
+		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -523,7 +523,7 @@ func IotThingGroupMembership_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotThingGroupMembership.IotThingGroupMembership",
+		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func IotThingGroupMembership_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotThingGroupMembership.IotThingGroupMembership",
+		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -561,7 +561,7 @@ func IotThingGroupMembership_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.iotThingGroupMembership.IotThingGroupMembership",
+		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func IotThingGroupMembership_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.iotThingGroupMembership.IotThingGroupMembership",
+		"@cdktf/provider-aws.iotThingGroupMembership.IotThingGroupMembership",
 		"tfResourceType",
 		&returns,
 	)

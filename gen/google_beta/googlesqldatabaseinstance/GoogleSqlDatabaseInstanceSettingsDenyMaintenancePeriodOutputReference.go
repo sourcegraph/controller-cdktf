@@ -225,7 +225,7 @@ func NewGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference(te
 	j := jsiiProxy_GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -237,7 +237,7 @@ func NewGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference_Ov
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference",
+		"@cdktf/provider-google-beta.googleSqlDatabaseInstance.GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

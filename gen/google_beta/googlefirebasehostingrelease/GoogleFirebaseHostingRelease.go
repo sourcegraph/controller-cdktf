@@ -461,7 +461,7 @@ func NewGoogleFirebaseHostingRelease(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleFirebaseHostingRelease{}
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
+		"@cdktf/provider-google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -474,7 +474,7 @@ func NewGoogleFirebaseHostingRelease_Override(g GoogleFirebaseHostingRelease, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
+		"@cdktf/provider-google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -640,7 +640,7 @@ func GoogleFirebaseHostingRelease_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
+		"@cdktf/provider-google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func GoogleFirebaseHostingRelease_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
+		"@cdktf/provider-google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleFirebaseHostingRelease_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
+		"@cdktf/provider-google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func GoogleFirebaseHostingRelease_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
+		"@cdktf/provider-google-beta.googleFirebaseHostingRelease.GoogleFirebaseHostingRelease",
 		"tfResourceType",
 		&returns,
 	)

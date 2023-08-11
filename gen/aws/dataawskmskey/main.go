@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsKey.DataAwsKmsKey",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKey",
 		reflect.TypeOf((*DataAwsKmsKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -73,15 +73,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyConfig",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyConfig",
 		reflect.TypeOf((*DataAwsKmsKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfiguration",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfiguration",
 		reflect.TypeOf((*DataAwsKmsKeyMultiRegionConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationList",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationList",
 		reflect.TypeOf((*DataAwsKmsKeyMultiRegionConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -101,7 +101,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationOutputReference",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationOutputReference",
 		reflect.TypeOf((*DataAwsKmsKeyMultiRegionConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,11 +136,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKey",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKey",
 		reflect.TypeOf((*DataAwsKmsKeyMultiRegionConfigurationPrimaryKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyList",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyList",
 		reflect.TypeOf((*DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -160,7 +160,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference",
 		reflect.TypeOf((*DataAwsKmsKeyMultiRegionConfigurationPrimaryKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -194,11 +194,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeys",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeys",
 		reflect.TypeOf((*DataAwsKmsKeyMultiRegionConfigurationReplicaKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList",
 		reflect.TypeOf((*DataAwsKmsKeyMultiRegionConfigurationReplicaKeysList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -218,7 +218,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference",
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference",
 		reflect.TypeOf((*DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},

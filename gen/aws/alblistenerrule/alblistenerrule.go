@@ -448,7 +448,7 @@ func NewAlbListenerRule(scope constructs.Construct, id *string, config *AlbListe
 	j := jsiiProxy_AlbListenerRule{}
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRule",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewAlbListenerRule_Override(a AlbListenerRule, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.albListenerRule.AlbListenerRule",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -616,7 +616,7 @@ func AlbListenerRule_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albListenerRule.AlbListenerRule",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -635,7 +635,7 @@ func AlbListenerRule_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albListenerRule.AlbListenerRule",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -654,7 +654,7 @@ func AlbListenerRule_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.albListenerRule.AlbListenerRule",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func AlbListenerRule_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.albListenerRule.AlbListenerRule",
+		"@cdktf/provider-aws.albListenerRule.AlbListenerRule",
 		"tfResourceType",
 		&returns,
 	)

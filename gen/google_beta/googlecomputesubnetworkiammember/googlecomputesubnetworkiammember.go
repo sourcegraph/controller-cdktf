@@ -448,7 +448,7 @@ func NewGoogleComputeSubnetworkIamMember(scope constructs.Construct, id *string,
 	j := jsiiProxy_GoogleComputeSubnetworkIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleComputeSubnetworkIamMember_Override(g GoogleComputeSubnetworkIamMe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleComputeSubnetworkIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleComputeSubnetworkIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleComputeSubnetworkIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleComputeSubnetworkIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
+		"@cdktf/provider-google-beta.googleComputeSubnetworkIamMember.GoogleComputeSubnetworkIamMember",
 		"tfResourceType",
 		&returns,
 	)

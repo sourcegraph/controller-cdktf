@@ -565,7 +565,7 @@ func NewClouddeployDeliveryPipeline(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_ClouddeployDeliveryPipeline{}
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -578,7 +578,7 @@ func NewClouddeployDeliveryPipeline_Override(c ClouddeployDeliveryPipeline, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -766,7 +766,7 @@ func ClouddeployDeliveryPipeline_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -785,7 +785,7 @@ func ClouddeployDeliveryPipeline_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -804,7 +804,7 @@ func ClouddeployDeliveryPipeline_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -817,7 +817,7 @@ func ClouddeployDeliveryPipeline_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
+		"@cdktf/provider-google.clouddeployDeliveryPipeline.ClouddeployDeliveryPipeline",
 		"tfResourceType",
 		&returns,
 	)

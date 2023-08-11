@@ -313,7 +313,7 @@ func NewDataKubernetesIngress(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataKubernetesIngress{}
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngress",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -326,7 +326,7 @@ func NewDataKubernetesIngress_Override(d DataKubernetesIngress, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngress",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -415,7 +415,7 @@ func DataKubernetesIngress_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngress",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -434,7 +434,7 @@ func DataKubernetesIngress_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngress",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -453,7 +453,7 @@ func DataKubernetesIngress_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngress",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -466,7 +466,7 @@ func DataKubernetesIngress_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.dataKubernetesIngress.DataKubernetesIngress",
+		"@cdktf/provider-kubernetes.dataKubernetesIngress.DataKubernetesIngress",
 		"tfResourceType",
 		&returns,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStore",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		reflect.TypeOf((*KmsCustomKeyStore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStoreConfig",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreConfig",
 		reflect.TypeOf((*KmsCustomKeyStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeouts",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeouts",
 		reflect.TypeOf((*KmsCustomKeyStoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeoutsOutputReference",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStoreTimeoutsOutputReference",
 		reflect.TypeOf((*KmsCustomKeyStoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -448,7 +448,7 @@ func NewLightsailCertificate(scope constructs.Construct, id *string, config *Lig
 	j := jsiiProxy_LightsailCertificate{}
 
 	_jsii_.Create(
-		"aws.lightsailCertificate.LightsailCertificate",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificate",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewLightsailCertificate_Override(l LightsailCertificate, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailCertificate.LightsailCertificate",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificate",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -627,7 +627,7 @@ func LightsailCertificate_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailCertificate.LightsailCertificate",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificate",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func LightsailCertificate_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailCertificate.LightsailCertificate",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificate",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func LightsailCertificate_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailCertificate.LightsailCertificate",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificate",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func LightsailCertificate_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailCertificate.LightsailCertificate",
+		"@cdktf/provider-aws.lightsailCertificate.LightsailCertificate",
 		"tfResourceType",
 		&returns,
 	)

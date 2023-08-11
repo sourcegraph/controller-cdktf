@@ -249,7 +249,7 @@ func NewIotTopicRuleDestinationVpcConfigurationOutputReference(terraformResource
 	j := jsiiProxy_IotTopicRuleDestinationVpcConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -261,7 +261,7 @@ func NewIotTopicRuleDestinationVpcConfigurationOutputReference_Override(i IotTop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfigurationOutputReference",
+		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationVpcConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)

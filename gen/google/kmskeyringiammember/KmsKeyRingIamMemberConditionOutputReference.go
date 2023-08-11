@@ -226,7 +226,7 @@ func NewKmsKeyRingIamMemberConditionOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_KmsKeyRingIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.kmsKeyRingIamMember.KmsKeyRingIamMemberConditionOutputReference",
+		"@cdktf/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewKmsKeyRingIamMemberConditionOutputReference_Override(k KmsKeyRingIamMemb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.kmsKeyRingIamMember.KmsKeyRingIamMemberConditionOutputReference",
+		"@cdktf/provider-google.kmsKeyRingIamMember.KmsKeyRingIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)

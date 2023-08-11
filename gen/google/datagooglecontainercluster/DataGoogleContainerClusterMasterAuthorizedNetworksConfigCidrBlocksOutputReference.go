@@ -178,7 +178,7 @@ func NewDataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutput
 	j := jsiiProxy_DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference{}
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutput
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
+		"@cdktf/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

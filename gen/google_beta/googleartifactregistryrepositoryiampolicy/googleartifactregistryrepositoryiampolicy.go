@@ -401,7 +401,7 @@ func NewGoogleArtifactRegistryRepositoryIamPolicy(scope constructs.Construct, id
 	j := jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy{}
 
 	_jsii_.Create(
-		"google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewGoogleArtifactRegistryRepositoryIamPolicy_Override(g GoogleArtifactRegis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -569,7 +569,7 @@ func GoogleArtifactRegistryRepositoryIamPolicy_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -588,7 +588,7 @@ func GoogleArtifactRegistryRepositoryIamPolicy_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -607,7 +607,7 @@ func GoogleArtifactRegistryRepositoryIamPolicy_IsTerraformResource(x interface{}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -620,7 +620,7 @@ func GoogleArtifactRegistryRepositoryIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
+		"@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

@@ -389,7 +389,7 @@ func NewGuarddutyPublishingDestination(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GuarddutyPublishingDestination{}
 
 	_jsii_.Create(
-		"aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
+		"@cdktf/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewGuarddutyPublishingDestination_Override(g GuarddutyPublishingDestination
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
+		"@cdktf/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -557,7 +557,7 @@ func GuarddutyPublishingDestination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
+		"@cdktf/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func GuarddutyPublishingDestination_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
+		"@cdktf/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func GuarddutyPublishingDestination_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
+		"@cdktf/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func GuarddutyPublishingDestination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
+		"@cdktf/provider-aws.guarddutyPublishingDestination.GuarddutyPublishingDestination",
 		"tfResourceType",
 		&returns,
 	)

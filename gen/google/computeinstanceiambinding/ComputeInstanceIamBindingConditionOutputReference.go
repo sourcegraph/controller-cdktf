@@ -226,7 +226,7 @@ func NewComputeInstanceIamBindingConditionOutputReference(terraformResource cdkt
 	j := jsiiProxy_ComputeInstanceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.computeInstanceIamBinding.ComputeInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeInstanceIamBinding.ComputeInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewComputeInstanceIamBindingConditionOutputReference_Override(c ComputeInst
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceIamBinding.ComputeInstanceIamBindingConditionOutputReference",
+		"@cdktf/provider-google.computeInstanceIamBinding.ComputeInstanceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

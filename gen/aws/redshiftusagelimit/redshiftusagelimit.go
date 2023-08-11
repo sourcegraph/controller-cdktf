@@ -495,7 +495,7 @@ func NewRedshiftUsageLimit(scope constructs.Construct, id *string, config *Redsh
 	j := jsiiProxy_RedshiftUsageLimit{}
 
 	_jsii_.Create(
-		"aws.redshiftUsageLimit.RedshiftUsageLimit",
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -508,7 +508,7 @@ func NewRedshiftUsageLimit_Override(r RedshiftUsageLimit, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftUsageLimit.RedshiftUsageLimit",
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -707,7 +707,7 @@ func RedshiftUsageLimit_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftUsageLimit.RedshiftUsageLimit",
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -726,7 +726,7 @@ func RedshiftUsageLimit_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftUsageLimit.RedshiftUsageLimit",
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -745,7 +745,7 @@ func RedshiftUsageLimit_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftUsageLimit.RedshiftUsageLimit",
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func RedshiftUsageLimit_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftUsageLimit.RedshiftUsageLimit",
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		"tfResourceType",
 		&returns,
 	)

@@ -226,7 +226,7 @@ func NewGoogleRedisInstanceMaintenancePolicyOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleRedisInstanceMaintenancePolicyOutputReference_Override(g GoogleRed
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyOutputReference",
+		"@cdktf/provider-google-beta.googleRedisInstance.GoogleRedisInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

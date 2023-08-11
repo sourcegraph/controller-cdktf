@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferences",
 		reflect.TypeOf((*GoogleApigeeEnvReferences)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,15 +70,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferencesConfig",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferencesConfig",
 		reflect.TypeOf((*GoogleApigeeEnvReferencesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferencesTimeouts",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferencesTimeouts",
 		reflect.TypeOf((*GoogleApigeeEnvReferencesTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferencesTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleApigeeEnvReferences.GoogleApigeeEnvReferencesTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApigeeEnvReferencesTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

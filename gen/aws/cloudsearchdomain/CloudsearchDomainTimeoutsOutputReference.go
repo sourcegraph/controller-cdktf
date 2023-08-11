@@ -228,7 +228,7 @@ func NewCloudsearchDomainTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CloudsearchDomainTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewCloudsearchDomainTimeoutsOutputReference_Override(c CloudsearchDomainTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudsearchDomain.CloudsearchDomainTimeoutsOutputReference",
+		"@cdktf/provider-aws.cloudsearchDomain.CloudsearchDomainTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

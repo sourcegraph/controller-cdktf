@@ -116,7 +116,7 @@ func NewLoadBalancerRulesOverridesList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_LoadBalancerRulesOverridesList{}
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLoadBalancerRulesOverridesList_Override(l LoadBalancerRulesOverridesList
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.loadBalancer.LoadBalancerRulesOverridesList",
+		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOverridesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

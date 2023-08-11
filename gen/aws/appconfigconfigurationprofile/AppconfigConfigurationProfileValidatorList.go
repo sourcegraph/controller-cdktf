@@ -116,7 +116,7 @@ func NewAppconfigConfigurationProfileValidatorList(terraformResource cdktf.IInte
 	j := jsiiProxy_AppconfigConfigurationProfileValidatorList{}
 
 	_jsii_.Create(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAppconfigConfigurationProfileValidatorList_Override(a AppconfigConfigura
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList",
+		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

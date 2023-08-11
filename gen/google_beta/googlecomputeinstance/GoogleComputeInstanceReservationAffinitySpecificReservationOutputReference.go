@@ -202,7 +202,7 @@ func NewGoogleComputeInstanceReservationAffinitySpecificReservationOutputReferen
 	j := jsiiProxy_GoogleComputeInstanceReservationAffinitySpecificReservationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceReservationAffinitySpecificReservationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceReservationAffinitySpecificReservationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewGoogleComputeInstanceReservationAffinitySpecificReservationOutputReferen
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeInstance.GoogleComputeInstanceReservationAffinitySpecificReservationOutputReference",
+		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceReservationAffinitySpecificReservationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

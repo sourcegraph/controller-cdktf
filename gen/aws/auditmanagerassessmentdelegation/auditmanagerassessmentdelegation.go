@@ -421,7 +421,7 @@ func NewAuditmanagerAssessmentDelegation(scope constructs.Construct, id *string,
 	j := jsiiProxy_AuditmanagerAssessmentDelegation{}
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
+		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -434,7 +434,7 @@ func NewAuditmanagerAssessmentDelegation_Override(a AuditmanagerAssessmentDelega
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
+		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -589,7 +589,7 @@ func AuditmanagerAssessmentDelegation_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
+		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func AuditmanagerAssessmentDelegation_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
+		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -627,7 +627,7 @@ func AuditmanagerAssessmentDelegation_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
+		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -640,7 +640,7 @@ func AuditmanagerAssessmentDelegation_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
+		"@cdktf/provider-aws.auditmanagerAssessmentDelegation.AuditmanagerAssessmentDelegation",
 		"tfResourceType",
 		&returns,
 	)

@@ -309,7 +309,7 @@ func NewContainerClusterPrivateClusterConfigOutputReference(terraformResource cd
 	j := jsiiProxy_ContainerClusterPrivateClusterConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -321,7 +321,7 @@ func NewContainerClusterPrivateClusterConfigOutputReference_Override(c Container
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference",
+		"@cdktf/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

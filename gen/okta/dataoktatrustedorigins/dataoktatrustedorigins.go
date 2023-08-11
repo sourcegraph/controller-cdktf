@@ -303,7 +303,7 @@ func NewDataOktaTrustedOrigins(scope constructs.Construct, id *string, config *D
 	j := jsiiProxy_DataOktaTrustedOrigins{}
 
 	_jsii_.Create(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -316,7 +316,7 @@ func NewDataOktaTrustedOrigins_Override(d DataOktaTrustedOrigins, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -416,7 +416,7 @@ func DataOktaTrustedOrigins_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -435,7 +435,7 @@ func DataOktaTrustedOrigins_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -454,7 +454,7 @@ func DataOktaTrustedOrigins_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -467,7 +467,7 @@ func DataOktaTrustedOrigins_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
+		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOrigins",
 		"tfResourceType",
 		&returns,
 	)

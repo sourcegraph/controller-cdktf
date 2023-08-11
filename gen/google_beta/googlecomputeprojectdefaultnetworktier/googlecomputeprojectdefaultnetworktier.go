@@ -367,7 +367,7 @@ func NewGoogleComputeProjectDefaultNetworkTier(scope constructs.Construct, id *s
 	j := jsiiProxy_GoogleComputeProjectDefaultNetworkTier{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewGoogleComputeProjectDefaultNetworkTier_Override(g GoogleComputeProjectDe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -513,7 +513,7 @@ func GoogleComputeProjectDefaultNetworkTier_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func GoogleComputeProjectDefaultNetworkTier_IsTerraformElement(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -551,7 +551,7 @@ func GoogleComputeProjectDefaultNetworkTier_IsTerraformResource(x interface{}) *
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -564,7 +564,7 @@ func GoogleComputeProjectDefaultNetworkTier_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
+		"@cdktf/provider-google-beta.googleComputeProjectDefaultNetworkTier.GoogleComputeProjectDefaultNetworkTier",
 		"tfResourceType",
 		&returns,
 	)

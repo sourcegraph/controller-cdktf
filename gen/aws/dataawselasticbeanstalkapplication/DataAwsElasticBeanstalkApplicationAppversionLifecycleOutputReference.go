@@ -200,7 +200,7 @@ func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference(ter
 	j := jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference{}
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,7 +212,7 @@ func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference_Ove
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference",
+		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

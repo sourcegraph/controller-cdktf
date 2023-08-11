@@ -226,7 +226,7 @@ func NewPrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference(terra
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference{}
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewPrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference_Overr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference",
+		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

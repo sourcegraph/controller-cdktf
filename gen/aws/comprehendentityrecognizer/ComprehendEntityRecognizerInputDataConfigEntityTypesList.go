@@ -116,7 +116,7 @@ func NewComprehendEntityRecognizerInputDataConfigEntityTypesList(terraformResour
 	j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigEntityTypesList{}
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesList",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComprehendEntityRecognizerInputDataConfigEntityTypesList_Override(c Comp
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesList",
+		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigEntityTypesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

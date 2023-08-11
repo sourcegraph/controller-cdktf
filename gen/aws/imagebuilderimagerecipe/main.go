@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
 		reflect.TypeOf((*ImagebuilderImageRecipe)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,15 +91,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMapping",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMapping",
 		reflect.TypeOf((*ImagebuilderImageRecipeBlockDeviceMapping)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbs",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbs",
 		reflect.TypeOf((*ImagebuilderImageRecipeBlockDeviceMappingEbs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference",
 		reflect.TypeOf((*ImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,7 +155,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingList",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingList",
 		reflect.TypeOf((*ImagebuilderImageRecipeBlockDeviceMappingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -176,7 +176,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingOutputReference",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeBlockDeviceMappingOutputReference",
 		reflect.TypeOf((*ImagebuilderImageRecipeBlockDeviceMappingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,11 +221,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponent",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponent",
 		reflect.TypeOf((*ImagebuilderImageRecipeComponent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentList",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentList",
 		reflect.TypeOf((*ImagebuilderImageRecipeComponentList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -246,7 +246,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentOutputReference",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentOutputReference",
 		reflect.TypeOf((*ImagebuilderImageRecipeComponentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -284,11 +284,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentParameter",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentParameter",
 		reflect.TypeOf((*ImagebuilderImageRecipeComponentParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentParameterList",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentParameterList",
 		reflect.TypeOf((*ImagebuilderImageRecipeComponentParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -309,7 +309,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentParameterOutputReference",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeComponentParameterOutputReference",
 		reflect.TypeOf((*ImagebuilderImageRecipeComponentParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,15 +345,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeConfig",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeConfig",
 		reflect.TypeOf((*ImagebuilderImageRecipeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeSystemsManagerAgent",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeSystemsManagerAgent",
 		reflect.TypeOf((*ImagebuilderImageRecipeSystemsManagerAgent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.imagebuilderImageRecipe.ImagebuilderImageRecipeSystemsManagerAgentOutputReference",
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipeSystemsManagerAgentOutputReference",
 		reflect.TypeOf((*ImagebuilderImageRecipeSystemsManagerAgentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

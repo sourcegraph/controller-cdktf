@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
+		"@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuota",
 		reflect.TypeOf((*DataAwsServicequotasServiceQuota)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuotaConfig",
+		"@cdktf/provider-aws.dataAwsServicequotasServiceQuota.DataAwsServicequotasServiceQuotaConfig",
 		reflect.TypeOf((*DataAwsServicequotasServiceQuotaConfig)(nil)).Elem(),
 	)
 }

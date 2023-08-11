@@ -180,7 +180,7 @@ func NewGlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference(
 	j := jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference{}
 
 	_jsii_.Create(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference_
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference",
+		"@cdktf/provider-aws.glueCatalogDatabase.GlueCatalogDatabaseCreateTableDefaultPermissionPrincipalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

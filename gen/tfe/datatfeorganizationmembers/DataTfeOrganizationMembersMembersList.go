@@ -104,7 +104,7 @@ func NewDataTfeOrganizationMembersMembersList(terraformResource cdktf.IInterpola
 	j := jsiiProxy_DataTfeOrganizationMembersMembersList{}
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersList",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataTfeOrganizationMembersMembersList_Override(d DataTfeOrganizationMemb
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersList",
+		"@cdktf/provider-tfe.dataTfeOrganizationMembers.DataTfeOrganizationMembersMembersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

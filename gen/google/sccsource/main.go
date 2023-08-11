@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.sccSource.SccSource",
+		"@cdktf/provider-google.sccSource.SccSource",
 		reflect.TypeOf((*SccSource)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.sccSource.SccSourceConfig",
+		"@cdktf/provider-google.sccSource.SccSourceConfig",
 		reflect.TypeOf((*SccSourceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.sccSource.SccSourceTimeouts",
+		"@cdktf/provider-google.sccSource.SccSourceTimeouts",
 		reflect.TypeOf((*SccSourceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.sccSource.SccSourceTimeoutsOutputReference",
+		"@cdktf/provider-google.sccSource.SccSourceTimeoutsOutputReference",
 		reflect.TypeOf((*SccSourceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -370,7 +370,7 @@ func NewDataGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string
 	j := jsiiProxy_DataGoogleIamWorkloadIdentityPool{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -383,7 +383,7 @@ func NewDataGoogleIamWorkloadIdentityPool_Override(d DataGoogleIamWorkloadIdenti
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -494,7 +494,7 @@ func DataGoogleIamWorkloadIdentityPool_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -513,7 +513,7 @@ func DataGoogleIamWorkloadIdentityPool_IsTerraformDataSource(x interface{}) *boo
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -532,7 +532,7 @@ func DataGoogleIamWorkloadIdentityPool_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +545,7 @@ func DataGoogleIamWorkloadIdentityPool_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
+		"@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool",
 		"tfResourceType",
 		&returns,
 	)

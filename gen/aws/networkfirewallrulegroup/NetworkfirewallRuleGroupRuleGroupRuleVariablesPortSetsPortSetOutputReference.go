@@ -179,7 +179,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputRefer
 	j := jsiiProxy_NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference{}
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewNetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputRefer
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference",
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRuleVariablesPortSetsPortSetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)

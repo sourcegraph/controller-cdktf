@@ -222,7 +222,7 @@ func NewDataTfeVariablesTerraformOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataTfeVariablesTerraformOutputReference{}
 
 	_jsii_.Create(
-		"tfe.dataTfeVariables.DataTfeVariablesTerraformOutputReference",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewDataTfeVariablesTerraformOutputReference_Override(d DataTfeVariablesTerr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeVariables.DataTfeVariablesTerraformOutputReference",
+		"@cdktf/provider-tfe.dataTfeVariables.DataTfeVariablesTerraformOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

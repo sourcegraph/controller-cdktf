@@ -226,7 +226,7 @@ func NewGoogleCloudbuildv2ConnectionIamMemberConditionOutputReference(terraformR
 	j := jsiiProxy_GoogleCloudbuildv2ConnectionIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewGoogleCloudbuildv2ConnectionIamMemberConditionOutputReference_Override(g
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamMember.GoogleCloudbuildv2ConnectionIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

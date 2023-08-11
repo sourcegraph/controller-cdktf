@@ -324,7 +324,7 @@ func NewSqlDatabaseInstanceSettingsBackupConfigurationOutputReference(terraformR
 	j := jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -336,7 +336,7 @@ func NewSqlDatabaseInstanceSettingsBackupConfigurationOutputReference_Override(s
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
+		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

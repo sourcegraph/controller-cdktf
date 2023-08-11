@@ -579,7 +579,7 @@ func NewGoogleIamWorkforcePoolProvider(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleIamWorkforcePoolProvider{}
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -592,7 +592,7 @@ func NewGoogleIamWorkforcePoolProvider_Override(g GoogleIamWorkforcePoolProvider
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -791,7 +791,7 @@ func GoogleIamWorkforcePoolProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -810,7 +810,7 @@ func GoogleIamWorkforcePoolProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -829,7 +829,7 @@ func GoogleIamWorkforcePoolProvider_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -842,7 +842,7 @@ func GoogleIamWorkforcePoolProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
+		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProvider",
 		"tfResourceType",
 		&returns,
 	)

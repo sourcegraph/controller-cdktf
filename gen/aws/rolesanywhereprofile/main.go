@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.rolesanywhereProfile.RolesanywhereProfile",
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		reflect.TypeOf((*RolesanywhereProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -81,7 +81,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.rolesanywhereProfile.RolesanywhereProfileConfig",
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfileConfig",
 		reflect.TypeOf((*RolesanywhereProfileConfig)(nil)).Elem(),
 	)
 }

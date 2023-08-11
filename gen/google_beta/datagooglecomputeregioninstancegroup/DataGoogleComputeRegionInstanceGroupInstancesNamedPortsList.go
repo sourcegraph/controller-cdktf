@@ -104,7 +104,7 @@ func NewDataGoogleComputeRegionInstanceGroupInstancesNamedPortsList(terraformRes
 	j := jsiiProxy_DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataGoogleComputeRegionInstanceGroupInstancesNamedPortsList_Override(d D
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList",
+		"@cdktf/provider-google-beta.dataGoogleComputeRegionInstanceGroup.DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

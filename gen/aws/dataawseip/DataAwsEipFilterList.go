@@ -116,7 +116,7 @@ func NewDataAwsEipFilterList(terraformResource cdktf.IInterpolatingParent, terra
 	j := jsiiProxy_DataAwsEipFilterList{}
 
 	_jsii_.Create(
-		"aws.dataAwsEip.DataAwsEipFilterList",
+		"@cdktf/provider-aws.dataAwsEip.DataAwsEipFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDataAwsEipFilterList_Override(d DataAwsEipFilterList, terraformResource 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsEip.DataAwsEipFilterList",
+		"@cdktf/provider-aws.dataAwsEip.DataAwsEipFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

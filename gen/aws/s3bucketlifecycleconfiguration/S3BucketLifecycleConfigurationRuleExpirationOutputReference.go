@@ -228,7 +228,7 @@ func NewS3BucketLifecycleConfigurationRuleExpirationOutputReference(terraformRes
 	j := jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference{}
 
 	_jsii_.Create(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpirationOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpirationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewS3BucketLifecycleConfigurationRuleExpirationOutputReference_Override(s S
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpirationOutputReference",
+		"@cdktf/provider-aws.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpirationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScript",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
 		reflect.TypeOf((*WorkerScript)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -102,11 +102,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerScript.WorkerScriptAnalyticsEngineBinding",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBinding",
 		reflect.TypeOf((*WorkerScriptAnalyticsEngineBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingList",
 		reflect.TypeOf((*WorkerScriptAnalyticsEngineBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -127,7 +127,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptAnalyticsEngineBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -163,15 +163,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerScript.WorkerScriptConfig",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig",
 		reflect.TypeOf((*WorkerScriptConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerScript.WorkerScriptKvNamespaceBinding",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding",
 		reflect.TypeOf((*WorkerScriptKvNamespaceBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptKvNamespaceBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingList",
 		reflect.TypeOf((*WorkerScriptKvNamespaceBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -192,7 +192,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptKvNamespaceBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptKvNamespaceBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -228,11 +228,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerScript.WorkerScriptPlainTextBinding",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBinding",
 		reflect.TypeOf((*WorkerScriptPlainTextBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptPlainTextBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingList",
 		reflect.TypeOf((*WorkerScriptPlainTextBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -253,7 +253,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptPlainTextBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptPlainTextBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -289,11 +289,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerScript.WorkerScriptQueueBinding",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBinding",
 		reflect.TypeOf((*WorkerScriptQueueBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptQueueBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBindingList",
 		reflect.TypeOf((*WorkerScriptQueueBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -314,7 +314,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptQueueBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptQueueBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "binding", GoGetter: "Binding"},
@@ -350,11 +350,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerScript.WorkerScriptR2BucketBinding",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBinding",
 		reflect.TypeOf((*WorkerScriptR2BucketBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptR2BucketBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingList",
 		reflect.TypeOf((*WorkerScriptR2BucketBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -375,7 +375,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptR2BucketBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptR2BucketBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -411,11 +411,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerScript.WorkerScriptSecretTextBinding",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBinding",
 		reflect.TypeOf((*WorkerScriptSecretTextBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptSecretTextBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList",
 		reflect.TypeOf((*WorkerScriptSecretTextBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -436,7 +436,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptSecretTextBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptSecretTextBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -472,11 +472,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerScript.WorkerScriptServiceBinding",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBinding",
 		reflect.TypeOf((*WorkerScriptServiceBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptServiceBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBindingList",
 		reflect.TypeOf((*WorkerScriptServiceBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -497,7 +497,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptServiceBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptServiceBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -536,11 +536,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"cloudflare.workerScript.WorkerScriptWebassemblyBinding",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBinding",
 		reflect.TypeOf((*WorkerScriptWebassemblyBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptWebassemblyBindingList",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingList",
 		reflect.TypeOf((*WorkerScriptWebassemblyBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -561,7 +561,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"cloudflare.workerScript.WorkerScriptWebassemblyBindingOutputReference",
+		"@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptWebassemblyBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

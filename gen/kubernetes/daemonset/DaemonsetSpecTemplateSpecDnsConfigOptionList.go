@@ -116,7 +116,7 @@ func NewDaemonsetSpecTemplateSpecDnsConfigOptionList(terraformResource cdktf.IIn
 	j := jsiiProxy_DaemonsetSpecTemplateSpecDnsConfigOptionList{}
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDaemonsetSpecTemplateSpecDnsConfigOptionList_Override(d DaemonsetSpecTem
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.daemonset.DaemonsetSpecTemplateSpecDnsConfigOptionList",
+		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecDnsConfigOptionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

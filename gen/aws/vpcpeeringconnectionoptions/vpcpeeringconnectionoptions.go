@@ -367,7 +367,7 @@ func NewVpcPeeringConnectionOptions(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_VpcPeeringConnectionOptions{}
 
 	_jsii_.Create(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -380,7 +380,7 @@ func NewVpcPeeringConnectionOptions_Override(v VpcPeeringConnectionOptions, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
 		[]interface{}{scope, id, config},
 		v,
 	)
@@ -502,7 +502,7 @@ func VpcPeeringConnectionOptions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -521,7 +521,7 @@ func VpcPeeringConnectionOptions_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +540,7 @@ func VpcPeeringConnectionOptions_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -553,7 +553,7 @@ func VpcPeeringConnectionOptions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
+		"@cdktf/provider-aws.vpcPeeringConnectionOptions.VpcPeeringConnectionOptions",
 		"tfResourceType",
 		&returns,
 	)

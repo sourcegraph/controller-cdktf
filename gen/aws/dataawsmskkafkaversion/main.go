@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
+		"@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersion",
 		reflect.TypeOf((*DataAwsMskKafkaVersion)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersionConfig",
+		"@cdktf/provider-aws.dataAwsMskKafkaVersion.DataAwsMskKafkaVersionConfig",
 		reflect.TypeOf((*DataAwsMskKafkaVersionConfig)(nil)).Elem(),
 	)
 }

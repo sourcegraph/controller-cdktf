@@ -401,7 +401,7 @@ func NewCertificateSigningRequestV1(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_CertificateSigningRequestV1{}
 
 	_jsii_.Create(
-		"kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
+		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -414,7 +414,7 @@ func NewCertificateSigningRequestV1_Override(c CertificateSigningRequestV1, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
+		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -536,7 +536,7 @@ func CertificateSigningRequestV1_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
+		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func CertificateSigningRequestV1_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
+		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -574,7 +574,7 @@ func CertificateSigningRequestV1_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
+		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func CertificateSigningRequestV1_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
+		"@cdktf/provider-kubernetes.certificateSigningRequestV1.CertificateSigningRequestV1",
 		"tfResourceType",
 		&returns,
 	)

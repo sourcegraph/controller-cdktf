@@ -179,7 +179,7 @@ func NewGoogleDialogflowFulfillmentFeaturesOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleDialogflowFulfillmentFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentFeaturesOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleDialogflowFulfillmentFeaturesOutputReference_Override(g GoogleDial
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentFeaturesOutputReference",
+		"@cdktf/provider-google-beta.googleDialogflowFulfillment.GoogleDialogflowFulfillmentFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

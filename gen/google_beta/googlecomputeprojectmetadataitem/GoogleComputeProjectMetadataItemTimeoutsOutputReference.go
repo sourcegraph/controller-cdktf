@@ -228,7 +228,7 @@ func NewGoogleComputeProjectMetadataItemTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_GoogleComputeProjectMetadataItemTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeProjectMetadataItemTimeoutsOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

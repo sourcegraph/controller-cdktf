@@ -448,7 +448,7 @@ func NewDataFusionInstanceIamBinding(scope constructs.Construct, id *string, con
 	j := jsiiProxy_DataFusionInstanceIamBinding{}
 
 	_jsii_.Create(
-		"google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
+		"@cdktf/provider-google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewDataFusionInstanceIamBinding_Override(d DataFusionInstanceIamBinding, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
+		"@cdktf/provider-google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -627,7 +627,7 @@ func DataFusionInstanceIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
+		"@cdktf/provider-google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func DataFusionInstanceIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
+		"@cdktf/provider-google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func DataFusionInstanceIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
+		"@cdktf/provider-google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func DataFusionInstanceIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
+		"@cdktf/provider-google.dataFusionInstanceIamBinding.DataFusionInstanceIamBinding",
 		"tfResourceType",
 		&returns,
 	)

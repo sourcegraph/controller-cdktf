@@ -179,7 +179,7 @@ func NewComputeRegionDiskGuestOsFeaturesOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ComputeRegionDiskGuestOsFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"google.computeRegionDisk.ComputeRegionDiskGuestOsFeaturesOutputReference",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDiskGuestOsFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewComputeRegionDiskGuestOsFeaturesOutputReference_Override(c ComputeRegion
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeRegionDisk.ComputeRegionDiskGuestOsFeaturesOutputReference",
+		"@cdktf/provider-google.computeRegionDisk.ComputeRegionDiskGuestOsFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

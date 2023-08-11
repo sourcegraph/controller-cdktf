@@ -424,7 +424,7 @@ func NewContainerAnalysisNoteIamBinding(scope constructs.Construct, id *string, 
 	j := jsiiProxy_ContainerAnalysisNoteIamBinding{}
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -437,7 +437,7 @@ func NewContainerAnalysisNoteIamBinding_Override(c ContainerAnalysisNoteIamBindi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -592,7 +592,7 @@ func ContainerAnalysisNoteIamBinding_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func ContainerAnalysisNoteIamBinding_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func ContainerAnalysisNoteIamBinding_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func ContainerAnalysisNoteIamBinding_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
+		"@cdktf/provider-google.containerAnalysisNoteIamBinding.ContainerAnalysisNoteIamBinding",
 		"tfResourceType",
 		&returns,
 	)

@@ -300,7 +300,7 @@ func NewGoogleDataprocJobHiveConfigOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleDataprocJobHiveConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHiveConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHiveConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,7 +312,7 @@ func NewGoogleDataprocJobHiveConfigOutputReference_Override(g GoogleDataprocJobH
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataprocJob.GoogleDataprocJobHiveConfigOutputReference",
+		"@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHiveConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

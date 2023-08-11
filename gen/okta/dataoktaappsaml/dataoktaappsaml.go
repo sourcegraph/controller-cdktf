@@ -841,7 +841,7 @@ func NewDataOktaAppSaml(scope constructs.Construct, id *string, config *DataOkta
 	j := jsiiProxy_DataOktaAppSaml{}
 
 	_jsii_.Create(
-		"okta.dataOktaAppSaml.DataOktaAppSaml",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -854,7 +854,7 @@ func NewDataOktaAppSaml_Override(d DataOktaAppSaml, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"okta.dataOktaAppSaml.DataOktaAppSaml",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -1009,7 +1009,7 @@ func DataOktaAppSaml_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppSaml.DataOktaAppSaml",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1028,7 +1028,7 @@ func DataOktaAppSaml_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppSaml.DataOktaAppSaml",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -1047,7 +1047,7 @@ func DataOktaAppSaml_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"okta.dataOktaAppSaml.DataOktaAppSaml",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1060,7 +1060,7 @@ func DataOktaAppSaml_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"okta.dataOktaAppSaml.DataOktaAppSaml",
+		"@cdktf/provider-okta.dataOktaAppSaml.DataOktaAppSaml",
 		"tfResourceType",
 		&returns,
 	)

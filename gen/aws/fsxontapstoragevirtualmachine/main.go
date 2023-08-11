@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachine)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectoryConfiguration", GoGetter: "ActiveDirectoryConfiguration"},
@@ -83,11 +83,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfiguration",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfiguration",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineActiveDirectoryConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineActiveDirectoryConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,11 +126,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineActiveDirectoryConfigurationSelfManagedActiveDirectoryConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,19 +176,19 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineConfig",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineConfig",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpoints",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpoints",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsi",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsi",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsIscsi)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiList",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiList",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsIscsiList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -208,7 +208,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsIscsiOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -242,7 +242,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsList",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsList",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -262,11 +262,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsManagement",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsManagement",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsManagement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsManagementList",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsManagementList",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsManagementList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -286,7 +286,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsManagementOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsManagementOutputReference",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsManagementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -320,11 +320,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsNfs",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsNfs",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsNfs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsNfsList",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsNfsList",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsNfsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -344,7 +344,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsNfsOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsNfsOutputReference",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsNfsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -378,7 +378,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsOutputReference",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -414,11 +414,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsSmb",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsSmb",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsSmb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsSmbList",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsSmbList",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsSmbList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -438,7 +438,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsSmbOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineEndpointsSmbOutputReference",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineEndpointsSmbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -472,11 +472,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineTimeouts",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineTimeouts",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineTimeoutsOutputReference",
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachineTimeoutsOutputReference",
 		reflect.TypeOf((*FsxOntapStorageVirtualMachineTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

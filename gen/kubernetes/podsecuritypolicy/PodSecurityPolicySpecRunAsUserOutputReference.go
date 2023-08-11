@@ -203,7 +203,7 @@ func NewPodSecurityPolicySpecRunAsUserOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_PodSecurityPolicySpecRunAsUserOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPodSecurityPolicySpecRunAsUserOutputReference_Override(p PodSecurityPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserOutputReference",
+		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecRunAsUserOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

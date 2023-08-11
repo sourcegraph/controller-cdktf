@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.glueResourcePolicy.GlueResourcePolicy",
+		"@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicy",
 		reflect.TypeOf((*GlueResourcePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.glueResourcePolicy.GlueResourcePolicyConfig",
+		"@cdktf/provider-aws.glueResourcePolicy.GlueResourcePolicyConfig",
 		reflect.TypeOf((*GlueResourcePolicyConfig)(nil)).Elem(),
 	)
 }

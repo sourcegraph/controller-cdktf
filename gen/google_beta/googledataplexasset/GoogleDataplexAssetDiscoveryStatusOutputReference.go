@@ -222,7 +222,7 @@ func NewGoogleDataplexAssetDiscoveryStatusOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleDataplexAssetDiscoveryStatusOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatusOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,7 +234,7 @@ func NewGoogleDataplexAssetDiscoveryStatusOutputReference_Override(g GoogleDatap
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatusOutputReference",
+		"@cdktf/provider-google-beta.googleDataplexAsset.GoogleDataplexAssetDiscoveryStatusOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)

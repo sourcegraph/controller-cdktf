@@ -116,7 +116,7 @@ func NewComputeUrlMapHeaderActionResponseHeadersToAddList(terraformResource cdkt
 	j := jsiiProxy_ComputeUrlMapHeaderActionResponseHeadersToAddList{}
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapHeaderActionResponseHeadersToAddList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeUrlMapHeaderActionResponseHeadersToAddList_Override(c ComputeUrlM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeUrlMap.ComputeUrlMapHeaderActionResponseHeadersToAddList",
+		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapHeaderActionResponseHeadersToAddList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

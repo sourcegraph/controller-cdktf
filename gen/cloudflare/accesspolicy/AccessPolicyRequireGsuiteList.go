@@ -116,7 +116,7 @@ func NewAccessPolicyRequireGsuiteList(terraformResource cdktf.IInterpolatingPare
 	j := jsiiProxy_AccessPolicyRequireGsuiteList{}
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireGsuiteList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuiteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewAccessPolicyRequireGsuiteList_Override(a AccessPolicyRequireGsuiteList, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accessPolicy.AccessPolicyRequireGsuiteList",
+		"@cdktf/provider-cloudflare.accessPolicy.AccessPolicyRequireGsuiteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		a,
 	)

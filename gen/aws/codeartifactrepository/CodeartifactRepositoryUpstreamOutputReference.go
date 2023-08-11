@@ -179,7 +179,7 @@ func NewCodeartifactRepositoryUpstreamOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_CodeartifactRepositoryUpstreamOutputReference{}
 
 	_jsii_.Create(
-		"aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewCodeartifactRepositoryUpstreamOutputReference_Override(c CodeartifactRep
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference",
+		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)

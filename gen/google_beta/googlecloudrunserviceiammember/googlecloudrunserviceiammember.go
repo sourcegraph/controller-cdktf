@@ -448,7 +448,7 @@ func NewGoogleCloudRunServiceIamMember(scope constructs.Construct, id *string, c
 	j := jsiiProxy_GoogleCloudRunServiceIamMember{}
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -461,7 +461,7 @@ func NewGoogleCloudRunServiceIamMember_Override(g GoogleCloudRunServiceIamMember
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -627,7 +627,7 @@ func GoogleCloudRunServiceIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -646,7 +646,7 @@ func GoogleCloudRunServiceIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -665,7 +665,7 @@ func GoogleCloudRunServiceIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func GoogleCloudRunServiceIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
+		"@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -202,7 +202,7 @@ func NewWafregionalIpsetIpSetDescriptorOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_WafregionalIpsetIpSetDescriptorOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafregionalIpset.WafregionalIpsetIpSetDescriptorOutputReference",
+		"@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewWafregionalIpsetIpSetDescriptorOutputReference_Override(w WafregionalIps
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafregionalIpset.WafregionalIpsetIpSetDescriptorOutputReference",
+		"@cdktf/provider-aws.wafregionalIpset.WafregionalIpsetIpSetDescriptorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)

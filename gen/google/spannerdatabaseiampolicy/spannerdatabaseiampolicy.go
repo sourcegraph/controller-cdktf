@@ -400,7 +400,7 @@ func NewSpannerDatabaseIamPolicy(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_SpannerDatabaseIamPolicy{}
 
 	_jsii_.Create(
-		"google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
+		"@cdktf/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewSpannerDatabaseIamPolicy_Override(s SpannerDatabaseIamPolicy, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
+		"@cdktf/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -568,7 +568,7 @@ func SpannerDatabaseIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
+		"@cdktf/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -587,7 +587,7 @@ func SpannerDatabaseIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
+		"@cdktf/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +606,7 @@ func SpannerDatabaseIamPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
+		"@cdktf/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func SpannerDatabaseIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
+		"@cdktf/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy",
 		"tfResourceType",
 		&returns,
 	)

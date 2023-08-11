@@ -116,7 +116,7 @@ func NewQuicksightDataSourcePermissionList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_QuicksightDataSourcePermissionList{}
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourcePermissionList",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewQuicksightDataSourcePermissionList_Override(q QuicksightDataSourcePermis
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.quicksightDataSource.QuicksightDataSourcePermissionList",
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		q,
 	)

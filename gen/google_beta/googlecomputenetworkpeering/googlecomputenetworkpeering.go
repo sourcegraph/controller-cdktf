@@ -531,7 +531,7 @@ func NewGoogleComputeNetworkPeering(scope constructs.Construct, id *string, conf
 	j := jsiiProxy_GoogleComputeNetworkPeering{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -544,7 +544,7 @@ func NewGoogleComputeNetworkPeering_Override(g GoogleComputeNetworkPeering, scop
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -743,7 +743,7 @@ func GoogleComputeNetworkPeering_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -762,7 +762,7 @@ func GoogleComputeNetworkPeering_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -781,7 +781,7 @@ func GoogleComputeNetworkPeering_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -794,7 +794,7 @@ func GoogleComputeNetworkPeering_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
+		"@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering",
 		"tfResourceType",
 		&returns,
 	)

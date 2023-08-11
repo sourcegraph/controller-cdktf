@@ -494,7 +494,7 @@ func NewGuarddutyFilter(scope constructs.Construct, id *string, config *Guarddut
 	j := jsiiProxy_GuarddutyFilter{}
 
 	_jsii_.Create(
-		"aws.guarddutyFilter.GuarddutyFilter",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -507,7 +507,7 @@ func NewGuarddutyFilter_Override(g GuarddutyFilter, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyFilter.GuarddutyFilter",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -695,7 +695,7 @@ func GuarddutyFilter_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyFilter.GuarddutyFilter",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -714,7 +714,7 @@ func GuarddutyFilter_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyFilter.GuarddutyFilter",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -733,7 +733,7 @@ func GuarddutyFilter_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.guarddutyFilter.GuarddutyFilter",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -746,7 +746,7 @@ func GuarddutyFilter_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.guarddutyFilter.GuarddutyFilter",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
 		"tfResourceType",
 		&returns,
 	)

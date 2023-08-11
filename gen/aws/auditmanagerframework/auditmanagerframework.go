@@ -435,7 +435,7 @@ func NewAuditmanagerFramework(scope constructs.Construct, id *string, config *Au
 	j := jsiiProxy_AuditmanagerFramework{}
 
 	_jsii_.Create(
-		"aws.auditmanagerFramework.AuditmanagerFramework",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -448,7 +448,7 @@ func NewAuditmanagerFramework_Override(a AuditmanagerFramework, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.auditmanagerFramework.AuditmanagerFramework",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -592,7 +592,7 @@ func AuditmanagerFramework_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerFramework.AuditmanagerFramework",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -611,7 +611,7 @@ func AuditmanagerFramework_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerFramework.AuditmanagerFramework",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -630,7 +630,7 @@ func AuditmanagerFramework_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.auditmanagerFramework.AuditmanagerFramework",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -643,7 +643,7 @@ func AuditmanagerFramework_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.auditmanagerFramework.AuditmanagerFramework",
+		"@cdktf/provider-aws.auditmanagerFramework.AuditmanagerFramework",
 		"tfResourceType",
 		&returns,
 	)

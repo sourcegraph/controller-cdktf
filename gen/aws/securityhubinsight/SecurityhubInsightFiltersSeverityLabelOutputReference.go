@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersSeverityLabelOutputReference(terraformResource 
 	j := jsiiProxy_SecurityhubInsightFiltersSeverityLabelOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersSeverityLabelOutputReference_Override(s Securit
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersSeverityLabelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

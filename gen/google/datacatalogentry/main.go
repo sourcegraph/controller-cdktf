@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntry",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntry",
 		reflect.TypeOf((*DataCatalogEntry)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -92,11 +92,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpec",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpec",
 		reflect.TypeOf((*DataCatalogEntryBigqueryDateShardedSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecList",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecList",
 		reflect.TypeOf((*DataCatalogEntryBigqueryDateShardedSpecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -116,7 +116,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryDateShardedSpecOutputReference",
 		reflect.TypeOf((*DataCatalogEntryBigqueryDateShardedSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -151,11 +151,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpec",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpec",
 		reflect.TypeOf((*DataCatalogEntryBigqueryTableSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecList",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecList",
 		reflect.TypeOf((*DataCatalogEntryBigqueryTableSpecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -175,7 +175,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecOutputReference",
 		reflect.TypeOf((*DataCatalogEntryBigqueryTableSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -210,11 +210,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpec",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpec",
 		reflect.TypeOf((*DataCatalogEntryBigqueryTableSpecTableSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpecList",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpecList",
 		reflect.TypeOf((*DataCatalogEntryBigqueryTableSpecTableSpecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -234,7 +234,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecTableSpecOutputReference",
 		reflect.TypeOf((*DataCatalogEntryBigqueryTableSpecTableSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -267,11 +267,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpec",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpec",
 		reflect.TypeOf((*DataCatalogEntryBigqueryTableSpecViewSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpecList",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpecList",
 		reflect.TypeOf((*DataCatalogEntryBigqueryTableSpecViewSpecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -291,7 +291,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpecOutputReference",
 		reflect.TypeOf((*DataCatalogEntryBigqueryTableSpecViewSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -324,15 +324,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogEntry.DataCatalogEntryConfig",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryConfig",
 		reflect.TypeOf((*DataCatalogEntryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpec",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpec",
 		reflect.TypeOf((*DataCatalogEntryGcsFilesetSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecOutputReference",
 		reflect.TypeOf((*DataCatalogEntryGcsFilesetSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -367,11 +367,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecs",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecs",
 		reflect.TypeOf((*DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList",
 		reflect.TypeOf((*DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -391,7 +391,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference",
 		reflect.TypeOf((*DataCatalogEntryGcsFilesetSpecSampleGcsFileSpecsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -425,11 +425,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google.dataCatalogEntry.DataCatalogEntryTimeouts",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryTimeouts",
 		reflect.TypeOf((*DataCatalogEntryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google.dataCatalogEntry.DataCatalogEntryTimeoutsOutputReference",
+		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryTimeoutsOutputReference",
 		reflect.TypeOf((*DataCatalogEntryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

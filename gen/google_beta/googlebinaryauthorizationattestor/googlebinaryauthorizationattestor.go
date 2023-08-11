@@ -414,7 +414,7 @@ func NewGoogleBinaryAuthorizationAttestor(scope constructs.Construct, id *string
 	j := jsiiProxy_GoogleBinaryAuthorizationAttestor{}
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -427,7 +427,7 @@ func NewGoogleBinaryAuthorizationAttestor_Override(g GoogleBinaryAuthorizationAt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -571,7 +571,7 @@ func GoogleBinaryAuthorizationAttestor_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -590,7 +590,7 @@ func GoogleBinaryAuthorizationAttestor_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -609,7 +609,7 @@ func GoogleBinaryAuthorizationAttestor_IsTerraformResource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -622,7 +622,7 @@ func GoogleBinaryAuthorizationAttestor_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
+		"@cdktf/provider-google-beta.googleBinaryAuthorizationAttestor.GoogleBinaryAuthorizationAttestor",
 		"tfResourceType",
 		&returns,
 	)

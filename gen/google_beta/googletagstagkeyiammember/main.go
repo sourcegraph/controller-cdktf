@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMember",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMember",
 		reflect.TypeOf((*GoogleTagsTagKeyIamMember)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -66,11 +66,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMemberCondition",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMemberCondition",
 		reflect.TypeOf((*GoogleTagsTagKeyIamMemberCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMemberConditionOutputReference",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMemberConditionOutputReference",
 		reflect.TypeOf((*GoogleTagsTagKeyIamMemberConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -109,7 +109,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMemberConfig",
+		"@cdktf/provider-google-beta.googleTagsTagKeyIamMember.GoogleTagsTagKeyIamMemberConfig",
 		reflect.TypeOf((*GoogleTagsTagKeyIamMemberConfig)(nil)).Elem(),
 	)
 }

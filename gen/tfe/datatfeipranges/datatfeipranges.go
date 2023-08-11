@@ -312,7 +312,7 @@ func NewDataTfeIpRanges(scope constructs.Construct, id *string, config *DataTfeI
 	j := jsiiProxy_DataTfeIpRanges{}
 
 	_jsii_.Create(
-		"tfe.dataTfeIpRanges.DataTfeIpRanges",
+		"@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -325,7 +325,7 @@ func NewDataTfeIpRanges_Override(d DataTfeIpRanges, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"tfe.dataTfeIpRanges.DataTfeIpRanges",
+		"@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -414,7 +414,7 @@ func DataTfeIpRanges_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeIpRanges.DataTfeIpRanges",
+		"@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -433,7 +433,7 @@ func DataTfeIpRanges_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeIpRanges.DataTfeIpRanges",
+		"@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -452,7 +452,7 @@ func DataTfeIpRanges_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"tfe.dataTfeIpRanges.DataTfeIpRanges",
+		"@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -465,7 +465,7 @@ func DataTfeIpRanges_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"tfe.dataTfeIpRanges.DataTfeIpRanges",
+		"@cdktf/provider-tfe.dataTfeIpRanges.DataTfeIpRanges",
 		"tfResourceType",
 		&returns,
 	)

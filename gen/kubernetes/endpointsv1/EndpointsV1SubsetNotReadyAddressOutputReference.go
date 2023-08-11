@@ -227,7 +227,7 @@ func NewEndpointsV1SubsetNotReadyAddressOutputReference(terraformResource cdktf.
 	j := jsiiProxy_EndpointsV1SubsetNotReadyAddressOutputReference{}
 
 	_jsii_.Create(
-		"kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressOutputReference",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewEndpointsV1SubsetNotReadyAddressOutputReference_Override(e EndpointsV1Su
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressOutputReference",
+		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetNotReadyAddressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

@@ -416,7 +416,7 @@ func NewDataGoogleMonitoringIstioCanonicalService(scope constructs.Construct, id
 	j := jsiiProxy_DataGoogleMonitoringIstioCanonicalService{}
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -429,7 +429,7 @@ func NewDataGoogleMonitoringIstioCanonicalService_Override(d DataGoogleMonitorin
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -562,7 +562,7 @@ func DataGoogleMonitoringIstioCanonicalService_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -581,7 +581,7 @@ func DataGoogleMonitoringIstioCanonicalService_IsTerraformDataSource(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func DataGoogleMonitoringIstioCanonicalService_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -613,7 +613,7 @@ func DataGoogleMonitoringIstioCanonicalService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
+		"@cdktf/provider-google.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService",
 		"tfResourceType",
 		&returns,
 	)

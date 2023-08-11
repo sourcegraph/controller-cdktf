@@ -203,7 +203,7 @@ func NewPubsubLiteTopicPartitionConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_PubsubLiteTopicPartitionConfigOutputReference{}
 
 	_jsii_.Create(
-		"google.pubsubLiteTopic.PubsubLiteTopicPartitionConfigOutputReference",
+		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicPartitionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewPubsubLiteTopicPartitionConfigOutputReference_Override(p PubsubLiteTopic
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.pubsubLiteTopic.PubsubLiteTopicPartitionConfigOutputReference",
+		"@cdktf/provider-google.pubsubLiteTopic.PubsubLiteTopicPartitionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)

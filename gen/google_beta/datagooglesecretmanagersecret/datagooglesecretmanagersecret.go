@@ -403,7 +403,7 @@ func NewDataGoogleSecretManagerSecret(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataGoogleSecretManagerSecret{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -416,7 +416,7 @@ func NewDataGoogleSecretManagerSecret_Override(d DataGoogleSecretManagerSecret, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -527,7 +527,7 @@ func DataGoogleSecretManagerSecret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataGoogleSecretManagerSecret_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -565,7 +565,7 @@ func DataGoogleSecretManagerSecret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -578,7 +578,7 @@ func DataGoogleSecretManagerSecret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
+		"@cdktf/provider-google-beta.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret",
 		"tfResourceType",
 		&returns,
 	)

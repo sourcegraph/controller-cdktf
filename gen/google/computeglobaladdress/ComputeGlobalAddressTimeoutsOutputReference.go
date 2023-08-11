@@ -204,7 +204,7 @@ func NewComputeGlobalAddressTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ComputeGlobalAddressTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google.computeGlobalAddress.ComputeGlobalAddressTimeoutsOutputReference",
+		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddressTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -216,7 +216,7 @@ func NewComputeGlobalAddressTimeoutsOutputReference_Override(c ComputeGlobalAddr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeGlobalAddress.ComputeGlobalAddressTimeoutsOutputReference",
+		"@cdktf/provider-google.computeGlobalAddress.ComputeGlobalAddressTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)

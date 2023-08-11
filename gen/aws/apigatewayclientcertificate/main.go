@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
+		"@cdktf/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificate",
 		reflect.TypeOf((*ApiGatewayClientCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,7 +68,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig",
+		"@cdktf/provider-aws.apiGatewayClientCertificate.ApiGatewayClientCertificateConfig",
 		reflect.TypeOf((*ApiGatewayClientCertificateConfig)(nil)).Elem(),
 	)
 }

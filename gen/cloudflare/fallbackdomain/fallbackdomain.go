@@ -366,7 +366,7 @@ func NewFallbackDomain(scope constructs.Construct, id *string, config *FallbackD
 	j := jsiiProxy_FallbackDomain{}
 
 	_jsii_.Create(
-		"cloudflare.fallbackDomain.FallbackDomain",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewFallbackDomain_Override(f FallbackDomain, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.fallbackDomain.FallbackDomain",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		[]interface{}{scope, id, config},
 		f,
 	)
@@ -512,7 +512,7 @@ func FallbackDomain_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.fallbackDomain.FallbackDomain",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func FallbackDomain_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.fallbackDomain.FallbackDomain",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func FallbackDomain_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.fallbackDomain.FallbackDomain",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func FallbackDomain_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.fallbackDomain.FallbackDomain",
+		"@cdktf/provider-cloudflare.fallbackDomain.FallbackDomain",
 		"tfResourceType",
 		&returns,
 	)

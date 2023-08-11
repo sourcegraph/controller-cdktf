@@ -179,7 +179,7 @@ func NewLbListenerRuleConditionPathPatternOutputReference(terraformResource cdkt
 	j := jsiiProxy_LbListenerRuleConditionPathPatternOutputReference{}
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewLbListenerRuleConditionPathPatternOutputReference_Override(l LbListenerR
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference",
+		"@cdktf/provider-aws.lbListenerRule.LbListenerRuleConditionPathPatternOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

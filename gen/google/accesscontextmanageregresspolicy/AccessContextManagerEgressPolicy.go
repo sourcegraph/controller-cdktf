@@ -366,7 +366,7 @@ func NewAccessContextManagerEgressPolicy(scope constructs.Construct, id *string,
 	j := jsiiProxy_AccessContextManagerEgressPolicy{}
 
 	_jsii_.Create(
-		"google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
+		"@cdktf/provider-google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -379,7 +379,7 @@ func NewAccessContextManagerEgressPolicy_Override(a AccessContextManagerEgressPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
+		"@cdktf/provider-google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -512,7 +512,7 @@ func AccessContextManagerEgressPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
+		"@cdktf/provider-google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -531,7 +531,7 @@ func AccessContextManagerEgressPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
+		"@cdktf/provider-google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func AccessContextManagerEgressPolicy_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
+		"@cdktf/provider-google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -563,7 +563,7 @@ func AccessContextManagerEgressPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
+		"@cdktf/provider-google.accessContextManagerEgressPolicy.AccessContextManagerEgressPolicy",
 		"tfResourceType",
 		&returns,
 	)

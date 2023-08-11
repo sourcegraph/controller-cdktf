@@ -450,7 +450,7 @@ func NewGoogleIdentityPlatformTenant(scope constructs.Construct, id *string, con
 	j := jsiiProxy_GoogleIdentityPlatformTenant{}
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -463,7 +463,7 @@ func NewGoogleIdentityPlatformTenant_Override(g GoogleIdentityPlatformTenant, sc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -629,7 +629,7 @@ func GoogleIdentityPlatformTenant_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -648,7 +648,7 @@ func GoogleIdentityPlatformTenant_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -667,7 +667,7 @@ func GoogleIdentityPlatformTenant_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -680,7 +680,7 @@ func GoogleIdentityPlatformTenant_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
+		"@cdktf/provider-google-beta.googleIdentityPlatformTenant.GoogleIdentityPlatformTenant",
 		"tfResourceType",
 		&returns,
 	)

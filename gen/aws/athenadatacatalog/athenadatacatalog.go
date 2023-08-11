@@ -447,7 +447,7 @@ func NewAthenaDataCatalog(scope constructs.Construct, id *string, config *Athena
 	j := jsiiProxy_AthenaDataCatalog{}
 
 	_jsii_.Create(
-		"aws.athenaDataCatalog.AthenaDataCatalog",
+		"@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewAthenaDataCatalog_Override(a AthenaDataCatalog, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.athenaDataCatalog.AthenaDataCatalog",
+		"@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -637,7 +637,7 @@ func AthenaDataCatalog_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaDataCatalog.AthenaDataCatalog",
+		"@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -656,7 +656,7 @@ func AthenaDataCatalog_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaDataCatalog.AthenaDataCatalog",
+		"@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -675,7 +675,7 @@ func AthenaDataCatalog_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.athenaDataCatalog.AthenaDataCatalog",
+		"@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -688,7 +688,7 @@ func AthenaDataCatalog_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.athenaDataCatalog.AthenaDataCatalog",
+		"@cdktf/provider-aws.athenaDataCatalog.AthenaDataCatalog",
 		"tfResourceType",
 		&returns,
 	)

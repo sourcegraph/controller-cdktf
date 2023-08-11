@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.sesTemplate.SesTemplate",
+		"@cdktf/provider-aws.sesTemplate.SesTemplate",
 		reflect.TypeOf((*SesTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,7 +67,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.sesTemplate.SesTemplateConfig",
+		"@cdktf/provider-aws.sesTemplate.SesTemplateConfig",
 		reflect.TypeOf((*SesTemplateConfig)(nil)).Elem(),
 	)
 }

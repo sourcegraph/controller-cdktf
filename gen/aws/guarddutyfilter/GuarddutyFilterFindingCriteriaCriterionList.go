@@ -116,7 +116,7 @@ func NewGuarddutyFilterFindingCriteriaCriterionList(terraformResource cdktf.IInt
 	j := jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList{}
 
 	_jsii_.Create(
-		"aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionList",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGuarddutyFilterFindingCriteriaCriterionList_Override(g GuarddutyFilterFi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionList",
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilterFindingCriteriaCriterionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

@@ -541,7 +541,7 @@ func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclC
 	j := jsiiProxy_Wafv2WebAcl{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAcl",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -554,7 +554,7 @@ func NewWafv2WebAcl_Override(w Wafv2WebAcl, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAcl",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl",
 		[]interface{}{scope, id, config},
 		w,
 	)
@@ -720,7 +720,7 @@ func Wafv2WebAcl_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafv2WebAcl.Wafv2WebAcl",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -739,7 +739,7 @@ func Wafv2WebAcl_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafv2WebAcl.Wafv2WebAcl",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -758,7 +758,7 @@ func Wafv2WebAcl_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.wafv2WebAcl.Wafv2WebAcl",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func Wafv2WebAcl_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.wafv2WebAcl.Wafv2WebAcl",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl",
 		"tfResourceType",
 		&returns,
 	)

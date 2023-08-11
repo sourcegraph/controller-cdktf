@@ -447,7 +447,7 @@ func NewBigtableTableIamMember(scope constructs.Construct, id *string, config *B
 	j := jsiiProxy_BigtableTableIamMember{}
 
 	_jsii_.Create(
-		"google.bigtableTableIamMember.BigtableTableIamMember",
+		"@cdktf/provider-google.bigtableTableIamMember.BigtableTableIamMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -460,7 +460,7 @@ func NewBigtableTableIamMember_Override(b BigtableTableIamMember, scope construc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.bigtableTableIamMember.BigtableTableIamMember",
+		"@cdktf/provider-google.bigtableTableIamMember.BigtableTableIamMember",
 		[]interface{}{scope, id, config},
 		b,
 	)
@@ -626,7 +626,7 @@ func BigtableTableIamMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigtableTableIamMember.BigtableTableIamMember",
+		"@cdktf/provider-google.bigtableTableIamMember.BigtableTableIamMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -645,7 +645,7 @@ func BigtableTableIamMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigtableTableIamMember.BigtableTableIamMember",
+		"@cdktf/provider-google.bigtableTableIamMember.BigtableTableIamMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -664,7 +664,7 @@ func BigtableTableIamMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.bigtableTableIamMember.BigtableTableIamMember",
+		"@cdktf/provider-google.bigtableTableIamMember.BigtableTableIamMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -677,7 +677,7 @@ func BigtableTableIamMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.bigtableTableIamMember.BigtableTableIamMember",
+		"@cdktf/provider-google.bigtableTableIamMember.BigtableTableIamMember",
 		"tfResourceType",
 		&returns,
 	)

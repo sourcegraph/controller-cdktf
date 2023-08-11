@@ -116,7 +116,7 @@ func NewCloudfrontDistributionOriginCustomHeaderList(terraformResource cdktf.IIn
 	j := jsiiProxy_CloudfrontDistributionOriginCustomHeaderList{}
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomHeaderList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewCloudfrontDistributionOriginCustomHeaderList_Override(c CloudfrontDistri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomHeaderList",
+		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

@@ -104,7 +104,7 @@ func NewDataAwsCloudformationTypeLoggingConfigList(terraformResource cdktf.IInte
 	j := jsiiProxy_DataAwsCloudformationTypeLoggingConfigList{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigList",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -116,7 +116,7 @@ func NewDataAwsCloudformationTypeLoggingConfigList_Override(d DataAwsCloudformat
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigList",
+		"@cdktf/provider-aws.dataAwsCloudformationType.DataAwsCloudformationTypeLoggingConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

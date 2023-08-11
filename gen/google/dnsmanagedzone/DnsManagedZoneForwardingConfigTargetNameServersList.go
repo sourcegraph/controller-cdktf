@@ -116,7 +116,7 @@ func NewDnsManagedZoneForwardingConfigTargetNameServersList(terraformResource cd
 	j := jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersList{}
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewDnsManagedZoneForwardingConfigTargetNameServersList_Override(d DnsManage
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList",
+		"@cdktf/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)

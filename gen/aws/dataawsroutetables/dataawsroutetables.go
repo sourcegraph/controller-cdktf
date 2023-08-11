@@ -375,7 +375,7 @@ func NewDataAwsRouteTables(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsRouteTables{}
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTables.DataAwsRouteTables",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -388,7 +388,7 @@ func NewDataAwsRouteTables_Override(d DataAwsRouteTables, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsRouteTables.DataAwsRouteTables",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -499,7 +499,7 @@ func DataAwsRouteTables_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRouteTables.DataAwsRouteTables",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -518,7 +518,7 @@ func DataAwsRouteTables_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRouteTables.DataAwsRouteTables",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -537,7 +537,7 @@ func DataAwsRouteTables_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsRouteTables.DataAwsRouteTables",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -550,7 +550,7 @@ func DataAwsRouteTables_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsRouteTables.DataAwsRouteTables",
+		"@cdktf/provider-aws.dataAwsRouteTables.DataAwsRouteTables",
 		"tfResourceType",
 		&returns,
 	)

@@ -116,7 +116,7 @@ func NewComputeInstanceGroupManagerNamedPortList(terraformResource cdktf.IInterp
 	j := jsiiProxy_ComputeInstanceGroupManagerNamedPortList{}
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewComputeInstanceGroupManagerNamedPortList_Override(c ComputeInstanceGroup
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList",
+		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)

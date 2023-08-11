@@ -412,7 +412,7 @@ func NewKmsCustomKeyStore(scope constructs.Construct, id *string, config *KmsCus
 	j := jsiiProxy_KmsCustomKeyStore{}
 
 	_jsii_.Create(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStore",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -425,7 +425,7 @@ func NewKmsCustomKeyStore_Override(k KmsCustomKeyStore, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStore",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		[]interface{}{scope, id, config},
 		k,
 	)
@@ -580,7 +580,7 @@ func KmsCustomKeyStore_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStore",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -599,7 +599,7 @@ func KmsCustomKeyStore_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStore",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -618,7 +618,7 @@ func KmsCustomKeyStore_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStore",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -631,7 +631,7 @@ func KmsCustomKeyStore_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.kmsCustomKeyStore.KmsCustomKeyStore",
+		"@cdktf/provider-aws.kmsCustomKeyStore.KmsCustomKeyStore",
 		"tfResourceType",
 		&returns,
 	)

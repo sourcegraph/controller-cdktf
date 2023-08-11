@@ -380,7 +380,7 @@ func NewDataAwsLexBotAlias(scope constructs.Construct, id *string, config *DataA
 	j := jsiiProxy_DataAwsLexBotAlias{}
 
 	_jsii_.Create(
-		"aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
+		"@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -393,7 +393,7 @@ func NewDataAwsLexBotAlias_Override(d DataAwsLexBotAlias, scope constructs.Const
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
+		"@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -504,7 +504,7 @@ func DataAwsLexBotAlias_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
+		"@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +523,7 @@ func DataAwsLexBotAlias_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
+		"@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -542,7 +542,7 @@ func DataAwsLexBotAlias_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
+		"@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -555,7 +555,7 @@ func DataAwsLexBotAlias_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
+		"@cdktf/provider-aws.dataAwsLexBotAlias.DataAwsLexBotAlias",
 		"tfResourceType",
 		&returns,
 	)

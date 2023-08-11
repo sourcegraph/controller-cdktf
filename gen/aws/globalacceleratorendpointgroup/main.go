@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroup",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -91,15 +91,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupConfig",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupConfig",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfiguration",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfiguration",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupEndpointConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationList",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationList",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupEndpointConfigurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -120,7 +120,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupEndpointConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientIpPreservationEnabled", GoGetter: "ClientIpPreservationEnabled"},
@@ -161,11 +161,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverride",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverride",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupPortOverride)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideList",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideList",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupPortOverrideList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -186,7 +186,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideOutputReference",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupPortOverrideOutputReference",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupPortOverrideOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,11 +222,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeouts",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeouts",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeoutsOutputReference",
+		"@cdktf/provider-aws.globalacceleratorEndpointGroup.GlobalacceleratorEndpointGroupTimeoutsOutputReference",
 		reflect.TypeOf((*GlobalacceleratorEndpointGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

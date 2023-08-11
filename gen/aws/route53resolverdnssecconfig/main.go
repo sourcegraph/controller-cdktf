@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
+		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfig",
 		reflect.TypeOf((*Route53ResolverDnssecConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -60,7 +60,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig",
+		"@cdktf/provider-aws.route53ResolverDnssecConfig.Route53ResolverDnssecConfigConfig",
 		reflect.TypeOf((*Route53ResolverDnssecConfigConfig)(nil)).Elem(),
 	)
 }

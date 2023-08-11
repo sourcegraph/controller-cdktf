@@ -228,7 +228,7 @@ func NewGoogleComputeDiskTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_GoogleComputeDiskTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDiskTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleComputeDiskTimeoutsOutputReference_Override(g GoogleComputeDiskTim
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleComputeDisk.GoogleComputeDiskTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

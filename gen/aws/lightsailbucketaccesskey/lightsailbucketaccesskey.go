@@ -363,7 +363,7 @@ func NewLightsailBucketAccessKey(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_LightsailBucketAccessKey{}
 
 	_jsii_.Create(
-		"aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
+		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -376,7 +376,7 @@ func NewLightsailBucketAccessKey_Override(l LightsailBucketAccessKey, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
+		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -498,7 +498,7 @@ func LightsailBucketAccessKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
+		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -517,7 +517,7 @@ func LightsailBucketAccessKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
+		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -536,7 +536,7 @@ func LightsailBucketAccessKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
+		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -549,7 +549,7 @@ func LightsailBucketAccessKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
+		"@cdktf/provider-aws.lightsailBucketAccessKey.LightsailBucketAccessKey",
 		"tfResourceType",
 		&returns,
 	)

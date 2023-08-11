@@ -337,7 +337,7 @@ func NewDataGoogleProjectService(scope constructs.Construct, id *string, config 
 	j := jsiiProxy_DataGoogleProjectService{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProjectService.DataGoogleProjectService",
+		"@cdktf/provider-google-beta.dataGoogleProjectService.DataGoogleProjectService",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -350,7 +350,7 @@ func NewDataGoogleProjectService_Override(d DataGoogleProjectService, scope cons
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleProjectService.DataGoogleProjectService",
+		"@cdktf/provider-google-beta.dataGoogleProjectService.DataGoogleProjectService",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -461,7 +461,7 @@ func DataGoogleProjectService_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleProjectService.DataGoogleProjectService",
+		"@cdktf/provider-google-beta.dataGoogleProjectService.DataGoogleProjectService",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -480,7 +480,7 @@ func DataGoogleProjectService_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleProjectService.DataGoogleProjectService",
+		"@cdktf/provider-google-beta.dataGoogleProjectService.DataGoogleProjectService",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -499,7 +499,7 @@ func DataGoogleProjectService_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleProjectService.DataGoogleProjectService",
+		"@cdktf/provider-google-beta.dataGoogleProjectService.DataGoogleProjectService",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -512,7 +512,7 @@ func DataGoogleProjectService_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleProjectService.DataGoogleProjectService",
+		"@cdktf/provider-google-beta.dataGoogleProjectService.DataGoogleProjectService",
 		"tfResourceType",
 		&returns,
 	)

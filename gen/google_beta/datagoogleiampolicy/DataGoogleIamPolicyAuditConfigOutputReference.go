@@ -202,7 +202,7 @@ func NewDataGoogleIamPolicyAuditConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewDataGoogleIamPolicyAuditConfigOutputReference_Override(d DataGoogleIamPo
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

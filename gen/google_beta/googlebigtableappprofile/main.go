@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfile",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfile",
 		reflect.TypeOf((*GoogleBigtableAppProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -84,15 +84,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileConfig",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileConfig",
 		reflect.TypeOf((*GoogleBigtableAppProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileSingleClusterRouting",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileSingleClusterRouting",
 		reflect.TypeOf((*GoogleBigtableAppProfileSingleClusterRouting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileSingleClusterRoutingOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileSingleClusterRoutingOutputReference",
 		reflect.TypeOf((*GoogleBigtableAppProfileSingleClusterRoutingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowTransactionalWrites", GoGetter: "AllowTransactionalWrites"},
@@ -129,11 +129,11 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileTimeouts",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileTimeouts",
 		reflect.TypeOf((*GoogleBigtableAppProfileTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleBigtableAppProfile.GoogleBigtableAppProfileTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleBigtableAppProfileTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

@@ -180,7 +180,7 @@ func NewGoogleContainerClusterNodePoolAutoConfigOutputReference(terraformResourc
 	j := jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNodePoolAutoConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolAutoConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewGoogleContainerClusterNodePoolAutoConfigOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerCluster.GoogleContainerClusterNodePoolAutoConfigOutputReference",
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolAutoConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

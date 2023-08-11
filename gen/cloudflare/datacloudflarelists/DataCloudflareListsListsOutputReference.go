@@ -211,7 +211,7 @@ func NewDataCloudflareListsListsOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataCloudflareListsListsOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLists.DataCloudflareListsListsOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsListsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -223,7 +223,7 @@ func NewDataCloudflareListsListsOutputReference_Override(d DataCloudflareListsLi
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.dataCloudflareLists.DataCloudflareListsListsOutputReference",
+		"@cdktf/provider-cloudflare.dataCloudflareLists.DataCloudflareListsListsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

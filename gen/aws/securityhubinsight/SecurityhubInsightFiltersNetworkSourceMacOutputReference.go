@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersNetworkSourceMacOutputReference(terraformResour
 	j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceMacOutputReference{}
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewSecurityhubInsightFiltersNetworkSourceMacOutputReference_Override(s Secu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference",
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceMacOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

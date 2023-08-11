@@ -389,7 +389,7 @@ func NewAccountMember(scope constructs.Construct, id *string, config *AccountMem
 	j := jsiiProxy_AccountMember{}
 
 	_jsii_.Create(
-		"cloudflare.accountMember.AccountMember",
+		"@cdktf/provider-cloudflare.accountMember.AccountMember",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -402,7 +402,7 @@ func NewAccountMember_Override(a AccountMember, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.accountMember.AccountMember",
+		"@cdktf/provider-cloudflare.accountMember.AccountMember",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -557,7 +557,7 @@ func AccountMember_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accountMember.AccountMember",
+		"@cdktf/provider-cloudflare.accountMember.AccountMember",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func AccountMember_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accountMember.AccountMember",
+		"@cdktf/provider-cloudflare.accountMember.AccountMember",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func AccountMember_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"cloudflare.accountMember.AccountMember",
+		"@cdktf/provider-cloudflare.accountMember.AccountMember",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func AccountMember_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"cloudflare.accountMember.AccountMember",
+		"@cdktf/provider-cloudflare.accountMember.AccountMember",
 		"tfResourceType",
 		&returns,
 	)

@@ -227,7 +227,7 @@ func NewEmailRoutingRuleMatcherOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EmailRoutingRuleMatcherOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -239,7 +239,7 @@ func NewEmailRoutingRuleMatcherOutputReference_Override(e EmailRoutingRuleMatche
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference",
+		"@cdktf/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatcherOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)

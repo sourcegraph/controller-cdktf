@@ -672,7 +672,7 @@ func NewMedialiveChannel(scope constructs.Construct, id *string, config *Mediali
 	j := jsiiProxy_MedialiveChannel{}
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannel",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -685,7 +685,7 @@ func NewMedialiveChannel_Override(m MedialiveChannel, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.medialiveChannel.MedialiveChannel",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		[]interface{}{scope, id, config},
 		m,
 	)
@@ -873,7 +873,7 @@ func MedialiveChannel_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveChannel.MedialiveChannel",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -892,7 +892,7 @@ func MedialiveChannel_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveChannel.MedialiveChannel",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -911,7 +911,7 @@ func MedialiveChannel_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.medialiveChannel.MedialiveChannel",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -924,7 +924,7 @@ func MedialiveChannel_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.medialiveChannel.MedialiveChannel",
+		"@cdktf/provider-aws.medialiveChannel.MedialiveChannel",
 		"tfResourceType",
 		&returns,
 	)

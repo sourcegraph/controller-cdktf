@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
+		"@cdktf/provider-google-beta.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet",
 		reflect.TypeOf((*DataGoogleDnsRecordSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -62,7 +62,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig",
+		"@cdktf/provider-google-beta.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig",
 		reflect.TypeOf((*DataGoogleDnsRecordSetConfig)(nil)).Elem(),
 	)
 }

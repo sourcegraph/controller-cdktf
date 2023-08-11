@@ -373,7 +373,7 @@ func NewDataAwsCloudwatchLogDataProtectionPolicyDocument(scope constructs.Constr
 	j := jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument{}
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,7 +386,7 @@ func NewDataAwsCloudwatchLogDataProtectionPolicyDocument_Override(d DataAwsCloud
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -508,7 +508,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsConstruct(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +527,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformDataSource(x in
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -546,7 +546,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformElement(x inter
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -559,7 +559,7 @@ func DataAwsCloudwatchLogDataProtectionPolicyDocument_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
+		"@cdktf/provider-aws.dataAwsCloudwatchLogDataProtectionPolicyDocument.DataAwsCloudwatchLogDataProtectionPolicyDocument",
 		"tfResourceType",
 		&returns,
 	)

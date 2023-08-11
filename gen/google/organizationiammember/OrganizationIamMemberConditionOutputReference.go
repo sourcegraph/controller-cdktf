@@ -226,7 +226,7 @@ func NewOrganizationIamMemberConditionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_OrganizationIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"google.organizationIamMember.OrganizationIamMemberConditionOutputReference",
+		"@cdktf/provider-google.organizationIamMember.OrganizationIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -238,7 +238,7 @@ func NewOrganizationIamMemberConditionOutputReference_Override(o OrganizationIam
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.organizationIamMember.OrganizationIamMemberConditionOutputReference",
+		"@cdktf/provider-google.organizationIamMember.OrganizationIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)

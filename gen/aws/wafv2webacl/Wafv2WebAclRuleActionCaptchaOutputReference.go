@@ -180,7 +180,7 @@ func NewWafv2WebAclRuleActionCaptchaOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference{}
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewWafv2WebAclRuleActionCaptchaOutputReference_Override(w Wafv2WebAclRuleAc
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaOutputReference",
+		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)

@@ -228,7 +228,7 @@ func NewGoogleContainerAwsNodePoolTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_GoogleContainerAwsNodePoolTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleContainerAwsNodePoolTimeoutsOutputReference_Override(g GoogleConta
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

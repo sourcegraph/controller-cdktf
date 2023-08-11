@@ -180,7 +180,7 @@ func NewDatasyncTaskTimeoutsOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DatasyncTaskTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"aws.datasyncTask.DatasyncTaskTimeoutsOutputReference",
+		"@cdktf/provider-aws.datasyncTask.DatasyncTaskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewDatasyncTaskTimeoutsOutputReference_Override(d DatasyncTaskTimeoutsOutpu
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.datasyncTask.DatasyncTaskTimeoutsOutputReference",
+		"@cdktf/provider-aws.datasyncTask.DatasyncTaskTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)

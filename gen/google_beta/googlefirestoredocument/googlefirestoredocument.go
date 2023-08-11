@@ -481,7 +481,7 @@ func NewGoogleFirestoreDocument(scope constructs.Construct, id *string, config *
 	j := jsiiProxy_GoogleFirestoreDocument{}
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
+		"@cdktf/provider-google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -494,7 +494,7 @@ func NewGoogleFirestoreDocument_Override(g GoogleFirestoreDocument, scope constr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
+		"@cdktf/provider-google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
 		[]interface{}{scope, id, config},
 		g,
 	)
@@ -660,7 +660,7 @@ func GoogleFirestoreDocument_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
+		"@cdktf/provider-google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -679,7 +679,7 @@ func GoogleFirestoreDocument_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
+		"@cdktf/provider-google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -698,7 +698,7 @@ func GoogleFirestoreDocument_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
+		"@cdktf/provider-google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -711,7 +711,7 @@ func GoogleFirestoreDocument_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
+		"@cdktf/provider-google-beta.googleFirestoreDocument.GoogleFirestoreDocument",
 		"tfResourceType",
 		&returns,
 	)

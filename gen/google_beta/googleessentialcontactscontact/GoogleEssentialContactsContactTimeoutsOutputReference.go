@@ -228,7 +228,7 @@ func NewGoogleEssentialContactsContactTimeoutsOutputReference(terraformResource 
 	j := jsiiProxy_GoogleEssentialContactsContactTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewGoogleEssentialContactsContactTimeoutsOutputReference_Override(g GoogleE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

@@ -349,7 +349,7 @@ func NewDataGoogleKmsSecret(scope constructs.Construct, id *string, config *Data
 	j := jsiiProxy_DataGoogleKmsSecret{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -362,7 +362,7 @@ func NewDataGoogleKmsSecret_Override(d DataGoogleKmsSecret, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -484,7 +484,7 @@ func DataGoogleKmsSecret_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -503,7 +503,7 @@ func DataGoogleKmsSecret_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -522,7 +522,7 @@ func DataGoogleKmsSecret_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -535,7 +535,7 @@ func DataGoogleKmsSecret_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
+		"@cdktf/provider-google-beta.dataGoogleKmsSecret.DataGoogleKmsSecret",
 		"tfResourceType",
 		&returns,
 	)

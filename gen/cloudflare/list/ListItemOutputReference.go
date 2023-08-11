@@ -203,7 +203,7 @@ func NewListItemOutputReference(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_ListItemOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.list.ListItemOutputReference",
+		"@cdktf/provider-cloudflare.list.ListItemOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewListItemOutputReference_Override(l ListItemOutputReference, terraformRes
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.list.ListItemOutputReference",
+		"@cdktf/provider-cloudflare.list.ListItemOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)

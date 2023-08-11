@@ -402,7 +402,7 @@ func NewSchemasDiscoverer(scope constructs.Construct, id *string, config *Schema
 	j := jsiiProxy_SchemasDiscoverer{}
 
 	_jsii_.Create(
-		"aws.schemasDiscoverer.SchemasDiscoverer",
+		"@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -415,7 +415,7 @@ func NewSchemasDiscoverer_Override(s SchemasDiscoverer, scope constructs.Constru
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.schemasDiscoverer.SchemasDiscoverer",
+		"@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -570,7 +570,7 @@ func SchemasDiscoverer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schemasDiscoverer.SchemasDiscoverer",
+		"@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -589,7 +589,7 @@ func SchemasDiscoverer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schemasDiscoverer.SchemasDiscoverer",
+		"@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func SchemasDiscoverer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.schemasDiscoverer.SchemasDiscoverer",
+		"@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -621,7 +621,7 @@ func SchemasDiscoverer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.schemasDiscoverer.SchemasDiscoverer",
+		"@cdktf/provider-aws.schemasDiscoverer.SchemasDiscoverer",
 		"tfResourceType",
 		&returns,
 	)

@@ -179,7 +179,7 @@ func NewGoogleContainerAzureClusterAuthorizationOutputReference(terraformResourc
 	j := jsiiProxy_GoogleContainerAzureClusterAuthorizationOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -191,7 +191,7 @@ func NewGoogleContainerAzureClusterAuthorizationOutputReference_Override(g Googl
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationOutputReference",
+		"@cdktf/provider-google-beta.googleContainerAzureCluster.GoogleContainerAzureClusterAuthorizationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)

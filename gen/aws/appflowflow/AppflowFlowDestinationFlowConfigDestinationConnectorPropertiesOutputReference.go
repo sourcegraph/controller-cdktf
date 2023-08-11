@@ -468,7 +468,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputRefe
 	j := jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -480,7 +480,7 @@ func NewAppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputRefe
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference",
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)

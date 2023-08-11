@@ -413,7 +413,7 @@ func NewComputeBackendBucketSignedUrlKey(scope constructs.Construct, id *string,
 	j := jsiiProxy_ComputeBackendBucketSignedUrlKey{}
 
 	_jsii_.Create(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -426,7 +426,7 @@ func NewComputeBackendBucketSignedUrlKey_Override(c ComputeBackendBucketSignedUr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -581,7 +581,7 @@ func ComputeBackendBucketSignedUrlKey_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -600,7 +600,7 @@ func ComputeBackendBucketSignedUrlKey_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -619,7 +619,7 @@ func ComputeBackendBucketSignedUrlKey_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -632,7 +632,7 @@ func ComputeBackendBucketSignedUrlKey_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
+		"@cdktf/provider-google.computeBackendBucketSignedUrlKey.ComputeBackendBucketSignedUrlKey",
 		"tfResourceType",
 		&returns,
 	)

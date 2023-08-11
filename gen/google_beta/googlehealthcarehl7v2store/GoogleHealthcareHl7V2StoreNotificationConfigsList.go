@@ -116,7 +116,7 @@ func NewGoogleHealthcareHl7V2StoreNotificationConfigsList(terraformResource cdkt
 	j := jsiiProxy_GoogleHealthcareHl7V2StoreNotificationConfigsList{}
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreNotificationConfigsList",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewGoogleHealthcareHl7V2StoreNotificationConfigsList_Override(g GoogleHealt
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreNotificationConfigsList",
+		"@cdktf/provider-google-beta.googleHealthcareHl7V2Store.GoogleHealthcareHl7V2StoreNotificationConfigsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)

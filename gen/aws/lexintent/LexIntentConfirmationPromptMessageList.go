@@ -116,7 +116,7 @@ func NewLexIntentConfirmationPromptMessageList(terraformResource cdktf.IInterpol
 	j := jsiiProxy_LexIntentConfirmationPromptMessageList{}
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConfirmationPromptMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLexIntentConfirmationPromptMessageList_Override(l LexIntentConfirmationP
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lexIntent.LexIntentConfirmationPromptMessageList",
+		"@cdktf/provider-aws.lexIntent.LexIntentConfirmationPromptMessageList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

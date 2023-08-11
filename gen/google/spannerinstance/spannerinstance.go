@@ -521,7 +521,7 @@ func NewSpannerInstance(scope constructs.Construct, id *string, config *SpannerI
 	j := jsiiProxy_SpannerInstance{}
 
 	_jsii_.Create(
-		"google.spannerInstance.SpannerInstance",
+		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -534,7 +534,7 @@ func NewSpannerInstance_Override(s SpannerInstance, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google.spannerInstance.SpannerInstance",
+		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -733,7 +733,7 @@ func SpannerInstance_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerInstance.SpannerInstance",
+		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -752,7 +752,7 @@ func SpannerInstance_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerInstance.SpannerInstance",
+		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -771,7 +771,7 @@ func SpannerInstance_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"google.spannerInstance.SpannerInstance",
+		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -784,7 +784,7 @@ func SpannerInstance_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"google.spannerInstance.SpannerInstance",
+		"@cdktf/provider-google.spannerInstance.SpannerInstance",
 		"tfResourceType",
 		&returns,
 	)

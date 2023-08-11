@@ -342,7 +342,7 @@ func NewRedshiftAuthenticationProfile(scope constructs.Construct, id *string, co
 	j := jsiiProxy_RedshiftAuthenticationProfile{}
 
 	_jsii_.Create(
-		"aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
+		"@cdktf/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -355,7 +355,7 @@ func NewRedshiftAuthenticationProfile_Override(r RedshiftAuthenticationProfile, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
+		"@cdktf/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
 		[]interface{}{scope, id, config},
 		r,
 	)
@@ -488,7 +488,7 @@ func RedshiftAuthenticationProfile_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
+		"@cdktf/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -507,7 +507,7 @@ func RedshiftAuthenticationProfile_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
+		"@cdktf/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +526,7 @@ func RedshiftAuthenticationProfile_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
+		"@cdktf/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -539,7 +539,7 @@ func RedshiftAuthenticationProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
+		"@cdktf/provider-aws.redshiftAuthenticationProfile.RedshiftAuthenticationProfile",
 		"tfResourceType",
 		&returns,
 	)

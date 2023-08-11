@@ -203,7 +203,7 @@ func NewNotificationPolicyEmailIntegrationOutputReference(terraformResource cdkt
 	j := jsiiProxy_NotificationPolicyEmailIntegrationOutputReference{}
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -215,7 +215,7 @@ func NewNotificationPolicyEmailIntegrationOutputReference_Override(n Notificatio
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationOutputReference",
+		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyEmailIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)

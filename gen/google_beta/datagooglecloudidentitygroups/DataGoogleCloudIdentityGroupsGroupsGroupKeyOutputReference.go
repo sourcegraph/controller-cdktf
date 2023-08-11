@@ -178,7 +178,7 @@ func NewDataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference(terraformReso
 	j := jsiiProxy_DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference{}
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -190,7 +190,7 @@ func NewDataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference_Override(d Da
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference",
+		"@cdktf/provider-google-beta.dataGoogleCloudIdentityGroups.DataGoogleCloudIdentityGroupsGroupsGroupKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)

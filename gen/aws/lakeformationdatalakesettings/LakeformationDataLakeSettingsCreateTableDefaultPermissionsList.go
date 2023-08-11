@@ -116,7 +116,7 @@ func NewLakeformationDataLakeSettingsCreateTableDefaultPermissionsList(terraform
 	j := jsiiProxy_LakeformationDataLakeSettingsCreateTableDefaultPermissionsList{}
 
 	_jsii_.Create(
-		"aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateTableDefaultPermissionsList",
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateTableDefaultPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -128,7 +128,7 @@ func NewLakeformationDataLakeSettingsCreateTableDefaultPermissionsList_Override(
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateTableDefaultPermissionsList",
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettingsCreateTableDefaultPermissionsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		l,
 	)

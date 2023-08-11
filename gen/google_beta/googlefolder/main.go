@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"google-beta.googleFolder.GoogleFolder",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolder",
 		reflect.TypeOf((*GoogleFolder)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -67,15 +67,15 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFolder.GoogleFolderConfig",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolderConfig",
 		reflect.TypeOf((*GoogleFolderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"google-beta.googleFolder.GoogleFolderTimeouts",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeouts",
 		reflect.TypeOf((*GoogleFolderTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"google-beta.googleFolder.GoogleFolderTimeoutsOutputReference",
+		"@cdktf/provider-google-beta.googleFolder.GoogleFolderTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleFolderTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},

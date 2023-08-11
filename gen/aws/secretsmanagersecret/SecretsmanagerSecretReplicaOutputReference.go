@@ -236,7 +236,7 @@ func NewSecretsmanagerSecretReplicaOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_SecretsmanagerSecretReplicaOutputReference{}
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretReplicaOutputReference",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -248,7 +248,7 @@ func NewSecretsmanagerSecretReplicaOutputReference_Override(s SecretsmanagerSecr
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.secretsmanagerSecret.SecretsmanagerSecretReplicaOutputReference",
+		"@cdktf/provider-aws.secretsmanagerSecret.SecretsmanagerSecretReplicaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)

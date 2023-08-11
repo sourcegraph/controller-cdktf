@@ -400,7 +400,7 @@ func NewCognitoResourceServer(scope constructs.Construct, id *string, config *Co
 	j := jsiiProxy_CognitoResourceServer{}
 
 	_jsii_.Create(
-		"aws.cognitoResourceServer.CognitoResourceServer",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -413,7 +413,7 @@ func NewCognitoResourceServer_Override(c CognitoResourceServer, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.cognitoResourceServer.CognitoResourceServer",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer",
 		[]interface{}{scope, id, config},
 		c,
 	)
@@ -557,7 +557,7 @@ func CognitoResourceServer_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoResourceServer.CognitoResourceServer",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -576,7 +576,7 @@ func CognitoResourceServer_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoResourceServer.CognitoResourceServer",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -595,7 +595,7 @@ func CognitoResourceServer_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.cognitoResourceServer.CognitoResourceServer",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -608,7 +608,7 @@ func CognitoResourceServer_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.cognitoResourceServer.CognitoResourceServer",
+		"@cdktf/provider-aws.cognitoResourceServer.CognitoResourceServer",
 		"tfResourceType",
 		&returns,
 	)

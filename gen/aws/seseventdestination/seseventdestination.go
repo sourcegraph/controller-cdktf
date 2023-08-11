@@ -472,7 +472,7 @@ func NewSesEventDestination(scope constructs.Construct, id *string, config *SesE
 	j := jsiiProxy_SesEventDestination{}
 
 	_jsii_.Create(
-		"aws.sesEventDestination.SesEventDestination",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -485,7 +485,7 @@ func NewSesEventDestination_Override(s SesEventDestination, scope constructs.Con
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"aws.sesEventDestination.SesEventDestination",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		[]interface{}{scope, id, config},
 		s,
 	)
@@ -640,7 +640,7 @@ func SesEventDestination_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesEventDestination.SesEventDestination",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -659,7 +659,7 @@ func SesEventDestination_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesEventDestination.SesEventDestination",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -678,7 +678,7 @@ func SesEventDestination_IsTerraformResource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"aws.sesEventDestination.SesEventDestination",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -691,7 +691,7 @@ func SesEventDestination_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"aws.sesEventDestination.SesEventDestination",
+		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
 		"tfResourceType",
 		&returns,
 	)
